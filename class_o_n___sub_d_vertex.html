@@ -229,6 +229,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf19b3260c4dc5081cea1e586a5e883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073b70d96ebf59a8653db125beaf7511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a073b70d96ebf59a8653db125beaf7511">SurfaceBoundingBox</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd) const</td></tr>
 <tr class="separator:a073b70d96ebf59a8653db125beaf7511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d3ebd7dcf5f8f7443f5830f66d030a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a08d3ebd7dcf5f8f7443f5830f66d030a">SurfaceNormal</a> (const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *sector_face, bool bUndefinedNormalPossible) const</td></tr>
+<tr class="separator:a08d3ebd7dcf5f8f7443f5830f66d030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b92d1ea2792374cef7e0403aa14ad0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a52b92d1ea2792374cef7e0403aa14ad0">SurfacePoint</a> () const</td></tr>
 <tr class="separator:a52b92d1ea2792374cef7e0403aa14ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d5e04cf0c29cdb1fc3546fd20358fa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a6d5e04cf0c29cdb1fc3546fd20358fa6">SurfacePointIsSet</a> () const</td></tr>
@@ -1265,7 +1267,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>summary&gt; The SubD vertex Catmull-Clark limit surface point. /summary&gt; </p>
 
 </div>
 </div>
@@ -1970,6 +1971,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a08d3ebd7dcf5f8f7443f5830f66d030a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d3ebd7dcf5f8f7443f5830f66d030a">&#9670;&nbsp;</a></span>SurfaceNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> ON_SubDVertex::SurfaceNormal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
+          <td class="paramname"><em>sector_face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUndefinedNormalPossible</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters: sector_face - [in] When the vertex is a crease or corner vertex, different sectors typically have different normals and you must specify a face to determine the sector. bUndefinedNormalPossible - [in] If the SubD control net is degenerate around the vertex, the normal may be zero. Pass true if you will accept a zero normal vector. Otherwise <a class="el" href="class_o_n__3d_vector.html#a2bb705b5d7458947109344fe28460228" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dVector::NanVector</a> is returned when a non-zero normal cannot be calculated. Returns: The SubD surface normal. </p>
+
+</div>
+</div>
 <a id="a52b92d1ea2792374cef7e0403aa14ad0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52b92d1ea2792374cef7e0403aa14ad0">&#9670;&nbsp;</a></span>SurfacePoint()</h2>
 
@@ -1984,6 +2014,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns: The SubD surface point. </p>
 
 </div>
 </div>
@@ -2396,7 +2427,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 17:55:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 21:24:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
