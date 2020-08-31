@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee9060d15f8b25e3647b2f5329765cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51a1d61fc969e1a0539cb5589e1d5c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#af51a1d61fc969e1a0539cb5589e1d5c8">Extend</a> (int dir, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;domain) override</td></tr>
 <tr class="separator:af51a1d61fc969e1a0539cb5589e1d5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38715f3c3accc86997d6a438d34a9f6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#a38715f3c3accc86997d6a438d34a9f6c">FaceCount</a> () const</td></tr>
+<tr class="separator:a38715f3c3accc86997d6a438d34a9f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa763ed82d07d4666e6274669b2e33043"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#aa763ed82d07d4666e6274669b2e33043">GetBBox</a> (double *boxmin, double *boxmax, bool bGrowBox=false) const override</td></tr>
 <tr class="memdesc:aa763ed82d07d4666e6274669b2e33043"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> GetBBox override <br  />
   <a href="class_o_n___extrusion.html#aa763ed82d07d4666e6274669b2e33043">More...</a><br /></td></tr>
@@ -201,8 +203,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a612ee2d10df92a9d360c4df3395f93d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b0692d2e680289868b4f298e4eaa4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#a99b0692d2e680289868b4f298e4eaa4e">ObjectType</a> () const override</td></tr>
 <tr class="separator:a99b0692d2e680289868b4f298e4eaa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b9ea9024a244427b4f27193b019498"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#a70b9ea9024a244427b4f27193b019498">ON_DEPRECATED_MSG</a> (&quot;Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount</a>(), <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount</a>(), or <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount</a>()&quot;) int FaceCount() const</td></tr>
-<tr class="separator:a70b9ea9024a244427b4f27193b019498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede9c6da5704353cc5cafced55285a8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#aede9c6da5704353cc5cafced55285a8f">operator=</a> (const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;)</td></tr>
 <tr class="separator:aede9c6da5704353cc5cafced55285a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6dd53c043b2a878122f0f0ef1ae65df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___extrusion.html#af6dd53c043b2a878122f0f0ef1ae65df">PathEnd</a> () const</td></tr>
@@ -993,7 +993,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Destroy a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to destroy If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then all attached meshes of all types are destroyed. bDeleteMesh - [in] if true, cached mesh is deleted. If false, pointer to cached mesh is just set to null. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p>
+<p>Description: Destroy a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to destroy If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then all attached meshes of all types are destroyed. bDeleteMesh - [in] if true, cached mesh is deleted. If false, pointer to cached mesh is just set to null. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes </dd></dl>
 
 </div>
 </div>
@@ -1231,6 +1231,27 @@ Additional Inherited Members</h2></td></tr>
  Will not work if surface is closed in direction dir. Original surface is identical to the restriction of the resulting surface to the original surface domain, Returns: true if successful. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___surface.html#a9242e8a46e876db63423ce7d6f3f1ef8">ON_Surface</a>.</p>
+
+</div>
+</div>
+<a id="a38715f3c3accc86997d6a438d34a9f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38715f3c3accc86997d6a438d34a9f6c">&#9670;&nbsp;</a></span>FaceCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Extrusion::FaceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Deprecated function.</p>
+<p>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a> to determine how many end caps there are. Use <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a> to determine how many profiles there are. Use <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> to determine how many smooth subsegments are in a profile. Each smooth subsegment becomes a wall face in the brep form.</p>
+<p>Returns: Number of "faces" the extrusion has. 0: extrusion is not valid 1: extrusion is not capped 2: extrusion has a closed outer profile and one cap 3: extrusion has a closed outer profile and two caps</p>
+<p>Remarks: This function was written before extrusions supported "holes" and before the brep form was divided at profile creases. At this point it simply leads to confusion. See the Description function replacements. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a>, <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a>, or <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> </dd></dl>
 
 </div>
 </div>
@@ -2630,7 +2651,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Get a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to get. <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> and <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a> remove the meshes of those types. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then the first non null mesh is returned. Returns: A pointer to a mesh on the ON_Extusion object. <br  />
- This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p>
+ This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes </dd></dl>
 
 </div>
 </div>
@@ -2661,44 +2682,6 @@ Additional Inherited Members</h2></td></tr>
 <p>Remarks: The default implementation of this virtual function returns <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a14820a0e82c00c488a5f70bf149f0512">ON::unknown_object_type</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#afa19aee4a411a8fda53aff00bd02d86e">ON_Object</a>.</p>
-
-</div>
-</div>
-<a id="a70b9ea9024a244427b4f27193b019498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70b9ea9024a244427b4f27193b019498">&#9670;&nbsp;</a></span>ON_DEPRECATED_MSG()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_Extrusion::ON_DEPRECATED_MSG </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Use &#160;</td>
-          <td class="paramname"><em>CapCount</em>(), </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount</a>()&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">or <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount</a>()&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Description: Deprecated function.</p>
-<p>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a> to determine how many end caps there are. Use <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a> to determine how many profiles there are. Use <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> to determine how many smooth subsegments are in a profile. Each smooth subsegment becomes a wall face in the brep form.</p>
-<p>Returns: Number of "faces" the extrusion has. 0: extrusion is not valid 1: extrusion is not capped 2: extrusion has a closed outer profile and one cap 3: extrusion has a closed outer profile and two caps</p>
-<p>Remarks: This function was written before extrusions supported "holes" and before the brep form was divided at profile creases. At this point it simply leads to confusion. See the Description function replacements. </p>
 
 </div>
 </div>
@@ -3290,7 +3273,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> mesh interface Description: Attach a mesh to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh that is being attached. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a>, the mesh is attached as that type of mesh. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then nothing is done and false is returned. mesh - [in] mesh to attach. <br  />
- mesh must be on the heap because <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a> will delete it. if there is already of mesh of the prescribed type, it will be deleted. if mesh is null, any existing mesh is deleted and nothing is attached. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p>
+ mesh must be on the heap because <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a> will delete it. if there is already of mesh of the prescribed type, it will be deleted. if mesh is null, any existing mesh is deleted and nothing is attached. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed chached meshes </dd></dl>
 
 </div>
 </div>
@@ -3953,7 +3936,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:53:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

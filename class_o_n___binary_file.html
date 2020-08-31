@@ -346,8 +346,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb482785ac0997a17c3a88f3dbeeccce inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae44fc26d79bbe14b9feed54f09d4bc5 inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#aae44fc26d79bbe14b9feed54f09d4bc5">ObjectHasUserDataToWrite</a> (const class <a class="el" href="class_o_n___object.html">ON_Object</a> *object) const</td></tr>
 <tr class="separator:aae44fc26d79bbe14b9feed54f09d4bc5 inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065db2b96f5fbe8a8b54a45b453fc84e inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a065db2b96f5fbe8a8b54a45b453fc84e">ON_DEPRECATED_MSG</a> (&quot;Use either <a class="el" href="class_o_n___binary_archive.html#a31378a73104dab716db033d008d47035">ReadStringUTF8ElementCount</a>() or <a class="el" href="class_o_n___binary_archive.html#a1e7713da57b2db375c0cad65d055779d">ReadStringUTF16ElementCount</a>()&quot;) bool ReadStringSize(size_t *str_array_count)</td></tr>
-<tr class="separator:a065db2b96f5fbe8a8b54a45b453fc84e inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56159ec84bcab9f4754ad320bccf3b0 inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#ac56159ec84bcab9f4754ad320bccf3b0">PeekAt3dmBigChunkType</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> *typecode, <a class="el" href="group__open_n_u_r_b_s.html#ga090dc337a02411b8168f75fd318b99ed">ON__INT64</a> *big_value)</td></tr>
 <tr class="separator:ac56159ec84bcab9f4754ad320bccf3b0 inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94c98780dcc8d8af2ab47554a5c93a9 inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#aa94c98780dcc8d8af2ab47554a5c93a9">PeekAt3dmChunkType</a> (unsigned int *, int *)</td></tr>
@@ -598,6 +596,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a37f414be58e36fc9a3061e83c787356e inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991e5a4554643340856305d23a3b407d inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a991e5a4554643340856305d23a3b407d">ReadString</a> (size_t str_array_count, unsigned short *str_array)</td></tr>
 <tr class="separator:a991e5a4554643340856305d23a3b407d inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605ffb622b633bba0ee93498f213a9f9 inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a605ffb622b633bba0ee93498f213a9f9">ReadStringSize</a> (size_t *str_array_count)</td></tr>
+<tr class="separator:a605ffb622b633bba0ee93498f213a9f9 inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e7713da57b2db375c0cad65d055779d inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a1e7713da57b2db375c0cad65d055779d">ReadStringUTF16ElementCount</a> (size_t *string_utf16_element_count)</td></tr>
 <tr class="separator:a1e7713da57b2db375c0cad65d055779d inherit pub_methods_class_o_n___binary_archive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31378a73104dab716db033d008d47035 inherit pub_methods_class_o_n___binary_archive"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a31378a73104dab716db033d008d47035">ReadStringUTF8ElementCount</a> (size_t *string_utf8_element_count)</td></tr>
@@ -1472,7 +1472,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:33 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:52:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

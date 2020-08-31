@@ -1559,7 +1559,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Adds a new page to the object properties dialog. Parameters: pPage - [in] The page to add to the object properties dialog. pPlugIn - [in] The plug-in that is adding the page. Returns: TRUE on success. FALSE on failure. See also: <a class="el" href="class_c_rhino_app.html#a43461a3934e69b11ca2e0baf9b1f733b">CRhinoApp::RemovePageFromObjectPropertiesDialog</a> <a class="el" href="class_c_rhino_plug_in.html#af92ec0b76bc59213412f6e081445f46c">CRhinoPlugIn::AddPagesToObjectPropertiesDialog</a> </p>
+<p>Description: Adds a new page to the object properties dialog. Parameters: pPage - [in] The page to add to the object properties dialog. pPlugIn - [in] The plug-in that is adding the page. Returns: TRUE on success. FALSE on failure. See also: <a class="el" href="class_c_rhino_app.html#a43461a3934e69b11ca2e0baf9b1f733b">CRhinoApp::RemovePageFromObjectPropertiesDialog</a> <a class="el" href="class_c_rhino_plug_in.html#af92ec0b76bc59213412f6e081445f46c">CRhinoPlugIn::AddPagesToObjectPropertiesDialog</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Derive a class from <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> in your DLL to add pages </dd></dl>
 
 </div>
 </div>
@@ -3308,7 +3308,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the document with this serial number. Returns: A pointer to the document if it exists. Null if no living document has this serial number. Remarks: Use <a class="el" href="class_c_rhino_doc.html#a974eb635222d7b23270e7ff9b023d2e6">CRhinoDoc::FromRuntimeSerialNumber()</a>. </p>
+<p>Description: Find the document with this serial number. Returns: A pointer to the document if it exists. Null if no living document has this serial number. Remarks: Use <a class="el" href="class_c_rhino_doc.html#a974eb635222d7b23270e7ff9b023d2e6">CRhinoDoc::FromRuntimeSerialNumber()</a>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_doc.html#a974eb635222d7b23270e7ff9b023d2e6">CRhinoDoc::FromRuntimeSerialNumber()</a> </dd></dl>
 
 </div>
 </div>
@@ -3540,6 +3540,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>use GetRhinoRootRegistryPath, GetRhinoPlugInsRegistryPath, GetRhinoSchemeRegistryPath, or GetRhinoGlobalOptionsRegistryPath </dd></dl>
 
 </div>
 </div>
@@ -5583,7 +5584,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Remove an existing page page from the object properties dialog. Parameters: pPage - [in] The page to remove from the object properties dialog. Returns: TRUE on success. FALSE on failure. Remarks: The removed page is destroyed with a call to DestroyWindow, but the page is not deleted. The caller is responsible of deleting the page. See also: <a class="el" href="class_c_rhino_app.html#a74f67ce6b8dabc0d0ecdbcfdd277de65">CRhinoApp::AddPageToObjectPropertiesDialog</a> <a class="el" href="class_c_rhino_plug_in.html#af92ec0b76bc59213412f6e081445f46c">CRhinoPlugIn::AddPagesToObjectPropertiesDialog</a> </p>
+<p>Description: Remove an existing page page from the object properties dialog. Parameters: pPage - [in] The page to remove from the object properties dialog. Returns: TRUE on success. FALSE on failure. Remarks: The removed page is destroyed with a call to DestroyWindow, but the page is not deleted. The caller is responsible of deleting the page. See also: <a class="el" href="class_c_rhino_app.html#a74f67ce6b8dabc0d0ecdbcfdd277de65">CRhinoApp::AddPageToObjectPropertiesDialog</a> <a class="el" href="class_c_rhino_plug_in.html#af92ec0b76bc59213412f6e081445f46c">CRhinoPlugIn::AddPagesToObjectPropertiesDialog</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Derive a class from <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> in your DLL to add pages, the destructor will remove them automatically </dd></dl>
 
 </div>
 </div>
@@ -7301,7 +7302,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Ends, or hides, Rhino's status bar progress meter. See Also: <a class="el" href="class_c_rhino_app.html#a0b6ee947d508c49ffdf3ce7d6d8494e4">CRhinoApp::StatusBarProgressMeterStart</a> <a class="el" href="class_c_rhino_app.html#a741ec29f6f291caa5b829f5f1598411e">CRhinoApp::StatusBarProgressMeterPos</a> </p>
+<p>Description: Ends, or hides, Rhino's status bar progress meter. See Also: <a class="el" href="class_c_rhino_app.html#a0b6ee947d508c49ffdf3ce7d6d8494e4">CRhinoApp::StatusBarProgressMeterStart</a> <a class="el" href="class_c_rhino_app.html#a741ec29f6f291caa5b829f5f1598411e">CRhinoApp::StatusBarProgressMeterPos</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_doc.html#a9ffed84a086d0fabf8c909d9add24e71">CRhinoDoc::StatusBarProgressMeterEnd</a> </dd></dl>
 
 </div>
 </div>
@@ -7330,7 +7331,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Sets the current position of Rhino's status bar progress meter. Parameters: nPos - [in] The position. bAbsolute - [in] If true, then the progress meter is moved to nPos (absolute). If false, then the progress meter is moved nPos from the current position (relative). Returns: The previous position if successful. See Also: <a class="el" href="class_c_rhino_app.html#a0b6ee947d508c49ffdf3ce7d6d8494e4">CRhinoApp::StatusBarProgressMeterStart</a> <a class="el" href="class_c_rhino_app.html#ae78e9bc2d8874c8f1b6a2d97610e0e84">CRhinoApp::StatusBarProgressMeterEnd</a> </p>
+<p>Description: Sets the current position of Rhino's status bar progress meter. Parameters: nPos - [in] The position. bAbsolute - [in] If true, then the progress meter is moved to nPos (absolute). If false, then the progress meter is moved nPos from the current position (relative). Returns: The previous position if successful. See Also: <a class="el" href="class_c_rhino_app.html#a0b6ee947d508c49ffdf3ce7d6d8494e4">CRhinoApp::StatusBarProgressMeterStart</a> <a class="el" href="class_c_rhino_app.html#ae78e9bc2d8874c8f1b6a2d97610e0e84">CRhinoApp::StatusBarProgressMeterEnd</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_doc.html#a23c3d978aa42377f1f3f6a99f6b9793b">CRhinoDoc::StatusBarProgressMeterPos</a> </dd></dl>
 
 </div>
 </div>
@@ -7377,7 +7378,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Starts, or shows, Rhino's status bar progress meter. Parameters: nLower - [in] The lower limit of the progress meter's range. nUpper - [in] The upper limit of the progress meter's range. pszLabel - [in] The short description of the progress (e.g. "Calculating", "Meshing", etc). bEmbedLabel - [in] If true, then the label will be embedded in the progress meter. If false, then the label will appear to the left of the progress meter. bShowPercent - [in] If true, then the percent complete will appear in the progress meter. Returns: 1 - The progress meter was created successfully. 0 - The progress meter was not created. -1 - The progress meter was not created because some other process has already created it. See Also: <a class="el" href="class_c_rhino_app.html#a741ec29f6f291caa5b829f5f1598411e">CRhinoApp::StatusBarProgressMeterPos</a> <a class="el" href="class_c_rhino_app.html#ae78e9bc2d8874c8f1b6a2d97610e0e84">CRhinoApp::StatusBarProgressMeterEnd</a> </p>
+<p>Description: Starts, or shows, Rhino's status bar progress meter. Parameters: nLower - [in] The lower limit of the progress meter's range. nUpper - [in] The upper limit of the progress meter's range. pszLabel - [in] The short description of the progress (e.g. "Calculating", "Meshing", etc). bEmbedLabel - [in] If true, then the label will be embedded in the progress meter. If false, then the label will appear to the left of the progress meter. bShowPercent - [in] If true, then the percent complete will appear in the progress meter. Returns: 1 - The progress meter was created successfully. 0 - The progress meter was not created. -1 - The progress meter was not created because some other process has already created it. See Also: <a class="el" href="class_c_rhino_app.html#a741ec29f6f291caa5b829f5f1598411e">CRhinoApp::StatusBarProgressMeterPos</a> <a class="el" href="class_c_rhino_app.html#ae78e9bc2d8874c8f1b6a2d97610e0e84">CRhinoApp::StatusBarProgressMeterEnd</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_doc.html#a372eb963d1ca23d97fa2265d684b7e30">CRhinoDoc::StatusBarProgressMeterStart</a> </dd></dl>
 
 </div>
 </div>
@@ -9525,7 +9526,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:52:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

@@ -181,6 +181,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea704b360c8e9e72a27429136ec0dc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9034458510db05371a98b8d4d035948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#ae9034458510db05371a98b8d4d035948">HarvestSegment</a> (int)</td></tr>
 <tr class="separator:ae9034458510db05371a98b8d4d035948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e669fa071a677b9d39b1cea7cc6c55a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a6e669fa071a677b9d39b1cea7cc6c55a">HasGap</a> () const</td></tr>
+<tr class="separator:a6e669fa071a677b9d39b1cea7cc6c55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc2ed6d303cd475d1e458dbe29d88d86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#abc2ed6d303cd475d1e458dbe29d88d86">HasGapAt</a> (int segment_index) const</td></tr>
 <tr class="separator:abc2ed6d303cd475d1e458dbe29d88d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5cdfa2e5abdb01ea0c22e2beeff865"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a4f5cdfa2e5abdb01ea0c22e2beeff865">HasNurbForm</a> () const override</td></tr>
@@ -229,10 +231,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6609cd7f5d232ebde93f8c97b088556"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#ab6609cd7f5d232ebde93f8c97b088556">Morph</a> (const <a class="el" href="class_o_n___space_morph.html">ON_SpaceMorph</a> &amp;morph) override</td></tr>
 <tr class="memdesc:ab6609cd7f5d232ebde93f8c97b088556"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> override  <a href="class_o_n___poly_curve.html#ab6609cd7f5d232ebde93f8c97b088556">More...</a><br /></td></tr>
 <tr class="separator:ab6609cd7f5d232ebde93f8c97b088556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36f9b5b2b9a5a1fcf12a71747f968159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a36f9b5b2b9a5a1fcf12a71747f968159">ON_DEPRECATED_MSG</a> (&quot;Replace calls to HasGap() with <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap</a>(0)&quot;) int HasGap() const</td></tr>
-<tr class="separator:a36f9b5b2b9a5a1fcf12a71747f968159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e461ae847b834ef0640db491f3feb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#ab6e461ae847b834ef0640db491f3feb9">ON_DEPRECATED_MSG</a> (&quot;Use <a class="el" href="class_o_n___poly_curve.html#acb3fa67bfe80970d7e44b19a0150e3ec">RemoveNesting</a>(). RemoveNestingEx() will be removed in the next release.&quot;) bool RemoveNestingEx()</td></tr>
-<tr class="separator:ab6e461ae847b834ef0640db491f3feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea70889d03602c829c9d0e5285ca2c58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___poly_curve.html">ON_PolyCurve</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#aea70889d03602c829c9d0e5285ca2c58">operator=</a> (const <a class="el" href="class_o_n___poly_curve.html">ON_PolyCurve</a> &amp;)</td></tr>
 <tr class="separator:aea70889d03602c829c9d0e5285ca2c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83936a93b5881ee93098289f6987282c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a83936a93b5881ee93098289f6987282c">operator[]</a> (int) const</td></tr>
@@ -258,6 +256,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f67abbfc6255442a45933b11f2321c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb3fa67bfe80970d7e44b19a0150e3ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#acb3fa67bfe80970d7e44b19a0150e3ec">RemoveNesting</a> ()</td></tr>
 <tr class="separator:acb3fa67bfe80970d7e44b19a0150e3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372e1a81c07f5f0248ba3a0d80b90b1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a372e1a81c07f5f0248ba3a0d80b90b1f">RemoveNestingEx</a> ()</td></tr>
+<tr class="separator:a372e1a81c07f5f0248ba3a0d80b90b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166f8e66fb17f456a1d4dc3b0c648b07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a166f8e66fb17f456a1d4dc3b0c648b07">RemoveShortSegments</a> (double tolerance, bool bRemoveShortSegments=true) override</td></tr>
 <tr class="separator:a166f8e66fb17f456a1d4dc3b0c648b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cffa6642c6f680205c19fc613cf46fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a4cffa6642c6f680205c19fc613cf46fd">Reserve</a> (int)</td></tr>
@@ -1802,6 +1802,24 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e669fa071a677b9d39b1cea7cc6c55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e669fa071a677b9d39b1cea7cc6c55a">&#9670;&nbsp;</a></span>HasGap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_PolyCurve::HasGap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Replace calls to <a class="el" href="class_o_n___poly_curve.html#a6e669fa071a677b9d39b1cea7cc6c55a">HasGap()</a> with FindNextGap(0) </dd></dl>
+
+</div>
+</div>
 <a id="abc2ed6d303cd475d1e458dbe29d88d86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc2ed6d303cd475d1e458dbe29d88d86">&#9670;&nbsp;</a></span>HasGapAt()</h2>
 
@@ -2480,42 +2498,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a36f9b5b2b9a5a1fcf12a71747f968159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f9b5b2b9a5a1fcf12a71747f968159">&#9670;&nbsp;</a></span>ON_DEPRECATED_MSG() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_PolyCurve::ON_DEPRECATED_MSG </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Replace calls to HasGap() with <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap</a>(0)&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6e461ae847b834ef0640db491f3feb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e461ae847b834ef0640db491f3feb9">&#9670;&nbsp;</a></span>ON_DEPRECATED_MSG() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_PolyCurve::ON_DEPRECATED_MSG </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Use <a class="el" href="class_o_n___poly_curve.html#acb3fa67bfe80970d7e44b19a0150e3ec">RemoveNesting</a>(). RemoveNestingEx() will be removed in the next release.&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aea70889d03602c829c9d0e5285ca2c58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea70889d03602c829c9d0e5285ca2c58">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -2750,6 +2732,24 @@ t&lt;m_t[0] or m_t is empty                -1
       </table>
 </div><div class="memdoc">
 <p>Description: Removes the nested of polycurves. The result will have not have an <a class="el" href="class_o_n___poly_curve.html">ON_PolyCurve</a> as a segment but will have identical locus and parameterization. Returns: True if a nested polycurve was removed. False if no nested polycurves were found. </p>
+
+</div>
+</div>
+<a id="a372e1a81c07f5f0248ba3a0d80b90b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372e1a81c07f5f0248ba3a0d80b90b1f">&#9670;&nbsp;</a></span>RemoveNestingEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_PolyCurve::RemoveNestingEx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___poly_curve.html#acb3fa67bfe80970d7e44b19a0150e3ec">RemoveNesting()</a>. <a class="el" href="class_o_n___poly_curve.html#a372e1a81c07f5f0248ba3a0d80b90b1f">RemoveNestingEx()</a> will be removed in the next release. </dd></dl>
 
 </div>
 </div>
@@ -3411,7 +3411,7 @@ t&lt;m_t[0] or m_t is empty                -1
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:53:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

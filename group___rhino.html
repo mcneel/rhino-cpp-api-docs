@@ -2328,7 +2328,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga13dfe5c8a810cd23102feb6eb0c6e10e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga13dfe5c8a810cd23102feb6eb0c6e10e">RhinoSdkVersion</a> ()</td></tr>
 <tr class="separator:ga13dfe5c8a810cd23102feb6eb0c6e10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9fa9c4c316222d168cf4dbcff2f5262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gac9fa9c4c316222d168cf4dbcff2f5262">RhinoSelectDimstyle</a> (bool interactive)</td></tr>
-<tr class="memdesc:gac9fa9c4c316222d168cf4dbcff2f5262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old version replaced 11/09/2009 SDKbreak.  <a href="group___rhino.html#gac9fa9c4c316222d168cf4dbcff2f5262">More...</a><br /></td></tr>
 <tr class="separator:gac9fa9c4c316222d168cf4dbcff2f5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26d19e9980d65b13febb4c88024fcdf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga26d19e9980d65b13febb4c88024fcdf4">RhinoSelectDimstyle</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, bool interactive)</td></tr>
 <tr class="memdesc:ga26d19e9980d65b13febb4c88024fcdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Added 11/10/2009 to eliminate ActiveDoc() call.  <a href="group___rhino.html#ga26d19e9980d65b13febb4c88024fcdf4">More...</a><br /></td></tr>
@@ -8695,6 +8694,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000152">Deprecated:</a></b></dt><dd>use RhinoColorDialogEx </dd></dl>
 
 </div>
 </div>
@@ -9374,7 +9374,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates one or more hatches. Parameters: args - [in] The hatching arguments. tolerance - [in] The tolerance used for detecting planar loops. When in doubt, use the document's absolute tolerance. Returns: True if one or more hatches were created, false otherwise. </p>
+<p>Description: Creates one or more hatches. Parameters: args - [in] The hatching arguments. tolerance - [in] The tolerance used for detecting planar loops. When in doubt, use the document's absolute tolerance. Returns: True if one or more hatches were created, false otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000126">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
 
 </div>
 </div>
@@ -16589,7 +16589,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates planar Breps of 1 face from array of curves Parameters: input_loops [in] loops to sort and use as boundaries breps [out] array of 1 face Breps notused - optional array to hold indices of the input curves that got used Returns: @untitled table TRUE Success FALSE Failure Remarks: calls RhinoMakePlanarFaces() to sort the input curves into faces See Also: RhinoMakePlanarBrep() </p>
+<p>Description: Creates planar Breps of 1 face from array of curves Parameters: input_loops [in] loops to sort and use as boundaries breps [out] array of 1 face Breps notused - optional array to hold indices of the input curves that got used Returns: @untitled table TRUE Success FALSE Failure Remarks: calls RhinoMakePlanarFaces() to sort the input curves into faces See Also: RhinoMakePlanarBrep() </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000153">Deprecated:</a></b></dt><dd>use overload that takes a tolerance </dd></dl>
 
 </div>
 </div>
@@ -19167,6 +19167,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000154">Deprecated:</a></b></dt><dd>use RhinoInterpCurve </dd></dl>
 
 </div>
 </div>
@@ -19550,7 +19551,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: OBSOLETE - Use the version of RhinoOffsetCurve declared below. </p>
+<p>Description: OBSOLETE - Use the version of RhinoOffsetCurve declared below. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000156">Deprecated:</a></b></dt><dd>use other version of RhinoOffsetCurve </dd></dl>
 
 </div>
 </div>
@@ -20718,6 +20719,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000155">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
 
 </div>
 </div>
@@ -21402,6 +21404,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000157">Deprecated:</a></b></dt><dd>use overload that has an <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -22494,8 +22497,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Old version replaced 11/09/2009 SDKbreak. </p>
+<p>Old version replaced 11/09/2009 SDKbreak </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -23262,6 +23264,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000158">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothCurve that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -23456,6 +23459,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000160">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothMesh that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -23579,6 +23583,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000159">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothSurface that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -26690,7 +26695,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:52:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

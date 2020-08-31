@@ -445,10 +445,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9b9d1d4fff1f9b2ba1a70c772b3c500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ff4455acacc572b2318953a403d02f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ac7ff4455acacc572b2318953a403d02f">ObjectFinderIsValid</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *text_log, unsigned int max_error_count, size_t *sn_count, size_t *id_count) const</td></tr>
 <tr class="separator:ac7ff4455acacc572b2318953a403d02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26d472a5b53a05cdebe5d272828a349d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a26d472a5b53a05cdebe5d272828a349d">ON_DEPRECATED_MSG</a> (&quot;Prefer <a class="el" href="class_c_rhino_doc.html#a0aef9bb62a3843d79ee85b4a072b63b0">BoundingBox</a> function with three arguments&quot;) const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;TightBoundingBox(bool bIncludeCustomRenderMeshes</td></tr>
-<tr class="separator:a26d472a5b53a05cdebe5d272828a349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fd91ce8ac3f72449c18138ee95b280d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a9fd91ce8ac3f72449c18138ee95b280d">ON_DEPRECATED_MSG</a> (&quot;Prefer version with three arguments&quot;) const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;<a class="el" href="class_c_rhino_doc.html#a0aef9bb62a3843d79ee85b4a072b63b0">BoundingBox</a>(bool bIncludeCustomRenderMeshes</td></tr>
-<tr class="separator:a9fd91ce8ac3f72449c18138ee95b280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b63a74cd10046427b0660776ccca06d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a4b63a74cd10046427b0660776ccca06d">OnCloseDocument</a> ()</td></tr>
 <tr class="separator:a4b63a74cd10046427b0660776ccca06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700a0ff6068b2d74103ddd0a99142f45"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a700a0ff6068b2d74103ddd0a99142f45">OnNewDocument</a> ()</td></tr>
@@ -2209,6 +2205,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000109">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
 <p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included / bTight: [in] use CRhinoObject::TightBoundingBox in the calculation instead of BoundingBox / bIncludeCustomRenderMeshes: [in] Resolve custom render meshes for all objects and use those / bIncludeCurves: [in] include curves and annotations in the calculation Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
 
 </div>
@@ -5400,7 +5398,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p>
+<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000108">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
 
 </div>
 </div>
@@ -5542,44 +5540,6 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function is a debugging tool that validates the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> lists and m_object_finder. If any errors are detected, false is returned. If no errors is detected, true is returned. Pass in a text_log if you want a description of the errors. Set max_error_count to the number of errors you want to allow before checking is halted. </p>
-
-</div>
-</div>
-<a id="a26d472a5b53a05cdebe5d272828a349d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26d472a5b53a05cdebe5d272828a349d">&#9670;&nbsp;</a></span>ON_DEPRECATED_MSG() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CRhinoDoc::ON_DEPRECATED_MSG </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Prefer <a class="el" href="class_c_rhino_doc.html#a0aef9bb62a3843d79ee85b4a072b63b0">BoundingBox</a> function with three arguments&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const &amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
-
-</div>
-</div>
-<a id="a9fd91ce8ac3f72449c18138ee95b280d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fd91ce8ac3f72449c18138ee95b280d">&#9670;&nbsp;</a></span>ON_DEPRECATED_MSG() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CRhinoDoc::ON_DEPRECATED_MSG </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Prefer version with three arguments&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const &amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p>
 
 </div>
 </div>
@@ -5955,7 +5915,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return associated RDK document </p>
+<p>Return associated RDK document</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>Use the direct access functions below (Sun, Skylight etc </dd></dl>
 
 </div>
 </div>
@@ -9245,7 +9206,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 31 2020 21:24:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 31 2020 22:52:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
