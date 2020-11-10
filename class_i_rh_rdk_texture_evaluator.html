@@ -100,15 +100,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:add33b88d4abd77eee34fbfce2feb757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8eeee46cc47a689d45543cbe80da09"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a2c8eeee46cc47a689d45543cbe80da09">EVF</a> (const wchar_t *, void *)=0</td></tr>
 <tr class="separator:a2c8eeee46cc47a689d45543cbe80da09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed951fd402d6a3c6638b65952cf51c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a2ed951fd402d6a3c6638b65952cf51c8">GetColor</a> (const ON_3dPoint &amp;uvw, const ON_3dVector &amp;duvwdx, const ON_3dVector &amp;duvwdy, <a class="el" href="class_c_rh_rdk_color.html">CRhRdkColor</a> &amp;colOut, void *pvData=NULL) const =0</td></tr>
+<tr class="memitem:a2ed951fd402d6a3c6638b65952cf51c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a2ed951fd402d6a3c6638b65952cf51c8">GetColor</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;uvw, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;duvwdx, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;duvwdy, <a class="el" href="class_c_rh_rdk_color.html">CRhRdkColor</a> &amp;colOut, void *pvData=NULL) const =0</td></tr>
 <tr class="separator:a2ed951fd402d6a3c6638b65952cf51c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8533ad2c32650c7e949d4e30f81fa544"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a8533ad2c32650c7e949d4e30f81fa544">Initialize</a> (void)=0</td></tr>
 <tr class="separator:a8533ad2c32650c7e949d4e30f81fa544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db35ab5516d7dc3410d5acaed6d33c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a8db35ab5516d7dc3410d5acaed6d33c4">RegisterChildCallback</a> (<a class="el" href="class_i_rh_rdk_texture_evaluator_1_1_i_child_callback.html">IChildCallback</a> *pChildCallback, const <a class="el" href="class_c_rh_rdk_texture.html">CRhRdkTexture</a> &amp;texture, void *pvData)=0</td></tr>
 <tr class="separator:a8db35ab5516d7dc3410d5acaed6d33c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52883b59264bbde53bffb997ad6ec91f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a52883b59264bbde53bffb997ad6ec91f">WriteByteArray</a> (const ON_2iSize &amp;size, unsigned char *buffer) const</td></tr>
+<tr class="memitem:a52883b59264bbde53bffb997ad6ec91f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#a52883b59264bbde53bffb997ad6ec91f">WriteByteArray</a> (const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;size, unsigned char *buffer) const</td></tr>
 <tr class="separator:a52883b59264bbde53bffb997ad6ec91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb04bd52325cc02ed0e510f0edc21d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#aefb04bd52325cc02ed0e510f0edc21d6">WriteFloatArray</a> (const ON_2iSize &amp;size, float *buffer) const</td></tr>
+<tr class="memitem:aefb04bd52325cc02ed0e510f0edc21d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_texture_evaluator.html#aefb04bd52325cc02ed0e510f0edc21d6">WriteFloatArray</a> (const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;size, float *buffer) const</td></tr>
 <tr class="separator:aefb04bd52325cc02ed0e510f0edc21d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -254,19 +254,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool IRhRdkTextureEvaluator::GetColor </td>
           <td>(</td>
-          <td class="paramtype">const ON_3dPoint &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
           <td class="paramname"><em>uvw</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ON_3dVector &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
           <td class="paramname"><em>duvwdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ON_3dVector &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
           <td class="paramname"><em>duvwdy</em>, </td>
         </tr>
         <tr>
@@ -391,7 +391,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool IRhRdkTextureEvaluator::WriteByteArray </td>
           <td>(</td>
-          <td class="paramtype">const ON_2iSize &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -419,7 +419,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool IRhRdkTextureEvaluator::WriteFloatArray </td>
           <td>(</td>
-          <td class="paramtype">const ON_2iSize &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -441,7 +441,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 12:39:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2020 14:00:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

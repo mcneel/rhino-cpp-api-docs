@@ -83,7 +83,7 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d4ffd57e3e33b023d9b43359581a54c"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_post_effect_thread_engine.html#a8d4ffd57e3e33b023d9b43359581a54c">EVF</a> (const wchar_t *, void *)=0</td></tr>
 <tr class="separator:a8d4ffd57e3e33b023d9b43359581a54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8467db6b4e9c52b49b68152822bd7067"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_post_effect_thread_engine.html#a8467db6b4e9c52b49b68152822bd7067">RunPostEffect</a> (<a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html">IJob</a> &amp;job, <a class="el" href="class_i_rh_rdk_post_effect_pipeline.html">IRhRdkPostEffectPipeline</a> &amp;pepl, const <a class="el" href="class_i_rh_rdk_post_effect.html">IRhRdkPostEffect</a> &amp;pe, const ON_4iRect &amp;rect, const ON_SimpleArray&lt; UUID &gt; &amp;aChanId, void *pExtension)=0</td></tr>
+<tr class="memitem:a8467db6b4e9c52b49b68152822bd7067"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_post_effect_thread_engine.html#a8467db6b4e9c52b49b68152822bd7067">RunPostEffect</a> (<a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html">IJob</a> &amp;job, <a class="el" href="class_i_rh_rdk_post_effect_pipeline.html">IRhRdkPostEffectPipeline</a> &amp;pepl, const <a class="el" href="class_i_rh_rdk_post_effect.html">IRhRdkPostEffect</a> &amp;pe, const <a class="el" href="class_o_n__4i_rect.html">ON_4iRect</a> &amp;rect, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; UUID &gt; &amp;aChanId, void *pExtension)=0</td></tr>
 <tr class="separator:a8467db6b4e9c52b49b68152822bd7067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -93,7 +93,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows post effects to run asynchronously (off of the main thread) by queuing jobs that run on a worker thread. It is implemented by the RDK. Example usage:</p>
-<p>bool CMyPostEffect::Execute(IRhRdkPostEffectPipeline&amp; pepl, const ON_4iRect&amp; rect) const { CMyPostEffectJob job(*this); // Implements <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html">IRhRdkPostEffectThreadEngine::IJob</a> ON_SimpleArray&lt;UUID&gt; aChanId; aChanId.Append(IRhRdkRenderWindow::chanRGBA); aChanId.Append(...); return pepl.ThreadEngine().RunPostEffect(job, pepl, *this, rect, aChanId, nullptr); } </p>
+<p>bool CMyPostEffect::Execute(IRhRdkPostEffectPipeline&amp; pepl, const ON_4iRect&amp; rect) const { CMyPostEffectJob job(*this); // Implements <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html">IRhRdkPostEffectThreadEngine::IJob</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt;UUID&gt;</a> aChanId; aChanId.Append(IRhRdkRenderWindow::chanRGBA); aChanId.Append(...); return pepl.ThreadEngine().RunPostEffect(job, pepl, *this, rect, aChanId, nullptr); } </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa80d2fe784a8ac40e1695431970dd081"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa80d2fe784a8ac40e1695431970dd081">&#9670;&nbsp;</a></span>~IRhRdkPostEffectThreadEngine()</h2>
@@ -188,13 +188,13 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ON_4iRect &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__4i_rect.html">ON_4iRect</a> &amp;&#160;</td>
           <td class="paramname"><em>rect</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ON_SimpleArray&lt; UUID &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; UUID &gt; &amp;&#160;</td>
           <td class="paramname"><em>aChanId</em>, </td>
         </tr>
         <tr>
@@ -233,7 +233,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 12:39:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2020 14:00:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
