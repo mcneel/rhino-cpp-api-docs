@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['tagcustominfo_28298',['tagCUSTOMINFO',['../struct_c_rhino_ui_tabbed_sheet_ctrl_msg_1_1tag_c_u_s_t_o_m_i_n_f_o.html',1,'CRhinoUiTabbedSheetCtrlMsg']]],
-  ['tagfontkey_28299',['tagFontKey',['../structtag_font_key.html',1,'']]],
-  ['tagmakeradiussplinedata_28300',['tagMakeRadiusSplineData',['../structtag_make_radius_spline_data.html',1,'']]],
-  ['tagrh_5fline_28301',['tagRH_LINE',['../structtag_r_h___l_i_n_e.html',1,'']]],
-  ['tagrhinouioptionslistctrlnm_28302',['tagRhinoUiOptionsListCtrlNM',['../structtag_rhino_ui_options_list_ctrl_n_m.html',1,'']]],
-  ['textfieldupdater_28303',['TextFieldUpdater',['../class_c_rhino_annotation_1_1_text_field_updater.html',1,'CRhinoAnnotation']]],
-  ['textprops_28304',['TextProps',['../class_o_n___text_builder_1_1_text_props.html',1,'ON_TextBuilder']]],
-  ['textrun_28305',['TextRun',['../class_o_n___rtf_string_builder_1_1_text_run.html',1,'ON_RtfStringBuilder::TextRun'],['../class_o_n___rtf_first_char_1_1_text_run.html',1,'ON_RtfFirstChar::TextRun']]],
-  ['texturechannelinfo_28306',['TextureChannelInfo',['../class_c_rh_rdk_content_1_1_texture_channel_info.html',1,'CRhRdkContent']]],
-  ['this_28307',['This',['../class_c_item_1_1_this.html',1,'This'],['../class_i_meta_data_1_1_this.html',1,'This']]]
+  ['unique_5fptr_5577',['unique_ptr',['../class_c_rh_rdk_content_1_1unique__ptr.html',1,'CRhRdkContent']]],
+  ['unique_5fptr_3c_20crhrdkcontent_20_3e_5578',['unique_ptr&lt; CRhRdkContent &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_content_01_4.html',1,'std']]],
+  ['unique_5fptr_3c_20crhrdkenvironment_20_3e_5579',['unique_ptr&lt; CRhRdkEnvironment &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_environment_01_4.html',1,'std']]],
+  ['unique_5fptr_3c_20crhrdkmaterial_20_3e_5580',['unique_ptr&lt; CRhRdkMaterial &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_material_01_4.html',1,'std']]],
+  ['unique_5fptr_3c_20crhrdktexture_20_3e_5581',['unique_ptr&lt; CRhRdkTexture &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_texture_01_4.html',1,'std']]]
 ];

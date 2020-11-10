@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['unique_5fptr_28308',['unique_ptr',['../class_c_rh_rdk_content_1_1unique__ptr.html',1,'CRhRdkContent']]],
-  ['unique_5fptr_3c_20crhrdkcontent_20_3e_28309',['unique_ptr&lt; CRhRdkContent &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_content_01_4.html',1,'std']]],
-  ['unique_5fptr_3c_20crhrdkenvironment_20_3e_28310',['unique_ptr&lt; CRhRdkEnvironment &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_environment_01_4.html',1,'std']]],
-  ['unique_5fptr_3c_20crhrdkmaterial_20_3e_28311',['unique_ptr&lt; CRhRdkMaterial &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_material_01_4.html',1,'std']]],
-  ['unique_5fptr_3c_20crhrdktexture_20_3e_28312',['unique_ptr&lt; CRhRdkTexture &gt;',['../classstd_1_1unique__ptr_3_01_c_rh_rdk_texture_01_4.html',1,'std']]]
+  ['write_5fto_5fbyte_5fdata_5582',['WRITE_TO_BYTE_DATA',['../struct_c_rh_rdk_texture_evaluator_1_1_w_r_i_t_e___t_o___b_y_t_e___d_a_t_a.html',1,'CRhRdkTextureEvaluator']]],
+  ['write_5fto_5ffloat_5fdata_5583',['WRITE_TO_FLOAT_DATA',['../struct_c_rh_rdk_texture_evaluator_1_1_w_r_i_t_e___t_o___f_l_o_a_t___d_a_t_a.html',1,'CRhRdkTextureEvaluator']]]
 ];

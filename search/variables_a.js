@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['j_45603',['J',['../class_o_n___quaternion.html#a68ec3851e8d2ee8774e541eea06a69cb',1,'ON_Quaternion::J()'],['../union_o_n___u.html#aaf4e54e238e1b80ce6f2a325621de581',1,'ON_U::j()'],['../class_o_n__2dex.html#ad8d057cecc165d8c8c1647544a15569e',1,'ON_2dex::j()'],['../class_o_n__2udex.html#a033c8282e62810853c304484c1bd9e4e',1,'ON_2udex::j()'],['../class_o_n__3dex.html#ad9c07965492159baa291b3c6361fe22b',1,'ON_3dex::j()'],['../class_o_n__3udex.html#abf6aa66c451a50c4aa2e5f84d721b6a1',1,'ON_3udex::j()'],['../class_o_n__4dex.html#afd598fad7fe50ff9a2ea9937ce78d9a6',1,'ON_4dex::j()'],['../class_o_n__4udex.html#aff4ca4b0a68e7c00cc4741203fb153d1',1,'ON_4udex::j()']]]
+  ['newcontentctrl_8766',['NewContentCtrl',['../group___r_d_k.html#gac05068dc01e162be8c148254a4dfe3a7',1,'RhRdkDefinitions.h']]],
+  ['newcontentctrldropdown_8767',['NewContentCtrlDropDown',['../group___r_d_k.html#gab3b8604171b31d5c223b8b00dbe97a0a',1,'RhRdkDefinitions.h']]]
 ];

@@ -1,26 +1,24 @@
 /*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
+@licstart  The following is the entire license notice for the
+JavaScript code in this file.
 
- The MIT License (MIT)
+Copyright (C) 1997-2019 by Dimitri van Heesch
 
- Copyright (C) 1997-2020 by Dimitri van Heesch
+This program is free software; you can redistribute it and/or modify
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
 
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
+@licend  The above is the entire license notice
+for the JavaScript code in this file
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
@@ -90,57 +88,41 @@ var menudata={children:[
 {text:"z",url:"functions_func_z.html#index_z"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
-{text:"_",url:"functions_vars.html#index__5F"},
-{text:"a",url:"functions_vars_a.html#index_a"},
-{text:"b",url:"functions_vars_b.html#index_b"},
-{text:"c",url:"functions_vars_c.html#index_c"},
-{text:"d",url:"functions_vars_d.html#index_d"},
-{text:"e",url:"functions_vars_e.html#index_e"},
-{text:"f",url:"functions_vars_f.html#index_f"},
-{text:"g",url:"functions_vars_g.html#index_g"},
-{text:"h",url:"functions_vars_h.html#index_h"},
-{text:"i",url:"functions_vars_i.html#index_i"},
-{text:"j",url:"functions_vars_j.html#index_j"},
-{text:"k",url:"functions_vars_k.html#index_k"},
-{text:"l",url:"functions_vars_l.html#index_l"},
-{text:"m",url:"functions_vars_m.html#index_m"},
-{text:"n",url:"functions_vars_n.html#index_n"},
-{text:"o",url:"functions_vars_o.html#index_o"},
-{text:"p",url:"functions_vars_p.html#index_p"},
-{text:"q",url:"functions_vars_q.html#index_q"},
-{text:"r",url:"functions_vars_r.html#index_r"},
-{text:"s",url:"functions_vars_s.html#index_s"},
-{text:"t",url:"functions_vars_t.html#index_t"},
-{text:"u",url:"functions_vars_u.html#index_u"},
-{text:"v",url:"functions_vars_v.html#index_v"},
-{text:"w",url:"functions_vars_w.html#index_w"},
-{text:"x",url:"functions_vars_x.html#index_x"},
-{text:"y",url:"functions_vars_y.html#index_y"},
-{text:"z",url:"functions_vars_z.html#index_z"}]},
+{text:"b",url:"functions_vars.html#index_b"},
+{text:"c",url:"functions_vars.html#index_c"},
+{text:"e",url:"functions_vars.html#index_e"},
+{text:"f",url:"functions_vars.html#index_f"},
+{text:"k",url:"functions_vars.html#index_k"},
+{text:"m",url:"functions_vars.html#index_m"},
+{text:"p",url:"functions_vars.html#index_p"},
+{text:"s",url:"functions_vars.html#index_s"},
+{text:"t",url:"functions_vars.html#index_t"},
+{text:"u",url:"functions_vars.html#index_u"},
+{text:"v",url:"functions_vars.html#index_v"},
+{text:"w",url:"functions_vars.html#index_w"}]},
 {text:"Typedefs",url:"functions_type.html"},
 {text:"Enumerations",url:"functions_enum.html",children:[
 {text:"a",url:"functions_enum.html#index_a"},
-{text:"b",url:"functions_enum_b.html#index_b"},
-{text:"c",url:"functions_enum_c.html#index_c"},
-{text:"d",url:"functions_enum_d.html#index_d"},
-{text:"e",url:"functions_enum_e.html#index_e"},
-{text:"f",url:"functions_enum_f.html#index_f"},
-{text:"g",url:"functions_enum_g.html#index_g"},
-{text:"h",url:"functions_enum_h.html#index_h"},
-{text:"i",url:"functions_enum_i.html#index_i"},
-{text:"k",url:"functions_enum_k.html#index_k"},
-{text:"l",url:"functions_enum_l.html#index_l"},
-{text:"m",url:"functions_enum_m.html#index_m"},
-{text:"n",url:"functions_enum_n.html#index_n"},
-{text:"o",url:"functions_enum_o.html#index_o"},
-{text:"p",url:"functions_enum_p.html#index_p"},
-{text:"q",url:"functions_enum_q.html#index_q"},
-{text:"r",url:"functions_enum_r.html#index_r"},
-{text:"s",url:"functions_enum_s.html#index_s"},
-{text:"t",url:"functions_enum_t.html#index_t"},
-{text:"u",url:"functions_enum_u.html#index_u"},
-{text:"v",url:"functions_enum_v.html#index_v"},
-{text:"w",url:"functions_enum_w.html#index_w"}]},
+{text:"b",url:"functions_enum.html#index_b"},
+{text:"c",url:"functions_enum.html#index_c"},
+{text:"d",url:"functions_enum.html#index_d"},
+{text:"e",url:"functions_enum.html#index_e"},
+{text:"f",url:"functions_enum.html#index_f"},
+{text:"h",url:"functions_enum.html#index_h"},
+{text:"i",url:"functions_enum.html#index_i"},
+{text:"k",url:"functions_enum.html#index_k"},
+{text:"l",url:"functions_enum.html#index_l"},
+{text:"m",url:"functions_enum.html#index_m"},
+{text:"n",url:"functions_enum.html#index_n"},
+{text:"o",url:"functions_enum.html#index_o"},
+{text:"p",url:"functions_enum.html#index_p"},
+{text:"q",url:"functions_enum.html#index_q"},
+{text:"r",url:"functions_enum.html#index_r"},
+{text:"s",url:"functions_enum.html#index_s"},
+{text:"t",url:"functions_enum.html#index_t"},
+{text:"u",url:"functions_enum.html#index_u"},
+{text:"v",url:"functions_enum.html#index_v"},
+{text:"w",url:"functions_enum.html#index_w"}]},
 {text:"Enumerator",url:"functions_eval.html",children:[
 {text:"a",url:"functions_eval.html#index_a"},
 {text:"b",url:"functions_eval_b.html#index_b"},
@@ -151,7 +133,6 @@ var menudata={children:[
 {text:"g",url:"functions_eval_g.html#index_g"},
 {text:"h",url:"functions_eval_h.html#index_h"},
 {text:"i",url:"functions_eval_i.html#index_i"},
-{text:"j",url:"functions_eval_j.html#index_j"},
 {text:"k",url:"functions_eval_k.html#index_k"},
 {text:"l",url:"functions_eval_l.html#index_l"},
 {text:"m",url:"functions_eval_m.html#index_m"},
@@ -164,18 +145,5 @@ var menudata={children:[
 {text:"t",url:"functions_eval_t.html#index_t"},
 {text:"u",url:"functions_eval_u.html#index_u"},
 {text:"v",url:"functions_eval_v.html#index_v"},
-{text:"w",url:"functions_eval_w.html#index_w"},
-{text:"x",url:"functions_eval_x.html#index_x"},
-{text:"y",url:"functions_eval_y.html#index_y"},
-{text:"z",url:"functions_eval_z.html#index_z"}]},
-{text:"Related Functions",url:"functions_rela.html",children:[
-{text:"a",url:"functions_rela.html#index_a"},
-{text:"c",url:"functions_rela_c.html#index_c"},
-{text:"d",url:"functions_rela_d.html#index_d"},
-{text:"g",url:"functions_rela_g.html#index_g"},
-{text:"i",url:"functions_rela_i.html#index_i"},
-{text:"o",url:"functions_rela_o.html#index_o"},
-{text:"q",url:"functions_rela_q.html#index_q"},
-{text:"r",url:"functions_rela_r.html#index_r"},
-{text:"s",url:"functions_rela_s.html#index_s"},
-{text:"t",url:"functions_rela_t.html#index_t"}]}]}]}]}
+{text:"w",url:"functions_eval_w.html#index_w"}]},
+{text:"Related Functions",url:"functions_rela.html"}]}]}]}
