@@ -1,8 +1,8 @@
 # Rhino C++ API Docs
 
-This repository houses the Doxygen-generated documentation for the Rhino C++ SDK.
+This repository houses the Doxygen-generated documentation for the Rhino C++ SDK (Windows only).
 
 Each product variation has its own branch:
 
-* [`wip`](../../tree/wip) - Rhino WIP for Windows
-* [`6`](../../tree/6) - Rhino 6 (beta) for Windows
+* [`7`](../../tree/7) - Rhino 7 for Windows
+* [`6`](../../tree/6) - Rhino 6 for Windows
