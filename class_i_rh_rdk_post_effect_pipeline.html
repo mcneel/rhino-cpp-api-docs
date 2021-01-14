@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -82,17 +82,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7af152862662ff12e8be8bd6741b5bf9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: int { <br />
-&#160;&#160;<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9a68063fd41c957bd69f82e0a024099ef5">CreationFlags_None</a> = 0x00, 
-<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9aa85ea5e648277884ec781013aec68b31">CreationFlags_DisableEarlyPostEffects</a> = 0x01, 
-<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9a25e1dabfda673ad34777d929176d2c6e">CreationFlags_DisableToneMappingPostEffects</a> = 0x02, 
-<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9a50b17b90f9860dc31a203a629dafb80d">CreationFlags_DisableLatePostEffects</a> = 0x04, 
+<tr class="memitem:a47ab31e05dd73ee5b11be020dd076971"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: int { <br />
+&#160;&#160;<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971a68063fd41c957bd69f82e0a024099ef5">CreationFlags_None</a> = 0x00, 
+<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971aa85ea5e648277884ec781013aec68b31">CreationFlags_DisableEarlyPostEffects</a> = 0x01, 
+<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971a25e1dabfda673ad34777d929176d2c6e">CreationFlags_DisableToneMappingPostEffects</a> = 0x02, 
+<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971a50b17b90f9860dc31a203a629dafb80d">CreationFlags_DisableLatePostEffects</a> = 0x04, 
 <br />
-&#160;&#160;<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9aad0278670caa5d3585558560bce3c419">CreationFlags_DisableGamma</a> = 0x08, 
-<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7af152862662ff12e8be8bd6741b5bf9a42f3a642b26e23c702f83107febc30f5">CreationFlags_DisableAllPostEffects</a>
+&#160;&#160;<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971aad0278670caa5d3585558560bce3c419">CreationFlags_DisableGamma</a> = 0x08, 
+<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a47ab31e05dd73ee5b11be020dd076971a42f3a642b26e23c702f83107febc30f5">CreationFlags_DisableAllPostEffects</a>
 <br />
  }</td></tr>
-<tr class="separator:a7af152862662ff12e8be8bd6741b5bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a47ab31e05dd73ee5b11be020dd076971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00bdfcc91d39dd24c13d334bf365530"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#ab00bdfcc91d39dd24c13d334bf365530">ExecuteContexts</a> { <br />
 &#160;&#160;<a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#ab00bdfcc91d39dd24c13d334bf365530a1d0c618e4152da972c5ee0c621ddb7fb">ExecuteContexts::ProductionRendering</a> = 0, 
 <a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#ab00bdfcc91d39dd24c13d334bf365530ab182d754b2d8e5de8439f564542991a2">ExecuteContexts::RealtimeRendering</a> = 1, 
@@ -167,8 +167,8 @@ Static Public Member Functions</h2></td></tr>
 <p>It is also possible for a post effect to create and use any number of 'scratch' channels. If a post effect needs a temporary pixel buffer for some intermediate results, it can call <a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a0634226cded759df286c00dbf2e8ba32">GetChannelForWrite()</a> with a custom (random) id. Once it is finished with this scratch channel, it will automatically be discarded by the pipeline.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_post_effect.html">IRhRdkPostEffect</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a7af152862662ff12e8be8bd6741b5bf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7af152862662ff12e8be8bd6741b5bf9">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a47ab31e05dd73ee5b11be020dd076971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ab31e05dd73ee5b11be020dd076971">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,12 +179,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9a68063fd41c957bd69f82e0a024099ef5"></a>CreationFlags_None&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9aa85ea5e648277884ec781013aec68b31"></a>CreationFlags_DisableEarlyPostEffects&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9a25e1dabfda673ad34777d929176d2c6e"></a>CreationFlags_DisableToneMappingPostEffects&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9a50b17b90f9860dc31a203a629dafb80d"></a>CreationFlags_DisableLatePostEffects&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9aad0278670caa5d3585558560bce3c419"></a>CreationFlags_DisableGamma&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7af152862662ff12e8be8bd6741b5bf9a42f3a642b26e23c702f83107febc30f5"></a>CreationFlags_DisableAllPostEffects&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971a68063fd41c957bd69f82e0a024099ef5"></a>CreationFlags_None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971aa85ea5e648277884ec781013aec68b31"></a>CreationFlags_DisableEarlyPostEffects&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971a25e1dabfda673ad34777d929176d2c6e"></a>CreationFlags_DisableToneMappingPostEffects&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971a50b17b90f9860dc31a203a629dafb80d"></a>CreationFlags_DisableLatePostEffects&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971aad0278670caa5d3585558560bce3c419"></a>CreationFlags_DisableGamma&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47ab31e05dd73ee5b11be020dd076971a42f3a642b26e23c702f83107febc30f5"></a>CreationFlags_DisableAllPostEffects&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -836,7 +836,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

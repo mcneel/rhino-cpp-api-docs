@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,15 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;opennurbs_rtree.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ON_RTree:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_o_n___r_tree.png" usemap="#ON_5FRTree_map" alt=""/>
+  <map id="ON_5FRTree_map" name="ON_5FRTree_map">
+<area href="class_o_n___sub_d_r_tree.html" alt="ON_SubDRTree" shape="rect" coords="0,56,103,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46db5e9d84bc480f1fa7550b09e1fbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2e00cbb7018e8ebce40218565ae0f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_o_n___r_tree_node.html">ON_RTreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#adc2e00cbb7018e8ebce40218565ae0f2">Root</a> () const</td></tr>
 <tr class="separator:adc2e00cbb7018e8ebce40218565ae0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286712bb1b482669cb61929d7098be08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a286712bb1b482669cb61929d7098be08">Search</a> (class <a class="el" href="class_o_n___line.html">ON_Line</a> *a_line, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
+<tr class="separator:a286712bb1b482669cb61929d7098be08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb48a60f59ea578c30939e1c45d1829e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#aeb48a60f59ea578c30939e1c45d1829e">Search</a> (const class <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> &amp;a_plane_eqn, double a_min, double a_max, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
 <tr class="separator:aeb48a60f59ea578c30939e1c45d1829e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f871f48b5e1ad3deeb8ac1b95921f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#ab4f871f48b5e1ad3deeb8ac1b95921f9">Search</a> (const double a_min[3], const double a_max[3], bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
@@ -128,8 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a691a5c09301cf8a7f869f762f9b51dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cffce7ab9b169a55f95f5a305299531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a7cffce7ab9b169a55f95f5a305299531">Search</a> (double tolerance, void <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_idA, ON__INT_PTR a_idB), void *a_context) const</td></tr>
 <tr class="separator:a7cffce7ab9b169a55f95f5a305299531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93488df03e8d43bf059881bb2dcfba93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a93488df03e8d43bf059881bb2dcfba93">Search</a> (<a class="el" href="struct_o_n___r_tree_b_box.html">ON_RTreeBBox</a> *a_rect, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
-<tr class="separator:a93488df03e8d43bf059881bb2dcfba93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b876c2f50a485f3b8fd6c8f49f01f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#ac6b876c2f50a485f3b8fd6c8f49f01f1">Search</a> (<a class="el" href="struct_o_n___r_tree_b_box.html">ON_RTreeBBox</a> *a_rect, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> a_resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
+<tr class="separator:ac6b876c2f50a485f3b8fd6c8f49f01f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178196eaa2fd6ca8317f62a13d853817"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a178196eaa2fd6ca8317f62a13d853817">Search</a> (<a class="el" href="struct_o_n___r_tree_capsule.html">ON_RTreeCapsule</a> *a_capsule, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
 <tr class="separator:a178196eaa2fd6ca8317f62a13d853817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8689767a0edbccf8ff7181f7b0af9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a3c8689767a0edbccf8ff7181f7b0af9b">Search</a> (<a class="el" href="struct_o_n___r_tree_sphere.html">ON_RTreeSphere</a> *a_sphere, bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> resultCallback(void *a_context, ON__INT_PTR a_id), void *a_context) const</td></tr>
@@ -565,8 +576,42 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a286712bb1b482669cb61929d7098be08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286712bb1b482669cb61929d7098be08">&#9670;&nbsp;</a></span>Search() <span class="overload">[1/19]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_RTree::Search </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="class_o_n___line.html">ON_Line</a> *&#160;</td>
+          <td class="paramname"><em>a_line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> &#160;</td>
+          <td class="paramname"><em>resultCallback</em>void *a_context, ON__INT_PTR a_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>a_context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeb48a60f59ea578c30939e1c45d1829e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb48a60f59ea578c30939e1c45d1829e">&#9670;&nbsp;</a></span>Search() <span class="overload">[1/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb48a60f59ea578c30939e1c45d1829e">&#9670;&nbsp;</a></span>Search() <span class="overload">[2/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,7 +657,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ab4f871f48b5e1ad3deeb8ac1b95921f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4f871f48b5e1ad3deeb8ac1b95921f9">&#9670;&nbsp;</a></span>Search() <span class="overload">[2/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f871f48b5e1ad3deeb8ac1b95921f9">&#9670;&nbsp;</a></span>Search() <span class="overload">[3/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,7 +697,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a14df7f1392e2f2c98ad5d4ced530187e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14df7f1392e2f2c98ad5d4ced530187e">&#9670;&nbsp;</a></span>Search() <span class="overload">[3/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14df7f1392e2f2c98ad5d4ced530187e">&#9670;&nbsp;</a></span>Search() <span class="overload">[4/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,7 +731,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ae18942534add216538d971d266ef62f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18942534add216538d971d266ef62f3">&#9670;&nbsp;</a></span>Search() <span class="overload">[4/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18942534add216538d971d266ef62f3">&#9670;&nbsp;</a></span>Search() <span class="overload">[5/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -720,7 +765,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aad04555e76f86ddd5359ceb6948a7df7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad04555e76f86ddd5359ceb6948a7df7">&#9670;&nbsp;</a></span>Search() <span class="overload">[5/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aad04555e76f86ddd5359ceb6948a7df7">&#9670;&nbsp;</a></span>Search() <span class="overload">[6/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,7 +799,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a88accd2ac677e2841d23ffbe041bdee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88accd2ac677e2841d23ffbe041bdee0">&#9670;&nbsp;</a></span>Search() <span class="overload">[6/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88accd2ac677e2841d23ffbe041bdee0">&#9670;&nbsp;</a></span>Search() <span class="overload">[7/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -788,7 +833,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a384a71567ae0e7f0b55acd0548fb1fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a384a71567ae0e7f0b55acd0548fb1fd6">&#9670;&nbsp;</a></span>Search() <span class="overload">[7/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a384a71567ae0e7f0b55acd0548fb1fd6">&#9670;&nbsp;</a></span>Search() <span class="overload">[8/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,7 +880,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a81130c40694f16ecc2cf8e1652972454"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81130c40694f16ecc2cf8e1652972454">&#9670;&nbsp;</a></span>Search() <span class="overload">[8/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81130c40694f16ecc2cf8e1652972454">&#9670;&nbsp;</a></span>Search() <span class="overload">[9/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,7 +935,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ac293e6ba656ac6e792f4c577fb0d98c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac293e6ba656ac6e792f4c577fb0d98c8">&#9670;&nbsp;</a></span>Search() <span class="overload">[9/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac293e6ba656ac6e792f4c577fb0d98c8">&#9670;&nbsp;</a></span>Search() <span class="overload">[10/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -945,7 +990,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a89495554a3643a1ceccf18fc3de4028f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89495554a3643a1ceccf18fc3de4028f">&#9670;&nbsp;</a></span>Search() <span class="overload">[10/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a89495554a3643a1ceccf18fc3de4028f">&#9670;&nbsp;</a></span>Search() <span class="overload">[11/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -994,7 +1039,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a305a82abc47dd0a6ea8ee89b06cf37da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305a82abc47dd0a6ea8ee89b06cf37da">&#9670;&nbsp;</a></span>Search() <span class="overload">[11/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a305a82abc47dd0a6ea8ee89b06cf37da">&#9670;&nbsp;</a></span>Search() <span class="overload">[12/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1094,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7ce5797e0f24dcfe60e4cb5d2a305551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce5797e0f24dcfe60e4cb5d2a305551">&#9670;&nbsp;</a></span>Search() <span class="overload">[12/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce5797e0f24dcfe60e4cb5d2a305551">&#9670;&nbsp;</a></span>Search() <span class="overload">[13/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1084,7 +1129,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ae86bf57453293f572bb791c449b23cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae86bf57453293f572bb791c449b23cdb">&#9670;&nbsp;</a></span>Search() <span class="overload">[13/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86bf57453293f572bb791c449b23cdb">&#9670;&nbsp;</a></span>Search() <span class="overload">[14/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1119,7 +1164,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a691a5c09301cf8a7f869f762f9b51dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a691a5c09301cf8a7f869f762f9b51dc8">&#9670;&nbsp;</a></span>Search() <span class="overload">[14/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a691a5c09301cf8a7f869f762f9b51dc8">&#9670;&nbsp;</a></span>Search() <span class="overload">[15/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1148,7 +1193,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7cffce7ab9b169a55f95f5a305299531"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cffce7ab9b169a55f95f5a305299531">&#9670;&nbsp;</a></span>Search() <span class="overload">[15/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cffce7ab9b169a55f95f5a305299531">&#9670;&nbsp;</a></span>Search() <span class="overload">[16/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1182,8 +1227,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a93488df03e8d43bf059881bb2dcfba93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93488df03e8d43bf059881bb2dcfba93">&#9670;&nbsp;</a></span>Search() <span class="overload">[16/18]</span></h2>
+<a id="ac6b876c2f50a485f3b8fd6c8f49f01f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b876c2f50a485f3b8fd6c8f49f01f1">&#9670;&nbsp;</a></span>Search() <span class="overload">[17/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1198,7 +1243,7 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool <a class="el" href="group__open_n_u_r_b_s.html#gad0bcf9ef6dd1615879df747010a25a05">ON_CALLBACK_CDECL</a> &#160;</td>
-          <td class="paramname"><em>resultCallback</em>void *a_context, ON__INT_PTR a_id, </td>
+          <td class="paramname"><em>a_resultCallback</em>void *a_context, ON__INT_PTR a_id, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1217,7 +1262,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a178196eaa2fd6ca8317f62a13d853817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a178196eaa2fd6ca8317f62a13d853817">&#9670;&nbsp;</a></span>Search() <span class="overload">[17/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a178196eaa2fd6ca8317f62a13d853817">&#9670;&nbsp;</a></span>Search() <span class="overload">[18/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1251,7 +1296,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a3c8689767a0edbccf8ff7181f7b0af9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c8689767a0edbccf8ff7181f7b0af9b">&#9670;&nbsp;</a></span>Search() <span class="overload">[18/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8689767a0edbccf8ff7181f7b0af9b">&#9670;&nbsp;</a></span>Search() <span class="overload">[19/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1505,7 +1550,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

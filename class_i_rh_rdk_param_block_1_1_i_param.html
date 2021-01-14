@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a622f0ef3a37e02e1d77580b93415f77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12f595e886944960162c84dedccce52"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#ac12f595e886944960162c84dedccce52">IsGreaterThan</a> (<a class="el" href="class_i_rh_rdk_param_block.html#ac76ba3510202fd08cd78342b969491bb">SortBy</a> by, const <a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html">IParam</a> &amp;p) const =0</td></tr>
 <tr class="separator:ac12f595e886944960162c84dedccce52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede41d386da452c1d16be0cce50f7f8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#aede41d386da452c1d16be0cce50f7f8b">IsHidden</a> (void) const</td></tr>
+<tr class="separator:aede41d386da452c1d16be0cce50f7f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b99145136bf3625ada0862ec7c78e5a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#a5b99145136bf3625ada0862ec7c78e5a">IsLessThan</a> (<a class="el" href="class_i_rh_rdk_param_block.html#ac76ba3510202fd08cd78342b969491bb">SortBy</a> by, const <a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html">IParam</a> &amp;p) const =0</td></tr>
 <tr class="separator:a5b99145136bf3625ada0862ec7c78e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e40c8539ea3eaee9491c55f7f64f31"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rh_rdk_variant.html">CRhRdkVariant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#a85e40c8539ea3eaee9491c55f7f64f31">Max</a> (void) const =0</td></tr>
@@ -104,6 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9758006f58e621b819e86e69a1216b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7375c23c7d53d30a1c4f016ef49681e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#a7375c23c7d53d30a1c4f016ef49681e0">SetIsEnabled</a> (bool bEnabled)=0</td></tr>
 <tr class="separator:a7375c23c7d53d30a1c4f016ef49681e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d803bb93874ef27ee8fda8451282b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#aa5d803bb93874ef27ee8fda8451282b5">SetIsHidden</a> (bool bHidden)</td></tr>
+<tr class="separator:aa5d803bb93874ef27ee8fda8451282b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321aaa7547b8fb2a912241764e78bd0e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#a321aaa7547b8fb2a912241764e78bd0e">SetValue</a> (const <a class="el" href="class_c_rh_rdk_variant.html">CRhRdkVariant</a> &amp;v)=0</td></tr>
 <tr class="separator:a321aaa7547b8fb2a912241764e78bd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a303ce540dc1f941d4daf043ed10d2b3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_rh_rdk_param_block.html#a014692d4617ac539296a23a9db10cdb4">UiHints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_param_block_1_1_i_param.html#a303ce540dc1f941d4daf043ed10d2b3e">UiHint</a> (void) const =0</td></tr>
@@ -340,6 +344,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aede41d386da452c1d16be0cce50f7f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede41d386da452c1d16be0cce50f7f8b">&#9670;&nbsp;</a></span>IsHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRhRdkParamBlock::IParam::IsHidden </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5b99145136bf3625ada0862ec7c78e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b99145136bf3625ada0862ec7c78e5a">&#9670;&nbsp;</a></span>IsLessThan()</h2>
 
@@ -480,6 +502,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa5d803bb93874ef27ee8fda8451282b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d803bb93874ef27ee8fda8451282b5">&#9670;&nbsp;</a></span>SetIsHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRhRdkParamBlock::IParam::SetIsHidden </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bHidden</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a321aaa7547b8fb2a912241764e78bd0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a321aaa7547b8fb2a912241764e78bd0e">&#9670;&nbsp;</a></span>SetValue()</h2>
 
@@ -561,7 +601,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

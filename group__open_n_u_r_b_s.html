@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -928,7 +928,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_matrix.html">ON_SubDMatrix</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html">ON_SubDMesh</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a traditional quad mesh of either a SubgD surface or SubD control net....">ON_SubDMesh</a> is used to store a traditional quad mesh of either a SubgD surface or SubD control net. It is typically used for rendering and user interface selection cacluations. It is a list of <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a> classes.  <a href="class_o_n___sub_d_mesh.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a high density traditional quad mesh of a SubD surface or a mesh of a Su...">ON_SubDMesh</a> is used to store a high density traditional quad mesh of a SubD surface or a mesh of a SubD control net. In general, is is better to use an <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator(subd)</a> that iterates the ON_MeshFragments cached on the <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>.  <a href="class_o_n___sub_d_mesh.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -943,6 +943,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_quad_neighborhood.html">ON_SubDQuadNeighborhood</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_ref.html">ON_SubDRef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree.html">ON_SubDRTree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_id.html">ON_SubDSectorId</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1208,11 +1212,11 @@ Macros</h2></td></tr>
 <tr class="separator:ga0a71ca917456bcc1d24c9c8611c592fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56d6bdd6ca1ce57f2f6d2dcb43f9f79e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga56d6bdd6ca1ce57f2f6d2dcb43f9f79e">ON_ArrayCount</a>(a)&#160;&#160;&#160;(sizeof(a)/sizeof((a)[0]))</td></tr>
 <tr class="separator:ga56d6bdd6ca1ce57f2f6d2dcb43f9f79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97f8e68d49e5645d0678d119da7433fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga97f8e68d49e5645d0678d119da7433fa">ON_ASSERT</a>(cond)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga6ee8d414856f7a6d3bf545f0dd3db218">ON_REMOVE_ASAP_AssertEx</a>(cond,__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;)</td></tr>
+<tr class="memitem:ga97f8e68d49e5645d0678d119da7433fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga97f8e68d49e5645d0678d119da7433fa">ON_ASSERT</a>(cond)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga6ee8d414856f7a6d3bf545f0dd3db218">ON_REMOVE_ASAP_AssertEx</a>(cond,__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;)</td></tr>
 <tr class="separator:ga97f8e68d49e5645d0678d119da7433fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e02e8726d020c7d80597ada8d944906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga8e02e8726d020c7d80597ada8d944906">ON_ASSERT_OR_RETURN</a>(cond,  returncode)&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;);return(returncode);}}while(0)</td></tr>
+<tr class="memitem:ga8e02e8726d020c7d80597ada8d944906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga8e02e8726d020c7d80597ada8d944906">ON_ASSERT_OR_RETURN</a>(cond,  returncode)&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;);return(returncode);}}while(0)</td></tr>
 <tr class="separator:ga8e02e8726d020c7d80597ada8d944906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac28499550dc416cf6703e3526640e91f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gac28499550dc416cf6703e3526640e91f">ON_ASSERT_OR_RETURNVOID</a>(cond)&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;);return;}}while(0)</td></tr>
+<tr class="memitem:gac28499550dc416cf6703e3526640e91f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gac28499550dc416cf6703e3526640e91f">ON_ASSERT_OR_RETURNVOID</a>(cond)&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;);return;}}while(0)</td></tr>
 <tr class="separator:gac28499550dc416cf6703e3526640e91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29e1849094cd38666849f5b5d09109c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga29e1849094cd38666849f5b5d09109c4">ON_BEGIN_EXTERNC</a>&#160;&#160;&#160;extern &quot;C&quot; {</td></tr>
 <tr class="separator:ga29e1849094cd38666849f5b5d09109c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1272,7 +1276,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga05f957624c4319a2e3b450ee0b366782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga05f957624c4319a2e3b450ee0b366782">ON_EPSILON</a>&#160;&#160;&#160;2.2204460492503131e-16</td></tr>
 <tr class="memdesc:ga05f957624c4319a2e3b450ee0b366782"><td class="mdescLeft">&#160;</td><td class="mdescRight">ON_EPSILON = 2^-52.  <a href="group__open_n_u_r_b_s.html#ga05f957624c4319a2e3b450ee0b366782">More...</a><br /></td></tr>
 <tr class="separator:ga05f957624c4319a2e3b450ee0b366782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0a1a145d1eca936aad3c8a9ce43e025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaf0a1a145d1eca936aad3c8a9ce43e025">ON_ERROR</a>(msg)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>,msg)</td></tr>
+<tr class="memitem:gaf0a1a145d1eca936aad3c8a9ce43e025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaf0a1a145d1eca936aad3c8a9ce43e025">ON_ERROR</a>(msg)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__,msg)</td></tr>
 <tr class="separator:gaf0a1a145d1eca936aad3c8a9ce43e025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2c7d6d50102d1bb68a2c9e1f3ed0080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gae2c7d6d50102d1bb68a2c9e1f3ed0080">ON_EXTERN_DECL</a></td></tr>
 <tr class="separator:gae2c7d6d50102d1bb68a2c9e1f3ed0080"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1368,6 +1372,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga01debcd6fd1ad196b0483b9c6b8e4763"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga01debcd6fd1ad196b0483b9c6b8e4763">ON_fzaxis</a>&#160;&#160;&#160;<a class="el" href="class_o_n__3f_vector.html#a054af42dbc93311578c287f07c06c543">ON_3fVector::ZAxis</a></td></tr>
 <tr class="memdesc:ga01debcd6fd1ad196b0483b9c6b8e4763"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSOLETE - use <a class="el" href="class_o_n__3f_vector.html#a054af42dbc93311578c287f07c06c543" title="(0.0f,0.0f,1.0f)">ON_3fVector::ZAxis</a>.  <a href="group__open_n_u_r_b_s.html#ga01debcd6fd1ad196b0483b9c6b8e4763">More...</a><br /></td></tr>
 <tr class="separator:ga01debcd6fd1ad196b0483b9c6b8e4763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59dcb24f1a9fbef43b038908dd6aca3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga59dcb24f1a9fbef43b038908dd6aca3e">ON_HALFPI</a>&#160;&#160;&#160;(0.5*<a class="el" href="group__open_n_u_r_b_s.html#ga567b3dfd21d32dce11fcfd5493a93113">ON_PI</a>)</td></tr>
+<tr class="separator:ga59dcb24f1a9fbef43b038908dd6aca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71539b5b1da9b6169f7cdc9226e2f620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga71539b5b1da9b6169f7cdc9226e2f620">ON_HAS_RVALUEREF</a></td></tr>
 <tr class="separator:ga71539b5b1da9b6169f7cdc9226e2f620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga208dc8c6ec3ef50252c7e71720f96f10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga208dc8c6ec3ef50252c7e71720f96f10">ON_HSORT_COPY</a>(dst,  src)&#160;&#160;&#160;*dst = *src</td></tr>
@@ -1383,6 +1389,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga9a5c66213df06f1c7296591be30867d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb7c5c0bbc2f3a5bd756d8ad09236b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gadb7c5c0bbc2f3a5bd756d8ad09236b4d">ON_INT_FROM_ENUM</a>(e)&#160;&#160;&#160;((int)static_cast&lt;unsigned int&gt;(e))</td></tr>
 <tr class="separator:gadb7c5c0bbc2f3a5bd756d8ad09236b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga758b4f053d50a2e1325da79a50c50530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga758b4f053d50a2e1325da79a50c50530">ON_INTERNAL_SDK</a></td></tr>
+<tr class="separator:ga758b4f053d50a2e1325da79a50c50530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56913e7f038d0efac80183fb187f1354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga56913e7f038d0efac80183fb187f1354">ON_IntSleepLock_Set</a>(lock,  lock_value)&#160;&#160;&#160;lock; lock=lock_value</td></tr>
 <tr class="separator:ga56913e7f038d0efac80183fb187f1354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f4995af61827b536606e929fc3826f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga7f4995af61827b536606e929fc3826f2">ON_IntSleepLock_Test</a>(lock,  test_value,  sleep_value)&#160;&#160;&#160;lock; if (test_value==lock) lock=sleep_value</td></tr>
@@ -1576,8 +1584,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga44e6c617e569818c88d1ca1a4f97de01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8fc03a37ae29eb5d8a4670076ebd4b14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga8fc03a37ae29eb5d8a4670076ebd4b14">ON_VIRTUAL_OBJECT_IMPLEMENT</a>(cls,  basecls,  uuid)</td></tr>
 <tr class="separator:ga8fc03a37ae29eb5d8a4670076ebd4b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ffb4b70cba32fdaf2cd2496bafc0cc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga4ffb4b70cba32fdaf2cd2496bafc0cc3">ON_WARNING</a>(msg)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga4975d322c22f8c393db7ac81e4e65ecc">ON_WarningEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>,msg)</td></tr>
+<tr class="memitem:ga4ffb4b70cba32fdaf2cd2496bafc0cc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga4ffb4b70cba32fdaf2cd2496bafc0cc3">ON_WARNING</a>(msg)&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga4975d322c22f8c393db7ac81e4e65ecc">ON_WarningEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__,msg)</td></tr>
 <tr class="separator:ga4ffb4b70cba32fdaf2cd2496bafc0cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86eee0ec4181c58610cf6af6a1f07a2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga86eee0ec4181c58610cf6af6a1f07a2a">ON_WIP_SDK</a></td></tr>
+<tr class="separator:ga86eee0ec4181c58610cf6af6a1f07a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadacf43fd272140da04e1c61dce8012d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaadacf43fd272140da04e1c61dce8012d">ON_xaxis</a>&#160;&#160;&#160;<a class="el" href="class_o_n__3d_vector.html#a4b675a2d0f83449536666eb740176d35">ON_3dVector::XAxis</a></td></tr>
 <tr class="memdesc:gaadacf43fd272140da04e1c61dce8012d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSOLETE - use <a class="el" href="class_o_n__3d_vector.html#a4b675a2d0f83449536666eb740176d35" title="(1.0,0.0,0.0)">ON_3dVector::XAxis</a>.  <a href="group__open_n_u_r_b_s.html#gaadacf43fd272140da04e1c61dce8012d">More...</a><br /></td></tr>
 <tr class="separator:gaadacf43fd272140da04e1c61dce8012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1591,9 +1601,6 @@ Macros</h2></td></tr>
 <tr class="separator:ga3fdf38db9b8e6542ec315fbc9fda1a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga384d9713cff6f46d203437be118aab80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>&#160;&#160;&#160;2.3283064365386962890625e-10</td></tr>
 <tr class="separator:ga384d9713cff6f46d203437be118aab80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3371f6e7dfb84e72ff53cb3a453e786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
-<tr class="memdesc:gad3371f6e7dfb84e72ff53cb3a453e786"><td class="mdescLeft">&#160;</td><td class="mdescRight">For definition of PRIu64 to print 64-bit ints portably.  <a href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">More...</a><br /></td></tr>
-<tr class="separator:gad3371f6e7dfb84e72ff53cb3a453e786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ce6e0e1e15bf735c69212f837fe57c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga4ce6e0e1e15bf735c69212f837fe57c2">OPENNURBS_CURRENT_ARCHIVE_VERSION</a>&#160;&#160;&#160;70</td></tr>
 <tr class="separator:ga4ce6e0e1e15bf735c69212f837fe57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga082115a3915a8f2a29fb7bbe7cbca7e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga082115a3915a8f2a29fb7bbe7cbca7e8">OPENNURBS_GIT_BRANCH_NAME</a>&#160;&#160;&#160;RMA_GIT_BRANCH_NAME_STRING</td></tr>
@@ -3489,8 +3496,12 @@ Functions</h2></td></tr>
 <tr class="separator:gad3cae33426cb61187a68c2802fb182f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga12ee713168c2a04f40d453f6d0bff58c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga12ee713168c2a04f40d453f6d0bff58c">ON_IsSNaNf</a> (float x)</td></tr>
 <tr class="separator:ga12ee713168c2a04f40d453f6d0bff58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae81c16db1f1571e27020f9e2b9a9dfc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gae81c16db1f1571e27020f9e2b9a9dfc3">ON_IsUnicodeC1ControlCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> u)</td></tr>
+<tr class="separator:gae81c16db1f1571e27020f9e2b9a9dfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d4717ad1f87ac2c553b4cb1a0953cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga3d4717ad1f87ac2c553b4cb1a0953cec">ON_IsUnicodeControlCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> code_point, bool bNullReturnValue)</td></tr>
 <tr class="separator:ga3d4717ad1f87ac2c553b4cb1a0953cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d16d16554b4e2aace52c3e318dbacdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga9d16d16554b4e2aace52c3e318dbacdc">ON_IsUnicodeSpaceCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> u)</td></tr>
+<tr class="separator:ga9d16d16554b4e2aace52c3e318dbacdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1286ecc7239639528f6b6074e7f4cb38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> enum <a class="el" href="group__open_n_u_r_b_s.html#gace1eaf0d47350b950fe0175b881b282e">ON_UnicodeEncoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga1286ecc7239639528f6b6074e7f4cb38">ON_IsUTFByteOrderMark</a> (const void *buffer, size_t sizeof_buffer)</td></tr>
 <tr class="separator:ga1286ecc7239639528f6b6074e7f4cb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb8e4365650ce6252f4ef508b929a1a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaeb8e4365650ce6252f4ef508b929a1a6">ON_IsValid</a> (double x)</td></tr>
@@ -3715,6 +3726,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae08382ec5360ad080edb8e4aa5a10b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga61cb5a6574966ce2da4dde750878b8ba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga61cb5a6574966ce2da4dde750878b8ba">ON_ParseUuidString</a> (const char *sUUID, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> *uuid)</td></tr>
 <tr class="separator:ga61cb5a6574966ce2da4dde750878b8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf877f1877330143f26bf319d578cda35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaf877f1877330143f26bf319d578cda35">ON_PassesNanTest</a> ()</td></tr>
+<tr class="separator:gaf877f1877330143f26bf319d578cda35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c808ee860d79902da366af7f8d68db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga1c808ee860d79902da366af7f8d68db5">ON_PointGridBoundingBox</a> (int dim, bool is_rat, int point_count0, int point_count1, int point_stride0, int point_stride1, const double *point_grid)</td></tr>
 <tr class="separator:ga1c808ee860d79902da366af7f8d68db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacbf57c73ec357dced6f9c712cc367980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gacbf57c73ec357dced6f9c712cc367980">ON_PointListBoundingBox</a> (int dim, bool is_rat, int count, int stride, const double *point_list)</td></tr>
@@ -4779,6 +4792,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>double precision ON_2PI = 2.0*ON_PI. ON_2PI radians = 360 degrees. </p>
 
 </div>
 </div>
@@ -4829,7 +4843,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">cond</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga6ee8d414856f7a6d3bf545f0dd3db218">ON_REMOVE_ASAP_AssertEx</a>(cond,__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga6ee8d414856f7a6d3bf545f0dd3db218">ON_REMOVE_ASAP_AssertEx</a>(cond,__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4859,7 +4873,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;);return(returncode);}}while(0)</td>
+          <td></td><td>&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;);return(returncode);}}while(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4877,7 +4891,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">cond</td><td>)</td>
-          <td>&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>, #cond &quot; is false&quot;);return;}}while(0)</td>
+          <td>&#160;&#160;&#160;do{if (!(cond)) {<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__, #cond &quot; is false&quot;);return;}}while(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5137,6 +5151,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>angle_in_degrees = ON_DEGREES_TO_RADIANS*angle_in_radians </p>
 
 </div>
 </div>
@@ -5364,7 +5379,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msg</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>,msg)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga9ee90ba24795b7193bfe895d166f7f17">ON_ErrorEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__,msg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5916,6 +5931,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ga59dcb24f1a9fbef43b038908dd6aca3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59dcb24f1a9fbef43b038908dd6aca3e">&#9670;&nbsp;</a></span>ON_HALFPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ON_HALFPI&#160;&#160;&#160;(0.5*<a class="el" href="group__open_n_u_r_b_s.html#ga567b3dfd21d32dce11fcfd5493a93113">ON_PI</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>double precision ON_HALFPI = 0.5*ON_PI. ON_HALFPI radians = 90 degrees. <br  />
+ </p>
+
+</div>
+</div>
 <a id="ga71539b5b1da9b6169f7cdc9226e2f620"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga71539b5b1da9b6169f7cdc9226e2f620">&#9670;&nbsp;</a></span>ON_HAS_RVALUEREF</h2>
 
@@ -6056,6 +6087,20 @@ Variables</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">e</td><td>)</td>
           <td>&#160;&#160;&#160;((int)static_cast&lt;unsigned int&gt;(e))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga758b4f053d50a2e1325da79a50c50530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga758b4f053d50a2e1325da79a50c50530">&#9670;&nbsp;</a></span>ON_INTERNAL_SDK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ON_INTERNAL_SDK</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6663,6 +6708,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>double precision ON_PI = 3.141592653589793238462643. ON_PI radians = 180 degrees </p>
 
 </div>
 </div>
@@ -7138,6 +7184,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>angle_in_radians = ON_RADIANS_TO_DEGREES*angle_in_degrees </p>
 
 </div>
 </div>
@@ -7794,7 +7841,21 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msg</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga4975d322c22f8c393db7ac81e4e65ecc">ON_WarningEx</a>(__FILE__,__LINE__,<a class="el" href="group__open_n_u_r_b_s.html#gad3371f6e7dfb84e72ff53cb3a453e786">OPENNURBS__FUNCTION__</a>,msg)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#ga4975d322c22f8c393db7ac81e4e65ecc">ON_WarningEx</a>(__FILE__,__LINE__,OPENNURBS__FUNCTION__,msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86eee0ec4181c58610cf6af6a1f07a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86eee0ec4181c58610cf6af6a1f07a2a">&#9670;&nbsp;</a></span>ON_WIP_SDK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ON_WIP_SDK</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7876,23 +7937,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>/ In cases when an absolute "zero" tolerance / is required to compare model space coordinates, / ON_ZERO_TOLERANCE is used. The value of / ON_ZERO_TOLERANCE should be no smaller than / ON_EPSILON and should be several orders of / magnitude smaller than ON_SQRT_EPSILON / #define ON_ZERO_TOLERANCE 1.0e-12 ON_ZERO_TOLERANCE = 2^-32 </p>
-
-</div>
-</div>
-<a id="gad3371f6e7dfb84e72ff53cb3a453e786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3371f6e7dfb84e72ff53cb3a453e786">&#9670;&nbsp;</a></span>OPENNURBS__FUNCTION__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPENNURBS__FUNCTION__&#160;&#160;&#160;&quot;&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For definition of PRIu64 to print 64-bit ints portably. </p>
-<p>/ / END - OBSOLETE defines / ////////////////////////////////////////////////////////// ////////////////////////////////////////////////////////// ////////////////////////////////////////////////////////// To debug linking pragma path issues, uncomment the followint line pragma message( "OPENNURBS_OUTPUT_DIR = " <a class="el" href="group__open_n_u_r_b_s.html#ga3326fe7609bb8684fe8257ffff8bd7f4">OPENNURBS_PP2STR(OPENNURBS_OUTPUT_DIR)</a> ) As of September, 2018 Freetype is not reliable on Windows, MacOS, and iOS. Its mapping from UNICODE code points to glyph indices is buggy. It does not support OpenType variable fonts like Windows 10 Bahnschrift. It does not support font simulation (Windows does a great job here.) Its support for multiple locale names is limited. Its support for PANOSE1 is limited. It does not support font substitution. Windows uses the Direct Write SDK for font and glyph calcuations. MacOS and iOS use the Apple Core Text SDK for font and glyph calcuations. not Windows, Apple, or Android To disable freetype support, comment out the following define. To enable freetype support, define OPENNURBS_FREETYPE_SUPPORT NOTE WELL: freetype is not delivered in a 32-bit version. Whenever possible use native OS tools for font and glyph support. Things like names, outlines, metrics, UNICODE mapping will generally work better align with user's experiences on that platform. Freetype is basically a platform neutral font file file reading toolkit and has all the limitations that arise from that approach to complex information modern OSs manage in complicated ways. #define OPENNURBS_FREETYPE_SUPPORT /////////////////////////////////////////////////////////////////////////////// / / Validate defines / / Validate ON_x_ENDIAN defines / Validate ON_xBIT_RUNTIME defines / Validate ON_SIZEOF_POINTER defines </p>
 
 </div>
 </div>
@@ -30486,6 +30530,25 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="gae81c16db1f1571e27020f9e2b9a9dfc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae81c16db1f1571e27020f9e2b9a9dfc3">&#9670;&nbsp;</a></span>ON_IsUnicodeC1ControlCodePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int ON_IsUnicodeC1ControlCodePoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if u &gt;= 0x80 and y &lt;= 0x9F. Remarks: Additional space code points may be added in the future. The goal is to detect code points that separate words. </p>
+
+</div>
+</div>
 <a id="ga3d4717ad1f87ac2c553b4cb1a0953cec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3d4717ad1f87ac2c553b4cb1a0953cec">&#9670;&nbsp;</a></span>ON_IsUnicodeControlCodePoint()</h2>
 
@@ -30512,6 +30575,25 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Parameters: code_point - [in] value to test bNullReturnValue value to return if 0 == code_point Returns: true if the code_point is a control code point (&gt; 0 &amp;&amp; &lt; U+0020) or ( &gt;= U+007F &amp;&amp; &lt;= U+00A0) or ( == U+00AD) or ... </p>
+
+</div>
+</div>
+<a id="ga9d16d16554b4e2aace52c3e318dbacdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d16d16554b4e2aace52c3e318dbacdc">&#9670;&nbsp;</a></span>ON_IsUnicodeSpaceCodePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int ON_IsUnicodeSpaceCodePoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if u is one of ON_UnicodeCodePoint::ON_Space, ON_UnicodeCodePoint::ON_NoBreakSpace, ON_UnicodeCodePoint::ON_NarrowNoBreakSpace, or ON_UnicodeCodePoint::ON_ZeroWidthSpace. Remarks: Additional space code points may be added in the future. The goal is to detect code points that separate words. </p>
 
 </div>
 </div>
@@ -34703,6 +34785,26 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Description: Parses a string like "85a08515-f383-11d3-bfe7-0010830122f0" and returns the value as a uuid. Hyphens can appear anywhere and are ignored. Parsing stops at any character that is not a hexidecimal digit or hyphen. Parsing stops after 32 hexidecimal digits are read; Parameters: sUuid - [in] uuid - [out] Returns: null Parsing failed and uuid is set to ON_nil_uuid. non null Parsing succeeded and uuid is set to the parsed value. The returned pointer is the character in sUUID immediately after the last parsed character. </p>
+
+</div>
+</div>
+<a id="gaf877f1877330143f26bf319d578cda35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf877f1877330143f26bf319d578cda35">&#9670;&nbsp;</a></span>ON_PassesNanTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool ON_PassesNanTest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section rcs"><dt>NoKeywords</dt><dd></dd></dl>
+<p>/ / Copyright (c) 1993-2012 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
+ / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Returns: True (1) if nan compares and arithmetic agree with IEEE-754. (nan != nan) is true. (nan op x) and (x op nan) is false for op ==, &lt;, &gt;, &lt;=, and &gt;=. (nan op x) and (x op nan) is nan for op == +, -, *, and /. False (0) otherwise. </p>
 
 </div>
 </div>
@@ -42987,7 +43089,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a simple archive that contains a single or multiple geometric object(s). Parameters: archive - [in] destination archive. version - <a href="0, 2, 3, 4,50,60,...">in</a> format version.archive version number. Version 2 format can be read by Rhino 2 and Rhino 3. Version 3 format can be read by Rhino 3. Pass 0 or <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> to write the latest version of archives supported by Rhino. object - [in] object to be saved in the archive's object table. This is typically some type of <a class="el" href="class_o_n___curve.html">ON_Curve</a>, <a class="el" href="class_o_n___surface.html">ON_Surface</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>, or <a class="el" href="class_o_n___brep.html">ON_Brep</a>. object_list - [in] objects to be saved in the archive's object table. These are typically some type of <a class="el" href="class_o_n___curve.html">ON_Curve</a>, <a class="el" href="class_o_n___surface.html">ON_Surface</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>, or <a class="el" href="class_o_n___brep.html">ON_Brep</a>. object_list_count - [in] explicit count of number of objects in object_list. Returns: @untitled table true archive successfully written. false archive not successfully written. Example: </p><pre class="fragment">      const char* filename = "myfile.3dm";
+<p>Description: Create a simple archive that contains a single or multiple geometric object(s). Parameters: archive - [in] destination archive. version - <a href="0, 2, 3, 4,50,60,70,...">in</a> format version.archive version number. Version 2 format can be read by Rhino 2 and Rhino 3. Version 3 format can be read by Rhino 3. Pass 0 or <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> to write the latest version of archives supported by Rhino. object - [in] object to be saved in the archive's object table. This is typically some type of <a class="el" href="class_o_n___curve.html">ON_Curve</a>, <a class="el" href="class_o_n___surface.html">ON_Surface</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>, or <a class="el" href="class_o_n___brep.html">ON_Brep</a>. object_list - [in] objects to be saved in the archive's object table. These are typically some type of <a class="el" href="class_o_n___curve.html">ON_Curve</a>, <a class="el" href="class_o_n___surface.html">ON_Surface</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>, or <a class="el" href="class_o_n___brep.html">ON_Brep</a>. object_list_count - [in] explicit count of number of objects in object_list. Returns: @untitled table true archive successfully written. false archive not successfully written. Example: </p><pre class="fragment">      const char* filename = "myfile.3dm";
       FILE* fp = ON::OpenFile( filename, "wb" );
       ON_BinaryFile file( fp, ON::archive_mode::write3dm );
       bool ok = ON_WriteArchive( archive, geometry );
@@ -49331,7 +49433,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:74</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:40:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

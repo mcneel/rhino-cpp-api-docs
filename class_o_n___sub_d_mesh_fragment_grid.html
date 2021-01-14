@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7659d98e598596c309ee7eb147e6f2a8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a7659d98e598596c309ee7eb147e6f2a8">DisplayDensity</a> () const</td></tr>
 <tr class="separator:a7659d98e598596c309ee7eb147e6f2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf53894141a2b4f6137c42cca353f75"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a9cf53894141a2b4f6137c42cca353f75">DisplayDensityReduction</a> () const</td></tr>
+<tr class="separator:a9cf53894141a2b4f6137c42cca353f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0aff0be88b9fc9e6134cecebfe545ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#ac0aff0be88b9fc9e6134cecebfe545ce">GetGridParameters</a> (unsigned int grid_point_index, double grid_parameters[2]) const</td></tr>
 <tr class="separator:ac0aff0be88b9fc9e6134cecebfe545ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace22e5cda19956d16b5de77d332fc754"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2udex.html">ON_2udex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#ace22e5cda19956d16b5de77d332fc754">Grid2dexFromPointIndex</a> (unsigned int grid_point_index) const</td></tr>
@@ -100,28 +102,26 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a512bb553e4bb38d5fe46d8745d8ee80a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a512bb553e4bb38d5fe46d8745d8ee80a">QuadGridFromDisplayDensity</a> (unsigned int display_density, unsigned int level_of_detail)</td></tr>
-<tr class="separator:a512bb553e4bb38d5fe46d8745d8ee80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf5f20811df43a2c954b47db104bc39b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#aaf5f20811df43a2c954b47db104bc39b">QuadGridFromSideSegmentCount</a> (unsigned int side_segment_count, unsigned int level_of_detail)</td></tr>
-<tr class="separator:aaf5f20811df43a2c954b47db104bc39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3dd8b7e43c8147204438ebb3c14eeb1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#af3dd8b7e43c8147204438ebb3c14eeb1">QuadGridFromDisplayDensity</a> (unsigned int display_density, unsigned int mesh_density_reduction)</td></tr>
+<tr class="separator:af3dd8b7e43c8147204438ebb3c14eeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fbd2f5da4a3d1a3383930049badcab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a73fbd2f5da4a3d1a3383930049badcab">QuadGridFromSideSegmentCount</a> (unsigned int side_segment_count, unsigned int mesh_density_reduction)</td></tr>
+<tr class="separator:a73fbd2f5da4a3d1a3383930049badcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8d2d84720c1332b7fd7b1dac8aeed337"><td class="memItemLeft" align="right" valign="top">const unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a8d2d84720c1332b7fd7b1dac8aeed337">m_F</a></td></tr>
 <tr class="separator:a8d2d84720c1332b7fd7b1dac8aeed337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff330e240e82d6870d17545e248f65a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a7ff330e240e82d6870d17545e248f65a">m_F_count</a></td></tr>
-<tr class="memdesc:a7ff330e240e82d6870d17545e248f65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">= m_side_segment_count*m_side_segment_count  <a href="class_o_n___sub_d_mesh_fragment_grid.html#a7ff330e240e82d6870d17545e248f65a">More...</a><br /></td></tr>
 <tr class="separator:a7ff330e240e82d6870d17545e248f65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2106c0eaeb5eb85fc67dd959df52e7"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a4c2106c0eaeb5eb85fc67dd959df52e7">m_F_level_of_detail</a></td></tr>
-<tr class="memdesc:a4c2106c0eaeb5eb85fc67dd959df52e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 = highest, &gt; 0 = reduced  <a href="class_o_n___sub_d_mesh_fragment_grid.html#a4c2106c0eaeb5eb85fc67dd959df52e7">More...</a><br /></td></tr>
 <tr class="separator:a4c2106c0eaeb5eb85fc67dd959df52e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028393f7890acc6b81e9ae1ff64ea9c0"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a028393f7890acc6b81e9ae1ff64ea9c0">m_F_stride</a></td></tr>
 <tr class="separator:a028393f7890acc6b81e9ae1ff64ea9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa70edd2052d67f6f6a593d62e5c1622"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#aaa70edd2052d67f6f6a593d62e5c1622">m_next_level_of_detail</a></td></tr>
-<tr class="memdesc:aaa70edd2052d67f6f6a593d62e5c1622"><td class="mdescLeft">&#160;</td><td class="mdescRight">nullptr or the next level with fewer facets.  <a href="class_o_n___sub_d_mesh_fragment_grid.html#aaa70edd2052d67f6f6a593d62e5c1622">More...</a><br /></td></tr>
+<tr class="memdesc:aaa70edd2052d67f6f6a593d62e5c1622"><td class="mdescLeft">&#160;</td><td class="mdescRight">nullptr or the next level with 1/4 times the number of quads.  <a href="class_o_n___sub_d_mesh_fragment_grid.html#aaa70edd2052d67f6f6a593d62e5c1622">More...</a><br /></td></tr>
 <tr class="separator:aaa70edd2052d67f6f6a593d62e5c1622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf7dbc2e554261720cd5b880718bd89"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a6cf7dbc2e554261720cd5b880718bd89">m_prev_level_of_detail</a></td></tr>
-<tr class="memdesc:a6cf7dbc2e554261720cd5b880718bd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">nullptr or the previous level with more facets.  <a href="class_o_n___sub_d_mesh_fragment_grid.html#a6cf7dbc2e554261720cd5b880718bd89">More...</a><br /></td></tr>
+<tr class="memdesc:a6cf7dbc2e554261720cd5b880718bd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">nullptr or the previous level with 4 times the number of quads.  <a href="class_o_n___sub_d_mesh_fragment_grid.html#a6cf7dbc2e554261720cd5b880718bd89">More...</a><br /></td></tr>
 <tr class="separator:a6cf7dbc2e554261720cd5b880718bd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31030ed74d1a2e18cea63a7a38e2c7c1"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a31030ed74d1a2e18cea63a7a38e2c7c1">m_reserved1</a> = 0</td></tr>
 <tr class="separator:a31030ed74d1a2e18cea63a7a38e2c7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +158,26 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: A number between 0 and 8 or ON_UNSET_INT_INDEX. <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#af3bb99ca01402db2d8378c4eee758b2c">SideSegmentCount()</a> = 2^DisplayDensity(). </p>
+
+</div>
+</div>
+<a id="a9cf53894141a2b4f6137c42cca353f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf53894141a2b4f6137c42cca353f75">&#9670;&nbsp;</a></span>DisplayDensityReduction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_SubDMeshFragmentGrid::DisplayDensityReduction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description Each grid set has grids of quads that index the identical set of points (normals, texture coordinates, ...). The grid in the set with the maximum number of quads has <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a9cf53894141a2b4f6137c42cca353f75">DisplayDensityReduction()</a> = 0. Additional grids in the set reduce the number of quads by a factor of 4. The intedger on the left is the DisplayDensityReduction value. The value of the right is the number of quads where M = maximum quad count for that grid set. All nonzero values of M are powers of 4 (4^n). The relationship between P = number of points in the set and M (the maximum number of quads for the point set) is P = (M/2+1)*(M/2+1).</p>
+<p><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a9cf53894141a2b4f6137c42cca353f75">DisplayDensityReduction()</a>: number of quads 0: M 1: M/4 2: M/16 3: M/64 4: M/256 ...</p>
+<p>Returns: The display density reduction from the maximum display density for this grid set. </p>
 
 </div>
 </div>
@@ -280,6 +300,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>Identical to <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a9cf53894141a2b4f6137c42cca353f75">DisplayDensityReduction()</a>. Use <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html#a9cf53894141a2b4f6137c42cca353f75">DisplayDensityReduction()</a> instead because its a better name. </dd></dl>
 
 </div>
 </div>
@@ -315,8 +336,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a512bb553e4bb38d5fe46d8745d8ee80a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a512bb553e4bb38d5fe46d8745d8ee80a">&#9670;&nbsp;</a></span>QuadGridFromDisplayDensity()</h2>
+<a id="af3dd8b7e43c8147204438ebb3c14eeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3dd8b7e43c8147204438ebb3c14eeb1">&#9670;&nbsp;</a></span>QuadGridFromDisplayDensity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +355,7 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>level_of_detail</em>&#160;</td>
+          <td class="paramname"><em>mesh_density_reduction</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -351,8 +372,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaf5f20811df43a2c954b47db104bc39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf5f20811df43a2c954b47db104bc39b">&#9670;&nbsp;</a></span>QuadGridFromSideSegmentCount()</h2>
+<a id="a73fbd2f5da4a3d1a3383930049badcab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fbd2f5da4a3d1a3383930049badcab">&#9670;&nbsp;</a></span>QuadGridFromSideSegmentCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +391,7 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>level_of_detail</em>&#160;</td>
+          <td class="paramname"><em>mesh_density_reduction</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -385,7 +406,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Get mesh facet quads that index into a grid of points. Parameters: side_segment_count - [in] number quads in each row and column of the quad grid. side_segment_count &gt;= 1 side_segment_count &lt;= ON_SubDMesh::MaximumSideSegmentCount side_segment_count must be a power of 2</p>
-<p>level_of_detail - [in] 0: quad count = maximum quad count = (side_count x side_count) 1: quad count = 1/4 maximum quad count 1: quad count = 1/16 maximum quad count ... If 4^level_of_detail &gt; maximum quad count, then a single quad is returned. </p>
+<p>mesh_density_reduction - [in] 0: quad count = maximum quad count = (side_count x side_count) 1: quad count = 1/4 maximum quad count 1: quad count = 1/16 maximum quad count ... If 4^mesh_density_reduction &gt; maximum quad count, then a single quad is returned. </p>
 
 </div>
 </div>
@@ -474,8 +495,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>= m_side_segment_count*m_side_segment_count </p>
+<p>m_F_count = number of quads = m_side_segment_count*m_side_segment_count (0,1,4,16,256,1024,4096) Afer 0, each permitted value is 4x previous value </p>
 
 </div>
 </div>
@@ -490,8 +510,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>0 = highest, &gt; 0 = reduced </p>
+<p>m_F_level_of_detail is poorly named. It should be named m_F_mesh_density_reduction. 0 = no reduction (maximum level of detail) 1 = number of quads reduced by 1/4 2 = number of quads reduced by 1/16 ... </p>
 
 </div>
 </div>
@@ -521,7 +540,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>nullptr or the next level with fewer facets. </p>
+<p>nullptr or the next level with 1/4 times the number of quads. </p>
 
 </div>
 </div>
@@ -537,7 +556,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>nullptr or the previous level with more facets. </p>
+<p>nullptr or the previous level with 4 times the number of quads. </p>
 
 </div>
 </div>
@@ -612,7 +631,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

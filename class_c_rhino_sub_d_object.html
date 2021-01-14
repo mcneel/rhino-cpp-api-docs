@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -173,8 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91627a06f5b649235d8f589d1848e156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6b8506769e12d788677596946b6930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh_ref.html">ON_MeshRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a1c6b8506769e12d788677596946b6930">MeshRef</a> (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type) const</td></tr>
 <tr class="separator:a1c6b8506769e12d788677596946b6930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69191d3388e8146f248234af3bbf976e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh_ref.html">ON_MeshRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a69191d3388e8146f248234af3bbf976e">MeshRef</a> (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type, unsigned int display_density, bool bCreateIfMissing, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> *mp)</td></tr>
-<tr class="separator:a69191d3388e8146f248234af3bbf976e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b8c2b6b245a454410e662139b73fb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh_ref.html">ON_MeshRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#aa1b8c2b6b245a454410e662139b73fb9">MeshRef</a> (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type, unsigned int adaptive_display_density, bool bCreateIfMissing, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> *mp)</td></tr>
+<tr class="separator:aa1b8c2b6b245a454410e662139b73fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a8245346703474f62702d5d8a82932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#ab9a8245346703474f62702d5d8a82932">ObjectType</a> () const override</td></tr>
 <tr class="separator:ab9a8245346703474f62702d5d8a82932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5d503574db8b2188224cb0f2f9f681"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#abb5d503574db8b2188224cb0f2f9f681">operator=</a> (const <a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a> &amp;)</td></tr>
@@ -1922,8 +1922,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a69191d3388e8146f248234af3bbf976e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69191d3388e8146f248234af3bbf976e">&#9670;&nbsp;</a></span>MeshRef() <span class="overload">[2/2]</span></h2>
+<a id="aa1b8c2b6b245a454410e662139b73fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b8c2b6b245a454410e662139b73fb9">&#9670;&nbsp;</a></span>MeshRef() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1938,7 +1938,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>display_density</em>, </td>
+          <td class="paramname"><em>adaptive_display_density</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1959,10 +1959,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: display_density - [in] Pass 0 when in doubt. See details under bCreateIfMissing for more information.</p>
+<p>Parameters: adaptive_display_density - [in] When in doubt, pass <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. Valid adaptive_display_density values are &gt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1caa96abed45d88ef7cfe22d5e281bdf599">ON_SubDDisplayParameters::MinimumDensity</a> and &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. See details under bCreateIfMissing for more information.</p>
 <p>bCreateIfMissing - [in]</p>
-<p>Valid display_density vaues are &gt; ON_SubDDisplayParameters::ON_SubDDisplayParameters::MaximumDensity and &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>.</p>
-<p>If a valid display_density is passed: If the existing mesh has the requested density, then it is returned. If bCreateIfMissing is true, the a mesh with the requested density is created and returned. If bCreateIfMissing is false, and empty mesh ref is returned.</p>
+<p>If a valid adaptive_display_density is passed: If the existing mesh has the requested density, then it is returned. If bCreateIfMissing is true, the a mesh with the requested density is created and returned. If bCreateIfMissing is false, and empty mesh ref is returned.</p>
 <p>If an invalid display_density is passed: If any mesh exists, then it is returned. If bCreateIfMissing is true, the a mesh with <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a> is created and returned. If bCreateIfMissing is false, and empty mesh ref is returned.</p>
 <p>mp - [in] If bCreateIfMissing is true and a mesh is created, these will be set as the meshes creation parameters. <br  />
 </p>
@@ -2779,7 +2778,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:40:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

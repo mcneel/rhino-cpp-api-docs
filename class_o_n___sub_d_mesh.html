@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a traditional quad mesh of either a SubgD surface or SubD control net....">ON_SubDMesh</a> is used to store a traditional quad mesh of either a SubgD surface or SubD control net. It is typically used for rendering and user interface selection cacluations. It is a list of <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a> classes.  
+<p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a high density traditional quad mesh of a SubD surface or a mesh of a Su...">ON_SubDMesh</a> is used to store a high density traditional quad mesh of a SubD surface or a mesh of a SubD control net. In general, is is better to use an <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator(subd)</a> that iterates the ON_MeshFragments cached on the <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>.  
  <a href="class_o_n___sub_d_mesh.html#details">More...</a></p>
 
 <p><code>#include &lt;opennurbs_subd.h&gt;</code></p>
@@ -86,6 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab785da67246f55dc990a7e14997b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfd93384d66b32b2922fb2fbca64a5c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#abfd93384d66b32b2922fb2fbca64a5c2">~ON_SubDMesh</a> ()=default</td></tr>
 <tr class="separator:abfd93384d66b32b2922fb2fbca64a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ffeeb7f7ff4ea639cead2c8f4cc9043"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#a2ffeeb7f7ff4ea639cead2c8f4cc9043">AbsoluteSubDDisplayDensity</a> () const</td></tr>
+<tr class="separator:a2ffeeb7f7ff4ea639cead2c8f4cc9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f802f857ebcf5093050ca8fba73b6c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#a0f802f857ebcf5093050ca8fba73b6c0">BoundingBox</a> () const</td></tr>
 <tr class="separator:a0f802f857ebcf5093050ca8fba73b6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1f485299bf0ef55ebeb16acb9801673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#ac1f485299bf0ef55ebeb16acb9801673">Clear</a> ()</td></tr>
@@ -160,8 +162,8 @@ Friends</h2></td></tr>
 <tr class="separator:a250d658c4db06fac133011b0b0d67df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a traditional quad mesh of either a SubgD surface or SubD control net....">ON_SubDMesh</a> is used to store a traditional quad mesh of either a SubgD surface or SubD control net. It is typically used for rendering and user interface selection cacluations. It is a list of <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a> classes. </p>
-<p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a traditional quad mesh of either a SubgD surface or SubD control net....">ON_SubDMesh</a></p>
+<div class="textblock"><p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a high density traditional quad mesh of a SubD surface or a mesh of a Su...">ON_SubDMesh</a> is used to store a high density traditional quad mesh of a SubD surface or a mesh of a SubD control net. In general, is is better to use an <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator(subd)</a> that iterates the ON_MeshFragments cached on the <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. </p>
+<p><a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a high density traditional quad mesh of a SubD surface or a mesh of a Su...">ON_SubDMesh</a></p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe969c6e273d9de3acd307789a513dee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe969c6e273d9de3acd307789a513dee">&#9670;&nbsp;</a></span>ON_SubDMesh() <span class="overload">[1/2]</span></h2>
@@ -240,6 +242,24 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ffeeb7f7ff4ea639cead2c8f4cc9043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ffeeb7f7ff4ea639cead2c8f4cc9043">&#9670;&nbsp;</a></span>AbsoluteSubDDisplayDensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_SubDMesh::AbsoluteSubDDisplayDensity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The absolute subd display density used to create this display mesh. </p>
+
+</div>
+</div>
 <a id="a0f802f857ebcf5093050ca8fba73b6c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f802f857ebcf5093050ca8fba73b6c0">&#9670;&nbsp;</a></span>BoundingBox()</h2>
 
@@ -445,6 +465,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>AbsoluteSubDDisplayDensity </dd></dl>
 
 </div>
 </div>
@@ -835,7 +856,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Parameters: frit - [in] A fragment iterator from an <a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a traditional quad mesh of either a SubgD surface or SubD control net....">ON_SubDMesh</a> or <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. mesh_density - [in] Larger numbers return denser meshes. MinimumMeshDensity() &lt;= mesh_density &lt;= MaximumMeshDensity() destination_mesh - [in] If destination_mesh is not nullptr, then the returned mesh will be store here. Otherwise the returned mesh will be allocated with a call to new <a class="el" href="class_o_n___mesh.html">ON_Mesh()</a>. Returns: If this limit mesh is not empty, an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> representation of this limit mesh. Othewise, nullptr. </p>
+<p>Description: Parameters: frit - [in] A fragment iterator from an <a class="el" href="class_o_n___sub_d_mesh.html" title="ON_SubDMesh is used to store a high density traditional quad mesh of a SubD surface or a mesh of a Su...">ON_SubDMesh</a> or <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. mesh_density - [in] Larger numbers return denser meshes. MinimumMeshDensity() &lt;= mesh_density &lt;= MaximumMeshDensity() destination_mesh - [in] If destination_mesh is not nullptr, then the returned mesh will be store here. Otherwise the returned mesh will be allocated with a call to new <a class="el" href="class_o_n___mesh.html">ON_Mesh()</a>. Returns: If this limit mesh is not empty, an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> representation of this limit mesh. Othewise, nullptr. </p>
 
 </div>
 </div>
@@ -973,7 +994,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

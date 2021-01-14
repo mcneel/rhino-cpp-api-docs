@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 <p>bStealLockAfterWaiting - [in] Steal the lock if the resource is not available after the maximum waiting time expires.</p>
 <p>Returns: 0: The shared resource is locked by another process and the maximum waiting time expired.</p>
 <p>1: The shared resource pointer was nullptr and is now locked or the maximum waiting time expired and bStealLockAfterWaiting was true. You need to create the resource as quickly as possible and call <a class="el" href="class_o_n___pointer_sleep_lock.html#aa4f2b88a6ff3c6bd3fb67868bfd5f118">SetPointerAndUnlock()</a> with a pointer to the new resource.</p>
-<p>If GetLock() returns 1, then you must call <a class="el" href="class_o_n___pointer_sleep_lock.html#aa4f2b88a6ff3c6bd3fb67868bfd5f118">SetPointerAndUnlock()</a>. Remarks: It is easy and clear to people reading your code if you use values like <a class="el" href="class_o_n___sleep_lock.html#a0ce94df48f59a9d9d3237ed2169b8829a1b5b7f611e90fe15b35d4c073590c431">ON_SleepLock::OneSecond</a>, ON_SleepLock::ThirtySeconds, <a class="el" href="class_o_n___sleep_lock.html#a0ce94df48f59a9d9d3237ed2169b8829afa38a0cbe2c1e3b37c233204979f9226">ON_SleepLock::OneMinute</a>, 47*ON_SleepLock::OneSecond or <a class="el" href="class_o_n___sleep_lock.html#a0ce94df48f59a9d9d3237ed2169b8829afa38a0cbe2c1e3b37c233204979f9226">ON_SleepLock::OneMinute</a>/3 to specify the values for interval_wait_msecs and max_wait_msecs.</p>
+<p>If GetLock() returns 1, then you must call <a class="el" href="class_o_n___pointer_sleep_lock.html#aa4f2b88a6ff3c6bd3fb67868bfd5f118">SetPointerAndUnlock()</a>. Remarks: It is easy and clear to people reading your code if you use values like <a class="el" href="class_o_n___sleep_lock.html#aae111e367f50b8b18257027ca18685aaa1b5b7f611e90fe15b35d4c073590c431">ON_SleepLock::OneSecond</a>, ON_SleepLock::ThirtySeconds, <a class="el" href="class_o_n___sleep_lock.html#aae111e367f50b8b18257027ca18685aaafa38a0cbe2c1e3b37c233204979f9226">ON_SleepLock::OneMinute</a>, 47*ON_SleepLock::OneSecond or <a class="el" href="class_o_n___sleep_lock.html#aae111e367f50b8b18257027ca18685aaafa38a0cbe2c1e3b37c233204979f9226">ON_SleepLock::OneMinute</a>/3 to specify the values for interval_wait_msecs and max_wait_msecs.</p>
 <p>Example:</p>
 <p>const ON_3dPoint* SharedResourcePointAt123() { static ON_3dPoint* shared_resource = nullptr;</p>
 <p><a class="el" href="class_o_n___pointer_sleep_lock.html">ON_PointerSleepLock</a> lock;</p>
@@ -212,7 +212,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

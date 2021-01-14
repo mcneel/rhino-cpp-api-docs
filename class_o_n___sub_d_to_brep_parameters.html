@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.2</span>
    </div>
   </td>
  </tr>
@@ -79,7 +79,8 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:a42f9cffbd45ec118997ede5b1694b805"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">VertexProcess</a> : unsigned char { <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a6adf97f83acf6453d4a6a4b1070f3754">VertexProcess::None</a> = 0, 
 <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a4ece1d7725932a23cd0f813680197699">VertexProcess::LocalG1</a> = 1, 
-<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18">VertexProcess::LocalG2</a> = 2
+<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18">VertexProcess::LocalG2</a> = 2, 
+<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0">VertexProcess::LocalG1x</a> = 3
  }</td></tr>
 <tr class="memdesc:a42f9cffbd45ec118997ede5b1694b805"><td class="mdescLeft">&#160;</td><td class="mdescRight">ON_SubDToBrepParameters::Vertex identifies the options for post processing extraorindary vertices.  <a href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">More...</a><br /></td></tr>
 <tr class="separator:a42f9cffbd45ec118997ede5b1694b805"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,10 +99,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aecd144fca89d5a0410b228a83db38f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf6c756df12546bcd877771ad9cf1da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#abdf6c756df12546bcd877771ad9cf1da">PackFaces</a> () const</td></tr>
 <tr class="separator:abdf6c756df12546bcd877771ad9cf1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8b8c97169675694924a546b926bdd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#afa8b8c97169675694924a546b926bdd6">Read</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;archive)</td></tr>
+<tr class="separator:afa8b8c97169675694924a546b926bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a786255021cb5e754144ac0a9e5be7dff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a786255021cb5e754144ac0a9e5be7dff">SetExtraordinaryVertexProcess</a> (<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">ON_SubDToBrepParameters::VertexProcess</a> ev_process)</td></tr>
 <tr class="separator:a786255021cb5e754144ac0a9e5be7dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3eb00a9a4e886e6936e27c9b345aa01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#af3eb00a9a4e886e6936e27c9b345aa01">SetPackFaces</a> (bool bPackFaces)</td></tr>
 <tr class="separator:af3eb00a9a4e886e6936e27c9b345aa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5f726b4ccd033f021f590459e9a80e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a5b5f726b4ccd033f021f590459e9a80e">ToString</a> (bool bVerbose) const</td></tr>
+<tr class="separator:a5b5f726b4ccd033f021f590459e9a80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e3b32f0153eb82443d27aada6be7c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#ab5e3b32f0153eb82443d27aada6be7c4">Write</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;archive) const</td></tr>
+<tr class="separator:ab5e3b32f0153eb82443d27aada6be7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -111,6 +118,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a18e779b2ef3ba4e2a8dc7a3594d51b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e675a20efef4a0166a2697b662a124"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">ON_SubDToBrepParameters::VertexProcess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a18e675a20efef4a0166a2697b662a124">VertexProcessFromUnsigned</a> (unsigned int vertex_process_as_unsigned)</td></tr>
 <tr class="separator:a18e675a20efef4a0166a2697b662a124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd5a86c346e86c115d7945e23dc7c44"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a3dd5a86c346e86c115d7945e23dc7c44">VertexProcessToString</a> (<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">ON_SubDToBrepParameters::VertexProcess</a> vertex_process)</td></tr>
+<tr class="separator:a3dd5a86c346e86c115d7945e23dc7c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -144,11 +153,13 @@ Static Public Attributes</h2></td></tr>
 
 <p>ON_SubDToBrepParameters::Vertex identifies the options for post processing extraorindary vertices. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; The NURBS patches are used as is. At extraordinary vertices, the brep vertex may not be G1. Typically the deviation bewtween the brep and SubD surface is smallest with this option. /summary&gt; summary&gt; The brep vertex is G1. Typically the deviation bewtween the brep and SubD surface is larger than None. /summary&gt; </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; The NURBS patches are used as is. At extraordinary vertices, the brep vertex may not be G1. Typically the deviation bewtween the brep and SubD surface is smallest with this option. /summary&gt; summary&gt; At extraordinary vertices, the NURBS patches are modified so they are G1 at the extraordinary vertex. Typically the deviation bewtween the brep and SubD surface is larger than None and smaller than LocalG1x and LocalG2. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a4ece1d7725932a23cd0f813680197699"></a>LocalG1&#160;</td><td class="fielddoc"><p>summary&gt; The brep vertex is G2. Typically the deviation bewtween the brep and SubD surface is larger than LocalG1. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a4ece1d7725932a23cd0f813680197699"></a>LocalG1&#160;</td><td class="fielddoc"><p>summary&gt; At extraordinary vertices, the NURBS patches are modified so they are G2 at the extraordinary vertex. Typically the deviation bewtween the brep and SubD surface is larger than LocalG1 and LocalG1x. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18"></a>LocalG2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18"></a>LocalG2&#160;</td><td class="fielddoc"><p>summary&gt; At extraordinary vertices, the NURBS patches are modified so they are G1 at the extraordinary vertex and tend to be closer to G1 along edges near the extraordinary vertex. Typically the deviation bewtween the brep and SubD surface is larger than LocalG1 and smaller than LocalG2. /summary&gt; </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0"></a>LocalG1x&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -365,6 +376,24 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afa8b8c97169675694924a546b926bdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8b8c97169675694924a546b926bdd6">&#9670;&nbsp;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDToBrepParameters::Read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a786255021cb5e754144ac0a9e5be7dff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a786255021cb5e754144ac0a9e5be7dff">&#9670;&nbsp;</a></span>SetExtraordinaryVertexProcess()</h2>
 
@@ -403,6 +432,24 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5b5f726b4ccd033f021f590459e9a80e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5f726b4ccd033f021f590459e9a80e">&#9670;&nbsp;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_SubDToBrepParameters::ToString </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bVerbose</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18e675a20efef4a0166a2697b662a124"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18e675a20efef4a0166a2697b662a124">&#9670;&nbsp;</a></span>VertexProcessFromUnsigned()</h2>
 
@@ -425,6 +472,50 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dd5a86c346e86c115d7945e23dc7c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd5a86c346e86c115d7945e23dc7c44">&#9670;&nbsp;</a></span>VertexProcessToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_SubDToBrepParameters::VertexProcessToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">ON_SubDToBrepParameters::VertexProcess</a>&#160;</td>
+          <td class="paramname"><em>vertex_process</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5e3b32f0153eb82443d27aada6be7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e3b32f0153eb82443d27aada6be7c4">&#9670;&nbsp;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDToBrepParameters::Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -502,7 +593,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 10 2020 14:00:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 14 2021 12:41:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
