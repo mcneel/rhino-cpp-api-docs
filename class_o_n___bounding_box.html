@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.2</span>
+   &#160;<span id="projectnumber">7.3</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3404a3d18af06761e796246c3c4d94c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e14265e797b1a18854f0f74d649fdce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a9e14265e797b1a18854f0f74d649fdce">IsDisjoint</a> (const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;line) const</td></tr>
 <tr class="separator:a9e14265e797b1a18854f0f74d649fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1331e6c8dcaf79bd631abfa6b94c683"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#aa1331e6c8dcaf79bd631abfa6b94c683">IsDisjoint</a> (const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;line, bool infinite) const</td></tr>
+<tr class="separator:aa1331e6c8dcaf79bd631abfa6b94c683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc57ae39c9e80e33808298e963680359"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#abc57ae39c9e80e33808298e963680359">IsEmpty</a> () const</td></tr>
 <tr class="memdesc:abc57ae39c9e80e33808298e963680359"><td class="mdescLeft">&#160;</td><td class="mdescRight">(m_min.x &gt; m_max.x || m_min.y &gt; m_max.y || m_min.z &gt; m_max.z) &amp;&amp; <a class="el" href="class_o_n___bounding_box.html#a070b42c6c3d9ac9aec63d173ad512143" title="every coordinate is a finite, valid double, not ON_UNSET_VALUE and not ON_UNSET_POSITIVE_VALUE">IsSet()</a>;  <a href="class_o_n___bounding_box.html#abc57ae39c9e80e33808298e963680359">More...</a><br /></td></tr>
 <tr class="separator:abc57ae39c9e80e33808298e963680359"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -876,7 +878,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a3404a3d18af06761e796246c3c4d94c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3404a3d18af06761e796246c3c4d94c8">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3404a3d18af06761e796246c3c4d94c8">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -895,7 +897,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a9e14265e797b1a18854f0f74d649fdce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e14265e797b1a18854f0f74d649fdce">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e14265e797b1a18854f0f74d649fdce">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,7 +911,35 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Test to see if "this" and line are disjoint (do not intersect or line is included). Parameters: line - [in] Returns: True if "this" and line are disjoint. </p>
+<p>Description: Test to see if "this" and line are disjoint (do not intersect or line is included). Parameters: line - [in] infinite - [in] if false or not provided, then the line is considered bounded by start and end points. Returns: True if "this" and line are disjoint. </p>
+
+</div>
+</div>
+<a id="aa1331e6c8dcaf79bd631abfa6b94c683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1331e6c8dcaf79bd631abfa6b94c683">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_BoundingBox::IsDisjoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>infinite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2169,7 +2199,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 14 2021 12:41:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 12 2021 03:42:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

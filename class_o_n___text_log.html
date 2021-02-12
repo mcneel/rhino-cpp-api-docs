@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.2</span>
+   &#160;<span id="projectnumber">7.3</span>
    </div>
   </td>
  </tr>
@@ -208,6 +208,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a948d58aa90f4b08dd7850a938fa9748d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e8abc8458d1220a0b6b63faff2e4a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_log.html#a49e8abc8458d1220a0b6b63faff2e4a8">PrintString</a> (const wchar_t *s)</td></tr>
 <tr class="separator:a49e8abc8458d1220a0b6b63faff2e4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d1e1b6ca070fe92f61d12f0c708ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_log.html#a58d1e1b6ca070fe92f61d12f0c708ea9">PrintString</a> (<a class="el" href="class_o_n___string.html">ON_String</a> s)</td></tr>
+<tr class="separator:a58d1e1b6ca070fe92f61d12f0c708ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564ed77b4e71902b2c72a35d8f52d744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_log.html#a564ed77b4e71902b2c72a35d8f52d744">PrintString</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> s)</td></tr>
+<tr class="separator:a564ed77b4e71902b2c72a35d8f52d744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42e34484300d6e5078778d6dd25a2a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_log.html#a42e34484300d6e5078778d6dd25a2a63">PrintTab</a> ()</td></tr>
 <tr class="separator:a42e34484300d6e5078778d6dd25a2a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83e6341ebd9920cc76e761c262e56511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_log.html#a83e6341ebd9920cc76e761c262e56511">PrintTime</a> (const struct tm &amp;t)</td></tr>
@@ -1466,7 +1470,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a948d58aa90f4b08dd7850a938fa9748d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a948d58aa90f4b08dd7850a938fa9748d">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a948d58aa90f4b08dd7850a938fa9748d">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1480,12 +1484,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Print an unformatted ASCII string of any length. Parameters: s - [in] nullptr terminated ASCII string. </p>
+<p>Description: Print an unformatted UTF-8 encoded null terminated string. Parameters: s - [in] UTF-8 encoded null terminated string. </p>
 
 </div>
 </div>
 <a id="a49e8abc8458d1220a0b6b63faff2e4a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49e8abc8458d1220a0b6b63faff2e4a8">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e8abc8458d1220a0b6b63faff2e4a8">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1499,7 +1503,43 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Print an unformatted UNICODE string of any length. Parameters: s - [in] nullptr terminated UNICODE string. </p>
+<p>Description: Print an unformatted UTF-16 or UTF-32 encoded null terminated string. Parameters: s - [in] UTF-16 or UTF-32 encoded null terminated string. </p>
+
+</div>
+</div>
+<a id="a58d1e1b6ca070fe92f61d12f0c708ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d1e1b6ca070fe92f61d12f0c708ea9">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextLog::PrintString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a564ed77b4e71902b2c72a35d8f52d744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564ed77b4e71902b2c72a35d8f52d744">&#9670;&nbsp;</a></span>PrintString() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextLog::PrintString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1825,7 +1865,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 14 2021 12:41:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 12 2021 03:42:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

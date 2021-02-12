@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.2</span>
+   &#160;<span id="projectnumber">7.3</span>
    </div>
   </td>
  </tr>
@@ -1933,6 +1933,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga9222aa33a90b7d2482f750976e42d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9407da66984ed938733be80b2745528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab9407da66984ed938733be80b2745528">RhinoGetRenderMeshes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects)</td></tr>
 <tr class="separator:gab9407da66984ed938733be80b2745528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeac61e08c6d3f49fb7fc5de1d7d4d52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaeac61e08c6d3f49fb7fc5de1d7d4d52e">RhinoGetRenderMeshes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects, bool bUpdateMeshTCs)</td></tr>
+<tr class="separator:gaeac61e08c6d3f49fb7fc5de1d7d4d52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcead865b9c4cacead8684c5a2b9b256"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gafcead865b9c4cacead8684c5a2b9b256">RhinoGetRenderMeshes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;render_meshes, bool bOkToCreate=true, bool bReturnAllObjects=false)</td></tr>
 <tr class="separator:gafcead865b9c4cacead8684c5a2b9b256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00dc07af373e8f1ec0cc670cb27204b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga00dc07af373e8f1ec0cc670cb27204b5">RhinoGetSplitPoints</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;cutter, double tolerance, double angtolrads, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;tsplit)</td></tr>
@@ -14598,7 +14600,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gab9407da66984ed938733be80b2745528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab9407da66984ed938733be80b2745528">&#9670;&nbsp;</a></span>RhinoGetRenderMeshes() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9407da66984ed938733be80b2745528">&#9670;&nbsp;</a></span>RhinoGetRenderMeshes() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14647,8 +14649,62 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="gaeac61e08c6d3f49fb7fc5de1d7d4d52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeac61e08c6d3f49fb7fc5de1d7d4d52e">&#9670;&nbsp;</a></span>RhinoGetRenderMeshes() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int RhinoGetRenderMeshes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>render_meshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOkToCreate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReturnAllObjects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSkipHiddenObjects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUpdateMeshTCs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Mesh Rhino objects. Parameters: objects - [in] objects to get render meshes for. render_meshes - [out] render_meshes[i].<a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> = input object render_meshes[i].Mesh() = render mesh bOkToCreate - [in] if true and the render meshes do not exist, then they will be created. bReturnAllObjects - [in] curves, points, etc., do not have render meshes. If you want these objects to appear in the output list with a NULL mesh, then set this flag to true. bSkipHiddenObjects - [in] will not create render meshes for hidden objects if set to true. bUpdateMeshTCs - [in] updates texture coordinates on the output mesh using the texture mapping if set to true. Returns: Number of meshes appended to render_meshes[]. Remarks: References to instance definitions that contain multiple objects will appear multiple times in the output list.</p>
+<p>When the input object is a <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>, one or more CRhinoObjRefs may be returned in the render_meshes[] array. Each atomic object the instance reference ultimately refers to gets a <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a>. The <a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> points to the atomic object in the instance definition table. The Geometry() returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> is a transformed copy of the mesh. The mesh is correctly located and does not require further transformations. In this case, <a class="el" href="class_c_rhino_obj_ref.html#aa764d1e09d1a23d5394c0095dcd14a64">CRhinoObjRef::GetInstanceTransformation()</a> will return a pointer to the top level instance reference (the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>) and report the total transformation that was applied to the mesh. In the case of nested instance references, this transformation may be different from the transformation associated with the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>. </p>
+
+</div>
+</div>
 <a id="gafcead865b9c4cacead8684c5a2b9b256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafcead865b9c4cacead8684c5a2b9b256">&#9670;&nbsp;</a></span>RhinoGetRenderMeshes() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcead865b9c4cacead8684c5a2b9b256">&#9670;&nbsp;</a></span>RhinoGetRenderMeshes() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -26846,7 +26902,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 14 2021 12:40:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 12 2021 03:41:33 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

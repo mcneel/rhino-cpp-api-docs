@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.2</span>
+   &#160;<span id="projectnumber">7.3</span>
    </div>
   </td>
  </tr>
@@ -185,8 +185,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a41a41c49324d540108d34418797082fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced98579d226f7be6c83cb6504c41ca0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#aced98579d226f7be6c83cb6504c41ca0">GetEdgeSurfaceCurve</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count, unsigned int *converted_count, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
 <tr class="separator:aced98579d226f7be6c83cb6504c41ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457379a19a0cced55b1e232eee3cbeae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a457379a19a0cced55b1e232eee3cbeae">GetLoftCurve</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chain, bool bRequireCreases, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
+<tr class="separator:a457379a19a0cced55b1e232eee3cbeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0714b605e1add99becb61ebbd5db5597"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a0714b605e1add99becb61ebbd5db5597">GetLoftCurve</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chain, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
 <tr class="separator:a0714b605e1add99becb61ebbd5db5597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e0a47ba936234491e0a2b49c4033e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a502e0a47ba936234491e0a2b49c4033e">GetLoftCurve</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count, bool bReequireCreases, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
+<tr class="separator:a502e0a47ba936234491e0a2b49c4033e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9803c4bef92eac52a24dde4f270c6758"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a9803c4bef92eac52a24dde4f270c6758">GetLoftCurve</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
 <tr class="separator:a9803c4bef92eac52a24dde4f270c6758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a534958c8ba19c9e5c8723c54780f9f2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a534958c8ba19c9e5c8723c54780f9f2b">IsValidEdgeChain</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chain, bool bCheckForDuplicateEdges)</td></tr>
@@ -961,8 +965,50 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a457379a19a0cced55b1e232eee3cbeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457379a19a0cced55b1e232eee3cbeae">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a>* ON_SubDEdgeChain::GetLoftCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edge_chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bRequireCreases</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0714b605e1add99becb61ebbd5db5597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0714b605e1add99becb61ebbd5db5597">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0714b605e1add99becb61ebbd5db5597">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -997,8 +1043,56 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a502e0a47ba936234491e0a2b49c4033e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502e0a47ba936234491e0a2b49c4033e">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a>* ON_SubDEdgeChain::GetLoftCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *&#160;</td>
+          <td class="paramname"><em>edge_chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>edge_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReequireCreases</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9803c4bef92eac52a24dde4f270c6758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9803c4bef92eac52a24dde4f270c6758">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9803c4bef92eac52a24dde4f270c6758">&#9670;&nbsp;</a></span>GetLoftCurve() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2029,7 +2123,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 14 2021 12:41:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 12 2021 03:42:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
