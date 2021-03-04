@@ -3397,6 +3397,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga36e1d1e698e75ad6e065f555d1bc51cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8138ebaecda4b1d094d495d63fa39cd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga8138ebaecda4b1d094d495d63fa39cd0">ON_IntersectLineLine</a> (const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;lineA, const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;lineB, double *a, double *b, double tolerance, bool bIntersectSegments)</td></tr>
 <tr class="separator:ga8138ebaecda4b1d094d495d63fa39cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59c396edbc964ba5baeab50b37bab154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga59c396edbc964ba5baeab50b37bab154">ON_IntersectMeshRay</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh, const <a class="el" href="class_o_n__3d_ray.html">ON_3dRay</a> &amp;ray, double tolerance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;ray_ts)</td></tr>
+<tr class="separator:ga59c396edbc964ba5baeab50b37bab154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2f6abaee7847be41aed92d399c97b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gab2f6abaee7847be41aed92d399c97b1b">ON_IntersectViewFrustumPlane</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;vp, const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> &amp;plane_equation, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;points)</td></tr>
 <tr class="separator:gab2f6abaee7847be41aed92d399c97b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa34b1b371c663d34838fa0c8a6570a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaa34b1b371c663d34838fa0c8a6570a04">ON_InvertSVDW</a> (int count, const double *W, double *&amp;invW)</td></tr>
@@ -28881,6 +28883,47 @@ template&lt;class T &gt; </div>
 </pre> 
 </div>
 </div>
+<a id="ga59c396edbc964ba5baeab50b37bab154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59c396edbc964ba5baeab50b37bab154">&#9670;&nbsp;</a></span>ON_IntersectMeshRay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool ON_IntersectMeshRay </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_ray.html">ON_3dRay</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ray_ts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds intersections between a mesh and a semi-infinite, oriented ray. Inputs: mesh [in] - a mesh. ray [in] - the ray. tolerance [in] - a small, positive value that is used to tell ovelaps and perforations apart. ray_ts [in] - an array that will be filled with new values Outputs: true if successful. There may not be intersections in this case. </p>
+
+</div>
+</div>
 <a id="gab2f6abaee7847be41aed92d399c97b1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab2f6abaee7847be41aed92d399c97b1b">&#9670;&nbsp;</a></span>ON_IntersectViewFrustumPlane()</h2>
 
@@ -49436,7 +49479,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:74</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 12 2021 03:41:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 4 2021 13:39:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
