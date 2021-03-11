@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -268,6 +268,9 @@ $(function() {
 <li>NearSnapToLine()
 : <a class="el" href="class_c_rhino_snap_context.html#a8f53231519c9da03995cedfba6da5eef">CRhinoSnapContext</a>
 </li>
+<li>NeedsBaking()
+: <a class="el" href="class_c_rh_rdk_texture.html#a61ccc552722c19a81175540ebaaaa3d8">CRhRdkTexture</a>
+</li>
 <li>NeedsBakingOnAnyChannel()
 : <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#a8d4977d459ba5aaf846a730045a0dd60">RhRdk::Realtime::ChangeQueue</a>
 </li>
@@ -346,7 +349,7 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_sun.html#a69251596965faa19c9950d367ffe0296">IRhRdkSun</a>
 , <a class="el" href="class_o_n___brep.html#acced23d3a7d4bc67e1f9c49161e821ad">ON_Brep</a>
 , <a class="el" href="class_o_n___nurbs_curve.html#aca7de7ddac69cac1c7beeb6cbb1bdd9f">ON_NurbsCurve</a>
-, <a class="el" href="class_o_n___nurbs_surface.html#a6039855b826d62f93663444560d24c3f">ON_NurbsSurface</a>
+, <a class="el" href="class_o_n___nurbs_surface.html#a2d1ba213cb5ac7c4221b6c8ea0a4a17f">ON_NurbsSurface</a>
 , <a class="el" href="class_o_n___rev_surface.html#a048a4ee23c71502756d93ac0dd47ffdc">ON_RevSurface</a>
 , <a class="el" href="class_o_n___sum_surface.html#a5dd09a5e6e750364518de81ad9fecb72">ON_SumSurface</a>
 </li>
@@ -698,6 +701,9 @@ $(function() {
 <li>NextEdgeArrayIndex()
 : <a class="el" href="class_o_n___sub_d_face.html#a8cddc05bb14532ed12ab44e40d411800">ON_SubDFace</a>
 </li>
+<li>NextEdgeOnLevel()
+: <a class="el" href="class_o_n___sub_d_edge_id_iterator.html#aedeb4c272cad5666f0a5c54fb4fdb43f">ON_SubDEdgeIdIterator</a>
+</li>
 <li>NextElement()
 : <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a502e802f6f5dd70c8f868dffd3111fcc">ON_FixedSizePoolIterator</a>
 , <a class="el" href="group__open_n_u_r_b_s.html#ga41c643c3864c9ee603b9b5530f6e74b4">ON_SimpleFixedSizePoolIterator&lt; T &gt;</a>
@@ -710,6 +716,9 @@ $(function() {
 </li>
 <li>NextFaceFragment()
 : <a class="el" href="class_o_n___sub_d_mesh_fragment.html#aec486a22742057624e163c6474b35b24">ON_SubDMeshFragment</a>
+</li>
+<li>NextFaceOnLevel()
+: <a class="el" href="class_o_n___sub_d_face_id_iterator.html#a2e38da9f51f7abedd6fd679e08833a50">ON_SubDFaceIdIterator</a>
 </li>
 <li>NextFactory()
 : <a class="el" href="class_i_rh_rdk_content_factories.html#a231098c24cd6934afebe01ee35f8fb26">IRhRdkContentFactories</a>
@@ -800,6 +809,9 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d_vertex_id_iterator.html#a8a7772d8f71621aa15a819c8cd6e593e">ON_SubDVertexIdIterator</a>
 , <a class="el" href="class_o_n___sub_d_vertex_iterator.html#ae976a1973142d88512d5fa8925cd686b">ON_SubDVertexIterator</a>
 </li>
+<li>NextVertexOnLevel()
+: <a class="el" href="class_o_n___sub_d_vertex_id_iterator.html#a831785518718e34bac37af138d63a81a">ON_SubDVertexIdIterator</a>
+</li>
 <li>NextViewProjection()
 : <a class="el" href="class_c_rhino_viewport.html#a46d171086ca64b0f0c9bcc92b83ea613">CRhinoViewport</a>
 </li>
@@ -808,7 +820,7 @@ $(function() {
 , <a class="el" href="class_o_n___mesh_ngon_buffer.html#a6fbdbaddb5e9ec192b67efa08bd68d74">ON_MeshNgonBuffer</a>
 </li>
 <li>NgonBoundaryBoundingBox()
-: <a class="el" href="class_o_n___mesh.html#a3e49693fa501a2465579c87754064eb5">ON_Mesh</a>
+: <a class="el" href="class_o_n___mesh.html#a0b63074e3903db1cf10be7f122b7253c">ON_Mesh</a>
 </li>
 <li>NgonBoundaryEdgeCount()
 : <a class="el" href="class_o_n___mesh.html#a97fc52044ad832b7d07411db2521c721">ON_Mesh</a>
@@ -1236,7 +1248,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_object_grips.html#a56844a14604e160b94e0526e909b8e05">CRhinoObjectGrips</a>
 </li>
 <li>NurbsKnotType()
-: <a class="el" href="class_o_n___sub_d.html#afaf8c05b048eac0ea6cd68cf541dba6a">ON_SubD</a>
+: <a class="el" href="class_o_n___sub_d.html#a34fe2a7a2f837731fefcb1be7f988a4a">ON_SubD</a>
 </li>
 <li>NurbsSurface()
 : <a class="el" href="class_c_rhino_object_grips.html#aa2d46de5759447c5021823eb07f0f382">CRhinoObjectGrips</a>
@@ -1254,7 +1266,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:40:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

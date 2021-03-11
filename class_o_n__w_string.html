@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -153,6 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e486546afba0094d38da5031341fe25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a7e486546afba0094d38da5031341fe25">Destroy</a> ()</td></tr>
 <tr class="memdesc:a7e486546afba0094d38da5031341fe25"><td class="mdescLeft">&#160;</td><td class="mdescRight">releases any memory and initializes to default empty string  <a href="class_o_n__w_string.html#a7e486546afba0094d38da5031341fe25">More...</a><br /></td></tr>
 <tr class="separator:a7e486546afba0094d38da5031341fe25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e2591142ffe1cc84d8cf86e7db9e5b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a05e2591142ffe1cc84d8cf86e7db9e5b">Duplicate</a> () const</td></tr>
+<tr class="separator:a05e2591142ffe1cc84d8cf86e7db9e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e70a97bd1b3a45ba4196fb32cd055a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#ae6e70a97bd1b3a45ba4196fb32cd055a">EmergencyDestroy</a> ()</td></tr>
 <tr class="separator:ae6e70a97bd1b3a45ba4196fb32cd055a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702b65a43148e77cfff8d60b73d9bac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a702b65a43148e77cfff8d60b73d9bac6">Empty</a> ()</td></tr>
@@ -454,6 +456,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afa267ab9289f04e611db06e80d73330d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7543c82ff583ba14ff096e1450cb2c9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#ad7543c82ff583ba14ff096e1450cb2c9">HexadecimalFromBytes</a> (const <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> *bytes, size_t byte_count, bool bCapitalDigits, bool bReverse)</td></tr>
 <tr class="separator:ad7543c82ff583ba14ff096e1450cb2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcb9a1c047bc2c0370bf7186aa8042e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a5fcb9a1c047bc2c0370bf7186aa8042e">IsDecimalDigit</a> (wchar_t c)</td></tr>
+<tr class="separator:a5fcb9a1c047bc2c0370bf7186aa8042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2424e8404632da4bcf747c74f45276"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a8b2424e8404632da4bcf747c74f45276">IsHexDigit</a> (wchar_t c)</td></tr>
+<tr class="separator:a8b2424e8404632da4bcf747c74f45276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d3d964ef6c009dd7851c481965ffad"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a97d3d964ef6c009dd7851c481965ffad">Length</a> (const wchar_t *string)</td></tr>
 <tr class="separator:a97d3d964ef6c009dd7851c481965ffad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e90a9aaad869af673f782eab4c45b4a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#a0e90a9aaad869af673f782eab4c45b4a">Length</a> (const wchar_t *string, size_t string_capacity)</td></tr>
@@ -2017,6 +2023,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a05e2591142ffe1cc84d8cf86e7db9e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e2591142ffe1cc84d8cf86e7db9e5b">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_wString::Duplicate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: A duplicate of this that does not share memory with any other string. (A new array is allocated for the returned string.) </p>
+
+</div>
+</div>
 <a id="ae6e70a97bd1b3a45ba4196fb32cd055a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6e70a97bd1b3a45ba4196fb32cd055a">&#9670;&nbsp;</a></span>EmergencyDestroy()</h2>
 
@@ -2068,7 +2092,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Obsolete - does nothing. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000071">Deprecated:</a></b></dt><dd>Obsolete - does nothing. </dd></dl>
 
 </div>
 </div>
@@ -3982,6 +4006,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5fcb9a1c047bc2c0370bf7186aa8042e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcb9a1c047bc2c0370bf7186aa8042e">&#9670;&nbsp;</a></span>IsDecimalDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_wString::IsDecimalDigit </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parameters: c - [in] Returns: True if c is '0', '1', ..., or '9'. </p>
+
+</div>
+</div>
 <a id="a60eb79ea364578193273339513351070"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60eb79ea364578193273339513351070">&#9670;&nbsp;</a></span>IsEmpty()</h2>
 
@@ -3996,6 +4047,33 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b2424e8404632da4bcf747c74f45276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2424e8404632da4bcf747c74f45276">&#9670;&nbsp;</a></span>IsHexDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_wString::IsHexDigit </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parameters: c - [in] Returns: True if c is '0', '1', ..., '9', 'A', 'B', ..., 'F', 'a', 'b', ..., of 'f'. </p>
 
 </div>
 </div>
@@ -6908,7 +6986,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:40:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

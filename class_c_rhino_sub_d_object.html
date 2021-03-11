@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -175,6 +175,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1c6b8506769e12d788677596946b6930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b8c2b6b245a454410e662139b73fb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh_ref.html">ON_MeshRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#aa1b8c2b6b245a454410e662139b73fb9">MeshRef</a> (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type, unsigned int adaptive_display_density, bool bCreateIfMissing, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> *mp)</td></tr>
 <tr class="separator:aa1b8c2b6b245a454410e662139b73fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a00d138628c1094661a4aeecb4db67d"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a7a00d138628c1094661a4aeecb4db67d">ObjectMaterial</a> () const override</td></tr>
+<tr class="separator:a7a00d138628c1094661a4aeecb4db67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175a117e24b43d2059cd2b2739bbf744"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a175a117e24b43d2059cd2b2739bbf744">ObjectMaterial</a> (const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &amp;ci, const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id, const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *attrs) const override</td></tr>
+<tr class="memdesc:a175a117e24b43d2059cd2b2739bbf744"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is now the preferred version of the function. This should be used to get materials component-wise in all cases.  <a href="class_c_rhino_sub_d_object.html#a175a117e24b43d2059cd2b2739bbf744">More...</a><br /></td></tr>
+<tr class="separator:a175a117e24b43d2059cd2b2739bbf744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a8245346703474f62702d5d8a82932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#ab9a8245346703474f62702d5d8a82932">ObjectType</a> () const override</td></tr>
 <tr class="separator:ab9a8245346703474f62702d5d8a82932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5d503574db8b2188224cb0f2f9f681"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#abb5d503574db8b2188224cb0f2f9f681">operator=</a> (const <a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a> &amp;)</td></tr>
@@ -398,13 +403,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ce2d55a8495e9c1385da73211251bca inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2c47a9ae895bb6a34e44caae24235f inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_linetype.html">CRhinoLinetype</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a2f2c47a9ae895bb6a34e44caae24235f">ObjectLinetypePtr</a> () const</td></tr>
 <tr class="separator:a2f2c47a9ae895bb6a34e44caae24235f inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b19fd31ffde3a7e50598a081704c9db inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a7b19fd31ffde3a7e50598a081704c9db">ObjectMaterial</a> () const</td></tr>
-<tr class="separator:a7b19fd31ffde3a7e50598a081704c9db inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcde2240fc6fdd81d44d1614505b9767 inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#adcde2240fc6fdd81d44d1614505b9767">ObjectMaterial</a> (const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;attrs) const</td></tr>
 <tr class="separator:adcde2240fc6fdd81d44d1614505b9767 inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a637357e3a6f60b21a2daea32b5fef390 inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a637357e3a6f60b21a2daea32b5fef390">ObjectMaterial</a> (const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &amp;ci, const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id=<a class="el" href="group___rhino.html#gaaeffb8c1959509d25d15ede0ee15c27c">RhinoDefaultRendererId</a>(), const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *attrs=NULL) const</td></tr>
-<tr class="memdesc:a637357e3a6f60b21a2daea32b5fef390 inherit pub_methods_class_c_rhino_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is now the preferred version of the function. This should be used to get materials component-wise in all cases.  <a href="class_c_rhino_object.html#a637357e3a6f60b21a2daea32b5fef390">More...</a><br /></td></tr>
-<tr class="separator:a637357e3a6f60b21a2daea32b5fef390 inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ab8ca975fe47c8d5911d5c43d5f3e3 inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#ac2ab8ca975fe47c8d5911d5c43d5f3e3">ObjectMaterial</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id) const</td></tr>
 <tr class="separator:ac2ab8ca975fe47c8d5911d5c43d5f3e3 inherit pub_methods_class_c_rhino_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf45cf2deb46bd037cb2be90364f6a4 inherit pub_methods_class_c_rhino_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rh_rdk_material.html">CRhRdkMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#abcf45cf2deb46bd037cb2be90364f6a4">ObjectRdkMaterial</a> (const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &amp;ci, const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id=<a class="el" href="group___rhino.html#gaaeffb8c1959509d25d15ede0ee15c27c">RhinoDefaultRendererId</a>(), const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *attrs=NULL) const</td></tr>
@@ -1969,6 +1969,81 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7a00d138628c1094661a4aeecb4db67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a00d138628c1094661a4aeecb4db67d">&#9670;&nbsp;</a></span>ObjectMaterial() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a>&amp; CRhinoSubDObject::ObjectMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Gets the material used to render the object's front side. Parameters: plugin_id - [in] (optional) If not present, the plugin_id returned by <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.GetDefaultRenderApp() is used. Returns: A reference to a rendering material. When no material is explicitly specified, this is the default material <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.AppSettings().DefaultMaterial().</p>
+<p>NOTE WELL: If the material table is modified, this pointer will become invalid. Do not use this pointer for saving long term reference to the material. Use the material index or id instead. See Also CRhinoObjectAttributes::ObjectMaterialRef <a class="el" href="class_c_rhino_material_table.html#acef55bb2228931bb34bf00f3693b1492">CRhinoMaterialTable::GetMaterials</a> CRhinoObject::ObjectMaterialRef </p>
+
+<p>Reimplemented from <a class="el" href="class_c_rhino_object.html#a7b19fd31ffde3a7e50598a081704c9db">CRhinoObject</a>.</p>
+
+</div>
+</div>
+<a id="a175a117e24b43d2059cd2b2739bbf744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175a117e24b43d2059cd2b2739bbf744">&#9670;&nbsp;</a></span>ObjectMaterial() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a>&amp; CRhinoSubDObject::ObjectMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &amp;&#160;</td>
+          <td class="paramname"><em>ci</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>plugin_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is now the preferred version of the function. This should be used to get materials component-wise in all cases. </p>
+
+<p>Reimplemented from <a class="el" href="class_c_rhino_object.html#a637357e3a6f60b21a2daea32b5fef390">CRhinoObject</a>.</p>
+
+</div>
+</div>
 <a id="ab9a8245346703474f62702d5d8a82932"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9a8245346703474f62702d5d8a82932">&#9670;&nbsp;</a></span>ObjectType()</h2>
 
@@ -2778,7 +2853,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

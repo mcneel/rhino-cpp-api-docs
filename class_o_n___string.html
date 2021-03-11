@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -154,6 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a61155fbd47332cd64a0b76e4da7e54de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a61155fbd47332cd64a0b76e4da7e54de">Destroy</a> ()</td></tr>
 <tr class="memdesc:a61155fbd47332cd64a0b76e4da7e54de"><td class="mdescLeft">&#160;</td><td class="mdescRight">releases any memory and initializes to default empty string  <a href="class_o_n___string.html#a61155fbd47332cd64a0b76e4da7e54de">More...</a><br /></td></tr>
 <tr class="separator:a61155fbd47332cd64a0b76e4da7e54de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183370e866d2e81cdd50be0bea5863c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a183370e866d2e81cdd50be0bea5863c4">Duplicate</a> () const</td></tr>
+<tr class="separator:a183370e866d2e81cdd50be0bea5863c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7259a8f51271d7a0dd7951df905f3ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a7259a8f51271d7a0dd7951df905f3ae6">EmergencyDestroy</a> ()</td></tr>
 <tr class="separator:a7259a8f51271d7a0dd7951df905f3ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e142f6816cacb64f739599094901ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a00e142f6816cacb64f739599094901ba">Empty</a> ()</td></tr>
@@ -398,6 +400,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a07ed11f0661fb77c876e35ed8a3bf91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a157f6c3411da83b7589ccfc9152cf067"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a157f6c3411da83b7589ccfc9152cf067">HexadecimalFromBytes</a> (const <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> *bytes, size_t byte_count, bool bCapitalDigits, bool bReverse)</td></tr>
 <tr class="separator:a157f6c3411da83b7589ccfc9152cf067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdce7bb2ae744562dbc2f0136da156d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a4cdce7bb2ae744562dbc2f0136da156d">IsDecimalDigit</a> (char c)</td></tr>
+<tr class="separator:a4cdce7bb2ae744562dbc2f0136da156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5144f435663bdc85480f92db64578f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#afb5144f435663bdc85480f92db64578f">IsHexDigit</a> (char c)</td></tr>
+<tr class="separator:afb5144f435663bdc85480f92db64578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3242d4b1faaf51d520127a9386cfe9c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ab3242d4b1faaf51d520127a9386cfe9c">Length</a> (const char *string)</td></tr>
 <tr class="separator:ab3242d4b1faaf51d520127a9386cfe9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2778628aaecdd6f8962c593edf75aba0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a2778628aaecdd6f8962c593edf75aba0">Length</a> (const char *string, size_t string_capacity)</td></tr>
@@ -1062,7 +1068,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000067">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
 
 </div>
 </div>
@@ -1260,7 +1266,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000067">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
 
 </div>
 </div>
@@ -1337,7 +1343,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000069">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
 
 </div>
 </div>
@@ -1356,7 +1362,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000069">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate </dd></dl>
 
 </div>
 </div>
@@ -1889,6 +1895,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a183370e866d2e81cdd50be0bea5863c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183370e866d2e81cdd50be0bea5863c4">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___string.html">ON_String</a> ON_String::Duplicate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: A duplicate of this that does not share memory with any other string. (A new array is allocated for the returned string.) </p>
+
+</div>
+</div>
 <a id="a7259a8f51271d7a0dd7951df905f3ae6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7259a8f51271d7a0dd7951df905f3ae6">&#9670;&nbsp;</a></span>EmergencyDestroy()</h2>
 
@@ -1940,7 +1964,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>Obsolete - does nothing. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>Obsolete - does nothing. </dd></dl>
 
 </div>
 </div>
@@ -3294,6 +3318,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4cdce7bb2ae744562dbc2f0136da156d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdce7bb2ae744562dbc2f0136da156d">&#9670;&nbsp;</a></span>IsDecimalDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_String::IsDecimalDigit </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parameters: c - [in] Returns: True if c is '0', '1', ..., or '9'. </p>
+
+</div>
+</div>
 <a id="a293360d903bf213a24bae7bd4bac740e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a293360d903bf213a24bae7bd4bac740e">&#9670;&nbsp;</a></span>IsEmpty()</h2>
 
@@ -3310,6 +3361,33 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>returns true if length == 0 </p>
+
+</div>
+</div>
+<a id="afb5144f435663bdc85480f92db64578f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5144f435663bdc85480f92db64578f">&#9670;&nbsp;</a></span>IsHexDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_String::IsHexDigit </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parameters: c - [in] Returns: True if c is '0', '1', ..., '9', 'A', 'B', ..., 'F', 'a', 'b', ..., of 'f'. </p>
 
 </div>
 </div>
@@ -5905,7 +5983,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

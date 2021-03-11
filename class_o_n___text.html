@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a02c1b8754366fa600522922e44209efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343cfee9c4804ed4229e94f8e360fdef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text.html#a343cfee9c4804ed4229e94f8e360fdef">GetTextXform</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> *vp, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const override</td></tr>
 <tr class="separator:a343cfee9c4804ed4229e94f8e360fdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b07866d5545d29d53cc6c6cdeabe73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text.html#a11b07866d5545d29d53cc6c6cdeabe73">GetTextXform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *model_xform, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_x, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_y, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_z, <a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75e">ON::view_projection</a> projection, bool bDrawForward, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const</td></tr>
+<tr class="separator:a11b07866d5545d29d53cc6c6cdeabe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b3439aacedbcb37f564db014e5c226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text.html#a10b3439aacedbcb37f564db014e5c226">GetTextXform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *model_xform, const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> *vp, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const</td></tr>
 <tr class="separator:a10b3439aacedbcb37f564db014e5c226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f41c6a4ebed81f23d43cd4c2ce83a2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text.html#a2f41c6a4ebed81f23d43cd4c2ce83a2c">IsValid</a> (class <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *text_log=nullptr) const override</td></tr>
@@ -1264,7 +1266,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a343cfee9c4804ed4229e94f8e360fdef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343cfee9c4804ed4229e94f8e360fdef">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a343cfee9c4804ed4229e94f8e360fdef">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1314,8 +1316,78 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a11b07866d5545d29d53cc6c6cdeabe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b07866d5545d29d53cc6c6cdeabe73">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Text::GetTextXform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>model_xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75e">ON::view_projection</a>&#160;</td>
+          <td class="paramname"><em>projection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawForward</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *&#160;</td>
+          <td class="paramname"><em>dimstyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dimscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>text_xform_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a10b3439aacedbcb37f564db014e5c226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10b3439aacedbcb37f564db014e5c226">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b3439aacedbcb37f564db014e5c226">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1556,7 +1628,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

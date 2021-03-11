@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -397,7 +397,8 @@ $(function() {
 , <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1">ON_SubDHash</a>
 </li>
 <li>VertexId()
-: <a class="el" href="class_o_n___sub_d_edge.html#ac95b0602eb28359b5eab984ff179cb20">ON_SubDEdge</a>
+: <a class="el" href="class_o_n___sub_d___component_id_type_and_tag.html#a0abbf18ed0b6f93c6a4f25ab2d0c27bc">ON_SubD_ComponentIdTypeAndTag</a>
+, <a class="el" href="class_o_n___sub_d_edge.html#ac95b0602eb28359b5eab984ff179cb20">ON_SubDEdge</a>
 , <a class="el" href="class_o_n___sub_d_sector_id.html#a9c162d9b46584aa2eac2198de83a3194">ON_SubDSectorId</a>
 , <a class="el" href="class_o_n___sub_d_vertex.html#a21c2e2422e66b099d437e7005182d1d2">ON_SubDVertex</a>
 , <a class="el" href="class_o_n___x_mesh_face.html#a692d8b9e2783dfaa066ee99d1403b2f5">ON_XMeshFace</a>
@@ -422,6 +423,12 @@ $(function() {
 <li>VertexMap()
 : <a class="el" href="class_o_n___triangle_mesh.html#a1a52ea1457e13797ac9ad6b11afd4e1a">ON_TriangleMesh</a>
 </li>
+<li>VertexMark()
+: <a class="el" href="class_o_n___sub_d_face.html#a63f649839c8b605cf57e6c024f7c1c5f">ON_SubDFace</a>
+</li>
+<li>VertexMarkBits()
+: <a class="el" href="class_o_n___sub_d_face.html#aaa560377f7547bbf461b7239103490c9">ON_SubDFace</a>
+</li>
 <li>VertexMode()
 : <a class="el" href="class_c_args_rhino_get_parabola.html#a60370d653451c932fc2a25b09b5fb688">CArgsRhinoGetParabola</a>
 </li>
@@ -429,7 +436,7 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d_vertex.html#a24228804348283db23334d22c5889e55">ON_SubDVertex</a>
 </li>
 <li>VertexNormal()
-: <a class="el" href="class_o_n___sub_d_mesh_fragment.html#ae48e79c4be888eab1bbd99512070b52b">ON_SubDMeshFragment</a>
+: <a class="el" href="class_o_n___sub_d_mesh_fragment.html#a8d2943eaf38e649d18cae019fb272b84">ON_SubDMeshFragment</a>
 </li>
 <li>VertexNotOnEdge()
 : <a class="el" href="class_o_n___x_mesh_face.html#a20617c55c2d5a23705facde0f02c8ee6">ON_XMeshFace</a>
@@ -458,7 +465,8 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d_component_ptr.html#a12b7c7dafdfda080f726a15c0e68cc54">ON_SubDComponentPtr</a>
 </li>
 <li>VertexTag()
-: <a class="el" href="class_o_n___sub_d_sector_type.html#ac8eef65538d96fc77d4d6b4d0711a83b">ON_SubDSectorType</a>
+: <a class="el" href="class_o_n___sub_d___component_id_type_and_tag.html#a2453c2cc01c623db5819bbe6a0efdc9c">ON_SubD_ComponentIdTypeAndTag</a>
+, <a class="el" href="class_o_n___sub_d_sector_type.html#ac8eef65538d96fc77d4d6b4d0711a83b">ON_SubDSectorType</a>
 </li>
 <li>VertexTagFromUnsigned()
 : <a class="el" href="class_o_n___sub_d.html#a042140d0f88f2bd8296c9204ac1d2c5d">ON_SubD</a>
@@ -519,8 +527,8 @@ $(function() {
 <li>Vertices()
 : <a class="el" href="class_o_n___x_mesh_component.html#abe1de52ac318522c184087ef09834fc1">ON_XMeshComponent</a>
 , <a class="el" href="class_o_n___x_mesh_edge.html#a634cf9ff6fc0846335375896287479bd">ON_XMeshEdge</a>
-, <a class="el" href="class_o_n___x_mesh_face.html#aa7807005b8c93f27374b0c9367533001">ON_XMeshFace</a>
-, <a class="el" href="class_o_n___x_mesh_vertex.html#ac5decf04d0b337b1a521e152967bfee8">ON_XMeshVertex</a>
+, <a class="el" href="class_o_n___x_mesh_face.html#a63c2cb345642cb59d4c876772a936fed">ON_XMeshFace</a>
+, <a class="el" href="class_o_n___x_mesh_vertex.html#a049e57a2d587d4fef3fd85b4357ca9fa">ON_XMeshVertex</a>
 </li>
 <li>VerticesAreEligible()
 : <a class="el" href="class_c_rhino_sub_d_pick_settings.html#a7639a928471cfa13c2469850d57036ff">CRhinoSubDPickSettings</a>
@@ -658,12 +666,14 @@ $(function() {
 <li>ViewWndClassName()
 : <a class="el" href="class_c_rhino_app.html#a393cd4f8122417185a9ee92339d1c7bf">CRhinoApp</a>
 </li>
+<li>VISIBILITY
+: <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1">ON_DepthImage</a>
+</li>
 <li>Visibility()
 : <a class="el" href="class_o_n___depth_image.html#a7dc2bd5d19391e4b7dd20dfda037891f">ON_DepthImage</a>
 </li>
 <li>VISIBILITY
-: <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1">ON_DepthImage</a>
-, <a class="el" href="class_o_n___h_l_d_curve.html#ae31b1f2093ed6a54c742a5666d485209">ON_HLDCurve</a>
+: <a class="el" href="class_o_n___h_l_d_curve.html#ae31b1f2093ed6a54c742a5666d485209">ON_HLDCurve</a>
 , <a class="el" href="class_o_n___h_l_d_point.html#a2c92bcf09996e8808e3f06a3f291698e">ON_HLDPoint</a>
 </li>
 <li>visibility_status_mask
@@ -773,7 +783,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:40:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

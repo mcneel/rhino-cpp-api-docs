@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -141,8 +141,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_face_quartet.html#a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd">BoldItalicDeviation</a> (<a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a> desired_member, <a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a> available_member)</td></tr>
+<tr class="separator:a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f6ae3edf1a83c3442bc846bf9962913"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_face_quartet.html#a0f6ae3edf1a83c3442bc846bf9962913">CompareQuartetName</a> (const <a class="el" href="class_o_n___font_face_quartet.html">ON_FontFaceQuartet</a> *lhs, const <a class="el" href="class_o_n___font_face_quartet.html">ON_FontFaceQuartet</a> *rhs)</td></tr>
 <tr class="separator:a0f6ae3edf1a83c3442bc846bf9962913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24de819e93572afad58af8ed69769b7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_face_quartet.html#a24de819e93572afad58af8ed69769b7c">MemberFromBoldAndItalic</a> (bool bMemberIsBold, bool bMemberIsItalic)</td></tr>
+<tr class="separator:a24de819e93572afad58af8ed69769b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4721aaaeefdadc241e493530b301f8bd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_face_quartet.html#a4721aaaeefdadc241e493530b301f8bd">MemberFromUnsigned</a> (unsigned int member_as_unsigned)</td></tr>
 <tr class="separator:a4721aaaeefdadc241e493530b301f8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c3584cde034911fc7e37a0e056c7f8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_face_quartet.html#ad3c3584cde034911fc7e37a0e056c7f8">MemberToString</a> (<a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a> member)</td></tr>
@@ -321,6 +325,43 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd">&#9670;&nbsp;</a></span>BoldItalicDeviation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned ON_FontFaceQuartet::BoldItalicDeviation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a>&#160;</td>
+          <td class="paramname"><em>desired_member</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a>&#160;</td>
+          <td class="paramname"><em>available_member</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: When an exact quartet face bold/italic match is not available, choosing an available quartet face that minimizes <a class="el" href="class_o_n___font_face_quartet.html#a1afbc52ac8e1f01b0b5cdbd1ce9cf2bd">ON_FontFaceQuartet::BoldItalicDeviation()</a> is one way to select which available quartet face to use. Returns: A distance between two quartet face members. </p>
 
 </div>
 </div>
@@ -626,6 +667,42 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a24de819e93572afad58af8ed69769b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24de819e93572afad58af8ed69769b7c">&#9670;&nbsp;</a></span>MemberFromBoldAndItalic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___font_face_quartet.html#a2976911b04f10e392daee169aa7bf9a0">ON_FontFaceQuartet::Member</a> ON_FontFaceQuartet::MemberFromBoldAndItalic </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bMemberIsBold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bMemberIsItalic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4721aaaeefdadc241e493530b301f8bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4721aaaeefdadc241e493530b301f8bd">&#9670;&nbsp;</a></span>MemberFromUnsigned()</h2>
 
@@ -802,7 +879,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

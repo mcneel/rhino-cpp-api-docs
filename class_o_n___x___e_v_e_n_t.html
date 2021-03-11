@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -118,11 +118,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a861fa8688e48fd91f1ddb13e12bb1c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863a1168589540c076b50c8778a0a684"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#a863a1168589540c076b50c8778a0a684">IsValid</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *text_log, double intersection_tolerance, double overlap_tolerance, const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> *curveA, const class <a class="el" href="class_o_n___interval.html">ON_Interval</a> *curveA_domain, const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> *curveB, const class <a class="el" href="class_o_n___interval.html">ON_Interval</a> *curveB_domain, const class <a class="el" href="class_o_n___surface.html">ON_Surface</a> *surfaceB, const class <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_domain0, const class <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_domain1) const</td></tr>
 <tr class="separator:a863a1168589540c076b50c8778a0a684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af77a94bd88f56d3a6d9f93b79ca8af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#a0af77a94bd88f56d3a6d9f93b79ca8af">Local_Min</a> (int ei) const</td></tr>
+<tr class="separator:a0af77a94bd88f56d3a6d9f93b79ca8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2eef8eb59e7ac36d7f7e1b98678db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#a5c2eef8eb59e7ac36d7f7e1b98678db0">Set_Local_Min</a> (int ei, bool newvalue)</td></tr>
+<tr class="separator:a5c2eef8eb59e7ac36d7f7e1b98678db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a130f3f7647440ccf277af58b5a2d1c6e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#a130f3f7647440ccf277af58b5a2d1c6e">CleanList</a> (double event_tolerance, double overlap_tolerance, int xevent_count, <a class="el" href="class_o_n___x___e_v_e_n_t.html">ON_X_EVENT</a> *xevent)</td></tr>
-<tr class="separator:a130f3f7647440ccf277af58b5a2d1c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36a6655f85ce5509da78b9c0c81c999"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#af36a6655f85ce5509da78b9c0c81c999">CleanList</a> (double event_tolerance, double overlap_tolerance, int xevent_count, <a class="el" href="class_o_n___x___e_v_e_n_t.html">ON_X_EVENT</a> *xevent, <a class="el" href="class_o_n___interval.html">ON_Interval</a> *domain=nullptr)</td></tr>
+<tr class="separator:af36a6655f85ce5509da78b9c0c81c999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa34bc560cbaf3f978f122649bd8e55"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___x___e_v_e_n_t.html#a9fa34bc560cbaf3f978f122649bd8e55">Compare</a> (const <a class="el" href="class_o_n___x___e_v_e_n_t.html">ON_X_EVENT</a> *a, const <a class="el" href="class_o_n___x___e_v_e_n_t.html">ON_X_EVENT</a> *b)</td></tr>
 <tr class="memdesc:a9fa34bc560cbaf3f978f122649bd8e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class must use default copy constructor, operator=, and destructor.  <a href="class_o_n___x___e_v_e_n_t.html#a9fa34bc560cbaf3f978f122649bd8e55">More...</a><br /></td></tr>
 <tr class="separator:a9fa34bc560cbaf3f978f122649bd8e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,8 +272,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a130f3f7647440ccf277af58b5a2d1c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a130f3f7647440ccf277af58b5a2d1c6e">&#9670;&nbsp;</a></span>CleanList()</h2>
+<a id="af36a6655f85ce5509da78b9c0c81c999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36a6655f85ce5509da78b9c0c81c999">&#9670;&nbsp;</a></span>CleanList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +303,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_o_n___x___e_v_e_n_t.html">ON_X_EVENT</a> *&#160;</td>
-          <td class="paramname"><em>xevent</em>&#160;</td>
+          <td class="paramname"><em>xevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a> *&#160;</td>
+          <td class="paramname"><em>domain</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,7 +325,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Expert user tool to cleanup a list of intersection events. Parameters: event_tolerance - [in] If the distance between events is &lt;= event_tolerance, they will be considered to be the same event. Typically, event_tolerance is "small" and event_tolerance &lt;= intersection_tolerance.</p>
 <p>overlap_tolerance - [in] minimum length for an intersection overlap segment. Typically, overlap_tolerance is "large" and overlap_tolerance &gt; intersection_tolerance</p>
-<p>xevent_count - [in] xevent - [in/out] Returns: Length of cleaned list. </p>
+<p>xevent_count - [in] xevent - [in/out] domain - [in] domain of the intersection problem. domain[0] is curve domain and either domain[1] is domain of second cuve or domain[1] x domain[2] is surface doamin domain = nullptr means no special handling of domain boundaries Returns: Length of cleaned list. </p>
 
 </div>
 </div>
@@ -937,6 +947,25 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0af77a94bd88f56d3a6d9f93b79ca8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af77a94bd88f56d3a6d9f93b79ca8af">&#9670;&nbsp;</a></span>Local_Min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_X_EVENT::Local_Min </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ei</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An overlap start or end can be a local minimum of the function dist( C(t), S(u,v) ) for a curve surface intersection Local_Min(i) is true if (m_a[i], m_b[2*i], m_b[2*i+1]) is a local minimum of the function dist( C(t), S(u,v) ). </p>
+
+</div>
+</div>
 <a id="a462833d7d5f4a2f0297bfe9016d41400"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a462833d7d5f4a2f0297bfe9016d41400">&#9670;&nbsp;</a></span>OverlapTolerance()</h2>
 
@@ -971,6 +1000,34 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Convert input intersection tolerance to value used in calculations. Parameters: intersection_tolerance - [in] Returns: Value use in intersection calculations. </p>
+
+</div>
+</div>
+<a id="a5c2eef8eb59e7ac36d7f7e1b98678db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2eef8eb59e7ac36d7f7e1b98678db0">&#9670;&nbsp;</a></span>Set_Local_Min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_X_EVENT::Set_Local_Min </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ei</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>newvalue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1193,7 +1250,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:40:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2eb8bd3dc3171ed7cc6f43a0d520d298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8626b6c5538447979c61743875f4c860"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html#a8626b6c5538447979c61743875f4c860">FirstEdge</a> ()</td></tr>
 <tr class="separator:a8626b6c5538447979c61743875f4c860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bc963809760af7822930535a92e7a5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html#af3bc963809760af7822930535a92e7a5">FirstEdgeOnLevel</a> (unsigned int level_index)</td></tr>
+<tr class="separator:af3bc963809760af7822930535a92e7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04598e7dcf4283c459a0156871dfee5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html#ae04598e7dcf4283c459a0156871dfee5">NextEdge</a> ()</td></tr>
 <tr class="separator:ae04598e7dcf4283c459a0156871dfee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedeb4c272cad5666f0a5c54fb4fdb43f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html#aedeb4c272cad5666f0a5c54fb4fdb43f">NextEdgeOnLevel</a> (unsigned int level_index)</td></tr>
+<tr class="separator:aedeb4c272cad5666f0a5c54fb4fdb43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a71ecc876c3e62234d51627df5fa30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html">ON_SubDEdgeIdIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_id_iterator.html#ae6a71ecc876c3e62234d51627df5fa30">operator=</a> (const <a class="el" href="class_o_n___sub_d_edge_id_iterator.html">ON_SubDEdgeIdIterator</a> &amp;)=default</td></tr>
 <tr class="separator:ae6a71ecc876c3e62234d51627df5fa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -260,6 +264,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="af3bc963809760af7822930535a92e7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bc963809760af7822930535a92e7a5">&#9670;&nbsp;</a></span>FirstEdgeOnLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a>* ON_SubDEdgeIdIterator::FirstEdgeOnLevel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae04598e7dcf4283c459a0156871dfee5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae04598e7dcf4283c459a0156871dfee5">&#9670;&nbsp;</a></span>NextEdge()</h2>
 
@@ -275,6 +297,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: In general, you want to use a <a class="el" href="class_o_n___sub_d_edge_iterator.html">ON_SubDEdgeIterator</a> to loop through SubD edges. This is a special tool for unusual sitiations wheh it is necessary to iteratate through every edge on every level of a SubD in order of increasing m_id value. Returns: The edge in order of increasing id. </p>
+
+</div>
+</div>
+<a id="aedeb4c272cad5666f0a5c54fb4fdb43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedeb4c272cad5666f0a5c54fb4fdb43f">&#9670;&nbsp;</a></span>NextEdgeOnLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a>* ON_SubDEdgeIdIterator::NextEdgeOnLevel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -330,7 +370,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -139,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb932b63c923386bf6e9317255b6ad58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1f899364d5468bf069ebf01b047b089"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___outline_figure.html#ae1f899364d5468bf069ebf01b047b089">GetPolyline</a> (double tolerance, void(*PointCallbackFunc)(float x, float y, void *), void *context) const</td></tr>
 <tr class="separator:ae1f899364d5468bf069ebf01b047b089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad6c691f04bc8fc05c5380a283a3465"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___outline_figure.html#a8ad6c691f04bc8fc05c5380a283a3465">GetUpToFourPointsOnFigure</a> (<a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> p[4]) const</td></tr>
+<tr class="separator:a8ad6c691f04bc8fc05c5380a283a3465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe33f6c7a8a6c5680ea3b9f92a8d9a08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___outline_figure.html#abe33f6c7a8a6c5680ea3b9f92a8d9a08">IsInsideOf</a> (const <a class="el" href="class_o_n___outline_figure.html">ON_OutlineFigure</a> *outer_figure, bool bPerformExtraChecking) const</td></tr>
+<tr class="separator:abe33f6c7a8a6c5680ea3b9f92a8d9a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571d0a231fa5895b6a3380ece9668fed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___outline_figure.html#a571d0a231fa5895b6a3380ece9668fed">IsValidFigure</a> (bool bLogErrors) const</td></tr>
 <tr class="separator:a571d0a231fa5895b6a3380ece9668fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc8726423280167e2644930bedd6ba00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___outline_figure.html#abc8726423280167e2644930bedd6ba00">NegateY</a> ()</td></tr>
@@ -752,6 +756,54 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ad6c691f04bc8fc05c5380a283a3465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad6c691f04bc8fc05c5380a283a3465">&#9670;&nbsp;</a></span>GetUpToFourPointsOnFigure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_OutlineFigure::GetUpToFourPointsOnFigure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a>&#160;</td>
+          <td class="paramname"><em>p</em>[4]</td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get up to four distinct points on the figure. These are useful for winding number tests when sorting figures. Parameters: p - [out] the returned points will be on the figure (not bezier interior control points). Returns: Number of points. </p>
+
+</div>
+</div>
+<a id="abe33f6c7a8a6c5680ea3b9f92a8d9a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe33f6c7a8a6c5680ea3b9f92a8d9a08">&#9670;&nbsp;</a></span>IsInsideOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_OutlineFigure::IsInsideOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___outline_figure.html">ON_OutlineFigure</a> *&#160;</td>
+          <td class="paramname"><em>outer_figure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPerformExtraChecking</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Determines if this <a class="el" href="class_o_n___outline_figure.html">ON_OutlineFigure</a> is inside of outer_figure. Parameters: outer_figure - [in] When bPerformExtraChecking is false, outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> should be set to what you plan on using when rendering the glyph. The orientation of outer_figur can be either clockwise or counterclockwise and, in the context of the entire glyph, outer_figure can be an inner or outer boundary. For example, the registered trademark glpyh (UNICODE U+00AE) is an example where four nested figures with alternating orientations are common. bPerformExtraChecking - [in] In general, when sorting glyph outlines as they come froma font file, set outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> to what will be used to render the glyph and pass false for bPerformExtraChecking. Details: In the case when bounding boxes and estimated areas and spot checks of winding numbers all indicate that this is inside of other_f, an additional time consuming intersection check is performed when this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> == other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a>. When this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> and other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> are opposited, the additional intersection check is skipped unless bPerformExtraChecking is true. Returns: True if it is very likely that this is not empty and is inside of other_f. False otherwise Remarks: </p>
+
+</div>
+</div>
 <a id="a571d0a231fa5895b6a3380ece9668fed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a571d0a231fa5895b6a3380ece9668fed">&#9670;&nbsp;</a></span>IsValidFigure()</h2>
 
@@ -968,7 +1020,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7a33994b7894ad018731a3478a4c3a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e7c94e6c5eba1cfbba9a100973d6d0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a3e7c94e6c5eba1cfbba9a100973d6d0d">IsSet</a> () const</td></tr>
 <tr class="separator:a3e7c94e6c5eba1cfbba9a100973d6d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f42cb15c6e0f1a4525b8650811578ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a9f42cb15c6e0f1a4525b8650811578ab">IsUnitized</a> () const</td></tr>
+<tr class="separator:a9f42cb15c6e0f1a4525b8650811578ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d08bd5be0857852a718436cfc73531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#ab0d08bd5be0857852a718436cfc73531">IsValid</a> () const</td></tr>
 <tr class="separator:ab0d08bd5be0857852a718436cfc73531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d702f0765ce38fb4a2399c5411ef10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a23d702f0765ce38fb4a2399c5411ef10">MaximumAbsoluteValueAt</a> (bool bRational, int point_count, int point_stride, const double *points, double stop_value) const</td></tr>
@@ -170,6 +172,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1d7d49dc7dcef09878a5e9b7a37141aa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a1d7d49dc7dcef09878a5e9b7a37141aa">CreateFromPointAndNormal</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> normal)</td></tr>
+<tr class="separator:a1d7d49dc7dcef09878a5e9b7a37141aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d776ec01ef54962703bfa385365405"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a20d776ec01ef54962703bfa385365405">CreateFromThreePoints</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> pointA, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> pointB, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> pointC)</td></tr>
+<tr class="separator:a20d776ec01ef54962703bfa385365405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dcb21e8e46a767e6f04e19cd6261ec7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a7dcb21e8e46a767e6f04e19cd6261ec7">Set</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> &amp;plane_equation, double <a class="el" href="class_o_n___plane_equation.html#a3cf6518017394b76ab7ef877014d86d9">x</a>, double <a class="el" href="class_o_n___plane_equation.html#a57500be6e3d4c103d9a6a0bd6b3221ff">y</a>, double <a class="el" href="class_o_n___plane_equation.html#aa3c776cd68ad4de9a003fba1b032dde9">z</a>, double <a class="el" href="class_o_n___plane_equation.html#adb0d2f26cf107cc81375350c83eb1d47">d</a>)</td></tr>
 <tr class="separator:a7dcb21e8e46a767e6f04e19cd6261ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -193,6 +199,15 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1c12e001d0a9b845cffd0a0b008b6911"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a1c12e001d0a9b845cffd0a0b008b6911">UnsetPlaneEquation</a></td></tr>
 <tr class="memdesc:a1c12e001d0a9b845cffd0a0b008b6911"><td class="mdescLeft">&#160;</td><td class="mdescRight">(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)  <a href="class_o_n___plane_equation.html#a1c12e001d0a9b845cffd0a0b008b6911">More...</a><br /></td></tr>
 <tr class="separator:a1c12e001d0a9b845cffd0a0b008b6911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb7212fea370032ffbe8c5396decffb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#accb7212fea370032ffbe8c5396decffb">WorldXY</a></td></tr>
+<tr class="memdesc:accb7212fea370032ffbe8c5396decffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(0,0,1,0)  <a href="class_o_n___plane_equation.html#accb7212fea370032ffbe8c5396decffb">More...</a><br /></td></tr>
+<tr class="separator:accb7212fea370032ffbe8c5396decffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dac27bd6d517a97e9ac862ab19dda2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#ad7dac27bd6d517a97e9ac862ab19dda2">WorldYZ</a></td></tr>
+<tr class="memdesc:ad7dac27bd6d517a97e9ac862ab19dda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">(1,0,0,0)  <a href="class_o_n___plane_equation.html#ad7dac27bd6d517a97e9ac862ab19dda2">More...</a><br /></td></tr>
+<tr class="separator:ad7dac27bd6d517a97e9ac862ab19dda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ba39e6585fc7e21a9eb0e37725eece"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#aa1ba39e6585fc7e21a9eb0e37725eece">WorldZX</a></td></tr>
+<tr class="memdesc:aa1ba39e6585fc7e21a9eb0e37725eece"><td class="mdescLeft">&#160;</td><td class="mdescRight">(0,1,0,0)  <a href="class_o_n___plane_equation.html#aa1ba39e6585fc7e21a9eb0e37725eece">More...</a><br /></td></tr>
+<tr class="separator:aa1ba39e6585fc7e21a9eb0e37725eece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72042db29095dbfa9fa6fcaeec6501e6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_equation.html#a72042db29095dbfa9fa6fcaeec6501e6">ZeroPlaneEquation</a></td></tr>
 <tr class="memdesc:a72042db29095dbfa9fa6fcaeec6501e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(0.0,0.0,0.0,0.0)  <a href="class_o_n___plane_equation.html#a72042db29095dbfa9fa6fcaeec6501e6">More...</a><br /></td></tr>
 <tr class="separator:a72042db29095dbfa9fa6fcaeec6501e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,6 +318,86 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Sets (x,y,z) to a unitized N and then sets d = -(x*P.x + y*P.y + z*P.z). Parameters: P - [in] point on the plane N - [in] vector perpendicular to the plane Returns: true if input is valid. </p>
+
+</div>
+</div>
+<a id="a1d7d49dc7dcef09878a5e9b7a37141aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d7d49dc7dcef09878a5e9b7a37141aa">&#9670;&nbsp;</a></span>CreateFromPointAndNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_PlaneEquation::CreateFromPointAndNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns: If point is valid and normal is nonzero, a unitized plane equation is returned. Otherwise <a class="el" href="class_o_n___plane_equation.html#a26d15552d9f47b1cf6f1b2afeba3650d" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_PlaneEquation::NanPlaneEquation</a> is returned. </p>
+
+</div>
+</div>
+<a id="a20d776ec01ef54962703bfa385365405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d776ec01ef54962703bfa385365405">&#9670;&nbsp;</a></span>CreateFromThreePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_PlaneEquation::CreateFromThreePoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>pointA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>pointB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>pointC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns: If the three points are valid and not colinear, a unitized plane equation is returned. Otherwise <a class="el" href="class_o_n___plane_equation.html#a26d15552d9f47b1cf6f1b2afeba3650d" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_PlaneEquation::NanPlaneEquation</a> is returned. </p>
 
 </div>
 </div>
@@ -476,6 +571,24 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: returns true if x, y, z, d are valid, finite doubles and at least one of x, y or z is not zero. </p>
+
+</div>
+</div>
+<a id="a9f42cb15c6e0f1a4525b8650811578ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f42cb15c6e0f1a4525b8650811578ab">&#9670;&nbsp;</a></span>IsUnitized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_PlaneEquation::IsUnitized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: returns true if x, y, z, d are valid, finite doubles and x^2 + y^2 + z^2 = 1. </p>
 
 </div>
 </div>
@@ -1449,6 +1562,78 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="accb7212fea370032ffbe8c5396decffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb7212fea370032ffbe8c5396decffb">&#9670;&nbsp;</a></span>WorldXY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_PlaneEquation::WorldXY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(0,0,1,0) </p>
+
+</div>
+</div>
+<a id="ad7dac27bd6d517a97e9ac862ab19dda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7dac27bd6d517a97e9ac862ab19dda2">&#9670;&nbsp;</a></span>WorldYZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_PlaneEquation::WorldYZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(1,0,0,0) </p>
+
+</div>
+</div>
+<a id="aa1ba39e6585fc7e21a9eb0e37725eece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ba39e6585fc7e21a9eb0e37725eece">&#9670;&nbsp;</a></span>WorldZX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_PlaneEquation::WorldZX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(0,1,0,0) </p>
+
+</div>
+</div>
 <a id="a3cf6518017394b76ab7ef877014d86d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cf6518017394b76ab7ef877014d86d9">&#9670;&nbsp;</a></span>x</h2>
 
@@ -1518,7 +1703,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8723ffbe2e244cd20be95b5840964c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0deb96ee5b00ec933ee4b2ff39b4cb83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a0deb96ee5b00ec933ee4b2ff39b4cb83">IsZeroDigest</a> () const</td></tr>
 <tr class="separator:a0deb96ee5b00ec933ee4b2ff39b4cb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299e0bf47b91bf89b155436401cf9259"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a299e0bf47b91bf89b155436401cf9259">IsZeroDigestOrEmptyContentHash</a> () const</td></tr>
+<tr class="separator:a299e0bf47b91bf89b155436401cf9259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb15f4d0ae3a06b1cc820d0e94ab76c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#afbb15f4d0ae3a06b1cc820d0e94ab76c">operator=</a> (const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;)=default</td></tr>
 <tr class="separator:afbb15f4d0ae3a06b1cc820d0e94ab76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a793874ee68ed4dd4306c7d1e858c3568"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a793874ee68ed4dd4306c7d1e858c3568">Read</a> (class <a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;archive)</td></tr>
@@ -125,6 +127,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a9cb83e4e627ac917404722990efa2f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160f654ed3c53f82c4dbe83f4a3a7f55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a160f654ed3c53f82c4dbe83f4a3a7f55">FileSystemPathHash</a> (const wchar_t *path, bool bIgnoreCase)</td></tr>
 <tr class="separator:a160f654ed3c53f82c4dbe83f4a3a7f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec84dbe35c040bc86cada17a1a9d9b43"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#aec84dbe35c040bc86cada17a1a9d9b43">FromString</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> string_to_parse, bool bParseLeasingSpaces, bool bParseInteriorSpace, bool bParseInteriorHyphen, <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> failure_return_value)</td></tr>
+<tr class="separator:aec84dbe35c040bc86cada17a1a9d9b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97e29d54dbd500fc43d535f53f53650"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae97e29d54dbd500fc43d535f53f53650">StringHash</a> (const char *null_terminated_string)</td></tr>
 <tr class="separator:ae97e29d54dbd500fc43d535f53f53650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17ec4f2b5ea1bd95152fdb7d751e0db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#aa17ec4f2b5ea1bd95152fdb7d751e0db">StringHash</a> (const char *str, size_t str_length, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;byte_count)</td></tr>
@@ -557,6 +561,61 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aec84dbe35c040bc86cada17a1a9d9b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec84dbe35c040bc86cada17a1a9d9b43">&#9670;&nbsp;</a></span>FromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> ON_SHA1_Hash::FromString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td>
+          <td class="paramname"><em>string_to_parse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bParseLeasingSpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bParseInteriorSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bParseInteriorHyphen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td>
+          <td class="paramname"><em>failure_return_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Parse a string of 40 hexadecimal digits to create a SHA-1 hash. Parameters: string_to_parse - [in] bParseLeadinglSpaces - [in] If true, leading space characters are parsed. Otherwise leading space characters cause parsing to fail. bParseInteriorSpace - [in] If true, interior space characters are parsed. Otherwise interior space characters cause parsing to fail. bParseInteriorHyphen - [in] If true, interior hyphen characters are parsed. Otherwise interior hyphen characters cause parsing to fail. bIgnoreInternalSpaces - [in] If true, isolated hyphens are ingored until 40 hex digits are read. bIgnoreInternalHyphens - [in] If true, leading spaces and isolated interior spacess are ingored until 40 hex digits are read. failure_return_value - [in] Value to return if string_to_parse cannot be parsed as 40 hex digits. Returns: If parsing is successful, the value of the SHA-1 hash is returned. Otherwise failure_return_value is returned. </p>
+
+</div>
+</div>
 <a id="a6a97cc264bf8e00ce983cfda5bbf13a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a97cc264bf8e00ce983cfda5bbf13a4">&#9670;&nbsp;</a></span>IsEmptyContentHash()</h2>
 
@@ -589,6 +648,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___s_h_a1___hash.html#a299e0bf47b91bf89b155436401cf9259">IsZeroDigestOrEmptyContentHash()</a> instead. (Spelling error in this one's name.; </dd></dl>
 
 </div>
 </div>
@@ -607,6 +667,23 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: True if this and <a class="el" href="class_o_n___s_h_a1___hash.html#a50683fde45600ba340667429fd8fd686" title="all digest bytes are zero">ON_SHA1_Hash::ZeroDigest</a> have identical digest values. </p>
+
+</div>
+</div>
+<a id="a299e0bf47b91bf89b155436401cf9259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299e0bf47b91bf89b155436401cf9259">&#9670;&nbsp;</a></span>IsZeroDigestOrEmptyContentHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SHA1_Hash::IsZeroDigestOrEmptyContentHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1005,7 +1082,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

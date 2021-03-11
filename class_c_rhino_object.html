@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -1389,7 +1389,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000143">Deprecated:</a></b></dt><dd>use Draw function that takes a display pipeline </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000148">Deprecated:</a></b></dt><dd>use Draw function that takes a display pipeline </dd></dl>
 
 </div>
 </div>
@@ -3616,6 +3616,8 @@ Friends</h2></td></tr>
 <p>Description: Gets the material used to render the object's front side. Parameters: plugin_id - [in] (optional) If not present, the plugin_id returned by <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.GetDefaultRenderApp() is used. Returns: A reference to a rendering material. When no material is explicitly specified, this is the default material <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.AppSettings().DefaultMaterial().</p>
 <p>NOTE WELL: If the material table is modified, this pointer will become invalid. Do not use this pointer for saving long term reference to the material. Use the material index or id instead. See Also CRhinoObjectAttributes::ObjectMaterialRef <a class="el" href="class_c_rhino_material_table.html#acef55bb2228931bb34bf00f3693b1492">CRhinoMaterialTable::GetMaterials</a> CRhinoObject::ObjectMaterialRef </p>
 
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a7a00d138628c1094661a4aeecb4db67d">CRhinoSubDObject</a>.</p>
+
 </div>
 </div>
 <a id="adcde2240fc6fdd81d44d1614505b9767"></a>
@@ -3686,7 +3688,7 @@ Friends</h2></td></tr>
 
 <p>This is now the preferred version of the function. This should be used to get materials component-wise in all cases. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_brep_object.html#abe248a29ed20aaa1327deb5dae8309eb">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_brep_object.html#abe248a29ed20aaa1327deb5dae8309eb">CRhinoBrepObject</a>, and <a class="el" href="class_c_rhino_sub_d_object.html#a175a117e24b43d2059cd2b2739bbf744">CRhinoSubDObject</a>.</p>
 
 </div>
 </div>
@@ -5333,7 +5335,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

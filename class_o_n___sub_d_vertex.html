@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1ec334dfbef9497ab4fbe6fa4016bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55b6a496b363c96277a612017a5eca58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a55b6a496b363c96277a612017a5eca58">ClearSavedSubdivisionPoints</a> () const</td></tr>
 <tr class="separator:a55b6a496b363c96277a612017a5eca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13deef77daec12a62a3dc406efb95241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a13deef77daec12a62a3dc406efb95241">ClearSavedSubdivisionPoints</a> (bool bClearNeighborhood) const</td></tr>
+<tr class="separator:a13deef77daec12a62a3dc406efb95241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e297d897c511056d8515f2908aa714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a47e297d897c511056d8515f2908aa714">ClearSavedSurfacePoints</a> () const</td></tr>
 <tr class="separator:a47e297d897c511056d8515f2908aa714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b53ccfc1fe4ae9bf841d0f6bf7f4ffc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a8b53ccfc1fe4ae9bf841d0f6bf7f4ffc">ComponentIndex</a> () const</td></tr>
@@ -123,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7927aeb18c6cedee394247f9aa5b3bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095f954dc6ad8f22cdda440edf2c2d70"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a095f954dc6ad8f22cdda440edf2c2d70">CreasedEdge</a> (bool bInteriorEdgesOnly) const</td></tr>
 <tr class="separator:a095f954dc6ad8f22cdda440edf2c2d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3a391d3e71a87d664aa4ad24ad0e3c"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a6c3a391d3e71a87d664aa4ad24ad0e3c">CreasedEdgeCount</a> () const</td></tr>
+<tr class="separator:a6c3a391d3e71a87d664aa4ad24ad0e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1cd38656c795c86a317189b20f3c1f"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a1b1cd38656c795c86a317189b20f3c1f">CreasedEdgeCount</a> (bool bCountInteriorCreases, bool bCountBoundaryCreases, bool bCountNonmanifoldCreases, bool bCountWireCreases) const</td></tr>
 <tr class="separator:a1b1cd38656c795c86a317189b20f3c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedda8c3e37fa7f46c010d8a08ca131df"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#aedda8c3e37fa7f46c010d8a08ca131df">CreasedEdgePair</a> (bool bInteriorEdgesOnly) const</td></tr>
@@ -610,7 +614,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a55b6a496b363c96277a612017a5eca58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55b6a496b363c96277a612017a5eca58">&#9670;&nbsp;</a></span>ClearSavedSubdivisionPoints()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b6a496b363c96277a612017a5eca58">&#9670;&nbsp;</a></span>ClearSavedSubdivisionPoints() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,6 +628,25 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Clears saved subdivision and limit surface information for this vertex. Attached edges and faces are not modifed. </p>
+
+</div>
+</div>
+<a id="a13deef77daec12a62a3dc406efb95241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13deef77daec12a62a3dc406efb95241">&#9670;&nbsp;</a></span>ClearSavedSubdivisionPoints() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SubDVertex::ClearSavedSubdivisionPoints </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bClearNeighborhood</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Clears saved subdivision and limit surface information for this vertex. Parameters: bClearNeighborhood - [in] If true, all edges and faces attached to this vertex are also cleared. </p>
 
 </div>
 </div>
@@ -841,8 +864,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c3a391d3e71a87d664aa4ad24ad0e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3a391d3e71a87d664aa4ad24ad0e3c">&#9670;&nbsp;</a></span>CreasedEdgeCount() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int ON_SubDVertex::CreasedEdgeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: Number of creased edges. </p>
+
+</div>
+</div>
 <a id="a1b1cd38656c795c86a317189b20f3c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1cd38656c795c86a317189b20f3c1f">&#9670;&nbsp;</a></span>CreasedEdgeCount()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1cd38656c795c86a317189b20f3c1f">&#9670;&nbsp;</a></span>CreasedEdgeCount() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +919,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: Number of creased edges </p>
+<p>Description: Count creases with specified topology. Parameters: bCountInteriorCreases - [in] Count includes crease edges with 2 faces. bCountBoundaryCreases - [in] Count includes crease edges with 1 face. bCountNonmanifoldCreases - [in] Count includes crease edges with 3 or more faces. bCountWireCreases - [in] Count includes crease edges with 0 faces. Returns: Number of creased edges with the specified topology. </p>
 
 </div>
 </div>
@@ -2431,7 +2472,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

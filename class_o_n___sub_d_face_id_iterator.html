@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a07587331eeaf11ee675d9376f18eece6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae381b9dec53e8bd1ff368ac1a27e79d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_id_iterator.html#ae381b9dec53e8bd1ff368ac1a27e79d2">FirstFace</a> ()</td></tr>
 <tr class="separator:ae381b9dec53e8bd1ff368ac1a27e79d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeeb6076c29a342ff1d9c931141f69c0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_id_iterator.html#adeeb6076c29a342ff1d9c931141f69c0">FirstFaceOnLevel</a> (unsigned int level_index)</td></tr>
+<tr class="separator:adeeb6076c29a342ff1d9c931141f69c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d223d1aa9ef2cf51ea4bb3c0fb9b2b1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_id_iterator.html#a1d223d1aa9ef2cf51ea4bb3c0fb9b2b1">NextFace</a> ()</td></tr>
 <tr class="separator:a1d223d1aa9ef2cf51ea4bb3c0fb9b2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e38da9f51f7abedd6fd679e08833a50"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_id_iterator.html#a2e38da9f51f7abedd6fd679e08833a50">NextFaceOnLevel</a> (unsigned int level_index)</td></tr>
+<tr class="separator:a2e38da9f51f7abedd6fd679e08833a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a258223d1f2a8237f99ef90de0e950ae3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_face_id_iterator.html">ON_SubDFaceIdIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_id_iterator.html#a258223d1f2a8237f99ef90de0e950ae3">operator=</a> (const <a class="el" href="class_o_n___sub_d_face_id_iterator.html">ON_SubDFaceIdIterator</a> &amp;)=default</td></tr>
 <tr class="separator:a258223d1f2a8237f99ef90de0e950ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -260,6 +264,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="adeeb6076c29a342ff1d9c931141f69c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb6076c29a342ff1d9c931141f69c0">&#9670;&nbsp;</a></span>FirstFaceOnLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>* ON_SubDFaceIdIterator::FirstFaceOnLevel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1d223d1aa9ef2cf51ea4bb3c0fb9b2b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d223d1aa9ef2cf51ea4bb3c0fb9b2b1">&#9670;&nbsp;</a></span>NextFace()</h2>
 
@@ -275,6 +297,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: In general, you want to use a <a class="el" href="class_o_n___sub_d_face_iterator.html">ON_SubDFaceIterator</a> to loop through SubD faces. This is a special tool for unusual sitiations wheh it is necessary to iteratate through every face on every level of a SubD in order of increasing m_id value. Returns: The face in order of increasing id. </p>
+
+</div>
+</div>
+<a id="a2e38da9f51f7abedd6fd679e08833a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e38da9f51f7abedd6fd679e08833a50">&#9670;&nbsp;</a></span>NextFaceOnLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>* ON_SubDFaceIdIterator::NextFaceOnLevel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>level_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -330,7 +370,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.3</span>
+   &#160;<span id="projectnumber">7.4</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,20 @@ Public Types</h2></td></tr>
 <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5baf5a7924e621e84c9280a9a27e1bcb7f6">Coordinates::World</a> = 2
  }</td></tr>
 <tr class="separator:a572595d0c49922af939aea286f361f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025af3b37bec7b34b8a2545f4e2f3927"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">Region</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927ac9f88e098f6fe4e4e112eeb05ccb9671">Region::Unset</a> = 0, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927aefeb369cccbd560588a756610865664c">Region::In</a> = 1, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38">Region::OnRotationAxis</a> = 2, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a14c528e24bc3b2a6e778208c7e5a8686">Region::OnReflectionPlane</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a8995d1c71067225afae4bd96fc06028b">Region::OnRotationZeroPlane</a> = 4, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a562db93b95099a1b38f84262ece185bd">Region::OnRotationOnePlane</a> = 5, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927aca3a158919ed3c85a675dc3d6efabedc">Region::InAndOut</a> = 6, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a7c147cda9e49590f6abe83d118b7353b">Region::Out</a> = 7
+<br />
+ }</td></tr>
+<tr class="memdesc:a025af3b37bec7b34b8a2545f4e2f3927"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927" title="ON_Symmetry::Region specifies various subsets of the primary motif region.">ON_Symmetry::Region</a> specifies various subsets of the primary motif region.  <a href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">More...</a><br /></td></tr>
+<tr class="separator:a025af3b37bec7b34b8a2545f4e2f3927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7dab40c7162d83d98c6e9c871a0aa2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">Type</a> : unsigned char { <br />
 &#160;&#160;<a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2ac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = 0, 
 <a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2a74de3e45e4491e956e8dc18d841d9b00">Type::Reflect</a> = 1, 
@@ -115,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4396e8473c3bf0d3006df0ff646ad1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b4ec261aabbfb8b596f22c0679c231"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform</a> () const</td></tr>
 <tr class="separator:a02b4ec261aabbfb8b596f22c0679c231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88924d349be3f25bc948d2ed758901a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation</a> () const</td></tr>
+<tr class="separator:aa88924d349be3f25bc948d2ed758901a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76e4e9a6b91387ac8bd3dc44950bc4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aa76e4e9a6b91387ac8bd3dc44950bc4a">Dump</a> (class <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;) const</td></tr>
 <tr class="separator:aa76e4e9a6b91387ac8bd3dc44950bc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930739404dc658d627c0b52c134ff0e5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a930739404dc658d627c0b52c134ff0e5">FixedPlane</a> () const</td></tr>
@@ -127,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3027a4404d33425daa6dc24069ed595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44014acb0199981ad5655e89b70fc669"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform</a> () const</td></tr>
 <tr class="separator:a44014acb0199981ad5655e89b70fc669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722f282bd39001161183ae496918df2a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation</a> () const</td></tr>
+<tr class="separator:a722f282bd39001161183ae496918df2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af923598f780ede70a2a0d84a6c699268"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af923598f780ede70a2a0d84a6c699268">IsSet</a> () const</td></tr>
 <tr class="separator:af923598f780ede70a2a0d84a6c699268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182a0fef1f26452b7f8424aae0868c87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a182a0fef1f26452b7f8424aae0868c87">IsUnset</a> () const</td></tr>
@@ -137,10 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7030203f677156f9d872c582b174fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f510f97022a971ac23ec3230f48fa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ac9f510f97022a971ac23ec3230f48fa3">operator=</a> (const <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a> &amp;)=default</td></tr>
 <tr class="separator:ac9f510f97022a971ac23ec3230f48fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1fbae6eb4c9dfb90fe9b6bf68b0d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a6c1fbae6eb4c9dfb90fe9b6bf68b0d5c">PointRegion</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, bool bUseCleanupTolerance)</td></tr>
+<tr class="separator:a6c1fbae6eb4c9dfb90fe9b6bf68b0d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68d01cf3a01ebd06196cf95b2dc5ab9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ab68d01cf3a01ebd06196cf95b2dc5ab9">Read</a> (class <a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;)</td></tr>
 <tr class="separator:ab68d01cf3a01ebd06196cf95b2dc5ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896a45689b17b02aa19ba7b8e69e4d28"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a896a45689b17b02aa19ba7b8e69e4d28">ReflectionPlane</a> () const</td></tr>
 <tr class="separator:a896a45689b17b02aa19ba7b8e69e4d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42d3203776936bb664231e64e607210"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af42d3203776936bb664231e64e607210">ReflectionTransformation</a> () const</td></tr>
+<tr class="separator:af42d3203776936bb664231e64e607210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9edb4c53cd33d2d73f05a7cbc5059ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ac9edb4c53cd33d2d73f05a7cbc5059ff">RotationAngleDegrees</a> () const</td></tr>
 <tr class="separator:ac9edb4c53cd33d2d73f05a7cbc5059ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32dd816de2874c80b5fe519862a1fd4e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a32dd816de2874c80b5fe519862a1fd4e">RotationAngleRadians</a> () const</td></tr>
@@ -155,6 +177,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4a66c778579577f134cae62e7b88607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b5a00fef697bea774e672003c65006"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aa3b5a00fef697bea774e672003c65006">RotationCount</a> () const</td></tr>
 <tr class="separator:aa3b5a00fef697bea774e672003c65006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337fc427692c099cc1f0a00fdbad6b0c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a337fc427692c099cc1f0a00fdbad6b0c">RotationOnePlane</a> () const</td></tr>
+<tr class="separator:a337fc427692c099cc1f0a00fdbad6b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd448d2dbecfb891c05fa4bc5482959"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a5cd448d2dbecfb891c05fa4bc5482959">RotationTransformation</a> () const</td></tr>
+<tr class="separator:a5cd448d2dbecfb891c05fa4bc5482959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a754733e9c84b806126f8e418cdac4a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a0a754733e9c84b806126f8e418cdac4a">RotationZeroPlane</a> () const</td></tr>
+<tr class="separator:a0a754733e9c84b806126f8e418cdac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86acb83deb067844309171139ee8db8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a86acb83deb067844309171139ee8db8f">SetCleanupTolerance</a> (double cleanup_tolerance)</td></tr>
 <tr class="separator:a86acb83deb067844309171139ee8db8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af2a728508981041567915b7a8791d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a2af2a728508981041567915b7a8791d6">SetSymmetricObjectContentSerialNumber</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> symmetric_object_content_serial_number) const</td></tr>
@@ -194,6 +222,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ade4abb0c675c9bf15f3fb3fb969e8ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e967a8e1b35d0a80a1992ab2e5527f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aa2e967a8e1b35d0a80a1992ab2e5527f">CreateRotateSymmetry</a> (<a class="el" href="class_o_n___line.html">ON_Line</a> rotation_axis, unsigned int rotation_count, <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">ON_Symmetry::Coordinates</a> symmetry_coordinates)</td></tr>
 <tr class="separator:aa2e967a8e1b35d0a80a1992ab2e5527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cc14c8d2e005971bc3f803b4f2a402"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a91cc14c8d2e005971bc3f803b4f2a402">IsInOrOn</a> (<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> r, bool bInAndOutResult)</td></tr>
+<tr class="separator:a91cc14c8d2e005971bc3f803b4f2a402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49296720d2944824b51a8b83645dc6c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ad49296720d2944824b51a8b83645dc6c">IsNotInOrOn</a> (<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> r, bool bInAndOutResult)</td></tr>
+<tr class="separator:ad49296720d2944824b51a8b83645dc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807b4e9ba46f7fa50b8da3ebed940bb2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a807b4e9ba46f7fa50b8da3ebed940bb2">IsOn</a> (<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> r, bool bInAndOutResult)</td></tr>
+<tr class="separator:a807b4e9ba46f7fa50b8da3ebed940bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a060dc3e5aee13ca43aa4fde45a3c450e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a060dc3e5aee13ca43aa4fde45a3c450e">IsValidRotationAxisAndFixedPlane</a> (<a class="el" href="class_o_n___line.html">ON_Line</a> rotation_axis, unsigned int rotation_count, <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> fixed_plane)</td></tr>
 <tr class="separator:a060dc3e5aee13ca43aa4fde45a3c450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af86968fb0bbf37dc7c4e6f01861d11bb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af86968fb0bbf37dc7c4e6f01861d11bb">IsValidTranformationAndFixedPlane</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> transformation, unsigned transformation_order, <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> fixed_plane)</td></tr>
@@ -202,6 +236,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a500f1cc513788ebe0f26781571e174dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca6a94e8a7e54d14ec0809844037bdb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a5ca6a94e8a7e54d14ec0809844037bdb">SymmetryCoordinatesToString</a> (<a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">ON_Symmetry::Coordinates</a> symmetry_coordinates)</td></tr>
 <tr class="separator:a5ca6a94e8a7e54d14ec0809844037bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280a81c07274f8211793af4e85d6bcb0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a280a81c07274f8211793af4e85d6bcb0">SymmetryRegionFromUnsigned</a> (unsigned int region_as_unsigned)</td></tr>
+<tr class="separator:a280a81c07274f8211793af4e85d6bcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29ad04a9b50bc539dac0d6232c17939"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af29ad04a9b50bc539dac0d6232c17939">SymmetryRegionToString</a> (<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> r)</td></tr>
+<tr class="separator:af29ad04a9b50bc539dac0d6232c17939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50ded5336de7b32df17bd766f2bc4da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">ON_Symmetry::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af50ded5336de7b32df17bd766f2bc4da">SymmetryTypeFromUnsigned</a> (unsigned int symmetry_type_as_unsigned)</td></tr>
 <tr class="separator:af50ded5336de7b32df17bd766f2bc4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad080ef063120519f7b9929113319da97"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ad080ef063120519f7b9929113319da97">SymmetryTypeToString</a> (<a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">ON_Symmetry::Type</a> symmetry_type)</td></tr>
@@ -265,6 +303,48 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b"></a>Object&#160;</td><td class="fielddoc"><p>The symmetry is associated with an object is is applied to. If that object is transformed, the symmetry's planes and rotation axes are also transformed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5baf5a7924e621e84c9280a9a27e1bcb7f6"></a>World&#160;</td><td class="fielddoc"><p>The symmetry is indepenent of any objects is it applied to. The symmetry's planes and rotation axes are not changed when any of those objects are transformed. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a025af3b37bec7b34b8a2545f4e2f3927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025af3b37bec7b34b8a2545f4e2f3927">&#9670;&nbsp;</a></span>Region</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927" title="ON_Symmetry::Region specifies various subsets of the primary motif region.">ON_Symmetry::Region</a> specifies various subsets of the primary motif region. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>Unset or unknown location </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927aefeb369cccbd560588a756610865664c"></a>In&#160;</td><td class="fielddoc"><p>Inside the primary motif region. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38"></a>OnRotationAxis&#160;</td><td class="fielddoc"><p>On the rotation axis. Applies to Reflect and ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a14c528e24bc3b2a6e778208c7e5a8686"></a>OnReflectionPlane&#160;</td><td class="fielddoc"><p>On the reflection plane. Applies to Reflect and ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a8995d1c71067225afae4bd96fc06028b"></a>OnRotationZeroPlane&#160;</td><td class="fielddoc"><p>On the zero angle. Applies to Reflect and ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a562db93b95099a1b38f84262ece185bd"></a>OnRotationOnePlane&#160;</td><td class="fielddoc"><p>On the the rotation of the zero angle plane. Applies to Rotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927aca3a158919ed3c85a675dc3d6efabedc"></a>InAndOut&#160;</td><td class="fielddoc"><p>Something like a line segment that has points both inside and outside the primary motif region. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a7c147cda9e49590f6abe83d118b7353b"></a>Out&#160;</td><td class="fielddoc"><p>Outside the primary motif region. </p>
 </td></tr>
 </table>
 
@@ -561,7 +641,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Use CreateRotationSymmetry() or CreateReflectionSymmetry() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Use CreateRotationSymmetry() or CreateReflectionSymmetry() </dd></dl>
 
 </div>
 </div>
@@ -604,7 +684,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>Use CreateRotationSymmetry(axis,2,...) or CreateReflectionSymmetry() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Use CreateRotationSymmetry(axis,2,...) or CreateReflectionSymmetry() </dd></dl>
 
 </div>
 </div>
@@ -654,7 +734,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Reflection and rotation alternate. The symmetric object has 2*reflection copies of the motif. Points on the rotation axis are fixed. <br  />
- Parameters: reflection_plane - [in] rotation_axis - [in] A line in the reflection plane. rotation_count - [in] rotation_count must be &gt;= 2 and the rotation angle is (360/rotation_count) degrees. symmetry_coordinates - [in] object or world. Example: If the reflection_plane is the y-z plane, the rotation axis is the z-axis, and rotation_count = 2, then (x,y,z) -&gt; (-x,y,z) -&gt; (-x-y,z) -&gt; (x,-y,z) -&gt; (x,y,z). Remarks: <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = reflection. <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = rotation by (360/rotation_count) degrees. </p>
+ Parameters: reflection_plane - [in] rotation_axis - [in] A line in the reflection plane. rotation_count - [in] rotation_count must be &gt;= 2 and the rotation angle is (360/rotation_count) degrees. symmetry_coordinates - [in] object or world. Example: If the reflection_plane is the y-z plane, the rotation axis is the z-axis, and rotation_count = 2, then (x,y,z) -&gt; (-x,y,z) -&gt; (-x-y,z) -&gt; (x,-y,z) -&gt; (x,y,z). Remarks: <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = reflection. <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = rotation by (360/rotation_count) degrees. </p>
 
 </div>
 </div>
@@ -691,7 +771,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Reflection about a plane. The symmetric object has 2 copies of the motif. Points on the reflection plane are fixed. Parameters: reflection_plane - [in] A point P is in the primary motif when reflection_plane.ValueAt(P) &gt;= 0. symmetry_coordinates - [in] object or world. Example: If the reflection_plane is the y-z plane, then (x,y,z) -&gt; (-x,y,z) -&gt; (x,y,z). Remarks: <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = reflection. <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = identity. </p>
+<p>Description: Reflection about a plane. The symmetric object has 2 copies of the motif. Points on the reflection plane are fixed. Parameters: reflection_plane - [in] A point P is in the primary motif when reflection_plane.ValueAt(P) &gt;= 0. symmetry_coordinates - [in] object or world. Example: If the reflection_plane is the y-z plane, then (x,y,z) -&gt; (-x,y,z) -&gt; (x,y,z). Remarks: <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = reflection. <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = identity. </p>
 
 </div>
 </div>
@@ -741,7 +821,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Rotation around an axis. The symmetric object has reflection_count copies of the motif. Points on the axis are fixed. <br  />
- Parameters: rotation_axis - [in] rotation_count - [in] rotation_count must be &gt;= 2 and the rotation angle is (360/rotation_count) degrees. zero_rotation_plane - [in] zero_rotation_plane plane is used to define the primary motif region. A point P is in the primary motif when zero_rotation_plane.ValueAt(P) &gt;= 0 &amp;&amp; (MotifTransformation(1)*zero_rotation_plane).ValueAt(P) &lt;= 0. The rotation axis must be in zero_rotation_plane (zero_rotation_plane.ValueAt(rotation_axis) &lt;= ON_ZERO_TOLERANCE and zero_rotation_plane.ValueAt(rotation_axis) &lt;= ON_ZERO_TOLERANCE). symmetry_coordinates - [in] object or world. Example: If the rotation axis is the z-axis and the order is N, then the generator is then (x,y,z) -&gt; (r*cos(a), r*sin(a), z) -&gt; (r*cos(2*a), r*sin(2*a), z) -&gt; ... -&gt; (x,y,z), where r = sqrt(x*x + y*y) and a = (360 degrees)/N. Any plane containing the z-axis can be used as the zero_rotation_plane. Remarks: <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = rotation. <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = identity. </p>
+ Parameters: rotation_axis - [in] rotation_count - [in] rotation_count must be &gt;= 2 and the rotation angle is (360/rotation_count) degrees. zero_rotation_plane - [in] zero_rotation_plane plane is used to define the primary motif region. A point P is in the primary motif when zero_rotation_plane.ValueAt(P) &gt;= 0 &amp;&amp; (MotifTransformation(1)*zero_rotation_plane).ValueAt(P) &lt;= 0. The rotation axis must be in zero_rotation_plane (zero_rotation_plane.ValueAt(rotation_axis) &lt;= ON_ZERO_TOLERANCE and zero_rotation_plane.ValueAt(rotation_axis) &lt;= ON_ZERO_TOLERANCE). symmetry_coordinates - [in] object or world. Example: If the rotation axis is the z-axis and the order is N, then the generator is then (x,y,z) -&gt; (r*cos(a), r*sin(a), z) -&gt; (r*cos(2*a), r*sin(2*a), z) -&gt; ... -&gt; (x,y,z), where r = sqrt(x*x + y*y) and a = (360 degrees)/N. Any plane containing the z-axis can be used as the zero_rotation_plane. Remarks: <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = rotation. <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = identity. </p>
 
 </div>
 </div>
@@ -784,7 +864,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>Does nothing. Use <a class="el" href="class_o_n___symmetry.html#aa2e967a8e1b35d0a80a1992ab2e5527f">ON_Symmetry::CreateRotateSymmetry</a>(axis,count,plane,coordinates. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Does nothing. Use <a class="el" href="class_o_n___symmetry.html#aa2e967a8e1b35d0a80a1992ab2e5527f">ON_Symmetry::CreateRotateSymmetry</a>(axis,count,plane,coordinates. </dd></dl>
 
 </div>
 </div>
@@ -802,7 +882,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: unset symmetry 1: the cyclic transformation is the identity. N &gt;= 2: <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a>^N = idenity and <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a>^i != idenity when 0 &lt; i &lt; N. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> is either the identity or a rotation. </p>
+<p>Returns: 0: unset symmetry 1: the cyclic transformation is the identity. N &gt;= 2: <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a>^N = idenity and <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a>^i != idenity when 0 &lt; i &lt; N. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> is either the identity or a rotation. </p>
 
 </div>
 </div>
@@ -820,7 +900,25 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: The cyclic transformation is returned. <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a>^CyclicOrder() = identity. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> is either the identity or a rotation. Remarks: NOTE: A symmetry with SymmetryOrder() = 2 and transformation S can be represented as either <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = S and <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = identity or or <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = S and <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = idenity. The convention is to use the cyclic transforms when S is a 180 rotations and inversion transforms otherwise. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000087">Deprecated:</a></b></dt><dd>Return nans. Call <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa88924d349be3f25bc948d2ed758901a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88924d349be3f25bc948d2ed758901a">&#9670;&nbsp;</a></span>CyclicTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Symmetry::CyclicTransformation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The cyclic transformation is returned. <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a>^CyclicOrder() = identity. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> is either the identity or a rotation. Remarks: NOTE: A symmetry with SymmetryOrder() = 2 and transformation S can be represented as either <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = S and <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = identity or or <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = S and <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = idenity. The convention is to use the cyclic transforms when S is a 180 rotations and inversion transforms otherwise. </p>
 
 </div>
 </div>
@@ -921,7 +1019,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: unset symmetry 1: <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = identity 2: <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a>^2 = identity and <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> != identity Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> is either the identity or a reflection. </p>
+<p>Returns: 0: unset symmetry 1: <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = identity 2: <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a>^2 = identity and <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> != identity Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> is either the identity or a reflection. </p>
 
 </div>
 </div>
@@ -939,7 +1037,136 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: The inversion transformation is returned. <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a>^InversionOrder() = identity. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> is either the identity or a reflection (mirror). Remarks: NOTE: A symmetry with SymmetryOrder() = 2 and transformation S can be represented as either <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = S and <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = identity or or <a class="el" href="class_o_n___symmetry.html#a02b4ec261aabbfb8b596f22c0679c231">CyclicTransform()</a> = S and <a class="el" href="class_o_n___symmetry.html#a44014acb0199981ad5655e89b70fc669">InversionTransform()</a> = idenity. The convention is to use the cyclic transforms when S is a 180 rotations and inversion transforms otherwise. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>Returns nans. Call <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a722f282bd39001161183ae496918df2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722f282bd39001161183ae496918df2a">&#9670;&nbsp;</a></span>InversionTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Symmetry::InversionTransformation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The inversion transformation is returned. <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a>^InversionOrder() = identity. Remarks: In common cases, <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> is either the identity or a reflection (mirror). Remarks: NOTE: A symmetry with SymmetryOrder() = 2 and transformation S can be represented as either <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = S and <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = identity or or <a class="el" href="class_o_n___symmetry.html#aa88924d349be3f25bc948d2ed758901a">CyclicTransformation()</a> = S and <a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation()</a> = idenity. The convention is to use the cyclic transforms when S is a 180 rotations and inversion transforms otherwise. </p>
+
+</div>
+</div>
+<a id="a91cc14c8d2e005971bc3f803b4f2a402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cc14c8d2e005971bc3f803b4f2a402">&#9670;&nbsp;</a></span>IsInOrOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::IsInOrOn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInAndOutResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Paramaters: r - [in] bInAndOutResult - [in] Value to return when ON_Symmetry::Region::InandOut == r. Returns: <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927aefeb369cccbd560588a756610865664c" title="Inside the primary motif region.">ON_Symmetry::Region::In</a> == r || IsOn(r). </p>
+
+</div>
+</div>
+<a id="ad49296720d2944824b51a8b83645dc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49296720d2944824b51a8b83645dc6c">&#9670;&nbsp;</a></span>IsNotInOrOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::IsNotInOrOn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInAndOutResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Paramaters: r - [in] bInAndOutResult - [in] Value to return when ON_Symmetry::Region::InandOut == r. Returns: !ON_Symmetry::IsInOrOn(r) </p>
+
+</div>
+</div>
+<a id="a807b4e9ba46f7fa50b8da3ebed940bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807b4e9ba46f7fa50b8da3ebed940bb2">&#9670;&nbsp;</a></span>IsOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::IsOn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInAndOutResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Paramaters: r - [in] bInAndOutResult - [in] Value to return when ON_Symmetry::Region::InandOut == r. Returns: True if r is OnRotationAxis, OnReflectionPlane, OnZeroAnglePlane, or OnOneAnglePlane. </p>
 
 </div>
 </div>
@@ -1126,6 +1353,35 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c1fbae6eb4c9dfb90fe9b6bf68b0d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1fbae6eb4c9dfb90fe9b6bf68b0d5c">&#9670;&nbsp;</a></span>PointRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> ON_Symmetry::PointRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCleanupTolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters: point - [in] point to test. bUseCleanupTolerance - [in] The tolerance used to dermine if a point is On an axis or plane is bUseCleanupTolerance ? this-&gt;<a class="el" href="class_o_n___symmetry.html#a5707ad9e0ca8c1982b04694ac07e8acf">CleanupTolerance()</a> : <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a>. Returns: The location of the point releative to the primary motif regions. </p>
+
+</div>
+</div>
 <a id="ab68d01cf3a01ebd06196cf95b2dc5ab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab68d01cf3a01ebd06196cf95b2dc5ab9">&#9670;&nbsp;</a></span>Read()</h2>
 
@@ -1152,6 +1408,24 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_Symmetry::ReflectionPlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: If the symmetry is type is Reflect or ReflectAndRotate, then the reflection plane is returned. Othewise ON_Plane::Nan is returned. </p>
+
+</div>
+</div>
+<a id="af42d3203776936bb664231e64e607210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42d3203776936bb664231e64e607210">&#9670;&nbsp;</a></span>ReflectionTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Symmetry::ReflectionTransformation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1285,6 +1559,60 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: If the symmetry is type is Rotate or ReflectAndRotate, then the rotation count is returned. Othewise 0 is returned. </p>
+
+</div>
+</div>
+<a id="a337fc427692c099cc1f0a00fdbad6b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337fc427692c099cc1f0a00fdbad6b0c">&#9670;&nbsp;</a></span>RotationOnePlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_Symmetry::RotationOnePlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: If the symmetry is type is Rotate or ReflectAndRotate, then (<a class="el" href="class_o_n___symmetry.html#a5cd448d2dbecfb891c05fa4bc5482959">RotationTransformation()</a> * <a class="el" href="class_o_n___symmetry.html#a337fc427692c099cc1f0a00fdbad6b0c">RotationOnePlane()</a>).NegatedPlaneEquation() is returned. Othewise <a class="el" href="class_o_n___plane_equation.html#a26d15552d9f47b1cf6f1b2afeba3650d" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_PlaneEquation::NanPlaneEquation</a> is returned. Remarks: For a Rotate symmetry, the region on or above <a class="el" href="class_o_n___symmetry.html#a0a754733e9c84b806126f8e418cdac4a">RotationZeroPlane()</a> and above <a class="el" href="class_o_n___symmetry.html#a337fc427692c099cc1f0a00fdbad6b0c">RotationOnePlane()</a> is the default primary motif region. For a RotateAndReflect symmetry, the region on or above <a class="el" href="class_o_n___symmetry.html#a0a754733e9c84b806126f8e418cdac4a">RotationZeroPlane()</a> and on or above <a class="el" href="class_o_n___symmetry.html#a896a45689b17b02aa19ba7b8e69e4d28">ReflectionPlane()</a> is the default primary motif region. </p>
+
+</div>
+</div>
+<a id="a5cd448d2dbecfb891c05fa4bc5482959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd448d2dbecfb891c05fa4bc5482959">&#9670;&nbsp;</a></span>RotationTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Symmetry::RotationTransformation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: If the symmetry is type is Rotate or ReflectAndRotate, then the rotation transformation is returned. Otherwise <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. </p>
+
+</div>
+</div>
+<a id="a0a754733e9c84b806126f8e418cdac4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a754733e9c84b806126f8e418cdac4a">&#9670;&nbsp;</a></span>RotationZeroPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> ON_Symmetry::RotationZeroPlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: If the symmetry is type is Rotate or ReflectAndRotate, then the plane defining the zero angle or rotation is returned. Othewise <a class="el" href="class_o_n___plane_equation.html#a26d15552d9f47b1cf6f1b2afeba3650d" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_PlaneEquation::NanPlaneEquation</a> is returned. Remarks: For a Rotate symmetry, the region on or above <a class="el" href="class_o_n___symmetry.html#a0a754733e9c84b806126f8e418cdac4a">RotationZeroPlane()</a> and above <a class="el" href="class_o_n___symmetry.html#a337fc427692c099cc1f0a00fdbad6b0c">RotationOnePlane()</a> is the default primary motif region. For a RotateAndReflect symmetry, the region on or above <a class="el" href="class_o_n___symmetry.html#a0a754733e9c84b806126f8e418cdac4a">RotationZeroPlane()</a> and on or above <a class="el" href="class_o_n___symmetry.html#a896a45689b17b02aa19ba7b8e69e4d28">ReflectionPlane()</a> is the default primary motif region. </p>
 
 </div>
 </div>
@@ -1447,6 +1775,58 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Symmetry unique id </p>
+
+</div>
+</div>
+<a id="a280a81c07274f8211793af4e85d6bcb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280a81c07274f8211793af4e85d6bcb0">&#9670;&nbsp;</a></span>SymmetryRegionFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> ON_Symmetry::SymmetryRegionFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>region_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af29ad04a9b50bc539dac0d6232c17939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29ad04a9b50bc539dac0d6232c17939">&#9670;&nbsp;</a></span>SymmetryRegionToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_Symmetry::SymmetryRegionToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1691,7 +2071,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 4 2021 13:39:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 11 2021 10:24:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
