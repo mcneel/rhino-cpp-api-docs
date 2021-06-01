@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a589df867c9dc80cefe7078ea7e456e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af718abf3abebdb29dcb1ff2d5f8926bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_linear.html#af718abf3abebdb29dcb1ff2d5f8926bf">GetTextXform</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> *vp, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const override</td></tr>
 <tr class="separator:af718abf3abebdb29dcb1ff2d5f8926bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3da7a4dee6717ae0e05bc4d1414743"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_linear.html#aca3da7a4dee6717ae0e05bc4d1414743">GetTextXform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *model_xform, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_x, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_y, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> view_z, <a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75e">ON::view_projection</a> projection, bool bDrawForward, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const</td></tr>
+<tr class="separator:aca3da7a4dee6717ae0e05bc4d1414743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11fa486bce31cbd0cd19e722bf775dcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_linear.html#a11fa486bce31cbd0cd19e722bf775dcd">GetTextXform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *model_xform, const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> *vp, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, double dimscale, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform_out) const</td></tr>
 <tr class="memdesc:a11fa486bce31cbd0cd19e722bf775dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets transform for dimension text from ON_xy_plane to 3d display location.  <a href="class_o_n___dim_linear.html#a11fa486bce31cbd0cd19e722bf775dcd">More...</a><br /></td></tr>
 <tr class="separator:a11fa486bce31cbd0cd19e722bf775dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1703,7 +1705,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af718abf3abebdb29dcb1ff2d5f8926bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af718abf3abebdb29dcb1ff2d5f8926bf">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af718abf3abebdb29dcb1ff2d5f8926bf">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1752,8 +1754,78 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aca3da7a4dee6717ae0e05bc4d1414743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3da7a4dee6717ae0e05bc4d1414743">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_DimLinear::GetTextXform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>model_xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td>
+          <td class="paramname"><em>view_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75e">ON::view_projection</a>&#160;</td>
+          <td class="paramname"><em>projection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawForward</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *&#160;</td>
+          <td class="paramname"><em>dimstyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dimscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>text_xform_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a11fa486bce31cbd0cd19e722bf775dcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11fa486bce31cbd0cd19e722bf775dcd">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a11fa486bce31cbd0cd19e722bf775dcd">&#9670;&nbsp;</a></span>GetTextXform() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2173,7 +2245,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

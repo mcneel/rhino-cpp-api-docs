@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ed53b4fde56a04ffc4fa7742daca59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0833fe8a30e6785fc2ba16228b47d3"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a4c0833fe8a30e6785fc2ba16228b47d3">EnglishCommandName</a> (int nIndex) const</td></tr>
 <tr class="separator:a4c0833fe8a30e6785fc2ba16228b47d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404c6433171131a0be4ff7735334a70a"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a404c6433171131a0be4ff7735334a70a">EnglishName</a> () const</td></tr>
+<tr class="separator:a404c6433171131a0be4ff7735334a70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5125a865601ed364d374ba0a3159e6"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a2f5125a865601ed364d374ba0a3159e6">FileName</a> () const</td></tr>
 <tr class="separator:a2f5125a865601ed364d374ba0a3159e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb20f8e34f134dd43ffcfa72ae282d15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_file_type.html">CRhinoFileType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#afb20f8e34f134dd43ffcfa72ae282d15">FileType</a> (int index) const</td></tr>
@@ -432,6 +434,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a404c6433171131a0be4ff7735334a70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404c6433171131a0be4ff7735334a70a">&#9670;&nbsp;</a></span>EnglishName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t* CRhinoPlugInRecord::EnglishName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Added by John Morse 17 February 2021 Description: If the plug-in is loaded this will return <a class="el" href="class_c_rhino_plug_in_record.html#ac8346ffd7c55a4e7213b3114bbf5a3f9">PlugIn()</a>-&gt;PlugInName(), otherwise it returns the English plug-in name found in the registry. Returns: Name used to describe this plug-in. See Also: <a class="el" href="class_c_rhino_plug_in.html#a7ef2c3bd4c36b876a15139574f77c37c">CRhinoPlugIn::PlugInName()</a> </p>
+
+</div>
+</div>
 <a id="a2f5125a865601ed364d374ba0a3159e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f5125a865601ed364d374ba0a3159e6">&#9670;&nbsp;</a></span>FileName()</h2>
 
@@ -752,7 +772,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If the plug-in is loaded this will return <a class="el" href="class_c_rhino_plug_in_record.html#ac8346ffd7c55a4e7213b3114bbf5a3f9">PlugIn()</a>-&gt;PlugInName(), otherwise it returns the plug-in name found in the registry. Returns: Name used to describe this plug-in. See Also: <a class="el" href="class_c_rhino_plug_in.html#a7ef2c3bd4c36b876a15139574f77c37c">CRhinoPlugIn::PlugInName()</a> </p>
+<p>Description: If the plug-in is loaded this will return <a class="el" href="class_c_rhino_plug_in_record.html#ac8346ffd7c55a4e7213b3114bbf5a3f9">PlugIn()</a>-&gt;LocalPlugInName(), otherwise it returns the plug-in name found in the registry. Returns: Name used to describe this plug-in. See Also: <a class="el" href="class_c_rhino_plug_in.html#a7ef2c3bd4c36b876a15139574f77c37c">CRhinoPlugIn::PlugInName()</a> </p>
 
 </div>
 </div>
@@ -923,7 +943,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000152">Deprecated:</a></b></dt><dd>Not used in Rhino </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000162">Deprecated:</a></b></dt><dd>Not used in Rhino </dd></dl>
 
 </div>
 </div>
@@ -1467,7 +1487,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

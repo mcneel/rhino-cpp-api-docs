@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -266,6 +266,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>OBSOLETE. <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">ContentSerialNumber()</a> always returns 0 </dd></dl>
 
 </div>
 </div>
@@ -435,7 +436,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function is used when mutable appearance is chaged. There are two current situations. Toggling (flat/smooth a.k.a crunchy/creamy) and changing default texture coordinates. </p>
+<p>Description: This function is used when mutable appearance is chaged. There are two current situations. Toggling (flat/smooth a.k.a crunchy/creamy) and changing default texture coordinates. </p>
 
 </div>
 </div>
@@ -471,7 +472,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get an <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator</a> for displaying the subd object. This fragment iterator is used for both "wireframe" and "shaded" display and selection. It can produce both the smooth surface and control polygon meshes. Parameters: bCreateIfEmpty - [in] If the limit mesh fragments do not exist and bCreateIfEmpty is true, then they will be created. Returns: An <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator</a>. The fragments are managed by the subd and have information for both surface and control polygon display. Internal shared pointers insure that the subd will stay in scope for the lifetime of the fragment iterator. The value of frit.SubDAppearance() (surface/control polygon) is set from the subd. It can be changed by calling frit.SetSubDAppearanceOveride(). </p>
+<p>Description: Get an <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator</a> for displaying the subd object. This fragment iterator is used for both "wireframe" and "shaded" display and selection. It can produce both the smooth surface and control polygon meshes. Parameters: bCreateIfEmpty - [in] If the limit mesh fragments do not exist and bCreateIfEmpty is true, then they will be created. Returns: An <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator</a>. The fragments are managed by the subd and have information for both surface and control polygon display. Internal shared pointers insure that the subd will stay in scope for the lifetime of the fragment iterator. The value of frit.SubDAppearance() (surface/control polygon) is set from the subd. It can be changed by calling frit.SetSubDAppearanceOveride(). Example: <a class="el" href="class_o_n___sub_d_mesh_fragment_iterator.html">ON_SubDMeshFragmentIterator</a> frit = subddisplay.FragmentIterator() for ( frag = frit.FirstFragment(); nullptr != frag; frag = frit.NextFragment()) ... </p>
 
 </div>
 </div>
@@ -641,7 +642,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Update the information used for displaying the subd object. </p>
+<p>Description: Update the SubD's mesh fragments if the SubD has changed since the last call to <a class="el" href="class_c_rhino_sub_d_display.html#ae75823a7bf095a6c202ec62b00b18c1b">Update()</a>. </p>
 
 </div>
 </div>
@@ -671,7 +672,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

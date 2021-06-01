@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -87,6 +87,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b2db54007fefc254a0f5ab92db1feab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a353951de61c4e9d53ba0113c615bbe12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___random_number_generator.html#a353951de61c4e9d53ba0113c615bbe12">RandomPermutation</a> (void *base, size_t nel, size_t sizeof_element)</td></tr>
 <tr class="separator:a353951de61c4e9d53ba0113c615bbe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409d6c8116e5545f0ae329068e189264"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___random_number_generator.html#a409d6c8116e5545f0ae329068e189264">RandomSignedInteger</a> (int i0, int i1)</td></tr>
+<tr class="separator:a409d6c8116e5545f0ae329068e189264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba548dbb252db7ff9b2dfbd40909df0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___random_number_generator.html#a2ba548dbb252db7ff9b2dfbd40909df0">RandomUnsignedInteger</a> (unsigned int i0, unsigned int i1)</td></tr>
+<tr class="separator:a2ba548dbb252db7ff9b2dfbd40909df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7672466176269f6760492882e7ed5c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___random_number_generator.html#a7672466176269f6760492882e7ed5c6b">Seed</a> ()</td></tr>
 <tr class="separator:a7672466176269f6760492882e7ed5c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c313b6efe814f9c4eb4095acc42660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___random_number_generator.html#ae5c313b6efe814f9c4eb4095acc42660">Seed</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> s)</td></tr>
@@ -260,6 +264,64 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a409d6c8116e5545f0ae329068e189264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409d6c8116e5545f0ae329068e189264">&#9670;&nbsp;</a></span>RandomSignedInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_RandomNumberGenerator::RandomSignedInteger </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters: i0 - [in] i1 - [in] Returns: A signed integer in the interval [min(i0,i1), max(i0,i1)], inclusive Example RandomSignedInteger(-2,3) will return -2, -1, 0, 1, 2, or 3. </p>
+
+</div>
+</div>
+<a id="a2ba548dbb252db7ff9b2dfbd40909df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba548dbb252db7ff9b2dfbd40909df0">&#9670;&nbsp;</a></span>RandomUnsignedInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_RandomNumberGenerator::RandomUnsignedInteger </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters: i0 - [in] i1 - [in] Returns: An unsigned integer in the interval [min(i0,i1), max(i0,i1)], inclusive Example RandomUnsignedInteger(3,7) will return 3, 4, 5, 6, or 7. </p>
+
+</div>
+</div>
 <a id="a7672466176269f6760492882e7ed5c6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7672466176269f6760492882e7ed5c6b">&#9670;&nbsp;</a></span>Seed() <span class="overload">[1/2]</span></h2>
 
@@ -300,7 +362,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

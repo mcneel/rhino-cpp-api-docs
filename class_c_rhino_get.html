@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -278,6 +278,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6375c62034cbee83dbb3f32ea54eef81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8b89bc035e2111a55df64e7b71cade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#aaf8b89bc035e2111a55df64e7b71cade">SetDefaultColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a> default_color)</td></tr>
 <tr class="separator:aaf8b89bc035e2111a55df64e7b71cade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f086dee55b6b2d6cf392d30c552a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a43f086dee55b6b2d6cf392d30c552a35">SetDefaultColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a> default_color, bool bUseAlpha)</td></tr>
+<tr class="separator:a43f086dee55b6b2d6cf392d30c552a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316c00bcf866c1d7221eab2c994a9407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a316c00bcf866c1d7221eab2c994a9407">SetDefaultInteger</a> (int default_integer)</td></tr>
 <tr class="separator:a316c00bcf866c1d7221eab2c994a9407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a935fb133ed8fc617e1898fb30c577998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a935fb133ed8fc617e1898fb30c577998">SetDefaultNumber</a> (double default_number, const wchar_t *format=nullptr)</td></tr>
@@ -2375,7 +2377,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aaf8b89bc035e2111a55df64e7b71cade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf8b89bc035e2111a55df64e7b71cade">&#9670;&nbsp;</a></span>SetDefaultColor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8b89bc035e2111a55df64e7b71cade">&#9670;&nbsp;</a></span>SetDefaultColor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2390,6 +2392,35 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Set a color as default value that will be returned if the user presses ENTER key during the get. Parameters: default_color - [in] value for default color Remarks: Calling SetDefaultColor will automatically handle setting the command prompt default and reacting to the user pressing ENTER. If the user presses ENTER to accept the default color, <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886ae19b0de1402be86d7ead5814e9b579b3" title="user entered a color - call Color() to get value">CRhinoGet::color</a> is returned and <a class="el" href="class_c_rhino_get.html#a86c7636cc2079b15978cb11952632fec">CRhinoGet::GotDefault()</a> will return true. Calling SetDefaultColor will clear any previous calls to SetDefaultString or SetDefaultPoint. See Also: <a class="el" href="class_c_rhino_get.html#a16fd8eb398ef69e81f14d77614f28585">CRhinoGet::SetDefaultPoint</a> <a class="el" href="class_c_rhino_get.html#a58b1446fc9f9f24b07c54309c66ee977">CRhinoGet::SetDefaultString</a> <a class="el" href="class_c_rhino_get.html#a935fb133ed8fc617e1898fb30c577998">CRhinoGet::SetDefaultNumber</a> <a class="el" href="class_c_rhino_get.html#aaf8b89bc035e2111a55df64e7b71cade">CRhinoGet::SetDefaultColor</a> <a class="el" href="class_c_rhino_get.html#a26b28d5dd2ee6795124c1d9c9906806e">CRhinoGet::ClearDefault</a> <a class="el" href="class_c_rhino_get.html#a6375c62034cbee83dbb3f32ea54eef81">CRhinoGet::SetCommandPromptDefault</a> <a class="el" href="class_c_rhino_get.html#afdf31cdba05f2bc3593f1c358915a02a">CRhinoGet::AcceptNothing</a> </p>
+
+</div>
+</div>
+<a id="a43f086dee55b6b2d6cf392d30c552a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f086dee55b6b2d6cf392d30c552a35">&#9670;&nbsp;</a></span>SetDefaultColor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGet::SetDefaultColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td>
+          <td class="paramname"><em>default_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseAlpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Set a color as default value that will be returned if the user presses ENTER key during the get. Parameters: default_color - [in] value for default color bUseAlpha - [in] set to true to use the alpha value Remarks: Calling SetDefaultColor will automatically handle setting the command prompt default and reacting to the user pressing ENTER. If the user presses ENTER to accept the default color, <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886ae19b0de1402be86d7ead5814e9b579b3" title="user entered a color - call Color() to get value">CRhinoGet::color</a> is returned and <a class="el" href="class_c_rhino_get.html#a86c7636cc2079b15978cb11952632fec">CRhinoGet::GotDefault()</a> will return true. Calling SetDefaultColor will clear any previous calls to SetDefaultString or SetDefaultPoint. See Also: <a class="el" href="class_c_rhino_get.html#a16fd8eb398ef69e81f14d77614f28585">CRhinoGet::SetDefaultPoint</a> <a class="el" href="class_c_rhino_get.html#a58b1446fc9f9f24b07c54309c66ee977">CRhinoGet::SetDefaultString</a> <a class="el" href="class_c_rhino_get.html#a935fb133ed8fc617e1898fb30c577998">CRhinoGet::SetDefaultNumber</a> <a class="el" href="class_c_rhino_get.html#aaf8b89bc035e2111a55df64e7b71cade">CRhinoGet::SetDefaultColor</a> <a class="el" href="class_c_rhino_get.html#a26b28d5dd2ee6795124c1d9c9906806e">CRhinoGet::ClearDefault</a> <a class="el" href="class_c_rhino_get.html#a6375c62034cbee83dbb3f32ea54eef81">CRhinoGet::SetCommandPromptDefault</a> <a class="el" href="class_c_rhino_get.html#afdf31cdba05f2bc3593f1c358915a02a">CRhinoGet::AcceptNothing</a> </p>
 
 </div>
 </div>
@@ -3505,7 +3536,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

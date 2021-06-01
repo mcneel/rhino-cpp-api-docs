@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_o_n___fixed_size_pool-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,8 +97,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57e19b6da55db8fe63a3e526c901bba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500f50edb2b7efff4655f4ea9c264fa2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a500f50edb2b7efff4655f4ea9c264fa2">AllocateElement</a> ()</td></tr>
 <tr class="separator:a500f50edb2b7efff4655f4ea9c264fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d7fe1bec32987e3c035a753e16c294"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create</a> (size_t sizeof_element)</td></tr>
+<tr class="separator:af5d7fe1bec32987e3c035a753e16c294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0904463b277ba449081d8b2929c8ef26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a0904463b277ba449081d8b2929c8ef26">Create</a> (size_t sizeof_element, size_t element_count_estimate, size_t block_element_capacity)</td></tr>
 <tr class="separator:a0904463b277ba449081d8b2929c8ef26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639b1e5110105689c6d7c07cf575d97b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a639b1e5110105689c6d7c07cf575d97b">CreateForExperts</a> (size_t sizeof_element, size_t maximum_element_count_estimate, size_t minimum_block2_element_capacity)</td></tr>
+<tr class="separator:a639b1e5110105689c6d7c07cf575d97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373f8bb4eda7fe5abfb08875a87ac00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy</a> ()</td></tr>
 <tr class="separator:a373f8bb4eda7fe5abfb08875a87ac00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23bc8f7379187a60621be143ba59c61"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#ab23bc8f7379187a60621be143ba59c61">Element</a> (size_t element_index) const</td></tr>
@@ -121,8 +126,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a96b965fdd3105a9c6d05cce330634c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b5cb208942ebb038e9cce4bfdadbbc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a3b5cb208942ebb038e9cce4bfdadbbc3">ReturnElement</a> (void *p)</td></tr>
 <tr class="separator:a3b5cb208942ebb038e9cce4bfdadbbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41b7176dbb6ad2e8795e109b26a1750"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#ab41b7176dbb6ad2e8795e109b26a1750">SizeOfActiveElements</a> () const</td></tr>
+<tr class="separator:ab41b7176dbb6ad2e8795e109b26a1750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a3eca1cfbd2272826d1a69610fdd77"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a08a3eca1cfbd2272826d1a69610fdd77">SizeofElement</a> () const</td></tr>
 <tr class="separator:a08a3eca1cfbd2272826d1a69610fdd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc410ee0d482bdc9d649dd839bb6dc3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#affc410ee0d482bdc9d649dd839bb6dc3">SizeOfPool</a> () const</td></tr>
+<tr class="separator:affc410ee0d482bdc9d649dd839bb6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1dff5c8ca2e25bac497cd143c1d1bf8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#ac1dff5c8ca2e25bac497cd143c1d1bf8">SizeOfUnusedElements</a> () const</td></tr>
+<tr class="separator:ac1dff5c8ca2e25bac497cd143c1d1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee65c3cbce4750d08b6a9d4f1aea62e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#a3ee65c3cbce4750d08b6a9d4f1aea62e">ThreadSafeAllocateDirtyElement</a> ()</td></tr>
 <tr class="separator:a3ee65c3cbce4750d08b6a9d4f1aea62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb0190b0638d3671d07a8d2c095cba19"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#abb0190b0638d3671d07a8d2c095cba19">ThreadSafeAllocateElement</a> ()</td></tr>
@@ -131,6 +142,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e575c66db37a657aea0b21de38c1797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a9799631f05f0ec3b239ba44934335"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#aa9a9799631f05f0ec3b239ba44934335">TotalElementCount</a> () const</td></tr>
 <tr class="separator:aa9a9799631f05f0ec3b239ba44934335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acc0face7f2944ba20ec65da866456a2b"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___fixed_size_pool.html#acc0face7f2944ba20ec65da866456a2b">DefaultElementCapacityFromSizeOfElement</a> (size_t sizeof_element)</td></tr>
+<tr class="separator:acc0face7f2944ba20ec65da866456a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -229,8 +245,27 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="af5d7fe1bec32987e3c035a753e16c294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d7fe1bec32987e3c035a753e16c294">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_FixedSizePool::Create </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sizeof_element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Create a fixed size memory pool. Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned. Remarks: You must call <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> on an unused <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a> or call <a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy()</a> before calling create. Returns: True if successful and the pool can be used. See Also <a class="el" href="class_o_n___fixed_size_pool.html#a639b1e5110105689c6d7c07cf575d97b">CreateForExperts()</a>. </p>
+
+</div>
+</div>
 <a id="a0904463b277ba449081d8b2929c8ef26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0904463b277ba449081d8b2929c8ef26">&#9670;&nbsp;</a></span>Create()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0904463b277ba449081d8b2929c8ef26">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +295,75 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a fixed size memory pool. Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned. element_count_estimate - [in] (0 = good default) If you know how many elements you will need, pass that number here. It is better to slightly overestimate than to slightly underestimate. If you do not have a good estimate, then use zero. block_element_capacity - [in] (0 = good default) If block_element_capacity is zero, <a class="el" href="class_o_n___fixed_size_pool.html#a0904463b277ba449081d8b2929c8ef26">Create()</a> will calculate a block size that is efficent for most applications. If you are an expert user and want to specify the number of elements per block, then pass the number of elements per block here. When block_element_capacity &gt; 0 and element_count_estimate &gt; 0, the first block will have a capacity of at least element_count_estimate; in this case do not ask for extraordinarly large amounts of contiguous heap. Remarks: You must call <a class="el" href="class_o_n___fixed_size_pool.html#a0904463b277ba449081d8b2929c8ef26">Create()</a> on an unused <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a> or call <a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy()</a> before calling create. Returns: True if successful and the pool can be used. </p>
+<p>Description: Create a fixed size memory pool. If you have a decent estimate of how many elements you need, <a class="el" href="class_o_n___fixed_size_pool.html#a639b1e5110105689c6d7c07cf575d97b">CreateForExperts()</a> is a typically a better choice. Otherwise, Create(sizeof_element) is typically the best option.</p>
+<p>Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned. element_count_estimate - [in] (0 = good default) If you know how many elements you will need, pass that number here. It is better to slightly overestimate than to slightly underestimate. If you do not have a good estimate, then use zero. block_element_capacity - [in] (0 = good default) If block_element_capacity is zero, <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> will calculate a block size that is efficent for most applications. If you are an expert user and want to specify the number of elements per block, then pass the number of elements per block here. When block_element_capacity &gt; 0 and element_count_estimate &gt; 0, the first block will have a capacity of at least element_count_estimate; in this case do not ask for extraordinarly large amounts of contiguous heap.</p>
+<p>Remarks: You must call <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> on an unused <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a> or call <a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy()</a> before calling create. Returns: True if successful and the pool can be used. </p>
+
+</div>
+</div>
+<a id="a639b1e5110105689c6d7c07cf575d97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639b1e5110105689c6d7c07cf575d97b">&#9670;&nbsp;</a></span>CreateForExperts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_FixedSizePool::CreateForExperts </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sizeof_element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maximum_element_count_estimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>minimum_block2_element_capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Create a fixed size memory pool. Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned.</p>
+<p>maximum_element_count_estimate - [in] (0 = good default) If you have a tight upper bound on the number of elements you need from this fixed size pool, call Create(sizeof_element) instead.</p>
+<p>If the description of this parameter is confusing to you, call Create(sizeof_element) instead.</p>
+<p>If you have a tight upper bound on how many elements you will need, pass that number here. When maximum_element_count_estimate &gt; 0, the initial memory blocks in the fixed size pool will be sized to efficiently deliver maximum_element_count_estimate elements. The fixed block pool can become inefficient when maximum_element_count_estimate is a gross overestimate or a slight underestimate of the actual number of elements that get allocated.</p>
+<p>minimum_block2_element_capacity - [in] (0 = good default) If the description below is confusing, pass 0. If maximum_element_count_estimate = 0, this parameter is ignored. If maximum_element_count_estimate &gt; 0 and you have an excellent choice for a lower bound on the number of elements per block for unexpected allocations of more than maximum_element_count_estimate elements, then pass that value for minimum_block2_element_capacity.</p>
+<p>Remarks: You must call <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> or CreateEx() on an unused <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a> or call <a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy()</a> before calling create. Returns: True if successful and the pool can be used. </p>
+
+</div>
+</div>
+<a id="acc0face7f2944ba20ec65da866456a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0face7f2944ba20ec65da866456a2b">&#9670;&nbsp;</a></span>DefaultElementCapacityFromSizeOfElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t ON_FixedSizePool::DefaultElementCapacityFromSizeOfElement </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sizeof_element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -278,7 +381,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Destroy the pool and free all the heap. The pool cannot be used again until <a class="el" href="class_o_n___fixed_size_pool.html#a0904463b277ba449081d8b2929c8ef26">Create()</a> is called. </p>
+<p>Description: Destroy the pool and free all the heap. The pool cannot be used again until <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> is called. </p>
 
 </div>
 </div>
@@ -496,6 +599,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ab41b7176dbb6ad2e8795e109b26a1750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41b7176dbb6ad2e8795e109b26a1750">&#9670;&nbsp;</a></span>SizeOfActiveElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ON_FixedSizePool::SizeOfActiveElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Tool for debugging pool use when tuning block size and block capacity. Returns: Operating system heap memory (in bytes) that are used by active pool elements. Remarks: <a class="el" href="class_o_n___fixed_size_pool.html#affc410ee0d482bdc9d649dd839bb6dc3">SizeOfPool()</a> = <a class="el" href="class_o_n___fixed_size_pool.html#ab41b7176dbb6ad2e8795e109b26a1750">SizeOfActiveElements()</a> + <a class="el" href="class_o_n___fixed_size_pool.html#ac1dff5c8ca2e25bac497cd143c1d1bf8">SizeOfUnusedElements()</a>. </p>
+
+</div>
+</div>
 <a id="a08a3eca1cfbd2272826d1a69610fdd77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08a3eca1cfbd2272826d1a69610fdd77">&#9670;&nbsp;</a></span>SizeofElement()</h2>
 
@@ -511,6 +632,42 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Size of the elements in this pool. </p>
+
+</div>
+</div>
+<a id="affc410ee0d482bdc9d649dd839bb6dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc410ee0d482bdc9d649dd839bb6dc3">&#9670;&nbsp;</a></span>SizeOfPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ON_FixedSizePool::SizeOfPool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Tool for debugging pool use when tuning block size and block capacity. Returns: Total operating system heap memory (in bytes) used by this <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a>. Remarks: <a class="el" href="class_o_n___fixed_size_pool.html#affc410ee0d482bdc9d649dd839bb6dc3">SizeOfPool()</a> = SizeOfAllocatedElements() + <a class="el" href="class_o_n___fixed_size_pool.html#ac1dff5c8ca2e25bac497cd143c1d1bf8">SizeOfUnusedElements()</a>. </p>
+
+</div>
+</div>
+<a id="ac1dff5c8ca2e25bac497cd143c1d1bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1dff5c8ca2e25bac497cd143c1d1bf8">&#9670;&nbsp;</a></span>SizeOfUnusedElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ON_FixedSizePool::SizeOfUnusedElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Tool for debugging pool use when tuning block size and block capacity. Returns: Operating system heap memory (in bytes) that has been reserved but is not currently used by active elements. Remarks: <a class="el" href="class_o_n___fixed_size_pool.html#affc410ee0d482bdc9d649dd839bb6dc3">SizeOfPool()</a> = <a class="el" href="class_o_n___fixed_size_pool.html#ab41b7176dbb6ad2e8795e109b26a1750">SizeOfActiveElements()</a> + <a class="el" href="class_o_n___fixed_size_pool.html#ac1dff5c8ca2e25bac497cd143c1d1bf8">SizeOfUnusedElements()</a>. </p>
 
 </div>
 </div>
@@ -637,7 +794,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

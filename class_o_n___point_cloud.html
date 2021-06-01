@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_o_n___point_cloud-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -186,6 +187,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad547c500818bea8bae47aeec5c2a2ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04bd016a6cb83531156aa3bd8c6fb064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___point_cloud.html#a04bd016a6cb83531156aa3bd8c6fb064">SetPlane</a> (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;)</td></tr>
 <tr class="separator:a04bd016a6cb83531156aa3bd8c6fb064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc7697aecea1faa8bb516f74afefd55"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___point_cloud.html#a2cc7697aecea1faa8bb516f74afefd55">SizeOf</a> () const override</td></tr>
+<tr class="memdesc:a2cc7697aecea1faa8bb516f74afefd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object::SizeOf</a> override  <a href="class_o_n___point_cloud.html#a2cc7697aecea1faa8bb516f74afefd55">More...</a><br /></td></tr>
+<tr class="separator:a2cc7697aecea1faa8bb516f74afefd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad43f52ee5d24b8c3a85b8c61b65c148"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___point_cloud.html#aad43f52ee5d24b8c3a85b8c61b65c148">SwapCoordinates</a> (int, int) override</td></tr>
 <tr class="memdesc:aad43f52ee5d24b8c3a85b8c61b65c148"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> override  <a href="class_o_n___point_cloud.html#aad43f52ee5d24b8c3a85b8c61b65c148">More...</a><br /></td></tr>
 <tr class="separator:aad43f52ee5d24b8c3a85b8c61b65c148"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,8 +303,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a074dc9e9b919853919564793c37f5143 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7234af898c307a2c2f7931db7e627592 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a7234af898c307a2c2f7931db7e627592">SetUserStrings</a> (int count, const <a class="el" href="class_o_n___user_string.html">ON_UserString</a> *user_strings, bool bReplace)</td></tr>
 <tr class="separator:a7234af898c307a2c2f7931db7e627592 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0299df21bfed90d7b5bfb24cdcf5e6c1 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">SizeOf</a> () const</td></tr>
-<tr class="separator:a0299df21bfed90d7b5bfb24cdcf5e6c1 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c747a7a2fe9a7481b55f0b631942ce inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a41c747a7a2fe9a7481b55f0b631942ce">ThisIsNullptr</a> (bool bSilentError) const</td></tr>
 <tr class="separator:a41c747a7a2fe9a7481b55f0b631942ce inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881bd2f0d8515adba1c42c578bcb7052 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a881bd2f0d8515adba1c42c578bcb7052">TransformUserData</a> (const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
@@ -309,6 +311,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a82188bbf97bbd149ac6fcb7cd8e989d1 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab648403ebf4592831809710f378e9ac2 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#ab648403ebf4592831809710f378e9ac2">UserStringCount</a> () const</td></tr>
 <tr class="separator:ab648403ebf4592831809710f378e9ac2 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9c9b1ace7fd2e5ca1dc0a079b6371aa1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___point_cloud.html#a9c9b1ace7fd2e5ca1dc0a079b6371aa1">RandomSubsample</a> (const <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> *source_point_cloud, const unsigned int subsample_point_count, <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> *destination_point_cloud, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *progress_reporter, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *terminator)</td></tr>
+<tr class="separator:a9c9b1ace7fd2e5ca1dc0a079b6371aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1240,6 +1247,61 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c9b1ace7fd2e5ca1dc0a079b6371aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9b1ace7fd2e5ca1dc0a079b6371aa1">&#9670;&nbsp;</a></span>RandomSubsample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a>* ON_PointCloud::RandomSubsample </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> *&#160;</td>
+          <td class="paramname"><em>source_point_cloud</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>subsample_point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> *&#160;</td>
+          <td class="paramname"><em>destination_point_cloud</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *&#160;</td>
+          <td class="paramname"><em>progress_reporter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *&#160;</td>
+          <td class="paramname"><em>terminator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Returns a random subsample of a point cloud. Parameters: source_point_cloud - [in] The point cloud to subsample. subsample_point_count - [in] The number of points to keep. destination_point_cloud - [out] If nullptr, then a new <a class="el" href="class_o_n___point_cloud.html#a1bab7558cdc4b96b7442807837fa6d6d">ON_PointCloud()</a> will be the destination. This can be the source point cloud. progress_reporter - [in] Optional progress reporter, can be nullptr. terminator - [in] Optional terminator, can be nullptr. Returns: A new <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> which is a subsample of source_point_cloud. If destination_point_cloud == nullptr, then memory will be allocated for the returned point cloud and becomes the responsibility of the caller. </p>
+
+</div>
+</div>
 <a id="a59569e82832510b6ea1e46c4a3e8e101"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59569e82832510b6ea1e46c4a3e8e101">&#9670;&nbsp;</a></span>Read()</h2>
 
@@ -1335,6 +1397,35 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cc7697aecea1faa8bb516f74afefd55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc7697aecea1faa8bb516f74afefd55">&#9670;&nbsp;</a></span>SizeOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_PointCloud::SizeOf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>virtual <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object::SizeOf</a> override </p>
+
+<p>Reimplemented from <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1666,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

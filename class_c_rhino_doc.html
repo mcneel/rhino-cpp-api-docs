@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -474,6 +474,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0dfa43d3c385933bab631ea1ba54a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7036c58d3d6c66b2a39754f3c87ca00"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_doc_properties.html">CRhinoDocProperties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ac7036c58d3d6c66b2a39754f3c87ca00">Properties</a> () const</td></tr>
 <tr class="separator:ac7036c58d3d6c66b2a39754f3c87ca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02d7640b33b54ba61fdbb542d83768f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#af02d7640b33b54ba61fdbb542d83768f">PurgeCyclicInstanceReferences</a> ()</td></tr>
+<tr class="separator:af02d7640b33b54ba61fdbb542d83768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3e1428e98133d2ca8acdbe389a110a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a1a3e1428e98133d2ca8acdbe389a110a">PurgeLinkedIDefModel</a> (unsigned int linked_idef_model_sn)</td></tr>
 <tr class="separator:a1a3e1428e98133d2ca8acdbe389a110a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a251140f5b6abaf009ae28a6164addba3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a251140f5b6abaf009ae28a6164addba3">PurgeObject</a> (<a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *&amp;object)</td></tr>
@@ -2241,8 +2243,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000128">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
-<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000129">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000135">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000136">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
 <p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included / bTight: [in] use CRhinoObject::TightBoundingBox in the calculation instead of BoundingBox / bIncludeCustomRenderMeshes: [in] Resolve custom render meshes for all objects and use those / bIncludeCurves: [in] include curves and annotations in the calculation Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
 
 </div>
@@ -5432,7 +5434,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000127">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
+<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000134">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
 
 </div>
 </div>
@@ -5840,6 +5842,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="af02d7640b33b54ba61fdbb542d83768f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02d7640b33b54ba61fdbb542d83768f">&#9670;&nbsp;</a></span>PurgeCyclicInstanceReferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CRhinoDoc::PurgeCyclicInstanceReferences </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Searches for and destroys all <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a> instances in the instance definition geometry table that are at the tail of a cyclic instance reference. Cyclic instance references crash display code. Returns: Number of purged objects. Any value &gt; 0 indicates something managed to create a cylic instance reference. If the creation point can be found, it should be fixed so it does not create cyclic references. </p>
+
+</div>
+</div>
 <a id="a1a3e1428e98133d2ca8acdbe389a110a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a3e1428e98133d2ca8acdbe389a110a">&#9670;&nbsp;</a></span>PurgeLinkedIDefModel()</h2>
 
@@ -5950,7 +5970,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Return associated RDK document</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000130">Deprecated:</a></b></dt><dd>Use the direct access functions below (Sun, Skylight etc </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000137">Deprecated:</a></b></dt><dd>Use the direct access functions below (Sun, Skylight etc </dd></dl>
 
 </div>
 </div>
@@ -8723,7 +8743,7 @@ Friends</h2></td></tr>
 <li>fwo_in.UseBatchMode() true: the query will use the Rhino command line interface. false: the query will use a dialog.</li>
 <li>fwo_in.SelectedObjectFilter() true: The export interface will be used. false: The save interface will be used.</li>
 <li>fwo_in.TemplateFileIsDestination() true: The template file interface will be used. false: The model file interface will be used.</li>
-<li>fwo_in.GetFileName() Default file name. If not set, document's default path and current title will be used to create a default file name. minimum_rhino_3dm_version_rescrition - [in] 0: Any type of 3dm file or plug-in file format can be specified. &gt;0: Only Rhino .3dm files with version &gt;= minimum_rhino_3dm_version_rescrition can be specified. fwo_out - [out] File writing options including file name and other writing options the user may have set or changed. pWndParent - [in] Expert users can set a parent window. In general, leave this parameter set to zero and the Rhino mainframe will automatically be the parent. Example: CRhinoFileWriteOption fwo; fwo.Set...() ///&lt; stuff you want to set up before the dialog is shown. if ( doc.WriteFilePathAndOptionsDialog(fwo,true or false,fwo) &amp;&amp; doc.WriteFile(fwo,&amp;fwo) ) { <a class="el" href="class_o_n__w_string.html">ON_wString</a> filename; fwo.GetFileName(filename); Print("Model successfully saved in a file called %s\n",filename); } Returns: True: The file name and other file writing options are returned in fwo_out. False: The user did not select a file name or other failure. </li>
+<li>fwo_in.GetFileName() Default file name. If not set, document's default path and current title will be used to create a default file name. minimum_rhino_3dm_version_rescrition - [in] 0: Any type of 3dm file or plug-in file format can be specified. &gt;0: Only Rhino .3dm files with version &gt;= minimum_rhino_3dm_version_rescrition can be specified. fwo_out - [out] File writing options including file name and other writing options the user may have set or changed. pWndParent - [in] Expert users can set a parent window. In general, leave this parameter set to zero and the Rhino mainframe will automatically be the parent. Example: CRhinoFileWriteOption fwo; fwo.Set...() ///&lt; stuff you want to set up before the dialog is shown. if ( doc.WriteFilePathAndOptionsDialog(fwo,true or false,fwo) &amp;&amp; doc.WriteFile(fwo,&amp;fwo) ) { <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> filename; fwo.GetFileName(filename); Print("Model successfully saved in a file called %s\n",filename); } Returns: True: The file name and other file writing options are returned in fwo_out. False: The user did not select a file name or other failure. </li>
 </ul>
 
 </div>
@@ -9231,7 +9251,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

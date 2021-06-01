@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -2556,7 +2556,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function that gets a pointer to the name. Returns: A pointer to the string that contains the name. This pointer must be used immediately and then discarded before any code can possibly call <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> or the <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> destructor could be called. Remarks: About the only good use for this function is when a model compoenent is persistent and the name is needed for a formatted string. For any other use, call the <a class="el" href="class_o_n___model_component.html#ac157c257e5a54aa12e3b3688ac87618a">Name()</a> function and store the result in an <a class="el" href="class_o_n__w_string.html">ON_wString</a>. This function is dangerous because the returned pointer will be invalid if <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> is called. </p>
+<p>Description: Expert user function that gets a pointer to the name. Returns: A pointer to the string that contains the name. This pointer must be used immediately and then discarded before any code can possibly call <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> or the <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> destructor could be called. Remarks: About the only good use for this function is when a model compoenent is persistent and the name is needed for a formatted string. For any other use, call the <a class="el" href="class_o_n___model_component.html#ac157c257e5a54aa12e3b3688ac87618a">Name()</a> function and store the result in an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. This function is dangerous because the returned pointer will be invalid if <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> is called. </p>
 
 </div>
 </div>
@@ -3436,7 +3436,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: component_name - [in] Leading and trailing nonzero unicode code points with values &lt;= <a class="el" href="class_o_n__w_string.html#aacd1b9043f51f57a39e3c7a478a05a12" title="Unicode SPACE U+0020.">ON_wString::Space</a> are ignored. Returns: true if the name attribute was changed to component_name or is already equal to component_name. false False is returned and no changes are made if the name attribute is locked and component_name != locked value or component_name is not empty and ON_ModelComponent::IsValidComponentName(component_name) is false. Remarks: If component_name is nullptr or the emtpy string, the <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> state will still be true. </p>
+<p>Parameters: component_name - [in] Leading and trailing nonzero unicode code points with values &lt;= <a class="el" href="class_o_n__w_string.html#aacd1b9043f51f57a39e3c7a478a05a12" title="SPACE U+0020">ON_wString::Space</a> are ignored. Returns: true if the name attribute was changed to component_name or is already equal to component_name. false False is returned and no changes are made if the name attribute is locked and component_name != locked value or component_name is not empty and ON_ModelComponent::IsValidComponentName(component_name) is false. Remarks: If component_name is nullptr or the emtpy string, the <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> state will still be true. </p>
 
 </div>
 </div>
@@ -3788,7 +3788,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

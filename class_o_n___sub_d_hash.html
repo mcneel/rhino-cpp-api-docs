@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a> provides a simple way to save a SubD's vertex, edge, and face SHA1 hashes. Typically it is used when a calculation needs to know if the current SubD has is geometrically identical to a previous SubD. When speed is not important, comparing the current value of ON_SubD::GeometryHash() to a previously save value of ON_SubD::GeometryHash() is functionally identical but typically much slower when the SubDs are different.  
+<p><a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a> provides a simple way to save a SubD's vertex, edge, and face SHA1 hashes. Typically it is used when a calculation needs to know if the current SubD has is geometrically identical to a previous SubD. When speed is not important, comparing the current value of <a class="el" href="class_o_n___sub_d.html#a8ddfa18eda363a886e80542319129578">ON_SubD::GeometryHash()</a> to a previously save value of <a class="el" href="class_o_n___sub_d.html#a8ddfa18eda363a886e80542319129578">ON_SubD::GeometryHash()</a> is functionally identical but typically much slower when the SubDs are different.  
  <a href="class_o_n___sub_d_hash.html#details">More...</a></p>
 
 <p><code>#include &lt;opennurbs_subd.h&gt;</code></p>
@@ -89,13 +89,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae97c44e8dfcf051f561531c72ed442f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ae97c44e8dfcf051f561531c72ed442f7">Dump</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;) const</td></tr>
 <tr class="separator:ae97c44e8dfcf051f561531c72ed442f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1540b73b8905a972f4c5e4ef6fef5d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d">EdgeCount</a> () const</td></tr>
-<tr class="memdesc:a5d1540b73b8905a972f4c5e4ef6fef5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saved value of subd.EdgeCount(HashType()).  <a href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d">More...</a><br /></td></tr>
+<tr class="memdesc:a5d1540b73b8905a972f4c5e4ef6fef5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied from the SubD when the hash is created.  <a href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d">More...</a><br /></td></tr>
 <tr class="separator:a5d1540b73b8905a972f4c5e4ef6fef5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed97b7ab8e5c7396056f0e35f68f6b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7">EdgeHash</a> () const</td></tr>
 <tr class="memdesc:a3ed97b7ab8e5c7396056f0e35f68f6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If two SubDs have identical <a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7" title="If two SubDs have identical EdgeHash() values, then the SubD edge information associated with HashTyp...">EdgeHash()</a> values, then the SubD edge information associated with <a class="el" href="class_o_n___sub_d_hash.html#ae3ef0e6a6af962e40e0d4f32cb8c5313">HashType()</a> is identical.  <a href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7">More...</a><br /></td></tr>
 <tr class="separator:a3ed97b7ab8e5c7396056f0e35f68f6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aad442b9e3f00267f1e389263eaf998"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998">FaceCount</a> () const</td></tr>
-<tr class="memdesc:a7aad442b9e3f00267f1e389263eaf998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saved value of subd.FaceCount(HashType()).  <a href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998">More...</a><br /></td></tr>
+<tr class="memdesc:a7aad442b9e3f00267f1e389263eaf998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied from the SubD when the hash is created.  <a href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998">More...</a><br /></td></tr>
 <tr class="separator:a7aad442b9e3f00267f1e389263eaf998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7910f366868849f7494b32d2f8aa0d8c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c">FaceHash</a> () const</td></tr>
 <tr class="memdesc:a7910f366868849f7494b32d2f8aa0d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If two SubDs have identical <a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c" title="If two SubDs have identical FaceHash() values, then the SubD face information associated with HashTyp...">FaceHash()</a> values, then the SubD face information associated with <a class="el" href="class_o_n___sub_d_hash.html#ae3ef0e6a6af962e40e0d4f32cb8c5313">HashType()</a> is identical.  <a href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c">More...</a><br /></td></tr>
@@ -111,16 +111,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2412089b666540d240c0ab59085ebf3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a2412089b666540d240c0ab59085ebf3d">Read</a> (class <a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;)</td></tr>
 <tr class="separator:a2412089b666540d240c0ab59085ebf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41329a86f6a663bdc5c4f021d69b644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ad41329a86f6a663bdc5c4f021d69b644">SubDGeometryContentSerialNumber</a> () const</td></tr>
-<tr class="memdesc:ad41329a86f6a663bdc5c4f021d69b644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns: If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.GeometryContentSerialNumber() at the at the instant this hash was created is returned. Otherwise, 0 is returned.  <a href="class_o_n___sub_d_hash.html#ad41329a86f6a663bdc5c4f021d69b644">More...</a><br /></td></tr>
+<tr class="memdesc:ad41329a86f6a663bdc5c4f021d69b644"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry content serial number can be used to quickly determine if a SubD is exactly the instance used to create this <a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a>. If the geometry content serial numbers are equal, then the SubD is identical to the one use to create the hash. If the geometry content serial numbers differ, the current SubD hashes need to be checked against this to see what, if anything, changed. For example, moving a vertex will not change a topology hash.  <a href="class_o_n___sub_d_hash.html#ad41329a86f6a663bdc5c4f021d69b644">More...</a><br /></td></tr>
 <tr class="separator:ad41329a86f6a663bdc5c4f021d69b644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1e3545860fced63a244a64ed4c271dc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ad1e3545860fced63a244a64ed4c271dc">SubDHash</a> () const</td></tr>
 <tr class="memdesc:ad1e3545860fced63a244a64ed4c271dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If two SubDs have identical <a class="el" href="class_o_n___sub_d_hash.html#ad1e3545860fced63a244a64ed4c271dc" title="If two SubDs have identical SubDHash() values, then the SubD vertex, edge, and face information assoc...">SubDHash()</a> values, then the SubD vertex, edge, and face information associated with <a class="el" href="class_o_n___sub_d_hash.html#ae3ef0e6a6af962e40e0d4f32cb8c5313">HashType()</a> is identical.  <a href="class_o_n___sub_d_hash.html#ad1e3545860fced63a244a64ed4c271dc">More...</a><br /></td></tr>
 <tr class="separator:ad1e3545860fced63a244a64ed4c271dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad813742c6442bed5bfc3d5e38faab250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ad813742c6442bed5bfc3d5e38faab250">SubDRuntimeSerialNumber</a> () const</td></tr>
-<tr class="memdesc:ad813742c6442bed5bfc3d5e38faab250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns: If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.RuntimeSerialNumber() is returned. Otherwise, 0 is returned.  <a href="class_o_n___sub_d_hash.html#ad813742c6442bed5bfc3d5e38faab250">More...</a><br /></td></tr>
+<tr class="memdesc:ad813742c6442bed5bfc3d5e38faab250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The runtime serial number can be used to identify the SubD that was hashed to created this <a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a>.  <a href="class_o_n___sub_d_hash.html#ad813742c6442bed5bfc3d5e38faab250">More...</a><br /></td></tr>
 <tr class="separator:ad813742c6442bed5bfc3d5e38faab250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5948b75e9d11e3f68a7e63ecb2e86d5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5">VertexCount</a> () const</td></tr>
-<tr class="memdesc:ab5948b75e9d11e3f68a7e63ecb2e86d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saved value of subd.VertexCount(HashType()).  <a href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5">More...</a><br /></td></tr>
+<tr class="memdesc:ab5948b75e9d11e3f68a7e63ecb2e86d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied from the SubD when the hash is created.  <a href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5">More...</a><br /></td></tr>
 <tr class="separator:ab5948b75e9d11e3f68a7e63ecb2e86d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bc7a62df1ccbc3c3e22fd7887d9fc1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1">VertexHash</a> () const</td></tr>
 <tr class="memdesc:af2bc7a62df1ccbc3c3e22fd7887d9fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If two SubDs have identical <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1" title="If two SubDs have identical VertexHash() values, then the SubD vertex information associated with Has...">VertexHash()</a> values, then the SubD vertex information associated with <a class="el" href="class_o_n___sub_d_hash.html#ae3ef0e6a6af962e40e0d4f32cb8c5313">HashType()</a> is identical.  <a href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1">More...</a><br /></td></tr>
@@ -131,11 +131,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3292500fe6505c998845a6639a630216"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#a3292500fe6505c998845a6639a630216">Compare</a> (const <a class="el" href="class_o_n___sub_d_hash.html">ON_SubDHash</a> &amp;lhs, const <a class="el" href="class_o_n___sub_d_hash.html">ON_SubDHash</a> &amp;rhs)</td></tr>
-<tr class="memdesc:a3292500fe6505c998845a6639a630216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary compare of <a class="el" href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5" title="Saved value of subd.VertexCount(HashType()).">VertexCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d" title="Saved value of subd.EdgeCount(HashType()).">EdgeCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998" title="Saved value of subd.FaceCount(HashType()).">FaceCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1" title="If two SubDs have identical VertexHash() values, then the SubD vertex information associated with Has...">VertexHash()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7" title="If two SubDs have identical EdgeHash() values, then the SubD edge information associated with HashTyp...">EdgeHash()</a>, and <a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c" title="If two SubDs have identical FaceHash() values, then the SubD face information associated with HashTyp...">FaceHash()</a> in that order.  <a href="class_o_n___sub_d_hash.html#a3292500fe6505c998845a6639a630216">More...</a><br /></td></tr>
+<tr class="memdesc:a3292500fe6505c998845a6639a630216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary compare of <a class="el" href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5" title="Copied from the SubD when the hash is created.">VertexCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d" title="Copied from the SubD when the hash is created.">EdgeCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998" title="Copied from the SubD when the hash is created.">FaceCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1" title="If two SubDs have identical VertexHash() values, then the SubD vertex information associated with Has...">VertexHash()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7" title="If two SubDs have identical EdgeHash() values, then the SubD edge information associated with HashTyp...">EdgeHash()</a>, and <a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c" title="If two SubDs have identical FaceHash() values, then the SubD face information associated with HashTyp...">FaceHash()</a> in that order.  <a href="class_o_n___sub_d_hash.html#a3292500fe6505c998845a6639a630216">More...</a><br /></td></tr>
 <tr class="separator:a3292500fe6505c998845a6639a630216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa508c80f65b9da7dc001456062985c23"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_hash.html">ON_SubDHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#aa508c80f65b9da7dc001456062985c23">Create</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7901fb222b1b25e32978f0b34ba7234a">ON_SubDHashType</a> hash_type, const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd)</td></tr>
 <tr class="memdesc:aa508c80f65b9da7dc001456062985c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the counts and hashs of the specified type.  <a href="class_o_n___sub_d_hash.html#aa508c80f65b9da7dc001456062985c23">More...</a><br /></td></tr>
 <tr class="separator:aa508c80f65b9da7dc001456062985c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a4bf2072b7356466effdc8cb93ae6a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_hash.html">ON_SubDHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_hash.html#ad6a4bf2072b7356466effdc8cb93ae6a">Create</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7901fb222b1b25e32978f0b34ba7234a">ON_SubDHashType</a> hash_type, const class <a class="el" href="class_o_n___sub_d_hash.html#a9dfdd54e87b8164a32b73b5a8711b127">ON_SubDimple</a> *subdimple)</td></tr>
+<tr class="separator:ad6a4bf2072b7356466effdc8cb93ae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -149,7 +151,7 @@ Friends</h2></td></tr>
 <tr class="separator:a9dfdd54e87b8164a32b73b5a8711b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a> provides a simple way to save a SubD's vertex, edge, and face SHA1 hashes. Typically it is used when a calculation needs to know if the current SubD has is geometrically identical to a previous SubD. When speed is not important, comparing the current value of ON_SubD::GeometryHash() to a previously save value of ON_SubD::GeometryHash() is functionally identical but typically much slower when the SubDs are different. </p>
+<div class="textblock"><p><a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a> provides a simple way to save a SubD's vertex, edge, and face SHA1 hashes. Typically it is used when a calculation needs to know if the current SubD has is geometrically identical to a previous SubD. When speed is not important, comparing the current value of <a class="el" href="class_o_n___sub_d.html#a8ddfa18eda363a886e80542319129578">ON_SubD::GeometryHash()</a> to a previously save value of <a class="el" href="class_o_n___sub_d.html#a8ddfa18eda363a886e80542319129578">ON_SubD::GeometryHash()</a> is functionally identical but typically much slower when the SubDs are different. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af608f951cdc49a96f5d5736789b6fd32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af608f951cdc49a96f5d5736789b6fd32">&#9670;&nbsp;</a></span>ON_SubDHash() <span class="overload">[1/2]</span></h2>
@@ -262,8 +264,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Dictionary compare of <a class="el" href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5" title="Saved value of subd.VertexCount(HashType()).">VertexCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d" title="Saved value of subd.EdgeCount(HashType()).">EdgeCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998" title="Saved value of subd.FaceCount(HashType()).">FaceCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1" title="If two SubDs have identical VertexHash() values, then the SubD vertex information associated with Has...">VertexHash()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7" title="If two SubDs have identical EdgeHash() values, then the SubD edge information associated with HashTyp...">EdgeHash()</a>, and <a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c" title="If two SubDs have identical FaceHash() values, then the SubD face information associated with HashTyp...">FaceHash()</a> in that order. </p>
-<p>NOTE WELL: <a class="el" href="class_o_n___sub_d_hash.html#ad813742c6442bed5bfc3d5e38faab250" title="Returns: If this hash was created from an ON_SubD, then the value of subd.RuntimeSerialNumber() is re...">SubDRuntimeSerialNumber()</a> and SubdGeometryContentSerialNumber() are not compared because the reason this class exists is for it to be used to see if two different SubDs have identical content.</p>
+<p>Dictionary compare of <a class="el" href="class_o_n___sub_d_hash.html#ab5948b75e9d11e3f68a7e63ecb2e86d5" title="Copied from the SubD when the hash is created.">VertexCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d" title="Copied from the SubD when the hash is created.">EdgeCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a7aad442b9e3f00267f1e389263eaf998" title="Copied from the SubD when the hash is created.">FaceCount()</a>, <a class="el" href="class_o_n___sub_d_hash.html#af2bc7a62df1ccbc3c3e22fd7887d9fc1" title="If two SubDs have identical VertexHash() values, then the SubD vertex information associated with Has...">VertexHash()</a>, <a class="el" href="class_o_n___sub_d_hash.html#a3ed97b7ab8e5c7396056f0e35f68f6b7" title="If two SubDs have identical EdgeHash() values, then the SubD edge information associated with HashTyp...">EdgeHash()</a>, and <a class="el" href="class_o_n___sub_d_hash.html#a7910f366868849f7494b32d2f8aa0d8c" title="If two SubDs have identical FaceHash() values, then the SubD face information associated with HashTyp...">FaceHash()</a> in that order. </p>
+<p>NOTE WELL: <a class="el" href="class_o_n___sub_d_hash.html#ad813742c6442bed5bfc3d5e38faab250" title="The runtime serial number can be used to identify the SubD that was hashed to created this ON_SubDHas...">SubDRuntimeSerialNumber()</a> and SubdGeometryContentSerialNumber() are not compared because the reason this class exists is for it to be used to see if two different SubDs have identical content.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td></td></tr>
@@ -276,7 +278,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aa508c80f65b9da7dc001456062985c23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa508c80f65b9da7dc001456062985c23">&#9670;&nbsp;</a></span>Create()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa508c80f65b9da7dc001456062985c23">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,6 +324,42 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ad6a4bf2072b7356466effdc8cb93ae6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a4bf2072b7356466effdc8cb93ae6a">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___sub_d_hash.html">ON_SubDHash</a> ON_SubDHash::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7901fb222b1b25e32978f0b34ba7234a">ON_SubDHashType</a>&#160;</td>
+          <td class="paramname"><em>hash_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_hash.html#a9dfdd54e87b8164a32b73b5a8711b127">ON_SubDimple</a> *&#160;</td>
+          <td class="paramname"><em>subdimple</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae97c44e8dfcf051f561531c72ed442f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae97c44e8dfcf051f561531c72ed442f7">&#9670;&nbsp;</a></span>Dump()</h2>
 
@@ -355,8 +393,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Saved value of subd.EdgeCount(HashType()). </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Copied from the SubD when the hash is created. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of hashed edges. </dd></dl>
 
 </div>
 </div>
@@ -395,8 +433,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Saved value of subd.FaceCount(HashType()). </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Copied from the SubD when the hash is created. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of hashed faces. </dd></dl>
 
 </div>
 </div>
@@ -532,8 +570,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns: If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.GeometryContentSerialNumber() at the at the instant this hash was created is returned. Otherwise, 0 is returned. </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>The geometry content serial number can be used to quickly determine if a SubD is exactly the instance used to create this <a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a>. If the geometry content serial numbers are equal, then the SubD is identical to the one use to create the hash. If the geometry content serial numbers differ, the current SubD hashes need to be checked against this to see what, if anything, changed. For example, moving a vertex will not change a topology hash. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns: If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.GeometryContentSerialNumber() at the at the instant this hash was created is returned. Otherwise, 0 is returned. </dd></dl>
 
 </div>
 </div>
@@ -572,8 +610,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns: If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.RuntimeSerialNumber() is returned. Otherwise, 0 is returned. </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>The runtime serial number can be used to identify the SubD that was hashed to created this <a class="el" href="class_o_n___sub_d_hash.html" title="ON_SubDHash provides a simple way to save a SubD&#39;s vertex, edge, and face SHA1 hashes....">ON_SubDHash</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>If this hash was created from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, then the value of subd.RuntimeSerialNumber() is returned. Otherwise, 0 is returned. </dd></dl>
 
 </div>
 </div>
@@ -592,8 +630,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Saved value of subd.VertexCount(HashType()). </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Copied from the SubD when the hash is created. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of hashed vertices. </dd></dl>
 
 </div>
 </div>
@@ -686,7 +724,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

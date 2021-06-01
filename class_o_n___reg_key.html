@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -510,7 +510,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns an <a class="el" href="class_o_n__w_string.html">ON_wString</a> containing the name of the registry hive that is the root of this key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a8ebbb21b1cf369f2271ccc6b11e28dc3">Hive()</a> return "HKEY_LOCAL_MACHINE" </p>
+<p>Description: Returns an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> containing the name of the registry hive that is the root of this key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a8ebbb21b1cf369f2271ccc6b11e28dc3">Hive()</a> return "HKEY_LOCAL_MACHINE" </p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns an <a class="el" href="class_o_n__w_string.html">ON_wString</a> containing the name of this key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#afeb7c3ca7227f60d863461e1f59cb865">Name()</a> return "McNeel" </p>
+<p>Description: Returns an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> containing the name of this key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#afeb7c3ca7227f60d863461e1f59cb865">Name()</a> return "McNeel" </p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns an <a class="el" href="class_o_n__w_string.html">ON_wString</a> containing the full path of this registry key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a0ea3ce14ebe34b4b7845ba07933125bd">Parent()</a> return "HKEY_LOCAL_MACHINE\\Software" </p>
+<p>Description: Returns an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> containing the full path of this registry key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a0ea3ce14ebe34b4b7845ba07933125bd">Parent()</a> return "HKEY_LOCAL_MACHINE\\Software" </p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns an <a class="el" href="class_o_n__w_string.html">ON_wString</a> containing the full path of this registry key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a594f2975cfa26bd58399047498383cf2">Path()</a> return "HKEY_LOCAL_MACHINE\\Software\\McNeel" </p>
+<p>Description: Returns an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> containing the full path of this registry key. Example: If the current key is "HKEY_LOCAL_MACHINE\\Software\\McNeel" then <a class="el" href="class_o_n___reg_key.html#a594f2975cfa26bd58399047498383cf2">Path()</a> return "HKEY_LOCAL_MACHINE\\Software\\McNeel" </p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: QueryValue retrieves the specified string value from the registry. If the value is not stored as a REG_SZ value, QueryValue fails. Parameters: ValueName - [in] the name of the value to query. Can be nullptr or empty. If ValueName is nullptr or empty, the data is retrieved from the default value for this key. data - [in, out] a reference to the <a class="el" href="class_o_n__w_string.html">ON_wString</a> that will contain the string value after a successful query. Returns: true when QueryValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegQueryValueEx See Also: <a class="el" href="class_o_n___reg_key.html#ac4f6356aa1b6ab5982fc9558ca3269e0">ON_RegKey::QueryValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegQueryValueEx </p>
+<p>Description: QueryValue retrieves the specified string value from the registry. If the value is not stored as a REG_SZ value, QueryValue fails. Parameters: ValueName - [in] the name of the value to query. Can be nullptr or empty. If ValueName is nullptr or empty, the data is retrieved from the default value for this key. data - [in, out] a reference to the <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> that will contain the string value after a successful query. Returns: true when QueryValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegQueryValueEx See Also: <a class="el" href="class_o_n___reg_key.html#ac4f6356aa1b6ab5982fc9558ca3269e0">ON_RegKey::QueryValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegQueryValueEx </p>
 
 </div>
 </div>
@@ -858,7 +858,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: SetValue saves the specified array of ON_wStrings as a REG_MULTI_SZ in the registry. Parameters: ValueName - [in] the name of the value to save. Can be nullptr or empty. If ValueName is nullptr or empty, the data is saved in the default value for this key. data - [in] the <a class="el" href="class_o_n__w_string.html">ON_wString</a> array to save as data in the value named ValueName. If data is empty, or if any of the <a class="el" href="class_o_n__w_string.html">ON_wString</a> objects in the array are empty, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA Returns: true when SetValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegSetValueEx See Also: <a class="el" href="class_o_n___reg_key.html#a90bfc13adeabe8a2d744e77b583a6247">ON_RegKey::SetValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegSetValueEx </p>
+<p>Description: SetValue saves the specified array of ON_wStrings as a REG_MULTI_SZ in the registry. Parameters: ValueName - [in] the name of the value to save. Can be nullptr or empty. If ValueName is nullptr or empty, the data is saved in the default value for this key. data - [in] the <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> array to save as data in the value named ValueName. If data is empty, or if any of the <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> objects in the array are empty, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA Returns: true when SetValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegSetValueEx See Also: <a class="el" href="class_o_n___reg_key.html#a90bfc13adeabe8a2d744e77b583a6247">ON_RegKey::SetValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegSetValueEx </p>
 
 </div>
 </div>
@@ -921,7 +921,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: SetValue saves the specified array of ON_wStrings as a REG_MULTI_SZ in the registry. Parameters: ValueName - [in] the name of the value to save. Can be nullptr or empty. If ValueName is nullptr or empty, the data is saved in the default value for this key. data - [in] the <a class="el" href="class_o_n__w_string.html">ON_wString</a> array to save as data in the value named ValueName. If data is nullptr, or if any of the <a class="el" href="class_o_n__w_string.html">ON_wString</a> objects in the array are empty, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA count - [in] the number of items in the data array. If count == 0, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA. Returns: true when SetValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegSetValueEx See Also: <a class="el" href="class_o_n___reg_key.html#a90bfc13adeabe8a2d744e77b583a6247">ON_RegKey::SetValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegSetValueEx </p>
+<p>Description: SetValue saves the specified array of ON_wStrings as a REG_MULTI_SZ in the registry. Parameters: ValueName - [in] the name of the value to save. Can be nullptr or empty. If ValueName is nullptr or empty, the data is saved in the default value for this key. data - [in] the <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> array to save as data in the value named ValueName. If data is nullptr, or if any of the <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> objects in the array are empty, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA count - [in] the number of items in the data array. If count == 0, SetValue fails and ErrorCode is set to ERROR_INVALID_DATA. Returns: true when SetValue succeeds false otherwise ErrorCode contains the return value of the underlying call to RegSetValueEx See Also: <a class="el" href="class_o_n___reg_key.html#a90bfc13adeabe8a2d744e77b583a6247">ON_RegKey::SetValue</a> <a class="el" href="class_o_n___reg_key.html#ad656d018a94bd6fe40c1cd73695c7cd3">ON_RegKey::DeleteValue</a> <a class="el" href="class_o_n___reg_key.html#a07165ff7197f291a683f890548093ef4">ON_RegKey::CreateKey</a> Windows Platform SDK documentation for RegSetValueEx </p>
 
 </div>
 </div>
@@ -1036,7 +1036,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

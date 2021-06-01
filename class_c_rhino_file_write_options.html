@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -185,6 +185,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a165aabd1c22dd666bfd37cf9511b351f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bab93210b802ff3d5778bdbab4fbe7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a0bab93210b802ff3d5778bdbab4fbe7d">IncludeTextures</a> () const</td></tr>
 <tr class="separator:a0bab93210b802ff3d5778bdbab4fbe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bf46c976010c7833c01d4ae521b56d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a86bf46c976010c7833c01d4ae521b56d">IsAutosave</a> () const</td></tr>
+<tr class="separator:a86bf46c976010c7833c01d4ae521b56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff41063e77dd158cb5421bf8a3d3a50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_file_write_options.html">CRhinoFileWriteOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a2ff41063e77dd158cb5421bf8a3d3a50">operator=</a> (const <a class="el" href="class_c_rhino_file_write_options.html">CRhinoFileWriteOptions</a> &amp;)</td></tr>
 <tr class="separator:a2ff41063e77dd158cb5421bf8a3d3a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871ae218670813b5e433b4f9f0f826f4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a871ae218670813b5e433b4f9f0f826f4">Rhino3dmVersion</a> () const</td></tr>
@@ -219,6 +221,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af12015a63af7fd76317a505a60f51e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5969f81d9f1ada531786373a85f902"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a6a5969f81d9f1ada531786373a85f902">SetIncludeTextures</a> (bool bIncludeTextures)</td></tr>
 <tr class="separator:a6a5969f81d9f1ada531786373a85f902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc2dad42dfa13439545b920d578d383"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#adfc2dad42dfa13439545b920d578d383">SetIsAutosave</a> (bool bIsAutosave)</td></tr>
+<tr class="separator:adfc2dad42dfa13439545b920d578d383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8da0622fe5b80e4bc04e9c61c338004"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#ad8da0622fe5b80e4bc04e9c61c338004">SetRhino3dmVersion</a> (unsigned int rhino_3dm_version)</td></tr>
 <tr class="separator:ad8da0622fe5b80e4bc04e9c61c338004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b8427a5eeab2e53e9f652ef0e1f7fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_write_options.html#a39b8427a5eeab2e53e9f652ef0e1f7fa">SetSelectedObjectFilter</a> (bool bSelectedObjectFilter)</td></tr>
@@ -903,6 +907,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a86bf46c976010c7833c01d4ae521b56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86bf46c976010c7833c01d4ae521b56d">&#9670;&nbsp;</a></span>IsAutosave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoFileWriteOptions::IsAutosave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if the save operation is an autosave. Remarks: The default is false. </p>
+
+</div>
+</div>
 <a id="a2ff41063e77dd158cb5421bf8a3d3a50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ff41063e77dd158cb5421bf8a3d3a50">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -1222,6 +1244,25 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bIncludeTextures</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if the value was set. </p>
+
+</div>
+</div>
+<a id="adfc2dad42dfa13439545b920d578d383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc2dad42dfa13439545b920d578d383">&#9670;&nbsp;</a></span>SetIsAutosave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoFileWriteOptions::SetIsAutosave </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIsAutosave</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1809,7 +1850,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

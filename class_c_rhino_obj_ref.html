@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2fa656274dc766e38bf552bf971fb1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c4588e60489894c10e47c3e0587f9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#ab0c4588e60489894c10e47c3e0587f9c">CRhinoObjRef</a> (const UUID &amp;object_uuid)</td></tr>
 <tr class="separator:ab0c4588e60489894c10e47c3e0587f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa807a49c05fdff5afc3bbe6839b03fb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#aa807a49c05fdff5afc3bbe6839b03fb0">CRhinoObjRef</a> (unsigned int doc_sn, const <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> &amp;)</td></tr>
+<tr class="separator:aa807a49c05fdff5afc3bbe6839b03fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68826800d0485735134a33efd185dcf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#a68826800d0485735134a33efd185dcf6">CRhinoObjRef</a> (unsigned int doc_sn, const UUID &amp;object_uuid)</td></tr>
+<tr class="separator:a68826800d0485735134a33efd185dcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685ebea0e3c5267c8a440e688926ba9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#a685ebea0e3c5267c8a440e688926ba9d">~CRhinoObjRef</a> ()</td></tr>
 <tr class="separator:a685ebea0e3c5267c8a440e688926ba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3966aa8d961f7ea92a9c79a8c8c347c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___annotation.html">ON_Annotation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#ab3966aa8d961f7ea92a9c79a8c8c347c">Annotation</a> () const</td></tr>
@@ -127,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a666b32396f08109d17763ec8c7281886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85fa2084983963f9d38f61d057936fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#a85fa2084983963f9d38f61d057936fce">DecrementReferenceCount</a> ()</td></tr>
 <tr class="separator:a85fa2084983963f9d38f61d057936fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd8935601aae208150b0a35eff258eb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#a9bd8935601aae208150b0a35eff258eb">DocumentRuntimeSerialNumber</a> () const</td></tr>
+<tr class="separator:a9bd8935601aae208150b0a35eff258eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ffabbf05e7c36b6a7d09c9a8f86091"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#a46ffabbf05e7c36b6a7d09c9a8f86091">Edge</a> () const</td></tr>
 <tr class="separator:a46ffabbf05e7c36b6a7d09c9a8f86091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36181abefb39a20efbd6fa0eeb0ff1d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_obj_ref.html#aa36181abefb39a20efbd6fa0eeb0ff1d">Edge</a> (bool bAllowProxy) const</td></tr>
@@ -334,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> is used to store references to objects returned by <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a> and <a class="el" href="class_c_rhino_get_object.html">CRhinoGetObject</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8ad538a7183713d96cc494bd136df8a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad538a7183713d96cc494bd136df8a5">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad538a7183713d96cc494bd136df8a5">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,8 +356,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a68826800d0485735134a33efd185dcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68826800d0485735134a33efd185dcf6">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRhinoObjRef::CRhinoObjRef </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>doc_sn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UUID &amp;&#160;</td>
+          <td class="paramname"><em>object_uuid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc_sn</td><td>Document containing the object UUID </td></tr>
+    <tr><td class="paramname">object_uuid</td><td>object UUID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab0c4588e60489894c10e47c3e0587f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0c4588e60489894c10e47c3e0587f9c">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c4588e60489894c10e47c3e0587f9c">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,6 +406,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000156">Deprecated:</a></b></dt><dd>Use the form that takes a document serial number and object Id </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object_uuid</td><td>object UUID </td></tr>
@@ -375,7 +417,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aadbf8411eadee77bc7a85581e9879d0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadbf8411eadee77bc7a85581e9879d0d">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aadbf8411eadee77bc7a85581e9879d0d">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +441,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a86c99e387e1d4c6af0c8ab14e7bb43c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c99e387e1d4c6af0c8ab14e7bb43c4">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c99e387e1d4c6af0c8ab14e7bb43c4">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[5/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -440,7 +482,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aee5005397f9246d7d20de9fe3c254a9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee5005397f9246d7d20de9fe3c254a9f">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5005397f9246d7d20de9fe3c254a9f">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +516,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a8f782d7e456d17352a3096fdfc6bd313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f782d7e456d17352a3096fdfc6bd313">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f782d7e456d17352a3096fdfc6bd313">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,8 +549,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa807a49c05fdff5afc3bbe6839b03fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa807a49c05fdff5afc3bbe6839b03fb0">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[8/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRhinoObjRef::CRhinoObjRef </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>doc_sn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc_sn</td><td>Document containing the object <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2fa656274dc766e38bf552bf971fb1b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa656274dc766e38bf552bf971fb1b4">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa656274dc766e38bf552bf971fb1b4">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[9/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,11 +598,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000157">Deprecated:</a></b></dt><dd>Use the form that takes a document serial number and <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> </dd></dl>
 
 </div>
 </div>
 <a id="a1f4d52fb0d4a95dba087b49c92551390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f4d52fb0d4a95dba087b49c92551390">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4d52fb0d4a95dba087b49c92551390">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +641,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abba736c777e0ea6a47b2b3d5e4039c24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abba736c777e0ea6a47b2b3d5e4039c24">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abba736c777e0ea6a47b2b3d5e4039c24">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,6 +665,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000158">Deprecated:</a></b></dt><dd>Use the form that takes a document serial number </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">polyedge</td><td>obsolete version - attributes should be const </td></tr>
@@ -615,7 +693,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a22051f5beab7b5bf6a5d1a0c55cd1205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22051f5beab7b5bf6a5d1a0c55cd1205">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22051f5beab7b5bf6a5d1a0c55cd1205">&#9670;&nbsp;</a></span>CRhinoObjRef() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -758,6 +836,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Expert user tool to decrement reference counts. Most users will never need to call this tool. It is called by ~CRhinoObjRef and used in rare cases when a <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> needs to reference an object only by UUID and component index. </p>
+
+</div>
+</div>
+<a id="a9bd8935601aae208150b0a35eff258eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd8935601aae208150b0a35eff258eb">&#9670;&nbsp;</a></span>DocumentRuntimeSerialNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CRhinoObjRef::DocumentRuntimeSerialNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns the runtime document serial number for the document containing the referenced object. Returns: Returns the runtime document serial number for the document containing the referenced object. </p>
 
 </div>
 </div>
@@ -2238,7 +2334,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

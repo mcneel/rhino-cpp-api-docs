@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -339,6 +339,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0061588ed5cfb6bb2bd6221425ed9e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49355233847117c9e7ee2e637cc0f834"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a49355233847117c9e7ee2e637cc0f834">InstanceDefinitionModelSerialNumber</a> () const</td></tr>
 <tr class="separator:a49355233847117c9e7ee2e637cc0f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2beae37e86261e11e1118387119fa691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a2beae37e86261e11e1118387119fa691">IntentionallyWriteCorrupt3dmStartSectionForExpertTesting</a> ()</td></tr>
+<tr class="separator:a2beae37e86261e11e1118387119fa691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d109396d4afbccf7b50ad12b145b075"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a5d109396d4afbccf7b50ad12b145b075">Internal_Read3dmDimStyleOverrides</a> (class <a class="el" href="class_o_n___annotation.html">ON_Annotation</a> &amp;annotation, bool bFromDimStyleTable)</td></tr>
 <tr class="separator:a5d109396d4afbccf7b50ad12b145b075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8dfd3937270d428b376ddb28182614"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___binary_archive.html#a6e8dfd3937270d428b376ddb28182614">Internal_Write3dmDimStyleOverrides</a> (const class <a class="el" href="class_o_n___annotation.html">ON_Annotation</a> &amp;annotation, const class <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dim_style_overrides)</td></tr>
@@ -1237,7 +1239,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: A copy of the start section comment written to or read from the archive. If this function is called before <a class="el" href="class_o_n___binary_archive.html#aeaf4d9da8a00acf446646211499b127e">Write3dmStartSection()</a> or <a class="el" href="class_o_n___binary_archive.html#a8ed3fc600cf59550dc1f3c3a591a99c2">Read3dmStartSection()</a>, it returns <a class="el" href="class_o_n___string.html">ON_String</a>:EmptyString; </p>
+<p>Returns: A copy of the start section comment written to or read from the archive. If this function is called before <a class="el" href="class_o_n___binary_archive.html#aeaf4d9da8a00acf446646211499b127e">Write3dmStartSection()</a> or <a class="el" href="class_o_n___binary_archive.html#a8ed3fc600cf59550dc1f3c3a591a99c2">Read3dmStartSection()</a>, it returns <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a>:EmptyString; </p>
 
 </div>
 </div>
@@ -3528,6 +3530,24 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2beae37e86261e11e1118387119fa691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2beae37e86261e11e1118387119fa691">&#9670;&nbsp;</a></span>IntentionallyWriteCorrupt3dmStartSectionForExpertTesting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_BinaryArchive::IntentionallyWriteCorrupt3dmStartSectionForExpertTesting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Step 1: REQUIRED - Write/Read Start Section Description: In rare cases, experts testing handling of corrupt 3dm files need to write a 3dm archive that is corrupt. In this rare testing situation, those experts should call <a class="el" href="class_o_n___binary_archive.html#a2beae37e86261e11e1118387119fa691">IntentionallyWriteCorrupt3dmStartSectionForExpertTesting()</a> exactly one time before they begin writing the file. The 32 byte idendifier will replace the 1st 3 spaces with a capital X to mimic a file that became corrupt whle residing on storage media. </p>
 
 </div>
 </div>
@@ -8834,7 +8854,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Step 1: REQUIRED - Write/Read Start Section Parameters: version - [in] 0, 2, 3, 4, 5, 50 or 60 (5 is treated as 50)</p>
+<p>Parameters: version - [in] 0, 2, 3, 4, 5, 50 or 60 (5 is treated as 50)</p>
 <p>If version is 0, then the value of <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> is used.</p>
 <p>Use either 0 or the value of <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> for the version parameter when you want your code to write the most up to date file version.</p>
 <p>sStartSectionComment - [in] nullptr or a UTF-8 encoded string with application name, et cetera. This information is primarily used when debugging files that contain problems. McNeel and Associates stores application name, application version, compile date, and the OS in use when file was written. </p>
@@ -10976,7 +10996,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:33 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

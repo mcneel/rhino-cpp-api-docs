@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -215,6 +215,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a83d3fb3f8dbbd92ec945af3afde8e540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0601cf4fbbde120d7476109fa574f2c9"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a0601cf4fbbde120d7476109fa574f2c9">MakeUniqueFilename</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
 <tr class="separator:a0601cf4fbbde120d7476109fa574f2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a0825ca5e23bccfc1e19a5e6a03e44"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#aa2a0825ca5e23bccfc1e19a5e6a03e44">MakeValidFileName</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;filename)</td></tr>
+<tr class="separator:aa2a0825ca5e23bccfc1e19a5e6a03e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f56b6e24ea57a4db2d3372d33db83d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ab5f56b6e24ea57a4db2d3372d33db83d">ModelFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
 <tr class="separator:ab5f56b6e24ea57a4db2d3372d33db83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1df0cacdb4cb4d01a439c37d7e09738"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ad1df0cacdb4cb4d01a439c37d7e09738">ModelFolder</a> (unsigned int doc_serial_number, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
@@ -1031,7 +1033,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000141">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000148">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
 
 </div>
 </div>
@@ -1068,7 +1070,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000140">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000147">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
 
 </div>
 </div>
@@ -1123,7 +1125,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000138">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000145">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
 
 </div>
 </div>
@@ -2434,6 +2436,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa2a0825ca5e23bccfc1e19a5e6a03e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a0825ca5e23bccfc1e19a5e6a03e44">&#9670;&nbsp;</a></span>MakeValidFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::MakeValidFileName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab5f56b6e24ea57a4db2d3372d33db83d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5f56b6e24ea57a4db2d3372d33db83d">&#9670;&nbsp;</a></span>ModelFolder() <span class="overload">[1/2]</span></h2>
 
@@ -2457,7 +2485,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000139">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000146">Deprecated:</a></b></dt><dd>use overload that takes doc_serial_number parameter </dd></dl>
 
 </div>
 </div>
@@ -2622,7 +2650,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Call this method to convert a relative path to an absolute path relative to the specified path. Parameters: lpsRelativePath [in] - Relative path to convert to an absolute path bRelativePathisFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name lpsRelativeTo [in] - File or folder the path is relative to bRelativeToIsFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name wResult [out] - Reference to <a class="el" href="class_o_n__w_string.html">ON_wString</a> which will recieve the computed absolute path Returns: Returns true if paramaters are valid and lpsRelativePath is indeed relative to lpsRelativeTo otherwise returns false </p>
+<p>Description: Call this method to convert a relative path to an absolute path relative to the specified path. Parameters: lpsRelativePath [in] - Relative path to convert to an absolute path bRelativePathisFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name lpsRelativeTo [in] - File or folder the path is relative to bRelativeToIsFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name wResult [out] - Reference to <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> which will recieve the computed absolute path Returns: Returns true if paramaters are valid and lpsRelativePath is indeed relative to lpsRelativeTo otherwise returns false </p>
 
 </div>
 </div>
@@ -2704,7 +2732,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Call this method to convert an absolute path to a path relative to another file name or folder. Parameters: lpsFrom [in] - File or directory name to convert. bFromIsFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name lpsRelativeTo [in] - File or folder you whish to make lpsFrom relative to bRelativeToIsFileName [in] - If true then lpsRelativeTo is treated as a file name otherwise it is treated as a directory name wResult [out] - Reference to <a class="el" href="class_o_n__w_string.html">ON_wString</a> which will recieve the computed relative path Returns: Returns true if paramaters are valid and lpsFrom is indeed relative to lpsRelativeTo otherwise returns false </p>
+<p>Description: Call this method to convert an absolute path to a path relative to another file name or folder. Parameters: lpsFrom [in] - File or directory name to convert. bFromIsFileName [in] - If true then lpsFrom is treated as a file name otherwise it is treated as a directory name lpsRelativeTo [in] - File or folder you whish to make lpsFrom relative to bRelativeToIsFileName [in] - If true then lpsRelativeTo is treated as a file name otherwise it is treated as a directory name wResult [out] - Reference to <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> which will recieve the computed relative path Returns: Returns true if paramaters are valid and lpsFrom is indeed relative to lpsRelativeTo otherwise returns false </p>
 
 </div>
 </div>
@@ -2942,7 +2970,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 08:59:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

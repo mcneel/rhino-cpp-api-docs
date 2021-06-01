@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.4</span>
+   &#160;<span id="projectnumber">7.6</span>
    </div>
   </td>
  </tr>
@@ -1020,7 +1020,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: <a class="el" href="class_o_n___locale.html#a96c133c93fefdf515270024b2c13e305">NumericLocalePtr()</a> is an expert user function needed to call C-runtime functions that format or parse numbers. This locale must never be used to collate or map strings.</p>
-<p>The primary use for this function is in opennurbs implementations of <a class="el" href="class_o_n___string.html">ON_String</a> and <a class="el" href="class_o_n__w_string.html">ON_wString</a> number formatting and parsing functions. Example:</p>
+<p>The primary use for this function is in opennurbs implementations of <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> number formatting and parsing functions. Example:</p>
 <p>/ Call _sprintf_p_l ON_CRT_locale_t numeric_locale = ON_Locale::CurrentCulture::NumericLocalePtr(); _sprintf_p_l(....,locale,...);</p>
 <p>Returns: A value that can be passed into C-runtime functions that take a locale parameter. </p>
 
@@ -1386,7 +1386,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: <a class="el" href="class_o_n___locale.html#a5ad309e4cc9e64bd0edb12efb14308b1">StringCollateAndMapLocalePtr()</a> is an expert user function needed to call C-runtime functions that collate (compare) and map (toupper/tolower) strings. This locale must never be used for formatting or parsing numbers.</p>
-<p>The primary use for this function is in opennurbs implementations of <a class="el" href="class_o_n___string.html">ON_String</a> and <a class="el" href="class_o_n__w_string.html">ON_wString</a> collate and map functions. Example:</p>
+<p>The primary use for this function is in opennurbs implementations of <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> collate and map functions. Example:</p>
 <p>/ Call _wcsicoll_l ON_CRT_locale_t coll_locale = ON_Locale::CurrentCulture::StringCollateAndMapLocalePtr(); _wcsicoll_l(....,coll_locale);</p>
 <p>Returns: A value that can be passed into C-runtime functions that take a locale parameter. </p>
 
@@ -1502,7 +1502,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 11 2021 10:24:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 1 2021 09:00:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
