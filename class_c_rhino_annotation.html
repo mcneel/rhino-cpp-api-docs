@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.6</span>
+   &#160;<span id="projectnumber">7.7</span>
    </div>
   </td>
  </tr>
@@ -520,6 +520,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af59fa899de0acef62dd5df5dbd3782a6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_annotation.html#af59fa899de0acef62dd5df5dbd3782a6">CompareFonts</a> (const <a class="el" href="class_o_n___font.html">ON_Font</a> *const *lhs, const <a class="el" href="class_o_n___font.html">ON_Font</a> *const *rhs)</td></tr>
+<tr class="memdesc:af59fa899de0acef62dd5df5dbd3782a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare fonts by RichTextName and Quartet member.  <a href="class_c_rhino_annotation.html#af59fa899de0acef62dd5df5dbd3782a6">More...</a><br /></td></tr>
+<tr class="separator:af59fa899de0acef62dd5df5dbd3782a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d9507750cc97fda61f0012323979c1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_annotation.html#ab3d9507750cc97fda61f0012323979c1">FontUse</a> (const <a class="el" href="class_c_rhino_annotation.html">CRhinoAnnotation</a> *annotation, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *effective_dimstyle, <a class="el" href="class_o_n___font.html">ON_Font</a> *default_font, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___font.html">ON_Font</a> * &gt; &amp;fonts_used)</td></tr>
+<tr class="separator:ab3d9507750cc97fda61f0012323979c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa76a469f1af39d03f9a55e083198b9d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_annotation.html#afa76a469f1af39d03f9a55e083198b9d">GetAnnotationScale</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *dimstyle, const <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> *pVP)</td></tr>
 <tr class="separator:afa76a469f1af39d03f9a55e083198b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03e9705178edf36531b9dd2515e3969"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_annotation.html#ae03e9705178edf36531b9dd2515e3969">ParseFields</a> (const <a class="el" href="class_o_n___text_content.html">ON_TextContent</a> *text, const <a class="el" href="class_c_rhino_annotation.html">CRhinoAnnotation</a> *annotation, const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *top_parent)</td></tr>
@@ -899,6 +904,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af59fa899de0acef62dd5df5dbd3782a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59fa899de0acef62dd5df5dbd3782a6">&#9670;&nbsp;</a></span>CompareFonts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CRhinoAnnotation::CompareFonts </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___font.html">ON_Font</a> *const *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___font.html">ON_Font</a> *const *&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compare fonts by RichTextName and Quartet member. </p>
+
+</div>
+</div>
 <a id="a812c386ed9cd38e343905768b17b51e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a812c386ed9cd38e343905768b17b51e9">&#9670;&nbsp;</a></span>ContainsMeasurableTextFields()</h2>
 
@@ -913,6 +956,55 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3d9507750cc97fda61f0012323979c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d9507750cc97fda61f0012323979c1">&#9670;&nbsp;</a></span>FontUse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CRhinoAnnotation::FontUse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_annotation.html">CRhinoAnnotation</a> *&#160;</td>
+          <td class="paramname"><em>annotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> *&#160;</td>
+          <td class="paramname"><em>effective_dimstyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___font.html">ON_Font</a> *&#160;</td>
+          <td class="paramname"><em>default_font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___font.html">ON_Font</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fonts_used</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>finds the fonts used by the input annotation default_font - The font from the parent dimstyle - That font may or may not be used by the annotation fonts_used - An array of the fonts actually used to display the text. This list may or may not include the default_font. If there are fonts other than the default font listed in fonts_used, those are override fonts. returns the number of override fonts found or -1 for error </p>
 
 </div>
 </div>
@@ -1469,7 +1561,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 1 2021 08:59:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 9 2021 09:43:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

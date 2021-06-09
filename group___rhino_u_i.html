@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.6</span>
+   &#160;<span id="projectnumber">7.7</span>
    </div>
   </td>
  </tr>
@@ -590,6 +590,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4c09fb2ed4de098cc0eadf30855c7041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a36a15e75e0fd4ae3412e06963fc5f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_u_i.html#ga7a36a15e75e0fd4ae3412e06963fc5f0">RHINO_UILIB_DEFINE_GUID</a> (RHINO_ZEBRA_DOCK_BAR_ID, 0x36EF80FE, 0x7D51, 0x41EE, 0x80, 0x44, 0xF1, 0x7B, 0x10, 0x73, 0x09, 0xCB)</td></tr>
 <tr class="separator:ga7a36a15e75e0fd4ae3412e06963fc5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8991c9fa85b9e7f55cb43e16d23c69f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___file_reference.html">ON_FileReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_u_i.html#gad8991c9fa85b9e7f55cb43e16d23c69f">RhinoGetDibAsTextureFileReference</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> crc)</td></tr>
+<tr class="separator:gad8991c9fa85b9e7f55cb43e16d23c69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ae8fdede3af0a03d39c4514d8893334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_u_i.html#ga3ae8fdede3af0a03d39c4514d8893334">RhinoOnToolBarButtonClicked</a> (const wchar_t *lpsMacro, const wchar_t *lpsTooltip)</td></tr>
 <tr class="separator:ga3ae8fdede3af0a03d39c4514d8893334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4698784948379e1d397d9e7f7a3ebc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_u_i.html#gaf4698784948379e1d397d9e7f7a3ebc8">RhinoRoundOff</a> (double x)</td></tr>
@@ -3816,6 +3818,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="gad8991c9fa85b9e7f55cb43e16d23c69f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8991c9fa85b9e7f55cb43e16d23c69f">&#9670;&nbsp;</a></span>RhinoGetDibAsTextureFileReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___file_reference.html">ON_FileReference</a> RhinoGetDibAsTextureFileReference </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;&#160;</td>
+          <td class="paramname"><em>dib</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramname"><em>crc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Inserts dib into Rhino's texure manager and returns an <a class="el" href="class_o_n___file_reference.html">ON_FileReference</a> for use in e.g. <a class="el" href="class_o_n___texture.html#a2faf89d33eec5fbf8d8d1b273b8837d3">ON_Texture::m_image_file_reference</a>. This way it's possible to use a dib with an <a class="el" href="class_o_n___texture.html">ON_Texture</a> without having to read the dib from file. Parameters: dib - [in] The dib which will be referenced by the <a class="el" href="class_o_n___file_reference.html">ON_FileReference</a>. crc - [in] The crc of the dib. This should be a unique number which changes if the contents of the dib changes. NOTE: if a different dib is provided using the same crc as a previous dib, then the previous dib will be overwritten in the texture manager and both previously returned ON_FileReferences will reference the newly provided dib. Returns: Returns an <a class="el" href="class_o_n___file_reference.html">ON_FileReference</a> which, when used together with e.g. <a class="el" href="class_o_n___texture.html#a2faf89d33eec5fbf8d8d1b273b8837d3">ON_Texture::m_image_file_reference</a>, is used by Rhino's display to find the texture from the texture manager. </p>
+
+</div>
+</div>
 <a id="ga3ae8fdede3af0a03d39c4514d8893334"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3ae8fdede3af0a03d39c4514d8893334">&#9670;&nbsp;</a></span>RhinoOnToolBarButtonClicked()</h2>
 
@@ -5095,7 +5126,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 1 2021 08:59:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 9 2021 09:43:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
