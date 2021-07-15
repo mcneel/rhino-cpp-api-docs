@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.7</span>
+   &#160;<span id="projectnumber">7.8</span>
    </div>
   </td>
  </tr>
@@ -538,6 +538,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a43c8f9cb4eaf44e0c763fbdd391f0d30"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a43c8f9cb4eaf44e0c763fbdd391f0d30">LabelSubDNet</a> (unsigned int rhino_doc_sn, int layer_index, const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd, bool bVertexLabels, bool bEdgeLabels, bool bFaceLabels, bool bFacePackIdLabels, bool bFacePackIdColors, bool bSectorWeights, bool bNetAsLines)</td></tr>
 <tr class="memdesc:a43c8f9cb4eaf44e0c763fbdd391f0d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debugging tools.  <a href="class_c_rhino_sub_d_object.html#a43c8f9cb4eaf44e0c763fbdd391f0d30">More...</a><br /></td></tr>
 <tr class="separator:a43c8f9cb4eaf44e0c763fbdd391f0d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593808990d9ad878efdd9cfb74cd157c"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#a593808990d9ad878efdd9cfb74cd157c">LabelSubDNet</a> (unsigned int rhino_doc_sn, int layer_index, const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd, bool bVertexLabels, bool bEdgeLabels, bool bFaceLabels, bool bFacePackIdLabels, bool bFacePackIdColors, bool bSymmetryMotifLabels, bool bSymmetryMotifColors, bool bSectorWeights, bool bNetAsLines)</td></tr>
+<tr class="separator:a593808990d9ad878efdd9cfb74cd157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85f8eee2ad64f8f1fcc4dd7d7bed990"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#ad85f8eee2ad64f8f1fcc4dd7d7bed990">PrintSubDTopology</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd, bool bUseRhinoTextOutTool)</td></tr>
 <tr class="separator:ad85f8eee2ad64f8f1fcc4dd7d7bed990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6589f2a6d4c1712bd2737a6b54f6a72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_object.html#aa6589f2a6d4c1712bd2737a6b54f6a72">SubDIsVisible</a> ()</td></tr>
@@ -1242,7 +1244,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>OBSOLETE: Always returns 0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000161">Deprecated:</a></b></dt><dd>OBSOLETE: Always returns 0. </dd></dl>
 
 </div>
 </div>
@@ -1732,7 +1734,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a43c8f9cb4eaf44e0c763fbdd391f0d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43c8f9cb4eaf44e0c763fbdd391f0d30">&#9670;&nbsp;</a></span>LabelSubDNet()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c8f9cb4eaf44e0c763fbdd391f0d30">&#9670;&nbsp;</a></span>LabelSubDNet() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1815,6 +1817,102 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Debugging tools. </p>
 <p>Description: This tool will create text dots and a mesh object that can be used to debug the current state of a subd. Parameters: rhino_doc_sn - [in] destination document layer_index - [in] index of destinaton layer (-1) to use default layer. subd - [in] subd to label bVertexLabels - [in] true to label vertex locations bEdgeLabels - [in] true to label edges near the midpoint bFaceLabels - [in] true to label faces with their id near their centroid bFacePackIdLabels - [in] true to include face pack id near the face centroids bFacePackIdColors- [in] true to show face pack groups using per face colors. bSectorWeights - [in] true to label sector weights bNetAsLines - [in] true to add a rhino line curve object for each edge. Returns: Number of objects added to the document. </p>
+
+</div>
+</div>
+<a id="a593808990d9ad878efdd9cfb74cd157c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593808990d9ad878efdd9cfb74cd157c">&#9670;&nbsp;</a></span>LabelSubDNet() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int CRhinoSubDObject::LabelSubDNet </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>rhino_doc_sn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>subd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bVertexLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEdgeLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFaceLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFacePackIdLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFacePackIdColors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSymmetryMotifLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSymmetryMotifColors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSectorWeights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bNetAsLines</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2597,7 +2695,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000171">Deprecated:</a></b></dt><dd>OBSOLETE: Always returns 0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000162">Deprecated:</a></b></dt><dd>OBSOLETE: Always returns 0. </dd></dl>
 
 </div>
 </div>
@@ -2883,7 +2981,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 09:43:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 12:48:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.7</span>
+   &#160;<span id="projectnumber">7.8</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd3c1a43385302940e38d06fe3eac609"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#afd3c1a43385302940e38d06fe3eac609">EvaluatePoint</a> (const class <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> &amp;objref, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;P) const override</td></tr>
 <tr class="memdesc:afd3c1a43385302940e38d06fe3eac609"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> override  <a href="class_o_n___poly_curve.html#afd3c1a43385302940e38d06fe3eac609">More...</a><br /></td></tr>
 <tr class="separator:afd3c1a43385302940e38d06fe3eac609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bf009d5487ff3f39cf506e89f5fdcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a35bf009d5487ff3f39cf506e89f5fdcd">ExplodeSingleSegmentCurve</a> () const</td></tr>
+<tr class="separator:a35bf009d5487ff3f39cf506e89f5fdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667134c8afbabcd288b27860bd1feb15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a667134c8afbabcd288b27860bd1feb15">Extend</a> (const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;domain) override</td></tr>
 <tr class="separator:a667134c8afbabcd288b27860bd1feb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55b07891f635832a90b049ce73937da4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap</a> (int segment_index0) const</td></tr>
@@ -1122,6 +1124,24 @@ Additional Inherited Members</h2></td></tr>
 <p>virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> override </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___curve.html#ad625501436509ff71c9fa21778ad2459">ON_Curve</a>.</p>
+
+</div>
+</div>
+<a id="a35bf009d5487ff3f39cf506e89f5fdcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bf009d5487ff3f39cf506e89f5fdcd">&#9670;&nbsp;</a></span>ExplodeSingleSegmentCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___curve.html">ON_Curve</a>* ON_PolyCurve::ExplodeSingleSegmentCurve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: If this has a single segment, return that single segment with user_data copied, reversed if necessary so the sense of the result is the same as this, and domain adjusted to match this-&gt;Domain. If the single segment is a polycurve, RemoveNesting should be called before calling ExplodeSingleSegmentCurve. Returns: NULL if not a single span polycurve The single span, adjusted as described above; </p>
 
 </div>
 </div>
@@ -3411,7 +3431,7 @@ t&lt;m_t[0] or m_t is empty                -1
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 09:43:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 12:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

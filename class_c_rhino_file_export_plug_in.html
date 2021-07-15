@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.7</span>
+   &#160;<span id="projectnumber">7.8</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,7 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2a472e1d069cade08a149f600a235ae0ff">supports_zoo_per_user</a> = 0x40, 
 <br />
 &#160;&#160;<a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2a7d9075e6acf46abd150fec1233925835">supports_zoo_per_core</a> = 0x80, 
+<a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2ab40248aa24d37beff3ea8a6d3a6e2cdd">supports_license_discovery</a> = 0x100, 
 <a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2a7673c0346cc28ff744871da370a0695f">license_dialog_buttons_force_32bit</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
@@ -667,7 +668,7 @@ Additional Inherited Members</h2></td></tr>
 <p> Description: OBSOLETE - See GetFileDialogPreviewImageAndNotes</p>
 <p>When a user single clicks on a file in the file open dialog, Rhino displays a preview image of the file's contents. If you want to paint a preview image then override <a class="el" href="class_c_rhino_file_export_plug_in.html#ad0add9f8a5e445e252a457363c54ee47">OnPaintFileDialogPreviewImage()</a> and return true. If <a class="el" href="class_c_rhino_file_export_plug_in.html#ad0add9f8a5e445e252a457363c54ee47">OnPaintFileDialogPreviewImage()</a> returns false, then Rhino will clear the preview image. This method is only called if calling OnPaintFileDialogPreviewImageAndNotes() returns false.</p>
 <p>Returns: true = This plug-in painted preview. false = This plug-in did not paint, let file dialog paint.</p>
-<p>Parameters: const wchar_t* lpsFileName = File name (full path) HWND hWnd = Handle to preview window. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000161">Deprecated:</a></b></dt><dd>see GetFileDialogPreviewImageAndNotes </dd></dl>
+<p>Parameters: const wchar_t* lpsFileName = File name (full path) HWND hWnd = Handle to preview window. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000152">Deprecated:</a></b></dt><dd>see GetFileDialogPreviewImageAndNotes </dd></dl>
 
 </div>
 </div>
@@ -755,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 09:43:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 12:48:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

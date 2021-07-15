@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.7</span>
+   &#160;<span id="projectnumber">7.8</span>
    </div>
   </td>
  </tr>
@@ -63,9 +63,11 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_o_n___sub_d_r_tree_vertex_finder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ON_SubDRTreeVertexFinder Class Reference<div class="ingroups"><a class="el" href="group__open_n_u_r_b_s.html">OpenNURBS</a></div></div>  </div>
@@ -74,6 +76,14 @@ $(function() {
 
 <p><code>#include &lt;opennurbs_subd.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad82b465385aa85fb14c461a4e8cf16c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">MarkBitsFilter</a> : unsigned char { <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4a6adf97f83acf6453d4a6a4b1070f3754">MarkBitsFilter::None</a> = 0, 
+<a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4af5f286e73bda105e538310b3190f75c5">MarkBitsFilter::Equal</a> = 1, 
+<a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4a19bb0af2c3c530538cb41aff7f235b96">MarkBitsFilter::NotEqual</a> = 2
+ }</td></tr>
+<tr class="separator:ad82b465385aa85fb14c461a4e8cf16c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9845fb0fa40b5126e91a6bb363d0cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad9845fb0fa40b5126e91a6bb363d0cab">ON_SubDRTreeVertexFinder</a> ()=default</td></tr>
@@ -93,6 +103,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a06c953454122385ebcb8bc155c0b9edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c0dd61c6433eb3552e42c6a01a45d0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#aa1c0dd61c6433eb3552e42c6a01a45d0">Create</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> P, bool bMarkFilter)</td></tr>
 <tr class="separator:aa1c0dd61c6433eb3552e42c6a01a45d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00955839472cfb9ec0eb1e3abb52c14c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#a00955839472cfb9ec0eb1e3abb52c14c">Create</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> P, <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">ON_SubDRTreeVertexFinder::MarkBitsFilter</a> mark_bits_filter, <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> mark_bits)</td></tr>
+<tr class="separator:a00955839472cfb9ec0eb1e3abb52c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -102,11 +114,48 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aff2b509b5c981fd07852431db679a481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2806d851207fd2c0535926a5c293aff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#af2806d851207fd2c0535926a5c293aff">m_distance</a> = <a class="el" href="group__open_n_u_r_b_s.html#ga769dbc6215faf8b792af507f8af629a2">ON_DBL_QNAN</a></td></tr>
 <tr class="separator:af2806d851207fd2c0535926a5c293aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ad663907589c25fc9a65bf97c26e83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#a49ad663907589c25fc9a65bf97c26e83">m_mark_bits</a> = 0</td></tr>
+<tr class="separator:a49ad663907589c25fc9a65bf97c26e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab507ec9e73c47fd3daa4ed6d6f6f2f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">ON_SubDRTreeVertexFinder::MarkBitsFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ab507ec9e73c47fd3daa4ed6d6f6f2f63">m_mark_bits_filter</a> = <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4a6adf97f83acf6453d4a6a4b1070f3754">ON_SubDRTreeVertexFinder::MarkBitsFilter::None</a></td></tr>
+<tr class="separator:ab507ec9e73c47fd3daa4ed6d6f6f2f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff240ea3d129137b8e3f4a4512a6bb37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#aff240ea3d129137b8e3f4a4512a6bb37">m_P</a> = <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff">ON_3dPoint::NanPoint</a></td></tr>
 <tr class="separator:aff240ea3d129137b8e3f4a4512a6bb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab57006ac04f804a6448530967e2a25bd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ab57006ac04f804a6448530967e2a25bd">m_v</a> = nullptr</td></tr>
 <tr class="separator:ab57006ac04f804a6448530967e2a25bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a787fe771407bd131bc43e65f37ccfec7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#a787fe771407bd131bc43e65f37ccfec7">Unset</a></td></tr>
+<tr class="separator:a787fe771407bd131bc43e65f37ccfec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad82b465385aa85fb14c461a4e8cf16c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82b465385aa85fb14c461a4e8cf16c4">&#9670;&nbsp;</a></span>MarkBitsFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">ON_SubDRTreeVertexFinder::MarkBitsFilter</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad82b465385aa85fb14c461a4e8cf16c4a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad82b465385aa85fb14c461a4e8cf16c4af5f286e73bda105e538310b3190f75c5"></a>Equal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad82b465385aa85fb14c461a4e8cf16c4a19bb0af2c3c530538cb41aff7f235b96"></a>NotEqual&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9845fb0fa40b5126e91a6bb363d0cab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9845fb0fa40b5126e91a6bb363d0cab">&#9670;&nbsp;</a></span>ON_SubDRTreeVertexFinder() <span class="overload">[1/2]</span></h2>
@@ -222,7 +271,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a06c953454122385ebcb8bc155c0b9edd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c953454122385ebcb8bc155c0b9edd">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c953454122385ebcb8bc155c0b9edd">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +297,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aa1c0dd61c6433eb3552e42c6a01a45d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1c0dd61c6433eb3552e42c6a01a45d0">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c0dd61c6433eb3552e42c6a01a45d0">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,6 +330,48 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Parameters: bMarkFilter - [in] Vertices with Mark = bMarkFilter are eligable to be found. Vertices with Mark != bMarkFilter are ignored. </p>
+
+</div>
+</div>
+<a id="a00955839472cfb9ec0eb1e3abb52c14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00955839472cfb9ec0eb1e3abb52c14c">&#9670;&nbsp;</a></span>Create() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a> ON_SubDRTreeVertexFinder::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">ON_SubDRTreeVertexFinder::MarkBitsFilter</a>&#160;</td>
+          <td class="paramname"><em>mark_bits_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td>
+          <td class="paramname"><em>mark_bits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -354,6 +445,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a49ad663907589c25fc9a65bf97c26e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ad663907589c25fc9a65bf97c26e83">&#9670;&nbsp;</a></span>m_mark_bits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> ON_SubDRTreeVertexFinder::m_mark_bits = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab507ec9e73c47fd3daa4ed6d6f6f2f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab507ec9e73c47fd3daa4ed6d6f6f2f63">&#9670;&nbsp;</a></span>m_mark_bits_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4">ON_SubDRTreeVertexFinder::MarkBitsFilter</a> ON_SubDRTreeVertexFinder::m_mark_bits_filter = <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html#ad82b465385aa85fb14c461a4e8cf16c4a6adf97f83acf6453d4a6a4b1070f3754">ON_SubDRTreeVertexFinder::MarkBitsFilter::None</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aff240ea3d129137b8e3f4a4512a6bb37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff240ea3d129137b8e3f4a4512a6bb37">&#9670;&nbsp;</a></span>m_P</h2>
 
@@ -382,10 +501,32 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a787fe771407bd131bc43e65f37ccfec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787fe771407bd131bc43e65f37ccfec7">&#9670;&nbsp;</a></span>Unset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_r_tree_vertex_finder.html">ON_SubDRTreeVertexFinder</a> ON_SubDRTreeVertexFinder::Unset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 09:43:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 12:48:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

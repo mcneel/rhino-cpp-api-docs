@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.7</span>
+   &#160;<span id="projectnumber">7.8</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,17 @@ Public Types</h2></td></tr>
 <tr class="memitem:aec71024001ced61d244810146e3d7ce1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: int { <a class="el" href="class_o_n___string.html#aec71024001ced61d244810146e3d7ce1a960f8e16c89ed83aa35c7983aa79ba22">MaximumStringLength</a> = 100000000
  }</td></tr>
 <tr class="separator:aec71024001ced61d244810146e3d7ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bd23144ef973a92562c828a5d02622"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">Encoding</a> : unsigned int { <br />
+&#160;&#160;<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622ac9f88e098f6fe4e4e112eeb05ccb9671">Encoding::Unset</a> = 0, 
+<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622a88183b946cc5f0e8c96b2e66e1c74a7e">Encoding::Unknown</a> = 1, 
+<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622ad2cd8253361a9c732d21ca1d336599cc">Encoding::ASCII</a> = 2, 
+<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622aeb7ee0fb585e2ac64fdc086466c474b1">Encoding::UTF8</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622aafe0089fa9183cd74fd20ce4a0d041ab">Encoding::SloppyUTF8</a> = 4, 
+<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622a2145dbf5680de298958eeebbaa1ee869">Encoding::BIG5andASCII</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a47bd23144ef973a92562c828a5d02622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -207,6 +218,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abcd124582afb805f8d4b19a4f1d85f52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#abcd124582afb805f8d4b19a4f1d85f52">IsNotEmpty</a> () const</td></tr>
 <tr class="memdesc:abcd124582afb805f8d4b19a4f1d85f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if length &gt; 0  <a href="class_o_n___string.html#abcd124582afb805f8d4b19a4f1d85f52">More...</a><br /></td></tr>
 <tr class="separator:abcd124582afb805f8d4b19a4f1d85f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea13322454987b076d409f77d8cbd7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a0ea13322454987b076d409f77d8cbd7a">IsPossibleEncoding</a> (<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a> encoding) const</td></tr>
+<tr class="separator:a0ea13322454987b076d409f77d8cbd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c85bd8f203130e29af9276b999e180"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a84c85bd8f203130e29af9276b999e180">IsReferenceCounted</a> () const</td></tr>
 <tr class="separator:a84c85bd8f203130e29af9276b999e180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ede53e845476045cd5f86d2054ca358"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a1ede53e845476045cd5f86d2054ca358">IsValid</a> (bool bLengthTest) const</td></tr>
@@ -236,6 +249,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb81da5739045af63ad9a2d6bae70578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#afb81da5739045af63ad9a2d6bae70578">Mid</a> (int, int) const</td></tr>
 <tr class="memdesc:afb81da5739045af63ad9a2d6bae70578"><td class="mdescLeft">&#160;</td><td class="mdescRight">simple sub-string extraction  <a href="class_o_n___string.html#afb81da5739045af63ad9a2d6bae70578">More...</a><br /></td></tr>
 <tr class="separator:afb81da5739045af63ad9a2d6bae70578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae028c4a4d02862afab687250ace51806"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ae028c4a4d02862afab687250ace51806">MultiByteDecode</a> (int windows_code_page) const</td></tr>
+<tr class="separator:ae028c4a4d02862afab687250ace51806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10bf6ce98915f7673ad33a4025fe9e3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a10bf6ce98915f7673ad33a4025fe9e3c">operator const char *</a> () const</td></tr>
 <tr class="separator:a10bf6ce98915f7673ad33a4025fe9e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa930e211cdb3c32334c3665debe90c5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#aa930e211cdb3c32334c3665debe90c5a">operator+</a> (char) const</td></tr>
@@ -280,6 +295,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15934d977b99fe4d104d4c372840d1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d7d2b09ebceeea71b4faaae6ef609b4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a4d7d2b09ebceeea71b4faaae6ef609b4">operator[]</a> (int) const</td></tr>
 <tr class="separator:a4d7d2b09ebceeea71b4faaae6ef609b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd5d6e2cc0310faba0b46213fce1244"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a1dd5d6e2cc0310faba0b46213fce1244">ProbableEncoding</a> () const</td></tr>
+<tr class="separator:a1dd5d6e2cc0310faba0b46213fce1244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e08004800ea19d6d58fd445d4c62194"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a7e08004800ea19d6d58fd445d4c62194">Remove</a> (const char utf8_single_byte_c)</td></tr>
 <tr class="memdesc:a7e08004800ea19d6d58fd445d4c62194"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove occurrences of chRemove  <a href="class_o_n___string.html#a7e08004800ea19d6d58fd445d4c62194">More...</a><br /></td></tr>
 <tr class="separator:a7e08004800ea19d6d58fd445d4c62194"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +339,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac00c4d55e034d5f5173436154bc3f951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58897f962cd41cdb4c69caec993bf7ce"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a58897f962cd41cdb4c69caec993bf7ce">SizeOf</a> () const</td></tr>
 <tr class="separator:a58897f962cd41cdb4c69caec993bf7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568098509e636ebf29a766dd3ae144ec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a568098509e636ebf29a766dd3ae144ec">ToBIG5</a> (int *error_count) const</td></tr>
+<tr class="separator:a568098509e636ebf29a766dd3ae144ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad480d282f3212a4860d938cd8e256b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a3ad480d282f3212a4860d938cd8e256b">ToUTF8</a> () const</td></tr>
+<tr class="separator:a3ad480d282f3212a4860d938cd8e256b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83cae9670dc9d8f63af078b46b947b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ae83cae9670dc9d8f63af078b46b947b6">TrimLeft</a> (const char *=nullptr)</td></tr>
 <tr class="separator:ae83cae9670dc9d8f63af078b46b947b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f6b6dfa793053c75d250516b2357f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#aa6f6b6dfa793053c75d250516b2357f1">TrimLeftAndRight</a> (const char *=nullptr)</td></tr>
@@ -407,6 +428,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4cdce7bb2ae744562dbc2f0136da156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb5144f435663bdc85480f92db64578f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#afb5144f435663bdc85480f92db64578f">IsHexDigit</a> (char c)</td></tr>
 <tr class="separator:afb5144f435663bdc85480f92db64578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640451a1ccdb2aa153558298b1494f43"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a640451a1ccdb2aa153558298b1494f43">IsPossibleEncoding</a> (<a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a> encoding, const char *buffer, int buffer_length)</td></tr>
+<tr class="separator:a640451a1ccdb2aa153558298b1494f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3242d4b1faaf51d520127a9386cfe9c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ab3242d4b1faaf51d520127a9386cfe9c">Length</a> (const char *string)</td></tr>
 <tr class="separator:ab3242d4b1faaf51d520127a9386cfe9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2778628aaecdd6f8962c593edf75aba0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a2778628aaecdd6f8962c593edf75aba0">Length</a> (const char *string, size_t string_capacity)</td></tr>
@@ -421,6 +444,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa0ef2d77f4353457d211206a6cbae80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab16492152dfc66a46cb60dffd3d5167e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ab16492152dfc66a46cb60dffd3d5167e">PreciseFromNumber</a> (double d)</td></tr>
 <tr class="separator:ab16492152dfc66a46cb60dffd3d5167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4657108ecc247ed6d5d0a9eaf096de12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a4657108ecc247ed6d5d0a9eaf096de12">ProbableEncoding</a> (const char *buffer, int buffer_length)</td></tr>
+<tr class="separator:a4657108ecc247ed6d5d0a9eaf096de12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569cfd96d6c9b39dd413222444701b08"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a569cfd96d6c9b39dd413222444701b08">Reverse</a> (char *string, int element_count)</td></tr>
 <tr class="separator:a569cfd96d6c9b39dd413222444701b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8105b3433824c31c3c6dbd8514538de0"><td class="memItemLeft" align="right" valign="top">static int <a class="el" href="group__open_n_u_r_b_s.html#ga7c9ed5dd5ca734b5fe2315e6be030224">ON_VARGS_FUNC_CDECL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a8105b3433824c31c3c6dbd8514538de0">ScanBuffer</a> (const char *buffer, const char *format,...)</td></tr>
@@ -433,6 +458,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a10f74281001e5336f52c0738a4b1f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7300e558112e71d486258f8b45ddc77c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a7300e558112e71d486258f8b45ddc77c">SplitPath</a> (const char *path, <a class="el" href="class_o_n___string.html">ON_String</a> *drive, <a class="el" href="class_o_n___string.html">ON_String</a> *dir, <a class="el" href="class_o_n___string.html">ON_String</a> *fname, <a class="el" href="class_o_n___string.html">ON_String</a> *ext)</td></tr>
 <tr class="separator:a7300e558112e71d486258f8b45ddc77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec130bc41fbd9c1ae1369c8d0abc1d6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#abec130bc41fbd9c1ae1369c8d0abc1d6">ToBIG5</a> (const char *buffer, int buffer_length, int *error_count)</td></tr>
+<tr class="separator:abec130bc41fbd9c1ae1369c8d0abc1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c23ca5ade448d30b95fcc40a86531b"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a28c23ca5ade448d30b95fcc40a86531b">ToNumber</a> (const char *buffer, char value_on_failure, char *value)</td></tr>
 <tr class="separator:a28c23ca5ade448d30b95fcc40a86531b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5e71e6afd15e738d63689a05bab557"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a8f5e71e6afd15e738d63689a05bab557">ToNumber</a> (const char *buffer, double value_on_failure, double *value)</td></tr>
@@ -451,6 +478,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a1c5a55e7c39c8714eda63d8434bda2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156dd9573865cc888b4714e91ee0dd26"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#a156dd9573865cc888b4714e91ee0dd26">ToNumber</a> (const char *buffer, unsigned short value_on_failure, unsigned short *value)</td></tr>
 <tr class="separator:a156dd9573865cc888b4714e91ee0dd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78d21ba1a39c29ce36fdc40445e17c8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___string.html">ON_String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#aa78d21ba1a39c29ce36fdc40445e17c8">ToUTF8</a> (const char *buffer, int buffer_length)</td></tr>
+<tr class="separator:aa78d21ba1a39c29ce36fdc40445e17c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d4b74ceb990b84f9b0ddb5972c55ed"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___string.html#ad9d4b74ceb990b84f9b0ddb5972c55ed">UnsignedLength</a> (const char *string)</td></tr>
 <tr class="separator:ad9d4b74ceb990b84f9b0ddb5972c55ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -592,6 +621,42 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec71024001ced61d244810146e3d7ce1a960f8e16c89ed83aa35c7983aa79ba22"></a>MaximumStringLength&#160;</td><td class="fielddoc"><p>This <a class="el" href="class_o_n___string.html#aec71024001ced61d244810146e3d7ce1a960f8e16c89ed83aa35c7983aa79ba22" title="This ON_String::MaximumStringLength value of 100,000,000 is used for string length sanity checking in...">ON_String::MaximumStringLength</a> value of 100,000,000 is used for string length sanity checking in both <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. The design of the <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> classes could support string lengths up to 0xFFFFFFFEU = 4,294,967,294 but a cap of 100 million seems generous enough for current usage and is small enough to detect many corrupt memory situations. This value is used for both <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a47bd23144ef973a92562c828a5d02622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bd23144ef973a92562c828a5d02622">&#9670;&nbsp;</a></span>Encoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>Encoding not set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Encoding not known or cannot be determined. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622ad2cd8253361a9c732d21ca1d336599cc"></a>ASCII&#160;</td><td class="fielddoc"><p>All byte values are in the range 0 to 0x7F (127) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622aeb7ee0fb585e2ac64fdc086466c474b1"></a>UTF8&#160;</td><td class="fielddoc"><p>The sequence of byte values could be a UTF-8 encode string. UTF-8 extends ASCII encoding. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622aafe0089fa9183cd74fd20ce4a0d041ab"></a>SloppyUTF8&#160;</td><td class="fielddoc"><p>The sequence of byte values could be a UTF-8 encoding with oversized encodings or surrogate pair code points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47bd23144ef973a92562c828a5d02622a2145dbf5680de298958eeebbaa1ee869"></a>BIG5andASCII&#160;</td><td class="fielddoc"><p>The sequence of byte values could be a BIG5 encode string that may also contain single byte ASCII code points. BIG5 is a double byte encoding and the first byte always has the high bit set. </p>
 </td></tr>
 </table>
 
@@ -3458,6 +3523,68 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0ea13322454987b076d409f77d8cbd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea13322454987b076d409f77d8cbd7a">&#9670;&nbsp;</a></span>IsPossibleEncoding() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_String::IsPossibleEncoding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a>&#160;</td>
+          <td class="paramname"><em>encoding</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Determine if the string's buffer can be parsed using the specified encoding. </p>
+
+</div>
+</div>
+<a id="a640451a1ccdb2aa153558298b1494f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640451a1ccdb2aa153558298b1494f43">&#9670;&nbsp;</a></span>IsPossibleEncoding() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_String::IsPossibleEncoding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a>&#160;</td>
+          <td class="paramname"><em>encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Determine if the buffer can be parsed using the specified encoding. </p>
+
+</div>
+</div>
 <a id="a84c85bd8f203130e29af9276b999e180"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84c85bd8f203130e29af9276b999e180">&#9670;&nbsp;</a></span>IsReferenceCounted()</h2>
 
@@ -3530,7 +3657,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attributes &amp; Operations. </p>
-<p>Returns: number of nonzero elements in string. </p>
+<p>Returns: number of char elements in string not including the null terminator. </p>
 
 </div>
 </div>
@@ -3997,6 +4124,25 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae028c4a4d02862afab687250ace51806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae028c4a4d02862afab687250ace51806">&#9670;&nbsp;</a></span>MultiByteDecode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_String::MultiByteDecode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>windows_code_page</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Decode this char string using the encoding specified by windows_code_page to a UTF encoded wide character string. Parameters: windows_code_page - [in] WIndows code page. For example, big5 = 950. Returns: A UTF encoded wide charater string. See Also: <a class="el" href="class_o_n__w_string.html#ab8db93fb92974c132ec5a8ef1c13f484">ON_wString::MultiByteEncode()</a> </p>
+
+</div>
+</div>
 <a id="a10bf6ce98915f7673ad33a4025fe9e3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10bf6ce98915f7673ad33a4025fe9e3c">&#9670;&nbsp;</a></span>operator const char *()</h2>
 
@@ -4393,6 +4539,59 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1dd5d6e2cc0310faba0b46213fce1244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd5d6e2cc0310faba0b46213fce1244">&#9670;&nbsp;</a></span>ProbableEncoding() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a> ON_String::ProbableEncoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4657108ecc247ed6d5d0a9eaf096de12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4657108ecc247ed6d5d0a9eaf096de12">&#9670;&nbsp;</a></span>ProbableEncoding() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___string.html#a47bd23144ef973a92562c828a5d02622">ON_String::Encoding</a> ON_String::ProbableEncoding </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -5087,6 +5286,68 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abec130bc41fbd9c1ae1369c8d0abc1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec130bc41fbd9c1ae1369c8d0abc1d6">&#9670;&nbsp;</a></span>ToBIG5() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___string.html">ON_String</a> ON_String::ToBIG5 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Make an educated guess at the encoding and convert the string to BIG5 encoding. Parameters: error_count - [out] number of errors in encoding (question mark is used as a replacement character). Returns: If the string encoding could be determined and parsed, a BIG5 encoded string is returned. Otherwise EmptyString is returned. </p>
+
+</div>
+</div>
+<a id="a568098509e636ebf29a766dd3ae144ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568098509e636ebf29a766dd3ae144ec">&#9670;&nbsp;</a></span>ToBIG5() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___string.html">ON_String</a> ON_String::ToBIG5 </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error_count</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Make an educated guess at the encoding and convert the string to BIG5 encoding. Parameters: error_count - [out] number of errors in encoding (question mark is used as a replacement character). Returns: If the string encoding could be determined and parsed, a BIG5 encoded string is returned. Otherwise EmptyString is returned. </p>
+
+</div>
+</div>
 <a id="a28c23ca5ade448d30b95fcc40a86531b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28c23ca5ade448d30b95fcc40a86531b">&#9670;&nbsp;</a></span>ToNumber() <span class="overload">[1/9]</span></h2>
 
@@ -5466,6 +5727,61 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3ad480d282f3212a4860d938cd8e256b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad480d282f3212a4860d938cd8e256b">&#9670;&nbsp;</a></span>ToUTF8() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___string.html">ON_String</a> ON_String::ToUTF8 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Make an educated guess at the encoding and convert the string to UTF-8 encoding. Returns: If the string encoding could be determined and parsed, a UTF-8 encoded string is returned. Otherwise EmptyString is returned. </p>
+
+</div>
+</div>
+<a id="aa78d21ba1a39c29ce36fdc40445e17c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78d21ba1a39c29ce36fdc40445e17c8">&#9670;&nbsp;</a></span>ToUTF8() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___string.html">ON_String</a> ON_String::ToUTF8 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Make an educated guess at the encoding and convert the string to UTF-8 encoding. Returns: If the string encoding could be determined and parsed, a UTF-8 encoded string is returned. Otherwise EmptyString is returned. </p>
+
+</div>
+</div>
 <a id="ae83cae9670dc9d8f63af078b46b947b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae83cae9670dc9d8f63af078b46b947b6">&#9670;&nbsp;</a></span>TrimLeft()</h2>
 
@@ -5534,7 +5850,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: number of nonzero elements in the string. </p>
+<p>Returns: number of char elements in string not including the null terminator. </p>
 
 </div>
 </div>
@@ -6368,7 +6684,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 09:43:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 12:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
