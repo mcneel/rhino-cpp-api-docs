@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae0ffb84ec1b6a34c56d86086ec08aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd8bced839579fed171ebefb2d1b5baa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#afd8bced839579fed171ebefb2d1b5baa">GetSavedSubdivisionPoint</a> (double subdivision_point[3]) const</td></tr>
 <tr class="separator:afd8bced839579fed171ebefb2d1b5baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f703b03567e45410ab13c1ced59110"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a06f703b03567e45410ab13c1ced59110">GetSubdivisionDisplacement</a> (double displacement[3]) const</td></tr>
-<tr class="separator:a06f703b03567e45410ab13c1ced59110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280bffd504d23fbbcd342f3a51bbe76f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a280bffd504d23fbbcd342f3a51bbe76f">GetSubdivisionDisplacement</a> (double *) const</td></tr>
+<tr class="separator:a280bffd504d23fbbcd342f3a51bbe76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eefd8042463e89bea36874078966eda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5eefd8042463e89bea36874078966eda">InSymmetrySet</a> () const</td></tr>
 <tr class="separator:a5eefd8042463e89bea36874078966eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e88157dad61d4b34f6f638159029853"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a6e88157dad61d4b34f6f638159029853">IsActive</a> () const</td></tr>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad8d39cf01868c9ecfa59b9d37525e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7bef13ef562b14c321859d67e4fec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a93d7bef13ef562b14c321859d67e4fec">SetSavedSubdivisionPoint</a> (const double subdivision_point[3]) const</td></tr>
 <tr class="separator:a93d7bef13ef562b14c321859d67e4fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd491b27a9d1ac69535c37ed8f48e5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#acfd491b27a9d1ac69535c37ed8f48e5f">SetSubdivisionDisplacement</a> (const double displacement[3])</td></tr>
-<tr class="separator:acfd491b27a9d1ac69535c37ed8f48e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2181dbb74b61da3390151eeb907da21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ac2181dbb74b61da3390151eeb907da21">SetSubdivisionDisplacement</a> (const double *)</td></tr>
+<tr class="separator:ac2181dbb74b61da3390151eeb907da21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9c43c4b2665941a8a4728992c683447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aa9c43c4b2665941a8a4728992c683447">SetSubdivisionLevel</a> (unsigned level)</td></tr>
 <tr class="separator:aa9c43c4b2665941a8a4728992c683447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b9d765362542e4f45c5a98e4cc9ab8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___component_status.html">ON_ComponentStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ab2b9d765362542e4f45c5a98e4cc9ab8">Status</a> () const</td></tr>
@@ -179,10 +179,9 @@ Protected Types</h2></td></tr>
 <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5aace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03
  }</td></tr>
 <tr class="separator:a0089e447c1f74381d8c83c1029e06eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea4662fb93f72fb46267f4d775e511463b">SubdivisionDisplacementBit</a> = 0x20, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
+<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
 <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xF0
+<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
  }</td></tr>
 <tr class="separator:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -217,9 +216,6 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a5b1576dbd8fe9619665f084d1bbf2c63"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5b1576dbd8fe9619665f084d1bbf2c63">m_displacement_V</a> [3]</td></tr>
-<tr class="memdesc:a5b1576dbd8fe9619665f084d1bbf2c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">optional displacement applied to standard subdivision point.  <a href="class_o_n___sub_d_component_base.html#a5b1576dbd8fe9619665f084d1bbf2c63">More...</a><br /></td></tr>
-<tr class="separator:a5b1576dbd8fe9619665f084d1bbf2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae609568efd09af50564debc87010606d"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae609568efd09af50564debc87010606d">m_level</a> = 0U</td></tr>
 <tr class="separator:ae609568efd09af50564debc87010606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5665f98f601c3a89ec1e789b0ef577f3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5665f98f601c3a89ec1e789b0ef577f3">m_saved_points_flags</a> = 0U</td></tr>
@@ -290,13 +286,11 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affea4662fb93f72fb46267f4d775e511463b"></a>SubdivisionDisplacementBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SubDDisplacementVIsSet), then m_displacementV is set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a"></a>SubdivisionPointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SubdivisionPointBit), then m_cache_subd_P is set. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a"></a>SubdivisionPointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SubdivisionPointBit), then m_cache_subd_P is set. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33"></a>SurfacePointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SurfacePointBit), then ON_SubDVertex.m_limit* values are set. <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a>: Set means one or more sector limit surface points are saved in ON_SubDVertex.m_limit_point. <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a>: Set means the limit surface NURBS curve control points are cached. <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>: Set means limit surface mesh fragments are saved in ON_SubDFace.m_surface_mesh_fragments. Unset means any information in the fields identified above is invalid and must be recalculated. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560"></a>CachedPointMask&#160;</td><td class="fielddoc"><p>ControlNetFragmentBit | SubdivisionPointBit | SubdivisionDisplacementBit | SurfacePointBit. </p>
+<tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560"></a>CachedPointMask&#160;</td><td class="fielddoc"><p>SubdivisionPointBit | SurfacePointBit. </p>
 </td></tr>
 </table>
 
@@ -476,6 +470,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>Does nothing. </dd></dl>
 
 </div>
 </div>
@@ -569,8 +564,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a06f703b03567e45410ab13c1ced59110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f703b03567e45410ab13c1ced59110">&#9670;&nbsp;</a></span>GetSubdivisionDisplacement()</h2>
+<a id="a280bffd504d23fbbcd342f3a51bbe76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280bffd504d23fbbcd342f3a51bbe76f">&#9670;&nbsp;</a></span>GetSubdivisionDisplacement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -578,12 +573,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool ON_SubDComponentBase::GetSubdivisionDisplacement </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>displacement</em>[3]</td><td>)</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -1163,8 +1159,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="acfd491b27a9d1ac69535c37ed8f48e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfd491b27a9d1ac69535c37ed8f48e5f">&#9670;&nbsp;</a></span>SetSubdivisionDisplacement()</h2>
+<a id="ac2181dbb74b61da3390151eeb907da21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2181dbb74b61da3390151eeb907da21">&#9670;&nbsp;</a></span>SetSubdivisionDisplacement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1172,13 +1168,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool ON_SubDComponentBase::SetSubdivisionDisplacement </td>
           <td>(</td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>displacement</em>[3]</td><td>)</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>displacement applied to subdivision point </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -1232,7 +1228,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: subdivision displacement. If a displacement has not been set, ON_3dPoint::ZeroVector is returned. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Does nothing. Returns nans. </dd></dl>
 
 </div>
 </div>
@@ -1250,7 +1246,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: True if the subdivision displacment vector is valid and not zero. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -1341,30 +1337,6 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5b1576dbd8fe9619665f084d1bbf2c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b1576dbd8fe9619665f084d1bbf2c63">&#9670;&nbsp;</a></span>m_displacement_V</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double ON_SubDComponentBase::m_displacement_V[3]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>optional displacement applied to standard subdivision point. </p>
-
-</div>
-</div>
 <a id="ab9a58d48e62de3d5cee831f89adedee0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9a58d48e62de3d5cee831f89adedee0">&#9670;&nbsp;</a></span>m_group_id</h2>
 
@@ -1535,7 +1507,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

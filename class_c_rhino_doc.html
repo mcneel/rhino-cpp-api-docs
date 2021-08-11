@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -529,6 +529,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49f2e639b108260c407f3b437198ecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca86ce6e8bfc8806ca714ccd6e549235"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_extrusion_object.html">CRhinoExtrusionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#aca86ce6e8bfc8806ca714ccd6e549235">ReplaceObject</a> (const <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &amp;objref, const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;extrusion)</td></tr>
 <tr class="separator:aca86ce6e8bfc8806ca714ccd6e549235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d4810ff4853fb69a6e2711dc504e62"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a82d4810ff4853fb69a6e2711dc504e62">ReplaceObject</a> (const <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &amp;objref, const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> &amp;geometry, bool bIgnoreModes)</td></tr>
+<tr class="separator:a82d4810ff4853fb69a6e2711dc504e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a73dc0c3c4062d5c184f4d34bab552"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_mesh_object.html">CRhinoMeshObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a59a73dc0c3c4062d5c184f4d34bab552">ReplaceObject</a> (const <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &amp;objref, const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a59a73dc0c3c4062d5c184f4d34bab552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e37e26e5b1a3282bf2293fcefeef899"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a8e37e26e5b1a3282bf2293fcefeef899">ReplaceObject</a> (const <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &amp;objref, const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd)</td></tr>
@@ -2243,8 +2245,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000126">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
-<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000127">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000131">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000132">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
 <p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included / bTight: [in] use CRhinoObject::TightBoundingBox in the calculation instead of BoundingBox / bIncludeCustomRenderMeshes: [in] Resolve custom render meshes for all objects and use those / bIncludeCurves: [in] include curves and annotations in the calculation Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
 
 </div>
@@ -5434,7 +5436,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000125">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
+<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000130">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
 
 </div>
 </div>
@@ -5970,7 +5972,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Return associated RDK document</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000128">Deprecated:</a></b></dt><dd>Use the direct access functions below (Sun, Skylight etc </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000133">Deprecated:</a></b></dt><dd>Use the direct access functions below (Sun, Skylight etc </dd></dl>
 
 </div>
 </div>
@@ -6467,7 +6469,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ae4fea1605ca2951625f46bc057514461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4fea1605ca2951625f46bc057514461">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fea1605ca2951625f46bc057514461">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[1/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6496,7 +6498,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a49f2e639b108260c407f3b437198ecf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49f2e639b108260c407f3b437198ecf0">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f2e639b108260c407f3b437198ecf0">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[2/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6526,7 +6528,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aca86ce6e8bfc8806ca714ccd6e549235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca86ce6e8bfc8806ca714ccd6e549235">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca86ce6e8bfc8806ca714ccd6e549235">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[3/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6554,8 +6556,43 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a82d4810ff4853fb69a6e2711dc504e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d4810ff4853fb69a6e2711dc504e62">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[4/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a>* CRhinoDoc::ReplaceObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &amp;&#160;</td>
+          <td class="paramname"><em>objref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> &amp;&#160;</td>
+          <td class="paramname"><em>geometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreModes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Replace the geoemtry in one object. Parameters: objref - [in] reference to old object to be replaced. The object objref.Object() will be deleted. geometry - [in] new geometry to be added. A duplicate of the geometry is added to the Rhino model. If the geometry parameter is on the heap, then the caller is responsible for deleting the mesh parameter after the call. If this will be inefficient, use the version of ReplaceObject that takes a CRhinoObject* as the second argument. bIgnoreModes - [in] If true, locked and hidden objects are replaced. If false objects that are locked, hidden, or on locked or hidden layers are not replaced. Returns: If successful, a pointer to the new <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is returned. </p>
+
+</div>
+</div>
 <a id="a59a73dc0c3c4062d5c184f4d34bab552"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59a73dc0c3c4062d5c184f4d34bab552">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a73dc0c3c4062d5c184f4d34bab552">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6584,7 +6621,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a8e37e26e5b1a3282bf2293fcefeef899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e37e26e5b1a3282bf2293fcefeef899">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e37e26e5b1a3282bf2293fcefeef899">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6613,7 +6650,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a24e6221e20cc75aa9e76ace750349481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24e6221e20cc75aa9e76ace750349481">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e6221e20cc75aa9e76ace750349481">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6643,7 +6680,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a08faded5fc07319db9e51084361753e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08faded5fc07319db9e51084361753e4">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a08faded5fc07319db9e51084361753e4">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6683,7 +6720,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="abedbf6b75027197dd95c47a40a1eb13e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abedbf6b75027197dd95c47a40a1eb13e">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abedbf6b75027197dd95c47a40a1eb13e">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[9/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6715,12 +6752,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Replace one object with another. Conceptually, this function is the same as calling</p>
 <p>Setting new_object attributes = old_object attributes DeleteObject(old_object); AddObject(old_object);</p>
-<p>Parameters: objref - [in] reference to old object to be replaced. The object objref.Object() will be deleted. new_object - [in] new object to be activated - must not be in document. bIgnoreModes - [in] If true, locked and hidden objects are transformed. If false objects that are locked, hidden, or on locked or hidden layers are not transformed. bSkipInCommandTest - [in] In order for undo, history, event watcher expectations, and other important core processes to work correctly, <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">ReplaceObject()</a> must be run inside of a command. If it is not, as is common when modeless user interface code calls replace object, a "proxy" command is automatically run. In extremely rare cases, this is not desired. If you are an expert and you are certain that you want to run replace object outside of a command, then call ReplaceObject with bSkipInCommandTest = true. See Also: CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_3dPoint&amp; ); <a class="el" href="class_c_rhino_doc.html#a49f2e639b108260c407f3b437198ecf0">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Curve&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#a24e6221e20cc75aa9e76ace750349481">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Surface&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#ae4fea1605ca2951625f46bc057514461">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Brep&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#a59a73dc0c3c4062d5c184f4d34bab552">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Mesh&amp; )</a>; CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, CRhinoObject* ); Returns: true if successful. </p>
+<p>Parameters: objref - [in] reference to old object to be replaced. The object objref.Object() will be deleted. new_object - [in] new object to be activated - must not be in document. bIgnoreModes - [in] If true, locked and hidden objects are replaced. If false objects that are locked, hidden, or on locked or hidden layers are not replaced. bSkipInCommandTest - [in] In order for undo, history, event watcher expectations, and other important core processes to work correctly, <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">ReplaceObject()</a> must be run inside of a command. If it is not, as is common when modeless user interface code calls replace object, a "proxy" command is automatically run. In extremely rare cases, this is not desired. If you are an expert and you are certain that you want to run replace object outside of a command, then call ReplaceObject with bSkipInCommandTest = true. See Also: CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_3dPoint&amp; ); <a class="el" href="class_c_rhino_doc.html#a49f2e639b108260c407f3b437198ecf0">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Curve&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#a24e6221e20cc75aa9e76ace750349481">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Surface&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#ae4fea1605ca2951625f46bc057514461">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Brep&amp; )</a>; <a class="el" href="class_c_rhino_doc.html#a59a73dc0c3c4062d5c184f4d34bab552">CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, const ON_Mesh&amp; )</a>; CRhinoDoc::ReplaceObject( const CRhinoObjRef&amp;, CRhinoObject* ); Returns: true if successful. </p>
 
 </div>
 </div>
 <a id="a83fe59f1936558e6bf4a252edf228c16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83fe59f1936558e6bf4a252edf228c16">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fe59f1936558e6bf4a252edf228c16">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[10/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6750,7 +6787,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a2a7b0681c4b867f7bbbbcbbd40c2cadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a7b0681c4b867f7bbbbcbbd40c2cadb">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7b0681c4b867f7bbbbcbbd40c2cadb">&#9670;&nbsp;</a></span>ReplaceObject() <span class="overload">[11/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9251,7 +9288,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

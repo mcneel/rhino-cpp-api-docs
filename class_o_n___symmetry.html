@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,13 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a78799c1516de16435b13c2cbc71841ec">Region::CrossesReflectionPlane</a> = 4, 
 <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38">Region::OnRotationAxis</a> = 5, 
-<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927afad551674b5b63068d420753b0f07daa">Region::OffRotationAxis</a> = 6
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927afad551674b5b63068d420753b0f07daa">Region::OffRotationAxis</a> = 6, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a9b8f061ed86f7246a3e60ef7cc738a3d">Region::OnReflectionHalfPlane</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927affea9cfeee8e8682557354aec087596d">Region::OnSupplementalHalfPlane</a> = 8, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a1c345a1c0d8a38ae4165112fb44cd616">Region::OnRotateAndReflectHalfPlane</a> = 10, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a7b23344e653dbe51dccc0d88817b88a3">Region::InsideRotateAndReflect</a> = 11, 
+<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927aea9fd3478fade78ac2fc887bffb6e3d7">Region::OutsideRotateAndReflect</a> = 12
 <br />
  }</td></tr>
 <tr class="memdesc:a025af3b37bec7b34b8a2545f4e2f3927"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927" title="ON_Symmetry::Region specifies various subsets of the primary motif region.">ON_Symmetry::Region</a> specifies various subsets of the primary motif region.  <a href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">More...</a><br /></td></tr>
@@ -140,6 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3027a4404d33425daa6dc24069ed595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722f282bd39001161183ae496918df2a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a722f282bd39001161183ae496918df2a">InversionTransformation</a> () const</td></tr>
 <tr class="separator:a722f282bd39001161183ae496918df2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03df1138c3065f55191cf2fa4c135b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ae03df1138c3065f55191cf2fa4c135b0">IsFixedSubDComponent</a> (const class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &amp;subd_component, bool bUseCleanupTolerance) const</td></tr>
+<tr class="separator:ae03df1138c3065f55191cf2fa4c135b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3b51bdfe1b2d16726f6b1569f3dc3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a7f3b51bdfe1b2d16726f6b1569f3dc3e">IsMotifBoundarySubDVertex</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *v, bool bUseCleanupTolerance) const</td></tr>
 <tr class="separator:a7f3b51bdfe1b2d16726f6b1569f3dc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac958a693a7c7be238232a9c802f8fd7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ac958a693a7c7be238232a9c802f8fd7d">IsReflect</a> () const</td></tr>
@@ -156,6 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a13f57507c5dec22d38834cafc244f171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7030203f677156f9d872c582b174fd1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ab7030203f677156f9d872c582b174fd1">MotifTransformation</a> (int index) const</td></tr>
 <tr class="separator:ab7030203f677156f9d872c582b174fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72017644497860c478f60585c93e0e10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a72017644497860c478f60585c93e0e10">OnReflectAndRotateFixedPlane</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> P, bool bUseCleanupTolerance) const</td></tr>
+<tr class="separator:a72017644497860c478f60585c93e0e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f510f97022a971ac23ec3230f48fa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ac9f510f97022a971ac23ec3230f48fa3">operator=</a> (const <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a> &amp;)=default</td></tr>
 <tr class="separator:ac9f510f97022a971ac23ec3230f48fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ccdf603188143fdf877cd79fb0f0c5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a5ccdf603188143fdf877cd79fb0f0c5c">PointRegion</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, bool bUseCleanupTolerance) const</td></tr>
@@ -206,6 +216,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8d91766ae97a66f293e302f8dd2bba03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fc3075aa8a87a9ce6de925e241d811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">ON_Symmetry::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a08fc3075aa8a87a9ce6de925e241d811">SymmetryType</a> () const</td></tr>
 <tr class="separator:a08fc3075aa8a87a9ce6de925e241d811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2750071f008dc439881c65cd40fc3e71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a2750071f008dc439881c65cd40fc3e71">Tolerance</a> (bool bUseCleanupTolerance) const</td></tr>
+<tr class="separator:a2750071f008dc439881c65cd40fc3e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09e4038845df916363ad0eaef4703fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ae09e4038845df916363ad0eaef4703fe">ToText</a> (bool bIncludeSymmetricObject, class <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
 <tr class="separator:ae09e4038845df916363ad0eaef4703fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bce38cda1fe5559b2385f90ad1da8b3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a9bce38cda1fe5559b2385f90ad1da8b3">TransformConditionally</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform) const</td></tr>
@@ -243,6 +255,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a5ca6a94e8a7e54d14ec0809844037bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a280a81c07274f8211793af4e85d6bcb0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a280a81c07274f8211793af4e85d6bcb0">SymmetryRegionFromUnsigned</a> (unsigned int region_as_unsigned)</td></tr>
 <tr class="separator:a280a81c07274f8211793af4e85d6bcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979f030b8802b47b65faebc283918e89"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a979f030b8802b47b65faebc283918e89">SymmetryRegionHasFixedPoints</a> (<a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a> symmetry_region)</td></tr>
+<tr class="separator:a979f030b8802b47b65faebc283918e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50ded5336de7b32df17bd766f2bc4da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">ON_Symmetry::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#af50ded5336de7b32df17bd766f2bc4da">SymmetryTypeFromUnsigned</a> (unsigned int symmetry_type_as_unsigned)</td></tr>
 <tr class="separator:af50ded5336de7b32df17bd766f2bc4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad080ef063120519f7b9929113319da97"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ad080ef063120519f7b9929113319da97">SymmetryTypeToString</a> (<a class="el" href="class_o_n___symmetry.html#aec7dab40c7162d83d98c6e9c871a0aa2">ON_Symmetry::Type</a> symmetry_type)</td></tr>
@@ -335,17 +349,27 @@ Static Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>Unset or unknown location </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a0c949f2fa7ae18d915758ce5a83e982f"></a>AboveReflectionPlane&#160;</td><td class="fielddoc"><p>Above the reflection plane and inside the primary reflect motif region. </p>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a0c949f2fa7ae18d915758ce5a83e982f"></a>AboveReflectionPlane&#160;</td><td class="fielddoc"><p>Above the reflection plane and inside the primary reflect motif region. Applies to Reflect symmetries. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a14c528e24bc3b2a6e778208c7e5a8686"></a>OnReflectionPlane&#160;</td><td class="fielddoc"><p>On the reflection plane. Applies to Reflect and ReflectAndRotate symmetries. </p>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a14c528e24bc3b2a6e778208c7e5a8686"></a>OnReflectionPlane&#160;</td><td class="fielddoc"><p>On the reflection plane. Applies to Reflect symmetries. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a4f0f2208cb503c534a2faeb9b5840825"></a>BelowReflectionPlane&#160;</td><td class="fielddoc"><p>Below the reflection plane and outside the primary reflect motif region. </p>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a4f0f2208cb503c534a2faeb9b5840825"></a>BelowReflectionPlane&#160;</td><td class="fielddoc"><p>Below the reflection plane and outside the primary reflect motif region. Applies to Reflect symmetries. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a78799c1516de16435b13c2cbc71841ec"></a>CrossesReflectionPlane&#160;</td><td class="fielddoc"><p>Something like a line segment that has points above and below the reflection plane. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38"></a>OnRotationAxis&#160;</td><td class="fielddoc"><p>On the rotation axis. Applies to Rotate symmetries. </p>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38"></a>OnRotationAxis&#160;</td><td class="fielddoc"><p>On the rotation axis. Applies to Rotate and ReflectAndRotate symmetries. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927afad551674b5b63068d420753b0f07daa"></a>OffRotationAxis&#160;</td><td class="fielddoc"><p>Off of (not on) the rotation axis. Applies to Rotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a9b8f061ed86f7246a3e60ef7cc738a3d"></a>OnReflectionHalfPlane&#160;</td><td class="fielddoc"><p>On the reflection half plane. Applies to ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927affea9cfeee8e8682557354aec087596d"></a>OnSupplementalHalfPlane&#160;</td><td class="fielddoc"><p>On the supplemental half plane. Applies to ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a1c345a1c0d8a38ae4165112fb44cd616"></a>OnRotateAndReflectHalfPlane&#160;</td><td class="fielddoc"><p>The half planes outside the primary motif region that are rotations of either the reflection half plane or the supplemental half plane. Applies to ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a7b23344e653dbe51dccc0d88817b88a3"></a>InsideRotateAndReflect&#160;</td><td class="fielddoc"><p>Above both the reflection plane and the supplemental plane. Applies to ReflectAndRotate symmetries. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927aea9fd3478fade78ac2fc887bffb6e3d7"></a>OutsideRotateAndReflect&#160;</td><td class="fielddoc"><p>Outside the primary motif region and and on one of the fixed point planes Applies to ReflectAndRotate symmetries. </p>
 </td></tr>
 </table>
 
@@ -884,6 +908,35 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae03df1138c3065f55191cf2fa4c135b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03df1138c3065f55191cf2fa4c135b0">&#9670;&nbsp;</a></span>IsFixedSubDComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Symmetry::IsFixedSubDComponent </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCleanupTolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Examples of fixed SubD components include vertices on a reflection plane or rotation axis, faces and edges straddling a reflection plane, and faces centered about a rotation axis. Returns: True if the component is transformed to itself by every motif transformation. </p>
+
+</div>
+</div>
 <a id="a7f3b51bdfe1b2d16726f6b1569f3dc3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f3b51bdfe1b2d16726f6b1569f3dc3e">&#9670;&nbsp;</a></span>IsMotifBoundarySubDVertex()</h2>
 
@@ -1247,6 +1300,34 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a72017644497860c478f60585c93e0e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72017644497860c478f60585c93e0e10">&#9670;&nbsp;</a></span>OnReflectAndRotateFixedPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Symmetry::OnReflectAndRotateFixedPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCleanupTolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac9f510f97022a971ac23ec3230f48fa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9f510f97022a971ac23ec3230f48fa3">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -1335,9 +1416,11 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: A reflect and rotate symmetry has three important planes. The reflection plane. The reflection plane rotated around the rotation axis by angle = -0.5*RotationAngle() and then reversed. This plane bounds the primary motif region. The reflection plane rotated around the rotation axis by pi/2. This plane divides the reflection plane at the rotation axis.</p>
+<p>Description: A reflect and rotate symmetry has three important planes. The reflection plane. This plane is returned by ReflectAndRotatePlane(0). The supplemental plane. This plane is the reflection plane rotated around the rotation axis by angle = -0.5*RotationAngle() and then reversed. This plane is returned by ReflectAndRotatePlane(1). The reflection plane rotated around the rotation axis by pi/2. This plane is returned by ReflectAndRotatePlane(2).</p>
+<p>The primary motif region for a reflect and rotate symmetry is region above both the reflection plane and the supplemental plane.</p>
 <p>The normals of all planes point into the primary motif region.</p>
-<p>Parameters: plane_index - [in] Selects the plane. 0: returns the <a class="el" href="class_o_n___symmetry.html#a896a45689b17b02aa19ba7b8e69e4d28">ReflectionPlane()</a>. 1: returns the other primary motif bounding plane. 2: returns the half space bounding plane. Returns: The requested plane. </p>
+<p>Parameters: plane_index - [in] Selects the plane. 0: returns the reflection plane. 1: returns the supplemental plane. 2: returns the half space bounding plane.</p>
+<p>Returns: If the symmetry type is ReflectAndRotate and plane_index is valid, the requested plane is returned. Otherwise ON_PlaneEquation::Nan is returned. </p>
 
 </div>
 </div>
@@ -1785,6 +1868,33 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a979f030b8802b47b65faebc283918e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979f030b8802b47b65faebc283918e89">&#9670;&nbsp;</a></span>SymmetryRegionHasFixedPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::SymmetryRegionHasFixedPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927">ON_Symmetry::Region</a>&#160;</td>
+          <td class="paramname"><em>symmetry_region</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: A symmetry region has fixed points if one or more motif transforms of the applicable symmetry type fixes points in the region. Points in these regions typically need special processing when the symmetric object is edited. Returns: True if symmetry_region is one of <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a834740a6068cb1bdfac98c3d11b82f38" title="On the rotation axis. Applies to Rotate and ReflectAndRotate symmetries.">ON_Symmetry::Region::OnRotationAxis</a>, <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a14c528e24bc3b2a6e778208c7e5a8686" title="On the reflection plane. Applies to Reflect symmetries.">ON_Symmetry::Region::OnReflectionPlane</a>, <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927a9b8f061ed86f7246a3e60ef7cc738a3d" title="On the reflection half plane. Applies to ReflectAndRotate symmetries.">ON_Symmetry::Region::OnReflectionHalfPlane</a>, <a class="el" href="class_o_n___symmetry.html#a025af3b37bec7b34b8a2545f4e2f3927affea9cfeee8e8682557354aec087596d" title="On the supplemental half plane. Applies to ReflectAndRotate symmetries.">ON_Symmetry::Region::OnSupplementalHalfPlane</a>, or ON_Symmetry::Region::OnRotateAndReflectFixedPlane. </p>
+
+</div>
+</div>
 <a id="a08fc3075aa8a87a9ce6de925e241d811"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08fc3075aa8a87a9ce6de925e241d811">&#9670;&nbsp;</a></span>SymmetryType()</h2>
 
@@ -1852,6 +1962,25 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2750071f008dc439881c65cd40fc3e71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2750071f008dc439881c65cd40fc3e71">&#9670;&nbsp;</a></span>Tolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Symmetry::Tolerance </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCleanupTolerance</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: bUseCleanupTolerance ? this-&gt;<a class="el" href="class_o_n___symmetry.html#a5707ad9e0ca8c1982b04694ac07e8acf">CleanupTolerance()</a> : <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a>; </p>
 
 </div>
 </div>
@@ -2054,7 +2183,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:17:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

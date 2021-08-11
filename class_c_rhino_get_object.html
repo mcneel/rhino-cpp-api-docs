@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -263,6 +263,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf5958d7c8212e6c069dde7ae5a70242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10ad5b1b9a054e3b3281e9195e4b99ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#a10ad5b1b9a054e3b3281e9195e4b99ea">EnableInactiveDetailPick</a> (bool enable=true)</td></tr>
 <tr class="separator:a10ad5b1b9a054e3b3281e9195e4b99ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed469a19e7724eb66afdfefa8653022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#aaed469a19e7724eb66afdfefa8653022">EnableMeshSelections</a> (bool bEnable)</td></tr>
+<tr class="separator:aaed469a19e7724eb66afdfefa8653022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a829c55f042e34df6f2caa5eb3885fff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#a829c55f042e34df6f2caa5eb3885fff2">EnableOneByOnePostSelect</a> (BOOL bEnableOneByOnePostSelect=true)</td></tr>
 <tr class="separator:a829c55f042e34df6f2caa5eb3885fff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae55700095a7f2f9807c2cf83cde6bb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#ae55700095a7f2f9807c2cf83cde6bb43">EnablePostSelect</a> (BOOL bEnablePostSelect=true)</td></tr>
@@ -301,6 +303,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00a8326c278d370a9c63b28ffe694517"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#a00a8326c278d370a9c63b28ffe694517">InactiveDetailPick</a> () const</td></tr>
 <tr class="memdesc:a00a8326c278d370a9c63b28ffe694517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Added 30 June, 2010.  <a href="class_c_rhino_get_object.html#a00a8326c278d370a9c63b28ffe694517">More...</a><br /></td></tr>
 <tr class="separator:a00a8326c278d370a9c63b28ffe694517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627d6f377548895b0b008d6beaef37f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#a627d6f377548895b0b008d6beaef37f6">MeshSelections</a> () const</td></tr>
+<tr class="separator:a627d6f377548895b0b008d6beaef37f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57908e6c83219e01d34cc79536fab6a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get_object.html#a57908e6c83219e01d34cc79536fab6a1">Object</a> (int) const</td></tr>
 <tr class="memdesc:a57908e6c83219e01d34cc79536fab6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 based index  <a href="class_c_rhino_get_object.html#a57908e6c83219e01d34cc79536fab6a1">More...</a><br /></td></tr>
 <tr class="separator:a57908e6c83219e01d34cc79536fab6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1181,6 +1185,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aaed469a19e7724eb66afdfefa8653022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed469a19e7724eb66afdfefa8653022">&#9670;&nbsp;</a></span>EnableMeshSelections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGetObject::EnableMeshSelections </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Descrption: The getobject filters for mesh and SubD components are shared. In some commands that deal exclusively with meshes and mesh components, it is necessary to prohibit SubD and SubD component selections. Parameters: bEnable - [in] true - (default) Selection of mesh objects and mesh components is determined by the standard filters. false - Selection of mesh objects and mesh components is prohibited. This is useful in commmands that use the mesh component filters and only want to select SubDs and SubD components. Remarks: Default = true; </p>
+
+</div>
+</div>
 <a id="a829c55f042e34df6f2caa5eb3885fff2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a829c55f042e34df6f2caa5eb3885fff2">&#9670;&nbsp;</a></span>EnableOneByOnePostSelect()</h2>
 
@@ -1577,6 +1600,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Added 30 June, 2010. </p>
+
+</div>
+</div>
+<a id="a627d6f377548895b0b008d6beaef37f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627d6f377548895b0b008d6beaef37f6">&#9670;&nbsp;</a></span>MeshSelections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGetObject::MeshSelections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: true - (default) Selection of mesh objects and mesh components is determined by the standard filters. false - Selection of mesh objects and mesh components is prohibited. This is useful in commmands that use the mesh component filters and only want to select SubDs and SubD components. Remarks: Default = true; </p>
 
 </div>
 </div>
@@ -2269,7 +2310,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

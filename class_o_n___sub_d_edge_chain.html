@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abb91cfec312ee9698bfac66870c95c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28ee2f8b539599a600e67fd26cf04a4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#ab28ee2f8b539599a600e67fd26cf04a4">FirstVertex</a> () const</td></tr>
 <tr class="separator:ab28ee2f8b539599a600e67fd26cf04a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d92f49230dd59030757471331e63ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#ae9d92f49230dd59030757471331e63ef">GetSideComponents</a> (unsigned relative_side, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;side_components) const</td></tr>
+<tr class="separator:ae9d92f49230dd59030757471331e63ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a649bf0dad810dab70e4f20c79b334"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a72a649bf0dad810dab70e4f20c79b334">HasPersistentEdgeIds</a> () const</td></tr>
 <tr class="separator:a72a649bf0dad810dab70e4f20c79b334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d92a58421095cf253c46c7bfe7954d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#ae7d92a58421095cf253c46c7bfe7954d">HasRuntimeEdgePtrs</a> () const</td></tr>
@@ -193,6 +195,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a502e0a47ba936234491e0a2b49c4033e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9803c4bef92eac52a24dde4f270c6758"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a9803c4bef92eac52a24dde4f270c6758">GetLoftCurve</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *destination)</td></tr>
 <tr class="separator:a9803c4bef92eac52a24dde4f270c6758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b356b050ce4c879fc1d4c9420b8322"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#af6b356b050ce4c879fc1d4c9420b8322">GetSideComponents</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chain, unsigned relative_side, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;side_components)</td></tr>
+<tr class="separator:af6b356b050ce4c879fc1d4c9420b8322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a534958c8ba19c9e5c8723c54780f9f2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a534958c8ba19c9e5c8723c54780f9f2b">IsValidEdgeChain</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chain, bool bCheckForDuplicateEdges)</td></tr>
 <tr class="separator:a534958c8ba19c9e5c8723c54780f9f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708ccfe1427637408f49714c75a60c55"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a708ccfe1427637408f49714c75a60c55">IsValidEdgeChain</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count, bool bCheckForDuplicateEdges)</td></tr>
@@ -207,12 +211,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a3979bfde1863cb244db6cecceb4117d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd3023b9680b9ff7e5a7d63a4486d5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a3dd3023b9680b9ff7e5a7d63a4486d5d">ReverseEdgeChain</a> (<a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_chain, size_t edge_count)</td></tr>
 <tr class="separator:a3dd3023b9680b9ff7e5a7d63a4486d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fef84896d9761bd3afb9f1be0d916f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a67fef84896d9761bd3afb9f1be0d916f">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;sorted_edges)</td></tr>
+<tr class="separator:a67fef84896d9761bd3afb9f1be0d916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26204fe0132f11bd952272589af8fb22"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a26204fe0132f11bd952272589af8fb22">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;unsorted_edges, unsigned int minimum_chain_length, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chains)</td></tr>
 <tr class="separator:a26204fe0132f11bd952272589af8fb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e79d3f621b9ed90ca960fb65bfa04ac"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a0e79d3f621b9ed90ca960fb65bfa04ac">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;sorted_edges)</td></tr>
+<tr class="separator:a0e79d3f621b9ed90ca960fb65bfa04ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d78a1e1918f34a67c1af14108556b0f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a0d78a1e1918f34a67c1af14108556b0f">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;unsorted_edges, unsigned int minimum_chain_length, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;sorted_edges)</td></tr>
 <tr class="separator:a0d78a1e1918f34a67c1af14108556b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bca320eb5ff08ac80ac6f0ca5b52c9b"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;sorted_edges)</td></tr>
+<tr class="separator:a7bca320eb5ff08ac80ac6f0ca5b52c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a148a1b1a56c70e4f206cda4b452507"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a5a148a1b1a56c70e4f206cda4b452507">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;unsorted_edges, unsigned int minimum_chain_length, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chains)</td></tr>
 <tr class="separator:a5a148a1b1a56c70e4f206cda4b452507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9301ea4808ceb2bf5c2823bbef44968"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#ae9301ea4808ceb2bf5c2823bbef44968">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;sorted_edges)</td></tr>
+<tr class="separator:ae9301ea4808ceb2bf5c2823bbef44968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e190f8228109b63c42a39bc413457a2"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_chain.html#a9e190f8228109b63c42a39bc413457a2">SortEdgesIntoEdgeChains</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;unsorted_edges, unsigned int minimum_chain_length, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edge_chains)</td></tr>
 <tr class="separator:a9e190f8228109b63c42a39bc413457a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1133,6 +1145,88 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af6b356b050ce4c879fc1d4c9420b8322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b356b050ce4c879fc1d4c9420b8322">&#9670;&nbsp;</a></span>GetSideComponents() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_SubDEdgeChain::GetSideComponents </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edge_chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>relative_side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_components</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>See above. </p>
+
+</div>
+</div>
+<a id="ae9d92f49230dd59030757471331e63ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d92f49230dd59030757471331e63ef">&#9670;&nbsp;</a></span>GetSideComponents() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdgeChain::GetSideComponents </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>relative_side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>side_components</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get the edges and faces on a specified side of the edge chain. Parameters: relative_side - [in] 0: Get edges and faces on the ON_SubDEdgePtr::RelativeFace(0) side (left). 1: Get edges and faces on the ON_SubDEdgePtr::RelativeFace(1) side (right).</p>
+<p>side_components - [out] side_components[] is a sequence of made of vertices, edges, and faces that record the edges and faces that are on the specified side of the edge chain.</p>
+<p>When a vertex is in side_components[], <a class="el" href="class_o_n___sub_d_component_ptr.html#ab835a753572b9cd136a93e165e30e9c1">ON_SubDComponentPtr.Vertex()</a> is not nullptr and the vertex is between two conscutive edges in the edge chain.</p>
+<p>When an edge is in side_components[], <a class="el" href="class_o_n___sub_d_component_ptr.html#a92612d0b3ed69fc1b591f264d67c92e4">ON_SubDComponentPtr.EdgePtr()</a> is not nullptr, the edge is on the specified side of the edge chain (not in the edge chain), and <a class="el" href="class_o_n___sub_d_component_ptr.html#a92612d0b3ed69fc1b591f264d67c92e4">ON_SubDComponentPtr.EdgePtr()</a>.RelativeVertex(0) is a vertex on the edge chain.</p>
+<p>When a face is in side_components[], <a class="el" href="class_o_n___sub_d_component_ptr.html#a2fe02d7ff7da92746f366aa0392db95d">ON_SubDComponentPtr.Face()</a> is not nullptr, then at least one vertex of f is part of the edge chain and f is on the specified side of the edge chain.</p>
+<p>If a vertex v is side_components[], then it is preceded and followed by the same face (...f,v,f,...), there are consecutive edges in the edge chain (...e0,e1,...), and e0 and e1 are consecutive edges in f's boundary.</p>
+<p>If ...eptr0,f,eptr1,... is in side_components[], v0 = eptr0.RelativeVertex(0), v1 = eptr0.RelativeVertex(0), and v0 == v1, then eptr0 and eptr1 are conecutive edges in the boundary of f and v0==v1 is a vertex in the edge chain.</p>
+<p>If ...eptr0,f,eptr1,... is in side_components[], v0 = eptr0.RelativeVertex(0), v1 = eptr0.RelativeVertex(0), and v0 != v1, then there is an edge c from v0 to v1 that is in the edge chain and eptr0,c,eptr1 are conecutive edges in the boundary of f.</p>
+<p>If ...eptr0,f,v,... is in side_components[] and v0 = eptr0.RelativeVertex(0), and then v0 != v, then there is an edge c from v0 to v that is in the edge chain, and eptr0,c are conecutive edges in the boundary of f.</p>
+<p>If ...v,f,eptr1,... is in side_components[] and v1 = eptr1.RelativeVertex(0), and then v != v1, then there is an edge c from v to v1 that is in the edge chain, and c,eptr1 conecutive edges in the boundary of f.</p>
+<p>Remarks: If the SubD is not an oriented manifold along the entire side of the chain, then there may be gaps in chain_side[]. When there are face fans at a chain vertex, there will be faces that do not have an edge on the chain. </p>
+
+</div>
+</div>
 <a id="a72a649bf0dad810dab70e4f20c79b334"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72a649bf0dad810dab70e4f20c79b334">&#9670;&nbsp;</a></span>HasPersistentEdgeIds()</h2>
 
@@ -1776,8 +1870,48 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a67fef84896d9761bd3afb9f1be0d916f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67fef84896d9761bd3afb9f1be0d916f">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubDEdgeChain::SortEdgesIntoEdgeChains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unsorted_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Unconditionally sort edges into chains.</p>
+<p>Parameters: unsorted_edges - [in] If unsorted_edges[] contains three or more edges that share a common vertex, no edge chain will pass through that vertex.</p>
+<p>sorted_edges - [out] The sorted_edges[] has the edges grouped into edge chains. A value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#aa7df434a8cf517a79e3b9adfe2fc61e3">ON_SubDEdgePtr::Null</a> is at the end of every chain including the last chain.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. sorted_edges[i].RelativeVertex(1) == sorted_edges[i+1].RelativeVertex(0). Returns: Number of chains in edge_chains[]. Remarks: This version of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> uses MarkBits() on the edges and vertices in unsorted_edges[]. The output value of MarkBits() on these components is zero. Multiple threads may not simultaneously use any SubD tools on that rely on markbits on the same <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. </p>
+
+</div>
+</div>
 <a id="a26204fe0132f11bd952272589af8fb22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26204fe0132f11bd952272589af8fb22">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26204fe0132f11bd952272589af8fb22">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1815,11 +1949,60 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Description: Sort edges into a chains</p>
+<p>Parameters: unsorted_edges - [in] To sort an array in place, pass the same array as both parameters. If unsorted_edges[] contains three or more edges that share a common vertex, then all of the edges that share that vertex are ignored. The edges can be from one or more SubDs.</p>
+<p>unsigned int minimum_chain_length - [in] minimum number of edges to consider for a chain.</p>
+<p>edge_chains - [out] The edge_chains[] has the edges grouped into edge chains.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. edge_chains[i].RelativeVertex(1) == edge_chains[i+1].RelativeVertex(0).</p>
+<p>When edge_chains[i].RelativeVertex(1) != edge_chains[i+1].RelativeVertex(0), a chain ends at edge_chains[i] and another begins at edge_chains[i+1].</p>
+<p>The first edge in every chain has the same orientation as the input edge from edge_chains[].</p>
+<p>Returns: Number of chains in edge_chains[].</p>
+<p>Remarks: When the orientation of the input edges is not intentionally set, the versions of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> above without a minimum_chain_length variable are a better choice. </p>
+
+</div>
+</div>
+<a id="a0e79d3f621b9ed90ca960fb65bfa04ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e79d3f621b9ed90ca960fb65bfa04ac">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubDEdgeChain::SortEdgesIntoEdgeChains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unsorted_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Unconditionally sort edges into chains.</p>
+<p>Parameters: unsorted_edges - [in] If unsorted_edges[] contains three or more edges that share a common vertex, no edge chain will pass through that vertex.</p>
+<p>sorted_edges - [out] The sorted_edges[] has the edges grouped into edge chains. A value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#aa7df434a8cf517a79e3b9adfe2fc61e3">ON_SubDEdgePtr::Null</a> is at the end of every chain including the last chain.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. sorted_edges[i].RelativeVertex(1) == sorted_edges[i+1].RelativeVertex(0). Returns: Number of chains in edge_chains[]. Remarks: This version of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> uses MarkBits() on the edges and vertices in unsorted_edges[]. The output value of MarkBits() on these components is zero. Multiple threads may not simultaneously use any SubD tools on that rely on markbits on the same <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. </p>
 
 </div>
 </div>
 <a id="a0d78a1e1918f34a67c1af14108556b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d78a1e1918f34a67c1af14108556b0f">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d78a1e1918f34a67c1af14108556b0f">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1857,11 +2040,60 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Description: Sort edges into a chains</p>
+<p>Parameters: unsorted_edges - [in] To sort an array in place, pass the same array as both parameters. If unsorted_edges[] contains three or more edges that share a common vertex, then all of the edges that share that vertex are ignored. The edges can be from one or more SubDs.</p>
+<p>unsigned int minimum_chain_length - [in] minimum number of edges to consider for a chain.</p>
+<p>edge_chains - [out] The edge_chains[] has the edges grouped into edge chains.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. edge_chains[i].RelativeVertex(1) == edge_chains[i+1].RelativeVertex(0).</p>
+<p>When edge_chains[i].RelativeVertex(1) != edge_chains[i+1].RelativeVertex(0), a chain ends at edge_chains[i] and another begins at edge_chains[i+1].</p>
+<p>The first edge in every chain has the same orientation as the input edge from edge_chains[].</p>
+<p>Returns: Number of chains in edge_chains[].</p>
+<p>Remarks: When the orientation of the input edges is not intentionally set, the versions of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> above without a minimum_chain_length variable are a better choice. </p>
+
+</div>
+</div>
+<a id="a7bca320eb5ff08ac80ac6f0ca5b52c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bca320eb5ff08ac80ac6f0ca5b52c9b">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubDEdgeChain::SortEdgesIntoEdgeChains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unsorted_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Edge chain tools Description: Unconditionally sort edges into chains.</p>
+<p>Parameters: unsorted_edges - [in] If unsorted_edges[] contains three or more edges that share a common vertex, no edge chain will pass through that vertex. To sort an array in place, pass the same array as both parameters.</p>
+<p>sorted_edges - [out] The sorted_edges[] has the edges grouped into edge chains. A value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#aa7df434a8cf517a79e3b9adfe2fc61e3">ON_SubDEdgePtr::Null</a> is at the end of every chain including the last chain.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. sorted_edges[i].RelativeVertex(1) == sorted_edges[i+1].RelativeVertex(0). Returns: Number of chains in edge_chains[]. Remarks: This version of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> uses MarkBits() on the edges and vertices in unsorted_edges[]. The output value of MarkBits() on these components is zero. Multiple threads may not simultaneously use any SubD tools on that rely on markbits on the same <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. </p>
 
 </div>
 </div>
 <a id="a5a148a1b1a56c70e4f206cda4b452507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a148a1b1a56c70e4f206cda4b452507">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a148a1b1a56c70e4f206cda4b452507">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1899,19 +2131,67 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Edge chain tools Description: Sort edges into a chains</p>
+<p>Description: Sort edges into a chains</p>
 <p>Parameters: unsorted_edges - [in] To sort an array in place, pass the same array as both parameters. If unsorted_edges[] contains three or more edges that share a common vertex, then all of the edges that share that vertex are ignored. The edges can be from one or more SubDs.</p>
 <p>unsigned int minimum_chain_length - [in] minimum number of edges to consider for a chain.</p>
 <p>edge_chains - [out] The edge_chains[] has the edges grouped into edge chains.</p>
 <p>In an edge chain subsequent edges share a common vertex; i.e. edge_chains[i].RelativeVertex(1) == edge_chains[i+1].RelativeVertex(0).</p>
 <p>When edge_chains[i].RelativeVertex(1) != edge_chains[i+1].RelativeVertex(0), a chain ends at edge_chains[i] and another begins at edge_chains[i+1].</p>
-<p>The first edge in every chain has the same orientation as the input edge from edge_chains[].</p>
-<p>Returns: Number of chains in edge_chains[]. </p>
+<p>Reasonnable effort is made to keep the first edge in every chain with the same orientation as the input edge from edge_chains[]. However, this is not possible in every case, for example if the input is two edges sharing the same starting vertex.</p>
+<p>NB: Reasonnable effort is made to keep the corner vertices on the exterior of the chains, however some chains will have corners in their interior, especially closed chains.</p>
+<p>Returns: Number of chains in edge_chains[].</p>
+<p>Remarks: When the orientation of the input edges is not intentionally set, the versions of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> above without a minimum_chain_length variable are a better choice. </p>
+
+</div>
+</div>
+<a id="ae9301ea4808ceb2bf5c2823bbef44968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9301ea4808ceb2bf5c2823bbef44968">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubDEdgeChain::SortEdgesIntoEdgeChains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unsorted_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Unconditionally sort edges into chains.</p>
+<p>Parameters: unsorted_edges - [in] If unsorted_edges[] contains three or more edges that share a common vertex, no edge chain will pass through that vertex.</p>
+<p>sorted_edges - [out] The sorted_edges[] has the edges grouped into edge chains. A value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#aa7df434a8cf517a79e3b9adfe2fc61e3">ON_SubDEdgePtr::Null</a> is at the end of every chain including the last chain.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. sorted_edges[i].RelativeVertex(1) == sorted_edges[i+1].RelativeVertex(0). Returns: Number of chains in edge_chains[]. Remarks: This version of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> uses MarkBits() on the edges and vertices in unsorted_edges[]. The output value of MarkBits() on these components is zero. Multiple threads may not simultaneously use any SubD tools on that rely on markbits on the same <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>. </p>
 
 </div>
 </div>
 <a id="a9e190f8228109b63c42a39bc413457a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e190f8228109b63c42a39bc413457a2">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e190f8228109b63c42a39bc413457a2">&#9670;&nbsp;</a></span>SortEdgesIntoEdgeChains() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1955,6 +2235,15 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Description: Sort edges into a chains</p>
+<p>Parameters: unsorted_edges - [in] To sort an array in place, pass the same array as both parameters. If unsorted_edges[] contains three or more edges that share a common vertex, then all of the edges that share that vertex are ignored. The edges can be from one or more SubDs.</p>
+<p>unsigned int minimum_chain_length - [in] minimum number of edges to consider for a chain.</p>
+<p>edge_chains - [out] The edge_chains[] has the edges grouped into edge chains.</p>
+<p>In an edge chain subsequent edges share a common vertex; i.e. edge_chains[i].RelativeVertex(1) == edge_chains[i+1].RelativeVertex(0).</p>
+<p>When edge_chains[i].RelativeVertex(1) != edge_chains[i+1].RelativeVertex(0), a chain ends at edge_chains[i] and another begins at edge_chains[i+1].</p>
+<p>The first edge in every chain has the same orientation as the input edge from edge_chains[].</p>
+<p>Returns: Number of chains in edge_chains[].</p>
+<p>Remarks: When the orientation of the input edges is not intentionally set, the versions of <a class="el" href="class_o_n___sub_d_edge_chain.html#a7bca320eb5ff08ac80ac6f0ca5b52c9b">SortEdgesIntoEdgeChains()</a> above without a minimum_chain_length variable are a better choice. </p>
 
 </div>
 </div>
@@ -2123,7 +2412,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

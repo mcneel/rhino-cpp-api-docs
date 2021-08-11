@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -199,6 +199,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6bfa0d13aa0e4903c636ccbf9b2e3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01709755ee68c13ff2829e6612d74bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_print_info.html#ab01709755ee68c13ff2829e6612d74bd">LoadSettings</a> (<a class="el" href="class_c_rhino_settings.html">CRhinoSettings</a> &amp;settings)</td></tr>
 <tr class="separator:ab01709755ee68c13ff2829e6612d74bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a4582124535e8a234697ca419345e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_print_info.html#a36a4582124535e8a234697ca419345e3">MatchViewportAspectRatio</a> ()</td></tr>
+<tr class="separator:a36a4582124535e8a234697ca419345e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f21cc585e3382fdff656500dfd1b017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_print_info.html#a5f21cc585e3382fdff656500dfd1b017">MaximizeDrawRect</a> ()</td></tr>
 <tr class="separator:a5f21cc585e3382fdff656500dfd1b017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d0b07e54a40520415e5f5fe0efdc0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_print_info.html#af3d0b07e54a40520415e5f5fe0efdc0a">MoveWindowRect</a> (<a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> screen_delta)</td></tr>
@@ -682,7 +684,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Draw the layout to a single DIB. This is all done in memory, so make sure that the resulting DIB is not too large. Tiled drawing may occur if the DIB is larger than the screen resolution, but this is handled internally by this function. This version of the function just "cooks" up the appropriate display pipelines and attributes and calls the other version of this function. Parameters: full_dib: [out] the dib to draw to force_GDI_pipeline: [in] if set to true, drawing is performed using a GDI display pipeline and not the pipeline attached to the viewport (which may or may not be GDI). Return: true if successful </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000155">Deprecated:</a></b></dt><dd>Use the DrawToSingleDib2 </dd></dl>
+<p>Description: Draw the layout to a single DIB. This is all done in memory, so make sure that the resulting DIB is not too large. Tiled drawing may occur if the DIB is larger than the screen resolution, but this is handled internally by this function. This version of the function just "cooks" up the appropriate display pipelines and attributes and calls the other version of this function. Parameters: full_dib: [out] the dib to draw to force_GDI_pipeline: [in] if set to true, drawing is performed using a GDI display pipeline and not the pipeline attached to the viewport (which may or may not be GDI). Return: true if successful </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000160">Deprecated:</a></b></dt><dd>Use the DrawToSingleDib2 </dd></dl>
 
 </div>
 </div>
@@ -1710,6 +1712,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a36a4582124535e8a234697ca419345e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a4582124535e8a234697ca419345e3">&#9670;&nbsp;</a></span>MatchViewportAspectRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoPrintInfo::MatchViewportAspectRatio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the draw rect with values to match the original viewport's aspect ratio Returns: true on success </p>
+
+</div>
+</div>
 <a id="a5f21cc585e3382fdff656500dfd1b017"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f21cc585e3382fdff656500dfd1b017">&#9670;&nbsp;</a></span>MaximizeDrawRect()</h2>
 
@@ -2658,7 +2678,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

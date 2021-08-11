@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.8</span>
+   &#160;<span id="projectnumber">7.9</span>
    </div>
   </td>
  </tr>
@@ -86,8 +86,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#a410c91d323081284b1b65be824ddbd42">AddFaceTexturePoints</a>(const class ON_SubDFace *face, const class ON_3dPoint *texture_points, size_t texture_points_count) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#acbe732ecfb19ee77ac3214a13a86d64b">AddQuadFace</a>(class ON_SubDEdge *edge0, class ON_SubDEdge *edge1, class ON_SubDEdge *edge2, class ON_SubDEdge *edge3)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#aa38f61503e500f28e109f8b40d767fc8">AddQuadFace</a>(ON_SubDEdgePtr edge0, ON_SubDEdgePtr edge1, ON_SubDEdgePtr edge2, ON_SubDEdgePtr edge3)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#a1622c1d810916576b478ababb1673698">AddSymmetrySetsToComponentList</a>(ON_SimpleArray&lt; ON_COMPONENT_INDEX &gt; &amp;component_list) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#ad00594846c9899474cb59c0239bb9865">AddSymmetrySetsToComponentList</a>(ON_SimpleArray&lt; ON_SubDComponentPtr &gt; &amp;component_list) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#a83083a407f9ca2ba5e9388a5b4a99139">AddSymmetrySetsToComponentList</a>(bool bAddVertexSymmetrySets, bool bAddEdgeSymmetrySets, bool bAddFaceSymmetrySets, ON_SimpleArray&lt; ON_COMPONENT_INDEX &gt; &amp;component_list) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#a71e727fba565a6a529561834d13dfa67">AddSymmetrySetsToComponentList</a>(bool bAddVertexSymmetrySets, bool bAddEdgeSymmetrySets, bool bAddFaceSymmetrySets, ON_SimpleArray&lt; ON_SubDComponentPtr &gt; &amp;component_list) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#a69e4995fa0ffcb9e2490a3e4d848e6da">AddTriangleFace</a>(class ON_SubDEdge *edge0, class ON_SubDEdge *edge1, class ON_SubDEdge *edge2)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#ad1e1026f4ebbafb1424178d6106ada59">AddTriangleFace</a>(ON_SubDEdgePtr edge0, ON_SubDEdgePtr edge1, ON_SubDEdgePtr edge2)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#ad2800bf03755d17eaa868c1a77766aec">AddVertex</a>(const double *P)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
@@ -493,7 +493,7 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#a2edfe7f2647dff8f87a4e30a5d0c3dea">SetSymmetrySetNextForExperts</a>(bool bEdgeIsPrimaryMotif, const ON_SubDEdge *edge, const ON_SubDEdge *next_edge)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#a218dd4b2a690034c286b5dce052e26aa">SetSymmetrySetNextForExperts</a>(bool bFaceIsPrimaryMotif, const ON_SubDFace *face, const ON_SubDFace *next_face)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#a98c06831a6172f6251c5d87888ac5baf">SetSymmetrySetNextForExperts</a>(bool bComponentIsPrimaryMotif, ON_SubDComponentPtr component, ON_SubDComponentPtr next_component)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#afbebba3098f571183289523959baf0ba">SetSymmetrySetsForExperts</a>(double distance_tolerance)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#a59a640b6a0de2f939b408a04e4f6ea7f">SetSymmetrySetsForExperts</a>(bool bUseCleanupTolerance)</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___sub_d.html#ac8977da9839a8417cc2d377677c30c38">SetTextureCoordinateType</a>(ON_SubDTextureCoordinateType texture_coordinate_type) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___sub_d.html#a61d66807128a3b50a72d05d67c300845">SetTextureMappingTag</a>(const class ON_MappingTag &amp;) const</td><td class="entry"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___object.html#a074dc9e9b919853919564793c37f5143">SetUserString</a>(const wchar_t *key, const wchar_t *string_value)</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"></td></tr>
@@ -592,7 +592,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 12:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 11 2021 10:16:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
