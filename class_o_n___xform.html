@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.10</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.11</span>
    </div>
   </td>
  </tr>
@@ -155,8 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a929c2750cf67b0f7fddb6e32859834ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b98bf34aea95f363f4e62a72039063"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a34b98bf34aea95f363f4e62a72039063">GetEulerZYZ</a> (double &amp;alpha, double &amp;beta, double &amp;gamma) const</td></tr>
 <tr class="separator:a34b98bf34aea95f363f4e62a72039063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe45b8564a7a3585224933c5111260d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#afe45b8564a7a3585224933c5111260d3">GetKMLOrientationAnglesDegrees</a> (double &amp;heading_degrees, double &amp;tilt_degrees, double &amp;roll_degrees) const</td></tr>
+<tr class="separator:afe45b8564a7a3585224933c5111260d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ee22083c6cb837d304ef1612c9a1e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#af5ee22083c6cb837d304ef1612c9a1e4">GetKMLOrientationAnglesRadians</a> (double &amp;heading_radians, double &amp;tilt_radians, double &amp;roll_radians) const</td></tr>
+<tr class="separator:af5ee22083c6cb837d304ef1612c9a1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72091a1051e5b4d869fe2bc02ac10086"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a72091a1051e5b4d869fe2bc02ac10086">GetMappingXforms</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;P_xform, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;N_xform) const</td></tr>
 <tr class="separator:a72091a1051e5b4d869fe2bc02ac10086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa540bf6395175224a7ecb7b93b6e1a3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#aa540bf6395175224a7ecb7b93b6e1a3c">GetQuaternion</a> (<a class="el" href="class_o_n___quaternion.html">ON_Quaternion</a> &amp;Q) const</td></tr>
+<tr class="separator:aa540bf6395175224a7ecb7b93b6e1a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a7206c7076b1ed6d73810274e0d00b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#ab7a7206c7076b1ed6d73810274e0d00b">GetSurfaceNormalXform</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;N_xform) const</td></tr>
 <tr class="separator:ab7a7206c7076b1ed6d73810274e0d00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5f7acf17c5f65806dada1d58e746acd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#af5f7acf17c5f65806dada1d58e746acd">GetYawPitchRoll</a> (double &amp;yaw, double &amp;pitch, double &amp;roll) const</td></tr>
@@ -295,6 +301,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2e59387d2447a1783a3baca60d08d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e1d62617f77b9584d4697345df28fd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a09e1d62617f77b9584d4697345df28fd">MirrorTransformation</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> mirror_plane)</td></tr>
 <tr class="separator:a09e1d62617f77b9584d4697345df28fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac143c4a8c73abd1c3ac910f91146a1d0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#ac143c4a8c73abd1c3ac910f91146a1d0">RotationTransformationFromKMLAnglesDegrees</a> (double heading_degrees, double tilt_degrees, double roll_degrees)</td></tr>
+<tr class="separator:ac143c4a8c73abd1c3ac910f91146a1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61705694871e629f1e1602594346af52"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a61705694871e629f1e1602594346af52">RotationTransformationFromKMLAnglesRadians</a> (double heading_radians, double tilt_radians, double roll_radians)</td></tr>
+<tr class="separator:a61705694871e629f1e1602594346af52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad879fa21cd3bfc842087c1786e960b15"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#ad879fa21cd3bfc842087c1786e960b15">ScaleTransformation</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;fixed_point, double scale_factor)</td></tr>
 <tr class="separator:ad879fa21cd3bfc842087c1786e960b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35746d8276047d51a68a4738aa6b4360"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a35746d8276047d51a68a4738aa6b4360">ScaleTransformation</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;fixed_point, double x_scale_factor, double y_scale_factor, double z_scale_factor)</td></tr>
@@ -1697,6 +1707,76 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afe45b8564a7a3585224933c5111260d3" name="afe45b8564a7a3585224933c5111260d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe45b8564a7a3585224933c5111260d3">&#9670;&nbsp;</a></span>GetKMLOrientationAnglesDegrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Xform::GetKMLOrientationAnglesDegrees </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>heading_degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>tilt_degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>roll_degrees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Description: Find the Keyhole Markup Language (KML) orientation angles (in degrees) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [out] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_degrees - [out] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_degrees - [out] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+
+</div>
+</div>
+<a id="af5ee22083c6cb837d304ef1612c9a1e4" name="af5ee22083c6cb837d304ef1612c9a1e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ee22083c6cb837d304ef1612c9a1e4">&#9670;&nbsp;</a></span>GetKMLOrientationAnglesRadians()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Xform::GetKMLOrientationAnglesRadians </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>heading_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>tilt_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>roll_radians</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Description: Find the Keyhole Markup Language (KML) orientation angles (in radians) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [out] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_radians - [out] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_radians - [out] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+
+</div>
+</div>
 <a id="a72091a1051e5b4d869fe2bc02ac10086" name="a72091a1051e5b4d869fe2bc02ac10086"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72091a1051e5b4d869fe2bc02ac10086">&#9670;&nbsp;</a></span>GetMappingXforms()</h2>
 
@@ -1723,6 +1803,26 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Description: If a texture mapping is applied to an object, the object is subsequently transformed by T, and the texture mapping needs to be recalculated, then two transforms are required to recalcalculate the texture mapping. Parameters: P_xform - [out] Transform to apply to points before applying the texture mapping transformation. N_xform - [out] Transform to apply to surface normals before applying the texture mapping transformation. Returns: The determinant of the "this" transformation. If non-zero, "this" is invertable and P_xform and N_xform were calculated. False if "this" is not invertable, in which case the returned P_xform and N_xform are the identity. </p>
+
+</div>
+</div>
+<a id="aa540bf6395175224a7ecb7b93b6e1a3c" name="aa540bf6395175224a7ecb7b93b6e1a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa540bf6395175224a7ecb7b93b6e1a3c">&#9670;&nbsp;</a></span>GetQuaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Xform::GetQuaternion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___quaternion.html">ON_Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>Q</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Description: If *this is a proper rotation then find the eqivalent quaternion. <br  />
+ Parameters: Q - [out] Quaternion that represents this rotation tranformation Returns: True - if *this is a proper rotation </p>
 
 </div>
 </div>
@@ -2868,6 +2968,92 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac143c4a8c73abd1c3ac910f91146a1d0" name="ac143c4a8c73abd1c3ac910f91146a1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac143c4a8c73abd1c3ac910f91146a1d0">&#9670;&nbsp;</a></span>RotationTransformationFromKMLAnglesDegrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Xform::RotationTransformationFromKMLAnglesDegrees </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>heading_degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tilt_degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>roll_degrees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in degrees. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [in] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(90,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_degrees - [in] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,90,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_degrees - [in] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,0,90), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+
+</div>
+</div>
+<a id="a61705694871e629f1e1602594346af52" name="a61705694871e629f1e1602594346af52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61705694871e629f1e1602594346af52">&#9670;&nbsp;</a></span>RotationTransformationFromKMLAnglesRadians()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Xform::RotationTransformationFromKMLAnglesRadians </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>heading_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tilt_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>roll_radians</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in radians. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [in] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(pi/2,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_radians - [in] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,pi/2,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_radians - [in] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,0,pi/2), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+
+</div>
+</div>
 <a id="a2afb902c71193e10f1b6a1e52b798550" name="a2afb902c71193e10f1b6a1e52b798550"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2afb902c71193e10f1b6a1e52b798550">&#9670;&nbsp;</a></span>RotationZYX()</h2>
 
@@ -3697,7 +3883,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 05:46:28 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Oct 13 2021 10:27:14 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

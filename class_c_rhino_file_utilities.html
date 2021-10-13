@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.10</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.11</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7518eb3c2a51b7abba3cb60d4eaa8b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad192b1a4f48549359b32d491f3525af"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#aad192b1a4f48549359b32d491f3525af">ComparePaths</a> (const wchar_t *p1, const wchar_t *p2)</td></tr>
 <tr class="separator:aad192b1a4f48549359b32d491f3525af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5b119fc734c7286931fd893cd05d1d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ade5b119fc734c7286931fd893cd05d1d">CopyFile</a> (const char *sUTF8_OldFileName, const char *sUTF8_NewFileName, bool bFailIfDestinationExists)</td></tr>
+<tr class="separator:ade5b119fc734c7286931fd893cd05d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ba3b5ebe16023012c9ecf440060f44"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a18ba3b5ebe16023012c9ecf440060f44">CopyFile</a> (const wchar_t *sOldFileName, const wchar_t *sNewFileName, bool bFailIfDestinationExists)</td></tr>
+<tr class="separator:a18ba3b5ebe16023012c9ecf440060f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a856af628f001da35de9cbfde9797a99e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a856af628f001da35de9cbfde9797a99e">CreateDir</a> (const wchar_t *lpFullPath)</td></tr>
 <tr class="separator:a856af628f001da35de9cbfde9797a99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9bd4beb3e77ac8246f70b5d4d12713"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a6a9bd4beb3e77ac8246f70b5d4d12713">DeleteFile</a> (const char *sUTF8_FileName)</td></tr>
@@ -472,6 +476,91 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Description: Compare two path names ignoring case making ignoring the trailing L'\' if it exists on either name. Parameters: p1 [in] - First path to compare p2 [in] - Second path to compare Returns: If p1 &lt; p2, returns -1 If p1 == p2, returns 0 If p2 &lt; p1, returns 1 </p>
+
+</div>
+</div>
+<a id="ade5b119fc734c7286931fd893cd05d1d" name="ade5b119fc734c7286931fd893cd05d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5b119fc734c7286931fd893cd05d1d">&#9670;&nbsp;</a></span>CopyFile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::CopyFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sUTF8_OldFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sUTF8_NewFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFailIfDestinationExists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Description: Move a file. Parameters: sOldFileName - [in] Name of an existing file. sNewFileName - [in] New name for the file. If a file with this name exists, it is removed. bFailIfDestinationExists - [in] Returns: True if successful. </p>
+
+</div>
+</div>
+<a id="a18ba3b5ebe16023012c9ecf440060f44" name="a18ba3b5ebe16023012c9ecf440060f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ba3b5ebe16023012c9ecf440060f44">&#9670;&nbsp;</a></span>CopyFile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::CopyFile </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sOldFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sNewFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFailIfDestinationExists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2969,7 +3058,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 05:46:01 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Oct 13 2021 10:26:53 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

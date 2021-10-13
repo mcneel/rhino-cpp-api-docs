@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.10</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.11</span>
    </div>
   </td>
  </tr>
@@ -719,6 +719,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_preview_rendered.html">IRhRdkPreviewRendered</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_preview_scene_server.html">IRhRdkPreviewSceneServer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_preview_scene_server_ex.html">IRhRdkPreviewSceneServerEx</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_preview_settings.html">IRhRdkPreviewSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2522,6 +2524,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group___r_d_k.html#gga45a904b45469885769ea19e640964bc5af83377dd9f5d0c76ccb7b8f432285912">RhRdkPreviewQuality::IntermediateProgressive</a> = 3
 , <br />
 &#160;&#160;<a class="el" href="group___r_d_k.html#gga45a904b45469885769ea19e640964bc5abbd47109890259c0127154db1af26c75">RhRdkPreviewQuality::Full</a> = 4
+, <a class="el" href="group___r_d_k.html#gga45a904b45469885769ea19e640964bc5a809b7a805a28884b364837536cdc38b7">RhRdkPreviewQuality::Quick</a> = 5
 <br />
  }</td></tr>
 <tr class="separator:ga45a904b45469885769ea19e640964bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2587,6 +2590,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga113e8d68045cdc3747b260aa8a0d91a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf787c310c86d342a1494295ce15e65ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaf787c310c86d342a1494295ce15e65ca">RhRdkAddPersistentContent</a> (<a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *pContent)</td></tr>
 <tr class="separator:gaf787c310c86d342a1494295ce15e65ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga890f8b3c0b140526d41eb7997dad53b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga890f8b3c0b140526d41eb7997dad53b9">RhRdkAssignMaterialToObjects</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;aObject, const UUID &amp;uuidInstance)</td></tr>
+<tr class="separator:ga890f8b3c0b140526d41eb7997dad53b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f2dd9afc874bf9495fe1047779620c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga9f2dd9afc874bf9495fe1047779620c7">RhRdkAssignMaterialToObjects</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;aObject, const UUID &amp;uuidInstance, <a class="el" href="group___r_d_k.html#ga652d747933ffade7e8e706a15c423181">RhRdkAssignToSubFaceChoices</a> sfc, <a class="el" href="group___r_d_k.html#ga2d57853bedb982ea0231d97e166f58f3">RhRdkAssignToBlockChoices</a> bc, bool bInteractive)</td></tr>
+<tr class="separator:ga9f2dd9afc874bf9495fe1047779620c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf402d2b44832cbe27de2c11fc792c08a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaf402d2b44832cbe27de2c11fc792c08a">RhRdkBakeTexture</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *pObject, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;blockTransform, <a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558">ON_Texture::TYPE</a> textureChannel, bool bFront, const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;bitmapSize, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;strFileNameOut, const <a class="el" href="class_c_rh_rdk_object_ancestry.html">CRhRdkObjectAncestry</a> *pOptionalAncestry=nullptr, const <a class="el" href="class_c_rh_rdk_material.html">CRhRdkMaterial</a> *pOptionalMaterial=nullptr)</td></tr>
 <tr class="separator:gaf402d2b44832cbe27de2c11fc792c08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae151e15c7848aae85218aaa7febae0ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gae151e15c7848aae85218aaa7febae0ae">RhRdkBakeTextureEx</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *pObject, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;blockTransform, <a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558">ON_Texture::TYPE</a> textureChannel, bool bFront, const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;bitmapSize, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;strFileNameOut, bool bAsync, const <a class="el" href="class_c_rh_rdk_object_ancestry.html">CRhRdkObjectAncestry</a> *pOptionalAncestry=nullptr, const <a class="el" href="class_c_rh_rdk_material.html">CRhRdkMaterial</a> *pOptionalMaterial=nullptr)</td></tr>
@@ -2847,12 +2854,12 @@ Functions</h2></td></tr>
 <tr class="separator:gad8d5bec2d2e3d9f9d76e6dbdc9ec9cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01b92354f0c23e82e7ca2d16e4137f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_basic_material.html">CRhRdkBasicMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga01b92354f0c23e82e7ca2d16e4137f11">RhRdkNewDisplayAttributeMaterial</a> (const <a class="el" href="class_o_n___material.html">ON_Material</a> &amp;mat, const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDocAssoc)</td></tr>
 <tr class="separator:ga01b92354f0c23e82e7ca2d16e4137f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga237f2ebfc1bf4a08c2b639152f92febe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_background.html">CRhRdkPreviewBackground</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga237f2ebfc1bf4a08c2b639152f92febe">RhRdkNewPreviewBackground</a> (const wchar_t *wszPB)</td></tr>
-<tr class="separator:ga237f2ebfc1bf4a08c2b639152f92febe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeee627b61d09d2dc0b8de71ba9e7be5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_geometry.html">CRhRdkPreviewGeometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaeee627b61d09d2dc0b8de71ba9e7be5b">RhRdkNewPreviewGeometry</a> (const wchar_t *wszPG)</td></tr>
-<tr class="separator:gaeee627b61d09d2dc0b8de71ba9e7be5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0036dfb08530a10d627afb86d234a002"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_lighting.html">CRhRdkPreviewLighting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga0036dfb08530a10d627afb86d234a002">RhRdkNewPreviewLighting</a> (const wchar_t *wszPL)</td></tr>
-<tr class="separator:ga0036dfb08530a10d627afb86d234a002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga150b758fe6fb6bd7bfc9c5655742b240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_background.html">CRhRdkPreviewBackground</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga150b758fe6fb6bd7bfc9c5655742b240">RhRdkNewPreviewBackground</a> (const wchar_t *wszPB)</td></tr>
+<tr class="separator:ga150b758fe6fb6bd7bfc9c5655742b240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacf6619feb87cbc10b76937d104231ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_geometry.html">CRhRdkPreviewGeometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaacf6619feb87cbc10b76937d104231ee">RhRdkNewPreviewGeometry</a> (const wchar_t *wszPG)</td></tr>
+<tr class="separator:gaacf6619feb87cbc10b76937d104231ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad470fccad68e4c8703d8a87b83f0c871"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_lighting.html">CRhRdkPreviewLighting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gad470fccad68e4c8703d8a87b83f0c871">RhRdkNewPreviewLighting</a> (const wchar_t *wszPL)</td></tr>
+<tr class="separator:gad470fccad68e4c8703d8a87b83f0c871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa932375e4908260631458e1c2b2e1fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_i_rh_rdk_render_session.html">IRhRdkRenderSession</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaa932375e4908260631458e1c2b2e1fcb">RhRdkNewRenderSession</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const UUID &amp;uuidRenderEngine)</td></tr>
 <tr class="separator:gaa932375e4908260631458e1c2b2e1fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68f88cab902550275c23c4d44d315c27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_i_rhino_ui_section.html">IRhinoUiSection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga68f88cab902550275c23c4d44d315c27">RhRdkNewSectionFromFactory</a> (const UUID &amp;id)</td></tr>
@@ -2980,6 +2987,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ga705be5223a0f7988daa5116e0041c8a6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga705be5223a0f7988daa5116e0041c8a6">AllowDefaultMaterial</a></td></tr>
 <tr class="separator:ga705be5223a0f7988daa5116e0041c8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93debee65bd18ec5e7eb6c825daf8718"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga93debee65bd18ec5e7eb6c825daf8718">Ask</a></td></tr>
+<tr class="separator:ga93debee65bd18ec5e7eb6c825daf8718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga770fc696eac42f491d39df23b12317c5"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga770fc696eac42f491d39df23b12317c5">BreadcrumbCtrl</a></td></tr>
 <tr class="separator:ga770fc696eac42f491d39df23b12317c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51da1bbaf590e191ce562e314a39baf8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga51da1bbaf590e191ce562e314a39baf8">Cocoa</a></td></tr>
@@ -3034,6 +3043,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga587790058340f47e4d340f9d4e3ebe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44f4aec54bb70434e82b2cdd32fe4720"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga44f4aec54bb70434e82b2cdd32fe4720">Modal</a></td></tr>
 <tr class="separator:ga44f4aec54bb70434e82b2cdd32fe4720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04f1a401dc5d4fe2fd913da6a3ec739e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga04f1a401dc5d4fe2fd913da6a3ec739e">Never</a></td></tr>
+<tr class="separator:ga04f1a401dc5d4fe2fd913da6a3ec739e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac05068dc01e162be8c148254a4dfe3a7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gac05068dc01e162be8c148254a4dfe3a7">NewContentCtrl</a></td></tr>
 <tr class="separator:gac05068dc01e162be8c148254a4dfe3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3b8604171b31d5c223b8b00dbe97a0a"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gab3b8604171b31d5c223b8b00dbe97a0a">NewContentCtrlDropDown</a></td></tr>
@@ -3160,8 +3171,14 @@ Variables</h2></td></tr>
 <tr class="separator:ga515c59b369d671195dcf61745e909422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d5bfd9e28fec49f9e3a40290f2b9cba"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga0d5bfd9e28fec49f9e3a40290f2b9cba">RealTimeUI</a> = 8</td></tr>
 <tr class="separator:ga0d5bfd9e28fec49f9e3a40290f2b9cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga199348b9cc4d30af28406465ed08d059"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga199348b9cc4d30af28406465ed08d059">Remove</a></td></tr>
+<tr class="separator:ga199348b9cc4d30af28406465ed08d059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga223d8525505b3a69097399e4b3d0d938"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga223d8525505b3a69097399e4b3d0d938">Reserved</a> = 6</td></tr>
 <tr class="separator:ga223d8525505b3a69097399e4b3d0d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d57853bedb982ea0231d97e166f58f3"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga2d57853bedb982ea0231d97e166f58f3">RhRdkAssignToBlockChoices</a></td></tr>
+<tr class="separator:ga2d57853bedb982ea0231d97e166f58f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga652d747933ffade7e8e706a15c423181"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga652d747933ffade7e8e706a15c423181">RhRdkAssignToSubFaceChoices</a></td></tr>
+<tr class="separator:ga652d747933ffade7e8e706a15c423181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fe9da5a5e15a35de78ba87d08456d8c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga6fe9da5a5e15a35de78ba87d08456d8c">RhRdkChangeContext</a></td></tr>
 <tr class="separator:ga6fe9da5a5e15a35de78ba87d08456d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02c42fa29d986cdfe35de7d117e3af8f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga02c42fa29d986cdfe35de7d117e3af8f">RhRdkFilterContentByUsage</a></td></tr>
@@ -3179,6 +3196,8 @@ Variables</h2></td></tr>
 <tr class="separator:gacc6354b5a3aefbb4f48f2f6d8dd322ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78e1b6af4fb37c301ef8306f02577341"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga78e1b6af4fb37c301ef8306f02577341">RhRdkUserControl</a></td></tr>
 <tr class="separator:ga78e1b6af4fb37c301ef8306f02577341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cc813feda9d338b95446370ab0240a9"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga0cc813feda9d338b95446370ab0240a9">Script</a> = 9</td></tr>
+<tr class="separator:ga0cc813feda9d338b95446370ab0240a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea14bde884a242e6b95fdad425a26489"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#gaea14bde884a242e6b95fdad425a26489">Serialize</a> = 7</td></tr>
 <tr class="separator:gaea14bde884a242e6b95fdad425a26489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79eacdc95be16f589269b368d2e45a80"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_k.html#ga79eacdc95be16f589269b368d2e45a80">Spanner</a></td></tr>
@@ -15391,6 +15410,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="gga45a904b45469885769ea19e640964bc5a87f8a6ab85c9ced3702b4ea641ad4bb5" name="gga45a904b45469885769ea19e640964bc5a87f8a6ab85c9ced3702b4ea641ad4bb5"></a>Medium&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga45a904b45469885769ea19e640964bc5af83377dd9f5d0c76ccb7b8f432285912" name="gga45a904b45469885769ea19e640964bc5af83377dd9f5d0c76ccb7b8f432285912"></a>IntermediateProgressive&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga45a904b45469885769ea19e640964bc5abbd47109890259c0127154db1af26c75" name="gga45a904b45469885769ea19e640964bc5abbd47109890259c0127154db1af26c75"></a>Full&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga45a904b45469885769ea19e640964bc5a809b7a805a28884b364837536cdc38b7" name="gga45a904b45469885769ea19e640964bc5a809b7a805a28884b364837536cdc38b7"></a>Quick&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -15828,6 +15848,114 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >This function is deprecated in favor of the one below. </p>
+
+</div>
+</div>
+<a id="ga890f8b3c0b140526d41eb7997dad53b9" name="ga890f8b3c0b140526d41eb7997dad53b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga890f8b3c0b140526d41eb7997dad53b9">&#9670;&nbsp;</a></span>RhRdkAssignMaterialToObjects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> void RhRdkAssignMaterialToObjects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UUID &amp;&#160;</td>
+          <td class="paramname"><em>uuidInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Assign a material to an object via an object reference. This can assign to whole objects or to sub-faces of objects, depending on what the objRef refers to. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>is the document containing the material. </td></tr>
+    <tr><td class="paramname">aObjRef</td><td>is an array of references to objects or sub-faces to assign the material to. </td></tr>
+    <tr><td class="paramname">uuidInstance</td><td>is the instance id of the material. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This is the simple version which might ask the user questions using message boxes. For more control over this, see the other version. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
+
+</div>
+</div>
+<a id="ga9f2dd9afc874bf9495fe1047779620c7" name="ga9f2dd9afc874bf9495fe1047779620c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f2dd9afc874bf9495fe1047779620c7">&#9670;&nbsp;</a></span>RhRdkAssignMaterialToObjects() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> void RhRdkAssignMaterialToObjects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>aObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UUID &amp;&#160;</td>
+          <td class="paramname"><em>uuidInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___r_d_k.html#ga652d747933ffade7e8e706a15c423181">RhRdkAssignToSubFaceChoices</a>&#160;</td>
+          <td class="paramname"><em>sfc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___r_d_k.html#ga2d57853bedb982ea0231d97e166f58f3">RhRdkAssignToBlockChoices</a>&#160;</td>
+          <td class="paramname"><em>bc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bInteractive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Assign a material to a collection of objects via object references. This can assign to whole objects or to sub-faces of objects, depending on what the objRef refers to. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>is the document containing the material. </td></tr>
+    <tr><td class="paramname">aObjRef</td><td>is an array of references to objects or sub-faces to assign the material to. </td></tr>
+    <tr><td class="paramname">uuidInstance</td><td>is the instance id of the material. </td></tr>
+    <tr><td class="paramname">sfc</td><td>specifies how to handle existing sub-face assignments. </td></tr>
+    <tr><td class="paramname">bc</td><td>specifies how to handle blocks (if present in the aObjRef array). </td></tr>
+    <tr><td class="paramname">bInteractive</td><td>specifies how to ask the user questions. If <em>true</em>, a message box is used, otherwise the command line is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
 
 </div>
 </div>
@@ -19681,14 +19809,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga237f2ebfc1bf4a08c2b639152f92febe" name="ga237f2ebfc1bf4a08c2b639152f92febe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga237f2ebfc1bf4a08c2b639152f92febe">&#9670;&nbsp;</a></span>RhRdkNewPreviewBackground()</h2>
+<a id="ga150b758fe6fb6bd7bfc9c5655742b240" name="ga150b758fe6fb6bd7bfc9c5655742b240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga150b758fe6fb6bd7bfc9c5655742b240">&#9670;&nbsp;</a></span>RhRdkNewPreviewBackground()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_background.html">CRhRdkPreviewBackground</a> * RhRdkNewPreviewBackground </td>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_background.html">CRhRdkPreviewBackground</a> * RhRdkNewPreviewBackground </td>
           <td>(</td>
           <td class="paramtype">const wchar_t *&#160;</td>
           <td class="paramname"><em>wszPB</em></td><td>)</td>
@@ -19699,14 +19827,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="gaeee627b61d09d2dc0b8de71ba9e7be5b" name="gaeee627b61d09d2dc0b8de71ba9e7be5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeee627b61d09d2dc0b8de71ba9e7be5b">&#9670;&nbsp;</a></span>RhRdkNewPreviewGeometry()</h2>
+<a id="gaacf6619feb87cbc10b76937d104231ee" name="gaacf6619feb87cbc10b76937d104231ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacf6619feb87cbc10b76937d104231ee">&#9670;&nbsp;</a></span>RhRdkNewPreviewGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_geometry.html">CRhRdkPreviewGeometry</a> * RhRdkNewPreviewGeometry </td>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_geometry.html">CRhRdkPreviewGeometry</a> * RhRdkNewPreviewGeometry </td>
           <td>(</td>
           <td class="paramtype">const wchar_t *&#160;</td>
           <td class="paramname"><em>wszPG</em></td><td>)</td>
@@ -19717,14 +19845,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0036dfb08530a10d627afb86d234a002" name="ga0036dfb08530a10d627afb86d234a002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0036dfb08530a10d627afb86d234a002">&#9670;&nbsp;</a></span>RhRdkNewPreviewLighting()</h2>
+<a id="gad470fccad68e4c8703d8a87b83f0c871" name="gad470fccad68e4c8703d8a87b83f0c871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad470fccad68e4c8703d8a87b83f0c871">&#9670;&nbsp;</a></span>RhRdkNewPreviewLighting()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___r_d_k.html#gaa16c78d5a028ba853042bc98a4ceb97a">RHRDK_UI_SDK</a> <a class="el" href="class_c_rh_rdk_preview_lighting.html">CRhRdkPreviewLighting</a> * RhRdkNewPreviewLighting </td>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> <a class="el" href="class_c_rh_rdk_preview_lighting.html">CRhRdkPreviewLighting</a> * RhRdkNewPreviewLighting </td>
           <td>(</td>
           <td class="paramtype">const wchar_t *&#160;</td>
           <td class="paramname"><em>wszPL</em></td><td>)</td>
@@ -21443,6 +21571,20 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ga93debee65bd18ec5e7eb6c825daf8718" name="ga93debee65bd18ec5e7eb6c825daf8718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93debee65bd18ec5e7eb6c825daf8718">&#9670;&nbsp;</a></span>Ask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Ask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga770fc696eac42f491d39df23b12317c5" name="ga770fc696eac42f491d39df23b12317c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga770fc696eac42f491d39df23b12317c5">&#9670;&nbsp;</a></span>BreadcrumbCtrl</h2>
 
@@ -21808,6 +21950,20 @@ template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Modal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga04f1a401dc5d4fe2fd913da6a3ec739e" name="ga04f1a401dc5d4fe2fd913da6a3ec739e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04f1a401dc5d4fe2fd913da6a3ec739e">&#9670;&nbsp;</a></span>Never</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Never</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -23136,6 +23292,20 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ga199348b9cc4d30af28406465ed08d059" name="ga199348b9cc4d30af28406465ed08d059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga199348b9cc4d30af28406465ed08d059">&#9670;&nbsp;</a></span>Remove</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Remove</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga223d8525505b3a69097399e4b3d0d938" name="ga223d8525505b3a69097399e4b3d0d938"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga223d8525505b3a69097399e4b3d0d938">&#9670;&nbsp;</a></span>Reserved</h2>
 
@@ -23146,6 +23316,50 @@ template&lt;class T &gt; </div>
           <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Reserved = 6</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2d57853bedb982ea0231d97e166f58f3" name="ga2d57853bedb982ea0231d97e166f58f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d57853bedb982ea0231d97e166f58f3">&#9670;&nbsp;</a></span>RhRdkAssignToBlockChoices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> RhRdkAssignToBlockChoices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga652d747933ffade7e8e706a15c423181" name="ga652d747933ffade7e8e706a15c423181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga652d747933ffade7e8e706a15c423181">&#9670;&nbsp;</a></span>RhRdkAssignToSubFaceChoices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> RhRdkAssignToSubFaceChoices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -23324,6 +23538,20 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0cc813feda9d338b95446370ab0240a9" name="ga0cc813feda9d338b95446370ab0240a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cc813feda9d338b95446370ab0240a9">&#9670;&nbsp;</a></span>Script</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> enum <a class="el" href="group___r_d_k.html#ga93db1b80fa57286715f44a882e6f7842">RHRDK_SDK</a> Script = 9</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -30761,7 +30989,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 05:45:56 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Oct 13 2021 10:26:49 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

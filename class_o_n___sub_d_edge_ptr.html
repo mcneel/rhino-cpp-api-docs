@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.10</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.11</span>
    </div>
   </td>
  </tr>
@@ -136,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a262fad485971f04a25f2cc5a803e3c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fc60ad3fc0fad53ecf5bd9cb8d671d"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a54fc60ad3fc0fad53ecf5bd9cb8d671d">RelativeVertex</a> (int relative_vertex_index) const</td></tr>
 <tr class="separator:a54fc60ad3fc0fad53ecf5bd9cb8d671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab539fc7a2db00480e2d6f234dfde36d7"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#ab539fc7a2db00480e2d6f234dfde36d7">RelativeVertexId</a> (int relative_vertex_index) const</td></tr>
+<tr class="separator:ab539fc7a2db00480e2d6f234dfde36d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6c69e63bb2ab931b69bacfbcb32d7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#aef6c69e63bb2ab931b69bacfbcb32d7c">RelativeVertexMark</a> (int relative_vertex_index, bool missing_vertex_return_value) const</td></tr>
 <tr class="separator:aef6c69e63bb2ab931b69bacfbcb32d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702a286d729b9bb66ab1148b036bb9c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a702a286d729b9bb66ab1148b036bb9c2">RelativeVertexMarkBits</a> (int relative_vertex_index, <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> missing_vertex_return_value) const</td></tr>
@@ -925,6 +927,25 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab539fc7a2db00480e2d6f234dfde36d7" name="ab539fc7a2db00480e2d6f234dfde36d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab539fc7a2db00480e2d6f234dfde36d7">&#9670;&nbsp;</a></span>RelativeVertexId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_SubDEdgePtr::RelativeVertexId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>relative_vertex_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Parameters: relative_vertex_index - [in] 0: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#a7cb26bb3c14d19e7faacf14c16a1c78a">Edge()</a>-&gt;Vertex(EdgeDirection()) 1: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#a7cb26bb3c14d19e7faacf14c16a1c78a">Edge()</a>-&gt;Vertex(1-<a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a>) Returns: The requested id of the vertex with <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a> taken into account. 0 if relative_vertex_index, <a class="el" href="class_o_n___sub_d_edge_ptr.html#a7cb26bb3c14d19e7faacf14c16a1c78a">Edge()</a> is nullptr, or <a class="el" href="class_o_n___sub_d_edge_ptr.html#a7cb26bb3c14d19e7faacf14c16a1c78a">Edge()</a>-&gt;Vertex() is nullptr. </p>
+
+</div>
+</div>
 <a id="aef6c69e63bb2ab931b69bacfbcb32d7c" name="aef6c69e63bb2ab931b69bacfbcb32d7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef6c69e63bb2ab931b69bacfbcb32d7c">&#9670;&nbsp;</a></span>RelativeVertexMark()</h2>
 
@@ -1113,7 +1134,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 05:46:25 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Oct 13 2021 10:27:12 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

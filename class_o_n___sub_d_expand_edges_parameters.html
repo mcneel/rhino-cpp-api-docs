@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.10</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.11</span>
    </div>
   </td>
  </tr>
@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_o_n___sub_d_expand_edges_parameters-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ON_SubDExpandEdgesParameters Class Reference<div class="ingroups"><a class="el" href="group__open_n_u_r_b_s.html">OpenNURBS</a></div></div></div>
@@ -95,6 +96,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa0759b64ca778693620837b3b2fc08d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc1ea11ae3968eb21273fcd1e0deaa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a6bc1ea11ae3968eb21273fcd1e0deaa4">~ON_SubDExpandEdgesParameters</a> ()=default</td></tr>
 <tr class="separator:a6bc1ea11ae3968eb21273fcd1e0deaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89905a7642f90534c669f768c895bba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ae89905a7642f90534c669f768c895bba">ClearVariableOffset</a> ()</td></tr>
+<tr class="separator:ae89905a7642f90534c669f768c895bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424c1df1fd7f8f6e80d07907fd80aded"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a424c1df1fd7f8f6e80d07907fd80aded">ConstantOffset</a> () const</td></tr>
+<tr class="memdesc:a424c1df1fd7f8f6e80d07907fd80aded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized constant offset parameter for inserting edges parallel to an input edge. Smaller values create narrower offsets.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a424c1df1fd7f8f6e80d07907fd80aded">More...</a><br /></td></tr>
+<tr class="separator:a424c1df1fd7f8f6e80d07907fd80aded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d302d944b0befab0ba070f07b4abd8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a04d302d944b0befab0ba070f07b4abd8">FaceColor</a> () const</td></tr>
 <tr class="memdesc:a04d302d944b0befab0ba070f07b4abd8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>Per face color for new faces.</dd></dl>
  <a href="class_o_n___sub_d_expand_edges_parameters.html#a04d302d944b0befab0ba070f07b4abd8">More...</a><br /></td></tr>
@@ -112,11 +118,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2272adadb5c815df8cc6607e894f8cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#af817449b090411db362ccff97469feca">FaceStyle()</a> is HalfLeft of HalfRight.</dd></dl>
  <a href="class_o_n___sub_d_expand_edges_parameters.html#a2272adadb5c815df8cc6607e894f8cf2">More...</a><br /></td></tr>
 <tr class="separator:a2272adadb5c815df8cc6607e894f8cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20bf1ad9470733a8eff2b793490ad509"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a20bf1ad9470733a8eff2b793490ad509">Offset</a> () const</td></tr>
-<tr class="memdesc:a20bf1ad9470733a8eff2b793490ad509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized offset parameter for inserting edges parallel to an input edge. Smaller values create narrower offsets.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a20bf1ad9470733a8eff2b793490ad509">More...</a><br /></td></tr>
-<tr class="separator:a20bf1ad9470733a8eff2b793490ad509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc7cd0c309e9ae063b15b950eb09d85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a6fc7cd0c309e9ae063b15b950eb09d85">IsVariableOffset</a> () const</td></tr>
+<tr class="separator:a6fc7cd0c309e9ae063b15b950eb09d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac07a68c2dd5b8e5c6519c5517d3797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html">ON_SubDExpandEdgesParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#adac07a68c2dd5b8e5c6519c5517d3797">operator=</a> (const <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html">ON_SubDExpandEdgesParameters</a> &amp;)=default</td></tr>
 <tr class="separator:adac07a68c2dd5b8e5c6519c5517d3797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bec547273c27421a462f72203bfa467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a8bec547273c27421a462f72203bfa467">SetConstantOffset</a> (double offset)</td></tr>
+<tr class="memdesc:a8bec547273c27421a462f72203bfa467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the constant offset value. Values within OffsetTolerance of a predefined offset value are set to the predefined offset value.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a8bec547273c27421a462f72203bfa467">More...</a><br /></td></tr>
+<tr class="separator:a8bec547273c27421a462f72203bfa467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3eec299f9348f89fd8cc0de92f87ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#aa3eec299f9348f89fd8cc0de92f87ac1">SetFaceColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a> face_color)</td></tr>
 <tr class="memdesc:aa3eec299f9348f89fd8cc0de92f87ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the perf face color for new faces.  <a href="class_o_n___sub_d_expand_edges_parameters.html#aa3eec299f9348f89fd8cc0de92f87ac1">More...</a><br /></td></tr>
 <tr class="separator:aa3eec299f9348f89fd8cc0de92f87ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +134,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36ef9198b75915ffd1ee95cbd72d7755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a36ef9198b75915ffd1ee95cbd72d7755">SetFaceStyle</a> (<a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a7921da9fedd5bd6cb83c89e70d5d9128">ON_SubDExpandEdgesParameters::Style</a> face_style)</td></tr>
 <tr class="memdesc:a36ef9198b75915ffd1ee95cbd72d7755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the style for new faces.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a36ef9198b75915ffd1ee95cbd72d7755">More...</a><br /></td></tr>
 <tr class="separator:a36ef9198b75915ffd1ee95cbd72d7755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff7e907a3b747de6286893e0a008c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a3ff7e907a3b747de6286893e0a008c58">SetOffset</a> (double offset)</td></tr>
-<tr class="memdesc:a3ff7e907a3b747de6286893e0a008c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the offset values. Values within OffsetTolerance of a predefined offset value are set to the predefined offset value.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a3ff7e907a3b747de6286893e0a008c58">More...</a><br /></td></tr>
-<tr class="separator:a3ff7e907a3b747de6286893e0a008c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ea1c2bcab01b6bfc31af7f9a48c3ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ae9ea1c2bcab01b6bfc31af7f9a48c3ae">SetVariableOffset</a> (<a class="el" href="class_o_n___interval.html">ON_Interval</a> variable_offsets)</td></tr>
+<tr class="separator:ae9ea1c2bcab01b6bfc31af7f9a48c3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa4bbfb8332d8f59fb9e366a9f43e47"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a4fa4bbfb8332d8f59fb9e366a9f43e47">VariableOffset</a> () const</td></tr>
+<tr class="separator:a4fa4bbfb8332d8f59fb9e366a9f43e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a05c75ad5a4f22a3a5a677cdf79aec838"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a05c75ad5a4f22a3a5a677cdf79aec838">CleanupOffset</a> (double x)</td></tr>
+<tr class="separator:a05c75ad5a4f22a3a5a677cdf79aec838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c03464db6b3407c2a5b723e0f23d90"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a86c03464db6b3407c2a5b723e0f23d90">IsValidConstantOffset</a> (double constant_offset_candidate)</td></tr>
+<tr class="separator:a86c03464db6b3407c2a5b723e0f23d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e15eb62a7bfbc06789f977155f5032b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a0e15eb62a7bfbc06789f977155f5032b">IsValidForHalfOffset</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edges)</td></tr>
+<tr class="memdesc:a0e15eb62a7bfbc06789f977155f5032b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the set of ON_SubDEdgePtrs can be sorted into a single edge chain that supports half side offsets.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a0e15eb62a7bfbc06789f977155f5032b">More...</a><br /></td></tr>
+<tr class="separator:a0e15eb62a7bfbc06789f977155f5032b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3817a54f5ecfe48a873e2c016fb55d16"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a3817a54f5ecfe48a873e2c016fb55d16">IsValidForVariableOffset</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;edges)</td></tr>
+<tr class="memdesc:a3817a54f5ecfe48a873e2c016fb55d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the set of ON_SubDEdgePtrs can be sorted into a single open edge chain supports variable offsets.  <a href="class_o_n___sub_d_expand_edges_parameters.html#a3817a54f5ecfe48a873e2c016fb55d16">More...</a><br /></td></tr>
+<tr class="separator:a3817a54f5ecfe48a873e2c016fb55d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785cacc5b51af9b864893570ae6db9e9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a785cacc5b51af9b864893570ae6db9e9">IsValidVariableOffset</a> (<a class="el" href="class_o_n___interval.html">ON_Interval</a> variable_offset_candidate)</td></tr>
+<tr class="separator:a785cacc5b51af9b864893570ae6db9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -184,9 +208,9 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7921da9fedd5bd6cb83c89e70d5d9128ad909d38d705ce75386dd86e611a82f5b" name="a7921da9fedd5bd6cb83c89e70d5d9128ad909d38d705ce75386dd86e611a82f5b"></a>Double&#160;</td><td class="fielddoc"><p >Two quads are added for each input manifold edge. Corner cases where three or more edges meet receive special handling. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7921da9fedd5bd6cb83c89e70d5d9128a598d2b56e695d4cbcd43920078aafda8" name="a7921da9fedd5bd6cb83c89e70d5d9128a598d2b56e695d4cbcd43920078aafda8"></a>HalfLeft&#160;</td><td class="fielddoc"><p >This option applies only when the a of <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is input that form a single oriented edge chain of manifold interior edges. A single quad is added to the left of the input edges. (The left side of of an oriented interior manifold edge is the face whose natural boundary orientation is the same as with the <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> direction.) </p>
+<tr><td class="fieldname"><a id="a7921da9fedd5bd6cb83c89e70d5d9128a598d2b56e695d4cbcd43920078aafda8" name="a7921da9fedd5bd6cb83c89e70d5d9128a598d2b56e695d4cbcd43920078aafda8"></a>HalfLeft&#160;</td><td class="fielddoc"><p >This option applies only when the the input is an array of ON_SubDEdgePtrs that form a single oriented edge chain of manifold interior edges. A single quad is added to the left of the input edges. (The left side of of an oriented interior manifold edge is the face whose natural boundary orientation is the same as with the <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> direction.) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7921da9fedd5bd6cb83c89e70d5d9128a16a4180cc6878b7118763826a3401dc0" name="a7921da9fedd5bd6cb83c89e70d5d9128a16a4180cc6878b7118763826a3401dc0"></a>HalfRight&#160;</td><td class="fielddoc"><p >This option applies only when the a of <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is input that form a single oriented edge chain of manifold interior edges. A single quad is added to the right of the input edges. (The right side of of an oriented interior manifold edge is the face whose natural boundary orientation is opposite the <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> direction.) </p>
+<tr><td class="fieldname"><a id="a7921da9fedd5bd6cb83c89e70d5d9128a16a4180cc6878b7118763826a3401dc0" name="a7921da9fedd5bd6cb83c89e70d5d9128a16a4180cc6878b7118763826a3401dc0"></a>HalfRight&#160;</td><td class="fielddoc"><p >This option applies only when the the input is an array of ON_SubDEdgePtrs that form a single oriented edge chain of manifold interior edges. A single quad is added to the right of the input edges. (The right side of of an oriented interior manifold edge is the face whose natural boundary orientation is opposite the <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> direction.) </p>
 </td></tr>
 </table>
 
@@ -270,6 +294,69 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a05c75ad5a4f22a3a5a677cdf79aec838" name="a05c75ad5a4f22a3a5a677cdf79aec838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c75ad5a4f22a3a5a677cdf79aec838">&#9670;&nbsp;</a></span>CleanupOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double ON_SubDExpandEdgesParameters::CleanupOffset </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae89905a7642f90534c669f768c895bba" name="ae89905a7642f90534c669f768c895bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89905a7642f90534c669f768c895bba">&#9670;&nbsp;</a></span>ClearVariableOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SubDExpandEdgesParameters::ClearVariableOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a424c1df1fd7f8f6e80d07907fd80aded" name="a424c1df1fd7f8f6e80d07907fd80aded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424c1df1fd7f8f6e80d07907fd80aded">&#9670;&nbsp;</a></span>ConstantOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDExpandEdgesParameters::ConstantOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Normalized constant offset parameter for inserting edges parallel to an input edge. Smaller values create narrower offsets. </p>
+<dl class="section return"><dt>Returns</dt><dd>Offset value in the range <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ad9f40f0405f63420e2d66b55790217c0" title="Minimum permitted offset value (0.05)">ON_SubDExpandEdgesParameters::MinimumOffset</a> to <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a227577dcc1bb8888d5f099ef37cd4bfe" title="Maximum permitted offset value (0.95)">ON_SubDExpandEdgesParameters::MaximumOffset</a>.</dd></dl>
+
+</div>
+</div>
 <a id="a04d302d944b0befab0ba070f07b4abd8" name="a04d302d944b0befab0ba070f07b4abd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04d302d944b0befab0ba070f07b4abd8">&#9670;&nbsp;</a></span>FaceColor()</h2>
 
@@ -367,23 +454,143 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a20bf1ad9470733a8eff2b793490ad509" name="a20bf1ad9470733a8eff2b793490ad509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20bf1ad9470733a8eff2b793490ad509">&#9670;&nbsp;</a></span>Offset()</h2>
+<a id="a86c03464db6b3407c2a5b723e0f23d90" name="a86c03464db6b3407c2a5b723e0f23d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c03464db6b3407c2a5b723e0f23d90">&#9670;&nbsp;</a></span>IsValidConstantOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_SubDExpandEdgesParameters::IsValidConstantOffset </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>constant_offset_candidate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e15eb62a7bfbc06789f977155f5032b" name="a0e15eb62a7bfbc06789f977155f5032b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e15eb62a7bfbc06789f977155f5032b">&#9670;&nbsp;</a></span>IsValidForHalfOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_SubDExpandEdgesParameters::IsValidForHalfOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the set of ON_SubDEdgePtrs can be sorted into a single edge chain that supports half side offsets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge_chain</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if variable offsets can be applied to edge_chain.</dd></dl>
+
+</div>
+</div>
+<a id="a3817a54f5ecfe48a873e2c016fb55d16" name="a3817a54f5ecfe48a873e2c016fb55d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3817a54f5ecfe48a873e2c016fb55d16">&#9670;&nbsp;</a></span>IsValidForVariableOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_SubDExpandEdgesParameters::IsValidForVariableOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if the set of ON_SubDEdgePtrs can be sorted into a single open edge chain supports variable offsets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge_chain</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if variable offsets can be applied to edge_chain.</dd></dl>
+
+</div>
+</div>
+<a id="a785cacc5b51af9b864893570ae6db9e9" name="a785cacc5b51af9b864893570ae6db9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785cacc5b51af9b864893570ae6db9e9">&#9670;&nbsp;</a></span>IsValidVariableOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_SubDExpandEdgesParameters::IsValidVariableOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>variable_offset_candidate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc7cd0c309e9ae063b15b950eb09d85" name="a6fc7cd0c309e9ae063b15b950eb09d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc7cd0c309e9ae063b15b950eb09d85">&#9670;&nbsp;</a></span>IsVariableOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double ON_SubDExpandEdgesParameters::Offset </td>
+          <td class="memname">bool ON_SubDExpandEdgesParameters::IsVariableOffset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Normalized offset parameter for inserting edges parallel to an input edge. Smaller values create narrower offsets. </p>
-<dl class="section return"><dt>Returns</dt><dd>Offset value in the range <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ad9f40f0405f63420e2d66b55790217c0" title="Minimum permitted offset value (0.05)">ON_SubDExpandEdgesParameters::MinimumOffset</a> to <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a227577dcc1bb8888d5f099ef37cd4bfe" title="Maximum permitted offset value (0.95)">ON_SubDExpandEdgesParameters::MaximumOffset</a>.</dd></dl>
+<p >Returns: True if variable offsets are set. </p>
 
 </div>
 </div>
@@ -410,6 +617,33 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bec547273c27421a462f72203bfa467" name="a8bec547273c27421a462f72203bfa467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bec547273c27421a462f72203bfa467">&#9670;&nbsp;</a></span>SetConstantOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SubDExpandEdgesParameters::SetConstantOffset </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the constant offset value. Values within OffsetTolerance of a predefined offset value are set to the predefined offset value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ad9f40f0405f63420e2d66b55790217c0" title="Minimum permitted offset value (0.05)">ON_SubDExpandEdgesParameters::MinimumOffset</a> &lt;= offset &lt;= <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a227577dcc1bb8888d5f099ef37cd4bfe" title="Maximum permitted offset value (0.95)">ON_SubDExpandEdgesParameters::MaximumOffset</a>; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -492,30 +726,41 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ff7e907a3b747de6286893e0a008c58" name="a3ff7e907a3b747de6286893e0a008c58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ff7e907a3b747de6286893e0a008c58">&#9670;&nbsp;</a></span>SetOffset()</h2>
+<a id="ae9ea1c2bcab01b6bfc31af7f9a48c3ae" name="ae9ea1c2bcab01b6bfc31af7f9a48c3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ea1c2bcab01b6bfc31af7f9a48c3ae">&#9670;&nbsp;</a></span>SetVariableOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ON_SubDExpandEdgesParameters::SetOffset </td>
+          <td class="memname">void ON_SubDExpandEdgesParameters::SetVariableOffset </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>variable_offsets</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Description: This option applies only when the the input is an array of ON_SubDEdgePtrs that form a single oriented edge chain. You may use <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a3817a54f5ecfe48a873e2c016fb55d16" title="Determine if the set of ON_SubDEdgePtrs can be sorted into a single open edge chain supports variable...">ON_SubDExpandEdgesParameters::IsValidForVariableOffset()</a> to determine if an array of ON_SubDEdgePtrs meets the variable offset requirements. In all other cases, the constant Offset() is used. To apply variable offsets to several edge chains, expand them one at a time.</p>
+<p >Parameters: variable_offsets - [in] The two values must be between 0 and 1 and differ by more than <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ac72eed83f89c25eb6ac9c03fd36de963" title="OffsetTolerance = 0.001.">ON_SubDExpandEdgesParameters::OffsetTolerance</a>. </p>
 
-<p>Set the offset values. Values within OffsetTolerance of a predefined offset value are set to the predefined offset value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td><a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#ad9f40f0405f63420e2d66b55790217c0" title="Minimum permitted offset value (0.05)">ON_SubDExpandEdgesParameters::MinimumOffset</a> &lt;= offset &lt;= <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a227577dcc1bb8888d5f099ef37cd4bfe" title="Maximum permitted offset value (0.95)">ON_SubDExpandEdgesParameters::MaximumOffset</a>; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+</div>
+</div>
+<a id="a4fa4bbfb8332d8f59fb9e366a9f43e47" name="a4fa4bbfb8332d8f59fb9e366a9f43e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa4bbfb8332d8f59fb9e366a9f43e47">&#9670;&nbsp;</a></span>VariableOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> ON_SubDExpandEdgesParameters::VariableOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This option applies only when the the input is an array of ON_SubDEdgePtrs that form a single oriented edge chain. You may use <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a3817a54f5ecfe48a873e2c016fb55d16" title="Determine if the set of ON_SubDEdgePtrs can be sorted into a single open edge chain supports variable...">ON_SubDExpandEdgesParameters::IsValidForVariableOffset()</a> to determine if an array of ON_SubDEdgePtrs meets the variable offset requirements. In all other cases, the constant Offset() is used. To apply variable offsets to several edge chains, expand them one at a time. </p>
 
 </div>
 </div>
@@ -689,7 +934,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 05:46:25 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Oct 13 2021 10:27:12 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

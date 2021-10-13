@@ -446,7 +446,7 @@ var searchData=
   ['_7ecrhrdksimulatedenvironment_443',['~CRhRdkSimulatedEnvironment',['../class_c_rh_rdk_simulated_environment.html#ad289b1c3ede80dd6d02b8fc568b9c4a2',1,'CRhRdkSimulatedEnvironment']]],
   ['_7ecrhrdksimulatedtexture_444',['~CRhRdkSimulatedTexture',['../class_c_rh_rdk_simulated_texture.html#aa2884de42eff416e701d926b09282244',1,'CRhRdkSimulatedTexture']]],
   ['_7ecrhrdksingleselectiontaskorigin_445',['~CRhRdkSingleSelectionTaskOrigin',['../class_c_rh_rdk_single_selection_task_origin.html#ace24c7fc06314fe95bac17cbf49e20d4',1,'CRhRdkSingleSelectionTaskOrigin']]],
-  ['_7ecrhrdkssdata_446',['~CRhRdkSSData',['../class_c_rh_rdk_s_s_data.html#a65d22b929d185d59cf397bd934348885',1,'CRhRdkSSData']]],
+  ['_7ecrhrdkssdata_446',['~CRhRdkSSData',['../class_c_rh_rdk_s_s_data.html#ac965afbba88d4c3133b3c13a36ca3c89',1,'CRhRdkSSData']]],
   ['_7ecrhrdksubnodetaskorigin_447',['~CRhRdkSubNodeTaskOrigin',['../class_c_rh_rdk_sub_node_task_origin.html#a1140cd17748e2847ea6b52c3bcd4e77c',1,'CRhRdkSubNodeTaskOrigin']]],
   ['_7ecrhrdksun_448',['~CRhRdkSun',['../class_c_rh_rdk_sun.html#a10911a1e861dce22a924480cf5b02bae',1,'CRhRdkSun']]],
   ['_7ecrhrdksundialog_449',['~CRhRdkSunDialog',['../class_c_rh_rdk_sun_dialog.html#aacf4cf1d5edc52e4181948721111623d',1,'CRhRdkSunDialog']]],
