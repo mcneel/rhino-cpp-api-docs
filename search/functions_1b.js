@@ -1062,6 +1062,7 @@ var searchData=
   ['_7epreviewimageparameters_1059',['~PreviewImageParameters',['../class_i_rh_rdk_image_file_1_1_i_info2_1_1_preview_image_parameters.html#af1e2e3e5a2f5a00bc772929828084637',1,'IRhRdkImageFile::IInfo2::PreviewImageParameters']]],
   ['_7erhdisplacement_1060',['~RhDisplacement',['../class_rh_displacement.html#a7e13a3b0e6a7c86112a174937c6dae6a',1,'RhDisplacement']]],
   ['_7erhinomeshedgeslider_1061',['~RhinoMeshEdgeSlider',['../class_rhino_mesh_edge_slider.html#a37b16008fb6317a5d6d9678258055d68',1,'RhinoMeshEdgeSlider']]],
-  ['_7erhinosubdedgeslider_1062',['~RhinoSubDEdgeSlider',['../class_rhino_sub_d_edge_slider.html#a311857867360be3befbe2000f02b4d1c',1,'RhinoSubDEdgeSlider']]],
-  ['_7eskylight_1063',['~Skylight',['../class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#a55e368176df63725cd51ee933e90e0c5',1,'RhRdk::Realtime::ChangeQueue::Skylight']]]
+  ['_7erhinomeshunwrapper_1062',['~RhinoMeshUnwrapper',['../class_rhino_mesh_unwrapper.html#a420be4744049fc7280abc8ecbaf09edf',1,'RhinoMeshUnwrapper']]],
+  ['_7erhinosubdedgeslider_1063',['~RhinoSubDEdgeSlider',['../class_rhino_sub_d_edge_slider.html#a311857867360be3befbe2000f02b4d1c',1,'RhinoSubDEdgeSlider']]],
+  ['_7eskylight_1064',['~Skylight',['../class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#a55e368176df63725cd51ee933e90e0c5',1,'RhRdk::Realtime::ChangeQueue::Skylight']]]
 ];

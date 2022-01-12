@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.13</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.14</span>
    </div>
   </td>
  </tr>
@@ -820,6 +820,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_mesh_edge_slider.html">RhinoMeshEdgeSlider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for sliding edges of a mesh.  <a href="class_rhino_mesh_edge_slider.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_mesh_unwrapper.html">RhinoMeshUnwrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_reduce_mesh_parameters.html">RhinoReduceMeshParameters</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_sdk_blend.html">RhinoSdkBlend</a></td></tr>
@@ -1286,6 +1288,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group___rhino.html#ggacde13cd4c64f2c3f01f312231386a22ca6ac66754ee1bb16dcc0b1171c1149f28">sng_sphere</a>
 , <br />
 &#160;&#160;<a class="el" href="group___rhino.html#ggacde13cd4c64f2c3f01f312231386a22cace2163dbc036344ab97a929875452717">sng_cylinder</a>
+, <a class="el" href="group___rhino.html#ggacde13cd4c64f2c3f01f312231386a22ca5580ed8cdb72122ec03dc72a13b68ec2">sng_axes</a>
 <br />
  }</td></tr>
 <tr class="separator:gacde13cd4c64f2c3f01f312231386a22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2017,6 +2020,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga38d0f8efeff32373daeaca4a4848ae65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a3731547e5139d070e6b952e76e1030"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga2a3731547e5139d070e6b952e76e1030">RhinoJoinEdges</a> (<a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;brep, int edge_index0, int edge_index1, double tolerance, bool bCompact)</td></tr>
 <tr class="separator:ga2a3731547e5139d070e6b952e76e1030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8d54eff463f51667ff2adff3ec1438f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gac8d54eff463f51667ff2adff3ec1438f">RhinoJoinSubDs</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;input_subds, double join_tolerance, bool bSubDJoinedEdgesAreCreases, bool bPermitNonmanifoldSubD, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;output_subds)</td></tr>
+<tr class="separator:gac8d54eff463f51667ff2adff3ec1438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaacba3bacf0d154ded6a6db1537ec9e2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaacba3bacf0d154ded6a6db1537ec9e2b">RhinoKillSplash</a> ()</td></tr>
 <tr class="separator:gaacba3bacf0d154ded6a6db1537ec9e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c0f95f30348c5de9997c1877c5b8967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga0c0f95f30348c5de9997c1877c5b8967">RhinoLayerManagerSelectedLayers</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &amp;layers)</td></tr>
@@ -4648,11 +4653,18 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p >The geometry that can be checked by <a class="el" href="group___rhino.html#ga137abe458652b342d223c19ef79b545a">RhCheckObjectSnapPoints()</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca589621b873bc79933ebdfd73cf56c9a2" name="ggacde13cd4c64f2c3f01f312231386a22ca589621b873bc79933ebdfd73cf56c9a2"></a>sng_plane_uv&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca0a91c21d74e2df5ae198612542a178ef" name="ggacde13cd4c64f2c3f01f312231386a22ca0a91c21d74e2df5ae198612542a178ef"></a>sng_plane_uvw&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22caa487983a476c4171abd5097fe51c2e59" name="ggacde13cd4c64f2c3f01f312231386a22caa487983a476c4171abd5097fe51c2e59"></a>sng_box&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca6ac66754ee1bb16dcc0b1171c1149f28" name="ggacde13cd4c64f2c3f01f312231386a22ca6ac66754ee1bb16dcc0b1171c1149f28"></a>sng_sphere&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22cace2163dbc036344ab97a929875452717" name="ggacde13cd4c64f2c3f01f312231386a22cace2163dbc036344ab97a929875452717"></a>sng_cylinder&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca589621b873bc79933ebdfd73cf56c9a2" name="ggacde13cd4c64f2c3f01f312231386a22ca589621b873bc79933ebdfd73cf56c9a2"></a>sng_plane_uv&#160;</td><td class="fielddoc"><p >Check a plane (uv only). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca0a91c21d74e2df5ae198612542a178ef" name="ggacde13cd4c64f2c3f01f312231386a22ca0a91c21d74e2df5ae198612542a178ef"></a>sng_plane_uvw&#160;</td><td class="fielddoc"><p >Check a plane (uvw). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22caa487983a476c4171abd5097fe51c2e59" name="ggacde13cd4c64f2c3f01f312231386a22caa487983a476c4171abd5097fe51c2e59"></a>sng_box&#160;</td><td class="fielddoc"><p >Check a box. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca6ac66754ee1bb16dcc0b1171c1149f28" name="ggacde13cd4c64f2c3f01f312231386a22ca6ac66754ee1bb16dcc0b1171c1149f28"></a>sng_sphere&#160;</td><td class="fielddoc"><p >Check a sphere. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22cace2163dbc036344ab97a929875452717" name="ggacde13cd4c64f2c3f01f312231386a22cace2163dbc036344ab97a929875452717"></a>sng_cylinder&#160;</td><td class="fielddoc"><p >Check a cylinder. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacde13cd4c64f2c3f01f312231386a22ca5580ed8cdb72122ec03dc72a13b68ec2" name="ggacde13cd4c64f2c3f01f312231386a22ca5580ed8cdb72122ec03dc72a13b68ec2"></a>sng_axes&#160;</td><td class="fielddoc"><p >Check axes (e.g., x,y,z arrows / frame). </p>
+</td></tr>
 </table>
 
 </div>
@@ -16240,6 +16252,53 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="gac8d54eff463f51667ff2adff3ec1438f" name="gac8d54eff463f51667ff2adff3ec1438f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8d54eff463f51667ff2adff3ec1438f">&#9670;&nbsp;</a></span>RhinoJoinSubDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int RhinoJoinSubDs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input_subds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>join_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSubDJoinedEdgesAreCreases</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitNonmanifoldSubD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output_subds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Description: Joins the SubDs in the input array to form as few as possible resulting SubDs. There may be more than one SubD in the result array. Parameters: input_subds - [in] Array of SubDs to join. join_tolerance - [in] The join tolerance. bSubDJoinedEdgesAreCreases - [in] If true, merged boundary edges will be creases. If false, merged boundary edges will be smooth bPermitNonmanifoldSubD - [in] - Permit non-manifold SubDs to be joined. output_subds - [out] Array of output SubDs. Returns: The number of SubDs added to the output array. Remarks: NOTE: Memory for the output SubDs is allocated and becomes the responsibility of the caller. All of the geometry is copied and added to output_subds in one form or another. </p>
+
+</div>
+</div>
 <a id="gaacba3bacf0d154ded6a6db1537ec9e2b" name="gaacba3bacf0d154ded6a6db1537ec9e2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaacba3bacf0d154ded6a6db1537ec9e2b">&#9670;&nbsp;</a></span>RhinoKillSplash()</h2>
 
@@ -27428,7 +27487,7 @@ for(;;)
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 15 2021 04:04:10 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Jan 12 2022 04:46:59 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
