@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['k_0',['K',['../class_o_n___quaternion.html#a9dc264f67e8bdb22726d79d078d3dc7f',1,'ON_Quaternion']]],
-  ['k_1',['k',['../class_o_n__3dex.html#a32c3a5ee393e574ee9b6fdf3162e408d',1,'ON_3dex::k()'],['../class_o_n__3udex.html#aade053ec991293f9307f0fa5f9170a5a',1,'ON_3udex::k()'],['../class_o_n__4dex.html#a41419cb9074626ed7eb35295b9598972',1,'ON_4dex::k()'],['../class_o_n__4udex.html#acd3660331fefaa3426e29608b60cd91b',1,'ON_4udex::k()']]],
+  ['k_0',['k',['../class_o_n__3dex.html#a32c3a5ee393e574ee9b6fdf3162e408d',1,'ON_3dex::k()'],['../class_o_n__3udex.html#aade053ec991293f9307f0fa5f9170a5a',1,'ON_3udex::k()'],['../class_o_n__4dex.html#a41419cb9074626ed7eb35295b9598972',1,'ON_4dex::k()'],['../class_o_n__4udex.html#acd3660331fefaa3426e29608b60cd91b',1,'ON_4udex::k()']]],
+  ['k_1',['K',['../class_o_n___quaternion.html#a9dc264f67e8bdb22726d79d078d3dc7f',1,'ON_Quaternion']]],
   ['k1_2',['k1',['../class_o_n___surface_curvature.html#ae00e75c5e09337872e2618e61f342c38',1,'ON_SurfaceCurvature']]],
   ['k2_3',['k2',['../class_o_n___surface_curvature.html#a4ec9fdf881e9e0f60e80bfb96a28de1f',1,'ON_SurfaceCurvature']]],
   ['kalloptionaltypes_4',['kAllOptionalTypes',['../class_o_n___silhouette_parameters.html#a2ae46a141934fa34a0399f335826bf94',1,'ON_SilhouetteParameters']]],

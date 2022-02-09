@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.14</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.15</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,10 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___geometry.html#a7259b0a7e7c663e55345788411352075">GetBoundingBox</a>(ON_BoundingBox &amp;bbox, bool bGrowBox=false) const</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___geometry.html#ac123c564ea7a43c4406ac78954cf5266">GetBoundingBox</a>(ON_3dPoint &amp;bbox_min, ON_3dPoint &amp;bbox_max, bool bGrowBox=false) const</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___object.html#a691de6470e814973858aa5c51eaffa77">GetComponentsWithSetStates</a>(ON_ComponentStatus states_filter, bool bAllEqualStates, ON_SimpleArray&lt; ON_COMPONENT_INDEX &gt; &amp;components) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#a4b38cf15998541566c512336d82b7a5a">GetGradientColors</a>(ON_SimpleArray&lt; ON_ColorStop &gt; &amp;colors) const</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#a2d2a1dbf8d46ce1b6f48a5174141696a">GetGradientEndPoints</a>(ON_3dPoint &amp;startPoint, ON_3dPoint &amp;endPoint) const</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#a6594cd0123974ee8279610767248e0f0">GetGradientRepeat</a>() const</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#a836b7acb4567ac46cded82ecb458529b">GetGradientType</a>() const</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#ae234cca69b80a3e1f33873b1d15acbee">GetTightBoundingBox</a>(class ON_BoundingBox &amp;tight_bbox, bool bGrowBox=false, const class ON_Xform *xform=nullptr) const override</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___object.html#a91cc5763d652d7036be00d5ce5297713">GetUserData</a>(const ON_UUID &amp;userdata_uuid) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___object.html#ab40b5e89b4766299e415593b31a3849c">GetUserString</a>(const wchar_t *key, ON_wString &amp;string_value) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"></td></tr>
@@ -146,6 +150,10 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#a280e8e5608ae39178f4235b9999268d6">SetBasePoint</a>(ON_3dPoint point)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___object.html#ab728c0576fd5913bc1575b74997bddb5">SetComponentStates</a>(ON_COMPONENT_INDEX component_index, ON_ComponentStatus states_to_set) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___object.html#a589f1fdc28f6259d1bd22bdedc9c4c76">SetComponentStatus</a>(ON_COMPONENT_INDEX component_index, ON_ComponentStatus status_to_copy) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#aa44203ae2f7b010a0a63b85d432ffacc">SetGradientColors</a>(const ON_SimpleArray&lt; ON_ColorStop &gt; &amp;colors)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#af7b357ee6bc8a281f9afe8052e2de579">SetGradientEndPoints</a>(ON_3dPoint startpoint, ON_3dPoint endPoint)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#afd040af8d5b7a08ec9534fc6ee143c0d">SetGradientRepeat</a>(double repeat)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#a01d562561627b9b5a2a144ed6b92f2e9">SetGradientType</a>(ON_GradientType gt)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#a0de868701c0a4339578b8f18223a36ca">SetPatternIndex</a>(int index)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_o_n___hatch.html#aa75a00ea3f7c071f955fbb197c0feaf3">SetPatternRotation</a>(double rotation)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___hatch.html#acc7d413d0c4c4c49363a1c5a85bbf604">SetPatternScale</a>(double scale)</td><td class="entry"><a class="el" href="class_o_n___hatch.html">ON_Hatch</a></td><td class="entry"></td></tr>
@@ -169,7 +177,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 12 2022 04:47:18 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Feb 8 2022 22:12:52 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
