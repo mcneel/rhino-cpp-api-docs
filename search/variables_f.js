@@ -34,7 +34,6 @@ var searchData=
   ['openmodeldefaults_31',['OpenModelDefaults',['../class_c_rhino_file_read_options.html#ac9e9e1b5392b18bcd33e0528e49b86f1',1,'CRhinoFileReadOptions']]],
   ['opentemplatedefaults_32',['OpenTemplateDefaults',['../class_c_rhino_file_read_options.html#a04f029a5d23ba33417c7fca89b46ffee',1,'CRhinoFileReadOptions']]],
   ['ordinal_33',['Ordinal',['../class_o_n___locale.html#a0bf15b981459ceea0bff969248b74f50',1,'ON_Locale']]],
-  ['origin_34',['Origin',['../class_o_n__2d_point.html#a61c18ee7b2ac577050c0bc21b793eb1b',1,'ON_2dPoint::Origin()'],['../class_o_n__2i_point.html#a1b9577c0854267a8b3d066c691243f52',1,'ON_2iPoint::Origin()'],['../class_o_n__3f_point.html#a9b5d67156ce989142dee8c8979d1510b',1,'ON_3fPoint::Origin()'],['../class_o_n__2f_point.html#a07685b9037fd387c786b7b2fdfedae90',1,'ON_2fPoint::Origin()']]],
-  ['origin_35',['origin',['../class_o_n___plane.html#a350027abe02825a21b5ac845434e55d7',1,'ON_Plane']]],
-  ['origin_36',['Origin',['../class_o_n__3d_point.html#ae5dcca5dde698b25a7ec98b3868285b5',1,'ON_3dPoint']]]
+  ['origin_34',['Origin',['../class_o_n__3d_point.html#ae5dcca5dde698b25a7ec98b3868285b5',1,'ON_3dPoint::Origin()'],['../class_o_n__2d_point.html#a61c18ee7b2ac577050c0bc21b793eb1b',1,'ON_2dPoint::Origin()'],['../class_o_n__2i_point.html#a1b9577c0854267a8b3d066c691243f52',1,'ON_2iPoint::Origin()'],['../class_o_n__3f_point.html#a9b5d67156ce989142dee8c8979d1510b',1,'ON_3fPoint::Origin()'],['../class_o_n__2f_point.html#a07685b9037fd387c786b7b2fdfedae90',1,'ON_2fPoint::Origin()']]],
+  ['origin_35',['origin',['../class_o_n___plane.html#a350027abe02825a21b5ac845434e55d7',1,'ON_Plane']]]
 ];

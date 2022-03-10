@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.15</span>
+   <div id="projectname">Rhino C++ API<span id="projectnumber">&#160;7.16</span>
    </div>
   </td>
  </tr>
@@ -153,8 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a257446710520147b5a5880e2217d2067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad993fc7635eee7b4456cd950fe6f847f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ad993fc7635eee7b4456cd950fe6f847f">DpiScale</a> () const</td></tr>
 <tr class="separator:ad993fc7635eee7b4456cd950fe6f847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cb381ce4d10272f33774800206c9ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a99cb381ce4d10272f33774800206c9ce">Draw2dLines</a> (const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *points, int count, bool asPolyline, <a class="el" href="class_o_n___color.html">ON_Color</a> strokeColor, float strokeWidth, <a class="el" href="group___rhino.html#ga92ddae21b919495f4f225191041764ae">RhinoDashStyle</a> style, bool xor)=0</td></tr>
-<tr class="separator:a99cb381ce4d10272f33774800206c9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439ab150766ddb9473c2e7d486866bfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a439ab150766ddb9473c2e7d486866bfe">Draw2dLines</a> (const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *points, int count, bool asPolyline, <a class="el" href="class_o_n___color.html">ON_Color</a> strokeColor, float strokeWidth, <a class="el" href="group___rhino.html#ga92ddae21b919495f4f225191041764ae">RhinoDashStyle</a> style, bool xormode)=0</td></tr>
+<tr class="separator:a439ab150766ddb9473c2e7d486866bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7534f579e058601d4c9fcc55ba0236"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aff7534f579e058601d4c9fcc55ba0236">DrawBezier</a> (int dim, BOOL bIsRational, int order, int cv_stride, const double *cv4d, const <a class="el" href="struct_c_rh_curve_attributes.html">CRhCurveAttributes</a> &amp;attrs)</td></tr>
 <tr class="separator:aff7534f579e058601d4c9fcc55ba0236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15975a75c4fd51e49ae4f277e923247a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a15975a75c4fd51e49ae4f277e923247a">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, int nX, int nY)</td></tr>
@@ -1608,8 +1608,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a99cb381ce4d10272f33774800206c9ce" name="a99cb381ce4d10272f33774800206c9ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99cb381ce4d10272f33774800206c9ce">&#9670;&nbsp;</a></span>Draw2dLines()</h2>
+<a id="a439ab150766ddb9473c2e7d486866bfe" name="a439ab150766ddb9473c2e7d486866bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439ab150766ddb9473c2e7d486866bfe">&#9670;&nbsp;</a></span>Draw2dLines()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1657,7 +1657,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>xor</em>&#160;</td>
+          <td class="paramname"><em>xormode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1679,7 +1679,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_c_rhino_display_engine___g_d_i.html#a40e410feab2d23875c6591bd90863c81">CRhinoDisplayEngine_GDI</a>, and <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a82b01d208336ad5c71d7cd2625757bf4">CRhinoDisplayEngine_OGL</a>.</p>
+<p>Implemented in <a class="el" href="class_c_rhino_display_engine___g_d_i.html#abc3e0bc288a88952548036699819bc96">CRhinoDisplayEngine_GDI</a>, and <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a172c79e69e74b9f5cf94b32969ceba69">CRhinoDisplayEngine_OGL</a>.</p>
 
 </div>
 </div>
@@ -7611,7 +7611,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 8 2022 22:12:33 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 10 2022 10:13:35 for Rhino C++ API by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
