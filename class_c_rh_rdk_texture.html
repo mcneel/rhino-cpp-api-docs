@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.17</span>
+   &#160;<span id="projectnumber">7.18</span>
    </div>
   </td>
  </tr>
@@ -3214,7 +3214,9 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the image is pixel-based (i.e., a bitmap of some sort), else <em>false</em>. In this case, the output values may not be filled in. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the texture is image-based (i.e., a bitmap of some sort), else <em>false</em>. When returning <em>false</em>, the output values do not have to be filled in. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When implementing a class derived from <a class="el" href="class_c_rh_rdk_texture.html">CRhRdkTexture</a>, if your texture is image-based you must override this method to return the dimensions of your texture. Please make sure you do <em>not</em> call the base class as the only thing it does is flag an error to say that the method has not been correctly overridden. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_texture.html#a99530d7a1e18bf9a3901847e274c85d9">IsImageBased()</a>. </dd></dl>
 
 </div>
 </div>
@@ -5407,7 +5409,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2022 05:49:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 10 2022 21:11:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

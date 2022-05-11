@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.17</span>
+   &#160;<span id="projectnumber">7.18</span>
    </div>
   </td>
  </tr>
@@ -70,12 +70,16 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#aeee4fbb22bd9647822b64f45ba8d00a4">Dump</a>(ON_TextLog &amp;text_log) const</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a83fd9d084a59f57132c115e12c2e3139">DumpEnergyDebugText</a>(ON_TextLog &amp;text_log) const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a82e5df67da33f7c4b8ddee04733a8a01">DumpSquishInfoText</a>(const ON_Geometry *squished_geometry, ON_TextLog &amp;text_log, const wchar_t *objid_locale_str, const wchar_t *meshcount_locale_str)</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a0e905dfca0f84e32117f1e81498d2913">GetMesh2d</a>() const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#ae198d773191eadffeae51430bb66a7b9">GetMesh2dEdges</a>(ON_SimpleArray&lt; ON_Line &gt; *edges) const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a2692a94215a8a9e1b10a860ea1ecce48">GetMesh3d</a>() const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#af89b9193627ecd0f506cbab325cc1982">GetMesh3dEdges</a>(ON_SimpleArray&lt; ON_Line &gt; *edges) const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a7e4478b825bc17ecaa05bca49786b5a5">Is2dPatternSquished</a>(const ON_Geometry *geometry)</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a74605717c28a44eb061fc3a36ed73a39">ON_SquisherImpl</a>()=default</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a4f9c02ca878c511329aaec663cae900c">GetPlane</a>() const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a7e4478b825bc17ecaa05bca49786b5a5">Is2dPatternSquished</a>(const ON_Geometry *geometry)</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a74605717c28a44eb061fc3a36ed73a39">ON_SquisherImpl</a>()=default</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a068a1f486c7ebde34caee1a8a4d02d0c">SaveOriginalObjectIdAndComponentIndex</a>(const ON_UUID obj_id, const ON_COMPONENT_INDEX obj_ci, ON_Geometry *squished_geometry)=0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#ab08d075112962a27dbbdf09232c17e30">SquishBack2dMarks</a>(const ON_Geometry *squished_geometry, const ON_SimpleArray&lt; const ON_Geometry * &gt; *marks, ON_SimpleArray&lt; ON_Geometry * &gt; *squished_marks)</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#a5ba66d53ecdbd31cf748f4f4a4ccc0fd">SquishCurve</a>(const ON_Curve &amp;curve3d) const =0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___squisher_impl.html#af4461fa98f3b49f15a931acdc722fafe">SquishMesh</a>(const ON_SquishParameters &amp;squishParams, const ON_Mesh &amp;mesh3d)=0</td><td class="entry"><a class="el" href="class_o_n___squisher_impl.html">ON_SquisherImpl</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -89,7 +93,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2022 05:50:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 10 2022 21:11:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.17</span>
+   &#160;<span id="projectnumber">7.18</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac72b813c8194874dbe17b2c71d14dcaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7596490b87e995101665866e3ff221e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a7596490b87e995101665866e3ff221e5">CentroidCoordSecondMoments</a> () const</td></tr>
 <tr class="separator:a7596490b87e995101665866e3ff221e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f3c782fd78d12cbbfee2c343d5a79a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#af6f3c782fd78d12cbbfee2c343d5a79a">Count</a> () const</td></tr>
+<tr class="separator:af6f3c782fd78d12cbbfee2c343d5a79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab73960c07f87fc417fcfd17fabcf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a0ab73960c07f87fc417fcfd17fabcf56">Create</a> ()</td></tr>
 <tr class="memdesc:a0ab73960c07f87fc417fcfd17fabcf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set values to constructor defaults.  <a href="class_o_n___mass_properties.html#a0ab73960c07f87fc417fcfd17fabcf56">More...</a><br /></td></tr>
 <tr class="separator:a0ab73960c07f87fc417fcfd17fabcf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +265,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section rcs"><dt>NoKeywords</dt><dd></dd></dl>
 <p>/ / Copyright (c) 1993-2012 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Description: This class is used to returned results of mass properties calculations. </p>
+ / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Description: This class is used to returned results of mass properties calculations.</p>
+<p>Note: The constructor for this class is meaningful and initializes m_mass_type to ON_UNSET_INT_INDEX. Users of arrays of this class should use <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>. If you insist on using ON_SimpleArray&lt;ON_MassProperties&gt;, be sure to properly initialize all elements using the explicit constructor or <a class="el" href="class_o_n___mass_properties.html#a0ab73960c07f87fc417fcfd17fabcf56" title="Set values to constructor defaults.">Create()</a>. Elements created with AppendNew() need a call to <a class="el" href="class_o_n___mass_properties.html#a0ab73960c07f87fc417fcfd17fabcf56" title="Set values to constructor defaults.">Create()</a>! See RH-68376 for details. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6adb2679d90a1bfd27e1b9b4b9c3e9cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6adb2679d90a1bfd27e1b9b4b9c3e9cb">&#9670;&nbsp;</a></span>ON_MassProperties()</h2>
@@ -520,6 +523,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: If m_bValidSecondMoments is true, then the centroid coordinate second moments are returned in a vector (m_ccs_xx,m_ccs_yy,m_ccs_zz) If m_bValidSecondMoments is false, then (0,0,0) is returned. Returns: Second moments with respect to centroid coordinate system. <a class="el" href="class_o_n___mass_properties.html#a7596490b87e995101665866e3ff221e5">CentroidCoordSecondMoments()</a>.x = integral of (x-x0)^2 dm <a class="el" href="class_o_n___mass_properties.html#a7596490b87e995101665866e3ff221e5">CentroidCoordSecondMoments()</a>.y = integral of (y-y0)^2 dm <a class="el" href="class_o_n___mass_properties.html#a7596490b87e995101665866e3ff221e5">CentroidCoordSecondMoments()</a>.z = integral of (z-z0)^2 dm where (x0,y0,z0) = centroid. See Also: WorldCoordSecondMoments </p>
+
+</div>
+</div>
+<a id="af6f3c782fd78d12cbbfee2c343d5a79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f3c782fd78d12cbbfee2c343d5a79a">&#9670;&nbsp;</a></span>Count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_MassProperties::Count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns count of points if the mass properties calculation was a pointmass calculation. Returns: Count of points if m_mass_type = 0 and zero otherwise. </p>
 
 </div>
 </div>
@@ -1291,7 +1312,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>MASS - length, area, or volume of object = integral of "dm" over the object </p>
+<p>MASS - count, length, area, or volume of object = integral of "dm" over the object </p>
 
 </div>
 </div>
@@ -1322,7 +1343,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines what type of "mass" is returned. 1 = length, 2 = area, 3 = volume </p>
+<p>Determines what type of "mass" is returned. ON_UNSET_INT_INDEX = unset, 0 = point masses, 1 = length, 2 = area, 3 = volume </p>
 
 </div>
 </div>
@@ -1701,7 +1722,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2022 05:50:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 10 2022 21:11:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

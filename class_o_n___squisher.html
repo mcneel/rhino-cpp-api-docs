@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.17</span>
+   &#160;<span id="projectnumber">7.18</span>
    </div>
   </td>
  </tr>
@@ -81,6 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad904012127d3520bb0251f945f9c14e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f70e9413e0dcda37450514a3cf3edc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#ac9f70e9413e0dcda37450514a3cf3edc">Dump</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
 <tr class="separator:ac9f70e9413e0dcda37450514a3cf3edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc0cb10e7f18807cba1a80cb026098b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a6bc0cb10e7f18807cba1a80cb026098b">DumpEnergyDebugText</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
+<tr class="memdesc:a6bc0cb10e7f18807cba1a80cb026098b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the text for debugging the energy optimizer.  <a href="class_o_n___squisher.html#a6bc0cb10e7f18807cba1a80cb026098b">More...</a><br /></td></tr>
+<tr class="separator:a6bc0cb10e7f18807cba1a80cb026098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a08329214dd198d98960c87c211242f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a4a08329214dd198d98960c87c211242f">GetMesh2d</a> () const</td></tr>
 <tr class="separator:a4a08329214dd198d98960c87c211242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998e7f4150cc60213bdc50bbc61e74df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a998e7f4150cc60213bdc50bbc61e74df">GetMesh2dEdges</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *edges) const</td></tr>
@@ -89,6 +92,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81e2e6593eda7ea891b4cd8977b5eb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2490694919f4143f55a1ce328d1fcc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#ae2490694919f4143f55a1ce328d1fcc6">GetMesh3dEdges</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *edges) const</td></tr>
 <tr class="separator:ae2490694919f4143f55a1ce328d1fcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcd807bdb96f25142bbecbb98d2e51d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#aefcd807bdb96f25142bbecbb98d2e51d">GetPlane</a> () const</td></tr>
+<tr class="memdesc:aefcd807bdb96f25142bbecbb98d2e51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the plane that was used to flatten the surface, or <a class="el" href="class_o_n___plane.html#ac1b342198d842dadc0ce66a142bbae79" title="All values are ON_UNSET_VALUE.">ON_Plane::UnsetPlane</a> if local estimates were used.  <a href="class_o_n___squisher.html#aefcd807bdb96f25142bbecbb98d2e51d">More...</a><br /></td></tr>
+<tr class="separator:aefcd807bdb96f25142bbecbb98d2e51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a97e8310a87be728bd5c3d2928d8e8a9f">SaveOriginalObjectIdAndComponentIndex</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> obj_id, const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> obj_ci, <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *squished_geometry)</td></tr>
+<tr class="memdesc:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the original object id and component index in TL_SquishMapBackInfo user data.  <a href="class_o_n___squisher.html#a97e8310a87be728bd5c3d2928d8e8a9f">More...</a><br /></td></tr>
+<tr class="separator:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cf385977b65b71543c914ba274513b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___polyline_curve.html">ON_PolylineCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a82cf385977b65b71543c914ba274513b">SquishCurve</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d) const</td></tr>
 <tr class="separator:a82cf385977b65b71543c914ba274513b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1cb014973d2e2e5932467bc9a130d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#ae1cb014973d2e2e5932467bc9a130d2e">SquishMesh</a> (const <a class="el" href="class_o_n___squish_parameters.html">ON_SquishParameters</a> &amp;squishParams, const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh3d)</td></tr>
@@ -108,6 +117,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9bee9b9115c23a88052f01f519dc1e42"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a9bee9b9115c23a88052f01f519dc1e42">DumpSquishInfoText</a> (const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *squished_geometry, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log, const wchar_t *objid_locale_str, const wchar_t *meshcount_locale_str)</td></tr>
+<tr class="memdesc:a9bee9b9115c23a88052f01f519dc1e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the text for the SquishInfo command.  <a href="class_o_n___squisher.html#a9bee9b9115c23a88052f01f519dc1e42">More...</a><br /></td></tr>
+<tr class="separator:a9bee9b9115c23a88052f01f519dc1e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3354cb867b6475ebfc7212bc86c291"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a4d3354cb867b6475ebfc7212bc86c291">Is2dPatternSquished</a> (const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *geometry)</td></tr>
 <tr class="separator:a4d3354cb867b6475ebfc7212bc86c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba0a5eeb270fdcd69d4a88bd78f4386"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#acba0a5eeb270fdcd69d4a88bd78f4386">SquishBack2dMarks</a> (const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *squished_geometry, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; *marks, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; *squished_marks)</td></tr>
@@ -173,6 +185,76 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bc0cb10e7f18807cba1a80cb026098b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc0cb10e7f18807cba1a80cb026098b">&#9670;&nbsp;</a></span>DumpEnergyDebugText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Squisher::DumpEnergyDebugText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>text_log</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dumps the text for debugging the energy optimizer. </p>
+
+</div>
+</div>
+<a id="a9bee9b9115c23a88052f01f519dc1e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bee9b9115c23a88052f01f519dc1e42">&#9670;&nbsp;</a></span>DumpSquishInfoText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ON_Squisher::DumpSquishInfoText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *&#160;</td>
+          <td class="paramname"><em>squished_geometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>text_log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>objid_locale_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>meshcount_locale_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dumps the text for the SquishInfo command. </p>
 
 </div>
 </div>
@@ -250,6 +332,25 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aefcd807bdb96f25142bbecbb98d2e51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcd807bdb96f25142bbecbb98d2e51d">&#9670;&nbsp;</a></span>GetPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___plane.html">ON_Plane</a> ON_Squisher::GetPlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the plane that was used to flatten the surface, or <a class="el" href="class_o_n___plane.html#ac1b342198d842dadc0ce66a142bbae79" title="All values are ON_UNSET_VALUE.">ON_Plane::UnsetPlane</a> if local estimates were used. </p>
+
+</div>
+</div>
 <a id="a4d3354cb867b6475ebfc7212bc86c291"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d3354cb867b6475ebfc7212bc86c291">&#9670;&nbsp;</a></span>Is2dPatternSquished()</h2>
 
@@ -273,6 +374,42 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97e8310a87be728bd5c3d2928d8e8a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e8310a87be728bd5c3d2928d8e8a9f">&#9670;&nbsp;</a></span>SaveOriginalObjectIdAndComponentIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Squisher::SaveOriginalObjectIdAndComponentIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>obj_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a>&#160;</td>
+          <td class="paramname"><em>obj_ci</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *&#160;</td>
+          <td class="paramname"><em>squished_geometry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the original object id and component index in TL_SquishMapBackInfo user data. </p>
 
 </div>
 </div>
@@ -550,7 +687,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 21 2022 05:50:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 10 2022 21:11:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
