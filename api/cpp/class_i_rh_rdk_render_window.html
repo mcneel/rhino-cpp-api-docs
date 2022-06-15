@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.18</span>
+   &#160;<span id="projectnumber">7.19</span>
    </div>
   </td>
  </tr>
@@ -483,7 +483,7 @@ CRhRdkSdkRenderImpl </dd>
     <tr><td class="paramname">doc</td><td>is the document to display. </td></tr>
     <tr><td class="paramname">view</td><td>is the view to display. </td></tr>
     <tr><td class="paramname">size</td><td>is the size of the image without clipping (i.e., if you have a region, it is the size of the image before you cut the region out. </td></tr>
-    <tr><td class="paramname">region</td><td>is the area of the rendering you want to display. This should match the size of the render window itself (i.e., the size set using SetSize). </td></tr>
+    <tr><td class="paramname">region</td><td>is the area of the rendering you want to display. This is usually a rect which is from (0, 0) to the width and height in the 'size' parameter, but it's different during RenderWindow and RenderInWindow where it is the region selected by the user in the viewport. This should match the size of the render window itself (i.e., the size set using SetSize).</td></tr>
   </table>
   </dd>
 </dl>
@@ -2584,7 +2584,7 @@ CRhRdkSdkRenderImpl </dd>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 10 2022 21:11:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 15 2022 07:39:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

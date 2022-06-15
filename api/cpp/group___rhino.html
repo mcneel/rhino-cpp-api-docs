@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.18</span>
+   &#160;<span id="projectnumber">7.19</span>
    </div>
   </td>
  </tr>
@@ -1568,6 +1568,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7e4bfce10311ad9f57b683e5be9a38ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga477694dccef39c65c02072b5b6a6bd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga477694dccef39c65c02072b5b6a6bd62">Rhino2RailSweepInParts</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;output_surfaces, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *pRail[2], const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;shapes, bool bClosed=false, double tolerance=0.01)</td></tr>
 <tr class="separator:ga477694dccef39c65c02072b5b6a6bd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21d58475f2febbbf3dfe11277c4b2770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga21d58475f2febbbf3dfe11277c4b2770">Rhino2RailSweepOld</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;output_surfaces, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *pRail[2], const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; shapes, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> start_point, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> end_point, bool bClosed=false, double tolerance=0.01, int rebuild_mode=0, int rebuild_points=0, double refit_tolerance=0.0, bool bPreserveHeight=false)</td></tr>
+<tr class="separator:ga21d58475f2febbbf3dfe11277c4b2770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fcc9e5ff7c4c2aaadb373a927119883"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga9fcc9e5ff7c4c2aaadb373a927119883">Rhino3JoinBreps</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;Breps, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &gt; &amp;JoinData, double tolerance=0.0)</td></tr>
 <tr class="separator:ga9fcc9e5ff7c4c2aaadb373a927119883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0a529f12797c8c92d1e2175511afbcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gae0a529f12797c8c92d1e2175511afbcb">Rhino_dup_cmp_curve</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *crva, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *crvb)</td></tr>
@@ -6760,7 +6762,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Sweep2 function that fits a surface through profile curves that define the surface cross-sections and two curves that defines the surface edges. </p>
+<p>Description: Sweep2 function that fits a surface through profile curves that define the surface cross-sections and two curves that defines the surface edges. Use this version if you want to create shapes like Rhino's Sweep2 commaned. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">output_surfaces</td><td>sweep results </td></tr>
@@ -6828,6 +6830,105 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">output_surfaces</td><td>sweep results </td></tr>
     <tr><td class="paramname">pRail</td><td>2 rails going the right direction </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga21d58475f2febbbf3dfe11277c4b2770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21d58475f2febbbf3dfe11277c4b2770">&#9670;&nbsp;</a></span>Rhino2RailSweepOld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool Rhino2RailSweepOld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output_surfaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td>
+          <td class="paramname"><em>pRail</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt;&#160;</td>
+          <td class="paramname"><em>shapes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>start_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>end_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bClosed</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>0.01</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rebuild_mode</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rebuild_points</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>refit_tolerance</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPreserveHeight</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sweep2 function that fits a surface through profile curves that define the surface cross-sections and two curves that defines the surface edges. Use this version if you want to create shapes like earlier version of Rhino. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_surfaces</td><td>sweep results </td></tr>
+    <tr><td class="paramname">pRail</td><td>2 rails going the right direction </td></tr>
+    <tr><td class="paramname">shapes</td><td>shapes will be sorted on rail </td></tr>
+    <tr><td class="paramname">start_point</td><td>start point, specify ON_UNSET_POINT to ignore </td></tr>
+    <tr><td class="paramname">end_point</td><td>end point, specify ON_UNSET_POINT to ignore </td></tr>
+    <tr><td class="paramname">bClosed</td><td>only matters if rails are closed </td></tr>
+    <tr><td class="paramname">tolerance</td><td>tolerance for fitting surface and rails </td></tr>
+    <tr><td class="paramname">rebuild_mode</td><td>0 = no rebuild, 1 = rebuild through points, 2 = refit to tolerance </td></tr>
+    <tr><td class="paramname">rebuild_points</td><td>if 1 == rebuild_mode, the number of points, otherwise set to 0 </td></tr>
+    <tr><td class="paramname">refit_tolerance</td><td>if 2 == rebuild_mode, the refit tolerance, otherwise set to 0.0 </td></tr>
+    <tr><td class="paramname">bPreserveHeight</td><td>removes the association between the height scaling from the width scaling </td></tr>
   </table>
   </dd>
 </dl>
@@ -27510,7 +27611,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 10 2022 21:11:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 15 2022 07:39:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
