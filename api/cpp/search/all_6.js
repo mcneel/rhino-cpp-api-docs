@@ -659,7 +659,7 @@ var searchData=
   ['fractional_6455',['Fractional',['../class_o_n.html#af2d0972587d99b8aa1e17fafd68237f5a8dd30ad8c51448885a3519bab847fdc2',1,'ON::Fractional()'],['../class_o_n___dim_style.html#aeece0b5c27a6d625454cdeb931352840a8dd30ad8c51448885a3519bab847fdc2',1,'ON_DimStyle::Fractional()']]],
   ['fractionalpha_6456',['FractionAlpha',['../class_o_n___color.html#a079a305d4dddc57f74f7a3b2547e1de3',1,'ON_Color']]],
   ['fractionalrgb_6457',['FractionalRGB',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a07307ecfd6489fa35e122244fc87f7bd',1,'ON_Color']]],
-  ['fractionalrgba_6458',['FractionalRGBA',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0aae3d7e61b30e2af29395046f8282d01f',1,'ON_Color::FractionalRGBA()'],['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a3a5e0a7dc097d5d7a34aa900694c5647',1,'ON_Color::FractionalRGBa()']]],
+  ['fractionalrgba_6458',['FractionalRGBa',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a3a5e0a7dc097d5d7a34aa900694c5647',1,'ON_Color::FractionalRGBa()'],['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0aae3d7e61b30e2af29395046f8282d01f',1,'ON_Color::FractionalRGBA()']]],
   ['fractionblue_6459',['FractionBlue',['../class_o_n___color.html#a6bb0ac8759b864b6b2d30d8e711d552b',1,'ON_Color']]],
   ['fractioncomplete_6460',['FractionComplete',['../class_o_n___progress_reporter.html#a6020b6202bcd94a27ed458a7404ab81e',1,'ON_ProgressReporter']]],
   ['fractionformat_6461',['FractionFormat',['../class_o_n___scale_value.html#af737cbb998530cb6d59503d10b64d89aada473a330a771f9980854e7c191eb4b8',1,'ON_ScaleValue']]],

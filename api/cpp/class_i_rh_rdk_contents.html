@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.19</span>
+   &#160;<span id="projectnumber">7.20</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2240173b639af607a2c81c99efdf9efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2bba2316944ac9986665030c598fec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_contents.html#a1f2bba2316944ac9986665030c598fec">Replace</a> (const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;oldContent, <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;newContent, bool bPreserve=true)</td></tr>
 <tr class="separator:a1f2bba2316944ac9986665030c598fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12474ffb3d9ebb889345efb5076b17e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_contents.html#ab12474ffb3d9ebb889345efb5076b17e">SelectContent</a> (const <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;aInstance, bool bAppendToSelection) const</td></tr>
+<tr class="separator:ab12474ffb3d9ebb889345efb5076b17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58bb6099758c0c75eb6fb7952dd3e7e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_contents.html#a58bb6099758c0c75eb6fb7952dd3e7e8">UpdateDocumentTables</a> (void) const =0</td></tr>
 <tr class="separator:a58bb6099758c0c75eb6fb7952dd3e7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -588,6 +590,42 @@ If the new content is a child already attached to this or another document, the 
 
 </div>
 </div>
+<a id="ab12474ffb3d9ebb889345efb5076b17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12474ffb3d9ebb889345efb5076b17e">&#9670;&nbsp;</a></span>SelectContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRhRdkContents::SelectContent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>aInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAppendToSelection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Selects contents in all capable editors that are displaying those contents on behalf of the document. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aInstance</td><td>is the array of instance-ids of contents to select. </td></tr>
+    <tr><td class="paramname">bAppendToSelection</td><td>specifies if the selection should be replaced (false) or modified (true). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
+
+</div>
+</div>
 <a id="a58bb6099758c0c75eb6fb7952dd3e7e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58bb6099758c0c75eb6fb7952dd3e7e8">&#9670;&nbsp;</a></span>UpdateDocumentTables()</h2>
 
@@ -618,7 +656,7 @@ If the new content is a child already attached to this or another document, the 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 15 2022 07:39:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 13 2022 09:55:31 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
