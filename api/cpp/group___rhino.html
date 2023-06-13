@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.26</span>
+   &#160;<span id="projectnumber">7.30</span>
    </div>
   </td>
  </tr>
@@ -2245,6 +2245,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga9be40ae659ecceb98d283e3510145e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d0ce9202a98a8c9de30928ad269d23f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga1d0ce9202a98a8c9de30928ad269d23f">RhinoOffsetCurveOnSrf</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *p3dCrv, const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *pBrep, int fid, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;params, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;dists, double tol, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;result_curves)</td></tr>
 <tr class="separator:ga1d0ce9202a98a8c9de30928ad269d23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10388caca4b9d84826b5a1d2547377d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga10388caca4b9d84826b5a1d2547377d9">RhinoOffsetCurveOnSrfOld</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *p3dCrv, const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *pBrep, int fid, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;params, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;dists, double tol, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;result_curves)</td></tr>
+<tr class="separator:ga10388caca4b9d84826b5a1d2547377d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22c58828e5ab7260edf6f17f937e0adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga22c58828e5ab7260edf6f17f937e0adf">RhinoOffsetSubD</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;InSubD, double distance, bool bSolidify)</td></tr>
 <tr class="separator:ga22c58828e5ab7260edf6f17f937e0adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga387591041674bcc9e8b9f24a02325213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga387591041674bcc9e8b9f24a02325213">RhinoOffsetSurface</a> (const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> &amp;face, const double dOffsetDistance, const double dTolerance=0.0, const bool bBothSides=false, const bool bSolid=false, double *pAchievedTol=nullptr)</td></tr>
@@ -20831,6 +20833,64 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ga10388caca4b9d84826b5a1d2547377d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10388caca4b9d84826b5a1d2547377d9">&#9670;&nbsp;</a></span>RhinoOffsetCurveOnSrfOld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a> RhinoOffsetCurveOnSrfOld </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td>
+          <td class="paramname"><em>p3dCrv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td>
+          <td class="paramname"><em>pBrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result_curves</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga22c58828e5ab7260edf6f17f937e0adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga22c58828e5ab7260edf6f17f937e0adf">&#9670;&nbsp;</a></span>RhinoOffsetSubD()</h2>
 
@@ -27734,7 +27794,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 10 2023 15:56:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 13 2023 16:51:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
