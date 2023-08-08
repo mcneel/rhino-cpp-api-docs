@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.31</span>
+   &#160;<span id="projectnumber">7.32</span>
    </div>
   </td>
  </tr>
@@ -155,8 +155,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0b3f41434dd90d01e94ad44499a352a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5c6257444689d89f21b8470c9da50e"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a6a5c6257444689d89f21b8470c9da50e">GetMyDocumentsFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
 <tr class="separator:a6a5c6257444689d89f21b8470c9da50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc830600f59eeeb11111b49f817582f0"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#abc830600f59eeeb11111b49f817582f0">GetRhinoApplicationDataFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
-<tr class="separator:abc830600f59eeeb11111b49f817582f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654f452fd110a19f15aff9a83f6fa7af"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a654f452fd110a19f15aff9a83f6fa7af">GetRhinoApplicationDataFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
+<tr class="separator:a654f452fd110a19f15aff9a83f6fa7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77620c1626b984e507d43ff746caf5fe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a77620c1626b984e507d43ff746caf5fe">GetRhinoApplicationDataLanguageFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
+<tr class="separator:a77620c1626b984e507d43ff746caf5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa883a2b73c0dc7dac53b7d5d3fe95b6b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#aa883a2b73c0dc7dac53b7d5d3fe95b6b">GetRhinoLocalProfileCurrentLanguageFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
 <tr class="separator:aa883a2b73c0dc7dac53b7d5d3fe95b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2066ec70b716c5454d21a402365a9271"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a2066ec70b716c5454d21a402365a9271">GetRhinoLocalProfileDataFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
@@ -1622,8 +1624,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abc830600f59eeeb11111b49f817582f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc830600f59eeeb11111b49f817582f0">&#9670;&nbsp;</a></span>GetRhinoApplicationDataFolder()</h2>
+<a id="a654f452fd110a19f15aff9a83f6fa7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654f452fd110a19f15aff9a83f6fa7af">&#9670;&nbsp;</a></span>GetRhinoApplicationDataFolder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1632,7 +1634,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static BOOL CRhinoFileUtilities::GetRhinoApplicationDataFolder </td>
+          <td class="memname">static bool CRhinoFileUtilities::GetRhinoApplicationDataFolder </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
@@ -1647,6 +1649,33 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get full path to Rhino Application Data folder. This is the folder where Rhino stores global data that is shared between all users on the system.</p>
 <p>Windows 95, 98, ME: usually someplace like "C:\Program Files\Rhinoceros" Windows NT4, 2000, XP: usually someplace like "C:\Documents and Settings\All Users\Application Data\McNeel\Rhinoceros\5.0\" Windows Vista, 7: usually someplace like "C:\ProgramData\McNeel\Rhinoceros\5.0\" Parameters: result [out] - Path placed here. Returns: If Rhino could figure out the path then TRUE is returned otherwise FALSE is. </p>
+
+</div>
+</div>
+<a id="a77620c1626b984e507d43ff746caf5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77620c1626b984e507d43ff746caf5fe">&#9670;&nbsp;</a></span>GetRhinoApplicationDataLanguageFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::GetRhinoApplicationDataLanguageFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Get full path to Rhino Application Data languagefolder. This is the folder where Rhino stores global language data that is shared between all users on the system. Usually someplace like "C:\ProgramData\McNeel\Rhinoceros\8.0\Localization\en-US" Parameters: result [out] - Path placed here. Returns: If Rhino could figure out the path then TRUE is returned otherwise FALSE is. </p>
 
 </div>
 </div>
@@ -3059,7 +3088,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 11 2023 16:54:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 8 2023 16:09:30 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
