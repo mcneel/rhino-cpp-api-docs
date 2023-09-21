@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e62412f8e9b9cc2d81b1ecc5e6f2a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522ee627c0bd306923f74d60b700ffd0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a522ee627c0bd306923f74d60b700ffd0">BeginChange</a> (<a class="el" href="group___r_d_k.html#ga6fe9da5a5e15a35de78ba87d08456d8c">RhRdkChangeContext</a> cc) const =0</td></tr>
 <tr class="separator:a522ee627c0bd306923f74d60b700ffd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cba3f91a905c05b43eb3b05f123ed59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a6cba3f91a905c05b43eb3b05f123ed59">ComputeCRC</a> (void) const =0</td></tr>
+<tr class="memitem:a6cba3f91a905c05b43eb3b05f123ed59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a6cba3f91a905c05b43eb3b05f123ed59">ComputeCRC</a> (void) const =0</td></tr>
 <tr class="separator:a6cba3f91a905c05b43eb3b05f123ed59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a6f2f5d10982bd6d7de9f6af0e6f0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a09a6f2f5d10982bd6d7de9f6af0e6f0d">CopyFrom</a> (const <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;lw)=0</td></tr>
 <tr class="separator:a09a6f2f5d10982bd6d7de9f6af0e6f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b4acc24b7108c5dd6c34064bfbab356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcae4e03682cdfa52d445832b07d7b4a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#adcae4e03682cdfa52d445832b07d7b4a">PostProcessFrameBuffer</a> (void) const =0</td></tr>
 <tr class="separator:adcae4e03682cdfa52d445832b07d7b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175213ab47dea0c5eb5be05e451dd263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a175213ab47dea0c5eb5be05e451dd263">PostProcessFrameBufferOn</a> (void) const</td></tr>
+<tr class="separator:a175213ab47dea0c5eb5be05e451dd263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d760e1e55f874aa41fe8484f4a4713e"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a1d760e1e55f874aa41fe8484f4a4713e">PostProcessGamma</a> (void) const =0</td></tr>
 <tr class="separator:a1d760e1e55f874aa41fe8484f4a4713e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c57a652d310ce481c0af694853e9ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#ab3c57a652d310ce481c0af694853e9ca">PostProcessGammaOn</a> (void) const</td></tr>
@@ -115,22 +117,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acc81804a46bc24caa498a2b15baabab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f59a744368f8c3130e4cd87027788c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a5f59a744368f8c3130e4cd87027788c4">PreProcessColors</a> (void) const =0</td></tr>
 <tr class="separator:a5f59a744368f8c3130e4cd87027788c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab540626f96d7607fd393ae5248b751b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#ab540626f96d7607fd393ae5248b751b8">PreProcessColorsOn</a> (void) const</td></tr>
+<tr class="separator:ab540626f96d7607fd393ae5248b751b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cec01eb4551a83a97607a457332646a"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a3cec01eb4551a83a97607a457332646a">PreProcessGamma</a> (void) const =0</td></tr>
 <tr class="separator:a3cec01eb4551a83a97607a457332646a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78eab4461f1fb63674777a2bdf9b759"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#ae78eab4461f1fb63674777a2bdf9b759">PreProcessTextures</a> (void) const =0</td></tr>
 <tr class="separator:ae78eab4461f1fb63674777a2bdf9b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d7ff9b940d6e78916079eb8de13c38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a51d7ff9b940d6e78916079eb8de13c38">PreProcessTexturesOn</a> (void) const</td></tr>
+<tr class="separator:a51d7ff9b940d6e78916079eb8de13c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac60b48cabf9c4096012ede5a9372cfe2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#ac60b48cabf9c4096012ede5a9372cfe2">SetPostProcessFrameBuffer</a> (bool b)=0</td></tr>
 <tr class="separator:ac60b48cabf9c4096012ede5a9372cfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060657587d3e3beae9f8bfc82412ceaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a060657587d3e3beae9f8bfc82412ceaa">SetPostProcessFrameBufferOn</a> (bool b)</td></tr>
+<tr class="separator:a060657587d3e3beae9f8bfc82412ceaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9249e070e7bed0ebbeebc4f1ca354074"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a9249e070e7bed0ebbeebc4f1ca354074">SetPostProcessGamma</a> (float f)=0</td></tr>
 <tr class="separator:a9249e070e7bed0ebbeebc4f1ca354074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b18217de1ba1560708f678ad56ebfa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a0b18217de1ba1560708f678ad56ebfa6">SetPostProcessGammaOn</a> (bool)</td></tr>
 <tr class="separator:a0b18217de1ba1560708f678ad56ebfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7179dc7d8afa6e12273d5924d1b4fc59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a7179dc7d8afa6e12273d5924d1b4fc59">SetPreProcessColors</a> (bool b)=0</td></tr>
 <tr class="separator:a7179dc7d8afa6e12273d5924d1b4fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3072b8a88bb21be04f640286ad66e1c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a3072b8a88bb21be04f640286ad66e1c3">SetPreProcessColorsOn</a> (bool b)</td></tr>
+<tr class="separator:a3072b8a88bb21be04f640286ad66e1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d15ffa7a602df9efbb15289ad074c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a01d15ffa7a602df9efbb15289ad074c1">SetPreProcessGamma</a> (float f)=0</td></tr>
 <tr class="separator:a01d15ffa7a602df9efbb15289ad074c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c86ec6fca20dc8410e9ce706134d32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#a74c86ec6fca20dc8410e9ce706134d32">SetPreProcessTextures</a> (bool b)=0</td></tr>
 <tr class="separator:a74c86ec6fca20dc8410e9ce706134d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca98f01761cee0a60d529118237b43dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_linear_workflow.html#aca98f01761cee0a60d529118237b43dd">SetPreProcessTexturesOn</a> (bool b)</td></tr>
+<tr class="separator:aca98f01761cee0a60d529118237b43dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -138,8 +150,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa6a20e041c0838c91565ae807270744d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the interface to linear workflow settings.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_document.html#ab2d6d9f788b4c5856f92412f1583cfdc">CRhRdkDocument::LinearWorkflow()</a> </dd></dl>
+<div class="textblock"><p>This interface is deprecated and only kept for backward compatibility. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a51a387a567a0bdb0ee6dc741fd6893e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51a387a567a0bdb0ee6dc741fd6893e1">&#9670;&nbsp;</a></span>~IRhRdkLinearWorkflow()</h2>
@@ -314,7 +325,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> IRhRdkLinearWorkflow::ComputeCRC </td>
+          <td class="memname">virtual <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> IRhRdkLinearWorkflow::ComputeCRC </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -513,6 +524,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a175213ab47dea0c5eb5be05e451dd263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175213ab47dea0c5eb5be05e451dd263">&#9670;&nbsp;</a></span>PostProcessFrameBufferOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRhRdkLinearWorkflow::PostProcessFrameBufferOn </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1d760e1e55f874aa41fe8484f4a4713e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d760e1e55f874aa41fe8484f4a4713e">&#9670;&nbsp;</a></span>PostProcessGamma()</h2>
 
@@ -619,6 +656,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab540626f96d7607fd393ae5248b751b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab540626f96d7607fd393ae5248b751b8">&#9670;&nbsp;</a></span>PreProcessColorsOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRhRdkLinearWorkflow::PreProcessColorsOn </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3cec01eb4551a83a97607a457332646a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cec01eb4551a83a97607a457332646a">&#9670;&nbsp;</a></span>PreProcessGamma()</h2>
 
@@ -677,6 +740,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a51d7ff9b940d6e78916079eb8de13c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d7ff9b940d6e78916079eb8de13c38">&#9670;&nbsp;</a></span>PreProcessTexturesOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IRhRdkLinearWorkflow::PreProcessTexturesOn </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac60b48cabf9c4096012ede5a9372cfe2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac60b48cabf9c4096012ede5a9372cfe2">&#9670;&nbsp;</a></span>SetPostProcessFrameBuffer()</h2>
 
@@ -703,6 +792,32 @@ Static Public Member Functions</h2></td></tr>
 <p>Set linear workflow (pre-process) active state for individual colors. </p>
 
 <p>Implemented in <a class="el" href="class_c_rh_rdk_linear_workflow.html#a5822960db83abf8d1571735aa45c1e76">CRhRdkLinearWorkflow</a>.</p>
+
+</div>
+</div>
+<a id="a060657587d3e3beae9f8bfc82412ceaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060657587d3e3beae9f8bfc82412ceaa">&#9670;&nbsp;</a></span>SetPostProcessFrameBufferOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRhRdkLinearWorkflow::SetPostProcessFrameBufferOn </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -782,6 +897,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3072b8a88bb21be04f640286ad66e1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3072b8a88bb21be04f640286ad66e1c3">&#9670;&nbsp;</a></span>SetPreProcessColorsOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRhRdkLinearWorkflow::SetPreProcessColorsOn </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a01d15ffa7a602df9efbb15289ad074c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01d15ffa7a602df9efbb15289ad074c1">&#9670;&nbsp;</a></span>SetPreProcessGamma()</h2>
 
@@ -840,10 +981,36 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aca98f01761cee0a60d529118237b43dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca98f01761cee0a60d529118237b43dd">&#9670;&nbsp;</a></span>SetPreProcessTexturesOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRhRdkLinearWorkflow::SetPreProcessTexturesOn </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

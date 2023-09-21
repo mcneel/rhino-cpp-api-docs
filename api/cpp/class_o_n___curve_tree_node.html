@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -172,7 +172,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:aa9de357c47d474e6f0333276a0215b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number of this node  <a href="class_o_n___curve_tree_node.html#aa9de357c47d474e6f0333276a0215b54">More...</a><br /></td></tr>
 <tr class="separator:aa9de357c47d474e6f0333276a0215b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7726de5212b2688ecda27561b5424e3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve_tree_node.html#af7726de5212b2688ecda27561b5424e3">m_nodetype</a></td></tr>
-<tr class="memdesc:af7726de5212b2688ecda27561b5424e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory managment accounting information.  <a href="class_o_n___curve_tree_node.html#af7726de5212b2688ecda27561b5424e3">More...</a><br /></td></tr>
+<tr class="memdesc:af7726de5212b2688ecda27561b5424e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory management accounting information.  <a href="class_o_n___curve_tree_node.html#af7726de5212b2688ecda27561b5424e3">More...</a><br /></td></tr>
 <tr class="separator:af7726de5212b2688ecda27561b5424e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8c47412ace98f7539137fcc450b613"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve_tree_node.html#add8c47412ace98f7539137fcc450b613">m_reserved_ON_CurveTreeNode</a> [5]</td></tr>
 <tr class="memdesc:add8c47412ace98f7539137fcc450b613"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep class size a multiple of 16  <a href="class_o_n___curve_tree_node.html#add8c47412ace98f7539137fcc450b613">More...</a><br /></td></tr>
@@ -282,7 +282,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Evaluate the portion of the curve covered by this node. Parameters: t - [in] evaluation parameter with respect to the node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride curve(t) is returned in (v[0],...,v[m_dim-1]), curve'(t) is retuned in (v[v_stride],...,v[v_stride+m_dim-1]), curve"(t) is retuned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), etc. side - [in] optional - determines which side to evaluate from =0 default (from abov) &lt;0 to evaluate from below, &gt;0 to evaluate from above Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If the evaluation parameter is outside this node's domain, the bezier on the appropriate end is used to ev </p>
+<p>Description: Evaluate the portion of the curve covered by this node. Parameters: t - [in] evaluation parameter with respect to the node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride curve(t) is returned in (v[0],...,v[m_dim-1]), curve'(t) is returned in (v[v_stride],...,v[v_stride+m_dim-1]), curve"(t) is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), etc. side - [in] optional - determines which side to evaluate from =0 default (from above) &lt;0 to evaluate from below, &gt;0 to evaluate from above Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If the evaluation parameter is outside this node's domain, the bezier on the appropriate end is used to ev </p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Starting at this node, find the leaf node whose domain contains that parameter t. Parameters: t - [in] side [in] If t lies at the start/end of a domain, side contols which leaf is returned. If side &gt;= 0, the node with domain (t,...) is returned. If side &lt; 0, the node with domain (...,t) is returned. Returns: Pointer to the node that contains t. If t &lt; the start of this node's domain, the node for the start is returned. If t &gt; the end of this node's domain, the node for the end parameter is returned. </p>
+<p>Description: Starting at this node, find the leaf node whose domain contains that parameter t. Parameters: t - [in] side [in] If t lies at the start/end of a domain, side controls which leaf is returned. If side &gt;= 0, the node with domain (t,...) is returned. If side &lt; 0, the node with domain (...,t) is returned. Returns: Pointer to the node that contains t. If t &lt; the start of this node's domain, the node for the start is returned. If t &gt; the end of this node's domain, the node for the end parameter is returned. </p>
 
 </div>
 </div>
@@ -1113,7 +1113,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to split a curve tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to gaurd against memory leaks and double deletes. Parameters: s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The cooresponding surface domain parameter is m_domain.ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
+<p>Description: Expert user tool to split a curve tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to gaurd against memory leaks and double deletes. Parameters: s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The corresponding surface domain parameter is m_domain.ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
 
 </div>
 </div>
@@ -1142,7 +1142,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the smallest subtree that contain the given semi-open interval with beginning, (or ending respecively) at t0 when side =0 or 1 ( or side = -1 ). Returns nullptr if range is not contained the domain of this subtree. </p>
+<p>Returns the smallest subtree that contain the given semi-open interval with beginning, (or ending respectively) at t0 when side =0 or 1 ( or side = -1 ). Returns nullptr if range is not contained the domain of this subtree. </p>
 
 </div>
 </div>
@@ -1284,7 +1284,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Memory managment accounting information. </p>
+<p>Memory management accounting information. </p>
 <p>8 bits to flag special nodes 1 = root node 2 = meta node (no domain) 4 = reparam </p>
 
 </div>
@@ -1339,7 +1339,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

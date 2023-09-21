@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -296,7 +296,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Create a fixed size memory pool. If you have a decent estimate of how many elements you need, <a class="el" href="class_o_n___fixed_size_pool.html#a639b1e5110105689c6d7c07cf575d97b">CreateForExperts()</a> is a typically a better choice. Otherwise, Create(sizeof_element) is typically the best option.</p>
-<p>Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned. element_count_estimate - [in] (0 = good default) If you know how many elements you will need, pass that number here. It is better to slightly overestimate than to slightly underestimate. If you do not have a good estimate, then use zero. block_element_capacity - [in] (0 = good default) If block_element_capacity is zero, <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> will calculate a block size that is efficent for most applications. If you are an expert user and want to specify the number of elements per block, then pass the number of elements per block here. When block_element_capacity &gt; 0 and element_count_estimate &gt; 0, the first block will have a capacity of at least element_count_estimate; in this case do not ask for extraordinarly large amounts of contiguous heap.</p>
+<p>Parameters: sizeof_element - [in] number of bytes in each element. This parameter must be greater than zero. In general, use sizeof(element type). If you pass a "raw" number as sizeof_element, then be certain that it is the right size to insure the fields in your elements will be properly aligned. element_count_estimate - [in] (0 = good default) If you know how many elements you will need, pass that number here. It is better to slightly overestimate than to slightly underestimate. If you do not have a good estimate, then use zero. block_element_capacity - [in] (0 = good default) If block_element_capacity is zero, <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> will calculate a block size that is efficient for most applications. If you are an expert user and want to specify the number of elements per block, then pass the number of elements per block here. When block_element_capacity &gt; 0 and element_count_estimate &gt; 0, the first block will have a capacity of at least element_count_estimate; in this case do not ask for extraordinarly large amounts of contiguous heap.</p>
 <p>Remarks: You must call <a class="el" href="class_o_n___fixed_size_pool.html#af5d7fe1bec32987e3c035a753e16c294">Create()</a> on an unused <a class="el" href="class_o_n___fixed_size_pool.html">ON_FixedSizePool</a> or call <a class="el" href="class_o_n___fixed_size_pool.html#a373f8bb4eda7fe5abfb08875a87ac00a">Destroy()</a> before calling create. Returns: True if successful and the pool can be used. </p>
 
 </div>
@@ -400,7 +400,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the i-th elment in the fixed size pool. Parameters: element_index - [in] Returns: A pointer to the element with the specified index. <br  />
+<p>Description: Get the i-th element in the fixed size pool. Parameters: element_index - [in] Returns: A pointer to the element with the specified index. <br  />
  The first element has element_index = 0 and is the element returned by the first call to <a class="el" href="class_o_n___fixed_size_pool.html#a500f50edb2b7efff4655f4ea9c264fa2">AllocateElement()</a>. The last element has element_index = ElementCount()-1. If element_index is out of range, nullptr is returned. Remarks: It is faster to use <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a0d52d7d6fc5290d8a9266bab85d3b88c">ON_FixedSizePoolIterator.FirstElement()</a> and <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a502e802f6f5dd70c8f868dffd3111fcc">ON_FixedSizePoolIterator.NextElement()</a> to iterate through the entire list of elements. This function is relatively efficient when there are a few large blocks in the pool or element_index is small compared to the number of elements in the first few blocks.</p>
 <p>If <a class="el" href="class_o_n___fixed_size_pool.html#a3b5cb208942ebb038e9cce4bfdadbbc3">ReturnElement()</a> is not used or no <a class="el" href="class_o_n___fixed_size_pool.html#a500f50edb2b7efff4655f4ea9c264fa2">AllocateElement()</a> calls are made after any use of <a class="el" href="class_o_n___fixed_size_pool.html#a3b5cb208942ebb038e9cce4bfdadbbc3">ReturnElement()</a>, then the i-th element is the one returned by the (i+1)-th call to <a class="el" href="class_o_n___fixed_size_pool.html#a500f50edb2b7efff4655f4ea9c264fa2">AllocateElement()</a> </p>
 
@@ -786,7 +786,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Used by The ThreadSafe...() functions and for expert users to use when managing memory controlled by this pool. Best to ingnore this unless you have a very clear idea of what you are doing, why you are doing it, and when you are doing it. Otherwise, you'll find yourself waiting forever on a nested access request. <br  />
+<p>Used by The ThreadSafe...() functions and for expert users to use when managing memory controlled by this pool. Best to ignore this unless you have a very clear idea of what you are doing, why you are doing it, and when you are doing it. Otherwise, you'll find yourself waiting forever on a nested access request. <br  />
  </p>
 
 </div>
@@ -794,7 +794,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

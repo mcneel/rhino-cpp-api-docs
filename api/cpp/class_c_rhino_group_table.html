@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -297,7 +297,7 @@ Friends</h2></td></tr>
 <p>Parameters: group - [in] The name and id are used as candidates. If they are in use, a new name or id is created.</p>
 <p>worksession_ref_model_sn - [in] 0: not from a reference model 1: not saved in files but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
 </p>
-<p>linked_idef_sn - [in] 0: not from a liked instance definition 1-1000: reserved for future use &gt;1000: group instance defintion serial number <br  />
+<p>linked_idef_sn - [in] 0: not from a liked instance definition 1-1000: reserved for future use &gt;1000: group instance definition serial number <br  />
 </p>
 <p>Returns: @untitled table &gt;=0 index of new grpup ON_UNSET_INT_INDEX group not added </p>
 
@@ -692,7 +692,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Use this to set <a class="el" href="class_c_rhino_group.html#af05954d7f9a041b7f522302b3a2ab9f0" title="Runtime index used to sort groups.">CRhinoGroup::m_sort_index</a> so that the values of m_sort_index run from 0 to <a class="el" href="class_c_rhino_group_table.html#a36b157ee5890568e38d27166c15f5760">GroupCount()</a>-1 and compare(group_table[i],group_table[j]) &lt; 0 ) implies group_table[i].m_sort_index &lt; group_table[j].m_sort_index.</p>
-<p>Parameters: compare - [in] compare function with prototype int compare(const CRhinoGroup* arg1,const CRhinoGroup* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL cull(const CRhinoGroup* arg,void* p). that returns TRUE if the group should be ignored when sorting. Groups that are ignored are not included in the list returned by GetSortedList(). Pass 0 if you do not need to cull the list. p - [in] pointer passed as last argument to compare() and cull().</p>
+<p>Parameters: compare - [in] compare function with prototype int compare(const CRhinoGroup* arg1,const CRhinoGroup* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL32 cull(const CRhinoGroup* arg,void* p). that returns TRUE if the group should be ignored when sorting. Groups that are ignored are not included in the list returned by GetSortedList(). Pass 0 if you do not need to cull the list. p - [in] pointer passed as last argument to compare() and cull().</p>
 <p>Remarks: After calling <a class="el" href="class_c_rhino_group_table.html#a1da9058afd110275b772a03a5a3eaec0">Sort()</a>, you can repeatedly call GetSortedList() to get a sorted list of <a class="el" href="class_c_rhino_group.html">CRhinoGroup</a> pointers. <a class="el" href="class_c_rhino_group_table.html#a1da9058afd110275b772a03a5a3eaec0">Sort()</a> and GetSortedList() do not modify the order or persistent information in the group table. They are intended to be used to get sorted lists of groups for dialogs, etc. </p>
 
 </div>
@@ -761,7 +761,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

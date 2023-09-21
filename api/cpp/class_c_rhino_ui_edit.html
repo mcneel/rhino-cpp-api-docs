@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -210,8 +210,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ae69f2318d1d8ca3504a15771421fc68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef6f9d866cc1a9b4e0556517e647832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_edit.html#a6ef6f9d866cc1a9b4e0556517e647832">OnCharReal</a> (UINT nChar, UINT nRepCnt, UINT nFlags)</td></tr>
 <tr class="separator:a6ef6f9d866cc1a9b4e0556517e647832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cf5716025d4ad49f0ff33b7e6a850a2"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_edit.html#a2cf5716025d4ad49f0ff33b7e6a850a2">PreCreateWindow</a> (CREATESTRUCT &amp;cs)</td></tr>
-<tr class="separator:a2cf5716025d4ad49f0ff33b7e6a850a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdac9f3cbad56caa7e5fd768957d7241"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_edit.html#acdac9f3cbad56caa7e5fd768957d7241">PreCreateWindow</a> (CREATESTRUCT &amp;cs)</td></tr>
+<tr class="separator:acdac9f3cbad56caa7e5fd768957d7241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a499fa8a014c347cf9ad6d1fe6f782304"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_edit.html#a499fa8a014c347cf9ad6d1fe6f782304">PreSubclassWindow</a> ()</td></tr>
 <tr class="separator:a499fa8a014c347cf9ad6d1fe6f782304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -261,7 +261,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Available edit control modes et_text - Standard text type edit control. et_int - Only allow integer values. Make sure you replace the standard data exchange macro with the following to allow data validation: m_MyEditControl.DDX_Text( pDX, nIDC, m_nMyIntProperty); et_double - Only allow double values1. Make sure you replace the standard data exchange macro with the following to allow data validation: m_MyEditControl.DDX_Text( pDX, nIDC, m_nMyIntProperty); et_ip, - Windows IP imput control </p>
+<p>Description: Available edit control modes et_text - Standard text type edit control. et_int - Only allow integer values. Make sure you replace the standard data exchange macro with the following to allow data validation: m_MyEditControl.DDX_Text( pDX, nIDC, m_nMyIntProperty); et_double - Only allow double values1. Make sure you replace the standard data exchange macro with the following to allow data validation: m_MyEditControl.DDX_Text( pDX, nIDC, m_nMyIntProperty); et_ip, - Windows IP input control </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a30e8e799c29c470266b08c9cecd20f68abcef713b6361a140f99328a57abd5a53"></a>et_text&#160;</td><td class="fielddoc"><p>Default type. </p>
 </td></tr>
@@ -490,7 +490,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns the current decimal display precison when the control is displaying double values (<a class="el" href="class_c_rhino_ui_edit.html#a30e8e799c29c470266b08c9cecd20f68a916ed1b4b08e793d6628ac7f21130f6a">CRhinoUiEdit::et_double</a>).</p>
+<p>Description: Returns the current decimal display precision when the control is displaying double values (<a class="el" href="class_c_rhino_ui_edit.html#a30e8e799c29c470266b08c9cecd20f68a916ed1b4b08e793d6628ac7f21130f6a">CRhinoUiEdit::et_double</a>).</p>
 <p>Returns: Returns the current display precision</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a185ac15716d867ce2fe4afdb8dcb3197">CRhinoUiEdit::SetEditType()</a> CRhinoUiEdit::SetDisplayPrecison() </p>
 
@@ -663,7 +663,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get spin button control embeded in this edit control.</p>
+<p>Description: Get spin button control embedded in this edit control.</p>
 <p>Returns: Returns pointer to spin button control if one was created otherwise NULL.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a0f3a03aea78e96646af566b2be1c2ccf">CRhinoUiEdit::IncludeSpinner()</a> <a class="el" href="class_c_rhino_ui_edit.html#acc2561866544e1ca6a493ef006a17805">CRhinoUiEdit::SetIncludeSpinner()</a> </p>
 
@@ -704,7 +704,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If this method returns true a spinner control will be created and embeded in this edit control. Use the <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">GetSpinButtonCtrl()</a> method to gain access to the embeded control.</p>
+<p>Description: If this method returns true a spinner control will be created and embedded in this edit control. Use the <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">GetSpinButtonCtrl()</a> method to gain access to the embedded control.</p>
 <p>Returns: Returns true if Spinner will be created</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">CRhinoUiEdit::GetSpinButtonCtrl()</a> </p>
 
@@ -975,8 +975,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2cf5716025d4ad49f0ff33b7e6a850a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cf5716025d4ad49f0ff33b7e6a850a2">&#9670;&nbsp;</a></span>PreCreateWindow()</h2>
+<a id="acdac9f3cbad56caa7e5fd768957d7241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdac9f3cbad56caa7e5fd768957d7241">&#9670;&nbsp;</a></span>PreCreateWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -985,7 +985,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual BOOL CRhinoUiEdit::PreCreateWindow </td>
+          <td class="memname">virtual <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> CRhinoUiEdit::PreCreateWindow </td>
           <td>(</td>
           <td class="paramtype">CREATESTRUCT &amp;&#160;</td>
           <td class="paramname"><em>cs</em></td><td>)</td>
@@ -1042,7 +1042,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: If this is set to true then NULL values are allowed in control.</p>
-<p>Parameters: bSet [in] If set to true then NULL values are allowed otherwise this control must contain at least one charachter. </p>
+<p>Parameters: bSet [in] If set to true then NULL values are allowed otherwise this control must contain at least one character. </p>
 
 </div>
 </div>
@@ -1061,7 +1061,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Sets the current decimal display precison when the control is displaying double values (<a class="el" href="class_c_rhino_ui_edit.html#a30e8e799c29c470266b08c9cecd20f68a916ed1b4b08e793d6628ac7f21130f6a">CRhinoUiEdit::et_double</a>).</p>
+<p>Description: Sets the current decimal display precision when the control is displaying double values (<a class="el" href="class_c_rhino_ui_edit.html#a30e8e799c29c470266b08c9cecd20f68a916ed1b4b08e793d6628ac7f21130f6a">CRhinoUiEdit::et_double</a>).</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a185ac15716d867ce2fe4afdb8dcb3197">CRhinoUiEdit::SetEditType()</a> CRhinoUiEdit::DisplayPrecison() </p>
 
 </div>
@@ -1145,7 +1145,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This function will set the create spinner control flag. If this is set to true then a spinner control will be created and embeded in this edit control. Use the <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">GetSpinButtonCtrl()</a> method to gain access to the embeded control.</p>
+<p>Description: This function will set the create spinner control flag. If this is set to true then a spinner control will be created and embedded in this edit control. Use the <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">GetSpinButtonCtrl()</a> method to gain access to the embedded control.</p>
 <p>Parameters: b [in] If true create spin control when this control is created.</p>
 <p>Returns: Return previous value.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a0f3a03aea78e96646af566b2be1c2ccf">CRhinoUiEdit::IncludeSpinner()</a> <a class="el" href="class_c_rhino_ui_edit.html#a012c6519db40c019e51036ad4b2ce1ac">CRhinoUiEdit::GetSpinButtonCtrl()</a> </p>
@@ -1244,7 +1244,7 @@ Protected Attributes</h2></td></tr>
 <p>Description: Set or clear minimum numeric value. This is only relevant if the EditType() is set to et_double or et_int.</p>
 <p>Parameters: bSset [in] If true then check minimum value flag is set and the minimum allowable value is set to min. If false then check minimum value flag is unset. nMin = Minimum allowable value, only used if set is true otherwise is ignored.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a185ac15716d867ce2fe4afdb8dcb3197">CRhinoUiEdit::SetEditType()</a> <a class="el" href="class_c_rhino_ui_edit.html#afeaa2b40a4a8a6696ef102160ba47581">CRhinoUiEdit::DDX_Text</a> <a class="el" href="class_c_rhino_ui_edit.html#a6f18dae359bc0f4f74ace1ee1e9e7b34">CRhinoUiEdit::SetMax()</a></p>
-<p>Notes: Constructor sets has minimum falg to FALSE </p>
+<p>Notes: Constructor sets has minimum flag to FALSE </p>
 
 </div>
 </div>
@@ -1276,7 +1276,7 @@ Protected Attributes</h2></td></tr>
 <p>Description: Set or clear minimum numeric value. This is only relevant if the EditType() is set to et_double or et_int.</p>
 <p>Parameters: bSset [in] If true then check minimum value flag is set and the minimum allowable value is set to min. If false then check minimum value flag is unset. nMin = Minimum allowable value, only used if set is true otherwise is ignored.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a185ac15716d867ce2fe4afdb8dcb3197">CRhinoUiEdit::SetEditType()</a> <a class="el" href="class_c_rhino_ui_edit.html#afeaa2b40a4a8a6696ef102160ba47581">CRhinoUiEdit::DDX_Text</a> <a class="el" href="class_c_rhino_ui_edit.html#a6f18dae359bc0f4f74ace1ee1e9e7b34">CRhinoUiEdit::SetMax()</a></p>
-<p>Notes: Constructor sets has minimum falg to FALSE </p>
+<p>Notes: Constructor sets has minimum flag to FALSE </p>
 
 </div>
 </div>
@@ -1482,8 +1482,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get string from edit control.</p>
-<p>Returns: Returns current edit control string.</p>
+<p>Description: Get string from edit control. /// Returns: Returns current edit control string.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_edit.html#a0e7073736b90bed83490c36930df9113">CRhinoUiEdit::GetNumericValue()</a> <a class="el" href="class_c_rhino_ui_edit.html#a6406bc0b29d28865e810b9cd6d3847f3">CRhinoUiEdit::GetStringValue()</a> </p>
 
 </div>
@@ -1860,7 +1859,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

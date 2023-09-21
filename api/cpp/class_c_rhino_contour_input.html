@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8962b133f006d4b93e002d0e790e3a71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_contour_input.html#a8962b133f006d4b93e002d0e790e3a71">m_AssignLayerBy</a></td></tr>
-<tr class="memdesc:a8962b133f006d4b93e002d0e790e3a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine what layer to put output on  <a href="class_c_rhino_contour_input.html#a8962b133f006d4b93e002d0e790e3a71">More...</a><br /></td></tr>
+<tr class="memdesc:a8962b133f006d4b93e002d0e790e3a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter is now used to assign attributes (not just layer - treat like Assign Attributes: ByLayer/ByInput)  <a href="class_c_rhino_contour_input.html#a8962b133f006d4b93e002d0e790e3a71">More...</a><br /></td></tr>
 <tr class="separator:a8962b133f006d4b93e002d0e790e3a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee7b262205462c98ad76bcfd5adb523b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_contour_input.html#aee7b262205462c98ad76bcfd5adb523b">m_attribs</a></td></tr>
 <tr class="memdesc:aee7b262205462c98ad76bcfd5adb523b"><td class="mdescLeft">&#160;</td><td class="mdescRight">input Attributes  <a href="class_c_rhino_contour_input.html#aee7b262205462c98ad76bcfd5adb523b">More...</a><br /></td></tr>
@@ -112,9 +112,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a70b54a5fad6be376c59e87a365fac3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40029bde9e74c88999c8a9e6d76d6500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_contour_input.html#a40029bde9e74c88999c8a9e6d76d6500">m_JoinCurves</a></td></tr>
 <tr class="separator:a40029bde9e74c88999c8a9e6d76d6500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a626a0c17adf82fa4ae5264862cc94c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_contour_input.html#a7a626a0c17adf82fa4ae5264862cc94c">m_limit_range</a></td></tr>
-<tr class="memdesc:a7a626a0c17adf82fa4ae5264862cc94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if contours are only to be made between m_basept and m_endpt  <a href="class_c_rhino_contour_input.html#a7a626a0c17adf82fa4ae5264862cc94c">More...</a><br /></td></tr>
-<tr class="separator:a7a626a0c17adf82fa4ae5264862cc94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d940b403d2082c5021f031ca0421b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_contour_input.html#a5d940b403d2082c5021f031ca0421b41">m_limit_range</a></td></tr>
+<tr class="memdesc:a5d940b403d2082c5021f031ca0421b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if contours are only to be made between m_basept and m_endpt  <a href="class_c_rhino_contour_input.html#a5d940b403d2082c5021f031ca0421b41">More...</a><br /></td></tr>
+<tr class="separator:a5d940b403d2082c5021f031ca0421b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Description: Input class for MakeRhinoContours functions below. </p>
@@ -149,7 +149,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>determine what layer to put output on </p>
+<p>This parameter is now used to assign attributes (not just layer - treat like Assign Attributes: ByLayer/ByInput) </p>
 <p>0 = CurrentLayer, 1 = InputObject </p>
 
 </div>
@@ -314,14 +314,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a626a0c17adf82fa4ae5264862cc94c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a626a0c17adf82fa4ae5264862cc94c">&#9670;&nbsp;</a></span>m_limit_range</h2>
+<a id="a5d940b403d2082c5021f031ca0421b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d940b403d2082c5021f031ca0421b41">&#9670;&nbsp;</a></span>m_limit_range</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOL CRhinoContourInput::m_limit_range</td>
+          <td class="memname"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> CRhinoContourInput::m_limit_range</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -333,7 +333,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

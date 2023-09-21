@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -253,7 +253,7 @@ Static Public Attributes</h2></td></tr>
 <li>If vertex_id_map is null, then the <a class="el" href="class_o_n___mesh_face_side.html#ae203d60dad287a2f654fd1ef55ef304e" title="vertex indices or ids (equal values indicate unset)">ON_MeshFaceSide::m_vi</a>[] values are the vertex index values from mesh_face_list[].</li>
 <li>If vertex_id_map is not null, then vertex_id_map[] is an array with the mesh_vertex_count elements and <a class="el" href="class_o_n___mesh_face_side.html#ae203d60dad287a2f654fd1ef55ef304e" title="vertex indices or ids (equal values indicate unset)">ON_MeshFaceSide::m_vi</a>[] values are vertex_id_map[mesh_face_list[] vertex indices]. A vertex_id_map[] is commonly used when coincident vertices need to be treated as a single topological entity. face_side_list - [out]</li>
 <li>If the input value of face_side_list is not null, then face_side_list[] must be long enough to hold the returned face_side_list list. <br  />
- The maximum posssible length is 4*mesh_face_list.FaceCount().</li>
+ The maximum possible length is 4*mesh_face_list.FaceCount().</li>
 <li>If the input falue of face_side_list is null, memory will be allocated using <a class="el" href="group__open_n_u_r_b_s.html#gacadf2b280c0895b23634d3ad33a6a04b">onmalloc()</a> and the caller is responsible for calling <a class="el" href="group__open_n_u_r_b_s.html#ga11bd5c38846c84d11a00bd1b1cd31e61">onfree()</a> at an appropriate time. The returned is face_side_list[] is dictionary sorted by <a class="el" href="class_o_n___mesh_face_side.html#aad6639c8fe295795da1551573c36e354" title="face index or id">ON_MeshFaceSide.m_fi</a> and then ON_MeshFaceSide.m_si. The vertex ids satisfy <a class="el" href="class_o_n___mesh_face_side.html#ae203d60dad287a2f654fd1ef55ef304e" title="vertex indices or ids (equal values indicate unset)">ON_MeshFaceSide.m_vi</a>[0] &lt; <a class="el" href="class_o_n___mesh_face_side.html#ae203d60dad287a2f654fd1ef55ef304e" title="vertex indices or ids (equal values indicate unset)">ON_MeshFaceSide.m_vi</a>[1]. <a class="el" href="class_o_n___mesh_face_side.html#a7ec526ef41564986c97960c4361dc685" title="0 = counterclockwise, 1 = clockwise (reversed)">ON_MeshFaceSide.m_dir</a> is 0 if the face vertex order is the same and 1 if the face vertex order is opposite. The static sorting functions on <a class="el" href="class_o_n___mesh_face_side.html">ON_MeshFaceSide</a> can be used to change this ordering. Returns: Number of elements set in face_side_list[]. Remarks: Faces in mesh_face_list with vertex indices that are &gt;= mesh_vertex_count are ignored. Degenerate faces are processed, but degenerate sides (equal vertex ids) are not added to face_side_list[]. </li>
 </ul>
 
@@ -292,7 +292,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Sort the face_sides[] using the compare function <a class="el" href="class_o_n___mesh_face_side.html#a299a6da7abf65f5e6a3246ac51f4b0ef">ON_MeshFaceSide::CompareFaceIndex()</a>. Paramters: face_sides - [in/out] array to sort face_sides_count - [in] number of elements in the face_sides[] array. Remarks: The function is thread safe. </p>
+<p>Description: Sort the face_sides[] using the compare function <a class="el" href="class_o_n___mesh_face_side.html#a299a6da7abf65f5e6a3246ac51f4b0ef">ON_MeshFaceSide::CompareFaceIndex()</a>. Parameters: face_sides - [in/out] array to sort face_sides_count - [in] number of elements in the face_sides[] array. Remarks: The function is thread safe. </p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Sort the face_sides[] using the compare function <a class="el" href="class_o_n___mesh_face_side.html#aa7a3b9af1312f72867ed12be1c523a00">ON_MeshFaceSide::CompareVertexIndex()</a>. Paramters: face_sides - [in/out] array to sort face_sides_count - [in] number of elements in the face_sides[] array. Remarks: The function is thread safe. </p>
+<p>Description: Sort the face_sides[] using the compare function <a class="el" href="class_o_n___mesh_face_side.html#aa7a3b9af1312f72867ed12be1c523a00">ON_MeshFaceSide::CompareVertexIndex()</a>. Parameters: face_sides - [in/out] array to sort face_sides_count - [in] number of elements in the face_sides[] array. Remarks: The function is thread safe. </p>
 
 </div>
 </div>
@@ -456,7 +456,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

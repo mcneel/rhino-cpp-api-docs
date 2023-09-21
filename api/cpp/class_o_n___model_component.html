@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_o_n___model_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ON_ModelComponent Class Reference<div class="ingroups"><a class="el" href="group__open_n_u_r_b_s.html">OpenNURBS</a></div></div>  </div>
@@ -84,16 +85,19 @@ Inheritance diagram for ON_ModelComponent:</div>
 <area href="class_o_n___object.html" alt="ON_Object" shape="rect" coords="0,0,190,24"/>
 <area href="class_o_n___bitmap.html" alt="ON_Bitmap" shape="rect" coords="200,112,390,136"/>
 <area href="class_o_n___dim_style.html" alt="ON_DimStyle" shape="rect" coords="200,168,390,192"/>
-<area href="class_o_n___group.html" alt="ON_Group" shape="rect" coords="200,224,390,248"/>
-<area href="class_o_n___hatch_pattern.html" alt="ON_HatchPattern" shape="rect" coords="200,280,390,304"/>
-<area href="class_o_n___history_record.html" alt="ON_HistoryRecord" shape="rect" coords="200,336,390,360"/>
-<area href="class_o_n___instance_definition.html" alt="ON_InstanceDefinition" shape="rect" coords="200,392,390,416"/>
-<area href="class_o_n___layer.html" alt="ON_Layer" shape="rect" coords="200,448,390,472"/>
-<area href="class_o_n___linetype.html" title="class ON_Linetype" alt="ON_Linetype" shape="rect" coords="200,504,390,528"/>
-<area href="class_o_n___material.html" alt="ON_Material" shape="rect" coords="200,560,390,584"/>
-<area href="class_o_n___model_geometry_component.html" alt="ON_ModelGeometryComponent" shape="rect" coords="200,616,390,640"/>
-<area href="class_o_n___text_style.html" alt="ON_TextStyle" shape="rect" coords="200,672,390,696"/>
-<area href="class_o_n___texture_mapping.html" alt="ON_TextureMapping" shape="rect" coords="200,728,390,752"/>
+<area href="class_o_n___embedded_file.html" alt="ON_EmbeddedFile" shape="rect" coords="200,224,390,248"/>
+<area href="class_o_n___group.html" alt="ON_Group" shape="rect" coords="200,280,390,304"/>
+<area href="class_o_n___hatch_pattern.html" alt="ON_HatchPattern" shape="rect" coords="200,336,390,360"/>
+<area href="class_o_n___history_record.html" alt="ON_HistoryRecord" shape="rect" coords="200,392,390,416"/>
+<area href="class_o_n___instance_definition.html" alt="ON_InstanceDefinition" shape="rect" coords="200,448,390,472"/>
+<area href="class_o_n___layer.html" alt="ON_Layer" shape="rect" coords="200,504,390,528"/>
+<area href="class_o_n___linetype.html" title="class ON_Linetype" alt="ON_Linetype" shape="rect" coords="200,560,390,584"/>
+<area href="class_o_n___material.html" alt="ON_Material" shape="rect" coords="200,616,390,640"/>
+<area href="class_o_n___model_geometry_component.html" alt="ON_ModelGeometryComponent" shape="rect" coords="200,672,390,696"/>
+<area href="class_o_n___render_content.html" alt="ON_RenderContent" shape="rect" coords="200,728,390,752"/>
+<area href="class_o_n___section_style.html" title="class ON_SectionStyle" alt="ON_SectionStyle" shape="rect" coords="200,784,390,808"/>
+<area href="class_o_n___text_style.html" alt="ON_TextStyle" shape="rect" coords="200,840,390,864"/>
+<area href="class_o_n___texture_mapping.html" alt="ON_TextureMapping" shape="rect" coords="200,896,390,920"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -123,21 +127,29 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = 0, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacabe53a0541a6d36f6ecb879fa2c584b08">Type::Image</a> = 1, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca1270ec6930150b50ca550c0dc799d263">Type::TextureMapping</a> = 2, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad68f567316316750d31138a1185b4fb9">Type::RenderMaterial</a> = 3, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad92a8333dd3ccb895cc65f7455b71206">Type::Material</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae32935f96aedbf5444a07da4cfbdd652">Type::LinePattern</a> = 4, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad68f567316316750d31138a1185b4fb9">Type::RenderMaterial</a> = Material, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae32935f96aedbf5444a07da4cfbdd652">Type::LinePattern</a> = 4, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca359b71e88f40029251366609358a302f">Type::Layer</a> = 5, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca03937134cedab9078be39a77ee3a48a0">Type::Group</a> = 6, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca87a09f640dea2e6843778ea1b89124f5">Type::TextStyle</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac8ee421ce9c339f0c25e244d00142bbc">Type::DimStyle</a> = 8, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca87a09f640dea2e6843778ea1b89124f5">Type::TextStyle</a> = 7, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac8ee421ce9c339f0c25e244d00142bbc">Type::DimStyle</a> = 8, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacadf3900765f8bb524dc2911688c9f835e">Type::RenderLight</a> = 9, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad18ef15cd6a274f4c950145b8478bb41">Type::HatchPattern</a> = 10, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca21e9d09dda17806ecff11df2a530328e">Type::InstanceDefinition</a> = 11, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacafe7d6ee189ff8d2aaf2267423fdbc05a">Type::ModelGeometry</a> = 12, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca21e9d09dda17806ecff11df2a530328e">Type::InstanceDefinition</a> = 11, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacafe7d6ee189ff8d2aaf2267423fdbc05a">Type::ModelGeometry</a> = 12, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaf53acc9e6d0618a0e0d4db806de77642">Type::HistoryRecord</a> = 13, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca8906de12ec3c7bb2749a3801fbbfd190">Type::RenderContent</a> = 14, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba">Type::EmbeddedFile</a> = 15, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567">Type::ObsoleteValue</a> = 16, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7">Type::SectionStyle</a> = 17, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
 <br />
  }</td></tr>
 <tr class="memdesc:a2977d69091b4952cc19b0189a28a0eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> enum has a value for each explicit component type and two special values, Unset and Mixed. Use an <a class="el" href="class_o_n___model_component_type_iterator.html">ON_ModelComponentTypeIterator</a> instance to iterate over the <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> values. /summary&gt;  <a href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">More...</a><br /></td></tr>
@@ -201,11 +213,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af07b214b4a81087ae9704c095847fa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3c2db48f10168187d29f7295ba8b20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#acf3c2db48f10168187d29f7295ba8b20">ComponentTypeIsSet</a> () const</td></tr>
 <tr class="separator:acf3c2db48f10168187d29f7295ba8b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519fee9947b7f5652095e5e5973f99c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a519fee9947b7f5652095e5e5973f99c9">ContentVersionNumber</a> () const</td></tr>
+<tr class="memitem:a519fee9947b7f5652095e5e5973f99c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a519fee9947b7f5652095e5e5973f99c9">ContentVersionNumber</a> () const</td></tr>
 <tr class="separator:a519fee9947b7f5652095e5e5973f99c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3088d8d85e64261ea0f40121ed4b27"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a1f3088d8d85e64261ea0f40121ed4b27">CopyFrom</a> (const <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> &amp;src, unsigned int attributes_filter)</td></tr>
 <tr class="separator:a1f3088d8d85e64261ea0f40121ed4b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc6c77d678662a84796ee0380ec55bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aacc6c77d678662a84796ee0380ec55bc">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> current_remainder) const override</td></tr>
+<tr class="memitem:aacc6c77d678662a84796ee0380ec55bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aacc6c77d678662a84796ee0380ec55bc">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const override</td></tr>
 <tr class="separator:aacc6c77d678662a84796ee0380ec55bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf54d789ced063daf43b2a9b600e523"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a2bf54d789ced063daf43b2a9b600e523">DeletedName</a> () const</td></tr>
 <tr class="separator:a2bf54d789ced063daf43b2a9b600e523"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,7 +329,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b3705da46f2d5fd25b6308b8a6ea7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d33af020136d855b8ff663911081c3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a05d33af020136d855b8ff663911081c3">ReferenceModelSerialNumber</a> () const</td></tr>
 <tr class="separator:a05d33af020136d855b8ff663911081c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec107d943b87f00ed57478ccc389ba17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">RuntimeSerialNumber</a> () const</td></tr>
+<tr class="memitem:aec107d943b87f00ed57478ccc389ba17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">RuntimeSerialNumber</a> () const</td></tr>
 <tr class="separator:aec107d943b87f00ed57478ccc389ba17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada84c12d978b562a779a6504e0d35f5e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ada84c12d978b562a779a6504e0d35f5e">SetAndLockId</a> ()</td></tr>
 <tr class="separator:ada84c12d978b562a779a6504e0d35f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -480,7 +492,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abf68e352f017e02a8a17960145ee651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace56044c83449c2520d015c590a7c4d5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ace56044c83449c2520d015c590a7c4d5">IsValidComponentNameFirstCodePoint</a> (int length, const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *candidate_component_name)</td></tr>
 <tr class="separator:ace56044c83449c2520d015c590a7c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0016925d7bd2e5ebf48a5e7fb002d874"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">IsValidComponentNameFirstCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> unicode_code_point)</td></tr>
+<tr class="memitem:a0016925d7bd2e5ebf48a5e7fb002d874"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">IsValidComponentNameFirstCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> unicode_code_point)</td></tr>
 <tr class="separator:a0016925d7bd2e5ebf48a5e7fb002d874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58114aef25df63091c334e0aa339e35f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a58114aef25df63091c334e0aa339e35f">NameLeaf</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:a58114aef25df63091c334e0aa339e35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,7 +500,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a64475590e76eefde0ef3be0d6d2688b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88e0dacbb65387d6076879e4deb0656"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ab88e0dacbb65387d6076879e4deb0656">NameReferencePrefix</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:ab88e0dacbb65387d6076879e4deb0656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544efa96ab3a822b74501aadc4816eb6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a544efa96ab3a822b74501aadc4816eb6">NextRuntimeSerialNumber</a> ()</td></tr>
+<tr class="memitem:a544efa96ab3a822b74501aadc4816eb6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a544efa96ab3a822b74501aadc4816eb6">NextRuntimeSerialNumber</a> ()</td></tr>
 <tr class="separator:a544efa96ab3a822b74501aadc4816eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f76d3c2fd3cbe32729e2434a6ae31e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a93f76d3c2fd3cbe32729e2434a6ae31e">RemoveAllReferencePrefixDelimiters</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:a93f76d3c2fd3cbe32729e2434a6ae31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,10 +538,16 @@ Static Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7f6f2f7fe63a3db314c6456f63d7d728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a7f6f2f7fe63a3db314c6456f63d7d728">IncrementContentVersionNumber</a> () const</td></tr>
 <tr class="separator:a7f6f2f7fe63a3db314c6456f63d7d728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8ee9f44b86533fa26957ef9dd2eac119"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a8ee9f44b86533fa26957ef9dd2eac119">CRhinoObject</a></td></tr>
+<tr class="separator:a8ee9f44b86533fa26957ef9dd2eac119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>/ / Copyright (c) 1993-2012 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Description: The <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> class is a base class for all components in a model and manages the index, id and other information common to all components in a model. </p>
+<div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. Description: The <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> class is a base class for all components in a model and manages the index, id and other information common to all components in a model. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab89963a3ae7d6ebae18eb5e00ca469bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab89963a3ae7d6ebae18eb5e00ca469bc">&#9670;&nbsp;</a></span>Attributes</h2>
@@ -590,7 +608,9 @@ Protected Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacabe53a0541a6d36f6ecb879fa2c584b08"></a>Image&#160;</td><td class="fielddoc"><p>summary&gt;Texture mapping. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca1270ec6930150b50ca550c0dc799d263"></a>TextureMapping&#160;</td><td class="fielddoc"><p>summary&gt;Render material. </p>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca1270ec6930150b50ca550c0dc799d263"></a>TextureMapping&#160;</td><td class="fielddoc"><p>summary&gt;Material. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacad92a8333dd3ccb895cc65f7455b71206"></a>Material&#160;</td><td class="fielddoc"><p>summary&gt;Render material. Deprecated in favor of Material. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacad68f567316316750d31138a1185b4fb9"></a>RenderMaterial&#160;</td><td class="fielddoc"><p>summary&gt;Line pattern (linetype). </p>
 </td></tr>
@@ -612,7 +632,18 @@ Protected Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacafe7d6ee189ff8d2aaf2267423fdbc05a"></a>ModelGeometry&#160;</td><td class="fielddoc"><p>summary&gt;History record. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaf53acc9e6d0618a0e0d4db806de77642"></a>HistoryRecord&#160;</td><td class="fielddoc"><p>summary&gt;Multiple component types. Used when a component type filter must include all explicit component types. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaf53acc9e6d0618a0e0d4db806de77642"></a>HistoryRecord&#160;</td><td class="fielddoc"><p>summary&gt;Render content. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca8906de12ec3c7bb2749a3801fbbfd190"></a>RenderContent&#160;</td><td class="fielddoc"><p>summary&gt;Embedded file for render texture. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba"></a>EmbeddedFile&#160;</td><td class="fielddoc"><p>summary&gt;This value was never used and is now obsolete. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567"></a>ObsoleteValue&#160;</td><td class="fielddoc"><p>summary&gt;Section style attributes </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7"></a>SectionStyle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4"></a>NumOf&#160;</td><td class="fielddoc"><p>If you add any more, add them here, above NumOf. </p>
+<p>summary&gt;Number of items above. </p>
+<p>summary&gt;Multiple component types. Used when a component type filter must include all explicit component types. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52"></a>Mixed&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -1348,7 +1379,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> ON_ModelComponent::ContentVersionNumber </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> ON_ModelComponent::ContentVersionNumber </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1397,9 +1428,9 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> ON_ModelComponent::DataCRC </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_ModelComponent::DataCRC </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
           <td class="paramname"><em>current_remainder</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1516,7 +1547,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a21c7b04a80f1806c3a45f72d7c491a44">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___model_geometry_component.html#a0aa8ad836340ddda12814ffe1d055d82">ON_ModelGeometryComponent</a>, <a class="el" href="class_c_rhino_instance_definition.html#a5a970e734ec1202291b8257b80fdb28a">CRhinoInstanceDefinition</a>, <a class="el" href="class_o_n___texture_mapping.html#af92b1a3e6bb57bd1cc93657ac9f2a468">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aee10904cd774f0bcb4f44ccf04c46fe8">ON_TextStyle</a>, and <a class="el" href="class_o_n___history_record.html#a93d692afeed5dd4c069ac775e83f87ae">ON_HistoryRecord</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___model_geometry_component.html#a0aa8ad836340ddda12814ffe1d055d82">ON_ModelGeometryComponent</a>, <a class="el" href="class_c_rhino_instance_definition.html#a5a970e734ec1202291b8257b80fdb28a">CRhinoInstanceDefinition</a>, <a class="el" href="class_o_n___texture_mapping.html#af92b1a3e6bb57bd1cc93657ac9f2a468">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aee10904cd774f0bcb4f44ccf04c46fe8">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a93d692afeed5dd4c069ac775e83f87ae">ON_HistoryRecord</a>, and <a class="el" href="class_o_n___section_style.html#a329b5c1fe84870e803f3dc88b1f1b328">ON_SectionStyle</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +1836,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: When a component is in a model as part of the information required for a linked instance definition, this value identifies the the linked instance definition reference model. Remarks: Reference components are not saved in .3dm archives. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives.</p>
-<p>In Rhino, this value is a linked instance definition runtime serial number and these values are used.. 0: Active model component. 1-1000: reserved for future use &gt;1000: linked instance defintion serial number </p>
+<p>In Rhino, this value is a linked instance definition runtime serial number and these values are used.. 0: Active model component. 1-1000: reserved for future use &gt;1000: linked instance definition serial number </p>
 
 </div>
 </div>
@@ -2041,7 +2072,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___texture_mapping.html#afc515aa18840926351300b333a13417a">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aefedb29b225a6aa9132d46584db39ac9">ON_TextStyle</a>, and <a class="el" href="class_o_n___history_record.html#a4c2646e0cb34761ac568448f7fa898d0">ON_HistoryRecord</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___texture_mapping.html#afc515aa18840926351300b333a13417a">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aefedb29b225a6aa9132d46584db39ac9">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a4c2646e0cb34761ac568448f7fa898d0">ON_HistoryRecord</a>, and <a class="el" href="class_o_n___section_style.html#aaf81c03fb0ec314cf57f33b3c3c671fb">ON_SectionStyle</a>.</p>
 
 </div>
 </div>
@@ -2234,7 +2265,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static bool ON_ModelComponent::IsValidComponentNameFirstCodePoint </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
           <td class="paramname"><em>unicode_code_point</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2484,7 +2515,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: A value identifing the model that manages this component. Remarks: If the component is being managed by a model, this value identifies the model. In Rhino, this value is the document runtime serial number. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives. </p>
+<p>Returns: A value identifying the model that manages this component. Remarks: If the component is being managed by a model, this value identifies the model. In Rhino, this value is the document runtime serial number. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives. </p>
 
 </div>
 </div>
@@ -2772,7 +2803,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> ON_ModelComponent::NextRuntimeSerialNumber </td>
+          <td class="memname">static <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> ON_ModelComponent::NextRuntimeSerialNumber </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2925,7 +2956,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: When a compoent is in a model for reference, this value identifies the reference model. Remarks: Reference components are not saved in .3dm archives. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives.</p>
+<p>Returns: When a component is in a model for reference, this value identifies the reference model. Remarks: Reference components are not saved in .3dm archives. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives.</p>
 <p>In Rhino, this value is a worksession model runtime serial number and these values are used. 0: not from a worksession reference model 1: from an unidentified reference model 2-1000: reserved for future use &gt;1000: worksession reference model serial number </p>
 
 </div>
@@ -2953,7 +2984,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Remove all occurances of ON::NameReferenceDelimiter() from name. </p>
+<p>Description: Remove all occurrences of ON::NameReferenceDelimiter() from name. </p>
 
 </div>
 </div>
@@ -3007,7 +3038,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Remove any trailing occurance of <a class="el" href="class_o_n___model_component.html#ae65df2e8323ee23f769316b506a5bdaf">ON_ModelComponent::NamePathSeparator</a> from name. </p>
+<p>Description: Remove any trailing occurrence of <a class="el" href="class_o_n___model_component.html#ae65df2e8323ee23f769316b506a5bdaf">ON_ModelComponent::NamePathSeparator</a> from name. </p>
 
 </div>
 </div>
@@ -3034,7 +3065,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Remove any trailing occurance of ON_ModelComponent::NameReferenceDelimiter from name. Example: "A.3dm" = ON_ModelComponent::RemoveTrailingRemoveReferencePrefixDelimiter("A.3dm : "); </p>
+<p>Description: Remove any trailing occurrence of ON_ModelComponent::NameReferenceDelimiter from name. Example: "A.3dm" = ON_ModelComponent::RemoveTrailingRemoveReferencePrefixDelimiter("A.3dm : "); </p>
 
 </div>
 </div>
@@ -3061,7 +3092,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Remove any trailing occurance of ON_ModelComponent::NameReferenceSeparator from name. </p>
+<p>Description: Remove any trailing occurrence of ON_ModelComponent::NameReferenceSeparator from name. </p>
 
 </div>
 </div>
@@ -3072,7 +3103,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> ON_ModelComponent::RuntimeSerialNumber </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> ON_ModelComponent::RuntimeSerialNumber </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -3436,7 +3467,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: component_name - [in] Leading and trailing nonzero unicode code points with values &lt;= <a class="el" href="class_o_n__w_string.html#aacd1b9043f51f57a39e3c7a478a05a12" title="SPACE U+0020">ON_wString::Space</a> are ignored. Returns: true if the name attribute was changed to component_name or is already equal to component_name. false False is returned and no changes are made if the name attribute is locked and component_name != locked value or component_name is not empty and ON_ModelComponent::IsValidComponentName(component_name) is false. Remarks: If component_name is nullptr or the emtpy string, the <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> state will still be true. </p>
+<p>Parameters: component_name - [in] Leading and trailing nonzero unicode code points with values &lt;= <a class="el" href="class_o_n__w_string.html#aacd1b9043f51f57a39e3c7a478a05a12" title="SPACE U+0020">ON_wString::Space</a> are ignored. Returns: true if the name attribute was changed to component_name or is already equal to component_name. false False is returned and no changes are made if the name attribute is locked and component_name != locked value or component_name is not empty and ON_ModelComponent::IsValidComponentName(component_name) is false. Remarks: If component_name is nullptr or the empty string, the <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> state will still be true. </p>
 
 </div>
 </div>
@@ -3577,7 +3608,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: component_type - [in] Returns: True if component name ignores case when testing for equality. Remarks: Currently all other component types except for groups ignore case when testing for equality. This function should be called "NameIgnoresCase" because it also applies to components like materials and geometry objects that are not reqired to have a unique name. </p>
+<p>Parameters: component_type - [in] Returns: True if component name ignores case when testing for equality. Remarks: Currently all other component types except for groups ignore case when testing for equality. This function should be called "NameIgnoresCase" because it also applies to components like materials and geometry objects that are not required to have a unique name. </p>
 
 </div>
 </div>
@@ -3604,7 +3635,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: component_type - [in] Returns: True if objects with the same name and different parents are considered to have a unique name. This typically means the user interface for the object names is some type of tree. Remarks: Currently, layers are the only object type where this property is true. This function should be called "NameIncludesParent" because it also applies to components like materials and geometry objects that are not reqired to have a unique name. </p>
+<p>Parameters: component_type - [in] Returns: True if objects with the same name and different parents are considered to have a unique name. This typically means the user interface for the object names is some type of tree. Remarks: Currently, layers are the only object type where this property is true. This function should be called "NameIncludesParent" because it also applies to components like materials and geometry objects that are not required to have a unique name. </p>
 
 </div>
 </div>
@@ -3659,6 +3690,29 @@ Protected Member Functions</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a8ee9f44b86533fa26957ef9dd2eac119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee9f44b86533fa26957ef9dd2eac119">&#9670;&nbsp;</a></span>CRhinoObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_c_rhino_object.html">CRhinoObject</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -3788,7 +3842,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

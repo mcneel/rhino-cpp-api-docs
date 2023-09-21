@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a27c1295f84a4a044b43859fd2ecdb538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab9ee82cbddc7032854e73171f9d246"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_sub_d_display.html">CRhinoSubDDisplay</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_display.html#a7ab9ee82cbddc7032854e73171f9d246">Create</a> (<a class="el" href="class_o_n___sub_d_ref.html">ON_SubDRef</a> subd_ref)</td></tr>
 <tr class="separator:a7ab9ee82cbddc7032854e73171f9d246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a7e58b623e9bc2752d1a406f81dbb1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_display.html#af7a7e58b623e9bc2752d1a406f81dbb1">DrawAsSmoothInteriorEdge</a> (const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *edge)</td></tr>
+<tr class="memdesc:af7a7e58b623e9bc2752d1a406f81dbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function determines how the display code treats an interior SubD edge. (Interior edges with 2 faces).  <a href="class_c_rhino_sub_d_display.html#af7a7e58b623e9bc2752d1a406f81dbb1">More...</a><br /></td></tr>
+<tr class="separator:af7a7e58b623e9bc2752d1a406f81dbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -266,7 +269,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>OBSOLETE. <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">ContentSerialNumber()</a> always returns 0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000216">Deprecated:</a></b></dt><dd>OBSOLETE. <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">ContentSerialNumber()</a> always returns 0 </dd></dl>
 
 </div>
 </div>
@@ -419,6 +422,46 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7a7e58b623e9bc2752d1a406f81dbb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a7e58b623e9bc2752d1a406f81dbb1">&#9670;&nbsp;</a></span>DrawAsSmoothInteriorEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoSubDDisplay::DrawAsSmoothInteriorEdge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function determines how the display code treats an interior SubD edge. (Interior edges with 2 faces). </p>
+<p>Rhino display code has to partition the set of interior edges into 2 disjoint sets, "smooth interior edges" and "other interior edges."</p>
+<p>Smooth SubD edges with zero sharpness belong in the "smooth interior edges" set.</p>
+<p>Crease SUbD edges belong in the "other interior edges" set.</p>
+<p>Sharp SubD edges (which smooth edges with nonzero sharpness) go into "other interior edges" as of Feb 21, 2023. This is done so the ShowEdges command and SubD object display settings can be used to find sharp edges.</p>
+<p><br  />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the display code, ShowEdge command, etc., consider this edge to be a smooth interior edge.</dd></dl>
 
 </div>
 </div>
@@ -672,7 +715,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

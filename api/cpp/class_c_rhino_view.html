@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -127,15 +127,35 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a4717d57ffdd0063aaa4f2c5ef6256071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe94c94ba76a826c1d9d8b284795955"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">view_type</a> { <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955a2e0da3841c2e23a49ba1edb3167d828f">rhino_view_type</a> = 0, 
+<tr class="memitem:aebe94c94ba76a826c1d9d8b284795955"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">view_type</a> { <br />
+&#160;&#160;<a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955a2e0da3841c2e23a49ba1edb3167d828f">rhino_view_type</a> = 0, 
 <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955a67f8100900d74a5341805dea3f7a0496">page_view_type</a>, 
 <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955a4707a0161b5bccbc73b2b378933b226d">custom_view_type</a>, 
-<a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955add5651df239f39625f32ba2a06ba549b">invalid_view_type</a>
+<a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955add5651df239f39625f32ba2a06ba549b">invalid_view_type</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955a0c672da5aaf4ddd774c46f01d06e40a1">uveditor_view_type</a>, 
+<a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955abd66cd5cdff1fd05363442d43612ea3a">blockeditor_view_type</a>
+<br />
  }</td></tr>
 <tr class="separator:aebe94c94ba76a826c1d9d8b284795955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e6f16ebea421d056e031d619132c4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">ViewTypeFilter</a> : int { <br />
+&#160;&#160;<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aa6adf97f83acf6453d4a6a4b1070f3754">ViewTypeFilter::None</a> = 0, 
+<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aaa559b87068921eec05086ce5485e9784">ViewTypeFilter::Model</a> = 1, 
+<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aa193cfc9be3b995831c6af2fea6650e60">ViewTypeFilter::Page</a> = 2, 
+<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aa75f0ef8b7c905d6f1779e0f494a0af9e">ViewTypeFilter::ModelStyleViews</a> = 0xFFFFFFF ^ 2, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aa8ea197530c86fbbf0b6bd47d93573e1a">ViewTypeFilter::UVEditor</a> = 4, 
+<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aa2b602b6c8115681f28d859e266398a65">ViewTypeFilter::BlockEditor</a> = 8, 
+<a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4aab1c94ca2fbc3e78fc30069c8d0f01680">ViewTypeFilter::All</a> = 0xFFFFFFF
+<br />
+ }</td></tr>
+<tr class="memdesc:a28e6f16ebea421d056e031d619132c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter for view types to list  <a href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">More...</a><br /></td></tr>
+<tr class="separator:a28e6f16ebea421d056e031d619132c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:acaadda89c91eed8c422c6e9f9d1d7c04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">ON::active_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#acaadda89c91eed8c422c6e9f9d1d7c04">ActiveSpace</a> (void) const</td></tr>
+<tr class="separator:acaadda89c91eed8c422c6e9f9d1d7c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a79190f1403ebcb095bdb9a49ed6682"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a3a79190f1403ebcb095bdb9a49ed6682">ActiveViewport</a> () const</td></tr>
 <tr class="separator:a3a79190f1403ebcb095bdb9a49ed6682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6972c7cbe63fab257b6726e9e7408e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#adb6972c7cbe63fab257b6726e9e7408e">ActiveViewportID</a> () const</td></tr>
@@ -250,9 +270,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a8c59dd21dd91e1603a886d5c55ca9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a747a137a2b7db52e3844dab4750d1264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a747a137a2b7db52e3844dab4750d1264">OnMButtonUp</a> (UINT nFlags, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;point)</td></tr>
 <tr class="separator:a747a137a2b7db52e3844dab4750d1264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7db7b2ecdb4212479f8f41b203067e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#af7db7b2ecdb4212479f8f41b203067e4">OnMouseDownSelectObject</a> (int button, BOOL bCtrl, BOOL bShift, BOOL bAlt, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;point, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;active_vp)</td></tr>
-<tr class="memdesc:af7db7b2ecdb4212479f8f41b203067e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnMouseDown helpers.  <a href="class_c_rhino_view.html#af7db7b2ecdb4212479f8f41b203067e4">More...</a><br /></td></tr>
-<tr class="separator:af7db7b2ecdb4212479f8f41b203067e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace11ae32605d31fc33558b9e1d0fdb4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#ace11ae32605d31fc33558b9e1d0fdb4e">OnMouseDownSelectObject</a> (int button, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bCtrl, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bShift, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bAlt, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;point, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;active_vp)</td></tr>
+<tr class="memdesc:ace11ae32605d31fc33558b9e1d0fdb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnMouseDown helpers.  <a href="class_c_rhino_view.html#ace11ae32605d31fc33558b9e1d0fdb4e">More...</a><br /></td></tr>
+<tr class="separator:ace11ae32605d31fc33558b9e1d0fdb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c9bd3ebf7c824472ad27bf97424efb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#af6c9bd3ebf7c824472ad27bf97424efb">OnMouseMove</a> (UINT nFlags, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;point)</td></tr>
 <tr class="separator:af6c9bd3ebf7c824472ad27bf97424efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b22a1e1b63234cbfe530e1e6c1734f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a68b22a1e1b63234cbfe530e1e6c1734f">OnMouseWheel</a> (UINT nFlags, short zDelta, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;pt)</td></tr>
@@ -291,8 +311,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb1934c504ef40cce60fa639afc86455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70489b582b44bb21926f19292402f2c2"><td class="memItemLeft" align="right" valign="top">const CView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a70489b582b44bb21926f19292402f2c2">SafeMFCView</a> (void) const</td></tr>
 <tr class="separator:a70489b582b44bb21926f19292402f2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360d529df843f61e0e5a80d75e6f9cd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a360d529df843f61e0e5a80d75e6f9cd0">ScreenCaptureToBitmap</a> (<a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, BOOL bIncludeCursor=true, BOOL bClientAreaOnly=false)</td></tr>
-<tr class="separator:a360d529df843f61e0e5a80d75e6f9cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0cdac733c1e7629712a49784b876e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a7de0cdac733c1e7629712a49784b876e">ScreenCaptureToBitmap</a> (<a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bIncludeCursor=true, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bClientAreaOnly=false)</td></tr>
+<tr class="separator:a7de0cdac733c1e7629712a49784b876e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0171e353d06be78b59dcee2ba8d03c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a2b0171e353d06be78b59dcee2ba8d03c">ScreenToClient</a> (<a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;) const</td></tr>
 <tr class="separator:a2b0171e353d06be78b59dcee2ba8d03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4234577ba2149624ff8eff56d6edb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#adf4234577ba2149624ff8eff56d6edb2">ScreenToClient</a> (<a class="el" href="class_o_n__4i_rect.html">ON_4iRect</a> &amp;) const</td></tr>
@@ -314,6 +334,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a246c9dc4f9b15e72d0b1907705b7b57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c6e90c9e02f52e28a0a44849e7470f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#ac3c6e90c9e02f52e28a0a44849e7470f">ShowTitle</a> (bool visible)</td></tr>
 <tr class="separator:ac3c6e90c9e02f52e28a0a44849e7470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe7cc9e89a375776adc5c725d9ad9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a1fe7cc9e89a375776adc5c725d9ad9a4">ShowToast</a> (const wchar_t *message)</td></tr>
+<tr class="separator:a1fe7cc9e89a375776adc5c725d9ad9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14bf255385842cbe62d321335c0073dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a14bf255385842cbe62d321335c0073dc">ShowWindow</a> (int nCmdShow)</td></tr>
 <tr class="separator:a14bf255385842cbe62d321335c0073dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94debf3b09483e2ebc7f13156e028061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a94debf3b09483e2ebc7f13156e028061">UpdateTitle</a> (bool isActiveView)</td></tr>
@@ -340,8 +362,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a3fc4bfba0536a7c0a7e3cba117c97ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b375d8aebcd4c9989d9620a61c88996"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_view.html">CRhinoView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a7b375d8aebcd4c9989d9620a61c88996">FromRuntimeSerialNumber</a> (unsigned int rhino_view_sn)</td></tr>
 <tr class="separator:a7b375d8aebcd4c9989d9620a61c88996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d7479780410f5e3086299f9e4c2dbe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_view.html">CRhinoView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#ae1d7479780410f5e3086299f9e4c2dbe">FromViewFrameWnd</a> (CWnd *pFrameWnd, bool bSetChildWndActiveView)</td></tr>
-<tr class="separator:ae1d7479780410f5e3086299f9e4c2dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08ab851fdc2554590bf8f0031638c29"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_view.html">CRhinoView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#ab08ab851fdc2554590bf8f0031638c29">FromViewFrameWnd</a> (class CWnd *pFrameWnd, bool bSetChildWndActiveView)</td></tr>
+<tr class="separator:ab08ab851fdc2554590bf8f0031638c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0700d90b2567610f8b4d228d68399b44"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a0700d90b2567610f8b4d228d68399b44">GetViewList</a> (unsigned int rhino_doc_sn, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned int &gt; &amp;rhino_view_sn_list)</td></tr>
 <tr class="separator:a0700d90b2567610f8b4d228d68399b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53cc36911599d419d1864935dcc98f1e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a53cc36911599d419d1864935dcc98f1e">GetViewList</a> (unsigned int rhino_doc_sn, unsigned int rhino_view_sn0, size_t rhino_view_sn_list_capacity, unsigned int *rhino_view_sn_list)</td></tr>
@@ -360,6 +382,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ace211489fe2fbcbdccc04b1bfe81fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95cbe71ebc2f0a86be76b2064f9e9927"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a95cbe71ebc2f0a86be76b2064f9e9927">ViewCount</a> (unsigned int rhino_doc_sn)</td></tr>
 <tr class="separator:a95cbe71ebc2f0a86be76b2064f9e9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ff6c1c5553867619b03a6ca9c4b332"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">view_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_view.html#a95ff6c1c5553867619b03a6ca9c4b332">ViewTypeFromActiveSpace</a> (<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">ON::active_space</a> active_space)</td></tr>
+<tr class="separator:a95ff6c1c5553867619b03a6ca9c4b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -530,6 +554,50 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="aebe94c94ba76a826c1d9d8b284795955a4707a0161b5bccbc73b2b378933b226d"></a>custom_view_type&#160;</td><td class="fielddoc"><p>Some unknown derived class. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aebe94c94ba76a826c1d9d8b284795955add5651df239f39625f32ba2a06ba549b"></a>invalid_view_type&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aebe94c94ba76a826c1d9d8b284795955a0c672da5aaf4ddd774c46f01d06e40a1"></a>uveditor_view_type&#160;</td><td class="fielddoc"><p>CRhinoUVEditorView. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aebe94c94ba76a826c1d9d8b284795955abd66cd5cdff1fd05363442d43612ea3a"></a>blockeditor_view_type&#160;</td><td class="fielddoc"><p>Block Editor view. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a28e6f16ebea421d056e031d619132c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e6f16ebea421d056e031d619132c4a">&#9670;&nbsp;</a></span>ViewTypeFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">CRhinoView::ViewTypeFilter</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Filter for view types to list </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No views </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aaa559b87068921eec05086ce5485e9784"></a>Model&#160;</td><td class="fielddoc"><p>Standard Rhino model views </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aa193cfc9be3b995831c6af2fea6650e60"></a>Page&#160;</td><td class="fielddoc"><p>Page views </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aa75f0ef8b7c905d6f1779e0f494a0af9e"></a>ModelStyleViews&#160;</td><td class="fielddoc"><p>All view styles except Page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aa8ea197530c86fbbf0b6bd47d93573e1a"></a>UVEditor&#160;</td><td class="fielddoc"><p>UV Editor views </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aa2b602b6c8115681f28d859e266398a65"></a>BlockEditor&#160;</td><td class="fielddoc"><p>Block Editor views </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a28e6f16ebea421d056e031d619132c4aab1c94ca2fbc3e78fc30069c8d0f01680"></a>All&#160;</td><td class="fielddoc"><p>All views </p>
+</td></tr>
 </table>
 
 </div>
@@ -558,6 +626,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Use <a class="el" href="class_c_rhino_view.html#a8cb51668a99e47ade25fd74f54ce5e36">CRhinoView.RuntimeSerialNumber()</a> to get this value. Use <a class="el" href="class_c_rhino_view.html#a7b375d8aebcd4c9989d9620a61c88996">CRhinoView::FromRuntimeSerialNumber()</a> so search for a view with a specific serial number.</p>
+<p>The m_rhino_view_sn field is private to make it impossible for the value to be accidentally passed as a pointer or reference, which would defeat the purpose of using runtime serial numbers to prevent dereferencing deleted objects.</p>
+<p>m_rhino_view_sn must be the first field in <a class="el" href="class_c_rhino_view.html">CRhinoView</a> so it is initialized first in constructors. const unsigned int m_rhino_view_sn; </p>
 
 </div>
 </div>
@@ -613,6 +684,24 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acaadda89c91eed8c422c6e9f9d1d7c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaadda89c91eed8c422c6e9f9d1d7c04">&#9670;&nbsp;</a></span>ActiveSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">ON::active_space</a> CRhinoView::ActiveSpace </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3a79190f1403ebcb095bdb9a49ed6682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a79190f1403ebcb095bdb9a49ed6682">&#9670;&nbsp;</a></span>ActiveViewport()</h2>
 
@@ -1002,7 +1091,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to change parent container for this view.</p>
-<p>Parameters: bFloat [in] If true then the view will be embeded in a floating frame window otherwise the view will be embeded in a CMDIChildWnd.</p>
+<p>Parameters: bFloat [in] If true then the view will be embedded in a floating frame window otherwise the view will be embedded in a CMDIChildWnd.</p>
 <p>Returns: Returns a handle to the views parent container on success otherwise NULL. </p>
 
 </div>
@@ -1116,8 +1205,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1d7479780410f5e3086299f9e4c2dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1d7479780410f5e3086299f9e4c2dbe">&#9670;&nbsp;</a></span>FromViewFrameWnd()</h2>
+<a id="ab08ab851fdc2554590bf8f0031638c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08ab851fdc2554590bf8f0031638c29">&#9670;&nbsp;</a></span>FromViewFrameWnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1128,7 +1217,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="class_c_rhino_view.html">CRhinoView</a>* CRhinoView::FromViewFrameWnd </td>
           <td>(</td>
-          <td class="paramtype">CWnd *&#160;</td>
+          <td class="paramtype">class CWnd *&#160;</td>
           <td class="paramname"><em>pFrameWnd</em>, </td>
         </tr>
         <tr>
@@ -1807,7 +1896,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000189">Deprecated:</a></b></dt><dd>Do not call - use CRhViewBase::FromRhinoView </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000241">Deprecated:</a></b></dt><dd>Do not call - use CRhViewBase::FromRhinoView </dd></dl>
 
 </div>
 </div>
@@ -1826,7 +1915,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000190">Deprecated:</a></b></dt><dd>Do not call - use CRhViewBase::FromRhinoView </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000242">Deprecated:</a></b></dt><dd>Do not call - use CRhViewBase::FromRhinoView </dd></dl>
 
 </div>
 </div>
@@ -2301,8 +2390,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="af7db7b2ecdb4212479f8f41b203067e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7db7b2ecdb4212479f8f41b203067e4">&#9670;&nbsp;</a></span>OnMouseDownSelectObject()</h2>
+<a id="ace11ae32605d31fc33558b9e1d0fdb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace11ae32605d31fc33558b9e1d0fdb4e">&#9670;&nbsp;</a></span>OnMouseDownSelectObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2316,19 +2405,19 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bCtrl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bShift</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bAlt</em>, </td>
         </tr>
         <tr>
@@ -2876,8 +2965,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a360d529df843f61e0e5a80d75e6f9cd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a360d529df843f61e0e5a80d75e6f9cd0">&#9670;&nbsp;</a></span>ScreenCaptureToBitmap()</h2>
+<a id="a7de0cdac733c1e7629712a49784b876e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de0cdac733c1e7629712a49784b876e">&#9670;&nbsp;</a></span>ScreenCaptureToBitmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2891,13 +2980,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bIncludeCursor</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bClientAreaOnly</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -2907,7 +2996,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Copy current screen view to a bitmap. Parameters: dib - [out] 24 Bit color DIB contaning screen capture of this view bIncludeCursor - [in] If (bIncludeCursor == true) and cursor is over this view then "dib" will include cursor. bClientAreaOnly - [in] do not capture the parent frame Returns: true if successful. </p>
+<p>Description: Copy current screen view to a bitmap. Parameters: dib - [out] 24 Bit color DIB containing screen capture of this view bIncludeCursor - [in] If (bIncludeCursor == true) and cursor is over this view then "dib" will include cursor. bClientAreaOnly - [in] do not capture the parent frame Returns: true if successful. </p>
 
 </div>
 </div>
@@ -3091,7 +3180,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to set flags used by <a class="el" href="class_c_rhino_view.html#a429f830cca5e9d27431b94ac0e36dd61">CRhinoView::OnDraw()</a> Paramters: view_redraw_display_hint - [in] a <a class="el" href="class_c_rhino_view.html#a64f11c551cd4d261d996084bd33a88f1">CRhinoView::DISPLAY_HINT</a> value Remarks: You probably want to use <a class="el" href="class_c_rhino_doc.html#a642b6e8e47d64455496ef9f67f98031e">CRhinoDoc::SetRedrawDisplayHint()</a> instead of <a class="el" href="class_c_rhino_view.html#ac959a360a622a098a5a4a9d825ee99df">CRhinoView::SetRedrawDisplayHint()</a> See Also: <a class="el" href="class_c_rhino_doc.html#a642b6e8e47d64455496ef9f67f98031e">CRhinoDoc::SetRedrawDisplayHint</a> </p>
+<p>Description: Expert user tool to set flags used by <a class="el" href="class_c_rhino_view.html#a429f830cca5e9d27431b94ac0e36dd61">CRhinoView::OnDraw()</a> Parameters: view_redraw_display_hint - [in] a <a class="el" href="class_c_rhino_view.html#a64f11c551cd4d261d996084bd33a88f1">CRhinoView::DISPLAY_HINT</a> value Remarks: You probably want to use <a class="el" href="class_c_rhino_doc.html#a642b6e8e47d64455496ef9f67f98031e">CRhinoDoc::SetRedrawDisplayHint()</a> instead of <a class="el" href="class_c_rhino_view.html#ac959a360a622a098a5a4a9d825ee99df">CRhinoView::SetRedrawDisplayHint()</a> See Also: <a class="el" href="class_c_rhino_doc.html#a642b6e8e47d64455496ef9f67f98031e">CRhinoDoc::SetRedrawDisplayHint</a> </p>
 
 </div>
 </div>
@@ -3125,6 +3214,24 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fe7cc9e89a375776adc5c725d9ad9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe7cc9e89a375776adc5c725d9ad9a4">&#9670;&nbsp;</a></span>ShowToast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoView::ShowToast </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3229,6 +3336,32 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: An alias for <a class="el" href="class_c_rhino_view.html#a3a79190f1403ebcb095bdb9a49ed6682">ActiveViewport()</a> so that pre-existing code continues to compile and work. It is recommended that you use <a class="el" href="class_c_rhino_view.html#a3a79190f1403ebcb095bdb9a49ed6682">ActiveViewport()</a> in any new and future code. </p>
+
+</div>
+</div>
+<a id="a95ff6c1c5553867619b03a6ca9c4b332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ff6c1c5553867619b03a6ca9c4b332">&#9670;&nbsp;</a></span>ViewTypeFromActiveSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">view_type</a> CRhinoView::ViewTypeFromActiveSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">ON::active_space</a>&#160;</td>
+          <td class="paramname"><em>active_space</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3595,7 +3728,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

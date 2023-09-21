@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a37bf99df9881999911930d246c6dd727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0f3124d6e999e2c87148fb96a19f6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a5b0f3124d6e999e2c87148fb96a19f6b">Clamp</a> (double &amp;value) const</td></tr>
 <tr class="separator:a5b0f3124d6e999e2c87148fb96a19f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1763653f4d4c11e47d39df91cc08ef5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#ab1763653f4d4c11e47d39df91cc08ef5">ClampedNormalizedParameterAt</a> (double interval_parameter) const</td></tr>
+<tr class="memdesc:ab1763653f4d4c11e47d39df91cc08ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clamped normalized parameter from an interval value. This interval may be increasing, decreasing, or a singleton.  <a href="class_o_n___interval.html#ab1763653f4d4c11e47d39df91cc08ef5">More...</a><br /></td></tr>
+<tr class="separator:ab1763653f4d4c11e47d39df91cc08ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108d667a153f5a158c3563709c24f900"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a108d667a153f5a158c3563709c24f900">ClampedParameterAt</a> (double normalized_parameter) const</td></tr>
+<tr class="memdesc:a108d667a153f5a158c3563709c24f900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the interval's value at a clamped normalized parameter. This interval may be increasing, decreasing, or a singleton.  <a href="class_o_n___interval.html#a108d667a153f5a158c3563709c24f900">More...</a><br /></td></tr>
+<tr class="separator:a108d667a153f5a158c3563709c24f900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e624265b67ac3d7baf4d0c8897f929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a59e624265b67ac3d7baf4d0c8897f929">Destroy</a> ()</td></tr>
 <tr class="separator:a59e624265b67ac3d7baf4d0c8897f929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b54bde34609595b7b35b904db304d44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a3b54bde34609595b7b35b904db304d44">Expand</a> (double delta)</td></tr>
@@ -159,8 +165,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8eac2fcf59ffa995821ce9d189d32924"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns (index&lt;=0) ? m_t[0] : m_t[1]  <a href="class_o_n___interval.html#a8eac2fcf59ffa995821ce9d189d32924">More...</a><br /></td></tr>
 <tr class="separator:a8eac2fcf59ffa995821ce9d189d32924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6a2dbc7ee9a8ac5ebbc95947181a33"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a6f6a2dbc7ee9a8ac5ebbc95947181a33">ParameterAt</a> (double normalized_parameter) const</td></tr>
+<tr class="memdesc:a6f6a2dbc7ee9a8ac5ebbc95947181a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a normalized parameter to an interval value. The interval can be increasing, decreasing, or a singleton.  <a href="class_o_n___interval.html#a6f6a2dbc7ee9a8ac5ebbc95947181a33">More...</a><br /></td></tr>
 <tr class="separator:a6f6a2dbc7ee9a8ac5ebbc95947181a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5920b0c2f5ae8793dbc2b219be0023d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#aa5920b0c2f5ae8793dbc2b219be0023d">ParameterAt</a> (<a class="el" href="class_o_n___interval.html">ON_Interval</a> normalized_interval) const</td></tr>
+<tr class="memdesc:aa5920b0c2f5ae8793dbc2b219be0023d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a a pair of normalized parameter values to a pair of interval values. This interval can be increasing, decreasing, or a singleton.  <a href="class_o_n___interval.html#aa5920b0c2f5ae8793dbc2b219be0023d">More...</a><br /></td></tr>
 <tr class="separator:aa5920b0c2f5ae8793dbc2b219be0023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039029f16a4df1b4781fa0869edcfdd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a039029f16a4df1b4781fa0869edcfdd3">Reverse</a> ()</td></tr>
 <tr class="separator:a039029f16a4df1b4781fa0869edcfdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,6 +334,60 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: value is clamped to the range of this interval. <br  />
  Assumes this interval is not Decreasing(). Parameters: value -[in/out] value is set to x in interval such that |x - value|&lt;= |x - y| for all y in this interval Returns: -1 if value&lt;<a class="el" href="class_o_n___interval.html#ade8e75687d0234f96d3c3e0a908126f3" title="returns smaller of m_t[0] and m_t[1]">Min()</a> 0 if value in interval +1 if value&gt;<a class="el" href="class_o_n___interval.html#a6339c5b2079763dba5c99bc807467925" title="returns larger of m_t[0] and m_t[1]">Max()</a> </p>
+
+</div>
+</div>
+<a id="ab1763653f4d4c11e47d39df91cc08ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1763653f4d4c11e47d39df91cc08ef5">&#9670;&nbsp;</a></span>ClampedNormalizedParameterAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Interval::ClampedNormalizedParameterAt </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>interval_parameter</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a clamped normalized parameter from an interval value. This interval may be increasing, decreasing, or a singleton. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval_parameter</td><td>interval_parameter may have any value but it is clamped to be in the intervaly before the normalized parameter is evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Set a = the value at the beginning of this interval and b = the value at the end of this interval. If a, b or interval_parameter is unset or nan, ON_DBL_QNAN is returned. If interval_parameter is in this interval, the correxponding normalized parameter is returned. If interval_parameter is outside the interval, the normalized paramter for the end closest to interval_parameter is retuend. </dd></dl>
+
+</div>
+</div>
+<a id="a108d667a153f5a158c3563709c24f900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108d667a153f5a158c3563709c24f900">&#9670;&nbsp;</a></span>ClampedParameterAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Interval::ClampedParameterAt </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>normalized_parameter</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the interval's value at a clamped normalized parameter. This interval may be increasing, decreasing, or a singleton. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalized_parameter</td><td>normalized_parameter may have any value but it is clamped to be between 0 and 1 before the corresponding interval value is evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Set a = the value at the beginning of this interval and b = the value at the end of this interval. If a, b or normalized_parameter is unset or nan, ON_DBL_QNAN is returned. If normalized_parameter &lt;= 0.0, a is returned. If normalized_parameter &gt;= 1.0, b is returned. Otherwise (1.0-normalized_parameter)*a + normalized_parameter*b is returned. </dd></dl>
 
 </div>
 </div>
@@ -789,7 +851,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Convert interval value, or pair of values, to normalized parameter. Parameters: interval_parameter - [in] value in interval Returns: Normalized parameter x so that min*(1.0-x) + max*x = interval_parameter. See Also: <a class="el" href="class_o_n___interval.html#a6f6a2dbc7ee9a8ac5ebbc95947181a33">ON_Interval::ParameterAt</a> </p>
+<p>Description: Convert interval value, or pair of values, to normalized parameter. Parameters: interval_parameter - [in] value in interval Returns: Normalized parameter x so that min*(1.0-x) + max*x = interval_parameter. See Also: <a class="el" href="class_o_n___interval.html#a6f6a2dbc7ee9a8ac5ebbc95947181a33" title="Convert a normalized parameter to an interval value. The interval can be increasing,...">ON_Interval::ParameterAt</a> </p>
 
 </div>
 </div>
@@ -970,7 +1032,15 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Convert normalized parameter to interval value, or pair of values. Parameters: normalized_parameter - [in] Returns: Interval parameter min*(1.0-normalized_parameter) + max*normalized_parameter See Also: <a class="el" href="class_o_n___interval.html#a7e475217007660d32e9f4135527eaee0">ON_Interval::NormalizedParameterAt</a> </p>
+
+<p>Convert a normalized parameter to an interval value. The interval can be increasing, decreasing, or a singleton. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalized_parameter</td><td>The normalized parameter can have any value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a*(1.0-normalized_parameter) + b*normalized_parameter where a = the value at the beginning of this interval and b = the value at the end of this interval. </dd></dl>
 
 </div>
 </div>
@@ -989,6 +1059,15 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert a a pair of normalized parameter values to a pair of interval values. This interval can be increasing, decreasing, or a singleton. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalized_interval</td><td>The normalized parameters can have any value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a*(1.0-normalized_parameter) + b*normalized_parameter where a = the value at the beginning of this interval and b = the value at the end of this interval. </dd></dl>
 
 </div>
 </div>
@@ -1306,7 +1385,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -72,16 +72,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;RhRdkEventWatcher.h&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for CRhRdkEventWatcher:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_c_rh_rdk_event_watcher.png" usemap="#CRhRdkEventWatcher_map" alt=""/>
-  <map id="CRhRdkEventWatcher_map" name="CRhRdkEventWatcher_map">
-<area href="class_c_rh_rdk_decal_widget.html" alt="CRhRdkDecalWidget" shape="rect" coords="0,56,183,80"/>
-<area href="class_c_rh_rdk_simple_sun_data_source.html" alt="CRhRdkSimpleSunDataSource" shape="rect" coords="193,56,376,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -126,6 +116,16 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8abc6d7d751686c1dc9d285ee9ec67388e">ri_rhino_settings</a> = 8, 
 <br />
 &#160;&#160;<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8a208064c7e5786340b0dfe6f3143e0348">ri_render_channels</a> = 9, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8adf94283ab154492df95995d80540ea75">ri_safe_frame</a> = 10, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8a5b9f7513333086a3a19073bf1b995494">ri_ground_plane</a> = 11, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8a8980e449c54ed7f200100172d76cf4d1">ri_skylight</a> = 12, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8a67ba322999331faa8a799b3a6cbe8e57">ri_sun</a> = 13, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8abb0cdf7af31332996974a633cdd05869">ri_background_env</a> = 14, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8ab433b48216c5b2d370b1f5094bcd74a8">ri_custom_skylight_env</a> = 15, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8af4fce20cf661e22f2108f3c74253a70c">ri_gamma_linear_workflow</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8ac09defbdfa569386014fe18901c02d40">ri_post_effects</a> = 17, 
 <a class="el" href="class_c_rh_rdk_event_watcher.html#aa905aec4449f0deb5455e1a350ac91c8a6a0e20f8a2aa0a2b38233d3a15467f8b">ri_force32bit</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a08f14c27469a74fee308568bdb041098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023d58d1463f6d5f1f63a7d11b786bc5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_event_watcher.html#a023d58d1463f6d5f1f63a7d11b786bc5">OnPostEffectSettingsChanged</a> (const <a class="el" href="class_c_rh_rdk_document.html">CRhRdkDocument</a> &amp;rdkDoc, const void *pSender)</td></tr>
 <tr class="separator:a023d58d1463f6d5f1f63a7d11b786bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8edbe7b32eea56d62fd35152d5b348e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_event_watcher.html#a8edbe7b32eea56d62fd35152d5b348e8">OnPreviewRendered</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, <a class="el" href="group___r_d_k.html#ga45a904b45469885769ea19e640964bc5">RhRdkPreviewQuality</a> qual, const <a class="el" href="class_c_rh_rdk_preview_job_signature.html">CRhRdkPreviewJobSignature</a> &amp;sig)</td></tr>
+<tr class="memitem:a8edbe7b32eea56d62fd35152d5b348e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_event_watcher.html#a8edbe7b32eea56d62fd35152d5b348e8">OnPreviewRendered</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, <a class="el" href="group___r_d_k.html#ga45a904b45469885769ea19e640964bc5">RhRdkPreviewQuality</a> qual, const CRhRdkPreviewJobSignature &amp;sig)</td></tr>
 <tr class="separator:a8edbe7b32eea56d62fd35152d5b348e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b77818d5a92ce026df20dd3a921b52b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_event_watcher.html#a2b77818d5a92ce026df20dd3a921b52b">OnRenderEngineStateChanged</a> (bool bBusy)</td></tr>
 <tr class="separator:a2b77818d5a92ce026df20dd3a921b52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,6 +489,14 @@ CRhRdkContent::Delete() </dd></dl>
 <tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a03319374867d6fa42dbb203a5a93bf4b"></a>ri_custom_reflective_env&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8abc6d7d751686c1dc9d285ee9ec67388e"></a>ri_rhino_settings&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a208064c7e5786340b0dfe6f3143e0348"></a>ri_render_channels&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8adf94283ab154492df95995d80540ea75"></a>ri_safe_frame&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a5b9f7513333086a3a19073bf1b995494"></a>ri_ground_plane&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a8980e449c54ed7f200100172d76cf4d1"></a>ri_skylight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a67ba322999331faa8a799b3a6cbe8e57"></a>ri_sun&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8abb0cdf7af31332996974a633cdd05869"></a>ri_background_env&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8ab433b48216c5b2d370b1f5094bcd74a8"></a>ri_custom_skylight_env&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8af4fce20cf661e22f2108f3c74253a70c"></a>ri_gamma_linear_workflow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8ac09defbdfa569386014fe18901c02d40"></a>ri_post_effects&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa905aec4449f0deb5455e1a350ac91c8a6a0e20f8a2aa0a2b38233d3a15467f8b"></a>ri_force32bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -2673,7 +2681,7 @@ CRhRdkContent::Delete() </dd></dl>
 </table>
 </div><div class="memdoc">
 <p>OnDocumentSettingsChanged has been replaced by individual events:</p>
-<p>OnRenderingSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a5bd25df2a15ad332eb1796a45f746406">CRhRdkEventSinkBase::rendering</a> OnSunSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a09bbbb161bbb8378fbcaa570b7feda88">CRhRdkEventSinkBase::document_sun</a> OnSafeFrameSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832ae68f67a9932edbb480cc2c6c77c499ec">CRhRdkEventSinkBase::safe_frame</a> OnGroundPlaneSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a03cedb738fb06be6e8bb6fd1226a6785">CRhRdkEventSinkBase::ground_plane</a> OnPostEffectSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a81a3e6391a17833ae377f8364b053d63">CRhRdkEventSinkBase::post_effects</a> OnContentFilterChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832af053edec68ce46bd7ffe71822f928d8f">CRhRdkEventSinkBase::content_filter</a> OnCustomRenderMeshesChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a044dfb69f0334ccc9c581acb974a5d67">CRhRdkEventSinkBase::custom_render_mesh</a> OnUndoRedo replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a3bff819c836904a7c6fb48a439208832a29fdc72a867ffe3821f0464f46c4eec1">CRhRdkEventSinkBase::all</a> </p>
+<p>OnRenderingSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa5bd25df2a15ad332eb1796a45f746406">CRhRdkEventSinkBase::rendering</a> OnSunSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa09bbbb161bbb8378fbcaa570b7feda88">CRhRdkEventSinkBase::document_sun</a> OnSafeFrameSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fae68f67a9932edbb480cc2c6c77c499ec">CRhRdkEventSinkBase::safe_frame</a> OnGroundPlaneSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa03cedb738fb06be6e8bb6fd1226a6785">CRhRdkEventSinkBase::ground_plane</a> OnPostEffectSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa81a3e6391a17833ae377f8364b053d63">CRhRdkEventSinkBase::post_effects</a> OnContentFilterChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47faf053edec68ce46bd7ffe71822f928d8f">CRhRdkEventSinkBase::content_filter</a> OnCustomRenderMeshesChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa044dfb69f0334ccc9c581acb974a5d67">CRhRdkEventSinkBase::custom_render_mesh</a> OnUndoRedo replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a6a4436499493ae5ec1bb497be321a47fa29fdc72a867ffe3821f0464f46c4eec1">CRhRdkEventSinkBase::all</a> </p>
 
 </div>
 </div>
@@ -2833,8 +2841,8 @@ CRhRdkContent::Delete() </dd></dl>
 <p>Called after the document ground plane settings have been changed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rdkDoc</td><td>is the document whose ground plane was changed. </td></tr>
-    <tr><td class="paramname">newSun</td><td>is an interface which provides the settings after the change. </td></tr>
-    <tr><td class="paramname">oldSun</td><td>is an interface which provides the settings before the change. </td></tr>
+    <tr><td class="paramname">newGP</td><td>is an interface which provides the settings after the change. </td></tr>
+    <tr><td class="paramname">oldGP</td><td>is an interface which provides the settings before the change. </td></tr>
     <tr><td class="paramname">pSender</td><td>is for internal use only. </td></tr>
   </table>
   </dd>
@@ -3238,7 +3246,7 @@ CRhRdkContent::Delete() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_preview_job_signature.html">CRhRdkPreviewJobSignature</a> &amp;&#160;</td>
+          <td class="paramtype">const CRhRdkPreviewJobSignature &amp;&#160;</td>
           <td class="paramname"><em>sig</em>&#160;</td>
         </tr>
         <tr>
@@ -3412,7 +3420,7 @@ CRhRdkContent::Delete() </dd></dl>
 </div><div class="memdoc">
 <p>Called when rendering finishes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bSuccessful</td><td>is <em>true</em> if rendering completed sucessfully, else <em>false</em>. </td></tr>
+    <tr><td class="paramname">bSuccess</td><td>is <em>true</em> if rendering completed sucessfully, else <em>false</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3641,7 +3649,7 @@ CRhRdkContent::Delete() </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called when certain Rhino settings are changed through an RDK document. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_rhino_settings.html">IRhRdkRhinoSettings</a> </dd></dl>
+<p>Called when certain Rhino settings are changed through an RDK document. </p><dl class="section see"><dt>See also</dt><dd>IRhRdkRhinoSettings </dd></dl>
 
 </div>
 </div>
@@ -3803,8 +3811,8 @@ CRhRdkContent::Delete() </dd></dl>
 <p>Called after the document skylight settings have been changed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rdkDoc</td><td>is the document whose skylight was changed. </td></tr>
-    <tr><td class="paramname">newSL</td><td>is an interface which provides the settings after the change. </td></tr>
-    <tr><td class="paramname">oldSL</td><td>is an interface which provides the settings before the change. </td></tr>
+    <tr><td class="paramname">newSun</td><td>is an interface which provides the settings after the change. </td></tr>
+    <tr><td class="paramname">oldSun</td><td>is an interface which provides the settings before the change. </td></tr>
     <tr><td class="paramname">pSender</td><td>is for internal use only. </td></tr>
   </table>
   </dd>
@@ -3866,8 +3874,6 @@ CRhRdkContent::Delete() </dd></dl>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_simple_sun_data_source.html#a72a206c1ac0f3dc3b625cfff15432d46">CRhRdkSimpleSunDataSource</a>.</p>
 
 </div>
 </div>
@@ -4072,8 +4078,6 @@ CRhRdkContent::Delete() </dd></dl>
 </div><div class="memdoc">
 <p>Called after any RDK user data has been transformed This can be used to capture decal transformation. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_decal_widget.html#a82cc759deb7e14e757dcf6ec21b13ecd">CRhRdkDecalWidget</a>.</p>
-
 </div>
 </div>
 <a id="ab5da3472934436e04a3d547e5fe8db7d"></a>
@@ -4141,7 +4145,7 @@ CRhRdkContent::Delete() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

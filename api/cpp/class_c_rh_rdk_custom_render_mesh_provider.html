@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -88,8 +88,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae6ffcc801c93e7e8aa6deef6600fcdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79dd2b37fd99d1e0c87b775dd5871eef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a79dd2b37fd99d1e0c87b775dd5871eef">BuildCustomMeshes</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;vp, const UUID &amp;uuidRequestingPlugIn, const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, <a class="el" href="class_i_rh_rdk_custom_render_meshes.html">IRhRdkCustomRenderMeshes</a> &amp;crmInOut, const <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *pAttributes, bool bWillBuildCustomMeshCheck=true) const =0</td></tr>
 <tr class="separator:a79dd2b37fd99d1e0c87b775dd5871eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa6ab340b6bc29757658172ea2e63e0"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a0fa6ab340b6bc29757658172ea2e63e0">EVF</a> (const wchar_t *, void *)</td></tr>
-<tr class="separator:a0fa6ab340b6bc29757658172ea2e63e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8016d8afc33cb6b3187d88d594bb68e6"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a8016d8afc33cb6b3187d88d594bb68e6">EVF</a> (const wchar_t *, void *) override</td></tr>
+<tr class="separator:a8016d8afc33cb6b3187d88d594bb68e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d712d0bf916a99b3cd07444a9862253"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rh_rdk_variant.html">CRhRdkVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a7d712d0bf916a99b3cd07444a9862253">GetParameter</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;object, const wchar_t *wszParamName) const =0</td></tr>
 <tr class="separator:a7d712d0bf916a99b3cd07444a9862253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc05f27e77518be082c97a7e509f19f"><td class="memItemLeft" align="right" valign="top">virtual UUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a0bc05f27e77518be082c97a7e509f19f">InterfaceId</a> (void) const final override</td></tr>
@@ -200,7 +200,6 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">pObject</td><td>is the Rhino object of interest. </td></tr>
     <tr><td class="paramname">doc</td><td>is the Rhino document of interest. </td></tr>
     <tr><td class="paramname">pAttributes</td><td>is the current display attributes for the view we are drawing. nullptr means this is a rendering, not a viewport. </td></tr>
-    <tr><td class="paramname">pUuidRMP</td><td>is a pointer to the UUID of the sole provider to call. Pass NULL for all providers. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,7 +267,6 @@ Additional Inherited Members</h2></td></tr>
 <p>Build custom render mesh(es). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vp</td><td>is the viewport being rendered. </td></tr>
-    <tr><td class="paramname">pObject</td><td>is the Rhino object of interest. </td></tr>
     <tr><td class="paramname">doc</td><td>is the Rhino document of interest. </td></tr>
     <tr><td class="paramname">uuidRequestingPlugIn</td><td>is the UUID of the RDK plug-in requesting the meshes. </td></tr>
     <tr><td class="paramname">crmInOut</td><td>is the collection to fill with the custom meshes. </td></tr>
@@ -281,8 +279,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0fa6ab340b6bc29757658172ea2e63e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fa6ab340b6bc29757658172ea2e63e0">&#9670;&nbsp;</a></span>EVF()</h2>
+<a id="a8016d8afc33cb6b3187d88d594bb68e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8016d8afc33cb6b3187d88d594bb68e6">&#9670;&nbsp;</a></span>EVF()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +308,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -629,7 +627,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

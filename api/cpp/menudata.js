@@ -167,8 +167,7 @@ var menudata={children:[
 {text:"y",url:"functions_eval_y.html#index_y"},
 {text:"z",url:"functions_eval_z.html#index_z"}]},
 {text:"Related Functions",url:"functions_rela.html",children:[
-{text:"a",url:"functions_rela.html#index_a"},
-{text:"c",url:"functions_rela_c.html#index_c"},
+{text:"c",url:"functions_rela.html#index_c"},
 {text:"d",url:"functions_rela_d.html#index_d"},
 {text:"g",url:"functions_rela_g.html#index_g"},
 {text:"i",url:"functions_rela_i.html#index_i"},

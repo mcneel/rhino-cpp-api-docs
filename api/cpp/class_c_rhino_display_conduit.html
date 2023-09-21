@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -228,8 +228,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab833a62f617e08fe0798c4f96e435d99"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_c_support_channels.html">CSupportChannels</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_conduit.html#ab833a62f617e08fe0798c4f96e435d99">m_Channels</a></td></tr>
 <tr class="memdesc:ab833a62f617e08fe0798c4f96e435d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channels that this class was constructed with.  <a href="class_c_rhino_display_conduit.html#ab833a62f617e08fe0798c4f96e435d99">More...</a><br /></td></tr>
 <tr class="separator:ab833a62f617e08fe0798c4f96e435d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d3e1f3af4127fc95aefa3b1ba76320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_channel_attributes.html">CChannelAttributes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_conduit.html#aa4d3e1f3af4127fc95aefa3b1ba76320">m_pChannelAttrs</a> = nullptr</td></tr>
-<tr class="separator:aa4d3e1f3af4127fc95aefa3b1ba76320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b19f9fff8bb1cc253d592a6c2589c5"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_c_channel_attributes.html">CChannelAttributes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_conduit.html#aa5b19f9fff8bb1cc253d592a6c2589c5">m_pChannelAttrs</a> = nullptr</td></tr>
+<tr class="separator:aa5b19f9fff8bb1cc253d592a6c2589c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046e7d9f3355921cf424885f4ab54869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_conduit.html#a046e7d9f3355921cf424885f4ab54869">m_pDisplayAttrs</a> = nullptr</td></tr>
 <tr class="separator:a046e7d9f3355921cf424885f4ab54869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab358011e523ae91d06742ee275ff498"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_conduit.html#aab358011e523ae91d06742ee275ff498">m_rhino_doc_sn</a> = 0</td></tr>
@@ -341,7 +341,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binding methods... </p>
-<p>Description: Bind this conduit to a display pipeline/viewport. If this conduit is already bound to another pipeline or viewport, that binding will not be removed and this conduit will be bound to multiple pipelines/viewports Returns: false if this conduit is alread bound to the provided pipeline/viewport </p>
+<p>Description: Bind this conduit to a display pipeline/viewport. If this conduit is already bound to another pipeline or viewport, that binding will not be removed and this conduit will be bound to multiple pipelines/viewports Returns: false if this conduit is already bound to the provided pipeline/viewport </p>
 
 </div>
 </div>
@@ -633,7 +633,7 @@ Friends</h2></td></tr>
 <p>Operations... </p>
 <p>Description: Conduits should/could be thought of as small pieces of code that get "executed" inside of Rhino's pipeline...and by specifying which "channel" your conduit executes in, allows you to determine where and when your code runs.</p>
 <p>This function is called for every CSupportChannel that this conduit has been constructed with during the process of drawing a single frame. ExecConduit is not called when the conduit is disabled.</p>
-<p>Parameters: pipeline: [in] the pipeline that is currently executing and calling this conduit. This is the pipeline you should be calling "Draw" functions on if you want to perform any custom drawing. channel: [in] This function can be called multiple times by a pipeline while drawing a single frame. The channel parameter specifies what part of <a class="el" href="struct_c_support_channels.html">CSupportChannels</a> is currently being executed terminate: [out] Set this to true if you don't want other conduits to perform operations in the current channel after this function returns. Typically you will leave this parameter alone and allow other enabled conduits to perform their custom drawing code. Returns: True if the function completed successfully. If this function returns false, something bad occured and drawing of the current frame stops. </p>
+<p>Parameters: pipeline: [in] the pipeline that is currently executing and calling this conduit. This is the pipeline you should be calling "Draw" functions on if you want to perform any custom drawing. channel: [in] This function can be called multiple times by a pipeline while drawing a single frame. The channel parameter specifies what part of <a class="el" href="struct_c_support_channels.html">CSupportChannels</a> is currently being executed terminate: [out] Set this to true if you don't want other conduits to perform operations in the current channel after this function returns. Typically you will leave this parameter alone and allow other enabled conduits to perform their custom drawing code. Returns: True if the function completed successfully. If this function returns false, something bad occurred and drawing of the current frame stops. </p>
 
 <p>Implemented in <a class="el" href="class_c_rhino_gumball_display_conduit.html#a4685bc21078e406967da76aff5ce80ca">CRhinoGumballDisplayConduit</a>.</p>
 
@@ -747,8 +747,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Determines if the passed in object's "type" matches the currently set geometry filter. This is more or less a helper function used when processing object-based channels.</p>
-<p>Returns: true - if passed in object's type matches against the current geometry filter. false - if passed in object's type does NOT match against the currenty geometry filter.</p>
-<p>Note: If the current geometry filter is set to <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a1dff08a5c41813a94a2d4b56189cccd6">ON::any_object</a> OR 0, this routine will always return true, and no condtions or comparisons are checked or made. </p>
+<p>Returns: true - if passed in object's type matches against the current geometry filter. false - if passed in object's type does NOT match against the currently geometry filter.</p>
+<p>Note: If the current geometry filter is set to <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a1dff08a5c41813a94a2d4b56189cccd6">ON::any_object</a> OR 0, this routine will always return true, and no conditions or comparisons are checked or made. </p>
 
 </div>
 </div>
@@ -777,7 +777,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Determines if this conduit is bound to a specific pipeline or viewport Parameters: pipeline: [in] the pipeline to check binding against ignore_state: [in] determines if whether or not the "constant binding" state should be ignored. (See comments for "EnableConstantBinding()"). In other words, if this conduit is using constant binding (default), then it doesn't really matter if it is bound to anything since constant binding means "always bind to everything". However, most of the time it is neccessary to pay attention to the state since conduits can be manually bound and programs need to know which pipelines this conduit is bound to. There are certain conditions where the display pipeline need not pay attention to the constant binding state, but most likely all other programs do...It is recommended that if you do not understand exactly what is going on here, that you just use the default. </p>
+<p>Description: Determines if this conduit is bound to a specific pipeline or viewport Parameters: pipeline: [in] the pipeline to check binding against ignore_state: [in] determines if whether or not the "constant binding" state should be ignored. (See comments for "EnableConstantBinding()"). In other words, if this conduit is using constant binding (default), then it doesn't really matter if it is bound to anything since constant binding means "always bind to everything". However, most of the time it is necessary to pay attention to the state since conduits can be manually bound and programs need to know which pipelines this conduit is bound to. There are certain conditions where the display pipeline need not pay attention to the constant binding state, but most likely all other programs do...It is recommended that if you do not understand exactly what is going on here, that you just use the default. </p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Notifications... </p>
-<p>Description: Display pipelines will call this function when any of the actions defined in EConduitNotifiers occurs. This function is typically not overriden, but may be useful if you need to adjust internal data when different pipeline events occur. Parameters: notification_event: [in] the event reported by the display pipeline pipeline: [in] the display pipeline calling this conduit with the event notification. </p>
+<p>Description: Display pipelines will call this function when any of the actions defined in EConduitNotifiers occurs. This function is typically not overridden, but may be useful if you need to adjust internal data when different pipeline events occur. Parameters: notification_event: [in] the event reported by the display pipeline pipeline: [in] the display pipeline calling this conduit with the event notification. </p>
 
 </div>
 </div>
@@ -1196,7 +1196,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The geometry type filter controls which types of geometry (points, curves, surfaces, meshes, etc.) will be processed in any "object based" channels (see SC_OBJECT_BASED_CHANNEL)</p>
-<p>Parameters: geometry_filter - [in] an unsigned int made by or-ing ( | ) values from the <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a> enum. However, If you pass 0, then this is interpreted as "no geometry filter", which means ALL geometry will be processed and is equivelant to passing the value <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a1dff08a5c41813a94a2d4b56189cccd6">ON::any_object</a>.</p>
+<p>Parameters: geometry_filter - [in] an unsigned int made by or-ing ( | ) values from the <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a> enum. However, If you pass 0, then this is interpreted as "no geometry filter", which means ALL geometry will be processed and is equivalent to passing the value <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a1dff08a5c41813a94a2d4b56189cccd6">ON::any_object</a>.</p>
 <p>Note: The default geometry filter for all conduits is <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9a1dff08a5c41813a94a2d4b56189cccd6">ON::any_object</a>. If you want your conduit to only process specific types of objects, then you must set the geometry filter for your conduit accordingly. Using <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a> might seem like overkill for this purpose (since not all types are technically "drawn" as objects within the channels), however, this is more consistent with how filtering works in other classes.</p>
 <p>For example: If you have a conduit that executes in the SC_DRAWOBJECT channel, but you're only interested in processing "Light" objects, then you would set your conduit's geometry filter like so:</p>
 <p>myConduit.SetGeometryFilter( ON::light_type );</p>
@@ -1564,8 +1564,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4d3e1f3af4127fc95aefa3b1ba76320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d3e1f3af4127fc95aefa3b1ba76320">&#9670;&nbsp;</a></span>m_pChannelAttrs</h2>
+<a id="aa5b19f9fff8bb1cc253d592a6c2589c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b19f9fff8bb1cc253d592a6c2589c5">&#9670;&nbsp;</a></span>m_pChannelAttrs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1574,7 +1574,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_c_channel_attributes.html">CChannelAttributes</a>* CRhinoDisplayConduit::m_pChannelAttrs = nullptr</td>
+          <td class="memname">class <a class="el" href="class_c_channel_attributes.html">CChannelAttributes</a>* CRhinoDisplayConduit::m_pChannelAttrs = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1682,7 +1682,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

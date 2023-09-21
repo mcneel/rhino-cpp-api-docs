@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -83,8 +83,7 @@ Public Types</h2></td></tr>
 <a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5a5ef0c737746fae2ca90e66c39333f8f6">Result::Errors</a> = 2, 
 <a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5ae17fdb615452f440c793b5ddad90dd5e">Result::Warnings</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5ab9b57aae83585e17ede4570dcede353c">Result::Pass</a> = 4, 
-<a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5a72ef2b9b6965d078e3c7f95487a82d1c">Result::Skip</a> = 5
+&#160;&#160;<a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5a72ef2b9b6965d078e3c7f95487a82d1c">Result::Skip</a> = 5
 <br />
  }</td></tr>
 <tr class="memdesc:ae328861044e4cfea661a76a16b0e13e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5" title="ONX_ModelTest::Result reports the result of a test.">ONX_ModelTest::Result</a> reports the result of a test.  <a href="class_o_n_x___model_test.html#ae328861044e4cfea661a76a16b0e13e5">More...</a><br /></td></tr>
@@ -208,13 +207,11 @@ Static Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt; Test result is not set. /summary&gt; summary&gt; Test failed to complete. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5aceaa0734f0b3c738120c67344d8f3ec1"></a>Fail&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and completed, but at least one ON_ERROR occured. /summary&gt; </p>
+<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5aceaa0734f0b3c738120c67344d8f3ec1"></a>Fail&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and completed, but at least one ON_ERROR occurred. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5a5ef0c737746fae2ca90e66c39333f8f6"></a>Errors&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and completed, but at least one ON_WARNING occured. /summary&gt; </p>
+<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5a5ef0c737746fae2ca90e66c39333f8f6"></a>Errors&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and completed, but at least one ON_WARNING occurred. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5ae17fdb615452f440c793b5ddad90dd5e"></a>Warnings&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and passed. /summary&gt; </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5ab9b57aae83585e17ede4570dcede353c"></a>Pass&#160;</td><td class="fielddoc"><p>summary&gt; Test was not perfomed because the input did not satisfy prerequisites or an earlier test failed. For example, if a ONX_ModelReadTest::TestType::ReadWriteReadCompare test is requested and the source file is a Rhino 1 file, the compare test is skipped. For example, if a ONX_ModelReadTest::TestType::ReadWriteRead test is requested and the Write test failes, the second Read test is skipped. /summary&gt; </p>
+<tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5ae17fdb615452f440c793b5ddad90dd5e"></a>Warnings&#160;</td><td class="fielddoc"><p>summary&gt; Test was performed and passed. /summary&gt; Pass = 4, summary&gt; Test was not performed because the input did not satisfy prerequisites or an earlier test failed. For example, if a ONX_ModelReadTest::TestType::ReadWriteReadCompare test is requested and the source file is a Rhino 1 file, the compare test is skipped. For example, if a ONX_ModelReadTest::TestType::ReadWriteRead test is requested and the Write test fails, the second Read test is skipped. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae328861044e4cfea661a76a16b0e13e5a72ef2b9b6965d078e3c7f95487a82d1c"></a>Skip&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -609,7 +606,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Test <a class="el" href="class_o_n_x___model.html#a356596cc1d9606d5877fd503f28fbe44">ONX_Model::Read()</a> and <a class="el" href="class_o_n_x___model.html#aeb080afd3f41d09c76eb7b1c8aab21da">ONX_Model::Write()</a>. Parameters: file_path - [in] file path test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occured. </p>
+<p>Description: Test <a class="el" href="class_o_n_x___model.html#a356596cc1d9606d5877fd503f28fbe44">ONX_Model::Read()</a> and <a class="el" href="class_o_n_x___model.html#aeb080afd3f41d09c76eb7b1c8aab21da">ONX_Model::Write()</a>. Parameters: file_path - [in] file path test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occurred. </p>
 
 </div>
 </div>
@@ -656,7 +653,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: ONX_Model::ReadTest() can be used to test reading a specific file. Parameters: file_path - [in] file path test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occured. </p>
+<p>Description: ONX_Model::ReadTest() can be used to test reading a specific file. Parameters: file_path - [in] file path test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occurred. </p>
 
 </div>
 </div>
@@ -703,7 +700,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: ONX_Model::ReadTest() can be used to test reading a specific file. Parameters: fp - [in] fp pointer to a file opened with ON_FileStream::Opent(...,"rb"); test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occured. </p>
+<p>Description: ONX_Model::ReadTest() can be used to test reading a specific file. Parameters: fp - [in] fp pointer to a file opened with ON_FileStream::Opent(...,"rb"); test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occurred. </p>
 
 </div>
 </div>
@@ -751,7 +748,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: ONX_Model::Test() can be used to test reading a specific file. Parameters: archive - [in] <br  />
- test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occured. </p>
+ test_type - [in] test to perform. bKeepModels - [in] If true, then the ONX_Models created by reading 3dm archives are saved so the can be examined after the tests complete. text_log_file_path - [in] If not empty, the string to use for file_path in the output text_log. This is used to create logs on different computers that can be compared. text_log - [in] If text_log is not nullptr, then a summary of the test is sent to text_log. Returns: True if every test passed with no warnings or errors. False if a test failed or warnings or errors occurred. </p>
 
 </div>
 </div>
@@ -1165,7 +1162,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

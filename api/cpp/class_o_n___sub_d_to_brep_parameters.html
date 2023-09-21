@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -77,10 +77,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a42f9cffbd45ec118997ede5b1694b805"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">VertexProcess</a> : unsigned char { <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a6adf97f83acf6453d4a6a4b1070f3754">VertexProcess::None</a> = 0, 
+<tr class="memitem:a42f9cffbd45ec118997ede5b1694b805"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">VertexProcess</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a6adf97f83acf6453d4a6a4b1070f3754">VertexProcess::None</a> = 0, 
 <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a4ece1d7725932a23cd0f813680197699">VertexProcess::LocalG1</a> = 1, 
 <a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18">VertexProcess::LocalG2</a> = 2, 
-<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0">VertexProcess::LocalG1x</a> = 3
+<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0">VertexProcess::LocalG1x</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805a33a89efe01badba6469ba8d470d22077">VertexProcess::LocalG1xx</a> = 4
+<br />
  }</td></tr>
 <tr class="memdesc:a42f9cffbd45ec118997ede5b1694b805"><td class="mdescLeft">&#160;</td><td class="mdescRight">ON_SubDToBrepParameters::Vertex identifies the options for post processing extraorindary vertices.  <a href="class_o_n___sub_d_to_brep_parameters.html#a42f9cffbd45ec118997ede5b1694b805">More...</a><br /></td></tr>
 <tr class="separator:a42f9cffbd45ec118997ede5b1694b805"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +163,9 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a7c420e52ea421d09fa6b005b41319a18"></a>LocalG2&#160;</td><td class="fielddoc"><p>summary&gt; At extraordinary vertices, the NURBS patches are modified so they are G1 at the extraordinary vertex and tend to be closer to G1 along edges near the extraordinary vertex. Typically the deviation bewtween the brep and SubD surface is larger than LocalG1 and smaller than LocalG2. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0"></a>LocalG1x&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a52d240df88d8bdab9754cf67b27b91a0"></a>LocalG1x&#160;</td><td class="fielddoc"><p>summary&gt; At extraordinary vertices, the NURBS patches are modified so they are G1 at the extraordinary vertex and G1 along edges near the extraordinary vertex. The patches will have one double knot near the extraordinary vertex. /summary&gt; </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a42f9cffbd45ec118997ede5b1694b805a33a89efe01badba6469ba8d470d22077"></a>LocalG1xx&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -593,7 +599,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

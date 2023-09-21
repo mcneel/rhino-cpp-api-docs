@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -181,7 +181,7 @@ Friends</h2></td></tr>
 </p>
 <p>bits - [in] pointer to bitmap bits. If NULL, then it will be assumed the bitmap bits are after the palette in bmi.</p>
 <p>bitmap_filename - [in] If NULL or empty, then a unique name of the form "Bitmap 01" will be automatically created.</p>
-<p>bReplaceExisting - [in] If true and the there is alread a bitmap using the specified name, then that bitmap is replace. If false and there is already a bitmap using the specified name, then NULL is returned.</p>
+<p>bReplaceExisting - [in] If true and the there is already a bitmap using the specified name, then that bitmap is replace. If false and there is already a bitmap using the specified name, then NULL is returned.</p>
 <p>Returns: A pointer to the added bitmap or NULL if the bitmap name is in use and bReplaceExisting = false.</p>
 <p>See Also: <a class="el" href="class_c_rhino_bitmap_table.html#af805992e39d8aee6fa4697ad5a01bb8e">CRhinoBitmapTable::Bitmap</a> </p>
 
@@ -226,9 +226,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Adds a new bitmap with specified name to the bitmap table.</p>
 <p>Parameters: pBitmap - [in] an bitmap created with either new <a class="el" href="class_o_n___windows_bitmap_ex.html">ON_WindowsBitmapEx()</a> or new <a class="el" href="class_o_n___embedded_bitmap.html">ON_EmbeddedBitmap()</a>. If pBitmap-&gt;m_name is not set, a name will be provided.</p>
-<p>bReplaceExisting - [in] If true and the there is alread a bitmap using the specified name, then that bitmap is replace. If false and there is already a bitmap using the specified name, then NULL is returned.</p>
+<p>bReplaceExisting - [in] If true and the there is already a bitmap using the specified name, then that bitmap is replace. If false and there is already a bitmap using the specified name, then NULL is returned.</p>
 <p>worksession_ref_model_sn - [in] 0: bitmap is not a reference layer 1: bitmap is a reference layer but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
- linked_idef_sn - [in] 0: bitmap is not from a liked instance definition 1-1000: reserved for future use &gt;1000: bitmap instance defintion serial number</p>
+ linked_idef_sn - [in] 0: bitmap is not from a liked instance definition 1-1000: reserved for future use &gt;1000: bitmap instance definition serial number</p>
 <p>Returns: NULL if the bitmap cannot be added or the name is in use.</p>
 <p>See Also: <a class="el" href="class_c_rhino_file_utilities.html#a3d1b04d0eb77dd2385af04e6880bf447">CRhinoFileUtilities::FindFile</a> <a class="el" href="class_c_rhino_bitmap_table.html#af805992e39d8aee6fa4697ad5a01bb8e">CRhinoBitmapTable::Bitmap</a> </p>
 
@@ -340,7 +340,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a bitmap. Parameters: bitmap_name - [in] name of bitmap to search for. The search ignores case. bLoadFromFile - [in] if true, and the bitmap is on disk but not in the current table, then the bitmap is added to the table. Returns: NULL if the bitmap could not be found, otherwise a pointer to the bitmap is returned. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_bitmap_table.html#a7828f188b2fcfccccb88aa95673271ed">CRhinoBitmapTable::FindEmbeddedFile()</a> </dd></dl>
+<p>Description: Get a bitmap. Parameters: bitmap_name - [in] name of bitmap to search for. The search ignores case. bLoadFromFile - [in] if true, and the bitmap is on disk but not in the current table, then the bitmap is added to the table. Returns: NULL if the bitmap could not be found, otherwise a pointer to the bitmap is returned. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000138">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_bitmap_table.html#a7828f188b2fcfccccb88aa95673271ed">CRhinoBitmapTable::FindEmbeddedFile()</a> </dd></dl>
 
 </div>
 </div>
@@ -740,7 +740,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Use this to set <a class="el" href="class_c_rhino_bitmap.html#aed5104fb3b50181305a59331b4389ef6" title="Runtime index used to sort bitmaps in bitmap dialog.">CRhinoBitmap::m_sort_index</a> so that the values of m_sort_index run from 0 to <a class="el" href="class_c_rhino_bitmap_table.html#ac5e274a86d23a65cdbf81888d5eaf5c2">BitmapCount()</a>-1 and compare(bitmap_table[i],bitmap_table[j]) &lt; 0 ) implies bitmap_table[i].m_sort_index &lt; bitmap_table[j].m_sort_index.</p>
-<p>Parameters: compare - [in] compare function with prototype int compare(const CRhinoBitmap* arg1,const CRhinoBitmap* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL cull(const CRhinoBitmap* arg,void* p). that returns TRUE if the bitmap should be ignored when sorting. Bitmaps that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_bitmap_table.html#a862a98d0619269fd2eec247c33bdb5cf">GetSortedList()</a>. Pass 0 if you do not need to cull bitmaps p - [in] pointer passed as last argument to compare() and cull().</p>
+<p>Parameters: compare - [in] compare function with prototype int compare(const CRhinoBitmap* arg1,const CRhinoBitmap* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL32 cull(const CRhinoBitmap* arg,void* p). that returns TRUE if the bitmap should be ignored when sorting. Bitmaps that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_bitmap_table.html#a862a98d0619269fd2eec247c33bdb5cf">GetSortedList()</a>. Pass 0 if you do not need to cull bitmaps p - [in] pointer passed as last argument to compare() and cull().</p>
 <p>Remarks: After calling <a class="el" href="class_c_rhino_bitmap_table.html#aefa3a8244dc9b8a9f2a23b7250928588">Sort()</a>, you can repeatedly call <a class="el" href="class_c_rhino_bitmap_table.html#a862a98d0619269fd2eec247c33bdb5cf">GetSortedList()</a> to get a sorted list of <a class="el" href="class_c_rhino_bitmap.html">CRhinoBitmap</a> pointers. <a class="el" href="class_c_rhino_bitmap_table.html#aefa3a8244dc9b8a9f2a23b7250928588">Sort()</a> and <a class="el" href="class_c_rhino_bitmap_table.html#a862a98d0619269fd2eec247c33bdb5cf">GetSortedList()</a> do not modify the order or persistent information in the bitmap table. They are intended to be used to get sorted lists of bitmaps for dialogs, etc. </p>
 
 </div>
@@ -810,7 +810,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

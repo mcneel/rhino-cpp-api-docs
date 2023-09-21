@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lpcustominfo_51000',['LPCUSTOMINFO',['../class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a62622c8194e4352eb9bcc393a8c221cb',1,'CRhinoUiTabbedSheetCtrlMsg']]],
-  ['lprhinouioptionslistctrlnm_51001',['LPRhinoUiOptionsListCtrlNM',['../group___rhino_u_i.html#gacebd5a8758526decc65046300175b214',1,'RhinoSdkUiOptionsListCtrl.h']]]
+  ['gpu_5fsurface_53016',['GPU_SURFACE',['../group___r_d_k.html#ga095ab06e5e2af539bd8f6f7fed036cd2',1,'IRhRdkRenderWindow.h']]]
 ];

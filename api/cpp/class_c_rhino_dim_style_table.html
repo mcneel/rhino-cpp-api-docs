@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -86,9 +86,9 @@ Inheritance diagram for CRhinoDimStyleTable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4dfd69f00c732a90f01bb8470b875ba2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_c_rhino_dim_style_table.html#a4dfd69f00c732a90f01bb8470b875ba2a57924dbf7795b41c689fc40d7ecb2ab3">DefaultDimStyleCount</a> = 12
+<tr class="memitem:a338331f56f22af1901e80000324689fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_c_rhino_dim_style_table.html#a338331f56f22af1901e80000324689fba57924dbf7795b41c689fc40d7ecb2ab3">DefaultDimStyleCount</a> = 12
  }</td></tr>
-<tr class="separator:a4dfd69f00c732a90f01bb8470b875ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a338331f56f22af1901e80000324689fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -231,10 +231,10 @@ Friends</h2></td></tr>
 <tr class="separator:a1c55291426e0b1f7514be3d32d0c085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_c_rhino_dim_style_table.html">CRhinoDimStyleTable</a> class - A list of DimensionStyle settings groups The base class is private because this dynamic array must be accessed and modified in a controled way to insure the document is valid. </p>
+<div class="textblock"><p><a class="el" href="class_c_rhino_dim_style_table.html">CRhinoDimStyleTable</a> class - A list of DimensionStyle settings groups The base class is private because this dynamic array must be accessed and modified in a controlled way to insure the document is valid. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a4dfd69f00c732a90f01bb8470b875ba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dfd69f00c732a90f01bb8470b875ba2">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a338331f56f22af1901e80000324689fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338331f56f22af1901e80000324689fb">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +245,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4dfd69f00c732a90f01bb8470b875ba2a57924dbf7795b41c689fc40d7ecb2ab3"></a>DefaultDimStyleCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a338331f56f22af1901e80000324689fba57924dbf7795b41c689fc40d7ecb2ab3"></a>DefaultDimStyleCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -376,7 +376,7 @@ Friends</h2></td></tr>
 <p>Description: Basic tool used to create a new dimstyle with specified definition to the dimstyle table. The <a class="el" href="class_c_rhino_dim_style_table.html#ac11b47c52c93654619db3079d3059bb8">AddDimStyle()</a> functions all use <a class="el" href="class_c_rhino_dim_style_table.html#a6c8e564bdf64a7a541beb6f98864cc84">CreateDimStyle()</a> when a new dimstyle needs to be added to the dimstyle table.</p>
 <p>Parameters: dimstyle - [in] definition of new dimstyle. The information in dimstyle is copied. If dimstyle.DimStyleName() is empty the a unique name of the form "DimStyle 01" will be automatically created.</p>
 <p>worksession_ref_model_sn - [in] 0: dimstyle is not a reference layer 1: dimstyle is a reference dimstyle but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number</p>
-<p>linked_idef_sn - [in] 0: dimstyle is not from a liked instance definition 1-1000: reserved for future use &gt;1000: dimstyle instance defintion serial number</p>
+<p>linked_idef_sn - [in] 0: dimstyle is not from a liked instance definition 1-1000: reserved for future use &gt;1000: dimstyle instance definition serial number</p>
 <p>Returns: @untitled table &gt;=0 index of new dimstyle -1 dimstyle not added because a dimstyle with that name already exists. </p>
 
 </div>
@@ -990,7 +990,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a list of the default dimension styles. Returns: Number of dimension styles added to the list. Remarks: The dimension style table has <a class="el" href="class_c_rhino_dim_style_table.html#a4dfd69f00c732a90f01bb8470b875ba2a57924dbf7795b41c689fc40d7ecb2ab3">CRhinoDimStyleTable::DefaultDimStyleCount</a> default dimension styles. </p>
+<p>Description: Get a list of the default dimension styles. Returns: Number of dimension styles added to the list. Remarks: The dimension style table has <a class="el" href="class_c_rhino_dim_style_table.html#a338331f56f22af1901e80000324689fba57924dbf7795b41c689fc40d7ecb2ab3">CRhinoDimStyleTable::DefaultDimStyleCount</a> default dimension styles. </p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a list of the default dimension styles. Parameters: default_dimension_style_list_capacity - [in] Capacity of the default_dimension_style_list[] array. default_dimension_style_list - [out] List of default dimension styles. Returns: Number of dimension styles added to the list. Remarks: The dimension style table has <a class="el" href="class_c_rhino_dim_style_table.html#a4dfd69f00c732a90f01bb8470b875ba2a57924dbf7795b41c689fc40d7ecb2ab3">CRhinoDimStyleTable::DefaultDimStyleCount</a> default dimension styles. </p>
+<p>Description: Get a list of the default dimension styles. Parameters: default_dimension_style_list_capacity - [in] Capacity of the default_dimension_style_list[] array. default_dimension_style_list - [out] List of default dimension styles. Returns: Number of dimension styles added to the list. Remarks: The dimension style table has <a class="el" href="class_c_rhino_dim_style_table.html#a338331f56f22af1901e80000324689fba57924dbf7795b41c689fc40d7ecb2ab3">CRhinoDimStyleTable::DefaultDimStyleCount</a> default dimension styles. </p>
 
 </div>
 </div>
@@ -1241,7 +1241,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Conceptually, the dim style table is an array of <a class="el" href="class_c_rhino_dim_style_table.html#a213ac7388a08e2e6c103f4405822b098">DimStyleCount()</a> dim styles. The operator[] can be used to get individual dim styles. A dim style is either active or deleted and this state is reported by <a class="el" href="class_o_n___model_component.html#a5bc2c0cb6df27a80db5554fa2630279f">CRhinoDimStyle::IsDeleted()</a>.</p>
 <p>Parameters: style_index - zero based array index</p>
-<p>Returns: Refererence to the style. If style_index is out of range, the current style is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_dim_style_table.html#ac11b47c52c93654619db3079d3059bb8">AddDimStyle()</a> is called. </p>
+<p>Returns: Reference to the style. If style_index is out of range, the current style is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_dim_style_table.html#ac11b47c52c93654619db3079d3059bb8">AddDimStyle()</a> is called. </p>
 
 </div>
 </div>
@@ -1349,7 +1349,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Sets the name on dim_style to a name that is not currently used in the this dimstyle table. Parameters: dim_style - [in/out] If dim_style has no name or an empty name, then a unique name is assined.</p>
+<p>Description: Sets the name on dim_style to a name that is not currently used in the this dimstyle table. Parameters: dim_style - [in/out] If dim_style has no name or an empty name, then a unique name is assigned.</p>
 <p>If dim_style has a non-empty name, it is tested to see if is there is an existing dimension style in the table that has the same name. If the name is not used by an existing dimension style, then dim_style is not changed. If the name is used by an existing dimension style, then a suffix is appended to the dim_style name to make it unique. </p>
 
 </div>
@@ -1703,7 +1703,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

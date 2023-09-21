@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a188530b09c59bb302aad88f8de8695ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5d2947812c914621a28d69199cc782"><td class="memItemLeft" align="right" valign="top">static ON__UINT_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_worker_thread.html#abf5d2947812c914621a28d69199cc782">ThreadId</a> ()</td></tr>
 <tr class="separator:abf5d2947812c914621a28d69199cc782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b675bf81e720f96d90554a210b47bec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_worker_thread.html#a0b675bf81e720f96d90554a210b47bec">WorkerContextSerialNumber</a> ()</td></tr>
+<tr class="memitem:a0b675bf81e720f96d90554a210b47bec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_worker_thread.html#a0b675bf81e720f96d90554a210b47bec">WorkerContextSerialNumber</a> ()</td></tr>
 <tr class="separator:a0b675bf81e720f96d90554a210b47bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9294bc5bc097c026f66020db92ca18a4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_worker_thread.html#a9294bc5bc097c026f66020db92ca18a4">WorkerThreadsEnabled</a> ()</td></tr>
 <tr class="separator:a9294bc5bc097c026f66020db92ca18a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,7 +204,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Parameters: bDelete - [in] pass this parameter on to the ON_Object::DestroyRuntimeCache(bDelete) function. Basically, if bDelete is true, then you should free/delete runtime cache information that is on the heap. If bDelete is false, then you should simply zero out pointers on main heap/stack classes that point to memory allocated from the worker pool. If this is confusing, then you need to get help before you check in anything using cancel threads.</p>
 <p>Remarks: It is critical to do this right. If you don't we end up with hrd to repeat crashes that happen one to many commands after the actual cancel event.</p>
 <p>This function is pure virtual so that any developer using a cancel thread is forced to think about cleaning up runtime memory caches. If you are at all confused, then please ask for help or do not use cancel threads.</p>
-<p>Test thouroughly before checking in. </p>
+<p>Test thoroughly before checking in. </p>
 
 </div>
 </div>
@@ -428,9 +428,9 @@ Static Public Member Functions</h2></td></tr>
       {
 </pre><p> / Call the virtual ON_Object::DestroyRuntimeCache(bDelete) / on object that are in the main thread.</p>
 <p>/ Be sure to get this right, or we get hard to trace / crashes that happen in other places after a cancel. } ...</p>
-<p>{ ... CMyWorker worker; ... BOOL bCompletedTask = worker.Run( RhLocalizeString( L"Calculating widget hyperextension coefficient", 43572) ); if ( !bCompletedTask ) { / User canceled task - carefully destroy worker } else { / harvest results from worker membr variables } }</p>
+<p>{ ... CMyWorker worker; ... BOOL32 bCompletedTask = worker.Run( RhLocalizeString( L"Calculating widget hyperextension coefficient", 43572) ); if ( !bCompletedTask ) { / User canceled task - carefully destroy worker } else { / harvest results from worker membr variables } }</p>
 <p>Remarks: Do NOT create dialogs and do NOT call Rhino SDK functions in a <a class="el" href="class_c_rhino_worker_thread.html#a902159dba65582065d2ce605be4cc887">Worker()</a> function except for those listed below.</p>
-<p>You may call the following Rhino SDK functions in a Worker function: <a class="el" href="class_c_rhino_app.html#a32a124baf6209ba2639a14b197c856c0" title="Print formatted text in the command window.">CRhinoApp.Print</a> <a class="el" href="class_c_rhino_doc.html#a813722e39d678e5b7ace7bece8a9042f">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#a63a520539f289501a0d2945357b4e720">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#add7413371ebae520fc9f569c1a37fca4">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a871a97df95e55a253477bd1504e1f8f7">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#af85c473054db985a3b8145ecac55bf71">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#a4a3c53130f0336a3f86488fb96c204a6">CRhinoDoc::AddBrepObject</a></p>
+<p>You may call the following Rhino SDK functions in a Worker function: <a class="el" href="class_c_rhino_app.html#a32a124baf6209ba2639a14b197c856c0" title="Print formatted text in the command window.">CRhinoApp.Print</a> <a class="el" href="class_c_rhino_doc.html#afe28ae3ec23fa0e753d5d9baf7b57682">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#a7898b22890e0436c2fc7a297dc2bb459">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#af0d7704626bc1bd6ec13cc22319c4448">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a8b4ce5764e1200ea4ef5162d5ddb36d0">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#a2edac229a96c617a9377224da656eefd">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#afc65698d06b7e8bc13bcc8fb7c7b8ead">CRhinoDoc::AddBrepObject</a></p>
 <p>Other than adding objects, don't mess with the document, application, or views in a <a class="el" href="class_c_rhino_worker_thread.html#a902159dba65582065d2ce605be4cc887">Worker()</a> function. </p>
 
 </div>
@@ -445,7 +445,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> CRhinoWorkerThread::WorkerContextSerialNumber </td>
+          <td class="memname">static <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> CRhinoWorkerThread::WorkerContextSerialNumber </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -490,7 +490,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

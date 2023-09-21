@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ Public Types</h2></td></tr>
 <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2ae4a01647b00e26a3a96c0515b5926f70">TextureCoordinatesOption::CopyCoordinates</a> = 5
 <br />
  }</td></tr>
-<tr class="memdesc:a7718384c2a29b5cfc10b5ecd426d77b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how texture coordinate information is transfered from the mesh to the SubD.  <a href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2">More...</a><br /></td></tr>
+<tr class="memdesc:a7718384c2a29b5cfc10b5ecd426d77b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how texture coordinate information is transferred from the mesh to the SubD.  <a href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2">More...</a><br /></td></tr>
 <tr class="separator:a7718384c2a29b5cfc10b5ecd426d77b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -183,6 +183,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa8679759d393498af38dce444f5374a2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html">ON_SubDFromMeshParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#aa8679759d393498af38dce444f5374a2">ConvexAndConcaveCornersAndInteriorCreases</a></td></tr>
+<tr class="separator:aa8679759d393498af38dce444f5374a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3acd24a6913a407b1670ec028be47426"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html">ON_SubDFromMeshParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a3acd24a6913a407b1670ec028be47426">ConvexCornersAndInteriorCreases</a></td></tr>
 <tr class="separator:a3acd24a6913a407b1670ec028be47426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5af0c62cc2653c63a1de30a619bb6d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html">ON_SubDFromMeshParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a4c5af0c62cc2653c63a1de30a619bb6d">InteriorCreases</a></td></tr>
@@ -219,9 +221,9 @@ Static Public Attributes</h2></td></tr>
 <p>Concave corner options</p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa16ccbcd90b18360f0823902f58dd537ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt;The option is not set. </p>
-<p>summary&gt;No concave coners. In general, this is the best choice. </p>
+<p>summary&gt;No concave corners. In general, this is the best choice. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa16ccbcd90b18360f0823902f58dd537a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt;A concave subd corner will appear at input mesh boundary vertices where the corner angle &gt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#ad2f8ae3c06ff7967133f0a4e0e2e31c2">MinimumConcaveCornerAngleRadians()</a> and the number of edges the end at the vertex is &gt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a53846c1b08065139dc12f8fc3b9d9b59">MinimumConcaveCornerEdgeCount()</a>. /summary&gt; </p>
+<tr><td class="fieldname"><a id="aa16ccbcd90b18360f0823902f58dd537a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; A concave subd corner will appear at input mesh boundary vertices where the corner angle &gt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#ad2f8ae3c06ff7967133f0a4e0e2e31c2">MinimumConcaveCornerAngleRadians()</a> and the number of edges the end at the vertex is &gt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a53846c1b08065139dc12f8fc3b9d9b59">MinimumConcaveCornerEdgeCount()</a>. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa16ccbcd90b18360f0823902f58dd537af2673bcb756844b631d5ccd872d4a54a"></a>AtMeshCorner&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -252,9 +254,9 @@ Static Public Attributes</h2></td></tr>
 <p>Convex corner options</p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3f06b6a6798eb6c6312d5125b7aa9a87ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt;The option is not set. </p>
-<p>summary&gt;No convex coners. </p>
+<p>summary&gt;No convex corners. In general,this is the best choice. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3f06b6a6798eb6c6312d5125b7aa9a87a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt;A convex subd corner will appear at input mesh boundary vertices where the corner angle &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a> and the number of edges the end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a>. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a3f06b6a6798eb6c6312d5125b7aa9a87a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; A convex subd corner will appear at input mesh boundary vertices where the corner angle &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a> and the number of edges the end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a>. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3f06b6a6798eb6c6312d5125b7aa9a87af2673bcb756844b631d5ccd872d4a54a"></a>AtMeshCorner&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -314,19 +316,19 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Specifies how texture coordinate information is transfered from the mesh to the SubD. </p>
+<p>Specifies how texture coordinate information is transferred from the mesh to the SubD. </p>
 <p>Texture coordinates</p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt;The option is not set. </p>
-<p>summary&gt;No texture coordianate information is transfered from the mesh. </p>
+<p>summary&gt;No texture coordianate information is transferred from the mesh. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; If the mesh has a mapping, then <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2a88f64a7e5e525460e2e621c1f843d274">TextureCoordinatesOption::CopyMapping</a> is used. Otherwise if the mesh has texture coordinates, then <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2ae4a01647b00e26a3a96c0515b5926f70">TextureCoordinatesOption::CopyCoordinates</a> is used. Otherwise <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a7718384c2a29b5cfc10b5ecd426d77b2aa1977c3f68d4d3bbfe14d0e51a575482">TextureCoordinatesOption::Packed</a> is used. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2a086247a9b57fde6eefee2a0c4752242d"></a>Automatic&#160;</td><td class="fielddoc"><p>summary&gt; No texture coordianate information is transfered from the mesh. The SubD faces are packed. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2a086247a9b57fde6eefee2a0c4752242d"></a>Automatic&#160;</td><td class="fielddoc"><p>summary&gt; No texture coordianate information is transferred from the mesh. The SubD faces are packed. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2aa1977c3f68d4d3bbfe14d0e51a575482"></a>Packed&#160;</td><td class="fielddoc"><p>summary&gt;Texture coordinates mapping information is copied from the mesh. Generally this is the best choice because common mappings, like planar, will appear as most people expect on the SubD. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2a88f64a7e5e525460e2e621c1f843d274"></a>CopyMapping&#160;</td><td class="fielddoc"><p>summary&gt; If a mesh has custom texture coordinates, the custom texture coordinates are transfered to the SubD. This requires more memory resources, slows subdivision evaluation, often produces unattractive results on n-gons, and distorts the texture when comes from a common mapping technique, like planar. This option may be useful when the mesh contains only triangles and quads and the custom texture coordinates are of high quality. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2a88f64a7e5e525460e2e621c1f843d274"></a>CopyMapping&#160;</td><td class="fielddoc"><p>summary&gt; If a mesh has custom texture coordinates, the custom texture coordinates are transferred to the SubD. This requires more memory resources, slows subdivision evaluation, often produces unattractive results on n-gons, and distorts the texture when comes from a common mapping technique, like planar. This option may be useful when the mesh contains only triangles and quads and the custom texture coordinates are of high quality. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7718384c2a29b5cfc10b5ecd426d77b2ae4a01647b00e26a3a96c0515b5926f70"></a>CopyCoordinates&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -652,7 +654,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If ConvexCornerTest() ConvexCornerOption::at_mesh_corner, then an input mesh boundary vertex becomes a sub-D corner when the number of edges that end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a> edges and the corner angle is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a>. Returns: The maximum corner angle. </p>
+<p>Description: If ConvexCornerTest() ConvexCornerOption::at_mesh_corner, then an input mesh boundary vertex becomes a sub-D corner when the number of edges that end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a> edges and the corner angle is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a>.</p>
+<p>The default value is 2pi/3 = 120 degrees. Returns: The maximum corner angle. </p>
 
 </div>
 </div>
@@ -863,7 +866,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If ConvexCornerTest() ConvexCornerOption::at_mesh_corner, then an input mesh boundary vertex becomes a sub-D corner when the number of edges that end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a> edges and the corner angle is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a>. Parameters: maximum_convex_corner_angle_radians - [in] &gt; 0.0 and &lt; ON_PI </p>
+<p>Description: If ConvexCornerTest() ConvexCornerOption::at_mesh_corner, then an input mesh boundary vertex becomes a sub-D corner when the number of edges that end at the vertex is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a6b82faa14f67f4a2b7749d5b8a3352bd">MaximumConvexCornerEdgeCount()</a> edges and the corner angle is &lt;= <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html#a5b33bbb4971b7c32f0fb0a752f4ab04f">MaximumConvexCornerAngleRadians()</a>.</p>
+<p>The default value is 2pi/3 = 120 degrees. Parameters: maximum_convex_corner_angle_radians - [in] &gt; 0.0 and &lt; ON_PI </p>
 
 </div>
 </div>
@@ -1008,6 +1012,29 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa8679759d393498af38dce444f5374a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8679759d393498af38dce444f5374a2">&#9670;&nbsp;</a></span>ConvexAndConcaveCornersAndInteriorCreases</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_from_mesh_parameters.html">ON_SubDFromMeshParameters</a> ON_SubDFromMeshParameters::ConvexAndConcaveCornersAndInteriorCreases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create an interior sub-D crease along all input mesh double edges. Look for convex corners at sub-D vertices with 2 edges that have an included angle &lt;= 90 degrees. Look for concave corners at sub-D vertices with 3 edges that have an included angle &gt;= 270 degrees. </p>
+
+</div>
+</div>
 <a id="a3acd24a6913a407b1670ec028be47426"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3acd24a6913a407b1670ec028be47426">&#9670;&nbsp;</a></span>ConvexCornersAndInteriorCreases</h2>
 
@@ -1027,7 +1054,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Look for convex corners at sub-D vertices with 2 edges that have an included angle &lt;= 90 degrees. </p>
+<p>Create an interior sub-D crease along all input mesh double edges. Look for convex corners at sub-D vertices with 2 edges that have an included angle &lt;= 90 degrees. </p>
 
 </div>
 </div>
@@ -1083,7 +1110,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

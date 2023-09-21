@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -279,7 +279,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a new layer with a specified name and color. Parameters: layer_name - [in] If the name is nullptr or an empty string, an unsused layer name is automatically used. layer_color - [in] If layer_color is <a class="el" href="class_o_n___color.html#a54c9448a0e7a53032cdb7f111163aca9" title="0xFFFFFFFFu">ON_Color::UnsetColor</a>, the default layer color is used bReturnExistingLayer - [in] If there is a layer named layer_name and bReturnExistingLayer is true, then the index of the existing layer is returned. If there is a layer named layer_name and bReturnExistingLayer is false, then the ON_UNSET_INT_INDEX is returned. Returns: &gt;= 0: index of the layer ON_UNSET_INT_INDEX: layer could not be added because layer_name was invalid or a layer named layer_name and bReturnExistingLayer was false. </p>
+<p>Description: Create a new layer with a specified name and color. Parameters: layer_name - [in] If the name is nullptr or an empty string, an unused layer name is automatically used. layer_color - [in] If layer_color is <a class="el" href="class_o_n___color.html#a54c9448a0e7a53032cdb7f111163aca9" title="0xFFFFFFFFu">ON_Color::UnsetColor</a>, the default layer color is used bReturnExistingLayer - [in] If there is a layer named layer_name and bReturnExistingLayer is true, then the index of the existing layer is returned. If there is a layer named layer_name and bReturnExistingLayer is false, then the ON_UNSET_INT_INDEX is returned. Returns: &gt;= 0: index of the layer ON_UNSET_INT_INDEX: layer could not be added because layer_name was invalid or a layer named layer_name and bReturnExistingLayer was false. </p>
 
 </div>
 </div>
@@ -338,8 +338,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Basic tool used by the add layer fucntions. Parameters: layer - [in] settings for new layer. These are copied to the layer table entry and any user data on layer is moved to the layer table entry. layer_type - [in] 0: ordinary layer 2: linked instance definiton "filename.3dm" parent layer of the instance defintion's layer tree 4: worksession reference model "filename.3dm" parent layer of the reference model's layer tree worksession_ref_model_sn - [in] 0: layer is not a reference layer 1: layer is a reference layer but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
- linked_idef_sn - [in] 0: layer is not from a liked instance definition 1-1000: reserved for future use &gt;1000: linked instance defintion serial number <br  />
+<p>Description: Basic tool used by the add layer functions. Parameters: layer - [in] settings for new layer. These are copied to the layer table entry and any user data on layer is moved to the layer table entry. layer_type - [in] 0: ordinary layer 2: linked instance definition "filename.3dm" parent layer of the instance defintion's layer tree 4: worksession reference model "filename.3dm" parent layer of the reference model's layer tree worksession_ref_model_sn - [in] 0: layer is not a reference layer 1: layer is a reference layer but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
+ linked_idef_sn - [in] 0: layer is not from a liked instance definition 1-1000: reserved for future use &gt;1000: linked instance definition serial number <br  />
  </p>
 
 </div>
@@ -520,7 +520,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Layer tables store the list of layers in a /// Rhino document.</p>
+<p>Description: Layer tables store the list of layers in a Rhino document.</p>
 <p>Returns: CRhinoDocument that owns this layer table. </p>
 
 </div>
@@ -589,7 +589,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: When user interface code is using a GetString to find a layer name, set up the getter and then call FindLayer(CRhinoGetString&amp;). Paramters: gs - [in] gs.GetString() is called to get the layer name. Set up options, prompts, and so on before calling FindLayer(gs,...) nothing_layer_index - [in] If &gt;= 0, then this index is used if gs returns <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a1c573dfab7385ea501b4e5b28022ad24" title="user pressed enter - typically used to accpt defaults">CRhinoGet::nothing</a>. bVerbose - [in] If true and the layer is not found or two or more layers have the same name, then <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.Print() is used to print a message in the command feedback window. Returns: -5: gs.CommandResult() != <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4dac34f742c71045ed49e4f0b2f10b1fef1" title="command worked">CRhinoCommand::success</a> -4: gs.Result() != <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886aa78a9e2c44fef8b037bfb960d048dde8" title="user typed a string - call String() to get the string">CRhinoGet::string</a> -3: empty string entered -2: two or more layers with the same name -1: no layer with specified name &gt;=0: index of the layer with the given name </p>
+<p>Description: When user interface code is using a GetString to find a layer name, set up the getter and then call FindLayer(CRhinoGetString&amp;). Parameters: gs - [in] gs.GetString() is called to get the layer name. Set up options, prompts, and so on before calling FindLayer(gs,...) nothing_layer_index - [in] If &gt;= 0, then this index is used if gs returns <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a1c573dfab7385ea501b4e5b28022ad24" title="user pressed enter - typically used to accpt defaults">CRhinoGet::nothing</a>. bVerbose - [in] If true and the layer is not found or two or more layers have the same name, then <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.Print() is used to print a message in the command feedback window. Returns: -5: gs.CommandResult() != <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4dac34f742c71045ed49e4f0b2f10b1fef1" title="command worked">CRhinoCommand::success</a> -4: gs.Result() != <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886aa78a9e2c44fef8b037bfb960d048dde8" title="user typed a string - call String() to get the string">CRhinoGet::string</a> -3: empty string entered -2: two or more layers with the same name -1: no layer with specified name &gt;=0: index of the layer with the given name </p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the layer with a specified parent and name. Parameters: parent_layer_id - [in] ON_nil_uuid for a root level layer (no parent) layer_name - [in] layer name not_found_return_value - [in] If no layer is found this value is returned. Returns: != not_found_return_value: index of the layer with the specified parent and name == not_found_return_value: no layer has the specified parent and name Remarks: Layers with differnt parents may have identical names. </p>
+<p>Description: Find the layer with a specified parent and name. Parameters: parent_layer_id - [in] ON_nil_uuid for a root level layer (no parent) layer_name - [in] layer name not_found_return_value - [in] If no layer is found this value is returned. Returns: != not_found_return_value: index of the layer with the specified parent and name == not_found_return_value: no layer has the specified parent and name Remarks: Layers with different parents may have identical names. </p>
 
 </div>
 </div>
@@ -782,7 +782,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Find a layer from a name that uniquely identifies a layer. Parameters: layer_name - [in] - name of layer to find bIgnoreDeletedLayers - [in] - parameter is unused Returns: -2: two or more layers with the same name -1: no layer with specified name &gt;=0: index of the layer with the given name Example: If there are layers with indices and names:</p>
 <p>0: "alpha" 1: "beta" 2: "beta::alpha" 3: "beta::gamma" 4: "beta::gamma::pi" 5: "beta::gamma::omega" 5: "beta::gamma::omega::pi"</p>
-<p>Then FindLayerFromUniqueName( "alpha" ) returns 0. FindLayerFromUniqueName( "beta::alpha" ) returns 2. FindLayerFromUniqueName( "gamma" ) returns 3. FindLayerFromUniqueName( "pi" ) returns -2. (multiple possible answers) FindLayerFromUniqueName( "beta::gamma::pi" ) returns 4. FindLayerFromUniqueName( "beta::gamma::omega::pi" ) returns 5. FindLayerFromUniqueName( "sigma" ) returns -1. (no matches) FindLayerFromUniqueName( "" ) returns -1. (no matches) FindLayerFromUniqueName( null ) returns -1. (no matches) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000150">Deprecated:</a></b></dt><dd>use overload that accepts not_found_return_value and multiple_found_return_value parameters </dd></dl>
+<p>Then FindLayerFromUniqueName( "alpha" ) returns 0. FindLayerFromUniqueName( "beta::alpha" ) returns 2. FindLayerFromUniqueName( "gamma" ) returns 3. FindLayerFromUniqueName( "pi" ) returns -2. (multiple possible answers) FindLayerFromUniqueName( "beta::gamma::pi" ) returns 4. FindLayerFromUniqueName( "beta::gamma::omega::pi" ) returns 5. FindLayerFromUniqueName( "sigma" ) returns -1. (no matches) FindLayerFromUniqueName( "" ) returns -1. (no matches) FindLayerFromUniqueName( null ) returns -1. (no matches) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000196">Deprecated:</a></b></dt><dd>use overload that accepts not_found_return_value and multiple_found_return_value parameters </dd></dl>
 
 </div>
 </div>
@@ -1141,7 +1141,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Conceptually, the layer table is an array of <a class="el" href="class_c_rhino_layer_table.html#aff5673a8def2a696bb4051a3eb8288f1">LayerCount()</a> layers. The operator[] can be used to get individual layers. A layer is either active or deleted and this state is reported by <a class="el" href="class_o_n___model_component.html#a5bc2c0cb6df27a80db5554fa2630279f">CRhinoLayer::IsDeleted()</a>.</p>
 <p>Parameters: layer_index - zero based array index</p>
-<p>Returns: Refererence to the layer. If layer_index is out of range, the current layer is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_layer_table.html#abcefcbadf5bfe8de76168ccdb4365cab">AddLayer()</a> is called. </p>
+<p>Returns: Reference to the layer. If layer_index is out of range, the current layer is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_layer_table.html#abcefcbadf5bfe8de76168ccdb4365cab">AddLayer()</a> is called. </p>
 
 </div>
 </div>
@@ -1349,7 +1349,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If the layer has been modified and the modifcation can be undone, then UndoModify() will restore the layer to its previous state.</p>
+<p>Description: If the layer has been modified and the modification can be undone, then UndoModify() will restore the layer to its previous state.</p>
 <p>Returns: true if this layer had been modified and the modifications were undone.</p>
 <p>See Also: IsModified. </p>
 
@@ -1517,7 +1517,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

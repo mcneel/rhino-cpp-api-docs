@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -257,7 +257,7 @@ Friends</h2></td></tr>
 <p>Parameters: material - [in] definition of new material. The information in material is copied. It is fine to have empty material names</p>
 <p>worksession_ref_model_sn - [in] 0: material is not a reference layer 1: material is a reference linetype but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
 </p>
-<p>linked_idef_sn - [in] 0: material is not from a liked instance definition 1-1000: reserved for future use &gt;1000: material instance defintion serial number <br  />
+<p>linked_idef_sn - [in] 0: material is not from a liked instance definition 1-1000: reserved for future use &gt;1000: material instance definition serial number <br  />
 </p>
 <p>Returns: @untitled table &gt;=0 index of new material -1 material not added because a material with that name already exists.</p>
 <p>Remarks: In some cases, calling <a class="el" href="class_c_rhino_material_table.html#ad640b85b1f23789e3d974ea41559c302">AddMaterial()</a> can cause the memory references returned by operator[] and CurrentMaterial() to become invalid. </p>
@@ -795,7 +795,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Conceptually, the material table is an array of <a class="el" href="class_c_rhino_material_table.html#aa481b1106b4a3a6ac1f767db88cb8117">MaterialCount()</a> materials. The operator[] can be used to get individual materials. A material is either active or deleted and this state is reported by <a class="el" href="class_o_n___model_component.html#a5bc2c0cb6df27a80db5554fa2630279f">CRhinoMaterial::IsDeleted()</a>.</p>
 <p>Parameters: material_index - zero based array index or -1 for the default rendering material.</p>
-<p>Returns: Refererence to the material. If material_index is out of range, the current material is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_material_table.html#ad640b85b1f23789e3d974ea41559c302">AddMaterial()</a> is called. </p>
+<p>Returns: Reference to the material. If material_index is out of range, the current material is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_material_table.html#ad640b85b1f23789e3d974ea41559c302">AddMaterial()</a> is called. </p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If the material has been modified and the modifcation can be undone, then UndoModify() will restore the material to its previous state.</p>
+<p>Description: If the material has been modified and the modification can be undone, then UndoModify() will restore the material to its previous state.</p>
 <p>Returns: TRUE if this material had been modified and the modifications were undone.</p>
 <p>See Also: IsModified. </p>
 
@@ -1043,7 +1043,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The "WorstPossibleMaterial" is used when no document is available but poorly designed code reqires a material. This code can't possibly do anything useful because there is no context in which to use a material. </p>
+<p>The "WorstPossibleMaterial" is used when no document is available but poorly designed code requires a material. This code can't possibly do anything useful because there is no context in which to use a material. </p>
 
 </div>
 </div>
@@ -1106,7 +1106,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

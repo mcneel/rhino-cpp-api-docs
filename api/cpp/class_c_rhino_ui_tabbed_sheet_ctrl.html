@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -202,8 +202,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abee203d0bd0a51e34d2eefa91c2b97aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5cab3e0058d0cefe0ff144e9c03e207"><td class="memItemLeft" align="right" valign="top">afx_msg void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#ac5cab3e0058d0cefe0ff144e9c03e207">OnRButtonDown</a> (UINT nFlags, CPoint point)</td></tr>
 <tr class="separator:ac5cab3e0058d0cefe0ff144e9c03e207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a221ae1dab8f560aef10be2ff3bbcb"><td class="memItemLeft" align="right" valign="top">afx_msg BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#ae4a221ae1dab8f560aef10be2ff3bbcb">OnSetCursor</a> (CWnd *pWnd, UINT nHitTest, UINT message)</td></tr>
-<tr class="separator:ae4a221ae1dab8f560aef10be2ff3bbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235985f92a2f3930fca47b05e8ae10b0"><td class="memItemLeft" align="right" valign="top">afx_msg <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a235985f92a2f3930fca47b05e8ae10b0">OnSetCursor</a> (CWnd *pWnd, UINT nHitTest, UINT message)</td></tr>
+<tr class="separator:a235985f92a2f3930fca47b05e8ae10b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b63c64e0fdedac1e76771e6d532083"><td class="memItemLeft" align="right" valign="top">afx_msg void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#aa4b63c64e0fdedac1e76771e6d532083">OnSize</a> (UINT nType, int cx, int cy)</td></tr>
 <tr class="separator:aa4b63c64e0fdedac1e76771e6d532083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a6f5b3b8b8b0765e3e1bd173efddd2"><td class="memItemLeft" align="right" valign="top">afx_msg void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#aa9a6f5b3b8b8b0765e3e1bd173efddd2">OnTimer</a> (UINT_PTR nIDEvent)</td></tr>
@@ -439,7 +439,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1e9c2852b7ff24726bcb29ddadd899dda5a7b2c4b1b92e2019ee9a4060611c5e9"></a>orient_top&#160;</td><td class="fielddoc"><p>Display tabs at top of control with pages bellow. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1e9c2852b7ff24726bcb29ddadd899dda5a7b2c4b1b92e2019ee9a4060611c5e9"></a>orient_top&#160;</td><td class="fielddoc"><p>Display tabs at top of control with pages below. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1e9c2852b7ff24726bcb29ddadd899ddac3aad8d9171fd7d0b4a22a105d9bcacb"></a>orient_left&#160;</td><td class="fielddoc"><p>Display tabs on left side of control with pages to the right. </p>
 </td></tr>
@@ -883,7 +883,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Use this method to begin in-place editing of the specified text in the tab.</p>
 <p>Parameters: iItem [in] Zero-based index of the tab.</p>
-<p>Returns: Returns a pointer to the in-place edit control if successfull otherwise returns NULL.</p>
+<p>Returns: Returns a pointer to the in-place edit control if successful otherwise returns NULL.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#ac5d538f89c501eaeb5bc66b13822b758">CRhinoUiTabbedSheetCtrl::GetEditControl()</a> <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a791a8c66a2c6c89dc5553073124eebab">CRhinoUiTabbedSheetCtrl::CancelEditLabel()</a> </p>
 
 </div>
@@ -972,7 +972,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: By default active tabs are drawing using ::GetSysColor( COLOR_WINDOW) and inactive tabs are drawn using ::GetSysColor( COLOR_BTNFACE). You may override this behaivor by setting a color to a value other than ON_UNSET_COLOR. Cal this method to determine the current draw colors.</p>
+<p>Description: By default active tabs are drawing using ::GetSysColor( COLOR_WINDOW) and inactive tabs are drawn using ::GetSysColor( COLOR_BTNFACE). You may override this behavior by setting a color to a value other than ON_UNSET_COLOR. Cal this method to determine the current draw colors.</p>
 <p>Parameters: crActiveTab [out] Color to use when drawing the active tab background. crActiveText [out] Color to use when drawing the active tab caption text. crNormalTab [out] Color to use when drawing an inactive tab background. crNormalText [out] Color to use when drawing an inactive tab caption text.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#ad5c4cc4ca056a04e6ea6dec2d531dec0">CRhinoUiTabbedSheetCtrl::SetControlColors()</a> </p>
 
@@ -1131,7 +1131,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Retrieves information about a tab in a tab control.</p>
 <p>Parameters: iItem [in] Zero-based index of the tab.</p>
-<p>Returns: Pointer to a <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_item.html">CRhinoUiTabbedSheetCtrlItem</a> which contains infomation about the tab.</p>
+<p>Returns: Pointer to a <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_item.html">CRhinoUiTabbedSheetCtrlItem</a> which contains information about the tab.</p>
 <p>See Also: class <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_item.html">CRhinoUiTabbedSheetCtrlItem</a> </p>
 
 </div>
@@ -1341,7 +1341,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Remove item from display but not from tab control. This is usefull to temporarily hide a tab. Hidding the current tab will result in the current selection being set to none.</p>
+<p>Description: Remove item from display but not from tab control. This is useful to temporarily hide a tab. Hidding the current tab will result in the current selection being set to none.</p>
 <p>Parameters: iItem [in] Zero-based index of the tab to hide.</p>
 <p>Returns: Returns true if tab was hidden successfully. </p>
 
@@ -1428,7 +1428,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to find out if "Previous" and "Next" scroll buttons will be displayed. The "Previous" button will make sure the item, prior to the current first visible item, is displayed, the "Next" button will make sure the item after the last displayed is visible.</p>
-<p>Returns: Retuns true if "Next" and "Previous" buttons are visible otherwise false.</p>
+<p>Returns: Returns true if "Next" and "Previous" buttons are visible otherwise false.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a345a4cbe646ef4387222a543ddea8487">CRhinoUiTabbedSheetCtrl::IncludeFirstAndLastButtons()</a> </p>
 
 </div>
@@ -2131,14 +2131,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae4a221ae1dab8f560aef10be2ff3bbcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4a221ae1dab8f560aef10be2ff3bbcb">&#9670;&nbsp;</a></span>OnSetCursor()</h2>
+<a id="a235985f92a2f3930fca47b05e8ae10b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235985f92a2f3930fca47b05e8ae10b0">&#9670;&nbsp;</a></span>OnSetCursor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">afx_msg BOOL CRhinoUiTabbedSheetCtrl::OnSetCursor </td>
+          <td class="memname">afx_msg <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> CRhinoUiTabbedSheetCtrl::OnSetCursor </td>
           <td>(</td>
           <td class="paramtype">CWnd *&#160;</td>
           <td class="paramname"><em>pWnd</em>, </td>
@@ -2232,7 +2232,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to get the current display orientation for tab control items in this control.</p>
-<p>Returns: Returns the current display orientation for tab control items in this control. Possible values: orient_top Display tabs at top of control with pages bellow orient_left Display tabs on left side of control with pages to the right orient_right Display tabs on right side of control with pages to the left orient_bottom Display tabs at bottom of control with pages above</p>
+<p>Returns: Returns the current display orientation for tab control items in this control. Possible values: orient_top Display tabs at top of control with pages below orient_left Display tabs on left side of control with pages to the right orient_right Display tabs on right side of control with pages to the left orient_bottom Display tabs at bottom of control with pages above</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a292bc0ee768f9c5b69ca613c2572e1a3">CRhinoUiTabbedSheetCtrl::SetOrientation()</a> <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a1e9c2852b7ff24726bcb29ddadd899dd">CRhinoUiTabbedSheetCtrl::orientation</a> </p>
 
 </div>
@@ -2482,7 +2482,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Send specified message to the parent of this control, if the message returns zero then send the message to this window also. The message will only be sent to the parent if bToParent is true.</p>
 <p>Parameters: bToParent [in] If bToParent is true then message is sent to the parent window. If the parent window returns non-zero then nothing else happens. If the parent window returns zero then the message is also sent to this control. If bToParent is false then the message is sent directly to this control. info [in/out] Message ID and parameters to send to window(s)</p>
-<p>Returns: Returns value recieved by CWnd::SendMessage().</p>
+<p>Returns: Returns value received by CWnd::SendMessage().</p>
 <p>See Also: CWnd::SendMessage() class <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html">CRhinoUiTabbedSheetCtrlMsg</a> <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a586f3b5bd0901da4e690384d2890a6ea">CRhinoUiTabbedSheetCtrlMsg::InitCustomInfo()</a> </p>
 
 </div>
@@ -2524,7 +2524,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: By default active tabs are drawing using ::GetSysColor( COLOR_WINDOW) and inactive tabs are drawn using ::GetSysColor( COLOR_BTNFACE). You may override this behaivor by setting a color to a value other than ON_UNSET_COLOR. Calling this method without any arguments will reset the colors to there default values.</p>
+<p>Description: By default active tabs are drawing using ::GetSysColor( COLOR_WINDOW) and inactive tabs are drawn using ::GetSysColor( COLOR_BTNFACE). You may override this behavior by setting a color to a value other than ON_UNSET_COLOR. Calling this method without any arguments will reset the colors to there default values.</p>
 <p>Parameters: crActiveTab [in] Color to use when drawing the active tab background. crActiveText [in] Color to use when drawing the active tab caption text. crNormalTab [in] Color to use when drawing an inactive tab background. crNormalText [in] Color to use when drawing an inactive tab caption text.</p>
 <p>Returns: Returns true if colors are changed.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#af1c4bb804eb4c6eaf70b715f52211718">CRhinoUiTabbedSheetCtrl::GetControlColors()</a> </p>
@@ -2611,7 +2611,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Call this method to enable or disalbe the display of the "First" and "Last" scroll buttons. The "First" button will make sure the first visible tab control item is displayed, the "Last" button will make sure the last visible tab control item is displayed.</p>
+<p>Description: Call this method to enable or disable the display of the "First" and "Last" scroll buttons. The "First" button will make sure the first visible tab control item is displayed, the "Last" button will make sure the last visible tab control item is displayed.</p>
 <p>Parameters: b [in] If this is true then the first and last buttons will be displayed otherwise they will not.</p>
 <p>Returns: Returns previous state.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a345a4cbe646ef4387222a543ddea8487">CRhinoUiTabbedSheetCtrl::IncludeFirstAndLastButtons()</a> </p>
@@ -2781,7 +2781,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Set the display orientation for tab control items in this control.</p>
-<p>Parameters: orient [in] Display orientation for tab control items in this control. Possible values: orient_top Display tabs at top of control with pages bellow orient_left Display tabs on left side of control with pages to the right orient_right Display tabs on right side of control with pages to the left orient_bottom Display tabs at bottom of control with pages above</p>
+<p>Parameters: orient [in] Display orientation for tab control items in this control. Possible values: orient_top Display tabs at top of control with pages below orient_left Display tabs on left side of control with pages to the right orient_right Display tabs on right side of control with pages to the left orient_bottom Display tabs at bottom of control with pages above</p>
 <p>Returns: Returns previous orientation</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a030a31850e19eeeda4e809b7a0b39245">CRhinoUiTabbedSheetCtrl::Orientation()</a> <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a1e9c2852b7ff24726bcb29ddadd899dd">CRhinoUiTabbedSheetCtrl::orientation</a> </p>
 
@@ -3750,7 +3750,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

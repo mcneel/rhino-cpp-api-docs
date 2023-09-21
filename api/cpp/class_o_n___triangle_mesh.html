@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -386,7 +386,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Create a double precision triangle mesh from an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>. Parameters: mesh - [in] Mesh to use for triangle references. bPersistentMeshReference - <a href="When in doubt, pass false.">in</a> If bPersistentMeshReference is true, then the caller is responsible for making sure "mesh" persists unchanged for the life of this <a class="el" href="class_o_n___triangle_mesh.html">ON_TriangleMesh</a> class and as much mesh information as possible will be referenced. If bPersistentMeshReference is false, all information will be copied to heap managed by this <a class="el" href="class_o_n___triangle_mesh.html">ON_TriangleMesh</a> class. Remarks: The index of the <a class="el" href="class_o_n___mesh.html#a005e7e4b0f04014c289264e06e496450" title="m_F[] facets (triangles or quads)">ON_Mesh::m_F</a>[] facet used to generate the triangle is m_T[][3]. <br  />
- If <a class="el" href="class_o_n___mesh.html#a005e7e4b0f04014c289264e06e496450" title="m_F[] facets (triangles or quads)">ON_Mesh::m_F</a>[fi] facet is a quad, then two triangles will be made using one of the following vertex sets from <a class="el" href="class_o_n___mesh_face.html#a48215097327f42857c4761bebb6252e1" title="vertex index - vi[2]==vi[3] for tirangles">ON_MeshFace::vi</a>[] array. (0,1,2,fi) and (0,2,3,fi), or (1,2,3,fi) and (1,3,0,fi) <br  />
+ If <a class="el" href="class_o_n___mesh.html#a005e7e4b0f04014c289264e06e496450" title="m_F[] facets (triangles or quads)">ON_Mesh::m_F</a>[fi] facet is a quad, then two triangles will be made using one of the following vertex sets from <a class="el" href="class_o_n___mesh_face.html#a48215097327f42857c4761bebb6252e1" title="vertex index - vi[2]==vi[3] for triangles">ON_MeshFace::vi</a>[] array. (0,1,2,fi) and (0,2,3,fi), or (1,2,3,fi) and (1,3,0,fi) <br  />
  </p>
 
 </div>
@@ -441,7 +441,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Deletes any cached bounding box, triangle plane, R-tree or Vmap information. Remarks: If you modify the length or values of the m_V[] of m_T[] arrays, then any cached bounding box, triangle plane, R-tree or Vmap informtion may be invalid and should be destroyed. </p>
+<p>Description: Deletes any cached bounding box, triangle plane, R-tree or Vmap information. Remarks: If you modify the length or values of the m_V[] of m_T[] arrays, then any cached bounding box, triangle plane, R-tree or Vmap information may be invalid and should be destroyed. </p>
 
 </div>
 </div>
@@ -894,7 +894,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> that looks like this triangle mesh. Parameters: mesh - [in] null or the mesh to store the result. Returns: Null if this mesh is not valid, othewise a pointer to an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> class that looks like this triangle mesh. If the mesh input parameter is null, then the returned mesh is on the heap and must be managed by the caller. <br  />
+<p>Description: Get an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> that looks like this triangle mesh. Parameters: mesh - [in] null or the mesh to store the result. Returns: Null if this mesh is not valid, otherwise a pointer to an <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> class that looks like this triangle mesh. If the mesh input parameter is null, then the returned mesh is on the heap and must be managed by the caller. <br  />
  </p>
 
 </div>
@@ -1294,7 +1294,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

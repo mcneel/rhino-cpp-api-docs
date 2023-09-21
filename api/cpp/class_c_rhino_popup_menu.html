@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -103,11 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6b2277d27cc910c38461d0dbb9e8dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#ae6b2277d27cc910c38461d0dbb9e8dd2">EnableItem</a> (int nItem, bool bEnable=true)</td></tr>
 <tr class="separator:ae6b2277d27cc910c38461d0dbb9e8dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803b6e5b12fab52026415d5f32e4c2f7"><td class="memItemLeft" align="right" valign="top">HMENU&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#a803b6e5b12fab52026415d5f32e4c2f7">GetMenuHandle</a> ()</td></tr>
-<tr class="memdesc:a803b6e5b12fab52026415d5f32e4c2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu handel for the context menu to be displayed.  <a href="class_c_rhino_popup_menu.html#a803b6e5b12fab52026415d5f32e4c2f7">More...</a><br /></td></tr>
+<tr class="memdesc:a803b6e5b12fab52026415d5f32e4c2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu handle for the context menu to be displayed.  <a href="class_c_rhino_popup_menu.html#a803b6e5b12fab52026415d5f32e4c2f7">More...</a><br /></td></tr>
 <tr class="separator:a803b6e5b12fab52026415d5f32e4c2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5fa678abfc20272b5c228f51558b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#a1b5fa678abfc20272b5c228f51558b14">ItemCount</a> () const</td></tr>
 <tr class="memdesc:a1b5fa678abfc20272b5c228f51558b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of items currently added to the menu, this includes separators and sub menus.  <a href="class_c_rhino_popup_menu.html#a1b5fa678abfc20272b5c228f51558b14">More...</a><br /></td></tr>
 <tr class="separator:a1b5fa678abfc20272b5c228f51558b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab343c1fc60726a20cec39425f29c548b"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#ab343c1fc60726a20cec39425f29c548b">ItemId</a> (int nItem)</td></tr>
+<tr class="separator:ab343c1fc60726a20cec39425f29c548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293fe85e9ab89853e32d6d2b936c7b04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#a293fe85e9ab89853e32d6d2b936c7b04">ItemReferenceIndexFromId</a> (UINT nId)</td></tr>
+<tr class="separator:a293fe85e9ab89853e32d6d2b936c7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b97cd4dbe87fbee28ffc727f1fa7a85"><td class="memItemLeft" align="right" valign="top">MSG *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_popup_menu.html#a2b97cd4dbe87fbee28ffc727f1fa7a85">LastMessage</a> ()</td></tr>
 <tr class="memdesc:a2b97cd4dbe87fbee28ffc727f1fa7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return NULL if left or right button picked is not true otherwise return pointer to message structure for message.  <a href="class_c_rhino_popup_menu.html#a2b97cd4dbe87fbee28ffc727f1fa7a85">More...</a><br /></td></tr>
 <tr class="separator:a2b97cd4dbe87fbee28ffc727f1fa7a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,7 +301,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a new string or bitmap item to the end of the popup menu. Parameters: lps [in] String to add hBitmap [in] Handle to the bitmap to be displayed or standard bitmap. See hbmpItem in the MENUITEMINFO structure definition in the MSDN help file for details. This bitmap will be coppied so it is up to you to delete it when you are done. hBitmapChecked [in] Handle to the bitmap to display next to the item if it is selected. If this member is NULL, a default bitmap is used. hBitmapUnChecked [in] Handle to the bitmap to display next to the item if it is not selected. If this member is NULL, no bitmap is used. Returns: Returns value &lt; 0 on error otherwise item reference index </p>
+<p>Description: Add a new string or bitmap item to the end of the popup menu. Parameters: lps [in] String to add hBitmap [in] Handle to the bitmap to be displayed or standard bitmap. See hbmpItem in the MENUITEMINFO structure definition in the MSDN help file for details. This bitmap will be copied so it is up to you to delete it when you are done. hBitmapChecked [in] Handle to the bitmap to display next to the item if it is selected. If this member is NULL, a default bitmap is used. hBitmapUnChecked [in] Handle to the bitmap to display next to the item if it is not selected. If this member is NULL, no bitmap is used. Returns: Returns value &lt; 0 on error otherwise item reference index </p>
 
 </div>
 </div>
@@ -423,7 +427,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Menu handel for the context menu to be displayed. </p>
+<p>Menu handle for the context menu to be displayed. </p>
 <p>Description: </p>
 
 </div>
@@ -445,6 +449,42 @@ Friends</h2></td></tr>
 
 <p>Returns the number of items currently added to the menu, this includes separators and sub menus. </p>
 <p>Description: </p>
+
+</div>
+</div>
+<a id="ab343c1fc60726a20cec39425f29c548b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab343c1fc60726a20cec39425f29c548b">&#9670;&nbsp;</a></span>ItemId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT CRhinoPopupMenu::ItemId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a293fe85e9ab89853e32d6d2b936c7b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293fe85e9ab89853e32d6d2b936c7b04">&#9670;&nbsp;</a></span>ItemReferenceIndexFromId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoPopupMenu::ItemReferenceIndexFromId </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>nId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -568,7 +608,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Called when WM_INITMENU message received for context menu. Parameters: hWnd [in] Window that recieved the message hMenu [in] Context menu </p>
+<p>Description: Called when WM_INITMENU message received for context menu. Parameters: hWnd [in] Window that received the message hMenu [in] Context menu </p>
 
 </div>
 </div>
@@ -756,7 +796,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Convert original sub menu ID to runtime ID which was used in this menu. This is usefull when initializing the menu at runtime. Parameters: hMenuOriginal [in] Menu handle passed to <a class="el" href="class_c_rhino_popup_menu.html#a3eccdf1ebf13c36373aeee9dd06ee2e2">AddItem()</a> to add the sub menu nOriginalID [in] Original menu item ID Returns: Returns the runtime ID for the menu item or 0 if not found. </p>
+<p>Description: Convert original sub menu ID to runtime ID which was used in this menu. This is useful when initializing the menu at runtime. Parameters: hMenuOriginal [in] Menu handle passed to <a class="el" href="class_c_rhino_popup_menu.html#a3eccdf1ebf13c36373aeee9dd06ee2e2">AddItem()</a> to add the sub menu nOriginalID [in] Original menu item ID Returns: Returns the runtime ID for the menu item or 0 if not found. </p>
 
 </div>
 </div>
@@ -805,7 +845,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set status bar help text Parameters: nItem [in] Item reference index returned by <a class="el" href="class_c_rhino_popup_menu.html#a3eccdf1ebf13c36373aeee9dd06ee2e2">AddItem()</a> lps [in] Text to be displayed if status bar is sychronized </p>
+<p>Description: Set status bar help text Parameters: nItem [in] Item reference index returned by <a class="el" href="class_c_rhino_popup_menu.html#a3eccdf1ebf13c36373aeee9dd06ee2e2">AddItem()</a> lps [in] Text to be displayed if status bar is synchronized </p>
 
 </div>
 </div>
@@ -858,7 +898,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

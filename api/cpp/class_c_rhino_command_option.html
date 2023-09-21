@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -104,10 +104,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a863a8130a443bf2cace96f50f7b89dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a863a8130a443bf2cace96f50f7b89dc6">SetDisplayString</a> (int nUniqueChars) const</td></tr>
 <tr class="memdesc:a863a8130a443bf2cace96f50f7b89dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets m_display_string  <a href="class_c_rhino_command_option.html#a863a8130a443bf2cace96f50f7b89dc6">More...</a><br /></td></tr>
 <tr class="separator:a863a8130a443bf2cace96f50f7b89dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351bb34fb5aad65777ee5a56c05bb8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a351bb34fb5aad65777ee5a56c05bb8ac">SetVaries</a> (bool bVaries)</td></tr>
+<tr class="memdesc:a351bb34fb5aad65777ee5a56c05bb8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true the list/number/color/toggle option value is displayed as "Varies".  <a href="class_c_rhino_command_option.html#a351bb34fb5aad65777ee5a56c05bb8ac">More...</a><br /></td></tr>
+<tr class="separator:a351bb34fb5aad65777ee5a56c05bb8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78b79b687a04b3a80eddff7432623c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#ab78b79b687a04b3a80eddff7432623c2">UpdateValue</a> (const wchar_t *)</td></tr>
 <tr class="separator:ab78b79b687a04b3a80eddff7432623c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95addd14e7166bb5ff25031da80ac2b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a95addd14e7166bb5ff25031da80ac2b6">ValidNumber</a> (double value) const</td></tr>
 <tr class="separator:a95addd14e7166bb5ff25031da80ac2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ef2935db75b6959b2bea9c1a87c1d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a95ef2935db75b6959b2bea9c1a87c1d0">Varies</a> () const</td></tr>
+<tr class="separator:a95ef2935db75b6959b2bea9c1a87c1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -117,7 +122,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af3171eaf59dd9ba8b6dbb9ac369af6c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#af3171eaf59dd9ba8b6dbb9ac369af6c6">m_color_option_value</a></td></tr>
 <tr class="separator:af3171eaf59dd9ba8b6dbb9ac369af6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a1447a32da67f605f6ccaf1f2ad702b8f">m_color_option_value_ptr</a></td></tr>
-<tr class="memdesc:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" color options  <a href="class_c_rhino_command_option.html#a1447a32da67f605f6ccaf1f2ad702b8f">More...</a><br /></td></tr>
 <tr class="separator:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c84a8f7a34063d2cfb7651cdad718d"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a21c84a8f7a34063d2cfb7651cdad718d">m_display_rect</a></td></tr>
 <tr class="memdesc:a21c84a8f7a34063d2cfb7651cdad718d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(volatile) for hit testing mouse picks  <a href="class_c_rhino_command_option.html#a21c84a8f7a34063d2cfb7651cdad718d">More...</a><br /></td></tr>
@@ -136,6 +140,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acad2c911fe4dbf0f8fc6054c5aa31af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#acad2c911fe4dbf0f8fc6054c5aa31af0">m_english_toggle_option_OffOn</a> [2]</td></tr>
 <tr class="memdesc:acad2c911fe4dbf0f8fc6054c5aa31af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is for _english script processing  <a href="class_c_rhino_command_option.html#acad2c911fe4dbf0f8fc6054c5aa31af0">More...</a><br /></td></tr>
 <tr class="separator:acad2c911fe4dbf0f8fc6054c5aa31af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e408c50451702760cf444e6fbf07757"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a2e408c50451702760cf444e6fbf07757">m_flags</a></td></tr>
+<tr class="memdesc:a2e408c50451702760cf444e6fbf07757"><td class="mdescLeft">&#160;</td><td class="mdescRight">0x01 = option value is displayed as "Varies"  <a href="class_c_rhino_command_option.html#a2e408c50451702760cf444e6fbf07757">More...</a><br /></td></tr>
+<tr class="separator:a2e408c50451702760cf444e6fbf07757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e7b5610bd5d319a73cea7550d51a3f"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a61e7b5610bd5d319a73cea7550d51a3f">m_integer_option_value_ptr</a></td></tr>
 <tr class="memdesc:a61e7b5610bd5d319a73cea7550d51a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" integer options  <a href="class_c_rhino_command_option.html#a61e7b5610bd5d319a73cea7550d51a3f">More...</a><br /></td></tr>
 <tr class="separator:a61e7b5610bd5d319a73cea7550d51a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,8 +166,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adfcc5b820cf8721064fc12dabf940989"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#adfcc5b820cf8721064fc12dabf940989">m_number_lower_limit</a></td></tr>
 <tr class="memdesc:adfcc5b820cf8721064fc12dabf940989"><td class="mdescLeft">&#160;</td><td class="mdescRight">if != ON_UNSET_VALUE, number value must be &gt;= lower_limit  <a href="class_c_rhino_command_option.html#adfcc5b820cf8721064fc12dabf940989">More...</a><br /></td></tr>
 <tr class="separator:adfcc5b820cf8721064fc12dabf940989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b84eb54f53c26afb888cabbcc774c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#ae3b84eb54f53c26afb888cabbcc774c3">m_number_option_format</a></td></tr>
-<tr class="separator:ae3b84eb54f53c26afb888cabbcc774c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a89cf38264b63539f8c0d805ea30ff6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a6a89cf38264b63539f8c0d805ea30ff6">m_number_option_format</a></td></tr>
+<tr class="separator:a6a89cf38264b63539f8c0d805ea30ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab885bf6dd7e041c465713f551887788"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#aab885bf6dd7e041c465713f551887788">m_number_option_value</a></td></tr>
 <tr class="memdesc:aab885bf6dd7e041c465713f551887788"><td class="mdescLeft">&#160;</td><td class="mdescRight">number options  <a href="class_c_rhino_command_option.html#aab885bf6dd7e041c465713f551887788">More...</a><br /></td></tr>
 <tr class="separator:aab885bf6dd7e041c465713f551887788"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +189,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a81c643411461aa3eaba77a4cc11ea60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d62da0bf19fd00a0dc986ad234ca406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a2d62da0bf19fd00a0dc986ad234ca406">m_option_value</a></td></tr>
 <tr class="separator:a2d62da0bf19fd00a0dc986ad234ca406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c518f35689ef72fc54902a30a550c17"><td class="memItemLeft" align="right" valign="top">BOOL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a4c518f35689ef72fc54902a30a550c17">m_toggle_BOOL_option_value_ptr</a></td></tr>
-<tr class="memdesc:a4c518f35689ef72fc54902a30a550c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" toggle options  <a href="class_c_rhino_command_option.html#a4c518f35689ef72fc54902a30a550c17">More...</a><br /></td></tr>
-<tr class="separator:a4c518f35689ef72fc54902a30a550c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132885ffe8bed947c77a40518f09b57c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a132885ffe8bed947c77a40518f09b57c">m_reserved</a> [2]</td></tr>
+<tr class="separator:a132885ffe8bed947c77a40518f09b57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941020043cc0f51b49fb088329def3c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a941020043cc0f51b49fb088329def3c3">m_toggle_BOOL_option_value_ptr</a></td></tr>
+<tr class="memdesc:a941020043cc0f51b49fb088329def3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" toggle options  <a href="class_c_rhino_command_option.html#a941020043cc0f51b49fb088329def3c3">More...</a><br /></td></tr>
+<tr class="separator:a941020043cc0f51b49fb088329def3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354808cb1149cea25e0f60473e3159c1"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a354808cb1149cea25e0f60473e3159c1">m_toggle_bool_option_value_ptr</a></td></tr>
 <tr class="memdesc:a354808cb1149cea25e0f60473e3159c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" toggle options  <a href="class_c_rhino_command_option.html#a354808cb1149cea25e0f60473e3159c1">More...</a><br /></td></tr>
 <tr class="separator:a354808cb1149cea25e0f60473e3159c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +342,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a351bb34fb5aad65777ee5a56c05bb8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351bb34fb5aad65777ee5a56c05bb8ac">&#9670;&nbsp;</a></span>SetVaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoCommandOption::SetVaries </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bVaries</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true the list/number/color/toggle option value is displayed as "Varies". </p>
+
+</div>
+</div>
 <a id="ab78b79b687a04b3a80eddff7432623c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab78b79b687a04b3a80eddff7432623c2">&#9670;&nbsp;</a></span>UpdateValue()</h2>
 
@@ -367,6 +396,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: TRUE if this is a number option and the value passes the m_bIntegerNumberValue, m_number_lower_limit, and m_number_upper_limit tests. </p>
+
+</div>
+</div>
+<a id="a95ef2935db75b6959b2bea9c1a87c1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ef2935db75b6959b2bea9c1a87c1d0">&#9670;&nbsp;</a></span>Varies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoCommandOption::Varies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -412,7 +458,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
 <p>used for "automatic" color options </p>
 
 </div>
@@ -508,6 +553,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>this is for _english script processing </p>
+
+</div>
+</div>
+<a id="a2e408c50451702760cf444e6fbf07757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e408c50451702760cf444e6fbf07757">&#9670;&nbsp;</a></span>m_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CRhinoCommandOption::m_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>0x01 = option value is displayed as "Varies" </p>
 
 </div>
 </div>
@@ -640,14 +701,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3b84eb54f53c26afb888cabbcc774c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b84eb54f53c26afb888cabbcc774c3">&#9670;&nbsp;</a></span>m_number_option_format</h2>
+<a id="a6a89cf38264b63539f8c0d805ea30ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a89cf38264b63539f8c0d805ea30ff6">&#9670;&nbsp;</a></span>m_number_option_format</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int CRhinoCommandOption::m_number_option_format</td>
+          <td class="memname">char CRhinoCommandOption::m_number_option_format</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -782,14 +843,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c518f35689ef72fc54902a30a550c17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c518f35689ef72fc54902a30a550c17">&#9670;&nbsp;</a></span>m_toggle_BOOL_option_value_ptr</h2>
+<a id="a132885ffe8bed947c77a40518f09b57c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132885ffe8bed947c77a40518f09b57c">&#9670;&nbsp;</a></span>m_reserved</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOL* CRhinoCommandOption::m_toggle_BOOL_option_value_ptr</td>
+          <td class="memname">char CRhinoCommandOption::m_reserved[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a941020043cc0f51b49fb088329def3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941020043cc0f51b49fb088329def3c3">&#9670;&nbsp;</a></span>m_toggle_BOOL_option_value_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>* CRhinoCommandOption::m_toggle_BOOL_option_value_ptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -848,7 +923,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

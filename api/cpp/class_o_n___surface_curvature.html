@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -78,6 +78,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3bca264797bab35ba7541ff2d05d7fd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ac3bca264797bab35ba7541ff2d05d7fd">GaussianCurvature</a> () const</td></tr>
+<tr class="memdesc:ac3bca264797bab35ba7541ff2d05d7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Gaussian curvature is k1*k2.  <a href="class_o_n___surface_curvature.html#ac3bca264797bab35ba7541ff2d05d7fd">More...</a><br /></td></tr>
 <tr class="separator:ac3bca264797bab35ba7541ff2d05d7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac512c7ad0e780b4e1c7586d6680a8875"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ac512c7ad0e780b4e1c7586d6680a8875">IsSet</a> () const</td></tr>
 <tr class="separator:ac512c7ad0e780b4e1c7586d6680a8875"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,11 +86,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6ed52b505f8d4c7c0204844ab187921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7c74978d24b0f69527db687ee94be9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a0e7c74978d24b0f69527db687ee94be9">IsZero</a> () const</td></tr>
 <tr class="separator:a0e7c74978d24b0f69527db687ee94be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f9fd7bee2aa4953513570d6cdf6645"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a22f9fd7bee2aa4953513570d6cdf6645">KappaValue</a> (<a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a> kappa_style) const</td></tr>
+<tr class="memdesc:a22f9fd7bee2aa4953513570d6cdf6645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate one of the four typical curvature values associated with the two principal curvatures and frequently used in false color curvature analysis.  <a href="class_o_n___surface_curvature.html#a22f9fd7bee2aa4953513570d6cdf6645">More...</a><br /></td></tr>
+<tr class="separator:a22f9fd7bee2aa4953513570d6cdf6645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1690a06278e2139fbd725e3c107f8179"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a1690a06278e2139fbd725e3c107f8179">MaximumRadius</a> () const</td></tr>
+<tr class="memdesc:a1690a06278e2139fbd725e3c107f8179"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a> is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)).  <a href="class_o_n___surface_curvature.html#a1690a06278e2139fbd725e3c107f8179">More...</a><br /></td></tr>
 <tr class="separator:a1690a06278e2139fbd725e3c107f8179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aea28c50aba4a797cdc17b02ee58ffe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a9aea28c50aba4a797cdc17b02ee58ffe">MeanCurvature</a> () const</td></tr>
+<tr class="memdesc:a9aea28c50aba4a797cdc17b02ee58ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mean curvature is (k1+k2)/2.  <a href="class_o_n___surface_curvature.html#a9aea28c50aba4a797cdc17b02ee58ffe">More...</a><br /></td></tr>
 <tr class="separator:a9aea28c50aba4a797cdc17b02ee58ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ab1696dbb64e4f0a56f78a23e230d4f1e">MinimumRadius</a> () const</td></tr>
+<tr class="memdesc:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinte radius values are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>.  <a href="class_o_n___surface_curvature.html#ab1696dbb64e4f0a56f78a23e230d4f1e">More...</a><br /></td></tr>
 <tr class="separator:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -107,6 +114,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:ad1b53721dde0070347d21d76afff5262"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262">InfinteRadius</a></td></tr>
+<tr class="memdesc:ad1b53721dde0070347d21d76afff5262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value used to indicate a radius of curvature is infinite (1e300).  <a href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262">More...</a><br /></td></tr>
+<tr class="separator:ad1b53721dde0070347d21d76afff5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a388329d8f8ac90a592872bc5cb6a66"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a8a388329d8f8ac90a592872bc5cb6a66">Nan</a></td></tr>
 <tr class="separator:a8a388329d8f8ac90a592872bc5cb6a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2c274e98236070fbb81f0458f36c48"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#afe2c274e98236070fbb81f0458f36c48">Zero</a></td></tr>
@@ -166,6 +176,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The Gaussian curvature is k1*k2. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Gausian curvature.</dd></dl>
+
 </div>
 </div>
 <a id="ac512c7ad0e780b4e1c7586d6680a8875"></a>
@@ -219,6 +232,33 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a22f9fd7bee2aa4953513570d6cdf6645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f9fd7bee2aa4953513570d6cdf6645">&#9670;&nbsp;</a></span>KappaValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SurfaceCurvature::KappaValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a>&#160;</td>
+          <td class="paramname"><em>kappa_style</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate one of the four typical curvature values associated with the two principal curvatures and frequently used in false color curvature analysis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kappa_style</td><td>Specifies which type curvature (Gaussian, mean, ...) value to calculate from the principal curvatures. The Gausian curvature can be positive or negative. The other curvatures are are &gt;= 0. In particular, ON::curvature_style::mean_curvature return fabs(this-&gt;<a class="el" href="class_o_n___surface_curvature.html#a9aea28c50aba4a797cdc17b02ee58ffe" title="The mean curvature is (k1+k2)/2.">MeanCurvature()</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If kappa_style and the principal curvatures are valid, the specified type of curvature value is returned. Infinte radii are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+
+</div>
+</div>
 <a id="a1690a06278e2139fbd725e3c107f8179"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1690a06278e2139fbd725e3c107f8179">&#9670;&nbsp;</a></span>MaximumRadius()</h2>
 
@@ -233,6 +273,9 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a> is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)). </p>
+<dl class="section return"><dt>Returns</dt><dd>IF k1 and k2 are valid, the maximum radius of curvature is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
 </div>
@@ -251,6 +294,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The mean curvature is (k1+k2)/2. </p>
+<dl class="section return"><dt>Returns</dt><dd>The signed mean curvature.</dd></dl>
+
 </div>
 </div>
 <a id="ab1696dbb64e4f0a56f78a23e230d4f1e"></a>
@@ -268,9 +314,36 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinte radius values are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Minimum radius of curvature up to a maximum of 1e300. If both k1 and k2 are zero, then 1e300 is returned. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad1b53721dde0070347d21d76afff5262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b53721dde0070347d21d76afff5262">&#9670;&nbsp;</a></span>InfinteRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double ON_SurfaceCurvature::InfinteRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Value used to indicate a radius of curvature is infinite (1e300). </p>
+
+</div>
+</div>
 <a id="ae00e75c5e09337872e2618e61f342c38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae00e75c5e09337872e2618e61f342c38">&#9670;&nbsp;</a></span>k1</h2>
 
@@ -348,7 +421,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

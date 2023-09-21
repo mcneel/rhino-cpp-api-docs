@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5405d6b8258b97369ed3461bc97c0760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf53569124f18a5dbb62b914ae4a1fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_file_read_options.html">CRhinoFileReadOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#adf53569124f18a5dbb62b914ae4a1fa0">operator=</a> (const <a class="el" href="class_c_rhino_file_read_options.html">CRhinoFileReadOptions</a> &amp;)</td></tr>
 <tr class="separator:adf53569124f18a5dbb62b914ae4a1fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398066ea5dcba4290ff81732bd08d68d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#a398066ea5dcba4290ff81732bd08d68d">OptionsDictionary</a> ()</td></tr>
+<tr class="separator:a398066ea5dcba4290ff81732bd08d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b81c63169b8d1f681f1c1289e3a5e52"><td class="memItemLeft" align="right" valign="top">*const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#a5b81c63169b8d1f681f1c1289e3a5e52">OptionsDictionary</a> () const</td></tr>
+<tr class="separator:a5b81c63169b8d1f681f1c1289e3a5e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e119b86df0bda357acf48f55a61cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#a62e119b86df0bda357acf48f55a61cb0">ReaderId</a> () const</td></tr>
 <tr class="separator:a62e119b86df0bda357acf48f55a61cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78fac4b7b054fa8468f3023792fb9db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#ab78fac4b7b054fa8468f3023792fb9db">ReadingPrimaryFile</a> () const</td></tr>
@@ -252,7 +256,7 @@ Friends</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a6a28bf7a1b3a56b443751f2f64d70027a7105878eda700ec49f6f71e21f5838b8"></a>ScriptUpdateEmbededInstanceDefinitions&#160;</td><td class="fielddoc"><p>ScriptUpdateEmbededInstanceDefinitions: (default = true) When an embedded instance definition is out of date, settings in document properties and on the instance definition control if the idef is not updated, automatically updated, or the user is asked if they want to update. In the case where the settings indicate the user should be asked, but BatchMode is true (and we can't ask), we need to have an automatic way to decide what to do. In this case (BatchMode = true and doc/idef settings indicate user should be asked, the value of ScriptUpdateEmbededInstanceDefinitions mode is used to decide if the out-of-date instance definitions should be updated. If this is confusing, then use the default (=true) setting. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6a28bf7a1b3a56b443751f2f64d70027a80caf4ea54762b2906aac59dfdca7cb6"></a>UpdatingExistingInstanceDefinitions&#160;</td><td class="fielddoc"><p>UpdatingExistingInstanceDefinitions: (default = false) Set to true when an existing instance definition is being updated and when instance defintion name collisions occur, the existing instance definition should be silently updated. </p>
+<tr><td class="fieldname"><a id="a6a28bf7a1b3a56b443751f2f64d70027a80caf4ea54762b2906aac59dfdca7cb6"></a>UpdatingExistingInstanceDefinitions&#160;</td><td class="fielddoc"><p>UpdatingExistingInstanceDefinitions: (default = false) Set to true when an existing instance definition is being updated and when instance definition name collisions occur, the existing instance definition should be silently updated. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6a28bf7a1b3a56b443751f2f64d70027a9cbb0ed58b0095a00d71152f5c6acff1"></a>ModeCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -516,7 +520,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This function is provided for plug-ins to use when their <a class="el" href="class_c_rhino_plug_in.html#a00fcade8a95f7cc5fd50138f1b2385c9">CRhinoPlugIn::ReadDocument()</a> function is called and they need to convert Rhino document item ids used in a .3dm file that was just read into the Rhino document item ids used in the runtime model.</p>
+<p>Description: This function is provided for plug-ins to use when their <a class="el" href="class_c_rhino_plug_in.html#a173b636af84c245a6e799bbb518f1b1d">CRhinoPlugIn::ReadDocument()</a> function is called and they need to convert Rhino document item ids used in a .3dm file that was just read into the Rhino document item ids used in the runtime model.</p>
 <p>When a file is read, sometimes is is necessary to change the id of an item in a file to a new id in the runtime model. This often happens when one file is being imported into an existing document and an id found in the file is already in use in the existing document. An "item" can be anything in a table, like a layer, material, dimension style, geometry object, instance definition, and so on. Parameters: file_item_id - [in] id used for the item in the .3dm file being read. model_item_id - [out] id used to for the item in the runtime model See Also: <a class="el" href="class_c_rhino_file_read_options.html#a185821b689da8a14524c5cd647deef46">CRhinoFileReadOptions::ArchiveToModelIdentificationMap()</a> </p>
 
 </div>
@@ -546,7 +550,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: When reference information is imported, name of model components like annotation styles, hatch patterns, block definitions, ..., have a reference prefix prepended to the original name. Parameters: original_name - [in] reference_component_name - [out] both paramters can be the same string. Example: If a block definition named "X" is in a reference file named C.3dm, then the reference_component_name will be "C.3dm : X". If the component is being read from a nested linked instance definition, the reference_component_name will be something like "A.3dm&gt;B.3dm&gt;C.3dm : X"</p>
+<p>Description: When reference information is imported, name of model components like annotation styles, hatch patterns, block definitions, ..., have a reference prefix prepended to the original name. Parameters: original_name - [in] reference_component_name - [out] both parameters can be the same string. Example: If a block definition named "X" is in a reference file named C.3dm, then the reference_component_name will be "C.3dm : X". If the component is being read from a nested linked instance definition, the reference_component_name will be something like "A.3dm&gt;B.3dm&gt;C.3dm : X"</p>
 <p>Returns: True if reference_component_name name was modified by prepending a prefix. False if reference_component_name is identical to original_name. <br  />
  </p>
 
@@ -566,7 +570,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: Reading the active model. &gt;0: Serial number of an instance definition based on the contents of the file being read. When an instance defintion is being created, the instance definition may be of any type (static_def, linked_and_embedded_def, or linked_def). When an instance definition is being updated, the instance definition can be linked_and_embedded_def, or linked_def. </p>
+<p>Returns: 0: Reading the active model. &gt;0: Serial number of an instance definition based on the contents of the file being read. When an instance definition is being created, the instance definition may be of any type (static_def, linked_and_embedded_def, or linked_def). When an instance definition is being updated, the instance definition can be linked_and_embedded_def, or linked_def. </p>
 
 </div>
 </div>
@@ -584,7 +588,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: unset 1: active Use short name to find a matching active layer. If none is found, then create the layer using the full path as an active layer (no grandparent layer). 2: reference Put the idef Remarks: When a linked instance defintion is being read in an active model, then this returns the value of ON_InstanceDefinition.m_idef_layer_style for the idef. Note that simple layer names </p>
+<p>Returns: 0: unset 1: active Use short name to find a matching active layer. If none is found, then create the layer using the full path as an active layer (no grandparent layer). 2: reference Put the idef Remarks: When a linked instance definition is being read in an active model, then this returns the value of ON_InstanceDefinition.m_idef_layer_style for the idef. Note that simple layer names </p>
 
 </div>
 </div>
@@ -637,7 +641,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: true: The inforation being read is being merged into the existing document. This happens in a number of cases including but not limited to reading work session reference files, reading instance defitions, anything done by the Insert command, harvesting various things like materials, page layouts, annotation styles and hatch patterns from files. false: The inforation being read is being used to create a new document. Remarks: This is identical to the Mode(CRhinoFileReadOptions::ModeFlag::ImportMode) setting. </p>
+<p>Returns: true: The information being read is being merged into the existing document. This happens in a number of cases including but not limited to reading work session reference files, reading instance definitions, anything done by the Insert command, harvesting various things like materials, page layouts, annotation styles and hatch patterns from files. false: The information being read is being used to create a new document. Remarks: This is identical to the Mode(CRhinoFileReadOptions::ModeFlag::ImportMode) setting. </p>
 
 </div>
 </div>
@@ -753,6 +757,42 @@ else
 
 </div>
 </div>
+<a id="a398066ea5dcba4290ff81732bd08d68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398066ea5dcba4290ff81732bd08d68d">&#9670;&nbsp;</a></span>OptionsDictionary() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a>&amp; CRhinoFileReadOptions::OptionsDictionary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Additional options relative to the specific file format the read operation will be about. Returns: return a <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> reference with the options. </p>
+
+</div>
+</div>
+<a id="a5b81c63169b8d1f681f1c1289e3a5e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b81c63169b8d1f681f1c1289e3a5e52">&#9670;&nbsp;</a></span>OptionsDictionary() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a>&amp; CRhinoFileReadOptions::OptionsDictionary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Additional options relative to the specific file format the current read operation is about. Returns: return a const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> reference with the options. </p>
+
+</div>
+</div>
 <a id="a62e119b86df0bda357acf48f55a61cb0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62e119b86df0bda357acf48f55a61cb0">&#9670;&nbsp;</a></span>ReaderId()</h2>
 
@@ -840,7 +880,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: True means something like an import or insert or worksession reference file is being read into an existing docuemnt. Remarks: Exactly one of <a class="el" href="class_c_rhino_file_read_options.html#af3a0617336e4dbb9261a7fa50643a4eb">ReadingTemplateFile()</a>, <a class="el" href="class_c_rhino_file_read_options.html#ab78fac4b7b054fa8468f3023792fb9db">ReadingPrimaryFile()</a>, or <a class="el" href="class_c_rhino_file_read_options.html#a468b7e17d1fc156218d516116b946bc7">ReadingSecondaryFile()</a> is true. </p>
+<p>Returns: True means something like an import or insert or worksession reference file is being read into an existing document. Remarks: Exactly one of <a class="el" href="class_c_rhino_file_read_options.html#af3a0617336e4dbb9261a7fa50643a4eb">ReadingTemplateFile()</a>, <a class="el" href="class_c_rhino_file_read_options.html#ab78fac4b7b054fa8468f3023792fb9db">ReadingPrimaryFile()</a>, or <a class="el" href="class_c_rhino_file_read_options.html#a468b7e17d1fc156218d516116b946bc7">ReadingSecondaryFile()</a> is true. </p>
 
 </div>
 </div>
@@ -1211,7 +1251,7 @@ else
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

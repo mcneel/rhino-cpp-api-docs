@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24ea6009b5b88646b0e470e2ccfbd923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2de8beceec32fb6f45d347776f7f470"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#ac2de8beceec32fb6f45d347776f7f470">IsLoaded</a> () const</td></tr>
 <tr class="separator:ac2de8beceec32fb6f45d347776f7f470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3ba480ff574dc94815dea5b4be16f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a8d3ba480ff574dc94815dea5b4be16f4">IsPackageManagerPlugIn</a> () const</td></tr>
+<tr class="separator:a8d3ba480ff574dc94815dea5b4be16f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc7174b85080f59359c184b1a501296"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a9bc7174b85080f59359c184b1a501296">IsShippingPlugIn</a> () const</td></tr>
 <tr class="memdesc:a9bc7174b85080f59359c184b1a501296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this plug-in one that ships with Rhino.  <a href="class_c_rhino_plug_in_record.html#a9bc7174b85080f59359c184b1a501296">More...</a><br /></td></tr>
 <tr class="separator:a9bc7174b85080f59359c184b1a501296"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +161,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af1a314c57574c147948d1bea7eae8557"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#af1a314c57574c147948d1bea7eae8557">IsPackageManagerPlugIn</a> (const wchar_t *path)</td></tr>
+<tr class="separator:af1a314c57574c147948d1bea7eae8557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a298ff77e85a3f6747ae54caca1b48708"><td class="memItemLeft" align="right" valign="top">static const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_plug_in_record.html#a298ff77e85a3f6747ae54caca1b48708">PlugInTypeString</a> (<a class="el" href="class_c_rhino_plug_in.html#a87953f01c796e198d3b2ef819befb94e">CRhinoPlugIn::plugin_type</a> type)</td></tr>
 <tr class="separator:a298ff77e85a3f6747ae54caca1b48708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -347,7 +351,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If the plug-in is loaded this will return the <a class="el" href="class_c_rhino_plug_in_record.html#ac8346ffd7c55a4e7213b3114bbf5a3f9">PlugIn()</a>-&gt;AddToPlugInHelpMenu() otherwise it returns the value found in the registry. Returns: true If plug-in name is added to the Rhino Help/Plug-ins menu. See Also: <a class="el" href="class_c_rhino_plug_in.html#a6886617fdb15fb2e6b57c88b83fed12b">CRhinoPlugIn::AddToPlugInHelpMenu()</a> </p>
+<p>Description: If the plug-in is loaded this will return the <a class="el" href="class_c_rhino_plug_in_record.html#ac8346ffd7c55a4e7213b3114bbf5a3f9">PlugIn()</a>-&gt;AddToPlugInHelpMenu() otherwise it returns the value found in the registry. Returns: true If plug-in name is added to the Rhino Help/Plug-ins menu. See Also: <a class="el" href="class_c_rhino_plug_in.html#ab432e29f2e456a14dbed20c9876a5754">CRhinoPlugIn::AddToPlugInHelpMenu()</a> </p>
 
 </div>
 </div>
@@ -651,6 +655,49 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d3ba480ff574dc94815dea5b4be16f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3ba480ff574dc94815dea5b4be16f4">&#9670;&nbsp;</a></span>IsPackageManagerPlugIn() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoPlugInRecord::IsPackageManagerPlugIn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1a314c57574c147948d1bea7eae8557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a314c57574c147948d1bea7eae8557">&#9670;&nbsp;</a></span>IsPackageManagerPlugIn() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoPlugInRecord::IsPackageManagerPlugIn </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9bc7174b85080f59359c184b1a501296"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bc7174b85080f59359c184b1a501296">&#9670;&nbsp;</a></span>IsShippingPlugIn()</h2>
 
@@ -943,7 +990,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000158">Deprecated:</a></b></dt><dd>Not used in Rhino </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000209">Deprecated:</a></b></dt><dd>Not used in Rhino </dd></dl>
 
 </div>
 </div>
@@ -1487,7 +1534,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

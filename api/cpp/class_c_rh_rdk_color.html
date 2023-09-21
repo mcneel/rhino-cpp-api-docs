@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -92,10 +92,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3a723f6154592ab3db637caf0204cdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30519850b7ad1cd204ace8533ff3c27f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#a30519850b7ad1cd204ace8533ff3c27f">Add</a> (const <a class="el" href="class_c_rh_rdk_color.html">CRhRdkColor</a> &amp;c)</td></tr>
 <tr class="separator:a30519850b7ad1cd204ace8533ff3c27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa476ee78f3a8d9e095436d7c1615daf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#aa476ee78f3a8d9e095436d7c1615daf9">ApplyLinearWorkflowGamma</a> (const class <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;rdkDoc, bool bForTexture)</td></tr>
-<tr class="separator:aa476ee78f3a8d9e095436d7c1615daf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c49ff5348094350bc5247889f10955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#ae9c49ff5348094350bc5247889f10955">ApplyLinearWorkflowGamma</a> (const class <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;lw, bool bForTexture)</td></tr>
+<tr class="separator:ae9c49ff5348094350bc5247889f10955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b10ed42120fef246a45d6c216044e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#a9b10ed42120fef246a45d6c216044e7a">ApplyLinearWorkflowGamma</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDoc)</td></tr>
 <tr class="separator:a9b10ed42120fef246a45d6c216044e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b269921ba8c8b70d77dd62ca71e6687"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#a7b269921ba8c8b70d77dd62ca71e6687">ApplyLinearWorkflowGamma</a> (const <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a> &amp;lw, bool bForTexture)</td></tr>
+<tr class="separator:a7b269921ba8c8b70d77dd62ca71e6687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae5347ece2be98437585ee58b402f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#a1ae5347ece2be98437585ee58b402f35">BlendTo</a> (float t, const <a class="el" href="class_c_rh_rdk_color.html">CRhRdkColor</a> &amp;col, bool bClampAlpha=false)</td></tr>
 <tr class="separator:a1ae5347ece2be98437585ee58b402f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab557dfafd0c446c0613d6913886024d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_color.html#ab557dfafd0c446c0613d6913886024d2">Clamp</a> (void)</td></tr>
@@ -426,8 +428,56 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aa476ee78f3a8d9e095436d7c1615daf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa476ee78f3a8d9e095436d7c1615daf9">&#9670;&nbsp;</a></span>ApplyLinearWorkflowGamma() <span class="overload">[1/2]</span></h2>
+<a id="ae9c49ff5348094350bc5247889f10955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c49ff5348094350bc5247889f10955">&#9670;&nbsp;</a></span>ApplyLinearWorkflowGamma() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool CRhRdkColor::ApplyLinearWorkflowGamma </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;&#160;</td>
+          <td class="paramname"><em>lw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bForTexture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is deprecated in favor of the one below. </p>
+
+</div>
+</div>
+<a id="a9b10ed42120fef246a45d6c216044e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b10ed42120fef246a45d6c216044e7a">&#9670;&nbsp;</a></span>ApplyLinearWorkflowGamma() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool CRhRdkColor::ApplyLinearWorkflowGamma </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>pDoc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is deprecated in favor of the other one which is faster. </p>
+
+</div>
+</div>
+<a id="a7b269921ba8c8b70d77dd62ca71e6687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b269921ba8c8b70d77dd62ca71e6687">&#9670;&nbsp;</a></span>ApplyLinearWorkflowGamma() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,8 +485,8 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool CRhRdkColor::ApplyLinearWorkflowGamma </td>
           <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_i_rh_rdk_linear_workflow.html">IRhRdkLinearWorkflow</a> &amp;&#160;</td>
-          <td class="paramname"><em>rdkDoc</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a> &amp;&#160;</td>
+          <td class="paramname"><em>lw</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -452,25 +502,6 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adjust the color for linear workflow gamma. If linear workflow is enabled, color is adjusted and the function returns <em>true</em>. Otherwise the function returns <em>false</em>. </p>
-
-</div>
-</div>
-<a id="a9b10ed42120fef246a45d6c216044e7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b10ed42120fef246a45d6c216044e7a">&#9670;&nbsp;</a></span>ApplyLinearWorkflowGamma() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool CRhRdkColor::ApplyLinearWorkflowGamma </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
-          <td class="paramname"><em>pDoc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Adjust the color for linear workflow gamma. This method is deprecated in favor of the other one which is faster. If linear workflow is enabled, color is adjusted and the function returns <em>true</em>. Otherwise the function returns <em>false</em>. </p>
 
 </div>
 </div>
@@ -1818,7 +1849,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -155,6 +155,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2a3a1e646528f5fdabeed29072b15433"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_quad_neighborhood.html#a2a3a1e646528f5fdabeed29072b15433">m_initial_subdivision_level</a> = 0</td></tr>
 <tr class="memdesc:a2a3a1e646528f5fdabeed29072b15433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subdivsion level of the quad from the original SubD. (When the original SubD face is an n-gon, m_initial_subdivision_level=1)  <a href="class_o_n___sub_d_quad_neighborhood.html#a2a3a1e646528f5fdabeed29072b15433">More...</a><br /></td></tr>
 <tr class="separator:a2a3a1e646528f5fdabeed29072b15433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c77f46a97ede07f200e82426b96f8d"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_quad_neighborhood.html#af6c77f46a97ede07f200e82426b96f8d">m_sharp_edge_count</a> = 0</td></tr>
+<tr class="memdesc:af6c77f46a97ede07f200e82426b96f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_sharp_edge_count = number of sharp edges in the quad boundary and m_edge_grid[4][2] <br  />
+  <a href="class_o_n___sub_d_quad_neighborhood.html#af6c77f46a97ede07f200e82426b96f8d">More...</a><br /></td></tr>
+<tr class="separator:af6c77f46a97ede07f200e82426b96f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc4e8511cb285989c465f5da85a5737"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_quad_neighborhood.html#a5cc4e8511cb285989c465f5da85a5737">m_srf_cv1</a> [5][5][3]</td></tr>
 <tr class="memdesc:a5cc4e8511cb285989c465f5da85a5737"><td class="mdescLeft">&#160;</td><td class="mdescRight">level 1 subdivision control points  <a href="class_o_n___sub_d_quad_neighborhood.html#a5cc4e8511cb285989c465f5da85a5737">More...</a><br /></td></tr>
 <tr class="separator:a5cc4e8511cb285989c465f5da85a5737"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,7 +503,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the limit sub surface exact patch for the specifed corner. Returns: true when srf_cv are set to a the CVs for a bicubic uniform cubic NURBS bispan patch </p>
+<p>Description: Get the limit sub surface exact patch for the specified corner. Returns: true when srf_cv are set to a the CVs for a bicubic uniform cubic NURBS bispan patch </p>
 
 </div>
 </div>
@@ -954,7 +958,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>m_face_grid[1][1] is extraordinary and interpolation through the limit point will eventually be reqired to get an approximate cubic patch or an exact quad mesh vertex. </p>
+<p>m_face_grid[1][1] is extraordinary and interpolation through the limit point will eventually be required to get an approximate cubic patch or an exact quad mesh vertex. </p>
 
 </div>
 </div>
@@ -1005,6 +1009,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af6c77f46a97ede07f200e82426b96f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c77f46a97ede07f200e82426b96f8d">&#9670;&nbsp;</a></span>m_sharp_edge_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ON_SubDQuadNeighborhood::m_sharp_edge_count = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>m_sharp_edge_count = number of sharp edges in the quad boundary and m_edge_grid[4][2] <br  />
+ </p>
+
+</div>
+</div>
 <a id="a5cc4e8511cb285989c465f5da85a5737"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cc4e8511cb285989c465f5da85a5737">&#9670;&nbsp;</a></span>m_srf_cv1</h2>
 
@@ -1040,7 +1061,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

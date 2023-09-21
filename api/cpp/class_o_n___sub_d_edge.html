@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -88,9 +88,9 @@ Inheritance diagram for ON_SubDEdge:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2c4a15dc103922ae27e00f45df854d15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_edge.html#a2c4a15dc103922ae27e00f45df854d15ab14a1da83370eeb51e6fec74230b4a74">MaximumFaceCount</a> = 0xFFF0U
+<tr class="memitem:a4179adeaad9c0b1ae3f973fa5d23dad3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_edge.html#a4179adeaad9c0b1ae3f973fa5d23dad3ab14a1da83370eeb51e6fec74230b4a74">MaximumFaceCount</a> = 0xFFF0U
  }</td></tr>
-<tr class="separator:a2c4a15dc103922ae27e00f45df854d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4179adeaad9c0b1ae3f973fa5d23dad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27954fd3351254ed5e23d3d8ba46b50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd716f13fb5df8811a8e6f2f91bda389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#acd716f13fb5df8811a8e6f2f91bda389">ClearSavedSubdivisionPoints</a> (bool bClearNeighborhood) const</td></tr>
 <tr class="separator:acd716f13fb5df8811a8e6f2f91bda389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad91dd78a3c11b60ee4813308f4e319"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a9ad91dd78a3c11b60ee4813308f4e319">ClearSharpnessForExperts</a> ()</td></tr>
+<tr class="memdesc:a9ad91dd78a3c11b60ee4813308f4e319"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tool is for expert users and internal use. Use <a class="el" href="class_o_n___sub_d.html#ae0c2e7c23abeda77ca022d6de68934ca" title="Converts all sharp edges to smooth edges. See ON_SubDEdge::IsSharp() for more information about sharp...">ON_SubD::ClearEdgeSharpness()</a> to remove all sharp edges from a SubD. Sets the edge sharpness to ON_EdgeSharpness::Zero.  <a href="class_o_n___sub_d_edge.html#a9ad91dd78a3c11b60ee4813308f4e319">More...</a><br /></td></tr>
+<tr class="separator:a9ad91dd78a3c11b60ee4813308f4e319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3876cc3a94f2146b39ea16493daf1979"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a3876cc3a94f2146b39ea16493daf1979">ComponentIndex</a> () const</td></tr>
 <tr class="separator:a3876cc3a94f2146b39ea16493daf1979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6852d9b91c7b5ae1f37d4d635cccc6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#afc6852d9b91c7b5ae1f37d4d635cccc6">ComponentPtr</a> () const</td></tr>
@@ -148,6 +151,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a74fe7d824d457425a65252d2acb7df26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d6233797f42664d1573ca9e874526d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ad1d6233797f42664d1573ca9e874526d">EdgeSurfaceCurveIsSet</a> () const</td></tr>
 <tr class="separator:ad1d6233797f42664d1573ca9e874526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4611bd6e993bf96c9c92acd9de4a2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga6ea2d14874ad3b20bbc8834ffeb8738e">ON_SubDEdgeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b">EdgeType</a> () const</td></tr>
+<tr class="memdesc:aff4611bd6e993bf96c9c92acd9de4a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b" title="EdgeType() is typically used to generate text descriptions and in selection filtering....">EdgeType()</a> is typically used to generate text descriptions and in selection filtering. Do not confuse <a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b" title="EdgeType() is typically used to generate text descriptions and in selection filtering....">EdgeType()</a> and EdgeTag().  <a href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b">More...</a><br /></td></tr>
+<tr class="separator:aff4611bd6e993bf96c9c92acd9de4a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164177b3e2712c5377261e664993fb14"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a164177b3e2712c5377261e664993fb14">EndSharpness</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *v) const</td></tr>
+<tr class="memdesc:a164177b3e2712c5377261e664993fb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a164177b3e2712c5377261e664993fb14">More...</a><br /></td></tr>
+<tr class="separator:a164177b3e2712c5377261e664993fb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437fc8212b7967bf45bcc93c6e82a18e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a437fc8212b7967bf45bcc93c6e82a18e">EndSharpness</a> (unsigned evi) const</td></tr>
+<tr class="memdesc:a437fc8212b7967bf45bcc93c6e82a18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a437fc8212b7967bf45bcc93c6e82a18e">More...</a><br /></td></tr>
+<tr class="separator:a437fc8212b7967bf45bcc93c6e82a18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa43c7a986a5b849d2b1b94a8e3b29a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#aefa43c7a986a5b849d2b1b94a8e3b29a">EvaluateCatmullClarkSubdivisionPoint</a> (double subdivision_point[3]) const</td></tr>
 <tr class="separator:aefa43c7a986a5b849d2b1b94a8e3b29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8592d30879261a1160496d215323d2aa"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a8592d30879261a1160496d215323d2aa">Face</a> (unsigned int i) const</td></tr>
@@ -168,6 +180,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af755a31081437967b8a968450880087a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afab31b6d7626a2353e28c330eaa56ae0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#afab31b6d7626a2353e28c330eaa56ae0">GetSectorBoundaryEdges</a> (unsigned int edge_vertex_index, <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_ptr0, <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *edge_ptr1) const</td></tr>
 <tr class="separator:afab31b6d7626a2353e28c330eaa56ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ca3e52bcdbfb9702ad062770e95562"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a73ca3e52bcdbfb9702ad062770e95562">GetSharpSubdivisionPoint</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;sharp_subdivision_point) const</td></tr>
+<tr class="memdesc:a73ca3e52bcdbfb9702ad062770e95562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the edge's sharp subdivision point and returns the average of the edge's sharpnesses. The final subdivision point is (sharpness &gt;= 1.0) ? sharp_subdivision_point : (1.0-sharpness)(smooth subdivsion point)+sharpness*sharp_subdivision_point. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a73ca3e52bcdbfb9702ad062770e95562">More...</a><br /></td></tr>
+<tr class="separator:a73ca3e52bcdbfb9702ad062770e95562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea7baa19f274de7add6e8ee0b35f4a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a7ea7baa19f274de7add6e8ee0b35f4a0">GetSubdivisionPoint</a> (double subdivision_point[3]) const</td></tr>
 <tr class="separator:a7ea7baa19f274de7add6e8ee0b35f4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf5bad0053b25b6633812aaed36bcbd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#acf5bad0053b25b6633812aaed36bcbd3">GetSurfaceCenterPointAndNormal</a> (unsigned int edge_face_index, double *P, double *N) const</td></tr>
@@ -180,14 +195,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57d5cf1dfc9012c17e8ca187e4ae29d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad581f738f09075c57685627e332a6a15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ad581f738f09075c57685627e332a6a15">IsCrease</a> () const</td></tr>
 <tr class="separator:ad581f738f09075c57685627e332a6a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e8650e9641e43b29478ca97f329bac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#af7e8650e9641e43b29478ca97f329bac">IsCreaseOrSharp</a> () const</td></tr>
+<tr class="memdesc:af7e8650e9641e43b29478ca97f329bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crease edges have tag = <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>. Sharp edges have tag = <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a> or <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325aa53bf30b0ae3ce0512e9e9e7705423a6">ON_SubDEdgeTag::SmoothX</a> and have nonzero sharpness.  <a href="class_o_n___sub_d_edge.html#af7e8650e9641e43b29478ca97f329bac">More...</a><br /></td></tr>
+<tr class="separator:af7e8650e9641e43b29478ca97f329bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e37ee86eb61bbb40bd8e7d9cffd75ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a8e37ee86eb61bbb40bd8e7d9cffd75ab">IsDartCrease</a> () const</td></tr>
 <tr class="separator:a8e37ee86eb61bbb40bd8e7d9cffd75ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c296a2fe8dfceb35a8767675971265"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#af9c296a2fe8dfceb35a8767675971265">IsHardCrease</a> () const</td></tr>
 <tr class="separator:af9c296a2fe8dfceb35a8767675971265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e07c79ca0374a1f0d7dea35f79f7e93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93">IsSharp</a> () const</td></tr>
+<tr class="memdesc:a8e07c79ca0374a1f0d7dea35f79f7e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous normal along a sharp edge. A sharp edge has a smooth tag, has sharpness &gt; 0 at at least one end, and has sharpness &lt; <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a> at at least one end. Sharpness has no meaning for edges with crease tags. Both sharpness values are zero for an ordinary smooth edge. Edge sharpness steadily decreases during subdivision and becomes zero after at most <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a> subdivisions.  <a href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93">More...</a><br /></td></tr>
+<tr class="separator:a8e07c79ca0374a1f0d7dea35f79f7e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf1f7d04647417e403311dd4972e07f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#aacf1f7d04647417e403311dd4972e07f">IsSmooth</a> () const</td></tr>
 <tr class="separator:aacf1f7d04647417e403311dd4972e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c791230ec5f328b6919b185cf9c2069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a6c791230ec5f328b6919b185cf9c2069">IsSmoothNotSharp</a> () const</td></tr>
+<tr class="memdesc:a6c791230ec5f328b6919b185cf9c2069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an edge is smooth and is not sharp.  <a href="class_o_n___sub_d_edge.html#a6c791230ec5f328b6919b185cf9c2069">More...</a><br /></td></tr>
+<tr class="separator:a6c791230ec5f328b6919b185cf9c2069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb31978402e8b31c96cbaf84913f11a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a1fb31978402e8b31c96cbaf84913f11a">IsSmoothNotX</a> () const</td></tr>
 <tr class="separator:a1fb31978402e8b31c96cbaf84913f11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd244d774f43e3e21912ae4cb748bae5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#abd244d774f43e3e21912ae4cb748bae5">IsSmoothNotXNotSharp</a> () const</td></tr>
+<tr class="memdesc:abd244d774f43e3e21912ae4cb748bae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An expert user function to determine if an edge tag in <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a> and is not sharp.  <a href="class_o_n___sub_d_edge.html#abd244d774f43e3e21912ae4cb748bae5">More...</a><br /></td></tr>
+<tr class="separator:abd244d774f43e3e21912ae4cb748bae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922333803c8a1716d311167aeeb03bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a922333803c8a1716d311167aeeb03bc7">IsSmoothX</a> () const</td></tr>
 <tr class="separator:a922333803c8a1716d311167aeeb03bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498de0efe96602adeaa29d67ba5b662f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a498de0efe96602adeaa29d67ba5b662f">MarkedFaceCount</a> () const</td></tr>
@@ -204,13 +231,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab929540d1ceafc874111cb4b6046573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5256f191e01725498f3641b652645a8"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ac5256f191e01725498f3641b652645a8">OtherEndVertex</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *vertex) const</td></tr>
 <tr class="separator:ac5256f191e01725498f3641b652645a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fafe41b0fed7f544698d8aee234e2f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ae7fafe41b0fed7f544698d8aee234e2f">PointAt</a> (double normalized_edge_parameter, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
+<tr class="separator:ae7fafe41b0fed7f544698d8aee234e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb666f91f52f1b93d454a94ac223ec85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#adb666f91f52f1b93d454a94ac223ec85">RemoveFaceFromArray</a> (const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *f)</td></tr>
 <tr class="separator:adb666f91f52f1b93d454a94ac223ec85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260640a13947a2a5ad900881b5605b15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a260640a13947a2a5ad900881b5605b15">RemoveFaceFromArray</a> (unsigned int i, <a class="el" href="class_o_n___sub_d_face_ptr.html">ON_SubDFacePtr</a> &amp;removed_face)</td></tr>
 <tr class="separator:a260640a13947a2a5ad900881b5605b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07295fb1f7c855656c6ede2a5b7f431"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ac07295fb1f7c855656c6ede2a5b7f431">ReplaceFaceInArray</a> (const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *old_face, const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *new_face)</td></tr>
 <tr class="separator:ac07295fb1f7c855656c6ede2a5b7f431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6cd7db533e32770cb0c1d7100a6fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ace6cd7db533e32770cb0c1d7100a6fa2">SetSharpnessForExperts</a> (<a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> sharpness)</td></tr>
+<tr class="memdesc:ace6cd7db533e32770cb0c1d7100a6fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tool is for expert users and internal use. A collection of <a class="el" href="class_o_n___sub_d.html#a9c89462e3815d30c507e98b920b18f18" title="Set or change edge sharpness.">ON_SubD::SetEdgeSharpness()</a> functions provide the easiest way to set and change edge sharpness. Set the edge sharpness values to (sharpness[0],sharpness[1]). The interval values must be &gt;= 0 and &lt;= <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a>. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#ace6cd7db533e32770cb0c1d7100a6fa2">More...</a><br /></td></tr>
+<tr class="separator:ace6cd7db533e32770cb0c1d7100a6fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae960d5f6e322786e65212719c147b42b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ae960d5f6e322786e65212719c147b42b">Sharpness</a> (bool bUseCreaseSharpness) const</td></tr>
+<tr class="memdesc:ae960d5f6e322786e65212719c147b42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#ae960d5f6e322786e65212719c147b42b">More...</a><br /></td></tr>
+<tr class="separator:ae960d5f6e322786e65212719c147b42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4746461e384760dbf9aa2740e344c92"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#af4746461e384760dbf9aa2740e344c92">SubdivideSharpness</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *end_vertex, bool bReverseSharpness) const</td></tr>
+<tr class="memdesc:af4746461e384760dbf9aa2740e344c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge sharpenss values for the subdivided edge at the specified end of this edge.  <a href="class_o_n___sub_d_edge.html#af4746461e384760dbf9aa2740e344c92">More...</a><br /></td></tr>
+<tr class="separator:af4746461e384760dbf9aa2740e344c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd34ae348ddb3c403b658bc8504426b4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#acd34ae348ddb3c403b658bc8504426b4">SubdivideSharpness</a> (unsigned evi, bool bReverseSharpness) const</td></tr>
+<tr class="memdesc:acd34ae348ddb3c403b658bc8504426b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge sharpenss values for the subdivided edge at the specified end of this edge.  <a href="class_o_n___sub_d_edge.html#acd34ae348ddb3c403b658bc8504426b4">More...</a><br /></td></tr>
+<tr class="separator:acd34ae348ddb3c403b658bc8504426b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed6d6b653ab5160c8f904fabe0eae4e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#afed6d6b653ab5160c8f904fabe0eae4e">SubdivisionPoint</a> () const</td></tr>
+<tr class="memdesc:afed6d6b653ab5160c8f904fabe0eae4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SubD edge Catmull-Clark subdivision point.  <a href="class_o_n___sub_d_edge.html#afed6d6b653ab5160c8f904fabe0eae4e">More...</a><br /></td></tr>
 <tr class="separator:afed6d6b653ab5160c8f904fabe0eae4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d21d35f9472f5d978bab03757e5ce87"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a8d21d35f9472f5d978bab03757e5ce87">SurfaceBoundingBox</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd) const</td></tr>
 <tr class="separator:a8d21d35f9472f5d978bab03757e5ce87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +289,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae2ed8428e5a2777b2194a642fe9b6448 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aea9104ff07d0c388cd274ecb0aa29d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a3aea9104ff07d0c388cd274ecb0aa29d">ClearMark</a> () const</td></tr>
 <tr class="separator:a3aea9104ff07d0c388cd274ecb0aa29d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a86a36b5b75fe7099b21da42f80a58361">ClearMarkBits</a> () const</td></tr>
+<tr class="memitem:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a86a36b5b75fe7099b21da42f80a58361">ClearMarkBits</a> () const</td></tr>
 <tr class="separator:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0a05208cbc473593c00c9291e2556a inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aef0a05208cbc473593c00c9291e2556a">ClearSavedSubdivisionPoint</a> () const</td></tr>
 <tr class="separator:aef0a05208cbc473593c00c9291e2556a inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,7 +307,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aceb3e70b1d517b73f7d0cb87b6bc106c inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4563bd61b50a8841f9837547a7b7fbe inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ab4563bd61b50a8841f9837547a7b7fbe">Mark</a> () const</td></tr>
 <tr class="separator:ab4563bd61b50a8841f9837547a7b7fbe inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a863f993d46e4c1f5b0085626d9d59c76">MarkBits</a> () const</td></tr>
+<tr class="memitem:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a863f993d46e4c1f5b0085626d9d59c76">MarkBits</a> () const</td></tr>
 <tr class="separator:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6306c393a2d14c2aeb9f52f5539440e inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#af6306c393a2d14c2aeb9f52f5539440e">operator=</a> (const <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> &amp;)=default</td></tr>
 <tr class="separator:af6306c393a2d14c2aeb9f52f5539440e inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +321,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e7153be394a2c339cdcab48f685e837 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ce5234289ea8bf4eaf79c78f1e116d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae1ce5234289ea8bf4eaf79c78f1e116d">SetMark</a> (bool bMark) const</td></tr>
 <tr class="separator:ae1ce5234289ea8bf4eaf79c78f1e116d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aad8d39cf01868c9ecfa59b9d37525e58">SetMarkBits</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> mark_bits) const</td></tr>
+<tr class="memitem:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aad8d39cf01868c9ecfa59b9d37525e58">SetMarkBits</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> mark_bits) const</td></tr>
 <tr class="separator:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7bef13ef562b14c321859d67e4fec inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a93d7bef13ef562b14c321859d67e4fec">SetSavedSubdivisionPoint</a> (const double subdivision_point[3]) const</td></tr>
 <tr class="separator:a93d7bef13ef562b14c321859d67e4fec inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,8 +370,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7eff580f9f83fcaeee98ba92afd8dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c9de427fb1f2eddb3fcabef63fb1a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ad0c9de427fb1f2eddb3fcabef63fb1a5">m_sector_coefficient</a> [2] = {}</td></tr>
 <tr class="separator:ad0c9de427fb1f2eddb3fcabef63fb1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab528b8bec73494e2507fce1181877c34"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ab528b8bec73494e2507fce1181877c34">m_sharpness</a> = 0.0</td></tr>
-<tr class="separator:ab528b8bec73494e2507fce1181877c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f4c8adb7579d436627ff40c33d6f43"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#ad6f4c8adb7579d436627ff40c33d6f43">m_vertex</a> [2] = {}</td></tr>
 <tr class="separator:ad6f4c8adb7579d436627ff40c33d6f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
@@ -415,8 +455,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a2c4a15dc103922ae27e00f45df854d15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c4a15dc103922ae27e00f45df854d15">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a4179adeaad9c0b1ae3f973fa5d23dad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4179adeaad9c0b1ae3f973fa5d23dad3">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +471,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The value of <a class="el" href="class_o_n___sub_d_face_ptr.html#ac6b466b3d9a31c95f507aea9eb7ded8c">ON_SubDFacePtr.FaceDirection()</a> is 0 if the edge's natural orientation from m_vertex[0] to m_vertex[1] agrees with the face's boundary orientation.</p>
 <p>The value of <a class="el" href="class_o_n___sub_d_face_ptr.html#ac6b466b3d9a31c95f507aea9eb7ded8c">ON_SubDFacePtr.FaceDirection()</a> is 1 if the edge's natural orientation from m_vertex[0] to m_vertex[1] is opposited the face's boundary orientation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2c4a15dc103922ae27e00f45df854d15ab14a1da83370eeb51e6fec74230b4a74"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4179adeaad9c0b1ae3f973fa5d23dad3ab14a1da83370eeb51e6fec74230b4a74"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -696,7 +736,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Clears saved subdivision and limit surface information for this edge. Attached vertices and faces are not modifed. </p>
+<p>Description: Clears saved subdivision and limit surface information for this edge. Attached vertices and faces are not modified. </p>
 
 </div>
 </div>
@@ -716,6 +756,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Clears saved subdivision and limit surface information for this edge. Parameters: bClearNeighborhood - [in] If true, all vertices and faces attached to this edge are also cleared. </p>
+
+</div>
+</div>
+<a id="a9ad91dd78a3c11b60ee4813308f4e319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad91dd78a3c11b60ee4813308f4e319">&#9670;&nbsp;</a></span>ClearSharpnessForExperts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdge::ClearSharpnessForExperts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This tool is for expert users and internal use. Use <a class="el" href="class_o_n___sub_d.html#ae0c2e7c23abeda77ca022d6de68934ca" title="Converts all sharp edges to smooth edges. See ON_SubDEdge::IsSharp() for more information about sharp...">ON_SubD::ClearEdgeSharpness()</a> to remove all sharp edges from a SubD. Sets the edge sharpness to ON_EdgeSharpness::Zero. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if there were changes to the edge.</dd></dl>
 
 </div>
 </div>
@@ -994,6 +1054,84 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aff4611bd6e993bf96c9c92acd9de4a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4611bd6e993bf96c9c92acd9de4a2b">&#9670;&nbsp;</a></span>EdgeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga6ea2d14874ad3b20bbc8834ffeb8738e">ON_SubDEdgeType</a> ON_SubDEdge::EdgeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b" title="EdgeType() is typically used to generate text descriptions and in selection filtering....">EdgeType()</a> is typically used to generate text descriptions and in selection filtering. Do not confuse <a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b" title="EdgeType() is typically used to generate text descriptions and in selection filtering....">EdgeType()</a> and EdgeTag(). </p>
+<dl class="section return"><dt>Returns</dt><dd>If the edge has a valid combination of face count, tag, and sharpness properties, then the corresponding type is returned. Otherwise, <a class="el" href="group__open_n_u_r_b_s.html#gga6ea2d14874ad3b20bbc8834ffeb8738ea4bbb8f967da6d1a610596d7257179c2b">ON_SubDEdgeType::Invalid</a> is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a164177b3e2712c5377261e664993fb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164177b3e2712c5377261e664993fb14">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDEdge::EndSharpness </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vertex at an end of the edge</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">If the edge is sharp, the sharpness at the end with the specified vertex is returned. If the edge is smooth or a crease, 0 is returned. Otherwise, 0.0 is returned. </p>
+<p class="enddd">The sharpness at the end of the edge with the specified vertex.</p>
+</dd></dl>
+
+</div>
+</div>
+<a id="a437fc8212b7967bf45bcc93c6e82a18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437fc8212b7967bf45bcc93c6e82a18e">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDEdge::EndSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>evi</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evi</td><td>End index (0=start or 1=end).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">If the edge is sharp, the sharpness at the end with the specified by evi is returned. If the edge is smooth or a crease, 0 is returned. Otherwise, 0.0 is returned. </p>
+<p class="enddd">The sharpness at the end of the edge specified by evi.</p>
+</dd></dl>
+
+</div>
+</div>
 <a id="aefa43c7a986a5b849d2b1b94a8e3b29a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefa43c7a986a5b849d2b1b94a8e3b29a">&#9670;&nbsp;</a></span>EvaluateCatmullClarkSubdivisionPoint()</h2>
 
@@ -1009,7 +1147,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Evaluates the Catmull-Clark subdivision point ignoring all cached information. This function is typically used in testing and debugging code and in ordinary cases, it is faster and better to call <a class="el" href="class_o_n___sub_d_edge.html#afed6d6b653ab5160c8f904fabe0eae4e">SubdivisionPoint()</a> or <a class="el" href="class_o_n___sub_d_edge.html#a7ea7baa19f274de7add6e8ee0b35f4a0">GetSubdivisionPoint()</a>. Parameters: subdivision_point - [out] The edge Catmull-Clark subdivision point is returned here. </p>
+<p>Description: Evaluates the Catmull-Clark subdivision point ignoring all cached information. This function is typically used in testing and debugging code and in ordinary cases, it is faster and better to call <a class="el" href="class_o_n___sub_d_edge.html#afed6d6b653ab5160c8f904fabe0eae4e" title="Get the SubD edge Catmull-Clark subdivision point.">SubdivisionPoint()</a> or <a class="el" href="class_o_n___sub_d_edge.html#a7ea7baa19f274de7add6e8ee0b35f4a0">GetSubdivisionPoint()</a>. Parameters: subdivision_point - [out] The edge Catmull-Clark subdivision point is returned here. </p>
 
 </div>
 </div>
@@ -1264,7 +1402,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0 - failed. 4, 5, 7, 11: Number of cvs for a cubic uniform nonrational NURBS curve with (cv_count+2) knots = (-2,-1,0,1,2,3,4,5,6,7,8,9,10). Remarks: For exceptional cases, </p>
+<p>Parameters: cvs - [out] cv_capacity - [in] Capacity of cvs[] array. Pass 0 if you want this function to return the minimum required capacity for this edge without setting cvs. Returns: 0 - failed. &gt;= 4: Number of cvs for a cubic uniform nonrational NURBS curve with (cv_count+2) knots = (-2,-1,0,1,2,3,4,5,6,7,8,9,10). </p>
 
 </div>
 </div>
@@ -1303,6 +1441,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a73ca3e52bcdbfb9702ad062770e95562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ca3e52bcdbfb9702ad062770e95562">&#9670;&nbsp;</a></span>GetSharpSubdivisionPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDEdge::GetSharpSubdivisionPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>sharp_subdivision_point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the edge's sharp subdivision point and returns the average of the edge's sharpnesses. The final subdivision point is (sharpness &gt;= 1.0) ? sharp_subdivision_point : (1.0-sharpness)(smooth subdivsion point)+sharpness*sharp_subdivision_point. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sharp_subdivision_point</td><td>If the returned sharpness is &gt; 0, then the sharp subdivision point (=edge-&gt;<a class="el" href="class_o_n___sub_d_edge.html#ad496d3ccc3b80eb19708481e1c09be03">ControlNetCenterPoint()</a>) is returned. Otherwise <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> is returned.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The relationship between <br  />
+ 3d point C = ordinary Catmull-Clark edge subdivision point, 3d point P = sharp_subdivision_point, s = this-&gt;GetSharpSubdivisionPoint(P), and 3d point E = this-&gt;<a class="el" href="class_o_n___sub_d_edge.html#afed6d6b653ab5160c8f904fabe0eae4e" title="Get the SubD edge Catmull-Clark subdivision point.">SubdivisionPoint()</a> is E = (s &gt;= 1.0) ? P : ((s &gt; 0.0) ? (s*P + (1-s)*C) : C);</p>
+<p>NOTE WELL: when the returned value is zero, S is <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> and any calculation using S will results in nans. </p>
+<dl class="section return"><dt>Returns</dt><dd>If the edge is sharp, a value &gt; 0 and &lt; <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a> is returned. Otherwise 0.0 is returned and sharp_subdivision_point = <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a>. </dd></dl>
+
+</div>
+</div>
 <a id="a7ea7baa19f274de7add6e8ee0b35f4a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ea7baa19f274de7add6e8ee0b35f4a0">&#9670;&nbsp;</a></span>GetSubdivisionPoint()</h2>
 
@@ -1318,7 +1486,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: bUseSavedSubdivisionPoint - [in] If there is a saved subdivision point and bUseSavedSubdivisionPoint is true, then the saved value is returned. subdivision_point - [out] Returns: true if successful summary&gt; The SubD edge Catmull-Clark subdivision point. /summary&gt; </p>
+<p>Parameters: subdivision_point - [out] Returns: true if successful </p>
 
 </div>
 </div>
@@ -1353,7 +1521,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the limit surface point location and normal for the edge's midpoint from the limit mesh grid. Parameters: edge - [in] An edge in this SubD. edge_face_index - [in] Index of the face to use for the normal. If the edge is a crease, then each attached face may have a different normal. Pass 0 when in doubt. P - [out] P = limit surface location or <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if not available. N - [out] N = limit surface unit normal or <a class="el" href="class_o_n__3d_vector.html#a2bb705b5d7458947109344fe28460228" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dVector::NanVector</a> if not available. Returns: True if the point and normal were set from the limit mesh frament. False if the limit mesh fragment was not found and nan values were returned. Remarks: Requires information created by <a class="el" href="class_o_n___sub_d.html#a6abc8cfa298276013a6a7b80bd911dd6">ON_SubD::UpdateSurfaceMeshCache()</a> </p>
+<p>Description: Get the limit surface point location and normal for the edge's midpoint from the limit mesh grid. Parameters: edge - [in] An edge in this SubD. edge_face_index - [in] Index of the face to use for the normal. If the edge is a crease, then each attached face may have a different normal. Pass 0 when in doubt. P - [out] P = limit surface location or <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if not available. N - [out] N = limit surface unit normal or <a class="el" href="class_o_n__3d_vector.html#a2bb705b5d7458947109344fe28460228" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dVector::NanVector</a> if not available. Returns: True if the point and normal were set from the limit mesh fragment. False if the limit mesh fragment was not found and nan values were returned. Remarks: Requires information created by <a class="el" href="class_o_n___sub_d.html#a6abc8cfa298276013a6a7b80bd911dd6">ON_SubD::UpdateSurfaceMeshCache()</a> </p>
 
 </div>
 </div>
@@ -1441,6 +1609,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af7e8650e9641e43b29478ca97f329bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e8650e9641e43b29478ca97f329bac">&#9670;&nbsp;</a></span>IsCreaseOrSharp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdge::IsCreaseOrSharp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crease edges have tag = <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>. Sharp edges have tag = <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a> or <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325aa53bf30b0ae3ce0512e9e9e7705423a6">ON_SubDEdgeTag::SmoothX</a> and have nonzero sharpness. </p>
+<dl class="section return"><dt>Returns</dt><dd>(this-&gt;<a class="el" href="class_o_n___sub_d_edge.html#ad581f738f09075c57685627e332a6a15">IsCrease()</a> || this-&gt;<a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">IsSharp()</a>).</dd></dl>
+
+</div>
+</div>
 <a id="a8e37ee86eb61bbb40bd8e7d9cffd75ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e37ee86eb61bbb40bd8e7d9cffd75ab">&#9670;&nbsp;</a></span>IsDartCrease()</h2>
 
@@ -1477,6 +1665,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8e07c79ca0374a1f0d7dea35f79f7e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e07c79ca0374a1f0d7dea35f79f7e93">&#9670;&nbsp;</a></span>IsSharp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdge::IsSharp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous normal along a sharp edge. A sharp edge has a smooth tag, has sharpness &gt; 0 at at least one end, and has sharpness &lt; <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a> at at least one end. Sharpness has no meaning for edges with crease tags. Both sharpness values are zero for an ordinary smooth edge. Edge sharpness steadily decreases during subdivision and becomes zero after at most <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a> subdivisions. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the edge is tagged as smooth, and has at least one end with sharpness &gt; 0 and &lt; <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a>. </dd></dl>
+
+</div>
+</div>
 <a id="aacf1f7d04647417e403311dd4972e07f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacf1f7d04647417e403311dd4972e07f">&#9670;&nbsp;</a></span>IsSmooth()</h2>
 
@@ -1495,6 +1703,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c791230ec5f328b6919b185cf9c2069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c791230ec5f328b6919b185cf9c2069">&#9670;&nbsp;</a></span>IsSmoothNotSharp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdge::IsSmoothNotSharp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if an edge is smooth and is not sharp. </p>
+<dl class="section return"><dt>Returns</dt><dd>(true == <a class="el" href="class_o_n___sub_d_edge.html#aacf1f7d04647417e403311dd4972e07f">IsSmooth()</a> and false == <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">IsSharp()</a>)</dd></dl>
+
+</div>
+</div>
 <a id="a1fb31978402e8b31c96cbaf84913f11a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fb31978402e8b31c96cbaf84913f11a">&#9670;&nbsp;</a></span>IsSmoothNotX()</h2>
 
@@ -1510,6 +1738,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: True if m_edge_tag is <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a>. Remarks: Expert user function. This is used in rare cases when level 0 edges tagged as <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325aa53bf30b0ae3ce0512e9e9e7705423a6">ON_SubDEdgeTag::SmoothX</a> need special handling in low level evaluation code. Typical SDK level functions and anything related to runtime user interface should call <a class="el" href="class_o_n___sub_d_edge.html#aacf1f7d04647417e403311dd4972e07f">IsSmooth()</a>. </p>
+
+</div>
+</div>
+<a id="abd244d774f43e3e21912ae4cb748bae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd244d774f43e3e21912ae4cb748bae5">&#9670;&nbsp;</a></span>IsSmoothNotXNotSharp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDEdge::IsSmoothNotXNotSharp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An expert user function to determine if an edge tag in <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a> and is not sharp. </p>
+<dl class="section return"><dt>Returns</dt><dd>(true == <a class="el" href="class_o_n___sub_d_edge.html#a1fb31978402e8b31c96cbaf84913f11a">IsSmoothNotX()</a> and false == <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">IsSharp()</a>)</dd></dl>
 
 </div>
 </div>
@@ -1699,6 +1947,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7fafe41b0fed7f544698d8aee234e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fafe41b0fed7f544698d8aee234e2f">&#9670;&nbsp;</a></span>PointAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_SubDEdge::PointAt </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>normalized_edge_parameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a>&#160;</td>
+          <td class="paramname"><em>subd_appearance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2f3ecdc83cd8f5f815a8e496aeb2bb14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f3ecdc83cd8f5f815a8e496aeb2bb14">&#9670;&nbsp;</a></span>Read()</h2>
 
@@ -1814,7 +2090,136 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to replace reference to old_face with a reference to new_face. Existing orientation is copied. No changes are made to old_face and new_face and their edge references must be updated accordingly. Parameters: old_face = [in] Cannot be nullptr. new_face = [in] If new_face is nullptr, old_face is simply removed. Returns: If the replacement was successful, then the m_faces[] array index where old_face/new_face replacement occured is returned. Otherwise ON_UNSET_UINT_INDEX is returned. Remarks: No modifications are made to old_face or new_face. </p>
+<p>Description: Expert user tool to replace reference to old_face with a reference to new_face. Existing orientation is copied. No changes are made to old_face and new_face and their edge references must be updated accordingly. Parameters: old_face = [in] Cannot be nullptr. new_face = [in] If new_face is nullptr, old_face is simply removed. Returns: If the replacement was successful, then the m_faces[] array index where old_face/new_face replacement occurred is returned. Otherwise ON_UNSET_UINT_INDEX is returned. Remarks: No modifications are made to old_face or new_face. </p>
+
+</div>
+</div>
+<a id="ace6cd7db533e32770cb0c1d7100a6fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6cd7db533e32770cb0c1d7100a6fa2">&#9670;&nbsp;</a></span>SetSharpnessForExperts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SubDEdge::SetSharpnessForExperts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td>
+          <td class="paramname"><em>sharpness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This tool is for expert users and internal use. A collection of <a class="el" href="class_o_n___sub_d.html#a9c89462e3815d30c507e98b920b18f18" title="Set or change edge sharpness.">ON_SubD::SetEdgeSharpness()</a> functions provide the easiest way to set and change edge sharpness. Set the edge sharpness values to (sharpness[0],sharpness[1]). The interval values must be &gt;= 0 and &lt;= <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a>. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sharpness</td><td>End sharpenss values.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae960d5f6e322786e65212719c147b42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae960d5f6e322786e65212719c147b42b">&#9670;&nbsp;</a></span>Sharpness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> ON_SubDEdge::Sharpness </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCreaseSharpness</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge's sharpness. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bUseCreaseSharpness</td><td>If the edge is a crease and bUseCreaseSharpness is false, then <a class="el" href="class_o_n___sub_d_edge_sharpness.html#ac450c47da4dfa105cbb4d22654637da9" title="An edge sharpness with contant value 0.0.">ON_SubDEdgeSharpness::Smooth</a> is returned. If the edge is a crease and bUseCreaseSharpness is true, then <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a16c5939cc1a9f6d6f579fa0199b9cc9a" title="An edge sharpness with both end values = ON_SubDEdgeSharpness::CreaseValue. This value is not a valid...">ON_SubDEdgeSharpness::Crease</a> is returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the edge is smooth, then the sharpness property is returned. If the edge is a crease and bUseCreaseSharpness is true, then <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a16c5939cc1a9f6d6f579fa0199b9cc9a" title="An edge sharpness with both end values = ON_SubDEdgeSharpness::CreaseValue. This value is not a valid...">ON_SubDEdgeSharpness::Crease</a> is returned. In all other cases, <a class="el" href="class_o_n___sub_d_edge_sharpness.html#ac450c47da4dfa105cbb4d22654637da9" title="An edge sharpness with contant value 0.0.">ON_SubDEdgeSharpness::Smooth</a> is returned. </dd></dl>
+
+</div>
+</div>
+<a id="af4746461e384760dbf9aa2740e344c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4746461e384760dbf9aa2740e344c92">&#9670;&nbsp;</a></span>SubdivideSharpness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> ON_SubDEdge::SubdivideSharpness </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
+          <td class="paramname"><em>end_vertex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReverseSharpness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge sharpenss values for the subdivided edge at the specified end of this edge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">end_vertex</td><td>One of this edge's vertices used to select the subdivided edge.</td></tr>
+    <tr><td class="paramname">bReverseSharpness</td><td>Pass true if this edge and the subdividied edge will have opposite orientations. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Edge sharpness for the subdivided edge.</dd></dl>
+
+</div>
+</div>
+<a id="acd34ae348ddb3c403b658bc8504426b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd34ae348ddb3c403b658bc8504426b4">&#9670;&nbsp;</a></span>SubdivideSharpness() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> ON_SubDEdge::SubdivideSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>evi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReverseSharpness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge sharpenss values for the subdivided edge at the specified end of this edge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evi</td><td>Selects the subdivided edge (0 for the left subdivided edge, 1 for the right subdivided edge) </td></tr>
+    <tr><td class="paramname">bReverseSharpness</td><td>Pass true if this edge and the subdividied edge will have opposite orientations. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Edge sharpness for the subdivided edge.</dd></dl>
 
 </div>
 </div>
@@ -1832,6 +2237,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the SubD edge Catmull-Clark subdivision point. </p>
+<dl class="section return"><dt>Returns</dt><dd>Catmull-Clark edge subdivision point.</dd></dl>
 
 </div>
 </div>
@@ -1933,7 +2341,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Apply a tranxfomration matrix to vertex geometry information.</p>
-<p>Parameters: bTransformationSavedSubdivisionPoint - [in] If the transformation is being applied to every vertex, edge and face in every level of a subdivision object, and the transformation is an isometry (rotation, translation, ...), a uniform scale, or a composition of these types, then set bTransformationSavedSubdivisionPoint = true to apply the transformation to saved subdivision and saved limit point information. In all other cases, set bTransformationSavedSubdivisionPoint = false and any saved subdivision points or saved limit points will be deleted. When in doubt, pass false.</p>
+<p>Parameters: bTransformationSavedSubdivisionPoint - [in] If the transformation is being applied to every vertex, edge and face in every level of a subdivision object, and the transformation is an orientation preserving isometry (rotation, translation, ...), then set bTransformationSavedSubdivisionPoint = true to apply the transformation to saved subdivision and saved limit point information. In all other cases, set bTransformationSavedSubdivisionPoint = false and any saved subdivision points or saved limit points will be deleted. When in doubt, pass false.</p>
 <p>xform - [in] </p>
 
 </div>
@@ -2324,6 +2732,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>NOTE: The sector coefficient is a property of a smooth edge end that is constant throughout subdivision. It exists at ends of smooth edges that are attached to dart, crease, or corner vertices. In all other cases the sector coefficient is ignored. In particular crease edges and the ends of smooth edges attached to smooth vertices do not have a sector coefficient.</p>
+<p>The <a class="el" href="class_o_n___sub_d_sector_type.html">ON_SubDSectorType</a> class provides three static functions that calculate sector coefficients: <a class="el" href="class_o_n___sub_d_sector_type.html#a53d8c5360e6b2546670cc7cc7acab873">ON_SubDSectorType::DartSectorCoefficient()</a> <a class="el" href="class_o_n___sub_d_sector_type.html#a79b7a3cac6981aa57104e18e371ea6fb">ON_SubDSectorType::CreaseSectorCoefficient()</a> <a class="el" href="class_o_n___sub_d_sector_type.html#a5f5ac5434aed9d168a7ec38309a9f582">ON_SubDSectorType::CornerSectorCoefficient()</a></p>
 <p>If the value of vertex-&gt;m_vertex_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375ae510cdf33cd497134b47b9316314d4b4">ON_SubDVertexTag::Smooth</a>, then that vertex is "tagged".</p>
 <p>If the value of m_edge_tag is <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>, then m_sector_coefficient[] should be {0,0}. <br  />
  In any case m_sector_coefficient[] values are ignored and the midpoint of the edge is the location of the edge.s subdivision point. The edge's subdivision vertex will be tagged as <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a> and both subdivision edges will be tagged as <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>.</p>
@@ -2345,22 +2755,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab528b8bec73494e2507fce1181877c34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab528b8bec73494e2507fce1181877c34">&#9670;&nbsp;</a></span>m_sharpness</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double ON_SubDEdge::m_sharpness = 0.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If m_edge_tag is not ON_SubDEdgeTag::Sharp, then m_sharpness is ignored. If m_edge_tag is ON_SubDEdgeTag::Sharp, then m_sharpness controls how hard/soft the edge appears. <br  />
- The behavior of a "sharp" edge with m_sharpness = 1 is identical to a crease edge. A "sharp" edge with m_sharpness = 0 is identical to a smooth edge. For this reason, m_sharpness must be &gt; 0 and &lt; 1. </p>
-
-</div>
-</div>
 <a id="ad6f4c8adb7579d436627ff40c33d6f43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6f4c8adb7579d436627ff40c33d6f43">&#9670;&nbsp;</a></span>m_vertex</h2>
 
@@ -2379,7 +2773,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

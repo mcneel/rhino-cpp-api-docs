@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -78,9 +78,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa07685e174845a37dd4e9e29516e38b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">active_space</a> : unsigned char { <a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a0f4c1b2b36c1e827866f55fdd93e6c07">no_space</a> = 0, 
+<tr class="memitem:aa07685e174845a37dd4e9e29516e38b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">active_space</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a0f4c1b2b36c1e827866f55fdd93e6c07">no_space</a> = 0, 
 <a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8ac973b13b71c2248c92d3e83539d346cb">model_space</a> = 1, 
-<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a6f99d38a326e2ee1750b9ca1f43761d9">page_space</a> = 2
+<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a6f99d38a326e2ee1750b9ca1f43761d9">page_space</a> = 2, 
+<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a9c99ca81e35fb98cdcbbd9422942e9fd">uveditor_space</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8a09b14952ff461abc83fbef1e86dc3ff7">blockeditor_space</a> = 4
+<br />
  }</td></tr>
 <tr class="memdesc:aa07685e174845a37dd4e9e29516e38b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the current working space.  <a href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">More...</a><br /></td></tr>
 <tr class="separator:aa07685e174845a37dd4e9e29516e38b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,6 +337,18 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8ccbb56343fe6750855d24f5ef8483fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8febd159977ec661a592178177837ccb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccb">LineCapStyle</a> : unsigned char { <a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccbab7f41fc1412ad2ee75e9b2635d3b9d5c">LineCapStyle::Round</a> = 0, 
+<a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccba745e3db6a7ffd50e1a72b39482f0882d">LineCapStyle::Flat</a> = 1, 
+<a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccbaceb46ca115d05c51aa5a16a8867c3304">LineCapStyle::Square</a> = 2
+ }</td></tr>
+<tr class="memdesc:a8febd159977ec661a592178177837ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape to be used at the ends of open curves  <a href="class_o_n.html#a8febd159977ec661a592178177837ccb">More...</a><br /></td></tr>
+<tr class="separator:a8febd159977ec661a592178177837ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274c0174151e9a6b567b123c6266b99a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">LineJoinStyle</a> : unsigned char { <a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99aab7f41fc1412ad2ee75e9b2635d3b9d5c">LineJoinStyle::Round</a> = 0, 
+<a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99aae4396f81cd926bb129ccf3c147c64514">LineJoinStyle::Miter</a> = 1, 
+<a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99aa1b9ae4ca6d43fc984af318046e1e7bb5">LineJoinStyle::Bevel</a> = 2
+ }</td></tr>
+<tr class="memdesc:a274c0174151e9a6b567b123c6266b99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape to be used at the corners of curves  <a href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">More...</a><br /></td></tr>
+<tr class="separator:a274c0174151e9a6b567b123c6266b99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4479b49f4b13f6a1112c87cf106e5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">mesh_type</a> { <br />
 &#160;&#160;<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">default_mesh</a> = 0, 
 <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">render_mesh</a> = 1, 
@@ -494,6 +511,24 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac15804e07d1c7a04a29e38581b20523b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n.html#ac15804e07d1c7a04a29e38581b20523b" title="ON::RuntimeEnvironment identifies a runtime environment (operating system). This value is saved in bi...">ON::RuntimeEnvironment</a> identifies a runtime environment (operating system). This value is saved in binary archives so appropriate adjustments to resources provided by runtime environments, like fonts, can be made when an archive created in one runtime environment is used in another.  <a href="class_o_n.html#ac15804e07d1c7a04a29e38581b20523b">More...</a><br /></td></tr>
 <tr class="separator:ac15804e07d1c7a04a29e38581b20523b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3608f562621c63f50a2df19755576e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576e">SectionAttributesSource</a> : unsigned char { <a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576ea79b11bcdb8d622eeb6513427342aad5a">SectionAttributesSource::FromLayer</a> = 0, 
+<a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576ea3718fa694210bccf8ba769b44627a692">SectionAttributesSource::FromObject</a> = 1, 
+<a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576eaf469109d0e46092313fd12f43f48018e">SectionAttributesSource::FromParent</a> = 2, 
+<a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576ea56d8dba0a9fe0c609bd908d10db0f1bc">SectionAttributesSource::FromSectioner</a> = 3
+ }</td></tr>
+<tr class="memdesc:abd3608f562621c63f50a2df19755576e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source of sectioning attributes on an object.  <a href="class_o_n.html#abd3608f562621c63f50a2df19755576e">More...</a><br /></td></tr>
+<tr class="separator:abd3608f562621c63f50a2df19755576e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfe737d0547eba3d84029bb743e7728"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728">SectionFillRule</a> : unsigned char { <a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728afb578fdd8269bb991dcfc72dca00d9a0">SectionFillRule::ClosedCurves</a> = 0, 
+<a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728a07410161d8f8d44ee28eb90dac930dee">SectionFillRule::SolidObjects</a> = 1
+ }</td></tr>
+<tr class="memdesc:a2cfe737d0547eba3d84029bb743e7728"><td class="mdescLeft">&#160;</td><td class="mdescRight">For sectioning an object; the decision of when to generate hatches and fills.  <a href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728">More...</a><br /></td></tr>
+<tr class="separator:a2cfe737d0547eba3d84029bb743e7728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada21a08f03467f9c24dc2d4d53bbe66e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66e">SectionLabelStyle</a> : unsigned char { <a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66ea6adf97f83acf6453d4a6a4b1070f3754">SectionLabelStyle::None</a> = 0, 
+<a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66ea32aaaad9e05752e9fa9aede60c503ee4">SectionLabelStyle::TextDotFromName</a> = 1, 
+<a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66ea17bab5b26b6e1ef5ca9cff1bac875991">SectionLabelStyle::TextFromName</a> = 2
+ }</td></tr>
+<tr class="memdesc:ada21a08f03467f9c24dc2d4d53bbe66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source of sectioning attributes on an object.  <a href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66e">More...</a><br /></td></tr>
+<tr class="separator:ada21a08f03467f9c24dc2d4d53bbe66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1401dff5b8760dcd27fa03e07e72ec86"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a1401dff5b8760dcd27fa03e07e72ec86">sort_algorithm</a> : unsigned int { <a class="el" href="class_o_n.html#a1401dff5b8760dcd27fa03e07e72ec86a76ac2477b47334d6bb5114a127c1888c">sort_algorithm::heap_sort</a> = 0, 
 <a class="el" href="class_o_n.html#a1401dff5b8760dcd27fa03e07e72ec86a5b11cfb7e9f861c39fbdfe8c947ede20">sort_algorithm::quick_sort</a> = 1
  }</td></tr>
@@ -557,11 +592,21 @@ Public Types</h2></td></tr>
 <a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75ea3ca26215dea288d235860c27bfc05181">perspective_view</a> = 2
  }</td></tr>
 <tr class="separator:a55c47f5241c289586d8e8415b6f1a75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dafb3795977579badb110f474671ae2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2">view_type</a> { <a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2a2645e74954abd24f5434f5bc1f858aaa">model_view_type</a> = 0, 
+<tr class="memitem:a2dafb3795977579badb110f474671ae2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2">view_type</a> { <br />
+&#160;&#160;<a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2a2645e74954abd24f5434f5bc1f858aaa">model_view_type</a> = 0, 
 <a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2abb435616c31d73a6fcb5f5fd30591e61">page_view_type</a> = 1, 
-<a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2ada628eef55de40cf756918af308dc4df">nested_view_type</a> = 2
+<a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2ada628eef55de40cf756918af308dc4df">nested_view_type</a> = 2, 
+<a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2aa4f3dd983215106c7158164371bdf55f">uveditor_view_type</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2aadb7795520657f54da4f4347bed8431d">blockeditor_view_type</a> = 4
+<br />
  }</td></tr>
 <tr class="separator:a2dafb3795977579badb110f474671ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f527b523d1d3ff7ae1ad5d44eee567"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567">ViewSectionBehavior</a> : unsigned char { <a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567ab33b2de37cc3d6374b80c6b3af959424">ViewSectionBehavior::ClipAndSection</a> = 0, 
+<a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567aa2d58eb843de4aaf057340c4f699fea2">ViewSectionBehavior::SectionOnly</a> = 1
+ }</td></tr>
+<tr class="memdesc:af8f527b523d1d3ff7ae1ad5d44eee567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how views work with clipping planes.  <a href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567">More...</a><br /></td></tr>
+<tr class="separator:af8f527b523d1d3ff7ae1ad5d44eee567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -662,6 +707,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a64ba4492e780cf2a4347f381fad41573"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a8ccbb56343fe6750855d24f5ef8483fd">light_style</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a64ba4492e780cf2a4347f381fad41573">LightStyle</a> (int)</td></tr>
 <tr class="memdesc:a64ba4492e780cf2a4347f381fad41573"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert integer to light_style enum  <a href="class_o_n.html#a64ba4492e780cf2a4347f381fad41573">More...</a><br /></td></tr>
 <tr class="separator:a64ba4492e780cf2a4347f381fad41573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc68dfe580c5b93777602680ebde318"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccb">LineCapStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a7fc68dfe580c5b93777602680ebde318">LineCapStyleFromUnsigned</a> (unsigned int cap_as_unsigned)</td></tr>
+<tr class="separator:a7fc68dfe580c5b93777602680ebde318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e2c50220818438e977f416823846e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">LineJoinStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a36e2c50220818438e977f416823846e2">LineJoinStyleFromUnsigned</a> (unsigned int join_as_unsigned)</td></tr>
+<tr class="separator:a36e2c50220818438e977f416823846e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7505a5bb81b8d8da72103a77825efbd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">mesh_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#ab7505a5bb81b8d8da72103a77825efbd">MeshType</a> (int)</td></tr>
 <tr class="memdesc:ab7505a5bb81b8d8da72103a77825efbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert integer to mesh_type enum  <a href="class_o_n.html#ab7505a5bb81b8d8da72103a77825efbd">More...</a><br /></td></tr>
 <tr class="separator:ab7505a5bb81b8d8da72103a77825efbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -719,6 +768,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6d452984fc781e2f1bdf107a366ef5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269aadd7f37051771db40000ba56e55e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#ac15804e07d1c7a04a29e38581b20523b">ON::RuntimeEnvironment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a269aadd7f37051771db40000ba56e55e">RuntimeEnvironmentFromUnsigned</a> (unsigned int runtime_environment_as_unsigned)</td></tr>
 <tr class="separator:a269aadd7f37051771db40000ba56e55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69a0910591a6d134d90b3fbd7876ac7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576e">SectionAttributesSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#ab69a0910591a6d134d90b3fbd7876ac7">SectionAttributesSourceFromUnsigned</a> (unsigned int section_attributes_source_as_unsigned)</td></tr>
+<tr class="separator:ab69a0910591a6d134d90b3fbd7876ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d95b60e7118d3b0bedf89f401c6514"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728">SectionFillRule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a73d95b60e7118d3b0bedf89f401c6514">SectionFillRuleFromUnsigned</a> (unsigned int section_fill_rule_as_unsigned)</td></tr>
+<tr class="separator:a73d95b60e7118d3b0bedf89f401c6514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f04df31e887a852498c6ad045491a85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66e">SectionLabelStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a7f04df31e887a852498c6ad045491a85">SectionLabelStyleFromUnsigned</a> (unsigned int section_label_style_as_unsigned)</td></tr>
+<tr class="separator:a7f04df31e887a852498c6ad045491a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ca89236f97e2a5f4e3ddaee62084ab1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a1ca89236f97e2a5f4e3ddaee62084ab1">SetLibraryStatus</a> (unsigned int status)</td></tr>
 <tr class="separator:a1ca89236f97e2a5f4e3ddaee62084ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9a32d35ca1f2d7364e616f094d2476"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a1401dff5b8760dcd27fa03e07e72ec86">sort_algorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#aff9a32d35ca1f2d7364e616f094d2476">SortAlgorithm</a> (int)</td></tr>
@@ -789,6 +844,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4a5193190526199b61127cc05528995e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff911ba3cf7bf11f4612169c454344d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a55c47f5241c289586d8e8415b6f1a75e">view_projection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#a5ff911ba3cf7bf11f4612169c454344d">ViewProjection</a> (int i)</td></tr>
 <tr class="separator:a5ff911ba3cf7bf11f4612169c454344d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe965adfbe4acb043020c350bf3a987d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567">ViewSectionBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#afe965adfbe4acb043020c350bf3a987d">ViewSectionBehaviorFromUnsigned</a> (unsigned int view_section_behavior_as_unsigned)</td></tr>
+<tr class="separator:afe965adfbe4acb043020c350bf3a987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af85ad5f64701c1c6345d1bf5043751c4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n.html#a2dafb3795977579badb110f474671ae2">view_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n.html#af85ad5f64701c1c6345d1bf5043751c4">ViewType</a> (int)</td></tr>
 <tr class="memdesc:af85ad5f64701c1c6345d1bf5043751c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert integer to display_mode enum  <a href="class_o_n.html#af85ad5f64701c1c6345d1bf5043751c4">More...</a><br /></td></tr>
 <tr class="separator:af85ad5f64701c1c6345d1bf5043751c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -814,6 +871,10 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aa07685e174845a37dd4e9e29516e38b8ac973b13b71c2248c92d3e83539d346cb"></a>model_space&#160;</td><td class="fielddoc"><p>3d modeling or "world" space </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa07685e174845a37dd4e9e29516e38b8a6f99d38a326e2ee1750b9ca1f43761d9"></a>page_space&#160;</td><td class="fielddoc"><p>page/layout/paper/printing space </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa07685e174845a37dd4e9e29516e38b8a9c99ca81e35fb98cdcbbd9422942e9fd"></a>uveditor_space&#160;</td><td class="fielddoc"><p>UV Editor space. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa07685e174845a37dd4e9e29516e38b8a09b14952ff461abc83fbef1e86dc3ff7"></a>blockeditor_space&#160;</td><td class="fielddoc"><p>Block Editor space. </p>
 </td></tr>
 </table>
 
@@ -885,7 +946,7 @@ Static Public Member Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a21f538b91118a107f517692f59287684ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt; Not a valid annotation type. /summary&gt; summary&gt; Linear distance between two points with dimension line parallel to the dimensioned points. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a21f538b91118a107f517692f59287684a1d5b772bea21e5e949413e09eedf17de"></a>Aligned&#160;</td><td class="fielddoc"><p>summary&gt; Angle bewteen two lines. /summary&gt; </p>
+<tr><td class="fieldname"><a id="a21f538b91118a107f517692f59287684a1d5b772bea21e5e949413e09eedf17de"></a>Aligned&#160;</td><td class="fielddoc"><p>summary&gt; Angle between two lines. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a21f538b91118a107f517692f59287684ac31c335ef37283c451b18ba0dd317de1"></a>Angular&#160;</td><td class="fielddoc"><p>summary&gt; Arc or circle diameter dimension. /summary&gt; </p>
 </td></tr>
@@ -986,7 +1047,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p><a class="el" href="class_o_n.html#af19c7a76e741f0a60d00c967c6d63da7" title="ON::ComponentNameConflictResolution identifies a method to use when components are being added to mod...">ON::ComponentNameConflictResolution</a> identifies a method to use when components are being added to model, the component name must be unique, and the name of the new is already in use in the context. The function <a class="el" href="class_o_n___model_component.html#ac964f3398ebf21fe35a649ff10d88bba">ON_ModelComponent::UniqueNameRequired(ON_ModelComponent::Type)</a> can be used to determine if a component requires a unique name. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt; A method to resolve name conflicts has not been specified. /summary&gt; summary&gt; Interactivly ask the user to choose one of the following methods to resolve component name conflicts. /summary&gt; </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>summary&gt; A method to resolve name conflicts has not been specified. /summary&gt; summary&gt; Interactively ask the user to choose one of the following methods to resolve component name conflicts. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7afab74f9a835d62d2d42b1a8a1fe38937"></a>QueryMethod&#160;</td><td class="fielddoc"><p>summary&gt; Use the existing component, discard the new component. All references to the discarded component are changed to reference the the surviving component. /summary&gt; </p>
 </td></tr>
@@ -994,7 +1055,7 @@ Static Public Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7ac88757c30556034eae149761c0774ffe"></a>ReplaceExistingComponent&#160;</td><td class="fielddoc"><p>summary&gt; Keep both components. Resolve the name conflict by automatically assigning a name new component. This is typically done by appending an integer to the original name. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7a9cc762300af97d31673a41e836721713"></a>KeepBothComponentsAutomaticRename&#160;</td><td class="fielddoc"><p>summary&gt; Keep both components. Resolve the name conflict by interactivly asking for an unused name to assign to the new component. /summary&gt; </p>
+<tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7a9cc762300af97d31673a41e836721713"></a>KeepBothComponentsAutomaticRename&#160;</td><td class="fielddoc"><p>summary&gt; Keep both components. Resolve the name conflict by interactively asking for an unused name to assign to the new component. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af19c7a76e741f0a60d00c967c6d63da7a25459edb7b4385e807bc50303d1982b2"></a>KeepBothComponentsQueryRename&#160;</td><td class="fielddoc"><p>summary&gt; No name conflict was detected and no special action is required. This can occur when the names in question are unique or unique names are not required. /summary&gt; </p>
 </td></tr>
@@ -1098,7 +1159,7 @@ at the end parameter of a curve rather than twice.
       </table>
 </div><div class="memdoc">
 <p>surface_loft_end_condition //////////////////////////////////////////////</p>
-<p>End condition paramter values for <a class="el" href="class_o_n___curve.html#a86077c379577c4f8643474cfacbdb3bd">ON_Curve::CreateCubicLoft()</a> and <a class="el" href="class_o_n___surface.html#a092292fa51f62b20748ef49c3681133c">ON_Surface::CreateCubicLoft()</a>. </p>
+<p>End condition parameter values for <a class="el" href="class_o_n___curve.html#a86077c379577c4f8643474cfacbdb3bd">ON_Curve::CreateCubicLoft()</a> and <a class="el" href="class_o_n___surface.html#a092292fa51f62b20748ef49c3681133c">ON_Surface::CreateCubicLoft()</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a93987c3500773205a5b293934af98290ab13be3adf563def4e2892f993b2ea2e6"></a>cubic_loft_ec_quadratic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a93987c3500773205a5b293934af98290aab02f7167a0165d861d2edf3aa2f4ff5"></a>cubic_loft_ec_linear&#160;</td><td class="fielddoc"></td></tr>
@@ -1368,9 +1429,8 @@ at the end parameter of a curve rather than twice.
 </div><div class="memdoc">
 
 <p><a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050a" title="ON::LengthUnitSystem identifies a length unit system United States customary length units references:...">ON::LengthUnitSystem</a> identifies a length unit system United States customary length units references: <a href="http://www.nist.gov/pml/wmd/metric/upload/frn-59-5442-1959.pdf">http://www.nist.gov/pml/wmd/metric/upload/frn-59-5442-1959.pdf</a> <a href="http://en.wikipedia.org/wiki/United_States_customary_units">http://en.wikipedia.org/wiki/United_States_customary_units</a> <a href="http://en.wikipedia.org/wiki/International_yard_and_pound">http://en.wikipedia.org/wiki/International_yard_and_pound</a> </p>
-<p>unit_system ///////////////////////////////////////////////////////////////</p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a> indicates no length unit system. The scale factor when converting between a specified unit system and None is always 1.0. <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a> is used as a unit system for models and instance defitions that should be imported or referenced with no scaling applied. /summary&gt; summary&gt; 1 angstroms = 1.0e-10 meters /summary&gt; </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a> indicates no length unit system. The scale factor when converting between a specified unit system and None is always 1.0. <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a> is used as a unit system for models and instance definitions that should be imported or referenced with no scaling applied. /summary&gt; summary&gt; 1 angstroms = 1.0e-10 meters /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aab9998e71277563222e1e5072501180a8"></a>Angstroms&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa06ee1635ec67aa5e9eff29a6e728b915"></a>Nanometers&#160;</td><td class="fielddoc"><p>SI (metric) units. </p>
@@ -1422,7 +1482,7 @@ at the end parameter of a curve rather than twice.
 </td></tr>
 <tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa560bf3095069566eb7ef575bffa3c133"></a>Parsecs&#160;</td><td class="fielddoc"><p>summary&gt; The name of a custom unit and the conversion to meters are saved in the <a class="el" href="class_o_n___unit_system.html">ON_UnitSystem</a> class. /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa273791eac02a2dec9555523427d254b3"></a>CustomUnits&#160;</td><td class="fielddoc"><p>summary&gt; The <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aac9f88e098f6fe4e4e112eeb05ccb9671">ON::LengthUnitSystem::Unset</a> is used to indicate no unit system is set. This is a differnt condition from <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a>. /summary&gt; </p>
+<tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aa273791eac02a2dec9555523427d254b3"></a>CustomUnits&#160;</td><td class="fielddoc"><p>summary&gt; The <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aac9f88e098f6fe4e4e112eeb05ccb9671">ON::LengthUnitSystem::Unset</a> is used to indicate no unit system is set. This is a different condition from <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a>. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aef46d8c5bfb7e3ebca29c979c7d1050aac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -1457,6 +1517,70 @@ at the end parameter of a curve rather than twice.
 <tr><td class="fieldname"><a id="a8ccbb56343fe6750855d24f5ef8483fda8397b41ec0ade585dd631a3550e48bbd"></a>world_linear_light&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8ccbb56343fe6750855d24f5ef8483fda0f6727cd657cbce2b5c0c5d65de75a71"></a>world_rectangular_light&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8ccbb56343fe6750855d24f5ef8483fdae22c33826a10d6f0914e1e263bfb3d03"></a>light_style_count&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8febd159977ec661a592178177837ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8febd159977ec661a592178177837ccb">&#9670;&nbsp;</a></span>LineCapStyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccb">ON::LineCapStyle</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shape to be used at the ends of open curves </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8febd159977ec661a592178177837ccbab7f41fc1412ad2ee75e9b2635d3b9d5c"></a>Round&#160;</td><td class="fielddoc"><p>Ends are extended by a half circle with diameter equal to the curve width </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8febd159977ec661a592178177837ccba745e3db6a7ffd50e1a72b39482f0882d"></a>Flat&#160;</td><td class="fielddoc"><p>Also known as butt. Ends are flat and do not extend </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8febd159977ec661a592178177837ccbaceb46ca115d05c51aa5a16a8867c3304"></a>Square&#160;</td><td class="fielddoc"><p>Ends are flat and extended by half of the curve width </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a274c0174151e9a6b567b123c6266b99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274c0174151e9a6b567b123c6266b99a">&#9670;&nbsp;</a></span>LineJoinStyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">ON::LineJoinStyle</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shape to be used at the corners of curves </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a274c0174151e9a6b567b123c6266b99aab7f41fc1412ad2ee75e9b2635d3b9d5c"></a>Round&#160;</td><td class="fielddoc"><p>Rounds corners </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a274c0174151e9a6b567b123c6266b99aae4396f81cd926bb129ccf3c147c64514"></a>Miter&#160;</td><td class="fielddoc"><p>Sharp corners where outer edges are extended to a point where they meet </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a274c0174151e9a6b567b123c6266b99aa1b9ae4ca6d43fc984af318046e1e7bb5"></a>Bevel&#160;</td><td class="fielddoc"><p>Beveled corner where outer edges are connected without extending </p>
+</td></tr>
 </table>
 
 </div>
@@ -1918,6 +2042,105 @@ at the end parameter of a curve rather than twice.
 
 </div>
 </div>
+<a id="abd3608f562621c63f50a2df19755576e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3608f562621c63f50a2df19755576e">&#9670;&nbsp;</a></span>SectionAttributesSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576e">ON::SectionAttributesSource</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The source of sectioning attributes on an object. </p>
+<p>&lt;since&gt;8.0&lt;/since&gt; </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abd3608f562621c63f50a2df19755576ea79b11bcdb8d622eeb6513427342aad5a"></a>FromLayer&#160;</td><td class="fielddoc"><p>Section attributes defined by object's layer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abd3608f562621c63f50a2df19755576ea3718fa694210bccf8ba769b44627a692"></a>FromObject&#160;</td><td class="fielddoc"><p>Section attributes are specific to the object </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abd3608f562621c63f50a2df19755576eaf469109d0e46092313fd12f43f48018e"></a>FromParent&#160;</td><td class="fielddoc"><p>Section attributes defined by object's parent </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abd3608f562621c63f50a2df19755576ea56d8dba0a9fe0c609bd908d10db0f1bc"></a>FromSectioner&#160;</td><td class="fielddoc"><p>Section attributes defined by the cutting object </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2cfe737d0547eba3d84029bb743e7728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cfe737d0547eba3d84029bb743e7728">&#9670;&nbsp;</a></span>SectionFillRule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728">ON::SectionFillRule</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For sectioning an object; the decision of when to generate hatches and fills. </p>
+<p>&lt;since&gt;8.0&lt;/since&gt; </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2cfe737d0547eba3d84029bb743e7728afb578fdd8269bb991dcfc72dca00d9a0"></a>ClosedCurves&#160;</td><td class="fielddoc"><p>If a the section results in a closed curve, then generate a fill </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2cfe737d0547eba3d84029bb743e7728a07410161d8f8d44ee28eb90dac930dee"></a>SolidObjects&#160;</td><td class="fielddoc"><p>Only generate a fill for objects that are considered Solid </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ada21a08f03467f9c24dc2d4d53bbe66e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada21a08f03467f9c24dc2d4d53bbe66e">&#9670;&nbsp;</a></span>SectionLabelStyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66e">ON::SectionLabelStyle</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The source of sectioning attributes on an object. </p>
+<p>&lt;since&gt;8.0&lt;/since&gt; </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ada21a08f03467f9c24dc2d4d53bbe66ea6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No label </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ada21a08f03467f9c24dc2d4d53bbe66ea32aaaad9e05752e9fa9aede60c503ee4"></a>TextDotFromName&#160;</td><td class="fielddoc"><p>Label shown as a text dot with content from name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ada21a08f03467f9c24dc2d4d53bbe66ea17bab5b26b6e1ef5ca9cff1bac875991"></a>TextFromName&#160;</td><td class="fielddoc"><p>Label shown as text with content from name </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a1401dff5b8760dcd27fa03e07e72ec86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1401dff5b8760dcd27fa03e07e72ec86">&#9670;&nbsp;</a></span>sort_algorithm</h2>
 
@@ -2100,7 +2323,7 @@ at the end parameter of a curve rather than twice.
 </td></tr>
 <tr><td class="fieldname"><a id="aba3fe70d4361c458432bd6e5a690e6d3ab1ca34f82e83c52b010f86955f264e05"></a>Middle&#160;</td><td class="fielddoc"><p>summary&gt; Attach to middle of an "I" on the last line. (Independent of glyphs being displayed.) /summary&gt; </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aba3fe70d4361c458432bd6e5a690e6d3aa0f42f06f34a862137da50f806d74844"></a>MiddleOfBottom&#160;</td><td class="fielddoc"><p>summary&gt; Attach to the basline of the last line. (Independent of glyphs being displayed.) /summary&gt; </p>
+<tr><td class="fieldname"><a id="aba3fe70d4361c458432bd6e5a690e6d3aa0f42f06f34a862137da50f806d74844"></a>MiddleOfBottom&#160;</td><td class="fielddoc"><p>summary&gt; Attach to the baseline of the last line. (Independent of glyphs being displayed.) /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aba3fe70d4361c458432bd6e5a690e6d3a2ad9d63b69c4a10a5cc9cad923133bc4"></a>Bottom&#160;</td><td class="fielddoc"><p>summary&gt; Attach to the bottom of the boudning box of the visible glyphs. /summary&gt; </p>
 </td></tr>
@@ -2146,7 +2369,7 @@ at the end parameter of a curve rather than twice.
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The x/y/z_2pt_perspective_view projections are ordinary perspective projection. Using these values insures the <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> member fuctions properly constrain the camera up and camera direction vectors to preserve the specified perspective vantage. </p>
+<p>The x/y/z_2pt_perspective_view projections are ordinary perspective projection. Using these values insures the <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> member functions properly constrain the camera up and camera direction vectors to preserve the specified perspective vantage. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a55c47f5241c289586d8e8415b6f1a75ea6f74f5154af4647cbbda248e865fc94f"></a>unknown_view&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a55c47f5241c289586d8e8415b6f1a75ea8e265e4a362e23c9e8dc664315da2ffa"></a>parallel_view&#160;</td><td class="fielddoc"></td></tr>
@@ -2173,6 +2396,41 @@ at the end parameter of a curve rather than twice.
  </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2dafb3795977579badb110f474671ae2ada628eef55de40cf756918af308dc4df"></a>nested_view_type&#160;</td><td class="fielddoc"><p>This view is a "model" view that is nested in another view. The nesting and parent information is saved in <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2dafb3795977579badb110f474671ae2aa4f3dd983215106c7158164371bdf55f"></a>uveditor_view_type&#160;</td><td class="fielddoc"><p>This view is a UV Editor view that shows UV meshes in a special view port. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2dafb3795977579badb110f474671ae2aadb7795520657f54da4f4347bed8431d"></a>blockeditor_view_type&#160;</td><td class="fielddoc"><p>This view is a Block Editor view that shows block definition in a special view port. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af8f527b523d1d3ff7ae1ad5d44eee567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f527b523d1d3ff7ae1ad5d44eee567">&#9670;&nbsp;</a></span>ViewSectionBehavior</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567">ON::ViewSectionBehavior</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines how views work with clipping planes. </p>
+<p>&lt;since&gt;8.0&lt;/since&gt; </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8f527b523d1d3ff7ae1ad5d44eee567ab33b2de37cc3d6374b80c6b3af959424"></a>ClipAndSection&#160;</td><td class="fielddoc"><p>Default - show geometry on unclipped side of clipping plane and show section </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8f527b523d1d3ff7ae1ad5d44eee567aa2d58eb843de4aaf057340c4f699fea2"></a>SectionOnly&#160;</td><td class="fielddoc"><p>Only show the section at the intersection of a clipping plane </p>
 </td></tr>
 </table>
 
@@ -3362,6 +3620,58 @@ at the end parameter of a curve rather than twice.
 
 </div>
 </div>
+<a id="a7fc68dfe580c5b93777602680ebde318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc68dfe580c5b93777602680ebde318">&#9670;&nbsp;</a></span>LineCapStyleFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccb">LineCapStyle</a> ON::LineCapStyleFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>cap_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36e2c50220818438e977f416823846e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e2c50220818438e977f416823846e2">&#9670;&nbsp;</a></span>LineJoinStyleFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">LineJoinStyle</a> ON::LineJoinStyleFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>join_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab7505a5bb81b8d8da72103a77825efbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7505a5bb81b8d8da72103a77825efbd">&#9670;&nbsp;</a></span>MeshType()</h2>
 
@@ -4019,6 +4329,84 @@ at the end parameter of a curve rather than twice.
 
 </div>
 </div>
+<a id="ab69a0910591a6d134d90b3fbd7876ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69a0910591a6d134d90b3fbd7876ac7">&#9670;&nbsp;</a></span>SectionAttributesSourceFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#abd3608f562621c63f50a2df19755576e">SectionAttributesSource</a> ON::SectionAttributesSourceFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>section_attributes_source_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73d95b60e7118d3b0bedf89f401c6514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d95b60e7118d3b0bedf89f401c6514">&#9670;&nbsp;</a></span>SectionFillRuleFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#a2cfe737d0547eba3d84029bb743e7728">SectionFillRule</a> ON::SectionFillRuleFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>section_fill_rule_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f04df31e887a852498c6ad045491a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f04df31e887a852498c6ad045491a85">&#9670;&nbsp;</a></span>SectionLabelStyleFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#ada21a08f03467f9c24dc2d4d53bbe66e">SectionLabelStyle</a> ON::SectionLabelStyleFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>section_label_style_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ca89236f97e2a5f4e3ddaee62084ab1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ca89236f97e2a5f4e3ddaee62084ab1">&#9670;&nbsp;</a></span>SetLibraryStatus()</h2>
 
@@ -4122,7 +4510,7 @@ at the end parameter of a curve rather than twice.
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns: Empty string or the git hash of the revison of the source code used to build this application. The git hash is a hexadecimal number represented in UTF-8 string. Remarks: Developer builds return "". Build system builds return the git revsion hash. </p>
+<p>Returns: Empty string or the git hash of the revision of the source code used to build this application. The git hash is a hexadecimal number represented in UTF-8 string. Remarks: Developer builds return "". Build system builds return the git revision hash. </p>
 
 </div>
 </div>
@@ -4945,6 +5333,32 @@ at the end parameter of a curve rather than twice.
 
 </div>
 </div>
+<a id="afe965adfbe4acb043020c350bf3a987d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe965adfbe4acb043020c350bf3a987d">&#9670;&nbsp;</a></span>ViewSectionBehaviorFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n.html#af8f527b523d1d3ff7ae1ad5d44eee567">ViewSectionBehavior</a> ON::ViewSectionBehaviorFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>view_section_behavior_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af85ad5f64701c1c6345d1bf5043751c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af85ad5f64701c1c6345d1bf5043751c4">&#9670;&nbsp;</a></span>ViewType()</h2>
 
@@ -4976,7 +5390,7 @@ at the end parameter of a curve rather than twice.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

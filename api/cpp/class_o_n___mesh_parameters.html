@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad891a35a5061fd1a03a683ece3f92006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3928e3ba3396a85fad9b7c4d488a6e2d"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled</a> () const</td></tr>
 <tr class="separator:a3928e3ba3396a85fad9b7c4d488a6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1bd87041938b85aefdc903dd1b82f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#abd1bd87041938b85aefdc903dd1b82f7">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>) const</td></tr>
+<tr class="memitem:abd1bd87041938b85aefdc903dd1b82f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#abd1bd87041938b85aefdc903dd1b82f7">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>) const</td></tr>
 <tr class="separator:abd1bd87041938b85aefdc903dd1b82f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377613e652a6dd8f05177b16028689e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a377613e652a6dd8f05177b16028689e3">Description</a> () const</td></tr>
 <tr class="separator:a377613e652a6dd8f05177b16028689e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,6 +310,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0b8c794f19881601e41bab8565111fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35f34c090e362322a24f5145544234eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a35f34c090e362322a24f5145544234eb">CompareGeometrySettings</a> (const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;a, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;b)</td></tr>
 <tr class="separator:a35f34c090e362322a24f5145544234eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0329263331137d4a9f2305a9f6c42c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a1e0329263331137d4a9f2305a9f6c42c">CompareGeometrySettings</a> (const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;a, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;b, const bool bIgnoreSubDParameters)</td></tr>
+<tr class="separator:a1e0329263331137d4a9f2305a9f6c42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5410b071997bbebb86f7d61170f1968e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a5410b071997bbebb86f7d61170f1968e">CreateFromMeshDensity</a> (double normalized_mesh_density)</td></tr>
 <tr class="separator:a5410b071997bbebb86f7d61170f1968e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01bb555a57e27aabc37b2c416b92b061"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a01bb555a57e27aabc37b2c416b92b061">MeshDensityAsPercentage</a> (double normalized_mesh_density)</td></tr>
@@ -588,7 +590,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Tool for provding a simple "slider" interface. Parameters: normalized_mesh_density - [in] 0.0 &lt;= normalized_mesh_density &lt;= 1.0 0 quickly creates extremely coarse meshes. 1 slowly creates extremely dense meshes. min_edge_length - [in] &gt; 0.0 custom value ON_UNSET_VALUE: for default (0.0001) Remarks: If you are using a user interface "slider" to set mesh parameters, then you are strongly encouraged to call <a class="el" href="class_o_n___mesh_parameters.html#a5410b071997bbebb86f7d61170f1968e">ON_MeshParameters::CreateFromMeshDensity()</a> instead of using this constructor. <a class="el" href="class_o_n___mesh_parameters.html#a5410b071997bbebb86f7d61170f1968e">ON_MeshParameters::CreateFromMeshDensity()</a> handles out of bounds input in a predictable way and is easier to search for when examining code. </p>
+<p>Description: Tool for providing a simple "slider" interface. Parameters: normalized_mesh_density - [in] 0.0 &lt;= normalized_mesh_density &lt;= 1.0 0 quickly creates extremely coarse meshes. 1 slowly creates extremely dense meshes. min_edge_length - [in] &gt; 0.0 custom value ON_UNSET_VALUE: for default (0.0001) Remarks: If you are using a user interface "slider" to set mesh parameters, then you are strongly encouraged to call <a class="el" href="class_o_n___mesh_parameters.html#a5410b071997bbebb86f7d61170f1968e">ON_MeshParameters::CreateFromMeshDensity()</a> instead of using this constructor. <a class="el" href="class_o_n___mesh_parameters.html#a5410b071997bbebb86f7d61170f1968e">ON_MeshParameters::CreateFromMeshDensity()</a> handles out of bounds input in a predictable way and is easier to search for when examining code. </p>
 
 </div>
 </div>
@@ -675,7 +677,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a35f34c090e362322a24f5145544234eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35f34c090e362322a24f5145544234eb">&#9670;&nbsp;</a></span>CompareGeometrySettings()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f34c090e362322a24f5145544234eb">&#9670;&nbsp;</a></span>CompareGeometrySettings() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,7 +709,50 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Compares all meshing parameters that control mesh geometry. Does not compare m_bCustomSettings, <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a>, m_bComputeCurvature, m_bDoublePrecision, <a class="el" href="class_o_n___mesh_parameters.html#aa1fb6bfd6c6f782db84d5786f70ec29e">MinimumTolerance()</a>, m_texture_range, m_srf_domain0 and m_srf_domain1. </p>
+<p>Description: Compares all meshing parameters that control mesh geometry. Does not compare m_bCustomSettings, <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a>, m_bComputeCurvature, m_bDoublePrecision, <a class="el" href="class_o_n___mesh_parameters.html#aa1fb6bfd6c6f782db84d5786f70ec29e">MinimumTolerance()</a>, m_texture_range, m_srf_domain0 and m_srf_domain1; and from the SubD meshing parameters in m_subd_mesh_parameters_as_char, does not compare m_context, m_bComputeCurvature, m_terminator, m_progress_reporter, and m_progress_reporter_interval. </p>
+
+</div>
+</div>
+<a id="a1e0329263331137d4a9f2305a9f6c42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0329263331137d4a9f2305a9f6c42c">&#9670;&nbsp;</a></span>CompareGeometrySettings() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_MeshParameters::CompareGeometrySettings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bIgnoreSubDParameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Compares all meshing parameters that control mesh geometry. Does not compare m_bCustomSettings, <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a>, m_bComputeCurvature, m_bDoublePrecision, <a class="el" href="class_o_n___mesh_parameters.html#aa1fb6bfd6c6f782db84d5786f70ec29e">MinimumTolerance()</a>, m_texture_range, m_srf_domain0 and m_srf_domain1; and from the SubD meshing parameters in m_subd_mesh_parameters_as_char, does not compare m_context, m_bComputeCurvature, m_terminator, m_progress_reporter, and m_progress_reporter_interval. If bIgnoreSubDParameters is true, ignores all settings in m_subd_mesh_parameters_as_char. </p>
 
 </div>
 </div>
@@ -790,7 +835,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The <a class="el" href="class_o_n___mesh_parameters.html#ad891a35a5061fd1a03a683ece3f92006">CustomSettings()</a> parameter applies when these mesh creation parameters specify how an object's mesh should be created and these parameters should override the the model or application default mesh creation parameters.</p>
-<p>When <a class="el" href="class_o_n___mesh_parameters.html#ad891a35a5061fd1a03a683ece3f92006">CustomSettings()</a> is true, it indicates these mesh creation parameters are explictily set for the object and context in question and should override the model or application defaults.</p>
+<p>When <a class="el" href="class_o_n___mesh_parameters.html#ad891a35a5061fd1a03a683ece3f92006">CustomSettings()</a> is true, it indicates these mesh creation parameters are explicitly set for the object and context in question and should override the model or application defaults.</p>
 <p>When <a class="el" href="class_o_n___mesh_parameters.html#ad891a35a5061fd1a03a683ece3f92006">CustomSettings()</a> is false, it indicates these mesh creation parameters were inherited from from model or application defaults and any mesh created with these parameters should be updated when these parameters differ from the current model or application defaults. </p>
 
 </div>
@@ -822,9 +867,9 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> ON_MeshParameters::DataCRC </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_MeshParameters::DataCRC </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1188,7 +1233,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: If these mesh parameters, including the SubD meshing parameters, were created from ON_MeshParameters::CreateFromMeshDensity(normalized_mesh_density), then normalized_mesh_density is returned. Otherwise, ON_DBL_QNAN is returned. Remarks: The values of m_bDoublePrecision, m_bClosedObjectPostProcess, and m_texture_range can be arbitrary because they do not determine geometry of the resulting mesh and are typically ingored. You must compare these properties if they matter in your particular context. </p>
+<p>Returns: If these mesh parameters, including the SubD meshing parameters, were created from ON_MeshParameters::CreateFromMeshDensity(normalized_mesh_density), then normalized_mesh_density is returned. Otherwise, ON_DBL_QNAN is returned. Remarks: The values of m_bDoublePrecision, m_bClosedObjectPostProcess, and m_texture_range can be arbitrary because they do not determine geometry of the resulting mesh and are typically ignored. You must compare these properties if they matter in your particular context. </p>
 
 </div>
 </div>
@@ -1207,7 +1252,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: bIgnoreSubDParameters - [in] If true, SubD meshing parameters are ignored. Returns: If these mesh parameters were created from ON_MeshParameters::CreateFromMeshDensity(normalized_mesh_density), then normalized_mesh_density is returned. Otherwise, ON_DBL_QNAN is returned. Remarks: The values of m_bDoublePrecision, m_bClosedObjectPostProcess, and m_texture_range can be arbitrary because they do not determine geometry of the resulting mesh and are typically ingored. You must compare these properties if they matter in your particular context. </p>
+<p>Parameters: bIgnoreSubDParameters - [in] If true, SubD meshing parameters are ignored. Returns: If these mesh parameters were created from ON_MeshParameters::CreateFromMeshDensity(normalized_mesh_density), then normalized_mesh_density is returned. Otherwise, ON_DBL_QNAN is returned. Remarks: The values of m_bDoublePrecision, m_bClosedObjectPostProcess, and m_texture_range can be arbitrary because they do not determine geometry of the resulting mesh and are typically ignored. You must compare these properties if they matter in your particular context. </p>
 
 </div>
 </div>
@@ -1509,7 +1554,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If 0.0 &lt; <a class="el" href="class_o_n___mesh_parameters.html#a4ab15bc06358b10f4c97e995f2e6d220">RelativeTolerance()</a> &lt; 1.0, then the maximum distance from the center of an edge to the surface will be &lt;= T, where T is the larger of (<a class="el" href="class_o_n___mesh_parameters.html#aa1fb6bfd6c6f782db84d5786f70ec29e">MinimumTolerance()</a>,d*RelativeTolerance()), where d is an esimate of the size of the object being meshed. </p>
+<p>If 0.0 &lt; <a class="el" href="class_o_n___mesh_parameters.html#a4ab15bc06358b10f4c97e995f2e6d220">RelativeTolerance()</a> &lt; 1.0, then the maximum distance from the center of an edge to the surface will be &lt;= T, where T is the larger of (<a class="el" href="class_o_n___mesh_parameters.html#aa1fb6bfd6c6f782db84d5786f70ec29e">MinimumTolerance()</a>,d*RelativeTolerance()), where d is an estimate of the size of the object being meshed. </p>
 
 </div>
 </div>
@@ -2047,7 +2092,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>1: unpacked, unscaled, normalized each face has a normalized texture range [0,1]x[0,1]. The normalized coordinate is calculated using the entire surface domain. For meshes of trimmed surfaces when the active area is a small subset of the entire surface, there will be large regions of unsued texture space in [0,1]x[0,1]. When the 3d region being meshed is far from being sqaure-ish, there will be a substantual amount of distortion mapping [0,1]x[0,1] texture space to the 3d mesh.</p>
+<p>1: unpacked, unscaled, normalized each face has a normalized texture range [0,1]x[0,1]. The normalized coordinate is calculated using the entire surface domain. For meshes of trimmed surfaces when the active area is a small subset of the entire surface, there will be large regions of unused texture space in [0,1]x[0,1]. When the 3d region being meshed is far from being sqaure-ish, there will be a substantual amount of distortion mapping [0,1]x[0,1] texture space to the 3d mesh.</p>
 <p>2: packed, scaled, normalized (default) each face is assigned a texture range that is a subrectangle of [0,1]x[0,1]. The subrectangles are mutually disjoint and packed into into [0,1]x[0,1] in a way that minimizes distortion and maximizes the coverage of [0,1]x[0,1]. When the surface or surfaces being meshed are trimmed, this option takes into account only the region of the base surface the mesh covers and uses as much of [0,1]x[0,1] as possible. unsigned int <a class="el" href="class_o_n___mesh_parameters.html#a4dcd7efb5162093e8ddc654b8b463e71">TextureRange() const</a>; </p>
 
 </div>
@@ -2210,7 +2255,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the a render mesh when meshing speed is prefered over mesh quality. </p>
+<p>Description: Mesh creationg parameters to create the a render mesh when meshing speed is preferred over mesh quality. </p>
 
 </div>
 </div>
@@ -2257,7 +2302,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the a render mesh when mesh quality is prefered over meshing speed. </p>
+<p>Description: Mesh creationg parameters to create the a render mesh when mesh quality is preferred over meshing speed. </p>
 
 </div>
 </div>
@@ -2289,7 +2334,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

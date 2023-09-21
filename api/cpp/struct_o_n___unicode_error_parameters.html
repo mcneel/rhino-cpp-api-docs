@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aafd27f0ad1d676e2d2354197b3e40f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_n___unicode_error_parameters.html#aafd27f0ad1d676e2d2354197b3e40f1c">m_error_code_point</a></td></tr>
+<tr class="memitem:aafd27f0ad1d676e2d2354197b3e40f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_n___unicode_error_parameters.html#aafd27f0ad1d676e2d2354197b3e40f1c">m_error_code_point</a></td></tr>
 <tr class="separator:aafd27f0ad1d676e2d2354197b3e40f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6ef789e4530c91de352be87a7e646f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_n___unicode_error_parameters.html#a6a6ef789e4530c91de352be87a7e646f">m_error_mask</a></td></tr>
 <tr class="separator:a6a6ef789e4530c91de352be87a7e646f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +123,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> ON_UnicodeErrorParameters::m_error_code_point</td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_UnicodeErrorParameters::m_error_code_point</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,14 +157,14 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If an error occurs, then bits of error_status are set to indicate what type of error occured.</p>
+<p>If an error occurs, then bits of error_status are set to indicate what type of error occurred.</p>
 <p>Error types: 1: The input parameters were invalid. This error cannot be masked.</p>
-<p>2: The ouput buffer was not large enough to hold the converted string. As much conversion as possible is performed in this case and the error cannot be masked.</p>
+<p>2: The output buffer was not large enough to hold the converted string. As much conversion as possible is performed in this case and the error cannot be masked.</p>
 <p>4: When parsing a UTF-8 or UTF-32 string, the values of two consecutive encoding sequences formed a valid UTF-16 surrogate pair.</p>
 <p>This error is masked if 0 != (4 &amp; m_error_mask). If the error is masked, then the surrogate pair is decoded, the value of the resulting unicode code point is used, and parsing continues.</p>
 <p>8: An overlong UTF-8 encoding sequence was encountered and the value of the overlong sUTF-8 equence was a valid unicode code point.</p>
 <p>This error is masked if 0 != (8 &amp; m_error_mask). If the error is masked, then the unicode code point is used and parsing continues.</p>
-<p>16: An illegal UTF-8, UTF-16 or UTF-32 sequence occured, or an unsupported or invalid Windows code page value, <br  />
+<p>16: An illegal UTF-8, UTF-16 or UTF-32 sequence occurred, or an unsupported or invalid Windows code page value, <br  />
  or an invalid unicode code point value resulted from decoding a UTF-8 sequence.</p>
 <p>This error is masked if 0 != (16 &amp; m_error_mask). If the error is masked and the value of m_error_code_point is a valid unicode code point, then m_error_code_point is used and parsing continues. </p>
 
@@ -197,7 +197,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

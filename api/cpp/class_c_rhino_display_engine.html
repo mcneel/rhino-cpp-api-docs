@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -156,10 +156,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad993fc7635eee7b4456cd950fe6f847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439ab150766ddb9473c2e7d486866bfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a439ab150766ddb9473c2e7d486866bfe">Draw2dLines</a> (const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *points, int count, bool asPolyline, <a class="el" href="class_o_n___color.html">ON_Color</a> strokeColor, float strokeWidth, <a class="el" href="group___rhino.html#ga92ddae21b919495f4f225191041764ae">RhinoDashStyle</a> style, bool xormode)=0</td></tr>
 <tr class="separator:a439ab150766ddb9473c2e7d486866bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7534f579e058601d4c9fcc55ba0236"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aff7534f579e058601d4c9fcc55ba0236">DrawBezier</a> (int dim, BOOL bIsRational, int order, int cv_stride, const double *cv4d, const <a class="el" href="struct_c_rh_curve_attributes.html">CRhCurveAttributes</a> &amp;attrs)</td></tr>
-<tr class="separator:aff7534f579e058601d4c9fcc55ba0236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0402300ac9157fd85c9828cbfb0b95e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0402300ac9157fd85c9828cbfb0b95e8">DrawBezier</a> (int dim, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bIsRational, int order, int cv_stride, const double *cv4d, const <a class="el" href="struct_c_rh_curve_attributes.html">CRhCurveAttributes</a> &amp;attrs)</td></tr>
+<tr class="separator:a0402300ac9157fd85c9828cbfb0b95e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15975a75c4fd51e49ae4f277e923247a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a15975a75c4fd51e49ae4f277e923247a">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, int nX, int nY)</td></tr>
 <tr class="separator:a15975a75c4fd51e49ae4f277e923247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc37c8b7d8c44f69ca84556c54f8ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a7fc37c8b7d8c44f69ca84556c54f8ee9">DrawBrepWires</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, const class CRhDisplayPenPrivate *pen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
+<tr class="separator:a7fc37c8b7d8c44f69ca84556c54f8ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7cf169d5ec7379e8f5f33fbd8cb3646"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa7cf169d5ec7379e8f5f33fbd8cb3646">DrawBrepWires</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
 <tr class="separator:aa7cf169d5ec7379e8f5f33fbd8cb3646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af487b32b9e46515b2891b3a70091fa2b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#af487b32b9e46515b2891b3a70091fa2b">DrawCapturedFrame</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;destination)</td></tr>
@@ -172,13 +174,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9991463573a89ee2c91959776d133fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeffc901f0457a1a907b2595e81821a3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aeffc901f0457a1a907b2595e81821a3c">DrawEnvironment</a> ()</td></tr>
 <tr class="separator:aeffc901f0457a1a907b2595e81821a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea856b91312f2cef138aec7de93c38db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aea856b91312f2cef138aec7de93c38db">DrawExtrusionWires</a> (const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;extrusion, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, const class CRhDisplayPenPrivate *pen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
+<tr class="separator:aea856b91312f2cef138aec7de93c38db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b63a13b2b6974d2e67a3c966f973092"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a4b63a13b2b6974d2e67a3c966f973092">DrawExtrusionWires</a> (const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;extrusion, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
 <tr class="separator:a4b63a13b2b6974d2e67a3c966f973092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bee6b1cc491f9c0116f11a837b3ca3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0bee6b1cc491f9c0116f11a837b3ca3b">DrawGroundPlane</a> (const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;dpa, const class CRhGLGroundPlane &amp;groundplane)</td></tr>
-<tr class="separator:a0bee6b1cc491f9c0116f11a837b3ca3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7b8330da672438fb45380f6569d0b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#afc7b8330da672438fb45380f6569d0b9">DrawHatch</a> (const <a class="el" href="class_o_n___hatch.html">ON_Hatch</a> &amp;hatch, const class CRhinoDisplayBrush *fillBrush, const class CRhinoDisplayPen *boundaryPen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
-<tr class="memdesc:afc7b8330da672438fb45380f6569d0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not call - placeholder virtual function in order to improve hatch display without breaking SDK.  <a href="class_c_rhino_display_engine.html#afc7b8330da672438fb45380f6569d0b9">More...</a><br /></td></tr>
-<tr class="separator:afc7b8330da672438fb45380f6569d0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78da2220bd7332da3f65e0bc18a3c35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa78da2220bd7332da3f65e0bc18a3c35">DrawGroundPlane</a> (const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;dpa, const class CRhDisplayGroundPlane &amp;groundplane)</td></tr>
+<tr class="separator:aa78da2220bd7332da3f65e0bc18a3c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae884622014422319da38b2de1713f822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ae884622014422319da38b2de1713f822">DrawHatch</a> (const <a class="el" href="class_o_n___hatch.html">ON_Hatch</a> &amp;hatch, const class CRhinoDisplayBrush *fillBrush, const class CRhinoDisplayBrush *hatchBrush, const class CRhinoDisplayPen *boundaryPen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
+<tr class="separator:ae884622014422319da38b2de1713f822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af0b98e8c58f0d3cb3e7afe5a597625"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a6af0b98e8c58f0d3cb3e7afe5a597625">DrawHatch</a> (const <a class="el" href="class_o_n___hatch.html">ON_Hatch</a> &amp;hatch, const class CRhinoDisplayBrush *hatchBrush, const class CRhinoDisplayPen *boundaryPen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
+<tr class="separator:a6af0b98e8c58f0d3cb3e7afe5a597625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa298244ddab44dcb392fb232b618d3ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa298244ddab44dcb392fb232b618d3ea">DrawHatch</a> (const <a class="el" href="class_o_n___hatch.html">ON_Hatch</a> &amp;hatch, const <a class="el" href="class_o_n___hatch_pattern.html">ON_HatchPattern</a> *pattern, float strokeWidth, <a class="el" href="class_o_n___color.html">ON_Color</a> hatchColor, <a class="el" href="class_o_n___color.html">ON_Color</a> boundaryColor, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
 <tr class="separator:aa298244ddab44dcb392fb232b618d3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99a66a9e10d95f6b370280bae7b3e85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#af99a66a9e10d95f6b370280bae7b3e85">DrawLine</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;from, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;to, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;color, int thickness, UINT pattern=0xFFFFFFFF)</td></tr>
@@ -201,8 +206,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc5a1d996dac40f4196e3a790afbb115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf98fbb1fa043269b2175df5edd25a92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#acf98fbb1fa043269b2175df5edd25a92">DrawPointCloud</a> (const <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> &amp;cloud, <a class="el" href="group___rhino.html#ga3f39fe7f3d80dd7447010b65172871f8">ERhinoPointStyle</a> style, float pixelSize, bool scaleSizeForDpi, <a class="el" href="class_o_n___color.html">ON_Color</a> colorOverride, int indexCount, const unsigned int *indices, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache, int degradeCount)</td></tr>
 <tr class="separator:acf98fbb1fa043269b2175df5edd25a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03aa5ba127b71df4f18f44717aedcaeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a03aa5ba127b71df4f18f44717aedcaeb">DrawPoints</a> (int count, const class CRhPointData *points, const class CRhPointData *forcedOverride, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *ffoTransform, bool precomputedTransform)</td></tr>
+<tr class="separator:a03aa5ba127b71df4f18f44717aedcaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b639af95e6b93e022ac1d5d2bb55315"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a8b639af95e6b93e022ac1d5d2bb55315">DrawPoints</a> (int count, const class CRhPointData *points, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)=0</td></tr>
 <tr class="separator:a8b639af95e6b93e022ac1d5d2bb55315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b3f2fcf0cdb1b4b89db3c8c38aa955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a86b3f2fcf0cdb1b4b89db3c8c38aa955">DrawPoints</a> (int count, const class CRhPointData *points, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *ffoTransform, bool precomputedTransform)</td></tr>
+<tr class="separator:a86b3f2fcf0cdb1b4b89db3c8c38aa955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992bc025f150292f51073de9027a84d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a992bc025f150292f51073de9027a84d1">DrawPoints</a> (int count, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> *screenPoints, <a class="el" href="group___rhino.html#ga3f39fe7f3d80dd7447010b65172871f8">ERhinoPointStyle</a> style, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;strokeColor, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;fillColor, float diameterPixels, float strokeWidthPixels, float innerDiameterPixels, float rotationRadians, bool autoScaleDpi, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
 <tr class="separator:a992bc025f150292f51073de9027a84d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1c8eedd3d2905397919c356f482488e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab1c8eedd3d2905397919c356f482488e">DrawPoints</a> (int count, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *points, <a class="el" href="group___rhino.html#ga3f39fe7f3d80dd7447010b65172871f8">ERhinoPointStyle</a> style, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;strokeColor, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;fillColor, float diameter, float strokeWidth, float innerDiameter, float rotationRadians, bool diameterInPixels, bool autoScaleDpi, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
@@ -231,6 +240,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a14bfc2ef65ef5734430bd24a4e76c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a1a14bfc2ef65ef5734430bd24a4e76c0">DrawSubDComponents</a> (const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd, const class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *components, size_t componentCount, const class CRhSubDDisplayAttributes *attrs, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
 <tr class="memdesc:a1a14bfc2ef65ef5734430bd24a4e76c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not call - placeholder virtual function in order to improve SubD display without breaking SDK.  <a href="class_c_rhino_display_engine.html#a1a14bfc2ef65ef5734430bd24a4e76c0">More...</a><br /></td></tr>
 <tr class="separator:a1a14bfc2ef65ef5734430bd24a4e76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dbdc42602fb66cf7d5d597a1ea1835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a85dbdc42602fb66cf7d5d597a1ea1835">DrawTechnicalWires</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;rhinoObject, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;color, float borderThickness, float silhouetteThickness, float creaseThickness)</td></tr>
+<tr class="separator:a85dbdc42602fb66cf7d5d597a1ea1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c72ae1d2e75f1ad206b1c07e03a9ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a65c72ae1d2e75f1ad206b1c07e03a9ea">DrawTextRun</a> (const <a class="el" href="class_o_n___text_run.html">ON_TextRun</a> &amp;run, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform, <a class="el" href="class_o_n___color.html">ON_Color</a> color, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
 <tr class="separator:a65c72ae1d2e75f1ad206b1c07e03a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4266eed38704f1a873d4b57c50982801"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a4266eed38704f1a873d4b57c50982801">DrawTraceImage</a> (const class CRhTraceImage &amp;traceimage)</td></tr>
@@ -315,8 +326,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a233f279e591cab7aa16f7b9803ad2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3d251bc5bd6f3c70c1666339045aadf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ad3d251bc5bd6f3c70c1666339045aadf">IsEntireBoxVisible</a> (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bbox) const</td></tr>
 <tr class="separator:ad3d251bc5bd6f3c70c1666339045aadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908585a40567eabbdadd4c3391495c46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a908585a40567eabbdadd4c3391495c46">IsPreview</a> (void) const</td></tr>
+<tr class="separator:a908585a40567eabbdadd4c3391495c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab11da3b60ff321d1973bb27b73b574ba"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab11da3b60ff321d1973bb27b73b574ba">LightCount</a> () const</td></tr>
 <tr class="separator:ab11da3b60ff321d1973bb27b73b574ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3143e1d5c7fdbfd0316c032a158e9b2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_display_pipeline_attributes_1_1_linear_workflow.html">CDisplayPipelineAttributes::LinearWorkflow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ae3143e1d5c7fdbfd0316c032a158e9b2">LinearWorkflow</a> () const</td></tr>
+<tr class="separator:ae3143e1d5c7fdbfd0316c032a158e9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3ecca24e9337b5e3294e7770c9691b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a9b3ecca24e9337b5e3294e7770c9691b">MaxClipPlanesSupported</a> () const</td></tr>
 <tr class="separator:a9b3ecca24e9337b5e3294e7770c9691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a641f602801ce053444e30e75204c89"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a9a641f602801ce053444e30e75204c89">MaxDecalsSupported</a> () const</td></tr>
@@ -325,6 +340,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad9b027326dda9e86c37c8ef18bd2eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f2f77eee7b1f3843a280511811b818"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab8f2f77eee7b1f3843a280511811b818">MaxObjectMappingsSupported</a> () const</td></tr>
 <tr class="separator:ab8f2f77eee7b1f3843a280511811b818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72601c1d29483d11252ecbb6f66f5de0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a72601c1d29483d11252ecbb6f66f5de0">MaxProceduralCommandsSupported</a> () const</td></tr>
+<tr class="separator:a72601c1d29483d11252ecbb6f66f5de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7dff83c7c13fa4dbde55aa5ce3fd457"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#af7dff83c7c13fa4dbde55aa5ce3fd457">MaxProceduralsSupported</a> () const</td></tr>
+<tr class="separator:af7dff83c7c13fa4dbde55aa5ce3fd457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199a937447ce64df415ec680c008b99d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a199a937447ce64df415ec680c008b99d">MaxProceduralTransformsSupported</a> () const</td></tr>
+<tr class="separator:a199a937447ce64df415ec680c008b99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc912af3e2fa5575c4a9b7e658ff5249"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#acc912af3e2fa5575c4a9b7e658ff5249">MeshBufferingEnabled</a> () const</td></tr>
 <tr class="separator:acc912af3e2fa5575c4a9b7e658ff5249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3619915e57f35d93151d89d518a2d3ce"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a3619915e57f35d93151d89d518a2d3ce">ModelTransform</a> () const</td></tr>
@@ -351,6 +372,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78e575a75a9a50710d2a6c8a6df78ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc6fbd6feb40ff8ffb6732ff11e3cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aafc6fbd6feb40ff8ffb6732ff11e3cf0">PopProjection</a> ()</td></tr>
 <tr class="separator:aafc6fbd6feb40ff8ffb6732ff11e3cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f429af8e7695adea96b7c5caabab17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a19f429af8e7695adea96b7c5caabab17">PreviewEnvironmentId</a> (void) const</td></tr>
+<tr class="separator:a19f429af8e7695adea96b7c5caabab17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f8a190d13d27b64c6df5ca717f9cd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a29f8a190d13d27b64c6df5ca717f9cd7">PushColorWriting</a> (bool bEnable)</td></tr>
 <tr class="separator:a29f8a190d13d27b64c6df5ca717f9cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569feeb33dba9ac879d031b08ec29372"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a569feeb33dba9ac879d031b08ec29372">PushDepthTesting</a> (bool bEnable)</td></tr>
@@ -397,12 +420,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03ec42433b127db3454c3728d956d483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c32a5bcab8220f808d2c5961ea7f4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a9c32a5bcab8220f808d2c5961ea7f4f0">SetInstanceDefinitionTransform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;idt)</td></tr>
 <tr class="separator:a9c32a5bcab8220f808d2c5961ea7f4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2ac01a5f0f296bb556490caf13281e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a7f2ac01a5f0f296bb556490caf13281e">SetIsPreview</a> (bool)</td></tr>
+<tr class="separator:a7f2ac01a5f0f296bb556490caf13281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9602789e15f0470718d99ffd4fb1eab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a9602789e15f0470718d99ffd4fb1eab5">SetLinearWorkflow</a> (const <a class="el" href="class_c_display_pipeline_attributes_1_1_linear_workflow.html">CDisplayPipelineAttributes::LinearWorkflow</a> &amp;lw)</td></tr>
+<tr class="separator:a9602789e15f0470718d99ffd4fb1eab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fcf2e1d98fcd671a8487579b69de349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0fcf2e1d98fcd671a8487579b69de349">SetModelTransform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;mt)</td></tr>
 <tr class="separator:a0fcf2e1d98fcd671a8487579b69de349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a505765cf28a7ccd96e78c67da348a2c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a505765cf28a7ccd96e78c67da348a2c4">SetModelViewMatrix</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xf)</td></tr>
 <tr class="separator:a505765cf28a7ccd96e78c67da348a2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d5f71c179690515ff269c2ed4df9b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a29d5f71c179690515ff269c2ed4df9b3">SetMultiSampleMode</a> (int mode)</td></tr>
 <tr class="separator:a29d5f71c179690515ff269c2ed4df9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae653cafe82373b384bf4521641acfb39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ae653cafe82373b384bf4521641acfb39">SetPreviewEnvironmentId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> id)</td></tr>
+<tr class="separator:ae653cafe82373b384bf4521641acfb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f98bb21e51eb1627688cb66e6e4e7c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a7f98bb21e51eb1627688cb66e6e4e7c8">SetStereoMode</a> (bool bStereo)</td></tr>
 <tr class="separator:a7f98bb21e51eb1627688cb66e6e4e7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e37ec37fd9cd159b6a31a4602fdf8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ae6e37ec37fd9cd159b6a31a4602fdf8f">SetStereoParallax</a> (float)</td></tr>
@@ -416,7 +445,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa68c195012274e88291f4ae6aee4df1b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa68c195012274e88291f4ae6aee4df1b">ShutdownEngine</a> ()</td></tr>
 <tr class="separator:aa68c195012274e88291f4ae6aee4df1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c01c417476a264f7bae6ee43596ed87"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a1c01c417476a264f7bae6ee43596ed87">StartEngine</a> ()</td></tr>
-<tr class="memdesc:a1c01c417476a264f7bae6ee43596ed87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine initialization and cleanup opertaions...  <a href="class_c_rhino_display_engine.html#a1c01c417476a264f7bae6ee43596ed87">More...</a><br /></td></tr>
+<tr class="memdesc:a1c01c417476a264f7bae6ee43596ed87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine initialization and cleanup operations...  <a href="class_c_rhino_display_engine.html#a1c01c417476a264f7bae6ee43596ed87">More...</a><br /></td></tr>
 <tr class="separator:a1c01c417476a264f7bae6ee43596ed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de4211b6dcfba24448a23b1d549197e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a8de4211b6dcfba24448a23b1d549197e">StopEngine</a> ()</td></tr>
 <tr class="separator:a8de4211b6dcfba24448a23b1d549197e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,7 +503,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58958333257eba5575a6a1b09c366c1b inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad044157e5c1efde9fce1c6ccf6e81ff3 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#ad044157e5c1efde9fce1c6ccf6e81ff3">CopyUserData</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution)</td></tr>
 <tr class="separator:ad044157e5c1efde9fce1c6ccf6e81ff3 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> current_remainder) const</td></tr>
+<tr class="memitem:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const</td></tr>
 <tr class="separator:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67be7d8cc76ec82ae22a30093ecf98f inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aa67be7d8cc76ec82ae22a30093ecf98f">DeleteComponents</a> (const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> *ci_list, size_t ci_count)</td></tr>
 <tr class="separator:aa67be7d8cc76ec82ae22a30093ecf98f inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -545,6 +574,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:adae2b9c85893a1b4fae7a9ea80394771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#adae2b9c85893a1b4fae7a9ea80394771">BufferMeshWires</a> (<a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;cache, const <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;da, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform, bool isSubD, const <a class="el" href="class_c_rhino_sub_d_display_attributes.html">CRhinoSubDDisplayAttributes</a> *subdAttrs)</td></tr>
+<tr class="separator:adae2b9c85893a1b4fae7a9ea80394771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24de43c63b8188c0c5fc96a3dd6f48bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a24de43c63b8188c0c5fc96a3dd6f48bc">BufferShadedMesh</a> (<a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;cache, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform)</td></tr>
+<tr class="separator:a24de43c63b8188c0c5fc96a3dd6f48bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2ec07b9e3a11d1aa9900e9467384af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a4a2ec07b9e3a11d1aa9900e9467384af">BufferShadedMesh</a> (<a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;cache, <a class="el" href="group___rhino.html#ga57def36fa850295c45757366b5398ffc">ECullFaceMode</a> cfm, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;frontAmbient, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;frontDiffuse, const std::shared_ptr&lt; <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> &gt; &amp;material, const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;materialHash, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform)</td></tr>
+<tr class="separator:a4a2ec07b9e3a11d1aa9900e9467384af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6ddf920ffd362c1abd75c802991a2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#acb6ddf920ffd362c1abd75c802991a2e">BufferShadedMeshes</a> (class CRhVboMeshCache *buffer)</td></tr>
+<tr class="separator:acb6ddf920ffd362c1abd75c802991a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5dfb17769a0e1c291a74d04509541a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a5b5dfb17769a0e1c291a74d04509541a">ComputeZBiasValues</a> (int bias, double &amp;a, double &amp;b, double &amp;c, double &amp;d, bool &amp;use_d) const</td></tr>
 <tr class="separator:a5b5dfb17769a0e1c291a74d04509541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387d2c20fba0c4338b912cc8409e1eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a387d2c20fba0c4338b912cc8409e1eee">DrawBezier</a> (int, const <a class="el" href="class_o_n__4f_point.html">ON_4fPoint</a> *, const <a class="el" href="struct_c_rh_curve_attributes.html">CRhCurveAttributes</a> &amp;, int=1, int=0)</td></tr>
@@ -579,6 +616,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a430d12b253b873bf8caee618eaf16519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0415898c90da4bb2ad46ab50208b36f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0415898c90da4bb2ad46ab50208b36f1">SetScreenDrawTolerance</a> (double, double, double)</td></tr>
 <tr class="separator:a0415898c90da4bb2ad46ab50208b36f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd460c9b39b3d508bbb2fa3da66e7c0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#afd460c9b39b3d508bbb2fa3da66e7c0e">SupportsVboBuffers</a> () const</td></tr>
+<tr class="memdesc:afd460c9b39b3d508bbb2fa3da66e7c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">New for V8 [begin].  <a href="class_c_rhino_display_engine.html#afd460c9b39b3d508bbb2fa3da66e7c0e">More...</a><br /></td></tr>
+<tr class="separator:afd460c9b39b3d508bbb2fa3da66e7c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6cb47cf9d635b446a6677f45993b13d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ad6cb47cf9d635b446a6677f45993b13d">ZBiasDistance</a> (double z, double w) const</td></tr>
 <tr class="separator:ad6cb47cf9d635b446a6677f45993b13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -602,7 +642,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a8dee183398336693033678144744d3f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a8dee183398336693033678144744d3f6">m_bInfiniteDepth</a> = false</td></tr>
 <tr class="separator:a8dee183398336693033678144744d3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411a8dda3e41aa392b610bf2b1906ed8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a411a8dda3e41aa392b610bf2b1906ed8">m_bInStereoMode</a> = false</td></tr>
-<tr class="memdesc:a411a8dda3e41aa392b610bf2b1906ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stereo viewing opertaions...  <a href="class_c_rhino_display_engine.html#a411a8dda3e41aa392b610bf2b1906ed8">More...</a><br /></td></tr>
+<tr class="memdesc:a411a8dda3e41aa392b610bf2b1906ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stereo viewing operations...  <a href="class_c_rhino_display_engine.html#a411a8dda3e41aa392b610bf2b1906ed8">More...</a><br /></td></tr>
 <tr class="separator:a411a8dda3e41aa392b610bf2b1906ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3d9ad251828af634668430ba3c96ec7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ad3d9ad251828af634668430ba3c96ec7">m_bUseMaterials</a> = true</td></tr>
 <tr class="separator:ad3d9ad251828af634668430ba3c96ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,9 +688,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a0af9929bd2efbcac3465ac4aacb18b30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0af9929bd2efbcac3465ac4aacb18b30">m_nDisplayHeight</a> = 0</td></tr>
 <tr class="separator:a0af9929bd2efbcac3465ac4aacb18b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd89946e0d961296ca10b20d38f0e5bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#abd89946e0d961296ca10b20d38f0e5bb">m_nDisplayWidth</a> = 0</td></tr>
-<tr class="memdesc:abd89946e0d961296ca10b20d38f0e5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport size attributes...  <a href="class_c_rhino_display_engine.html#abd89946e0d961296ca10b20d38f0e5bb">More...</a><br /></td></tr>
+<tr class="memdesc:abd89946e0d961296ca10b20d38f0e5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">New for V8 [end].  <a href="class_c_rhino_display_engine.html#abd89946e0d961296ca10b20d38f0e5bb">More...</a><br /></td></tr>
 <tr class="separator:abd89946e0d961296ca10b20d38f0e5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85a3657a38572f52acac5844e9716f8"><td class="memItemLeft" align="right" valign="top">class CRhDisplayEnginePrivate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab85a3657a38572f52acac5844e9716f8">m_private</a> = nullptr</td></tr>
+<tr class="memitem:ab85a3657a38572f52acac5844e9716f8"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_c_rhino_display_engine.html#a4519bf04a0905bbafbe75e9d7452b0e8">CRhDisplayEnginePrivate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab85a3657a38572f52acac5844e9716f8">m_private</a> = nullptr</td></tr>
 <tr class="separator:ab85a3657a38572f52acac5844e9716f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4824cd1b1d82d13c084227a81a6f64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a2d4824cd1b1d82d13c084227a81a6f64">m_stol_x</a> = 0.75f</td></tr>
 <tr class="separator:a2d4824cd1b1d82d13c084227a81a6f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -664,6 +704,8 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a4519bf04a0905bbafbe75e9d7452b0e8"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a4519bf04a0905bbafbe75e9d7452b0e8">CRhDisplayEnginePrivate</a></td></tr>
+<tr class="separator:a4519bf04a0905bbafbe75e9d7452b0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace221e63b71b749b710a941b4c4a78fe"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ace221e63b71b749b710a941b4c4a78fe">CRhinoDisplayPipeline</a></td></tr>
 <tr class="separator:ace221e63b71b749b710a941b4c4a78fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac85a869af1272b244caefebfc755af42"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ac85a869af1272b244caefebfc755af42">CRhinoPipelineRef</a></td></tr>
@@ -686,7 +728,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a7f520e987ffa14e71b06493340f9956c inherit pub_types_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Each display pipeline contains a display engine. The engine performs the actual API specific calls to draw (GDI, OpenGL, DirectX). This is the generic base class that performs common engine operations. Subclasses will draw using specific display technologies (<a class="el" href="class_c_rhino_display_engine___o_g_l.html">CRhinoDisplayEngine_OGL</a>, <a class="el" href="class_c_rhino_display_engine___g_d_i.html">CRhinoDisplayEngine_GDI</a>) </p>
+<div class="textblock"><p>Copyright (c) 1993-2017 Robert McNeel &amp; Associates. All rights reserved. Rhinoceros is a registered trademark of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete Rhino SDK copyright information see <a href="http://www.rhino3d.com/developer">http://www.rhino3d.com/developer</a>. Each display pipeline contains a display engine. The engine performs the actual API specific calls to draw (GDI, OpenGL, DirectX). This is the generic base class that performs common engine operations. Subclasses will draw using specific display technologies (<a class="el" href="class_c_rhino_display_engine___o_g_l.html">CRhinoDisplayEngine_OGL</a>, <a class="el" href="class_c_rhino_display_engine___g_d_i.html">CRhinoDisplayEngine_GDI</a>) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a607a1f88d9dd6ba28f8f839f9068309e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a607a1f88d9dd6ba28f8f839f9068309e">&#9670;&nbsp;</a></span>CRhinoDisplayEngine()</h2>
@@ -785,6 +829,188 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Add a light to the list of lights that the engine should use when displaying shaded geometry. Parameters: light: [in] the light information the engine should use to set up an graphics technology specific light </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a76ada81bd1e7e0b857c16d7708a1555f">CRhinoDisplayEngine_OGL</a>.</p>
+
+</div>
+</div>
+<a id="adae2b9c85893a1b4fae7a9ea80394771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae2b9c85893a1b4fae7a9ea80394771">&#9670;&nbsp;</a></span>BufferMeshWires()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::BufferMeshWires </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;&#160;</td>
+          <td class="paramname"><em>da</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isSubD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_sub_d_display_attributes.html">CRhinoSubDDisplayAttributes</a> *&#160;</td>
+          <td class="paramname"><em>subdAttrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24de43c63b8188c0c5fc96a3dd6f48bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24de43c63b8188c0c5fc96a3dd6f48bc">&#9670;&nbsp;</a></span>BufferShadedMesh() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::BufferShadedMesh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>xform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a2ec07b9e3a11d1aa9900e9467384af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2ec07b9e3a11d1aa9900e9467384af">&#9670;&nbsp;</a></span>BufferShadedMesh() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::BufferShadedMesh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga57def36fa850295c45757366b5398ffc">ECullFaceMode</a>&#160;</td>
+          <td class="paramname"><em>cfm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>frontAmbient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>frontDiffuse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;&#160;</td>
+          <td class="paramname"><em>materialHash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>xform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb6ddf920ffd362c1abd75c802991a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6ddf920ffd362c1abd75c802991a2e">&#9670;&nbsp;</a></span>BufferShadedMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::BufferShadedMeshes </td>
+          <td>(</td>
+          <td class="paramtype">class CRhVboMeshCache *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1684,8 +1910,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aff7534f579e058601d4c9fcc55ba0236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff7534f579e058601d4c9fcc55ba0236">&#9670;&nbsp;</a></span>DrawBezier() <span class="overload">[1/2]</span></h2>
+<a id="a0402300ac9157fd85c9828cbfb0b95e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0402300ac9157fd85c9828cbfb0b95e8">&#9670;&nbsp;</a></span>DrawBezier() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1702,7 +1928,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bIsRational</em>, </td>
         </tr>
         <tr>
@@ -1743,7 +1969,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Draw a bezier curve Parameters: dim: [in] bIsRational: [in] order: [in] cv_stride: [in] number of doubles between CVs (&gt;=4) cv4d: [in] 4d homogeneous world coordinate CVs attrs: [in] attributes for the curve </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___g_d_i.html#a916ac5cc2800cb499a9ff69092de9278">CRhinoDisplayEngine_GDI</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___g_d_i.html#ac8c4322eff976bca39f625b2eddcadfd">CRhinoDisplayEngine_GDI</a>.</p>
 
 </div>
 </div>
@@ -1846,8 +2072,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7fc37c8b7d8c44f69ca84556c54f8ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc37c8b7d8c44f69ca84556c54f8ee9">&#9670;&nbsp;</a></span>DrawBrepWires() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawBrepWires </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td>
+          <td class="paramname"><em>brep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *&#160;</td>
+          <td class="paramname"><em>da</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wireDensity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>edgeAnalysis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhDisplayPenPrivate *&#160;</td>
+          <td class="paramname"><em>pen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cacheHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa7cf169d5ec7379e8f5f33fbd8cb3646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7cf169d5ec7379e8f5f33fbd8cb3646">&#9670;&nbsp;</a></span>DrawBrepWires()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7cf169d5ec7379e8f5f33fbd8cb3646">&#9670;&nbsp;</a></span>DrawBrepWires() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2242,8 +2520,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aea856b91312f2cef138aec7de93c38db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea856b91312f2cef138aec7de93c38db">&#9670;&nbsp;</a></span>DrawExtrusionWires() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawExtrusionWires </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;&#160;</td>
+          <td class="paramname"><em>extrusion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *&#160;</td>
+          <td class="paramname"><em>da</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wireDensity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>edgeAnalysis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhDisplayPenPrivate *&#160;</td>
+          <td class="paramname"><em>pen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cacheHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4b63a13b2b6974d2e67a3c966f973092"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b63a13b2b6974d2e67a3c966f973092">&#9670;&nbsp;</a></span>DrawExtrusionWires()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b63a13b2b6974d2e67a3c966f973092">&#9670;&nbsp;</a></span>DrawExtrusionWires() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2298,8 +2628,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0bee6b1cc491f9c0116f11a837b3ca3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bee6b1cc491f9c0116f11a837b3ca3b">&#9670;&nbsp;</a></span>DrawGroundPlane()</h2>
+<a id="aa78da2220bd7332da3f65e0bc18a3c35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78da2220bd7332da3f65e0bc18a3c35">&#9670;&nbsp;</a></span>DrawGroundPlane()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2316,7 +2646,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const class CRhGLGroundPlane &amp;&#160;</td>
+          <td class="paramtype">const class CRhDisplayGroundPlane &amp;&#160;</td>
           <td class="paramname"><em>groundplane</em>&#160;</td>
         </tr>
         <tr>
@@ -2333,12 +2663,58 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Draws a ground plane into the frame buffer. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a31dc6bdb467fcf1f02b7a695e62af1f0">CRhinoDisplayEngine_OGL</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a2b500c172ecdf21baf7ee23532668fc1">CRhinoDisplayEngine_OGL</a>.</p>
 
 </div>
 </div>
-<a id="afc7b8330da672438fb45380f6569d0b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc7b8330da672438fb45380f6569d0b9">&#9670;&nbsp;</a></span>DrawHatch() <span class="overload">[1/2]</span></h2>
+<a id="ae884622014422319da38b2de1713f822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae884622014422319da38b2de1713f822">&#9670;&nbsp;</a></span>DrawHatch() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawHatch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___hatch.html">ON_Hatch</a> &amp;&#160;</td>
+          <td class="paramname"><em>hatch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayBrush *&#160;</td>
+          <td class="paramname"><em>fillBrush</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayBrush *&#160;</td>
+          <td class="paramname"><em>hatchBrush</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayPen *&#160;</td>
+          <td class="paramname"><em>boundaryPen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cacheHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6af0b98e8c58f0d3cb3e7afe5a597625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af0b98e8c58f0d3cb3e7afe5a597625">&#9670;&nbsp;</a></span>DrawHatch() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2356,7 +2732,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const class CRhinoDisplayBrush *&#160;</td>
-          <td class="paramname"><em>fillBrush</em>, </td>
+          <td class="paramname"><em>hatchBrush</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2383,14 +2759,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Do not call - placeholder virtual function in order to improve hatch display without breaking SDK. </p>
-
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#ab4e972aa5c5d849cc252d76f0395a7a2">CRhinoDisplayEngine_OGL</a>, and <a class="el" href="class_c_rhino_display_engine___g_d_i.html#a186900b7f85af36263d329b4f253bf5b">CRhinoDisplayEngine_GDI</a>.</p>
 
 </div>
 </div>
 <a id="aa298244ddab44dcb392fb232b618d3ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa298244ddab44dcb392fb232b618d3ea">&#9670;&nbsp;</a></span>DrawHatch() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa298244ddab44dcb392fb232b618d3ea">&#9670;&nbsp;</a></span>DrawHatch() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2953,8 +3327,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a03aa5ba127b71df4f18f44717aedcaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03aa5ba127b71df4f18f44717aedcaeb">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawPoints </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhPointData *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhPointData *&#160;</td>
+          <td class="paramname"><em>forcedOverride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>ffoTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>precomputedTransform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8b639af95e6b93e022ac1d5d2bb55315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b639af95e6b93e022ac1d5d2bb55315">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b639af95e6b93e022ac1d5d2bb55315">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2997,8 +3423,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a86b3f2fcf0cdb1b4b89db3c8c38aa955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b3f2fcf0cdb1b4b89db3c8c38aa955">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawPoints </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhPointData *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>ffoTransform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>precomputedTransform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a992bc025f150292f51073de9027a84d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992bc025f150292f51073de9027a84d1">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a992bc025f150292f51073de9027a84d1">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3088,7 +3560,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ab1c8eedd3d2905397919c356f482488e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c8eedd3d2905397919c356f482488e">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c8eedd3d2905397919c356f482488e">&#9670;&nbsp;</a></span>DrawPoints() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3728,6 +4200,52 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a85dbdc42602fb66cf7d5d597a1ea1835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85dbdc42602fb66cf7d5d597a1ea1835">&#9670;&nbsp;</a></span>DrawTechnicalWires()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawTechnicalWires </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhinoObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>borderThickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>silhouetteThickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>creaseThickness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a65c72ae1d2e75f1ad206b1c07e03a9ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65c72ae1d2e75f1ad206b1c07e03a9ea">&#9670;&nbsp;</a></span>DrawTextRun()</h2>
 
@@ -3899,7 +4417,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Standard engine routines for drawing high-level (non-primitive) items...</p>
 <p>Note: These routines eventually end up calling the low-level primitive drawing routines, which, for the most part, are usually overridden by custom engines. Therefore, it's usually not necessary to override any of these routines, unless you want to completely change the way they look or are drawn. Description: Draws world axes icon in lower left corner of viewport.</p>
-<p>Parameters: xaxis_color - [in] X axis color yaxis_color - [in] Y axis color zaxis_color - [in] Z axis color axes_length - [in] length in pixels (25 works well) label_offset- [in] distance in pixels lables are placed from axes letter_size - [in] label font size (in points, 14 works well) </p>
+<p>Parameters: xaxis_color - [in] X axis color yaxis_color - [in] Y axis color zaxis_color - [in] Z axis color axes_length - [in] length in pixels (25 works well) label_offset- [in] distance in pixels labels are placed from axes letter_size - [in] label font size (in points, 14 works well) </p>
 
 </div>
 </div>
@@ -3936,7 +4454,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Enable/Disable user defined clipping planes Parameters: plane: [in] index for plane to enable/diable. If -1, all planes will be enabled or disabled </p>
+<p>Description: Enable/Disable user defined clipping planes Parameters: plane: [in] index for plane to enable/disable. If -1, all planes will be enabled or disabled </p>
 
 </div>
 </div>
@@ -5006,6 +5524,24 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a908585a40567eabbdadd4c3391495c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908585a40567eabbdadd4c3391495c46">&#9670;&nbsp;</a></span>IsPreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDisplayEngine::IsPreview </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab11da3b60ff321d1973bb27b73b574ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab11da3b60ff321d1973bb27b73b574ba">&#9670;&nbsp;</a></span>LightCount()</h2>
 
@@ -5064,6 +5600,23 @@ Additional Inherited Members</h2></td></tr>
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3143e1d5c7fdbfd0316c032a158e9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3143e1d5c7fdbfd0316c032a158e9b2">&#9670;&nbsp;</a></span>LinearWorkflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_c_display_pipeline_attributes_1_1_linear_workflow.html">CDisplayPipelineAttributes::LinearWorkflow</a>&amp; CRhinoDisplayEngine::LinearWorkflow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -5205,6 +5758,60 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns: The maximum number of object mappings supported for shading. OpenGL and Direct3D will support different numbers of object mappings based on the installed graphics card. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a0ca16869d4d932d3981e4237afa61b53">CRhinoDisplayEngine_OGL</a>.</p>
+
+</div>
+</div>
+<a id="a72601c1d29483d11252ecbb6f66f5de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72601c1d29483d11252ecbb6f66f5de0">&#9670;&nbsp;</a></span>MaxProceduralCommandsSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoDisplayEngine::MaxProceduralCommandsSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The maximum number of procedural commands supported for shading. OpenGL and Direct3D will support different numbers of procedural commands based on the installed graphics card. </p>
+
+</div>
+</div>
+<a id="af7dff83c7c13fa4dbde55aa5ce3fd457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7dff83c7c13fa4dbde55aa5ce3fd457">&#9670;&nbsp;</a></span>MaxProceduralsSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoDisplayEngine::MaxProceduralsSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The maximum number of procedurals supported for shading. OpenGL and Direct3D will support different numbers of procedurals based on the installed graphics card. </p>
+
+</div>
+</div>
+<a id="a199a937447ce64df415ec680c008b99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199a937447ce64df415ec680c008b99d">&#9670;&nbsp;</a></span>MaxProceduralTransformsSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoDisplayEngine::MaxProceduralTransformsSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The maximum number of procedural transforms supported for shading. OpenGL and Direct3D will support different numbers of procedural transforms based on the installed graphics card. </p>
 
 </div>
 </div>
@@ -5561,6 +6168,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Restore the viewport that was pushed on to a stack with a call to PushProjection. </p>
+
+</div>
+</div>
+<a id="a19f429af8e7695adea96b7c5caabab17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f429af8e7695adea96b7c5caabab17">&#9670;&nbsp;</a></span>PreviewEnvironmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> CRhinoDisplayEngine::PreviewEnvironmentId </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6092,7 +6717,43 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set the instance defintion transformation. This is the same as the model transformation excluding the dynamic transform. Parameters: idt: [in] the instance definition transform. </p>
+<p>Description: Set the instance definition transformation. This is the same as the model transformation excluding the dynamic transform. Parameters: idt: [in] the instance definition transform. </p>
+
+</div>
+</div>
+<a id="a7f2ac01a5f0f296bb556490caf13281e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2ac01a5f0f296bb556490caf13281e">&#9670;&nbsp;</a></span>SetIsPreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::SetIsPreview </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9602789e15f0470718d99ffd4fb1eab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9602789e15f0470718d99ffd4fb1eab5">&#9670;&nbsp;</a></span>SetLinearWorkflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::SetLinearWorkflow </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_display_pipeline_attributes_1_1_linear_workflow.html">CDisplayPipelineAttributes::LinearWorkflow</a> &amp;&#160;</td>
+          <td class="paramname"><em>lw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6130,7 +6791,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Used to track the contents of the OpenGL model view matrix We should always use this matrix to compute new model trasform matrices on the CPU in double precision because the OpenGL matrix stack is in floats and precision goes down the toilet when you are far from the origin and call glmultmatrix. We should always glloadmatrix with our double precision calculated xform. </p>
+<p>Used to track the contents of the OpenGL model view matrix We should always use this matrix to compute new model transform matrices on the CPU in double precision because the OpenGL matrix stack is in floats and precision goes down the toilet when you are far from the origin and call glmultmatrix. We should always glloadmatrix with our double precision calculated xform. </p>
 
 </div>
 </div>
@@ -6160,6 +6821,24 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Set the current multisampling mode for this engine Parameters: mode: [in] one of the modes retrieved from GetMultiSampleModes function Returns: true on success. If the engine does not support multisampling the return value will always be false </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a318ba45e03db72af4d063e93ae0c6aa5">CRhinoDisplayEngine_OGL</a>.</p>
+
+</div>
+</div>
+<a id="ae653cafe82373b384bf4521641acfb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae653cafe82373b384bf4521641acfb39">&#9670;&nbsp;</a></span>SetPreviewEnvironmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::SetPreviewEnvironmentId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6371,7 +7050,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Sets a bias to apply to drawn geometry. Typical values are -1 for pushing geometry further away 0 for no biasing +1 for pulling geometry a little closer Parameters: zbias: [in] new bias level to aply Returns: previous zbias mode value </p>
+<p>Description: Sets a bias to apply to drawn geometry. Typical values are -1 for pushing geometry further away 0 for no biasing +1 for pulling geometry a little closer Parameters: zbias: [in] new bias level to apply Returns: previous zbias mode value </p>
 
 </div>
 </div>
@@ -6398,7 +7077,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Display the contents of the back buffer on to the front buffer Paramters: pDC: [in] device context to draw the back buffer colors to Returns: true if successful </p>
+<p>Description: Display the contents of the back buffer on to the front buffer Parameters: pDC: [in] device context to draw the back buffer colors to Returns: true if successful </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a0495cd713cc3cc1fc68ce7017155bb8d">CRhinoDisplayEngine_OGL</a>.</p>
 
@@ -6455,7 +7134,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Engine initialization and cleanup opertaions... </p>
+<p>Engine initialization and cleanup operations... </p>
 <p>Description: At the very beginning of drawing each frame the pipeline will call StartEngine to allow the engine to perform any required initializaion or context enabling</p>
 <p>All subclasses that override this function should call this base class version of the function. Returns: True if the engine was successfully "started". False if something went wrong. If the function returns false, the pipeline will not be able to draw a frame. </p>
 
@@ -6544,6 +7223,33 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns: True if the display engine support drawing triangles with lighting effects. Basically this is false for GDI and true for OpenGL and DirectX </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#aff48a096cac8fb3fbe86a1aa6835cb75">CRhinoDisplayEngine_OGL</a>.</p>
+
+</div>
+</div>
+<a id="afd460c9b39b3d508bbb2fa3da66e7c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd460c9b39b3d508bbb2fa3da66e7c0e">&#9670;&nbsp;</a></span>SupportsVboBuffers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDisplayEngine::SupportsVboBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>New for V8 [begin]. </p>
 
 </div>
 </div>
@@ -6801,7 +7507,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Quickly calculates a zbias to apply in applications like drawing curves on surfaces. In parallel projections the zbias is constant. In perpsective projections the zbias depends on the depth where the bias is being applied. Paramters: z, w - [in] clipping depth (homogeneous coordinates) ( -1 &lt;= z &lt;= 1 ) Returns: homogeneous zbias at z </p>
+<p>Description: Quickly calculates a zbias to apply in applications like drawing curves on surfaces. In parallel projections the zbias is constant. In perpsective projections the zbias depends on the depth where the bias is being applied. Parameters: z, w - [in] clipping depth (homogeneous coordinates) ( -1 &lt;= z &lt;= 1 ) Returns: homogeneous zbias at z </p>
 
 </div>
 </div>
@@ -6831,6 +7537,28 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a4519bf04a0905bbafbe75e9d7452b0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4519bf04a0905bbafbe75e9d7452b0e8">&#9670;&nbsp;</a></span>CRhDisplayEnginePrivate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class CRhDisplayEnginePrivate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ace221e63b71b749b710a941b4c4a78fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace221e63b71b749b710a941b4c4a78fe">&#9670;&nbsp;</a></span>CRhinoDisplayPipeline</h2>
 
@@ -7039,7 +7767,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Stereo viewing opertaions... </p>
+<p>Stereo viewing operations... </p>
 
 </div>
 </div>
@@ -7492,8 +8220,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Viewport size attributes... </p>
-<p>Common attributes "probably" used by most engine implementations. Note: These get set appropriately by the framework when necessary so there's no guess-work and no duplication needed by other engines. see description for "NotifyProjectionChanged" </p>
+<p>New for V8 [end]. </p>
+<p>Common attributes "probably" used by most engine implementations. Note: These get set appropriately by the framework when necessary so there's no guess-work and no duplication needed by other engines. see description for "NotifyProjectionChanged" Viewport size attributes... </p>
 
 </div>
 </div>
@@ -7507,7 +8235,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">class CRhDisplayEnginePrivate* CRhinoDisplayEngine::m_private = nullptr</td>
+          <td class="memname">class <a class="el" href="class_c_rhino_display_engine.html#a4519bf04a0905bbafbe75e9d7452b0e8">CRhDisplayEnginePrivate</a>* CRhinoDisplayEngine::m_private = nullptr</td>
         </tr>
       </table>
   </td>
@@ -7612,7 +8340,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

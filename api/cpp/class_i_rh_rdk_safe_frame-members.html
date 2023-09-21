@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -76,9 +76,11 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#acdde88423da930e9f65ebfa01081424e">BeginChange</a>(RhRdkChangeContext cc) const =0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a2ae8650a0bb41d3dea908e51c4ca243b">BeginNotifyBracket</a>(void)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a00c87e1367324e3186b4fac5565a046b">CopyFrom</a>(const IRhRdkSafeFrame &amp;sf)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ab500746cc89991fa9273b3796c980b16">EndChange</a>(void)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#acdf11aeb8b8f4faa47b2af7e6f081109">EndNotifyBracket</a>(void)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ae928ee4561123dbcf98be781689bba6e">EVF</a>(const wchar_t *, void *)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a13dcc603d3f205419331ab5b85741035">Enabled</a>(void) const</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ab500746cc89991fa9273b3796c980b16">EndChange</a>(void)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#acdf11aeb8b8f4faa47b2af7e6f081109">EndNotifyBracket</a>(void)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ae928ee4561123dbcf98be781689bba6e">EVF</a>(const wchar_t *, void *)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#aa21b09d4d42250b90879f749690bc020">FieldGridOn</a>(void) const</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a21a937d84bfb19aabfe103bf2f6e3cca">FieldsOn</a>(void) const =0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#aab6e4de2a05cb77a2c7833a05abfa3bf">IsEqual</a>(const IRhRdkSafeFrame &amp;sf) const =0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#af95c54c3971127e122b9ff838d18607f">LiveFrameOn</a>(void) const =0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -88,6 +90,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ab303c65ca3b00ee643efa48984500a50">SetActionFrameOn</a>(bool b)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a6f5e793143c52b1a9c6ced772f66bada">SetActionFrameXScale</a>(double d)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a7a61c6213e6af21732883c5744b334bb">SetActionFrameYScale</a>(double d)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#adb95465df6b42eecff6578b45201d7b9">SetEnabled</a>(bool b)</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a5a097718809459d1c675d2a2de12b9ae">SetFieldGridOn</a>(bool b)</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#ad4c040b1170127e12b0ad631fa99fde0">SetFieldsOn</a>(bool b)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a63d8589f12f791014d82302252ab3967">SetLiveFrameOn</a>(bool b)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html#a9d0274a65559b17549dd51b611d3d6ad">SetOn</a>(bool b)=0</td><td class="entry"><a class="el" href="class_i_rh_rdk_safe_frame.html">IRhRdkSafeFrame</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -104,7 +108,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

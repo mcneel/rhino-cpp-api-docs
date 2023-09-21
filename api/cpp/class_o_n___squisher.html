@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6bc0cb10e7f18807cba1a80cb026098b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a6bc0cb10e7f18807cba1a80cb026098b">DumpEnergyDebugText</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
 <tr class="memdesc:a6bc0cb10e7f18807cba1a80cb026098b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the text for debugging the energy optimizer.  <a href="class_o_n___squisher.html#a6bc0cb10e7f18807cba1a80cb026098b">More...</a><br /></td></tr>
 <tr class="separator:a6bc0cb10e7f18807cba1a80cb026098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac523953ea5dd3cfe11168bab660eb5d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#ac523953ea5dd3cfe11168bab660eb5d7">GetAreaConstrainedTrianglesIndices</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a> &gt; *faces) const</td></tr>
+<tr class="separator:ac523953ea5dd3cfe11168bab660eb5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7686ca12ea3751896f4aa58eb8e4c49b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a7686ca12ea3751896f4aa58eb8e4c49b">GetLengthConstrained2dLines</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *edges) const</td></tr>
+<tr class="separator:a7686ca12ea3751896f4aa58eb8e4c49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a9db13d4261110091b2331efdaa0a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a17a9db13d4261110091b2331efdaa0a6">GetLengthConstrained3dLines</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *edges) const</td></tr>
+<tr class="separator:a17a9db13d4261110091b2331efdaa0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a08329214dd198d98960c87c211242f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a4a08329214dd198d98960c87c211242f">GetMesh2d</a> () const</td></tr>
 <tr class="separator:a4a08329214dd198d98960c87c211242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998e7f4150cc60213bdc50bbc61e74df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a998e7f4150cc60213bdc50bbc61e74df">GetMesh2dEdges</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *edges) const</td></tr>
@@ -258,6 +264,63 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac523953ea5dd3cfe11168bab660eb5d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac523953ea5dd3cfe11168bab660eb5d7">&#9670;&nbsp;</a></span>GetAreaConstrainedTrianglesIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Squisher::GetAreaConstrainedTrianglesIndices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a> &gt; *&#160;</td>
+          <td class="paramname"><em>faces</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets mesh vertex indices for the triangular faces that were constrained during the squish. Indices can be used in both the 2d and 3d mesh vertices arrays. </p>
+
+</div>
+</div>
+<a id="a7686ca12ea3751896f4aa58eb8e4c49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7686ca12ea3751896f4aa58eb8e4c49b">&#9670;&nbsp;</a></span>GetLengthConstrained2dLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Squisher::GetLengthConstrained2dLines </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *&#160;</td>
+          <td class="paramname"><em>edges</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets lines at the position of the mesh edges and diagonals that were constrained during the squish, in the 2d mesh. The line at any index here corresponds to the same line in GetLengthConstrained3dLines. </p>
+
+</div>
+</div>
+<a id="a17a9db13d4261110091b2331efdaa0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a9db13d4261110091b2331efdaa0a6">&#9670;&nbsp;</a></span>GetLengthConstrained3dLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Squisher::GetLengthConstrained3dLines </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; *&#160;</td>
+          <td class="paramname"><em>edges</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets lines at the position of the mesh edges and diagonals that were constrained during the squish, in the 3d mesh. The line at any index here corresponds to the same line in GetLengthConstrained2dLines. </p>
+
+</div>
+</div>
 <a id="a4a08329214dd198d98960c87c211242f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a08329214dd198d98960c87c211242f">&#9670;&nbsp;</a></span>GetMesh2d()</h2>
 
@@ -291,7 +354,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>adds the edges of the 2d mesh as <a class="el" href="class_o_n___line.html">ON_Line</a> objects. The edge at each index corresponds to the squished edge from the same index resulting from GetMesh3dEdges </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained2dLines </dd></dl>
 
 </div>
 </div>
@@ -328,7 +391,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>adds the edges of the 3d mesh as <a class="el" href="class_o_n___line.html">ON_Line</a> objects. The edge at each index corresponds to the squished edge from the same index resulting from GetMesh2dEdges </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000078">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained3dLines </dd></dl>
 
 </div>
 </div>
@@ -687,7 +750,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

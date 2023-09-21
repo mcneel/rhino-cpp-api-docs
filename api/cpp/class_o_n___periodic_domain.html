@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -89,11 +89,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a706a997fa8b2dd11f17de782bb6404c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___periodic_domain.html#a706a997fa8b2dd11f17de782bb6404c1">m_closed</a> [2]</td></tr>
+<tr class="memitem:a706a997fa8b2dd11f17de782bb6404c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___periodic_domain.html#a706a997fa8b2dd11f17de782bb6404c1">m_closed</a> [2] = {}</td></tr>
 <tr class="separator:a706a997fa8b2dd11f17de782bb6404c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0b53cebc8eaa42ebfb843f14f759cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___periodic_domain.html#a8b0b53cebc8eaa42ebfb843f14f759cd">m_dom</a> [2]</td></tr>
 <tr class="separator:a8b0b53cebc8eaa42ebfb843f14f759cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac386c55be5c044be6e0bcaed6d0dda25"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___periodic_domain.html#ac386c55be5c044be6e0bcaed6d0dda25">m_normband</a></td></tr>
+<tr class="memitem:ac386c55be5c044be6e0bcaed6d0dda25"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___periodic_domain.html#ac386c55be5c044be6e0bcaed6d0dda25">m_normband</a> = <a class="el" href="group__open_n_u_r_b_s.html#ga769dbc6215faf8b792af507f8af629a2">ON_DBL_QNAN</a></td></tr>
 <tr class="separator:ac386c55be5c044be6e0bcaed6d0dda25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -239,7 +239,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construction or Initialization Parameters: dom -[in] surface domain closed -[in] closed[0] is true if the surface is closed in u direction (similary for 1 and v) Use ON_IsG1Closed(...) to test for G1-closed surfaces. normband - [in] 0&lt;normband&lt;.5 is a normalized coordinate defining a band on each side of the seam. The bands are {(u,v): dom[0].NormalizedParameterAt(u)&lt; normband } and {(u,v): dom[0].NormalizedParameterAt(u)&gt; 1.0 - normband } The point sequence crosses the seam if consecutive points are in opposite bands along the seam. Repeatedly call LiftToCover( Pin) with Pin in the domain covering space. The resulting output sequence will be lifted to the domain covering space, and will be 'continuous' in that consecutive points will be in the same or an adjacent band. Use stealth=true to lift this point without affecting the state, this allows one to compute a trial end of sequence. <br  />
+<p>Construction or Initialization Parameters: dom -[in] surface domain closed -[in] closed[0] is true if the surface is closed in u direction (similarly for 1 and v) Use ON_IsG1Closed(...) to test for G1-closed surfaces. normband - [in] 0&lt;normband&lt;.5 is a normalized coordinate defining a band on each side of the seam. The bands are {(u,v): dom[0].NormalizedParameterAt(u)&lt; normband } and {(u,v): dom[0].NormalizedParameterAt(u)&gt; 1.0 - normband } The point sequence crosses the seam if consecutive points are in opposite bands along the seam. Repeatedly call LiftToCover( Pin) with Pin in the domain covering space. The resulting output sequence will be lifted to the domain covering space, and will be 'continuous' in that consecutive points will be in the same or an adjacent band. Use stealth=true to lift this point without affecting the state, this allows one to compute a trial end of sequence. <br  />
  see also ON_LiftToCover(...). </p>
 
 </div>
@@ -252,7 +252,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ON_PeriodicDomain::m_closed[2]</td>
+          <td class="memname">bool ON_PeriodicDomain::m_closed[2] = {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,7 +280,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double ON_PeriodicDomain::m_normband</td>
+          <td class="memname">double ON_PeriodicDomain::m_normband = <a class="el" href="group__open_n_u_r_b_s.html#ga769dbc6215faf8b792af507f8af629a2">ON_DBL_QNAN</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -290,7 +290,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

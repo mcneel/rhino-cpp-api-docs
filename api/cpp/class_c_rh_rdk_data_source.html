@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -78,8 +78,7 @@ Inheritance diagram for CRhRdkDataSource:</div>
  <div class="center">
   <img src="class_c_rh_rdk_data_source.png" usemap="#CRhRdkDataSource_map" alt=""/>
   <map id="CRhRdkDataSource_map" name="CRhRdkDataSource_map">
-<area href="class_i_rhino_ui_data_source.html" alt="IRhinoUiDataSource" shape="rect" coords="0,0,183,24"/>
-<area href="class_c_rh_rdk_simple_sun_data_source.html" alt="CRhRdkSimpleSunDataSource" shape="rect" coords="0,112,183,136"/>
+<area href="class_i_rhino_ui_data_source.html" alt="IRhinoUiDataSource" shape="rect" coords="0,0,125,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -146,6 +145,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="inherit_header pro_methods_class_i_rhino_ui_data_source"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i_rhino_ui_data_source')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_i_rhino_ui_data_source.html">IRhinoUiDataSource</a></td></tr>
 <tr class="memitem:adc4b4c122ec31a06a199e39dc6e31731 inherit pro_methods_class_i_rhino_ui_data_source"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rhino_ui_data_source.html#adc4b4c122ec31a06a199e39dc6e31731">~IRhinoUiDataSource</a> ()</td></tr>
 <tr class="separator:adc4b4c122ec31a06a199e39dc6e31731 inherit pro_methods_class_i_rhino_ui_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_i_rhino_ui_data_source"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_i_rhino_ui_data_source')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_i_rhino_ui_data_source.html">IRhinoUiDataSource</a></td></tr>
+<tr class="memitem:aaae1796e2bae88a94d28a54ba561804b inherit pub_static_methods_class_i_rhino_ui_data_source"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rhino_ui_data_source.html#aaae1796e2bae88a94d28a54ba561804b">Deleter</a> (<a class="el" href="class_i_rhino_ui_data_source.html">IRhinoUiDataSource</a> *)</td></tr>
+<tr class="separator:aaae1796e2bae88a94d28a54ba561804b inherit pub_static_methods_class_i_rhino_ui_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the base class for all data sources. You should prefer to subclass this instead of implementing <a class="el" href="class_i_rhino_ui_data_source.html">IRhinoUiDataSource</a> directly because it takes care of critical lifetime and ownership issues regarding data source hosts. If you must implement the interface yourself, you will be responsible for these issues. Please ask Andy or John C for help. </p>
@@ -321,8 +326,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_rhino_ui_data_source.html#ab335a0a7b4a11c4af5b6b18ebf0f9608">IRhinoUiDataSource</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_simple_sun_data_source.html#ad8ab7b0f6622b75cecb6322eee485216">CRhRdkSimpleSunDataSource</a>.</p>
-
 </div>
 </div>
 <a id="a38906e004b3b3e3c0e5f182fe0cd489a"></a>
@@ -414,8 +417,6 @@ Protected Member Functions</h2></td></tr>
 <a class="el" href="class_c_rh_rdk_data_source.html#a42a9784830cea2f6089c72d9217fe207">Commit()</a> </dd></dl>
 
 <p>Implements <a class="el" href="class_i_rhino_ui_data_source.html#a37ae66c446fe593faaf39491d857cd56">IRhinoUiDataSource</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_simple_sun_data_source.html#af8747496a3ec574e3603e129c726a68c">CRhRdkSimpleSunDataSource</a>.</p>
 
 </div>
 </div>
@@ -747,11 +748,8 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Implement this method to reset all data to defaults, if possible. </p><dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
 
-<p>Implements <a class="el" href="class_i_rhino_ui_data_source.html#a99a1bae79a872c75f5983f78dd896c29">IRhinoUiDataSource</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_simple_sun_data_source.html#ad827d69fbb07e48c7f15c6f74dbd4bd1">CRhRdkSimpleSunDataSource</a>.</p>
+<p>Implements <a class="el" href="class_i_rhino_ui_data_source.html#ac297ab040f4da43928dd0018b4f921a7">IRhinoUiDataSource</a>.</p>
 
 </div>
 </div>
@@ -844,8 +842,6 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_simple_sun_data_source.html#a931ccd223806bf96f9dcd143d7e2c390">CRhRdkSimpleSunDataSource</a>.</p>
-
 </div>
 </div>
 <a id="a045050a1a842e346c9f6ced103e1cea3"></a>
@@ -906,7 +902,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

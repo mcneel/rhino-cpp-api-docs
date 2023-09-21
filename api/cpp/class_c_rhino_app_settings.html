@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -125,9 +125,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a932a3c68540b237c866e77ba72d6f53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1796b503d3fed925418d2fbf564b10e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1796b503d3fed925418d2fbf564b10e2">AskOnLoadProtection</a> () const</td></tr>
 <tr class="separator:a1796b503d3fed925418d2fbf564b10e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37563c3fc2ba5a6556f4dfb9a54a4bb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a37563c3fc2ba5a6556f4dfb9a54a4bb7">AutoAlignCPlane</a> () const</td></tr>
+<tr class="separator:a37563c3fc2ba5a6556f4dfb9a54a4bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d440cbe03bc29de389190e7573768aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7d440cbe03bc29de389190e7573768aa">AutocompleteCommands</a> () const</td></tr>
 <tr class="memdesc:a7d440cbe03bc29de389190e7573768aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, commands are in-line autocompleted and exact matches are shown in a popup menu.  <a href="class_c_rhino_app_settings.html#a7d440cbe03bc29de389190e7573768aa">More...</a><br /></td></tr>
 <tr class="separator:a7d440cbe03bc29de389190e7573768aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290b994cf9baef2f93ef1dce6c8c32c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a290b994cf9baef2f93ef1dce6c8c32c7">AutoCPlaneAlignment</a> () const</td></tr>
+<tr class="memdesc:a290b994cf9baef2f93ef1dce6c8c32c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 = object, 1 = world, 2 = view  <a href="class_c_rhino_app_settings.html#a290b994cf9baef2f93ef1dce6c8c32c7">More...</a><br /></td></tr>
+<tr class="separator:a290b994cf9baef2f93ef1dce6c8c32c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3994b3952c811ab7cff310432ec842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0d3994b3952c811ab7cff310432ec842">AutoGumballAlignment</a> () const</td></tr>
+<tr class="memdesc:a0d3994b3952c811ab7cff310432ec842"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the sake of not breaking the SDK, you will have to cast back and forward from int to <a class="el" href="class_c_rhino_view.html#a4717d57ffdd0063aaa4f2c5ef6256071">CRhinoView::drag_plane</a>.  <a href="class_c_rhino_app_settings.html#a0d3994b3952c811ab7cff310432ec842">More...</a><br /></td></tr>
+<tr class="separator:a0d3994b3952c811ab7cff310432ec842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1824286f93ffdc179fa40e5eefb384ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1824286f93ffdc179fa40e5eefb384ea">AutoGumballExtrudeMergeFaces</a> () const</td></tr>
+<tr class="separator:a1824286f93ffdc179fa40e5eefb384ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c51e11a8703c7ed9c6da6bcdd9a8614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a4c51e11a8703c7ed9c6da6bcdd9a8614">BackgroundColor</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *) const</td></tr>
 <tr class="separator:a4c51e11a8703c7ed9c6da6bcdd9a8614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8112aff11aca111f4de7ce2e2c308277"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_app_choose_one_object_settings.html">CRhinoAppChooseOneObjectSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a8112aff11aca111f4de7ce2e2c308277">ChooseOneObjectSettings</a> () const</td></tr>
@@ -145,10 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad85c4eb5d3781a116e23c4ad2240d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa0ac9a10c163eab98f63e6f2c7fba4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_curvature_graph_settings.html">CRhinoCurvatureGraphSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#adaa0ac9a10c163eab98f63e6f2c7fba4">CurvatureGraphSettings</a> () const</td></tr>
 <tr class="separator:adaa0ac9a10c163eab98f63e6f2c7fba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4deb65666255ff23337df70d78eb8b3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a4deb65666255ff23337df70d78eb8b3b">DefaultAutocompleteCommands</a> () const</td></tr>
+<tr class="separator:a4deb65666255ff23337df70d78eb8b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0b9fab999c8a3d688869718423a0d8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___font.html">ON_Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3f0b9fab999c8a3d688869718423a0d8">DefaultFont</a> ()</td></tr>
 <tr class="separator:a3f0b9fab999c8a3d688869718423a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c7b9e26643595cde3648f93ef6704a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a6c7b9e26643595cde3648f93ef6704a7">DefaultFontFaceName</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;font) const</td></tr>
 <tr class="separator:a6c7b9e26643595cde3648f93ef6704a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cb75da1ea6a2b85a914c00e57f0ac6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a82cb75da1ea6a2b85a914c00e57f0ac6">DefaultFuzzyAutocomplete</a> () const</td></tr>
+<tr class="separator:a82cb75da1ea6a2b85a914c00e57f0ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9300cfe5bf2da6a4198ad95afc309ee4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___light.html">ON_Light</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a9300cfe5bf2da6a4198ad95afc309ee4">DefaultLight</a> () const</td></tr>
 <tr class="separator:a9300cfe5bf2da6a4198ad95afc309ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e47747dcdec576edb00bc4802406a91"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a9e47747dcdec576edb00bc4802406a91">DefaultMaterial</a> () const</td></tr>
@@ -243,6 +257,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5eb9fdc4451f257bd4d33283e0ea5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dac3820d323a4b53e443f54365ed5f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0dac3820d323a4b53e443f54365ed5f1">GridZAxisColor</a> () const</td></tr>
 <tr class="separator:a0dac3820d323a4b53e443f54365ed5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6ab53eef2ea4f241b1c1093669ea47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a4e6ab53eef2ea4f241b1c1093669ea47">HiddenLineColor</a> (void) const</td></tr>
+<tr class="separator:a4e6ab53eef2ea4f241b1c1093669ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba06dadcd30ac298442bc62c582c35c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aba06dadcd30ac298442bc62c582c35c0">HiddenLineColorMixingFactor</a> (void) const</td></tr>
+<tr class="separator:aba06dadcd30ac298442bc62c582c35c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5902d9e1d6b09a905a376303966f67a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ae5902d9e1d6b09a905a376303966f67a">HiddenLineEnabled</a> (void) const</td></tr>
+<tr class="separator:ae5902d9e1d6b09a905a376303966f67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450e15c3964841379631c6192f6f12bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a450e15c3964841379631c6192f6f12bf">HiddenLineMode</a> (void) const</td></tr>
+<tr class="separator:a450e15c3964841379631c6192f6f12bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d325d94a68985fcf391afb5f224191"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a28d325d94a68985fcf391afb5f224191">HiddenLineThicknessScale</a> (void) const</td></tr>
+<tr class="separator:a28d325d94a68985fcf391afb5f224191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429cdaf465923ba845262bbe0f754529"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a429cdaf465923ba845262bbe0f754529">ImportFileLayerMatchingOption</a> () const</td></tr>
 <tr class="separator:a429cdaf465923ba845262bbe0f754529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09015ed73eab4f5c3cdc397e5276fc5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a09015ed73eab4f5c3cdc397e5276fc5f">LoadProfile</a> (<a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a> &amp;context)</td></tr>
@@ -256,6 +280,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaddd590d67e370fbd7666b0284f55b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3f05c1ac9e31ba9d2a996d40ed9e32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_app_model_aid_settings.html">CRhinoAppModelAidSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a2e3f05c1ac9e31ba9d2a996d40ed9e32">ModelAidSettings</a> () const</td></tr>
 <tr class="separator:a2e3f05c1ac9e31ba9d2a996d40ed9e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76acdf4b793f0575f595a3397dce5fa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a76acdf4b793f0575f595a3397dce5fa2">MouseOverHighlight</a> () const</td></tr>
+<tr class="memdesc:a76acdf4b793f0575f595a3397dce5fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, objects are highlighted with mouse over.  <a href="class_c_rhino_app_settings.html#a76acdf4b793f0575f595a3397dce5fa2">More...</a><br /></td></tr>
+<tr class="separator:a76acdf4b793f0575f595a3397dce5fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734f5efee4ff2f2fcaca8b3543cffe78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a734f5efee4ff2f2fcaca8b3543cffe78">MouseOverHighlightSubObjects</a> () const</td></tr>
+<tr class="memdesc:a734f5efee4ff2f2fcaca8b3543cffe78"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, sub-objects are highlighted with mouse over.  <a href="class_c_rhino_app_settings.html#a734f5efee4ff2f2fcaca8b3543cffe78">More...</a><br /></td></tr>
+<tr class="separator:a734f5efee4ff2f2fcaca8b3543cffe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab70abf3b2037dc8fc9dda7f6a322ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7ab70abf3b2037dc8fc9dda7f6a322ad">MousePickboxRadius</a> () const</td></tr>
 <tr class="memdesc:a7ab70abf3b2037dc8fc9dda7f6a322ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouse pick box size  <a href="class_c_rhino_app_settings.html#a7ab70abf3b2037dc8fc9dda7f6a322ad">More...</a><br /></td></tr>
 <tr class="separator:a7ab70abf3b2037dc8fc9dda7f6a322ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +298,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0ee1870629a62cd6d6bebc458cfc950"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ad0ee1870629a62cd6d6bebc458cfc950">Ortho</a> () const</td></tr>
 <tr class="memdesc:ad0ee1870629a62cd6d6bebc458cfc950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ortho setting.  <a href="class_c_rhino_app_settings.html#ad0ee1870629a62cd6d6bebc458cfc950">More...</a><br /></td></tr>
 <tr class="separator:ad0ee1870629a62cd6d6bebc458cfc950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fe2bc12384b0d3283b6c9ddd3c7a1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a13fe2bc12384b0d3283b6c9ddd3c7a1a">OrthoUseZ</a> () const</td></tr>
+<tr class="separator:a13fe2bc12384b0d3283b6c9ddd3c7a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387994cc248c31ac311febf8397a9870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a387994cc248c31ac311febf8397a9870">OsnapDialogVisible</a> ()</td></tr>
 <tr class="separator:a387994cc248c31ac311febf8397a9870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac37dffb056987fd15fb37497e9fb8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3ac37dffb056987fd15fb37497e9fb8e">OsnapEnabled</a> () const</td></tr>
@@ -276,7 +308,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a8a630ef230bcfd3136fa41af90dbd7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a5a8a630ef230bcfd3136fa41af90dbd7">OsnapMode</a> () const</td></tr>
 <tr class="separator:a5a8a630ef230bcfd3136fa41af90dbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e28547872bb1e5223169804e48a1cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a73e28547872bb1e5223169804e48a1cf">OsnapMode</a> (<a class="el" href="class_c_rhino_app_settings.html#aae52e49d8dde091f3927ef6b18b26d88">osnap_mode</a>) const</td></tr>
-<tr class="memdesc:a73e28547872bb1e5223169804e48a1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistant Osnaps.  <a href="class_c_rhino_app_settings.html#a73e28547872bb1e5223169804e48a1cf">More...</a><br /></td></tr>
+<tr class="memdesc:a73e28547872bb1e5223169804e48a1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent Osnaps.  <a href="class_c_rhino_app_settings.html#a73e28547872bb1e5223169804e48a1cf">More...</a><br /></td></tr>
 <tr class="separator:a73e28547872bb1e5223169804e48a1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ae69495abd66832e71a482996fe7ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a34ae69495abd66832e71a482996fe7ea">OsnapPickboxRadius</a> () const</td></tr>
 <tr class="memdesc:a34ae69495abd66832e71a482996fe7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">object snap pick box size  <a href="class_c_rhino_app_settings.html#a34ae69495abd66832e71a482996fe7ea">More...</a><br /></td></tr>
@@ -305,6 +337,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89090db8d6d0797798178435316d2871"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a89090db8d6d0797798178435316d2871">SelectedObjectColor</a> (bool bIsReferenceObject=false) const</td></tr>
 <tr class="memdesc:a89090db8d6d0797798178435316d2871"><td class="mdescLeft">&#160;</td><td class="mdescRight">object state colors  <a href="class_c_rhino_app_settings.html#a89090db8d6d0797798178435316d2871">More...</a><br /></td></tr>
 <tr class="separator:a89090db8d6d0797798178435316d2871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1852361748f37b763348fed3b8923c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1f1852361748f37b763348fed3b8923c">SelectedObjectCornerColor</a> (void) const</td></tr>
+<tr class="separator:a1f1852361748f37b763348fed3b8923c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad870b16a211e7c64d7c7754b8818f502"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ad870b16a211e7c64d7c7754b8818f502">SelectedObjectCornerLength</a> (void) const</td></tr>
+<tr class="separator:ad870b16a211e7c64d7c7754b8818f502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05639bf06a3c302e82caa4502438cbef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a05639bf06a3c302e82caa4502438cbef">SelectedObjectCornerThickness</a> (void) const</td></tr>
+<tr class="separator:a05639bf06a3c302e82caa4502438cbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba89ae7f36facd73f855abb987b2f1bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_app_selection_filter_settings.html">CRhinoAppSelectionFilterSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aba89ae7f36facd73f855abb987b2f1bb">SelectionFilterSettings</a> () const</td></tr>
 <tr class="separator:aba89ae7f36facd73f855abb987b2f1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e9d577a11ab3cae070a9a8fab51ba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ad4e9d577a11ab3cae070a9a8fab51ba3">SetAliases</a> (const <a class="el" href="class_c_rhino_app_alias_list.html">CRhinoAppAliasList</a> &amp;settings)</td></tr>
@@ -313,8 +351,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6674bdad9c417dec5dba1b57fb084d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580b164b1bf58b407bdc7929cec0e569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a580b164b1bf58b407bdc7929cec0e569">SetAskOnLoadProtection</a> (bool bAsk)</td></tr>
 <tr class="separator:a580b164b1bf58b407bdc7929cec0e569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51303bf933c35cfcb0d697448760c338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a51303bf933c35cfcb0d697448760c338">SetAutoAlignCPlane</a> (bool bAutoCPlane)</td></tr>
+<tr class="separator:a51303bf933c35cfcb0d697448760c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fffe595c6ae2fbca49085de2c6ee70a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0fffe595c6ae2fbca49085de2c6ee70a">SetAutocompleteCommands</a> (bool bEnable)</td></tr>
 <tr class="separator:a0fffe595c6ae2fbca49085de2c6ee70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394f6cd7490ff79f54413aaba52e181c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a394f6cd7490ff79f54413aaba52e181c">SetAutoCPlaneAlignment</a> (int iAlignment)</td></tr>
+<tr class="separator:a394f6cd7490ff79f54413aaba52e181c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b442f5dbf9d7b68f977e896b21169f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a71b442f5dbf9d7b68f977e896b21169f">SetAutoGumballAlignment</a> (int)</td></tr>
+<tr class="separator:a71b442f5dbf9d7b68f977e896b21169f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1ff57f1bb86fe136c7b4559324b258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3e1ff57f1bb86fe136c7b4559324b258">SetAutoGumballExtrudeMergeFaces</a> (bool bMerge)</td></tr>
+<tr class="separator:a3e1ff57f1bb86fe136c7b4559324b258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa87bd3e7e27a10ffe029bc85139878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3fa87bd3e7e27a10ffe029bc85139878">SetChooseOneObjectSettings</a> (const <a class="el" href="class_c_rhino_app_choose_one_object_settings.html">CRhinoAppChooseOneObjectSettings</a> &amp;settings)</td></tr>
 <tr class="separator:a3fa87bd3e7e27a10ffe029bc85139878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0824c1dc10569f460f203c6dbe283d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0824c1dc10569f460f203c6dbe283d9b">SetContextMenuSettings</a> (const <a class="el" href="class_c_rhino_app_context_menu_settings.html">CRhinoAppContextMenuSettings</a> &amp;settings)</td></tr>
@@ -359,14 +405,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a13bf2da3aed12cb3352ceb5afde90867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b799420c7bd54dc4b8dc5c2b372d079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a8b799420c7bd54dc4b8dc5c2b372d079">SetGumballSizes</a> (<a class="el" href="class_c_rhino_gumball_sizes.html">CRhinoGumballSizes</a> gumball_sizes)</td></tr>
 <tr class="separator:a8b799420c7bd54dc4b8dc5c2b372d079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41decbee29b9c0bd08fd2d9814d9a422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a41decbee29b9c0bd08fd2d9814d9a422">SetHiddenLineColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a>)</td></tr>
+<tr class="separator:a41decbee29b9c0bd08fd2d9814d9a422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a384403bb275fb14e4ecda61789ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af10a384403bb275fb14e4ecda61789ad">SetHiddenLineColorMixingFactor</a> (float)</td></tr>
+<tr class="separator:af10a384403bb275fb14e4ecda61789ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d22a79cafd50674d92a18050deff2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a68d22a79cafd50674d92a18050deff2f">SetHiddenLineEnabled</a> (bool)</td></tr>
+<tr class="separator:a68d22a79cafd50674d92a18050deff2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82661fc66d5f9b78904e682177dcce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af82661fc66d5f9b78904e682177dcce1">SetHiddenLineMode</a> (int)</td></tr>
+<tr class="separator:af82661fc66d5f9b78904e682177dcce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ee739b9d4ce4a1801f32f07c69ae2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a15ee739b9d4ce4a1801f32f07c69ae2f">SetHiddenLineThicknessScale</a> (float)</td></tr>
+<tr class="separator:a15ee739b9d4ce4a1801f32f07c69ae2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a112acbec245a9389fab0daa4e5f1e6eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a112acbec245a9389fab0daa4e5f1e6eb">SetImportFileLayerMatchingOption</a> (unsigned int import_file_layer_matching_option)</td></tr>
 <tr class="separator:a112acbec245a9389fab0daa4e5f1e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d35714b63f9d6ed07ff9a3b2b53cf6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0d35714b63f9d6ed07ff9a3b2b53cf6f">SetModelAidSettings</a> (const <a class="el" href="class_c_rhino_app_model_aid_settings.html">CRhinoAppModelAidSettings</a> &amp;settings)</td></tr>
 <tr class="separator:a0d35714b63f9d6ed07ff9a3b2b53cf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac863c612e3a705b9148993ff130baf5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ac863c612e3a705b9148993ff130baf5b">SetMouseOverHighlight</a> (bool bEnable)</td></tr>
+<tr class="separator:ac863c612e3a705b9148993ff130baf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add48fd34897f82d7e84f56d6fae515e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#add48fd34897f82d7e84f56d6fae515e6">SetMouseOverHighlightSubObjects</a> (bool bEnable)</td></tr>
+<tr class="separator:add48fd34897f82d7e84f56d6fae515e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d29f72641f330c1d730393260dbb448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a9d29f72641f330c1d730393260dbb448">SetMouseSettings</a> (const <a class="el" href="class_c_rhino_app_mouse_settings.html">CRhinoAppMouseSettings</a> &amp;settings)</td></tr>
 <tr class="separator:a9d29f72641f330c1d730393260dbb448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee7a121488bae38f6d7b841e9e4ee6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a5ee7a121488bae38f6d7b841e9e4ee6a">SetOpenGLSettings</a> (const <a class="el" href="class_c_rhino_open_g_l_settings.html">CRhinoOpenGLSettings</a> &amp;)</td></tr>
 <tr class="separator:a5ee7a121488bae38f6d7b841e9e4ee6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05a0b22f7b686e6cfe7dafb12106f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af05a0b22f7b686e6cfe7dafb12106f35">SetOrthoUseZ</a> (bool bUse)</td></tr>
+<tr class="separator:af05a0b22f7b686e6cfe7dafb12106f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee07abd43da0ceb69e3ad793ca97d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3ee07abd43da0ceb69e3ad793ca97d87">SetOsnapMode</a> (<a class="el" href="class_c_rhino_app_settings.html#aae52e49d8dde091f3927ef6b18b26d88">osnap_mode</a> mode, bool b)</td></tr>
 <tr class="separator:a3ee07abd43da0ceb69e3ad793ca97d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0853ce63ea1d1ed3e014c164ba217158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0853ce63ea1d1ed3e014c164ba217158">SetPackageManagerSources</a> (const wchar_t *s)</td></tr>
@@ -375,22 +437,58 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abbd6d10902c9a528560d0f6b743f13d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddca1baf24a7e49bbdb46b1a0d615f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#adddca1baf24a7e49bbdb46b1a0d615f9">SetProjectOsnapsInPlanParallelViews</a> (bool bEnable=true)</td></tr>
 <tr class="separator:adddca1baf24a7e49bbdb46b1a0d615f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac26ed7b68a178dd9a1af5cae4c52763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aac26ed7b68a178dd9a1af5cae4c52763">SetSelectedObjectCornerColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a>)</td></tr>
+<tr class="separator:aac26ed7b68a178dd9a1af5cae4c52763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8287101f310d4dd4ca1e7007176086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aae8287101f310d4dd4ca1e7007176086">SetSelectedObjectCornerLength</a> (float)</td></tr>
+<tr class="separator:aae8287101f310d4dd4ca1e7007176086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36278040a91375f8731a083ab3a9c271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a36278040a91375f8731a083ab3a9c271">SetSelectedObjectCornerThickness</a> (bool)</td></tr>
+<tr class="separator:a36278040a91375f8731a083ab3a9c271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a304ae8c96c0995f8b505b04bfa919205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a304ae8c96c0995f8b505b04bfa919205">SetSelectionFilterSettings</a> (const <a class="el" href="class_c_rhino_app_selection_filter_settings.html">CRhinoAppSelectionFilterSettings</a> &amp;)</td></tr>
 <tr class="separator:a304ae8c96c0995f8b505b04bfa919205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ad604e80b0c218adf38abee4a80e6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a50ad604e80b0c218adf38abee4a80e6d">SetShortCutKeys</a> (const <a class="el" href="class_c_rhino_app_shortcut_keys.html">CRhinoAppShortcutKeys</a> &amp;settings)</td></tr>
 <tr class="separator:a50ad604e80b0c218adf38abee4a80e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a1c472f42f744339cfd69f12e6412e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a53a1c472f42f744339cfd69f12e6412e">SetShowAutoGumball</a> (bool bShowAutoGumball)</td></tr>
 <tr class="separator:a53a1c472f42f744339cfd69f12e6412e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719e700f7c5ac804422b3d8e77839d94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a719e700f7c5ac804422b3d8e77839d94">SetShowHiddenLines</a> (bool)</td></tr>
+<tr class="separator:a719e700f7c5ac804422b3d8e77839d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c06ef435aba58cbd7d242678a1d1ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a22c06ef435aba58cbd7d242678a1d1ef">SetShowSelectedObjectCorners</a> ()</td></tr>
+<tr class="separator:a22c06ef435aba58cbd7d242678a1d1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93ca69b85f5a2a8b7bd1266aeb75ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ae93ca69b85f5a2a8b7bd1266aeb75ace">SetShowViewportXEdges</a> (bool)</td></tr>
+<tr class="separator:ae93ca69b85f5a2a8b7bd1266aeb75ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5df3964ce97f5ca129fb8231115116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#afe5df3964ce97f5ca129fb8231115116">SetSilhouetteHighlighting</a> (bool bEnable)</td></tr>
+<tr class="separator:afe5df3964ce97f5ca129fb8231115116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453b6be3403bbb164a2a9f5e8c1dcf34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a453b6be3403bbb164a2a9f5e8c1dcf34">SetSilhouetteHighlightInnerColorScale</a> (float)</td></tr>
+<tr class="separator:a453b6be3403bbb164a2a9f5e8c1dcf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85ce9022b1e2fe55edcfd541d077c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aa85ce9022b1e2fe55edcfd541d077c65">SetSilhouetteHighlightInnerFactor</a> ()</td></tr>
+<tr class="separator:aa85ce9022b1e2fe55edcfd541d077c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2453f03c4b3572190d77459ca5726ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ac2453f03c4b3572190d77459ca5726ea">SetSilhouetteHighlightOuterScale</a> (int)</td></tr>
+<tr class="separator:ac2453f03c4b3572190d77459ca5726ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb983ae6512904f886d452d300f70354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aeb983ae6512904f886d452d300f70354">SetSilhouetteMethod</a> (int)</td></tr>
+<tr class="separator:aeb983ae6512904f886d452d300f70354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2f7571ee8da32bf7a3f29f696734cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3b2f7571ee8da32bf7a3f29f696734cd">SetSilhouetteThickness</a> (int)</td></tr>
+<tr class="separator:a3b2f7571ee8da32bf7a3f29f696734cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821fdc580eff8eb02be1473649411e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a821fdc580eff8eb02be1473649411e1f">SetSmartTrackSettings</a> (const <a class="el" href="class_c_rhino_app_smart_track_settings.html">CRhinoAppSmartTrackSettings</a> &amp;settings)</td></tr>
 <tr class="separator:a821fdc580eff8eb02be1473649411e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2c62352fdbaeb502801a13757d97324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ab2c62352fdbaeb502801a13757d97324">SetSnappyGumball</a> (bool bSnappyGumball)</td></tr>
 <tr class="separator:ab2c62352fdbaeb502801a13757d97324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4330ad22640d847d0de747580c308c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ac4330ad22640d847d0de747580c308c5">SetSpaceBallSettings</a> (const <a class="el" href="class_c_rhino_app_space_ball_settings.html">CRhinoAppSpaceBallSettings</a> &amp;settings)</td></tr>
 <tr class="separator:ac4330ad22640d847d0de747580c308c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4bb9dbab42cc873173a2f56e99aec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0e4bb9dbab42cc873173a2f56e99aec6">SetStatusBarLayerPaneWidth</a> (int value)</td></tr>
+<tr class="separator:a0e4bb9dbab42cc873173a2f56e99aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d4e2e6313c383f630ae1c0218b77ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a80d4e2e6313c383f630ae1c0218b77ba">SetStickyAutoCPlane</a> (bool bSticky)</td></tr>
+<tr class="separator:a80d4e2e6313c383f630ae1c0218b77ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2018e1af785b79dff4d485b01b649c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#abb2018e1af785b79dff4d485b01b649c">SetThicknessAnalysisSettings</a> (const <a class="el" href="class_c_rhino_thickness_analysis_settings.html">CRhinoThicknessAnalysisSettings</a> &amp;settings)</td></tr>
 <tr class="separator:abb2018e1af785b79dff4d485b01b649c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35c9ce1889368685920b95be7d0628f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ab35c9ce1889368685920b95be7d0628f">SetUiPaintColorSettings</a> (const <a class="el" href="class_c_rhino_ui_paint_color_settings.html">CRhinoUiPaintColorSettings</a> &amp;settings)</td></tr>
 <tr class="separator:ab35c9ce1889368685920b95be7d0628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271e31ed7d29d7426aafa9bf7548b36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a271e31ed7d29d7426aafa9bf7548b36e">SetViewportXEdgeLength</a> (float)</td></tr>
+<tr class="separator:a271e31ed7d29d7426aafa9bf7548b36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af187909611a3c6ccb7703f8332c49e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af187909611a3c6ccb7703f8332c49e44">SetViewportXEdgeSensitivity</a> (float)</td></tr>
+<tr class="separator:af187909611a3c6ccb7703f8332c49e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc1580b4b1d1e0e4df551a6fb4e7357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#affc1580b4b1d1e0e4df551a6fb4e7357">SetViewportXEdgeStyle</a> ()</td></tr>
+<tr class="separator:affc1580b4b1d1e0e4df551a6fb4e7357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2ee845158b946513cfb814dae45365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a2e2ee845158b946513cfb814dae45365">SetViewportXEdgeThickness</a> (int)</td></tr>
+<tr class="separator:a2e2ee845158b946513cfb814dae45365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1273336ed5a7904aeb98431f22c682b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af1273336ed5a7904aeb98431f22c682b">SetViewSettings</a> (const <a class="el" href="class_c_rhino_app_view_settings.html">CRhinoAppViewSettings</a> &amp;settings)</td></tr>
 <tr class="separator:af1273336ed5a7904aeb98431f22c682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08203666869335ecd7679b900c4899e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a08203666869335ecd7679b900c4899e9">SetWidgetColorSettings</a> (const <a class="el" href="class_c_rhino_widget_color_settings.html">CRhinoWidgetColorSettings</a> &amp;settings)</td></tr>
@@ -403,13 +501,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af017965037beb439e3a565d5f0ba18ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af183bf3bd0bd59d4c57829b42db6d948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#af183bf3bd0bd59d4c57829b42db6d948">ShowEdgeColor</a> () const</td></tr>
 <tr class="separator:af183bf3bd0bd59d4c57829b42db6d948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e298f25e305e6b266eda6b02f758453"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a6e298f25e305e6b266eda6b02f758453">ShowHiddenLines</a> (void) const</td></tr>
+<tr class="separator:a6e298f25e305e6b266eda6b02f758453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc09b057b9105efa1bafb95661260ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#adc09b057b9105efa1bafb95661260ca3">ShowOsnapDialog</a> (bool=true)</td></tr>
 <tr class="memdesc:adc09b057b9105efa1bafb95661260ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show and Hide the Osnap dialog.  <a href="class_c_rhino_app_settings.html#adc09b057b9105efa1bafb95661260ca3">More...</a><br /></td></tr>
 <tr class="separator:adc09b057b9105efa1bafb95661260ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a2ca8329f3fc163bb607788eed3a5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ad0a2ca8329f3fc163bb607788eed3a5f">ShowSelectedObjectCorners</a> (void) const</td></tr>
+<tr class="separator:ad0a2ca8329f3fc163bb607788eed3a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a743863e583ff0f8f53f003a1340a52bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a743863e583ff0f8f53f003a1340a52bf">ShowStatusBar</a> (bool bShow=true)</td></tr>
 <tr class="separator:a743863e583ff0f8f53f003a1340a52bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18f26ed9f0bf052d4472a5b5d8387f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aa18f26ed9f0bf052d4472a5b5d8387f7">ShowViewportXEdges</a> (void) const</td></tr>
+<tr class="separator:aa18f26ed9f0bf052d4472a5b5d8387f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6375815de10a0cc15f99c4c5328ce106"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a6375815de10a0cc15f99c4c5328ce106">ShowZAxis</a> (void) const</td></tr>
 <tr class="separator:a6375815de10a0cc15f99c4c5328ce106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfafc2dae25229e3d9980105722ed9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7bfafc2dae25229e3d9980105722ed9b">SilhouetteHighlighting</a> (void) const</td></tr>
+<tr class="separator:a7bfafc2dae25229e3d9980105722ed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591a15a36f6984237cb0471bb8f4a992"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a591a15a36f6984237cb0471bb8f4a992">SilhouetteHighlightInnerColorScale</a> (void) const</td></tr>
+<tr class="separator:a591a15a36f6984237cb0471bb8f4a992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a1c1fdf48b937f7ab17d1b62b9c065"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a14a1c1fdf48b937f7ab17d1b62b9c065">SilhouetteHighlightInnerFactor</a> (void) const</td></tr>
+<tr class="separator:a14a1c1fdf48b937f7ab17d1b62b9c065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1330e7e9bf16f0473a62185a66398856"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1330e7e9bf16f0473a62185a66398856">SilhouetteHighlightOuterScale</a> (void) const</td></tr>
+<tr class="separator:a1330e7e9bf16f0473a62185a66398856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e1492dc1da87ea6b0ca9cbebe14f1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a79e1492dc1da87ea6b0ca9cbebe14f1a">SilhouetteMethod</a> (void) const</td></tr>
+<tr class="separator:a79e1492dc1da87ea6b0ca9cbebe14f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021d7355bb3cdf8cc06d46562e8f9891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a021d7355bb3cdf8cc06d46562e8f9891">SilhouetteThickness</a> (void) const</td></tr>
+<tr class="separator:a021d7355bb3cdf8cc06d46562e8f9891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adada9aa31cfb15eb58a51bfa90d6bdd7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_app_smart_track_settings.html">CRhinoAppSmartTrackSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#adada9aa31cfb15eb58a51bfa90d6bdd7">SmartTrackSettings</a> () const</td></tr>
 <tr class="separator:adada9aa31cfb15eb58a51bfa90d6bdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8790baa9d0b822bff04dd8bbfa16806a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a8790baa9d0b822bff04dd8bbfa16806a">SnappyGumball</a> () const</td></tr>
@@ -419,6 +535,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d909a7c7d4d453836bcfd329794fde4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a3d909a7c7d4d453836bcfd329794fde4">StatusBarIsVisisble</a> () const</td></tr>
 <tr class="memdesc:a3d909a7c7d4d453836bcfd329794fde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">status bar state  <a href="class_c_rhino_app_settings.html#a3d909a7c7d4d453836bcfd329794fde4">More...</a><br /></td></tr>
 <tr class="separator:a3d909a7c7d4d453836bcfd329794fde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c19481a1aab45071fd9f2fd93c918fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7c19481a1aab45071fd9f2fd93c918fe">StatusBarLayerPaneWidth</a> () const</td></tr>
+<tr class="separator:a7c19481a1aab45071fd9f2fd93c918fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b52707462c1279f0e6d2bf9e2fc9464"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a8b52707462c1279f0e6d2bf9e2fc9464">StickyAutoCPlane</a> () const</td></tr>
+<tr class="separator:a8b52707462c1279f0e6d2bf9e2fc9464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace46c0c2454d4ff2619b772ae7047aae"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_thickness_analysis_settings.html">CRhinoThicknessAnalysisSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ace46c0c2454d4ff2619b772ae7047aae">ThicknessAnalysisSettings</a> () const</td></tr>
 <tr class="separator:ace46c0c2454d4ff2619b772ae7047aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7abdf7d217bb9d7d14259e7693e489a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7abdf7d217bb9d7d14259e7693e489a1">TrackingColor</a> () const</td></tr>
@@ -432,6 +552,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92ec5b2f9c1607e14a91f095d008e4b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a92ec5b2f9c1607e14a91f095d008e4b8">ViewportBackgroundColor</a> () const</td></tr>
 <tr class="memdesc:a92ec5b2f9c1607e14a91f095d008e4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">viewport colors  <a href="class_c_rhino_app_settings.html#a92ec5b2f9c1607e14a91f095d008e4b8">More...</a><br /></td></tr>
 <tr class="separator:a92ec5b2f9c1607e14a91f095d008e4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70639b16a324a8bd579d646129f86949"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a70639b16a324a8bd579d646129f86949">ViewportXEdgeLength</a> (void) const</td></tr>
+<tr class="separator:a70639b16a324a8bd579d646129f86949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87238f294fe0e976108cfdb86476cd72"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a87238f294fe0e976108cfdb86476cd72">ViewportXEdgeSensitivity</a> (void) const</td></tr>
+<tr class="separator:a87238f294fe0e976108cfdb86476cd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dab9d05a140751e4040b395beb05114"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1dab9d05a140751e4040b395beb05114">ViewportXEdgeStyle</a> (int) const</td></tr>
+<tr class="separator:a1dab9d05a140751e4040b395beb05114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5e6cea5db925a647a0a071fb634220"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#acf5e6cea5db925a647a0a071fb634220">ViewportXEdgeThickness</a> (void) const</td></tr>
+<tr class="separator:acf5e6cea5db925a647a0a071fb634220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95b97a0a25d3159ca4ee92a7ca179ba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_app_view_settings.html">CRhinoAppViewSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#ad95b97a0a25d3159ca4ee92a7ca179ba">ViewSettings</a> () const</td></tr>
 <tr class="separator:ad95b97a0a25d3159ca4ee92a7ca179ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2276789e5bb6b1d83b4737b1d71c87d0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rhino_widget_color_settings.html">CRhinoWidgetColorSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a2276789e5bb6b1d83b4737b1d71c87d0">WidgetColorSettings</a> () const</td></tr>
@@ -609,6 +737,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a37563c3fc2ba5a6556f4dfb9a54a4bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37563c3fc2ba5a6556f4dfb9a54a4bb7">&#9670;&nbsp;</a></span>AutoAlignCPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::AutoAlignCPlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>END Gumball settings </p>
+
+</div>
+</div>
 <a id="a7d440cbe03bc29de389190e7573768aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d440cbe03bc29de389190e7573768aa">&#9670;&nbsp;</a></span>AutocompleteCommands()</h2>
 
@@ -625,6 +771,62 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If true, commands are in-line autocompleted and exact matches are shown in a popup menu. </p>
+
+</div>
+</div>
+<a id="a290b994cf9baef2f93ef1dce6c8c32c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290b994cf9baef2f93ef1dce6c8c32c7">&#9670;&nbsp;</a></span>AutoCPlaneAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::AutoCPlaneAlignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>0 = object, 1 = world, 2 = view </p>
+
+</div>
+</div>
+<a id="a0d3994b3952c811ab7cff310432ec842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3994b3952c811ab7cff310432ec842">&#9670;&nbsp;</a></span>AutoGumballAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::AutoGumballAlignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For the sake of not breaking the SDK, you will have to cast back and forward from int to <a class="el" href="class_c_rhino_view.html#a4717d57ffdd0063aaa4f2c5ef6256071">CRhinoView::drag_plane</a>. </p>
+
+</div>
+</div>
+<a id="a1824286f93ffdc179fa40e5eefb384ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1824286f93ffdc179fa40e5eefb384ea">&#9670;&nbsp;</a></span>AutoGumballExtrudeMergeFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::AutoGumballExtrudeMergeFaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When the gumball extrudes a face it will merge faces along the extrusion if possible </p>
 
 </div>
 </div>
@@ -696,6 +898,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000135">Deprecated:</a></b></dt><dd>Obsolete method, no longer used and does not reflect the actual command control state </dd></dl>
 
 </div>
 </div>
@@ -767,6 +970,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a4deb65666255ff23337df70d78eb8b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4deb65666255ff23337df70d78eb8b3b">&#9670;&nbsp;</a></span>DefaultAutocompleteCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::DefaultAutocompleteCommands </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3f0b9fab999c8a3d688869718423a0d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f0b9fab999c8a3d688869718423a0d8">&#9670;&nbsp;</a></span>DefaultFont()</h2>
 
@@ -796,6 +1016,23 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
           <td class="paramname"><em>font</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82cb75da1ea6a2b85a914c00e57f0ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cb75da1ea6a2b85a914c00e57f0ac6">&#9670;&nbsp;</a></span>DefaultFuzzyAutocomplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::DefaultFuzzyAutocomplete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -834,7 +1071,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_material_table.html#abf9714681368875c6d54fbd65f07727a" title="default material for unlocked objects.">CRhinoMaterialTable::DefaultMaterial</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000136">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_material_table.html#abf9714681368875c6d54fbd65f07727a" title="default material for unlocked objects.">CRhinoMaterialTable::DefaultMaterial</a> </dd></dl>
 
 </div>
 </div>
@@ -1207,7 +1444,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>END Gumball settings By default active osnap is indicated by thickening the wireframe of the osnapped object. Disable osnap highlight to remove the effect. </p>
+<p>By default active osnap is indicated by thickening the wireframe of the osnapped object. Disable osnap highlight to remove the effect. </p>
 
 </div>
 </div>
@@ -1545,6 +1782,96 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e6ab53eef2ea4f241b1c1093669ea47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6ab53eef2ea4f241b1c1093669ea47">&#9670;&nbsp;</a></span>HiddenLineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___color.html">ON_Color</a> CRhinoAppSettings::HiddenLineColor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba06dadcd30ac298442bc62c582c35c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba06dadcd30ac298442bc62c582c35c0">&#9670;&nbsp;</a></span>HiddenLineColorMixingFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::HiddenLineColorMixingFactor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5902d9e1d6b09a905a376303966f67a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5902d9e1d6b09a905a376303966f67a">&#9670;&nbsp;</a></span>HiddenLineEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::HiddenLineEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a450e15c3964841379631c6192f6f12bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450e15c3964841379631c6192f6f12bf">&#9670;&nbsp;</a></span>HiddenLineMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::HiddenLineMode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28d325d94a68985fcf391afb5f224191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d325d94a68985fcf391afb5f224191">&#9670;&nbsp;</a></span>HiddenLineThicknessScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::HiddenLineThicknessScale </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a429cdaf465923ba845262bbe0f754529"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a429cdaf465923ba845262bbe0f754529">&#9670;&nbsp;</a></span>ImportFileLayerMatchingOption()</h2>
 
@@ -1635,7 +1962,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>for RenderPreview </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_material_table.html#a330828ae018f6fca6b556ca83a9b5b60" title="default material for locked objects.">CRhinoMaterialTable::DefaultLockedMaterial</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000137">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_material_table.html#a330828ae018f6fca6b556ca83a9b5b60" title="default material for locked objects.">CRhinoMaterialTable::DefaultLockedMaterial</a> </dd></dl>
 
 </div>
 </div>
@@ -1653,6 +1980,44 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76acdf4b793f0575f595a3397dce5fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76acdf4b793f0575f595a3397dce5fa2">&#9670;&nbsp;</a></span>MouseOverHighlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::MouseOverHighlight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, objects are highlighted with mouse over. </p>
+
+</div>
+</div>
+<a id="a734f5efee4ff2f2fcaca8b3543cffe78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734f5efee4ff2f2fcaca8b3543cffe78">&#9670;&nbsp;</a></span>MouseOverHighlightSubObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::MouseOverHighlightSubObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, sub-objects are highlighted with mouse over. </p>
 
 </div>
 </div>
@@ -1745,6 +2110,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a13fe2bc12384b0d3283b6c9ddd3c7a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fe2bc12384b0d3283b6c9ddd3c7a1a">&#9670;&nbsp;</a></span>OrthoUseZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::OrthoUseZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a387994cc248c31ac311febf8397a9870"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a387994cc248c31ac311febf8397a9870">&#9670;&nbsp;</a></span>OsnapDialogVisible()</h2>
 
@@ -1815,7 +2197,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Persistant Osnaps. </p>
+<p>Persistent Osnaps. </p>
 
 </div>
 </div>
@@ -2036,6 +2418,60 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a1f1852361748f37b763348fed3b8923c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1852361748f37b763348fed3b8923c">&#9670;&nbsp;</a></span>SelectedObjectCornerColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___color.html">ON_Color</a> CRhinoAppSettings::SelectedObjectCornerColor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad870b16a211e7c64d7c7754b8818f502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad870b16a211e7c64d7c7754b8818f502">&#9670;&nbsp;</a></span>SelectedObjectCornerLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::SelectedObjectCornerLength </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05639bf06a3c302e82caa4502438cbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05639bf06a3c302e82caa4502438cbef">&#9670;&nbsp;</a></span>SelectedObjectCornerThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::SelectedObjectCornerThickness </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aba89ae7f36facd73f855abb987b2f1bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba89ae7f36facd73f855abb987b2f1bb">&#9670;&nbsp;</a></span>SelectionFilterSettings()</h2>
 
@@ -2107,6 +2543,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a51303bf933c35cfcb0d697448760c338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51303bf933c35cfcb0d697448760c338">&#9670;&nbsp;</a></span>SetAutoAlignCPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetAutoAlignCPlane </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAutoCPlane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0fffe595c6ae2fbca49085de2c6ee70a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fffe595c6ae2fbca49085de2c6ee70a">&#9670;&nbsp;</a></span>SetAutocompleteCommands()</h2>
 
@@ -2118,6 +2572,60 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a394f6cd7490ff79f54413aaba52e181c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394f6cd7490ff79f54413aaba52e181c">&#9670;&nbsp;</a></span>SetAutoCPlaneAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetAutoCPlaneAlignment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iAlignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71b442f5dbf9d7b68f977e896b21169f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b442f5dbf9d7b68f977e896b21169f">&#9670;&nbsp;</a></span>SetAutoGumballAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetAutoGumballAlignment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e1ff57f1bb86fe136c7b4559324b258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1ff57f1bb86fe136c7b4559324b258">&#9670;&nbsp;</a></span>SetAutoGumballExtrudeMergeFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetAutoGumballExtrudeMergeFaces </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bMerge</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2523,6 +3031,96 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a41decbee29b9c0bd08fd2d9814d9a422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41decbee29b9c0bd08fd2d9814d9a422">&#9670;&nbsp;</a></span>SetHiddenLineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetHiddenLineColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af10a384403bb275fb14e4ecda61789ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a384403bb275fb14e4ecda61789ad">&#9670;&nbsp;</a></span>SetHiddenLineColorMixingFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetHiddenLineColorMixingFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68d22a79cafd50674d92a18050deff2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d22a79cafd50674d92a18050deff2f">&#9670;&nbsp;</a></span>SetHiddenLineEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetHiddenLineEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af82661fc66d5f9b78904e682177dcce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82661fc66d5f9b78904e682177dcce1">&#9670;&nbsp;</a></span>SetHiddenLineMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetHiddenLineMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15ee739b9d4ce4a1801f32f07c69ae2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ee739b9d4ce4a1801f32f07c69ae2f">&#9670;&nbsp;</a></span>SetHiddenLineThicknessScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetHiddenLineThicknessScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a112acbec245a9389fab0daa4e5f1e6eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a112acbec245a9389fab0daa4e5f1e6eb">&#9670;&nbsp;</a></span>SetImportFileLayerMatchingOption()</h2>
 
@@ -2560,6 +3158,42 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ac863c612e3a705b9148993ff130baf5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac863c612e3a705b9148993ff130baf5b">&#9670;&nbsp;</a></span>SetMouseOverHighlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetMouseOverHighlight </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add48fd34897f82d7e84f56d6fae515e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add48fd34897f82d7e84f56d6fae515e6">&#9670;&nbsp;</a></span>SetMouseOverHighlightSubObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetMouseOverHighlightSubObjects </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9d29f72641f330c1d730393260dbb448"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d29f72641f330c1d730393260dbb448">&#9670;&nbsp;</a></span>SetMouseSettings()</h2>
 
@@ -2589,6 +3223,24 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_rhino_open_g_l_settings.html">CRhinoOpenGLSettings</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af05a0b22f7b686e6cfe7dafb12106f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05a0b22f7b686e6cfe7dafb12106f35">&#9670;&nbsp;</a></span>SetOrthoUseZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetOrthoUseZ </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUse</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2678,6 +3330,60 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aac26ed7b68a178dd9a1af5cae4c52763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac26ed7b68a178dd9a1af5cae4c52763">&#9670;&nbsp;</a></span>SetSelectedObjectCornerColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSelectedObjectCornerColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae8287101f310d4dd4ca1e7007176086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8287101f310d4dd4ca1e7007176086">&#9670;&nbsp;</a></span>SetSelectedObjectCornerLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSelectedObjectCornerLength </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36278040a91375f8731a083ab3a9c271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36278040a91375f8731a083ab3a9c271">&#9670;&nbsp;</a></span>SetSelectedObjectCornerThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSelectedObjectCornerThickness </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a304ae8c96c0995f8b505b04bfa919205"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a304ae8c96c0995f8b505b04bfa919205">&#9670;&nbsp;</a></span>SetSelectionFilterSettings()</h2>
 
@@ -2725,6 +3431,166 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bShowAutoGumball</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a719e700f7c5ac804422b3d8e77839d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719e700f7c5ac804422b3d8e77839d94">&#9670;&nbsp;</a></span>SetShowHiddenLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetShowHiddenLines </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22c06ef435aba58cbd7d242678a1d1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c06ef435aba58cbd7d242678a1d1ef">&#9670;&nbsp;</a></span>SetShowSelectedObjectCorners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetShowSelectedObjectCorners </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93ca69b85f5a2a8b7bd1266aeb75ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93ca69b85f5a2a8b7bd1266aeb75ace">&#9670;&nbsp;</a></span>SetShowViewportXEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetShowViewportXEdges </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe5df3964ce97f5ca129fb8231115116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5df3964ce97f5ca129fb8231115116">&#9670;&nbsp;</a></span>SetSilhouetteHighlighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteHighlighting </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a453b6be3403bbb164a2a9f5e8c1dcf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453b6be3403bbb164a2a9f5e8c1dcf34">&#9670;&nbsp;</a></span>SetSilhouetteHighlightInnerColorScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteHighlightInnerColorScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa85ce9022b1e2fe55edcfd541d077c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85ce9022b1e2fe55edcfd541d077c65">&#9670;&nbsp;</a></span>SetSilhouetteHighlightInnerFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteHighlightInnerFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2453f03c4b3572190d77459ca5726ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2453f03c4b3572190d77459ca5726ea">&#9670;&nbsp;</a></span>SetSilhouetteHighlightOuterScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteHighlightOuterScale </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb983ae6512904f886d452d300f70354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb983ae6512904f886d452d300f70354">&#9670;&nbsp;</a></span>SetSilhouetteMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteMethod </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b2f7571ee8da32bf7a3f29f696734cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2f7571ee8da32bf7a3f29f696734cd">&#9670;&nbsp;</a></span>SetSilhouetteThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetSilhouetteThickness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2786,6 +3652,42 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a0e4bb9dbab42cc873173a2f56e99aec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4bb9dbab42cc873173a2f56e99aec6">&#9670;&nbsp;</a></span>SetStatusBarLayerPaneWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetStatusBarLayerPaneWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80d4e2e6313c383f630ae1c0218b77ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d4e2e6313c383f630ae1c0218b77ba">&#9670;&nbsp;</a></span>SetStickyAutoCPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetStickyAutoCPlane </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSticky</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abb2018e1af785b79dff4d485b01b649c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb2018e1af785b79dff4d485b01b649c">&#9670;&nbsp;</a></span>SetThicknessAnalysisSettings()</h2>
 
@@ -2815,6 +3717,77 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_rhino_ui_paint_color_settings.html">CRhinoUiPaintColorSettings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a271e31ed7d29d7426aafa9bf7548b36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271e31ed7d29d7426aafa9bf7548b36e">&#9670;&nbsp;</a></span>SetViewportXEdgeLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetViewportXEdgeLength </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af187909611a3c6ccb7703f8332c49e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af187909611a3c6ccb7703f8332c49e44">&#9670;&nbsp;</a></span>SetViewportXEdgeSensitivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetViewportXEdgeSensitivity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affc1580b4b1d1e0e4df551a6fb4e7357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc1580b4b1d1e0e4df551a6fb4e7357">&#9670;&nbsp;</a></span>SetViewportXEdgeStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetViewportXEdgeStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e2ee845158b946513cfb814dae45365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2ee845158b946513cfb814dae45365">&#9670;&nbsp;</a></span>SetViewportXEdgeThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetViewportXEdgeThickness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2928,6 +3901,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e298f25e305e6b266eda6b02f758453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e298f25e305e6b266eda6b02f758453">&#9670;&nbsp;</a></span>ShowHiddenLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::ShowHiddenLines </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adc09b057b9105efa1bafb95661260ca3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc09b057b9105efa1bafb95661260ca3">&#9670;&nbsp;</a></span>ShowOsnapDialog()</h2>
 
@@ -2945,6 +3936,24 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Show and Hide the Osnap dialog. </p>
+
+</div>
+</div>
+<a id="ad0a2ca8329f3fc163bb607788eed3a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a2ca8329f3fc163bb607788eed3a5f">&#9670;&nbsp;</a></span>ShowSelectedObjectCorners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::ShowSelectedObjectCorners </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2966,6 +3975,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa18f26ed9f0bf052d4472a5b5d8387f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18f26ed9f0bf052d4472a5b5d8387f7">&#9670;&nbsp;</a></span>ShowViewportXEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::ShowViewportXEdges </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6375815de10a0cc15f99c4c5328ce106"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6375815de10a0cc15f99c4c5328ce106">&#9670;&nbsp;</a></span>ShowZAxis()</h2>
 
@@ -2974,6 +4001,114 @@ Friends</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool CRhinoAppSettings::ShowZAxis </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bfafc2dae25229e3d9980105722ed9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfafc2dae25229e3d9980105722ed9b">&#9670;&nbsp;</a></span>SilhouetteHighlighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::SilhouetteHighlighting </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a591a15a36f6984237cb0471bb8f4a992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591a15a36f6984237cb0471bb8f4a992">&#9670;&nbsp;</a></span>SilhouetteHighlightInnerColorScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::SilhouetteHighlightInnerColorScale </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14a1c1fdf48b937f7ab17d1b62b9c065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a1c1fdf48b937f7ab17d1b62b9c065">&#9670;&nbsp;</a></span>SilhouetteHighlightInnerFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::SilhouetteHighlightInnerFactor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1330e7e9bf16f0473a62185a66398856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1330e7e9bf16f0473a62185a66398856">&#9670;&nbsp;</a></span>SilhouetteHighlightOuterScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::SilhouetteHighlightOuterScale </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79e1492dc1da87ea6b0ca9cbebe14f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e1492dc1da87ea6b0ca9cbebe14f1a">&#9670;&nbsp;</a></span>SilhouetteMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::SilhouetteMethod </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a021d7355bb3cdf8cc06d46562e8f9891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021d7355bb3cdf8cc06d46562e8f9891">&#9670;&nbsp;</a></span>SilhouetteThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::SilhouetteThickness </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -3052,6 +4187,41 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>status bar state </p>
+
+</div>
+</div>
+<a id="a7c19481a1aab45071fd9f2fd93c918fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c19481a1aab45071fd9f2fd93c918fe">&#9670;&nbsp;</a></span>StatusBarLayerPaneWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::StatusBarLayerPaneWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Relative width of the status bar layer pane. The default has been 2 in the past, and will be changed to 3 from V8 onwards </p>
+
+</div>
+</div>
+<a id="a8b52707462c1279f0e6d2bf9e2fc9464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b52707462c1279f0e6d2bf9e2fc9464">&#9670;&nbsp;</a></span>StickyAutoCPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::StickyAutoCPlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3157,6 +4327,78 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>viewport colors </p>
+
+</div>
+</div>
+<a id="a70639b16a324a8bd579d646129f86949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70639b16a324a8bd579d646129f86949">&#9670;&nbsp;</a></span>ViewportXEdgeLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::ViewportXEdgeLength </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87238f294fe0e976108cfdb86476cd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87238f294fe0e976108cfdb86476cd72">&#9670;&nbsp;</a></span>ViewportXEdgeSensitivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CRhinoAppSettings::ViewportXEdgeSensitivity </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dab9d05a140751e4040b395beb05114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dab9d05a140751e4040b395beb05114">&#9670;&nbsp;</a></span>ViewportXEdgeStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::ViewportXEdgeStyle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf5e6cea5db925a647a0a071fb634220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5e6cea5db925a647a0a071fb634220">&#9670;&nbsp;</a></span>ViewportXEdgeThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoAppSettings::ViewportXEdgeThickness </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3346,7 +4588,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

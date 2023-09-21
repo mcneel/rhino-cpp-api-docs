@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2ce557b92f31a1d41e5952507647b6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a34876eb8ceaece9989b3c92acc6a88"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#a0a34876eb8ceaece9989b3c92acc6a88">EnsureDefaultContent</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDoc=<a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e">RhinoApp</a>().ObsoleteActiveDoc()) const</td></tr>
 <tr class="separator:a0a34876eb8ceaece9989b3c92acc6a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5108d8315ad1fa700fa41eb6e457bf"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#aed5108d8315ad1fa700fa41eb6e457bf">EVF</a> (const wchar_t *wszFunc, void *pvData) override</td></tr>
+<tr class="separator:aed5108d8315ad1fa700fa41eb6e457bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae491f52e2f9c5cf67538b1af167ce8d7"><td class="memItemLeft" align="right" valign="top">virtual UUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#ae491f52e2f9c5cf67538b1af167ce8d7">GetLicenseCode</a> (const UUID &amp;uuidRequestCode) const</td></tr>
 <tr class="separator:ae491f52e2f9c5cf67538b1af167ce8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79f849ecb90100eba8ad5cecb5eb64b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rh_rdk_variant.html">CRhRdkVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#ae79f849ecb90100eba8ad5cecb5eb64b">GetParameter</a> (const wchar_t *wszName) const</td></tr>
@@ -166,8 +168,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7967248057e374274b30bfab561d5653 inherit pub_methods_class_c_rh_rdk_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f1b730b009169fdc64ac8cc3709757a inherit pub_methods_class_c_rh_rdk_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a9f1b730b009169fdc64ac8cc3709757a">~CRhRdkObject</a> ()</td></tr>
 <tr class="separator:a9f1b730b009169fdc64ac8cc3709757a inherit pub_methods_class_c_rh_rdk_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e1af2c8bb545b6cf4328c47fc1dfd3 inherit pub_methods_class_c_rh_rdk_object"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a74e1af2c8bb545b6cf4328c47fc1dfd3">EVF</a> (const wchar_t *wszFunc, void *pvData)</td></tr>
-<tr class="separator:a74e1af2c8bb545b6cf4328c47fc1dfd3 inherit pub_methods_class_c_rh_rdk_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef4b9a03407fe41175803b3cf82091e7 inherit pub_methods_class_c_rh_rdk_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#aef4b9a03407fe41175803b3cf82091e7">operator delete</a> (void *buf)</td></tr>
 <tr class="separator:aef4b9a03407fe41175803b3cf82091e7 inherit pub_methods_class_c_rh_rdk_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797f175195b6f1737cd7a4958c0513de inherit pub_methods_class_c_rh_rdk_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a797f175195b6f1737cd7a4958c0513de">operator delete[]</a> (void *buf)</td></tr>
@@ -537,7 +537,48 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#a760d1513e9fbb81bd864de010cd9fed4">CRhRdkRenderPlugIn</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#ab9dd351aca5f72a727264d71101ffcac">CRhRdkRenderPlugIn</a>.</p>
+
+</div>
+</div>
+<a id="aed5108d8315ad1fa700fa41eb6e457bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5108d8315ad1fa700fa41eb6e457bf">&#9670;&nbsp;</a></span>EVF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* CRhRdkPlugIn::EVF </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>wszFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pvData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Emergency virtual function for future expansion. </p>
+
+<p>Reimplemented from <a class="el" href="class_c_rh_rdk_object.html#a74e1af2c8bb545b6cf4328c47fc1dfd3">CRhRdkObject</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#a2ae39139e262c504e9e69fe1ddcedc0c">CRhRdkRenderPlugIn</a>.</p>
 
 </div>
 </div>
@@ -647,7 +688,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Initializes the plug-in. Override this method to perform additional initialization. <b>please be sure</b> to call the base class. </p><dl class="section return"><dt>Returns</dt><dd><em>true</em> if the plug-in initialized correctly, <em>false</em> if not - this will usually happen if the RDK the plug-in was built against is older than the RDK that is running and there have been breaking SDK changes in between. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#afa725611cfb80e530e4b37002d1ae507">CRhRdkRenderPlugIn</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#a7cf110605d64a1ba6c819d074a60d6df">CRhRdkRenderPlugIn</a>.</p>
 
 </div>
 </div>
@@ -852,7 +893,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>plug-in type. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#ac17ca5ee621f737db6bee04eaec78e5e">CRhRdkRenderPlugIn</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_render_plug_in.html#ace58b6e65748c1223e9c82cd9a0a6b91">CRhRdkRenderPlugIn</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1312,7 @@ Protected Member Functions</h2></td></tr>
 <div class="ttc" id="aclass_c_rh_rdk_plug_in_html_abf78404dd489071c65c7d49df2b3c4d9"><div class="ttname"><a href="class_c_rh_rdk_plug_in.html#abf78404dd489071c65c7d49df2b3c4d9">CRhRdkPlugIn::QueryFocusMessageNumber</a></div><div class="ttdeci">static UINT QueryFocusMessageNumber(void)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

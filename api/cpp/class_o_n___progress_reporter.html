@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -94,9 +94,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2085229a43ee82b28179423b87d2a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section rcs"><dt>NoKeywords</dt><dd></dd></dl>
-<p>/ / Copyright (c) 1993-2013 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Calculation use <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> to report progress to the calling code. </p>
+<div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. Calculation use <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> to report progress to the calling code. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8f262c3526a41ec2be515435b9e4cbec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f262c3526a41ec2be515435b9e4cbec">&#9670;&nbsp;</a></span>ON_ProgressReporter()</h2>
@@ -156,7 +156,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: The calculation may call <a class="el" href="class_o_n___progress_reporter.html#a6020b6202bcd94a27ed458a7404ab81e">ON_ProgressReporter::FractionComplete</a> to get the current fraction completed. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. Returns: ON_UNSET_VALUE is returned when progress_reporter is nullptr. Otherwise, a value between 0.0 and 1.0 is returned where 0.0 indicates the calcuation is beginning and 1.0 indicates the calculation is complete. </p>
+<p>Description: The calculation may call <a class="el" href="class_o_n___progress_reporter.html#a6020b6202bcd94a27ed458a7404ab81e">ON_ProgressReporter::FractionComplete</a> to get the current fraction completed. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. Returns: ON_UNSET_VALUE is returned when progress_reporter is nullptr. Otherwise, a value between 0.0 and 1.0 is returned where 0.0 indicates the calculation is beginning and 1.0 indicates the calculation is complete. </p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: The caclulation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calcuation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
+<p>Description: The calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calculation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
  void MyLongCalculation( ..., ON_ProgressReporter* pr, ...) { ... for ( i = 0; i &lt; count; i++ ) { <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a>(pr,i/((double)count)); <br  />
  ... } <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a>(pr,1.0); ///&lt; finished ... } </p>
 
@@ -238,7 +238,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: The caclulation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calcuation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
+<p>Description: The calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calculation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
  void MyLongCalculation( ..., ON_ProgressReporter* pr, ...) { ... for ( i = 0; i &lt; count; i++ ) { ON_ProgressReporter::ReportProgress(pr,i,count); <br  />
  ... } <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a>(pr,1.0); ///&lt; finished ... } </p>
 
@@ -283,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: The caclulation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calcuation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
+<p>Description: The calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a> to report its current progress. If it is the first call to ReportProgress, or the faction_complete is 1.0, or the fraction_complete has increased a reasonable amount, then the callback function is called. Parameters: progress_reporter - [in] A pointer to an <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> or null pointer. fraction_complete - [in] a value between 0.0 and 1.0 where 0.0 indicates the calculation is beginning and 1.0 indicates the calculation is complete. Example: <br  />
  void MyLongCalculation( ..., ON_ProgressReporter* pr, ...) { ... for ( i = 0; i &lt; count; i++ ) { ON_ProgressReporter::ReportProgress(pr,i,count); <br  />
  ... } <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ON_ProgressReporter::ReportProgress</a>(pr,1.0); ///&lt; finished ... } </p>
 
@@ -315,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Set the function that is called when a calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ReportProgress()</a>. Parameters: callback_function - [in] This function is called when the calculation reports progress. The calculation thread calls in this callback function. The callback function should do something that is fast and simple, like post a message to a user interface control and return immediately. <br  />
- Paramters passed to the callback function: context - [in] the value of callback_context. fraction_complete - [in] A value between 0.0 and 1.0 indicating how much of the calculation is compete. Example: </p><pre class="fragment">        struct MyWindowsMessage
+ Parameters passed to the callback function: context - [in] the value of callback_context. fraction_complete - [in] A value between 0.0 and 1.0 indicating how much of the calculation is compete. Example: </p><pre class="fragment">        struct MyWindowsMessage
         {
           HWND m_hWnd;
           UINT m_Msg,
@@ -347,7 +347,7 @@ Static Public Member Functions</h2></td></tr>
         ON_ProgressReporter pr;
         pr.SetSynchronousProgressCallbackFunction(MyProgressCallback,&amp;my_msg);
         ...
-        Pass &amp;pr to a calculation function.  The calcuation will generally be running
+        Pass &amp;pr to a calculation function.  The calculation will generally be running
         in a different thread or allowing Windows messages to be pumped.
 </pre> 
 </div>
@@ -355,7 +355,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

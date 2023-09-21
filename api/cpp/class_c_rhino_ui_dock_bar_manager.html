@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -97,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a86209ce1f2935f1df63945b683e6a319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af949ce95b6a26da127cb7b811440003c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_dock_bar_manager.html#af949ce95b6a26da127cb7b811440003c">~CRhinoUiDockBarManager</a> (void)</td></tr>
 <tr class="separator:af949ce95b6a26da127cb7b811440003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85380dbf2a3884937e6e25e6a83beda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_dock_bar_manager.html#ab85380dbf2a3884937e6e25e6a83beda">CallOnActivateApp</a> (BOOL bActive, DWORD dwThreadID)</td></tr>
-<tr class="separator:ab85380dbf2a3884937e6e25e6a83beda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12aca83eb296532144c5da4fb2ad88d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a12aca83eb296532144c5da4fb2ad88d8">CallOnActivateApp</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bActive, DWORD dwThreadID)</td></tr>
+<tr class="separator:a12aca83eb296532144c5da4fb2ad88d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7e8ea91aaddc86b3067c17233ffc8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_dock_bar_manager.html#aae7e8ea91aaddc86b3067c17233ffc8e">CReateDefaultDockBars</a> ()</td></tr>
 <tr class="separator:aae7e8ea91aaddc86b3067c17233ffc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af147c98c1a89d1c26f46ab38ce09a7c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_ui_dock_bar.html">CRhinoUiDockBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_dock_bar_manager.html#af147c98c1a89d1c26f46ab38ce09a7c1">CreateDockBarObject</a> (CRuntimeClass *pRC, UUID plug_in_id) const</td></tr>
@@ -257,8 +257,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab85380dbf2a3884937e6e25e6a83beda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab85380dbf2a3884937e6e25e6a83beda">&#9670;&nbsp;</a></span>CallOnActivateApp()</h2>
+<a id="a12aca83eb296532144c5da4fb2ad88d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12aca83eb296532144c5da4fb2ad88d8">&#9670;&nbsp;</a></span>CallOnActivateApp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +266,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void CRhinoUiDockBarManager::CallOnActivateApp </td>
           <td>(</td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bActive</em>, </td>
         </tr>
         <tr>
@@ -300,7 +300,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Called one time durring initialization when it is time to create default dock and tool bars.</p>
+<p>Description: Called one time during initialization when it is time to create default dock and tool bars.</p>
 <p>Returns: Returns true if dock/tool bars were created successfully otherwise; false </p>
 
 </div>
@@ -330,7 +330,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create pointer to derived <a class="el" href="class_c_rhino_ui_dock_bar.html">CRhinoUiDockBar</a> class assuring that it belongs to the correct module state so it can safely interact with the Rhino main frame window. Your derived class defintion must include the DECLARE_SERIAL macro and the implimentation file must include DECLARE_SERIAL.</p>
+<p>Description: Create pointer to derived <a class="el" href="class_c_rhino_ui_dock_bar.html">CRhinoUiDockBar</a> class assuring that it belongs to the correct module state so it can safely interact with the Rhino main frame window. Your derived class definition must include the DECLARE_SERIAL macro and the implementation file must include DECLARE_SERIAL.</p>
 <p>For example: MyDockBar.h file class CMyDockBar : public <a class="el" href="class_c_rhino_ui_dock_bar.html">CRhinoUiDockBar</a> { DECLARE_SERIAL( CMyDockBar) public: CMyDockBar(void); ~CMyDockBar(void); UUID DockBarID() const; const wchar_t* DockBarName( int language_id); bool CreateDockBarControls(); };</p>
 <p>MyDockBar.cpp file IMPLEMENT_DYNCREATE( CMyDockBar, CRhinoUiDockBar);</p>
 <p>CMyDockBar::CMyDockBar(void) { }</p>
@@ -339,7 +339,7 @@ Friends</h2></td></tr>
 <p>const wchar_t* CMyDockBar::DockBarName( int language_id) { return L"My Custom Dock Bar"; }</p>
 <p>bool CMyDockBar::CreateDockBarControls() { ///&lt; create child windows here return true; }</p>
 <p>Parameters: pRC [in] Pointer to a CRuntimeClass object which describes the class to be created.</p>
-<p>Returns: Pointer to dock bar if succesfully allocated.</p>
+<p>Returns: Pointer to dock bar if successfully allocated.</p>
 <p>Note: Do NOT call delete on pointer returned by this method. The dock bar manager will take care of that when appropriate.</p>
 <p>See Also: CRhinoUiDockBar::CreateRhinoDockBar() <a class="el" href="class_c_rhino_ui_dock_bar.html#a6370430439e1a673f06bae6062f27312">CRhinoUiDockBar::CreateDockBarControls()</a>; CRuntimeClass DECLARE_SERIAL IMPLEMENT_DYNCREATE </p>
 
@@ -540,7 +540,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The <a class="el" href="class_c_rhino_ui_dock_bar_manager.html">CRhinoUiDockBarManager</a> calls this method to determine if it should hide floating, visible CRhinoUiDockBars and floating Rhino views when the application is deactivated. This should only be called by CWinApp::SaveAllModified() prior to hiding the application and saving values when shutting down.</p>
-<p>Parameters: b [in] If true then dock bars and views will not be hidden oterwise they will. </p>
+<p>Parameters: b [in] If true then dock bars and views will not be hidden otherwise they will. </p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Call this method to cause a dock bar to be docked to the main frame window. DO NOT call <a class="el" href="group___rhino_u_i.html#gab6ecfa54802d3932e7b41ec509168289">RhinoUiMainFrame()</a>.DockControlBar(), use this method instead.</p>
 <p>Parameters: uuid [in] ID for dock bar to dock. dock_location [in] Determines which sides of the frame window to consider for docking. It can be 0, or one or more of the following: AFX_IDW_DOCKBAR_TOP Dock to the top side of the frame window. AFX_IDW_DOCKBAR_BOTTOM Dock to the bottom side of the frame window. AFX_IDW_DOCKBAR_LEFT Dock to the left side of the frame window. AFX_IDW_DOCKBAR_RIGHT Dock to the right side of the frame window. If 0, the dock bar can be docked to any side enabled for docking in the destination frame window. lpRect [in] Determines, in screen coordinates, where the dock bar will be docked in the nonclient area of the destination frame window.</p>
-<p>See Also: <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#aad60a12302074d29ba36e82820adf18e">CRhinoUiDockBarManager::FindDockBar()</a> MSDN help for CFrameWnd::DockControlBar() </p>
+<p>See Also: /// <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#aad60a12302074d29ba36e82820adf18e">CRhinoUiDockBarManager::FindDockBar()</a> MSDN help for CFrameWnd::DockControlBar() </p>
 
 </div>
 </div>
@@ -989,7 +989,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to determine if a dock bar is currently visible.</p>
-<p>Parameters: dock_bar [in] Dock bar to check visiblity state.</p>
+<p>Parameters: dock_bar [in] Dock bar to check visibility state.</p>
 <p>Returns: Returns true if dock bar is currently visible or false if it is not. </p>
 
 </div>
@@ -1010,7 +1010,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to determine if a dock bar is currently visible.</p>
-<p>Parameters: index [in] Index of dock bar to check visiblity state.</p>
+<p>Parameters: index [in] Index of dock bar to check visibility state.</p>
 <p>Returns: Returns true if dock bar is currently visible or false if it is not. </p>
 
 </div>
@@ -1031,7 +1031,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Call this method to determine if a dock bar is currently visible.</p>
-<p>Parameters: uuid [in] ID for dock bar to check visiblity state.</p>
+<p>Parameters: uuid [in] ID for dock bar to check visibility state.</p>
 <p>Returns: Returns true if dock bar is currently visible or false if it is not. </p>
 
 </div>
@@ -1050,7 +1050,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This should only be called one time from CMyWinApp::InitInstance() right after loading the main frame. It will load the MRU tool bar collection list and restore dock and tool bar position and state. </p>
+<p>Description: /// This should only be called one time from CMyWinApp::InitInstance() right after loading the main frame. It will load the MRU tool bar collection list and restore dock and tool bar position and state. </p>
 
 </div>
 </div>
@@ -1110,7 +1110,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This should only be called one time from CMyWinApp::OnSaveAllModified. It will save current dock and tool bar postions and states.</p>
+<p>Description: This should only be called one time from CMyWinApp::OnSaveAllModified. It will save current dock and tool bar positions and states.</p>
 <p>Returns: Return true if it is safe to continue closing application; otherwise false. </p>
 
 </div>
@@ -1338,7 +1338,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Use this to set <a class="el" href="class_c_rhino_ui_dock_bar.html#a810053b822ec860230ac3f517b0c3a14">CRhinoUiDockBar::m_sort_index</a> so that the values of m_sort_index run from 0 to <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a8c83a5a52e87f920cc4f928cf0acf5da">DockBarCount()</a>-1 and compare(control_bar_list[i], control_bar_list[j]) &lt; 0) implies control_bar_list[i].m_sort_index &lt; control_bar_list[j].m_sort_index.</p>
-<p>Parameters: compar - [in] compare function with prototype int compare(const CRhinoUiDockBar* arg1, const CRhinoUiDockBar* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL cull(const CRhinoUiDockBar* arg,void* p). that returns TRUE if the dock bar should be ignored when sorting. Dock bars that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a13b042f21a4ad3622a7796d274f0388e">GetSortedList()</a>. Pass 0 if you do not need to cull the dock bar list. p - [in] pointer passed as last argument to compare() and cull().</p>
+<p>Parameters: compar - [in] compare function with prototype int compare(const CRhinoUiDockBar* arg1, const CRhinoUiDockBar* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL32 cull(const CRhinoUiDockBar* arg,void* p). that returns TRUE if the dock bar should be ignored when sorting. Dock bars that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a13b042f21a4ad3622a7796d274f0388e">GetSortedList()</a>. Pass 0 if you do not need to cull the dock bar list. p - [in] pointer passed as last argument to compare() and cull().</p>
 <p>Remarks: After calling <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#ad3ce4b93094679d89f4f0d2c2dc2fa9b">Sort()</a>, you can repeatedly call <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a13b042f21a4ad3622a7796d274f0388e">GetSortedList()</a> to get a sorted list of <a class="el" href="class_c_rhino_ui_dock_bar.html">CRhinoUiDockBar</a> pointers. <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#ad3ce4b93094679d89f4f0d2c2dc2fa9b">Sort()</a> and <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a13b042f21a4ad3622a7796d274f0388e">GetSortedList()</a> do not modify the order or persistent information in the dock bar manager. They are intended to be used to get sorted lists of dock bars for dialogs, etc.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_dock_bar_manager.html#a13b042f21a4ad3622a7796d274f0388e">CRhinoUiDockBarManager::GetSortedList</a> </p>
 
@@ -1419,9 +1419,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destory and delete a control bar at runtime.</p>
+<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destroy and delete a control bar at runtime.</p>
 <p>Parameters: dock_bar [in] Dock bar to unhook, destroy and delete</p>
-<p>Returns: Returns true if successfull otherwise returns false. </p>
+<p>Returns: Returns true if successful otherwise returns false. </p>
 
 </div>
 </div>
@@ -1440,9 +1440,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destory and delete a control bar at runtime.</p>
+<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destroy and delete a control bar at runtime.</p>
 <p>Parameters: dock_bar_index [in] Index of dock bar to unhook, destroy and delete</p>
-<p>Returns: Returns true if successfull otherwise returns false. </p>
+<p>Returns: Returns true if successful otherwise returns false. </p>
 
 </div>
 </div>
@@ -1461,9 +1461,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destory and delete a control bar at runtime.</p>
+<p>Description: FOR EXPERT USERS ONLY! Call this method if you want to unhook, destroy and delete a control bar at runtime.</p>
 <p>Parameters: dock_bar_id [in] ID of dock bar to unhook, destroy and delete</p>
-<p>Returns: Returns true if successfull otherwise returns false. </p>
+<p>Returns: Returns true if successful otherwise returns false. </p>
 
 </div>
 </div>
@@ -1759,7 +1759,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

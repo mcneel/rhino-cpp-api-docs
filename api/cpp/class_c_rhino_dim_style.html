@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -92,10 +92,10 @@ Inheritance diagram for CRhinoDimStyle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a259b71b1d719c6840ccbe3ab2d6f46ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_c_rhino_dim_style.html#a259b71b1d719c6840ccbe3ab2d6f46eca7db1f62f85f702a1c3f0adc7febb4723">min_precision</a> = 0, 
-<a class="el" href="class_c_rhino_dim_style.html#a259b71b1d719c6840ccbe3ab2d6f46eca3922e43097a1c774fe8dcb5caf90f819">max_precision</a> = 7
+<tr class="memitem:a0af613325b9f6b6b68308361c9d427a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_c_rhino_dim_style.html#a0af613325b9f6b6b68308361c9d427a1a7db1f62f85f702a1c3f0adc7febb4723">min_precision</a> = 0, 
+<a class="el" href="class_c_rhino_dim_style.html#a0af613325b9f6b6b68308361c9d427a1a3922e43097a1c774fe8dcb5caf90f819">max_precision</a> = 7
  }</td></tr>
-<tr class="separator:a259b71b1d719c6840ccbe3ab2d6f46ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0af613325b9f6b6b68308361c9d427a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_o_n___dim_style"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_o_n___dim_style')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a></td></tr>
 <tr class="memitem:a3b507e24420df648b492116bbe8797e5 inherit pub_types_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___dim_style.html#a3b507e24420df648b492116bbe8797e5a1b8056edd03a0afc20f422c3f0c6a535">FieldCount</a> = (unsigned int)field::Count
  }</td></tr>
@@ -368,21 +368,29 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = 0, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacabe53a0541a6d36f6ecb879fa2c584b08">Type::Image</a> = 1, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca1270ec6930150b50ca550c0dc799d263">Type::TextureMapping</a> = 2, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad68f567316316750d31138a1185b4fb9">Type::RenderMaterial</a> = 3, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad92a8333dd3ccb895cc65f7455b71206">Type::Material</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae32935f96aedbf5444a07da4cfbdd652">Type::LinePattern</a> = 4, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad68f567316316750d31138a1185b4fb9">Type::RenderMaterial</a> = Material, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae32935f96aedbf5444a07da4cfbdd652">Type::LinePattern</a> = 4, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca359b71e88f40029251366609358a302f">Type::Layer</a> = 5, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca03937134cedab9078be39a77ee3a48a0">Type::Group</a> = 6, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca87a09f640dea2e6843778ea1b89124f5">Type::TextStyle</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac8ee421ce9c339f0c25e244d00142bbc">Type::DimStyle</a> = 8, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca87a09f640dea2e6843778ea1b89124f5">Type::TextStyle</a> = 7, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacac8ee421ce9c339f0c25e244d00142bbc">Type::DimStyle</a> = 8, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacadf3900765f8bb524dc2911688c9f835e">Type::RenderLight</a> = 9, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacad18ef15cd6a274f4c950145b8478bb41">Type::HatchPattern</a> = 10, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca21e9d09dda17806ecff11df2a530328e">Type::InstanceDefinition</a> = 11, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacafe7d6ee189ff8d2aaf2267423fdbc05a">Type::ModelGeometry</a> = 12, 
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca21e9d09dda17806ecff11df2a530328e">Type::InstanceDefinition</a> = 11, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacafe7d6ee189ff8d2aaf2267423fdbc05a">Type::ModelGeometry</a> = 12, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaf53acc9e6d0618a0e0d4db806de77642">Type::HistoryRecord</a> = 13, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca8906de12ec3c7bb2749a3801fbbfd190">Type::RenderContent</a> = 14, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba">Type::EmbeddedFile</a> = 15, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567">Type::ObsoleteValue</a> = 16, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7">Type::SectionStyle</a> = 17, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
 <br />
  }</td></tr>
 <tr class="memdesc:a2977d69091b4952cc19b0189a28a0eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> enum has a value for each explicit component type and two special values, Unset and Mixed. Use an <a class="el" href="class_o_n___model_component_type_iterator.html">ON_ModelComponentTypeIterator</a> instance to iterate over the <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> values. /summary&gt;  <a href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">More...</a><br /></td></tr>
@@ -454,7 +462,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a88788f2959e9bd5d3096bb523f7208d5 inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters: model_sn - 0, a model serial number, or ON_UNSET_UINT_INDEX to use the dimstyle's <a class="el" href="class_o_n___model_component.html#ad6e40301734fa20489f53b27e1b4f0f5">ModelSerialNumber()</a> value. Returns Unit system for dimension length display. If <a class="el" href="class_o_n___dim_style.html#ad180a7ff14931b99e74f289316d699aa" title="Dimension length units and format /summary&gt;">DimensionLengthDisplay()</a> == <a class="el" href="class_o_n___dim_style.html#af27da5e20982ca9c8efeb3a4fab055c4a180af8e2789e85a8d58b352031e9a839" title="Decimal current model units">ON_DimStyle::LengthDisplay::ModelUnits</a> and model_sn &gt; 0, then the value of ON::LengthUnitSystemFromModelSerialNumber(model_sn) is returned. If <a class="el" href="class_o_n___dim_style.html#ad180a7ff14931b99e74f289316d699aa" title="Dimension length units and format /summary&gt;">DimensionLengthDisplay()</a> == <a class="el" href="class_o_n___dim_style.html#af27da5e20982ca9c8efeb3a4fab055c4a180af8e2789e85a8d58b352031e9a839" title="Decimal current model units">ON_DimStyle::LengthDisplay::ModelUnits</a> and model_sn == 0, then <a class="el" href="class_o_n.html#aef46d8c5bfb7e3ebca29c979c7d1050aa6adf97f83acf6453d4a6a4b1070f3754">ON::LengthUnitSystem::None</a> is returned. /summary&gt;  <a href="class_o_n___dim_style.html#a88788f2959e9bd5d3096bb523f7208d5">More...</a><br /></td></tr>
 <tr class="separator:a88788f2959e9bd5d3096bb523f7208d5 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58925259f7be71c3be2b7744b5e7c54 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#af58925259f7be71c3be2b7744b5e7c54">AlternateLengthFactor</a> () const</td></tr>
-<tr class="memdesc:af58925259f7be71c3be2b7744b5e7c54 inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlternateLengthFactor is a rarely used. See Length factor for a discription of this property. /summary&gt;  <a href="class_o_n___dim_style.html#af58925259f7be71c3be2b7744b5e7c54">More...</a><br /></td></tr>
+<tr class="memdesc:af58925259f7be71c3be2b7744b5e7c54 inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlternateLengthFactor is a rarely used. See Length factor for a description of this property. /summary&gt;  <a href="class_o_n___dim_style.html#af58925259f7be71c3be2b7744b5e7c54">More...</a><br /></td></tr>
 <tr class="separator:af58925259f7be71c3be2b7744b5e7c54 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e71f04b97779ca8536ddc1950ae1eee inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#a5e71f04b97779ca8536ddc1950ae1eee">AlternateLengthResolution</a> () const</td></tr>
 <tr class="memdesc:a5e71f04b97779ca8536ddc1950ae1eee inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display resolution for alternate length measurements.  <a href="class_o_n___dim_style.html#a5e71f04b97779ca8536ddc1950ae1eee">More...</a><br /></td></tr>
@@ -665,7 +673,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1523f5536c9d87b13c18cfb7aa5a55ef inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad768884a26bb6a3dc6bc5556bdf59d inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#afad768884a26bb6a3dc6bc5556bdf59d">operator=</a> (const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> &amp;)=default</td></tr>
 <tr class="separator:afad768884a26bb6a3dc6bc5556bdf59d inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa23232e70c6926a42b90f331947bc580 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#aa23232e70c6926a42b90f331947bc580">OverrideCount</a> () const</td></tr>
+<tr class="memitem:aa23232e70c6926a42b90f331947bc580 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#aa23232e70c6926a42b90f331947bc580">OverrideCount</a> () const</td></tr>
 <tr class="separator:aa23232e70c6926a42b90f331947bc580 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40e88c75479aad620c14ebfadc2f2d77 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#a40e88c75479aad620c14ebfadc2f2d77">OverrideFields</a> (const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> &amp;source, const <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> &amp;parent)</td></tr>
 <tr class="separator:a40e88c75479aad620c14ebfadc2f2d77 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -699,7 +707,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac89d6529d60d3ec39c42f94bd0c9558b inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set alternate dimension length units and format /summary&gt;  <a href="class_o_n___dim_style.html#ac89d6529d60d3ec39c42f94bd0c9558b">More...</a><br /></td></tr>
 <tr class="separator:ac89d6529d60d3ec39c42f94bd0c9558b inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a53634ffa0b1572070fcfdd6796cb51 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#a9a53634ffa0b1572070fcfdd6796cb51">SetAlternateLengthFactor</a> (double)</td></tr>
-<tr class="memdesc:a9a53634ffa0b1572070fcfdd6796cb51 inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlternateLengthFactor is a rarely used. See Length factor for a discription of this property. /summary&gt;  <a href="class_o_n___dim_style.html#a9a53634ffa0b1572070fcfdd6796cb51">More...</a><br /></td></tr>
+<tr class="memdesc:a9a53634ffa0b1572070fcfdd6796cb51 inherit pub_methods_class_o_n___dim_style"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlternateLengthFactor is a rarely used. See Length factor for a description of this property. /summary&gt;  <a href="class_o_n___dim_style.html#a9a53634ffa0b1572070fcfdd6796cb51">More...</a><br /></td></tr>
 <tr class="separator:a9a53634ffa0b1572070fcfdd6796cb51 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a0b11e4d1dcd80fdaed36b6c120f35 inherit pub_methods_class_o_n___dim_style"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___dim_style.html#a88a0b11e4d1dcd80fdaed36b6c120f35">SetAlternateLengthResolution</a> (int)</td></tr>
 <tr class="separator:a88a0b11e4d1dcd80fdaed36b6c120f35 inherit pub_methods_class_o_n___dim_style"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1062,11 +1070,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af07b214b4a81087ae9704c095847fa01 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3c2db48f10168187d29f7295ba8b20 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#acf3c2db48f10168187d29f7295ba8b20">ComponentTypeIsSet</a> () const</td></tr>
 <tr class="separator:acf3c2db48f10168187d29f7295ba8b20 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519fee9947b7f5652095e5e5973f99c9 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a519fee9947b7f5652095e5e5973f99c9">ContentVersionNumber</a> () const</td></tr>
+<tr class="memitem:a519fee9947b7f5652095e5e5973f99c9 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a519fee9947b7f5652095e5e5973f99c9">ContentVersionNumber</a> () const</td></tr>
 <tr class="separator:a519fee9947b7f5652095e5e5973f99c9 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3088d8d85e64261ea0f40121ed4b27 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a1f3088d8d85e64261ea0f40121ed4b27">CopyFrom</a> (const <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> &amp;src, unsigned int attributes_filter)</td></tr>
 <tr class="separator:a1f3088d8d85e64261ea0f40121ed4b27 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc6c77d678662a84796ee0380ec55bc inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aacc6c77d678662a84796ee0380ec55bc">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> current_remainder) const override</td></tr>
+<tr class="memitem:aacc6c77d678662a84796ee0380ec55bc inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aacc6c77d678662a84796ee0380ec55bc">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const override</td></tr>
 <tr class="separator:aacc6c77d678662a84796ee0380ec55bc inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf54d789ced063daf43b2a9b600e523 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a2bf54d789ced063daf43b2a9b600e523">DeletedName</a> () const</td></tr>
 <tr class="separator:a2bf54d789ced063daf43b2a9b600e523 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1178,7 +1186,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b3705da46f2d5fd25b6308b8a6ea7d5 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d33af020136d855b8ff663911081c3 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a05d33af020136d855b8ff663911081c3">ReferenceModelSerialNumber</a> () const</td></tr>
 <tr class="separator:a05d33af020136d855b8ff663911081c3 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec107d943b87f00ed57478ccc389ba17 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">RuntimeSerialNumber</a> () const</td></tr>
+<tr class="memitem:aec107d943b87f00ed57478ccc389ba17 inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">RuntimeSerialNumber</a> () const</td></tr>
 <tr class="separator:aec107d943b87f00ed57478ccc389ba17 inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada84c12d978b562a779a6504e0d35f5e inherit pub_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ada84c12d978b562a779a6504e0d35f5e">SetAndLockId</a> ()</td></tr>
 <tr class="separator:ada84c12d978b562a779a6504e0d35f5e inherit pub_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1301,8 +1309,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c42ea0180d9819928991aaae1da1dd3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dim_style.html#a5c42ea0180d9819928991aaae1da1dd3">InitPrecisionList</a> (CComboBox &amp;combo_box, int def_precision, UINT current_format)</td></tr>
 <tr class="memdesc:a5c42ea0180d9819928991aaae1da1dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">decimal, fractional, feet/inches  <a href="class_c_rhino_dim_style.html#a5c42ea0180d9819928991aaae1da1dd3">More...</a><br /></td></tr>
 <tr class="separator:a5c42ea0180d9819928991aaae1da1dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d231a11b4e6fc57e4624c709debcb5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dim_style.html#a9d231a11b4e6fc57e4624c709debcb5d">InitPrecisionList</a> (CComboBox *combo_boxes[2], int defaults[2], UINT &amp;current_format, BOOL bLinearOnly)</td></tr>
-<tr class="separator:a9d231a11b4e6fc57e4624c709debcb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae520fee6184743d94058f9e668f8b91f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dim_style.html#ae520fee6184743d94058f9e668f8b91f">InitPrecisionList</a> (CComboBox *combo_boxes[2], int defaults[2], UINT &amp;current_format, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bLinearOnly)</td></tr>
+<tr class="separator:ae520fee6184743d94058f9e668f8b91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5df08a4fd3ebfe500fecb7a6ccda1e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dim_style.html#ad5df08a4fd3ebfe500fecb7a6ccda1e5">InitToleranceStyleList</a> (CComboBox &amp;combo_box, UINT current=0)</td></tr>
 <tr class="separator:ad5df08a4fd3ebfe500fecb7a6ccda1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52005ee911608303b90f0fec44ac6eca"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dim_style.html#a52005ee911608303b90f0fec44ac6eca">NextRuntimeSerialNumber</a> ()</td></tr>
@@ -1435,7 +1443,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abf68e352f017e02a8a17960145ee651c inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace56044c83449c2520d015c590a7c4d5 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ace56044c83449c2520d015c590a7c4d5">IsValidComponentNameFirstCodePoint</a> (int length, const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *candidate_component_name)</td></tr>
 <tr class="separator:ace56044c83449c2520d015c590a7c4d5 inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0016925d7bd2e5ebf48a5e7fb002d874 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">IsValidComponentNameFirstCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> unicode_code_point)</td></tr>
+<tr class="memitem:a0016925d7bd2e5ebf48a5e7fb002d874 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">IsValidComponentNameFirstCodePoint</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> unicode_code_point)</td></tr>
 <tr class="separator:a0016925d7bd2e5ebf48a5e7fb002d874 inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58114aef25df63091c334e0aa339e35f inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a58114aef25df63091c334e0aa339e35f">NameLeaf</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:a58114aef25df63091c334e0aa339e35f inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1443,7 +1451,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a64475590e76eefde0ef3be0d6d2688b3 inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88e0dacbb65387d6076879e4deb0656 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ab88e0dacbb65387d6076879e4deb0656">NameReferencePrefix</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:ab88e0dacbb65387d6076879e4deb0656 inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544efa96ab3a822b74501aadc4816eb6 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a544efa96ab3a822b74501aadc4816eb6">NextRuntimeSerialNumber</a> ()</td></tr>
+<tr class="memitem:a544efa96ab3a822b74501aadc4816eb6 inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a544efa96ab3a822b74501aadc4816eb6">NextRuntimeSerialNumber</a> ()</td></tr>
 <tr class="separator:a544efa96ab3a822b74501aadc4816eb6 inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f76d3c2fd3cbe32729e2434a6ae31e inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a93f76d3c2fd3cbe32729e2434a6ae31e">RemoveAllReferencePrefixDelimiters</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *name)</td></tr>
 <tr class="separator:a93f76d3c2fd3cbe32729e2434a6ae31e inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1544,8 +1552,8 @@ Additional Inherited Members</h2></td></tr>
 <p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
 <p>For complete Rhino SDK copyright information see <a href="http://www.rhino3d.com/developer">http://www.rhino3d.com/developer</a>. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a259b71b1d719c6840ccbe3ab2d6f46ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a259b71b1d719c6840ccbe3ab2d6f46ec">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a0af613325b9f6b6b68308361c9d427a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af613325b9f6b6b68308361c9d427a1">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1556,8 +1564,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a259b71b1d719c6840ccbe3ab2d6f46eca7db1f62f85f702a1c3f0adc7febb4723"></a>min_precision&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a259b71b1d719c6840ccbe3ab2d6f46eca3922e43097a1c774fe8dcb5caf90f819"></a>max_precision&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0af613325b9f6b6b68308361c9d427a1a7db1f62f85f702a1c3f0adc7febb4723"></a>min_precision&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0af613325b9f6b6b68308361c9d427a1a3922e43097a1c774fe8dcb5caf90f819"></a>max_precision&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1751,8 +1759,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d231a11b4e6fc57e4624c709debcb5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d231a11b4e6fc57e4624c709debcb5d">&#9670;&nbsp;</a></span>InitPrecisionList() <span class="overload">[2/2]</span></h2>
+<a id="ae520fee6184743d94058f9e668f8b91f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae520fee6184743d94058f9e668f8b91f">&#9670;&nbsp;</a></span>InitPrecisionList() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1781,7 +1789,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td>
           <td class="paramname"><em>bLinearOnly</em>&#160;</td>
         </tr>
         <tr>
@@ -1894,7 +1902,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: The dimstyle is not part of a linked instance definition 1-1000: These numbers are reserved for future use. &gt;1000: CRhinoDoc::m_instance_defintion_table.FindBySerialNumber() can be used to find the instance defintion. Remarks: The linked instance defintion serial number is a runtime value. It is not saved in files and it is generally different the next time a file is read. </p>
+<p>Returns: 0: The dimstyle is not part of a linked instance definition 1-1000: These numbers are reserved for future use. &gt;1000: CRhinoDoc::m_instance_defintion_table.FindBySerialNumber() can be used to find the instance definition. Remarks: The linked instance definition serial number is a runtime value. It is not saved in files and it is generally different the next time a file is read. </p>
 
 </div>
 </div>
@@ -2082,7 +2090,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

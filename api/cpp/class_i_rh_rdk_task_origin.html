@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7630830fa4bf7c635a09f21a0344e21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a247d19fc5e98bb3188ea07b19762c113"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_task_origin.html#a247d19fc5e98bb3188ea07b19762c113">OnEndAskUserSure</a> (const UUID &amp;uuidTask, <a class="el" href="group___r_d_k.html#gaf5db0a97e6583697407322c0aa6a0273">RhRdkMbResult</a>) const =0</td></tr>
 <tr class="separator:a247d19fc5e98bb3188ea07b19762c113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41268209527330ffeae7d42719d8e22"><td class="memItemLeft" align="right" valign="top">virtual const class <a class="el" href="class_c_rh_rdk_preview_appearance.html">CRhRdkPreviewAppearance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_task_origin.html#ad41268209527330ffeae7d42719d8e22">PreviewAppearance</a> (void) const =0</td></tr>
+<tr class="memitem:a08616326d59cc97ad34bc8fd2e88cc15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_task_origin.html#a08616326d59cc97ad34bc8fd2e88cc15">Parent</a> (void) const</td></tr>
+<tr class="separator:a08616326d59cc97ad34bc8fd2e88cc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41268209527330ffeae7d42719d8e22"><td class="memItemLeft" align="right" valign="top">virtual const class CRhRdkPreviewAppearance *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_task_origin.html#ad41268209527330ffeae7d42719d8e22">PreviewAppearance</a> (void) const =0</td></tr>
 <tr class="separator:ad41268209527330ffeae7d42719d8e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e9612fc898e3ed0a674c859055de1a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_task_origin.html#a61e9612fc898e3ed0a674c859055de1a">ReplacingSelection</a> (void) const =0</td></tr>
 <tr class="separator:a61e9612fc898e3ed0a674c859055de1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -604,6 +606,25 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a08616326d59cc97ad34bc8fd2e88cc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08616326d59cc97ad34bc8fd2e88cc15">&#9670;&nbsp;</a></span>Parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a>* IRhRdkTaskOrigin::Parent </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the parent. If the task origin is not a sub-node, returns null. </dd></dl>
+
+</div>
+</div>
 <a id="ad41268209527330ffeae7d42719d8e22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad41268209527330ffeae7d42719d8e22">&#9670;&nbsp;</a></span>PreviewAppearance()</h2>
 
@@ -614,7 +635,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const class <a class="el" href="class_c_rh_rdk_preview_appearance.html">CRhRdkPreviewAppearance</a>* IRhRdkTaskOrigin::PreviewAppearance </td>
+          <td class="memname">virtual const class CRhRdkPreviewAppearance* IRhRdkTaskOrigin::PreviewAppearance </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -779,7 +800,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

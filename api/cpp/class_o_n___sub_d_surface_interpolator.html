@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -75,9 +75,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af723bf675b4d2affa432a99074d39a19"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned { <a class="el" href="class_o_n___sub_d_surface_interpolator.html#af723bf675b4d2affa432a99074d39a19a4bcf27041e4c2c5ec7d8ca81eb5d1544">MaximumInterpolatedVertexCount</a> = 1000
+<tr class="memitem:a37d23267d7360e35d0a99cbcd204509c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_surface_interpolator.html#a37d23267d7360e35d0a99cbcd204509c">MaximumCounts</a> : unsigned int { <a class="el" href="class_o_n___sub_d_surface_interpolator.html#a37d23267d7360e35d0a99cbcd204509ca0d91921964ded70e1afad830d9666131">MaximumCounts::MaximumRecommendedInterpolatedVertexCount</a> = 1000U
  }</td></tr>
-<tr class="separator:af723bf675b4d2affa432a99074d39a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a37d23267d7360e35d0a99cbcd204509c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores maximum count values for the solver to work in reasonnable time.  <a href="class_o_n___sub_d_surface_interpolator.html#a37d23267d7360e35d0a99cbcd204509c">More...</a><br /></td></tr>
+<tr class="separator:a37d23267d7360e35d0a99cbcd204509c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -137,19 +138,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a65988d1a387828af9a8cb49005ed5f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="af723bf675b4d2affa432a99074d39a19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af723bf675b4d2affa432a99074d39a19">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a37d23267d7360e35d0a99cbcd204509c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d23267d7360e35d0a99cbcd204509c">&#9670;&nbsp;</a></span>MaximumCounts</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum : unsigned</td>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d_surface_interpolator.html#a37d23267d7360e35d0a99cbcd204509c">ON_SubDSurfaceInterpolator::MaximumCounts</a> : unsigned int</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Stores maximum count values for the solver to work in reasonnable time. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af723bf675b4d2affa432a99074d39a19a4bcf27041e4c2c5ec7d8ca81eb5d1544"></a>MaximumInterpolatedVertexCount&#160;</td><td class="fielddoc"><p>Interpolation requires building a solver. If the number of interplolated vertices is greater than MaximumInterpolatedVertexCount, the solver construction time can be too long for some users' comfort. Given sufficient time, memory, and CPU resources, the code will work with any value </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a37d23267d7360e35d0a99cbcd204509ca0d91921964ded70e1afad830d9666131"></a>MaximumRecommendedInterpolatedVertexCount&#160;</td><td class="fielddoc"><p>Interpolation requires building a solver. If the number of interplolated vertices is greater than MaximumInterpolatedVertexCount, the solver construction time can be too long for some users' comfort. Given sufficient time, memory, and CPU resources, the code will work with any value </p>
 </td></tr>
 </table>
 
@@ -265,7 +276,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: The context assigned id. This id is provided for applications using <a class="el" href="class_o_n___sub_d_surface_interpolator.html">ON_SubDSurfaceInterpolator</a>. It is not inspected or used in any part of the interpolation setup or calcuations. Remarks: In Rhino, when an interpolator is being used to modify a <a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a>, this id is often the Rhino object id. </p>
+<p>Returns: The context assigned id. This id is provided for applications using <a class="el" href="class_o_n___sub_d_surface_interpolator.html">ON_SubDSurfaceInterpolator</a>. It is not inspected or used in any part of the interpolation setup or calculations. Remarks: In Rhino, when an interpolator is being used to modify a <a class="el" href="class_c_rhino_sub_d_object.html">CRhinoSubDObject</a>, this id is often the Rhino object id. </p>
 
 </div>
 </div>
@@ -646,7 +657,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Descrription: Set context assigned id. This id is provided for applications using <a class="el" href="class_o_n___sub_d_surface_interpolator.html">ON_SubDSurfaceInterpolator</a>. It is not inspected or used in any part of the interpolation setup or calcuations. </p>
+<p>Descrription: Set context assigned id. This id is provided for applications using <a class="el" href="class_o_n___sub_d_surface_interpolator.html">ON_SubDSurfaceInterpolator</a>. It is not inspected or used in any part of the interpolation setup or calculations. </p>
 
 </div>
 </div>
@@ -745,7 +756,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

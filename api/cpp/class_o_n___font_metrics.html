@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:abe44d95515dabcce5ed56759c7ab770f"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_metrics.html#abe44d95515dabcce5ed56759c7ab770f">DefaultLineFeedRatio</a></td></tr>
 <tr class="memdesc:abe44d95515dabcce5ed56759c7ab770f"><td class="mdescLeft">&#160;</td><td class="mdescRight">1.6  <a href="class_o_n___font_metrics.html#abe44d95515dabcce5ed56759c7ab770f">More...</a><br /></td></tr>
 <tr class="separator:abe44d95515dabcce5ed56759c7ab770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a14df60aa3a72ffa0580f2dc86fac1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_metrics.html#a09a14df60aa3a72ffa0580f2dc86fac1">HeightOfCapitalCodePoint</a></td></tr>
+<tr class="memitem:a09a14df60aa3a72ffa0580f2dc86fac1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_metrics.html#a09a14df60aa3a72ffa0580f2dc86fac1">HeightOfCapitalCodePoint</a></td></tr>
 <tr class="memdesc:a09a14df60aa3a72ffa0580f2dc86fac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">'I'  <a href="class_o_n___font_metrics.html#a09a14df60aa3a72ffa0580f2dc86fac1">More...</a><br /></td></tr>
 <tr class="separator:a09a14df60aa3a72ffa0580f2dc86fac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a267fec427e090482419e663716cb97e4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___font_metrics.html">ON_FontMetrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font_metrics.html#a267fec427e090482419e663716cb97e4">LastResortMetrics</a></td></tr>
@@ -259,7 +259,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Signed distance from the baseline to highest point on a glyph outline.</p>
-<p>Remarks: If every glyph outline in the font has (0,0) on the basline, then <a class="el" href="class_o_n___font_metrics.html#aa1ea0b24c09579a5a5e1692b42382fb4">Ascent()</a> is the maximum glyph bounding box Y.</p>
+<p>Remarks: If every glyph outline in the font has (0,0) on the baseline, then <a class="el" href="class_o_n___font_metrics.html#aa1ea0b24c09579a5a5e1692b42382fb4">Ascent()</a> is the maximum glyph bounding box Y.</p>
 <p>Ascent typically includes internal leading, the space used for diacritcial marks above capital latin letters. For this reason, Ascent is typically greater than AscentOfCapital.</p>
 <p>Windows: = DWRITE_FONT_METRICS.ascent </p>
 
@@ -301,7 +301,7 @@ Static Public Attributes</h2></td></tr>
 <p>Remarks: The primary uses of <a class="el" href="class_o_n___font_metrics.html#a6b87c11ec094e6e0768d99f04a82f6bb">AscentOfCapital()</a> are: 1) Calculate a scale factor to produce text with a user specified "text height". 2) To calculate insertion location for <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3ab1ca34f82e83c52b010f86955f264e05">ON::TextVerticalAlignment::Middle</a> and <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3aa4ffdcf0dc1f31b9acaf295d75b51d00">ON::TextVerticalAlignment::Top</a>.</p>
 <p>From 2005-2018 opennurbs used the ascent of a capital I. Beginning in 2018 this value is taken from the system font metrics so that fonts designed to render Asian language text, symbols, and emojis will display as expected and lines of text containing mulitiple fonts will render more clearly.</p>
 <p>The value (user specified text height)/AscentOfCapital() is used as the scale factor to render glyphs when user interface has provided a "text height" value.</p>
-<p>If the capial height property of a font is not available, the ascent of I or H can be used instead. (There are commonly used fonts where using other glpyhs gives undesirable results.)OfI.</p>
+<p>If the capial height property of a font is not available, the ascent of I or H can be used instead. (There are commonly used fonts where using other glyphs gives undesirable results.)OfI.</p>
 <p>Windows: = DWRITE_FONT_METRICS.capHeight Apple: = CTFontGetAscent(...) </p>
 
 </div>
@@ -339,7 +339,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: The font's typographic x-height.</p>
-<p>Remarks: The x-height is used to help select a substitute font to use for missing glpyhs. </p>
+<p>Remarks: The x-height is used to help select a substitute font to use for missing glyphs. </p>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Signed distance from the English baseline to lowest point on a glyph outline.</p>
-<p>Remarks: This value is typically negative because glyphs for letters like 'g' and 'j' typically have a portion of their outline below the baseline. However, some fonts have positive descent. If every glyph outline in the font has (0,0) on the basline, then <a class="el" href="class_o_n___font_metrics.html#a68cce65111168ca99d30422c53839392">Descent()</a> is the minimum glyph bounding box Y.</p>
+<p>Remarks: This value is typically negative because glyphs for letters like 'g' and 'j' typically have a portion of their outline below the baseline. However, some fonts have positive descent. If every glyph outline in the font has (0,0) on the baseline, then <a class="el" href="class_o_n___font_metrics.html#a68cce65111168ca99d30422c53839392">Descent()</a> is the minimum glyph bounding box Y.</p>
 <p>Windows: = -DWRITE_FONT_METRICS.descent </p>
 
 </div>
@@ -486,10 +486,10 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: The postive distance to move the base line when moving to a new line of text.</p>
+<p>Returns: The positive distance to move the base line when moving to a new line of text.</p>
 <p>Remarks: For almost every font used to render English text, <a class="el" href="class_o_n___font_metrics.html#a0ca4ec73ecb64c89b43350f7c092ae9e">LineSpace()</a> &gt; (<a class="el" href="class_o_n___font_metrics.html#aa1ea0b24c09579a5a5e1692b42382fb4">Ascent()</a> - <a class="el" href="class_o_n___font_metrics.html#a68cce65111168ca99d30422c53839392">Descent()</a>).</p>
 <p>This metric is sometimes called "height", but that term is often confused with (<a class="el" href="class_o_n___font_metrics.html#aa1ea0b24c09579a5a5e1692b42382fb4">Ascent()</a> - <a class="el" href="class_o_n___font_metrics.html#a68cce65111168ca99d30422c53839392">Descent()</a>).</p>
-<p>For fonts designed to render horizontal lines of text, <a class="el" href="class_o_n___font_metrics.html#a0ca4ec73ecb64c89b43350f7c092ae9e">LineSpace()</a> is a vertical distance. For fonts desingned to render vertical lines of text, <a class="el" href="class_o_n___font_metrics.html#a0ca4ec73ecb64c89b43350f7c092ae9e">LineSpace()</a> is a horizontal distance. Depending on the context, the direction to move can be up, down, left or right.</p>
+<p>For fonts designed to render horizontal lines of text, <a class="el" href="class_o_n___font_metrics.html#a0ca4ec73ecb64c89b43350f7c092ae9e">LineSpace()</a> is a vertical distance. For fonts designed to render vertical lines of text, <a class="el" href="class_o_n___font_metrics.html#a0ca4ec73ecb64c89b43350f7c092ae9e">LineSpace()</a> is a horizontal distance. Depending on the context, the direction to move can be up, down, left or right.</p>
 <p>Windows: = DWRITE_FONT_METRICS.ascent</p><ul>
 <li>DWRITE_FONT_METRICS.descent</li>
 <li>DWRITE_FONT_METRICS.lineGap; </li>
@@ -995,7 +995,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> ON_FontMetrics::HeightOfCapitalCodePoint</td>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_FontMetrics::HeightOfCapitalCodePoint</td>
         </tr>
       </table>
   </td>
@@ -1083,7 +1083,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

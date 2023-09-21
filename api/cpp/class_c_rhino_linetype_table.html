@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0365789e1a49b99eef6df83873dedaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04103399b4195fcbf48c90e38acaf731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_linetype_table.html#a04103399b4195fcbf48c90e38acaf731">InitDefaultLinetypes</a> ()</td></tr>
 <tr class="separator:a04103399b4195fcbf48c90e38acaf731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68008d3ffe51b1ea778ce5eac370e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_linetype_table.html#af68008d3ffe51b1ea778ce5eac370e00">InitDefaultLinetypes</a> (bool bIgnoreDeleted)</td></tr>
+<tr class="separator:af68008d3ffe51b1ea778ce5eac370e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89418b01b181b514ac0dc7394799254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_linetype_table.html#ad89418b01b181b514ac0dc7394799254">LinetypeCount</a> () const</td></tr>
 <tr class="separator:ad89418b01b181b514ac0dc7394799254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5d5b3712c543638c4f60a64de65060"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_linetype_table.html#a1f5d5b3712c543638c4f60a64de65060">LinetypeScale</a> () const</td></tr>
@@ -267,7 +269,7 @@ Friends</h2></td></tr>
 <p>Parameters: linetype - [in] definition of new linetype. The information in linetype is copied. If linetype.LinetypeName() is empty the a unique name of the form "Linetype 01" will be automatically created.</p>
 <p>worksession_ref_model_sn - [in] 0: linetype is not a reference layer 1: linetype is a reference linetype but not part of a worksession reference file 2-1000: reserved for future use &gt;1000: worksession reference file serial number <br  />
 </p>
-<p>linked_idef_sn - [in] 0: linetype is not from a liked instance definition 1-1000: reserved for future use &gt;1000: linetype instance defintion serial number <br  />
+<p>linked_idef_sn - [in] 0: linetype is not from a liked instance definition 1-1000: reserved for future use &gt;1000: linetype instance definition serial number <br  />
 </p>
 <p>Returns: @untitled table &gt;=0 index of new linetype -1 linetype not added because a linetype with that name already exists. </p>
 
@@ -643,7 +645,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a04103399b4195fcbf48c90e38acaf731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04103399b4195fcbf48c90e38acaf731">&#9670;&nbsp;</a></span>InitDefaultLinetypes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a04103399b4195fcbf48c90e38acaf731">&#9670;&nbsp;</a></span>InitDefaultLinetypes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,6 +659,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Fills in the linetype table with any default linetypes not already included </p>
+
+</div>
+</div>
+<a id="af68008d3ffe51b1ea778ce5eac370e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68008d3ffe51b1ea778ce5eac370e00">&#9670;&nbsp;</a></span>InitDefaultLinetypes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoLinetypeTable::InitDefaultLinetypes </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreDeleted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -778,7 +798,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Conceptually, the linetype table is an array of <a class="el" href="class_c_rhino_linetype_table.html#ad89418b01b181b514ac0dc7394799254">LinetypeCount()</a> linetypes. The operator[] can be used to get individual linetypes. A linetype is either active or deleted and this state is reported by <a class="el" href="class_c_rhino_linetype.html#ad47798f32dc60328926bccd815644938">CRhinoLinetype::IsDeleted()</a>.</p>
 <p>Parameters: linetype_index - zero based array index</p>
-<p>Returns: Refererence to the linetype. If linetype_index is out of range, the current linetype is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_linetype_table.html#ab17c7c6bcafd98a4cde0b8aeea8b31e1">AddLinetype()</a> is called. </p>
+<p>Returns: Reference to the linetype. If linetype_index is out of range, the current linetype is returned. Note that this reference may become invalid after <a class="el" href="class_c_rhino_linetype_table.html#ab17c7c6bcafd98a4cde0b8aeea8b31e1">AddLinetype()</a> is called. </p>
 
 </div>
 </div>
@@ -996,7 +1016,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If the linetype has been modified and the modifcation can be undone, then UndoModify() will restore the linetype to its previous state.</p>
+<p>Description: If the linetype has been modified and the modification can be undone, then UndoModify() will restore the linetype to its previous state.</p>
 <p>Returns: true if this linetype had been modified and the modifications were undone.</p>
 <p>See Also: IsModified. </p>
 
@@ -1099,7 +1119,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

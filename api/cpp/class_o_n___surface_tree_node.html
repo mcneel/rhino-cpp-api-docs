@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -165,10 +165,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ab793a2bd0e509e9a1d32c3c16b909d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number of this node  <a href="class_o_n___surface_tree_node.html#ab793a2bd0e509e9a1d32c3c16b909d55">More...</a><br /></td></tr>
 <tr class="separator:ab793a2bd0e509e9a1d32c3c16b909d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9eee7202af5f2971f27d8931f8a664"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_tree_node.html#a1d9eee7202af5f2971f27d8931f8a664">m_nodetype</a></td></tr>
-<tr class="memdesc:a1d9eee7202af5f2971f27d8931f8a664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory managment accounting information.  <a href="class_o_n___surface_tree_node.html#a1d9eee7202af5f2971f27d8931f8a664">More...</a><br /></td></tr>
+<tr class="memdesc:a1d9eee7202af5f2971f27d8931f8a664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory management accounting information.  <a href="class_o_n___surface_tree_node.html#a1d9eee7202af5f2971f27d8931f8a664">More...</a><br /></td></tr>
 <tr class="separator:a1d9eee7202af5f2971f27d8931f8a664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c35f94d386d1c124d99b310754b9ae2"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_tree_node.html#a1c35f94d386d1c124d99b310754b9ae2">m_reserved_ON_SurfaceTreeNode</a> [5]</td></tr>
-<tr class="memdesc:a1c35f94d386d1c124d99b310754b9ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep sizeof() a multple of 16  <a href="class_o_n___surface_tree_node.html#a1c35f94d386d1c124d99b310754b9ae2">More...</a><br /></td></tr>
+<tr class="memdesc:a1c35f94d386d1c124d99b310754b9ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">keep sizeof() a multiple of 16  <a href="class_o_n___surface_tree_node.html#a1c35f94d386d1c124d99b310754b9ae2">More...</a><br /></td></tr>
 <tr class="separator:a1c35f94d386d1c124d99b310754b9ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6a531f063566e7b71f0811d377c5f8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_tree_node.html#a8a6a531f063566e7b71f0811d377c5f8">m_treesn</a></td></tr>
 <tr class="memdesc:a8a6a531f063566e7b71f0811d377c5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number of this tree  <a href="class_o_n___surface_tree_node.html#a8a6a531f063566e7b71f0811d377c5f8">More...</a><br /></td></tr>
@@ -298,7 +298,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Evaluate the portion of the surfac covered by this node. Parameters: s - [in] t - [in] (s,t) - evaluation parameters with respect to this node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride surface(s,t) is returned in (v[0],...,v[m_dim-1]), Ds is retuned in (v[v_stride],...,v[v_stride+m_dim-1]), Dt is retuned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), Dss is retuned in (v[3*v_stride],...), Dst is retuned in (v[4*v_stride],...), Dtt is retuned in (v[5*v_stride],...), etc. quadrant - [in] optional - 1,2,3 or 4 Determines which quadrant to evaluate from when (s,t) is on the side of a leaf node. Values &lt; 1 or &gt; 4 are treated as 1 Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If (s,t) is out outside this node's domain, the bezier on the appropriate side is evaluated. </p>
+<p>Description: Evaluate the portion of the surfac covered by this node. Parameters: s - [in] t - [in] (s,t) - evaluation parameters with respect to this node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride surface(s,t) is returned in (v[0],...,v[m_dim-1]), Ds is returned in (v[v_stride],...,v[v_stride+m_dim-1]), Dt is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), Dss is returned in (v[3*v_stride],...), Dst is returned in (v[4*v_stride],...), Dtt is returned in (v[5*v_stride],...), etc. quadrant - [in] optional - 1,2,3 or 4 Determines which quadrant to evaluate from when (s,t) is on the side of a leaf node. Values &lt; 1 or &gt; 4 are treated as 1 Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If (s,t) is out outside this node's domain, the bezier on the appropriate side is evaluated. </p>
 
 </div>
 </div>
@@ -932,7 +932,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to split a surface tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to gaurd against memory leaks and double deletes. Parameters: dir - [in] 0 = split first parameter direction 1 = split second parameter direction s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The cooresponding surface domain parameter is m_domain[dir].ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
+<p>Description: Expert user tool to split a surface tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to gaurd against memory leaks and double deletes. Parameters: dir - [in] 0 = split first parameter direction 1 = split second parameter direction s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The corresponding surface domain parameter is m_domain[dir].ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the smallest node that contains the specfied paramter range. Parameters: Urange - [in] Vrange - [in] Returns: A pointer to the smallest child node (possibly this) that contains the specified parameter range or nullptr if no such node exists. </p>
+<p>Description: Find the smallest node that contains the specified parameter range. Parameters: Urange - [in] Vrange - [in] Returns: A pointer to the smallest child node (possibly this) that contains the specified parameter range or nullptr if no such node exists. </p>
 
 </div>
 </div>
@@ -1119,7 +1119,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Memory managment accounting information. </p>
+<p>Memory management accounting information. </p>
 <p>8 bits to flag special nodes 1 = root node 2 = meta node (no domain) 4 = beizer parameterization != surface parameterization 8 = south side is singular point 16 = east side is singular point 32 = north side is singular point 64 = west side is singular point </p>
 
 </div>
@@ -1136,7 +1136,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>keep sizeof() a multple of 16 </p>
+<p>keep sizeof() a multiple of 16 </p>
 
 </div>
 </div>
@@ -1174,7 +1174,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

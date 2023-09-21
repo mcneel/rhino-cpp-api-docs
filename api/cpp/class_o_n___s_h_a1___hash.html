@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53ee579bf853ee59a42e348f84d0734f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbc5005e0910124f0dffa302df8b83a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a7dbc5005e0910124f0dffa302df8b83a">~ON_SHA1_Hash</a> ()=default</td></tr>
 <tr class="separator:a7dbc5005e0910124f0dffa302df8b83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a2ab0f9b077a274d638ff5d816a642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae8a2ab0f9b077a274d638ff5d816a642">CRC32</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const</td></tr>
+<tr class="memdesc:ae8a2ab0f9b077a274d638ff5d816a642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculating a SHA1 hash is faster than calculating a CRC on the same information. This function calculates the ON_CRC value of the 20 byte digest. Calculating a sha1 hash and then using CRC32(0) is an excellent and efficient way to get a high quality 4 byte CRC.  <a href="class_o_n___s_h_a1___hash.html#ae8a2ab0f9b077a274d638ff5d816a642">More...</a><br /></td></tr>
+<tr class="separator:ae8a2ab0f9b077a274d638ff5d816a642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9da669bd0119e2efb45362b4c78f98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#acd9da669bd0119e2efb45362b4c78f98">Dump</a> (class <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
 <tr class="separator:acd9da669bd0119e2efb45362b4c78f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a97cc264bf8e00ce983cfda5bbf13a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a6a97cc264bf8e00ce983cfda5bbf13a4">IsEmptyContentHash</a> () const</td></tr>
@@ -115,11 +118,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aed137337f874a15956aaa4f2d0ebe912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5abc31702ccbbe88d908316d3b1c6c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#aaa5abc31702ccbbe88d908316d3b1c6c">Compare</a> (const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;a, const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> &amp;b)</td></tr>
 <tr class="separator:aaa5abc31702ccbbe88d908316d3b1c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eee404d838f0344622f7bf7e0214213"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a6eee404d838f0344622f7bf7e0214213">FileContentHash</a> (const char *file_name, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;sizeof_file)</td></tr>
+<tr class="memitem:a6eee404d838f0344622f7bf7e0214213"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a6eee404d838f0344622f7bf7e0214213">FileContentHash</a> (const char *file_name, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;sizeof_file)</td></tr>
 <tr class="separator:a6eee404d838f0344622f7bf7e0214213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688da91d84f792fa0570fc371e6904da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a688da91d84f792fa0570fc371e6904da">FileContentHash</a> (const wchar_t *file_name, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;sizeof_file)</td></tr>
+<tr class="memitem:a688da91d84f792fa0570fc371e6904da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a688da91d84f792fa0570fc371e6904da">FileContentHash</a> (const wchar_t *file_name, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;sizeof_file)</td></tr>
 <tr class="separator:a688da91d84f792fa0570fc371e6904da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f852b0d83eacd5cbbad31bfafddf30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a82f852b0d83eacd5cbbad31bfafddf30">FileContentHash</a> (FILE *file, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;sizeof_file)</td></tr>
+<tr class="memitem:a82f852b0d83eacd5cbbad31bfafddf30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a82f852b0d83eacd5cbbad31bfafddf30">FileContentHash</a> (FILE *file, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;sizeof_file)</td></tr>
 <tr class="separator:a82f852b0d83eacd5cbbad31bfafddf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117faec166cf3d1e109420f44c7ce38d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a117faec166cf3d1e109420f44c7ce38d">FileSystemPathHash</a> (const char *path)</td></tr>
 <tr class="separator:a117faec166cf3d1e109420f44c7ce38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,20 +136,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aec84dbe35c040bc86cada17a1a9d9b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97e29d54dbd500fc43d535f53f53650"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae97e29d54dbd500fc43d535f53f53650">StringHash</a> (const char *null_terminated_string)</td></tr>
 <tr class="separator:ae97e29d54dbd500fc43d535f53f53650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17ec4f2b5ea1bd95152fdb7d751e0db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#aa17ec4f2b5ea1bd95152fdb7d751e0db">StringHash</a> (const char *str, size_t str_length, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;byte_count)</td></tr>
+<tr class="memitem:aa17ec4f2b5ea1bd95152fdb7d751e0db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#aa17ec4f2b5ea1bd95152fdb7d751e0db">StringHash</a> (const char *str, size_t str_length, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;byte_count)</td></tr>
 <tr class="separator:aa17ec4f2b5ea1bd95152fdb7d751e0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae73d180372fae2223ff6fe574bbbff89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae73d180372fae2223ff6fe574bbbff89">StringHash</a> (const <a class="el" href="class_o_n___string.html">ON_String</a> &amp;str, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;byte_count)</td></tr>
+<tr class="memitem:ae73d180372fae2223ff6fe574bbbff89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae73d180372fae2223ff6fe574bbbff89">StringHash</a> (const <a class="el" href="class_o_n___string.html">ON_String</a> &amp;str, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;byte_count)</td></tr>
 <tr class="separator:ae73d180372fae2223ff6fe574bbbff89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70b026eaacd90d6ff8159c30e78338f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#af70b026eaacd90d6ff8159c30e78338f">StringHash</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;str, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;byte_count)</td></tr>
+<tr class="memitem:af70b026eaacd90d6ff8159c30e78338f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#af70b026eaacd90d6ff8159c30e78338f">StringHash</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;str, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;byte_count)</td></tr>
 <tr class="separator:af70b026eaacd90d6ff8159c30e78338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276c7fd46a3a9ae3124ef016c5885f37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a276c7fd46a3a9ae3124ef016c5885f37">StringHash</a> (const wchar_t *null_terminated_string)</td></tr>
 <tr class="separator:a276c7fd46a3a9ae3124ef016c5885f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae74c73bf8607be770125b5dd8ca4d7ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae74c73bf8607be770125b5dd8ca4d7ce">StringHash</a> (const wchar_t *str, size_t str_length, <a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;byte_count)</td></tr>
+<tr class="memitem:ae74c73bf8607be770125b5dd8ca4d7ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#ae74c73bf8607be770125b5dd8ca4d7ce">StringHash</a> (const wchar_t *str, size_t str_length, <a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;byte_count)</td></tr>
 <tr class="separator:ae74c73bf8607be770125b5dd8ca4d7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a39d3beb2cb8130667bf4b05f05494e3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a39d3beb2cb8130667bf4b05f05494e3d">m_digest</a> [20]</td></tr>
+<tr class="memitem:a39d3beb2cb8130667bf4b05f05494e3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___s_h_a1___hash.html#a39d3beb2cb8130667bf4b05f05494e3d">m_digest</a> [20]</td></tr>
 <tr class="separator:a39d3beb2cb8130667bf4b05f05494e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -159,8 +162,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a50683fde45600ba340667429fd8fd686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>/ / Copyright (c) 1993-2015 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// </p>
+<div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a260f104c8943027793e81ab7759a8667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a260f104c8943027793e81ab7759a8667">&#9670;&nbsp;</a></span>ON_SHA1_Hash() <span class="overload">[1/2]</span></h2>
@@ -306,6 +310,33 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae8a2ab0f9b077a274d638ff5d816a642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a2ab0f9b077a274d638ff5d816a642">&#9670;&nbsp;</a></span>CRC32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_SHA1_Hash::CRC32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
+          <td class="paramname"><em>current_remainder</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculating a SHA1 hash is faster than calculating a CRC on the same information. This function calculates the ON_CRC value of the 20 byte digest. Calculating a sha1 hash and then using CRC32(0) is an excellent and efficient way to get a high quality 4 byte CRC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_remainder</td><td>Nonzero values are rare in this context. When in doubt, pass 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ON_CRC32(seed, 20, m_digest)</dd></dl>
+
+</div>
+</div>
 <a id="acd9da669bd0119e2efb45362b4c78f98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd9da669bd0119e2efb45362b4c78f98">&#9670;&nbsp;</a></span>Dump()</h2>
 
@@ -342,7 +373,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>sizeof_file</em>&#160;</td>
         </tr>
         <tr>
@@ -378,7 +409,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>sizeof_file</em>&#160;</td>
         </tr>
         <tr>
@@ -415,7 +446,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>sizeof_file</em>&#160;</td>
         </tr>
         <tr>
@@ -519,7 +550,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Return a hash of the file system path that is independent of the size of wchar_t, constant across platforms, and constant across varations in the way the path is formatted.</p>
+<p>Description: Return a hash of the file system path that is independent of the size of wchar_t, constant across platforms, and constant across variations in the way the path is formatted.</p>
 <p>Parameters: path - [in] File system path to a directory or file.</p>
 <p>Returns: SHA1-1 hash of the buffer.</p>
 <p>Example: These file system paths have identical values of <a class="el" href="class_o_n___s_h_a1___hash.html#a9cb83e4e627ac917404722990efa2f0c">FileSystemPathHash()</a>. /x/y/z/name.ext \x\y\z\name.ext /x///&lt;y//z/name.ext /x/y/a/b/c/../../../z/name.ext /X/Y/Z/NAME.EXT (When ON_ComparePathIgnoreCase() is true)</p>
@@ -614,7 +645,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Parse a string of 40 hexadecimal digits to create a SHA-1 hash. Parameters: string_to_parse - [in] bParseLeadinglSpaces - [in] If true, leading space characters are parsed. Otherwise leading space characters cause parsing to fail. bParseInteriorSpace - [in] If true, interior space characters are parsed. Otherwise interior space characters cause parsing to fail. bParseInteriorHyphen - [in] If true, interior hyphen characters are parsed. Otherwise interior hyphen characters cause parsing to fail. bIgnoreInternalSpaces - [in] If true, isolated hyphens are ingored until 40 hex digits are read. bIgnoreInternalHyphens - [in] If true, leading spaces and isolated interior spacess are ingored until 40 hex digits are read. failure_return_value - [in] Value to return if string_to_parse cannot be parsed as 40 hex digits. Returns: If parsing is successful, the value of the SHA-1 hash is returned. Otherwise failure_return_value is returned. </p>
+<p>Description: Parse a string of 40 hexadecimal digits to create a SHA-1 hash. Parameters: string_to_parse - [in] bParseLeadinglSpaces - [in] If true, leading space characters are parsed. Otherwise leading space characters cause parsing to fail. bParseInteriorSpace - [in] If true, interior space characters are parsed. Otherwise interior space characters cause parsing to fail. bParseInteriorHyphen - [in] If true, interior hyphen characters are parsed. Otherwise interior hyphen characters cause parsing to fail. bIgnoreInternalSpaces - [in] If true, isolated hyphens are ignored until 40 hex digits are read. bIgnoreInternalHyphens - [in] If true, leading spaces and isolated interior spacess are ignored until 40 hex digits are read. failure_return_value - [in] Value to return if string_to_parse cannot be parsed as 40 hex digits. Returns: If parsing is successful, the value of the SHA-1 hash is returned. Otherwise failure_return_value is returned. </p>
 
 </div>
 </div>
@@ -668,7 +699,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___s_h_a1___hash.html#a299e0bf47b91bf89b155436401cf9259">IsZeroDigestOrEmptyContentHash()</a> instead. (Spelling error in this one's name. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___s_h_a1___hash.html#a299e0bf47b91bf89b155436401cf9259">IsZeroDigestOrEmptyContentHash()</a> instead. (Spelling error in this one's name. </dd></dl>
 
 </div>
 </div>
@@ -801,7 +832,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>byte_count</em>&#160;</td>
         </tr>
         <tr>
@@ -837,7 +868,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>byte_count</em>&#160;</td>
         </tr>
         <tr>
@@ -874,7 +905,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>byte_count</em>&#160;</td>
         </tr>
         <tr>
@@ -943,7 +974,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> &amp;&#160;</td>
           <td class="paramname"><em>byte_count</em>&#160;</td>
         </tr>
         <tr>
@@ -1068,7 +1099,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> ON_SHA1_Hash::m_digest[20]</td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> ON_SHA1_Hash::m_digest[20]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1102,7 +1133,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

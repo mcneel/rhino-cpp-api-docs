@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -373,7 +373,8 @@ Static Public Member Functions</h2></td></tr>
       }
 
       class ON_ParticleSystem::ON_Particle* particle1 = ...;
-      class ON_ParticleSystem::ON_Particle* particle2 = ...;          double rest_length = ...;
+      class ON_ParticleSystem::ON_Particle* particle2 = ...;
+      double rest_length = ...;
       double spring_constant = ...;
       double damping_constant  = ...;
       ON_ParticleSystem::ON_Particle* particles[2] = {particle1,particle2};
@@ -530,7 +531,7 @@ Static Public Member Functions</h2></td></tr>
 </pre><p> / masses in kilograms and distances in meters const double solar_mass = 1.9891e30; ///&lt; kilograms const double g = 6.67384e-11; ///&lt; meters^3/(kilogram seconds^2) <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> V = <a class="el" href="class_o_n__3d_point.html#ae5dcca5dde698b25a7ec98b3868285b5" title="(0.0,0.0,0.0)">ON_3dPoint::Origin</a> - planet-&gt;m_position; double r = V.Length(); <br  />
  if ( !(r &gt; 6.955e8) ) { / Planet crashed into the sun! / The sun's radius is 6.955e8 meters. This calculation / ignores planets melting as they get too close to the sun. return false; } SolarGravityForce = (g*planet-&gt;m_mass*solar_mass/(r*r*r))*V; ///&lt; r^3 because input V is not unitized return true; }</p>
 <p>.... AddUnaryForce(0,GetSolarGravity);</p>
-<p>Remarks: To add a global "gravity", it is more efficent to use <a class="el" href="class_o_n___particle_system.html#a4568ec2217afe1dcf61741f1eaf6bb68">SetGlobalGravityForce()</a>. To add a global "drag" force, it is more efficient to use <a class="el" href="class_o_n___particle_system.html#a69cfebda0b0481a5eb54391a1aac7dcc">SetGlobalDragForce()</a>. </p>
+<p>Remarks: To add a global "gravity", it is more efficient to use <a class="el" href="class_o_n___particle_system.html#a4568ec2217afe1dcf61741f1eaf6bb68">SetGlobalGravityForce()</a>. To add a global "drag" force, it is more efficient to use <a class="el" href="class_o_n___particle_system.html#a69cfebda0b0481a5eb54391a1aac7dcc">SetGlobalDragForce()</a>. </p>
 
 </div>
 </div>
@@ -790,7 +791,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Updates context.m_state.m_position and context.m_state.m_velocity using Euler integration.</p>
 <p>Parameters: context - [in / out] The returned position and velocity are incremented using the following calculation. x1 = current position v1 = current velocity a1 = (current accumulated force)/(current mass) / incremented position and velocity x = x1 + v1*dt + 0.5*a1*dt*dt; v = v1 + a1*dt;</p>
-<p>Remarks: This is the best choice in the rare case when all forces are independent of time. The canonical example when being when the only force is the force of gravity and no collisions occur. Note that forces whose formulae involve position or velocity are almost never indepent of time. In particular, if your system has drag, damping or spring forces, then this is probably the worst choice for an integrator. </p>
+<p>Remarks: This is the best choice in the rare case when all forces are independent of time. The canonical example when being when the only force is the force of gravity and no collisions occur. Note that forces whose formulae involve position or velocity are almost never independent of time. In particular, if your system has drag, damping or spring forces, then this is probably the worst choice for an integrator. </p>
 
 </div>
 </div>
@@ -994,7 +995,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

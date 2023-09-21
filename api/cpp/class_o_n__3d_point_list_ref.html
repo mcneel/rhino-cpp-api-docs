@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87757f8f0720e7337f0645cebeb80c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae902b9f706e8035bc48bb161524798c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#ae902b9f706e8035bc48bb161524798c7">operator[]</a> (int point_index) const</td></tr>
 <tr class="separator:ae902b9f706e8035bc48bb161524798c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120a035f69147640e8da89365aa61537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#a120a035f69147640e8da89365aa61537">operator[]</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga090dc337a02411b8168f75fd318b99ed">ON__INT64</a> point_index) const</td></tr>
+<tr class="memitem:a120a035f69147640e8da89365aa61537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#a120a035f69147640e8da89365aa61537">operator[]</a> (<a class="el" href="group__open_n_u_r_b_s.html#gab15ed087e633a6bb4d9a634d3fa5a32e">ON__INT64</a> point_index) const</td></tr>
 <tr class="separator:a120a035f69147640e8da89365aa61537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd80479ed134be5b53e596dc5dc15da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#a9cd80479ed134be5b53e596dc5dc15da">operator[]</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> point_index) const</td></tr>
+<tr class="memitem:a9cd80479ed134be5b53e596dc5dc15da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#a9cd80479ed134be5b53e596dc5dc15da">operator[]</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> point_index) const</td></tr>
 <tr class="separator:a9cd80479ed134be5b53e596dc5dc15da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a690573930602d33d93ad4b7b986cffb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_point_list_ref.html#a690573930602d33d93ad4b7b986cffb0">operator[]</a> (unsigned int point_index) const</td></tr>
 <tr class="separator:a690573930602d33d93ad4b7b986cffb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -553,7 +553,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Copy point location into buffer and return it as an <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>. Parameters: point_index - [in] buffer - [out] If point_index is a valid index, the point coordinates are copied to buffer[]; oherwise the buffer coordinates are set to ON_UNSET_VALUE. You must insure buffer is not null, has proper alignment for storing doubles, and is large enough to store three doubles. Returns: A reference to an <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> which is a cast of buffer. Remarks: This is the fastest and most efficient way to get a the location of a point into memory you are managing. </p>
+<p>Description: Copy point location into buffer and return it as an <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>. Parameters: point_index - [in] buffer - [out] If point_index is a valid index, the point coordinates are copied to buffer[]; otherwise the buffer coordinates are set to ON_UNSET_VALUE. You must insure buffer is not null, has proper alignment for storing doubles, and is large enough to store three doubles. Returns: A reference to an <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> which is a cast of buffer. Remarks: This is the fastest and most efficient way to get a the location of a point into memory you are managing. </p>
 
 </div>
 </div>
@@ -880,7 +880,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_3dPointListRef::operator[] </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga090dc337a02411b8168f75fd318b99ed">ON__INT64</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gab15ed087e633a6bb4d9a634d3fa5a32e">ON__INT64</a>&#160;</td>
           <td class="paramname"><em>point_index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -906,7 +906,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_3dPointListRef::operator[] </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td>
           <td class="paramname"><em>point_index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1087,7 +1087,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: no points 1: single precison points (float coordinates) 2: double precison points (double coordinates) </p>
+<p>Returns: 0: no points 1: single precision points (float coordinates) 2: double precision points (double coordinates) </p>
 
 </div>
 </div>
@@ -1260,7 +1260,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

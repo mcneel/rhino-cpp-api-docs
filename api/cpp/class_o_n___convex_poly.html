@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a61cd3cfe22e52c996fb877cfe2e9509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a base class for a convex polytope in 3d space, i.e. the convex hull of a finite set of points called verticies.</p>
+<div class="textblock"><p>This is a base class for a convex polytope in 3d space, i.e. the convex hull of a finite set of points called vertices.</p>
 <p>This is the base type in the implementation of the GJK algorithm ClosestPoint(ON_ConvexPoly&amp; A, ON_ConvexPoly&amp; B, ...) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b146bf19f135ef4b91cbc29409aaea9"></a>
@@ -169,7 +169,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns: Number of verticies &gt;=0 </p>
+<p>Returns: Number of vertices &gt;=0 </p>
 
 <p>Implemented in <a class="el" href="class_o_n___convex_hull_point2.html#ac7fb52fa967941706fe6690693ee2ee8">ON_ConvexHullPoint2</a>, and <a class="el" href="class_o_n___convex_hull_ref.html#a59eaf264615f85468d9e715fe60ceb39">ON_ConvexHullRef</a>.</p>
 
@@ -208,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Points in a Convex Polytope are parameterized , not necessaily uniquely, by an <a class="el" href="class_o_n__4dex.html" title="quadruplet of integer indices.">ON_4dex</a> of vertex indicies and a 4d barycentric point B Evaluate(Ind, B ) = Sum_{i=0,..,3} Vertex(Ind[i])*B[i], where the sum is taken over i such that Ind[i]&gt;=0 If B is a barycentric coordinte B[i]&gt;=0 and B[0] + B[1] + B[2] + B[3] = 1.0 then Evaluate( Ind, B) is a point in the convex polytope </p>
+<p>Description: Points in a Convex Polytope are parameterized , not necessaily uniquely, by an <a class="el" href="class_o_n__4dex.html" title="quadruplet of integer indices.">ON_4dex</a> of vertex indices and a 4d barycentric point B Evaluate(Ind, B ) = Sum_{i=0,..,3} Vertex(Ind[i])*B[i], where the sum is taken over i such that Ind[i]&gt;=0 If B is a barycentric coordinate B[i]&gt;=0 and B[0] + B[1] + B[2] + B[3] = 1.0 then Evaluate( Ind, B) is a point in the convex polytope </p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: This is a bound on the collection of verticies. Vertex(i).<a class="el" href="class_o_n___convex_poly.html#a748c9141ede7a9b9e6c644bdba99dfc1">MaximumCoordinate()</a>&lt;= <a class="el" href="class_o_n___convex_poly.html#a748c9141ede7a9b9e6c644bdba99dfc1">MaximumCoordinate()</a> for all i </p>
+<p>Description: This is a bound on the collection of vertices. Vertex(i).<a class="el" href="class_o_n___convex_poly.html#a748c9141ede7a9b9e6c644bdba99dfc1">MaximumCoordinate()</a>&lt;= <a class="el" href="class_o_n___convex_poly.html#a748c9141ede7a9b9e6c644bdba99dfc1">MaximumCoordinate()</a> for all i </p>
 
 <p>Implemented in <a class="el" href="class_o_n___convex_hull_point2.html#a89f918418d9d52cca16d062d30c22045">ON_ConvexHullPoint2</a>, and <a class="el" href="class_o_n___convex_hull_ref.html#a99bbe5f69a4a4bb84d13ec41c1304516">ON_ConvexHullRef</a>.</p>
 
@@ -518,7 +518,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: A point represented by a <a class="el" href="class_o_n__4dex.html" title="quadruplet of integer indices.">ON_4dex</a> D and a barycentric coordinate B can be put in a standard form so that non-negative elements of D are unique and corresponding coordinates are positive. Furthemore, the non-negative indicies are all listed before the unset ( neagative ) values </p>
+<p>Description: A point represented by a <a class="el" href="class_o_n__4dex.html" title="quadruplet of integer indices.">ON_4dex</a> D and a barycentric coordinate B can be put in a standard form so that non-negative elements of D are unique and corresponding coordinates are positive. Furthermore, the non-negative indices are all listed before the unset ( neagative ) values </p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: For any vector W there is a vetex that is Support(W) SupportIndex( W, i0) returns a vertex index for a vertex that is the support. Veretx( K.SupportIndex( W )) = K.Support(W ); </p>
+<p>Description: For any vector W there is a vertex that is Support(W) SupportIndex( W, i0) returns a vertex index for a vertex that is the support. Veretx( K.SupportIndex( W )) = K.Support(W ); </p>
 
 <p>Implemented in <a class="el" href="class_o_n___convex_hull_point2.html#a9119b1dc0188cfb4dc9b21519b2cfc6f">ON_ConvexHullPoint2</a>, and <a class="el" href="class_o_n___convex_hull_ref.html#a8f2ad92aac8096d83f8ce8ed3a6f709f">ON_ConvexHullRef</a>.</p>
 
@@ -630,7 +630,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

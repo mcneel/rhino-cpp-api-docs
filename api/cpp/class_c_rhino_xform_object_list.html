@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a835f5d1f168dcef076546c176062a0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41969e244e449bb0b50113e70805fc1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_xform_object_list.html#a41969e244e449bb0b50113e70805fc1b">ObjectListTightBoundingBox</a> (<a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bbox)</td></tr>
 <tr class="separator:a41969e244e449bb0b50113e70805fc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19c34596667255efc6f871b942d3706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_xform_object_list.html#af19c34596667255efc6f871b942d3706">ObjectListTightBoundingBox</a> (<a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bbox, bool bIncludeGrips)</td></tr>
+<tr class="separator:af19c34596667255efc6f871b942d3706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67b74798ee2bab0800fc95ea9f5100b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_xform_object_list.html">CRhinoXformObjectList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_xform_object_list.html#ac67b74798ee2bab0800fc95ea9f5100b">operator=</a> (const <a class="el" href="class_c_rhino_xform_object_list.html">CRhinoXformObjectList</a> &amp;)</td></tr>
 <tr class="separator:ac67b74798ee2bab0800fc95ea9f5100b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a645c0a191a5137b30b68c7486593c03d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_xform_object_list.html#a645c0a191a5137b30b68c7486593c03d">UpdateDisplayFeedbackXform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
@@ -280,7 +282,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Empties the current list and then adds objects in go's object list. Parameters: go - [in] The list of objects in the getter is added. bAllowAllGrips - [in] If false and all of an objects grips are selected, then the object itself is added. If true, then grips are added even when all of an object's grips are selected. Returns: Number of objects and grips added tothe list. </p>
+<p>Description: Empties the current list and then adds objects in go's object list. Parameters: go - [in] The list of objects in the getter is added. bAllowAllGrips - [in] If false and all of an objects grips are selected, then the object itself is added. If true, then grips are added even when all of an object's grips are selected. Returns: Number of objects and grips added to the list. </p>
 
 </div>
 </div>
@@ -497,7 +499,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a41969e244e449bb0b50113e70805fc1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41969e244e449bb0b50113e70805fc1b">&#9670;&nbsp;</a></span>ObjectListTightBoundingBox()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41969e244e449bb0b50113e70805fc1b">&#9670;&nbsp;</a></span>ObjectListTightBoundingBox() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,6 +514,34 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Returns the world coordinate axis-aligned tight bounding box of the Rhino objects found in the CRhXformObjectList::m_objects array. </p>
+
+</div>
+</div>
+<a id="af19c34596667255efc6f871b942d3706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19c34596667255efc6f871b942d3706">&#9670;&nbsp;</a></span>ObjectListTightBoundingBox() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoXformObjectList::ObjectListTightBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>bbox</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIncludeGrips</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -692,7 +722,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

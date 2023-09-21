@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac11c0d3bb1552c580f2343ed8da4dad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Description: Makes a dimension = 1, degree = 3 spline curve that interpolates input values and doesn't overshoot extreme explicitly set in the input values. The output spline will have double knots at each interpolant and 0 derivative at extremes. The domain will be from dist_data[0].t to dist_data[dist_data.Count()-1].t. This makes a good smooth function for interpolating input values along a curve or for use wit the <a class="el" href="group___rhino.html#ga24ebc58d9b8f211679cf1690878e1ec1">RhinoOffsetCurveNormal()</a> function. Parameters: pSrf [in] - Surface from which normals are calculated. pCrv [in] - 3d curve lying on the surface along which normals are calculated. params [in] - parameters in the domain of pCrv for offset points to interpolate pHeights [in] - offset distance (distance from surface to result curve). pHeights is a NURBS curve of dimension 1 with the same domain as pCrv. It is evaluated at points corresponding to the locations where offsets from the surface are calculated to find the height of the offset at those points. Return: ON_NurbsCurve* pointing to offset curve at distance height from the surface. Remarks: Same as the function above, but the offset point locations are specified. THE CALLER IS RESPONSIBLE FOR DESTROYING THE OUTPUT CURVE. See Also: RhinoOffsetCurveNormal </p>
+<div class="textblock"><p>Description: Makes a dimension = 1, degree = 3 spline curve that interpolates input values and doesn't overshoot extreme explicitly set in the input values. The output spline will have double knots at each interpolant and 0 derivative at extremes. The domain will be from dist_data[0].t to dist_data[dist_data.Count()-1].t. This makes a good smooth function for interpolating input values along a curve or for use with the <a class="el" href="group___rhino.html#ga24ebc58d9b8f211679cf1690878e1ec1">RhinoOffsetCurveNormal()</a> function. Parameters: pSrf [in] - Surface from which normals are calculated. pCrv [in] - 3d curve lying on the surface along which normals are calculated. params [in] - parameters in the domain of pCrv for offset points to interpolate pHeights [in] - offset distance (distance from surface to result curve). pHeights is a NURBS curve of dimension 1 with the same domain as pCrv. It is evaluated at points corresponding to the locations where offsets from the surface are calculated to find the height of the offset at those points. Return: ON_NurbsCurve* pointing to offset curve at distance height from the surface. Remarks: Same as the function above, but the offset point locations are specified. THE CALLER IS RESPONSIBLE FOR DESTROYING THE OUTPUT CURVE. See Also: RhinoOffsetCurveNormal </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a42f8a967dae51ce1af071750cbe5a5a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42f8a967dae51ce1af071750cbe5a5a1">&#9670;&nbsp;</a></span>m_distance</h2>
@@ -119,7 +119,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

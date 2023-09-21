@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a10b2bebdd46a7e80674e091f9421987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3819c8e01c9f57f50d84a11fe4fe295a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___arc.html#a3819c8e01c9f57f50d84a11fe4fe295a">IsCircle</a> () const</td></tr>
 <tr class="separator:a3819c8e01c9f57f50d84a11fe4fe295a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe6bd711db802b3b5bb989a42ecce9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___arc.html#a1fe6bd711db802b3b5bb989a42ecce9b">IsLinear</a> (double tol) const</td></tr>
+<tr class="separator:a1fe6bd711db802b3b5bb989a42ecce9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac387d6a5366f21fb94ce26beb2f09db7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___arc.html#ac387d6a5366f21fb94ce26beb2f09db7">IsValid</a> () const</td></tr>
 <tr class="separator:ac387d6a5366f21fb94ce26beb2f09db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb5b0b27c1fe361ae06d44304095613"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___arc.html#a6bb5b0b27c1fe361ae06d44304095613">Length</a> () const</td></tr>
@@ -311,9 +313,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a48d3fe4c0792b269453768f803e412e7 inherit pub_attribs_class_o_n___circle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section rcs"><dt>NoKeywords</dt><dd></dd></dl>
-<p>/ / Copyright (c) 1993-2012 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// Description: An <a class="el" href="class_o_n___arc.html">ON_Arc</a> is a subcurve of 3d circle. Details: The curve is parameterized by an angle expressed in radians. For an <a class="el" href="class_o_n___arc.html#ac387d6a5366f21fb94ce26beb2f09db7">IsValid()</a> arc the total subtended angle <a class="el" href="class_o_n___arc.html#a500298b72e2e444e16fb0a580bb01c8b">AngleRadians()</a> = <a class="el" href="class_o_n___arc.html#a29540a3b8ce0f67d9ca3378a5c00eb0c">Domain()</a>(1) - <a class="el" href="class_o_n___arc.html#a29540a3b8ce0f67d9ca3378a5c00eb0c">Domain()</a>(0) must satisfy 0&lt; <a class="el" href="class_o_n___arc.html#a500298b72e2e444e16fb0a580bb01c8b">AngleRadians()</a> &lt;2*Pi .</p>
+<div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. Description: An <a class="el" href="class_o_n___arc.html">ON_Arc</a> is a subcurve of 3d circle. Details: The curve is parameterized by an angle expressed in radians. For an <a class="el" href="class_o_n___arc.html#ac387d6a5366f21fb94ce26beb2f09db7">IsValid()</a> arc the total subtended angle <a class="el" href="class_o_n___arc.html#a500298b72e2e444e16fb0a580bb01c8b">AngleRadians()</a> = <a class="el" href="class_o_n___arc.html#a29540a3b8ce0f67d9ca3378a5c00eb0c">Domain()</a>(1) - <a class="el" href="class_o_n___arc.html#a29540a3b8ce0f67d9ca3378a5c00eb0c">Domain()</a>(0) must satisfy 0&lt; <a class="el" href="class_o_n___arc.html#a500298b72e2e444e16fb0a580bb01c8b">AngleRadians()</a> &lt;2*Pi .</p>
 <p>The parameterization of the <a class="el" href="class_o_n___arc.html">ON_Arc</a> is inherited from the <a class="el" href="class_o_n___circle.html">ON_Circle</a> it is derived from. In particular t -&gt; center + cos(t)*radius*xaxis + sin(t)*radius*yaxis <br  />
  where xaxis and yaxis, (part of ON_Circle::m_plane) form an othonormal frame of the plane containing the circle. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -561,7 +563,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Construct an arc parallel to plane from a center point, radius, and angle in radians. <br  />
- The arc starts at center+radius*plane.xaxis. Parameters: plane - [in] The plane x, y and z axis are used to defines the circle plane's x, y and z axis. The plane origin is ignorned. center - [in] circle's center point radius - [in] angle_in_radians - [in] </p>
+ The arc starts at center+radius*plane.xaxis. Parameters: plane - [in] The plane x, y and z axis are used to defines the circle plane's x, y and z axis. The plane origin is ignored. center - [in] circle's center point radius - [in] angle_in_radians - [in] </p>
 
 </div>
 </div>
@@ -1009,7 +1011,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Create an arc parallel to plane from a center point, radius, and angle in radians. <br  />
- The arc starts at center+radius*plane.xaxis. Parameters: plane - [in] The plane x, y and z axis are used to defines the circle plane's x, y and z axis. The plane origin is ignorned. center - [in] circle's center point radius - [in] angle_in_radians - [in] </p>
+ The arc starts at center+radius*plane.xaxis. Parameters: plane - [in] The plane x, y and z axis are used to defines the circle plane's x, y and z axis. The plane origin is ignored. center - [in] circle's center point radius - [in] angle_in_radians - [in] </p>
 
 </div>
 </div>
@@ -1318,6 +1320,25 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: true if the arc is a complete circle; i.e., the arc's angle is 360 degrees. </p>
+
+</div>
+</div>
+<a id="a1fe6bd711db802b3b5bb989a42ecce9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe6bd711db802b3b5bb989a42ecce9b">&#9670;&nbsp;</a></span>IsLinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Arc::IsLinear </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tol</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if the arc is within tol of the chord and chord is longer than tol </p>
 
 </div>
 </div>
@@ -1687,7 +1708,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

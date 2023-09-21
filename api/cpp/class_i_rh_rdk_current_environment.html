@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a84f7a019164dd8fb53ffe0acb704ac0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This interface can be used to access the current environments.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_document.html#a5059b567e9010b80f34289d1e21416b6">CRhRdkDocument::CurrentEnvironment()</a> </dd></dl>
+<div class="textblock"><p>This is the interface to the current environments for background, skylighting and reflection / refraction.</p>
+<p>Ideally this interface would be deprecated and replaced by <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> but we can't do that as the latter has no current environment interface.</p>
+<p>The Usage and Purpose enums have the same meaning as those in <a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090" title="Access to information about which environments are used for rendering.">ON_3dmRenderSettings::EnvironmentUsage</a> but the values are different so be careful about the possible need to convert between them. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab408455333a1c38835107d2a6ff2f4fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab408455333a1c38835107d2a6ff2f4fb">&#9670;&nbsp;</a></span>Purpose</h2>
@@ -493,7 +494,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

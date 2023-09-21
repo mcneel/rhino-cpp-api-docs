@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -666,7 +666,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>m_L1 and m_L2 = tangent space evaluation vectors. The arrays m_L1[] and m_L2[] have m_R elements. If (vertexR[0], ..., vertexR[R-1]) is a list of standard vertex ring points, then the two vectors V1 = m_L1[0]*vertexR[0] + ... + m_L1[R-1]*vertexR[R-1]. V2 = m_L2[0]*vertexR[0] + ... + m_L2[R-1]*vertexR[R-1]. span the tangent plane and N = V1 x V2 is perpindicular to the limit tangent plane. In general and almost always in practice, V1 and V2 are not unit vectors and it is best to noramalize V1 and V2 before taking the cross product. m_L1 and m_L2 are subdominant eigenvectors of Transpose(m_S). When the subdominant eigenvalue has geometric multiplicity 2, m_L1 and m_L2 span the same space as m_E1 and m_E2. The values stored in m_L1 and m_L2 are chosen to provide accurate evaluation. In come common cases m_L1 and m_L2 are equal to m_E1 and m_E2, but not in all cases. </p>
+<p>m_L1 and m_L2 = tangent space evaluation vectors. The arrays m_L1[] and m_L2[] have m_R elements. If (vertexR[0], ..., vertexR[R-1]) is a list of standard vertex ring points, then the two vectors V1 = m_L1[0]*vertexR[0] + ... + m_L1[R-1]*vertexR[R-1]. V2 = m_L2[0]*vertexR[0] + ... + m_L2[R-1]*vertexR[R-1]. span the tangent plane and N = V1 x V2 is perpendicular to the limit tangent plane. In general and almost always in practice, V1 and V2 are not unit vectors and it is best to normalize V1 and V2 before taking the cross product. m_L1 and m_L2 are subdominant eigenvectors of Transpose(m_S). When the subdominant eigenvalue has geometric multiplicity 2, m_L1 and m_L2 span the same space as m_E1 and m_E2. The values stored in m_L1 and m_L2 are chosen to provide accurate evaluation. In come common cases m_L1 and m_L2 are equal to m_E1 and m_E2, but not in all cases. </p>
 
 </div>
 </div>
@@ -727,11 +727,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The term "standard vertex ring points" is used below.</p>
-<p>If "C" is an interior vertex (m_vertex_tag is smooth or dart), (E[0], ...., E[N-1]) is a radially sorted list of its edges, (F[0], ..., F[N-1]) is a radially sorted list of its faces, and (P[0], ..., P[N-1]) is a list of the edge vertices opposite C, E0type = smooth for a smooth vertex and crease for a dart vertex, then C is "standard" if E[0] has type E0type, every other edge E[i] is smooth, every outer vertex/ P[i] is smooth, and every face F[i] has the stadard facet type (tri or quad) for the subdivision algorithm.</p>
-<p>If If "C" is a boundary vertex (m_vertex_tag is crease or corner), the conditions listed above are satisified except E[0] and E[N-1] are tagged as crease edges, P[0] and P[N-1] are tagged as crease vertices (NOT corners), and there are N-2 faces, then "C" is a standard boundary vertex.</p>
-<p>If the facet type is triangle and C is a standard interior or boundary vertex, then the "standard vertex ring" is the list of N+1 points (C, P[0], ...., P[N-1]).</p>
-<p>If the facet type is quad, and C is a standard interior vertex, then the "standard vertex ring" is the list of 2*N+1 points (C, P[0], Q[0], ...., P[N-1], Q[N-1]), where Q[I] is the vertex of quad F[i] diagonally across from C.</p>
-<p>If the facet type is quad, and C is a standard boundary vertex, then the "standard vertex ring" is the list of 2*N points (C, P[0], Q[0], ...., P[N-1]). m_S = R x R subdivision matrix If (vertexR[0], ..., vertexR[R-1]) is a list of standard vertex ring points, then then the location of the subdivided ring points (vertexR1[0], ..., vertexR1[R-1]) can be calculated from m_S. vertexR1[i] = m_S[i][0]*vertexR[0] + ... + m_S[i][R-1]*vertexR[R-1] </p>
+<p>Let "C" be an interior vertex (m_vertex_tag is smooth or dart), (E[0], ...., E[N-1]) is a radially sorted list of its edges, (F[0], ..., F[N-1]) is a radially sorted list of its faces (F[i] is between E[i] and E[(i+1)N]), (P[0], ..., P[N-1]) are the vertices on the edges opposide Cn (P[i] is on E[i].</p>
+<p>C is a "standard" smooth vertex if all edges E[i] are smooth with sharpness = 0, and all faces f[i] are quads.</p>
+<p>C is a "standard" dart vertex if edge E[0] is a crease, edges E[1], ..., E[N-1] are smooth with sharpness = 0, <br  />
+ and all faces F[i] are quads.</p>
+<p>If If "C" is a boundary vertex (m_vertex_tag is crease or corner), the conditions listed above are satisfied except E[0] and E[N-1] are crease edges, E[1], ..., E[N-2] are smooth edges with sharpness = 0, and faces f[0], ..., F[N-2] are quads.</p>
+<p>If C is a standard interior smooth or dart vertex, then the "standard vertex ring" is the list of 2*N+1 points (C, P[0], Q[0], ...., P[N-1], Q[N-1]), where Q[I] is the vertex of quad F[i] diagonally across from C.</p>
+<p>If C is a standard boundary vertex, then the "standard vertex ring" is the list of 2*N points (C, P[0], Q[0], ...., P[N-1]). m_S = R x R subdivision matrix If (vertexR[0], ..., vertexR[R-1]) is a list of standard vertex ring points, then then the location of the subdivided ring points (vertexR1[0], ..., vertexR1[R-1]) can be calculated from m_S. vertexR1[i] = m_S[i][0]*vertexR[0] + ... + m_S[i][R-1]*vertexR[R-1] </p>
 
 </div>
 </div>
@@ -752,7 +754,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

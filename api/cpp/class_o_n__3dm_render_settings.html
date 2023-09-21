@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_o_n__3dm_render_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ON_3dmRenderSettings Class Reference<div class="ingroups"><a class="el" href="group__open_n_u_r_b_s.html">OpenNURBS</a></div></div>  </div>
@@ -86,6 +87,16 @@ Inheritance diagram for ON_3dmRenderSettings:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:afc154153fe072a45004d12340e9f8b9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9d">EnvironmentPurpose</a> : unsigned int { <a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9daeb6d8ae6f20283755b339c0dc273988b">EnvironmentPurpose::Standard</a>, 
+<a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9da3ba48d2640408ce9bb67a56360733442">EnvironmentPurpose::ForRendering</a>
+ }</td></tr>
+<tr class="separator:afc154153fe072a45004d12340e9f8b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f531d003e0b4c803983c9ef244f090"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a> : unsigned int { <a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090aa9ded1e5ce5d75814730bb4caaf49419">EnvironmentUsage::Background</a>, 
+<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090aaea1e492943ccbad7ee270ec1e064758">EnvironmentUsage::Reflection</a>, 
+<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090a3c63813a948d1594c46a6c527b933dd1">EnvironmentUsage::Skylighting</a>
+ }</td></tr>
+<tr class="memdesc:a76f531d003e0b4c803983c9ef244f090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to information about which environments are used for rendering.  <a href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">More...</a><br /></td></tr>
+<tr class="separator:a76f531d003e0b4c803983c9ef244f090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1348704d250688f24817622f577750bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bd">RenderingSources</a> : unsigned int { <a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bda6530b272686d0dcb680b3e9c00def052">RenderingSources::ActiveViewport</a>, 
 <a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bda50161c3e3d0e38a0c9fdc472493e5960">RenderingSources::SpecificViewport</a>, 
 <a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bdaf162be429ff0e16fb165312feb60e578">RenderingSources::NamedView</a>, 
@@ -110,24 +121,66 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a025c637684ae56cb832d322cd753dab2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a025c637684ae56cb832d322cd753dab2">ON_3dmRenderSettings</a> ()=default</td></tr>
 <tr class="separator:a025c637684ae56cb832d322cd753dab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f4490ffb510e1ae32480ddcf0fef678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a9f4490ffb510e1ae32480ddcf0fef678">ON_3dmRenderSettings</a> (const <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;)=default</td></tr>
-<tr class="separator:a9f4490ffb510e1ae32480ddcf0fef678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0701672bdd17f2e37b9819ca1466dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a0e0701672bdd17f2e37b9819ca1466dd">~ON_3dmRenderSettings</a> ()=default</td></tr>
-<tr class="separator:a0e0701672bdd17f2e37b9819ca1466dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b504cf809e40bb6648d20aa340e5963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a8b504cf809e40bb6648d20aa340e5963">ON_3dmRenderSettings</a> (const <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;)</td></tr>
+<tr class="separator:a8b504cf809e40bb6648d20aa340e5963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91797c0510d0d53f3dbfea21b115d5f5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a91797c0510d0d53f3dbfea21b115d5f5">~ON_3dmRenderSettings</a> ()</td></tr>
+<tr class="separator:a91797c0510d0d53f3dbfea21b115d5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3105abc91921c7cce5ea43597f539ea3"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___dithering.html">ON_Dithering</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a3105abc91921c7cce5ea43597f539ea3">Dithering</a> (void)</td></tr>
+<tr class="memdesc:a3105abc91921c7cce5ea43597f539ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Dithering information.  <a href="class_o_n__3dm_render_settings.html#a3105abc91921c7cce5ea43597f539ea3">More...</a><br /></td></tr>
+<tr class="separator:a3105abc91921c7cce5ea43597f539ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae427d72f58a5c880449420fbf624ad09"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___dithering.html">ON_Dithering</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#ae427d72f58a5c880449420fbf624ad09">Dithering</a> (void) const</td></tr>
+<tr class="separator:ae427d72f58a5c880449420fbf624ad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9feb17ea4d3d5b83b40e584bcd1c2e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a9feb17ea4d3d5b83b40e584bcd1c2e44">Dump</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const override</td></tr>
 <tr class="separator:a9feb17ea4d3d5b83b40e584bcd1c2e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc7e9e7778aab75352c2a6585435937"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___ground_plane.html">ON_GroundPlane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#affc7e9e7778aab75352c2a6585435937">GroundPlane</a> (void)</td></tr>
+<tr class="memdesc:affc7e9e7778aab75352c2a6585435937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Ground Plane information.  <a href="class_o_n__3dm_render_settings.html#affc7e9e7778aab75352c2a6585435937">More...</a><br /></td></tr>
+<tr class="separator:affc7e9e7778aab75352c2a6585435937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a2d663395729a0d2bd731d278c631f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___ground_plane.html">ON_GroundPlane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#af3a2d663395729a0d2bd731d278c631f">GroundPlane</a> (void) const</td></tr>
+<tr class="separator:af3a2d663395729a0d2bd731d278c631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98667095b8cb7f0ce36f6499500c3925"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a98667095b8cb7f0ce36f6499500c3925">InvalidateCaches</a> (void) const</td></tr>
+<tr class="memdesc:a98667095b8cb7f0ce36f6499500c3925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate any caches in the render settings.  <a href="class_o_n__3dm_render_settings.html#a98667095b8cb7f0ce36f6499500c3925">More...</a><br /></td></tr>
+<tr class="separator:a98667095b8cb7f0ce36f6499500c3925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9690be65310c7478f16d12b951a51d67"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a9690be65310c7478f16d12b951a51d67">LinearWorkflow</a> (void)</td></tr>
+<tr class="memdesc:a9690be65310c7478f16d12b951a51d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Linear Workflow information.  <a href="class_o_n__3dm_render_settings.html#a9690be65310c7478f16d12b951a51d67">More...</a><br /></td></tr>
+<tr class="separator:a9690be65310c7478f16d12b951a51d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79416b48e07483c4b871c2e1b6cbb07"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#ac79416b48e07483c4b871c2e1b6cbb07">LinearWorkflow</a> (void) const</td></tr>
+<tr class="separator:ac79416b48e07483c4b871c2e1b6cbb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cba1af0e34902f8da98a9617ec8345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a49cba1af0e34902f8da98a9617ec8345">NamedView</a> (void) const</td></tr>
 <tr class="separator:a49cba1af0e34902f8da98a9617ec8345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b9e2e7739764a56b4b603d6ea80f74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a61b9e2e7739764a56b4b603d6ea80f74">operator=</a> (const <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;)=default</td></tr>
-<tr class="separator:a61b9e2e7739764a56b4b603d6ea80f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712dfecd0cedb674ab205e31c296d730"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a712dfecd0cedb674ab205e31c296d730">operator=</a> (const <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> &amp;)</td></tr>
+<tr class="separator:a712dfecd0cedb674ab205e31c296d730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9103d06f8ed1ba4aef7580e3713c2feb"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___post_effects.html">ON_PostEffects</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a9103d06f8ed1ba4aef7580e3713c2feb">PostEffects</a> (void)</td></tr>
+<tr class="memdesc:a9103d06f8ed1ba4aef7580e3713c2feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Post Effect information.  <a href="class_o_n__3dm_render_settings.html#a9103d06f8ed1ba4aef7580e3713c2feb">More...</a><br /></td></tr>
+<tr class="separator:a9103d06f8ed1ba4aef7580e3713c2feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ecc4b6a72a3f374d21ef4607f35c9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___post_effects.html">ON_PostEffects</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a18ecc4b6a72a3f374d21ef4607f35c9c">PostEffects</a> (void) const</td></tr>
+<tr class="separator:a18ecc4b6a72a3f374d21ef4607f35c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2f38afeb6c976dd784ed1b44556284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#afb2f38afeb6c976dd784ed1b44556284">Read</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;) override</td></tr>
 <tr class="separator:afb2f38afeb6c976dd784ed1b44556284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57c7910dc7548356e3f6ce2cb1352ea"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___render_channels.html">ON_RenderChannels</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#ac57c7910dc7548356e3f6ce2cb1352ea">RenderChannels</a> (void)</td></tr>
+<tr class="memdesc:ac57c7910dc7548356e3f6ce2cb1352ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Render Channels information.  <a href="class_o_n__3dm_render_settings.html#ac57c7910dc7548356e3f6ce2cb1352ea">More...</a><br /></td></tr>
+<tr class="separator:ac57c7910dc7548356e3f6ce2cb1352ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee740d41cf9c421dca6db7d41c10a1f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___render_channels.html">ON_RenderChannels</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a7ee740d41cf9c421dca6db7d41c10a1f">RenderChannels</a> (void) const</td></tr>
+<tr class="separator:a7ee740d41cf9c421dca6db7d41c10a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d89aeec6b45c178ae18d26605261844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1d89aeec6b45c178ae18d26605261844">RenderEnvironmentId</a> (<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a> usage, <a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9d">EnvironmentPurpose</a> purpose) const</td></tr>
+<tr class="separator:a1d89aeec6b45c178ae18d26605261844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2df2819fd7bf06cef660f3ccc533a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1e2df2819fd7bf06cef660f3ccc533a2">RenderEnvironmentOverride</a> (<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a> usage) const</td></tr>
+<tr class="separator:a1e2df2819fd7bf06cef660f3ccc533a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1316a05537512cbbba12f2dea76d8f9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bd">RenderingSources</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1316a05537512cbbba12f2dea76d8f9e">RenderingSource</a> (void) const</td></tr>
 <tr class="separator:a1316a05537512cbbba12f2dea76d8f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc9716173a4057fb9dc5b9e941bd1f5"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___safe_frame.html">ON_SafeFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1dc9716173a4057fb9dc5b9e941bd1f5">SafeFrame</a> (void)</td></tr>
+<tr class="memdesc:a1dc9716173a4057fb9dc5b9e941bd1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Safe Frame information.  <a href="class_o_n__3dm_render_settings.html#a1dc9716173a4057fb9dc5b9e941bd1f5">More...</a><br /></td></tr>
+<tr class="separator:a1dc9716173a4057fb9dc5b9e941bd1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c963e3061ef1daa015276d6b218277c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___safe_frame.html">ON_SafeFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a2c963e3061ef1daa015276d6b218277c">SafeFrame</a> (void) const</td></tr>
+<tr class="separator:a2c963e3061ef1daa015276d6b218277c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f74f1cf3e417a2fc20a861778e89da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a82f74f1cf3e417a2fc20a861778e89da">ScaleBackgroundToFit</a> () const</td></tr>
 <tr class="separator:a82f74f1cf3e417a2fc20a861778e89da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1451c10dd89128362a914f07b6194a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1451c10dd89128362a914f07b6194a45">SetNamedView</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;)</td></tr>
 <tr class="separator:a1451c10dd89128362a914f07b6194a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7311e914bf0f458649d36574098e8e6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a7311e914bf0f458649d36574098e8e6b">SetRenderEnvironmentId</a> (<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a> usage, const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;id)</td></tr>
+<tr class="memdesc:a7311e914bf0f458649d36574098e8e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the id of the rendering environment for a particular usage.  <a href="class_o_n__3dm_render_settings.html#a7311e914bf0f458649d36574098e8e6b">More...</a><br /></td></tr>
+<tr class="separator:a7311e914bf0f458649d36574098e8e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d797e8a7fa4742aa3b7a0024ed659a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a99d797e8a7fa4742aa3b7a0024ed659a">SetRenderEnvironmentOverride</a> (<a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a> usage, bool on)</td></tr>
+<tr class="separator:a99d797e8a7fa4742aa3b7a0024ed659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43384a4aa4eb26c235c38b0d2486f1b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a43384a4aa4eb26c235c38b0d2486f1b2">SetRenderingSource</a> (<a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bd">RenderingSources</a>)</td></tr>
 <tr class="separator:a43384a4aa4eb26c235c38b0d2486f1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8eaae84d1e1db4218f3e823cead978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#abb8eaae84d1e1db4218f3e823cead978">SetScaleBackgroundToFit</a> (bool bScaleBackgroundToFit)</td></tr>
@@ -136,10 +189,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97e72c07c7c5bd39c93d611e935aa524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e091c642c8f52631aa62d8b2b5f6eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a3e091c642c8f52631aa62d8b2b5f6eb9">SetSpecificViewport</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;)</td></tr>
 <tr class="separator:a3e091c642c8f52631aa62d8b2b5f6eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426c3526e8066634319cf5df6f7097a8"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___skylight.html">ON_Skylight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a426c3526e8066634319cf5df6f7097a8">Skylight</a> (void)</td></tr>
+<tr class="memdesc:a426c3526e8066634319cf5df6f7097a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Skylight information.  <a href="class_o_n__3dm_render_settings.html#a426c3526e8066634319cf5df6f7097a8">More...</a><br /></td></tr>
+<tr class="separator:a426c3526e8066634319cf5df6f7097a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfd5e1d748b1cf52c86156d08c94fe6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___skylight.html">ON_Skylight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a4dfd5e1d748b1cf52c86156d08c94fe6">Skylight</a> (void) const</td></tr>
+<tr class="separator:a4dfd5e1d748b1cf52c86156d08c94fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa258346b631d6a77df324c430d0ef5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#aa258346b631d6a77df324c430d0ef5ec">Snapshot</a> (void) const</td></tr>
 <tr class="separator:aa258346b631d6a77df324c430d0ef5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a1f7b7aca8abf01b1751cd55bc4d88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a88a1f7b7aca8abf01b1751cd55bc4d88">SpecificViewport</a> (void) const</td></tr>
 <tr class="separator:a88a1f7b7aca8abf01b1751cd55bc4d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58787b7d7f27a0347f7d55f0ab921a8a"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___sun.html">ON_Sun</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a58787b7d7f27a0347f7d55f0ab921a8a">Sun</a> (void)</td></tr>
+<tr class="memdesc:a58787b7d7f27a0347f7d55f0ab921a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to Sun information.  <a href="class_o_n__3dm_render_settings.html#a58787b7d7f27a0347f7d55f0ab921a8a">More...</a><br /></td></tr>
+<tr class="separator:a58787b7d7f27a0347f7d55f0ab921a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564b759ccc0856e8215a85c77dba25dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sun.html">ON_Sun</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a564b759ccc0856e8215a85c77dba25dd">Sun</a> (void) const</td></tr>
+<tr class="separator:a564b759ccc0856e8215a85c77dba25dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc6e677218b22020d81a0c2d591ecc57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#adc6e677218b22020d81a0c2d591ecc57">Write</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;) const override</td></tr>
 <tr class="separator:adc6e677218b22020d81a0c2d591ecc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_o_n___object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_o_n___object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_o_n___object.html">ON_Object</a></td></tr>
@@ -163,7 +226,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58958333257eba5575a6a1b09c366c1b inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad044157e5c1efde9fce1c6ccf6e81ff3 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#ad044157e5c1efde9fce1c6ccf6e81ff3">CopyUserData</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution)</td></tr>
 <tr class="separator:ad044157e5c1efde9fce1c6ccf6e81ff3 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> current_remainder) const</td></tr>
+<tr class="memitem:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const</td></tr>
 <tr class="separator:af51d5fcec9379ad9b7a56ac4dfc9a8b2 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67be7d8cc76ec82ae22a30093ecf98f inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aa67be7d8cc76ec82ae22a30093ecf98f">DeleteComponents</a> (const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> *ci_list, size_t ci_count)</td></tr>
 <tr class="separator:aa67be7d8cc76ec82ae22a30093ecf98f inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,10 +375,78 @@ Public Attributes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1b23145400f18d59d5d6e8e260cb020e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a1b23145400f18d59d5d6e8e260cb020e">Default</a></td></tr>
 <tr class="separator:a1b23145400f18d59d5d6e8e260cb020e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8c9645207f86d94d1c7b22ed904f5ff2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#a8c9645207f86d94d1c7b22ed904f5ff2">ON_3dmRenderSettingsPrivate</a></td></tr>
+<tr class="separator:a8c9645207f86d94d1c7b22ed904f5ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_render_settings.html#ab4dcb950cb9e09c46bb4f49c0a6ec481">ONX_ModelPrivate</a></td></tr>
+<tr class="memdesc:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; For internal use only.  <a href="class_o_n__3dm_render_settings.html#ab4dcb950cb9e09c46bb4f49c0a6ec481">More...</a><br /></td></tr>
+<tr class="separator:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="afc154153fe072a45004d12340e9f8b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc154153fe072a45004d12340e9f8b9d">&#9670;&nbsp;</a></span>EnvironmentPurpose</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9d">ON_3dmRenderSettings::EnvironmentPurpose</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afc154153fe072a45004d12340e9f8b9daeb6d8ae6f20283755b339c0dc273988b"></a>Standard&#160;</td><td class="fielddoc"><p>Used to directly get and set the environment instance id. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afc154153fe072a45004d12340e9f8b9da3ba48d2640408ce9bb67a56360733442"></a>ForRendering&#160;</td><td class="fielddoc"><p>Used to get the environment instance id to be used for actual rendering. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a76f531d003e0b4c803983c9ef244f090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f531d003e0b4c803983c9ef244f090">&#9670;&nbsp;</a></span>EnvironmentUsage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">ON_3dmRenderSettings::EnvironmentUsage</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Access to information about which environments are used for rendering. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a76f531d003e0b4c803983c9ef244f090aa9ded1e5ce5d75814730bb4caaf49419"></a>Background&#160;</td><td class="fielddoc"><p>Specifies the 360 background environment. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a76f531d003e0b4c803983c9ef244f090aaea1e492943ccbad7ee270ec1e064758"></a>Reflection&#160;</td><td class="fielddoc"><p>Specifies the custom reflective environment. Also used for refraction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a76f531d003e0b4c803983c9ef244f090a3c63813a948d1594c46a6c527b933dd1"></a>Skylighting&#160;</td><td class="fielddoc"><p>Specifies the custom skylighting environment. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a1348704d250688f24817622f577750bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1348704d250688f24817622f577750bd">&#9670;&nbsp;</a></span>RenderingSources</h2>
 
@@ -375,8 +506,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e0701672bdd17f2e37b9819ca1466dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e0701672bdd17f2e37b9819ca1466dd">&#9670;&nbsp;</a></span>~ON_3dmRenderSettings()</h2>
+<a id="a91797c0510d0d53f3dbfea21b115d5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91797c0510d0d53f3dbfea21b115d5f5">&#9670;&nbsp;</a></span>~ON_3dmRenderSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +516,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ON_3dmRenderSettings::~ON_3dmRenderSettings </td>
+          <td class="memname">virtual ON_3dmRenderSettings::~ON_3dmRenderSettings </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -393,21 +524,18 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9f4490ffb510e1ae32480ddcf0fef678"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f4490ffb510e1ae32480ddcf0fef678">&#9670;&nbsp;</a></span>ON_3dmRenderSettings() <span class="overload">[2/2]</span></h2>
+<a id="a8b504cf809e40bb6648d20aa340e5963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b504cf809e40bb6648d20aa340e5963">&#9670;&nbsp;</a></span>ON_3dmRenderSettings() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ON_3dmRenderSettings::ON_3dmRenderSettings </td>
@@ -417,16 +545,49 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3105abc91921c7cce5ea43597f539ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3105abc91921c7cce5ea43597f539ea3">&#9670;&nbsp;</a></span>Dithering() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___dithering.html">ON_Dithering</a>&amp; ON_3dmRenderSettings::Dithering </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Dithering information. </p>
+
+</div>
+</div>
+<a id="ae427d72f58a5c880449420fbf624ad09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae427d72f58a5c880449420fbf624ad09">&#9670;&nbsp;</a></span>Dithering() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___dithering.html">ON_Dithering</a>&amp; ON_3dmRenderSettings::Dithering </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9feb17ea4d3d5b83b40e584bcd1c2e44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9feb17ea4d3d5b83b40e584bcd1c2e44">&#9670;&nbsp;</a></span>Dump()</h2>
 
@@ -457,6 +618,102 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="affc7e9e7778aab75352c2a6585435937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc7e9e7778aab75352c2a6585435937">&#9670;&nbsp;</a></span>GroundPlane() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___ground_plane.html">ON_GroundPlane</a>&amp; ON_3dmRenderSettings::GroundPlane </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Ground Plane information. </p>
+
+</div>
+</div>
+<a id="af3a2d663395729a0d2bd731d278c631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a2d663395729a0d2bd731d278c631f">&#9670;&nbsp;</a></span>GroundPlane() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___ground_plane.html">ON_GroundPlane</a>&amp; ON_3dmRenderSettings::GroundPlane </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98667095b8cb7f0ce36f6499500c3925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98667095b8cb7f0ce36f6499500c3925">&#9670;&nbsp;</a></span>InvalidateCaches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_3dmRenderSettings::InvalidateCaches </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invalidate any caches in the render settings. </p>
+
+</div>
+</div>
+<a id="a9690be65310c7478f16d12b951a51d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9690be65310c7478f16d12b951a51d67">&#9670;&nbsp;</a></span>LinearWorkflow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a>&amp; ON_3dmRenderSettings::LinearWorkflow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Linear Workflow information. </p>
+
+</div>
+</div>
+<a id="ac79416b48e07483c4b871c2e1b6cbb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79416b48e07483c4b871c2e1b6cbb07">&#9670;&nbsp;</a></span>LinearWorkflow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___linear_workflow.html">ON_LinearWorkflow</a>&amp; ON_3dmRenderSettings::LinearWorkflow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a49cba1af0e34902f8da98a9617ec8345"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49cba1af0e34902f8da98a9617ec8345">&#9670;&nbsp;</a></span>NamedView()</h2>
 
@@ -475,14 +732,11 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a61b9e2e7739764a56b4b603d6ea80f74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61b9e2e7739764a56b4b603d6ea80f74">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a712dfecd0cedb674ab205e31c296d730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712dfecd0cedb674ab205e31c296d730">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a>&amp; ON_3dmRenderSettings::operator= </td>
@@ -492,11 +746,44 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9103d06f8ed1ba4aef7580e3713c2feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9103d06f8ed1ba4aef7580e3713c2feb">&#9670;&nbsp;</a></span>PostEffects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___post_effects.html">ON_PostEffects</a>&amp; ON_3dmRenderSettings::PostEffects </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Post Effect information. </p>
+
+</div>
+</div>
+<a id="a18ecc4b6a72a3f374d21ef4607f35c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ecc4b6a72a3f374d21ef4607f35c9c">&#9670;&nbsp;</a></span>PostEffects() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___post_effects.html">ON_PostEffects</a>&amp; ON_3dmRenderSettings::PostEffects </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -531,6 +818,95 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac57c7910dc7548356e3f6ce2cb1352ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57c7910dc7548356e3f6ce2cb1352ea">&#9670;&nbsp;</a></span>RenderChannels() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___render_channels.html">ON_RenderChannels</a>&amp; ON_3dmRenderSettings::RenderChannels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Render Channels information. </p>
+
+</div>
+</div>
+<a id="a7ee740d41cf9c421dca6db7d41c10a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee740d41cf9c421dca6db7d41c10a1f">&#9670;&nbsp;</a></span>RenderChannels() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___render_channels.html">ON_RenderChannels</a>&amp; ON_3dmRenderSettings::RenderChannels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d89aeec6b45c178ae18d26605261844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d89aeec6b45c178ae18d26605261844">&#9670;&nbsp;</a></span>RenderEnvironmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_3dmRenderSettings::RenderEnvironmentId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a>&#160;</td>
+          <td class="paramname"><em>usage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9d">EnvironmentPurpose</a>&#160;</td>
+          <td class="paramname"><em>purpose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the id of the rendering environment for a particular usage. Param 'purpose' specifies the purpose the environment will be used for:</p><ul>
+<li>If purpose is Standard, this directly returns the id of the environment.</li>
+<li>If purpose is ForRendering, this returns the id of the environment to be used during rendering. It includes all the logic for checking if the environment is enabled and available and for deferring to other environments if the requested usage is not available. </li>
+</ul>
+
+</div>
+</div>
+<a id="a1e2df2819fd7bf06cef660f3ccc533a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2df2819fd7bf06cef660f3ccc533a2">&#9670;&nbsp;</a></span>RenderEnvironmentOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_3dmRenderSettings::RenderEnvironmentOverride </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a>&#160;</td>
+          <td class="paramname"><em>usage</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether or not the rendering environment for a particular usage is overriding the background environment. Only really makes sense for usage Reflection and Skylighting, but for convenience, it also works for usage Background by checking if the background style is set to Environment. </p>
+
+</div>
+</div>
 <a id="a1316a05537512cbbba12f2dea76d8f9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1316a05537512cbbba12f2dea76d8f9e">&#9670;&nbsp;</a></span>RenderingSource()</h2>
 
@@ -539,6 +915,44 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_o_n__3dm_render_settings.html#a1348704d250688f24817622f577750bd">RenderingSources</a> ON_3dmRenderSettings::RenderingSource </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dc9716173a4057fb9dc5b9e941bd1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc9716173a4057fb9dc5b9e941bd1f5">&#9670;&nbsp;</a></span>SafeFrame() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___safe_frame.html">ON_SafeFrame</a>&amp; ON_3dmRenderSettings::SafeFrame </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Safe Frame information. </p>
+
+</div>
+</div>
+<a id="a2c963e3061ef1daa015276d6b218277c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c963e3061ef1daa015276d6b218277c">&#9670;&nbsp;</a></span>SafeFrame() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___safe_frame.html">ON_SafeFrame</a>&amp; ON_3dmRenderSettings::SafeFrame </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -581,6 +995,65 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7311e914bf0f458649d36574098e8e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7311e914bf0f458649d36574098e8e6b">&#9670;&nbsp;</a></span>SetRenderEnvironmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_3dmRenderSettings::SetRenderEnvironmentId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a>&#160;</td>
+          <td class="paramname"><em>usage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the id of the rendering environment for a particular usage. </p>
+
+</div>
+</div>
+<a id="a99d797e8a7fa4742aa3b7a0024ed659a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d797e8a7fa4742aa3b7a0024ed659a">&#9670;&nbsp;</a></span>SetRenderEnvironmentOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_3dmRenderSettings::SetRenderEnvironmentOverride </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">EnvironmentUsage</a>&#160;</td>
+          <td class="paramname"><em>usage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets whether or not the rendering environment for a particular usage is overriding the background environment. Only works for usage Reflection and Skylighting. </p>
 
 </div>
 </div>
@@ -656,6 +1129,44 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a426c3526e8066634319cf5df6f7097a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426c3526e8066634319cf5df6f7097a8">&#9670;&nbsp;</a></span>Skylight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___skylight.html">ON_Skylight</a>&amp; ON_3dmRenderSettings::Skylight </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Skylight information. </p>
+
+</div>
+</div>
+<a id="a4dfd5e1d748b1cf52c86156d08c94fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfd5e1d748b1cf52c86156d08c94fe6">&#9670;&nbsp;</a></span>Skylight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___skylight.html">ON_Skylight</a>&amp; ON_3dmRenderSettings::Skylight </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa258346b631d6a77df324c430d0ef5ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa258346b631d6a77df324c430d0ef5ec">&#9670;&nbsp;</a></span>Snapshot()</h2>
 
@@ -682,6 +1193,44 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_3dmRenderSettings::SpecificViewport </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58787b7d7f27a0347f7d55f0ab921a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58787b7d7f27a0347f7d55f0ab921a8a">&#9670;&nbsp;</a></span>Sun() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___sun.html">ON_Sun</a>&amp; ON_3dmRenderSettings::Sun </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access to Sun information. </p>
+
+</div>
+</div>
+<a id="a564b759ccc0856e8215a85c77dba25dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a564b759ccc0856e8215a85c77dba25dd">&#9670;&nbsp;</a></span>Sun() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sun.html">ON_Sun</a>&amp; ON_3dmRenderSettings::Sun </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -720,6 +1269,53 @@ Static Public Attributes</h2></td></tr>
 <p>The default implementation of this virtual function returns false and does nothing. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a16eb9ab6bf0d0a614655cf9cd055871a">ON_Object</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a8c9645207f86d94d1c7b22ed904f5ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9645207f86d94d1c7b22ed904f5ff2">&#9670;&nbsp;</a></span>ON_3dmRenderSettingsPrivate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ON_3dmRenderSettingsPrivate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4dcb950cb9e09c46bb4f49c0a6ec481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4dcb950cb9e09c46bb4f49c0a6ec481">&#9670;&nbsp;</a></span>ONX_ModelPrivate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ONX_ModelPrivate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&lt; For internal use only. </p>
 
 </div>
 </div>
@@ -1284,7 +1880,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

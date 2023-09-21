@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -139,9 +139,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab079a5de1c93d389818973d2a0911517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section rcs"><dt>NoKeywords</dt><dd></dd></dl>
-<p>/ / Copyright (c) 1993-2012 Robert McNeel &amp; Associates. All rights reserved. / OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert / McNeel &amp; Associates. / / THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. / ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF / MERCHANTABILITY ARE HEREBY DISCLAIMED. / <br  />
- / For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. / ////////////////////////////////////////////////////////////// </p>
+<div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
+<p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
+<p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ad970893661d717286557e90297ce85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ad970893661d717286557e90297ce85">&#9670;&nbsp;</a></span>ON_MeshMarker() <span class="overload">[1/2]</span></h2>
@@ -248,7 +248,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Transfer initial marks to connected components. Parameters: bUseTopologicalComponent - [in] If true, then vertices that are at the same location are treated as one vertex. Setting this value to true requires more time and memory to be used. The additional time expense is quick sort of m_V_count items. The additional memory expense is two integer heap arrays of length m_V_count. If false, then the vertex point information is ignored and each vertex is considered to be distinct. bProcessUnmarkedVertices - [in] A mesh may have isolated vertices (not used by a face) and some of these may not be marked by calls to <a class="el" href="class_o_n___mesh_marker.html#a71c0a9dc506f91199af19cb58213ebbf">MarkVertex()</a>. When bProcessUnmarkedVertices=true, if at the end of the component marking calculation there are unmarked vertices, then a new mark value is generated and assigned to each unmarked vertex. If bProcessUnmarkedVertices=false, then vertices that are not marked by the calculation are left unmarked. <br  />
  bProcessUnmarkedFaces - [in] Generally a mesh has several components and some may have no marks in them. When bProcessUnmarkedFaces=true, a new mark value is generated for one face in each unmarked component and then the entire component the face belongs to is marked with that value. When bProcessUnmarkedFaces=false, if at the end of the marking calculation there are unmarked components, then those components are left unmarked. <br  />
- If you set bProcessUnmarkedFaces=false, then you must use <a class="el" href="class_o_n___mesh_marker.html#a2e152a4ef5b814ad62b0f2f20882efd9">MarkFace()</a> or <a class="el" href="class_o_n___mesh_marker.html#a71c0a9dc506f91199af19cb58213ebbf">MarkVertex()</a> to set a see mark in at least one component before calling <a class="el" href="class_o_n___mesh_marker.html#a3c869e97e9f38cb29e6efce8c015042f">MarkComponents()</a>. Returns: True if mesh is successfully marked. The mark informtion is is returned in the members </p><pre class="fragment">m_vertex_mark_value[]
+ If you set bProcessUnmarkedFaces=false, then you must use <a class="el" href="class_o_n___mesh_marker.html#a2e152a4ef5b814ad62b0f2f20882efd9">MarkFace()</a> or <a class="el" href="class_o_n___mesh_marker.html#a71c0a9dc506f91199af19cb58213ebbf">MarkVertex()</a> to set a see mark in at least one component before calling <a class="el" href="class_o_n___mesh_marker.html#a3c869e97e9f38cb29e6efce8c015042f">MarkComponents()</a>. Returns: True if mesh is successfully marked. The mark information is is returned in the members </p><pre class="fragment">m_vertex_mark_value[]
 m_face_mark_value[]
 m_marked_vertex_count
 m_marked_face_count
@@ -256,7 +256,7 @@ m_deleted_vertex_count
 m_deleted_face_count
 m_max_mark_value
 </pre><p>in the m_face_mark_value[] and m_vertex_mark_value[] arrays. These arrays have length m_F_count and m_V_count, respectively, and are parallel to the m_F[] and m_V[] arrays. m_marked_vertex_count is the number of non-zero (positive or negative) elements m_vertex_mark_value[]. m_marked_face_count is the number of non-zero (positive or negative) elements m_face_mark_value[]. m_deleted_face_count is the number of negative elements in m_face_mark_value[]. m_deleted_vertex_count is the number of negative elements in m_vertex_mark_value[]. The maximum mark value used is in m_max_mark_value.</p>
-<p><a class="el" href="class_o_n___mesh_marker.html#a3c869e97e9f38cb29e6efce8c015042f">MarkComponents()</a> increments m_marking_error_count everytime it encounters an error condition that it can tolerate. <br  />
+<p><a class="el" href="class_o_n___mesh_marker.html#a3c869e97e9f38cb29e6efce8c015042f">MarkComponents()</a> increments m_marking_error_count every time it encounters an error condition that it can tolerate. <br  />
  If <a class="el" href="class_o_n___mesh_marker.html#a3c869e97e9f38cb29e6efce8c015042f">MarkComponents()</a> returns true and m_marking_error_count is greater than 0, then exercise caution using the results. </p>
 
 </div>
@@ -680,7 +680,7 @@ m_max_mark_value
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -198,7 +198,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a pointer to the first element in the first block. Parameters: block_element_count - [out] (can be null) If not null, the number of elements allocated from the first block is returned in block_element_count. Note that if you have used ReturnElement(), some of these elemements may have been returned. Example: The loop will iteratate through all the blocks.</p>
+<p>Description: Get a pointer to the first element in the first block. Parameters: block_element_count - [out] (can be null) If not null, the number of elements allocated from the first block is returned in block_element_count. Note that if you have used ReturnElement(), some of these elements may have been returned. Example: The loop will iteratate through all the blocks.</p>
 <p>/ iterate through all blocks in the pool size_t block_element_count = 0; for ( void* p = FirstBlock(&amp;block_element_count); 0 != p; p = NextBlock(&amp;block_element_count) ) { ElementType* e = (ElementType*)p; for ( size_t i = 0; i &lt; block_element_count; i++, e = ((const char*)e) + SizeofElement() ) { ... } }</p>
 <p>Returns: The first block when iterating the list of blocks. Remarks: The heap for a fixed size memory pool is simply a linked list of blocks. <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> and <a class="el" href="class_o_n___fixed_size_pool_iterator.html#af580836559a09ee49dfeb915d734ea97">NextBlock()</a> can be used to iterate through the list of blocks.</p>
 <p>Do not make any calls to <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a0d52d7d6fc5290d8a9266bab85d3b88c">FirstElement()</a> or <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a502e802f6f5dd70c8f868dffd3111fcc">NextElement()</a> when using <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> and <a class="el" href="class_o_n___fixed_size_pool_iterator.html#af580836559a09ee49dfeb915d734ea97">NextBlock()</a> to iteratate through blocks. </p>
@@ -277,7 +277,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the next block when iterating through the blocks. Parameters: block_element_count - [out] (can be null) If not null, the number of elements allocated from the block is returned in block_element_count. Note that if you have used ReturnElement(), some of these elemements may have been returned. Example: See the <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> documentation. Returns: The next block when iterating through the blocks. Remarks: Do not make any calls to <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a0d52d7d6fc5290d8a9266bab85d3b88c">FirstElement()</a> or <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a502e802f6f5dd70c8f868dffd3111fcc">NextElement()</a> when using <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> and <a class="el" href="class_o_n___fixed_size_pool_iterator.html#af580836559a09ee49dfeb915d734ea97">NextBlock()</a> to iteratate through blocks. </p>
+<p>Description: Get the next block when iterating through the blocks. Parameters: block_element_count - [out] (can be null) If not null, the number of elements allocated from the block is returned in block_element_count. Note that if you have used ReturnElement(), some of these elements may have been returned. Example: See the <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> documentation. Returns: The next block when iterating through the blocks. Remarks: Do not make any calls to <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a0d52d7d6fc5290d8a9266bab85d3b88c">FirstElement()</a> or <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a502e802f6f5dd70c8f868dffd3111fcc">NextElement()</a> when using <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a101541c87d8f4771652397e56a891292">FirstBlock()</a> and <a class="el" href="class_o_n___fixed_size_pool_iterator.html#af580836559a09ee49dfeb915d734ea97">NextBlock()</a> to iteratate through blocks. </p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

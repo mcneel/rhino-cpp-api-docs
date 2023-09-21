@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aef7665a0a503ed058a30dfbafd06d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b57e5a5b740c5e02483c22c9e7eb59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_surface_point.html#ab8b57e5a5b740c5e02483c22c9e7eb59">IsZero</a> () const</td></tr>
 <tr class="separator:ab8b57e5a5b740c5e02483c22c9e7eb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90fcceb0c51b67dfbc6ca9a2aede191"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_surface_point.html#aa90fcceb0c51b67dfbc6ca9a2aede191">Normal</a> () const</td></tr>
+<tr class="memdesc:aa90fcceb0c51b67dfbc6ca9a2aede191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a limit surface normal.  <a href="class_o_n___sub_d_sector_surface_point.html#aa90fcceb0c51b67dfbc6ca9a2aede191">More...</a><br /></td></tr>
+<tr class="separator:aa90fcceb0c51b67dfbc6ca9a2aede191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2ee3bd2e666285ca3a9728b82bd0cc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_surface_point.html#a0a2ee3bd2e666285ca3a9728b82bd0cc">Point</a> () const</td></tr>
+<tr class="memdesc:a0a2ee3bd2e666285ca3a9728b82bd0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a limit surface point.  <a href="class_o_n___sub_d_sector_surface_point.html#a0a2ee3bd2e666285ca3a9728b82bd0cc">More...</a><br /></td></tr>
+<tr class="separator:a0a2ee3bd2e666285ca3a9728b82bd0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead1b7c622bf6044375452976be6f864"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_surface_point.html#aead1b7c622bf6044375452976be6f864">Tangent</a> (int tangent_index) const</td></tr>
+<tr class="memdesc:aead1b7c622bf6044375452976be6f864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a limit surface tangent vector.  <a href="class_o_n___sub_d_sector_surface_point.html#aead1b7c622bf6044375452976be6f864">More...</a><br /></td></tr>
+<tr class="separator:aead1b7c622bf6044375452976be6f864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac41a1efc513cc4162ed59396a3056f9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_surface_point.html#ac41a1efc513cc4162ed59396a3056f9d">Transform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
 <tr class="separator:ac41a1efc513cc4162ed59396a3056f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,6 +200,73 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: true if all coordinates are zero. false otherwise. </p>
+
+</div>
+</div>
+<a id="aa90fcceb0c51b67dfbc6ca9a2aede191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90fcceb0c51b67dfbc6ca9a2aede191">&#9670;&nbsp;</a></span>Normal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> ON_SubDSectorSurfacePoint::Normal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a limit surface normal. </p>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface normal vector.</dd></dl>
+
+</div>
+</div>
+<a id="a0a2ee3bd2e666285ca3a9728b82bd0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2ee3bd2e666285ca3a9728b82bd0cc">&#9670;&nbsp;</a></span>Point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_SubDSectorSurfacePoint::Point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a limit surface point. </p>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface point.</dd></dl>
+
+</div>
+</div>
+<a id="aead1b7c622bf6044375452976be6f864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead1b7c622bf6044375452976be6f864">&#9670;&nbsp;</a></span>Tangent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> ON_SubDSectorSurfacePoint::Tangent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tangent_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a limit surface tangent vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tangent_index</td><td>0 or 1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface tangent vector.</dd></dl>
 
 </div>
 </div>
@@ -387,7 +463,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

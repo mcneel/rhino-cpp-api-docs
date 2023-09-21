@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a478fe8f56e6f7933797723416950466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6862aa32782d6c347fb6615f3a49799"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#aa6862aa32782d6c347fb6615f3a49799">AddModelGeometryComponentForExperts</a> (bool bManageGeometry, class <a class="el" href="class_o_n___object.html">ON_Object</a> *geometry_object, bool bManageAttributes, class <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *attributes, bool bResolveIdAndNameConflicts)</td></tr>
 <tr class="separator:aa6862aa32782d6c347fb6615f3a49799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d76ba76e16b890b4a368a84bc44026"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ab2d76ba76e16b890b4a368a84bc44026">AddRenderEnvironment</a> (const wchar_t *env_name)</td></tr>
+<tr class="separator:ab2d76ba76e16b890b4a368a84bc44026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1193b357c32217bb7585321e0d3291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#aac1193b357c32217bb7585321e0d3291">AddRenderMaterial</a> (const wchar_t *mat_name)</td></tr>
+<tr class="separator:aac1193b357c32217bb7585321e0d3291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f414da877962141725806867f5b5a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#af4f414da877962141725806867f5b5a3">AddRenderTexture</a> (const wchar_t *filename)</td></tr>
+<tr class="separator:af4f414da877962141725806867f5b5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ff6c4dc08a3f25657c9173f7f856b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ae8ff6c4dc08a3f25657c9173f7f856b7">ComponentFromId</a> (<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">ON_ModelComponent::Type</a> component_type, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> component_model_id) const</td></tr>
 <tr class="separator:ae8ff6c4dc08a3f25657c9173f7f856b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795739fff065ec06dcf53f8a60f49a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a795739fff065ec06dcf53f8a60f49a52">ComponentFromIndex</a> (<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">ON_ModelComponent::Type</a> component_type, int component_model_index) const</td></tr>
@@ -120,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a676b5889af2536a13156631f5a5220a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa5bbbdc3a2a3226dde2eed678cdfa5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#afa5bbbdc3a2a3226dde2eed678cdfa5f">ComponentFromNameHash</a> (<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">ON_ModelComponent::Type</a> component_type, const <a class="el" href="class_o_n___name_hash.html">ON_NameHash</a> &amp;component_model_name_hash) const</td></tr>
 <tr class="separator:afa5bbbdc3a2a3226dde2eed678cdfa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3dcb426504c16faf912f0e3f5c3e9e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#acc3dcb426504c16faf912f0e3f5c3e9e">ComponentFromRuntimeSerialNumber</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> runtime_serial_number) const</td></tr>
+<tr class="memitem:acc3dcb426504c16faf912f0e3f5c3e9e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#acc3dcb426504c16faf912f0e3f5c3e9e">ComponentFromRuntimeSerialNumber</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> runtime_serial_number) const</td></tr>
 <tr class="separator:acc3dcb426504c16faf912f0e3f5c3e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4ee61b3f9801389299ecf0823f8011"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#aad4ee61b3f9801389299ecf0823f8011">ComponentFromUnsignedIndex</a> (<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">ON_ModelComponent::Type</a> component_type, unsigned int component_model_index) const</td></tr>
 <tr class="separator:aad4ee61b3f9801389299ecf0823f8011"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +213,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a154b7c66405c7f07d47f155171123e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70eba676014cc0e52d093a8e4206eb16"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___component_manifest.html">ON_ComponentManifest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a70eba676014cc0e52d093a8e4206eb16">Manifest</a> () const</td></tr>
 <tr class="separator:a70eba676014cc0e52d093a8e4206eb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33d23c68bce7a10c2df3787fbdae1ea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a33d23c68bce7a10c2df3787fbdae1ea9">ModelContentVersionNumber</a> () const</td></tr>
+<tr class="memitem:a4938b5228364a93c2763a1415e702260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a4938b5228364a93c2763a1415e702260">MaterialFromAttributes</a> (const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;attributes) const</td></tr>
+<tr class="separator:a4938b5228364a93c2763a1415e702260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f4c9cc0441d6b6a02e20c26cddb370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ad0f4c9cc0441d6b6a02e20c26cddb370">MaterialFromId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> material_id) const</td></tr>
+<tr class="separator:ad0f4c9cc0441d6b6a02e20c26cddb370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8a6ce2b8265b2afa78f3b91c9f3851"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a9f8a6ce2b8265b2afa78f3b91c9f3851">MaterialFromIndex</a> (int material_index) const</td></tr>
+<tr class="separator:a9f8a6ce2b8265b2afa78f3b91c9f3851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32dda9452d28e3320eabdf72920ee31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ac32dda9452d28e3320eabdf72920ee31">MaterialFromLayerIndex</a> (int layer_index) const</td></tr>
+<tr class="separator:ac32dda9452d28e3320eabdf72920ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d23c68bce7a10c2df3787fbdae1ea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a33d23c68bce7a10c2df3787fbdae1ea9">ModelContentVersionNumber</a> () const</td></tr>
 <tr class="separator:a33d23c68bce7a10c2df3787fbdae1ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9909672f71b066ff4b4525c2c1c021db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a9909672f71b066ff4b4525c2c1c021db">ModelGeometryBoundingBox</a> () const</td></tr>
 <tr class="separator:a9909672f71b066ff4b4525c2c1c021db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,14 +249,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7468a36fda9e04f59acee263e9a618d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4268aa18ffbcc6170b6394443e213711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a4268aa18ffbcc6170b6394443e213711">RenderLightBoundingBox</a> () const</td></tr>
 <tr class="separator:a4268aa18ffbcc6170b6394443e213711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85eb9a76eb976ceebb8a2fd6d11bd45e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a85eb9a76eb976ceebb8a2fd6d11bd45e">RenderMaterialFromAttributes</a> (const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;attributes) const</td></tr>
-<tr class="separator:a85eb9a76eb976ceebb8a2fd6d11bd45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154311447310caa6f49b91ca93173aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a154311447310caa6f49b91ca93173aea">RenderMaterialFromId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> render_material_id) const</td></tr>
-<tr class="separator:a154311447310caa6f49b91ca93173aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a365fe884efd8768d74650901f704da45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a365fe884efd8768d74650901f704da45">RenderMaterialFromIndex</a> (int render_material_index) const</td></tr>
-<tr class="separator:a365fe884efd8768d74650901f704da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d57a2f2341bd2951b36524f300da1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a49d57a2f2341bd2951b36524f300da1d">RenderMaterialFromLayerIndex</a> (int layer_index) const</td></tr>
-<tr class="separator:a49d57a2f2341bd2951b36524f300da1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187e452c1b27b31aeb0e0b233f65c1d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a187e452c1b27b31aeb0e0b233f65c1d2">RenderMaterialFromAttributes</a> (const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;) const</td></tr>
+<tr class="separator:a187e452c1b27b31aeb0e0b233f65c1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee582f3127e56772bedcd32e5e83a60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#adee582f3127e56772bedcd32e5e83a60">RenderMaterialFromId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>) const</td></tr>
+<tr class="separator:adee582f3127e56772bedcd32e5e83a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ddb1e702e52c59f0447c7a0870d3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a507ddb1e702e52c59f0447c7a0870d3c">RenderMaterialFromIndex</a> (int) const</td></tr>
+<tr class="separator:a507ddb1e702e52c59f0447c7a0870d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd60bdd0679b96c4d2714ad0e9fe8e28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#afd60bdd0679b96c4d2714ad0e9fe8e28">RenderMaterialFromLayerIndex</a> (int) const</td></tr>
+<tr class="separator:afd60bdd0679b96c4d2714ad0e9fe8e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46986bd8b13949f831acf510f21b21b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a46986bd8b13949f831acf510f21b21b3">Reset</a> ()</td></tr>
 <tr class="separator:a46986bd8b13949f831acf510f21b21b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbfa27a4b56e454067fb667fba99b3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a3bbfa27a4b56e454067fb667fba99b3c">SetCurrentDimensionStyleId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> dimension_style_id)</td></tr>
@@ -267,7 +281,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab52f4f2ee2c23b6990343b1327da20a7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ab52f4f2ee2c23b6990343b1327da20a7">GetRDKDocumentInformation</a> (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;rdk_xml_document_data)</td></tr>
 <tr class="separator:ab52f4f2ee2c23b6990343b1327da20a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69e0f56d66378d9bdf81a5b39b17f5f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ab69e0f56d66378d9bdf81a5b39b17f5f">GetRDKEmbeddedFile</a> (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, const wchar_t *path, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char &gt; &amp;bytes)</td></tr>
-<tr class="memdesc:ab69e0f56d66378d9bdf81a5b39b17f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function extracts one embedded file from the support files written with this document. Use the exact path as returned from GetRDKEmbeddedFilePaths.  <a href="class_o_n_x___model.html#ab69e0f56d66378d9bdf81a5b39b17f5f">More...</a><br /></td></tr>
 <tr class="separator:ab69e0f56d66378d9bdf81a5b39b17f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81b610834bac070c042ef2c9a1539e98"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a81b610834bac070c042ef2c9a1539e98">GetRDKEmbeddedFilePaths</a> (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;paths)</td></tr>
 <tr class="separator:a81b610834bac070c042ef2c9a1539e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,8 +288,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa633ebd7f486a231e85127bf3d52c7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f01bd21d10392970fc3f73af31e595"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ab6f01bd21d10392970fc3f73af31e595">GetRDKEmbeddedFiles</a> (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;paths, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char * &gt; &amp;embedded_files_as_buffers, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; size_t &gt; &amp;buffer_sizes)</td></tr>
 <tr class="separator:ab6f01bd21d10392970fc3f73af31e595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38aa996ae9bdb37446b075fe2aef83d1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a38aa996ae9bdb37446b075fe2aef83d1">GetRDKObjectInformation</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;object, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;rdk_xml_object_data)</td></tr>
-<tr class="separator:a38aa996ae9bdb37446b075fe2aef83d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aad6e2de84dc8bb33cae84d03b62568"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a2aad6e2de84dc8bb33cae84d03b62568">GetRDKObjectInformation</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;object, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;xml)</td></tr>
+<tr class="separator:a2aad6e2de84dc8bb33cae84d03b62568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63146698c65611528ed462458608594c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a63146698c65611528ed462458608594c">IsRDKDocumentInformation</a> (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud)</td></tr>
 <tr class="separator:a63146698c65611528ed462458608594c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd0d04bec24688f589f21a0b496fca04"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#abd0d04bec24688f589f21a0b496fca04">IsRDKObjectInformation</a> (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;objectud)</td></tr>
@@ -284,7 +297,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a13aa0b096dbd74286c510d7b0275ca6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a13aa0b096dbd74286c510d7b0275ca6b">m_3dm_file_byte_count</a> = 0</td></tr>
+<tr class="memitem:a13aa0b096dbd74286c510d7b0275ca6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a13aa0b096dbd74286c510d7b0275ca6b">m_3dm_file_byte_count</a> = 0</td></tr>
 <tr class="separator:a13aa0b096dbd74286c510d7b0275ca6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab35ffd4ce264ac1ee84948c7f9652ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#aab35ffd4ce264ac1ee84948c7f9652ab">m_3dm_file_version</a> = 0</td></tr>
 <tr class="memdesc:aab35ffd4ce264ac1ee84948c7f9652ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">3dm archive start section information  <a href="class_o_n_x___model.html#aab35ffd4ce264ac1ee84948c7f9652ab">More...</a><br /></td></tr>
@@ -304,6 +317,9 @@ Public Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:a4183844ca76b9750e3ea72f3309afe4f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a4183844ca76b9750e3ea72f3309afe4f">ONX_ModelComponentIterator</a></td></tr>
 <tr class="separator:a4183844ca76b9750e3ea72f3309afe4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#ab4dcb950cb9e09c46bb4f49c0a6ec481">ONX_ModelPrivate</a></td></tr>
+<tr class="memdesc:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Private extension.  <a href="class_o_n_x___model.html#ab4dcb950cb9e09c46bb4f49c0a6ec481">More...</a><br /></td></tr>
+<tr class="separator:ab4dcb950cb9e09c46bb4f49c0a6ec481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Description: Pedegodgical example of all the things in an OpenNURBS 3dm archive. The openNURBS examples use <a class="el" href="class_o_n_x___model.html">ONX_Model</a> to store the information read from 3dm archives. Please study example_read.cpp for details. </p>
@@ -591,7 +607,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add an copy of the model_geometry and attrbutes to this model.</p>
+<p>Description: Add an copy of the model_geometry and attributes to this model.</p>
 <p>Parameters: managed_geometry_object - [in] managed_geometry_object must point to an instance geometric object (curve, surface, brep, mesh, points, ...), a render light, an annotation object, or a detail object created by operator new and on the heap. It will be deleted when the this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and the last <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are destroyed.</p>
 <p>managed_attributes - [in] managed_attributes should be nullptr or point to an instance created by operator new and on the heap. It will be deleted when the this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and the last <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are destroyed. <br  />
 </p>
@@ -643,7 +659,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add an copy of a model_compoent to this model. model_component - [in] A copy of model_component is added to this model. The index, id, and name of the copied component are set the the model values (<a class="el" href="class_o_n_x___model.html#a70eba676014cc0e52d093a8e4206eb16">Manifest()</a> "Manifest" index, name, and id).</p>
+<p>Description: Add a copy of a model_component to this model. model_component - [in] A copy of model_component is added to this model. The index, id, and name of the copied component are set the the model values (<a class="el" href="class_o_n_x___model.html#a70eba676014cc0e52d093a8e4206eb16">Manifest()</a> "Manifest" index, name, and id).</p>
 <p>bResolveIdAndNameConflicts - [in] If bResolveIdAndNameConflicts is false, then model_component.Id() must be non-nil and not used in this model and model_component.Name() must be correctly set. If bResolveIdAndNameConflicts is true, then id and name will be modified as needed in the model and manifest.</p>
 <p>Returns: A reference to the added model component. If the reference is empty (ON_ModelComponent::IsEmpty() is true) then the input was not valid. </p>
 
@@ -688,7 +704,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Add a model component to this model and control how the model_component instance is managed.</p>
 <p>model_component - [in] An <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> created on the heap by calling new X where X is derived from <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a>.</p>
-<p>bManagedComponent - [in] If bManagedComponent is true, then ~ONX_Model will delete the component. If bManagedComponent is false, then you are responsible for insuring the component exists past the desctruction of this <a class="el" href="class_o_n_x___model.html">ONX_Model</a>.</p>
+<p>bManagedComponent - [in] If bManagedComponent is true, then ~ONX_Model will delete the component. If bManagedComponent is false, then you are responsible for insuring the component exists past the destruction of this <a class="el" href="class_o_n_x___model.html">ONX_Model</a>.</p>
 <p>bResolveIdAndNameConflicts - [in] If bResolveIdAndNameConflicts is false, then model_component.Id() must be non-nil and not used in this model and model_component.Name() must be correctly set. If bResolveIdAndNameConflicts is true, then id and name will be modified as needed.</p>
 <p>bUpdateComponentIdentification - [in] The model_component Index(), Id(), and Name() values are set to match the ones used in the model (<a class="el" href="class_o_n_x___model.html#a70eba676014cc0e52d093a8e4206eb16">Manifest()</a> "Manifest" values.)</p>
 <p>Returns: A reference to the added model component. If the reference is empty (<a class="el" href="class_o_n___model_component_reference.html#a899eb62ff401aba716cf9e83cdb0245e">ON_ModelComponentReference::IsEmpty()</a> is true), then the input was not valid and the model component was not added. </p>
@@ -754,7 +770,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add an copy of the model_geometry and attrbutes to this model.</p>
+<p>Description: Add an copy of the model_geometry and attributes to this model.</p>
 <p>Parameters: geometry_object - [in] geometry_object must point to a geometric object (curve, surface, brep, mesh, points, ...), a render light, an annotation object, or a detail object. A copy of geometry_object is added to and managed by this model. attributes - [in] nullptr if not available. A copy of attributes is added to and managed by this model.</p>
 <p>bResolveIdAndNameConflicts - [in] If bResolveIdAndNameConflicts is false, then attributes must be nullptr or attributes-&gt;m_uid must be non-nil and not used in this model. If bResolveIdAndNameConflicts is true, then id will be modified as needed.</p>
 <p>Returns: A reference to the added model component. If the reference is empty (ON_ModelComponent::IsEmpty() is true) then the input was not valid. </p>
@@ -804,13 +820,70 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add geometry and attibutes to this model and control how the instances are managed.</p>
+<p>Description: Add geometry and attributes to this model and control how the instances are managed.</p>
 <p>Parameters: bManageGeometry - [in] If true, geometry_object should point to an instance created by operator new and on the heap. It will be deleted when the this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and the last <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are destroyed. If false, the expert caller is carefully managing the instance and memory to insure model_geometry is a valid instance while this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and any <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are active.</p>
 <p>geometry_object - [in] geometry_object should point to a geometric object (curve, surface, brep, mesh, points, ...), a render light, an annotation object, or a detail object.</p>
 <p>bManageAttributes - [in] If true, attributes should be nullptr or point to an instance created by operator new and on the heap. It will be deleted when the this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and the last <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are destroyed. If false, the expert caller is carefully managing the instance and memory to insure attributes is a valid instance while this <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and and <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a> are active.</p>
-<p>attributes - [in] nullptr if not avaiable.</p>
+<p>attributes - [in] nullptr if not available.</p>
 <p>bResolveIdAndNameConflicts - [in] If bResolveIdAndNameConflicts is false, then attributes must be nullptr or attributes-&gt;m_uid must be non-nil and not used in this model. If bResolveIdAndNameConflicts is true, then id will be modified as needed.</p>
 <p>Returns: A reference to the added model component. If the reference is empty (ON_ModelComponent::IsEmpty() is true) then the input was not valid. </p>
+
+</div>
+</div>
+<a id="ab2d76ba76e16b890b4a368a84bc44026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d76ba76e16b890b4a368a84bc44026">&#9670;&nbsp;</a></span>AddRenderEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ONX_Model::AddRenderEnvironment </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>env_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Easy way to add a render environment to the model. Creates a basic environment. Returns: If env_name is valid, the environment's index is returned. Otherwise ON_UNSET_INT_INDEX is returned. </p>
+
+</div>
+</div>
+<a id="aac1193b357c32217bb7585321e0d3291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1193b357c32217bb7585321e0d3291">&#9670;&nbsp;</a></span>AddRenderMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ONX_Model::AddRenderMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>mat_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Easy way to add a render material to the model. Creates a PBR material. Returns: If mat_name is valid, the material's index is returned. Otherwise ON_UNSET_INT_INDEX is returned. </p>
+
+</div>
+</div>
+<a id="af4f414da877962141725806867f5b5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f414da877962141725806867f5b5a3">&#9670;&nbsp;</a></span>AddRenderTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ONX_Model::AddRenderTexture </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Easy way to add a render texture to the model. Creates a bitmap texture. The texture's name is derived from the supplied file name. The file must exist locally or the function will fail. Returns: If the function succeeds, the texture's index is returned. Otherwise ON_UNSET_INT_INDEX is returned. </p>
 
 </div>
 </div>
@@ -941,13 +1014,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">const <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&amp; ONX_Model::ComponentFromRuntimeSerialNumber </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a>&#160;</td>
           <td class="paramname"><em>runtime_serial_number</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: runtime_serial_number - [in] Value of <a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">ON_ModelComponent::RuntimeSerialNumber()</a> to search for. Returns: If there is a model component with the specified runtime serial number, then a reference to that component is returned. Otherwise, <a class="el" href="class_o_n___model_component_reference.html#a9278e10e1b398fd7af277345419d7943">ON_ModelComponentReference::Empty</a> is returned. Remarks: <a class="el" href="class_o_n_x___model.html#acc3dcb426504c16faf912f0e3f5c3e9e">ONX_Model::ComponentFromRuntimeSerialNumber()</a> used to get a reference rather than a copy of the model's primary <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a>. This is the function that must be used if a caller is going to use exclusive access funcitons like</p>
+<p>Parameters: runtime_serial_number - [in] Value of <a class="el" href="class_o_n___model_component.html#aec107d943b87f00ed57478ccc389ba17">ON_ModelComponent::RuntimeSerialNumber()</a> to search for. Returns: If there is a model component with the specified runtime serial number, then a reference to that component is returned. Otherwise, <a class="el" href="class_o_n___model_component_reference.html#a9278e10e1b398fd7af277345419d7943">ON_ModelComponentReference::Empty</a> is returned. Remarks: <a class="el" href="class_o_n_x___model.html#acc3dcb426504c16faf912f0e3f5c3e9e">ONX_Model::ComponentFromRuntimeSerialNumber()</a> used to get a reference rather than a copy of the model's primary <a class="el" href="class_o_n___model_component_reference.html" title="ON_ModelComponentReference is a persistent reference to a model component. ON_ModelComponentReference...">ON_ModelComponentReference</a>. This is the function that must be used if a caller is going to use exclusive access functions like</p>
 <p>ON_ModelComponent* <a class="el" href="class_o_n___model_component_reference.html#abf36fd4c9075c665e0dead7a010ebd73">ON_ModelComponentReference::ExclusiveModelComponent()</a> ON_3dmObjectAttributes* <a class="el" href="class_o_n___model_geometry_component.html#ab4ad8a7bc16b9e4c298133e7703f8c9a">ON_ModelGeometryComponent::ExclusiveAttributes()</a> ON_Geometry* <a class="el" href="class_o_n___model_geometry_component.html#ab5f3a0f92a57ac378d3575d732d1349b">ON_ModelGeometryComponent::ExclusiveGeometry()</a></p>
 <p>to modify content that is in the <a class="el" href="class_o_n_x___model.html">ONX_Model</a>. The exclusive access functions will only return non-nullptr values when there are no external references to the model component. </p>
 
@@ -1451,7 +1524,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function returns the entire XML associated with the RDK document data for this file. The XML will include details about materials, textures and environments as well as sun, skylighting, ground plane and so on. Returns true if RDK document information is available. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated:</a></b></dt><dd>This function is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -1494,8 +1567,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>This function extracts one embedded file from the support files written with this document. Use the exact path as returned from GetRDKEmbeddedFilePaths. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>This function is deprecated in favor of <a class="el" href="class_o_n___embedded_file.html">ON_EmbeddedFile</a>. </dd></dl>
 
 </div>
 </div>
@@ -1532,7 +1604,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function returns the paths of the embedded support files written with this document. The returned arrays will be empty if no support filers were saved. This function is similar to GetRDKEmbeddedFiles, but is faster and uses less memory to return only the paths. Use the paths (exactly the strings returned from this function) to extract the embedded files using GetRDKEmbeddedFile </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated:</a></b></dt><dd>This function is deprecated in favor of <a class="el" href="class_o_n___embedded_file.html">ON_EmbeddedFile</a>. </dd></dl>
 
 </div>
 </div>
@@ -1575,7 +1647,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function returns the embedded support files written with this document. The returned arrays will be empty if no support filers were saved. Typically, these files will be used by materials and environments. Rhino unpacks these files into a folder with the suffix "embedded_files" next to the 3dm file on disk. This is only supported for Version 6 files onwards. Returns true if embedded files were found. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This function is deprecated as it did not return the buffer sizes, making it useless </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd>This function is deprecated as it did not return the buffer sizes, making it useless </dd></dl>
 
 </div>
 </div>
@@ -1624,12 +1696,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function returns the embedded support files written with this document. The returned arrays will be empty if no support filers were saved. Typically, these files will be used by materials and environments. Rhino unpacks these files into a folder with the suffix "embedded_files" next to the 3dm file on disk. This is only supported for Version 6 files onwards. Returns true if embedded files were found. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd>This function is deprecated in favor of <a class="el" href="class_o_n___embedded_file.html">ON_EmbeddedFile</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a38aa996ae9bdb37446b075fe2aef83d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38aa996ae9bdb37446b075fe2aef83d1">&#9670;&nbsp;</a></span>GetRDKObjectInformation()</h2>
+<a id="a2aad6e2de84dc8bb33cae84d03b62568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aad6e2de84dc8bb33cae84d03b62568">&#9670;&nbsp;</a></span>GetRDKObjectInformation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1647,7 +1719,7 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
-          <td class="paramname"><em>rdk_xml_object_data</em>&#160;</td>
+          <td class="paramname"><em>xml</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1661,7 +1733,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function returns the entire XML associated with the RDK object. The XML includes details about decals. Returns true if RDK object information is available. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is deprecated. Please use GetDecalIterator(), AddDecal() and GetDecal() instead. </dd></dl>
 
 </div>
 </div>
@@ -1905,7 +1977,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Reads the next item in the model geometry table.</p>
 <p>Parameters: archive - [in] bManageModelGeometryComponent - [in] true: The <a class="el" href="class_o_n_x___model.html">ONX_Model</a> destructor will delete the <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> components created by this function. false: The caller must delete the <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> components after the <a class="el" href="class_o_n_x___model.html">ONX_Model</a> is destroyed. bManageGeometry - [in] true: The <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> destructor will delete the <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> classes created by this function. false: The caller must delete the <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> classes after the <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> components are destroyed. bManageAttributes - [in] true: The <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> destructor will delete the <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> classes created by this function. false: The caller must delete the <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> classes after the <a class="el" href="class_o_n_x___model.html">ONX_Model</a> and <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> components are destroyed. model_object_type_filter - [in] If model_object_type_filter is not zero, then it is a bitfield filter made by bitwise oring <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a> values to select which types of objects will be read from the model object table. model_geometry_reference - [out] A reference to an <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a>. This referenced <a class="el" href="class_o_n___model_geometry_component.html">ON_ModelGeometryComponent</a> component is also added to the <a class="el" href="class_o_n_x___model.html">ONX_Model</a>. Call ONX_Model.RemoveComponent() if you want to discard it before continuing. <br  />
- Returns: True Succesful. If model_geometry_reference.IsEmpty() is true, then no more geometry objects are available and you should call <a class="el" href="class_o_n_x___model.html#ab096da2ee6eafb6ba15c67e58f3a2cd7">IncrementalReadFinish()</a>. False An error occured and reading should terminate. Remarks: You must call <a class="el" href="class_o_n_x___model.html#a58b4490125175d0fb836b46e53897637">IncrementalReadBegin()</a> before making any calls to IncrementalReadModelObject(). </p>
+ Returns: True Successful. If model_geometry_reference.IsEmpty() is true, then no more geometry objects are available and you should call <a class="el" href="class_o_n_x___model.html#ab096da2ee6eafb6ba15c67e58f3a2cd7">IncrementalReadFinish()</a>. False An error occurred and reading should terminate. Remarks: You must call <a class="el" href="class_o_n_x___model.html#a58b4490125175d0fb836b46e53897637">IncrementalReadBegin()</a> before making any calls to IncrementalReadModelObject(). </p>
 
 </div>
 </div>
@@ -1932,8 +2004,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>END model text dump tools BEGIN Render Development Toolkit (RDK) information</p>
-<p>The following functions allow the developer access to the information saved per document or per-object in the 3dm file by the RDK plug-in, built into Rhino. There are two parts to this information - the XML data that constitutes the information about materials, textures and environments in addition to some of the document settings such as sun data, skylighting ground plane and so on - and the embedded support files which are saved as byte-per-byte copies of the actual file data for the original files. Typically, these embedded files will be textured used by materials, environments or decals. Call this function to determine if RDK document information has been saved in this model and can be read using the GetRDKDocumentInfomation function. Returns true if RDK document information is available. </p>
+<p>END model text dump tools BEGIN Rendering information </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>This function is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -1960,7 +2031,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call this function to determine if RDK object information has saved in this model and can be read using the GetRDKObjectInformation function. Returns true if RDK object information is available. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -2201,6 +2272,82 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a4938b5228364a93c2763a1415e702260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4938b5228364a93c2763a1415e702260">&#9670;&nbsp;</a></span>MaterialFromAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::MaterialFromAttributes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;&#160;</td>
+          <td class="paramname"><em>attributes</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get material from object attributes. Parameters: attributes - [in] object attributes. </p>
+
+</div>
+</div>
+<a id="ad0f4c9cc0441d6b6a02e20c26cddb370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f4c9cc0441d6b6a02e20c26cddb370">&#9670;&nbsp;</a></span>MaterialFromId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::MaterialFromId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>material_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get material from id. Parameters: material_id - [in] id. </p>
+
+</div>
+</div>
+<a id="a9f8a6ce2b8265b2afa78f3b91c9f3851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8a6ce2b8265b2afa78f3b91c9f3851">&#9670;&nbsp;</a></span>MaterialFromIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::MaterialFromIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>material_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get material from index. Parameters: material_index - [in] index. </p>
+
+</div>
+</div>
+<a id="ac32dda9452d28e3320eabdf72920ee31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32dda9452d28e3320eabdf72920ee31">&#9670;&nbsp;</a></span>MaterialFromLayerIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::MaterialFromLayerIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get material from layer index. Parameters: layer_index - [in] layer index. </p>
+
+</div>
+</div>
 <a id="a33d23c68bce7a10c2df3787fbdae1ea9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33d23c68bce7a10c2df3787fbdae1ea9">&#9670;&nbsp;</a></span>ModelContentVersionNumber()</h2>
 
@@ -2208,7 +2355,7 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> ONX_Model::ModelContentVersionNumber </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> ONX_Model::ModelContentVersionNumber </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2569,17 +2716,17 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a85eb9a76eb976ceebb8a2fd6d11bd45e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85eb9a76eb976ceebb8a2fd6d11bd45e">&#9670;&nbsp;</a></span>RenderMaterialFromAttributes()</h2>
+<a id="a187e452c1b27b31aeb0e0b233f65c1d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187e452c1b27b31aeb0e0b233f65c1d2">&#9670;&nbsp;</a></span>RenderMaterialFromAttributes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromAttributes </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromAttributes </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> &amp;&#160;</td>
-          <td class="paramname"><em>attributes</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2587,17 +2734,17 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a154311447310caa6f49b91ca93173aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154311447310caa6f49b91ca93173aea">&#9670;&nbsp;</a></span>RenderMaterialFromId()</h2>
+<a id="adee582f3127e56772bedcd32e5e83a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee582f3127e56772bedcd32e5e83a60">&#9670;&nbsp;</a></span>RenderMaterialFromId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromId </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
-          <td class="paramname"><em>render_material_id</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2605,17 +2752,17 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a365fe884efd8768d74650901f704da45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a365fe884efd8768d74650901f704da45">&#9670;&nbsp;</a></span>RenderMaterialFromIndex()</h2>
+<a id="a507ddb1e702e52c59f0447c7a0870d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507ddb1e702e52c59f0447c7a0870d3c">&#9670;&nbsp;</a></span>RenderMaterialFromIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromIndex </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromIndex </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>render_material_index</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2623,22 +2770,22 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a49d57a2f2341bd2951b36524f300da1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49d57a2f2341bd2951b36524f300da1d">&#9670;&nbsp;</a></span>RenderMaterialFromLayerIndex()</h2>
+<a id="afd60bdd0679b96c4d2714ad0e9fe8e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd60bdd0679b96c4d2714ad0e9fe8e28">&#9670;&nbsp;</a></span>RenderMaterialFromLayerIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromLayerIndex </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> ONX_Model::RenderMaterialFromLayerIndex </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>layer_index</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get render material from object attributes. Parameters: attributes - [in] object attributes. material - [out] render material </p>
+<p>These methods are deprecated due to the use of the phrase 'RenderMaterial' which now refers to materials provided by the RDK. The materials used by <em>these</em> methods are plain ON_Materials. </p>
 
 </div>
 </div>
@@ -2979,6 +3126,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ab4dcb950cb9e09c46bb4f49c0a6ec481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4dcb950cb9e09c46bb4f49c0a6ec481">&#9670;&nbsp;</a></span>ONX_ModelPrivate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ONX_ModelPrivate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&lt; Private extension. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a13aa0b096dbd74286c510d7b0275ca6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13aa0b096dbd74286c510d7b0275ca6b">&#9670;&nbsp;</a></span>m_3dm_file_byte_count</h2>
@@ -2987,7 +3158,7 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3c46136e2570983319c47553f753932e">ON__UINT64</a> ONX_Model::m_3dm_file_byte_count = 0</td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3070fac2d31e2883c3cb87a6c62bb75a">ON__UINT64</a> ONX_Model::m_3dm_file_byte_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3036,7 +3207,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Properties include revision history, notes, information about the applicaton that created the file, and an optional preview image. </p>
+<p>Properties include revision history, notes, information about the application that created the file, and an optional preview image. </p>
 
 </div>
 </div>
@@ -3086,7 +3257,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

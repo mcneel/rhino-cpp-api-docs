@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadf31107b7aec45bb837dbef15250fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be0d0c6127de5eaaf576daf5033c223"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#a0be0d0c6127de5eaaf576daf5033c223">TransformSnapContext</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;object_to_world, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;world_to_object)</td></tr>
 <tr class="separator:a0be0d0c6127de5eaaf576daf5033c223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d324182f859df9f63c05d86da20306f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#a5d324182f859df9f63c05d86da20306f">UpdateClippingPlanes</a> (const <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> *pViewport, const <a class="el" href="class_o_n___uuid_list.html">ON_UuidList</a> *filter)</td></tr>
+<tr class="separator:a5d324182f859df9f63c05d86da20306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7041d40c0ea5aec30083005bac4847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#aaf7041d40c0ea5aec30083005bac4847">UpdateClippingPlanes</a> (const <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> *pViewport=0)</td></tr>
 <tr class="separator:aaf7041d40c0ea5aec30083005bac4847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -140,7 +142,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acb27c72e30af2115001cab030bcf000a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_inferred_curve_array.html">CRhinoInferredCurveArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#acb27c72e30af2115001cab030bcf000a">m_inferred_curves</a></td></tr>
 <tr class="separator:acb27c72e30af2115001cab030bcf000a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7d16610c105d77ef0dc847925a84fa"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#a9b7d16610c105d77ef0dc847925a84fa">m_input_snap_mode</a></td></tr>
-<tr class="memdesc:a9b7d16610c105d77ef0dc847925a84fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">the actual unmodified osnap mode that was passed to <a class="el" href="class_c_rhino_doc.html#ac2c361dd9a4e92ed02d23a6362bf63c2">CRhinoDoc::SnapTo</a>  <a href="class_c_rhino_snap_context.html#a9b7d16610c105d77ef0dc847925a84fa">More...</a><br /></td></tr>
+<tr class="memdesc:a9b7d16610c105d77ef0dc847925a84fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">the actual unmodified osnap mode that was passed to <a class="el" href="class_c_rhino_doc.html#ac1bb26cceaa9216d8eba8774e1455523">CRhinoDoc::SnapTo</a>  <a href="class_c_rhino_snap_context.html#a9b7d16610c105d77ef0dc847925a84fa">More...</a><br /></td></tr>
 <tr class="separator:a9b7d16610c105d77ef0dc847925a84fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab87de134aab27098acf2d51a2758b5ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_int_snap_candidate.html">CRhinoIntSnapCandidate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_snap_context.html#ab87de134aab27098acf2d51a2758b5ca">m_int_snap</a> [2]</td></tr>
 <tr class="separator:ab87de134aab27098acf2d51a2758b5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -710,8 +712,37 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5d324182f859df9f63c05d86da20306f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d324182f859df9f63c05d86da20306f">&#9670;&nbsp;</a></span>UpdateClippingPlanes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoSnapContext::UpdateClippingPlanes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> *&#160;</td>
+          <td class="paramname"><em>pViewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___uuid_list.html">ON_UuidList</a> *&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Updates the clipping plane information in m_snap_region. The m_bSetClippingPlanes and m_view fields must be before calling <a class="el" href="class_c_rhino_snap_context.html#aaf7041d40c0ea5aec30083005bac4847">UpdateClippingPlanes()</a>. Parameters: pViewport - [in] When set pViepwort is used to force update the clipping planes. Otherwise active viewport is used. filter - [in] optional list of UUIDs to pay attention to when updating clipping planes. Only planes with ids in the filter list will be used if filter is not null and contains entries </p>
+
+</div>
+</div>
 <a id="aaf7041d40c0ea5aec30083005bac4847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf7041d40c0ea5aec30083005bac4847">&#9670;&nbsp;</a></span>UpdateClippingPlanes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7041d40c0ea5aec30083005bac4847">&#9670;&nbsp;</a></span>UpdateClippingPlanes() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -787,7 +818,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>volatile </p>
-<p>used to build a list of segments to test for intesection snaps true if eligable events should be added to the intersection snap list. </p>
+<p>used to build a list of segments to test for intesection snaps true if eligible events should be added to the intersection snap list. </p>
 
 </div>
 </div>
@@ -894,7 +925,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>the actual unmodified osnap mode that was passed to <a class="el" href="class_c_rhino_doc.html#ac2c361dd9a4e92ed02d23a6362bf63c2">CRhinoDoc::SnapTo</a> </p>
+<p>the actual unmodified osnap mode that was passed to <a class="el" href="class_c_rhino_doc.html#ac1bb26cceaa9216d8eba8774e1455523">CRhinoDoc::SnapTo</a> </p>
 <p><a class="el" href="class_c_rhino_app_settings.html#aae52e49d8dde091f3927ef6b18b26d88">CRhinoAppSettings::osnap_mode</a> bits </p>
 
 </div>
@@ -1132,7 +1163,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

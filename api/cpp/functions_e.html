@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -157,6 +157,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_obj_ref.html#a46ffabbf05e7c36b6a7d09c9a8f86091">CRhinoObjRef</a>
 , <a class="el" href="class_c_rhino_poly_edge_segment.html#a6bf8c2463d0063c888eca35b8921dcd3">CRhinoPolyEdgeSegment</a>
 , <a class="el" href="class_o_n__3d_simplex.html#a95bbdcf80e990fdf3f9f90e412824660">ON_3dSimplex</a>
+, <a class="el" href="class_o_n___bounding_box.html#aab004090dffca66bb6d06c28b11ca801">ON_BoundingBox</a>
 , <a class="el" href="class_o_n___brep.html#a7ee943e39fa5b05b89a32e676a3e0726">ON_Brep</a>
 , <a class="el" href="class_o_n___brep_trim.html#ae61fb8f2ed1cb5a3bcbbccad499e0cbc">ON_BrepTrim</a>
 , <a class="el" href="class_o_n___sub_d_component_ptr.html#ab842d192a102f1e2fc6f114a7a7a4bb7">ON_SubDComponentPtr</a>
@@ -202,6 +203,10 @@ $(function() {
 </li>
 <li>EdgeAnalysisSettings()
 : <a class="el" href="class_c_rhino_app_settings.html#a673f1d330bc4b1f60ef0c80c5fcadd3a">CRhinoAppSettings</a>
+</li>
+<li>EdgeAngleThreshold()
+: <a class="el" href="class_o_n___edge_softening_1_1_defaults.html#ad47c16c67823401251cdfb506787478c">ON_EdgeSoftening::Defaults</a>
+, <a class="el" href="class_o_n___edge_softening.html#a0d60d2470591a73e43cc88de0f2eb5b8">ON_EdgeSoftening</a>
 </li>
 <li>EdgeArray()
 : <a class="el" href="class_o_n___sub_d.html#a8f7d67d77d74a6ad4a82fcc722599b4c">ON_SubD</a>
@@ -277,6 +282,9 @@ $(function() {
 <li>EdgeEndPrompt()
 : <a class="el" href="class_c_args_rhino_get_polygon.html#ad8694592b9116e7d3d124de5a91416c0">CArgsRhinoGetPolygon</a>
 </li>
+<li>EdgeFace()
+: <a class="el" href="class_o_n___sub_d_edge_ptr.html#a65a9f58f8937093768d3a50292cbc63a">ON_SubDEdgePtr</a>
+</li>
 <li>EdgeFaceCount()
 : <a class="el" href="class_o_n___sub_d_edge_ptr.html#a16cd29a2fabf6784e07131a52b79424a">ON_SubDEdgePtr</a>
 </li>
@@ -303,6 +311,9 @@ $(function() {
 <li>EdgeIsCrease()
 : <a class="el" href="class_o_n___sub_d_edge_ptr.html#afce2c7f7d01fba299ab9d33a6399f861">ON_SubDEdgePtr</a>
 </li>
+<li>EdgeIsCreaseOrSharp()
+: <a class="el" href="class_o_n___sub_d_edge_ptr.html#a8535ff476e2c1a63dd543bf3e7deca5f">ON_SubDEdgePtr</a>
+</li>
 <li>EdgeIsDartCrease()
 : <a class="el" href="class_o_n___sub_d_edge_ptr.html#aa53ca0f6c010b5055185690d5a0c7a1a">ON_SubDEdgePtr</a>
 </li>
@@ -316,8 +327,14 @@ $(function() {
 <li>EdgeIsReversed()
 : <a class="el" href="class_o_n___x_mesh_face.html#a31c3e0c81541602888dd6de44b36c599">ON_XMeshFace</a>
 </li>
+<li>EdgeIsSharp()
+: <a class="el" href="class_o_n___sub_d_edge_ptr.html#afba5803da6e6fa04f2a36806d2e952ca">ON_SubDEdgePtr</a>
+</li>
 <li>EdgeIsSmooth()
 : <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0b5b474bddb24ae2452e60a3e2694b63">ON_SubDEdgePtr</a>
+</li>
+<li>EdgeIsSmoothNotSharp()
+: <a class="el" href="class_o_n___sub_d_edge_ptr.html#aca3756f257aa66a256efb0d714f53145">ON_SubDEdgePtr</a>
 </li>
 <li>EdgeIterator()
 : <a class="el" href="class_o_n___sub_d.html#a304d043dcf7858d62c0859c7fa42865c">ON_SubD</a>
@@ -334,7 +351,7 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_get_polygon.html#a652bd9bbb956b1055817819a6bcc65f1">CArgsRhinoGetPolygon</a>
 </li>
 <li>EdgeMode()
-: <a class="el" href="class_c_args_rhino_get_polygon.html#a6a1321b6cbdb4b4d3cd3d732b38d7712">CArgsRhinoGetPolygon</a>
+: <a class="el" href="class_c_args_rhino_get_polygon.html#acc184b5316f1f62fea3275aefe915077">CArgsRhinoGetPolygon</a>
 </li>
 <li>EdgeModifiedNofification()
 : <a class="el" href="class_o_n___sub_d_edge.html#a3df975bb71b54f52db106263443cf123">ON_SubDEdge</a>
@@ -374,6 +391,9 @@ $(function() {
 <li>EdgesAreEligible()
 : <a class="el" href="class_c_rhino_sub_d_pick_settings.html#abc4235cd663d03e8937cd5efa20cb45e">CRhinoSubDPickSettings</a>
 </li>
+<li>EdgeSoftening()
+: <a class="el" href="class_o_n___mesh_modifiers.html#a458611caed31ff37a5ea19a2dce96231">ON_MeshModifiers</a>
+</li>
 <li>EdgeStartPrompt()
 : <a class="el" href="class_c_args_rhino_get_polygon.html#a65eb3dcc9d8dbaa829abe32f3940772c">CArgsRhinoGetPolygon</a>
 </li>
@@ -388,6 +408,7 @@ $(function() {
 </li>
 <li>EdgeTag()
 : <a class="el" href="class_o_n___sub_d___component_id_type_and_tag.html#abf40c57980efb213e198732ec31cfbbd">ON_SubD_ComponentIdTypeAndTag</a>
+, <a class="el" href="class_o_n___sub_d_edge_ptr.html#ac62147432bf58ab071302b6db640162d">ON_SubDEdgePtr</a>
 </li>
 <li>EdgeTagFromContext()
 : <a class="el" href="class_o_n___sub_d.html#afd53a99331439ace74c0ac49b3918a86">ON_SubD</a>
@@ -403,6 +424,10 @@ $(function() {
 </li>
 <li>EdgeTopologyFilter()
 : <a class="el" href="class_o_n___sub_d_component_filter.html#a93c95373ae6a3ae277e2a7932f98a41a">ON_SubDComponentFilter</a>
+</li>
+<li>EdgeType()
+: <a class="el" href="class_o_n___sub_d_edge.html#aff4611bd6e993bf96c9c92acd9de4a2b">ON_SubDEdge</a>
+, <a class="el" href="class_o_n___sub_d_edge_ptr.html#ad697e54b1decf2c8f8cc71129da4728b">ON_SubDEdgePtr</a>
 </li>
 <li>Edit()
 : <a class="el" href="class_c_rh_rdk_content.html#a5f1b3b861dea4de0b31058a15c77b54f">CRhRdkContent</a>
@@ -431,7 +456,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_point_edit.html#ad41dfa0ab1c713925a97af9f6902e736">CRhinoUiPointEdit</a>
 </li>
 <li>EditGridItem()
-: <a class="el" href="class_c_rhino_ui_grid_list_ctrl.html#acfd2d66e5276cfb0ca5ba278b99a97e4">CRhinoUiGridListCtrl</a>
+: <a class="el" href="class_c_rhino_ui_grid_list_ctrl.html#aecd21f21a6c60387b9d0ab2d7897c035">CRhinoUiGridListCtrl</a>
 </li>
 <li>EditingLevel()
 : <a class="el" href="class_c_rh_rdk_content_added.html#a4672dd706c1143192e475d9218c5e093">CRhRdkContentAdded</a>
@@ -454,16 +479,14 @@ $(function() {
 : <a class="el" href="class_c_rhino_command.html#a78b850f6f9847e7d78996b7a8e53dc44">CRhinoCommand</a>
 </li>
 <li>EditOnClick()
-: <a class="el" href="class_c_rhino_ui_grid_list_ctrl.html#a82b91ad49d293e25ba1d2c9e3bf2c147">CRhinoUiGridListCtrl</a>
+: <a class="el" href="class_c_rhino_ui_grid_list_ctrl.html#a5d79b068437ae99892b9a45fbed2cbb3">CRhinoUiGridListCtrl</a>
 </li>
 <li>EditorId()
 : <a class="el" href="class_c_rh_rdk_content_moved.html#ad27377a90481f9c334092214eae6aba4">CRhRdkContentMoved</a>
 , <a class="el" href="class_c_rh_rdk_content_multiple_selection.html#a16ef82e1f9e8468076f5ec2cdf013293">CRhRdkContentMultipleSelection</a>
-, <a class="el" href="class_i_rh_rdk_content_editor_settings.html#ad60f6495cdd8b8c6bb33659af8d5dafd">IRhRdkContentEditorSettings</a>
 </li>
 <li>EditorUuid()
-: <a class="el" href="class_c_rh_rdk_core_content_u_i.html#a03c40c3420be5818de82d981bebd2654">CRhRdkCoreContentUI</a>
-, <a class="el" href="class_c_rh_rdk_custom_content_u_i.html#ab40c60f691c2b87f28eedf6f5c36d1da">CRhRdkCustomContentUI</a>
+: <a class="el" href="class_c_rh_rdk_custom_content_u_i.html#ab40c60f691c2b87f28eedf6f5c36d1da">CRhRdkCustomContentUI</a>
 , <a class="el" href="class_i_rh_rdk_content_u_i.html#afc930ba3376b48af0cce683f41a141eb">IRhRdkContentUI</a>
 </li>
 <li>eDrawNormal
@@ -588,7 +611,7 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_preview_scene_element.html#a2473f040ec3ccadba910febbc7172125">CRhRdkPreviewSceneElement</a>
 </li>
 <li>Elevation()
-: <a class="el" href="class_o_n___earth_anchor_point.html#a649c193d255753e9f4011e2749b569a1">ON_EarthAnchorPoint</a>
+: <a class="el" href="class_o_n___earth_anchor_point.html#ad5d6a7bbca23f5c19b64999e1ee10fab">ON_EarthAnchorPoint</a>
 , <a class="el" href="class_o_n___triangle_plane.html#afa9d12147ce3234133d47c68da2230be">ON_TrianglePlane</a>
 </li>
 <li>ElevationInMeters()
@@ -725,12 +748,18 @@ $(function() {
 , <a class="el" href="class_c_rhino_sub_d_display.html#a6fd03a954f5fdfb4a201ddd00f1186fd">CRhinoSubDDisplay</a>
 , <a class="el" href="class_c_rhino_uuid_collection.html#a69ce3c1bcfc8283c81b1aa977a93a20c">CRhinoUuidCollection</a>
 , <a class="el" href="class_c_rhino_xform_object_list.html#a7340366b1e93c5ad2c61058508fded0e">CRhinoXformObjectList</a>
-, <a class="el" href="class_o_n__3dm_application.html#a1e973dbbdb5c05012b34a825e788424e">ON_3dmApplication</a>
+</li>
+<li>empty
+: <a class="el" href="class_c_rh_rdk_object_ancestry.html#a9dde571c88a68cd80ef56f2707532636">CRhRdkObjectAncestry</a>
+</li>
+<li>Empty
+: <a class="el" href="class_o_n__3dm_application.html#a1e973dbbdb5c05012b34a825e788424e">ON_3dmApplication</a>
 , <a class="el" href="class_o_n__3dm_notes.html#a5ee209bcfc26f0a4e511aaa3ef7115b6">ON_3dmNotes</a>
 , <a class="el" href="class_o_n__3dm_properties.html#a230c7a7137c907396b77d76d5397c826">ON_3dmProperties</a>
 , <a class="el" href="class_o_n__3dm_revision_history.html#ab3648546d0cfe1a9d60251b001f44e90">ON_3dmRevisionHistory</a>
 , <a class="el" href="class_o_n___aggregate_component_status.html#a2d643e09425fe921fdac127cbca2d24e">ON_AggregateComponentStatus</a>
 , <a class="el" href="class_o_n___aggregate_component_status_ex.html#a5a349e12fd1d104854df473d2fd22efe">ON_AggregateComponentStatusEx</a>
+, <a class="el" href="class_o_n___archivable_dictionary.html#ae09c40b7bc8525a6918342029bb15be7">ON_ArchivableDictionary</a>
 , <a class="el" href="class_o_n___brep_quad_face_pack.html#a1dbce7f3d844945f0f93f1a757ab8657">ON_BrepQuadFacePack</a>
 , <a class="el" href="class_o_n___brep_star_face_pack.html#a5863fb5a34a903c76fd90f9e21c5aead">ON_BrepStarFacePack</a>
 , <a class="el" href="class_o_n___centermark.html#a0bb2ed02a08729342012b8c2a9c5a093">ON_Centermark</a>
@@ -787,6 +816,9 @@ $(function() {
 , <a class="el" href="class_o_n___uuid_pair_list.html#a2abba00b8855b87e9b1edeee124a82bd">ON_UuidPairList</a>
 , <a class="el" href="class_o_n__w_string.html#a702b65a43148e77cfff8d60b73d9bac6">ON_wString</a>
 </li>
+<li>empty()
+: <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mapping_channels.html#a583d83a3a8f9fe93bf4fcf3c8d4c2897">RhRdk::Realtime2::ChangeQueue::MappingChannels</a>
+</li>
 <li>EmptyArray
 : <a class="el" href="class_o_n___text_run_array.html#a16ffa8799a98fa68f4623628d11f3934">ON_TextRunArray</a>
 </li>
@@ -839,7 +871,7 @@ $(function() {
 <li>Enable()
 : <a class="el" href="class_c_rhino_context_menu_extension.html#a09f825de4cd72ec95ad53fc68d1886cb">CRhinoContextMenuExtension</a>
 , <a class="el" href="class_c_rhino_display_conduit.html#aa32fa8a7f6ee06036fa16418ac8ec0cc">CRhinoDisplayConduit</a>
-, <a class="el" href="class_c_rhino_event_watcher.html#a23ffa6bbd8e8aef91b2c102f52f184b4">CRhinoEventWatcher</a>
+, <a class="el" href="class_c_rhino_event_watcher.html#a016758020fad48427e1629783f2b9d7d">CRhinoEventWatcher</a>
 , <a class="el" href="class_c_rhino_event_watcher_ex.html#aaab0f43bb266e5239e0b0bf12647a52f">CRhinoEventWatcherEx</a>
 , <a class="el" href="class_c_rhino_mouse_callback.html#a2f6b08b1c8448343bf0fae323c29b5da">CRhinoMouseCallback</a>
 , <a class="el" href="class_c_rhino_stereo_display_conduit.html#af5df8e1c5ade6190c7d35368beb8c6a4">CRhinoStereoDisplayConduit</a>
@@ -857,7 +889,7 @@ $(function() {
 : <a class="el" href="class_o_n__3dm_annotation_settings.html#a275e407cb123c05e8d29616a5a9f947e">ON_3dmAnnotationSettings</a>
 </li>
 <li>EnableAcceptZeroLengthLine()
-: <a class="el" href="class_c_args_rhino_get_line.html#ab7f70485a248c8c9536801918854693b">CArgsRhinoGetLine</a>
+: <a class="el" href="class_c_args_rhino_get_line.html#a11e157ae71abf2eef5d4606a779471c3">CArgsRhinoGetLine</a>
 </li>
 <li>EnableAdvancedTexturePreview()
 : <a class="el" href="class_o_n___object_rendering_attributes.html#ac385de7d5de8c887ca07f903252a23f6">ON_ObjectRenderingAttributes</a>
@@ -883,6 +915,7 @@ $(function() {
 <li>EnableAllowed()
 : <a class="el" href="class_c_rh_rdk_sun_storage.html#ad70e9153e15a287e2056ffe11179cabb">CRhRdkSunStorage</a>
 , <a class="el" href="class_i_rh_rdk_sun_r_o.html#a575e48d9303827a58405c2a0b36268db">IRhRdkSunRO</a>
+, <a class="el" href="class_o_n___sun.html#ae92f6ab26f7a35d0bc63b6620e4a86a8">ON_Sun</a>
 </li>
 <li>EnableAllowOnDropEx()
 : <a class="el" href="class_c_rhino_drop_target.html#a5d858d9730afef2d5a714b1028a44250">CRhinoDropTarget</a>
@@ -898,13 +931,13 @@ $(function() {
 : <a class="el" href="class_c_rhino_object.html#a75930699865cede004d0d25e6b964e5c">CRhinoObject</a>
 </li>
 <li>EnableAssignMaterialButton()
-: <a class="el" href="class_c_rhino_render_plug_in.html#adf3f075e545266eb6bc31970320e6bc1">CRhinoRenderPlugIn</a>
+: <a class="el" href="class_c_rhino_render_plug_in.html#a6717849b473d070d226b0547b945be90">CRhinoRenderPlugIn</a>
 </li>
 <li>EnableBackgroundAttrs()
 : <a class="el" href="class_c_channel_attributes.html#ae51997717887de3ed9de1eb2bd1a4061">CChannelAttributes</a>
 </li>
 <li>EnableBottomObjectPreference()
-: <a class="el" href="class_c_rhino_get_object.html#a13aaf449982dc608db04c138e10be3c4">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#acab2a02042fc90f47d27e22150a35d66">CRhinoGetObject</a>
 </li>
 <li>EnableBrokenRecordWarning()
 : <a class="el" href="class_c_rhino_history_manager.html#a31afd33390c2567ab44feb5f7eccc9ab">CRhinoHistoryManager</a>
@@ -916,7 +949,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_display_pipeline.html#a65c20a1137c01a5ac27b3cc1f244d1fd">CRhinoDisplayPipeline</a>
 </li>
 <li>EnableChooseOneQuestion()
-: <a class="el" href="class_c_rhino_get_object.html#a3c01d8b79f6ef9231ddd77d8c3e4b78e">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#acf4bb1224c7725fc45271e767cdcbeeb">CRhinoGetObject</a>
 </li>
 <li>EnableClearObjectsOnEntry()
 : <a class="el" href="class_c_rhino_get_object.html#abe148b40c3df9ecec24b846c10943c64">CRhinoGetObject</a>
@@ -945,16 +978,16 @@ $(function() {
 : <a class="el" href="class_o_n___binary_archive.html#a0a75c0ae94488e0a782f25eeb6c2135a">ON_BinaryArchive</a>
 </li>
 <li>EnableCreateMaterialButton()
-: <a class="el" href="class_c_rhino_render_plug_in.html#a6aa1028832e8cce4b0e244bc53c1db0b">CRhinoRenderPlugIn</a>
+: <a class="el" href="class_c_rhino_render_plug_in.html#a38e2f5050e62901164b14b2f545ee32f">CRhinoRenderPlugIn</a>
 </li>
 <li>EnableCurveSnapArrow()
-: <a class="el" href="class_c_rhino_get_point.html#ae4f95e699a18931ac471d64242510ba8">CRhinoGetPoint</a>
+: <a class="el" href="class_c_rhino_get_point.html#a64fae853a1df2b4de895e36902401c7f">CRhinoGetPoint</a>
 </li>
 <li>EnableCurveSnapPerpBar()
-: <a class="el" href="class_c_rhino_get_point.html#aa067b68d98e3158ab6ba236119d83c28">CRhinoGetPoint</a>
+: <a class="el" href="class_c_rhino_get_point.html#ad86a5711fa615e6c88ec9ebf47b32756">CRhinoGetPoint</a>
 </li>
 <li>EnableCurveSnapTangentBar()
-: <a class="el" href="class_c_rhino_get_point.html#a36ad88d7a965e5888fd511b1de4d2d92">CRhinoGetPoint</a>
+: <a class="el" href="class_c_rhino_get_point.html#a8e1475ba82a37cc7d721950a9e7f4d57">CRhinoGetPoint</a>
 </li>
 <li>EnableCustomGrips()
 : <a class="el" href="class_c_rhino_object.html#a730964f484ec8f4025a76d30ea5cb475">CRhinoObject</a>
@@ -966,7 +999,17 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_panel_factory.html#ac1aa8ea6d6af69c1068c9cac0cab3f6b">CRhinoUiPanelFactory</a>
 , <a class="el" href="class_c_rh_rdk_action.html#ae1328aec86ae72a4c11a21c30fb93f1d">CRhRdkAction</a>
 , <a class="el" href="class_c_rui_update_ui.html#aa11c648354f872e55dbec9a21a56484e">CRuiUpdateUi</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_ground_plane.html#a4cfaaefb444437c4224aed194695af1e">RhRdk::Realtime::ChangeQueue::GroundPlane</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_ground_plane.html#aa78a4da0d51b32c329da52c8fbae123c">GroundPlane</a>
+, <a class="el" href="class_i_rh_rdk_ground_plane.html#a4b00a7678af93a51090f09e51bc0af6e">IRhRdkGroundPlane</a>
+, <a class="el" href="class_i_rh_rdk_safe_frame.html#a13dcc603d3f205419331ab5b85741035">IRhRdkSafeFrame</a>
+, <a class="el" href="class_i_rh_rdk_skylight.html#a135a09c66869ace387e1f58053f80e43">IRhRdkSkylight</a>
+, <a class="el" href="class_o_n___dithering.html#a881ba8cc20bcb56c3af9713b787cdf97">ON_Dithering</a>
+, <a class="el" href="class_o_n___ground_plane.html#a195a2e20ff7d975d9569957969b0a2f7">ON_GroundPlane</a>
+, <a class="el" href="class_o_n___safe_frame.html#ac79d7102a9ff5eb857cbe62c53f5634f">ON_SafeFrame</a>
+, <a class="el" href="class_o_n___shut_lining_1_1_curve_1_1_defaults.html#add8f84237a947508a308c06d8a5c5ea3">ON_ShutLining::Curve::Defaults</a>
+, <a class="el" href="class_o_n___shut_lining_1_1_curve.html#a5bc97565a83aae940147fc9c2ce84d5b">ON_ShutLining::Curve</a>
+, <a class="el" href="class_o_n___skylight.html#a33b281ecc2de805a18f7f4b66ae913a6">ON_Skylight</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_ground_plane.html#a055c0ccc0862f44b4cca915b2f1ff789">RhRdk::Realtime2::ChangeQueue::GroundPlane</a>
 </li>
 <li>enabled_state
 : <a class="el" href="class_c_rhino_ui_options_list_ctrl_item.html#a9456164a55fc3d9a3a88cad359cab305a433fadb4768ab87ee65db4c7ac85ccbe">CRhinoUiOptionsListCtrlItem</a>
@@ -998,7 +1041,6 @@ $(function() {
 </li>
 <li>EnableDisableControls()
 : <a class="el" href="class_c_rh_rdk_resizing_dialog.html#aa6837110e85a7ec28d781f8896ac4811">CRhRdkResizingDialog</a>
-, <a class="el" href="class_i_rh_rdk_content_ctrl_base.html#a9082c196e090032ec96d5d05b9f312a1">IRhRdkContentCtrlBase</a>
 , <a class="el" href="class_i_rh_rdk_content_u_i.html#aad3692e2e7167e43eaada5093893b15c">IRhRdkContentUI</a>
 </li>
 <li>EnableDisplayCommands()
@@ -1021,7 +1063,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_view.html#aaf09e18544e2fb3a75898b7462900131">CRhinoView</a>
 </li>
 <li>EnableDrawLineFromPoint()
-: <a class="el" href="class_c_rhino_get_point.html#a6f3c13d976b53209890765831b66847d">CRhinoGetPoint</a>
+: <a class="el" href="class_c_rhino_get_point.html#a7791e2d2b018de3e8349ba91a77aa099">CRhinoGetPoint</a>
 </li>
 <li>EnableDynamicDisplay()
 : <a class="el" href="class_c_rhino_clipping_plane_object.html#a65267e45d67d225f2edf32b9fc7861d7">CRhinoClippingPlaneObject</a>
@@ -1030,13 +1072,13 @@ $(function() {
 : <a class="el" href="class_c_rhino_display_pipeline.html#a09706c3c66e6755c001ed12b55a95f5f">CRhinoDisplayPipeline</a>
 </li>
 <li>EnableDynamicDrawSphere()
-: <a class="el" href="class_c_args_rhino_get_circle.html#a5f53349cae551ae44eb3a797f8d49e25">CArgsRhinoGetCircle</a>
+: <a class="el" href="class_c_args_rhino_get_circle.html#adaa611c260035faa243b1ee9e152c5fd">CArgsRhinoGetCircle</a>
 </li>
 <li>EnableEditLabel()
 : <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#a7ab3998a4b6585cf31af819befb49597">CRhinoUiLinetypeListCtrl</a>
 </li>
 <li>EnableEditMaterialButton()
-: <a class="el" href="class_c_rhino_render_plug_in.html#a0f6abbc5f07058279f742ed0da90a54f">CRhinoRenderPlugIn</a>
+: <a class="el" href="class_c_rhino_render_plug_in.html#a4d288c2d1420e8b3e463c4615c9af94c">CRhinoRenderPlugIn</a>
 </li>
 <li>EnableEnvironment()
 : <a class="el" href="class_c_rhino_display_pipeline.html#a1e0820aad87cfec94f9d4fdfa40b39e5">CRhinoDisplayPipeline</a>
@@ -1055,10 +1097,10 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_basic_material_c_c_i.html#acfa460ffebc04d3293ad693b5351a8fa">CRhRdkBasicMaterialCCI</a>
 </li>
 <li>EnableFromMidPoint()
-: <a class="el" href="class_c_args_rhino_get_line.html#a71a32adb554b4a497df3ea7230d00654">CArgsRhinoGetLine</a>
+: <a class="el" href="class_c_args_rhino_get_line.html#a560164bc7aec3debb15c931e48ee79f2">CArgsRhinoGetLine</a>
 </li>
 <li>EnableFromMidPointOption()
-: <a class="el" href="class_c_args_rhino_get_line.html#a06151bdfb5e5674c0a177a2434d10fb0">CArgsRhinoGetLine</a>
+: <a class="el" href="class_c_args_rhino_get_line.html#a3e832ed3eeb3cc83c157a90d2275196b">CArgsRhinoGetLine</a>
 </li>
 <li>EnableGet()
 : <a class="el" href="class_c_rhino_doc.html#afb7b34a434231129176d4d9c514d5290">CRhinoDoc</a>
@@ -1090,7 +1132,7 @@ $(function() {
 , <a class="el" href="class_c_rhino_hatch.html#a6bb8cafa3004354e23ca11c20eb1e16a">CRhinoHatch</a>
 , <a class="el" href="class_c_rhino_instance_object.html#ae176de50f7af40dbd61684b95f372962">CRhinoInstanceObject</a>
 , <a class="el" href="class_c_rhino_leader.html#a8154deb2c5a1cf3fcd6ef3ffdc40ccfb">CRhinoLeader</a>
-, <a class="el" href="class_c_rhino_light.html#a6518c748bb5e4d4fcb7984cc18afd6e3">CRhinoLight</a>
+, <a class="el" href="class_c_rhino_light.html#aea304a28303999130c73d4c53e8b50d0">CRhinoLight</a>
 , <a class="el" href="class_c_rhino_mesh_object.html#a8d0b40d85fb39a55ba368654339e6b4c">CRhinoMeshObject</a>
 , <a class="el" href="class_c_rhino_morph_control.html#ad835d87046cb1a9dbad386cf47fdc910">CRhinoMorphControl</a>
 , <a class="el" href="class_c_rhino_named_view_camera_icon.html#a99043e1147ea5ea39a04e0079c328ad8">CRhinoNamedViewCameraIcon</a>
@@ -1098,18 +1140,22 @@ $(function() {
 , <a class="el" href="class_c_rhino_point_cloud_object.html#ae6346d5c3fc29cb803bb350a7ba5e288">CRhinoPointCloudObject</a>
 , <a class="el" href="class_c_rhino_sub_d_object.html#affff2bc64f1b680aab3628a125ce0573">CRhinoSubDObject</a>
 , <a class="el" href="class_c_rhino_text.html#a5fa50346fa40e159bcd0a66153a610a6">CRhinoText</a>
-, <a class="el" href="class_c_rhino_widget.html#a629db785e27f00316959cdb8e322775b">CRhinoWidget</a>
+, <a class="el" href="class_c_rhino_widget.html#aca0aa03c676986d0065a4c71cd4efb0f">CRhinoWidget</a>
 </li>
 <li>EnableGroundPlane()
-: <a class="el" href="class_c_rhino_display_pipeline___o_g_l.html#a98babcc188771c455de3e187645c0040">CRhinoDisplayPipeline_OGL</a>
+: <a class="el" href="class_c_rhino_display_pipeline.html#a676336fcd622dd507306913c3e9186e7">CRhinoDisplayPipeline</a>
+, <a class="el" href="class_c_rhino_display_pipeline___o_g_l.html#a98babcc188771c455de3e187645c0040">CRhinoDisplayPipeline_OGL</a>
 , <a class="el" href="class_c_rhino_z_buffer.html#aba1aec4936878cf63ba86cceb03fb446">CRhinoZBuffer</a>
 </li>
 <li>EnableGroupSelect()
 : <a class="el" href="class_c_rhino_drop_target.html#a8a0a6d99544675d39701a70c9acb6d7c">CRhinoDropTarget</a>
-, <a class="el" href="class_c_rhino_get_object.html#a15645767233fab93c25c14c557ed4afe">CRhinoGetObject</a>
+, <a class="el" href="class_c_rhino_get_object.html#a31fd26c81e42042c11520c5893157421">CRhinoGetObject</a>
 </li>
 <li>EnableGumballDraw()
 : <a class="el" href="class_c_rhino_gumball_display_conduit.html#a6ef1d79313c4a619605ca82849162bc8">CRhinoGumballDisplayConduit</a>
+</li>
+<li>EnableGumballToolTips()
+: <a class="el" href="class_c_rhino_app_cursor_tool_tip_settings.html#af83cf5f50a071f851498ddac8777e16c">CRhinoAppCursorToolTipSettings</a>
 </li>
 <li>EnableHatchScaling()
 : <a class="el" href="class_c_rhino_annotation_settings_ex.html#a125499d63fc574feaf2b5559f16113c0">CRhinoAnnotationSettingsEx</a>
@@ -1121,7 +1167,7 @@ $(function() {
 , <a class="el" href="class_i_rhino_ui_section.html#adaf8321a6996ba82dd9582b3f2694b0d">IRhinoUiSection</a>
 </li>
 <li>EnableHighlight()
-: <a class="el" href="class_c_rhino_get_object.html#a2db79681f96748eade4bfc0ddb70a137">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#adbd543c7f0a4b060a801b11e9f3aff18">CRhinoGetObject</a>
 </li>
 <li>EnableHistoryObjectLocking()
 : <a class="el" href="class_c_rhino_history_manager.html#ab021f33dd115db9745307cd5aaf6326f">CRhinoHistoryManager</a>
@@ -1201,12 +1247,17 @@ $(function() {
 <li>EnableObjectSnapCursors()
 : <a class="el" href="class_c_rhino_get_point.html#ad6e96e91d88c80ee5502d9e75be4e73e">CRhinoGetPoint</a>
 </li>
+<li>EnableOccludingSection()
+: <a class="el" href="class_o_n___hidden_line_drawing.html#aa2fd1d9ed1f201d5ceb824fa0d9bcafd">ON_HiddenLineDrawing</a>
+, <a class="el" href="class_o_n___h_l_d___object.html#ae5449077928caefbed7d79c6a9a82c91">ON_HLD_Object</a>
+</li>
 <li>EnableOn()
 : <a class="el" href="class_c_rh_rdk_sun_storage.html#a3ee74e31792bf97c17311273c773eea4">CRhRdkSunStorage</a>
 , <a class="el" href="class_i_rh_rdk_sun_r_o.html#a2ad9a11f70ed2d835fcc0c9db4c7f4fd">IRhRdkSunRO</a>
+, <a class="el" href="class_o_n___sun.html#a3d855f84425840a670c039e46514af8c">ON_Sun</a>
 </li>
 <li>EnableOneByOnePostSelect()
-: <a class="el" href="class_c_rhino_get_object.html#a829c55f042e34df6f2caa5eb3885fff2">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#a71419401d0273436dfef443a4c796b8b">CRhinoGetObject</a>
 </li>
 <li>EnableOneShotOsnapHiddenOptions()
 : <a class="el" href="class_c_rhino_get_point.html#a8af9e56dd0e4a87c90b72f91b6834f46">CRhinoGetPoint</a>
@@ -1230,10 +1281,10 @@ $(function() {
 : <a class="el" href="class_c_rh_rdk_post_effect_plug_in_manager.html#acb4fbd63d50ce3d7fc9f923e8e28f005">CRhRdkPostEffectPlugInManager</a>
 </li>
 <li>EnablePostSelect()
-: <a class="el" href="class_c_rhino_get_object.html#ae55700095a7f2f9807c2cf83cde6bb43">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#a2c9918a7aed39dde0e7890a1d33615d7">CRhinoGetObject</a>
 </li>
 <li>EnablePreSelect()
-: <a class="el" href="class_c_rhino_get_object.html#a9d36852dc3aa3249420784b40f41f224">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#a90579b7300f922eb1a5b89535d2239da">CRhinoGetObject</a>
 </li>
 <li>EnablePressEnterWhenDonePrompt()
 : <a class="el" href="class_c_rhino_get_object.html#ad3529b4c93cdc3e9fbb6c907e51e9fc1">CRhinoGetObject</a>
@@ -1256,10 +1307,10 @@ $(function() {
 </li>
 <li>EnableReferenceObjectSelect()
 : <a class="el" href="class_c_rhino_drop_target.html#a5b852ba238b8e7a142e23b25c1eac6cb">CRhinoDropTarget</a>
-, <a class="el" href="class_c_rhino_get_object.html#a7cb67eaa6f1c1a73223d7ca59a75d505">CRhinoGetObject</a>
+, <a class="el" href="class_c_rhino_get_object.html#a5b2ae2a73aaf7e8563f98e028daab1cd">CRhinoGetObject</a>
 </li>
 <li>EnableRepeatable()
-: <a class="el" href="class_c_rhino_command.html#a00664f0a0a6755e9f49235178c8c172d">CRhinoCommand</a>
+: <a class="el" href="class_c_rhino_command.html#ac298b1889128aca73820f3e54fd5b4a9">CRhinoCommand</a>
 </li>
 <li>EnableRhinoDropTarget()
 : <a class="el" href="class_c_rhino_drop_target.html#aae594590d8541524d6bb439c52210268">CRhinoDropTarget</a>
@@ -1280,16 +1331,20 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_dialog_scroll_helper.html#a6412e9b02dd2ba427501b610de2e4e6f">CRhinoUiDialogScrollHelper</a>
 </li>
 <li>EnableSelectedFilter()
-: <a class="el" href="class_c_rhino_object_iterator.html#a579e99f4ddad400f389ccc357876686c">CRhinoObjectIterator</a>
+: <a class="el" href="class_c_rhino_object_iterator.html#af21a1fae82873a49ae7e694f7c50cf71">CRhinoObjectIterator</a>
 </li>
 <li>EnableSelectedShade()
 : <a class="el" href="class_c_rhino_viewport.html#a94d75f0915480a616fa15c10560fd2f4">CRhinoViewport</a>
+</li>
+<li>EnableSelectiveClipping()
+: <a class="el" href="class_o_n___hidden_line_drawing.html#afeacad9a9268eb4812c2eb10f39b05d9">ON_HiddenLineDrawing</a>
+, <a class="el" href="class_o_n___h_l_d___object.html#a2386d593699d41603b288e2a1b7fd76e">ON_HLD_Object</a>
 </li>
 <li>EnableSelectOnMouseMove()
 : <a class="el" href="class_c_rhino_ui_popu_up_list_box.html#a385c1f4c446f6669b142e60f24c12d76">CRhinoUiPopuUpListBox</a>
 </li>
 <li>EnableSelPrev()
-: <a class="el" href="class_c_rhino_get_object.html#a68f76ca402adb4ce4c69846cf653d94d">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#af934150a5c8c056c94bc2a8ebf312863">CRhinoGetObject</a>
 </li>
 <li>EnableShaders()
 : <a class="el" href="class_c_rhino_display_pipeline.html#aae439d4cdc7bd294a7dd736a910a6480">CRhinoDisplayPipeline</a>
@@ -1301,10 +1356,10 @@ $(function() {
 : <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a7249eed95357736d8b2e0a52f177eb56">CRhinoDisplayEngine_OGL</a>
 </li>
 <li>EnableShowVariations()
-: <a class="el" href="class_c_args_rhino_get_line.html#a14409d3265ab8cfd4bf7c962272593fe">CArgsRhinoGetLine</a>
+: <a class="el" href="class_c_args_rhino_get_line.html#acb8b72cdecf46d2bb3cd300dc83a2e5b">CArgsRhinoGetLine</a>
 </li>
 <li>EnableSnapToCurves()
-: <a class="el" href="class_c_rhino_get_point.html#afc2da606b1ce9d46d948aa599b243a1f">CRhinoGetPoint</a>
+: <a class="el" href="class_c_rhino_get_point.html#a3272d5a5f51d5b6e37ee1f8ad0186dda">CRhinoGetPoint</a>
 </li>
 <li>EnableSpinnerWhenBlank()
 : <a class="el" href="class_c_rh_rdk_sdk_number_edit.html#a1e46fd0832b7bf9f81fcd77c6553e791">CRhRdkSdkNumberEdit</a>
@@ -1313,13 +1368,13 @@ $(function() {
 : <a class="el" href="class_c_rhino_get_object.html#a6c2b1d0322767b5969ee9c4a4c3c9b7f">CRhinoGetObject</a>
 </li>
 <li>EnableSubObjectSelect()
-: <a class="el" href="class_c_rhino_get_object.html#aad0850b2e3908f9f4cf00bda56986c24">CRhinoGetObject</a>
+: <a class="el" href="class_c_rhino_get_object.html#a899313232132d3a407abaf928e60de68">CRhinoGetObject</a>
 </li>
 <li>EnableSurfaceColorWriting()
 : <a class="el" href="class_c_display_pipeline_attributes.html#a613ee1c18a5db2f8d81406664ffded45">CDisplayPipelineAttributes</a>
 </li>
 <li>EnableTransparentCommands()
-: <a class="el" href="class_c_rhino_get.html#a81f1d462c1c344a1daaaa13cbb8b64e0">CRhinoGet</a>
+: <a class="el" href="class_c_rhino_get.html#a3496b539a0fbd8898dcb2e8793975478">CRhinoGet</a>
 </li>
 <li>EnableUndo()
 : <a class="el" href="class_c_rhino_command.html#abc3fd2689f9003a818fba24f9d7e27b9">CRhinoCommand</a>
@@ -1333,6 +1388,10 @@ $(function() {
 <li>EnableUpdateEmbededInstanceDefinitions()
 : <a class="el" href="class_c_rhino_get_file_dialog.html#aa6b4a9d8a4c4b9e57bea560b654b9b67">CRhinoGetFileDialog</a>
 </li>
+<li>EnableUseDimensionLayer()
+: <a class="el" href="class_c_rhino_annotation_settings.html#a7f36fb446fb69ff3dc48a68e95cc5ee2">CRhinoAnnotationSettings</a>
+, <a class="el" href="class_o_n__3dm_annotation_settings.html#afecb1301a6e338e565e1e2ff7c724b88">ON_3dmAnnotationSettings</a>
+</li>
 <li>EnableUserInterface()
 : <a class="el" href="class_c_rhino_visual_analysis_mode.html#af7c99cc175f1dfb2f3dd4f369cb5e32d">CRhinoVisualAnalysisMode</a>
 </li>
@@ -1340,13 +1399,13 @@ $(function() {
 : <a class="el" href="class_c_rhino_doc.html#ab9868896ba31d15633815056b1646702">CRhinoDoc</a>
 </li>
 <li>EnableVerticalCircleOption()
-: <a class="el" href="class_c_args_rhino_get_circle.html#aa4bd7b6a8093fee052a12afb01cfeac4">CArgsRhinoGetCircle</a>
+: <a class="el" href="class_c_args_rhino_get_circle.html#a615df46ab6b1341b724dd75200e14bc5">CArgsRhinoGetCircle</a>
 </li>
 <li>EnableVerticalPolygonOption()
 : <a class="el" href="class_c_args_rhino_get_polygon.html#af4e5190a106802cc304584a788a411fe">CArgsRhinoGetPolygon</a>
 </li>
 <li>EnableVisibleFilter()
-: <a class="el" href="class_c_rhino_object_iterator.html#a73df7e9d2a2429bc134ad17c03a5185e">CRhinoObjectIterator</a>
+: <a class="el" href="class_c_rhino_object_iterator.html#af4c0fac300721a465f9cafc662573c6a">CRhinoObjectIterator</a>
 </li>
 <li>EnableWindow()
 : <a class="el" href="class_c_rhino_view.html#aff5534abb2808185514afeb1848061f4">CRhinoView</a>
@@ -1355,7 +1414,8 @@ $(function() {
 : <a class="el" href="class_c_rhino_worker_thread.html#a25d18560890dc4603ecbe193b32ad88c">CRhinoWorkerThread</a>
 </li>
 <li>Encode()
-: <a class="el" href="class_o_n___big5_code_point.html#a80811b73788514bff759d4bd1855de81">ON_Big5CodePoint</a>
+: <a class="el" href="class_o_n___base64.html#a471628b525c7e02e58f3dc4c948f3c39">ON_Base64</a>
+, <a class="el" href="class_o_n___big5_code_point.html#a80811b73788514bff759d4bd1855de81">ON_Big5CodePoint</a>
 </li>
 <li>EncodeAsUnsignedChar()
 : <a class="el" href="class_o_n___sub_d_display_parameters.html#aa23e7e0fe5f1696f2b8564bca6e03072">ON_SubDDisplayParameters</a>
@@ -1377,7 +1437,9 @@ $(function() {
 , <a class="el" href="class_o_n___uncompress_stream.html#a29eb4232418e9af5a71f16a7d5b547ee">ON_UncompressStream</a>
 </li>
 <li>end()
-: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode_1_1_factories.html#afd884b10da9b6a234ccc644909237658">RhRdk::Realtime::DisplayMode::Factories</a>
+: <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a19303d9effeb5d520a4ee3d4b4bd93e8">RhRdk::CustomRenderMeshes::IRenderMeshes</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mapping_channels.html#a6e080f6867587682eb30451625846a07">RhRdk::Realtime2::ChangeQueue::MappingChannels</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode_1_1_factories.html#afd884b10da9b6a234ccc644909237658">RhRdk::Realtime::DisplayMode::Factories</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_modes.html#a5e90624e6d9c90ba1b490c24b123e282">RhRdk::Realtime::DisplayModes</a>
 </li>
 <li>end_arrowhead
@@ -1426,7 +1488,6 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_post_effect.html#a9a2ade955aa38a7106af313832af678f">IRhRdkPostEffect</a>
 , <a class="el" href="class_i_rh_rdk_post_effects.html#a4741d0471bc89d4f4319f24ce48ea8ad">IRhRdkPostEffects</a>
 , <a class="el" href="class_i_rh_rdk_render_channels.html#a0b3564c4c7b364076403549c21ecd4b8">IRhRdkRenderChannels</a>
-, <a class="el" href="class_i_rh_rdk_rhino_settings.html#ae63dc88c7eea40df7d9286240b86cc4f">IRhRdkRhinoSettings</a>
 , <a class="el" href="class_i_rh_rdk_safe_frame.html#ab500746cc89991fa9273b3796c980b16">IRhRdkSafeFrame</a>
 , <a class="el" href="class_i_rh_rdk_skylight.html#a60f548d6d2bcc61f598d9327b3dc433b">IRhRdkSkylight</a>
 , <a class="el" href="class_i_rh_rdk_sun.html#a589e6480f0d7612e08f68d6d9c1deea0">IRhRdkSun</a>
@@ -1453,7 +1514,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a908b58fe5e998ff7b3b1fa236ea0d21b">CRhinoUiTabbedSheetCtrl</a>
 </li>
 <li>EndEditing()
-: <a class="el" href="class_c_rhino_ui_list_box_ex.html#af79f30f1ba62c03b0d2e4c2d06ed12f3">CRhinoUiListBoxEx</a>
+: <a class="el" href="class_c_rhino_ui_list_box_ex.html#ac1bb03c18643c0ee5675ea62e4313316">CRhinoUiListBoxEx</a>
 </li>
 <li>EndFigure()
 : <a class="el" href="class_o_n___outline_accumulator.html#a150cc25d09662620cf8ad588547c2c75">ON_OutlineAccumulator</a>
@@ -1461,14 +1522,12 @@ $(function() {
 <li>EndHour()
 : <a class="el" href="class_o_n__3dm_animation_properties.html#adae5bce39b73acc7fd20d00c7b118bdc">ON_3dmAnimationProperties</a>
 </li>
-<li>Endian()
-: <a class="el" href="class_o_n.html#a6632a6caf068a7445d4906332d4b6298">ON</a>
-</li>
 <li>endian
 : <a class="el" href="class_o_n.html#af7a4752ce0e5e3391096917d32fb23b5">ON</a>
 </li>
 <li>Endian()
-: <a class="el" href="class_o_n___binary_archive.html#a61bad8c3fefeb95459880c8a4b4c4ab0">ON_BinaryArchive</a>
+: <a class="el" href="class_o_n.html#a6632a6caf068a7445d4906332d4b6298">ON</a>
+, <a class="el" href="class_o_n___binary_archive.html#a61bad8c3fefeb95459880c8a4b4c4ab0">ON_BinaryArchive</a>
 </li>
 <li>EndMinutes()
 : <a class="el" href="class_o_n__3dm_animation_properties.html#a55911adf8d76f524ed3b2447f719f6a3">ON_3dmAnimationProperties</a>
@@ -1477,7 +1536,7 @@ $(function() {
 : <a class="el" href="class_o_n__3dm_animation_properties.html#a580ba9eee6bf62cfdc20bad955913acd">ON_3dmAnimationProperties</a>
 </li>
 <li>EndNotifyBracket()
-: <a class="el" href="class_c_rh_rdk_sun_storage.html#a036bda3475e9543bc7db54985b56df4a">CRhRdkSunStorage</a>
+: <a class="el" href="class_c_rh_rdk_sun_storage.html#a905eef76ae879a28cb5d27b8b97e78f1">CRhRdkSunStorage</a>
 , <a class="el" href="class_i_rh_rdk_ground_plane.html#ae99a39d6100eba3a24d78a51a9d4dcc1">IRhRdkGroundPlane</a>
 , <a class="el" href="class_i_rh_rdk_render_channels.html#a5e8047cbcb9ee51ecf617c96b4089231">IRhRdkRenderChannels</a>
 , <a class="el" href="class_i_rh_rdk_safe_frame.html#acdf11aeb8b8f4faa47b2af7e6f081109">IRhRdkSafeFrame</a>
@@ -1550,6 +1609,10 @@ $(function() {
 <li>EndSeconds()
 : <a class="el" href="class_o_n__3dm_animation_properties.html#a3b6dc72ed7c09d539edee7d3dccd5a63">ON_3dmAnimationProperties</a>
 </li>
+<li>EndSharpness()
+: <a class="el" href="class_o_n___sub_d_edge.html#a164177b3e2712c5377261e664993fb14">ON_SubDEdge</a>
+, <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a79eec556ede4722c03d96b0eaa69e145">ON_SubDEdgeSharpness</a>
+</li>
 <li>EndTangent()
 : <a class="el" href="class_c_args_rhino_get_curve.html#afa331e11440969405bdedbde83f3bae4">CArgsRhinoGetCurve</a>
 </li>
@@ -1570,10 +1633,10 @@ $(function() {
 , <a class="el" href="class_c_rhino_object.html#a520c85f18af089cb5eb1f2e45a07f090">CRhinoObject</a>
 </li>
 <li>EndUndoRecord()
-: <a class="el" href="class_c_rhino_doc.html#af2baf2b04eca78ce7f30a7de04904eb6">CRhinoDoc</a>
+: <a class="el" href="class_c_rhino_doc.html#ab6270350551932ddbbe04ff2e8223043">CRhinoDoc</a>
 </li>
 <li>EndVertex()
-: <a class="el" href="class_o_n___x_mesh_edge.html#ae031ef3b645cdcbd4759cbd552649ea0">ON_XMeshEdge</a>
+: <a class="el" href="class_o_n___x_mesh_edge.html#a4c84c3b85f61ffce316636b210ad76f1">ON_XMeshEdge</a>
 </li>
 <li>EndWaitCursor()
 : <a class="el" href="class_c_rhino_app.html#a5c0b7f2d40bbd2496facd81ae30e8c2a">CRhinoApp</a>
@@ -1653,7 +1716,7 @@ $(function() {
 , <a class="el" href="class_i_rhino_window.html#a58ee3098114d939568cc77ec38fbed13">IRhinoWindow</a>
 </li>
 <li>EnglishCommandName()
-: <a class="el" href="class_c_rhino_command.html#aad2a777e48a3b3994b8e9e718c51ec82">CRhinoCommand</a>
+: <a class="el" href="class_c_rhino_command.html#a0295740d9b90dc8282b791027e27d60b">CRhinoCommand</a>
 , <a class="el" href="class_c_rhino_plug_in_command_record.html#a3b69ad5bb884eabb3b05fdec8bfefcc5">CRhinoPlugInCommandRecord</a>
 , <a class="el" href="class_c_rhino_plug_in_record.html#a4c0833fe8a30e6785fc2ba16228b47d3">CRhinoPlugInRecord</a>
 </li>
@@ -1667,7 +1730,7 @@ $(function() {
 </li>
 <li>EnsureDefaultContent()
 : <a class="el" href="class_c_rh_rdk_plug_in.html#a0a34876eb8ceaece9989b3c92acc6a88">CRhRdkPlugIn</a>
-, <a class="el" href="class_c_rh_rdk_render_plug_in.html#a760d1513e9fbb81bd864de010cd9fed4">CRhRdkRenderPlugIn</a>
+, <a class="el" href="class_c_rh_rdk_render_plug_in.html#ab9dd351aca5f72a727264d71101ffcac">CRhRdkRenderPlugIn</a>
 </li>
 <li>EnsureDib()
 : <a class="el" href="class_i_rh_rdk_render_window.html#aee70953623f23fbf7db198c2d964ed42">IRhRdkRenderWindow</a>
@@ -1701,14 +1764,15 @@ $(function() {
 : <a class="el" href="class_i_rh_rdk_preview_scene_server.html#aa228328d121b083f51328555e49d07a4">IRhRdkPreviewSceneServer</a>
 </li>
 <li>EnvironmentFromId()
-: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#acf98d8d7295f78e69c45d4b80f2aaad9">RhRdk::Realtime::ChangeQueue</a>
+: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#a0f1475367b0b388aa36dcd270f1536d6">ChangeQueue</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue.html#a4a6a96ab5e8c5cfb90ab0b689371b17e">RhRdk::Realtime2::ChangeQueue</a>
+</li>
+<li>EnvironmentId()
+: <a class="el" href="class_o_n___skylight.html#a60611f2e63dbefa05c0d9b9deb6f9b13">ON_Skylight</a>
 </li>
 <li>EnvironmentIdForUsage()
-: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#a9882d1a25bd88702f38ee385f08bed08">RhRdk::Realtime::ChangeQueue</a>
-</li>
-<li>EnvironmentInstance()
-: <a class="el" href="class_c_rh_rdk_preview_appearance_defaults.html#a31f2298c6ebebcdf939d4dcd55c858e6">CRhRdkPreviewAppearanceDefaults</a>
-, <a class="el" href="class_i_rh_rdk_preview_appearance_defaults.html#a8899bb2db7d0a82de6f72bf816358178">IRhRdkPreviewAppearanceDefaults</a>
+: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#a4744e16333b915db523ecaaac64e4e41">ChangeQueue</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue.html#aa84bae083f0ad336dffcf8d2e47aeb23">RhRdk::Realtime2::ChangeQueue</a>
 </li>
 <li>EnvironmentInstanceId()
 : <a class="el" href="class_c_rh_rdk_preview_background.html#a9663cdede761eab44a06561a51a1bcb3">CRhRdkPreviewBackground</a>
@@ -1725,8 +1789,17 @@ $(function() {
 <li>EnvironmentMappingProjection()
 : <a class="el" href="class_c_rh_rdk_texture.html#a663bee545381db119e05fdfce8464daa">CRhRdkTexture</a>
 </li>
+<li>EnvironmentOverride()
+: <a class="el" href="class_o_n___skylight.html#a4c368abb2789508cdc3869bea04fd2c8">ON_Skylight</a>
+</li>
+<li>EnvironmentPurpose
+: <a class="el" href="class_o_n__3dm_render_settings.html#afc154153fe072a45004d12340e9f8b9d">ON_3dmRenderSettings</a>
+</li>
 <li>EnvironmentTextureChildSlotName()
 : <a class="el" href="class_c_rh_rdk_material.html#a7674cc10f52ece7f18d75ca8ae8c61da">CRhRdkMaterial</a>
+</li>
+<li>EnvironmentUsage
+: <a class="el" href="class_o_n__3dm_render_settings.html#a76f531d003e0b4c803983c9ef244f090">ON_3dmRenderSettings</a>
 </li>
 <li>ePlugInType
 : <a class="el" href="class_c_rh_rdk_plug_in.html#a3f775a61956d4525c8457dfb8c6cd56a">CRhRdkPlugIn</a>
@@ -1741,8 +1814,8 @@ $(function() {
 : <a class="el" href="class_c_rh_rdk_texture.html#acd3a1c9f6a8b7213af4b88adb3835a7f">CRhRdkTexture</a>
 </li>
 <li>Equal()
-: <a class="el" href="class_o_n___string.html#a800984c304afe916c670834df4d5b62c">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a27d9e0486ddb67c464a1ef9da0eddd8f">ON_wString</a>
+: <a class="el" href="class_o_n___string.html#a4aee3f6f90463288b037761a5d961afc">ON_String</a>
+, <a class="el" href="class_o_n__w_string.html#a2dea411527cf705dc5e1d5408a196fc3">ON_wString</a>
 </li>
 <li>EqualAttributeName()
 : <a class="el" href="class_o_n___string.html#ad2a68db7fa0ecd111d2e0610f49e645d">ON_String</a>
@@ -1751,6 +1824,12 @@ $(function() {
 <li>EqualContent()
 : <a class="el" href="class_o_n___content_hash.html#aa495c50d35d777aeb70226bac13e5401">ON_ContentHash</a>
 , <a class="el" href="class_o_n___model_component_content_mark.html#a5515af5f86cad902202eea7a153d3c1b">ON_ModelComponentContentMark</a>
+</li>
+<li>EqualDelta()
+: <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a0fbb6d12a42124cdf966703e08a8a312">ON_SubDEdgeSharpness</a>
+</li>
+<li>EqualEndSharpness()
+: <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a2fd9fbc5ed5a6893ace58863a51cdbd4">ON_SubDEdgeSharpness</a>
 </li>
 <li>EqualFileNameSizeAndTime()
 : <a class="el" href="class_o_n___content_hash.html#ae7564b2790c10576e51ede8bcd412287">ON_ContentHash</a>
@@ -1765,12 +1844,12 @@ $(function() {
 : <a class="el" href="class_o_n___font.html#a471757250c48983f63a1c082de215385">ON_Font</a>
 </li>
 <li>EqualOrdinal()
-: <a class="el" href="class_o_n___string.html#a43e2fa835ab3fa951bf0a92744f8d93f">ON_String</a>
+: <a class="el" href="class_o_n___string.html#a54ba1088294944de804c64fb5a28d46d">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#a867483b8ce8baee0948892b8d0cb253a">ON_wString</a>
 </li>
 <li>EqualPath()
-: <a class="el" href="class_o_n___string.html#ac43be95af1c27165b4c0c14df6cc7f3b">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#ae9bf1ee06c4fbab126ef3f0970b1ace9">ON_wString</a>
+: <a class="el" href="class_o_n___string.html#a69b4b2d2abbd09e1de7892e3b8395804">ON_String</a>
+, <a class="el" href="class_o_n__w_string.html#ac348f1be13d3977fb9d56ab5634f778c">ON_wString</a>
 </li>
 <li>EqualStretch()
 : <a class="el" href="class_o_n___font.html#ac26c43dde29b7726ebe565e82829bb3a">ON_Font</a>
@@ -1784,6 +1863,9 @@ $(function() {
 </li>
 <li>EqualTextStyleFontAndName()
 : <a class="el" href="class_o_n___text_style.html#ae2216b9baa77b87a2cf705665453f122">ON_TextStyle</a>
+</li>
+<li>EqualTrend()
+: <a class="el" href="class_o_n___sub_d_edge_sharpness.html#aadb444b74edbaf7b3b395015136a4768">ON_SubDEdgeSharpness</a>
 </li>
 <li>EqualWeight()
 : <a class="el" href="class_o_n___font.html#a01d53983dba64de0fecc972ed96bf944">ON_Font</a>
@@ -2023,7 +2105,7 @@ $(function() {
 , <a class="el" href="class_o_n___surface.html#a899f803ad53b82aafd8eb0f4451a755f">ON_Surface</a>
 </li>
 <li>Evaluate()
-: <a class="el" href="class_o_n__3d_simplex.html#a922db4fd1417c0e3802abe14279c0f48">ON_3dSimplex</a>
+: <a class="el" href="class_o_n__3d_simplex.html#acb8c618c5660424f8055e85a1fa95abf">ON_3dSimplex</a>
 , <a class="el" href="class_o_n___arc_curve.html#a8f6cd5138c7fbf49883c2045501c5944">ON_ArcCurve</a>
 , <a class="el" href="class_o_n___arithmetic_calculator.html#a51ecab1eedecc192cce2aa133cf69f6a">ON_ArithmeticCalculator</a>
 , <a class="el" href="class_o_n___bezier_cage.html#ab89758cca4db6849393e2c9ac98bfa2a">ON_BezierCage</a>
@@ -2055,7 +2137,7 @@ $(function() {
 , <a class="el" href="class_o_n___surface_proxy.html#ac229e520c42a00099bc81509849eee99">ON_SurfaceProxy</a>
 , <a class="el" href="class_o_n___surface_tree_node.html#a7ed9388a41d920100c1d126a4d3bf06b">ON_SurfaceTreeNode</a>
 , <a class="el" href="class_o_n___tensor_product.html#a86429e599cb980bc348a58f7d9d751d5">ON_TensorProduct</a>
-, <a class="el" href="class_o_n___texture_mapping.html#ac24bdf7e091dd0db8b96f0b60dbefda4">ON_TextureMapping</a>
+, <a class="el" href="class_o_n___texture_mapping.html#a585d55bec1eb924681c70f722f8785fe">ON_TextureMapping</a>
 </li>
 <li>EvaluateBoxMapping()
 : <a class="el" href="class_o_n___texture_mapping.html#a72617f0835a94276990850841c6b914e">ON_TextureMapping</a>
@@ -2117,7 +2199,7 @@ $(function() {
 : <a class="el" href="class_o_n___texture_mapping.html#abe1b4119f73a48f173133ce9efda9649">ON_TextureMapping</a>
 </li>
 <li>EvaluateSurfacePoint()
-: <a class="el" href="class_o_n___sub_d_matrix.html#a1bf9ce74e5224aa43462c5ec4b6f3c75">ON_SubDMatrix</a>
+: <a class="el" href="class_o_n___sub_d_matrix.html#a2a0e523254bd8cc8307aa5444eefebf2">ON_SubDMatrix</a>
 </li>
 <li>EvaluateTangents()
 : <a class="el" href="class_c_rhino_poly_edge.html#a01fe0ba587eef663d54f94743fec5fb9">CRhinoPolyEdge</a>
@@ -2140,10 +2222,11 @@ $(function() {
 </li>
 <li>Event()
 : <a class="el" href="class_c_rhino_event_watcher.html#aef5915ac484681e7db8572d0aa2fdc37">CRhinoEventWatcher</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html#ab7855f28138508c1afe152a4a4314b12">Light</a>
 , <a class="el" href="class_o_n___error_log.html#a4dd7269e952d6b34d7a8621c0377c8c1">ON_ErrorLog</a>
 , <a class="el" href="class_o_n___x_mesh_component.html#a43d12a0facd13a20f987b686119023d1">ON_XMeshComponent</a>
 , <a class="el" href="class_o_n___x_mesh_f_f.html#ae133e408c1bbdb567755df5aa987afda">ON_XMeshFF</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html#aca21bd83875a3f4934d6995b3e8214d6">RhRdk::Realtime::ChangeQueue::Light</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_light.html#af6956f7a91566c6df159211d8e09ab04">RhRdk::Realtime2::ChangeQueue::Light</a>
 </li>
 <li>event_id
 : <a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aea">CRhinoEventWatcher</a>
@@ -2173,6 +2256,9 @@ $(function() {
 <li>event_type_change_object_select_state
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0f69f83c36d4fde9e18d776faba900ae">CRhinoEventWatcherEx</a>
 </li>
+<li>event_type_display_mode_settings_changed
+: <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187afdeddffab4ee924ae45a054bb44bc85b">CRhinoEventWatcherEx</a>
+</li>
 <li>event_type_doc_user_text_changed
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187affe6e7cfe33633a05d0f0660b94c1c11">CRhinoEventWatcherEx</a>
 </li>
@@ -2190,6 +2276,9 @@ $(function() {
 </li>
 <li>event_type_none
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a274274f46872dd0d5e0ff13fc63d6f8d">CRhinoEventWatcherEx</a>
+</li>
+<li>event_type_object_manager_changed
+: <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187acd35843faedc94e60c41031241459ab2">CRhinoEventWatcherEx</a>
 </li>
 <li>event_type_plug_in_settings_changed
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187ae9c6e49102dc1b2c582dea880b040038">CRhinoEventWatcherEx</a>
@@ -2236,23 +2325,25 @@ $(function() {
 : <a class="el" href="class_o_n___error_event.html#a4bb80e0dd6f62db742314855b66e06ab">ON_ErrorEvent</a>
 </li>
 <li>EVF()
-: <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#ac7c7a7918ded4efc392f59b6659cdc47">CRhinoTabbedDockBarDialog</a>
+: <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#ae5df01e13385db6eda69576cfca1502d">ChangeQueue</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_clipping_plane.html#abc0a753e126a1e5f1fd64452391a91e4">ClippingPlane</a>
+, <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#ac7c7a7918ded4efc392f59b6659cdc47">CRhinoTabbedDockBarDialog</a>
 , <a class="el" href="class_c_rh_rdk_basic_environment_c_c_i.html#a284ffb131bc9ab5a2bdb52fd34248e8f">CRhRdkBasicEnvironmentCCI</a>
 , <a class="el" href="class_c_rh_rdk_basic_material_c_c_i.html#a2fe089b99801ccf830e9e87d9ccd46c2">CRhRdkBasicMaterialCCI</a>
-, <a class="el" href="class_c_rh_rdk_compound_content_implementor.html#aa24d35caa4c2b8cdeea20ea128962788">CRhRdkCompoundContentImplementor</a>
+, <a class="el" href="class_c_rh_rdk_compound_content_implementor.html#a764b68bdfe32b52ccf211cef8e1072ab">CRhRdkCompoundContentImplementor</a>
 , <a class="el" href="class_c_rh_rdk_content_1_1_c_child_slot_iterator.html#af499ac9dcd17d52bd3ba44f60c65461d">CRhRdkContent::CChildSlotIterator</a>
 , <a class="el" href="class_c_rh_rdk_content.html#ab04d4f8b4f82fb068b1eb765c7e07d36">CRhRdkContent</a>
 , <a class="el" href="class_c_rh_rdk_content_array.html#a38a44c55f73d0475f77d46a18a6aabcb">CRhRdkContentArray</a>
-, <a class="el" href="class_c_rh_rdk_content_editor.html#aa6dc246236b96807a41f1e46e0447fe3">CRhRdkContentEditor</a>
-, <a class="el" href="class_c_rh_rdk_content_factory.html#a2ff8dd682abb1467ca64904d6746f026">CRhRdkContentFactory</a>
+, <a class="el" href="class_c_rh_rdk_content_factory.html#a304e0ec3a88042a57980f9378cd2a557">CRhRdkContentFactory</a>
 , <a class="el" href="class_c_rh_rdk_content_field.html#adaf85d37a59bf3e6b1e2dc964d2955c3">CRhRdkContentField</a>
 , <a class="el" href="class_c_rh_rdk_content_fields.html#a51b3d84eb887c3e7974e128fd4320ffb">CRhRdkContentFields</a>
 , <a class="el" href="class_c_rh_rdk_content_i_o_plug_in.html#af6e6c5034a489eaeef313e4fd8990a46">CRhRdkContentIOPlugIn</a>
 , <a class="el" href="class_c_rh_rdk_content_undo.html#ac16ffd6db3d609f82a3800d62abcb6ef">CRhRdkContentUndo</a>
-, <a class="el" href="class_c_rh_rdk_controller.html#a0e52194bffff9c4c8011397e71036efe">CRhRdkController</a>
+, <a class="el" href="class_c_rh_rdk_core_content.html#a94d8cf8b8f6a3bc2d6db504404d01943">CRhRdkCoreContent</a>
 , <a class="el" href="class_c_rh_rdk_curve_graph_evaluator.html#af4fe690c4fd920ae8eeda188b6155d7f">CRhRdkCurveGraphEvaluator</a>
+, <a class="el" href="class_c_rh_rdk_custom_content_u_i.html#a83340d5d5932276ff8655d13cb05024b">CRhRdkCustomContentUI</a>
 , <a class="el" href="class_c_rh_rdk_custom_render_meshes.html#a384bfd278a3dc441430d5b609386a207">CRhRdkCustomRenderMeshes</a>
-, <a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a0fa6ab340b6bc29757658172ea2e63e0">CRhRdkCustomRenderMeshProvider</a>
+, <a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#a8016d8afc33cb6b3187d88d594bb68e6">CRhRdkCustomRenderMeshProvider</a>
 , <a class="el" href="class_c_rh_rdk_data_source.html#a3ef8bf9d17478131a51c4778f8a00db0">CRhRdkDataSource</a>
 , <a class="el" href="class_c_rh_rdk_dynamic_content_field.html#af86027082940c0d0b2001b8029266cb8">CRhRdkDynamicContentField</a>
 , <a class="el" href="class_c_rh_rdk_environment.html#a9210c65f07402094f002e394859fc9df">CRhRdkEnvironment</a>
@@ -2261,19 +2352,21 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_extra_requirements.html#aed4c627485562ca9579f00f04de60aa0">CRhRdkExtraRequirements</a>
 , <a class="el" href="class_c_rh_rdk_filename_content_field.html#a3fef9457df2b8c8fb4dadf3c3efe1a6a">CRhRdkFilenameContentField</a>
 , <a class="el" href="class_c_rh_rdk_image_adjust.html#adcc373c73eef80fce93403d13eb98b6c">CRhRdkImageAdjust</a>
-, <a class="el" href="class_c_rh_rdk_light_manager_support.html#a35f37f91a2b7d425bbc69b6e9a67c12e">CRhRdkLightManagerSupport</a>
+, <a class="el" href="class_c_rh_rdk_light_manager_support.html#af5dde975f8d3e5f3e1c66b60831a385e">CRhRdkLightManagerSupport</a>
 , <a class="el" href="class_c_rh_rdk_linear_workflow.html#a4b6e4078d676ec3c34733b3d9c08f532">CRhRdkLinearWorkflow</a>
 , <a class="el" href="class_c_rh_rdk_linear_workflow_ex.html#a73ca752c665cb817f83fe71806f20c5c">CRhRdkLinearWorkflowEx</a>
 , <a class="el" href="class_c_rh_rdk_material.html#a7d6d0de9525595bb279eb774f6db1a2c">CRhRdkMaterial</a>
 , <a class="el" href="class_c_rh_rdk_object.html#a74e1af2c8bb545b6cf4328c47fc1dfd3">CRhRdkObject</a>
 , <a class="el" href="class_c_rh_rdk_object_data_access.html#a3f336474489f2dfefddd43e0cf108f6d">CRhRdkObjectDataAccess</a>
 , <a class="el" href="class_c_rh_rdk_one_color_evaluator.html#a9c223a6bbbd85e75a7786fa9693096ee">CRhRdkOneColorEvaluator</a>
+, <a class="el" href="class_c_rh_rdk_plug_in.html#aed5108d8315ad1fa700fa41eb6e457bf">CRhRdkPlugIn</a>
 , <a class="el" href="class_c_rh_rdk_post_effect.html#afb9ec7ba2fc079c4f6e3a7f6d6bdc0c0">CRhRdkPostEffect</a>
 , <a class="el" href="class_c_rh_rdk_post_effect_plug_in.html#abbc3d99e2d6cc7e7898de6c8b0df636c">CRhRdkPostEffectPlugIn</a>
-, <a class="el" href="class_c_rh_rdk_preview_appearance_defaults.html#a048d2d6dcd752f3e3a0d94d33b6aca1d">CRhRdkPreviewAppearanceDefaults</a>
 , <a class="el" href="class_c_rh_rdk_renderer_support_options.html#af110b2ce3ad6f3772126b7288f53ca93">CRhRdkRendererSupportOptions</a>
 , <a class="el" href="class_c_rh_rdk_rendering_settings.html#a4f506dfbab25f422c62832d7d84c89be">CRhRdkRenderingSettings</a>
 , <a class="el" href="class_c_rh_rdk_render_mesh.html#aeb296bbaa2dcc8fa817814ad64065b48">CRhRdkRenderMesh</a>
+, <a class="el" href="class_c_rh_rdk_render_plug_in.html#a2ae39139e262c504e9e69fe1ddcedc0c">CRhRdkRenderPlugIn</a>
+, <a class="el" href="class_c_rh_rdk_render_window_main_side_pane_tab_factory.html#a811eb52ec6b82e6d4d0272b88f0e093b">CRhRdkRenderWindowMainSidePaneTabFactory</a>
 , <a class="el" href="class_c_rh_rdk_resizing_dialog.html#a3ca9ad240d6af06bb57e017c4acbae60">CRhRdkResizingDialog</a>
 , <a class="el" href="class_c_rh_rdk_sdk_content_selector.html#ab226287ca46800ebd27910655bdf1026">CRhRdkSdkContentSelector</a>
 , <a class="el" href="class_c_rh_rdk_sdk_integer_number_edit.html#a492077fa04ab8ea6bad9fc8d192a83f9">CRhRdkSdkIntegerNumberEdit</a>
@@ -2282,11 +2375,11 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_simulated_environment.html#afafb626694a497e1abae6dd9a234c9cb">CRhRdkSimulatedEnvironment</a>
 , <a class="el" href="class_c_rh_rdk_solar_content_field.html#a47f91c371d137468ff5308111ae167a2">CRhRdkSolarContentField</a>
 , <a class="el" href="class_c_rh_rdk_sun_storage.html#a65840c7a45bf59a13bf31d94125012a3">CRhRdkSunStorage</a>
-, <a class="el" href="class_c_rh_rdk_texture.html#a776526c3d7f923585308b2877ffa6efd">CRhRdkTexture</a>
+, <a class="el" href="class_c_rh_rdk_texture.html#a75b7ba8488468a89cdeab4d9c1964263">CRhRdkTexture</a>
 , <a class="el" href="class_c_rh_rdk_textured_content_field.html#a5dd1f354596a96177c7174d560564a64">CRhRdkTexturedContentField</a>
 , <a class="el" href="class_c_rh_rdk_texture_evaluator.html#a028e89b5cc3689584c8e5433fc63923b">CRhRdkTextureEvaluator</a>
 , <a class="el" href="class_c_rh_rdk_texture_factory.html#ad3d801f31d6c6077479358fa59cc134d">CRhRdkTextureFactory</a>
-, <a class="el" href="class_c_rh_rdk_tiny_icon.html#a112795c2951695a5fd635d698761de2f">CRhRdkTinyIcon</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_ground_plane.html#ae49f5487cd513851a442aae950111113">GroundPlane</a>
 , <a class="el" href="class_i_auto_u_i_extra_requirements.html#a24298f9f1570e1d449fae1e029e057f5">IAutoUIExtraRequirements</a>
 , <a class="el" href="class_i_rhino_mesh_extruder.html#a2c4895b10acdc833aa78da6078c123b2">IRhinoMeshExtruder</a>
 , <a class="el" href="class_i_rhino_sdk_render_frame.html#a5bea7c027ca37fe1cb3de884442e9e3f">IRhinoSdkRenderFrame</a>
@@ -2301,43 +2394,29 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk___x_m_l_section_1_1_i_extra_requirements.html#a5b48c895e909d7a0a880672629b3bcac">IRhRdk_XMLSection::IExtraRequirements</a>
 , <a class="el" href="class_i_rh_rdk___x_m_l_section_1_1_iterator.html#ab3ba2c190969b28d7722b8ce34918aa2">IRhRdk_XMLSection::Iterator</a>
 , <a class="el" href="class_i_rh_rdk_actions.html#af267987a0d6e20dc6f53acb8cf574b2b">IRhRdkActions</a>
-, <a class="el" href="class_i_rh_rdk_altitude_ctrl.html#af6458c538e147cc3269bf9cb1d64989f">IRhRdkAltitudeCtrl</a>
-, <a class="el" href="class_i_rh_rdk_angle_ctrl.html#a819440995e02db371a5398ae47fba98e">IRhRdkAngleCtrl</a>
 , <a class="el" href="class_i_rh_rdk_angle_dial_decorator.html#aa6d764c46be6cfdf02ca8903c7638f53">IRhRdkAngleDialDecorator</a>
 , <a class="el" href="class_i_rh_rdk_async_render_context.html#ad4ad924d9d654d1d834f17070ccb6e99">IRhRdkAsyncRenderContext</a>
 , <a class="el" href="class_i_rh_rdk_automatic_u_i.html#a7979dd60965944b4e219ff6589864f7d">IRhRdkAutomaticUI</a>
-, <a class="el" href="class_i_rh_rdk_azimuth_ctrl.html#aef00e3a8ec02728f2256bfe467ee8ce2">IRhRdkAzimuthCtrl</a>
-, <a class="el" href="class_i_rh_rdk_channel_info.html#aab7041dc1e5802206a274cf652cd18d8">IRhRdkChannelInfo</a>
 , <a class="el" href="class_i_rh_rdk_color_picker.html#ad9c64358cf3f40c37ccd2569e84ea2ee">IRhRdkColorPicker</a>
 , <a class="el" href="class_i_rh_rdk_command_update.html#ab17e02c544fc70f43f13e4d19381733c">IRhRdkCommandUpdate</a>
 , <a class="el" href="class_i_rh_rdk_compound_content_implementor.html#a060387fae5316b32db069903f6eddcb6">IRhRdkCompoundContentImplementor</a>
 , <a class="el" href="class_i_rh_rdk_compound_content_implementors.html#a996a649501b57ee1caf059a4773c1658">IRhRdkCompoundContentImplementors</a>
 , <a class="el" href="class_i_rh_rdk_content_choosing_info.html#aebfbe8d31a4ee41d70baaab23863d902">IRhRdkContentChoosingInfo</a>
-, <a class="el" href="class_i_rh_rdk_content_collection.html#a752b82d7770917c8144c1e2baac3650b">IRhRdkContentCollection</a>
-, <a class="el" href="class_i_rh_rdk_content_collection_1_1_i_iterator.html#adad8c3c90f220d37873e6a78bc5aa8bc">IRhRdkContentCollection::IIterator</a>
-, <a class="el" href="class_i_rh_rdk_content_ctrl.html#aaf229b025993e718126940a18a703fd6">IRhRdkContentCtrl</a>
 , <a class="el" href="class_i_rh_rdk_content_editor.html#ab890024c36eab0916c1ada50384c958b">IRhRdkContentEditor</a>
-, <a class="el" href="class_i_rh_rdk_content_editor_settings.html#abc2bd993853e1cca796f9037614d66f8">IRhRdkContentEditorSettings</a>
 , <a class="el" href="class_i_rh_rdk_content_factories.html#a5f3c03e013038652ccdb02f257a3533e">IRhRdkContentFactories</a>
 , <a class="el" href="class_i_rh_rdk_content_factory.html#a1bc4f7e284fda40b0963c30ad5e2f69b">IRhRdkContentFactory</a>
-, <a class="el" href="class_i_rh_rdk_content_filters.html#a8ceea1c66e5b9f697138e242312a3311">IRhRdkContentFilters</a>
 , <a class="el" href="class_i_rh_rdk_content_i_o_plug_in.html#a4afbe57a6e0f801d74055345a0579062">IRhRdkContentIOPlugIn</a>
 , <a class="el" href="class_i_rh_rdk_content_i_o_plug_ins.html#a5aaef3c11d14bbd92da81d034a132e64">IRhRdkContentIOPlugIns</a>
 , <a class="el" href="class_i_rh_rdk_content_iterator.html#a3ca04e87c0de6ee9d12763f3c42710a2">IRhRdkContentIterator</a>
 , <a class="el" href="class_i_rh_rdk_content_list.html#a939d5f125eb7f0d4644ca3c0c11fca64">IRhRdkContentList</a>
-, <a class="el" href="class_i_rh_rdk_content_lookup.html#aecbbc2ecc5c67b9d21e22534efe68949">IRhRdkContentLookup</a>
 , <a class="el" href="class_i_rh_rdk_contents.html#a729a8ca8b4d1c0c4675ec49ec58a86cb">IRhRdkContents</a>
 , <a class="el" href="class_i_rh_rdk_content_u_i.html#aaafa81adc4e2367688043c521b09221a">IRhRdkContentUI</a>
-, <a class="el" href="class_i_rh_rdk_content_u_i_manager.html#aff429fdfaa427fd4f66f32f72de84c95">IRhRdkContentUIManager</a>
-, <a class="el" href="class_i_rh_rdk_content_u_is.html#af9cda101b451b90dc012343f9dbdc32c">IRhRdkContentUIs</a>
 , <a class="el" href="class_i_rh_rdk_content_u_i_section.html#a0ae984cd2cef4c7da803ae378fe4600a">IRhRdkContentUISection</a>
 , <a class="el" href="class_i_rh_rdk_content_undo.html#a1e2637552cd45f7dd1f5a4c31b22f94a">IRhRdkContentUndo</a>
-, <a class="el" href="class_i_rh_rdk_controller_factory.html#ad56bb4a1348394c0bc17c4dce896117b">IRhRdkControllerFactory</a>
 , <a class="el" href="class_i_rh_rdk_current_environment.html#a6122fb1dc4020ddf2fde051b2dee403f">IRhRdkCurrentEnvironment</a>
 , <a class="el" href="class_i_rh_rdk_custom_curve_ctrl_1_1_i_point.html#a267c2d9265362afd3b25217091bbb29c">IRhRdkCustomCurveCtrl::IPoint</a>
 , <a class="el" href="class_i_rh_rdk_custom_curve_graph_section_callback.html#aac26e537ca83cb8aee5a67c1bfc57fd5">IRhRdkCustomCurveGraphSectionCallback</a>
 , <a class="el" href="class_i_rh_rdk_custom_curve_graph_section_shared_callback.html#ae653997317f099764c8f2320c24c9848">IRhRdkCustomCurveGraphSectionSharedCallback</a>
-, <a class="el" href="class_i_rh_rdk_custom_extensions.html#aaf170548391c2116f6e109c4a157de7a">IRhRdkCustomExtensions</a>
 , <a class="el" href="class_i_rh_rdk_custom_plug_in.html#a8041e8c457f7dcc8250723e0e170eefc">IRhRdkCustomPlugIn</a>
 , <a class="el" href="class_i_rh_rdk_custom_render_meshes.html#a261f864dcffd19a24f3195a859a4cd6c">IRhRdkCustomRenderMeshes</a>
 , <a class="el" href="class_i_rh_rdk_custom_render_mesh_manager.html#ae3982649f2405297197a68dc58b6e7ee">IRhRdkCustomRenderMeshManager</a>
@@ -2345,16 +2424,10 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_decal.html#ae3b3836552120334417bca956dc5bdaf">IRhRdkDecal</a>
 , <a class="el" href="class_i_rh_rdk_decal_support.html#a0bf906cbb114c88589c940ad8f32a2ae">IRhRdkDecalSupport</a>
 , <a class="el" href="class_i_rh_rdk_dithering.html#a9322be1994ae22fa42899d368581bf61">IRhRdkDithering</a>
-, <a class="el" href="class_i_rh_rdk_edit.html#a8e4ce80d465fa3b9235850f784cf4455">IRhRdkEdit</a>
 , <a class="el" href="class_i_rh_rdk_editor.html#a482a53bee26fde73e1a2edb27cd1ef5d">IRhRdkEditor</a>
-, <a class="el" href="class_i_rh_rdk_find_file.html#ab5dfffaec4a9c75e3f32e7538723df0b">IRhRdkFindFile</a>
 , <a class="el" href="class_i_rh_rdk_ground_plane.html#ac75f294f19d5bbb692a0241cbf8312f1">IRhRdkGroundPlane</a>
 , <a class="el" href="class_i_rh_rdk_header_button_handler.html#a3c2b8e06bb0ead0706bf62164ad11164">IRhRdkHeaderButtonHandler</a>
 , <a class="el" href="class_i_rh_rdk_image_adjust.html#a99510b24b906396172d66f15a24a05c5">IRhRdkImageAdjust</a>
-, <a class="el" href="class_i_rh_rdk_image_file.html#a2ca8ad5b4d169faad2c5ef3ccba69036">IRhRdkImageFile</a>
-, <a class="el" href="class_i_rh_rdk_image_file_1_1_i_info.html#aff2689eb89d6e54d77af0c864cbf8264">IRhRdkImageFile::IInfo</a>
-, <a class="el" href="class_i_rh_rdk_i_o_r_context_menu.html#ae1ed6aabc848c8c508d242284d0f953a">IRhRdkIORContextMenu</a>
-, <a class="el" href="class_i_rh_rdk_i_o_r_menu_data.html#a006115645055df953c85606ed03f03ae">IRhRdkIORMenuData</a>
 , <a class="el" href="class_i_rh_rdk_linear_workflow.html#a10f476f5bf801dd313b69360def3b0d6">IRhRdkLinearWorkflow</a>
 , <a class="el" href="class_i_rh_rdk_listable_post_effect.html#ae435428a356b6a95d07c488bed43bd49">IRhRdkListablePostEffect</a>
 , <a class="el" href="class_i_rh_rdk_menu.html#a749f6f3c983b7e6ad553e2cf0475aa37">IRhRdkMenu</a>
@@ -2379,34 +2452,24 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html#accfcac687acbd87c97917a3b0ca32897">IRhRdkPostEffectThreadEngine::IJob</a>
 , <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job_1_1_i_channels.html#ac1c02d8a33ab0cd525e24a37dd317637">IRhRdkPostEffectThreadEngine::IJob::IChannels</a>
 , <a class="el" href="class_i_rh_rdk_post_effect_u_i.html#aec5317bd407654c263d6cca54d688dc5">IRhRdkPostEffectUI</a>
-, <a class="el" href="class_i_rh_rdk_preview_appearance_defaults.html#a494c8b7e21fe4befe473a7a940f4d880">IRhRdkPreviewAppearanceDefaults</a>
 , <a class="el" href="class_i_rh_rdk_preview_callbacks.html#a04f5c1b8a455dcdf00658b61caecad15">IRhRdkPreviewCallbacks</a>
 , <a class="el" href="class_i_rh_rdk_preview_callbacks_1_1_i_cancel.html#a75d34371448101c622694d84851e95ca">IRhRdkPreviewCallbacks::ICancel</a>
-, <a class="el" href="class_i_rh_rdk_preview_rendered.html#a5e419e0aa5fc5578b46a0a39a02b5cfc">IRhRdkPreviewRendered</a>
 , <a class="el" href="class_i_rh_rdk_preview_scene_server.html#a8017f2deb31f6b4804a565e9f61e246e">IRhRdkPreviewSceneServer</a>
 , <a class="el" href="class_i_rh_rdk_preview_scene_server_1_1_i_cancellation.html#a22359f150ef0916736b8067d6d49b93e">IRhRdkPreviewSceneServer::ICancellation</a>
 , <a class="el" href="class_i_rh_rdk_preview_scene_server_1_1_i_geometry.html#a0226fe9188ff11341ec35129730acf1b">IRhRdkPreviewSceneServer::IGeometry</a>
 , <a class="el" href="class_i_rh_rdk_preview_scene_server_1_1_i_object.html#a8df48762e1d866a259814b033129d592">IRhRdkPreviewSceneServer::IObject</a>
-, <a class="el" href="class_i_rh_rdk_preview_settings.html#aaeb11d1357c85621f4389263081408b0">IRhRdkPreviewSettings</a>
-, <a class="el" href="class_i_rh_rdk_preview_settings_1_1_i_meta_data.html#a44f8bbb0e1c3bba76785be8defd2bd8a">IRhRdkPreviewSettings::IMetaData</a>
 , <a class="el" href="class_i_rh_rdk_render_channels.html#a6399d356743cf1dee6efb3d86712f66c">IRhRdkRenderChannels</a>
 , <a class="el" href="class_i_rh_rdk_rendering_file_info.html#ac1ab855113bf5046846be5f98f69ec58">IRhRdkRenderingFileInfo</a>
 , <a class="el" href="class_i_rh_rdk_render_session.html#af43dc486173cb6873fc45273a76bd7d4">IRhRdkRenderSession</a>
 , <a class="el" href="class_i_rh_rdk_render_settings_section.html#a8616166602fdac2cd619b4177515e8cc">IRhRdkRenderSettingsSection</a>
-, <a class="el" href="class_i_rh_rdk_render_u_i.html#a3fbbc3080ed1857802b6a063e096a06b">IRhRdkRenderUI</a>
 , <a class="el" href="class_i_rh_rdk_render_window.html#a871b9b710076bfae853a5cee20d1c696">IRhRdkRenderWindow</a>
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_channel.html#ad3e2bab1bfb69736b164bd915fd8128f">IRhRdkRenderWindow::IChannel</a>
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_event_watcher.html#a28bd8355ed70b99d49607bc065de5a7a">IRhRdkRenderWindow::IEventWatcher</a>
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_g_p_u_channel.html#a32b9c1d1e994ad6ea3c8e87c1127812f">IRhRdkRenderWindow::IGPUChannel</a>
-, <a class="el" href="class_i_rh_rdk_rhino_settings.html#a782ecee1554e34a5054d42a94818684b">IRhRdkRhinoSettings</a>
 , <a class="el" href="class_i_rh_rdk_safe_frame.html#ae928ee4561123dbcf98be781689bba6e">IRhRdkSafeFrame</a>
-, <a class="el" href="class_i_rh_rdk_sdk_content_thumbnail_list.html#afd9637a4bc1cf98ddf1996b309d7c04f">IRhRdkSdkContentThumbnailList</a>
 , <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html#ac38ac7e163e02a2a844a9061dfa30caf">IRhRdkSdkRenderMeshIterator</a>
-, <a class="el" href="class_i_rh_rdk_section_factory.html#a31160992894487c04fed30b3a71986bc">IRhRdkSectionFactory</a>
 , <a class="el" href="class_i_rh_rdk_sel_change.html#a2f725f8d44932276f25bd8824c48617f">IRhRdkSelChange</a>
-, <a class="el" href="class_i_rh_rdk_selection_navigator.html#a64682c4afada5b90fadcba97e21934c5">IRhRdkSelectionNavigator</a>
 , <a class="el" href="class_i_rh_rdk_skylight.html#a909f53e88482654d8ee78a07e59b4783">IRhRdkSkylight</a>
-, <a class="el" href="class_i_rh_rdk_sub_node_ctrl.html#a3642d50c13033af45cfff5afec19e8b8">IRhRdkSubNodeCtrl</a>
 , <a class="el" href="class_i_rh_rdk_sun_r_o.html#acbde770b114b02b37e1abfcfecb30019">IRhRdkSunRO</a>
 , <a class="el" href="class_i_rh_rdk_sun_section.html#a2cb4ecfcc2ee700996df51db98b09049">IRhRdkSunSection</a>
 , <a class="el" href="class_i_rh_rdk_task_origin.html#a7a09eb0543806c3b7c94575bb4ead095">IRhRdkTaskOrigin</a>
@@ -2415,45 +2478,72 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_texture_evaluator.html#a2c8eeee46cc47a689d45543cbe80da09">IRhRdkTextureEvaluator</a>
 , <a class="el" href="class_i_rh_rdk_texture_evaluator_1_1_i_child_callback.html#a95bed89c073c1bef29b0b6d59ff46c0d">IRhRdkTextureEvaluator::IChildCallback</a>
 , <a class="el" href="class_i_rh_rdk_thumbnails.html#a0c11057780893162363f90f86e949f99">IRhRdkThumbnails</a>
-, <a class="el" href="class_i_rh_rdk_tiny_icons.html#a11859d4a10c66487ed5cea8e3b204fba">IRhRdkTinyIcons</a>
-, <a class="el" href="class_i_rh_rdk_tiny_icons_1_1_i_icon.html#a4945daf7a4e6e16a24449f7b601f1272">IRhRdkTinyIcons::IIcon</a>
-, <a class="el" href="class_i_rh_rdk_tiny_icons_1_1_i_iterator.html#a8c575c9de7ce312d1d11197f2cd0e0c1">IRhRdkTinyIcons::IIterator</a>
 , <a class="el" href="class_i_rh_rdk_tone_mapping.html#a09c1b79237d947dc4d5ad2b8cb68191e">IRhRdkToneMapping</a>
 , <a class="el" href="class_i_rh_rdk_toolbar.html#a6245dd57ed9bed9be4336b5bff5a3af2">IRhRdkToolbar</a>
 , <a class="el" href="class_i_rh_rdk_undo_record.html#aeb0de28c2fcd60a4cdb7fbab382bde0b">IRhRdkUndoRecord</a>
+, <a class="el" href="class_i_rh_widget_draw_cache_ex.html#a3e910af93f002cfd86fb5e37e6a4e0fa">IRhWidgetDrawCacheEx</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html#a6d4e31931e8e0c346523c0ff90762bde">Light</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mapping_channel.html#ab654400ae4542ddf49e1acc95d147a5b">MappingChannel</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_material.html#ab9383cb788fadcb24aa63e0234a3a821">Material</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mesh.html#a490a02df5070e5933d675396062a86d7">Mesh</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mesh_instance.html#ab799ea1b2c60b7d5bf185010046f2c36">MeshInstance</a>
+, <a class="el" href="class_o_n___dithering.html#a75dda891774150b80bb37eb696a136bd">ON_Dithering</a>
+, <a class="el" href="class_o_n___embedded_file.html#a42f2ee03e1711bbfdb2a18662bec2a4f">ON_EmbeddedFile</a>
+, <a class="el" href="class_o_n___environment.html#a8d7e1a6412d38e83d468cb35e10c92ad">ON_Environment</a>
+, <a class="el" href="class_o_n___ground_plane.html#a595a536d9c77427ecf85a3193aa03558">ON_GroundPlane</a>
+, <a class="el" href="class_o_n___linear_workflow.html#a731b1b9c4f14c2225c03491715602418">ON_LinearWorkflow</a>
+, <a class="el" href="class_o_n___post_effect_params.html#a4b81aed6e805a971c6b8181379f7ffd2">ON_PostEffectParams</a>
+, <a class="el" href="class_o_n___post_effects.html#a0840cdbabc81057bcb27262bcc24ac9a">ON_PostEffects</a>
+, <a class="el" href="class_o_n___rdk_document_defaults.html#afd70dda02f19574147d6b92600d8a018">ON_RdkDocumentDefaults</a>
+, <a class="el" href="class_o_n___render_channels.html#a6a72903810bed821a1a5410ba3f0ef22">ON_RenderChannels</a>
+, <a class="el" href="class_o_n___render_content_1_1_child_iterator.html#a5fa7e8a45c6edb28c07d33cf1de69d36">ON_RenderContent::ChildIterator</a>
+, <a class="el" href="class_o_n___render_content.html#a1bef340fe10770bd9c8dfc56ddfbcecb">ON_RenderContent</a>
+, <a class="el" href="class_o_n___safe_frame.html#ad8cb19483848e32371f4af823ea7128b">ON_SafeFrame</a>
+, <a class="el" href="class_o_n___skylight.html#abdd1a7422838250ceaa377c1f4bc4cc8">ON_Skylight</a>
+, <a class="el" href="class_o_n___sun.html#aef2bca736386a79c78159d2fef1123ab">ON_Sun</a>
+, <a class="el" href="class_o_n___x_m_l_node_1_1_child_iterator.html#ab5fefe889c2f3437963462b0192e6461">ON_XMLNode::ChildIterator</a>
+, <a class="el" href="class_o_n___x_m_l_node.html#aa9cacdc88e114b98ec7183f30f597570">ON_XMLNode</a>
+, <a class="el" href="class_o_n___x_m_l_node_1_1_property_iterator.html#ae4034baa5fd43063ed607c3b14998379">ON_XMLNode::PropertyIterator</a>
+, <a class="el" href="class_o_n___x_m_l_parameters_1_1_c_iterator.html#a03f127e1408a097648fa38f7e381c352">ON_XMLParameters::CIterator</a>
+, <a class="el" href="class_o_n___x_m_l_parameters.html#a896009bc8d01cae9e67e8322ed20d7a1">ON_XMLParameters</a>
+, <a class="el" href="class_o_n___x_m_l_property.html#a9cfc1cec507d3a5691ac616140faa20e">ON_XMLProperty</a>
+, <a class="el" href="class_o_n___x_m_l_segmented_stream.html#aad4d5c2b65d8367341a1eddfa185b7ed">ON_XMLSegmentedStream</a>
+, <a class="el" href="class_o_n___x_m_l_user_data.html#ace912734b00504ebce7b83ac179159f3">ON_XMLUserData</a>
 , <a class="el" href="class_rhino_mesh_edge_slider.html#a8c18c47c9b08a2685b1d89c64a8bb89c">RhinoMeshEdgeSlider</a>
 , <a class="el" href="class_rhino_mesh_unwrapper.html#a71d42c6224169b0e69341dd3cf3bd492">RhinoMeshUnwrapper</a>
 , <a class="el" href="class_rhino_sub_d_edge_slider.html#a561549376b3eabaf7e33c2115e0184e1">RhinoSubDEdgeSlider</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_clipping_plane.html#ad2354969e9ff6c8c61db507387acc42a">RhRdk::Realtime::ChangeQueue::ClippingPlane</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_manager.html#a8eb37fbf7d76131f8981d0a78b02ad0c">RhRdk::CustomRenderMeshes::IManager</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#ad33b64706e60c0941b4ecec116a69f1f">RhRdk::CustomRenderMeshes::IRenderMeshes</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#ab9fd81e3af2a7b1ddc597946cbc6723b">RhRdk::CustomRenderMeshes::IRenderMeshes::IInstance</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#a87a3893a4ae6599478646f1d9863b2ef">RhRdk::CustomRenderMeshes::IRenderMeshes::ProviderTracking::ITracker</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker_1_1_i_record.html#a034405b59d21889eb7f2342462c1a624">RhRdk::CustomRenderMeshes::IRenderMeshes::ProviderTracking::ITracker::IRecord</a>
+, <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_mesh_provider.html#abd2428d6c44ac832fd866fccfaa0f0cd">RhRdk::CustomRenderMeshes::IRenderMeshProvider</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue.html#a66e25fb3c9c3a805fe60f7f369e92097">RhRdk::Realtime2::ChangeQueue</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_dynamic_object.html#a291e15da8b188f26a13736bda895b3d5">RhRdk::Realtime::ChangeQueue::DynamicObject</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue.html#a9e2a8c28403c38c931f55cf62b9ec73b">RhRdk::Realtime::ChangeQueue</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_ground_plane.html#ad3dcb05e0b250046671e4e898d00901a">RhRdk::Realtime::ChangeQueue::GroundPlane</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html#afe843de68e73fab70f69a843b99e01c8">RhRdk::Realtime::ChangeQueue::Light</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mapping_channel.html#a5093eff99924db26221fe4988bbc9cb3">RhRdk::Realtime::ChangeQueue::MappingChannel</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mapping_channels.html#a29b4bdbce8478399ed4bbdbadf88e1a2">RhRdk::Realtime::ChangeQueue::MappingChannels</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_material.html#a342bef78dae86b3e3043777fc694d9c1">RhRdk::Realtime::ChangeQueue::Material</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mesh.html#aa07ba9743ef79f97cd9b61f8bcd812f2">RhRdk::Realtime::ChangeQueue::Mesh</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_mesh_instance.html#aec21a530cc9bcdb31d8f7d8154497267">RhRdk::Realtime::ChangeQueue::MeshInstance</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#adc81e23d3f9bdd51d7ca29e65d8783a3">RhRdk::Realtime::ChangeQueue::Skylight</a>
-, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode.html#a032a9b035f0bcd4130ac5da39b0230ca">RhRdk::Realtime::DisplayMode</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode.html#a365ea266e07b546020fec19c80f3c45c">RhRdk::Realtime::DisplayMode</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode_1_1_factories.html#a85b1acf59be454235cef4e1cf36fea6e">RhRdk::Realtime::DisplayMode::Factories</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode_1_1_factory.html#a9857e319dcc6259dc156de42ab438e88">RhRdk::Realtime::DisplayMode::Factory</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_mode_1_1_i_h_u_d_callbacks.html#abe155d4248621ef8792d9918aba690aa">RhRdk::Realtime::DisplayMode::IHUDCallbacks</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_display_modes.html#ad1ded3d37183d4659b659f0b800e23ec">RhRdk::Realtime::DisplayModes</a>
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_i_signal_update.html#a02447b60afaa75ab68ed6a1c36a4d16f">RhRdk::Realtime::ISignalUpdate</a>
+, <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#a1b90f4ea47065cd5f6bddfb8b8fefc94">Skylight</a>
 </li>
 <li>EvNormal()
-: <a class="el" href="class_o_n___surface.html#aa85e2a07c4992d2ab09080c373a04554">ON_Surface</a>
-, <a class="el" href="class_o_n___triangle_mesh.html#a08bb4d34de02fc4a5e9659f7f0a678ee">ON_TriangleMesh</a>
+: <a class="el" href="class_o_n___surface.html#af6a7e891aabbb7b5a170dae9bbb3dc45">ON_Surface</a>
+, <a class="el" href="class_o_n___triangle_mesh.html#a874ee4406027b28d0560bc2cd1498f88">ON_TriangleMesh</a>
 </li>
 <li>EvPoint()
 : <a class="el" href="class_o_n___bezier_curve.html#a7f9c7141aba78552ad63ba19189dc7e8">ON_BezierCurve</a>
 , <a class="el" href="class_o_n___curve.html#a82170503403c1f8c84286619f6179ead">ON_Curve</a>
 , <a class="el" href="class_o_n___surface.html#ad3c9d36b5eb1b0b648cdef2c8f268442">ON_Surface</a>
-, <a class="el" href="class_o_n___triangle_mesh.html#af2c071823171832c3fe27c26ae0ed01c">ON_TriangleMesh</a>
+, <a class="el" href="class_o_n___triangle_mesh.html#abdbe53e5b55f496ebfeb71c97752056a">ON_TriangleMesh</a>
 </li>
 <li>EvPointAndNormal()
 : <a class="el" href="class_o_n___triangle_mesh.html#a64610183e49623d715514ef2be9290fc">ON_TriangleMesh</a>
+</li>
+<li>EvSignedCurvature()
+: <a class="el" href="class_o_n___curve.html#a86a33028dc130173b3f0c05cdf84d4d3">ON_Curve</a>
 </li>
 <li>EvSrfDerivatives()
 : <a class="el" href="class_c_rhino_poly_edge.html#affd561b981386dd114b2916f2d45ccec">CRhinoPolyEdge</a>
@@ -2512,7 +2602,6 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_import_from_file.html#aaf3e44372d39e2166d4cad7136ae32f1">CRhRdkImportFromFile</a>
 , <a class="el" href="class_c_rh_rdk_request_task.html#a7fd00fe0e30a76dc6471590781edfcb4">CRhRdkRequestTask</a>
 , <a class="el" href="class_c_rh_rdk_task.html#aa8335b6b5e3d0b37632044ebfcea2e09">CRhRdkTask</a>
-, <a class="el" href="class_i_rh_rdk_edit.html#a77591eea392caad9539922b0c45a28ce">IRhRdkEdit</a>
 , <a class="el" href="class_i_rh_rdk_post_effect.html#aff3c87c1e77870b1c79ba955b89fdd8a">IRhRdkPostEffect</a>
 , <a class="el" href="class_i_rh_rdk_post_effect_pipeline.html#a7f866b90acbf163e9f99b4270cead322">IRhRdkPostEffectPipeline</a>
 , <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html#a53f437507486318f369f5e193253e738">IRhRdkPostEffectThreadEngine::IJob</a>
@@ -2559,7 +2648,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_app.html#a45db3c9e77257f527477b4e36bd4422b">CRhinoApp</a>
 </li>
 <li>ExitRhino()
-: <a class="el" href="class_c_rhino_app.html#a58140dc97cb37c970bd886f46ad11cb4">CRhinoApp</a>
+: <a class="el" href="class_c_rhino_app.html#a098c2bf6b1d2a8cfbe7c2f8711037789">CRhinoApp</a>
 </li>
 <li>Exp()
 : <a class="el" href="class_c_rhino_license_lease.html#a190c24e0c2da7394490b55c9436336ef">CRhinoLicenseLease</a>
@@ -2581,7 +2670,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_options_list_ctrl_item.html#a9456164a55fc3d9a3a88cad359cab305af1a513f64a05760edd239f68536df7a3">CRhinoUiOptionsListCtrlItem</a>
 </li>
 <li>ExpandEdges()
-: <a class="el" href="class_o_n___sub_d.html#a7d3b8b7382167167201aab69c9621e92">ON_SubD</a>
+: <a class="el" href="class_o_n___sub_d.html#a3c0f4155000807ffd72aea0b1eac5f71">ON_SubD</a>
 </li>
 <li>ExpanderHeaderDefaultColorPart
 : <a class="el" href="class_c_rhino_ui_paint_manager.html#a19c47fad29dcaf3e2c5a5197f45816a3">CRhinoUiPaintManager</a>
@@ -2589,7 +2678,7 @@ $(function() {
 <li>ExpandItem()
 : <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a75027bae14d9bb3470edfd5323ef2a8d">CRhinoUiExpandableTabCtrl</a>
 , <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl___new.html#acfb65ab456bffe71ac9d994fe21cd39b">CRhinoUiExpandableTabCtrl_New</a>
-, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a84e83578d4508e18170449c1b5d28da2">CRhinoUiOptionsListCtrl</a>
+, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a26989438902e7226277ac75da1c9b9a0">CRhinoUiOptionsListCtrl</a>
 </li>
 <li>ExpandSection()
 : <a class="el" href="class_i_rhino_ui_holder.html#a5efde65cf4a150db6ab0546e954e228f">IRhinoUiHolder</a>
@@ -2607,7 +2696,7 @@ $(function() {
 : <a class="el" href="class_o_n___model_component_type_iterator.html#a1d45344f33c04305750a1a06b4a077bb">ON_ModelComponentTypeIterator</a>
 </li>
 <li>Explode()
-: <a class="el" href="class_c_rhino_instance_object.html#aae00378d1f913e64dd1b7d826bd7cac7">CRhinoInstanceObject</a>
+: <a class="el" href="class_c_rhino_instance_object.html#aef59a2583651262837527e972f42f5ca">CRhinoInstanceObject</a>
 , <a class="el" href="class_c_rh_rdk_content_array.html#a3073e06461bafcdd64520625e2e6504e">CRhRdkContentArray</a>
 </li>
 <li>ExplodeFirst()
@@ -2624,9 +2713,6 @@ $(function() {
 </li>
 <li>ExportToFiles()
 : <a class="el" href="class_c_rhino_bitmap_table.html#ace3c8979f4ed66c7a040581640096e1b">CRhinoBitmapTable</a>
-</li>
-<li>Exposure()
-: <a class="el" href="class_c_rh_rdk_tone_mapper___logarithmic.html#aa01ba3eec7995e56928d5eb7d13f39a6">CRhRdkToneMapper_Logarithmic</a>
 </li>
 <li>ExtDir1()
 : <a class="el" href="class_o_n___dim_angular.html#acd6d1d97e9d010762359c51c1aadf6a8">ON_DimAngular</a>
@@ -2693,10 +2779,6 @@ $(function() {
 <li>ExtOffset()
 : <a class="el" href="class_o_n___dim_style.html#a4e360218d0e9d5c240f0c6983a5e1981">ON_DimStyle</a>
 </li>
-<li>Extra()
-: <a class="el" href="class_i_rh_rdk_content_database_event_info.html#a21bf6c657df6ef36e6953f39215a32b2">IRhRdkContentDatabaseEventInfo</a>
-, <a class="el" href="class_i_rh_rdk_content_param_event_info.html#a870e75bf0e2f96ade4161ba38838e532">IRhRdkContentParamEventInfo</a>
-</li>
 <li>extra_pane
 : <a class="el" href="class_c_rhino_app.html#a62e69d47da2be964e47abdf0b3ef45b3aaae7b335941c229f73873e0b436c835b">CRhinoApp</a>
 </li>
@@ -2745,10 +2827,10 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d.html#a9d86e948b85ff135ca1645a2b3703493">ON_SubD</a>
 </li>
 <li>ExtrudeComponents()
-: <a class="el" href="class_o_n___sub_d.html#a0da5c9e01508044cc5db2772e2eceeee">ON_SubD</a>
+: <a class="el" href="class_o_n___sub_d.html#a67cf910bffc3fd80e873f360081caa7d">ON_SubD</a>
 </li>
 <li>ExtrudedMesh()
-: <a class="el" href="class_i_rhino_mesh_extruder.html#a6bbb4958190c8ce010f992d434829870">IRhinoMeshExtruder</a>
+: <a class="el" href="class_i_rhino_mesh_extruder.html#af913b7c0791fcdcd4f24bed5d3ca63db">IRhinoMeshExtruder</a>
 </li>
 <li>Extrusion()
 : <a class="el" href="class_c_rhino_extrusion_object.html#a736d561c136cbf0a58500bc9bc20eb5a">CRhinoExtrusionObject</a>
@@ -2787,7 +2869,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

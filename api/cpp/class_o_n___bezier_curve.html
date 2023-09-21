@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -1185,7 +1185,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Evaluate a bezier. Parameters: t - [in] evaluation parameter (usually 0 &lt;= t &lt;= 1) der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] (&gt;=m_dim) stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride bez(t) is returned in (v[0],...,v[m_dim-1]), bez'(t) is retuned in (v[v_stride],...,v[v_stride+m_dim-1]), bez"(t) is retuned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), etc. Returns: true if successful </p>
+<p>Description: Evaluate a bezier. Parameters: t - [in] evaluation parameter (usually 0 &lt;= t &lt;= 1) der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] (&gt;=m_dim) stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride bez(t) is returned in (v[0],...,v[m_dim-1]), bez'(t) is returned in (v[v_stride],...,v[v_stride+m_dim-1]), bez"(t) is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), etc. Returns: true if successful </p>
 
 </div>
 </div>
@@ -1469,7 +1469,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get location of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) pointstyle - [in] specifes what kind of values to get <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> cv[] is an array of length m_dim that defines a euclidean (world coordinate) point <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> cv[] is an array of length (m_dim+1) that defines a rational homogeneous point. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56abcf7e52d75658b5fd7644ad8c269087a">ON::euclidean_rational</a> cv[] is an array of length (m_dim+1). The first m_dim values define the euclidean (world coordinate) location of the point. cv[m_dim] is the weight <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56af4d8e7d79dc7ce69f39636714b52900f" title="point format used in definition">ON::intrinsic_point_style</a> If m_is_rat is true, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> point style. If m_is_rat is false, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> point style. cv - [out] array with control vertex value. Returns: true if successful. false if cv_index is invalid. </p>
+<p>Description: Get location of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) pointstyle - [in] specifies what kind of values to get <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> cv[] is an array of length m_dim that defines a euclidean (world coordinate) point <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> cv[] is an array of length (m_dim+1) that defines a rational homogeneous point. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56abcf7e52d75658b5fd7644ad8c269087a">ON::euclidean_rational</a> cv[] is an array of length (m_dim+1). The first m_dim values define the euclidean (world coordinate) location of the point. cv[m_dim] is the weight <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56af4d8e7d79dc7ce69f39636714b52900f" title="point format used in definition">ON::intrinsic_point_style</a> If m_is_rat is true, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> point style. If m_is_rat is false, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> point style. cv - [out] array with control vertex value. Returns: true if successful. false if cv_index is invalid. </p>
 
 </div>
 </div>
@@ -1527,7 +1527,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get value of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) point - [out] Homogenous value of control vertex. If the bezier is not rational, the weight is 1. Returns: true if successful. </p>
+<p>Description: Get value of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) point - [out] Homogeneous value of control vertex. If the bezier is not rational, the weight is 1. Returns: true if successful. </p>
 
 </div>
 </div>
@@ -1627,7 +1627,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a local curve-curve intersection point. Parameters: other_bezcrv - [in] other curve this_seed_t - [in] this curve seed paramter other_seed_t - [in] other curve seed paramter this_t - [out] this curve paramter other_t - [out] other curve paramter this_domain - [in] optional this curve domain restriction other_domain - [in] optional other curve domain restriction Returns: True if something is returned in (t,u,v). Check answer. </p>
+<p>Description: Get a local curve-curve intersection point. Parameters: other_bezcrv - [in] other curve this_seed_t - [in] this curve seed parameter other_seed_t - [in] other curve seed parameter this_t - [out] this curve parameter other_t - [out] other curve parameter this_domain - [in] optional this curve domain restriction other_domain - [in] optional other curve domain restriction Returns: True if something is returned in (t,u,v). Check answer. </p>
 
 </div>
 </div>
@@ -1704,7 +1704,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a local curve-surface intersection point. Parameters: bezsrf - [in] seed_t - [in] curve paramter seed_u - [in] surface parameter seed_v - [in] surface parameter t - [out] curve paramter u - [out] surface parameter v - [out] surface parameter tdomain - [in] optional curve domain restriction udomain - [in] optional surface domain restriction vdomain - [in] optional surface domain restriction Returns: True if something is returned in (t,u,v). Check answer. </p>
+<p>Description: Get a local curve-surface intersection point. Parameters: bezsrf - [in] seed_t - [in] curve parameter seed_u - [in] surface parameter seed_v - [in] surface parameter t - [out] curve parameter u - [out] surface parameter v - [out] surface parameter tdomain - [in] optional curve domain restriction udomain - [in] optional surface domain restriction vdomain - [in] optional surface domain restriction Returns: True if something is returned in (t,u,v). Check answer. </p>
 
 </div>
 </div>
@@ -2388,7 +2388,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Use a linear fractional tranformation for [0,1] to reparameterize the bezier. The locus of the curve is not changed, but the parameterization is changed. Parameters: c - [in] reparameterization constant (generally speaking, c should be &gt; 0). If c != 1, then the returned bezier will be rational. Returns: true if successful. Remarks: The reparameterization is performed by composing the input Bezier with the function lambda: [0,1] -&gt; [0,1] given by </p><pre class="fragment">  t -&gt;  c*t / ( (c-1)*t + 1 )
+<p>Description: Use a linear fractional transformation for [0,1] to reparameterize the bezier. The locus of the curve is not changed, but the parameterization is changed. Parameters: c - [in] reparameterization constant (generally speaking, c should be &gt; 0). If c != 1, then the returned bezier will be rational. Returns: true if successful. Remarks: The reparameterization is performed by composing the input Bezier with the function lambda: [0,1] -&gt; [0,1] given by </p><pre class="fragment">  t -&gt;  c*t / ( (c-1)*t + 1 )
 </pre><p>Note that lambda(0) = 0, lambda(1) = 1, lambda'(t) &gt; 0, lambda'(0) = c and lambda'(1) = 1/c.</p>
 <p>If the input Bezier has control vertices {B_0, ..., B_d}, then the output Bezier has control vertices </p><pre class="fragment">  (B_0, ... c^i * B_i, ..., c^d * B_d).
 </pre><p>To derive this formula, simply compute the i-th Bernstein polynomial composed with lambda().</p>
@@ -2413,7 +2413,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>misspelled function name is obsolete </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>misspelled - use Reparameterize </dd></dl>
+<p>misspelled function name is obsolete </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>misspelled - use Reparameterize </dd></dl>
 
 </div>
 </div>
@@ -2669,7 +2669,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set control vertex Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) pointstyle - [in] specifes what kind of values are passed in the cv array. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> cv[] is an array of length m_dim that defines a euclidean (world coordinate) point <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> cv[] is an array of length (m_dim+1) that defines a rational homogeneous point. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56abcf7e52d75658b5fd7644ad8c269087a">ON::euclidean_rational</a> cv[] is an array of length (m_dim+1). The first m_dim values define the euclidean (world coordinate) location of the point. cv[m_dim] is the weight <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56af4d8e7d79dc7ce69f39636714b52900f" title="point format used in definition">ON::intrinsic_point_style</a> If m_is_rat is true, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> point style. If m_is_rat is false, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> point style. cv - [in] array with control vertex value. Returns: true if the point can be set. </p>
+<p>Description: Set control vertex Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) pointstyle - [in] specifies what kind of values are passed in the cv array. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> cv[] is an array of length m_dim that defines a euclidean (world coordinate) point <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> cv[] is an array of length (m_dim+1) that defines a rational homogeneous point. <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56abcf7e52d75658b5fd7644ad8c269087a">ON::euclidean_rational</a> cv[] is an array of length (m_dim+1). The first m_dim values define the euclidean (world coordinate) location of the point. cv[m_dim] is the weight <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56af4d8e7d79dc7ce69f39636714b52900f" title="point format used in definition">ON::intrinsic_point_style</a> If m_is_rat is true, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56a64a1b3f7fa363121c1894d0d4507b96b">ON::homogeneous_rational</a> point style. If m_is_rat is false, cv[] has <a class="el" href="class_o_n.html#a1af757a677e208531c0cae0d8a4f6a56aa0dd72e122224b91c7b1b4de79fbd129">ON::not_rational</a> point style. cv - [in] array with control vertex value. Returns: true if the point can be set. </p>
 
 </div>
 </div>
@@ -2951,7 +2951,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

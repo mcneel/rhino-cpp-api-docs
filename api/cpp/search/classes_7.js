@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['light_28374',['Light',['../class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html',1,'RhRdk::Realtime::ChangeQueue']]],
-  ['linearworkflow_28375',['LinearWorkflow',['../class_c_display_pipeline_attributes_1_1_linear_workflow.html',1,'CDisplayPipelineAttributes']]],
-  ['location_28376',['Location',['../class_c_rh_rdk_texture_cache_1_1_location.html',1,'CRhRdkTextureCache']]]
+  ['light_29516',['Light',['../class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html',1,'RhRdk::Realtime::ChangeQueue::Light'],['../class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_light.html',1,'RhRdk::Realtime2::ChangeQueue::Light'],['../class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_light.html',1,'Light']]],
+  ['linearworkflow_29517',['LinearWorkflow',['../class_c_display_pipeline_attributes_1_1_linear_workflow.html',1,'CDisplayPipelineAttributes']]],
+  ['location_29518',['Location',['../class_c_rh_rdk_texture_cache_1_1_location.html',1,'CRhRdkTextureCache']]]
 ];

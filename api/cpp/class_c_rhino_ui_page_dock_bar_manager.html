@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6a5a1bcb4079dec848fa6476735de0fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#a6a5a1bcb4079dec848fa6476735de0fc">CRhinoUiPageDockBarManager</a> (const <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html">CRhinoUiPageDockBarManager</a> &amp;)</td></tr>
-<tr class="memdesc:a6a5a1bcb4079dec848fa6476735de0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implimented.  <a href="class_c_rhino_ui_page_dock_bar_manager.html#a6a5a1bcb4079dec848fa6476735de0fc">More...</a><br /></td></tr>
+<tr class="memdesc:a6a5a1bcb4079dec848fa6476735de0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="class_c_rhino_ui_page_dock_bar_manager.html#a6a5a1bcb4079dec848fa6476735de0fc">More...</a><br /></td></tr>
 <tr class="separator:a6a5a1bcb4079dec848fa6476735de0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7b59daf6c7c03ceb7e56c0a45fc1fe"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#abd7b59daf6c7c03ceb7e56c0a45fc1fe">CRhinoUiPageDockBar::~CRhinoUiPageDockBar</a> ()</td></tr>
 <tr class="separator:abd7b59daf6c7c03ceb7e56c0a45fc1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +214,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Not implimented. </p>
+<p>Not implemented. </p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Use this to set <a class="el" href="class_c_rhino_ui_dock_bar.html#a810053b822ec860230ac3f517b0c3a14">CRhinoUiPageDockBar::m_sort_index</a> so that the values of m_sort_index run from 0 to <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#a599cfec9d77e2ba25e97164fc7226de3">DockBarCount()</a>-1 and compare(control_bar_list[i], control_bar_list[j]) &lt; 0) implies control_bar_list[i].m_sort_index &lt; control_bar_list[j].m_sort_index.</p>
-<p>Parameters: compar - [in] compare function with prototype int compare(const CRhinoUiPageDockBar* arg1, const CRhinoUiPageDockBar* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL cull(const CRhinoUiPageDockBar* arg,void* p). that returns TRUE if the dock bar should be ignored when sorting. Dock bars that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#acefc2ae898da27e92c8f615718647a54">GetSortedList()</a>. Pass 0 if you do not need to cull the dock bar list. p - [in] pointer passed as last argument to compare() and cull().</p>
+<p>Parameters: compar - [in] compare function with prototype int compare(const CRhinoUiPageDockBar* arg1, const CRhinoUiPageDockBar* arg2,void* p). that returns &lt;0 if arg1&lt;arg2, 0 if arg1=arg2, and &gt;0 if arg1&gt;arg2. cull - [in] optional filter function with prototype BOOL32 cull(const CRhinoUiPageDockBar* arg,void* p). that returns TRUE if the dock bar should be ignored when sorting. Dock bars that are ignored are not included in the list returned by <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#acefc2ae898da27e92c8f615718647a54">GetSortedList()</a>. Pass 0 if you do not need to cull the dock bar list. p - [in] pointer passed as last argument to compare() and cull().</p>
 <p>Remarks: After calling <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#a3a5f44e03436bf48f59949041c596db5">Sort()</a>, you can repeatedly call <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#acefc2ae898da27e92c8f615718647a54">GetSortedList()</a> to get a sorted list of <a class="el" href="class_c_rhino_ui_page_dock_bar.html">CRhinoUiPageDockBar</a> pointers. <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#a3a5f44e03436bf48f59949041c596db5">Sort()</a> and <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#acefc2ae898da27e92c8f615718647a54">GetSortedList()</a> do not modify the order or persistent information in the dock bar manager. They are intended to be used to get sorted lists of dock bars for dialogs, etc.</p>
 <p>See Also: <a class="el" href="class_c_rhino_ui_page_dock_bar_manager.html#acefc2ae898da27e92c8f615718647a54">CRhinoUiPageDockBarManager::GetSortedList</a> </p>
 
@@ -555,7 +555,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

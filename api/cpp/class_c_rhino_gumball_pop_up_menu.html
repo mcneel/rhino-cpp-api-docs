@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -80,6 +80,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1e4609f0ec679937b511cc50ee9cef8e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_gumball_pop_up_menu.html#a1e4609f0ec679937b511cc50ee9cef8e">GetCommandLineString</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;value)</td></tr>
+<tr class="separator:a1e4609f0ec679937b511cc50ee9cef8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b9549cd68d6907249f49e352acbef0e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_gumball_pop_up_menu.html#a2b9549cd68d6907249f49e352acbef0e">RespondToPopUpMenuItem</a> (<a class="el" href="group___rhino.html#gac2b2dc9c02972ba8eccef8ede40e19c3">GUMBALL_POPUP_MENU_ITEM</a> gb_popup_menu_item)</td></tr>
 <tr class="separator:a2b9549cd68d6907249f49e352acbef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3436fa64b864ba8b7240bd4fcbc51194"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___rhino.html#gac2b2dc9c02972ba8eccef8ede40e19c3">GUMBALL_POPUP_MENU_ITEM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_gumball_pop_up_menu.html#a3436fa64b864ba8b7240bd4fcbc51194">ShowPopUpMenu</a> (HWND wnd, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;point, unsigned int menu_items)</td></tr>
@@ -104,6 +106,33 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1e4609f0ec679937b511cc50ee9cef8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4609f0ec679937b511cc50ee9cef8e">&#9670;&nbsp;</a></span>GetCommandLineString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoGumballPopUpMenu::GetCommandLineString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Call this method to get the command line string to append to the top of the context menu. Parameters: value - [out] String to display. Returns: True if a string should be added and value is not empty. </p>
+
+</div>
+</div>
 <a id="a2b9549cd68d6907249f49e352acbef0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b9549cd68d6907249f49e352acbef0e">&#9670;&nbsp;</a></span>RespondToPopUpMenuItem()</h2>
 
@@ -170,14 +199,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Show the gumball popup menu. Parameters: wnd - [in] Parent window. Typically a status bar or a <a class="el" href="class_c_rhino_view.html">CRhinoView</a>. point - [in] window coordinates of the lower left corner of the pop-up <a class="el" href="class_c_rhino_gumball.html#a01f8d9ff5133710c613b1d1597927756">CRhinoGumball::GetPopUpMenuPoint()</a> can be used to get the screen location of a gumball's menu ball. menu_ites - [in] bitfield that determine what items should appear on the pop-up menu. Use GUMBALL_POPUP_MENU_ITEM to set the bits. Returns: Selected item. The caller is reponsible for actually doing something. The function <a class="el" href="class_c_rhino_gumball_pop_up_menu.html#a2b9549cd68d6907249f49e352acbef0e">RespondToPopUpMenuItem()</a> can be used to handle the app settings menu items. </p>
+<p>Description: Show the gumball popup menu. Parameters: wnd - [in] Parent window. Typically a status bar or a <a class="el" href="class_c_rhino_view.html">CRhinoView</a>. point - [in] window coordinates of the lower left corner of the pop-up <a class="el" href="class_c_rhino_gumball.html#a01f8d9ff5133710c613b1d1597927756">CRhinoGumball::GetPopUpMenuPoint()</a> can be used to get the screen location of a gumball's menu ball. menu_ites - [in] bitfield that determine what items should appear on the pop-up menu. Use GUMBALL_POPUP_MENU_ITEM to set the bits. Returns: Selected item. The caller is responsible for actually doing something. The function <a class="el" href="class_c_rhino_gumball_pop_up_menu.html#a2b9549cd68d6907249f49e352acbef0e">RespondToPopUpMenuItem()</a> can be used to handle the app settings menu items. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

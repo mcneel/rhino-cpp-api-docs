@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -119,10 +119,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Description: Registered Windows message sent to controls parent then and then the control itself if the parent does not return a non zero value. This message is sent when calling DeleteItem() or DeleteAllItems() and uses the following format: message = CRhinoUiTabbedSheetCtrl::m_delete_item_custom_win_msg (static UINT holding ID of registered Windows message) WPARAM = HWND of the control sending the message LPARAM = Zero based index of item being deleted.</p>
-<p>To use this notification message do add the message map macro to the parent of this control: ON_REGISTERED_MESSAGE( CRhinoUiTabbedSheetCtrlMsg::m_custom_msg_id, OnTabbedSheetCtrlMsg) Add this to the decloration of the the parent window class: afx_msg LRESULT OnTabbedSheetCtrlMsg( WPARAM wParam, LPARAM lParam); Add this method to the class implimention LRESULT CMyDialog::OnTabbedSheetCtrlMsg( WPARAM wParam, LPARAM lParam) { <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a62622c8194e4352eb9bcc393a8c221cb">CRhinoUiTabbedSheetCtrlMsg::LPCUSTOMINFO</a> pInfo = (<a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a62622c8194e4352eb9bcc393a8c221cb">CRhinoUiTabbedSheetCtrlMsg::LPCUSTOMINFO</a>)lParam; if( NULL == pInfo) return 0;</p>
+<p>To use this notification message do add the message map macro to the parent of this control: ON_REGISTERED_MESSAGE( CRhinoUiTabbedSheetCtrlMsg::m_custom_msg_id, OnTabbedSheetCtrlMsg) Add this to the decloration of the the parent window class: afx_msg LRESULT OnTabbedSheetCtrlMsg( WPARAM wParam, LPARAM lParam); Add this method to the class implementation LRESULT CMyDialog::OnTabbedSheetCtrlMsg( WPARAM wParam, LPARAM lParam) { <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a62622c8194e4352eb9bcc393a8c221cb">CRhinoUiTabbedSheetCtrlMsg::LPCUSTOMINFO</a> pInfo = (<a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a62622c8194e4352eb9bcc393a8c221cb">CRhinoUiTabbedSheetCtrlMsg::LPCUSTOMINFO</a>)lParam; if( NULL == pInfo) return 0;</p>
 <p>if( m_tabbed_sheet_ctrl.m_hWnd != pInfo-&gt;m_hWnd) return 0;</p>
 <p>switch( pInfo-&gt;m_nMsg) { case <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a1f773254880f368e8c7b561dbf23e1eca2a916202a46ef4475e67470552b7cbd8" title="Message sent just prior to deleting an item.">CRhinoUiTabbedSheetCtrlMsg::mid_delete_item</a>: ///&lt; do something like deleting item data return 1; case <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a1f773254880f368e8c7b561dbf23e1ecaea5792d69298208934cdd363fd49e20b">CRhinoUiTabbedSheetCtrlMsg::mid_begin_label_edit</a>: ///&lt; allow label edit return 1; case <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_msg.html#a1f773254880f368e8c7b561dbf23e1ecaa1aa43af32d536084d334618727fe3c1">CRhinoUiTabbedSheetCtrlMsg::mid_end_label_edit</a>: ///&lt; Allow label update as long as text is not empty return( pInfo-&gt;m_lpsText &amp;&amp; pInfo-&gt;m_lpsText[0]); } return 0L; }</p>
-<p>See Also: RegisterWindowMessage() in the Platfrom SDK ON_REGISTERED_MESSAGE in the Platfrom SDK </p>
+<p>See Also: RegisterWindowMessage() in the Platform SDK ON_REGISTERED_MESSAGE in the Platform SDK </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aefa74619ca1a573d8fd89123b07769ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefa74619ca1a573d8fd89123b07769ad">&#9670;&nbsp;</a></span>CUSTOMINFO</h2>
@@ -317,7 +317,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:57:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:47:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

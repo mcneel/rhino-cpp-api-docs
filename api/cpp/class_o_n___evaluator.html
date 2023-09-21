@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -141,7 +141,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Construction of the class for a function that takes parameter_count input functions and returns value_count values. If the domain is infinite, pass a nullptr for the domain[] and periodic[] arrays. If the domain is finite, pass a domain[] array with parameter_count increasing intervals. If one or more of the parameters is periodic, pass the fundamental domain in the domain[] array and a true in the periodic[] array. Parameters: parameter_count - [in] &gt;= 1. Number of input parameters value_count - [in] &gt;= 1. Number of output values. domain - [in] If not nullptr, then this is an array of parameter_count increasing intervals that defines the domain of the function. periodic - [in] if not nullptr, then this is an array of parameter_count bools where b[i] is true if the i-th parameter is periodic. Valid increasing finite domains must be specificed when this parameter is not nullptr. </p>
+<p>Description: Construction of the class for a function that takes parameter_count input functions and returns value_count values. If the domain is infinite, pass a nullptr for the domain[] and periodic[] arrays. If the domain is finite, pass a domain[] array with parameter_count increasing intervals. If one or more of the parameters is periodic, pass the fundamental domain in the domain[] array and a true in the periodic[] array. Parameters: parameter_count - [in] &gt;= 1. Number of input parameters value_count - [in] &gt;= 1. Number of output values. domain - [in] If not nullptr, then this is an array of parameter_count increasing intervals that defines the domain of the function. periodic - [in] if not nullptr, then this is an array of parameter_count bools where b[i] is true if the i-th parameter is periodic. Valid increasing finite domains must be specified when this parameter is not nullptr. </p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: OPTIONAL ability to evaluate the hessian in the case when m_value_count is one. If your function has more that one value or it is not feasable to evaluate the hessian, then do not override this function. The default implementation returns -1. Parameters: parameters - [in] array of m_parameter_count evaluation parameters value - [out] value of the function (one double) gradient - [out] The gradient of the function. This is a vector of length m_parameter_count; gradient[i] is the first partial of the function with respect to the i-th parameter. hessian - [out] The hessian of the function. This is an m_parameter_count x m_parameter_count symmetric matrix: hessian[i][j] is the second partial of the function with respect to the i-th and j-th parameters. The evaluator is responsible for filling in both the upper and lower triangles. Since the matrix is symmetrix, you should do something like evaluate the upper triangle and copy the values to the lower tiangle. Returns: -1 = Hessian evaluation not available. 0 = unable to evaluate 1 = successful evaluation 2 = found answer, terminate search </p>
+<p>Description: OPTIONAL ability to evaluate the hessian in the case when m_value_count is one. If your function has more that one value or it is not feasible to evaluate the hessian, then do not override this function. The default implementation returns -1. Parameters: parameters - [in] array of m_parameter_count evaluation parameters value - [out] value of the function (one double) gradient - [out] The gradient of the function. This is a vector of length m_parameter_count; gradient[i] is the first partial of the function with respect to the i-th parameter. hessian - [out] The hessian of the function. This is an m_parameter_count x m_parameter_count symmetric matrix: hessian[i][j] is the second partial of the function with respect to the i-th and j-th parameters. The evaluator is responsible for filling in both the upper and lower triangles. Since the matrix is symmetrix, you should do something like evaluate the upper triangle and copy the values to the lower tiangle. Returns: -1 = Hessian evaluation not available. 0 = unable to evaluate 1 = successful evaluation 2 = found answer, terminate search </p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

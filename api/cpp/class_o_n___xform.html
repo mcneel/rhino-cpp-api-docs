@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a719833e89842b0755a446ccaa3477234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff79e5ac5f95a894dbe538359fa3a43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#abff79e5ac5f95a894dbe538359fa3a43">Compare</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;other) const</td></tr>
 <tr class="separator:abff79e5ac5f95a894dbe538359fa3a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff568e14d2612ed1356dad5b9825b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a6ff568e14d2612ed1356dad5b9825b08">CRC32</a> (<a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> current_remainder) const</td></tr>
+<tr class="memitem:a6ff568e14d2612ed1356dad5b9825b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a6ff568e14d2612ed1356dad5b9825b08">CRC32</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const</td></tr>
 <tr class="separator:a6ff568e14d2612ed1356dad5b9825b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf8c9dc2e2f60f4e801c22bff86e890"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a5cf8c9dc2e2f60f4e801c22bff86e890">DecomposeAffine</a> (<a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;<a class="el" href="class_o_n___xform.html#a3498c05e0640f7fdad5a449ffee5227e">Translation</a>, <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;<a class="el" href="group__open_n_u_r_b_s.html#gga6940cf29f871aaf7049d55eaa88c5062a32a843da6ea40ab3b17a3421ccdf671b">Linear</a>) const</td></tr>
 <tr class="separator:a5cf8c9dc2e2f60f4e801c22bff86e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a720f72579cd5fbe2b5a4ffb6d5fd95af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ecaf4be436fbb1207fecfd82b252ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a42ecaf4be436fbb1207fecfd82b252ae">DecomposeSymmetric</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;Q, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;diagonal) const</td></tr>
 <tr class="separator:a42ecaf4be436fbb1207fecfd82b252ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7462351a9a13008d1ff79d1aee645cc5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a7462351a9a13008d1ff79d1aee645cc5">Determinant</a> (double *=nullptr) const</td></tr>
-<tr class="separator:a7462351a9a13008d1ff79d1aee645cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392e035a87cb8dab5c823de7d6762314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a392e035a87cb8dab5c823de7d6762314">DecomposeTextureMapping</a> (<a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;offset, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;repeat, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;rotation) const</td></tr>
+<tr class="memdesc:a392e035a87cb8dab5c823de7d6762314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an <a class="el" href="class_o_n___xform.html">ON_Xform</a> into the offset, repeat and rotation values used in <a class="el" href="class_o_n___texture.html">ON_Texture</a> and similar classes.  <a href="class_o_n___xform.html#a392e035a87cb8dab5c823de7d6762314">More...</a><br /></td></tr>
+<tr class="separator:a392e035a87cb8dab5c823de7d6762314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77da181ae8a58eb9d8df01fb529973f0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a77da181ae8a58eb9d8df01fb529973f0">Determinant</a> (double *minimum_pivot=nullptr) const</td></tr>
+<tr class="memdesc:a77da181ae8a58eb9d8df01fb529973f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you need a slow and accurate determinant, this is the function to call. If you need a fast sign check, used SignOfDeterminant(true).  <a href="class_o_n___xform.html#a77da181ae8a58eb9d8df01fb529973f0">More...</a><br /></td></tr>
+<tr class="separator:a77da181ae8a58eb9d8df01fb529973f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929c2750cf67b0f7fddb6e32859834ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a929c2750cf67b0f7fddb6e32859834ab">Diagonal</a> (double d)</td></tr>
 <tr class="separator:a929c2750cf67b0f7fddb6e32859834ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b98bf34aea95f363f4e62a72039063"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a34b98bf34aea95f363f4e62a72039063">GetEulerZYZ</a> (double &amp;alpha, double &amp;beta, double &amp;gamma) const</td></tr>
@@ -281,6 +285,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab82e8a997f186cc7a7defefef5dd5d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d39fb2a1dd2701b8ba9568fbed0b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a21d39fb2a1dd2701b8ba9568fbed0b54">Shear</a> (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;x1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;y1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;z1)</td></tr>
 <tr class="separator:a21d39fb2a1dd2701b8ba9568fbed0b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882598366f58223d746b4e0e877716f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a882598366f58223d746b4e0e877716f7">SignOfDeterminant</a> (bool bFastTest) const</td></tr>
+<tr class="memdesc:a882598366f58223d746b4e0e877716f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quickly determine the sign of the determinant. Definitely good enough for graphics code.  <a href="class_o_n___xform.html#a882598366f58223d746b4e0e877716f7">More...</a><br /></td></tr>
+<tr class="separator:a882598366f58223d746b4e0e877716f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3498c05e0640f7fdad5a449ffee5227e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a3498c05e0640f7fdad5a449ffee5227e">Translation</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;delta)</td></tr>
 <tr class="separator:a3498c05e0640f7fdad5a449ffee5227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35dee4a0caf2f600ca75e146ff85a9b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a35dee4a0caf2f600ca75e146ff85a9b2">Translation</a> (double dx, double dy, double dz)</td></tr>
@@ -294,8 +301,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7293f9404e837d7ee62d45cc14a2413f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a7293f9404e837d7ee62d45cc14a2413f">DiagonalTransformation</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;diagnoal)</td></tr>
-<tr class="separator:a7293f9404e837d7ee62d45cc14a2413f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dd37eee4b4d7ce755ca1ef5bf7b899"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#af0dd37eee4b4d7ce755ca1ef5bf7b899">DiagonalTransformation</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;diagonal)</td></tr>
+<tr class="separator:af0dd37eee4b4d7ce755ca1ef5bf7b899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2b914f1efbfcf98b4222e6b1c920f6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#aba2b914f1efbfcf98b4222e6b1c920f6">DiagonalTransformation</a> (double d)</td></tr>
 <tr class="separator:aba2b914f1efbfcf98b4222e6b1c920f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e59387d2447a1783a3baca60d08d9fd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a2e59387d2447a1783a3baca60d08d9fd">DiagonalTransformation</a> (double d0, double d1, double d2)</td></tr>
@@ -314,6 +321,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a94a38ec9532d3f23465b54246ceb7045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e5dbc570b63bd40ec35673cf5d0a2d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#ad9e5dbc570b63bd40ec35673cf5d0a2d">ShearTransformation</a> (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;x1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;y1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;z1)</td></tr>
 <tr class="separator:ad9e5dbc570b63bd40ec35673cf5d0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e92ebab47160e2b6f0ba0b29bf8b4c6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a4e92ebab47160e2b6f0ba0b29bf8b4c6">TextureMapping</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;offset, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;repeat, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;rotation)</td></tr>
+<tr class="separator:a4e92ebab47160e2b6f0ba0b29bf8b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e6b91074e5847356fb4e8ded268266"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a98e6b91074e5847356fb4e8ded268266">TranslationTransformation</a> (const <a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> &amp;delta)</td></tr>
 <tr class="memdesc:a98e6b91074e5847356fb4e8ded268266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right column is (delta.x, delta.y, 0, 1).  <a href="class_o_n___xform.html#a98e6b91074e5847356fb4e8ded268266">More...</a><br /></td></tr>
 <tr class="separator:a98e6b91074e5847356fb4e8ded268266"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -996,7 +1005,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The <a class="el" href="class_o_n___xform.html#a7fbcbb60a036396a372a8b8453febc6a">ChangeBasis()</a> function is overloaded and provides several ways to compute a change of basis transformation.</p>
-<p>Parameters: plane0 - inital plane plane1 - final plane</p>
+<p>Parameters: plane0 - initial plane plane1 - final plane</p>
 <p>Returns: @untitled table true success false vectors for initial frame are not a basis</p>
 <p>Remarks: If you have points defined with respect to planes, the version of <a class="el" href="class_o_n___xform.html#a7fbcbb60a036396a372a8b8453febc6a">ChangeBasis()</a> that takes two planes computes the transformation to change coordinates from one plane to another. The predefined world plane ON_world_plane can be used as an argument.</p>
 <p>If P = plane0.Evaluate( a0,b0,c0 ) and</p>
@@ -1327,9 +1336,9 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a> ON_Xform::CRC32 </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_Xform::CRC32 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gaea03c6f4bab106103ada72c766f7fe5c">ON__UINT32</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
           <td class="paramname"><em>current_remainder</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1467,6 +1476,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: A rigid transformation preserves distances and orientation and can be broken into a proper rotation and a translation. An isometry transformation preserves distance and may include a reflection. Parameters: this - must be <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a>. Translation - [out] Translation vector Rotation - [out] Proper Rotation transformation, ie. R*Transpose(R)=I and det(R)=1 Details: If X.DecomposeRigid(T, R) is 1 then X ~ TranslationTransformation(T)*R -1 X ~ <a class="el" href="class_o_n___xform.html">ON_Xform</a>(-1) *TranslationTransformation(T)*R where ~ means approximates to within tolerance. DecomposeRigid will find the closest rotation to the linear part of this transformation. Returns: +1: This transformation is an rigid transformation. -1: This transformation is an orientation reversing isometry. 0 : This transformation is not an orthogonal transformation. </p>
 
 </div>
 </div>
@@ -1539,8 +1549,44 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7462351a9a13008d1ff79d1aee645cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7462351a9a13008d1ff79d1aee645cc5">&#9670;&nbsp;</a></span>Determinant()</h2>
+<a id="a392e035a87cb8dab5c823de7d6762314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a392e035a87cb8dab5c823de7d6762314">&#9670;&nbsp;</a></span>DecomposeTextureMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Xform::DecomposeTextureMapping </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert an <a class="el" href="class_o_n___xform.html">ON_Xform</a> into the offset, repeat and rotation values used in <a class="el" href="class_o_n___texture.html">ON_Texture</a> and similar classes. </p>
+
+</div>
+</div>
+<a id="a77da181ae8a58eb9d8df01fb529973f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77da181ae8a58eb9d8df01fb529973f0">&#9670;&nbsp;</a></span>Determinant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1549,11 +1595,20 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">double ON_Xform::Determinant </td>
           <td>(</td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"> = <code>nullptr</code></td><td>)</td>
+          <td class="paramname"><em>minimum_pivot</em> = <code>nullptr</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>If you need a slow and accurate determinant, this is the function to call. If you need a fast sign check, used SignOfDeterminant(true). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minimum_pivot</td><td>If not nullptr, returns the minimum pivot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The determinant of 4x4 matrix</dd></dl>
 
 </div>
 </div>
@@ -1572,12 +1627,12 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(d); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000115">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(d); </dd></dl>
 
 </div>
 </div>
-<a id="a7293f9404e837d7ee62d45cc14a2413f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7293f9404e837d7ee62d45cc14a2413f">&#9670;&nbsp;</a></span>DiagonalTransformation() <span class="overload">[1/3]</span></h2>
+<a id="af0dd37eee4b4d7ce755ca1ef5bf7b899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dd37eee4b4d7ce755ca1ef5bf7b899">&#9670;&nbsp;</a></span>DiagonalTransformation() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1589,7 +1644,7 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Xform::DiagonalTransformation </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>diagnoal</em></td><td>)</td>
+          <td class="paramname"><em>diagonal</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1739,7 +1794,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the Keyhole Markup Language (KML) orientation angles (in degrees) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [out] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_degrees - [out] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_degrees - [out] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+<p>Description: Find the Keyhole Markup Language (KML) orientation angles (in degrees) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [out] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_degrees - [out] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_degrees - [out] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
 
 </div>
 </div>
@@ -1774,7 +1829,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the Keyhole Markup Language (KML) orientation angles (in radians) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [out] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_radians - [out] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_radians - [out] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+<p>Description: Find the Keyhole Markup Language (KML) orientation angles (in radians) of a rotation transformation that maps model (east,north,up) to ((1,0,0),(0,1,0),(0,0,1)). KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north. NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [out] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." tilt_radians - [out] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." roll_radians - [out] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Returns: True if this transformation is a rotation and the KML angles are returned. False if this transformation is not a rotation, in which case all returned angle values are ON_DLB_QNAN. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
 
 </div>
 </div>
@@ -1822,8 +1877,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If *this is a proper rotation then find the eqivalent quaternion. <br  />
- Parameters: Q - [out] Quaternion that represents this rotation tranformation Returns: True - if *this is a proper rotation </p>
+<p>Description: If *this is a proper rotation then find the equivalent quaternion. <br  />
+ Parameters: Q - [out] Quaternion that represents this rotation transformation Returns: True - if *this is a proper rotation </p>
 
 </div>
 </div>
@@ -1842,7 +1897,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: When transforming 3d point and surface or mesh normals two different transforms must be used. If P_xform transforms the point, then the inverse transpose of P_xform must be used to tranform normal vectors. Parameters: N_xform - [out] Returns: The determinant of the transformation. If non-zero, "this" is invertable and N_xform can be calculated. False if "this" is not invertable, in which case the returned N_xform = this with the right hand column and bottom row zeroed out. </p>
+<p>Description: When transforming 3d point and surface or mesh normals two different transforms must be used. If P_xform transforms the point, then the inverse transpose of P_xform must be used to transform normal vectors. Parameters: N_xform - [out] Returns: The determinant of the transformation. If non-zero, "this" is invertable and N_xform can be calculated. False if "this" is not invertable, in which case the returned N_xform = this with the right hand column and bottom row zeroed out. </p>
 
 </div>
 </div>
@@ -1915,7 +1970,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>standard transformations </p>
-<p>diagonal is (1,1,1,1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>Use xform = <a class="el" href="class_o_n___xform.html#a4b990ccd63d5ffb4606d93a76361aba0" title="ON_Xform IdentityTransformation diagonal = (1,1,1,1)">ON_Xform::IdentityTransformation</a>; </dd></dl>
+<p>diagonal is (1,1,1,1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000114">Deprecated:</a></b></dt><dd>Use xform = <a class="el" href="class_o_n___xform.html#a4b990ccd63d5ffb4606d93a76361aba0" title="ON_Xform IdentityTransformation diagonal = (1,1,1,1)">ON_Xform::IdentityTransformation</a>; </dd></dl>
 
 </div>
 </div>
@@ -2004,7 +2059,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: A transformation is affine if it is valid and its last row is 0 0 0 1 If in addition its last column is ( 0, 0, 0, 1)^T then it is linear. An affine transformation can be broken into a linear transformation and a translation. Parameters: this - <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a> must be true for DecomposeAffine(..) to succeed Translation - [out] Translation vector Linear - [out] Linear transformation Example: A perspective transformation is not affine. Details: If X.DecomposeAffine(T, L) is true then X == TranslationTransformation(T)*L If X.DecomposeAffine(L, T) is true then X == L* TranslationTransformation(T). Note: DecomposeAffine(T,L) succeeds for all affine transformations and is a simple copying of values. DecomposeAffine(L, T), on the otherhand, may fail for affine transformations if L is not invertible and is more computationally expensive. Returns: True - if sucessfull decomposition </p>
+<p>Description: A transformation is affine if it is valid and its last row is 0 0 0 1 If in addition its last column is ( 0, 0, 0, 1)^T then it is linear. An affine transformation can be broken into a linear transformation and a translation. Parameters: this - <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a> must be true for DecomposeAffine(..) to succeed Translation - [out] Translation vector Linear - [out] Linear transformation Example: A perspective transformation is not affine. Details: If X.DecomposeAffine(T, L) is true then X == TranslationTransformation(T)*L If X.DecomposeAffine(L, T) is true then X == L* TranslationTransformation(T). Note: DecomposeAffine(T,L) succeeds for all affine transformations and is a simple copying of values. DecomposeAffine(L, T), on the otherhand, may fail for affine transformations if L is not invertible and is more computationally expensive. Returns: True - if successful decomposition </p>
 
 </div>
 </div>
@@ -2100,8 +2155,10 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: A rigid transformation can be broken into a proper rotation and a translation. <br  />
- while an isometry transformation could also include a reflection. Parameters: this - must be <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a>. Translation - [out] Translation vector Rotation - [out] Proper Rotation transformation, ie. R*Transpose(R)=I and det(R)=1 Details: If X.DecomposeRigid(T, R) is 1 then X ~ TranslationTransformation(T)*R -1 X ~ <a class="el" href="class_o_n___xform.html">ON_Xform</a>(-1) *TranslationTransformation(T)*R where ~ means approximates to within tolerance. DecomposeRigid will find the closest rotation to the linear part of this transformation. Returns: +1: This transformation is an rigid transformation. -1: This transformation is an orientation reversing isometry. 0 : This transformation is not an orthogonal transformation. </p>
+<p>Description: NOTE: A better name for this fuction would be IsIsometry().</p>
+<p>An "isometry" transformation is an affine transformation that preserves distances. Isometries include transformation like reflections that reverse orientation.</p>
+<p>A "rigid" transformation is an isometry that preserves orientation and can be broken into a proper rotation and a translation. <br  />
+ Returns: +1: This transformation is an orientation preserving isometry transformation ("rigid and determinant = 1). -1: This transformation is an orientation reversing isometry (determinant = -1). 0 : This transformation is not an orthogonal transformation. </p>
 
 </div>
 </div>
@@ -2683,7 +2740,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get transformation that projects to a plane Parameters: plane - [in] plane to project to Remarks: This transformaton maps a 3d point P to the point plane.ClosestPointTo(Q). </p>
+<p>Description: Get transformation that projects to a plane Parameters: plane - [in] plane to project to Remarks: This transformation maps a 3d point P to the point plane.ClosestPointTo(Q). </p>
 
 </div>
 </div>
@@ -3008,7 +3065,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in degrees. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [in] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(90,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_degrees - [in] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,90,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_degrees - [in] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,0,90), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+<p>Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in degrees. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_degrees - [in] angle (in degrees) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(90,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_degrees - [in] angle (in degrees) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,90,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_degrees - [in] angle (in degrees) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesDegrees(0,0,90), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
 
 </div>
 </div>
@@ -3051,7 +3108,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in radians. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [in] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(pi/2,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_radians - [in] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,pi/2,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_radians - [in] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, postive rotations are CLOCKWISE looking down specied axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,0,pi/2), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
+<p>Description: Get a rotation transformation from the Keyhole Markup Language (KML) orientation angles in radians. (KML Earth Z axis = up, KML Earth X axis = east, KML Earth Y axis = north). KML rotations are applied in the following order: first roll, second tilt, third heading. NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. This is rotation direction is opposite the conventional "right hand rule." Parameters: heading_radians - [in] angle (in radians) of rotation around KML Earth Z axis (Earth up). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(pi/2,0,0), then R*(1,0,0) = (0,-1,0), R*(0,1,0) = (1,0,0), R*(0,0,1) = (0,0,1) tilt_radians - [in] angle (in radians) of rotation around KML Earth X axis (Earth east). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,pi/2,0), then R*(1,0,0) = (1,0,0), R*(0,1,0) = (0,0,-1), R*(0,0,1) = (0,1,0) roll_radians - [in] angle (in radians) of rotation around KML Earth Y axis (Earth north). NOTE WELL: In KML, positive rotations are CLOCKWISE looking down specified axis vector towards the origin. If R = RotationTransformationFromKMLAnglesRadians(0,0,pi/2), then R*(1,0,0) = (0,0,1), R*(0,1,0) = (0,1,0), R*(0,0,1) = (-1,0,0) Returns: If the input is valid, the rotation transformation is returned. Otherwise the <a class="el" href="class_o_n___xform.html#a75bf00a40fd0675f4e9e16e499f4cd3a" title="ON_Xform::Nan - every coefficient is ON_DBL_QNAN.">ON_Xform::Nan</a> is returned. See Also: <a href="https://developers.google.com/kml/documentation/kmlreference#orientation">https://developers.google.com/kml/documentation/kmlreference#orientation</a> </p>
 
 </div>
 </div>
@@ -3140,7 +3197,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with the origin as the fixed point. Parameters: fixed_point - [in] scale_vector - [in] Remarks: The diagonal is (scale_vector.x, scale_vector.y, scale_vector.z, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(scale_vector); </dd></dl>
+<p>Description: Create non-uniform scale transformation with the origin as the fixed point. Parameters: fixed_point - [in] scale_vector - [in] Remarks: The diagonal is (scale_vector.x, scale_vector.y, scale_vector.z, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000117">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(scale_vector); </dd></dl>
 
 </div>
 </div>
@@ -3181,7 +3238,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with a specified fixed point. Parameters: plane - [in] plane.origin is the fixed point x_scale_factor - [in] plane.xaxis scale factor y_scale_factor - [in] plane.yaxis scale factor z_scale_factor - [in] plane.zaxis scale factor </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor) </dd></dl>
+<p>Description: Create non-uniform scale transformation with a specified fixed point. Parameters: plane - [in] plane.origin is the fixed point x_scale_factor - [in] plane.xaxis scale factor y_scale_factor - [in] plane.yaxis scale factor z_scale_factor - [in] plane.zaxis scale factor </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000119">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor) </dd></dl>
 
 </div>
 </div>
@@ -3216,7 +3273,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with the origin as a fixed point. Parameters: fixed_point - [in] x_scale_factor - [in] y_scale_factor - [in] z_scale_factor - [in] Remarks: The diagonal is (x_scale_factor, y_scale_factor, z_scale_factor, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(x_scale_factor,z_scale_factor,z_scale_factor); </dd></dl>
+<p>Description: Create non-uniform scale transformation with the origin as a fixed point. Parameters: fixed_point - [in] x_scale_factor - [in] y_scale_factor - [in] z_scale_factor - [in] Remarks: The diagonal is (x_scale_factor, y_scale_factor, z_scale_factor, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(x_scale_factor,z_scale_factor,z_scale_factor); </dd></dl>
 
 </div>
 </div>
@@ -3245,7 +3302,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create uniform scale transformation with a specified fixed point. Parameters: fixed_point - [in] scale_factor - [in] </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(fixed_point,scale_factor) </dd></dl>
+<p>Description: Create uniform scale transformation with a specified fixed point. Parameters: fixed_point - [in] scale_factor - [in] </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000118">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(fixed_point,scale_factor) </dd></dl>
 
 </div>
 </div>
@@ -3473,7 +3530,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ShearTransformation(plane,x1,y1,z1); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000120">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ShearTransformation(plane,x1,y1,z1); </dd></dl>
 
 </div>
 </div>
@@ -3526,6 +3583,75 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a882598366f58223d746b4e0e877716f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882598366f58223d746b4e0e877716f7">&#9670;&nbsp;</a></span>SignOfDeterminant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Xform::SignOfDeterminant </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFastTest</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quickly determine the sign of the determinant. Definitely good enough for graphics code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bFastTest</td><td>When in double, pass true. If you need a fast answer and can tolerate extremely rare wrong answers, pass true. True definitely works for all common matrices used to transform 3d objects and all common view projection matrices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>+1, 0, or -1. </dd></dl>
+
+</div>
+</div>
+<a id="a4e92ebab47160e2b6f0ba0b29bf8b4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e92ebab47160e2b6f0ba0b29bf8b4c6">&#9670;&nbsp;</a></span>TextureMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___xform.html">ON_Xform</a> ON_Xform::TextureMapping </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3498c05e0640f7fdad5a449ffee5227e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3498c05e0640f7fdad5a449ffee5227e">&#9670;&nbsp;</a></span>Translation() <span class="overload">[1/2]</span></h2>
 
@@ -3541,7 +3667,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(delta); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000121">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(delta); </dd></dl>
 
 </div>
 </div>
@@ -3576,7 +3702,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(dx,dy,dz); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000122">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(dx,dy,dz); </dd></dl>
 
 </div>
 </div>
@@ -3884,7 +4010,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

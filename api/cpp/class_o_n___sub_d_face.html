@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">7.33</span>
+   &#160;<span id="projectnumber">8.0</span>
    </div>
   </td>
  </tr>
@@ -88,9 +88,9 @@ Inheritance diagram for ON_SubDFace:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab5856ae6da1a73e0a6f469d3762015aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_face.html#ab5856ae6da1a73e0a6f469d3762015aaad5039979a63cecc5861399707529a370">MaximumEdgeCount</a> = 0xFFF0U
+<tr class="memitem:a5844eb19ebb1e696bb627e459a49b6f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_face.html#a5844eb19ebb1e696bb627e459a49b6f0ad5039979a63cecc5861399707529a370">MaximumEdgeCount</a> = 0xFFF0U
  }</td></tr>
-<tr class="separator:ab5856ae6da1a73e0a6f469d3762015aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5844eb19ebb1e696bb627e459a49b6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,10 +129,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a284890582aaba018b3c5e5cfcb21e654"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a284890582aaba018b3c5e5cfcb21e654">ControlNetBoundingBox</a> () const</td></tr>
 <tr class="separator:a284890582aaba018b3c5e5cfcb21e654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f50bc160a989a4654ca2368a67770f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a7f50bc160a989a4654ca2368a67770f2">ControlNetCenterFrame</a> () const</td></tr>
+<tr class="memdesc:a7f50bc160a989a4654ca2368a67770f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The face's control net center frame is a plane with normal equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#ae236053cc59051c7b29d34b26f0bcec5" title="When the face&#39;s control net polygon is planar, the face&#39;s control net normal is a unit vector perpind...">ControlNetCenterNormal()</a> and origin equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#a2da37277d7825635c1cc49d1df95c44d" title="The face&#39;s control net center point is the average of the face&#39;s vertex control net points....">ControlNetCenterPoint()</a>. The x and y axes of the frame have no predictable relationship to the face or SubD control net topology.  <a href="class_o_n___sub_d_face.html#a7f50bc160a989a4654ca2368a67770f2">More...</a><br /></td></tr>
 <tr class="separator:a7f50bc160a989a4654ca2368a67770f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae236053cc59051c7b29d34b26f0bcec5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ae236053cc59051c7b29d34b26f0bcec5">ControlNetCenterNormal</a> () const</td></tr>
+<tr class="memdesc:ae236053cc59051c7b29d34b26f0bcec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the face's control net polygon is planar, the face's control net normal is a unit vector perpindicular to the plane that points outwards. If the control net polygon is not planar, the control net normal is control net normal is a unit vector that is the average of the control polygon's corner normals.  <a href="class_o_n___sub_d_face.html#ae236053cc59051c7b29d34b26f0bcec5">More...</a><br /></td></tr>
 <tr class="separator:ae236053cc59051c7b29d34b26f0bcec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da37277d7825635c1cc49d1df95c44d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a2da37277d7825635c1cc49d1df95c44d">ControlNetCenterPoint</a> () const</td></tr>
+<tr class="memdesc:a2da37277d7825635c1cc49d1df95c44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The face's control net center point is the average of the face's vertex control net points. This is the same point as the face's subdivision point.  <a href="class_o_n___sub_d_face.html#a2da37277d7825635c1cc49d1df95c44d">More...</a><br /></td></tr>
 <tr class="separator:a2da37277d7825635c1cc49d1df95c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f234dd34d7faf87aeb6036be994c58"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ab2f234dd34d7faf87aeb6036be994c58">ControlNetPoint</a> (unsigned int i) const</td></tr>
 <tr class="separator:ab2f234dd34d7faf87aeb6036be994c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3176f1ca6d207888fde2658b877cea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679c0ad25b9e65ca874386edc7fa3f9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a679c0ad25b9e65ca874386edc7fa3f9b">EdgeMark</a> (unsigned int i, bool bMissingEgeReturnValue) const</td></tr>
 <tr class="separator:a679c0ad25b9e65ca874386edc7fa3f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada649097cd29d46e81821e5489f702be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ada649097cd29d46e81821e5489f702be">EdgeMarkBits</a> (unsigned int i, <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> missing_edge_return_value) const</td></tr>
+<tr class="memitem:ada649097cd29d46e81821e5489f702be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ada649097cd29d46e81821e5489f702be">EdgeMarkBits</a> (unsigned int i, <a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> missing_edge_return_value) const</td></tr>
 <tr class="separator:ada649097cd29d46e81821e5489f702be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeccdb2c68f9f92c1a9be7af5fbf3a7ac"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#aeccdb2c68f9f92c1a9be7af5fbf3a7ac">EdgePtr</a> (unsigned int i) const</td></tr>
 <tr class="separator:aeccdb2c68f9f92c1a9be7af5fbf3a7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,13 +181,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56e0e53dfa2ab469f0496206edba01c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66c0cceb9d6e25316c6c5c007ee01db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ad66c0cceb9d6e25316c6c5c007ee01db">HasEdges</a> () const</td></tr>
 <tr class="separator:ad66c0cceb9d6e25316c6c5c007ee01db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e9a84a12bfcb231c5e2a1462c3e913"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a34e9a84a12bfcb231c5e2a1462c3e913">HasSharpEdges</a> () const</td></tr>
+<tr class="memdesc:a34e9a84a12bfcb231c5e2a1462c3e913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this SubD face has sharp edges. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_face.html#a34e9a84a12bfcb231c5e2a1462c3e913">More...</a><br /></td></tr>
+<tr class="separator:a34e9a84a12bfcb231c5e2a1462c3e913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab22c31b4a89956b5c8f73447184a8cef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ab22c31b4a89956b5c8f73447184a8cef">IsConvex</a> () const</td></tr>
 <tr class="separator:ab22c31b4a89956b5c8f73447184a8cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a809407a389d8aceb7bde557651f8b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a6a809407a389d8aceb7bde557651f8b8">IsNotConvex</a> () const</td></tr>
 <tr class="separator:a6a809407a389d8aceb7bde557651f8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea9d43af0f018fe49406409e8527b0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#afea9d43af0f018fe49406409e8527b0b">IsNotPlanar</a> (double planar_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
+<tr class="memdesc:afea9d43af0f018fe49406409e8527b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the face's control net polygon is not planar.  <a href="class_o_n___sub_d_face.html#afea9d43af0f018fe49406409e8527b0b">More...</a><br /></td></tr>
 <tr class="separator:afea9d43af0f018fe49406409e8527b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7bf7c143179a6c86ce124459cfe219a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#af7bf7c143179a6c86ce124459cfe219a">IsPlanar</a> (double planar_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
+<tr class="memdesc:af7bf7c143179a6c86ce124459cfe219a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the face's control net polygon is planar.  <a href="class_o_n___sub_d_face.html#af7bf7c143179a6c86ce124459cfe219a">More...</a><br /></td></tr>
 <tr class="separator:af7bf7c143179a6c86ce124459cfe219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cf9952bb9313f8e6090cab32b43506"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ae8cf9952bb9313f8e6090cab32b43506">MarkedEdgeCount</a> () const</td></tr>
 <tr class="separator:ae8cf9952bb9313f8e6090cab32b43506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +200,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a023619bdb21af1ee14f9987bf5e92891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34ab29e7eca1175d388d745204f78cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ad34ab29e7eca1175d388d745204f78cd">MaterialChannelIndex</a> () const</td></tr>
 <tr class="separator:ad34ab29e7eca1175d388d745204f78cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1fabe689bd22e1f00682f9bebdfa1e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#acf1fabe689bd22e1f00682f9bebdfa1e">MaximumEdgeSharpness</a> () const</td></tr>
+<tr class="memdesc:acf1fabe689bd22e1f00682f9bebdfa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum sharpeness of the edges that form the face's boundary. (Creased edges have zero sharpness.)  <a href="class_o_n___sub_d_face.html#acf1fabe689bd22e1f00682f9bebdfa1e">More...</a><br /></td></tr>
+<tr class="separator:acf1fabe689bd22e1f00682f9bebdfa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af90451cd78f8214bce78be2609a3d3f6"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#af90451cd78f8214bce78be2609a3d3f6">MeshFragments</a> () const</td></tr>
 <tr class="separator:af90451cd78f8214bce78be2609a3d3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960abb1f36b712bed28926df3faae07b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___component_status.html">ON_ComponentStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a960abb1f36b712bed28926df3faae07b">NeighborhoodStatusLogicalOr</a> (bool bIncludeVertices, bool bIncludeEdges) const</td></tr>
@@ -232,6 +243,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a9b6df4654f5e97a7231874b55fbb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7fb5907eec0debf2bb29e558a443e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a9fb7fb5907eec0debf2bb29e558a443e">ReplaceEdgeInArray</a> (unsigned int fei0, <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *edge_to_remove, <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *edge_to_insert)</td></tr>
 <tr class="separator:a9fb7fb5907eec0debf2bb29e558a443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda98a7bf220a5b15dfebfac43d76f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#acda98a7bf220a5b15dfebfac43d76f22">ReplaceEdgeInArray</a> (unsigned int fei0, <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *edge_to_remove, <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> edgeptr_to_insert)</td></tr>
+<tr class="separator:acda98a7bf220a5b15dfebfac43d76f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab961fd56d63c5100156f2c7a9cd3979c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ab961fd56d63c5100156f2c7a9cd3979c">ReverseEdgeList</a> ()</td></tr>
 <tr class="separator:ab961fd56d63c5100156f2c7a9cd3979c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d433399fac0803fb74b9258c1bbcb08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a9d433399fac0803fb74b9258c1bbcb08">RotateEdgeArray</a> (unsigned int fei0)</td></tr>
@@ -250,15 +263,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a949806eae6044f1c29ccf8009e139e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae305dbce77ff53ee075e58300c2c301c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ae305dbce77ff53ee075e58300c2c301c">SetVertexMarks</a> (bool bMark) const</td></tr>
 <tr class="separator:ae305dbce77ff53ee075e58300c2c301c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6f8c38823d142ade1ef22cd35844af"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a7b6f8c38823d142ade1ef22cd35844af">SharpEdgeCount</a> () const</td></tr>
+<tr class="memdesc:a7b6f8c38823d142ade1ef22cd35844af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of sharp edges attached to this face. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_face.html#a7b6f8c38823d142ade1ef22cd35844af">More...</a><br /></td></tr>
+<tr class="separator:a7b6f8c38823d142ade1ef22cd35844af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc31eb99917c6a547f7b8db7c223279"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#aedc31eb99917c6a547f7b8db7c223279">SharpEdgeCount</a> (<a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> &amp;sharpness_range) const</td></tr>
+<tr class="memdesc:aedc31eb99917c6a547f7b8db7c223279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the range of sharpness values assigned to this face's sharp edges and return the number of sharp edges. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_face.html#aedc31eb99917c6a547f7b8db7c223279">More...</a><br /></td></tr>
+<tr class="separator:aedc31eb99917c6a547f7b8db7c223279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e60f9908e74a6bb3b317eb8ca163da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a95e60f9908e74a6bb3b317eb8ca163da">SubdivisionPoint</a> () const</td></tr>
 <tr class="separator:a95e60f9908e74a6bb3b317eb8ca163da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac35ffc0762e0d94d92064d862e7858"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#afac35ffc0762e0d94d92064d862e7858">SurfaceBoundingBox</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd) const</td></tr>
 <tr class="separator:afac35ffc0762e0d94d92064d862e7858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab8bd4f82599e6a7dfbbcf94ba367d9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a5ab8bd4f82599e6a7dfbbcf94ba367d9">SurfaceCenterFrame</a> () const</td></tr>
+<tr class="memdesc:a5ab8bd4f82599e6a7dfbbcf94ba367d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the limit surface tangent plane at the center of the face. The plane's origin is the point on the limit surface at the center of the face. The plane's z axis is the limit surface normal vector at the center of the face.  <a href="class_o_n___sub_d_face.html#a5ab8bd4f82599e6a7dfbbcf94ba367d9">More...</a><br /></td></tr>
 <tr class="separator:a5ab8bd4f82599e6a7dfbbcf94ba367d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e8ea7cba2690f5b8d007988c08aabd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a84e8ea7cba2690f5b8d007988c08aabd">SurfaceCenterNormal</a> () const</td></tr>
+<tr class="memdesc:a84e8ea7cba2690f5b8d007988c08aabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the limit surface normal vector at the center of the face.  <a href="class_o_n___sub_d_face.html#a84e8ea7cba2690f5b8d007988c08aabd">More...</a><br /></td></tr>
 <tr class="separator:a84e8ea7cba2690f5b8d007988c08aabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa5dae289dfeafaf21d59a80fce0ef5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#abfa5dae289dfeafaf21d59a80fce0ef5">SurfaceCenterPoint</a> () const</td></tr>
+<tr class="memdesc:abfa5dae289dfeafaf21d59a80fce0ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the point on the limit surface that is at the center of the face.  <a href="class_o_n___sub_d_face.html#abfa5dae289dfeafaf21d59a80fce0ef5">More...</a><br /></td></tr>
 <tr class="separator:abfa5dae289dfeafaf21d59a80fce0ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a6f86f111eb53f1c586334a23c01d4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a77a6f86f111eb53f1c586334a23c01d4">TextureCenterPoint</a> () const</td></tr>
 <tr class="separator:a77a6f86f111eb53f1c586334a23c01d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,7 +302,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae0576f0355036463c666737055dcdb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f649839c8b605cf57e6c024f7c1c5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a63f649839c8b605cf57e6c024f7c1c5f">VertexMark</a> (unsigned int i, bool bMissingVertexReturnValue) const</td></tr>
 <tr class="separator:a63f649839c8b605cf57e6c024f7c1c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa560377f7547bbf461b7239103490c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#aaa560377f7547bbf461b7239103490c9">VertexMarkBits</a> (unsigned int i, <a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> missing_vertex_return_value) const</td></tr>
+<tr class="memitem:aaa560377f7547bbf461b7239103490c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#aaa560377f7547bbf461b7239103490c9">VertexMarkBits</a> (unsigned int i, <a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> missing_vertex_return_value) const</td></tr>
 <tr class="separator:aaa560377f7547bbf461b7239103490c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd80709e772234ae98691d02101221d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a2cd80709e772234ae98691d02101221d">Write</a> (class <a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;archive) const</td></tr>
 <tr class="separator:a2cd80709e772234ae98691d02101221d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +317,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae2ed8428e5a2777b2194a642fe9b6448 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aea9104ff07d0c388cd274ecb0aa29d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a3aea9104ff07d0c388cd274ecb0aa29d">ClearMark</a> () const</td></tr>
 <tr class="separator:a3aea9104ff07d0c388cd274ecb0aa29d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a86a36b5b75fe7099b21da42f80a58361">ClearMarkBits</a> () const</td></tr>
+<tr class="memitem:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a86a36b5b75fe7099b21da42f80a58361">ClearMarkBits</a> () const</td></tr>
 <tr class="separator:a86a36b5b75fe7099b21da42f80a58361 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0a05208cbc473593c00c9291e2556a inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aef0a05208cbc473593c00c9291e2556a">ClearSavedSubdivisionPoint</a> () const</td></tr>
 <tr class="separator:aef0a05208cbc473593c00c9291e2556a inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +335,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aceb3e70b1d517b73f7d0cb87b6bc106c inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4563bd61b50a8841f9837547a7b7fbe inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ab4563bd61b50a8841f9837547a7b7fbe">Mark</a> () const</td></tr>
 <tr class="separator:ab4563bd61b50a8841f9837547a7b7fbe inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a863f993d46e4c1f5b0085626d9d59c76">MarkBits</a> () const</td></tr>
+<tr class="memitem:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a863f993d46e4c1f5b0085626d9d59c76">MarkBits</a> () const</td></tr>
 <tr class="separator:a863f993d46e4c1f5b0085626d9d59c76 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6306c393a2d14c2aeb9f52f5539440e inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#af6306c393a2d14c2aeb9f52f5539440e">operator=</a> (const <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> &amp;)=default</td></tr>
 <tr class="separator:af6306c393a2d14c2aeb9f52f5539440e inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,7 +349,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e7153be394a2c339cdcab48f685e837 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ce5234289ea8bf4eaf79c78f1e116d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae1ce5234289ea8bf4eaf79c78f1e116d">SetMark</a> (bool bMark) const</td></tr>
 <tr class="separator:ae1ce5234289ea8bf4eaf79c78f1e116d inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aad8d39cf01868c9ecfa59b9d37525e58">SetMarkBits</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> mark_bits) const</td></tr>
+<tr class="memitem:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#aad8d39cf01868c9ecfa59b9d37525e58">SetMarkBits</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> mark_bits) const</td></tr>
 <tr class="separator:aad8d39cf01868c9ecfa59b9d37525e58 inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7bef13ef562b14c321859d67e4fec inherit pub_methods_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a93d7bef13ef562b14c321859d67e4fec">SetSavedSubdivisionPoint</a> (const double subdivision_point[3]) const</td></tr>
 <tr class="separator:a93d7bef13ef562b14c321859d67e4fec inherit pub_methods_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,8 +486,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab5856ae6da1a73e0a6f469d3762015aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5856ae6da1a73e0a6f469d3762015aa">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a5844eb19ebb1e696bb627e459a49b6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5844eb19ebb1e696bb627e459a49b6f0">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">ON_SubDEdgePtr.EdgeDirection()</a> is 0 if the edge's natural orientation from m_vertex[0] to m_vertex[1] agrees with the face's boundary orientation.</p>
 <p>The value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">ON_SubDEdgePtr.EdgeDirection()</a> is 1 if the edge's natural orientation from m_vertex[0] to m_vertex[1] is opposited the face's boundary orientation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab5856ae6da1a73e0a6f469d3762015aaad5039979a63cecc5861399707529a370"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5844eb19ebb1e696bb627e459a49b6f0ad5039979a63cecc5861399707529a370"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -731,7 +753,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Clears saved subdivision and limit surface information for this face. Attached edges and vertices are not modifed. </p>
+<p>Description: Clears saved subdivision and limit surface information for this face. Attached edges and vertices are not modified. </p>
 
 </div>
 </div>
@@ -838,6 +860,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The face's control net center frame is a plane with normal equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#ae236053cc59051c7b29d34b26f0bcec5" title="When the face&#39;s control net polygon is planar, the face&#39;s control net normal is a unit vector perpind...">ControlNetCenterNormal()</a> and origin equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#a2da37277d7825635c1cc49d1df95c44d" title="The face&#39;s control net center point is the average of the face&#39;s vertex control net points....">ControlNetCenterPoint()</a>. The x and y axes of the frame have no predictable relationship to the face or SubD control net topology. </p>
+<dl class="section return"><dt>Returns</dt><dd>A plane with unit normal equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#ae236053cc59051c7b29d34b26f0bcec5" title="When the face&#39;s control net polygon is planar, the face&#39;s control net normal is a unit vector perpind...">ControlNetCenterNormal()</a> and origin equal to this-&gt;<a class="el" href="class_o_n___sub_d_face.html#a2da37277d7825635c1cc49d1df95c44d" title="The face&#39;s control net center point is the average of the face&#39;s vertex control net points....">ControlNetCenterPoint()</a>. If the face is not valid, <a class="el" href="class_o_n___plane.html#ad0e55abb72921892ccfa8db4ce7a57c8" title="All values are ON_DBL_QNAN.">ON_Plane::NanPlane</a> is returned. </dd></dl>
+<p><br  />
+ </p>
+
 </div>
 </div>
 <a id="ae236053cc59051c7b29d34b26f0bcec5"></a>
@@ -855,6 +882,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>When the face's control net polygon is planar, the face's control net normal is a unit vector perpindicular to the plane that points outwards. If the control net polygon is not planar, the control net normal is control net normal is a unit vector that is the average of the control polygon's corner normals. </p>
+<dl class="section return"><dt>Returns</dt><dd>A unit vector that is normal to planar control net polygons and a good compromise for nonplanar control net polygons. </dd></dl>
+<p><br  />
+ </p>
+
 </div>
 </div>
 <a id="a2da37277d7825635c1cc49d1df95c44d"></a>
@@ -871,6 +903,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The face's control net center point is the average of the face's vertex control net points. This is the same point as the face's subdivision point. </p>
+<dl class="section return"><dt>Returns</dt><dd>The average of the face's vertex control net points </dd></dl>
+<p><br  />
+ </p>
 
 </div>
 </div>
@@ -1000,7 +1037,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> ON_SubDFace::EdgeMarkBits </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> ON_SubDFace::EdgeMarkBits </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -1008,7 +1045,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td>
           <td class="paramname"><em>missing_edge_return_value</em>&#160;</td>
         </tr>
         <tr>
@@ -1287,7 +1324,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: bGridOrder - [in] false: counter clockwise quad order. true: fragment grid order fragment_index - [in] If the face is a quad (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a> = 4), then fragment_index must be zero. If the face is a n-gon (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a> = n and n != 4), then 0 &lt;= fragment_index &lt; <a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>. mesh_fragment_pack_rect_corners - [out] Pack rectangle corners for the specified mesh fragment are returned here. If the face is a quad, mesh_fragment_pack_rect_corners[] are the pack rect texture points for the quad corners in the order specified by bGridOrder and standard linear interpolation between the 4 corners will produce reasonable texture mapping coordinates. If the face is an n-gon, mesh_fragment_pack_rect_corners[0] is the pack rect texture point at face-&gt;Vertex(fragment_index). For n-gons, the n fragments are assigned non-overlapping rectangular subsetsof the face's pack rect. Interpolating between corner values will not produce good texture mapping coordinates. Pack rects are create useful and optimal texture mapping results when the SubD is renderered from its mesh fragmantes. Returns: True if the input is valid and the pack rectangle corner coordinates for the specified mesh fragment were returned. False otherwise. Remarks: A quad face (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>=4) is rendered using 1 <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a>. An n-gon face (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>=n and n != 4) is rendered using n ON_SubDMeshFragments. These n fragments correspond the SubD quads the n-gon face would generate with one level of Catmull-Clark subdivision. </p>
+<p>Parameters: bGridOrder - [in] false: counter clockwise quad order. true: fragment grid order fragment_index - [in] If the face is a quad (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a> = 4), then fragment_index must be zero. If the face is a n-gon (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a> = n and n != 4), then 0 &lt;= fragment_index &lt; <a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>. mesh_fragment_pack_rect_corners - [out] Pack rectangle corners for the specified mesh fragment are returned here. If the face is a quad, mesh_fragment_pack_rect_corners[] are the pack rect texture points for the quad corners in the order specified by bGridOrder and standard linear interpolation between the 4 corners will produce reasonable texture mapping coordinates. If the face is an n-gon, mesh_fragment_pack_rect_corners[0] is the pack rect texture point at face-&gt;Vertex(fragment_index). For n-gons, the n fragments are assigned non-overlapping rectangular subsetsof the face's pack rect. Interpolating between corner values will not produce good texture mapping coordinates. Pack rects are create useful and optimal texture mapping results when the SubD is rendered from its mesh fragmantes. Returns: True if the input is valid and the pack rectangle corner coordinates for the specified mesh fragment were returned. False otherwise. Remarks: A quad face (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>=4) is rendered using 1 <a class="el" href="class_o_n___sub_d_mesh_fragment.html">ON_SubDMeshFragment</a>. An n-gon face (<a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">EdgeCount()</a>=n and n != 4) is rendered using n ON_SubDMeshFragments. These n fragments correspond the SubD quads the n-gon face would generate with one level of Catmull-Clark subdivision. </p>
 
 </div>
 </div>
@@ -1336,7 +1373,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Calculate how a packing rectangle assigned to an <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> will be subdivided into n sub packing rectanges for an ngon when n &gt;= 5. Parameters: ngon_edge_count - [in] &gt;= 5. ngon_face_pack_rect_size - [in] ngon_face_pack_rect_size.x &gt; 0 and ngon_face_pack_rect_size.y &gt; 0 The width and height of the sizeof the ngon's entire packing rectangle. This is typically ON_SubD_Face::PackRectSize() once that property is coorectly set. ngon_sub_pack_rect_size - [out] The size of sub pack rects. If input is not valid, then <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b" title="(0.0,0.0)">ON_2dVector::ZeroVector</a> is returned. ngon_sub_pack_rect_delta - [out] The delta from one sub pack rect to the next. If input is not valid, then <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b" title="(0.0,0.0)">ON_2dVector::ZeroVector</a> is returned. Returns: When the input is valid, <a class="el" href="class_o_n__2udex.html">ON_2udex(i,j)</a> is returned and specifies the face's packing rectangle should be divided into i X j sub packing rectangles. Otherwise, <a class="el" href="class_o_n__2udex.html">ON_2udex(0,0)</a> is returned and </p>
+<p>Description: Calculate how a packing rectangle assigned to an <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> will be subdivided into n sub packing rectangles for an ngon when n &gt;= 5. Parameters: ngon_edge_count - [in] &gt;= 5. ngon_face_pack_rect_size - [in] ngon_face_pack_rect_size.x &gt; 0 and ngon_face_pack_rect_size.y &gt; 0 The width and height of the sizeof the ngon's entire packing rectangle. This is typically ON_SubD_Face::PackRectSize() once that property is coorectly set. ngon_sub_pack_rect_size - [out] The size of sub pack rects. If input is not valid, then <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b" title="(0.0,0.0)">ON_2dVector::ZeroVector</a> is returned. ngon_sub_pack_rect_delta - [out] The delta from one sub pack rect to the next. If input is not valid, then <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b" title="(0.0,0.0)">ON_2dVector::ZeroVector</a> is returned. Returns: When the input is valid, <a class="el" href="class_o_n__2udex.html">ON_2udex(i,j)</a> is returned and specifies the face's packing rectangle should be divided into i X j sub packing rectangles. Otherwise, <a class="el" href="class_o_n__2udex.html">ON_2udex(0,0)</a> is returned and </p>
 
 </div>
 </div>
@@ -1455,7 +1492,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the limit surface point location and normal at the center of the face. Parameters: P - [out] P = limit surface location or <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if not available. N - [out] N = limit surface unit normal or <a class="el" href="class_o_n__3d_vector.html#a2bb705b5d7458947109344fe28460228" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dVector::NanVector</a> if not available. Returns: True if the point and normal were set from the limit mesh frament. False if the limit mesh fragment was not found and nan values were returned. </p>
+<p>Description: Get the limit surface point location and normal at the center of the face. Parameters: P - [out] P = limit surface location or <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if not available. N - [out] N = limit surface unit normal or <a class="el" href="class_o_n__3d_vector.html#a2bb705b5d7458947109344fe28460228" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dVector::NanVector</a> if not available. Returns: True if the point and normal were set from the limit mesh fragment. False if the limit mesh fragment was not found and nan values were returned. </p>
 
 </div>
 </div>
@@ -1487,6 +1524,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a34e9a84a12bfcb231c5e2a1462c3e913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e9a84a12bfcb231c5e2a1462c3e913">&#9670;&nbsp;</a></span>HasSharpEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDFace::HasSharpEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if this SubD face has sharp edges. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if this SubD face at lease one sharp edge.</dd></dl>
+
+</div>
+</div>
 <a id="ab22c31b4a89956b5c8f73447184a8cef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab22c31b4a89956b5c8f73447184a8cef">&#9670;&nbsp;</a></span>IsConvex()</h2>
 
@@ -1501,6 +1558,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the control net polygon is convex with respect to the plane this-&gt;<a class="el" href="class_o_n___sub_d_face.html#a7f50bc160a989a4654ca2368a67770f2" title="The face&#39;s control net center frame is a plane with normal equal to this-&gt;ControlNetCenterNormal() an...">ControlNetCenterFrame()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1518,6 +1576,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the control net polygon is not convex with respect to the plane this-&gt;<a class="el" href="class_o_n___sub_d_face.html#a7f50bc160a989a4654ca2368a67770f2" title="The face&#39;s control net center frame is a plane with normal equal to this-&gt;ControlNetCenterNormal() an...">ControlNetCenterFrame()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1537,6 +1596,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Determine if the face's control net polygon is not planar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planar_tolerance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the face's control net polygon is not planar. </dd></dl>
+
 </div>
 </div>
 <a id="af7bf7c143179a6c86ce124459cfe219a"></a>
@@ -1554,6 +1622,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Determine if the face's control net polygon is planar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planar_tolerance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the face's control net polygon is planar. </dd></dl>
 
 </div>
 </div>
@@ -1596,7 +1673,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: pack_rect_origin - [in] Lower left corner. Valid origins have (0 &lt;= origin.x &lt; 1) and (0 &lt;= origin.y &lt; 1) pack_rect_size - [in] vector from lower left corner to upper right corner. Valid deltas have (0 &lt; delta.x, 0 &lt; delta.y, (origin.x+delta.x) &lt;= 1) and (origin.y+delta.y) &lt;= 1. packing_rotation_degrees - [in] Valid packing_rotation_degrees are a mulitple of 90. Returns: True if the input parameters define a valid pack rectangle. </p>
+<p>Parameters: pack_rect_origin - [in] Lower left corner. Valid origins have (0 &lt;= origin.x &lt; 1) and (0 &lt;= origin.y &lt; 1) pack_rect_size - [in] vector from lower left corner to upper right corner. Valid deltas have (0 &lt; delta.x, 0 &lt; delta.y, (origin.x+delta.x) &lt;= 1) and (origin.y+delta.y) &lt;= 1. packing_rotation_degrees - [in] Valid packing_rotation_degrees are a multiple of 90. Returns: True if the input parameters define a valid pack rectangle. </p>
 
 </div>
 </div>
@@ -1652,6 +1729,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns: This face's rendering material channel index.</p>
 <p>Remarks: If base_material is the <a class="el" href="class_o_n___material.html">ON_Material</a> assigned to render this subd, <a class="el" href="class_o_n___sub_d_face.html#ad34ab29e7eca1175d388d745204f78cd">MaterialChannelIndex()</a> &gt; 0, and ON_UUID face_material_id = base_material.MaterialChannelIdFromIndex( face.MaterialChannelIndex() ) is not nil, then face_material_id identifies an override rendering material for this face. Otherwise base_material is used to reneder this face. </p>
+
+</div>
+</div>
+<a id="acf1fabe689bd22e1f00682f9bebdfa1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1fabe689bd22e1f00682f9bebdfa1e">&#9670;&nbsp;</a></span>MaximumEdgeSharpness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDFace::MaximumEdgeSharpness </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum sharpeness of the edges that form the face's boundary. (Creased edges have zero sharpness.) </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum sharpness of the face's edges.</dd></dl>
 
 </div>
 </div>
@@ -1841,7 +1938,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: pack_rect_distance_in_pixels - [in] A (normalized pack rect distance) * <a class="el" href="class_o_n___sub_d.html#a6356d9ba7b424672377a4722efd09b3cab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a> Returns: Suggested gap between adjacent pack rects for a texture images with width and height &gt;= <a class="el" href="class_o_n___sub_d.html#a6356d9ba7b424672377a4722efd09b3cab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a>. This value will be 0.0 when pack_rect_distance_in_pixels is too small to permit a gap of 1 or more pixels without visibly adverse effects in a texture map clarity. </p>
+<p>Parameters: pack_rect_distance_in_pixels - [in] A (normalized pack rect distance) * <a class="el" href="class_o_n___sub_d.html#a89d6c70eef1e83ec2a0889fd2bea9e7eab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a> Returns: Suggested gap between adjacent pack rects for a texture images with width and height &gt;= <a class="el" href="class_o_n___sub_d.html#a89d6c70eef1e83ec2a0889fd2bea9e7eab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a>. This value will be 0.0 when pack_rect_distance_in_pixels is too small to permit a gap of 1 or more pixels without visibly adverse effects in a texture map clarity. </p>
 
 </div>
 </div>
@@ -2118,7 +2215,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9fb7fb5907eec0debf2bb29e558a443e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fb7fb5907eec0debf2bb29e558a443e">&#9670;&nbsp;</a></span>ReplaceEdgeInArray()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb7fb5907eec0debf2bb29e558a443e">&#9670;&nbsp;</a></span>ReplaceEdgeInArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2149,6 +2246,41 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Expert user tool to replace one edge with another in the face's edge array. Parameters: edge_to_remove - [in] edge_to_insert - [in] The inserted edge is assigned the same boundary orientation as the removed edge. Remarks: Does not modify the edge. The corresponding reference to this face must be removed from the first edge and added to the second edge. </p>
+
+</div>
+</div>
+<a id="acda98a7bf220a5b15dfebfac43d76f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda98a7bf220a5b15dfebfac43d76f22">&#9670;&nbsp;</a></span>ReplaceEdgeInArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDFace::ReplaceEdgeInArray </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>fei0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
+          <td class="paramname"><em>edge_to_remove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td>
+          <td class="paramname"><em>edgeptr_to_insert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Expert user tool to replace one edge with another in the face's edge array. Parameters: edge_to_remove - [in] edgeptr_to_insert - [in] The inserted edge is assigned the same boundary orientation specified in edgeptr_to_insert. Remarks: Does not modify the edge. The corresponding reference to this face must be removed from the first edge and added to the second edge. </p>
 
 </div>
 </div>
@@ -2280,7 +2412,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: The <a class="el" href="class_o_n___sub_d.html#a7ae35f701fbf4f43bb90827458abb6ae">ON_SubD::PackFaces()</a> function uses this function to set the face's pack rectangle (<a class="el" href="class_o_n___sub_d_face.html#a440e78c579633e5ccf6fc9b23d4206ba">ON_SubDFace::PackRectOrigin()</a>, <a class="el" href="class_o_n___sub_d_face.html#ade99be278ce17cbe873f655234ea9c9e">ON_SubDFace::PackRectSize()</a>, <a class="el" href="class_o_n___sub_d_face.html#a65b255c394dc6181aaf180cc8ffea677">ON_SubDFace::PackRectRotationDegrees()</a>). Unless you are an expert and doing something very carefully and very fancy, to not call this function. The lower left corner will be origin, the upper right corner will be delta. You must also set the pack id correctly. Parameters: pack_rect_origin - [in] Lower left corner. Valid origins have (0 &lt;= origin.x &lt; 1) and (0 &lt;= origin.y &lt; 1) pack_rect_size - [in] vector from lower left corner to upper right corner. Valid deltas have (0 &lt; delta.x, 0 &lt; delta.y, (origin.x+delta.x) &lt;= 1) and (origin.y+delta.y) &lt;= 1. packing_rotation_degrees - [in] Valid packing_rotation_degrees are a mulitple of 90. Return: True if input is valid and the pack rectangle was set. False if the input was not vaie and the pack rectangle coordinates were set to nan. </p>
+<p>Description: The <a class="el" href="class_o_n___sub_d.html#a7ae35f701fbf4f43bb90827458abb6ae">ON_SubD::PackFaces()</a> function uses this function to set the face's pack rectangle (<a class="el" href="class_o_n___sub_d_face.html#a440e78c579633e5ccf6fc9b23d4206ba">ON_SubDFace::PackRectOrigin()</a>, <a class="el" href="class_o_n___sub_d_face.html#ade99be278ce17cbe873f655234ea9c9e">ON_SubDFace::PackRectSize()</a>, <a class="el" href="class_o_n___sub_d_face.html#a65b255c394dc6181aaf180cc8ffea677">ON_SubDFace::PackRectRotationDegrees()</a>). Unless you are an expert and doing something very carefully and very fancy, to not call this function. The lower left corner will be origin, the upper right corner will be delta. You must also set the pack id correctly. Parameters: pack_rect_origin - [in] Lower left corner. Valid origins have (0 &lt;= origin.x &lt; 1) and (0 &lt;= origin.y &lt; 1) pack_rect_size - [in] vector from lower left corner to upper right corner. Valid deltas have (0 &lt; delta.x, 0 &lt; delta.y, (origin.x+delta.x) &lt;= 1) and (origin.y+delta.y) &lt;= 1. packing_rotation_degrees - [in] Valid packing_rotation_degrees are a multiple of 90. Return: True if input is valid and the pack rectangle was set. False if the input was not vaie and the pack rectangle coordinates were set to nan. </p>
 
 </div>
 </div>
@@ -2352,6 +2484,53 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7b6f8c38823d142ade1ef22cd35844af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6f8c38823d142ade1ef22cd35844af">&#9670;&nbsp;</a></span>SharpEdgeCount() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_SubDFace::SharpEdgeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of sharp edges attached to this face. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of sharp edges attached to this face.</dd></dl>
+
+</div>
+</div>
+<a id="aedc31eb99917c6a547f7b8db7c223279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc31eb99917c6a547f7b8db7c223279">&#9670;&nbsp;</a></span>SharpEdgeCount() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_SubDFace::SharpEdgeCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> &amp;&#160;</td>
+          <td class="paramname"><em>sharpness_range</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the range of sharpness values assigned to this face's sharp edges and return the number of sharp edges. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sharpness_range</td><td>The range of sharpness values is returned here. (0,0) is returned if there are no sharp edges. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of sharp edges attached to this face.</dd></dl>
+
+</div>
+</div>
 <a id="a95e60f9908e74a6bb3b317eb8ca163da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95e60f9908e74a6bb3b317eb8ca163da">&#9670;&nbsp;</a></span>SubdivisionPoint()</h2>
 
@@ -2402,6 +2581,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the limit surface tangent plane at the center of the face. The plane's origin is the point on the limit surface at the center of the face. The plane's z axis is the limit surface normal vector at the center of the face. </p>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface tanget plane at the face's center. <a class="el" href="class_o_n___plane.html#ad0e55abb72921892ccfa8db4ce7a57c8" title="All values are ON_DBL_QNAN.">ON_Plane::NanPlane</a> is returned if the face is not valid. </dd></dl>
+
 </div>
 </div>
 <a id="a84e8ea7cba2690f5b8d007988c08aabd"></a>
@@ -2419,6 +2601,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the limit surface normal vector at the center of the face. </p>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface normal vector at the face's center. ON_3dVector::NanPoint is returned if the face is not valid. </dd></dl>
+
 </div>
 </div>
 <a id="abfa5dae289dfeafaf21d59a80fce0ef5"></a>
@@ -2435,6 +2620,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the point on the limit surface that is at the center of the face. </p>
+<dl class="section return"><dt>Returns</dt><dd>Limit surface point at the face's center. <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> is returned if the face is not valid. </dd></dl>
 
 </div>
 </div>
@@ -2536,7 +2724,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Apply a tranxfomration matrix to vertex geometry information.</p>
-<p>Parameters: bTransformationSavedSubdivisionPoint - [in] If the transformation is being applied to every vertex, edge and face in every level of a subdivision object, and the transformation is an isometry (rotation, translation, ...), a uniform scale, or a composition of these types, then set bTransformationSavedSubdivisionPoint = true to apply the transformation to saved subdivision and saved limit point information. In all other cases, set bTransformationSavedSubdivisionPoint = false and any saved subdivision points or saved limit points will be deleted. When in doubt, pass false.</p>
+<p>Parameters: bTransformationSavedSubdivisionPoint - [in] If the transformation is being applied to every vertex, edge and face in every level of a subdivision object, and the transformation is an orientation preserving isometry (rotation, translation, ...), then set bTransformationSavedSubdivisionPoint = true to apply the transformation to saved subdivision and saved limit point information. In all other cases, set bTransformationSavedSubdivisionPoint = false and any saved subdivision points or saved limit points will be deleted. When in doubt, pass false.</p>
 <p>xform - [in] </p>
 
 </div>
@@ -2650,7 +2838,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a> ON_SubDFace::VertexMarkBits </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> ON_SubDFace::VertexMarkBits </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -2658,7 +2846,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga3b6aca42cfeb22b5315f542d04ba024c">ON__UINT8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td>
           <td class="paramname"><em>missing_vertex_return_value</em>&#160;</td>
         </tr>
         <tr>
@@ -2931,7 +3119,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2023 15:58:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 21 2023 14:48:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
