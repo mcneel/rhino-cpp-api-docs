@@ -1271,7 +1271,9 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebca23ad085869172a08529bc476d278e0d0">ROF_CURVES</a> = 0x00000040, 
 <a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebcac9f058687709bd6225db4337dc809109">ROF_ANNOTATIONS</a> = 0x00000080, 
 <br />
-&#160;&#160;<a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebcad47b80c88ae74a1e876b6bfb27a481de">ROF_SUBDWIRES</a> = 0x00000100
+&#160;&#160;<a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebcad47b80c88ae74a1e876b6bfb27a481de">ROF_SUBDWIRES</a> = 0x00000100, 
+<a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebca54a530bec1cd2cc312b173eaf5210ff1">ROF_SECTION_FILL</a> = 0x00000200, 
+<a class="el" href="group___rhino.html#gga01a869b4cddf679f2dc2015adef7aebca427458792568b55276657efceb8b0c47">ROF_SECTION_BOUNDARY</a> = 0x00000400
 <br />
  }</td></tr>
 <tr class="memdesc:ga01a869b4cddf679f2dc2015adef7aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post rendering features that make up all possible post renderables...  <a href="group___rhino.html#ga01a869b4cddf679f2dc2015adef7aebc">More...</a><br /></td></tr>
@@ -4858,6 +4860,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="gga01a869b4cddf679f2dc2015adef7aebca23ad085869172a08529bc476d278e0d0"></a>ROF_CURVES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga01a869b4cddf679f2dc2015adef7aebcac9f058687709bd6225db4337dc809109"></a>ROF_ANNOTATIONS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga01a869b4cddf679f2dc2015adef7aebcad47b80c88ae74a1e876b6bfb27a481de"></a>ROF_SUBDWIRES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga01a869b4cddf679f2dc2015adef7aebca54a530bec1cd2cc312b173eaf5210ff1"></a>ROF_SECTION_FILL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga01a869b4cddf679f2dc2015adef7aebca427458792568b55276657efceb8b0c47"></a>ROF_SECTION_BOUNDARY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -9633,7 +9637,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000232">Deprecated:</a></b></dt><dd>use RhinoColorDialogEx </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>use RhinoColorDialogEx </dd></dl>
 
 </div>
 </div>
@@ -10402,7 +10406,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates one or more hatches. Parameters: args - [in] The hatching arguments. tolerance - [in] The tolerance used for detecting planar loops. When in doubt, use the document's absolute tolerance. Returns: True if one or more hatches were created, false otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000191">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
+<p>Description: Creates one or more hatches. Parameters: args - [in] The hatching arguments. tolerance - [in] The tolerance used for detecting planar loops. When in doubt, use the document's absolute tolerance. Returns: True if one or more hatches were created, false otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000192">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
 
 </div>
 </div>
@@ -17054,7 +17058,7 @@ Variables</h2></td></tr>
 <p>Description: Mesh Rhino objects. Parameters: objects - [in] objects to get render meshes for. render_meshes - [out] render_meshes[i].<a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> = input object render_meshes[i].Mesh() = render mesh bOkToCreate - [in] if true and the render meshes do not exist, then they will be created. bReturnAllObjects - [in] curves, points, etc., do not have render meshes. If you want these objects to appear in the output list with a NULL mesh, then set this flag to true. bSkipHiddenObjects - [in] will not create render meshes for hidden objects if set to true. Returns: Number of meshes appended to render_meshes[]. Remarks: References to instance definitions that contain multiple objects will appear multiple times in the output list.</p>
 <p>When the input object is a <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>, one or more CRhinoObjRefs may be returned in the render_meshes[] array. Each atomic object the instance reference ultimately refers to gets a <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a>. The <a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> points to the atomic object in the instance definition table. The Geometry() returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> is a transformed copy of the mesh. The mesh is correctly located and does not require further transformations. In this case, <a class="el" href="class_c_rhino_obj_ref.html#aa764d1e09d1a23d5394c0095dcd14a64">CRhinoObjRef::GetInstanceTransformation()</a> will return a pointer to the top level instance reference (the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>) and report the total transformation that was applied to the mesh. <br  />
  In the case of nested instance references, this transformation may be different from the transformation associated with the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>. <br  />
- </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000199">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
+ </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000200">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
 
 </div>
 </div>
@@ -17108,7 +17112,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Mesh Rhino objects. Parameters: objects - [in] objects to get render meshes for. render_meshes - [out] render_meshes[i].<a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> = input object render_meshes[i].Mesh() = render mesh bOkToCreate - [in] if true and the render meshes do not exist, then they will be created. bReturnAllObjects - [in] curves, points, etc., do not have render meshes. If you want these objects to appear in the output list with a NULL mesh, then set this flag to true. bSkipHiddenObjects - [in] will not create render meshes for hidden objects if set to true. bUpdateMeshTCs - [in] updates texture coordinates on the output mesh using the texture mapping if set to true. Returns: Number of meshes appended to render_meshes[]. Remarks: References to instance definitions that contain multiple objects will appear multiple times in the output list.</p>
-<p>When the input object is a <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>, one or more CRhinoObjRefs may be returned in the render_meshes[] array. Each atomic object the instance reference ultimately refers to gets a <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a>. The <a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> points to the atomic object in the instance definition table. The Geometry() returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> is a transformed copy of the mesh. The mesh is correctly located and does not require further transformations. In this case, <a class="el" href="class_c_rhino_obj_ref.html#aa764d1e09d1a23d5394c0095dcd14a64">CRhinoObjRef::GetInstanceTransformation()</a> will return a pointer to the top level instance reference (the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>) and report the total transformation that was applied to the mesh. In the case of nested instance references, this transformation may be different from the transformation associated with the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000198">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
+<p>When the input object is a <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>, one or more CRhinoObjRefs may be returned in the render_meshes[] array. Each atomic object the instance reference ultimately refers to gets a <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a>. The <a class="el" href="group___r_d_k.html#ga96a0ee00db741d2111e866eeab6d2f13">Object()</a> returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> points to the atomic object in the instance definition table. The Geometry() returned by the <a class="el" href="class_c_rhino_obj_ref.html">CRhinoObjRef</a> is a transformed copy of the mesh. The mesh is correctly located and does not require further transformations. In this case, <a class="el" href="class_c_rhino_obj_ref.html#aa764d1e09d1a23d5394c0095dcd14a64">CRhinoObjRef::GetInstanceTransformation()</a> will return a pointer to the top level instance reference (the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>) and report the total transformation that was applied to the mesh. In the case of nested instance references, this transformation may be different from the transformation associated with the input <a class="el" href="class_c_rhino_instance_object.html">CRhinoInstanceObject</a>. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000199">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
 
 </div>
 </div>
@@ -17149,7 +17153,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000200">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000201">Deprecated:</a></b></dt><dd>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a> </dd></dl>
 
 </div>
 </div>
@@ -18811,7 +18815,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000194">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000195">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -18875,7 +18879,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000195">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000196">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -19496,7 +19500,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates planar Breps of 1 face from array of curves Parameters: input_loops [in] loops to sort and use as boundaries breps [out] array of 1 face Breps notused - optional array to hold indices of the input curves that got used Returns: @untitled table TRUE Success FALSE Failure Remarks: calls RhinoMakePlanarFaces() to sort the input curves into faces See Also: RhinoMakePlanarBrep() </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>use overload that takes a tolerance </dd></dl>
+<p>Description: Creates planar Breps of 1 face from array of curves Parameters: input_loops [in] loops to sort and use as boundaries breps [out] array of 1 face Breps notused - optional array to hold indices of the input curves that got used Returns: @untitled table TRUE Success FALSE Failure Remarks: calls RhinoMakePlanarFaces() to sort the input curves into faces See Also: RhinoMakePlanarBrep() </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000234">Deprecated:</a></b></dt><dd>use overload that takes a tolerance </dd></dl>
 
 </div>
 </div>
@@ -22663,7 +22667,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000234">Deprecated:</a></b></dt><dd>use RhinoInterpCurve </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000235">Deprecated:</a></b></dt><dd>use RhinoInterpCurve </dd></dl>
 
 </div>
 </div>
@@ -23118,7 +23122,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: OBSOLETE - Use the version of RhinoOffsetCurve declared below. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000236">Deprecated:</a></b></dt><dd>use other version of RhinoOffsetCurve </dd></dl>
+<p>Description: OBSOLETE - Use the version of RhinoOffsetCurve declared below. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000237">Deprecated:</a></b></dt><dd>use other version of RhinoOffsetCurve </dd></dl>
 
 </div>
 </div>
@@ -24464,7 +24468,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000235">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000236">Deprecated:</a></b></dt><dd>use overload that accepts tolerance parameter </dd></dl>
 
 </div>
 </div>
@@ -25149,7 +25153,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000237">Deprecated:</a></b></dt><dd>use overload that has an <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000238">Deprecated:</a></b></dt><dd>use overload that has an <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -25453,7 +25457,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000193">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000194">Deprecated:</a></b></dt><dd>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter </dd></dl>
 
 </div>
 </div>
@@ -25871,7 +25875,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000197">Deprecated:</a></b></dt><dd>Use RhinoRegisterCustomMeshHandler2 RHINO_SDK_FUNCTION </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000198">Deprecated:</a></b></dt><dd>Use RhinoRegisterCustomMeshHandler2 RHINO_SDK_FUNCTION </dd></dl>
 
 </div>
 </div>
@@ -27420,7 +27424,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000238">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothCurve that accepts a plane parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000239">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothCurve that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -27692,7 +27696,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000240">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothMesh that accepts a plane parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000241">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothMesh that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -27887,7 +27891,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000239">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothSurface that accepts a plane parameter </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000240">Deprecated:</a></b></dt><dd>use the version of RhinoSmoothSurface that accepts a plane parameter </dd></dl>
 
 </div>
 </div>
@@ -32283,7 +32287,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -167,6 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab48ab12fc493db986d0d9c1876d2f29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e470effda28dcbba39a6b71ca90cb01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a5e470effda28dcbba39a6b71ca90cb01">ClosePipeline</a> ()</td></tr>
 <tr class="separator:a5e470effda28dcbba39a6b71ca90cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd906ee5be7d0df676738d29c4d9b99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a9cd906ee5be7d0df676738d29c4d9b99">ConvertToSingleColorMaterial</a> (<a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> &amp;, <a class="el" href="class_o_n___color.html">ON_Color</a>, bool noLigthing=false) const</td></tr>
+<tr class="separator:a9cd906ee5be7d0df676738d29c4d9b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41caeab0141ae7e81397008cab2f4013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a41caeab0141ae7e81397008cab2f4013">CopyBackBufferTo</a> (<a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;)</td></tr>
 <tr class="separator:a41caeab0141ae7e81397008cab2f4013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907b3ddcc8dd79fc5ac3eabacb9c89aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a907b3ddcc8dd79fc5ac3eabacb9c89aa">CopyBackBufferTo</a> (HDC)</td></tr>
@@ -2315,6 +2317,41 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cd906ee5be7d0df676738d29c4d9b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd906ee5be7d0df676738d29c4d9b99">&#9670;&nbsp;</a></span>ConvertToSingleColorMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDisplayPipeline::ConvertToSingleColorMaterial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>noLigthing</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Converts the passed in material to a single color material, no textures, no PBR settings, and no specific lighting characteristics (i.e. specular, reflective, etc...), just a plain specified single color will be used, everything else will be stripped and/or deleted. Note: This also does not apply any kind of color adjustments to White or Black values. </p>
 
 </div>
 </div>
@@ -15929,7 +15966,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:31 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

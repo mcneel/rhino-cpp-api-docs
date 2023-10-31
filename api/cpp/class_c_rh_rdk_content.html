@@ -535,8 +535,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a32892a8e6f89cbf3fdc309eb1dd06af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4a6f16330d6a7ee01d0bd7b6b55fcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a6d4a6f16330d6a7ee01d0bd7b6b55fcd">OpenInFirstMainModelessEditor</a> (void) const</td></tr>
 <tr class="separator:a6d4a6f16330d6a7ee01d0bd7b6b55fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3ad3ed10d96a28f04d0ad1641b359c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a6a3ad3ed10d96a28f04d0ad1641b359c">OpenInMainEditor</a> (void) const</td></tr>
-<tr class="separator:a6a3ad3ed10d96a28f04d0ad1641b359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f33606d81d457bf270b9d09895ac6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#ab3f33606d81d457bf270b9d09895ac6a">OpenInMainEditor</a> (void) const</td></tr>
+<tr class="separator:ab3f33606d81d457bf270b9d09895ac6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5bdcb6a95c3d3bc088550c3954b88d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a5e5bdcb6a95c3d3bc088550c3954b88d">OpenInModalEditor</a> (UINT uFlags=0)</td></tr>
 <tr class="separator:a5e5bdcb6a95c3d3bc088550c3954b88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a23997a73d78b1cf915e77fff1d16c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rh_rdk_content.html#af95a482afef916eee63146b9e2bc6506">ParamSerialMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a03a23997a73d78b1cf915e77fff1d16c">ParameterSerializationMethod</a> (void) const =0</td></tr>
@@ -2745,7 +2745,7 @@ CRhRdkPreviewAppearance </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000291">Deprecated:</a></b></dt><dd>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000292">Deprecated:</a></b></dt><dd>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document. </dd></dl>
 
 </div>
 </div>
@@ -5918,8 +5918,8 @@ The copied contents will be found by <a class="el" href="group___r_d_k.html#ga1c
 
 </div>
 </div>
-<a id="a6a3ad3ed10d96a28f04d0ad1641b359c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a3ad3ed10d96a28f04d0ad1641b359c">&#9670;&nbsp;</a></span>OpenInMainEditor()</h2>
+<a id="ab3f33606d81d457bf270b9d09895ac6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f33606d81d457bf270b9d09895ac6a">&#9670;&nbsp;</a></span>OpenInMainEditor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5928,7 +5928,7 @@ The copied contents will be found by <a class="el" href="group___r_d_k.html#ga1c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool CRhRdkContent::OpenInMainEditor </td>
+          <td class="memname">virtual bool CRhRdkContent::OpenInMainEditor </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -5941,7 +5941,7 @@ The copied contents will be found by <a class="el" href="group___r_d_k.html#ga1c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call this method to open the content in the main content editor and select it for editing by the user. The content must be in a document or the call will fail. If you override this method, <b>please be sure to call the base class</b>. </p><dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
+<p>Call this method to open the content in the main content editor. The content must be attached to a document or the method will fail. The content will be opened in the editor associated with that document (only relevant on Mac). If you override this method, <b>please be sure to call the base class</b>. </p><dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
 
 </div>
 </div>
@@ -6379,7 +6379,7 @@ The copied contents will be found by <a class="el" href="group___r_d_k.html#ga1c
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000290">Deprecated:</a></b></dt><dd>This method is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000291">Deprecated:</a></b></dt><dd>This method is obsolete. </dd></dl>
 
 </div>
 </div>
@@ -9127,7 +9127,7 @@ Your XML must be contained within a section called<pre class="fragment"> &lt;par
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

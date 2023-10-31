@@ -236,6 +236,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acdf266e39c5ea0659179146768570b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa20b2908469b5f98da10678a79ced44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#aaa20b2908469b5f98da10678a79ced44">CullUndoRecords</a> (int min_step_count, size_t max_memory_size_bytes)</td></tr>
 <tr class="separator:aaa20b2908469b5f98da10678a79ced44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e370c5812aaffdc026e00ffe8a939c"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a34e370c5812aaffdc026e00ffe8a939c">CurrentEnvironment</a> () const</td></tr>
+<tr class="separator:a34e370c5812aaffdc026e00ffe8a939c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d17c6aa8322b96ff2748e78583541f"><td class="memItemLeft" align="right" valign="top">CRhUndoRecord *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a76d17c6aa8322b96ff2748e78583541f">CurrentUndoRecord</a> () const</td></tr>
 <tr class="separator:a76d17c6aa8322b96ff2748e78583541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58b778e8b5e4afa03f7062d0eff192a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ae58b778e8b5e4afa03f7062d0eff192a">CurrentUndoRecordSerialNumber</a> () const</td></tr>
@@ -296,6 +298,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaf6e87a46cef888872160e157441cdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0da05db0e2e9b879afc386ed080056"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#acf0da05db0e2e9b879afc386ed080056">FindView</a> (const wchar_t *title, <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">CRhinoView::ViewTypeFilter</a> view_types)</td></tr>
 <tr class="separator:acf0da05db0e2e9b879afc386ed080056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ca3adac6cd198c66fe0c40dc85797a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a71ca3adac6cd198c66fe0c40dc85797a">FindView</a> (const wchar_t *title, <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">CRhinoView::ViewTypeFilter</a> view_types) const</td></tr>
+<tr class="separator:a71ca3adac6cd198c66fe0c40dc85797a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111495eda999f1a715b7f36c85a00551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a111495eda999f1a715b7f36c85a00551">FlashObjectList</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;obj_list, int flash_style=1)</td></tr>
 <tr class="separator:a111495eda999f1a715b7f36c85a00551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2d4adef71aadec7639341e433be3d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ada2d4adef71aadec7639341e433be3d6">FourViewLayout</a> (bool bUseMatchingViews=false)</td></tr>
@@ -1873,7 +1877,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a point cloud object to Rhino. Parameters: point_count - [in] number of points in list point_list - [in] array of 3d points pAttributes - [in] (optional) attributes. If NULL, the current default attributes are used. pHistory - [in] (optional) history bReference - [in] true if the point object is from a reference file. Reference objects do not persist in archives. Remarks: This is an easy to use wrapper that creates a new <a class="el" href="class_c_rhino_point_cloud_object.html">CRhinoPointCloudObject</a> and calls <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject</a>. The input point_list is copied and should be deleted by the caller when its no longer needed. See Also: <a class="el" href="class_c_rhino_doc.html#afe28ae3ec23fa0e753d5d9baf7b57682">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#a7898b22890e0436c2fc7a297dc2bb459">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#af0d7704626bc1bd6ec13cc22319c4448">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a8b4ce5764e1200ea4ef5162d5ddb36d0">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#a2edac229a96c617a9377224da656eefd">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#afc65698d06b7e8bc13bcc8fb7c7b8ead">CRhinoDoc::AddBrepObject</a> <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">CRhinoDoc::ReplaceObject</a> CRhinoPointCloudObjectObject::CRhinoPointCloudObjectObject() <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject</a> </p>
+<p>Description: Add a point cloud object to Rhino. Parameters: point_count - [in] number of points in list point_list - [in] array of 3d points /// pAttributes - [in] (optional) attributes. If NULL, the current default attributes are used. pHistory - [in] (optional) history bReference - [in] true if the point object is from a reference file. Reference objects do not persist in archives. Remarks: This is an easy to use wrapper that creates a new <a class="el" href="class_c_rhino_point_cloud_object.html">CRhinoPointCloudObject</a> and calls <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject</a>. The input point_list is copied and should be deleted by the caller when its no longer needed. See Also: <a class="el" href="class_c_rhino_doc.html#afe28ae3ec23fa0e753d5d9baf7b57682">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#a7898b22890e0436c2fc7a297dc2bb459">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#af0d7704626bc1bd6ec13cc22319c4448">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a8b4ce5764e1200ea4ef5162d5ddb36d0">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#a2edac229a96c617a9377224da656eefd">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#afc65698d06b7e8bc13bcc8fb7c7b8ead">CRhinoDoc::AddBrepObject</a> <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">CRhinoDoc::ReplaceObject</a> CRhinoPointCloudObjectObject::CRhinoPointCloudObjectObject() <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject</a> </p>
 
 </div>
 </div>
@@ -2279,8 +2283,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000163">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
-<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000164">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000164">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
 <p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included / bTight: [in] use CRhinoObject::TightBoundingBox in the calculation instead of BoundingBox / bIncludeCustomRenderMeshes: [in] Resolve custom render meshes for all objects and use those / bIncludeCurves: [in] include curves and annotations in the calculation Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
 
 </div>
@@ -3062,6 +3066,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a34e370c5812aaffdc026e00ffe8a939c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e370c5812aaffdc026e00ffe8a939c">&#9670;&nbsp;</a></span>CurrentEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const class <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a>&amp; CRhinoDoc::CurrentEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000171">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead </dd></dl>
+
+</div>
+</div>
 <a id="a76d17c6aa8322b96ff2748e78583541f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76d17c6aa8322b96ff2748e78583541f">&#9670;&nbsp;</a></span>CurrentUndoRecord()</h2>
 
@@ -3286,7 +3308,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000172">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000173">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3712,12 +3734,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find a content by its instance id. Top-level contents that are attached to the document will be checked. Parameters: instanceId - [in] the instance id of the content to find. Returns: A pointer to the const content or null if not found. If you want to modify the content you will need to call BeginChange() to get a non-const reference. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000174">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead </dd></dl>
+<p>Description: Find a content by its instance id. Top-level contents that are attached to the document will be checked. Parameters: instanceId - [in] the instance id of the content to find. Returns: A pointer to the const content or null if not found. If you want to modify the content you will need to call BeginChange() to get a non-const reference. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000175">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead </dd></dl>
 
 </div>
 </div>
 <a id="aaf6e87a46cef888872160e157441cdc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6e87a46cef888872160e157441cdc9">&#9670;&nbsp;</a></span>FindView() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e87a46cef888872160e157441cdc9">&#9670;&nbsp;</a></span>FindView() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3758,7 +3780,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="acf0da05db0e2e9b879afc386ed080056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf0da05db0e2e9b879afc386ed080056">&#9670;&nbsp;</a></span>FindView() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0da05db0e2e9b879afc386ed080056">&#9670;&nbsp;</a></span>FindView() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3785,6 +3807,41 @@ Friends</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000163">Deprecated:</a></b></dt><dd>Should have been const </dd></dl>
+
+</div>
+</div>
+<a id="a71ca3adac6cd198c66fe0c40dc85797a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ca3adac6cd198c66fe0c40dc85797a">&#9670;&nbsp;</a></span>FindView() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDoc::FindView </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a">CRhinoView::ViewTypeFilter</a>&#160;</td>
+          <td class="paramname"><em>view_types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4483,7 +4540,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000168">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -5033,8 +5090,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead const class <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a>&amp; CurrentEnvironment() const; </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000171">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000172">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -6172,7 +6228,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000166">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. </dd></dl>
 
 </div>
 </div>
@@ -6616,7 +6672,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000173">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000174">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7309,7 +7365,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7867,7 +7923,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000168">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -8062,7 +8118,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000166">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -9506,7 +9562,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:31 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

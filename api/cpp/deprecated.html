@@ -68,9 +68,9 @@ $(function() {
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="class_c_rhino_annotation_settings.html#a24e8e5c7827fa74d24d9976865b9ff55">CRhinoAnnotationSettings::DimScale</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000175"></a>Dim scale property moved from document to a per <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> property.  </dd>
-<dt>Member <a class="el" href="class_c_rhino_annotation_settings.html#a3cb98b56467bfa7c6db675ec249f42c6">CRhinoAnnotationSettings::SetDimScale</a>  (double scale)</dt>
 <dd><a class="anchor" id="_deprecated000176"></a>Dim scale property moved from document to a per <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> property.  </dd>
+<dt>Member <a class="el" href="class_c_rhino_annotation_settings.html#a3cb98b56467bfa7c6db675ec249f42c6">CRhinoAnnotationSettings::SetDimScale</a>  (double scale)</dt>
+<dd><a class="anchor" id="_deprecated000177"></a>Dim scale property moved from document to a per <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> property.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_app.html#a9cf435de886076d9843c54fd441aa8f1">CRhinoApp::AddPageToObjectPropertiesDialog</a>  (class <a class="el" href="class_i_rhino_properties_panel_page.html">IRhinoPropertiesPanelPage</a> *pPage, const <a class="el" href="class_c_rhino_plug_in.html">CRhinoPlugIn</a> *pPlugIn)</dt>
 <dd><a class="anchor" id="_deprecated000128"></a>Derive a class from <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> in your DLL to add pages  </dd>
 <dt>Member <a class="el" href="class_c_rhino_app.html#ade96285b7dc6534c9738286bfcc34c76">CRhinoApp::GetDocument</a>  (UINT_PTR doc_sn) const</dt>
@@ -103,7 +103,7 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000140"></a>use overload that takes document serial number  </dd>
 <dt>Member <a class="el" href="class_c_rhino_dib.html#a6d61ed6b3ef240d1ebf3f331edb9b3f0">CRhinoDib::IsNormalMap</a>  (void) const</dt>
 <dd><p class="startdd"><a class="anchor" id="_deprecated000147"></a>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent </p>
-<p class="enddd"><a class="anchor" id="_deprecated000220"></a>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent  </p>
+<p class="enddd"><a class="anchor" id="_deprecated000221"></a>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent  </p>
 </dd>
 <dt>Member <a class="el" href="class_c_rhino_dib.html#a4c020518c6b4bb602139aa0089972bdc">CRhinoDib::ReadFile</a>  (HWND hWnd=nullptr, bool bUseDialogs=true)</dt>
 <dd><a class="anchor" id="_deprecated000145"></a>Use the version that takes doc_serial_number  </dd>
@@ -111,7 +111,7 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000144"></a>Use the version that takes doc_serial_number  </dd>
 <dt>Member <a class="el" href="class_c_rhino_dib.html#aa544165cf6e49a713ec28f48492392b2">CRhinoDib::ReadFromFile</a>  (const wchar_t *lpsFileName)</dt>
 <dd><p class="startdd"><a class="anchor" id="_deprecated000146"></a>Use the version that takes doc_serial_number </p>
-<p class="enddd"><a class="anchor" id="_deprecated000219"></a>Use the version that takes doc_serial_number  </p>
+<p class="enddd"><a class="anchor" id="_deprecated000220"></a>Use the version that takes doc_serial_number  </p>
 </dd>
 <dt>Member <a class="el" href="class_c_rhino_dim_angular.html#a3c80761cd94c74eb2f2f4317724281df">CRhinoDimAngular::Draw</a>  (<a class="el" href="class_c_rhino_display_pipeline.html">CRhinoDisplayPipeline</a> &amp;dp, const <a class="el" href="class_c_rhino_object_attributes.html">CRhinoObjectAttributes</a> attribs) const</dt>
 <dd><a class="anchor" id="_deprecated000148"></a>Do not user this version of Draw  </dd>
@@ -136,117 +136,119 @@ $(function() {
 <dt>Member <a class="el" href="class_c_rhino_display_pipeline___o_g_l.html#a5154e5c5914a464a13bfed821759e742">CRhinoDisplayPipeline_OGL::CRhinoDisplayPipeline_OGL</a>  (HDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;)</dt>
 <dd><a class="anchor" id="_deprecated000159"></a>Use <a class="el" href="class_c_rhino_display_pipeline___o_g_l.html#af6b470afc6933d96703d57030eaefbfc">CRhinoDisplayPipeline_OGL(CRhinoViewport&amp;)</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a0aef9bb62a3843d79ee85b4a072b63b0">CRhinoDoc::BoundingBox</a>  (bool bTight, bool bIncludeCustomRenderMeshes, bool bIncludeCurves) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000163"></a>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </p>
-<p class="enddd"><a class="anchor" id="_deprecated000164"></a>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const;  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000164"></a>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </p>
+<p class="enddd"><a class="anchor" id="_deprecated000165"></a>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const;  </p>
 </dd>
+<dt>Member <a class="el" href="class_c_rhino_doc.html#a34e370c5812aaffdc026e00ffe8a939c">CRhinoDoc::CurrentEnvironment</a>  () const</dt>
+<dd><a class="anchor" id="_deprecated000171"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">CRhinoDoc::Dithering</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000172"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000173"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a515aa218bd32be4da718d0a7aefd6a17">CRhinoDoc::FindContentInstance</a>  (const ON_UUID &amp;instanceId) const</dt>
-<dd><a class="anchor" id="_deprecated000174"></a>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead  </dd>
+<dd><a class="anchor" id="_deprecated000175"></a>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#aaf6e87a46cef888872160e157441cdc9">CRhinoDoc::FindView</a>  (const wchar_t *title, <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, bool include_standard_views=true, bool include_page_views=true)</dt>
 <dd><a class="anchor" id="_deprecated000162"></a>use the overload the takes ViewTypeFilter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_doc.html#acf0da05db0e2e9b879afc386ed080056">CRhinoDoc::FindView</a>  (const wchar_t *title, <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a" title="Filter for view types to list">CRhinoView::ViewTypeFilter</a> view_types)</dt>
+<dd><a class="anchor" id="_deprecated000163"></a>Should have been const  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#ab76d3302567333b63d3bb1cf235ab10c">CRhinoDoc::GetViewList</a>  (ON_SimpleArray&lt; CRhinoView * &gt; &amp;view_list, bool include_standard_views=true, bool include_page_views=true)</dt>
 <dd><a class="anchor" id="_deprecated000160"></a>Use the version that takes a <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a" title="Filter for view types to list">CRhinoView::ViewTypeFilter</a>.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">CRhinoDoc::GroundPlane</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000168"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000169"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">CRhinoDoc::LinearWorkflow</a>  () const</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000170"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead const class <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a>&amp; CurrentEnvironment() const; </p>
-<p class="enddd"><a class="anchor" id="_deprecated000171"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead  </p>
-</dd>
+<dd><a class="anchor" id="_deprecated000172"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#ab345263c41ed8def769b2e05bcc795c6">CRhinoDoc::NewView</a>  (const <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;new_view)</dt>
 <dd><a class="anchor" id="_deprecated000161"></a>use overload that accepts bShowView parameter  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a2999d51f246650497836b0116d42230c">CRhinoDoc::RdkDocument</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000165"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc.  </dd>
+<dd><a class="anchor" id="_deprecated000166"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">CRhinoDoc::RenderChannels</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000173"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000174"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">CRhinoDoc::SafeFrame</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000169"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000170"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">CRhinoDoc::Skylight</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000167"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000168"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">CRhinoDoc::Sun</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000166"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000167"></a>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc_properties.html#a83b88dbc98ebc12c5df68ba7c544e6ee">CRhinoDocProperties::CustomRenderMeshSettings</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000179"></a>use MeshParameters(ON_MeshParameters::custom_render_mesh)  </dd>
+<dd><a class="anchor" id="_deprecated000180"></a>use MeshParameters(ON_MeshParameters::custom_render_mesh)  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc_properties.html#a15da0cb3012123cced2e65ba639f8fda">CRhinoDocProperties::RenderMeshSettings</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000177"></a>use RenderMeshParameters  </dd>
+<dd><a class="anchor" id="_deprecated000178"></a>use RenderMeshParameters  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc_properties.html#ad92aba20e30227ffacefdaaaa2f65b1d">CRhinoDocProperties::SetCustomRenderMeshSettings</a>  (const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000180"></a>use SetCustomRenderMeshParameters  </dd>
+<dd><a class="anchor" id="_deprecated000181"></a>use SetCustomRenderMeshParameters  </dd>
 <dt>Member <a class="el" href="class_c_rhino_doc_properties.html#a7207189c01b575cbcbfc3e631dfac825">CRhinoDocProperties::SetRenderMeshSettings</a>  (const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000178"></a>use SetRenderMeshStyle  </dd>
+<dd><a class="anchor" id="_deprecated000179"></a>use SetRenderMeshStyle  </dd>
 <dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a3309cafd910d3ef886f0f2e088cbc668">CRhinoDrawCallback::BoundingBox</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
-<dd><a class="anchor" id="_deprecated000243"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a3c28a87324b119337690e3652396b527">CRhinoDrawCallback::DrawBackground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
 <dd><a class="anchor" id="_deprecated000244"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#ac779202ac83801e7478fe4e0456d6f3d">CRhinoDrawCallback::DrawDecorations</a>  (<a class="el" href="class_c_rhino_view.html">CRhinoView</a> *pVP, CDC *pDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
-<dd><a class="anchor" id="_deprecated000247"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a2dbd1bf531df019130c7cb0f1b604e4c">CRhinoDrawCallback::DrawEverything</a>  (<a class="el" href="class_c_rhino_view.html">CRhinoView</a> &amp;view, <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> bbox, CDC *pDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
-<dd><a class="anchor" id="_deprecated000248"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a7e7b5e4bb9f7d42714f7d55f7045cd09">CRhinoDrawCallback::DrawForeground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
-<dd><a class="anchor" id="_deprecated000246"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a8f5df2bedb080b37aaf67d4834524df4">CRhinoDrawCallback::DrawMiddleground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
+<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a3c28a87324b119337690e3652396b527">CRhinoDrawCallback::DrawBackground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
 <dd><a class="anchor" id="_deprecated000245"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#ac779202ac83801e7478fe4e0456d6f3d">CRhinoDrawCallback::DrawDecorations</a>  (<a class="el" href="class_c_rhino_view.html">CRhinoView</a> *pVP, CDC *pDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
+<dd><a class="anchor" id="_deprecated000248"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a2dbd1bf531df019130c7cb0f1b604e4c">CRhinoDrawCallback::DrawEverything</a>  (<a class="el" href="class_c_rhino_view.html">CRhinoView</a> &amp;view, <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> bbox, CDC *pDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
+<dd><a class="anchor" id="_deprecated000249"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a7e7b5e4bb9f7d42714f7d55f7045cd09">CRhinoDrawCallback::DrawForeground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
+<dd><a class="anchor" id="_deprecated000247"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_draw_callback.html#a8f5df2bedb080b37aaf67d4834524df4">CRhinoDrawCallback::DrawMiddleground</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;vp, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc)</dt>
+<dd><a class="anchor" id="_deprecated000246"></a>use a custom <a class="el" href="class_c_rhino_display_conduit.html">CRhinoDisplayConduit</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_extrusion_object.html#a9e7798463209fe815e7b43a01d6e5f8a">CRhinoExtrusionObject::BrepProxy</a>  (void) const</dt>
-<dd><a class="anchor" id="_deprecated000181"></a>use BrepReferenceCounter  </dd>
+<dd><a class="anchor" id="_deprecated000182"></a>use BrepReferenceCounter  </dd>
 <dt>Member <a class="el" href="class_c_rhino_file_export_plug_in.html#a93de05bbf56625fad285e2bcd8b1a3ad">CRhinoFileExportPlugIn::OnPaintFileDialogPreviewImage</a>  (const wchar_t *lpsFileName, HWND hWnd)</dt>
-<dd><a class="anchor" id="_deprecated000208"></a>see GetFileDialogPreviewImageAndNotes  </dd>
+<dd><a class="anchor" id="_deprecated000209"></a>see GetFileDialogPreviewImageAndNotes  </dd>
 <dt>Member <a class="el" href="class_c_rhino_file_utilities.html#ad9d260acc54618a895b468940834ef26">CRhinoFileUtilities::FindFile</a>  (int first_place_to_look, const wchar_t *full_path, const wchar_t *relative_path, const wchar_t *parent_path, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;found_file_path)</dt>
-<dd><a class="anchor" id="_deprecated000182"></a>use overload that takes doc_serial_number parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#aaf46cdf82b0e080a494145d38a1bbdd2">CRhinoFileUtilities::FindFile</a>  (const wchar_t *lpsFileName, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
-<dd><a class="anchor" id="_deprecated000184"></a>use overload that takes doc_serial_number parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#ad32ba4bb16f9f41e70a24f90e9dc6576">CRhinoFileUtilities::FindFile</a>  (const char *lpsFileName, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
-<dd><a class="anchor" id="_deprecated000185"></a>use overload that takes doc_serial_number parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#ab5f56b6e24ea57a4db2d3372d33db83d">CRhinoFileUtilities::ModelFolder</a>  (<a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
 <dd><a class="anchor" id="_deprecated000183"></a>use overload that takes doc_serial_number parameter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#aaf46cdf82b0e080a494145d38a1bbdd2">CRhinoFileUtilities::FindFile</a>  (const wchar_t *lpsFileName, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
+<dd><a class="anchor" id="_deprecated000185"></a>use overload that takes doc_serial_number parameter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#ad32ba4bb16f9f41e70a24f90e9dc6576">CRhinoFileUtilities::FindFile</a>  (const char *lpsFileName, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
+<dd><a class="anchor" id="_deprecated000186"></a>use overload that takes doc_serial_number parameter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_file_utilities.html#ab5f56b6e24ea57a4db2d3372d33db83d">CRhinoFileUtilities::ModelFolder</a>  (<a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;result)</dt>
+<dd><a class="anchor" id="_deprecated000184"></a>use overload that takes doc_serial_number parameter  </dd>
 <dt>Member <a class="el" href="class_c_rhino_get_point.html#ac4903855f7c46926affdb3f3174e407e">CRhinoGetPoint::DynamicDraw</a>  (HDC, <a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000186"></a>override <a class="el" href="class_c_rhino_get_point.html#a67f02119a439f5629000d7d7f24d3e1d">DynamicDraw(CRhinoDisplayPipeline&amp;, const ON_3dPoint&amp;)</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000187"></a>override <a class="el" href="class_c_rhino_get_point.html#a67f02119a439f5629000d7d7f24d3e1d">DynamicDraw(CRhinoDisplayPipeline&amp;, const ON_3dPoint&amp;)</a> instead  </dd>
 <dt>Member <a class="el" href="class_c_rhino_grip_object_ex.html#aa921578c87400b580eb11f3d373c98c5">CRhinoGripObjectEx::AddDragConstraints</a>  (class <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a> &amp;gp) const override</dt>
-<dd><a class="anchor" id="_deprecated000210"></a>Use <a class="el" href="class_c_rhino_grip_object.html">CRhinoGripObject</a> in place of <a class="el" href="class_c_rhino_grip_object_ex.html">CRhinoGripObjectEx</a>  </dd>
+<dd><a class="anchor" id="_deprecated000211"></a>Use <a class="el" href="class_c_rhino_grip_object.html">CRhinoGripObject</a> in place of <a class="el" href="class_c_rhino_grip_object_ex.html">CRhinoGripObjectEx</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_group.html#a733444678bca9667c097d87b136510c7">CRhinoGroup::IsReference</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000188"></a>use <a class="el" href="class_o_n___model_component.html#a1f12e6d4538313b52c69832428131215">CRhinoGroup::IsReferenceComponent()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000189"></a>use <a class="el" href="class_o_n___model_component.html#a1f12e6d4538313b52c69832428131215">CRhinoGroup::IsReferenceComponent()</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_gumball.html#abc8d70613154c44b8305c942e38c12b4">CRhinoGumball::CRhinoGumball</a>  (<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8" title="Defines the current working space.">ON::active_space</a>)</dt>
-<dd><a class="anchor" id="_deprecated000189"></a>Gumball should be created with the view type <a class="el" href="class_c_rhino_gumball.html#abc8d70613154c44b8305c942e38c12b4">CRhinoGumball()</a>;  </dd>
+<dd><a class="anchor" id="_deprecated000190"></a>Gumball should be created with the view type <a class="el" href="class_c_rhino_gumball.html#abc8d70613154c44b8305c942e38c12b4">CRhinoGumball()</a>;  </dd>
 <dt>Member <a class="el" href="class_c_rhino_gumball_colors.html#ac64d98859acaf9c694813616799523d9">CRhinoGumballColors::SetToFactoryColors</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000133"></a>use <a class="el" href="class_c_rhino_gumball_colors.html#affa339fe60dad56c2cbbf07c70b193c0">CRhinoGumballColors::Reset</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_gumball_display_conduit.html#a6186afe67788ab30a351ad178666ffe8">CRhinoGumballDisplayConduit::CRhinoGumballDisplayConduit</a>  (<a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8" title="Defines the current working space.">ON::active_space</a>, <a class="el" href="struct_c_support_channels.html">CSupportChannels</a> channel_mask=<a class="el" href="struct_c_support_channels.html#a8d62d1a6e8a7368b99ea459a8f95107f">CSupportChannels::SC_CALCBOUNDINGBOX</a>|CSupportChannels::SC_DRAWOVERLAY)</dt>
-<dd><a class="anchor" id="_deprecated000190"></a>Use the version that takes a <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">CRhinoView::view_type</a> <a class="el" href="class_c_rhino_gumball_display_conduit.html">CRhinoGumballDisplayConduit</a>(<a class="el" href="struct_c_support_channels.html">CSupportChannels</a> channel_mask = <a class="el" href="struct_c_support_channels.html#a8d62d1a6e8a7368b99ea459a8f95107f">CSupportChannels::SC_CALCBOUNDINGBOX</a> | <a class="el" href="struct_c_support_channels.html#af66659e2b2e18717de4f4a13fb023271">CSupportChannels::SC_DRAWOVERLAY</a>);  </dd>
+<dd><a class="anchor" id="_deprecated000191"></a>Use the version that takes a <a class="el" href="class_c_rhino_view.html#aebe94c94ba76a826c1d9d8b284795955">CRhinoView::view_type</a> <a class="el" href="class_c_rhino_gumball_display_conduit.html">CRhinoGumballDisplayConduit</a>(<a class="el" href="struct_c_support_channels.html">CSupportChannels</a> channel_mask = <a class="el" href="struct_c_support_channels.html#a8d62d1a6e8a7368b99ea459a8f95107f">CSupportChannels::SC_CALCBOUNDINGBOX</a> | <a class="el" href="struct_c_support_channels.html#af66659e2b2e18717de4f4a13fb023271">CSupportChannels::SC_DRAWOVERLAY</a>);  </dd>
 <dt>Member <a class="el" href="class_c_rhino_gumball_sizes.html#a6408ce1148bf44c217d44783acfe8493">CRhinoGumballSizes::SetToFactorySizes</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000134"></a>use <a class="el" href="class_c_rhino_gumball_sizes.html#adf5eec08cb6b9e3972d72debef967bd2">CRhinoGumballSizes::Reset</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_hatch_pattern_table.html#ada727d214f64b69dc29064664ee487fa">CRhinoHatchPatternTable::FindHatchPattern</a>  (const wchar_t *name, bool bIgnoreDeleted=true) const</dt>
-<dd><a class="anchor" id="_deprecated000192"></a>use <a class="el" href="class_c_rhino_hatch_pattern_table.html#a0ff68e0a6cd2ccb314aef1a410957020">CRhinoHatchPatternTable::HatchPatternFromName()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000193"></a>use <a class="el" href="class_c_rhino_hatch_pattern_table.html#a0ff68e0a6cd2ccb314aef1a410957020">CRhinoHatchPatternTable::HatchPatternFromName()</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_layer_table.html#a391547d4dbc07491243b966842ba7cc3">CRhinoLayerTable::FindLayerFromUniqueName</a>  (const wchar_t *short_name, bool bIgnoreDeletedLayers=true) const</dt>
-<dd><a class="anchor" id="_deprecated000196"></a>use overload that accepts not_found_return_value and multiple_found_return_value parameters  </dd>
+<dd><a class="anchor" id="_deprecated000197"></a>use overload that accepts not_found_return_value and multiple_found_return_value parameters  </dd>
 <dt>Member <a class="el" href="class_c_rhino_object.html#a770e3de65f3523ff5e9abac4594e8e03">CRhinoObject::DestroyMeshes</a>  (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type, bool bDeleteMeshes)</dt>
-<dd><a class="anchor" id="_deprecated000202"></a>bDeleteMeshes = false is no longer supported - override this function if you are implementing <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a>, but ignore the bDeleteMeshes parameter. Call the function below.  </dd>
+<dd><a class="anchor" id="_deprecated000203"></a>bDeleteMeshes = false is no longer supported - override this function if you are implementing <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a>, but ignore the bDeleteMeshes parameter. Call the function below.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_object.html#a9991ab7e9e72bbc4273394336d106766">CRhinoObject::Draw</a>  (<a class="el" href="class_c_rhino_viewport.html">CRhinoViewport</a> &amp;) const</dt>
-<dd><a class="anchor" id="_deprecated000201"></a>use Draw function that takes a display pipeline  </dd>
+<dd><a class="anchor" id="_deprecated000202"></a>use Draw function that takes a display pipeline  </dd>
 <dt>Member <a class="el" href="class_c_rhino_obj_ref.html#ab0c4588e60489894c10e47c3e0587f9c">CRhinoObjRef::CRhinoObjRef</a>  (const UUID &amp;object_uuid)</dt>
-<dd><a class="anchor" id="_deprecated000203"></a>Use the form that takes a document serial number and object Id  </dd>
+<dd><a class="anchor" id="_deprecated000204"></a>Use the form that takes a document serial number and object Id  </dd>
 <dt>Member <a class="el" href="class_c_rhino_obj_ref.html#a2fa656274dc766e38bf552bf971fb1b4">CRhinoObjRef::CRhinoObjRef</a>  (const <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000204"></a>Use the form that takes a document serial number and <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a>  </dd>
+<dd><a class="anchor" id="_deprecated000205"></a>Use the form that takes a document serial number and <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_obj_ref.html#abba736c777e0ea6a47b2b3d5e4039c24">CRhinoObjRef::CRhinoObjRef</a>  (class <a class="el" href="class_c_rhino_poly_edge.html">CRhinoPolyEdge</a> *polyedge, <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *attributes)</dt>
-<dd><a class="anchor" id="_deprecated000205"></a>Use the form that takes a document serial number  </dd>
+<dd><a class="anchor" id="_deprecated000206"></a>Use the form that takes a document serial number  </dd>
 <dt>Member <a class="el" href="class_c_rhino_plug_in.html#af92ec0b76bc59213412f6e081445f46c">CRhinoPlugIn::AddPagesToObjectPropertiesDialog</a>  (<a class="el" href="class_c_rhino_properties_panel_page_collection.html">CRhinoPropertiesPanelPageCollection</a> &amp;collection)</dt>
-<dd><a class="anchor" id="_deprecated000206"></a>Use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead.  </dd>
+<dd><a class="anchor" id="_deprecated000207"></a>Use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_plug_in.html#a7777b5cd89b8a1527618bf31659f50ed">CRhinoPlugIn::GetLicense</a>  (unsigned int capabilities, const wchar_t *text_mask)</dt>
-<dd><a class="anchor" id="_deprecated000207"></a>Call SetLicenseCapabilities, then <a class="el" href="class_c_rhino_plug_in.html#a59427a6718017d40179c29a10af0ba8a">GetLicense(void)</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000208"></a>Call SetLicenseCapabilities, then <a class="el" href="class_c_rhino_plug_in.html#a59427a6718017d40179c29a10af0ba8a">GetLicense(void)</a> instead.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_plug_in_record.html#ae55ca5f790d87e2105a17b8dcaf6b5c5">CRhinoPlugInRecord::PreviousPlugInLoadTime</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000209"></a>Not used in Rhino  </dd>
+<dd><a class="anchor" id="_deprecated000210"></a>Not used in Rhino  </dd>
 <dt>Member <a class="el" href="class_c_rhino_print_info.html#ab8ce3d51bd81aaeb4c09d0973fd06528">CRhinoPrintInfo::DrawToSingleDib</a>  (<a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;full_dib, bool force_GDI_pipeline=false, bool bForPrinting=true) const</dt>
-<dd><a class="anchor" id="_deprecated000211"></a>Use the DrawToSingleDib2  </dd>
+<dd><a class="anchor" id="_deprecated000212"></a>Use the DrawToSingleDib2  </dd>
 <dt>Member <a class="el" href="class_c_rhino_render_overlays.html#a7477285722ac7c5a58a9a35379cc0b99">CRhinoRenderOverlays::CRhinoRenderOverlays</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000215"></a>use <a class="el" href="class_c_rhino_render_overlays.html#aa8f73b464e79c7b37f09aa3cb3efc52f">CRhinoRenderOverlays::CRhinoRenderOverlays(const CRhinoDoc&amp;)</a>  </dd>
+<dd><a class="anchor" id="_deprecated000216"></a>use <a class="el" href="class_c_rhino_render_overlays.html#aa8f73b464e79c7b37f09aa3cb3efc52f">CRhinoRenderOverlays::CRhinoRenderOverlays(const CRhinoDoc&amp;)</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_sdk_render.html#a348496301c445ce6041b74af104d0fc3">CRhinoSdkRender::~CRhinoSdkRender</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000212"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render.html">CRhinoSdkRender( CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
+<dd><a class="anchor" id="_deprecated000213"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render.html">CRhinoSdkRender( CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
 <dt>Member <a class="el" href="class_c_rhino_sdk_render_ex2.html#a94b6a316e64acd9b8505d1eb449622c6">CRhinoSdkRenderEx2::NewRenderFrameEx</a>  (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDocument)=0</dt>
-<dd><a class="anchor" id="_deprecated000214"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render_ex2.html">CRhinoSdkRenderEx2(CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
+<dd><a class="anchor" id="_deprecated000215"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render_ex2.html">CRhinoSdkRenderEx2(CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
 <dt>Member <a class="el" href="class_c_rhino_sdk_render_ex.html#ab3801235b985c02944b35c5ca40037cf">CRhinoSdkRenderEx::~CRhinoSdkRenderEx</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000213"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render_ex.html">CRhinoSdkRenderEx( CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
+<dd><a class="anchor" id="_deprecated000214"></a>Use <a class="el" href="class_c_rh_rdk_sdk_render.html">CRhRdkSdkRender</a> instead <a class="el" href="class_c_rhino_sdk_render_ex.html">CRhinoSdkRenderEx( CRhinoDoc&amp; doc, CRhinoRenderPlugIn* plugin)</a>;  </dd>
 <dt>Member <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">CRhinoSubDDisplay::ContentSerialNumber</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000216"></a>OBSOLETE. <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">ContentSerialNumber()</a> always returns 0  </dd>
+<dd><a class="anchor" id="_deprecated000217"></a>OBSOLETE. <a class="el" href="class_c_rhino_sub_d_display.html#a7d217bce068dc94397418939afe6f75b">ContentSerialNumber()</a> always returns 0  </dd>
 <dt>Member <a class="el" href="class_c_rhino_sub_d_object.html#a735da2cc11931a3145236a859d9bc868">CRhinoSubDObject::DynamicDisplayContentSerialNumber</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000217"></a>OBSOLETE: Always returns 0.  </dd>
-<dt>Member <a class="el" href="class_c_rhino_sub_d_object.html#ac0ca45158c9a8b843501f02b269e29c9">CRhinoSubDObject::StaticDisplayContentSerialNumber</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000218"></a>OBSOLETE: Always returns 0.  </dd>
+<dt>Member <a class="el" href="class_c_rhino_sub_d_object.html#ac0ca45158c9a8b843501f02b269e29c9">CRhinoSubDObject::StaticDisplayContentSerialNumber</a>  () const</dt>
+<dd><a class="anchor" id="_deprecated000219"></a>OBSOLETE: Always returns 0.  </dd>
 <dt>Member <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#aeadad39bea5a355844210c73f2326a5a">CRhinoTabbedDockBarDialog::DockBarForTab</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidPanelId)</dt>
 <dd><a class="anchor" id="_deprecated000143"></a><a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#aeadad39bea5a355844210c73f2326a5a">CRhinoTabbedDockBarDialog::DockBarForTab</a> is obsolete. Use multi-doc capable <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#ac368a0352f9c62d1c1f8e0bc91d4be69">CRhinoTabbedDockBarDialog::DockBarsForTab</a> (s after Bar).  </dd>
 <dt>Member <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#a527a95f2843c12c442787c5a60d287df">CRhinoTabbedDockBarDialog::OnShowDockBar</a>  (bool bShowDockBar)</dt>
@@ -254,147 +256,147 @@ $(function() {
 <dt>Member <a class="el" href="class_c_rhino_tabbed_dock_bar_dialog.html#a2b3c90ea77ba868c88782a7c9cac2e19">CRhinoTabbedDockBarDialog::ShowDockbarTab</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidPanelId, bool bShow, bool bMakeSelected, const ON_UUID *uuidDockBar)</dt>
 <dd><a class="anchor" id="_deprecated000142"></a>Use the version with bMakeSelected static void ShowDockbarTab(const CRhinoDoc&amp; doc, const ON_UUID&amp; uuidPanelId, bool bShow, const ON_UUID* uuidDockBar);  </dd>
 <dt>Member <a class="el" href="class_c_rhino_ui_dock_bar.html#a88b84b608330eb448cd1c20be3891b42">CRhinoUiDockBar::OnShowDockBar</a>  (bool show)</dt>
-<dd><a class="anchor" id="_deprecated000221"></a>Replaced by CRhinoUiDockBar::OnShowDockBar(ShowEventArgs)  </dd>
+<dd><a class="anchor" id="_deprecated000222"></a>Replaced by CRhinoUiDockBar::OnShowDockBar(ShowEventArgs)  </dd>
 <dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#ad86ece31606b7d21bbd614c73f21a987">CRhinoUiLinetypeListCtrl::GetAddedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
-<dd><a class="anchor" id="_deprecated000228"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#a2c14db8fd9a49ba0effaa5ed9050a1ce">CRhinoUiLinetypeListCtrl::GetAllLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
-<dd><a class="anchor" id="_deprecated000231"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#a3b8f15f7a61201d91af720456123c904">CRhinoUiLinetypeListCtrl::GetDeletedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
 <dd><a class="anchor" id="_deprecated000229"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
-<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#ab9928c4c43d6b2049425861d8931ba78">CRhinoUiLinetypeListCtrl::GetModifiedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
+<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#a2c14db8fd9a49ba0effaa5ed9050a1ce">CRhinoUiLinetypeListCtrl::GetAllLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
+<dd><a class="anchor" id="_deprecated000232"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#a3b8f15f7a61201d91af720456123c904">CRhinoUiLinetypeListCtrl::GetDeletedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
 <dd><a class="anchor" id="_deprecated000230"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
+<dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#ab9928c4c43d6b2049425861d8931ba78">CRhinoUiLinetypeListCtrl::GetModifiedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
+<dd><a class="anchor" id="_deprecated000231"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
 <dt>Member <a class="el" href="class_c_rhino_ui_linetype_list_ctrl.html#ab701d1be6143a9bbbc30fb6014ae3906">CRhinoUiLinetypeListCtrl::GetSelectedLinetypes</a>  (<a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; ON_Linetype &gt;</a> &amp;linetypes)</dt>
-<dd><a class="anchor" id="_deprecated000227"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
+<dd><a class="anchor" id="_deprecated000228"></a>use version with <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
 <dt>Member <a class="el" href="class_c_rhino_view.html#a062c6acfc69e1bc3faa9315387d22bc9">CRhinoView::MFCViewEx</a>  (void)</dt>
-<dd><a class="anchor" id="_deprecated000241"></a>Do not call - use CRhViewBase::FromRhinoView  </dd>
-<dt>Member <a class="el" href="class_c_rhino_view.html#a2be4dd466f02105661bb87e112b2b727">CRhinoView::MFCViewEx</a>  (void) const</dt>
 <dd><a class="anchor" id="_deprecated000242"></a>Do not call - use CRhViewBase::FromRhinoView  </dd>
+<dt>Member <a class="el" href="class_c_rhino_view.html#a2be4dd466f02105661bb87e112b2b727">CRhinoView::MFCViewEx</a>  (void) const</dt>
+<dd><a class="anchor" id="_deprecated000243"></a>Do not call - use CRhViewBase::FromRhinoView  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a292660931931502754e76739245d4532">CRhinoViewport::DrawActivePoint</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000271"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a9cd0b50b3b018e38976e4db05d9b3474">CRhinoDisplayPipeline::DrawPoint</a>  </dd>
+<dd><a class="anchor" id="_deprecated000272"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a9cd0b50b3b018e38976e4db05d9b3474">CRhinoDisplayPipeline::DrawPoint</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a6fc2bae82c2e52a7150c94287fe99d00">CRhinoViewport::DrawArc</a>  (const <a class="el" href="class_o_n___arc.html">ON_Arc</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000256"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a945c403d765a0a858673ffd481fe1d62">CRhinoDisplayPipeline::DrawArc</a>  </dd>
+<dd><a class="anchor" id="_deprecated000257"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a945c403d765a0a858673ffd481fe1d62">CRhinoDisplayPipeline::DrawArc</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a9b6fdddb3d046ffce001870e85373486">CRhinoViewport::DrawBezier</a>  (const <a class="el" href="class_o_n___bezier_curve.html">ON_BezierCurve</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000273"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a657b3efecb2cb5ab32cf85ef06c0a8fa">CRhinoDisplayPipeline::DrawBezier</a>  </dd>
+<dd><a class="anchor" id="_deprecated000274"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a657b3efecb2cb5ab32cf85ef06c0a8fa">CRhinoDisplayPipeline::DrawBezier</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a0e7afb9e4bd6e147c3865f77d5d1e338">CRhinoViewport::DrawBezierCage</a>  (const <a class="el" href="class_o_n___bezier_surface.html">ON_BezierSurface</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000278"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a53cc2773b09b5a6eee95ad45282bbb3c">CRhinoDisplayPipeline::DrawBezierCage</a>  </dd>
+<dd><a class="anchor" id="_deprecated000279"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a53cc2773b09b5a6eee95ad45282bbb3c">CRhinoDisplayPipeline::DrawBezierCage</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a28bc361d38f7fef0e1e515d9f7210215">CRhinoViewport::DrawBezierSurface</a>  (const <a class="el" href="class_o_n___bezier_surface.html">ON_BezierSurface</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000276"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a2f03b3b64253220d668070f052011722">CRhinoDisplayPipeline::DrawBezierSurface</a>  </dd>
+<dd><a class="anchor" id="_deprecated000277"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a2f03b3b64253220d668070f052011722">CRhinoDisplayPipeline::DrawBezierSurface</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ad5ee68567abea0de55a2339f5c3e755f">CRhinoViewport::DrawBoundingBox</a>  (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000272"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a261334c4c894ac89e682f352e21caaca">CRhinoDisplayPipeline::DrawBox</a>  </dd>
+<dd><a class="anchor" id="_deprecated000273"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a261334c4c894ac89e682f352e21caaca">CRhinoDisplayPipeline::DrawBox</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a598750d4a0f3a53191c7426b052ed9a7">CRhinoViewport::DrawBox</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *box_corners)</dt>
-<dd><a class="anchor" id="_deprecated000263"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a261334c4c894ac89e682f352e21caaca">CRhinoDisplayPipeline::DrawBox</a>  </dd>
+<dd><a class="anchor" id="_deprecated000264"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a261334c4c894ac89e682f352e21caaca">CRhinoDisplayPipeline::DrawBox</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a6ff570d9f078740d148cf3f1e24ff803">CRhinoViewport::DrawBrep</a>  (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000279"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ac432930a65baa4a91e08ef0e5741a957">CRhinoDisplayPipeline::DrawBrep</a>  </dd>
+<dd><a class="anchor" id="_deprecated000280"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ac432930a65baa4a91e08ef0e5741a957">CRhinoDisplayPipeline::DrawBrep</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a47d099d931c80df82e6daf27485f0ed5">CRhinoViewport::DrawCircle</a>  (const <a class="el" href="class_o_n___circle.html">ON_Circle</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000257"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a1058ee6b4d5fb9061984339bc97a9a1f">CRhinoDisplayPipeline::DrawCircle</a>  </dd>
+<dd><a class="anchor" id="_deprecated000258"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a1058ee6b4d5fb9061984339bc97a9a1f">CRhinoDisplayPipeline::DrawCircle</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a28d0e0b25f8c1c3264cae0d04768263f">CRhinoViewport::DrawColor</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000250"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aecec99befe95a8fe9ea842d20fb5e486">CRhinoDisplayPipeline::ObjectColor</a>  </dd>
+<dd><a class="anchor" id="_deprecated000251"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aecec99befe95a8fe9ea842d20fb5e486">CRhinoDisplayPipeline::ObjectColor</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ae4cbd93785380e21da07dfa72dbd4c71">CRhinoViewport::DrawCone</a>  (const <a class="el" href="class_o_n___cone.html">ON_Cone</a> &amp;cone)</dt>
-<dd><a class="anchor" id="_deprecated000262"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a67d25cab89f8de55ecdb8cdc5605981e">CRhinoDisplayPipeline::DrawCone</a>  </dd>
+<dd><a class="anchor" id="_deprecated000263"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a67d25cab89f8de55ecdb8cdc5605981e">CRhinoDisplayPipeline::DrawCone</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ab93663a06d084ed3bcb78f60b6bda734">CRhinoViewport::DrawConstructionPlane</a>  (const <a class="el" href="class_o_n__3dm_construction_plane.html">ON_3dmConstructionPlane</a> &amp;cplane, BOOL32 bShowConstructionGrid, BOOL32 bShowConstructionAxes, BOOL32 bShowConstructionZAxis, COLORREF thin_line_color=ON_UNSET_COLOR, COLORREF thick_line_color=ON_UNSET_COLOR, COLORREF grid_x_axis_color=ON_UNSET_COLOR, COLORREF grid_y_axis_color=ON_UNSET_COLOR)</dt>
-<dd><a class="anchor" id="_deprecated000252"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a5a97e9077e8a2c206f01cadec8d0fc55">CRhinoDisplayPipeline::DrawConstructionPlane</a>  </dd>
+<dd><a class="anchor" id="_deprecated000253"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a5a97e9077e8a2c206f01cadec8d0fc55">CRhinoDisplayPipeline::DrawConstructionPlane</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a310736ee8ddb9d400f9224f97fd5bc15">CRhinoViewport::DrawCurve</a>  (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve)</dt>
-<dd><a class="anchor" id="_deprecated000265"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aeb76aa237beb4b6daf1923b7787cb31e">CRhinoDisplayPipeline::DrawCurve</a>  </dd>
+<dd><a class="anchor" id="_deprecated000266"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aeb76aa237beb4b6daf1923b7787cb31e">CRhinoDisplayPipeline::DrawCurve</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#aa7c44984daa4af1edea4d669773f5fda">CRhinoViewport::DrawCylinder</a>  (const <a class="el" href="class_o_n___cylinder.html">ON_Cylinder</a> &amp;cylinder)</dt>
-<dd><a class="anchor" id="_deprecated000261"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a2ebc2166c7a54beba218e4b4b41f4c48">CRhinoDisplayPipeline::DrawCylinder</a>  </dd>
+<dd><a class="anchor" id="_deprecated000262"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a2ebc2166c7a54beba218e4b4b41f4c48">CRhinoDisplayPipeline::DrawCylinder</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a8bfcea47c81609d2a652e9b33879ad64">CRhinoViewport::DrawDirectionArrow</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *head_point=NULL)</dt>
-<dd><a class="anchor" id="_deprecated000287"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a715b8ac1c3efdead51d851578e562fba">CRhinoDisplayPipeline::DrawDirectionArrow</a>  </dd>
+<dd><a class="anchor" id="_deprecated000288"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a715b8ac1c3efdead51d851578e562fba">CRhinoDisplayPipeline::DrawDirectionArrow</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a5bcd77cbf909a57d0e997ddecc26c3b2">CRhinoViewport::DrawDot</a>  (int screen_x, int screen_y, const wchar_t *text=NULL, COLORREF dot_color=<a class="el" href="group___r_d_k.html#gga55db026e4b44abc83b38464fd5a4e58aa889574aebacda6bfd3e534e2b49b8028">RGB(0, 0, 0)</a>, COLORREF text_color=ON_UNSET_COLOR)</dt>
-<dd><a class="anchor" id="_deprecated000282"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ad0c17af5b9b8f6da5316bb9e29d559bb">CRhinoDisplayPipeline::DrawDot</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_viewport.html#a83bb87d918838fd1db97d31801a2a798">CRhinoViewport::DrawDot</a>  (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, const wchar_t *text=NULL, COLORREF dot_color=<a class="el" href="group___r_d_k.html#gga55db026e4b44abc83b38464fd5a4e58aa889574aebacda6bfd3e534e2b49b8028">RGB(0, 0, 0)</a>, COLORREF text_color=ON_UNSET_COLOR)</dt>
 <dd><a class="anchor" id="_deprecated000283"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ad0c17af5b9b8f6da5316bb9e29d559bb">CRhinoDisplayPipeline::DrawDot</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_viewport.html#a83bb87d918838fd1db97d31801a2a798">CRhinoViewport::DrawDot</a>  (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, const wchar_t *text=NULL, COLORREF dot_color=<a class="el" href="group___r_d_k.html#gga55db026e4b44abc83b38464fd5a4e58aa889574aebacda6bfd3e534e2b49b8028">RGB(0, 0, 0)</a>, COLORREF text_color=ON_UNSET_COLOR)</dt>
+<dd><a class="anchor" id="_deprecated000284"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ad0c17af5b9b8f6da5316bb9e29d559bb">CRhinoDisplayPipeline::DrawDot</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a0fd7d55b290942ce0b61edf010c637ff">CRhinoViewport::DrawDottedLine</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000255"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a804649b1672d0c49f99ce812c206ca99">CRhinoDisplayPipeline::DrawDottedLine</a>  </dd>
+<dd><a class="anchor" id="_deprecated000256"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a804649b1672d0c49f99ce812c206ca99">CRhinoDisplayPipeline::DrawDottedLine</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a02ecf8c194c3cc67a4056601644b98f6">CRhinoViewport::DrawExtrusion</a>  (const <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000280"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a1313efd479504cba10854147e1db8514">CRhinoDisplayPipeline::DrawExtrusion</a>  </dd>
+<dd><a class="anchor" id="_deprecated000281"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a1313efd479504cba10854147e1db8514">CRhinoDisplayPipeline::DrawExtrusion</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a7ffa81df7f33694250f8b9af5f18320e">CRhinoViewport::DrawFalseColorMesh</a>  (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, bool bCullCW, COLORREF edge_color=ON_UNSET_COLOR)</dt>
-<dd><a class="anchor" id="_deprecated000270"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
+<dd><a class="anchor" id="_deprecated000271"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#aee3281dddee30d82ffd7f10404634f20">CRhinoViewport::DrawLight</a>  (const <a class="el" href="class_o_n___light.html">ON_Light</a> &amp;light, COLORREF wireframe_color)</dt>
-<dd><a class="anchor" id="_deprecated000264"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a156f5cd5dcae937735e1419631d084d1">CRhinoDisplayPipeline::DrawLight</a>  </dd>
+<dd><a class="anchor" id="_deprecated000265"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a156f5cd5dcae937735e1419631d084d1">CRhinoDisplayPipeline::DrawLight</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ae659d3552346d846b0c7bd482136494c">CRhinoViewport::DrawLine</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;)</dt>
-<dd><a class="anchor" id="_deprecated000254"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a889f11df8ee6f2bb96073f980b72381c">CRhinoDisplayPipeline::DrawLine</a>  </dd>
+<dd><a class="anchor" id="_deprecated000255"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a889f11df8ee6f2bb96073f980b72381c">CRhinoDisplayPipeline::DrawLine</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a858b2be5116e20a2baef31ac974c3988">CRhinoViewport::DrawNurbsCage</a>  (const <a class="el" href="class_o_n___nurbs_cage.html">ON_NurbsCage</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000277"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ab0e30e4c9871e73f39660cadc0b5bbd3">CRhinoDisplayPipeline::DrawNurbsCage</a>  </dd>
+<dd><a class="anchor" id="_deprecated000278"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ab0e30e4c9871e73f39660cadc0b5bbd3">CRhinoDisplayPipeline::DrawNurbsCage</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a4f5cc91f8cad850a3f4e84943e4ee5cf">CRhinoViewport::DrawNurbsCurve</a>  (const <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;nurbs_curve)</dt>
-<dd><a class="anchor" id="_deprecated000266"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a256035f7fa2e67bfc4e9ce457e95513f">CRhinoDisplayPipeline::DrawNurbsCurve</a>  </dd>
+<dd><a class="anchor" id="_deprecated000267"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a256035f7fa2e67bfc4e9ce457e95513f">CRhinoDisplayPipeline::DrawNurbsCurve</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a7765bff7bec53471e52656ba4057a6c6">CRhinoViewport::DrawNurbsSurface</a>  (const <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000275"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a38d59feb1b5422d34bf8c6a031c733fd">CRhinoDisplayPipeline::DrawNurbsSurface</a>  </dd>
+<dd><a class="anchor" id="_deprecated000276"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a38d59feb1b5422d34bf8c6a031c733fd">CRhinoDisplayPipeline::DrawNurbsSurface</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a7814000894df5fd5c4260415719223bb">CRhinoViewport::DrawPoint</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> *=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000253"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a9cd0b50b3b018e38976e4db05d9b3474">CRhinoDisplayPipeline::DrawPoint</a>  </dd>
+<dd><a class="anchor" id="_deprecated000254"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a9cd0b50b3b018e38976e4db05d9b3474">CRhinoDisplayPipeline::DrawPoint</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a8a3d8841b3bc95ed8b11cd0346ec9cd3">CRhinoViewport::DrawPointCloud</a>  (int point_count, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *points, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;origin)</dt>
-<dd><a class="anchor" id="_deprecated000258"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a838945bd4f7a9b37b4e38fecae055c7b">CRhinoDisplayPipeline::DrawPoints</a>  </dd>
+<dd><a class="anchor" id="_deprecated000259"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a838945bd4f7a9b37b4e38fecae055c7b">CRhinoDisplayPipeline::DrawPoints</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a50bf31e36a8f12ffdf3695144081a598">CRhinoViewport::DrawRenderPreviewMesh</a>  (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, const <a class="el" href="class_c_rhino_material.html">CRhinoMaterial</a> &amp;render_material, BOOL32 bCullCW, BOOL32 bHighlighted)</dt>
-<dd><a class="anchor" id="_deprecated000269"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
+<dd><a class="anchor" id="_deprecated000270"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a22eb7306eb8f435402fd676ed4d10745">CRhinoViewport::DrawRhinoObject</a>  (const <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> *, <a class="el" href="class_o_n___xform.html">ON_Xform</a> xform, <a class="el" href="class_o_n___color.html">ON_Color</a> color=ON_UNSET_COLOR)</dt>
-<dd><a class="anchor" id="_deprecated000281"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#afaf8d16360a5c837cc0be234fb008be6">CRhinoDisplayPipeline::DrawObject</a>  </dd>
+<dd><a class="anchor" id="_deprecated000282"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#afaf8d16360a5c837cc0be234fb008be6">CRhinoDisplayPipeline::DrawObject</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a96fcc5319761c5f7bc51644b0f5733eb">CRhinoViewport::DrawShadedMesh</a>  (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, bool bCullCW, bool bFlatShade, bool bHighlighted)</dt>
-<dd><a class="anchor" id="_deprecated000268"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
+<dd><a class="anchor" id="_deprecated000269"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">CRhinoDisplayPipeline::DrawShadedMesh</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#acbf12856e00e9b20eef5aa00a693be3e">CRhinoViewport::DrawSphere</a>  (const <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;sphere)</dt>
-<dd><a class="anchor" id="_deprecated000259"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ac8975a1ec9fbc4e2e293f4610322e929">CRhinoDisplayPipeline::DrawSphere</a>  </dd>
+<dd><a class="anchor" id="_deprecated000260"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#ac8975a1ec9fbc4e2e293f4610322e929">CRhinoDisplayPipeline::DrawSphere</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a3332b3478d3022d849d29712f0d1fa99">CRhinoViewport::DrawString</a>  (const wchar_t *string, int slength, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;point, int bMiddle=false, int rotation=0, int height=12, const wchar_t *fontface=L"Arial")</dt>
-<dd><a class="anchor" id="_deprecated000284"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aff10032caae98e34c5732b8fd4463c0b" title="void DrawString(const ON_TextContent&amp; text, ON_Color color, bool drawforward, CRhinoCacheHandle* cach...">CRhinoDisplayPipeline::DrawString</a>  </dd>
+<dd><a class="anchor" id="_deprecated000285"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#aff10032caae98e34c5732b8fd4463c0b" title="void DrawString(const ON_TextContent&amp; text, ON_Color color, bool drawforward, CRhinoCacheHandle* cach...">CRhinoDisplayPipeline::DrawString</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a463e86db113e171438d8f12b90564bae">CRhinoViewport::DrawSurface</a>  (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;, int display_density=1)</dt>
-<dd><a class="anchor" id="_deprecated000274"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a7849f28058857084db4df7c8f779702e">CRhinoDisplayPipeline::DrawSurface</a>  </dd>
+<dd><a class="anchor" id="_deprecated000275"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a7849f28058857084db4df7c8f779702e">CRhinoDisplayPipeline::DrawSurface</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a2bae2bd437665f95d81cf0efd4c0834e">CRhinoViewport::DrawTangentBar</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *start_point=NULL, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *end_point=NULL)</dt>
-<dd><a class="anchor" id="_deprecated000288"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a83ab3530099ba4853f18ea8ad69ba100">CRhinoDisplayPipeline::DrawTangentBar</a>  </dd>
+<dd><a class="anchor" id="_deprecated000289"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a83ab3530099ba4853f18ea8ad69ba100">CRhinoDisplayPipeline::DrawTangentBar</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#abc6776753851ec11fc7ba0f07632502e">CRhinoViewport::DrawTorus</a>  (const <a class="el" href="class_o_n___torus.html">ON_Torus</a> &amp;torus)</dt>
-<dd><a class="anchor" id="_deprecated000260"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a08dc87dbfa4828b3fc5c3244910fdf46">CRhinoDisplayPipeline::DrawTorus</a>  </dd>
+<dd><a class="anchor" id="_deprecated000261"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a08dc87dbfa4828b3fc5c3244910fdf46">CRhinoDisplayPipeline::DrawTorus</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#a94f01fd8c03619181c59568b678e6235">CRhinoViewport::DrawTriangle</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> corners[3])</dt>
-<dd><a class="anchor" id="_deprecated000285"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a347fb6cd3ff776df5d20fd3e03b90c63">CRhinoDisplayPipeline::DrawTriangle</a>  </dd>
-<dt>Member <a class="el" href="class_c_rhino_viewport.html#acbd300b7ddcaf01f8823e3401f848361">CRhinoViewport::DrawTriangle</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p0, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p1, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p2)</dt>
 <dd><a class="anchor" id="_deprecated000286"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a347fb6cd3ff776df5d20fd3e03b90c63">CRhinoDisplayPipeline::DrawTriangle</a>  </dd>
+<dt>Member <a class="el" href="class_c_rhino_viewport.html#acbd300b7ddcaf01f8823e3401f848361">CRhinoViewport::DrawTriangle</a>  (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p0, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p1, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p2)</dt>
+<dd><a class="anchor" id="_deprecated000287"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a347fb6cd3ff776df5d20fd3e03b90c63">CRhinoDisplayPipeline::DrawTriangle</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ac5f122acd4d60588f2ed1458841195c5">CRhinoViewport::DrawWireframeMesh</a>  (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, BOOL32 bCullCW)</dt>
-<dd><a class="anchor" id="_deprecated000267"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a3be03a928605ced20fb38334be069a5d">CRhinoDisplayPipeline::DrawWireframeMesh</a>  </dd>
+<dd><a class="anchor" id="_deprecated000268"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a3be03a928605ced20fb38334be069a5d">CRhinoDisplayPipeline::DrawWireframeMesh</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#accbd6639932ae8c6d020fe8726029091">CRhinoViewport::InterruptDrawing</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000251"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a7a95b86c91d0db42b177cd93e0432f0f">CRhinoDisplayPipeline::InterruptDrawing</a>  </dd>
+<dd><a class="anchor" id="_deprecated000252"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a7a95b86c91d0db42b177cd93e0432f0f">CRhinoDisplayPipeline::InterruptDrawing</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_viewport.html#ac2ea1529f81ee102a6b4cc1187bbb0e1">CRhinoViewport::SetDrawColor</a>  (COLORREF color)</dt>
-<dd><a class="anchor" id="_deprecated000249"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a3df8fd4a92ca8ef7d17462e448033ba0">CRhinoDisplayPipeline::SetObjectColor</a>  </dd>
+<dd><a class="anchor" id="_deprecated000250"></a>use <a class="el" href="class_c_rhino_display_pipeline.html#a3df8fd4a92ca8ef7d17462e448033ba0">CRhinoDisplayPipeline::SetObjectColor</a>  </dd>
 <dt>Member <a class="el" href="class_c_rhino_work_session.html#ae5a1f9a843aa210f612dd2f27e539803">CRhinoWorkSession::GetActiveWorksessionRuntimeSerialNumbers</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; unsigned int &gt;</a> &amp;ws_serialnos)</dt>
-<dd><a class="anchor" id="_deprecated000289"></a>use <a class="el" href="class_c_rhino_work_session.html#a328ab55a327d36d7af8d14a244c831f0">CRhinoWorkSession::GetWorksessionFromDocument</a>  </dd>
+<dd><a class="anchor" id="_deprecated000290"></a>use <a class="el" href="class_c_rhino_work_session.html#a328ab55a327d36d7af8d14a244c831f0">CRhinoWorkSession::GetWorksessionFromDocument</a>  </dd>
 <dt>Member <a class="el" href="class_c_rh_rdk_content.html#a0f264ba85f497a4bae236add1aa7287d">CRhRdkContent::Document</a>  (void) const</dt>
-<dd><a class="anchor" id="_deprecated000291"></a>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document.  </dd>
+<dd><a class="anchor" id="_deprecated000292"></a>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document.  </dd>
 <dt>Member <a class="el" href="class_c_rh_rdk_content.html#a24d83806499a2a83c91f91a9eb49064b">CRhRdkContent::RdkDocumentRegistered</a>  (void) const</dt>
-<dd><a class="anchor" id="_deprecated000290"></a>This method is obsolete.  </dd>
+<dd><a class="anchor" id="_deprecated000291"></a>This method is obsolete.  </dd>
 <dt>Class <a class="el" href="class_c_rh_rdk_content_added.html">CRhRdkContentAdded</a>  </dt>
-<dd><a class="anchor" id="_deprecated000308"></a>OBSOLETE  </dd>
-<dt>Class <a class="el" href="class_c_rh_rdk_content_added_by_user.html">CRhRdkContentAddedByUser</a>  </dt>
 <dd><a class="anchor" id="_deprecated000309"></a>OBSOLETE  </dd>
-<dt>Class <a class="el" href="class_c_rh_rdk_content_moved.html">CRhRdkContentMoved</a>  </dt>
+<dt>Class <a class="el" href="class_c_rh_rdk_content_added_by_user.html">CRhRdkContentAddedByUser</a>  </dt>
 <dd><a class="anchor" id="_deprecated000310"></a>OBSOLETE  </dd>
+<dt>Class <a class="el" href="class_c_rh_rdk_content_moved.html">CRhRdkContentMoved</a>  </dt>
+<dd><a class="anchor" id="_deprecated000311"></a>OBSOLETE  </dd>
 <dt>Class <a class="el" href="class_c_rh_rdk_content_multiple_selection.html">CRhRdkContentMultipleSelection</a>  </dt>
-<dd><a class="anchor" id="_deprecated000297"></a>OBSOLETE  </dd>
+<dd><a class="anchor" id="_deprecated000298"></a>OBSOLETE  </dd>
 <dt>Member <a class="el" href="group___r_d_k.html#ga0a025c27f573cae815a1513538f14a35">CRhRdkCustomRenderSaveFileType</a>  </dt>
-<dd><a class="anchor" id="_deprecated000311"></a>in favor of <a class="el" href="class_c_rh_rdk_file_type.html">CRhRdkFileType</a>  </dd>
+<dd><a class="anchor" id="_deprecated000312"></a>in favor of <a class="el" href="class_c_rh_rdk_file_type.html">CRhRdkFileType</a>  </dd>
 <dt>Class <a class="el" href="class_c_rh_rdk_event_sink.html">CRhRdkEventSink</a>  </dt>
-<dd><a class="anchor" id="_deprecated000307"></a>OBSOLETE - Please use <a class="el" href="class_c_rh_rdk_event_watcher.html">CRhRdkEventWatcher</a> instead  </dd>
+<dd><a class="anchor" id="_deprecated000308"></a>OBSOLETE - Please use <a class="el" href="class_c_rh_rdk_event_watcher.html">CRhRdkEventWatcher</a> instead  </dd>
 <dt>Class <a class="el" href="class_c_rh_rdk_event_sink_base.html">CRhRdkEventSinkBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000306"></a>OBSOLETE - </dd>
+<dd><a class="anchor" id="_deprecated000307"></a>OBSOLETE - </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_compound_content_implementor.html">IRhRdkCompoundContentImplementor</a>  </dt>
-<dd><a class="anchor" id="_deprecated000303"></a>in favor of <a class="el" href="class_c_rh_rdk_compound_content_implementor.html">CRhRdkCompoundContentImplementor</a>  </dd>
+<dd><a class="anchor" id="_deprecated000304"></a>in favor of <a class="el" href="class_c_rh_rdk_compound_content_implementor.html">CRhRdkCompoundContentImplementor</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_content_editor_custom_button_interface.html">IRhRdkContentEditorCustomButtonInterface</a>  </dt>
-<dd><a class="anchor" id="_deprecated000300"></a>in favor of <a class="el" href="class_c_rh_rdk_content_editor_custom_button_provider.html">CRhRdkContentEditorCustomButtonProvider</a>  </dd>
+<dd><a class="anchor" id="_deprecated000301"></a>in favor of <a class="el" href="class_c_rh_rdk_content_editor_custom_button_provider.html">CRhRdkContentEditorCustomButtonProvider</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_content_factory.html">IRhRdkContentFactory</a>  </dt>
-<dd><a class="anchor" id="_deprecated000296"></a>in favor of <a class="el" href="class_c_rh_rdk_content_factory.html">CRhRdkContentFactory</a>  </dd>
+<dd><a class="anchor" id="_deprecated000297"></a>in favor of <a class="el" href="class_c_rh_rdk_content_factory.html">CRhRdkContentFactory</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_content_i_o_plug_in.html">IRhRdkContentIOPlugIn</a>  </dt>
-<dd><a class="anchor" id="_deprecated000305"></a>in favor of <a class="el" href="class_c_rh_rdk_content_i_o_plug_in.html">CRhRdkContentIOPlugIn</a>  </dd>
+<dd><a class="anchor" id="_deprecated000306"></a>in favor of <a class="el" href="class_c_rh_rdk_content_i_o_plug_in.html">CRhRdkContentIOPlugIn</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_custom_plug_in.html">IRhRdkCustomPlugIn</a>  </dt>
-<dd><a class="anchor" id="_deprecated000292"></a>in favor of <a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a>  </dd>
+<dd><a class="anchor" id="_deprecated000293"></a>in favor of <a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_custom_render_frame_menu.html">IRhRdkCustomRenderFrameMenu</a>  </dt>
-<dd><a class="anchor" id="_deprecated000302"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_frame_menu.html">CRhRdkCustomRenderFrameMenu</a>  </dd>
+<dd><a class="anchor" id="_deprecated000303"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_frame_menu.html">CRhRdkCustomRenderFrameMenu</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_custom_render_frame_tool_bar.html">IRhRdkCustomRenderFrameToolBar</a>  </dt>
-<dd><a class="anchor" id="_deprecated000301"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_frame_tool_bar.html">CRhRdkCustomRenderFrameToolBar</a>  </dd>
+<dd><a class="anchor" id="_deprecated000302"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_frame_tool_bar.html">CRhRdkCustomRenderFrameToolBar</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_custom_render_mesh_provider.html">IRhRdkCustomRenderMeshProvider</a>  </dt>
-<dd><a class="anchor" id="_deprecated000304"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html">CRhRdkCustomRenderMeshProvider</a>  </dd>
+<dd><a class="anchor" id="_deprecated000305"></a>in favor of <a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html">CRhRdkCustomRenderMeshProvider</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_post_effect_plug_in_factories.html">IRhRdkPostEffectPlugInFactories</a>  </dt>
-<dd><a class="anchor" id="_deprecated000299"></a>in favor of CRhRdkPostEffectPlugInFactories  </dd>
+<dd><a class="anchor" id="_deprecated000300"></a>in favor of CRhRdkPostEffectPlugInFactories  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_post_effect_plug_in_factory.html">IRhRdkPostEffectPlugInFactory</a>  </dt>
-<dd><a class="anchor" id="_deprecated000298"></a>in favor of <a class="el" href="class_c_rh_rdk_post_effect_plug_in_factory.html">CRhRdkPostEffectPlugInFactory</a>  </dd>
+<dd><a class="anchor" id="_deprecated000299"></a>in favor of <a class="el" href="class_c_rh_rdk_post_effect_plug_in_factory.html">CRhRdkPostEffectPlugInFactory</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_render_frame_tab_factory.html">IRhRdkRenderFrameTabFactory</a>  </dt>
-<dd><a class="anchor" id="_deprecated000295"></a>in favor of <a class="el" href="class_c_rh_rdk_render_frame_tab_factory_ex.html">CRhRdkRenderFrameTabFactoryEx</a>  </dd>
+<dd><a class="anchor" id="_deprecated000296"></a>in favor of <a class="el" href="class_c_rh_rdk_render_frame_tab_factory_ex.html">CRhRdkRenderFrameTabFactoryEx</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_render_window_custom_dlg.html">IRhRdkRenderWindowCustomDlg</a>  </dt>
-<dd><a class="anchor" id="_deprecated000294"></a>in favor of <a class="el" href="class_c_rh_rdk_render_window_custom_dlg.html">CRhRdkRenderWindowCustomDlg</a>  </dd>
+<dd><a class="anchor" id="_deprecated000295"></a>in favor of <a class="el" href="class_c_rh_rdk_render_window_custom_dlg.html">CRhRdkRenderWindowCustomDlg</a>  </dd>
 <dt>Class <a class="el" href="class_i_rh_rdk_render_window_event_sink.html">IRhRdkRenderWindowEventSink</a>  </dt>
-<dd><a class="anchor" id="_deprecated000293"></a>in favor of <a class="el" href="class_c_rh_rdk_render_window_event_sink.html">CRhRdkRenderWindowEventSink</a>  </dd>
+<dd><a class="anchor" id="_deprecated000294"></a>in favor of <a class="el" href="class_c_rh_rdk_render_window_event_sink.html">CRhRdkRenderWindowEventSink</a>  </dd>
 <dt>Member <a class="el" href="class_o_n__2d_point.html#ac7545dcd2c292849e8c3777a534bdb1c">ON_2dPoint::Zero</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000080"></a>Use p = <a class="el" href="class_o_n__2d_point.html#a61c18ee7b2ac577050c0bc21b793eb1b" title="(0.0,0.0)">ON_2dPoint::Origin</a>;  </dd>
 <dt>Member <a class="el" href="class_o_n__2d_vector.html#ad50a46c909d4e4941d8417a2e8107f87">ON_2dVector::Reverse</a>  ()</dt>
@@ -423,26 +425,26 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000015"></a>use BeginWrite3dmUserTable(plugin_id, bSavingGoo, 3dm_version, opennurbs_version)  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#aa94c98780dcc8d8af2ab47554a5c93a9">ON_BinaryArchive::PeekAt3dmChunkType</a>  (unsigned int *, int *)</dt>
 <dd><a class="anchor" id="_deprecated000018"></a>use PeekAt3dmBigChunkType  </dd>
-<dt>Member <a class="el" href="class_o_n___binary_archive.html#a7ed5c2ec6c0f1a45f0efcdcd25d784af">ON_BinaryArchive::ReadLong</a>  (size_t, unsigned long *)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#a47d0f74e79bd0d0ceda9314f14091c1b">ON_BinaryArchive::ReadLong</a>  (long *)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
-<dt>Member <a class="el" href="class_o_n___binary_archive.html#ab41504e854d8a417aaef48b324e01681">ON_BinaryArchive::ReadLong</a>  (unsigned long *)</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#a8243d79d480027f0df545a5b641e981c">ON_BinaryArchive::ReadLong</a>  (size_t, long *)</dt>
 <dd><a class="anchor" id="_deprecated000006"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___binary_archive.html#a7ed5c2ec6c0f1a45f0efcdcd25d784af">ON_BinaryArchive::ReadLong</a>  (size_t, unsigned long *)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___binary_archive.html#ab41504e854d8a417aaef48b324e01681">ON_BinaryArchive::ReadLong</a>  (unsigned long *)</dt>
+<dd><a class="anchor" id="_deprecated000009"></a>Please use <a class="el" href="class_o_n___binary_archive.html#aa818218c75e8fef8c3cfb24867d1d8aa">ON_BinaryArchive::ReadInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#a605ffb622b633bba0ee93498f213a9f9">ON_BinaryArchive::ReadStringSize</a>  (size_t *str_array_count)</dt>
 <dd><a class="anchor" id="_deprecated000010"></a>Use either <a class="el" href="class_o_n___binary_archive.html#a31378a73104dab716db033d008d47035">ReadStringUTF8ElementCount()</a> or <a class="el" href="class_o_n___binary_archive.html#a1e7713da57b2db375c0cad65d055779d">ReadStringUTF16ElementCount()</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#a9054e2a46b51aa8be31ef1a74562ddcc">ON_BinaryArchive::Write3dmAnonymousUserTable</a>  (const class <a class="el" href="class_o_n__3dm_goo.html">ON_3dmGoo</a> &amp;)</dt>
 <dd><a class="anchor" id="_deprecated000016"></a>use Write3dmAnonymousUserTableRecord(plugin_id, ..., goo)  </dd>
-<dt>Member <a class="el" href="class_o_n___binary_archive.html#a05cb4199340bc1ce7a0a9f90f67416e8">ON_BinaryArchive::WriteLong</a>  (unsigned long)</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
-<dt>Member <a class="el" href="class_o_n___binary_archive.html#add60115e5dbd2193a29367445b3700c4">ON_BinaryArchive::WriteLong</a>  (size_t, const long *)</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#abb90d17bbd267b2f023895d44931fe78">ON_BinaryArchive::WriteLong</a>  (size_t, const unsigned long *)</dt>
 <dd><a class="anchor" id="_deprecated000012"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___binary_archive.html#add60115e5dbd2193a29367445b3700c4">ON_BinaryArchive::WriteLong</a>  (size_t, const long *)</dt>
+<dd><a class="anchor" id="_deprecated000011"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___binary_archive.html#a202d97c403376b38d1f2ebc0e4d1063e">ON_BinaryArchive::WriteLong</a>  (long)</dt>
 <dd><a class="anchor" id="_deprecated000013"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___binary_archive.html#a05cb4199340bc1ce7a0a9f90f67416e8">ON_BinaryArchive::WriteLong</a>  (unsigned long)</dt>
+<dd><a class="anchor" id="_deprecated000014"></a>Please use <a class="el" href="class_o_n___binary_archive.html#a98f2850bf716935622037eafdbd0088f">ON_BinaryArchive::WriteInt</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___brep.html#acb97c591365105af277cc2f867550208">ON_Brep::DestroyMesh</a>  (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mesh_type, bool bDeleteMesh)</dt>
 <dd><a class="anchor" id="_deprecated000026"></a>bDeleteMesh=false is no longer supported  </dd>
 <dt>Member <a class="el" href="class_o_n___brep.html#a2b3331e092f40f3ad3b88701577d6f1f">ON_Brep::IsDuplicate</a>  (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;other, double tolerance=ON_ZERO_TOLERANCE) const</dt>
@@ -473,14 +475,14 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000043"></a>Use <a class="el" href="class_o_n___file_system.html#a7189de05b2c82baf5bb153586127485d">ON_FileSystem::IsDirectory</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___file_system_path.html#a1cfd31bc0b44c76243916c6806011ac3">ON_FileSystemPath::IsDirectory</a>  (const wchar_t *path)</dt>
 <dd><a class="anchor" id="_deprecated000044"></a>Use <a class="el" href="class_o_n___file_system.html#a7189de05b2c82baf5bb153586127485d">ON_FileSystem::IsDirectory</a>  </dd>
-<dt>Member <a class="el" href="class_o_n___file_system_path.html#af93695f295a01d7679cb2c15b71ecaee">ON_FileSystemPath::IsFile</a>  (const wchar_t *path)</dt>
-<dd><a class="anchor" id="_deprecated000046"></a>Use <a class="el" href="class_o_n___file_system.html#a463c1f32f5cf15ff26d5123da4a5c5e8">ON_FileSystem::IsFile</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___file_system_path.html#ae051f8e205f2beb48279369139f74798">ON_FileSystemPath::IsFile</a>  (const char *path)</dt>
 <dd><a class="anchor" id="_deprecated000045"></a>Use <a class="el" href="class_o_n___file_system.html#a463c1f32f5cf15ff26d5123da4a5c5e8">ON_FileSystem::IsFile</a>  </dd>
-<dt>Member <a class="el" href="class_o_n___file_system_path.html#a2f7a079873f50e6ffe3989ddcb4f9825">ON_FileSystemPath::PathExists</a>  (const char *path)</dt>
-<dd><a class="anchor" id="_deprecated000041"></a>Use <a class="el" href="class_o_n___file_system.html#a5329e570f58c8ba8932a468b4a666e1e">ON_FileSystem::PathExists</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___file_system_path.html#af93695f295a01d7679cb2c15b71ecaee">ON_FileSystemPath::IsFile</a>  (const wchar_t *path)</dt>
+<dd><a class="anchor" id="_deprecated000046"></a>Use <a class="el" href="class_o_n___file_system.html#a463c1f32f5cf15ff26d5123da4a5c5e8">ON_FileSystem::IsFile</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___file_system_path.html#a389606a8c40e64d52df288fa63f9f8e8">ON_FileSystemPath::PathExists</a>  (const wchar_t *path)</dt>
 <dd><a class="anchor" id="_deprecated000042"></a>Use <a class="el" href="class_o_n___file_system.html#a5329e570f58c8ba8932a468b4a666e1e">ON_FileSystem::PathExists</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___file_system_path.html#a2f7a079873f50e6ffe3989ddcb4f9825">ON_FileSystemPath::PathExists</a>  (const char *path)</dt>
+<dd><a class="anchor" id="_deprecated000041"></a>Use <a class="el" href="class_o_n___file_system.html#a5329e570f58c8ba8932a468b4a666e1e">ON_FileSystem::PathExists</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#a88bf664d21f6d08cf3fc0f439d3da1a8">ON_Font::AppleFontName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000052"></a>Use ON_Font::PostScriptName(ON_Font::NameLocale)  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#a4635c901c17cbdbc420f51edc68bcb1e">ON_Font::AppleFontNameAsPointer</a>  () const</dt>
@@ -491,10 +493,10 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000056"></a>Use <a class="el" href="class_o_n___font.html#a254121aa7e3805b0468e861829f7972b">ON_Font::PostScriptName()</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#afdb9693ee124b41f66bbfd2136ee406f">ON_Font::FontFaceName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000059"></a>Use ON_Font::WindowsLogfontName(ON_Font::NameLocale)  </dd>
-<dt>Member <a class="el" href="class_o_n___font.html#a470b8e4dbae88fc46acaa27e8a71cfad">ON_Font::GetManagedFontFromAppleFontName</a>  (const char *postscript_name)</dt>
-<dd><a class="anchor" id="_deprecated000049"></a>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#a111f80c8a91e1489352da100c9648cff">ON_Font::GetManagedFontFromAppleFontName</a>  (const wchar_t *postscript_name)</dt>
 <dd><a class="anchor" id="_deprecated000050"></a>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a>  </dd>
+<dt>Member <a class="el" href="class_o_n___font.html#a470b8e4dbae88fc46acaa27e8a71cfad">ON_Font::GetManagedFontFromAppleFontName</a>  (const char *postscript_name)</dt>
+<dd><a class="anchor" id="_deprecated000049"></a>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a>  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#a73937d9b8c51f3d21b1278e640c5d4e4">ON_Font::GetStrikeoutPosition</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000064"></a>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.StrikeoutPosition()  </dd>
 <dt>Member <a class="el" href="class_o_n___font.html#a2f92597d5ce931a4fe76fed468bed052">ON_Font::GetStrikeoutSize</a>  () const</dt>
@@ -539,10 +541,10 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000079"></a>This method has been renamed GetLengthContrained2dLines  </dd>
 <dt>Member <a class="el" href="class_o_n___squisher.html#ae2490694919f4143f55a1ce328d1fcc6">ON_Squisher::GetMesh3dEdges</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; ON_Line &gt;</a> *edges) const</dt>
 <dd><a class="anchor" id="_deprecated000078"></a>This method has been renamed GetLengthContrained3dLines  </dd>
-<dt>Member <a class="el" href="class_o_n___string.html#ab0d83267a0bf0d1cd5e6d3bd28949568">ON_String::Compare</a>  (const char *) const</dt>
-<dd><a class="anchor" id="_deprecated000089"></a>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate  </dd>
 <dt>Member <a class="el" href="class_o_n___string.html#af8056dba39c8ed82e946663ad5ab7ce4">ON_String::Compare</a>  (const unsigned char *) const</dt>
 <dd><a class="anchor" id="_deprecated000090"></a>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate  </dd>
+<dt>Member <a class="el" href="class_o_n___string.html#ab0d83267a0bf0d1cd5e6d3bd28949568">ON_String::Compare</a>  (const char *) const</dt>
+<dd><a class="anchor" id="_deprecated000089"></a>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate  </dd>
 <dt>Member <a class="el" href="class_o_n___string.html#a3e300f4773b9461f6afa5f633223994e">ON_String::CompareNoCase</a>  (const char *) const</dt>
 <dd><a class="anchor" id="_deprecated000091"></a>Use <a class="el" href="class_o_n___string.html#a2990d98b40d69cb4fab06512c124e2ca">CompareOrdinal()</a>, <a class="el" href="class_o_n___string.html#a68c6a624b997077e91ca89345d8659cd">ComparePath()</a>, <a class="el" href="class_o_n___string.html#acc3ff504a017cc4049b29c0584f97283">CompareAttributeName()</a>, or a test that is linguistically apprropriate  </dd>
 <dt>Member <a class="el" href="class_o_n___string.html#a634414566fe0ac9fd7e6152fcf399067">ON_String::CompareNoCase</a>  (const unsigned char *) const</dt>
@@ -607,20 +609,20 @@ $(function() {
 <dd><a class="anchor" id="_deprecated000115"></a>Use xform = ON_Xform::DiagonalTransformation(d);  </dd>
 <dt>Member <a class="el" href="class_o_n___xform.html#a3acabc2f3450992a943040eb0b0a6e0f">ON_Xform::Identity</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000114"></a>Use xform = <a class="el" href="class_o_n___xform.html#a4b990ccd63d5ffb4606d93a76361aba0" title="ON_Xform IdentityTransformation diagonal = (1,1,1,1)">ON_Xform::IdentityTransformation</a>;  </dd>
-<dt>Member <a class="el" href="class_o_n___xform.html#aa487dd409c1f8969c5fc471b3ef8f2e9">ON_Xform::Scale</a>  (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, double x_scale_factor, double y_scale_factor, double z_scale_factor)</dt>
-<dd><a class="anchor" id="_deprecated000119"></a>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor)  </dd>
-<dt>Member <a class="el" href="class_o_n___xform.html#a2e2fd9d63877bd3309139e1cd9b79c51">ON_Xform::Scale</a>  (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;scale_vector)</dt>
-<dd><a class="anchor" id="_deprecated000117"></a>Use xform = ON_Xform::DiagonalTransformation(scale_vector);  </dd>
 <dt>Member <a class="el" href="class_o_n___xform.html#a885acec359045e452a3ddd6eea23cde2">ON_Xform::Scale</a>  (double x_scale_factor, double y_scale_factor, double z_scale_factor)</dt>
 <dd><a class="anchor" id="_deprecated000116"></a>Use xform = ON_Xform::DiagonalTransformation(x_scale_factor,z_scale_factor,z_scale_factor);  </dd>
+<dt>Member <a class="el" href="class_o_n___xform.html#a2e2fd9d63877bd3309139e1cd9b79c51">ON_Xform::Scale</a>  (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;scale_vector)</dt>
+<dd><a class="anchor" id="_deprecated000117"></a>Use xform = ON_Xform::DiagonalTransformation(scale_vector);  </dd>
+<dt>Member <a class="el" href="class_o_n___xform.html#aa487dd409c1f8969c5fc471b3ef8f2e9">ON_Xform::Scale</a>  (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, double x_scale_factor, double y_scale_factor, double z_scale_factor)</dt>
+<dd><a class="anchor" id="_deprecated000119"></a>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor)  </dd>
 <dt>Member <a class="el" href="class_o_n___xform.html#a1f5b403d4c81217f9aac916af8bb3307">ON_Xform::Scale</a>  (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> fixed_point, double scale_factor)</dt>
 <dd><a class="anchor" id="_deprecated000118"></a>Use xform = ON_Xform::ScaleTransformation(fixed_point,scale_factor)  </dd>
 <dt>Member <a class="el" href="class_o_n___xform.html#a21d39fb2a1dd2701b8ba9568fbed0b54">ON_Xform::Shear</a>  (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;x1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;y1, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;z1)</dt>
 <dd><a class="anchor" id="_deprecated000120"></a>Use xform = ON_Xform::ShearTransformation(plane,x1,y1,z1);  </dd>
-<dt>Member <a class="el" href="class_o_n___xform.html#a3498c05e0640f7fdad5a449ffee5227e">ON_Xform::Translation</a>  (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;delta)</dt>
-<dd><a class="anchor" id="_deprecated000121"></a>Use xform = ON_Xform::TranslationTransformation(delta);  </dd>
 <dt>Member <a class="el" href="class_o_n___xform.html#a35dee4a0caf2f600ca75e146ff85a9b2">ON_Xform::Translation</a>  (double dx, double dy, double dz)</dt>
 <dd><a class="anchor" id="_deprecated000122"></a>Use xform = ON_Xform::TranslationTransformation(dx,dy,dz);  </dd>
+<dt>Member <a class="el" href="class_o_n___xform.html#a3498c05e0640f7fdad5a449ffee5227e">ON_Xform::Translation</a>  (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;delta)</dt>
+<dd><a class="anchor" id="_deprecated000121"></a>Use xform = ON_Xform::TranslationTransformation(delta);  </dd>
 <dt>Member <a class="el" href="class_o_n_x___model.html#ab52f4f2ee2c23b6990343b1327da20a7">ONX_Model::GetRDKDocumentInformation</a>  (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> &amp;rdk_xml_document_data)</dt>
 <dd><a class="anchor" id="_deprecated000034"></a>This function is deprecated.  </dd>
 <dt>Member <a class="el" href="class_o_n_x___model.html#ab69e0f56d66378d9bdf81a5b39b17f5f">ONX_Model::GetRDKEmbeddedFile</a>  (const <a class="el" href="class_o_n_x___model___user_data.html">ONX_Model_UserData</a> &amp;docud, const wchar_t *path, ON_SimpleArray&lt; unsigned char &gt; &amp;bytes)</dt>
@@ -638,61 +640,61 @@ $(function() {
 <dt>Member <a class="el" href="class_o_n_x___model.html#abd0d04bec24688f589f21a0b496fca04">ONX_Model::IsRDKObjectInformation</a>  (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;objectud)</dt>
 <dd><a class="anchor" id="_deprecated000039"></a>This function is deprecated.  </dd>
 <dt>Member <a class="el" href="group___rhino.html#ga87bcf34fb637f5b7bf9669fc07b21328">RhinoColorDialog</a>  (HWND hwndParent, <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;color, bool include_button_colors=false, const wchar_t *dialog_title=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000232"></a>use RhinoColorDialogEx  </dd>
+<dd><a class="anchor" id="_deprecated000233"></a>use RhinoColorDialogEx  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gaa93b65b119c327eaf293e0090a6fb8f4">RhinoCreateHatches</a>  (<a class="el" href="class_c_args_rhino_hatch.html">CArgsRhinoHatch</a> &amp;args, ON_SimpleArray&lt; ON_Hatch * &gt; &amp;results)</dt>
-<dd><a class="anchor" id="_deprecated000191"></a>use overload that accepts tolerance parameter  </dd>
-<dt>Member <a class="el" href="group___rhino.html#gab9407da66984ed938733be80b2745528">RhinoGetRenderMeshes</a>  (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const CRhinoObject * &gt;</a> &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; CRhinoObjRef &gt;</a> &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects)</dt>
-<dd><a class="anchor" id="_deprecated000199"></a>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>  </dd>
-<dt>Member <a class="el" href="group___rhino.html#gaeac61e08c6d3f49fb7fc5de1d7d4d52e">RhinoGetRenderMeshes</a>  (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const CRhinoObject * &gt;</a> &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; CRhinoObjRef &gt;</a> &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects, bool bUpdateMeshTCs)</dt>
-<dd><a class="anchor" id="_deprecated000198"></a>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>  </dd>
+<dd><a class="anchor" id="_deprecated000192"></a>use overload that accepts tolerance parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gafcead865b9c4cacead8684c5a2b9b256">RhinoGetRenderMeshes</a>  (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const CRhinoObject * &gt;</a> &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; CRhinoObjRef &gt;</a> &amp;render_meshes, bool bOkToCreate=true, bool bReturnAllObjects=false)</dt>
+<dd><a class="anchor" id="_deprecated000201"></a>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>  </dd>
+<dt>Member <a class="el" href="group___rhino.html#gaeac61e08c6d3f49fb7fc5de1d7d4d52e">RhinoGetRenderMeshes</a>  (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const CRhinoObject * &gt;</a> &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; CRhinoObjRef &gt;</a> &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects, bool bUpdateMeshTCs)</dt>
+<dd><a class="anchor" id="_deprecated000199"></a>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>  </dd>
+<dt>Member <a class="el" href="group___rhino.html#gab9407da66984ed938733be80b2745528">RhinoGetRenderMeshes</a>  (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const CRhinoObject * &gt;</a> &amp;objects, <a class="el" href="class_o_n___class_array.html">ON_ClassArray&lt; CRhinoObjRef &gt;</a> &amp;render_meshes, bool bOkToCreate, bool bReturnAllObjects, bool bSkipHiddenObjects)</dt>
 <dd><a class="anchor" id="_deprecated000200"></a>Does not support custom render meshes, per-face materials or delivery of the shared pointer meshes. Prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>  </dd>
 <dt>Member <a class="el" href="group___rhino_get.html#ga0961f27bd99b04cf83af4c5a08022149">RhinoGetRevolve</a>  (<a class="el" href="class_c_args_rhino_revolve.html">CArgsRhinoRevolve</a> &amp;args, ON_SimpleArray&lt; ON_RevSurface * &gt; &amp;srfs_out)</dt>
-<dd><a class="anchor" id="_deprecated000187"></a>Obsolete - do not use.  </dd>
+<dd><a class="anchor" id="_deprecated000188"></a>Obsolete - do not use.  </dd>
 <dt>Member <a class="el" href="group___rhino.html#ga0c0f95f30348c5de9997c1877c5b8967">RhinoLayerManagerSelectedLayers</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; int &gt;</a> &amp;layers)</dt>
-<dd><a class="anchor" id="_deprecated000194"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
-<dt>Member <a class="el" href="group___rhino.html#gab7ab92390ed8340b355ca2c0ad621f7f">RhinoLayerManagerSelectLayers</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; int &gt;</a> layers, bool bDeselect)</dt>
 <dd><a class="anchor" id="_deprecated000195"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
+<dt>Member <a class="el" href="group___rhino.html#gab7ab92390ed8340b355ca2c0ad621f7f">RhinoLayerManagerSelectLayers</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; int &gt;</a> layers, bool bDeselect)</dt>
+<dd><a class="anchor" id="_deprecated000196"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gacd949c262c0166f131683c06232997a6">RhinoMakePlanarBreps</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; const ON_Curve * &gt;</a> &amp;input_loops, ON_SimpleArray&lt; ON_Brep * &gt; &amp;breps, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; int &gt;</a> *used=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000233"></a>use overload that takes a tolerance  </dd>
+<dd><a class="anchor" id="_deprecated000234"></a>use overload that takes a tolerance  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gae4df7600bc836be7013336b54b07c1a1">RhinoNurbsCurveInterpolant</a>  (int degree, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; ON_3dPoint &gt;</a> &amp;Pt, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *CV1, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *CVn1, int knot_style=0, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *nurbs_curve=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000234"></a>use RhinoInterpCurve  </dd>
+<dd><a class="anchor" id="_deprecated000235"></a>use RhinoInterpCurve  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gab2812a24cb59b94b4b16d764006ceef2">RhinoOffsetCurve</a>  (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;origin, double distance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; ON_Curve * &gt;</a> &amp;offset_curves, double tolerance=0.0, double angle_tolerance=0.0, int corner_style=1)</dt>
-<dd><a class="anchor" id="_deprecated000236"></a>use other version of RhinoOffsetCurve  </dd>
+<dd><a class="anchor" id="_deprecated000237"></a>use other version of RhinoOffsetCurve  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gad904bd374baf75f52671ab97915afe05">RhinoPointInPlanarClosedCurve</a>  (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> point, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;closed_curve, <a class="el" href="class_o_n___plane.html">ON_Plane</a> plane)</dt>
-<dd><a class="anchor" id="_deprecated000235"></a>use overload that accepts tolerance parameter  </dd>
+<dd><a class="anchor" id="_deprecated000236"></a>use overload that accepts tolerance parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gad97329c985d9d8f178f8703bbcb905e8">RhinoReadHatchPatternFile</a>  (const wchar_t *pFilename, ON_ClassArray&lt; ON_HatchPattern &gt; &amp;hatchPatterns, bool bAllowDuplicates, bool bQuiet)</dt>
-<dd><a class="anchor" id="_deprecated000237"></a>use overload that has an <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
+<dd><a class="anchor" id="_deprecated000238"></a>use overload that has an <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a> parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#ga2cbf85d27de86462157f0f1964df9ef0">RhinoRedrawLayerManagerWindow</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000193"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
+<dd><a class="anchor" id="_deprecated000194"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gaabbf3e9b1e2fe97e8f80ae462a61b124">RhinoRegisterCustomMeshHandler</a>  (CUSTOM_MESH_HANDLER_FUNC)</dt>
-<dd><a class="anchor" id="_deprecated000197"></a>Use RhinoRegisterCustomMeshHandler2 RHINO_SDK_FUNCTION  </dd>
+<dd><a class="anchor" id="_deprecated000198"></a>Use RhinoRegisterCustomMeshHandler2 RHINO_SDK_FUNCTION  </dd>
 <dt>Member <a class="el" href="class_rhino_sdk_blend.html#a03e20960fa9c3151b9259a2dc95d59fd">RhinoSdkBlend::SurfaceBlend</a>  (const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> *pF0, const <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> *pE0, <a class="el" href="class_o_n___interval.html">ON_Interval</a> domain0, bool bRev0, int continuity0, const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> *pF1, const <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> *pE1, <a class="el" href="class_o_n___interval.html">ON_Interval</a> domain1, bool bRev1, int continuity1, ON_SimpleArray&lt; ON_Brep * &gt; &amp;output_surfaces)</dt>
 <dd><a class="anchor" id="_deprecated000139"></a>Use the form that takes a rhino document  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gac9fa9c4c316222d168cf4dbcff2f5262">RhinoSelectDimstyle</a>  (bool interactive)</dt>
 <dd><a class="anchor" id="_deprecated000151"></a>use overload that takes a <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#ga1b3cd3f4e079a644ebe18529a1f248bd">RhinoSmoothCurve</a>  (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> *pInput, double dSmoothFactor, bool bXSmooth, bool bYSmooth, bool bZSmooth, bool bFixBoundaries, int nCoordinateSystem)</dt>
-<dd><a class="anchor" id="_deprecated000238"></a>use the version of RhinoSmoothCurve that accepts a plane parameter  </dd>
+<dd><a class="anchor" id="_deprecated000239"></a>use the version of RhinoSmoothCurve that accepts a plane parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#ga68c657195df8fdce3cf67fbf3c32c187">RhinoSmoothMesh</a>  (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *pInput, double dSmoothFactor, bool bXSmooth, bool bYSmooth, bool bZSmooth, bool bFixBoundaries, int nCoordinateSystem)</dt>
-<dd><a class="anchor" id="_deprecated000240"></a>use the version of RhinoSmoothMesh that accepts a plane parameter  </dd>
+<dd><a class="anchor" id="_deprecated000241"></a>use the version of RhinoSmoothMesh that accepts a plane parameter  </dd>
 <dt>Member <a class="el" href="group___rhino.html#gaaeebc36cd4aeaf61774a91464cccf74f">RhinoSmoothSurface</a>  (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> *pInput, double dSmoothFactor, bool bXSmooth, bool bYSmooth, bool bZSmooth, bool bFixBoundaries, int nCoordinateSystem)</dt>
-<dd><a class="anchor" id="_deprecated000239"></a>use the version of RhinoSmoothSurface that accepts a plane parameter  </dd>
+<dd><a class="anchor" id="_deprecated000240"></a>use the version of RhinoSmoothSurface that accepts a plane parameter  </dd>
 <dt>Member <a class="el" href="group___rhino_u_i.html#ga57d622f625b96da6ba8da7bd0969dbdf">RhinoUiDockBarForTab</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidTabId)</dt>
-<dd><a class="anchor" id="_deprecated000223"></a>RhinoUiDockBarForTab is obsolete. Use multi-doc capable RhinoUiDockBarsForTab (s after Bar).  </dd>
+<dd><a class="anchor" id="_deprecated000224"></a>RhinoUiDockBarForTab is obsolete. Use multi-doc capable RhinoUiDockBarsForTab (s after Bar).  </dd>
 <dt>Member <a class="el" href="group___rhino_u_i.html#gae2bd0dd85936e42a51821acc249c1d6f">RhinoUiDockBarsForTab</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidTabId, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoUiDockBar * &gt;</a> &amp;dockbars)</dt>
-<dd><a class="anchor" id="_deprecated000224"></a>RhinoUiDockBarForTab is obsolete. Use the overloaded version that returns an array of dock bar IDs.  </dd>
+<dd><a class="anchor" id="_deprecated000225"></a>RhinoUiDockBarForTab is obsolete. Use the overloaded version that returns an array of dock bar IDs.  </dd>
 <dt>Member <a class="el" href="group___rhino_u_i.html#gae45466c094dc5f1e3a1d25f1018ac663">RhinoUiDockBarTabFromId</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidTabId)</dt>
-<dd><a class="anchor" id="_deprecated000226"></a>RhinoUiDockBarTabFromId is obsolete. Use multi-doc capable RhinoUiDockBarTabsFromId (s after Tab).  </dd>
+<dd><a class="anchor" id="_deprecated000227"></a>RhinoUiDockBarTabFromId is obsolete. Use multi-doc capable RhinoUiDockBarTabsFromId (s after Tab).  </dd>
 <dt>Member <a class="el" href="group___rhino_u_i.html#ga972b1f5ae065297e1371558f2c875657">RhinoUiRegisteredDockbarTabs</a>  (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; ON_UUID &gt;</a> &amp;aTabIds)</dt>
-<dd><a class="anchor" id="_deprecated000225"></a>Use RhinoUiPanelFactories  </dd>
+<dd><a class="anchor" id="_deprecated000226"></a>Use RhinoUiPanelFactories  </dd>
 <dt>Member <a class="el" href="group___rhino_u_i.html#gaacc2235ac1d263360a184cc6f42d5407">RhinoUiShowDockbarTab</a>  (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const ON_UUID &amp;uuidTabId, bool bShow, const ON_UUID *uuidDockBar=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000222"></a>Use the version with bMakeSelected </dd>
+<dd><a class="anchor" id="_deprecated000223"></a>Use the version with bMakeSelected </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

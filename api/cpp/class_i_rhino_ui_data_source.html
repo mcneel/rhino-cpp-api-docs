@@ -73,15 +73,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;RhRdkDataSource.h&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for IRhinoUiDataSource:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_i_rhino_ui_data_source.png" usemap="#IRhinoUiDataSource_map" alt=""/>
-  <map id="IRhinoUiDataSource_map" name="IRhinoUiDataSource_map">
-<area href="class_c_rh_rdk_data_source.html" alt="CRhRdkDataSource" shape="rect" coords="0,56,125,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -172,8 +163,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Called when the data source is added to a data source host. </p>
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#afcfb1858104dc996230969bf71b8a383">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 <a id="ab335a0a7b4a11c4af5b6b18ebf0f9608"></a>
@@ -219,8 +208,6 @@ Protected Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rhino_ui_data_source.html#af94660c1f7303579f7bf7aed1678b205">GetData()</a> </dd>
 <dd>
 <a class="el" href="class_i_rhino_ui_data_source.html#a37ae66c446fe593faaf39491d857cd56">Discard()</a> </dd></dl>
-
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a42a9784830cea2f6089c72d9217fe207">CRhRdkDataSource</a>.</p>
 
 </div>
 </div>
@@ -276,8 +263,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>You must implement this method as</p><div class="fragment"><div class="line"><span class="keyword">delete</span> <span class="keyword">this</span>; </div>
 </div><!-- fragment --> 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a511946f3afab2aecc38e30a3b7f6eb07">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 <a id="a37ae66c446fe593faaf39491d857cd56"></a>
@@ -312,8 +297,6 @@ Protected Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rhino_ui_data_source.html#af94660c1f7303579f7bf7aed1678b205">GetData()</a> </dd>
 <dd>
 <a class="el" href="class_i_rhino_ui_data_source.html#ab335a0a7b4a11c4af5b6b18ebf0f9608">Commit()</a> </dd></dl>
-
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a98260f0a596d8301cfc74cc14f7e1be2">CRhRdkDataSource</a>.</p>
 
 </div>
 </div>
@@ -351,8 +334,6 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Emergency virtual function for future expansion. </p>
-
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a3ef8bf9d17478131a51c4778f8a00db0">CRhRdkDataSource</a>.</p>
 
 </div>
 </div>
@@ -440,8 +421,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a data source host which would like to be notified of events that affect its data. When such an event arrives, the data source checks if the host is interested in the event and if so, it calls the host's OnEvent() method. </p>
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a4650c890d76334d0fe3feffb46148734">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 <a id="a7cb753cedd636a34e2cd2746a240a5c6"></a>
@@ -469,8 +448,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Called by a data source host when it is being deleted. </p>
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#afdb1b5aa83c6e4b9294fb97196d0b436">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 <a id="ac297ab040f4da43928dd0018b4f921a7"></a>
@@ -496,8 +473,6 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a06a9083c4f606c361de2cf3027fae4fe">CRhRdkDataSource</a>.</p>
 
 </div>
 </div>
@@ -526,8 +501,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the data source as changed. This must be called in between <a class="el" href="class_i_rhino_ui_data_source.html#af94660c1f7303579f7bf7aed1678b205">GetData()</a> with bForWrite == true and <a class="el" href="class_i_rhino_ui_data_source.html#ab335a0a7b4a11c4af5b6b18ebf0f9608">Commit()</a> in order for the commit to succeed and an event to be sent. If it is called when the data source is not in write mode, the call will fail. </p><dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#aa4c6d350818d718b17b5f47445c2194a">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 <a id="a1a4bd756fd62939c423db8ab67b328e6"></a>
@@ -555,14 +528,12 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove a data source host which has been added by <a class="el" href="class_i_rhino_ui_data_source.html#a8712318ee2c4a1638715b7a592a40ca6">RegisterEventWatcher()</a>. This must be done when such a host is deleted. </p>
 
-<p>Implemented in <a class="el" href="class_c_rh_rdk_data_source.html#a045050a1a842e346c9f6ced103e1cea3">CRhRdkDataSource</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

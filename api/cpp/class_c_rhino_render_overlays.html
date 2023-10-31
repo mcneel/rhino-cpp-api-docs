@@ -101,10 +101,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:acba3fe991e51aa517fdbf299c0539398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_render_overlays.html#acba3fe991e51aa517fdbf299c0539398">CreateFeatures</a> (<a class="el" href="class_c_rhino_display_pipeline.html">CRhinoDisplayPipeline</a> &amp;, <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;, unsigned int nFeatures)</td></tr>
+<tr class="separator:acba3fe991e51aa517fdbf299c0539398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac631f858e90158d244589a7903608d94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_render_overlays.html#ac631f858e90158d244589a7903608d94">CreateFeatures</a> (<a class="el" href="class_c_rhino_display_pipeline___o_g_l.html">CRhinoDisplayPipeline_OGL</a> &amp;, <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;, unsigned int nFeatures)</td></tr>
 <tr class="separator:ac631f858e90158d244589a7903608d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3747a3c70194f34904533f5d984bc38d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_render_overlays.html#a3747a3c70194f34904533f5d984bc38d">FillOrBoundaryRequested</a> (void) const</td></tr>
+<tr class="separator:a3747a3c70194f34904533f5d984bc38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83cf933ea4d4169c02c095ede9941872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_render_overlays.html#a83cf933ea4d4169c02c095ede9941872">SetFeatureAttrs</a> (unsigned int nFeatures, <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;Attrs, bool bState)</td></tr>
 <tr class="separator:a83cf933ea4d4169c02c095ede9941872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d480c87a459b1351f02b7597338dbf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_render_overlays.html#a4d480c87a459b1351f02b7597338dbf1">SetFillOrBoundaryRequest</a> (bool)</td></tr>
+<tr class="separator:a4d480c87a459b1351f02b7597338dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rendering overlay class that creates "maskable" renderings (known as Overlays), of all of the "non-mesh based" objects in the scene. These overlays can then be added or combined with other renderings providing a general solution for those renderers that do not support some or all of the non-mesh based objects. </p>
@@ -123,7 +129,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000215">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_render_overlays.html#aa8f73b464e79c7b37f09aa3cb3efc52f">CRhinoRenderOverlays::CRhinoRenderOverlays(const CRhinoDoc&amp;)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000216">Deprecated:</a></b></dt><dd>use <a class="el" href="class_c_rhino_render_overlays.html#aa8f73b464e79c7b37f09aa3cb3efc52f">CRhinoRenderOverlays::CRhinoRenderOverlays(const CRhinoDoc&amp;)</a> </dd></dl>
 
 </div>
 </div>
@@ -213,8 +219,50 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acba3fe991e51aa517fdbf299c0539398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba3fe991e51aa517fdbf299c0539398">&#9670;&nbsp;</a></span>CreateFeatures() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoRenderOverlays::CreateFeatures </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_display_pipeline.html">CRhinoDisplayPipeline</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nFeatures</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac631f858e90158d244589a7903608d94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac631f858e90158d244589a7903608d94">&#9670;&nbsp;</a></span>CreateFeatures()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac631f858e90158d244589a7903608d94">&#9670;&nbsp;</a></span>CreateFeatures() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,6 +380,32 @@ Protected Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3747a3c70194f34904533f5d984bc38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3747a3c70194f34904533f5d984bc38d">&#9670;&nbsp;</a></span>FillOrBoundaryRequested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoRenderOverlays::FillOrBoundaryRequested </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -484,10 +558,36 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4d480c87a459b1351f02b7597338dbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d480c87a459b1351f02b7597338dbf1">&#9670;&nbsp;</a></span>SetFillOrBoundaryRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoRenderOverlays::SetFillOrBoundaryRequest </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 21 2023 17:08:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 31 2023 14:17:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
