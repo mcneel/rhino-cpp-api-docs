@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.0</span>
+   &#160;<span id="projectnumber">8.1</span>
    </div>
   </td>
  </tr>
@@ -227,6 +227,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab5f56b6e24ea57a4db2d3372d33db83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1df0cacdb4cb4d01a439c37d7e09738"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ad1df0cacdb4cb4d01a439c37d7e09738">ModelFolder</a> (unsigned int doc_serial_number, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
 <tr class="separator:ad1df0cacdb4cb4d01a439c37d7e09738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe524877f666205f619a7dd16e6c4aef"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#afe524877f666205f619a7dd16e6c4aef">ModelPath</a> (unsigned int doc_serial_number, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
+<tr class="separator:afe524877f666205f619a7dd16e6c4aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad38c272d67b8d295ace225b87bc00a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#acad38c272d67b8d295ace225b87bc00a">MoveFile</a> (const char *sUTF8_OldFileName, const char *sUTF8_NewFileName)</td></tr>
 <tr class="separator:acad38c272d67b8d295ace225b87bc00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237bb6cdbb10033fa54b10e672b1e0b4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a237bb6cdbb10033fa54b10e672b1e0b4">MoveFile</a> (const wchar_t *sOldFileName, const wchar_t *sNewFileName)</td></tr>
@@ -2646,6 +2648,43 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afe524877f666205f619a7dd16e6c4aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe524877f666205f619a7dd16e6c4aef">&#9670;&nbsp;</a></span>ModelPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::ModelPath </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>doc_serial_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Get full path to the specified model. If the model has no name then the working folder is returned. Parameters: doc_serial_number [in] - serial number of the specified model result [out] - Buffer to get folder name. Returns: TRUE if successful otherwise FALSE. </p>
+
+</div>
+</div>
 <a id="acad38c272d67b8d295ace225b87bc00a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acad38c272d67b8d295ace225b87bc00a">&#9670;&nbsp;</a></span>MoveFile() <span class="overload">[1/2]</span></h2>
 
@@ -3117,7 +3156,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 31 2023 14:17:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 21 2023 17:07:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

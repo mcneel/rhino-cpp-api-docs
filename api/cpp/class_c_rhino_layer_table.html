@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.0</span>
+   &#160;<span id="projectnumber">8.1</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ada1099e4cdf9bda7d294804c5718a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c1234febb3b91bc073184829674ee55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a5c1234febb3b91bc073184829674ee55">GetLayerPathName</a> (int layer_index, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;layer_path_name) const</td></tr>
 <tr class="separator:a5c1234febb3b91bc073184829674ee55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c4a5849589abf4238c0ed0cf48eef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a01c4a5849589abf4238c0ed0cf48eef7">GetSortedList</a> (bool bIgnoreDeleted, bool bIgnoreFiltered, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> * &gt; &amp;sorted_list) const</td></tr>
+<tr class="separator:a01c4a5849589abf4238c0ed0cf48eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b13bbb3a6a04876045af8e65cca40d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#ae8b13bbb3a6a04876045af8e65cca40d">GetSortedList</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> * &gt; &amp;, bool=false) const</td></tr>
 <tr class="separator:ae8b13bbb3a6a04876045af8e65cca40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a471633f3eeb07db78ef74b94594e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#af2a471633f3eeb07db78ef74b94594e0">GetUnusedLayerName</a> (const wchar_t *root_name, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;unused_layer_name) const</td></tr>
@@ -906,8 +908,49 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a01c4a5849589abf4238c0ed0cf48eef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c4a5849589abf4238c0ed0cf48eef7">&#9670;&nbsp;</a></span>GetSortedList() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoLayerTable::GetSortedList </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreDeleted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoreFiltered</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sorted_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIgnoreDeleted</td><td>Ignore deleted layers </td></tr>
+    <tr><td class="paramname">bIgnoreFiltered</td><td>Ignore filtered layers </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae8b13bbb3a6a04876045af8e65cca40d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8b13bbb3a6a04876045af8e65cca40d">&#9670;&nbsp;</a></span>GetSortedList()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b13bbb3a6a04876045af8e65cca40d">&#9670;&nbsp;</a></span>GetSortedList() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1517,7 +1560,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 31 2023 14:17:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 21 2023 17:07:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
