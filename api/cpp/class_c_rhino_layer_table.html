@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.1</span>
+   &#160;<span id="projectnumber">8.2</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8f98406eb8db5e6275f4087be0de2bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a03c1eb7697a1c5b5d08d78aa55216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a69a03c1eb7697a1c5b5d08d78aa55216">Sort</a> (int(*compare)(const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> *, const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> *, void *), int(*cull)(const <a class="el" href="class_c_rhino_layer.html">CRhinoLayer</a> *, void *), void *p=0)</td></tr>
 <tr class="separator:a69a03c1eb7697a1c5b5d08d78aa55216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ce76835f008e58a12a603e74011d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a54ce76835f008e58a12a603e74011d13">SortByLayerName</a> (bool bAscending)</td></tr>
+<tr class="separator:a54ce76835f008e58a12a603e74011d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a291649651bd06da85bfe27346d72bc5e"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_c_rhino_doc_table_reference.html">CRhinoDocTableReference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a291649651bd06da85bfe27346d72bc5e">TableReference</a> () const</td></tr>
 <tr class="separator:a291649651bd06da85bfe27346d72bc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b1ce3b7460c6a630362ad6e49b31e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a67b1ce3b7460c6a630362ad6e49b31e8">UndeleteLayer</a> (int layer_index)</td></tr>
@@ -1329,6 +1331,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a54ce76835f008e58a12a603e74011d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ce76835f008e58a12a603e74011d13">&#9670;&nbsp;</a></span>SortByLayerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoLayerTable::SortByLayerName </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAscending</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sort layers, in the layer table, by their name in either ascending or descending order. This function sorts layers in the same manner as Rhino's Layers panel. Parameters: bAscending - [in] Sort in ascending (true) or descending (false) order. Remarks: This function changes the value of <a class="el" href="class_c_rhino_layer.html#a0a1fc04ad8fa7cf73f9db82992d0cef3" title="Runtime index used to sort layers in layer dialog.">CRhinoLayer::m_sort_index</a>. It does not change the index order of layers in the layer table. </p>
+
+</div>
+</div>
 <a id="a291649651bd06da85bfe27346d72bc5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a291649651bd06da85bfe27346d72bc5e">&#9670;&nbsp;</a></span>TableReference()</h2>
 
@@ -1560,7 +1581,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 21 2023 17:07:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2023 16:26:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

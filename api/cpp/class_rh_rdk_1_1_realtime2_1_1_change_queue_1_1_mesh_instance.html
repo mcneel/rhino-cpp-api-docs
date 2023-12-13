@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.1</span>
+   &#160;<span id="projectnumber">8.2</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance-members.html">List of all members</a>  </div>
@@ -77,6 +78,11 @@ $(function() {
 
 <p><code>#include &lt;RhRdk_RCE_Queue2.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance_1_1_ancestry_record.html">AncestryRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aca33183cb20dd53f17d2fed4efcbd759"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html#aca33183cb20dd53f17d2fed4efcbd759">MeshInstance</a> (const <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html">MeshInstance</a> &amp;)=delete</td></tr>
@@ -89,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac565bc2ad457a7a5ce60bbe52e7968f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5fdca5c022d5924a8ae439b20a73fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_rh_rdk_decal_iterator.html">CRhRdkDecalIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html#abc5fdca5c022d5924a8ae439b20a73fd">DecalIterator</a> (void) const</td></tr>
 <tr class="separator:abc5fdca5c022d5924a8ae439b20a73fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cbedbf36e3f143b22cbf63ccc4af1a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance_1_1_ancestry_record.html">AncestryRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html#ae2cbedbf36e3f143b22cbf63ccc4af1a">InstanceAncestry</a> (void) const</td></tr>
+<tr class="separator:ae2cbedbf36e3f143b22cbf63ccc4af1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed24895fdedb9ca975e511f0a4f9e27a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html#aed24895fdedb9ca975e511f0a4f9e27a">InstanceId</a> (void) const</td></tr>
 <tr class="separator:aed24895fdedb9ca975e511f0a4f9e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14fd26292ba9f139f42f07d08674d9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___xform.html">ON_Xform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance.html#af14fd26292ba9f139f42f07d08674d9a">InstanceXform</a> (void) const</td></tr>
@@ -254,6 +262,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a pointer to the decal set for this object. Valid while ApplyChanges is in progress. OBSOLETE - Returns null. Decals are now available on ObjectAttributes. </p>
+
+</div>
+</div>
+<a id="ae2cbedbf36e3f143b22cbf63ccc4af1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cbedbf36e3f143b22cbf63ccc4af1a">&#9670;&nbsp;</a></span>InstanceAncestry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue_1_1_mesh_instance_1_1_ancestry_record.html">AncestryRecord</a>&gt; RhRdk::Realtime2::ChangeQueue::MeshInstance::InstanceAncestry </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -441,7 +467,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 21 2023 17:07:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2023 16:27:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

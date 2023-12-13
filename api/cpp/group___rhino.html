@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.1</span>
+   &#160;<span id="projectnumber">8.2</span>
    </div>
   </td>
  </tr>
@@ -1970,6 +1970,10 @@ Functions</h2></td></tr>
 <tr class="separator:gae163ac83748613c0113b5364b1bf0089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcd6df26224f8edcebc283e229023adb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gadcd6df26224f8edcebc283e229023adb">RhinoFitPointsOnSurface</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;srf, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &gt; &amp;points, double tol, bool Periodic)</td></tr>
 <tr class="separator:gadcd6df26224f8edcebc283e229023adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76f3e462528a7f0c89aa1db24f2cd123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga76f3e462528a7f0c89aa1db24f2cd123">RhinoFitSphereToPoints</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;point_array, <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;sphere)</td></tr>
+<tr class="separator:ga76f3e462528a7f0c89aa1db24f2cd123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67790209b7b7d71b8f908abe661a933d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga67790209b7b7d71b8f908abe661a933d">RhinoFitSphereToPoints</a> (int point_count, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *points, <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;sphere)</td></tr>
+<tr class="separator:ga67790209b7b7d71b8f908abe661a933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab08427e4c23641a3b3fb3325afcd9620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___surface.html">ON_Surface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab08427e4c23641a3b3fb3325afcd9620">RhinoFitSurface</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;surface_in, int udegree=3, int vdegree=3, double dFitTol=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>, double *pAchievedTol=nullptr)</td></tr>
 <tr class="separator:gab08427e4c23641a3b3fb3325afcd9620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0014f620c10d647efceb2777b8b0fc7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga0014f620c10d647efceb2777b8b0fc7c">RhinoFitTrimSurface</a> (const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> *face, const <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> *edge, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;knots, double tolerance, bool bSections, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> * &gt; &amp;FitSurfaces, double *FitMeasurement)</td></tr>
@@ -15444,6 +15448,69 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Fit a sequence of 3d points on a surface to make a curve on the surface. Parameters: srf - [in] Surface on which to construct curve. points - [in] Parameter space coordinates of the points to interpolate. If srf is closed the points can be in the domain covering space of srf (See <a class="el" href="class_o_n___periodic_domain.html">ON_PeriodicDomain</a>). tol - [in] Curve should be within tolerance of surface and points. (srf.Evaluate(points[i]) Periodic - [in] When true make a periodic curve. Returns: A curve interpolating the points. </p>
+
+</div>
+</div>
+<a id="ga76f3e462528a7f0c89aa1db24f2cd123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76f3e462528a7f0c89aa1db24f2cd123">&#9670;&nbsp;</a></span>RhinoFitSphereToPoints() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoFitSphereToPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point_array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;&#160;</td>
+          <td class="paramname"><em>sphere</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Fits a sphere through an array of points. Parameters: points [in] - The points through which to fit. sphere [out] - The resulting sphere. Returns: true if successful, false otherwise. Remarks: Finds a best-fit sphere through the points. </p>
+
+</div>
+</div>
+<a id="ga67790209b7b7d71b8f908abe661a933d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67790209b7b7d71b8f908abe661a933d">&#9670;&nbsp;</a></span>RhinoFitSphereToPoints() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoFitSphereToPoints </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;&#160;</td>
+          <td class="paramname"><em>sphere</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -32287,7 +32354,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 21 2023 17:07:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2023 16:26:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
