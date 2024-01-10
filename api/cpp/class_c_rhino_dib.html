@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.2</span>
+   &#160;<span id="projectnumber">8.3</span>
    </div>
   </td>
  </tr>
@@ -259,6 +259,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab64803503697c3fd18676d537a8647cb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#ab64803503697c3fd18676d537a8647cb">~CRhinoDib</a> ()</td></tr>
 <tr class="memdesc:ab64803503697c3fd18676d537a8647cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruction.  <a href="class_c_rhino_dib.html#ab64803503697c3fd18676d537a8647cb">More...</a><br /></td></tr>
 <tr class="separator:ab64803503697c3fd18676d537a8647cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdf2fd963e929100a3d880e2c7660a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#aabdf2fd963e929100a3d880e2c7660a0">BitBlt</a> (const <a class="el" href="class_o_n__4i_rect.html">ON_4iRect</a> &amp;destRect, const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;srcDib, const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;srcPoint)</td></tr>
+<tr class="separator:aabdf2fd963e929100a3d880e2c7660a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e7947fe0ba3d14d58d0b4669e941d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a44e7947fe0ba3d14d58d0b4669e941d5">BitBlt</a> (int x, int y, int nWidth, int nHeight, const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> *srcDC, int srcLeft, int srcTop, int mode)</td></tr>
 <tr class="separator:a44e7947fe0ba3d14d58d0b4669e941d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad099e6b1ef80178f2825c9d38380a2ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gaa5ec8120661b1ebff405fc7697efb0eb">MAC_DEPRECATED</a> HBITMAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#ad099e6b1ef80178f2825c9d38380a2ca">Bitmap</a> () const</td></tr>
@@ -1388,8 +1390,43 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aabdf2fd963e929100a3d880e2c7660a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdf2fd963e929100a3d880e2c7660a0">&#9670;&nbsp;</a></span>BitBlt() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDib::BitBlt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__4i_rect.html">ON_4iRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>destRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcDib</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2i_point.html">ON_2iPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Work-alike for CDC::BitBlt or ::BitBlt where both drawing surfaces are actually <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a>. Note that the coordinate system is the same as Windows DC - 0,0 is at the top left. (For <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> itself, 0,0 is bottom left) Copys the pixels from srcDib to this. </p>
+
+</div>
+</div>
 <a id="a44e7947fe0ba3d14d58d0b4669e941d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44e7947fe0ba3d14d58d0b4669e941d5">&#9670;&nbsp;</a></span>BitBlt()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e7947fe0ba3d14d58d0b4669e941d5">&#9670;&nbsp;</a></span>BitBlt() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7966,7 +8003,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2023 16:26:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 9 2024 21:40:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

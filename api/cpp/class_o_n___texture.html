@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.2</span>
+   &#160;<span id="projectnumber">8.3</span>
    </div>
   </td>
  </tr>
@@ -197,6 +197,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d611ffe6affd1537aab1bb855fe1051"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___texture.html#a8d611ffe6affd1537aab1bb855fe1051">IsValid</a> (class <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *text_log=nullptr) const override</td></tr>
 <tr class="memdesc:a8d611ffe6affd1537aab1bb855fe1051"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___object.html">ON_Object</a> overrides.  <a href="class_o_n___texture.html#a8d611ffe6affd1537aab1bb855fe1051">More...</a><br /></td></tr>
 <tr class="separator:a8d611ffe6affd1537aab1bb855fe1051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627afe484b50ec9a32038f6d4d236b19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___texture.html#a627afe484b50ec9a32038f6d4d236b19">IsWcsBoxProjected</a> () const</td></tr>
+<tr class="separator:a627afe484b50ec9a32038f6d4d236b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41126a2f353f34ff40645e6c23c4f3ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___texture.html#a41126a2f353f34ff40645e6c23c4f3ef">IsWcsProjected</a> () const</td></tr>
+<tr class="separator:a41126a2f353f34ff40645e6c23c4f3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719eb6ef3d3370eb386020c511be8f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___texture.html#a719eb6ef3d3370eb386020c511be8f39">Offset</a> () const</td></tr>
 <tr class="separator:a719eb6ef3d3370eb386020c511be8f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423eacc9bd893c51411dc8f4e687a045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___texture.html#a423eacc9bd893c51411dc8f4e687a045">operator=</a> (const <a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;)=default</td></tr>
@@ -1089,6 +1093,42 @@ Static Public Attributes</h2></td></tr>
 <p><a class="el" href="class_o_n___object.html">ON_Object</a> overrides. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object</a>.</p>
+
+</div>
+</div>
+<a id="a627afe484b50ec9a32038f6d4d236b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627afe484b50ec9a32038f6d4d236b19">&#9670;&nbsp;</a></span>IsWcsBoxProjected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Texture::IsWcsBoxProjected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns true if this texture uses world coordinate system (WCS) box projection for texture mapping. Remarks: If this texture is used by an object that has an object coordinate system (OCS) frame defined on a mapping channel then that OCS frame is used instead of the WCS. Returns: True if this texture uses WCS box projection. </p>
+
+</div>
+</div>
+<a id="a41126a2f353f34ff40645e6c23c4f3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41126a2f353f34ff40645e6c23c4f3ef">&#9670;&nbsp;</a></span>IsWcsProjected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Texture::IsWcsProjected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns true if this texture uses world coordinate system (WCS) projection for texture mapping. Remarks: If this texture is used by an object that has an object coordinate system (OCS) frame defined on a mapping channel then that OCS frame is used instead of the WCS. Returns: True if this texture uses WCS projection. </p>
 
 </div>
 </div>
@@ -1987,7 +2027,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2023 16:27:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 9 2024 21:41:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

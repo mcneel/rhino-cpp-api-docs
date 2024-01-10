@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.2</span>
+   &#160;<span id="projectnumber">8.3</span>
    </div>
   </td>
  </tr>
@@ -1201,6 +1201,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab8927364fd5256139bf2dfd8d7b8d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e93a0b2e823c12081f6e3e6efe8ef2d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a7e93a0b2e823c12081f6e3e6efe8ef2d">CreateFromBoundary</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
 <tr class="separator:a7e93a0b2e823c12081f6e3e6efe8ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b7ad56696006e8c65d49f0afe3f066"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a63b7ad56696006e8c65d49f0afe3f066">CreateFromBoundaryControlPoints</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;boundary_control_points, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="separator:a63b7ad56696006e8c65d49f0afe3f066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d64c8c2acf505dffbf977c0546d3b85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a2d64c8c2acf505dffbf977c0546d3b85">CreateFromLoftCurves</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &gt; &amp;curves, bool bPeriodicClosedLoft, bool bCorners, unsigned int span_divisions, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
 <tr class="separator:a2d64c8c2acf505dffbf977c0546d3b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc8a8c93ac9271aa3f0549de04f1d7b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a2cc8a8c93ac9271aa3f0549de04f1d7b">CreateFromLoftCurves</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___object_array.html">ON_ObjectArray</a>&lt; <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &gt; &amp;curves, bool bPeriodicClosedLoft, bool bCorners, unsigned int span_divisions, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
@@ -1245,8 +1247,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aff47daae372916cbb3a7e8d7f704b616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35406e9c7cf6f1c0f1152bf966ab65da"><td class="memItemLeft" align="right" valign="top">static class <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a35406e9c7cf6f1c0f1152bf966ab65da">CreateSubDFriendlySurface</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> * &gt; &amp;cubic_curves, bool bPeriodicClosedLoft, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> bool *creases, class <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> *destination_surface)</td></tr>
 <tr class="separator:a35406e9c7cf6f1c0f1152bf966ab65da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223e9e11fda2642990365021024366f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1">CreateSubDGlobeSphere</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, unsigned axial_face_count, unsigned equatorial_face_count, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="memdesc:a223e9e11fda2642990365021024366f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe with triangle fans at the poles and the edges forming latitude parallels and longitude meridians.  <a href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1">More...</a><br /></td></tr>
+<tr class="separator:a223e9e11fda2642990365021024366f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27acb41303b3b0355569cbdbd7c13589"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a27acb41303b3b0355569cbdbd7c13589">CreateSubDIcosahedron</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="separator:a27acb41303b3b0355569cbdbd7c13589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0accacd5ca80a414dd7c0774a7d83a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">CreateSubDQuadSphere</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, unsigned quad_subdivision_level, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
 <tr class="separator:a0b0accacd5ca80a414dd7c0774a7d83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3098eb66e26aa52214c3c098611f4428"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a3098eb66e26aa52214c3c098611f4428">CreateSubDTriSphere</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, unsigned tri_subdivision_level, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="separator:a3098eb66e26aa52214c3c098611f4428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4276ceecf5d9da29219d521c9e897313"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4276ceecf5d9da29219d521c9e897313">EdgesAreConsecutive</a> (<a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> eptr0, <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> eptr1)</td></tr>
 <tr class="separator:a4276ceecf5d9da29219d521c9e897313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95092a4c2ad4c34b6fdfbad6f02b878f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga09d9a731b3db1b876e97b6b43246c325">ON_SubDEdgeTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a95092a4c2ad4c34b6fdfbad6f02b878f">EdgeTagFromContext</a> (unsigned int edge_face_count, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *v0, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *v1)</td></tr>
@@ -1333,6 +1342,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a08f4d3b52bc7d54fa3d9c4969869312f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a08f4d3b52bc7d54fa3d9c4969869312f">CustomFacePackingId</a></td></tr>
+<tr class="memdesc:a08f4d3b52bc7d54fa3d9c4969869312f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The custom face packing is typically used when a subd creation function sets a custom face packing different from the default. Typically this happens when there are quad packs that align well with the overall geometry or to reduce texture distortion. It is used to indicate the built-in automatic face packing was not applied. {91FD7018-8BBE-4492-8D2E-E8761C505ACF}  <a href="class_o_n___sub_d.html#a08f4d3b52bc7d54fa3d9c4969869312f">More...</a><br /></td></tr>
+<tr class="separator:a08f4d3b52bc7d54fa3d9c4969869312f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50603eacdbc50beb23a88590df6e55c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c">DefaultFacePackingId</a></td></tr>
 <tr class="memdesc:ab50603eacdbc50beb23a88590df6e55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId.  <a href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c">More...</a><br /></td></tr>
 <tr class="separator:ab50603eacdbc50beb23a88590df6e55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1349,6 +1361,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:acd29ac82d1fa8c05858cfb0e20d84880"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#acd29ac82d1fa8c05858cfb0e20d84880">FastAndSimpleFacePackingId</a></td></tr>
 <tr class="memdesc:acd29ac82d1fa8c05858cfb0e20d84880"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fast and simple face packing uses topology, vertex tags, and edge tags to group quads into rectangular grids. It does not perform geometric feature analysis. {C3D8DD54-F8C8-4455-BB0E-2A2F4988EC81}  <a href="class_o_n___sub_d.html#acd29ac82d1fa8c05858cfb0e20d84880">More...</a><br /></td></tr>
 <tr class="separator:acd29ac82d1fa8c05858cfb0e20d84880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a8f8c39fee387f1c0f7693799adc17"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a53a8f8c39fee387f1c0f7693799adc17">GlobeSphereFacePackingId</a></td></tr>
+<tr class="memdesc:a53a8f8c39fee387f1c0f7693799adc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The globe sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere</a>. The equatorial band of quads is assigned a central horizontal strip of texture space while the polar triangle fans are assigned horizontal strips from the bottom and top of texture space. The heights of the horizontal strips of texture space are chosen to minimize distortion as latitude varies. {63CA2FC1-8F6C-4EFC-9A07-C6A26A8C93FB}  <a href="class_o_n___sub_d.html#a53a8f8c39fee387f1c0f7693799adc17">More...</a><br /></td></tr>
+<tr class="separator:a53a8f8c39fee387f1c0f7693799adc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ae99edeee4f6fbcf562d2aa49bc0f8d2b">QuadSphereFacePackingId</a></td></tr>
+<tr class="memdesc:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58}  <a href="class_o_n___sub_d.html#ae99edeee4f6fbcf562d2aa49bc0f8d2b">More...</a><br /></td></tr>
+<tr class="separator:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_o_n___geometry"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_o_n___geometry')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td></tr>
 <tr class="memitem:a03dcd2409adc639499e0ca07944dfd0c inherit pub_static_attribs_class_o_n___geometry"><td class="memItemLeft" align="right" valign="top">const static <a class="el" href="class_o_n___geometry.html">ON_Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___geometry.html#a03dcd2409adc639499e0ca07944dfd0c">Unset</a></td></tr>
 <tr class="separator:a03dcd2409adc639499e0ca07944dfd0c inherit pub_static_attribs_class_o_n___geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5416,6 +5434,43 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a63b7ad56696006e8c65d49f0afe3f066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b7ad56696006e8c65d49f0afe3f066">&#9670;&nbsp;</a></span>CreateFromBoundaryControlPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>* ON_SubD::CreateFromBoundaryControlPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_control_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>destination_subd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Uses the input surface to define a SubD. Parameters: boundary_control_points - [in] Boundary control points. destination_subd - [in] Can be nullptr Returns: SubD with specified boundary or nullptr if input is not valid. </p>
+
+</div>
+</div>
 <a id="a2d64c8c2acf505dffbf977c0546d3b85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d64c8c2acf505dffbf977c0546d3b85">&#9670;&nbsp;</a></span>CreateFromLoftCurves() <span class="overload">[1/3]</span></h2>
 
@@ -6543,6 +6598,116 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a223e9e11fda2642990365021024366f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223e9e11fda2642990365021024366f1">&#9670;&nbsp;</a></span>CreateSubDGlobeSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>* ON_SubD::CreateSubDGlobeSphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a>&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a>&#160;</td>
+          <td class="paramname"><em>vertex_location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>axial_face_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>equatorial_face_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>destination_subd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe with triangle fans at the poles and the edges forming latitude parallels and longitude meridians. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sphere</td><td></td></tr>
+    <tr><td class="paramname">vertex_location</td><td>If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. </td></tr>
+    <tr><td class="paramname">axial_face_count</td><td>Number of faces along the spere's meridians. (axial_face_count &gt;= 2) For example, if you wanted each face to span 30 degrees of latitude, you would pass 6 (=180 degrees/30 degrees) for axial_face_count. </td></tr>
+    <tr><td class="paramname">equatorial_face_count</td><td>Number of faces around the sphere's parallels. (equatorial_face_count &gt;= 3) For example, if you wanted each face to span 30 degrees of longitude, you would pass 12 (=360 degrees/30 degrees) for equatorial_face_count. </td></tr>
+    <tr><td class="paramname">destination_subd</td><td>If this pointer is not nullptr, the SubD globe is saved in this instance. Otherwise a new SubD is created. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, pointer to the resulting SubD is returned. Otherwise nullptr is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a27acb41303b3b0355569cbdbd7c13589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27acb41303b3b0355569cbdbd7c13589">&#9670;&nbsp;</a></span>CreateSubDIcosahedron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>* ON_SubD::CreateSubDIcosahedron </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a>&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a>&#160;</td>
+          <td class="paramname"><em>vertex_location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>destination_subd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Creates a SubD sphere based on an icosohedron (20 triangular faces and 5 valent vertices). This is a goofy topology for a Catmull Clark subdivision surface (all triangles, all vertices have 5 edges). You may want to consider using the much behaved result from ON_SubD::CreateSubDQuadSphere(sphere, vertex_location, 1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
+
+</div>
+</div>
 <a id="a0b0accacd5ca80a414dd7c0774a7d83a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b0accacd5ca80a414dd7c0774a7d83a">&#9670;&nbsp;</a></span>CreateSubDQuadSphere()</h2>
 
@@ -6589,6 +6754,55 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Creates a SubD sphere made from quad faces. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. subdivision_level - [in] The resulting sphere will have 6*4^subdivision_level quads. 0 - 6 quads 1 - 24 quad 2 - 96 quads ... destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
+
+</div>
+</div>
+<a id="a3098eb66e26aa52214c3c098611f4428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3098eb66e26aa52214c3c098611f4428">&#9670;&nbsp;</a></span>CreateSubDTriSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>* ON_SubD::CreateSubDTriSphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a>&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a>&#160;</td>
+          <td class="paramname"><em>vertex_location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>tri_subdivision_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>destination_subd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Creates a SubD sphere made from triangular faces. This is a goofy topology for a Catmull Clark subdivision surface (all triangles and all vertices have 5 or 6 edges). You may want to consider using the much behaved result from <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>(sphere, vertex_location, tri_subdivision_level+1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. subdivision_level - [in] 0 - icosahedran - 20 triangles 1 - loop topological subdivision of an icosahedran - 80 triangles N - 4^N * 20 triangles ... destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
 
 </div>
 </div>
@@ -17116,6 +17330,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a08f4d3b52bc7d54fa3d9c4969869312f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f4d3b52bc7d54fa3d9c4969869312f">&#9670;&nbsp;</a></span>CustomFacePackingId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_SubD::CustomFacePackingId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The custom face packing is typically used when a subd creation function sets a custom face packing different from the default. Typically this happens when there are quad packs that align well with the overall geometry or to reduce texture distortion. It is used to indicate the built-in automatic face packing was not applied. {91FD7018-8BBE-4492-8D2E-E8761C505ACF} </p>
+
+</div>
+</div>
 <a id="ab50603eacdbc50beb23a88590df6e55c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab50603eacdbc50beb23a88590df6e55c">&#9670;&nbsp;</a></span>DefaultFacePackingId</h2>
 
@@ -17137,7 +17375,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId. </p>
-<p><a class="el" href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c" title="ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId.">ON_SubD::DefaultFacePackingId</a> ideitifies the default face packing. Code that wants to use the built-in face packing that is currently the best option for general use, will specify <a class="el" href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c" title="ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId.">ON_SubD::DefaultFacePackingId</a>.</p>
+<p><a class="el" href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c" title="ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId.">ON_SubD::DefaultFacePackingId</a> identifies the default face packing. Code that wants to use the built-in face packing that is currently the best option for general use, will specify <a class="el" href="class_o_n___sub_d.html#ab50603eacdbc50beb23a88590df6e55c" title="ADD NEW PackFaces ids above this comment and below FastAndSimplePackFacesId.">ON_SubD::DefaultFacePackingId</a>.</p>
 <p>Currently this id is <a class="el" href="class_o_n___sub_d.html#acd29ac82d1fa8c05858cfb0e20d84880" title="The fast and simple face packing uses topology, vertex tags, and edge tags to group quads into rectan...">ON_SubD::FastAndSimpleFacePackingId</a>. In the future it may be changed to another id. Code that wants to always apply the same face packing will explicitly specify one of the built-in face pack ids defined above.</p>
 
 </div>
@@ -17259,10 +17497,58 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a53a8f8c39fee387f1c0f7693799adc17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a8f8c39fee387f1c0f7693799adc17">&#9670;&nbsp;</a></span>GlobeSphereFacePackingId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_SubD::GlobeSphereFacePackingId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The globe sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere</a>. The equatorial band of quads is assigned a central horizontal strip of texture space while the polar triangle fans are assigned horizontal strips from the bottom and top of texture space. The heights of the horizontal strips of texture space are chosen to minimize distortion as latitude varies. {63CA2FC1-8F6C-4EFC-9A07-C6A26A8C93FB} </p>
+
+</div>
+</div>
+<a id="ae99edeee4f6fbcf562d2aa49bc0f8d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99edeee4f6fbcf562d2aa49bc0f8d2b">&#9670;&nbsp;</a></span>QuadSphereFacePackingId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_SubD::QuadSphereFacePackingId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58} </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2023 16:27:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 9 2024 21:41:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
