@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -290,6 +290,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6133a0010055a3b72c2fd35dfc31ae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49407687a93d84a63403a61f16edc8e6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a49407687a93d84a63403a61f16edc8e6">TexturePointsCapacity</a> () const</td></tr>
 <tr class="separator:a49407687a93d84a63403a61f16edc8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e040a572760e3c76921b28fcd888778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a4e040a572760e3c76921b28fcd888778">TopologyCRC32</a> (bool bIncludeSubdivisionProperties) const</td></tr>
+<tr class="memdesc:a4e040a572760e3c76921b28fcd888778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 32 bit CRC that is useful in detecting when a face's connections to attached vertices or edges have been changed.  <a href="class_o_n___sub_d_face.html#a4e040a572760e3c76921b28fcd888778">More...</a><br /></td></tr>
+<tr class="separator:a4e040a572760e3c76921b28fcd888778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab223da29ca65696c348f0c30a4eb5144"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#ab223da29ca65696c348f0c30a4eb5144">TopologyHash</a> (bool bIncludeSubdivisionProperties) const</td></tr>
+<tr class="memdesc:ab223da29ca65696c348f0c30a4eb5144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a SHA-1 hash that is useful in detecting when a face's connections to attached vertices or edges have been changed. See also <a class="el" href="class_o_n___sub_d_face.html#a4e040a572760e3c76921b28fcd888778" title="Get a 32 bit CRC that is useful in detecting when a face&#39;s connections to attached vertices or edges ...">ON_SubDFace::TopologyCRC32()</a> which, in practice, is just as reliable as the hash.  <a href="class_o_n___sub_d_face.html#ab223da29ca65696c348f0c30a4eb5144">More...</a><br /></td></tr>
+<tr class="separator:ab223da29ca65696c348f0c30a4eb5144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802b05c033e658069665a579ceafb7c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a802b05c033e658069665a579ceafb7c1">Transform</a> (bool bTransformationSavedSubdivisionPoint, const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
 <tr class="separator:a802b05c033e658069665a579ceafb7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136a201391705dbfec5791d22ad125d1"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face.html#a136a201391705dbfec5791d22ad125d1">Vertex</a> (unsigned int i) const</td></tr>
@@ -2698,6 +2704,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e040a572760e3c76921b28fcd888778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e040a572760e3c76921b28fcd888778">&#9670;&nbsp;</a></span>TopologyCRC32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_SubDFace::TopologyCRC32 </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIncludeSubdivisionProperties</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a 32 bit CRC that is useful in detecting when a face's connections to attached vertices or edges have been changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIncludeSubdivisionProperties</td><td>Pass true if you want to include nontopological subdivision properties (control net points) that help determine the faces's subdivision point in the hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 32 bit CRC = this-&gt;TopologyHash(bIncludeSubdivisionProperties).CRC32(0). </dd></dl>
+
+</div>
+</div>
+<a id="ab223da29ca65696c348f0c30a4eb5144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab223da29ca65696c348f0c30a4eb5144">&#9670;&nbsp;</a></span>TopologyHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> ON_SubDFace::TopologyHash </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIncludeSubdivisionProperties</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a SHA-1 hash that is useful in detecting when a face's connections to attached vertices or edges have been changed. See also <a class="el" href="class_o_n___sub_d_face.html#a4e040a572760e3c76921b28fcd888778" title="Get a 32 bit CRC that is useful in detecting when a face&#39;s connections to attached vertices or edges ...">ON_SubDFace::TopologyCRC32()</a> which, in practice, is just as reliable as the hash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIncludeSubdivisionProperties</td><td>Pass true if you want to include nontopological subdivision properties (control net points) that help determine the faces's subdivision point in the hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A SHA-1 hash of the face's id the ids of the vertices and edges attached to this face. </dd></dl>
+
+</div>
+</div>
 <a id="a802b05c033e658069665a579ceafb7c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a802b05c033e658069665a579ceafb7c1">&#9670;&nbsp;</a></span>Transform()</h2>
 
@@ -3119,7 +3179,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:41:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

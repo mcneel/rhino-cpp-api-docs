@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20bb8550f3087b93ec31aeab0a40a853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4c7421aef0e50bee763f9ae932c17f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a0c4c7421aef0e50bee763f9ae932c17f">First</a> ()</td></tr>
 <tr class="separator:a0c4c7421aef0e50bee763f9ae932c17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644a6ccb9f59d2444cb9b8bedf27d8ca"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_o_n___r_tree_leaf.html">ON_RTreeLeaf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a644a6ccb9f59d2444cb9b8bedf27d8ca">FirstLeaf</a> ()</td></tr>
+<tr class="memdesc:a644a6ccb9f59d2444cb9b8bedf27d8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate every leaf in an R-tree. <a class="el" href="class_o_n___r_tree_iterator.html">ON_RTreeIterator</a> rit(rtree); for ( const ON_RTreeLeaf* leaf = rit.FirstLeaf(); nullptr != leaf; leaf = rith.nextLeaf()) {...} ///  <a href="class_o_n___r_tree_iterator.html#a644a6ccb9f59d2444cb9b8bedf27d8ca">More...</a><br /></td></tr>
+<tr class="separator:a644a6ccb9f59d2444cb9b8bedf27d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813ac66a5853cb90714d78ba8817e761"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a813ac66a5853cb90714d78ba8817e761">Initialize</a> (const class <a class="el" href="class_o_n___r_tree.html">ON_RTree</a> &amp;a_rtree)</td></tr>
 <tr class="separator:a813ac66a5853cb90714d78ba8817e761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f5b6357658b13995aee85596fa9cc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a46f5b6357658b13995aee85596fa9cc9">Initialize</a> (const struct <a class="el" href="struct_o_n___r_tree_node.html">ON_RTreeNode</a> *a_node)</td></tr>
@@ -91,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a266b8ac48962bbcc127840dc531c3bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279cf841b4f30c4a556fba6d0a2ab948"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a279cf841b4f30c4a556fba6d0a2ab948">Next</a> ()</td></tr>
 <tr class="separator:a279cf841b4f30c4a556fba6d0a2ab948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab344595e39052b9fd7fa2ed6a679104a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_o_n___r_tree_leaf.html">ON_RTreeLeaf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#ab344595e39052b9fd7fa2ed6a679104a">NextLeaf</a> ()</td></tr>
+<tr class="memdesc:ab344595e39052b9fd7fa2ed6a679104a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate every leaf in an R-tree. <a class="el" href="class_o_n___r_tree_iterator.html">ON_RTreeIterator</a> rit(rtree); for ( const ON_RTreeLeaf* leaf = rit.FirstLeaf(); nullptr != leaf; leaf = rith.nextLeaf()) {...} ///  <a href="class_o_n___r_tree_iterator.html#ab344595e39052b9fd7fa2ed6a679104a">More...</a><br /></td></tr>
+<tr class="separator:ab344595e39052b9fd7fa2ed6a679104a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8728b95b2889aaa7f8877a868d622805"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#a8728b95b2889aaa7f8877a868d622805">Prev</a> ()</td></tr>
 <tr class="separator:a8728b95b2889aaa7f8877a868d622805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7157ac16cb8e002259c36ac09d27cb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_o_n___r_tree_branch.html">ON_RTreeBranch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree_iterator.html#aa7157ac16cb8e002259c36ac09d27cb2">Value</a> () const</td></tr>
@@ -181,6 +187,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a644a6ccb9f59d2444cb9b8bedf27d8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644a6ccb9f59d2444cb9b8bedf27d8ca">&#9670;&nbsp;</a></span>FirstLeaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_o_n___r_tree_leaf.html">ON_RTreeLeaf</a>* ON_RTreeIterator::FirstLeaf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate every leaf in an R-tree. <a class="el" href="class_o_n___r_tree_iterator.html">ON_RTreeIterator</a> rit(rtree); for ( const ON_RTreeLeaf* leaf = rit.FirstLeaf(); nullptr != leaf; leaf = rith.nextLeaf()) {...} /// </p>
+<dl class="section return"><dt>Returns</dt><dd>First leaf in the R-tree; </dd></dl>
+
+</div>
+</div>
 <a id="a813ac66a5853cb90714d78ba8817e761"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a813ac66a5853cb90714d78ba8817e761">&#9670;&nbsp;</a></span>Initialize() <span class="overload">[1/2]</span></h2>
 
@@ -267,6 +293,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab344595e39052b9fd7fa2ed6a679104a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab344595e39052b9fd7fa2ed6a679104a">&#9670;&nbsp;</a></span>NextLeaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_o_n___r_tree_leaf.html">ON_RTreeLeaf</a>* ON_RTreeIterator::NextLeaf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate every leaf in an R-tree. <a class="el" href="class_o_n___r_tree_iterator.html">ON_RTreeIterator</a> rit(rtree); for ( const ON_RTreeLeaf* leaf = rit.FirstLeaf(); nullptr != leaf; leaf = rith.nextLeaf()) {...} /// </p>
+<dl class="section return"><dt>Returns</dt><dd>Next leaf in the R-tree; </dd></dl>
+
+</div>
+</div>
 <a id="a8728b95b2889aaa7f8877a868d622805"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8728b95b2889aaa7f8877a868d622805">&#9670;&nbsp;</a></span>Prev()</h2>
 
@@ -306,7 +352,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:40:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

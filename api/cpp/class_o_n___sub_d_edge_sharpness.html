@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -205,8 +205,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abadf2c108e64ec470aed3df370e1dde6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#abadf2c108e64ec470aed3df370e1dde6">Union</a> (const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> &amp;a, const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a> &amp;b)</td></tr>
 <tr class="memdesc:abadf2c108e64ec470aed3df370e1dde6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a sharpness interval that is the union of the nonzero input sharpness intervals.  <a href="class_o_n___sub_d_edge_sharpness.html#abadf2c108e64ec470aed3df370e1dde6">More...</a><br /></td></tr>
 <tr class="separator:abadf2c108e64ec470aed3df370e1dde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac863f6be145189f80f6ddd76c3634a4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#aac863f6be145189f80f6ddd76c3634a4">VertexSharpness</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga97b7326e722ee6c1b1ec64023ab1a375">ON_SubDVertexTag</a> vertex_tag, double global_vertex_sharpness, unsigned sharp_edge_end_count, double maximum_edge_end_sharpness)</td></tr>
+<tr class="memdesc:aac863f6be145189f80f6ddd76c3634a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the vertex sharpness from the attached sharp edge information. Note that vertices with a corner tag always have zero sharpness.  <a href="class_o_n___sub_d_edge_sharpness.html#aac863f6be145189f80f6ddd76c3634a4">More...</a><br /></td></tr>
+<tr class="separator:aac863f6be145189f80f6ddd76c3634a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcaba8019251a7e021a837d7c48f1491"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#adcaba8019251a7e021a837d7c48f1491">VertexSharpness</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga97b7326e722ee6c1b1ec64023ab1a375">ON_SubDVertexTag</a> vertex_tag, unsigned sharp_edge_end_count, double maximum_edge_end_sharpness)</td></tr>
-<tr class="memdesc:adcaba8019251a7e021a837d7c48f1491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the vertex sharpness from the attached sharp edge information. Note that vertices with a corner tag always have zero sharpness.  <a href="class_o_n___sub_d_edge_sharpness.html#adcaba8019251a7e021a837d7c48f1491">More...</a><br /></td></tr>
 <tr class="separator:adcaba8019251a7e021a837d7c48f1491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -1745,8 +1747,68 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aac863f6be145189f80f6ddd76c3634a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac863f6be145189f80f6ddd76c3634a4">&#9670;&nbsp;</a></span>VertexSharpness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double ON_SubDEdgeSharpness::VertexSharpness </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga97b7326e722ee6c1b1ec64023ab1a375">ON_SubDVertexTag</a>&#160;</td>
+          <td class="paramname"><em>vertex_tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>global_vertex_sharpness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>sharp_edge_end_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maximum_edge_end_sharpness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the vertex sharpness from the attached sharp edge information. Note that vertices with a corner tag always have zero sharpness. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_tag</td><td>The vertex tag (smooth, crease, dart, corner). For smooth, crease, and dart, this is used to determine the number of attached crease edges. COrner vertices always have sharpness = 0. </td></tr>
+    <tr><td class="paramname">global_vertex_sharpness</td><td>The cases where maximum_edge_end_sharpness arise only when the vertex_tag is crease, a subset of a SubD is being used to calculate maximum_edge_end_sharpness, the crease vertex has two sectors and the maximum_edge_end_sharpness is different for the two sectors, and only one sector of a 2 sector crease vertex is in the subset. This is a very specialized situation thot occurs only in low level SubD evaluation code. In all other cases, this value doesn't matter as long as it is 0 &lt;= global_vertex_sharpness &lt;= maximum_edge_end_sharpness. When in doubt pass 0.0. </td></tr>
+    <tr><td class="paramname">sharp_edge_end_count</td><td>Number of sharp edges attached to the vertex that have nonzero end sharpness at the vertex. </td></tr>
+    <tr><td class="paramname">maximum_edge_end_sharpness</td><td>The largest sharp edge end sharpness at the vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="adcaba8019251a7e021a837d7c48f1491"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcaba8019251a7e021a837d7c48f1491">&#9670;&nbsp;</a></span>VertexSharpness()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adcaba8019251a7e021a837d7c48f1491">&#9670;&nbsp;</a></span>VertexSharpness() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1784,17 +1846,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Calculate the vertex sharpness from the attached sharp edge information. Note that vertices with a corner tag always have zero sharpness. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vertex_tag</td><td>The vertex tag (smooth, crease, dart, corner). For smooth, crease, and dart, this is used to determine the number of attached crease edges. COrner vertices always have sharpness = 0. </td></tr>
-    <tr><td class="paramname">sharp_edge_end_count</td><td>Number of sharp edges attached to the vertex that have nonzero end sharpness at the vertex.</td></tr>
-    <tr><td class="paramname">maximum_edge_end_sharpness</td><td>The largest sharp edge end sharpness at the vertex. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd>Use the version with a global_vertex_sharpness parameter. </dd></dl>
 
 </div>
 </div>
@@ -1994,7 +2046,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:41:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

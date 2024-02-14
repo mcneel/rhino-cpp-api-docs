@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -1251,10 +1251,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a223e9e11fda2642990365021024366f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe with triangle fans at the poles and the edges forming latitude parallels and longitude meridians.  <a href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1">More...</a><br /></td></tr>
 <tr class="separator:a223e9e11fda2642990365021024366f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27acb41303b3b0355569cbdbd7c13589"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a27acb41303b3b0355569cbdbd7c13589">CreateSubDIcosahedron</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="memdesc:a27acb41303b3b0355569cbdbd7c13589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a SubD sphere based on an icosohedron (20 triangular faces and 5 valent vertices). This is a goofy topology for a Catmull Clark subdivision surface (all triangles, all vertices have 5 edges). You may want to consider using the much behaved result from ON_SubD::CreateSubDQuadSphere(sphere, vertex_location, 1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>.  <a href="class_o_n___sub_d.html#a27acb41303b3b0355569cbdbd7c13589">More...</a><br /></td></tr>
 <tr class="separator:a27acb41303b3b0355569cbdbd7c13589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0accacd5ca80a414dd7c0774a7d83a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">CreateSubDQuadSphere</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, unsigned quad_subdivision_level, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="memdesc:a0b0accacd5ca80a414dd7c0774a7d83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a SubD sphere made from quad faces.  <a href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">More...</a><br /></td></tr>
 <tr class="separator:a0b0accacd5ca80a414dd7c0774a7d83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3098eb66e26aa52214c3c098611f4428"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a3098eb66e26aa52214c3c098611f4428">CreateSubDTriSphere</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> sphere, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> vertex_location, unsigned tri_subdivision_level, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *destination_subd)</td></tr>
+<tr class="memdesc:a3098eb66e26aa52214c3c098611f4428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a SubD sphere made from triangular faces. This is a goofy topology for a Catmull Clark subdivision surface (all triangles and all vertices have 5 or 6 edges). You may want to consider using the much behaved result from <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a" title="Creates a SubD sphere made from quad faces.">ON_SubD::CreateSubDQuadSphere()</a> or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>.  <a href="class_o_n___sub_d.html#a3098eb66e26aa52214c3c098611f4428">More...</a><br /></td></tr>
 <tr class="separator:a3098eb66e26aa52214c3c098611f4428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4276ceecf5d9da29219d521c9e897313"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4276ceecf5d9da29219d521c9e897313">EdgesAreConsecutive</a> (<a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> eptr0, <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> eptr1)</td></tr>
 <tr class="separator:a4276ceecf5d9da29219d521c9e897313"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1365,7 +1368,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a53a8f8c39fee387f1c0f7693799adc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The globe sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere</a>. The equatorial band of quads is assigned a central horizontal strip of texture space while the polar triangle fans are assigned horizontal strips from the bottom and top of texture space. The heights of the horizontal strips of texture space are chosen to minimize distortion as latitude varies. {63CA2FC1-8F6C-4EFC-9A07-C6A26A8C93FB}  <a href="class_o_n___sub_d.html#a53a8f8c39fee387f1c0f7693799adc17">More...</a><br /></td></tr>
 <tr class="separator:a53a8f8c39fee387f1c0f7693799adc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ae99edeee4f6fbcf562d2aa49bc0f8d2b">QuadSphereFacePackingId</a></td></tr>
-<tr class="memdesc:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58}  <a href="class_o_n___sub_d.html#ae99edeee4f6fbcf562d2aa49bc0f8d2b">More...</a><br /></td></tr>
+<tr class="memdesc:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a" title="Creates a SubD sphere made from quad faces.">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58}  <a href="class_o_n___sub_d.html#ae99edeee4f6fbcf562d2aa49bc0f8d2b">More...</a><br /></td></tr>
 <tr class="separator:ae99edeee4f6fbcf562d2aa49bc0f8d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_o_n___geometry"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_o_n___geometry')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td></tr>
 <tr class="memitem:a03dcd2409adc639499e0ca07944dfd0c inherit pub_static_attribs_class_o_n___geometry"><td class="memItemLeft" align="right" valign="top">const static <a class="el" href="class_o_n___geometry.html">ON_Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___geometry.html#a03dcd2409adc639499e0ca07944dfd0c">Unset</a></td></tr>
@@ -6655,13 +6658,13 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sphere</td><td></td></tr>
     <tr><td class="paramname">vertex_location</td><td>If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. </td></tr>
-    <tr><td class="paramname">axial_face_count</td><td>Number of faces along the spere's meridians. (axial_face_count &gt;= 2) For example, if you wanted each face to span 30 degrees of latitude, you would pass 6 (=180 degrees/30 degrees) for axial_face_count. </td></tr>
+    <tr><td class="paramname">axial_face_count</td><td>Number of faces along the sphere's meridians. (axial_face_count &gt;= 2) For example, if you wanted each face to span 30 degrees of latitude, you would pass 6 (=180 degrees/30 degrees) for axial_face_count. </td></tr>
     <tr><td class="paramname">equatorial_face_count</td><td>Number of faces around the sphere's parallels. (equatorial_face_count &gt;= 3) For example, if you wanted each face to span 30 degrees of longitude, you would pass 12 (=360 degrees/30 degrees) for equatorial_face_count. </td></tr>
     <tr><td class="paramname">destination_subd</td><td>If this pointer is not nullptr, the SubD globe is saved in this instance. Otherwise a new SubD is created. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If the input is valid, pointer to the resulting SubD is returned. Otherwise nullptr is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, pointer to the SubD globe sphere is returned. Otherwise nullptr is returned. </dd></dl>
 
 </div>
 </div>
@@ -6704,7 +6707,17 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Creates a SubD sphere based on an icosohedron (20 triangular faces and 5 valent vertices). This is a goofy topology for a Catmull Clark subdivision surface (all triangles, all vertices have 5 edges). You may want to consider using the much behaved result from ON_SubD::CreateSubDQuadSphere(sphere, vertex_location, 1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
+
+<p>Creates a SubD sphere based on an icosohedron (20 triangular faces and 5 valent vertices). This is a goofy topology for a Catmull Clark subdivision surface (all triangles, all vertices have 5 edges). You may want to consider using the much behaved result from ON_SubD::CreateSubDQuadSphere(sphere, vertex_location, 1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sphere</td><td>Location, size and orientation of the sphere that circumscribes the icosahedron. </td></tr>
+    <tr><td class="paramname">vertex_location</td><td>If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. </td></tr>
+    <tr><td class="paramname">destination_subd</td><td>If this pointer is not nullptr, the SubD icosahedron is saved in this instance. Otherwise a new SubD is created. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, pointer to the SubD icosahedron is returned. Otherwise nullptr is returned. </dd></dl>
 
 </div>
 </div>
@@ -6753,7 +6766,18 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Creates a SubD sphere made from quad faces. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. subdivision_level - [in] The resulting sphere will have 6*4^subdivision_level quads. 0 - 6 quads 1 - 24 quad 2 - 96 quads ... destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
+
+<p>Creates a SubD sphere made from quad faces. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sphere</td><td>Location, size and orientation of the sphere.</td></tr>
+    <tr><td class="paramname">vertex_location</td><td>If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere.Otherwise the limit surface points will be on the sphere. </td></tr>
+    <tr><td class="paramname">quad_subdivision_level</td><td>The resulting sphere will have 6*4^subdivision_level quads. (0 for 6 quads, 1 for 24 quads, 2 for 96 quads, ...). </td></tr>
+    <tr><td class="paramname">destination_subd</td><td>If destination_subd is not null, the SubD sphere is saved in this instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input parameters are valid, a pointer to the SubD quad sphere is returned. Otherwise nullptr is returned. </dd></dl>
 
 </div>
 </div>
@@ -6802,7 +6826,18 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Creates a SubD sphere made from triangular faces. This is a goofy topology for a Catmull Clark subdivision surface (all triangles and all vertices have 5 or 6 edges). You may want to consider using the much behaved result from <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>(sphere, vertex_location, tri_subdivision_level+1, destination_subd) or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. Parameters: sphere - [in] Location, size and orientation of the sphere vertex_location - [in] If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. subdivision_level - [in] 0 - icosahedran - 20 triangles 1 - loop topological subdivision of an icosahedran - 80 triangles N - 4^N * 20 triangles ... destination_subd [out] - If destination_subd is not null, the SubD sphere is saved in this instance. Returns: Pointer to the resulting SubD if successful Null for error </p>
+
+<p>Creates a SubD sphere made from triangular faces. This is a goofy topology for a Catmull Clark subdivision surface (all triangles and all vertices have 5 or 6 edges). You may want to consider using the much behaved result from <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a" title="Creates a SubD sphere made from quad faces.">ON_SubD::CreateSubDQuadSphere()</a> or even the result from <a class="el" href="class_o_n___sub_d.html#a223e9e11fda2642990365021024366f1" title="Creates a SubD sphere made from polar triangle fans and bands of quads. The result resembles a globe ...">ON_SubD::CreateSubDGlobeSphere()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sphere</td><td>Location, size and orientation of the sphere.</td></tr>
+    <tr><td class="paramname">vertex_location</td><td>If vertex_location = <a class="el" href="group__open_n_u_r_b_s.html#gga0a25951e3c8f7324e2747162822b819aa7cb4aa7a91fc1cc1d459f6a5894e3057">ON_SubDComponentLocation::ControlNet</a>, then the control net points will be on the surface of the sphere. Otherwise the limit surface points will be on the sphere. </td></tr>
+    <tr><td class="paramname">tri_subdivision_level</td><td>The resulting sphere will have 20*4^subdivision_level triangles. (0 for 20 triangles, 1 for 80 triangles, 2 for 320 triangles, ...). </td></tr>
+    <tr><td class="paramname">destination_subd</td><td>If this pointer is not nullptr, the SubD tri sphere is saved in this instance. Otherwise a new SubD is created. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, pointer to the SubD tri sphere is returned. Otherwise nullptr is returned. </dd></dl>
 
 </div>
 </div>
@@ -8437,7 +8472,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000100">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d.html#a4297be9126d3871fe9f9741811598599">ON_SubD::ColorsMappingTag()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d.html#a4297be9126d3871fe9f9741811598599">ON_SubD::ColorsMappingTag()</a> </dd></dl>
 
 </div>
 </div>
@@ -11403,7 +11438,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Apply reflection symmetry </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Call ON_SubD::MakeSymmetric(symmetry); </dd></dl>
+<p>Description: Apply reflection symmetry </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd>Call ON_SubD::MakeSymmetric(symmetry); </dd></dl>
 
 </div>
 </div>
@@ -11457,7 +11492,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Obsolete - call <a class="el" href="class_o_n___sub_d.html#a2d0b0dd2241cd57cc3198b8cfccacfef">ON_SubD::MakeSymmetric()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">Deprecated:</a></b></dt><dd>Obsolete - call <a class="el" href="class_o_n___sub_d.html#a2d0b0dd2241cd57cc3198b8cfccacfef">ON_SubD::MakeSymmetric()</a> </dd></dl>
 
 </div>
 </div>
@@ -14406,7 +14441,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d.html#aae6c07c02e3ab30cfbc9a3d92d3d4cdf">ON_SubD::SetColorsMappingTag()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d.html#aae6c07c02e3ab30cfbc9a3d92d3d4cdf">ON_SubD::SetColorsMappingTag()</a> </dd></dl>
 
 </div>
 </div>
@@ -15353,7 +15388,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>Obsolete - use ProjectVerticesToPlane </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Obsolete - use ProjectVerticesToPlane </dd></dl>
 
 </div>
 </div>
@@ -17541,14 +17576,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58} </p>
+<p>The quad sphere face packing is used by <a class="el" href="class_o_n___sub_d.html#a0b0accacd5ca80a414dd7c0774a7d83a" title="Creates a SubD sphere made from quad faces.">ON_SubD::CreateSubDQuadSphere</a>. It divides the quad sphere into two similar sets (like a baseball cover) and assigns the bottom third of texture space to the first region and the top third to the second region. The middle third is unmapped so that texture distortion is uniform for each quad. {9C491E5C-2B46-48AA-BD43-7B18FDC52D58} </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:41:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

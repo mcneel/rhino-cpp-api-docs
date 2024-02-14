@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -997,7 +997,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Destroy a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to destroy If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then all attached meshes of all types are destroyed. bDeleteMesh - [in] if true, cached mesh is deleted. If false, pointer to cached mesh is just set to null. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes </dd></dl>
+<p>Description: Destroy a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to destroy If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then all attached meshes of all types are destroyed. bDeleteMesh - [in] if true, cached mesh is deleted. If false, pointer to cached mesh is just set to null. </p>
 
 </div>
 </div>
@@ -1255,7 +1255,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Deprecated function.</p>
 <p>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a> to determine how many end caps there are. Use <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a> to determine how many profiles there are. Use <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> to determine how many smooth subsegments are in a profile. Each smooth subsegment becomes a wall face in the brep form.</p>
 <p>Returns: Number of "faces" the extrusion has. 0: extrusion is not valid 1: extrusion is not capped 2: extrusion has a closed outer profile and one cap 3: extrusion has a closed outer profile and two caps</p>
-<p>Remarks: This function was written before extrusions supported "holes" and before the brep form was divided at profile creases. At this point it simply leads to confusion. See the Description function replacements. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a>, <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a>, or <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> </dd></dl>
+<p>Remarks: This function was written before extrusions supported "holes" and before the brep form was divided at profile creases. At this point it simply leads to confusion. See the Description function replacements. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a4095513334e6ee090ec2044e436279bb">CapCount()</a>, <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a>, or <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ProfileSmoothSegmentCount()</a> </dd></dl>
 
 </div>
 </div>
@@ -2707,7 +2707,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Get a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to get. <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> and <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a> remove the meshes of those types. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then the first non null mesh is returned. Returns: A pointer to a mesh on the ON_Extusion object. <br  />
- This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes </dd></dl>
+ This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. </p>
 
 </div>
 </div>
@@ -3329,7 +3329,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> mesh interface Description: Attach a mesh to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh that is being attached. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a>, the mesh is attached as that type of mesh. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then nothing is done and false is returned. mesh - [in] mesh to attach. <br  />
- mesh must be on the heap because <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a> will delete it. if there is already of mesh of the prescribed type, it will be deleted. if mesh is null, any existing mesh is deleted and nothing is attached. Remarks: DEPRECATED. Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___extrusion.html#a1113c9fca78dfe6e6b19a742525efbc0" title="Cached meshes used for rendering, analysis, ...">ON_Extrusion.m_mesh_cache</a> to managed cached meshes </dd></dl>
+ mesh must be on the heap because <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a> will delete it. if there is already of mesh of the prescribed type, it will be deleted. if mesh is null, any existing mesh is deleted and nothing is attached. </p>
 
 </div>
 </div>
@@ -3992,7 +3992,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:40:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

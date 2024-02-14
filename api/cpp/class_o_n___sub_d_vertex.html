@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -260,6 +260,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52b92d1ea2792374cef7e0403aa14ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d5e04cf0c29cdb1fc3546fd20358fa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a6d5e04cf0c29cdb1fc3546fd20358fa6">SurfacePointIsSet</a> () const</td></tr>
 <tr class="separator:a6d5e04cf0c29cdb1fc3546fd20358fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713e06bbee36928397a5d02c9e56754e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a713e06bbee36928397a5d02c9e56754e">TopologyCRC32</a> (bool bIncludeSubdivisionProperties) const</td></tr>
+<tr class="memdesc:a713e06bbee36928397a5d02c9e56754e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 32 bit CRC that is useful in detecting when a vertex's connections to attached edges or faces have been changed.  <a href="class_o_n___sub_d_vertex.html#a713e06bbee36928397a5d02c9e56754e">More...</a><br /></td></tr>
+<tr class="separator:a713e06bbee36928397a5d02c9e56754e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fba624cff16d8ce6126509c538164c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a3fba624cff16d8ce6126509c538164c8">TopologyHash</a> (bool bIncludeSubdivisionProperties) const</td></tr>
+<tr class="memdesc:a3fba624cff16d8ce6126509c538164c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a SHA-1 hash that is useful in detecting when a vertex's connections to attached edges or faces have been changed. See also <a class="el" href="class_o_n___sub_d_vertex.html#a713e06bbee36928397a5d02c9e56754e" title="Get a 32 bit CRC that is useful in detecting when a vertex&#39;s connections to attached edges or faces h...">ON_SubDVertex::TopologyCRC32()</a> which, in practice, is just as reliable as the hash.  <a href="class_o_n___sub_d_vertex.html#a3fba624cff16d8ce6126509c538164c8">More...</a><br /></td></tr>
+<tr class="separator:a3fba624cff16d8ce6126509c538164c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2f00bd21786f979ee52f805d423a2b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#adb2f00bd21786f979ee52f805d423a2b">ToString</a> (bool bIncludeControlNetPoint, bool bIncludeTopology) const</td></tr>
 <tr class="separator:adb2f00bd21786f979ee52f805d423a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ccd101b5186a2740092087cd5555d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#ad8ccd101b5186a2740092087cd5555d8">Transform</a> (bool bTransformationSavedSubdivisionPoint, const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
@@ -2352,6 +2358,60 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a713e06bbee36928397a5d02c9e56754e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713e06bbee36928397a5d02c9e56754e">&#9670;&nbsp;</a></span>TopologyCRC32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> ON_SubDVertex::TopologyCRC32 </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIncludeSubdivisionProperties</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a 32 bit CRC that is useful in detecting when a vertex's connections to attached edges or faces have been changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIncludeSubdivisionProperties</td><td>Pass true if you want to include nontopological subdivision properties (tags, sharpnesses, control net point) that help determine the vertex's subdivision point in the CRC. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 32 bit CRC = this-&gt;TopologyHash(bIncludeSubdivisionProperties).CRC32(0). </dd></dl>
+
+</div>
+</div>
+<a id="a3fba624cff16d8ce6126509c538164c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fba624cff16d8ce6126509c538164c8">&#9670;&nbsp;</a></span>TopologyHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> ON_SubDVertex::TopologyHash </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIncludeSubdivisionProperties</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a SHA-1 hash that is useful in detecting when a vertex's connections to attached edges or faces have been changed. See also <a class="el" href="class_o_n___sub_d_vertex.html#a713e06bbee36928397a5d02c9e56754e" title="Get a 32 bit CRC that is useful in detecting when a vertex&#39;s connections to attached edges or faces h...">ON_SubDVertex::TopologyCRC32()</a> which, in practice, is just as reliable as the hash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIncludeSubdivisionProperties</td><td>Pass true if you want to include nontopological subdivision properties (tags, sharpnesses, control net point) that help determine the vertex's subdivision point in the hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A SHA-1 hash of the vertex's id and the ids of the edges and faces attached to this vertex. </dd></dl>
+
+</div>
+</div>
 <a id="adb2f00bd21786f979ee52f805d423a2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb2f00bd21786f979ee52f805d423a2b">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -2782,7 +2842,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:41:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

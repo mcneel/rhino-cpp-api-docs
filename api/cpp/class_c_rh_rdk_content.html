@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -633,6 +633,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a365cbe504a139d92cc5af4db8878cf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf88ecce2678fb0915c0c85b4d23868b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#abf88ecce2678fb0915c0c85b4d23868b">SetDocumentAssoc</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc) const</td></tr>
 <tr class="separator:abf88ecce2678fb0915c0c85b4d23868b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f9b9b80045c36e29d58a07d7334316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#ae8f9b9b80045c36e29d58a07d7334316">SetDocumentAssoc</a> (const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;) const</td></tr>
+<tr class="separator:ae8f9b9b80045c36e29d58a07d7334316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96dfd64035699372e14bdec69d3a4c28"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a96dfd64035699372e14bdec69d3a4c28">SetExtraRequirementParameter</a> (const wchar_t *wszParamName, const wchar_t *wszExtraReqName, const <a class="el" href="class_c_rh_rdk_variant.html">CRhRdkVariant</a> &amp;vValue, <a class="el" href="class_i_auto_u_i_extra_requirements.html#a11e27e89c6eb81dd22d00b3963dd2f7a">SetContext</a> sc)</td></tr>
 <tr class="separator:a96dfd64035699372e14bdec69d3a4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7167b2f4d5dceb56ab33de1a8563dcfc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_content.html#a7167b2f4d5dceb56ab33de1a8563dcfc">SetGroupId</a> (const UUID &amp;uuidGroup) const</td></tr>
@@ -2789,7 +2791,7 @@ CRhRdkPreviewAppearance </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000292">Deprecated:</a></b></dt><dd>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000291">Deprecated:</a></b></dt><dd>This method is not implemented and returns null. Please use one of the other document methods to get the RDK Document. </dd></dl>
 
 </div>
 </div>
@@ -6433,7 +6435,7 @@ The copied contents will be found by <a class="el" href="group___r_d_k.html#ga1c
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000291">Deprecated:</a></b></dt><dd>This method is obsolete. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000290">Deprecated:</a></b></dt><dd>This method is obsolete. </dd></dl>
 
 </div>
 </div>
@@ -7397,7 +7399,7 @@ RenderCRC(const CRenderCRCFlags&amp; rcrcFlags, const ON_LinearWorkflow&amp; lw)
 </div>
 </div>
 <a id="abf88ecce2678fb0915c0c85b4d23868b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf88ecce2678fb0915c0c85b4d23868b">&#9670;&nbsp;</a></span>SetDocumentAssoc()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf88ecce2678fb0915c0c85b4d23868b">&#9670;&nbsp;</a></span>SetDocumentAssoc() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7421,6 +7423,24 @@ RenderCRC(const CRenderCRCFlags&amp; rcrcFlags, const ON_LinearWorkflow&amp; lw)
 </div><div class="memdoc">
 <p>Set the document that this content hierarchy is associated with. This allows you to set the document association of a content hierarchy that is not currently associated with or attached to a document. This is useful when you want certain document-related functions to work properly on non-document contents. </p><dl class="section note"><dt>Note</dt><dd>If the content is already associated with a document, the method will fail. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
+
+</div>
+</div>
+<a id="ae8f9b9b80045c36e29d58a07d7334316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f9b9b80045c36e29d58a07d7334316">&#9670;&nbsp;</a></span>SetDocumentAssoc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhRdkContent::SetDocumentAssoc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -9181,7 +9201,7 @@ Your XML must be contained within a section called<pre class="fragment"> &lt;par
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:40:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:55:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

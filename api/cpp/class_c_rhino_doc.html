@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.3</span>
+   &#160;<span id="projectnumber">8.4</span>
    </div>
   </td>
  </tr>
@@ -2283,8 +2283,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000164">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
-<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000163">Deprecated:</a></b></dt><dd>Prefer version with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; BoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
+<p>Description: Get a tight bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000164">Deprecated:</a></b></dt><dd>Prefer BoundingBox function with three arguments const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&amp; TightBoundingBox(bool bIncludeCustomRenderMeshes = true) const; </dd></dl>
 <p>Description: Get a bounding box of all the visible geometry in the model. The wireframe icons used to display render lights are NOT included. Page space geometry is NOT included / bTight: [in] use CRhinoObject::TightBoundingBox in the calculation instead of BoundingBox / bIncludeCustomRenderMeshes: [in] Resolve custom render meshes for all objects and use those / bIncludeCurves: [in] include curves and annotations in the calculation Returns; bounding box See Also CRhinoLightTable::WireframeIconsBoundingBox( const CRhinoView* ) <a class="el" href="class_c_rhino_object.html#ad4c579448d8116b9605de381f1db7939">CRhinoObject::GetTightBoundingBox</a> </p>
 
 </div>
@@ -3080,7 +3080,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000171">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() Render Environment functions instead </dd></dl>
 
 </div>
 </div>
@@ -3308,7 +3308,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000173">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000172">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a357b9b68840bc178ae7ac81eb7bccb5b">Dithering()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3734,7 +3734,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find a content by its instance id. Top-level contents that are attached to the document will be checked. Parameters: instanceId - [in] the instance id of the content to find. Returns: A pointer to the const content or null if not found. If you want to modify the content you will need to call BeginChange() to get a non-const reference. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000175">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead </dd></dl>
+<p>Description: Find a content by its instance id. Top-level contents that are attached to the document will be checked. Parameters: instanceId - [in] the instance id of the content to find. Returns: A pointer to the const content or null if not found. If you want to modify the content you will need to call BeginChange() to get a non-const reference. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000174">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#a1221a1a87a270c5af1b0b5bf5a9f0ff2">Contents()</a>.Find() instead </dd></dl>
 
 </div>
 </div>
@@ -3775,7 +3775,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find the first view in the view list that has the same viewport title. Note the the title string is not guaranteed unique Parameters: title: [in] viewport title to search for view: [out] if a view is found it is copied into this include_standard_views: [in] look at standard rhino views when searching include_page_views: [in] look at page views when searching Return: true if a view is found with the matching title </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000162">Deprecated:</a></b></dt><dd>use the overload the takes ViewTypeFilter </dd></dl>
+<p>Description: Find the first view in the view list that has the same viewport title. Note the the title string is not guaranteed unique Parameters: title: [in] viewport title to search for view: [out] if a view is found it is copied into this include_standard_views: [in] look at standard rhino views when searching include_page_views: [in] look at page views when searching Return: true if a view is found with the matching title </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000161">Deprecated:</a></b></dt><dd>use the overload the takes ViewTypeFilter </dd></dl>
 
 </div>
 </div>
@@ -3810,7 +3810,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000163">Deprecated:</a></b></dt><dd>Should have been const </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000162">Deprecated:</a></b></dt><dd>Should have been const </dd></dl>
 
 </div>
 </div>
@@ -4446,7 +4446,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Gets an array of all the views. Parameters: view_list - [out] list of views include_standard_views - [in] add standard views to the view_list include_page_views - [in] add page views to the view list Returns: Number of views. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000160">Deprecated:</a></b></dt><dd>Use the version that takes a <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a" title="Filter for view types to list">CRhinoView::ViewTypeFilter</a>. </dd></dl>
+<p>Description: Gets an array of all the views. Parameters: view_list - [out] list of views include_standard_views - [in] add standard views to the view_list include_page_views - [in] add page views to the view list Returns: Number of views. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000159">Deprecated:</a></b></dt><dd>Use the version that takes a <a class="el" href="class_c_rhino_view.html#a28e6f16ebea421d056e031d619132c4a" title="Filter for view types to list">CRhinoView::ViewTypeFilter</a>. </dd></dl>
 
 </div>
 </div>
@@ -4540,7 +4540,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000168">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a27686f856cfe0a4dd0293164f2d7ed2d">GroundPlane()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -5090,7 +5090,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000172">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000171">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a4f1bb1d39a6c943ff2c859835c3b1eef">LinearWorkflow()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -5633,7 +5633,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000161">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
+<p>Description: Creates a new view. Parameters: new_view - [in] the view parameters Returns: View serial number. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000160">Deprecated:</a></b></dt><dd>use overload that accepts bShowView parameter </dd></dl>
 
 </div>
 </div>
@@ -6228,7 +6228,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000166">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. </dd></dl>
 
 </div>
 </div>
@@ -6672,7 +6672,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000174">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000173">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a489453a9c65dc8a54279fe08b7332000">RenderChannels()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7365,7 +7365,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#abc26957623c93f7a07c4451b8c9fa476">SafeFrame()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7923,7 +7923,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000168">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a63792aa217c2308121430ffa9f5b4068">Skylight()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -8118,7 +8118,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000166">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings().<a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -9562,7 +9562,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2024 21:40:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 13 2024 20:54:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
