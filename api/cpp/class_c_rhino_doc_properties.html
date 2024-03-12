@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7cff3e7a4e06e609168ea98b493975f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6635f49aa4a727e5980c6ac894537fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a6635f49aa4a727e5980c6ac894537fe4">GetCustomRenderSizes</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &gt; &amp;sizes)</td></tr>
 <tr class="separator:a6635f49aa4a727e5980c6ac894537fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed03ea2ad0dd6b75b64301bb29af5776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">GetNamedViewSelection</a> (<a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;named_views) const</td></tr>
+<tr class="separator:aed03ea2ad0dd6b75b64301bb29af5776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1877a4295789a4d87f0626580b2d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#acc1877a4295789a4d87f0626580b2d6b">GetON_3dmAnnotationSettings</a> (<a class="el" href="class_o_n__3dm_annotation_settings.html">ON_3dmAnnotationSettings</a> &amp;settings) const</td></tr>
 <tr class="separator:acc1877a4295789a4d87f0626580b2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa258117f321aa763e0b5e3188c1fd18a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3dm_construction_plane_grid_defaults.html">ON_3dmConstructionPlaneGridDefaults</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#aa258117f321aa763e0b5e3188c1fd18a">GridDefaults</a> () const</td></tr>
@@ -390,7 +392,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add named construction plane to document. Parameters: named_view - [in] Remarks: If named_view has an empty name, a unique name is automatically created. If there is already a named view with the same name, that view is replaced. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> Returns: &gt;= 0 : success 0 based index of named view. -1 : failure invalid plane See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> </p>
+<p>Description: Add a named view to the document. Parameters: named_view - [in] Remarks: If named_view has an empty name, a unique name is automatically created. If there is already a named view with the same name, that view is replaced. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> Returns: &gt;= 0 : success 0 based index of named view. -1 : failure invalid plane See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">CRhinoDocProperties::GetNamedViewSelection</a> </p>
 
 </div>
 </div>
@@ -866,6 +868,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aed03ea2ad0dd6b75b64301bb29af5776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed03ea2ad0dd6b75b64301bb29af5776">&#9670;&nbsp;</a></span>GetNamedViewSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDocProperties::GetNamedViewSelection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>named_views</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Gets the current selection in the Named Views panel. If more than one such panel is open, it will return the selection in the most recently opened panel. Parameters: named_views - [out] The names of the selected named views are appended to this array. Returns: true if successful, false if there are no named view panels open. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> </p>
+
+</div>
+</div>
 <a id="acc1877a4295789a4d87f0626580b2d6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc1877a4295789a4d87f0626580b2d6b">&#9670;&nbsp;</a></span>GetON_3dmAnnotationSettings()</h2>
 
@@ -1134,7 +1155,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Move a named view before another one. Parameters: view_index - [in] The index of the named view to move. view_index_before - [in] The index of the named view to move before. -1 means move to end of list. Returns: true if view was moved. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> </p>
+<p>Description: Move a named view before another one. Parameters: view_index - [in] The index of the named view to move. view_index_before - [in] The index of the named view to move before. -1 means move to end of list. Returns: true if view was moved. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">CRhinoDocProperties::GetNamedViewSelection</a> </p>
 
 </div>
 </div>
@@ -1212,7 +1233,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Find a named view Parameters: name - [in] Returns: pointer to named construction plane See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> </p>
+<p>Description: Find a named view. Parameters: name - [in] Returns: pointer to the named view or null if not found. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">CRhinoDocProperties::GetNamedViewSelection</a> </p>
 
 </div>
 </div>
@@ -1266,7 +1287,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get zero based index of named view Parameters: view - [in] Returns: 0 based index of named view or -1 if view is not one of documents named views. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> </p>
+<p>Description: Get zero based index of named view Parameters: view - [in] Returns: 0 based index of named view or -1 if view is not one of documents named views. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a4be0cb523915b6cdeffcd100affdc23a">CRhinoDocProperties::RemoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">CRhinoDocProperties::GetNamedViewSelection</a> </p>
 
 </div>
 </div>
@@ -1357,7 +1378,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get zero based index of named view Parameters: view_index - [in] Returns: TRUE if view was removed. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> </p>
+<p>Description: Remove a named view from the document. Parameters: view_index - [in] Returns: TRUE if view was removed. See Also: <a class="el" href="class_c_rhino_doc_properties.html#ac77368ba11ac45bc269ca7adc5fda011">CRhinoDocProperties::NamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6fc89f41a790d9808aac65e7c1e3a09a">CRhinoDocProperties::NamedViewIndex</a> <a class="el" href="class_c_rhino_doc_properties.html#a2622fc3d92a68b649a61ba289c460a71">CRhinoDocProperties::AddNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#a6e3946b875d43c2f6e24bf25366b53fb">CRhinoDocProperties::MoveNamedView</a> <a class="el" href="class_c_rhino_doc_properties.html#aed03ea2ad0dd6b75b64301bb29af5776">CRhinoDocProperties::GetNamedViewSelection</a> </p>
 
 </div>
 </div>
@@ -2676,7 +2697,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:54:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

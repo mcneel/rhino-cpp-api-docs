@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -80,6 +80,7 @@ $(function() {
 <li>BackgroundColor()
 : <a class="el" href="class_c_rhino_app_settings.html#a4c51e11a8703c7ed9c6da6bcdd9a8614">CRhinoAppSettings</a>
 , <a class="el" href="class_c_rhino_doc_properties.html#adaede79495fce0b32bb18dab3a75fbf2">CRhinoDocProperties</a>
+, <a class="el" href="class_c_rhino_ui_static_ex.html#ad47b37fdb45705dac1a49e816ee6be99">CRhinoUiStaticEx</a>
 , <a class="el" href="class_c_rh_rdk_basic_environment_c_c_i.html#ac29f58c95cd0320d16f102b6acd9d683">CRhRdkBasicEnvironmentCCI</a>
 , <a class="el" href="class_c_rh_rdk_simulated_environment.html#acb9fd5c973933b311b12c47bcf188847">CRhRdkSimulatedEnvironment</a>
 , <a class="el" href="class_i_rh_rdk_color_button.html#a58278592a4ee59c3d33fc04fe4616722">IRhRdkColorButton</a>
@@ -434,6 +435,9 @@ $(function() {
 : <a class="el" href="group__open_n_u_r_b_s.html#ga6f69264bb06391c81571f0182fbaef08">ON_ClassArray&lt; T &gt;</a>
 , <a class="el" href="group__open_n_u_r_b_s.html#gadfff8569ef8e5248c46a586d3a7f5d8d">ON_SimpleArray&lt; T &gt;</a>
 </li>
+<li>BinarySearchPtr()
+: <a class="el" href="group__open_n_u_r_b_s.html#gae32ebb9aa395cbf8cacde9daa2d1fc98">ON_SimpleArray&lt; T &gt;</a>
+</li>
 <li>Bind()
 : <a class="el" href="class_c_rhino_display_conduit.html#af0174cb5ac2208b23b69fc3e575579a9">CRhinoDisplayConduit</a>
 </li>
@@ -516,7 +520,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_get_object.html#a5184041858bac0c624016bd99a5e3f56">CRhinoGetObject</a>
 </li>
 <li>BltToDib()
-: <a class="el" href="class_c_rhino_dib.html#af3844161436e05b58c08d9ad2bab3eb2">CRhinoDib</a>
+: <a class="el" href="class_c_rhino_dib.html#ab955a88c4a962020f2bcc43f178de797">CRhinoDib</a>
 </li>
 <li>Blue()
 : <a class="el" href="class_c_color_vec.html#a210483b55a4e6a699b0df85d3f913407">CColorVec</a>
@@ -603,11 +607,11 @@ $(function() {
 , <a class="el" href="class_c_rhino_hatch.html#a2fbe6ce2a9b4d8b0b8a3571831cfd3ee">CRhinoHatch</a>
 , <a class="el" href="class_c_rhino_instance_object.html#a3f4d748c407b1636addd5cbfcf1805cf">CRhinoInstanceObject</a>
 , <a class="el" href="class_c_rhino_light.html#a0c133d84413efb2fecb106601341443b">CRhinoLight</a>
-, <a class="el" href="class_c_rhino_named_view_camera_icon.html#a7be0c011bbccec6060445908bf69f557">CRhinoNamedViewCameraIcon</a>
-, <a class="el" href="class_c_rhino_object.html#a1bfb5000187bb59bf944f5e3004173f4">CRhinoObject</a>
-, <a class="el" href="class_c_rhino_sub_d_object.html#a6ecb22b8a9426e409b55f9db1084d3ef">CRhinoSubDObject</a>
-, <a class="el" href="class_c_rhino_text_dot.html#a12b7dcedaec8514fe06833c801c1c03d">CRhinoTextDot</a>
-, <a class="el" href="class_c_rhino_widget.html#a0439b8131042f4337f66fb052402e460">CRhinoWidget</a>
+, <a class="el" href="class_c_rhino_named_view_camera_icon.html#a86116d40e93f0dc7af559bb642a2adad">CRhinoNamedViewCameraIcon</a>
+, <a class="el" href="class_c_rhino_object.html#a070bee1493cbd615f948930bba39d7a1">CRhinoObject</a>
+, <a class="el" href="class_c_rhino_sub_d_object.html#abd21482e0fdf341c441378062a35461d">CRhinoSubDObject</a>
+, <a class="el" href="class_c_rhino_text_dot.html#a8f3620be23ea831badb989b968a01573">CRhinoTextDot</a>
+, <a class="el" href="class_c_rhino_widget.html#af65aab8c9b690017f06ac41ecbf9057a">CRhinoWidget</a>
 , <a class="el" href="class_c_rh_rdk_custom_render_mesh_provider.html#ae6ffcc801c93e7e8aa6deef6600fcdd0">CRhRdkCustomRenderMeshProvider</a>
 , <a class="el" href="class_c_rh_rdk_render_mesh.html#aa283090512d20a29dd3615320ef5f829">CRhRdkRenderMesh</a>
 , <a class="el" href="class_i_rh_rdk_custom_render_mesh_manager.html#a8a84d560c1131653278312132ae251cd">IRhRdkCustomRenderMeshManager</a>
@@ -706,7 +710,7 @@ $(function() {
 </li>
 <li>BrepForm()
 : <a class="el" href="class_o_n___brep.html#aa9acb060ba0067db18caff5706253d0a">ON_Brep</a>
-, <a class="el" href="class_o_n___extrusion.html#aae322bd101eeb75d7fb3fbdf999c91cf">ON_Extrusion</a>
+, <a class="el" href="class_o_n___extrusion.html#aae96533d7937ee6e8b5fe9a72fdcee31">ON_Extrusion</a>
 , <a class="el" href="class_o_n___geometry.html#aeb8d6122b6285e4ab819fa50bd442c23">ON_Geometry</a>
 , <a class="el" href="class_o_n___hatch.html#a0cf66b0ac24697a652983cf33ccece74">ON_Hatch</a>
 , <a class="el" href="class_o_n___morph_control.html#a92b04905836ff95c8c1096ecb492ca27">ON_MorphControl</a>
@@ -877,7 +881,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

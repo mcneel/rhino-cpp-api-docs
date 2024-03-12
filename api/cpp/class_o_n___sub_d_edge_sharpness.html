@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -137,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a024c450ea5e994315d8d41d650bcc894"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_sharpness.html">ON_SubDEdgeSharpness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#a024c450ea5e994315d8d41d650bcc894">Subdivided</a> (int end_index) const</td></tr>
 <tr class="memdesc:a024c450ea5e994315d8d41d650bcc894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharpness value for a subdivided edge.  <a href="class_o_n___sub_d_edge_sharpness.html#a024c450ea5e994315d8d41d650bcc894">More...</a><br /></td></tr>
 <tr class="separator:a024c450ea5e994315d8d41d650bcc894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a950ff374542d11beb2e32c3f36694d97"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#a950ff374542d11beb2e32c3f36694d97">ToPercentageText</a> (bool bVarableMinToMax) const</td></tr>
-<tr class="memdesc:a950ff374542d11beb2e32c3f36694d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a text string describing the sharpness as a percentage. If the sharpenss is constant, and single percentage is returned. If the sharpenss is varable, percentage range returned. If the sharpness is not valid, a warning sign is returned.  <a href="class_o_n___sub_d_edge_sharpness.html#a950ff374542d11beb2e32c3f36694d97">More...</a><br /></td></tr>
-<tr class="separator:a950ff374542d11beb2e32c3f36694d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8d3e80b2629a31b22e15e82aa5f494"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#acc8d3e80b2629a31b22e15e82aa5f494">ToPercentageText</a> (bool bOrderMinToMax) const</td></tr>
+<tr class="memdesc:acc8d3e80b2629a31b22e15e82aa5f494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a text string describing the sharpness as a percentage. If the sharpness is constant, and single percentage is returned. If the sharpness is variable, percentage range returned. If the sharpness is not valid, a warning sign is returned.  <a href="class_o_n___sub_d_edge_sharpness.html#acc8d3e80b2629a31b22e15e82aa5f494">More...</a><br /></td></tr>
+<tr class="separator:acc8d3e80b2629a31b22e15e82aa5f494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba500dd88bc6c7dcf35ea922dbe2f51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_sharpness.html#abba500dd88bc6c7dcf35ea922dbe2f51">Trend</a> () const</td></tr>
 <tr class="separator:abba500dd88bc6c7dcf35ea922dbe2f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1617,12 +1617,12 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If 0 &lt;= sharpenss &lt;= <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a>, then 100.0*sharpenss/ON_SubDEdgeSharpness::MaximumValue is returned. If sharpenss = <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a6d261b54218d14a602b73a17b1dbb104" title="ON_SubDEdgeSharpness::CreaseValue = ON_SubDEdgeSharpness::MaximumValue + 1. Valid SubD edge sharpness...">ON_SubDEdgeSharpness::CreaseValue</a>, then crease_percentage is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If 0 &lt;= sharpness &lt;= <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919" title="ON_SubDEdgeSharpness::MaximumValue = 4. SubD edge sharpness values are &lt;= ON_SubDEdgeSharpness::Maxim...">ON_SubDEdgeSharpness::MaximumValue</a>, then 100.0*sharpness/ON_SubDEdgeSharpness::MaximumValue is returned. If sharpness = <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a6d261b54218d14a602b73a17b1dbb104" title="ON_SubDEdgeSharpness::CreaseValue = ON_SubDEdgeSharpness::MaximumValue + 1. Valid SubD edge sharpness...">ON_SubDEdgeSharpness::CreaseValue</a>, then crease_percentage is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
 </div>
-<a id="a950ff374542d11beb2e32c3f36694d97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a950ff374542d11beb2e32c3f36694d97">&#9670;&nbsp;</a></span>ToPercentageText() <span class="overload">[1/2]</span></h2>
+<a id="acc8d3e80b2629a31b22e15e82aa5f494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8d3e80b2629a31b22e15e82aa5f494">&#9670;&nbsp;</a></span>ToPercentageText() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1631,16 +1631,16 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">const <a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_SubDEdgeSharpness::ToPercentageText </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bVarableMinToMax</em></td><td>)</td>
+          <td class="paramname"><em>bOrderMinToMax</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a text string describing the sharpness as a percentage. If the sharpenss is constant, and single percentage is returned. If the sharpenss is varable, percentage range returned. If the sharpness is not valid, a warning sign is returned. </p>
+<p>Create a text string describing the sharpness as a percentage. If the sharpness is constant, and single percentage is returned. If the sharpness is variable, percentage range returned. If the sharpness is not valid, a warning sign is returned. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bVarableAsIncreasing</td><td>If the sharpness is not contanst and bVarableMinToMax is true, then the string has the format min%-max%. If the sharpness is not contanst and bVarableMinToMax is false, then the string has the format EndSharpness(0)%-EndSharpness(1)%. </td></tr>
+    <tr><td class="paramname">bOrderMinToMax</td><td>If the sharpness is not constant and bOrderMinToMax is true, then the string has the format min%-max%. If the sharpness is not constant and bOrderMinToMax is false, then the string has the format EndSharpness(0)%-EndSharpness(1)%. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2046,7 +2046,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -829,7 +829,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a simple command line option with a number as a value. Parameters: option_name - [in] english option description automatic localization uses command option string table number_value - [in] current value Returns: option index value (&gt;0) or 0 if option cannot be added. Remarks: In most cases it is easier to use <a class="el" href="class_c_rhino_get.html#a43b0e967f66edc7ea96edfb88f67fb04">AddCommandOptionNumber()</a>. Example: <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> center; static radius r = 1.0; for(;;) { <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a> gp; gp.SetCommandPrompt(RhLocalizeString( L"Center point", 43549)); int radius_option_index = gp.AddCommandOption( RhLocalizeCommandOptionName( L"Radius", 43550), r ); gp.GetPoint(); if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a99a014d0a7d7e70d2ad4a6dcec068bf0" title="user specified an option - call Option() to get option index">CRhinoGet::option</a> ) { CRhinoCommandOption* opt = gp.Option(); if ( opt-&gt;m_option_index == radius_option_index ) { /user typed "Radius" - manually prompt for new number <a class="el" href="class_c_rhino_get_number.html">CRhinoGetNumber</a> gn; gn.SetCommandPrompt(RHSTR("Radius")); gn.SetDefault(r); gn.GetNumber(); if ( gn.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a22b44338fd318fd3746ad8c0c475d9ed" title="user entered a real number - call Number() to get value">CRhinoGet::number</a> ) r = gn.Number(); } continue; } if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886adbe1b6eb75097a517693844476e8e1b8" title="user picked 3d point - call Point() to get 3d point">CRhinoGet::point</a> ) { center = gp.Point(); break; } } </p>
+<p>Description: Add a simple command line option with a number as a value. Parameters: option_name - [in] english option description automatic localization uses command option string table number_value - [in] current value Returns: option index value (&gt;0) or 0 if option cannot be added. Remarks: In most cases it is easier to use <a class="el" href="class_c_rhino_get.html#a43b0e967f66edc7ea96edfb88f67fb04">AddCommandOptionNumber()</a>. Example: <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> center; static radius r = 1.0; for(;;) { <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a> gp; gp.SetCommandPrompt(RhLocalizeString( L"Center point", 43549)); int radius_option_index = gp.AddCommandOption( RhLocalizeCommandOptionName( L"Radius", 43550), r ); gp.GetPoint(); if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a99a014d0a7d7e70d2ad4a6dcec068bf0" title="user specified an option - call Option() to get option index">CRhinoGet::option</a> ) { CRhinoCommandOption* opt = gp.Option(); if ( opt-&gt;m_option_index == radius_option_index ) { /user typed "Radius" - manually prompt for new number <a class="el" href="class_c_rhino_get_number.html">CRhinoGetNumber</a> gn; gn.SetCommandPrompt(RhLocalizeString( "Radius", 56330)); gn.SetDefault(r); gn.GetNumber(); if ( gn.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a22b44338fd318fd3746ad8c0c475d9ed" title="user entered a real number - call Number() to get value">CRhinoGet::number</a> ) r = gn.Number(); } continue; } if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886adbe1b6eb75097a517693844476e8e1b8" title="user picked 3d point - call Point() to get 3d point">CRhinoGet::point</a> ) { center = gp.Point(); break; } } </p>
 
 </div>
 </div>
@@ -3460,7 +3460,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

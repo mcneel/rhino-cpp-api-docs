@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abab42bb34ca913065353b56391861299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc41f9c3b892f571ee16c182733459b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__2d_point.html#adc41f9c3b892f571ee16c182733459b9">DistanceToSquared</a> (const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;) const</td></tr>
 <tr class="separator:adc41f9c3b892f571ee16c182733459b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dc852fdd9ecbf32863db534e1f2914"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__2d_point.html#a26dc852fdd9ecbf32863db534e1f2914">IsCoincident</a> (const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;P) const</td></tr>
+<tr class="separator:a26dc852fdd9ecbf32863db534e1f2914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25523f33436182f3f70a82272b4fd4d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__2d_point.html#a25523f33436182f3f70a82272b4fd4d6">IsNan</a> () const</td></tr>
 <tr class="separator:a25523f33436182f3f70a82272b4fd4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9217106aebcac1c5131358b8fb7b4c74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__2d_point.html#a9217106aebcac1c5131358b8fb7b4c74">IsNotZero</a> () const</td></tr>
@@ -790,6 +792,25 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26dc852fdd9ecbf32863db534e1f2914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26dc852fdd9ecbf32863db534e1f2914">&#9670;&nbsp;</a></span>IsCoincident()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_2dPoint::IsCoincident </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In opennurbs points within ON_ZERO_TOLERANCE are generally considered to be the same. Returns: True if for each coordinate pair, |a-b| &lt;= ON_ZERO_TOLERANCE or |a-b| &lt;= (fabs(a)+fabs(b))*ON_RELATIVE_TOLERANCE. </p>
 
 </div>
 </div>
@@ -2236,7 +2257,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

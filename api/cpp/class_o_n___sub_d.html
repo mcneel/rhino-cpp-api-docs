@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -3196,7 +3196,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Automatically add a collection of faces that patches a hole. Parameters: patch_style - [in] patch_boundary_edge_tag - [in] If <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>, the patch boundary edges will be creased whenever possible. Otherwise, the patch boundary edges will be smooth whenever possible. <br  />
- edges[] - [in] A closed loop of edges that wil become the patch boundary. bMarkNewFaces - [in] If true, new faces have their runtime mark set to true. Otherwise new faces are not marked. In all cases, the runtime marks of input faces are not changed. Returns: If the patch is a single face, the face is returned. If the patch is a ring of quads or triangles around a central vertex, the central vertex is returned. If the patch is a set of faces in some other configuration, a face from that set is returned. If no patch was added, <a class="el" href="class_o_n___sub_d_component_ptr.html#ae0309416fca150bc9e9b1569b9e4d493" title="// nullptr, type = unset, mark = 0">ON_SubDComponentPtr::Null</a> is returned. </p>
+ edges[] - [in] A closed loop of edges that wil become the patch boundary. bMarkNewFaces - [in] If true, new faces have their runtime mark set to true. Otherwise new faces are not marked. In all cases, the runtime marks of input faces are not changed. Returns: If the patch is a single face, the face is returned. If the patch is a ring of quads or triangles around a central vertex, the central vertex is returned. If the patch is a set of faces in some other configuration, a face from that set is returned. If no patch was added, <a class="el" href="class_o_n___sub_d_component_ptr.html#ae0309416fca150bc9e9b1569b9e4d493" title="nullptr, type = Unset, direction = 0">ON_SubDComponentPtr::Null</a> is returned. </p>
 
 </div>
 </div>
@@ -10673,7 +10673,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: If b is in this SubD, a <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> to b is returned. Otherwise <a class="el" href="class_o_n___sub_d_component_ptr.html#ae0309416fca150bc9e9b1569b9e4d493" title="// nullptr, type = unset, mark = 0">ON_SubDComponentPtr::Null</a> is returned. Remarks: This function is the slowest of the <a class="el" href="class_o_n___sub_d.html#a7268c24583c67db2a0e6a2774623b5f1">InSubD()</a> overrides. When b is an unknown component type, this function can be used to safely determine what type of component (vertex/edge/face). </p>
+<p>Returns: If b is in this SubD, a <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> to b is returned. Otherwise <a class="el" href="class_o_n___sub_d_component_ptr.html#ae0309416fca150bc9e9b1569b9e4d493" title="nullptr, type = Unset, direction = 0">ON_SubDComponentPtr::Null</a> is returned. Remarks: This function is the slowest of the <a class="el" href="class_o_n___sub_d.html#a7268c24583c67db2a0e6a2774623b5f1">InSubD()</a> overrides. When b is an unknown component type, this function can be used to safely determine what type of component (vertex/edge/face). </p>
 
 </div>
 </div>
@@ -17583,7 +17583,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -158,8 +158,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a164177b3e2712c5377261e664993fb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a164177b3e2712c5377261e664993fb14">More...</a><br /></td></tr>
 <tr class="separator:a164177b3e2712c5377261e664993fb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437fc8212b7967bf45bcc93c6e82a18e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a437fc8212b7967bf45bcc93c6e82a18e">EndSharpness</a> (unsigned evi) const</td></tr>
-<tr class="memdesc:a437fc8212b7967bf45bcc93c6e82a18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a437fc8212b7967bf45bcc93c6e82a18e">More...</a><br /></td></tr>
+<tr class="memdesc:a437fc8212b7967bf45bcc93c6e82a18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. If the edge is a crease, <a class="el" href="class_o_n___sub_d_edge_sharpness.html#ac450c47da4dfa105cbb4d22654637da9" title="An edge sharpness with contant value 0.0.">ON_SubDEdgeSharpness::Smooth</a> is returned. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a437fc8212b7967bf45bcc93c6e82a18e">More...</a><br /></td></tr>
 <tr class="separator:a437fc8212b7967bf45bcc93c6e82a18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53571fd4f09f6a87ee103b1e6b5850fd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a53571fd4f09f6a87ee103b1e6b5850fd">EndSharpness</a> (unsigned evi, bool bUseCreaseSharpness) const</td></tr>
+<tr class="memdesc:a53571fd4f09f6a87ee103b1e6b5850fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_edge.html#a53571fd4f09f6a87ee103b1e6b5850fd">More...</a><br /></td></tr>
+<tr class="separator:a53571fd4f09f6a87ee103b1e6b5850fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa43c7a986a5b849d2b1b94a8e3b29a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#aefa43c7a986a5b849d2b1b94a8e3b29a">EvaluateCatmullClarkSubdivisionPoint</a> (double subdivision_point[3]) const</td></tr>
 <tr class="separator:aefa43c7a986a5b849d2b1b94a8e3b29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8592d30879261a1160496d215323d2aa"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge.html#a8592d30879261a1160496d215323d2aa">Face</a> (unsigned int i) const</td></tr>
@@ -1081,7 +1084,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a164177b3e2712c5377261e664993fb14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a164177b3e2712c5377261e664993fb14">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a164177b3e2712c5377261e664993fb14">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1110,7 +1113,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a437fc8212b7967bf45bcc93c6e82a18e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437fc8212b7967bf45bcc93c6e82a18e">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a437fc8212b7967bf45bcc93c6e82a18e">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1125,10 +1128,50 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the edge's sharpness at the end with the specified vertex. If the edge is a crease, <a class="el" href="class_o_n___sub_d_edge_sharpness.html#ac450c47da4dfa105cbb4d22654637da9" title="An edge sharpness with contant value 0.0.">ON_SubDEdgeSharpness::Smooth</a> is returned. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evi</td><td>End index (0=start or 1=end).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">If the edge is sharp, the sharpness at the end with the specified by evi is returned. If the edge is smooth or a crease, 0 is returned. Otherwise, 0.0 is returned. </p>
+<p class="enddd">The sharpness at the end of the edge specified by evi.</p>
+</dd></dl>
+
+</div>
+</div>
+<a id="a53571fd4f09f6a87ee103b1e6b5850fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53571fd4f09f6a87ee103b1e6b5850fd">&#9670;&nbsp;</a></span>EndSharpness() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SubDEdge::EndSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>evi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bUseCreaseSharpness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Get the edge's sharpness at the end with the specified vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">evi</td><td>End index (0=start or 1=end).</td></tr>
+    <tr><td class="paramname">bUseCreaseSharpness</td><td>If the edge is a crease and bUseCreaseSharpness is false, then <a class="el" href="class_o_n___sub_d_edge_sharpness.html#ac450c47da4dfa105cbb4d22654637da9" title="An edge sharpness with contant value 0.0.">ON_SubDEdgeSharpness::Smooth</a> is returned. If the edge is a crease and bUseCreaseSharpness is true, then <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a16c5939cc1a9f6d6f579fa0199b9cc9a" title="An edge sharpness with both end values = ON_SubDEdgeSharpness::CreaseValue. This value is not a valid...">ON_SubDEdgeSharpness::Crease</a> is returned. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2833,7 +2876,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

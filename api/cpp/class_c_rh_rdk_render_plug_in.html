@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.4</span>
+   &#160;<span id="projectnumber">8.5</span>
    </div>
   </td>
  </tr>
@@ -177,6 +177,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adaa0aaa17e15d008dc518f59e3889693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05bc89a33bd4d9712df7fb025c68f841"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_render_plug_in.html#a05bc89a33bd4d9712df7fb025c68f841">SupportsFeature</a> (const UUID &amp;uuidFeature) const</td></tr>
 <tr class="separator:a05bc89a33bd4d9712df7fb025c68f841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ec603bdaca0a137d34cbc4f9bfd947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_render_plug_in.html#a21ec603bdaca0a137d34cbc4f9bfd947">TextureNeedsBaking</a> (const <a class="el" href="class_c_rh_rdk_texture.html">CRhRdkTexture</a> &amp;texture) const</td></tr>
+<tr class="separator:a21ec603bdaca0a137d34cbc4f9bfd947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ffad0b040de58a2784b71c1acf6710"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_render_plug_in.html#ae6ffad0b040de58a2784b71c1acf6710">UiContentTypes</a> (<a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; UUID &gt; &amp;aTypes) const</td></tr>
 <tr class="separator:ae6ffad0b040de58a2784b71c1acf6710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_rh_rdk_plug_in"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_rh_rdk_plug_in')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_rh_rdk_plug_in.html">CRhRdkPlugIn</a></td></tr>
@@ -1402,6 +1404,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a21ec603bdaca0a137d34cbc4f9bfd947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ec603bdaca0a137d34cbc4f9bfd947">&#9670;&nbsp;</a></span>TextureNeedsBaking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhRdkRenderPlugIn::TextureNeedsBaking </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_texture.html">CRhRdkTexture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper function. Calls EVF(L"TextureNeedsBaking"). Override <a class="el" href="class_c_rh_rdk_render_plug_in.html#a2ae39139e262c504e9e69fe1ddcedc0c">EVF()</a> to implement this. Returns true if this renderer needs 'texture' to be baked into a bitmap for rendering, false otherwise. By default, returns false for all textures. </p>
+
+</div>
+</div>
 <a id="ae6ffad0b040de58a2784b71c1acf6710"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ffad0b040de58a2784b71c1acf6710">&#9670;&nbsp;</a></span>UiContentTypes()</h2>
 
@@ -1439,7 +1460,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 13 2024 20:55:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2024 16:16:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
