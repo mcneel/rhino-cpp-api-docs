@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -1873,6 +1873,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaf71c7c94cf4141ab18f6459c1b2b695d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6974e71abd4770ada4528e52f25148f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga6974e71abd4770ada4528e52f25148f7">RhinoDisableContinuousMainLoop</a> ()</td></tr>
 <tr class="separator:ga6974e71abd4770ada4528e52f25148f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d7bf43eb12e9d9d7340e8cf664229d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga90d7bf43eb12e9d9d7340e8cf664229d">RhinoDiscreteGaussianMeshCurvature</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;MeshIn, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;result, bool triangulate=false, double *globalAngleDefect=nullptr)</td></tr>
+<tr class="separator:ga90d7bf43eb12e9d9d7340e8cf664229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb3d7f9d5c4869d7898108448b7ce6cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaeb3d7f9d5c4869d7898108448b7ce6cb">RhinoDisplaceMesh</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;originalMesh, const <a class="el" href="class_rh_displacement.html">RhDisplacement</a> &amp;displacement, const <a class="el" href="class_rh_displacement_args.html">RhDisplacementArgs</a> &amp;args, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;problemString, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *pCancelHandler=0, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *pProgressReporter=0)</td></tr>
 <tr class="separator:gaeb3d7f9d5c4869d7898108448b7ce6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96a6b51702c6b2599f1951bcf256ba6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga96a6b51702c6b2599f1951bcf256ba6d">RhinoDivideCurve</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, double seg_count, double seg_length, bool bReverse, bool bIncludeEnd, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; *curve_P, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; *curve_t)</td></tr>
@@ -13239,6 +13241,47 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function makes it so that Rhino's main loop is not executed continuously. This is default behavior. </p>
+
+</div>
+</div>
+<a id="ga90d7bf43eb12e9d9d7340e8cf664229d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90d7bf43eb12e9d9d7340e8cf664229d">&#9670;&nbsp;</a></span>RhinoDiscreteGaussianMeshCurvature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoDiscreteGaussianMeshCurvature </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>MeshIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>triangulate</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>globalAngleDefect</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Function that computes the discrete Gaussian curvatures, by taking the angle defectes and dividing them by the face areas. That definition has the desired property that its integral gives ON_2PI times the Euler characteristic, at least on a closed mesh. Thus, it satisfies the Gauss-Bonnet theorem which arguably characterizes the Gaussian curvature fully. The function takes care of mesh topology and quads. Use at your own risk on nonmanifold meshes. Parameters: MeshIn - [In] Input mesh result - [out] array to be filled with the curvatures triangulate - [in] should the mesh be triangulated internally? globalAngleDefect - [out] optional, the sum of all angle defects before dividing by the vertex areas Returns: True or false depending on the success of the computation. </p>
 
 </div>
 </div>
@@ -32729,7 +32772,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:15:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

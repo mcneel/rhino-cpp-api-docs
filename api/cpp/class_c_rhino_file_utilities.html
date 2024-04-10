@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa99e90bb6cec0dd1dbb33357ebb3d898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6366534bcf726370196572be02763d0f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a6366534bcf726370196572be02763d0f">GetDefaultRuiFilename</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;sValue)</td></tr>
 <tr class="separator:a6366534bcf726370196572be02763d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1776f92c1a6054f620ac8bd3527c399"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ae1776f92c1a6054f620ac8bd3527c399">GetDefaultTemplateFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result, int languageid)</td></tr>
+<tr class="separator:ae1776f92c1a6054f620ac8bd3527c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a192e4e8c7189ac1aa2656c86e6f0c397"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a192e4e8c7189ac1aa2656c86e6f0c397">GetDirectory</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;wDir, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bShowDialog=TRUE, HWND hWndParent=NULL)</td></tr>
 <tr class="separator:a192e4e8c7189ac1aa2656c86e6f0c397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7df20536eaefe824832f1a0cde6bdb9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ab7df20536eaefe824832f1a0cde6bdb9">GetMyDocumentsFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;result)</td></tr>
@@ -1555,6 +1557,43 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Gets the full path to the default .rui file Parameters: sValue: the output value that contains the full path. Returns: true if the default RUI file was found false otherwise </p>
+
+</div>
+</div>
+<a id="ae1776f92c1a6054f620ac8bd3527c399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1776f92c1a6054f620ac8bd3527c399">&#9670;&nbsp;</a></span>GetDefaultTemplateFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileUtilities::GetDefaultTemplateFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>languageid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Get full path to the Rhino 8.0 default template folder for a given language. Parameters: result [out] - Path placed here. languageid [in] - Language to retrieve Returns: If Rhino could figure out the path then TRUE is returned otherwise FALSE is. </p>
 
 </div>
 </div>
@@ -3156,7 +3195,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

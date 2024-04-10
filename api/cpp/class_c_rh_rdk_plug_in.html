@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93b2f10b6d96a6516613b9fecf1cd814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad583d9fa4ac48f546d199f39e6e6f036"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#ad583d9fa4ac48f546d199f39e6e6f036">RegisterPostEffectPlugIns</a> (<a class="el" href="class_i_rh_rdk_post_effect_plug_in_factories.html">IRhRdkPostEffectPlugInFactories</a> &amp;pepf) const</td></tr>
 <tr class="separator:ad583d9fa4ac48f546d199f39e6e6f036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c423e0e002fd248156937dec69d76a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#a26c423e0e002fd248156937dec69d76a">RemoveExtension</a> (<a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a> *pExtension) const</td></tr>
+<tr class="separator:a26c423e0e002fd248156937dec69d76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf3cfd6d47d4b37b957f600ef7fa17a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#aedf3cfd6d47d4b37b957f600ef7fa17a">ReportUsedContent</a> (<a class="el" href="class_i_rh_rdk_plug_in_used_content_notifier.html">IRhRdkPlugInUsedContentNotifier</a> &amp;ucn)</td></tr>
 <tr class="separator:aedf3cfd6d47d4b37b957f600ef7fa17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa951accf158b9926eec9b2e1f9cbba8f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rhino_plug_in.html">CRhinoPlugIn</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_plug_in.html#aa951accf158b9926eec9b2e1f9cbba8f">RhinoPlugIn</a> (void) const =0</td></tr>
@@ -451,7 +453,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds an extension to the RDK. If you override this method, please be sure to call the base class. The base class implementation calls <a class="el" href="group___r_d_k.html#ga18af42ea88d94157ad373da91653b168">RhRdkAddExtension()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a> </dd>
+<p>Adds an extension to the RDK. If you override this method, please be sure to call the base class. The base class implementation calls <a class="el" href="group___r_d_k.html#ga18af42ea88d94157ad373da91653b168">RhRdkAddExtension()</a>. The RDK takes ownership of the extension. If you are planning to unregister the extension before your plug-in is unloaded, you can store the pointer to make it possible to call <a class="el" href="class_c_rh_rdk_extension.html#aa28e8c9b23825df40212c328dd914177">CRhRdkExtension::Unregister()</a>, but you should not use the pointer for any other purpose. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a> </dd>
 <dd>
 <a class="el" href="class_c_rh_rdk_plug_in.html#a93b2f10b6d96a6516613b9fecf1cd814">RegisterExtensions()</a> </dd>
 <dd>
@@ -1125,6 +1127,24 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a26c423e0e002fd248156937dec69d76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c423e0e002fd248156937dec69d76a">&#9670;&nbsp;</a></span>RemoveExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhRdkPlugIn::RemoveExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a> *&#160;</td>
+          <td class="paramname"><em>pExtension</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aedf3cfd6d47d4b37b957f600ef7fa17a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedf3cfd6d47d4b37b957f600ef7fa17a">&#9670;&nbsp;</a></span>ReportUsedContent()</h2>
 
@@ -1312,7 +1332,7 @@ Protected Member Functions</h2></td></tr>
 <div class="ttc" id="aclass_c_rh_rdk_plug_in_html_abf78404dd489071c65c7d49df2b3c4d9"><div class="ttname"><a href="class_c_rh_rdk_plug_in.html#abf78404dd489071c65c7d49df2b3c4d9">CRhRdkPlugIn::QueryFocusMessageNumber</a></div><div class="ttdeci">static UINT QueryFocusMessageNumber(void)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

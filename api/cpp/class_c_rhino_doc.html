@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -642,6 +642,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace7feae41a042eaa8edbef9193b5e4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffed84a086d0fabf8c909d9add24e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a9ffed84a086d0fabf8c909d9add24e71">StatusBarProgressMeterEnd</a> ()</td></tr>
 <tr class="separator:a9ffed84a086d0fabf8c909d9add24e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c557198f2ac513bbe2153e91f69429"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#aa0c557198f2ac513bbe2153e91f69429">StatusBarProgressMeterPos</a> (const wchar_t *pszLabel, int nPos, bool bAbsolute)</td></tr>
+<tr class="separator:aa0c557198f2ac513bbe2153e91f69429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c3d978aa42377f1f3f6a99f6b9793b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a23c3d978aa42377f1f3f6a99f6b9793b">StatusBarProgressMeterPos</a> (int nPos, bool bAbsolute=true)</td></tr>
 <tr class="separator:a23c3d978aa42377f1f3f6a99f6b9793b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372eb963d1ca23d97fa2265d684b7e30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a372eb963d1ca23d97fa2265d684b7e30">StatusBarProgressMeterStart</a> (int nLower, int nUpper, const wchar_t *pszLabel=nullptr, bool bEmbedLabel=true, bool bShowPercent=true)</td></tr>
@@ -8010,8 +8012,43 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa0c557198f2ac513bbe2153e91f69429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c557198f2ac513bbe2153e91f69429">&#9670;&nbsp;</a></span>StatusBarProgressMeterPos() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoDoc::StatusBarProgressMeterPos </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>pszLabel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAbsolute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the current position of Rhino's status bar progress meter. Parameters: pszLabel - [in] The short description of the progress (e.g. "Calculating", "Meshing", etc). nPos - [in] The position. If ON_UNSET_INT_INDEX, then only the label will be updated. bAbsolute - [in] If true, then the progress meter is moved to nPos (absolute). If false, then the progress meter is moved nPos from the current position (relative). Returns: The previous position if successful. See Also: <a class="el" href="class_c_rhino_doc.html#a372eb963d1ca23d97fa2265d684b7e30">CRhinoDoc::StatusBarProgressMeterStart</a> <a class="el" href="class_c_rhino_doc.html#a9ffed84a086d0fabf8c909d9add24e71">CRhinoDoc::StatusBarProgressMeterEnd</a> </p>
+
+</div>
+</div>
 <a id="a23c3d978aa42377f1f3f6a99f6b9793b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23c3d978aa42377f1f3f6a99f6b9793b">&#9670;&nbsp;</a></span>StatusBarProgressMeterPos()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c3d978aa42377f1f3f6a99f6b9793b">&#9670;&nbsp;</a></span>StatusBarProgressMeterPos() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9562,7 +9599,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4cd56dcfb3fb4cac7ec1fa10c54e998"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_fillet_edge.html#ae4cd56dcfb3fb4cac7ec1fa10c54e998">FilletEdges</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;brep, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &amp;edges, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;radii0, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;radii1, <a class="el" href="class_c_rhino_fillet_edge.html#a6236e485edeeba3909757e3235367786">CRhinoFilletEdge::BlendType</a> blend_type, <a class="el" href="class_c_rhino_fillet_edge.html#a0d010323ab1cc827e8f4133bf23c81c5">CRhinoFilletEdge::RailType</a> rail_type, bool setback_fillets, double tolerance, double angle_tolerance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;out_breps)</td></tr>
+<tr class="separator:ae4cd56dcfb3fb4cac7ec1fa10c54e998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0d152ce26826ffcd4b2d079f811a0a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_fillet_edge.html#a2c0d152ce26826ffcd4b2d079f811a0a">FilletEdges</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;brep, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &amp;edges, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;radii0, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;radii1, <a class="el" href="class_c_rhino_fillet_edge.html#a6236e485edeeba3909757e3235367786">CRhinoFilletEdge::BlendType</a> blend_type, <a class="el" href="class_c_rhino_fillet_edge.html#a0d010323ab1cc827e8f4133bf23c81c5">CRhinoFilletEdge::RailType</a> rail_type, double tolerance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;out_breps)</td></tr>
 <tr class="separator:a2c0d152ce26826ffcd4b2d079f811a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -137,8 +139,93 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae4cd56dcfb3fb4cac7ec1fa10c54e998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cd56dcfb3fb4cac7ec1fa10c54e998">&#9670;&nbsp;</a></span>FilletEdges() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFilletEdge::FilletEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;&#160;</td>
+          <td class="paramname"><em>brep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>radii0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>radii1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_fillet_edge.html#a6236e485edeeba3909757e3235367786">CRhinoFilletEdge::BlendType</a>&#160;</td>
+          <td class="paramname"><em>blend_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_fillet_edge.html#a0d010323ab1cc827e8f4133bf23c81c5">CRhinoFilletEdge::RailType</a>&#160;</td>
+          <td class="paramname"><em>rail_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>setback_fillets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out_breps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Fillets, chamfers, or blends the edges of a Brep. Parameters: brep [in] - The Brep to fillet, chamfer, or blend edges. edges [in] - An array of one or more edge indices where the fillet, chamfer, or blend will occur. radii0 [in] - An array of starting fillet, chamfer, or blend radii, one for each edge index. radii1 [in] - An array of end fillet, chamfer, or blend radii, one for each edge index. blend_type [in] - The blend type (see above). rail_type [in] - The rail type (see above). bool setback_fillets [in] - Use setback fillets (only used for blend_type CRhinoFilletEdge::BlendType::Blend) tolerance [in] - The tolerance to be used to perform calculations. angle_tolerance [in] - The angle tolerance to be used to perform calculations. out_breps [out] - The results of the operation. It is the responsibility of the caller to clean up the memory. Return: True if successful, False otherwise Remarks: CRITICAL: Memory for the resulting Breps is allocated. It is the calling functions responsibility to clean up the memory. </p>
+
+</div>
+</div>
 <a id="a2c0d152ce26826ffcd4b2d079f811a0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c0d152ce26826ffcd4b2d079f811a0a">&#9670;&nbsp;</a></span>FilletEdges()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0d152ce26826ffcd4b2d079f811a0a">&#9670;&nbsp;</a></span>FilletEdges() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

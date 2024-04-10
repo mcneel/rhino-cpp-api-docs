@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0e607635e753aa4037eaa989b95b57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef09927b6e87fa403cbe87df4d538a8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#aef09927b6e87fa403cbe87df4d538a8d">~ON_Linetype</a> ()</td></tr>
 <tr class="separator:aef09927b6e87fa403cbe87df4d538a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fab2748583347f1800594c88df2c59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#ac5fab2748583347f1800594c88df2c59">AlwaysModelDistances</a> () const</td></tr>
+<tr class="separator:ac5fab2748583347f1800594c88df2c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13d440f5206161be16754eeccfd82d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#ab13d440f5206161be16754eeccfd82d4">AppendSegment</a> (const <a class="el" href="class_o_n___linetype_segment.html">ON_LinetypeSegment</a> &amp;segment)</td></tr>
 <tr class="separator:ab13d440f5206161be16754eeccfd82d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0050fe1eb9f239f5dd9a67a75ee4e3b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#a0050fe1eb9f239f5dd9a67a75ee4e3b9">ClearBits</a> ()</td></tr>
@@ -138,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f0bf44c6132a9ee4905489d82838e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27745e2c90cf48c1424a895889a8716"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___linetype_segment.html">ON_LinetypeSegment</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#ad27745e2c90cf48c1424a895889a8716">Segments</a> () const</td></tr>
 <tr class="separator:ad27745e2c90cf48c1424a895889a8716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe43507446ad6b23de9d5f76f7d09100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#abe43507446ad6b23de9d5f76f7d09100">SetAlwaysModelDistances</a> (bool on)</td></tr>
+<tr class="separator:abe43507446ad6b23de9d5f76f7d09100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a240e77f3690b2d31b18c18f00895aa94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#a240e77f3690b2d31b18c18f00895aa94">SetLineCapStyle</a> (<a class="el" href="class_o_n.html#a8febd159977ec661a592178177837ccb">ON::LineCapStyle</a> style)</td></tr>
 <tr class="separator:a240e77f3690b2d31b18c18f00895aa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db3264a9d2882c4ded6868783240751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___linetype.html#a3db3264a9d2882c4ded6868783240751">SetLineJoinStyle</a> (<a class="el" href="class_o_n.html#a274c0174151e9a6b567b123c6266b99a">ON::LineJoinStyle</a> style)</td></tr>
@@ -686,6 +690,24 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac5fab2748583347f1800594c88df2c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fab2748583347f1800594c88df2c59">&#9670;&nbsp;</a></span>AlwaysModelDistances()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Linetype::AlwaysModelDistances </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: When true, pattern lengths and widths are always in models distances When false (default), lengths and widths are interpreted as lengths and widths on a page layout or in actual output prints </p>
+
+</div>
+</div>
 <a id="ab13d440f5206161be16754eeccfd82d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab13d440f5206161be16754eeccfd82d4">&#9670;&nbsp;</a></span>AppendSegment()</h2>
 
@@ -1115,6 +1137,25 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe43507446ad6b23de9d5f76f7d09100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe43507446ad6b23de9d5f76f7d09100">&#9670;&nbsp;</a></span>SetAlwaysModelDistances()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Linetype::SetAlwaysModelDistances </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Set how lengths and widths are interpreted when displayed in layouts or printed </p>
 
 </div>
 </div>
@@ -1668,7 +1709,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:10:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

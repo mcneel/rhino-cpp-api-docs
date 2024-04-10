@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -162,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a08bea5b36686d43d8c1684e1536eb3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6227e1be4953b295fc878fd6542faa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#aa64aa1267d130dcb8518cef16053c465">ReverseIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a2c6227e1be4953b295fc878fd6542faa">rend</a> ()=0</td></tr>
 <tr class="separator:a2c6227e1be4953b295fc878fd6542faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1408827622365ca3fb820721fe31dc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a1408827622365ca3fb820721fe31dc7f">SetHash</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>)</td></tr>
+<tr class="memdesc:a1408827622365ca3fb820721fe31dc7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the running hash for this set of render primitives. Usually calculated by a set of parameters in the MeshProvider and based on an initial hash delivered by the first set of primitives. Note - implemented using EVF(L"SetHash", ON__UINT32*)  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a1408827622365ca3fb820721fe31dc7f">More...</a><br /></td></tr>
+<tr class="separator:a1408827622365ca3fb820721fe31dc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c99f270ae5c29564b89fe947e75f9c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a4c99f270ae5c29564b89fe947e75f9c6">Transform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;)=0</td></tr>
 <tr class="memdesc:a4c99f270ae5c29564b89fe947e75f9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform this set of render primitives.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a4c99f270ae5c29564b89fe947e75f9c6">More...</a><br /></td></tr>
 <tr class="separator:a4c99f270ae5c29564b89fe947e75f9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ffe023fce2c465d2fdd886c5aeb6191"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html">IRenderMeshes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a3ffe023fce2c465d2fdd886c5aeb6191">New</a> (const <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;doc, const <a class="el" href="namespace_rh_rdk_1_1_custom_render_meshes.html#a8a90c9c5120a1bf765cd01ac1e42bb8a">ObjectId</a> &amp;objectId, const <a class="el" href="namespace_rh_rdk_1_1_custom_render_meshes.html#afeadbd53e196eb37b2425800c62b274d">MeshProviderId</a> &amp;providerId, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> runningHash)</td></tr>
 <tr class="memdesc:a3ffe023fce2c465d2fdd886c5aeb6191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new render primitives collection.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#a3ffe023fce2c465d2fdd886c5aeb6191">More...</a><br /></td></tr>
 <tr class="separator:a3ffe023fce2c465d2fdd886c5aeb6191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace746d05b0bf7575be6e68cc0f8c6e36"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#ace746d05b0bf7575be6e68cc0f8c6e36">ObjectHash</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;)</td></tr>
+<tr class="memdesc:ace746d05b0bf7575be6e68cc0f8c6e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function used to create the initial hash from the object when creating the initial set of primitives.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#ace746d05b0bf7575be6e68cc0f8c6e36">More...</a><br /></td></tr>
+<tr class="separator:ace746d05b0bf7575be6e68cc0f8c6e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -741,6 +747,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ace746d05b0bf7575be6e68cc0f8c6e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace746d05b0bf7575be6e68cc0f8c6e36">&#9670;&nbsp;</a></span>ObjectHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> RhRdk::CustomRenderMeshes::IRenderMeshes::ObjectHash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The function used to create the initial hash from the object when creating the initial set of primitives. </p>
+
+</div>
+</div>
 <a id="a52a5bcd947eb8eab1272c4873ae80296"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52a5bcd947eb8eab1272c4873ae80296">&#9670;&nbsp;</a></span>ObjectId()</h2>
 
@@ -849,6 +883,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1408827622365ca3fb820721fe31dc7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1408827622365ca3fb820721fe31dc7f">&#9670;&nbsp;</a></span>SetHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RhRdk::CustomRenderMeshes::IRenderMeshes::SetHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the running hash for this set of render primitives. Usually calculated by a set of parameters in the MeshProvider and based on an initial hash delivered by the first set of primitives. Note - implemented using EVF(L"SetHash", ON__UINT32*) </p>
+
+</div>
+</div>
 <a id="a4c99f270ae5c29564b89fe947e75f9c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c99f270ae5c29564b89fe947e75f9c6">&#9670;&nbsp;</a></span>Transform()</h2>
 
@@ -937,7 +991,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:11:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

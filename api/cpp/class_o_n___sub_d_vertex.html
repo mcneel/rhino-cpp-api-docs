@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -193,6 +193,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2de29511e898b60da793e33c5aac34ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec327ba916d43261a4b93ee069610c17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#aec327ba916d43261a4b93ee069610c17">IsManifoldBoundaryVertex</a> () const</td></tr>
 <tr class="separator:aec327ba916d43261a4b93ee069610c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cdaafacf500363bab2e742030020771"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a1cdaafacf500363bab2e742030020771">IsOneSectorCrease</a> () const</td></tr>
+<tr class="memdesc:a1cdaafacf500363bab2e742030020771"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are 2 configurations a valid crease vertex can have.  <a href="class_o_n___sub_d_vertex.html#a1cdaafacf500363bab2e742030020771">More...</a><br /></td></tr>
+<tr class="separator:a1cdaafacf500363bab2e742030020771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c7141a140266dcda6c3a53b29db0ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a14c7141a140266dcda6c3a53b29db0ab">IsSharp</a> (bool bEndCheck) const</td></tr>
 <tr class="memdesc:a14c7141a140266dcda6c3a53b29db0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge. Note that when an edge has variable sharpness it can have zero sharpness at one end and nonzero shaprness at the other end. The bEndCheck parameter controls what type of sharpness query is performed. Note that the vertex subdivision point is affected by attached sharp edges when IsSharp(true) is is true (ON_Vertex::VertexSharpness() &gt; 0). The vertex limit surface point is affected by edge sharpenss when IsSharp(false) is true. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_vertex.html#a14c7141a140266dcda6c3a53b29db0ab">More...</a><br /></td></tr>
 <tr class="separator:a14c7141a140266dcda6c3a53b29db0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +211,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1ee516faca73c0887958633ed979895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a856d8eff223c26c22d4a7e650bc5bcce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a856d8eff223c26c22d4a7e650bc5bcce">IsStandard</a> () const</td></tr>
 <tr class="separator:a856d8eff223c26c22d4a7e650bc5bcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad84fed3471760ae583b8f827e498d55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#aad84fed3471760ae583b8f827e498d55">IsTwoSectorCrease</a> () const</td></tr>
+<tr class="memdesc:aad84fed3471760ae583b8f827e498d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are 2 configurations a valid crease vertex can have.  <a href="class_o_n___sub_d_vertex.html#aad84fed3471760ae583b8f827e498d55">More...</a><br /></td></tr>
+<tr class="separator:aad84fed3471760ae583b8f827e498d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608fd1b1dc2a173130217a0e2192cb80"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a608fd1b1dc2a173130217a0e2192cb80">MarkedEdgeCount</a> () const</td></tr>
 <tr class="separator:a608fd1b1dc2a173130217a0e2192cb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81258c0a881cc7f9a6e377b2cb64ff03"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a81258c0a881cc7f9a6e377b2cb64ff03">MarkedFaceCount</a> () const</td></tr>
@@ -1484,7 +1490,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: True if m_vertex_tag is <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>. </p>
+<p>Returns: True if m_vertex_tag is <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>. If the vertex is a boundary crease, there will be one sector. If the vertex is an interior crease, there will be two sectors. </p>
 
 </div>
 </div>
@@ -1593,6 +1599,29 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: A manifold boundary vertex is a crease or corner vertex with 2 creased edges, each attached to a single face, and all other edges are smooth edges attached to two faces. There is a single sector at a manifold boundary vertex. Returns: True if the vertex has a single sector and, consequently, a single limit surface normal. </p>
+
+</div>
+</div>
+<a id="a1cdaafacf500363bab2e742030020771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cdaafacf500363bab2e742030020771">&#9670;&nbsp;</a></span>IsOneSectorCrease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDVertex::IsOneSectorCrease </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>There are 2 configurations a valid crease vertex can have. </p>
+<p>1) A crease vertex with one sector has <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = 1+<a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, two crease edges that are attached to a single face, and the other edges are smooth and are attached to two faces.</p>
+<p>2) A crease vertex with two sectors has <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = <a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, two crease edges, and all edges are attached to two faces.</p>
+<p>In a complete SubD (not a subset), a 1 sector crease vertex is always on the boundary of the SubD. In all cases a 2 sector crease vertex is an interior vertex.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the vertex tag is <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>, <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = 1+<a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, and <a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a> &gt;= 1. </dd></dl>
 
 </div>
 </div>
@@ -1730,6 +1759,29 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: A "standard" vertex is one where the standard subdivsion matrix for that vertex can be used to calculate the subdivision point. This function is designed to be useful for testing and debugging code when a certain situation is expected to exist. It is not used for evaluation because it is too slow.</p>
 <p>Returns: True if the subdivison point of the vertex can be calculated using the standard subdivion matrix for the vertex type and face count.</p>
 <p>Remarks: If the vertex is tagged and has multiple sectors, like an interior crease or corner vertex, then this function will return false. In this situation, it is possible that the vertex, as the center of a sector, is standard. </p>
+
+</div>
+</div>
+<a id="aad84fed3471760ae583b8f827e498d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad84fed3471760ae583b8f827e498d55">&#9670;&nbsp;</a></span>IsTwoSectorCrease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDVertex::IsTwoSectorCrease </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>There are 2 configurations a valid crease vertex can have. </p>
+<p>1) A crease vertex with one sector has <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = 1+<a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, two crease edges that are attached to a single face, and the other edges are smooth and are attached to two faces.</p>
+<p>2) A crease vertex with two sectors has <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = <a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, two crease edges, and all edges are attached to two faces.</p>
+<p>In a complete SubD (not a subset), a 1 sector crease vertex is always on the boundary of the SubD. In all cases a 2 sector crease vertex is an interior vertex.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the vertex tag is <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>, <a class="el" href="class_o_n___sub_d_vertex.html#a5c9ce5b1009ae84bc37a139dbbe27688">EdgeCount()</a> = <a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a>, and <a class="el" href="class_o_n___sub_d_vertex.html#ae3468d818f6330069cd9678622cbd093">FaceCount()</a> &gt;= 2. </dd></dl>
 
 </div>
 </div>
@@ -2842,7 +2894,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:11:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

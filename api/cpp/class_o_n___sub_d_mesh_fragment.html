@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.5</span>
+   &#160;<span id="projectnumber">8.6</span>
    </div>
   </td>
  </tr>
@@ -187,6 +187,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7713057df8b141cbc21ce8e210bb5828"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a7713057df8b141cbc21ce8e210bb5828">GetTextureCoordinteCorners</a> (bool bGridOrder, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> texture_coordinate_corners[4]) const</td></tr>
 <tr class="separator:a7713057df8b141cbc21ce8e210bb5828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a811b5cc275302e42a281f50deeda42d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a811b5cc275302e42a281f50deeda42d2">Grid</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
+<tr class="memdesc:a811b5cc275302e42a281f50deeda42d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information to resolve m_P[], m_N[], and m_T[] into a grid of NxN quads. <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> m_grid;.  <a href="class_o_n___sub_d_mesh_fragment.html#a811b5cc275302e42a281f50deeda42d2">More...</a><br /></td></tr>
 <tr class="separator:a811b5cc275302e42a281f50deeda42d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02fda9708d62344f7cef1a04c92bff90"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a02fda9708d62344f7cef1a04c92bff90">HasValidPointAndNormalGrid</a> () const</td></tr>
 <tr class="separator:a02fda9708d62344f7cef1a04c92bff90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,9 +409,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af82f71315f575446f1df880c4e069edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042b24a4e789a0644dd5fd84629f60a2"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a042b24a4e789a0644dd5fd84629f60a2">m_face_vertex_index</a> [4]</td></tr>
 <tr class="separator:a042b24a4e789a0644dd5fd84629f60a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0a5d167ddac0001e3b41bab632e3a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#aea0a5d167ddac0001e3b41bab632e3a2">m_grid</a></td></tr>
-<tr class="memdesc:aea0a5d167ddac0001e3b41bab632e3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information to resolve m_P[], m_N[], and m_T[] into a grid of NxN quads.  <a href="class_o_n___sub_d_mesh_fragment.html#aea0a5d167ddac0001e3b41bab632e3a2">More...</a><br /></td></tr>
-<tr class="separator:aea0a5d167ddac0001e3b41bab632e3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8816f5e0df5f115238d7cdc84c4b58f"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#af8816f5e0df5f115238d7cdc84c4b58f">m_N</a></td></tr>
 <tr class="memdesc:af8816f5e0df5f115238d7cdc84c4b58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface normals  <a href="class_o_n___sub_d_mesh_fragment.html#af8816f5e0df5f115238d7cdc84c4b58f">More...</a><br /></td></tr>
 <tr class="separator:af8816f5e0df5f115238d7cdc84c4b58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1684,6 +1682,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Information to resolve m_P[], m_N[], and m_T[] into a grid of NxN quads. <a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> m_grid;. </p>
+<p>Normalized grid parameters useful for appling a texture to the grid are available from m_grid functions. </p>
 
 </div>
 </div>
@@ -4069,23 +4070,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aea0a5d167ddac0001e3b41bab632e3a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea0a5d167ddac0001e3b41bab632e3a2">&#9670;&nbsp;</a></span>m_grid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_n___sub_d_mesh_fragment_grid.html">ON_SubDMeshFragmentGrid</a> ON_SubDMeshFragment::m_grid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Information to resolve m_P[], m_N[], and m_T[] into a grid of NxN quads. </p>
-<p>Normalized grid parameters useful for appling a texture to the grid are available from m_grid functions. </p>
-
-</div>
-</div>
 <a id="af8816f5e0df5f115238d7cdc84c4b58f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8816f5e0df5f115238d7cdc84c4b58f">&#9670;&nbsp;</a></span>m_N</h2>
 
@@ -4252,7 +4236,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2024 16:16:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 10 2024 13:11:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
