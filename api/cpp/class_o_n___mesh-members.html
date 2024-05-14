@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -166,6 +166,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#a9c41bb93f38981333f13fd777fb4e50a">GetBBox</a>(double *boxmin, double *boxmax, bool bGrowBox=false) const override</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___geometry.html#a7259b0a7e7c663e55345788411352075">GetBoundingBox</a>(ON_BoundingBox &amp;bbox, bool bGrowBox=false) const</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___geometry.html#ac123c564ea7a43c4406ac78954cf5266">GetBoundingBox</a>(ON_3dPoint &amp;bbox_min, ON_3dPoint &amp;bbox_max, bool bGrowBox=false) const</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___mesh.html#a4e9e86be20752b8f10ed09f05bf79b13">GetCachedTextureCoordinates</a>(const class ONX_Model &amp;onx_model, const ON_Texture &amp;texture, const ON_MappingRef *mapping_ref) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#ad3919670012bed66259e78db4146b886">GetCachedTextureCoordinates</a>(const class CRhinoDoc &amp;rhino_doc, const ON_Texture &amp;texture, const ON_MappingRef *mapping_ref) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___mesh.html#a5405260e85535484e4469b7590d2cdc7">GetClashingFacePairs</a>(int max_pair_count, ON_SimpleArray&lt; ON_2dex &gt; &amp;clashing_pairs) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#ab8243e8139c5e818bf7a30aa3737e66a">GetClosestPoint</a>(const ON_3dPoint &amp;P, class ON_MESH_POINT *Q, double maximum_distance=0.0) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___object.html#a691de6470e814973858aa5c51eaffa77">GetComponentsWithSetStates</a>(ON_ComponentStatus states_filter, bool bAllEqualStates, ON_SimpleArray&lt; ON_COMPONENT_INDEX &gt; &amp;components) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -345,6 +347,8 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_o_n___mesh.html#ae11133fd5bae412081e6eaf21769c86f">SeparateNgons</a>(unsigned int **vertex_face_map, unsigned int ngon_index0, unsigned int ngon_index1)</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4">SetCachedTextureCoordinates</a>(const class ON_TextureMapping &amp;mapping, const class ON_Xform *mesh_xform=0, bool bLazy=true)</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">SetCachedTextureCoordinatesEx</a>(const class ON_TextureMapping &amp;mapping, const class ON_Xform *mesh_xform=0, bool bLazy=true, bool bSeamCheck=true)</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">SetCachedTextureCoordinatesFromMaterial</a>(const class ONX_Model &amp;onx_model, const ON_Material &amp;material, const ON_MappingRef *mapping_ref) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___mesh.html#a3afeab94a8db270d101ccb7b755679a9">SetCachedTextureCoordinatesFromMaterial</a>(const class CRhinoDoc &amp;rhino_doc, const ON_Material &amp;material, const ON_MappingRef *mapping_ref) const</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___mesh.html#ad5929a47378ca44d6703e59b32afd5e5">SetClosed</a>(int closed)</td><td class="entry"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___object.html#ab728c0576fd5913bc1575b74997bddb5">SetComponentStates</a>(ON_COMPONENT_INDEX component_index, ON_ComponentStatus states_to_set) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___object.html#a589f1fdc28f6259d1bd22bdedc9c4c76">SetComponentStatus</a>(ON_COMPONENT_INDEX component_index, ON_ComponentStatus status_to_copy) const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -411,7 +415,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:10:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

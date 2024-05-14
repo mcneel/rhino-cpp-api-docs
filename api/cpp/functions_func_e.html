@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ $(function() {
 , <a class="el" href="class_o_n___bounding_box.html#aab004090dffca66bb6d06c28b11ca801">ON_BoundingBox</a>
 , <a class="el" href="class_o_n___brep.html#a7ee943e39fa5b05b89a32e676a3e0726">ON_Brep</a>
 , <a class="el" href="class_o_n___brep_trim.html#ae61fb8f2ed1cb5a3bcbbccad499e0cbc">ON_BrepTrim</a>
+, <a class="el" href="class_o_n___sub_d_component_id.html#a83c972ee53b0068de78b2adf5b48f0b8">ON_SubDComponentId</a>
+, <a class="el" href="class_o_n___sub_d_component_parameter.html#a5d2f50b130dbc5136ef4118012b8b438">ON_SubDComponentParameter</a>
 , <a class="el" href="class_o_n___sub_d_component_ptr.html#ab842d192a102f1e2fc6f114a7a7a4bb7">ON_SubDComponentPtr</a>
 , <a class="el" href="class_o_n___sub_d_component_ref.html#a7492dd92fe537054b614f9037de78e9c">ON_SubDComponentRef</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain.html#ab42aac9196f461c322b05d101086d984">ON_SubDEdgeChain</a>
@@ -167,6 +169,7 @@ $(function() {
 , <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a784e9b4bfa2517a681cdf7dda867c9a7">ON_SubDEdgeChainCurve</a>
 , <a class="el" href="class_o_n___sub_d_edge_iterator.html#a1516a49a62d28545e261a634ba7228dc">ON_SubDEdgeIterator</a>
 , <a class="el" href="class_o_n___sub_d_face.html#a22c8a7bbb75ee84841e6ade9e3c2a07e">ON_SubDFace</a>
+, <a class="el" href="class_o_n___sub_d_face_corner_dex.html#ad276ffc1810e88043fa25fd74b410863">ON_SubDFaceCornerDex</a>
 , <a class="el" href="class_o_n___sub_d_face_edge_iterator.html#aae0bfdd455500978045c971f4efcc409">ON_SubDFaceEdgeIterator</a>
 , <a class="el" href="class_o_n___sub_d_hash.html#a5d1540b73b8905a972f4c5e4ef6fef5d">ON_SubDHash</a>
 , <a class="el" href="class_o_n___sub_d_sector_type.html#a7f1ce2afbff2cc13a91c7917d6840326">ON_SubDSectorType</a>
@@ -202,7 +205,8 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_get_polygon.html#ad8694592b9116e7d3d124de5a91416c0">CArgsRhinoGetPolygon</a>
 </li>
 <li>EdgeFace()
-: <a class="el" href="class_o_n___sub_d_edge_ptr.html#a65a9f58f8937093768d3a50292cbc63a">ON_SubDEdgePtr</a>
+: <a class="el" href="class_o_n___sub_d_component_parameter.html#ad4d6e17af7b3e8c9d29891f140d77597">ON_SubDComponentParameter</a>
+, <a class="el" href="class_o_n___sub_d_edge_ptr.html#a65a9f58f8937093768d3a50292cbc63a">ON_SubDEdgePtr</a>
 </li>
 <li>EdgeFaceCount()
 : <a class="el" href="class_o_n___sub_d_edge_ptr.html#a16cd29a2fabf6784e07131a52b79424a">ON_SubDEdgePtr</a>
@@ -280,15 +284,19 @@ $(function() {
 , <a class="el" href="class_c_rhino_poly_edge_segment.html#aab6f020d5f9797d43a7572e64486e573">CRhinoPolyEdgeSegment</a>
 , <a class="el" href="class_o_n___poly_edge_curve.html#a74c9d7e032293b4f7990fee606cc739e">ON_PolyEdgeCurve</a>
 , <a class="el" href="class_o_n___poly_edge_segment.html#ac5b0abc0ae45a1bfb0fb87c153cf1447">ON_PolyEdgeSegment</a>
+, <a class="el" href="class_o_n___sub_d_component_parameter.html#a9a2581f6d00556a5f24015c37f005118">ON_SubDComponentParameter</a>
 </li>
 <li>EdgeProperties()
 : <a class="el" href="class_o_n___sub_d_vertex.html#a495bda271cb8cad654b54a0473f6d180">ON_SubDVertex</a>
 </li>
 <li>EdgePtr()
-: <a class="el" href="class_o_n___sub_d_component_ptr.html#a92612d0b3ed69fc1b591f264d67c92e4">ON_SubDComponentPtr</a>
+: <a class="el" href="class_o_n___sub_d_component_id.html#abcf19d101de4510b53bd1eaff575c926">ON_SubDComponentId</a>
+, <a class="el" href="class_o_n___sub_d_component_parameter.html#a87cdfb673d644a9c1bee03b2798fa2e1">ON_SubDComponentParameter</a>
+, <a class="el" href="class_o_n___sub_d_component_ptr.html#a92612d0b3ed69fc1b591f264d67c92e4">ON_SubDComponentPtr</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain.html#aeb77f2a480a7df4228eeaf7553a79e63">ON_SubDEdgeChain</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a2b4f89fc9e9309c104c2bfba1c5bd429">ON_SubDEdgeChainCurve</a>
 , <a class="el" href="class_o_n___sub_d_face.html#aeccdb2c68f9f92c1a9be7af5fbf3a7ac">ON_SubDFace</a>
+, <a class="el" href="class_o_n___sub_d_face_corner_dex.html#a4279697c6b239068ef1660a99ec16045">ON_SubDFaceCornerDex</a>
 , <a class="el" href="class_o_n___sub_d_quad_face_pack_side.html#ab958d9050030c42aaed40b205d71c9aa">ON_SubDQuadFacePackSide</a>
 , <a class="el" href="class_o_n___sub_d_vertex.html#a323e478ffc0c453fd762795299757006">ON_SubDVertex</a>
 </li>
@@ -320,7 +328,7 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_get_polygon.html#a65eb3dcc9d8dbaa829abe32f3940772c">CArgsRhinoGetPolygon</a>
 </li>
 <li>EdgeSurfaceCurve()
-: <a class="el" href="class_o_n___sub_d_edge.html#a74fe7d824d457425a65252d2acb7df26">ON_SubDEdge</a>
+: <a class="el" href="class_o_n___sub_d_edge.html#ac4255248dcbbc1230930a2c6c2ef0420">ON_SubDEdge</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain.html#af82a40c8607dca4825696d1102335a0d">ON_SubDEdgeChain</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#acc34befb9a137ecdd0be5d1fc1efe0f2">ON_SubDEdgeChainCurve</a>
 , <a class="el" href="class_o_n___sub_d_edge_ptr.html#ab96c672fcd69a678c6f645d6149704e7">ON_SubDEdgePtr</a>
@@ -1441,7 +1449,7 @@ $(function() {
 , <a class="el" href="class_o_n__w_string.html#acba7228d1c708d8e403cf6442f26fc26">ON_wString</a>
 </li>
 <li>EqualAttributeName()
-: <a class="el" href="class_o_n___string.html#ad2a68db7fa0ecd111d2e0610f49e645d">ON_String</a>
+: <a class="el" href="class_o_n___string.html#a75982739b00aeb140227bf8d6a6260bc">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#a5d2f0c9e0254114a1548db7932fb6a58">ON_wString</a>
 </li>
 <li>EqualContent()
@@ -1467,8 +1475,8 @@ $(function() {
 : <a class="el" href="class_o_n___font.html#a471757250c48983f63a1c082de215385">ON_Font</a>
 </li>
 <li>EqualOrdinal()
-: <a class="el" href="class_o_n___string.html#a43e2fa835ab3fa951bf0a92744f8d93f">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a1c099c6739f4295459338ab571a89cd8">ON_wString</a>
+: <a class="el" href="class_o_n___string.html#a1b85a20b9a351cfe19e55ddd166b2d28">ON_String</a>
+, <a class="el" href="class_o_n__w_string.html#a867483b8ce8baee0948892b8d0cb253a">ON_wString</a>
 </li>
 <li>EqualPath()
 : <a class="el" href="class_o_n___string.html#a8c644d159e4e10834cc5ad57f5438804">ON_String</a>
@@ -1601,13 +1609,14 @@ $(function() {
 , <a class="el" href="class_o_n___polynomial_curve.html#aec246613dd6a0ebcfadf01212ca1b620">ON_PolynomialCurve</a>
 , <a class="el" href="class_o_n___polynomial_surface.html#a356155a443b55f4885196956cbd0b20e">ON_PolynomialSurface</a>
 , <a class="el" href="class_o_n___rev_surface.html#a6d575cc8524cc56ff81e9ec50f664253">ON_RevSurface</a>
+, <a class="el" href="class_o_n___signed_distance_function.html#aac0c8e08ac75dc71a67631fd6ae6647e">ON_SignedDistanceFunction</a>
 , <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a6d227d5e132ecf3c88a367eb56e96b83">ON_SubDEdgeChainCurve</a>
 , <a class="el" href="class_o_n___sum_surface.html#ab9a2e627ac2e17273e3ad177d52793eb">ON_SumSurface</a>
 , <a class="el" href="class_o_n___surface.html#a136dfc12c71af401bc90f2f5e87186f1">ON_Surface</a>
 , <a class="el" href="class_o_n___surface_proxy.html#ac229e520c42a00099bc81509849eee99">ON_SurfaceProxy</a>
 , <a class="el" href="class_o_n___surface_tree_node.html#a7ed9388a41d920100c1d126a4d3bf06b">ON_SurfaceTreeNode</a>
 , <a class="el" href="class_o_n___tensor_product.html#a86429e599cb980bc348a58f7d9d751d5">ON_TensorProduct</a>
-, <a class="el" href="class_o_n___texture_mapping.html#a585d55bec1eb924681c70f722f8785fe">ON_TextureMapping</a>
+, <a class="el" href="class_o_n___texture_mapping.html#ac24bdf7e091dd0db8b96f0b60dbefda4">ON_TextureMapping</a>
 </li>
 <li>EvaluateBoxMapping()
 : <a class="el" href="class_o_n___texture_mapping.html#a72617f0835a94276990850841c6b914e">ON_TextureMapping</a>
@@ -1669,7 +1678,7 @@ $(function() {
 : <a class="el" href="class_o_n___texture_mapping.html#abe1b4119f73a48f173133ce9efda9649">ON_TextureMapping</a>
 </li>
 <li>EvaluateSurfacePoint()
-: <a class="el" href="class_o_n___sub_d_matrix.html#a1bf9ce74e5224aa43462c5ec4b6f3c75">ON_SubDMatrix</a>
+: <a class="el" href="class_o_n___sub_d_matrix.html#a2a0e523254bd8cc8307aa5444eefebf2">ON_SubDMatrix</a>
 </li>
 <li>EvaluateTangents()
 : <a class="el" href="class_c_rhino_poly_edge.html#a01fe0ba587eef663d54f94743fec5fb9">CRhinoPolyEdge</a>
@@ -1913,8 +1922,8 @@ $(function() {
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#a1b90f4ea47065cd5f6bddfb8b8fefc94">Skylight</a>
 </li>
 <li>EvNormal()
-: <a class="el" href="class_o_n___surface.html#af6a7e891aabbb7b5a170dae9bbb3dc45">ON_Surface</a>
-, <a class="el" href="class_o_n___triangle_mesh.html#a08bb4d34de02fc4a5e9659f7f0a678ee">ON_TriangleMesh</a>
+: <a class="el" href="class_o_n___surface.html#aa85e2a07c4992d2ab09080c373a04554">ON_Surface</a>
+, <a class="el" href="class_o_n___triangle_mesh.html#a874ee4406027b28d0560bc2cd1498f88">ON_TriangleMesh</a>
 </li>
 <li>EvPoint()
 : <a class="el" href="class_o_n___bezier_curve.html#a7f9c7141aba78552ad63ba19189dc7e8">ON_BezierCurve</a>
@@ -1923,7 +1932,7 @@ $(function() {
 , <a class="el" href="class_o_n___triangle_mesh.html#af749fafd1439917bd88694c3c734d3ea">ON_TriangleMesh</a>
 </li>
 <li>EvPointAndNormal()
-: <a class="el" href="class_o_n___triangle_mesh.html#a1eb2efff2f308a6af9df079813cbcf84">ON_TriangleMesh</a>
+: <a class="el" href="class_o_n___triangle_mesh.html#a0c9ba20ad4231a1f917a5f6767abb85f">ON_TriangleMesh</a>
 </li>
 <li>EvSignedCurvature()
 : <a class="el" href="class_o_n___curve.html#a86a33028dc130173b3f0c05cdf84d4d3">ON_Curve</a>
@@ -2025,12 +2034,12 @@ $(function() {
 , <a class="el" href="class_o_n___interval.html#a3b54bde34609595b7b35b904db304d44">ON_Interval</a>
 </li>
 <li>ExpandEdges()
-: <a class="el" href="class_o_n___sub_d.html#a7d3b8b7382167167201aab69c9621e92">ON_SubD</a>
+: <a class="el" href="class_o_n___sub_d.html#accb8987f5ddefe2a8b4f70f813938008">ON_SubD</a>
 </li>
 <li>ExpandItem()
 : <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a75027bae14d9bb3470edfd5323ef2a8d">CRhinoUiExpandableTabCtrl</a>
 , <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl___new.html#acfb65ab456bffe71ac9d994fe21cd39b">CRhinoUiExpandableTabCtrl_New</a>
-, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a26989438902e7226277ac75da1c9b9a0">CRhinoUiOptionsListCtrl</a>
+, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a84e83578d4508e18170449c1b5d28da2">CRhinoUiOptionsListCtrl</a>
 </li>
 <li>ExpandSection()
 : <a class="el" href="class_i_rhino_ui_holder.html#a5efde65cf4a150db6ab0546e954e228f">IRhinoUiHolder</a>
@@ -2161,7 +2170,7 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d.html#a1ff38b984cc9b5877da935d3ef95a3b2">ON_SubD</a>
 </li>
 <li>ExtrudedMesh()
-: <a class="el" href="class_i_rhino_mesh_extruder.html#af913b7c0791fcdcd4f24bed5d3ca63db">IRhinoMeshExtruder</a>
+: <a class="el" href="class_i_rhino_mesh_extruder.html#a6bbb4958190c8ce010f992d434829870">IRhinoMeshExtruder</a>
 </li>
 <li>Extrusion()
 : <a class="el" href="class_c_rhino_extrusion_object.html#a736d561c136cbf0a58500bc9bc20eb5a">CRhinoExtrusionObject</a>
@@ -2174,7 +2183,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:11:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

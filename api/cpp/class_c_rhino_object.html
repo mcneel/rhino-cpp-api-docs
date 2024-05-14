@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -452,8 +452,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a273876b89c46bbf79b32bfbeeb56474c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a273876b89c46bbf79b32bfbeeb56474c">SetCachedTextureCoordinates</a> (const <a class="el" href="class_o_n___texture_mapping.html">ON_TextureMapping</a> &amp;mapping, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *object_xform, bool bLazy=true) const</td></tr>
 <tr class="separator:a273876b89c46bbf79b32bfbeeb56474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85fa673f4f069d5eb5e49887b027f84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#ad85fa673f4f069d5eb5e49887b027f84">SetCachedTextureCoordinatesFromPlugIn</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id) const</td></tr>
-<tr class="memdesc:ad85fa673f4f069d5eb5e49887b027f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cached texture coordinates for all mapping that require per vertex texture texture coordinates. Includes mappings referenced by object material and sub-object materials.  <a href="class_c_rhino_object.html#ad85fa673f4f069d5eb5e49887b027f84">More...</a><br /></td></tr>
 <tr class="separator:ad85fa673f4f069d5eb5e49887b027f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1af582f4e2b65331353273583372c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a9f1af582f4e2b65331353273583372c9">SetCachedTextureCoordinatesFromPlugIn</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;plugin_id, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___texture_mapping.html#a43ceae28c14840152691a1400b3a5140">ON_TextureMapping::TYPE</a> &gt; &amp;mappings_to_cache) const</td></tr>
+<tr class="separator:a9f1af582f4e2b65331353273583372c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8917b23b924626d49dcd44adc041164e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a8917b23b924626d49dcd44adc041164e">SetCopyHistoryOnReplace</a> (bool bCopy) const</td></tr>
 <tr class="separator:a8917b23b924626d49dcd44adc041164e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f97d34cb42c94073d82737e19ff2ceb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a3f97d34cb42c94073d82737e19ff2ceb">SetDynamicTransform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;dynamic_xform)</td></tr>
@@ -4605,12 +4606,12 @@ Friends</h2></td></tr>
 <p>Description: If the object is a mesh or has existing render meshes, then this call uses mapping to set the cached texture coordinates. Parameters: mapping - [in] Texture mapping function used to calculate the mesh's cached texture coordinates. object_xform - [in] (optional) Pass if the object has been transformed after the mapping was set. <br  />
  For example, if a mapping M was used to calculate the object's texture coordinates, the object was subsequently transformed by T, and for some reason you needed to use M to recalculate the original texture coordinates, then you would pass the T as object_xform. bLazy - [in] If true, then the calculation is performed only if the current mesh texture coordinates were calculated with a different mapping. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail.</p>
 <p>The CRinoObject::Attributes()::m_rendering_attributes and <a class="el" href="class_c_rhino_doc.html#a749c3076a75394e894e4d455c3500d5e">CRhinoDoc::m_texture_mapping_table</a> has tools to get texture mappings. <br  />
- See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
+ See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
 </div>
 </div>
 <a id="ad85fa673f4f069d5eb5e49887b027f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad85fa673f4f069d5eb5e49887b027f84">&#9670;&nbsp;</a></span>SetCachedTextureCoordinatesFromPlugIn()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85fa673f4f069d5eb5e49887b027f84">&#9670;&nbsp;</a></span>SetCachedTextureCoordinatesFromPlugIn() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4624,8 +4625,36 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: Set cached texture coordinates for all mappings that require per vertex texture texture coordinates. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
-<p>Set cached texture coordinates for all mapping that require per vertex texture texture coordinates. Includes mappings referenced by object material and sub-object materials. </p>
+</div>
+</div>
+<a id="a9f1af582f4e2b65331353273583372c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1af582f4e2b65331353273583372c9">&#9670;&nbsp;</a></span>SetCachedTextureCoordinatesFromPlugIn() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoObject::SetCachedTextureCoordinatesFromPlugIn </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>plugin_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___texture_mapping.html#a43ceae28c14840152691a1400b3a5140">ON_TextureMapping::TYPE</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mappings_to_cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Set cached texture coordinates for mappings listed in the array 'mappings_to_cache'. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. mappings_to_cache - [in] An array indicating which types of mappings that should be cached. If the array is empty, all found mappings will be cached. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
 </div>
 </div>
@@ -5877,7 +5906,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:10:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

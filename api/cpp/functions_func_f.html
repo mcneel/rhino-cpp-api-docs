@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -68,12 +68,14 @@ $(function() {
 <li>Face()
 : <a class="el" href="class_c_rhino_obj_ref.html#a555e0f56a5d59ee74d722a3f77e65d82">CRhinoObjRef</a>
 , <a class="el" href="class_c_rhino_poly_edge_segment.html#a07f7f1523b1b7b8b9a4ed9ddfd804bf7">CRhinoPolyEdgeSegment</a>
-, <a class="el" href="class_o_n___brep.html#a5a52be86be2f244d11579b492d5354ce">ON_Brep</a>
+, <a class="el" href="class_o_n___brep.html#acdebe569ba66676b34349728bc400a92">ON_Brep</a>
 , <a class="el" href="class_o_n___brep_face_side.html#a164412f30779def87f73122de8f2a7f3">ON_BrepFaceSide</a>
 , <a class="el" href="class_o_n___brep_loop.html#a3f457c29c88a1a655ae5a5cf7cea9c17">ON_BrepLoop</a>
 , <a class="el" href="class_o_n___brep_quad_face_pack_side.html#a6fa5f7f319efd94dbd0f39209dbb6125">ON_BrepQuadFacePackSide</a>
 , <a class="el" href="class_o_n___brep_trim.html#abfe1672e67b6df5d807ba186c444f39a">ON_BrepTrim</a>
 , <a class="el" href="class_o_n___font_face_quartet.html#a24fabbc967c648fb6e513b8a367dab7f">ON_FontFaceQuartet</a>
+, <a class="el" href="class_o_n___sub_d_component_id.html#ab2e304c8c65b15c85dd84fc591be8cd7">ON_SubDComponentId</a>
+, <a class="el" href="class_o_n___sub_d_component_parameter.html#a09dc2d78e7a203ab8faf00a1d6feb865">ON_SubDComponentParameter</a>
 , <a class="el" href="class_o_n___sub_d_component_ptr.html#a2fe02d7ff7da92746f366aa0392db95d">ON_SubDComponentPtr</a>
 , <a class="el" href="class_o_n___sub_d_component_ref.html#a2a20296f61419c14e7ecc2ad51f4112f">ON_SubDComponentRef</a>
 , <a class="el" href="class_o_n___sub_d_edge.html#a8592d30879261a1160496d215323d2aa">ON_SubDEdge</a>
@@ -98,8 +100,15 @@ $(function() {
 <li>FaceColor()
 : <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a04d302d944b0befab0ba070f07b4abd8">ON_SubDExpandEdgesParameters</a>
 </li>
+<li>FaceCornerDex()
+: <a class="el" href="class_o_n___sub_d_component_id.html#abe4a06e18e03ee27561eda80dbf9705d">ON_SubDComponentId</a>
+, <a class="el" href="class_o_n___sub_d_face_parameter.html#a0d2b09ac4b6495bf4d781b93ff3cb74d">ON_SubDFaceParameter</a>
+</li>
 <li>FaceCornerIndex()
 : <a class="el" href="class_o_n___sub_d_mesh_fragment.html#af38b3acb89530dcc321aa280e3151122">ON_SubDMeshFragment</a>
+</li>
+<li>FaceCornerParameters()
+: <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e">ON_SubDFaceParameter</a>
 </li>
 <li>FaceCount()
 : <a class="el" href="class_o_n___brep_quad_face_pack.html#acd3fb91e00b536819d9064dad3894ef5">ON_BrepQuadFacePack</a>
@@ -205,8 +214,13 @@ $(function() {
 <li>FacePackingTopologyHash()
 : <a class="el" href="class_o_n___sub_d.html#ae32373a2c26ae53a008f9f717919d9a7">ON_SubD</a>
 </li>
+<li>FaceParameter()
+: <a class="el" href="class_o_n___sub_d_component_parameter.html#ade355747d9a781e301574f2430ef6d48">ON_SubDComponentParameter</a>
+</li>
 <li>FacePtr()
-: <a class="el" href="class_o_n___sub_d_component_ptr.html#a564269e98541de1805102d1022b9009e">ON_SubDComponentPtr</a>
+: <a class="el" href="class_o_n___sub_d_component_id.html#aea4a590247f188771935e3c42db861d9">ON_SubDComponentId</a>
+, <a class="el" href="class_o_n___sub_d_component_parameter.html#a50035a5da1e88d6b12c5c706177512cc">ON_SubDComponentParameter</a>
+, <a class="el" href="class_o_n___sub_d_component_ptr.html#a564269e98541de1805102d1022b9009e">ON_SubDComponentPtr</a>
 , <a class="el" href="class_o_n___sub_d_edge.html#ab01b69c9628c4a789706cb1f0b260cc3">ON_SubDEdge</a>
 </li>
 <li>FacePtrFromFace()
@@ -661,6 +675,9 @@ $(function() {
 <li>FilletEdges()
 : <a class="el" href="class_c_rhino_fillet_edge.html#a2c0d152ce26826ffcd4b2d079f811a0a">CRhinoFilletEdge</a>
 </li>
+<li>FilletEdgesVariableRadius()
+: <a class="el" href="class_c_rhino_fillet_edge.html#aea5c84605754b04c807a449d6fb3317e">CRhinoFilletEdge</a>
+</li>
 <li>FillFonts()
 : <a class="el" href="class_c_rhino_ui_font_combo_box.html#a9902ee532cc4e3821ab584deadafe039">CRhinoUiFontComboBox</a>
 </li>
@@ -1093,7 +1110,7 @@ $(function() {
 </li>
 <li>FirstChild()
 : <a class="el" href="class_c_rh_rdk_content.html#aea3e3844719dfcd1f818f6e7b8a1e441">CRhRdkContent</a>
-, <a class="el" href="class_o_n___render_content.html#a5c134c369b64f239ca8cc487832006c8">ON_RenderContent</a>
+, <a class="el" href="class_o_n___render_content.html#a586d67624dfc3895df7c3ca602e063e4">ON_RenderContent</a>
 , <a class="el" href="class_o_n___x_m_l_node.html#a6f88ae105643aafc24847c65506a1967">ON_XMLNode</a>
 </li>
 <li>FirstComponent()
@@ -1146,7 +1163,7 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d_edge_chain.html#abb91cfec312ee9698bfac66870c95c24">ON_SubDEdgeChain</a>
 </li>
 <li>FirstElement()
-: <a class="el" href="class_o_n___fixed_size_pool_iterator.html#ab278228617b9ab761f2418928cdde669">ON_FixedSizePoolIterator</a>
+: <a class="el" href="class_o_n___fixed_size_pool_iterator.html#a0d52d7d6fc5290d8a9266bab85d3b88c">ON_FixedSizePoolIterator</a>
 , <a class="el" href="class_o_n___serial_number_map.html#ac335b7613050b067afda5fe6a64b1acd">ON_SerialNumberMap</a>
 , <a class="el" href="group__open_n_u_r_b_s.html#ga51b1e406fde5638c16f2345a3ecffc26">ON_SimpleFixedSizePoolIterator&lt; T &gt;</a>
 </li>
@@ -1367,6 +1384,9 @@ $(function() {
 </li>
 <li>FlipReversedSurfaces()
 : <a class="el" href="class_o_n___brep.html#a845ac982231f89071f85864462468bac">ON_Brep</a>
+</li>
+<li>FlipSurfaceOrientation()
+: <a class="el" href="class_o_n___surface_curvature.html#a36b0eca935075c00e1d7e73c17541ffb">ON_SurfaceCurvature</a>
 </li>
 <li>FlipVertexNormals()
 : <a class="el" href="class_o_n___mesh.html#a1981fd37dbe338ada348915342b1d99d">ON_Mesh</a>
@@ -1651,7 +1671,7 @@ $(function() {
 , <a class="el" href="class_o_n___text_content.html#a624164a06638f5648dbde08f4ffbca7c">ON_TextContent</a>
 </li>
 <li>FormatAngleStringDMS()
-: <a class="el" href="class_o_n___number_formatter.html#abff212644fcf92e1d7b515e33c6fa2c0">ON_NumberFormatter</a>
+: <a class="el" href="class_o_n___number_formatter.html#ab212e31502d9012f6fb36471798d1657">ON_NumberFormatter</a>
 , <a class="el" href="class_o_n___text_content.html#aebb1c28fa598fcf13aa16dbd029c1bd3">ON_TextContent</a>
 </li>
 <li>FormatArea()
@@ -1677,7 +1697,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_edit.html#a4d87cd28eeb45b0b8d03ba23133fe41b">CRhinoUiEdit</a>
 </li>
 <li>FormatIntoBuffer()
-: <a class="el" href="class_o_n___string.html#a0c920390c92a87aa89db9618dc0d4b58">ON_String</a>
+: <a class="el" href="class_o_n___string.html#a5bf17169e2ed2d6a757a5989d4f2c7e8">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#a52b54bddab400fb270f6b89520a27b52">ON_wString</a>
 </li>
 <li>FormatKeyword()
@@ -1734,12 +1754,12 @@ $(function() {
 : <a class="el" href="class_c_rhino_display_attrs_mgr.html#a09eb4a38e890ce2ab1fbc0793d91a4b5">CRhinoDisplayAttrsMgr</a>
 </li>
 <li>FormatVargs()
-: <a class="el" href="class_o_n___string.html#a6f32e42d21b0dd74b1037b3092a99550">ON_String</a>
+: <a class="el" href="class_o_n___string.html#acfc43420cf6ae21176749413f8bca247">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#a177c43929d660db137e36f29bb07e0bf">ON_wString</a>
 </li>
 <li>FormatVargsIntoBuffer()
 : <a class="el" href="class_o_n___string.html#a32505082ba1c8f6a8f63ac964129395d">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a05e965922bbeaa7e39b98d33606ef227">ON_wString</a>
+, <a class="el" href="class_o_n__w_string.html#ad0d13dbf7fd3206e95fcfcdae6997710">ON_wString</a>
 </li>
 <li>FormatVargsOutputCount()
 : <a class="el" href="class_o_n___string.html#aff7d800ccbc12e0348364fb283fbddf6">ON_String</a>
@@ -1764,7 +1784,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_options_list_ctrl_item.html#a1d364600c52e1be7e5e182bd46eef6a5">CRhinoUiOptionsListCtrlItem</a>
 </li>
 <li>FourViewLayout()
-: <a class="el" href="class_c_rhino_doc.html#ada2d4adef71aadec7639341e433be3d6">CRhinoDoc</a>
+: <a class="el" href="class_c_rhino_doc.html#abf1e6dbadcac678770f0d3c81b2f5011">CRhinoDoc</a>
 </li>
 <li>Fraction()
 : <a class="el" href="class_o_n___number_formatter.html#a07a106c692ee8eb209d1beda2f2b2ee4">ON_NumberFormatter</a>
@@ -1871,7 +1891,7 @@ $(function() {
 : <a class="el" href="class_o_n___mesh.html#a0f0120c2518091a21db432e686f39cd5">ON_Mesh</a>
 </li>
 <li>FromAppleName()
-: <a class="el" href="class_o_n___locale.html#ad28669643289c98044d791ea501d2541">ON_Locale</a>
+: <a class="el" href="class_o_n___locale.html#ac931b674b0894f52759c54e8f451c198">ON_Locale</a>
 </li>
 <li>FromArrayOfConst()
 : <a class="el" href="class_c_rh_rdk_content_array_n_c.html#a7d34b62bd770827f65a2319e409887eb">CRhRdkContentArrayNC</a>
@@ -1886,7 +1906,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_gradient_slider_ctrl.html#a752f0208f10e04d112bc8cddfd9e6e33">CRhinoUiGradientSliderCtrl</a>
 </li>
 <li>FromCompressedRegionIndex()
-: <a class="el" href="class_o_n___sub_d_component_region_index.html#ad432ed59015f6c6af254f17532b9ffb7">ON_SubDComponentRegionIndex</a>
+: <a class="el" href="class_o_n___sub_d_component_region_index.html#a3ff18fc2527f1a629907f09d265d2248">ON_SubDComponentRegionIndex</a>
 </li>
 <li>FromConstant()
 : <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a91a5eade318d5ad47d3719cdb1800f66">ON_SubDEdgeSharpness</a>
@@ -1898,7 +1918,7 @@ $(function() {
 : <a class="el" href="class_o_n__3d_point_list_ref.html#a8753d2b0c24eaaccf5b3d1873c7a1f3c">ON_3dPointListRef</a>
 </li>
 <li>FromFamilyName()
-: <a class="el" href="class_o_n___font_list.html#a22f34471f04e073712548f89dc2e3455">ON_FontList</a>
+: <a class="el" href="class_o_n___font_list.html#a34131ca48c1712a38bf8f5322ad3c9da">ON_FontList</a>
 </li>
 <li>FromFilteredFaceList()
 : <a class="el" href="class_o_n___mesh.html#a09213661dab9943eab473e8f369f2196">ON_Mesh</a>
@@ -1923,7 +1943,7 @@ $(function() {
 , <a class="el" href="class_c_rhino_object.html#a13644befa36cd835762465cea838f268">CRhinoObject</a>
 </li>
 <li>FromInterval()
-: <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a94ac5b66387a586653e6c21c1863501a">ON_SubDEdgeSharpness</a>
+: <a class="el" href="class_o_n___sub_d_edge_sharpness.html#aa798308c4821d03a65322648ee126be0">ON_SubDEdgeSharpness</a>
 </li>
 <li>FromKeyCombo()
 : <a class="el" href="class_c_rhino_app_shortcut_keys.html#a5b1dac2be942f49ec08d6cc475d415bc">CRhinoAppShortcutKeys</a>
@@ -1967,7 +1987,7 @@ $(function() {
 </li>
 <li>FromNumber()
 : <a class="el" href="class_o_n___string.html#a07ed11f0661fb77c876e35ed8a3bf91c">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a8c526f40e195875e08b6d044160c694c">ON_wString</a>
+, <a class="el" href="class_o_n__w_string.html#ae032f9b16e9e2da811d424c7f058315f">ON_wString</a>
 </li>
 <li>FromObject()
 : <a class="el" href="class_o_n___user_string_list.html#a9b90d852637d4da528d8f2c09beadfd9">ON_UserStringList</a>
@@ -2002,7 +2022,7 @@ $(function() {
 : <a class="el" href="class_o_n__2i_vector.html#af1f5151b5b125ef071a423b790e698d6">ON_2iVector</a>
 </li>
 <li>FromPointArray()
-: <a class="el" href="class_o_n__3d_point_list_ref.html#ada06a321c4d51323c0cba94a7f8c9512">ON_3dPointListRef</a>
+: <a class="el" href="class_o_n__3d_point_list_ref.html#a2f55dc89f841a2940017d21783e9a87f">ON_3dPointListRef</a>
 </li>
 <li>FromPointer()
 : <a class="el" href="class_c_rhino_page_view.html#a72a7798f640fd6137007798cb25a192a">CRhinoPageView</a>
@@ -2012,7 +2032,7 @@ $(function() {
 : <a class="el" href="class_o_n___plane.html#a5485abe73ecbe85fb4b63d9e27647630">ON_Plane</a>
 </li>
 <li>FromPostScriptName()
-: <a class="el" href="class_o_n___font_list.html#a82d3a6c36f3822277413b7977fd9dfb1">ON_FontList</a>
+: <a class="el" href="class_o_n___font_list.html#a04b939f9fc36fb0d13864e5f4056d608">ON_FontList</a>
 </li>
 <li>FromRichTextProperties()
 : <a class="el" href="class_o_n___font_list.html#af29329b24c98f14509dc0b666d588e24">ON_FontList</a>
@@ -2033,7 +2053,7 @@ $(function() {
 : <a class="el" href="class_o_n___s_h_a1___hash.html#aec84dbe35c040bc86cada17a1a9d9b43">ON_SHA1_Hash</a>
 </li>
 <li>FromSubtags()
-: <a class="el" href="class_o_n___locale.html#ad9f0148efb5d5a79d879b2b4a6d4e56a">ON_Locale</a>
+: <a class="el" href="class_o_n___locale.html#a2542cc880fea8e94c46df8e537b3d70e">ON_Locale</a>
 </li>
 <li>FromTime()
 : <a class="el" href="class_o_n__w_string.html#a701773bd444def64bc35205ae16facbd">ON_wString</a>
@@ -2054,7 +2074,7 @@ $(function() {
 : <a class="el" href="class_o_n__2i_point.html#a9110d9e11b57ef379d9073f22f19f27e">ON_2iPoint</a>
 </li>
 <li>FromVertices()
-: <a class="el" href="class_o_n___sub_d_edge.html#a45a408853d5404b15cb741f0711d6990">ON_SubDEdge</a>
+: <a class="el" href="class_o_n___sub_d_edge.html#a68b7ae6eaa743f2ee168974eeb4f6728">ON_SubDEdge</a>
 , <a class="el" href="class_o_n___sub_d_face.html#a9203120fcd6e219eafddfed7566b9af7">ON_SubDFace</a>
 </li>
 <li>FromViewFrameWnd()
@@ -2070,13 +2090,13 @@ $(function() {
 : <a class="el" href="class_o_n___locale.html#ad6cf9d73e0e69a883d374bdab7813405">ON_Locale</a>
 </li>
 <li>FromWindowsLogfontName()
-: <a class="el" href="class_o_n___font_list.html#a18ee42bb80339e51d0edaa6c09e15bef">ON_FontList</a>
+: <a class="el" href="class_o_n___font_list.html#a2cac464b6471bab3e1e54903092399cd">ON_FontList</a>
 </li>
 <li>FromWindowsName()
-: <a class="el" href="class_o_n___locale.html#aab77944b878ce1b5713119439df0ca92">ON_Locale</a>
+: <a class="el" href="class_o_n___locale.html#aad670c9200cd17d4a26bcf85a5fe2fbb">ON_Locale</a>
 </li>
 <li>FromXMLStream()
-: <a class="el" href="class_c_rh_rdk_content.html#af95fc1efb6fa3af895f6508baaf78f1d">CRhRdkContent</a>
+: <a class="el" href="class_c_rh_rdk_content.html#a17bec2f30fc304fbdbbf032f5cb68dcb">CRhRdkContent</a>
 </li>
 <li>FromYearDayHourMinuteSecond()
 : <a class="el" href="class_o_n__w_string.html#a015bec9d194668636f728b55a56380f1">ON_wString</a>
@@ -2203,7 +2223,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:11:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

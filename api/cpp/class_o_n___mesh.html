@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -271,6 +271,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9c41bb93f38981333f13fd777fb4e50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> GetBBox override <br  />
   <a href="class_o_n___mesh.html#a9c41bb93f38981333f13fd777fb4e50a">More...</a><br /></td></tr>
 <tr class="separator:a9c41bb93f38981333f13fd777fb4e50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3919670012bed66259e78db4146b886"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ad3919670012bed66259e78db4146b886">GetCachedTextureCoordinates</a> (const class <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;rhino_doc, const <a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;texture, const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *mapping_ref) const</td></tr>
+<tr class="separator:ad3919670012bed66259e78db4146b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9e86be20752b8f10ed09f05bf79b13"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a4e9e86be20752b8f10ed09f05bf79b13">GetCachedTextureCoordinates</a> (const class <a class="el" href="class_o_n_x___model.html">ONX_Model</a> &amp;onx_model, const <a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;texture, const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *mapping_ref) const</td></tr>
+<tr class="separator:a4e9e86be20752b8f10ed09f05bf79b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5405260e85535484e4469b7590d2cdc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a5405260e85535484e4469b7590d2cdc7">GetClashingFacePairs</a> (int max_pair_count, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; &amp;clashing_pairs) const</td></tr>
 <tr class="separator:a5405260e85535484e4469b7590d2cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8243e8139c5e818bf7a30aa3737e66a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ab8243e8139c5e818bf7a30aa3737e66a">GetClosestPoint</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;P, class <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html">ON_MESH_POINT</a> *Q, double maximum_distance=0.0) const</td></tr>
@@ -520,9 +524,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae11133fd5bae412081e6eaf21769c86f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ae11133fd5bae412081e6eaf21769c86f">SeparateNgons</a> (unsigned int **vertex_face_map, unsigned int ngon_index0, unsigned int ngon_index1)</td></tr>
 <tr class="separator:ae11133fd5bae412081e6eaf21769c86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf36e17605dc94bf12c7eb0de2e82c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4">SetCachedTextureCoordinates</a> (const class <a class="el" href="class_o_n___texture_mapping.html">ON_TextureMapping</a> &amp;mapping, const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> *mesh_xform=0, bool bLazy=true)</td></tr>
+<tr class="memdesc:aecf36e17605dc94bf12c7eb0de2e82c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use SetCachedTextureCoordinatesEx instead.  <a href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4">More...</a><br /></td></tr>
 <tr class="separator:aecf36e17605dc94bf12c7eb0de2e82c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f7f797aea84ffd659211c8eab42f87"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">SetCachedTextureCoordinatesEx</a> (const class <a class="el" href="class_o_n___texture_mapping.html">ON_TextureMapping</a> &amp;mapping, const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> *mesh_xform=0, bool bLazy=true, bool bSeamCheck=true)</td></tr>
 <tr class="separator:a82f7f797aea84ffd659211c8eab42f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afeab94a8db270d101ccb7b755679a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a3afeab94a8db270d101ccb7b755679a9">SetCachedTextureCoordinatesFromMaterial</a> (const class <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;rhino_doc, const <a class="el" href="class_o_n___material.html">ON_Material</a> &amp;material, const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *mapping_ref) const</td></tr>
+<tr class="separator:a3afeab94a8db270d101ccb7b755679a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cc5385541d6eaff87030cebe39b47c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">SetCachedTextureCoordinatesFromMaterial</a> (const class <a class="el" href="class_o_n_x___model.html">ONX_Model</a> &amp;onx_model, const <a class="el" href="class_o_n___material.html">ON_Material</a> &amp;material, const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *mapping_ref) const</td></tr>
+<tr class="separator:a93cc5385541d6eaff87030cebe39b47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5929a47378ca44d6703e59b32afd5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ad5929a47378ca44d6703e59b32afd5e5">SetClosed</a> (int closed)</td></tr>
 <tr class="separator:ad5929a47378ca44d6703e59b32afd5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45aa756d4f67d09099a7be0879e1292c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a45aa756d4f67d09099a7be0879e1292c">SetCurvatureColorAnalysisColors</a> (bool bLazy, <a class="el" href="class_o_n___surface_curvature_color_mapping.html">ON_SurfaceCurvatureColorMapping</a> kappa_colors)</td></tr>
@@ -1455,6 +1464,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: Returns the cached texture coordinates corresponding to the provided mapping id if they exist. If they don't exist, they can be created using the following methods: SetCachedTextureCoordinatesFromMaterial SetCachedTextureCoordinates SetCachedTextureCoordinatesEx</p>
+<p>NOTE: If you store the pointers of the results from this function, you need to first call SetCachedTextureCoordinatesFromMaterial to make sure the pointers don't get invalidated by subsequent calls to functions like SetCachedTextureCoordinates and SetCachedTextureCoordinatesEx. Parameters: mapping_id - [in] The texture mapping to use for the calculation. Returns: A pointer to the matching cached texture coordinates, nullptr if none exist. See Also: <a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">ON_Mesh::SetCachedTextureCoordinatesFromMaterial</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> </p>
 
 </div>
 </div>
@@ -3057,6 +3068,78 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad3919670012bed66259e78db4146b886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3919670012bed66259e78db4146b886">&#9670;&nbsp;</a></span>GetCachedTextureCoordinates() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a>* ON_Mesh::GetCachedTextureCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhino_doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *&#160;</td>
+          <td class="paramname"><em>mapping_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns the cached texture coordinates corresponding to the provided texture if they exist. If they don't exist, they can be created using the following methods: SetCachedTextureCoordinatesFromMaterial SetCachedTextureCoordinates SetCachedTextureCoordinatesEx</p>
+<p>NOTE: If you store the pointers of the results from this function, you need to first call SetCachedTextureCoordinatesFromMaterial to make sure the pointers don't get invalidated by subsequent calls to functions like SetCachedTextureCoordinates and SetCachedTextureCoordinatesEx. Parameters: rhino_doc - [in] The Rhino document that contains the texture mapping table. texture - [in] The texture to calculate the texture coordinates for. mapping_ref - [in] The texture mapping ref to use to get at the texture mapping. Returns: A pointer to the matching cached texture coordinates, nullptr if none exist. See Also: <a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">ON_Mesh::SetCachedTextureCoordinatesFromMaterial</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> </p>
+
+</div>
+</div>
+<a id="a4e9e86be20752b8f10ed09f05bf79b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9e86be20752b8f10ed09f05bf79b13">&#9670;&nbsp;</a></span>GetCachedTextureCoordinates() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a>* ON_Mesh::GetCachedTextureCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n_x___model.html">ONX_Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>onx_model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___texture.html">ON_Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *&#160;</td>
+          <td class="paramname"><em>mapping_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns the cached texture coordinates corresponding to the provided texture if they exist. If they don't exist, they can be created using the following methods: SetCachedTextureCoordinatesFromMaterial SetCachedTextureCoordinates SetCachedTextureCoordinatesEx</p>
+<p>NOTE: If you store the pointers of the results from this function, you need to first call SetCachedTextureCoordinatesFromMaterial to make sure the pointers don't get invalidated by subsequent calls to functions like SetCachedTextureCoordinates and SetCachedTextureCoordinatesEx. Parameters: onx_model - [in] The ONX model that contains the texture mappings. texture - [in] The texture to calculate the texture coordinates for. mapping_ref - [in] The texture mapping ref to use to get at the texture mapping. Returns: A pointer to the matching cached texture coordinates, nullptr if none exist. See Also: <a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">ON_Mesh::SetCachedTextureCoordinatesFromMaterial</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> </p>
+
+</div>
+</div>
 <a id="a5405260e85535484e4469b7590d2cdc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5405260e85535484e4469b7590d2cdc7">&#9670;&nbsp;</a></span>GetClashingFacePairs()</h2>
 
@@ -4166,6 +4249,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: Returns true if the mesh has at least one set of valid cached texture coordinates in the m_TC array. Returns: True if the mesh contains cached texture coordinates. See Also: <a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">ON_Mesh::SetCachedTextureCoordinatesFromMaterial</a> <a class="el" href="class_o_n___mesh.html#a957ffd9a3063108424eac2fa074679bf">ON_Mesh::CachedTextureCoordinates</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> </p>
 
 </div>
 </div>
@@ -6430,6 +6514,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Use SetCachedTextureCoordinatesEx instead. </p>
+
 </div>
 </div>
 <a id="a82f7f797aea84ffd659211c8eab42f87"></a>
@@ -6469,6 +6555,78 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Description: Returns the cached texture coordinates corresponding to the provided mapping and other parameters. If they don't exist, this function will attempt to create them first. If they do exist and bLazy is true, then no calculation is performed.</p>
+<p>NOTE: Subsequent calls to this function with different parameters can invalidate previously returned <a class="el" href="class_o_n___texture_coordinates.html">ON_TextureCoordinates</a> pointers. If you want store the pointers of previous results, you need to first call SetCachedTextureCoordinatesFromMaterial. Parameters: mapping - [in] The texture mapping to use for the calculation. mesh_xform - [in] If not nullptr, the mapping calculation is performed as if the mesh were transformed by mesh_xform bLazy - [in] If true and the m_TC[] values were set using the same mapping parameters, then no calculation is performed. bSeamCheck - [in] If true then some mesh edges might be unwelded to better represent UV discontinuities in the texture mapping. This only happens for the following mappings: Box, Sphere, Cylinder. Returns: A pointer to the cached texture coordinates, nullptr if the function failed to calculate the texture coordinates. See Also: <a class="el" href="class_o_n___mesh.html#a93cc5385541d6eaff87030cebe39b47c">ON_Mesh::SetCachedTextureCoordinatesFromMaterial</a> <a class="el" href="class_o_n___mesh.html#a957ffd9a3063108424eac2fa074679bf">ON_Mesh::CachedTextureCoordinates</a> </p>
+
+</div>
+</div>
+<a id="a3afeab94a8db270d101ccb7b755679a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afeab94a8db270d101ccb7b755679a9">&#9670;&nbsp;</a></span>SetCachedTextureCoordinatesFromMaterial() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Mesh::SetCachedTextureCoordinatesFromMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhino_doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___material.html">ON_Material</a> &amp;&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *&#160;</td>
+          <td class="paramname"><em>mapping_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Prepares the cached texture coordinates by filling the m_TC array with the relevant texture coordinates needed to render the provided material using the provided mapping ref and Rhino document. Call this function first if you are planning on storing the results from repeated calls to any of the following methods: CachedTextureCoordinates SetCachedTextureCoordinates SetCachedTextureCoordinatesEx GetCachedTextureCoordinates Parameters: rhino_doc - [in] The Rhino document that contains the texture mapping table. material - [in] The material which contains the textures we want to calculate the texture coordinates for. mapping_ref - [in] The texture mapping ref to use to get at the texture mapping. Returns: True if successful. See Also: <a class="el" href="class_o_n___mesh.html#a957ffd9a3063108424eac2fa074679bf">ON_Mesh::CachedTextureCoordinates</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> <a class="el" href="class_o_n___mesh.html#a4e9e86be20752b8f10ed09f05bf79b13">ON_Mesh::GetCachedTextureCoordinates</a> </p>
+
+</div>
+</div>
+<a id="a93cc5385541d6eaff87030cebe39b47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cc5385541d6eaff87030cebe39b47c">&#9670;&nbsp;</a></span>SetCachedTextureCoordinatesFromMaterial() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Mesh::SetCachedTextureCoordinatesFromMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n_x___model.html">ONX_Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>onx_model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___material.html">ON_Material</a> &amp;&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mapping_ref.html">ON_MappingRef</a> *&#160;</td>
+          <td class="paramname"><em>mapping_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Prepares the cached texture coordinates by filling the m_TC array with the relevant texture coordinates needed to render the provided material using the provided mapping ref and ONX model. Call this function first if you are planning on storing the results from repeated calls to any of the following methods: CachedTextureCoordinates SetCachedTextureCoordinates SetCachedTextureCoordinatesEx GetCachedTextureCoordinates Parameters: onx_model - [in] The ONX model that contains the texture mappings. material - [in] The material which contains the textures we want to calculate the texture coordinates for. mapping_ref - [in] The texture mapping ref to use to get at the texture mapping. Returns: True if successful. See Also: <a class="el" href="class_o_n___mesh.html#a957ffd9a3063108424eac2fa074679bf">ON_Mesh::CachedTextureCoordinates</a> <a class="el" href="class_o_n___mesh.html#a82f7f797aea84ffd659211c8eab42f87">ON_Mesh::SetCachedTextureCoordinatesEx</a> </p>
 
 </div>
 </div>
@@ -8142,7 +8300,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The m_packed_tex_rotate setting is valid only when m_S, m_srf_domain, m_packed_scale[] and m_packed_tex_domain[] are all valid and the texture coordinates are based on surface evaluation parameters. In this special situation, this boolean records the correspondence between the the surface parameters, (u,v), and the packed texture coordinates, (s,t),</p>
-<p>m_packed_tex_rotate = false: a = m_srf_domain[0].NormalizedParameterAt(u); b = m_srf_domain[1].NormalizedParameterAt(v); /// s = m_packed_tex_domain[0].ParameterAt(a); t = m_packed_tex_domain[1].ParameterAt(b);</p>
+<p>m_packed_tex_rotate = false: a = m_srf_domain[0].NormalizedParameterAt(u); b = m_srf_domain[1].NormalizedParameterAt(v); s = m_packed_tex_domain[0].ParameterAt(a); t = m_packed_tex_domain[1].ParameterAt(b);</p>
 <p>x = m_packed_tex_domain[0].NormalizedParameterAt(s); y = m_packed_tex_domain[1].NormalizedParameterAt(t); u = m_srf_domain[0].ParameterAt(x); v = m_srf_domain[1].ParameterAt(y);</p>
 <p>m_packed_tex_rotate = true: a = m_srf_domain[0].NormalizedParameterAt(u); b = m_srf_domain[1].NormalizedParameterAt(v); s = m_packed_tex_domain[0].ParameterAt(a); t = m_packed_tex_domain[1].ParameterAt(1.0-b);</p>
 <p>x = m_packed_tex_domain[0].NormalizedParameterAt(s); y = m_packed_tex_domain[1].NormalizedParameterAt(t); u = m_srf_domain[0].ParameterAt(y); v = m_srf_domain[1].ParameterAt(1.0 - x); </p>
@@ -8401,7 +8559,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:10:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

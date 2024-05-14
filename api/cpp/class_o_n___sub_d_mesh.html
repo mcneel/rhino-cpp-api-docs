@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a84f7915e6e70021b4e953ffc5ec9e7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76be246e8dca3e509ae0156bf23ecce6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#a76be246e8dca3e509ae0156bf23ecce6">ToMesh</a> (unsigned int mesh_density, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destination_mesh) const</td></tr>
 <tr class="separator:a76be246e8dca3e509ae0156bf23ecce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16918e4215163c739fd2f9174f174e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#a16918e4215163c739fd2f9174f174e5d">Transform</a> (bool bKeepCurvatures, bool bKeepTextures, bool bKeepColors, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xformNormals, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xformCurvatures, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xformTextures, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xformColors)</td></tr>
+<tr class="separator:a16918e4215163c739fd2f9174f174e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0322ea875a2741e53ed0bcc8d955e32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#af0322ea875a2741e53ed0bcc8d955e32">Transform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
 <tr class="separator:af0322ea875a2741e53ed0bcc8d955e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa5d875e347c06e05d840abfe45cd36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh.html#affa5d875e347c06e05d840abfe45cd36">Update</a> (bool bShareUpdate)</td></tr>
@@ -908,8 +910,72 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a16918e4215163c739fd2f9174f174e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16918e4215163c739fd2f9174f174e5d">&#9670;&nbsp;</a></span>Transform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDMesh::Transform </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bKeepCurvatures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bKeepTextures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bKeepColors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xformNormals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xformCurvatures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xformTextures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xformColors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af0322ea875a2741e53ed0bcc8d955e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0322ea875a2741e53ed0bcc8d955e32">&#9670;&nbsp;</a></span>Transform()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0322ea875a2741e53ed0bcc8d955e32">&#9670;&nbsp;</a></span>Transform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -994,7 +1060,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:11:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

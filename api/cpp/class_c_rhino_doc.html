@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.6</span>
+   &#160;<span id="projectnumber">8.7</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addf0fe747c3f6ee49c2cdbfff504dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2edac229a96c617a9377224da656eefd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_mesh_object.html">CRhinoMeshObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a2edac229a96c617a9377224da656eefd">AddMeshObject</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh, const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> *pAttributes=NULL, <a class="el" href="class_c_rhino_history.html">CRhinoHistory</a> *pHistory=NULL, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bReference=NULL)</td></tr>
 <tr class="separator:a2edac229a96c617a9377224da656eefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277f5251a5a68d7c363ed9f7bbf9ded9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a277f5251a5a68d7c363ed9f7bbf9ded9">AddMruCommand</a> (const wchar_t *cmd, const wchar_t *display_string, const wchar_t *shortcut, const UINT modifier_flags)</td></tr>
+<tr class="separator:a277f5251a5a68d7c363ed9f7bbf9ded9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4a83b1c9d389338a590a0edd19c437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a0a4a83b1c9d389338a590a0edd19c437">AddMruCommand</a> (const wchar_t *cmd, const wchar_t *display_string=NULL)</td></tr>
 <tr class="separator:a0a4a83b1c9d389338a590a0edd19c437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067c177faad98136f33f448b1373e45a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">AddObject</a> (<a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *object, bool bReferenceObject=false, bool bInstanceDefinition=false)</td></tr>
@@ -1770,8 +1772,49 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a277f5251a5a68d7c363ed9f7bbf9ded9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277f5251a5a68d7c363ed9f7bbf9ded9">&#9670;&nbsp;</a></span>AddMruCommand() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDoc::AddMruCommand </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>display_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>shortcut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT&#160;</td>
+          <td class="paramname"><em>modifier_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Add MRU command to list, pop old commands off when list reaches max size. Parameters: cmd - [in] command macro to add display_string - [in] String displayed in mru command pop-up menu, if NUL then displays macro. shortcut - [in] String displayed as the shortcut modifier_flags - [in] modifiers for the shortcut (Mac only) </p>
+
+</div>
+</div>
 <a id="a0a4a83b1c9d389338a590a0edd19c437"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a4a83b1c9d389338a590a0edd19c437">&#9670;&nbsp;</a></span>AddMruCommand()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4a83b1c9d389338a590a0edd19c437">&#9670;&nbsp;</a></span>AddMruCommand() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9599,7 +9642,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 10 2024 13:10:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2024 16:15:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
