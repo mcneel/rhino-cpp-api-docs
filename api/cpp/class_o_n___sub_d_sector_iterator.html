@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a973f0b525d15aa01b9e553b659a86a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb093dcc8542475e594ff1367eab8151"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_iterator.html#afb093dcc8542475e594ff1367eab8151">IncrementToCrease</a> (int increment_direction)</td></tr>
 <tr class="separator:afb093dcc8542475e594ff1367eab8151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae724ee151eb9b56897776e2f1daf2879"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga09d9a731b3db1b876e97b6b43246c325">ON_SubDEdgeTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_iterator.html#ae724ee151eb9b56897776e2f1daf2879">IncrementToCrease</a> (int increment_direction, unsigned *increment_count)</td></tr>
+<tr class="memdesc:ae724ee151eb9b56897776e2f1daf2879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iterator until it reaches a face with a crease on the side indicated by increment_direction.  <a href="class_o_n___sub_d_sector_iterator.html#ae724ee151eb9b56897776e2f1daf2879">More...</a><br /></td></tr>
+<tr class="separator:ae724ee151eb9b56897776e2f1daf2879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc2ec668dfa6020328b480fdc5ff3189"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_iterator.html#afc2ec668dfa6020328b480fdc5ff3189">InitialFace</a> () const</td></tr>
 <tr class="separator:afc2ec668dfa6020328b480fdc5ff3189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accdb66e819fb0424412928930b801c21"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_sector_iterator.html#accdb66e819fb0424412928930b801c21">InitialFaceCenterVertexIndex</a> () const</td></tr>
@@ -501,7 +504,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="afb093dcc8542475e594ff1367eab8151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb093dcc8542475e594ff1367eab8151">&#9670;&nbsp;</a></span>IncrementToCrease()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afb093dcc8542475e594ff1367eab8151">&#9670;&nbsp;</a></span>IncrementToCrease() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,6 +522,48 @@ Static Public Attributes</h2></td></tr>
 <p>0 advance next until CurrentEdge(1) is a crease. </p>
 </blockquote>
 <p>&lt;= 0 advance previous until CurrentEdge(0) is a crease. Returns: nullptr - the sector has no creases. not nullptr - incremented to a crease </p>
+
+</div>
+</div>
+<a id="ae724ee151eb9b56897776e2f1daf2879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae724ee151eb9b56897776e2f1daf2879">&#9670;&nbsp;</a></span>IncrementToCrease() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga09d9a731b3db1b876e97b6b43246c325">ON_SubDEdgeTag</a> ON_SubDSectorIterator::IncrementToCrease </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>increment_direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>increment_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increment the iterator until it reaches a face with a crease on the side indicated by increment_direction. </p>
+<p>Description: Increment the iterator until it reaches a face with a crease Parameters: increment_direction - [in] </p><blockquote class="doxtable">
+<p>0 advance next until CurrentEdge(1) is a crease. </p>
+</blockquote>
+<p>&lt;= 0 advance previous until CurrentEdge(0) is a crease. Returns: nullptr - the sector has no creases. not nullptr - incremented to a crease</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">increment_direction</td><td>&gt; 0 advance next until CurrentEdge(1) is a crease. &lt;= 0 advance previous until CurrentEdge(0) is a crease. </td></tr>
+    <tr><td class="paramname">increment_count</td><td>The number of inrements it took to reach a crease. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ae510cdf33cd497134b47b9316314d4b4">ON_SubDEdgeTag::Smooth</a>: The sector has no creases and the iterator was not changed. <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>: The sector has a crease edge and this-&lt;CurrentEdge(increment_direction &gt; 0 ? 1 : 0) is a crease. <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>: This sector iterator is not valid. No changes. </dd></dl>
 
 </div>
 </div>
@@ -604,7 +649,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: initial_face - [in] iterator_orientation - [in] 0: (more common) "next" means counter-clockwise with respect to the orientation of initial_face 1: (less common) "next" means clockwise with respect to the orientation of initial_face center_vertex - [in] The vertex on initial_face that will be iterated around. Returns: If input is valid, a pointer to the center vertex is returned. Otherwise, nullptr is returned. </p>
+<p>Parameters: initial_face - [in] iterator_orientation - [in] 0: (more common) "next" means counter-clockwise with respect to the orientation of initial_face 1: (less common) "next" means clockwise with respect to the orientation of initial_face center_vertex - [in] The vertex on initial_face that will be iterated around. Returns: If input is valid, a pointer to the center vertex is returned. Otherwise, nullptr is returned. <br  />
+ </p>
 
 </div>
 </div>
@@ -792,7 +838,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

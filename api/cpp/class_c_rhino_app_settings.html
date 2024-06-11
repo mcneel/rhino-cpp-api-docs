@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -323,6 +323,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34ae69495abd66832e71a482996fe7ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a34ae69495abd66832e71a482996fe7ea">OsnapPickboxRadius</a> () const</td></tr>
 <tr class="memdesc:a34ae69495abd66832e71a482996fe7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">object snap pick box size  <a href="class_c_rhino_app_settings.html#a34ae69495abd66832e71a482996fe7ea">More...</a><br /></td></tr>
 <tr class="separator:a34ae69495abd66832e71a482996fe7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1a3904b24e0933e8f57001554b3885"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a1c1a3904b24e0933e8f57001554b3885">PickOccluded</a> () const</td></tr>
+<tr class="separator:a1c1a3904b24e0933e8f57001554b3885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6b848feedb9f564c7877271eb30f48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a7f6b848feedb9f564c7877271eb30f48">Planar</a> () const</td></tr>
 <tr class="memdesc:a7f6b848feedb9f564c7877271eb30f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Planar setting.  <a href="class_c_rhino_app_settings.html#a7f6b848feedb9f564c7877271eb30f48">More...</a><br /></td></tr>
 <tr class="separator:a7f6b848feedb9f564c7877271eb30f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,6 +455,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ee07abd43da0ceb69e3ad793ca97d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0853ce63ea1d1ed3e014c164ba217158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#a0853ce63ea1d1ed3e014c164ba217158">SetPackageManagerSources</a> (const wchar_t *s)</td></tr>
 <tr class="separator:a0853ce63ea1d1ed3e014c164ba217158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d11eaa5c7c35c9436be80a2f9ef418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#aa3d11eaa5c7c35c9436be80a2f9ef418">SetPickOccluded</a> (bool bEnable)</td></tr>
+<tr class="separator:aa3d11eaa5c7c35c9436be80a2f9ef418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd6d10902c9a528560d0f6b743f13d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#abbd6d10902c9a528560d0f6b743f13d3">SetProjectOsnaps</a> (bool bEnable=true)</td></tr>
 <tr class="separator:abbd6d10902c9a528560d0f6b743f13d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddca1baf24a7e49bbdb46b1a0d615f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_settings.html#adddca1baf24a7e49bbdb46b1a0d615f9">SetProjectOsnapsInPlanParallelViews</a> (bool bEnable=true)</td></tr>
@@ -2329,6 +2333,23 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a1c1a3904b24e0933e8f57001554b3885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1a3904b24e0933e8f57001554b3885">&#9670;&nbsp;</a></span>PickOccluded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppSettings::PickOccluded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7f6b848feedb9f564c7877271eb30f48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f6b848feedb9f564c7877271eb30f48">&#9670;&nbsp;</a></span>Planar()</h2>
 
@@ -3486,6 +3507,24 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const wchar_t *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3d11eaa5c7c35c9436be80a2f9ef418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d11eaa5c7c35c9436be80a2f9ef418">&#9670;&nbsp;</a></span>SetPickOccluded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppSettings::SetPickOccluded </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4822,7 +4861,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -81,8 +81,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac60e228177bc8f4fa5033f00a8c7e2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9389c34e93fe9518648d124f71b0604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#aa9389c34e93fe9518648d124f71b0604">Default</a> ()</td></tr>
 <tr class="separator:aa9389c34e93fe9518648d124f71b0604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac925985579225056fec2bca6e2c6b05b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#ac925985579225056fec2bca6e2c6b05b">GetSubDComponentParameter</a> (class <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;subd_cp) const</td></tr>
+<tr class="separator:ac925985579225056fec2bca6e2c6b05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8174221170ba989774695006b811254"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#aa8174221170ba989774695006b811254">Read</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;)</td></tr>
 <tr class="separator:aa8174221170ba989774695006b811254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deafffc45f31087be506d7a75ac10ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#a8deafffc45f31087be506d7a75ac10ba">SetFromSubDComponentParameter</a> (const class <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;subd_cp)</td></tr>
+<tr class="separator:a8deafffc45f31087be506d7a75ac10ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e536e1f52e4a8ecccd4e5a8d280b0fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#a0e536e1f52e4a8ecccd4e5a8d280b0fa">Write</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;) const</td></tr>
 <tr class="separator:a0e536e1f52e4a8ecccd4e5a8d280b0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -155,6 +159,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac925985579225056fec2bca6e2c6b05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac925985579225056fec2bca6e2c6b05b">&#9670;&nbsp;</a></span>GetSubDComponentParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_ObjRefEvaluationParameter::GetSubDComponentParameter </td>
+          <td>(</td>
+          <td class="paramtype">class <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd_cp</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa8174221170ba989774695006b811254"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8174221170ba989774695006b811254">&#9670;&nbsp;</a></span>Read()</h2>
 
@@ -166,6 +188,24 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8deafffc45f31087be506d7a75ac10ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8deafffc45f31087be506d7a75ac10ba">&#9670;&nbsp;</a></span>SetFromSubDComponentParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_ObjRefEvaluationParameter::SetFromSubDComponentParameter </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd_cp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -258,14 +298,15 @@ Public Attributes</h2></td></tr>
 <p>5: m_geometry points to a mesh or mesh edge and m_t_ci identifies the mesh edge. The normalized coordinate of the point on the mesh edge is m_t[0]. The point can be evaluated using the formula m_t[0]*mesh.m_V[v0] + (1.0-m_t[0])*mesh.m_V[v1], where v0 and v1 are the indices of the mesh vertices at the edge's ends. In this case, if m_geometry points to a mesh, then m_component_index != m_t_ci.</p>
 <p>6: m_geometry points to a NURBS cage and (m_t[0],m_t[1],m_t[2]) are cage evaluation parameters.</p>
 <p>7: m_geometry points to an annotation object and m_t_ci identifies a point on the annotation object.</p>
-<p>8: m_geometry points to a mesh or mesh vertex object and m_t_ci identifies a vertex on the mesh object. </p>
+<p>8: m_geometry points to a mesh or mesh vertex object and m_t_ci identifies a vertex on the mesh object.</p>
+<p>9: A SubD component parameter. m_t_ci identifies the SubD component. m_t[], m_s[], are used to encode a collection of indicies and doubles that depend on the SubD component type. Use the <a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#a8deafffc45f31087be506d7a75ac10ba">SetFromSubDComponentParameter()</a> and <a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#ac925985579225056fec2bca6e2c6b05b">GetSubDComponentParameter()</a> to convert between <a class="el" href="class_o_n___obj_ref_evaluation_parameter.html">ON_ObjRefEvaluationParameter</a> and <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> values. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

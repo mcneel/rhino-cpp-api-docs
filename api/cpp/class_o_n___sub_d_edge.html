@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -88,9 +88,9 @@ Inheritance diagram for ON_SubDEdge:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8e061ebc523bb222633e0aa6d937e5ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_edge.html#a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74">MaximumFaceCount</a> = 0xFFF0U
+<tr class="memitem:af02f7b933ffa0133d4a1c16722868b39"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_edge.html#af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74">MaximumFaceCount</a> = 0xFFF0U
  }</td></tr>
-<tr class="separator:a8e061ebc523bb222633e0aa6d937e5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af02f7b933ffa0133d4a1c16722868b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -468,8 +468,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a8e061ebc523bb222633e0aa6d937e5ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e061ebc523bb222633e0aa6d937e5ba">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="af02f7b933ffa0133d4a1c16722868b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02f7b933ffa0133d4a1c16722868b39">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The value of <a class="el" href="class_o_n___sub_d_face_ptr.html#ac6b466b3d9a31c95f507aea9eb7ded8c">ON_SubDFacePtr.FaceDirection()</a> is 0 if the edge's natural orientation from m_vertex[0] to m_vertex[1] agrees with the face's boundary orientation.</p>
 <p>The value of <a class="el" href="class_o_n___sub_d_face_ptr.html#ac6b466b3d9a31c95f507aea9eb7ded8c">ON_SubDFacePtr.FaceDirection()</a> is 1 if the edge's natural orientation from m_vertex[0] to m_vertex[1] is opposited the face's boundary orientation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2885,7 +2885,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>NOTE: The sector coefficient is a property of a smooth edge end that is constant throughout subdivision. It exists at ends of smooth edges that are attached to dart, crease, or corner vertices. In all other cases the sector coefficient is ignored. In particular crease edges and the ends of smooth edges attached to smooth vertices do not have a sector coefficient.</p>
+<p>NOTE: The sector coefficient is a property of a smooth edge end that is constant throughout subdivision. It exists at ends of smooth edges that are attached to dart, crease, or corner vertices. In all other cases the sector coefficient is ignored. In particular crease edges and the ends of smooth edges /// attached to smooth vertices do not have a sector coefficient.</p>
 <p>The <a class="el" href="class_o_n___sub_d_sector_type.html">ON_SubDSectorType</a> class provides three static functions that calculate sector coefficients: <a class="el" href="class_o_n___sub_d_sector_type.html#a53d8c5360e6b2546670cc7cc7acab873">ON_SubDSectorType::DartSectorCoefficient()</a> <a class="el" href="class_o_n___sub_d_sector_type.html#a79b7a3cac6981aa57104e18e371ea6fb">ON_SubDSectorType::CreaseSectorCoefficient()</a> <a class="el" href="class_o_n___sub_d_sector_type.html#a5f5ac5434aed9d168a7ec38309a9f582">ON_SubDSectorType::CornerSectorCoefficient()</a></p>
 <p>If the value of vertex-&gt;m_vertex_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375ae510cdf33cd497134b47b9316314d4b4">ON_SubDVertexTag::Smooth</a>, then that vertex is "tagged".</p>
 <p>If the value of m_edge_tag is <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDEdgeTag::Crease</a>, then m_sector_coefficient[] should be {0,0}. <br  />
@@ -2926,7 +2926,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

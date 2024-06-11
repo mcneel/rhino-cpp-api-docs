@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -574,6 +574,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a714e95381cf306d4304c0fdbe12400b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa839da194fbe9be044f3702febeac7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#afa839da194fbe9be044f3702febeac7c">ShrinkSurfaces</a> ()</td></tr>
 <tr class="separator:afa839da194fbe9be044f3702febeac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b27e52d300a588e8934f5fb59665286"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a7b27e52d300a588e8934f5fb59665286">SimplifyEdge</a> (int edge_index, double tolerance)</td></tr>
+<tr class="separator:a7b27e52d300a588e8934f5fb59665286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af190638468ee5f2cc813788d5a6156dd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#af190638468ee5f2cc813788d5a6156dd">SizeOf</a> () const override</td></tr>
 <tr class="memdesc:af190638468ee5f2cc813788d5a6156dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object::SizeOf</a> override  <a href="class_o_n___brep.html#af190638468ee5f2cc813788d5a6156dd">More...</a><br /></td></tr>
 <tr class="separator:af190638468ee5f2cc813788d5a6156dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7939,6 +7941,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7b27e52d300a588e8934f5fb59665286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b27e52d300a588e8934f5fb59665286">&#9670;&nbsp;</a></span>SimplifyEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Brep::SimplifyEdge </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Will turn a linear polycurve into a single line if possible Parameters: edge_index - [in] index of the edge to simplify. tolerance - [in] used in call to <a class="el" href="class_o_n___curve.html#a325716a9735ab59416bf6800a23ce5fc">ON_Curve::IsLinear</a>; Returns: true on success. </p>
+
+</div>
+</div>
 <a id="af190638468ee5f2cc813788d5a6156dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af190638468ee5f2cc813788d5a6156dd">&#9670;&nbsp;</a></span>SizeOf()</h2>
 
@@ -9345,7 +9376,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

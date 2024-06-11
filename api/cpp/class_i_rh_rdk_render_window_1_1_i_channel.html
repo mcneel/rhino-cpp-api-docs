@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -396,7 +396,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">height</td><td>is the height of the rectangle in pixels. </td></tr>
     <tr><td class="paramname">stride</td><td>is the number of bytes between pixel rows in the source buffer. </td></tr>
     <tr><td class="paramname">co</td><td>is the component order of the source data. </td></tr>
-    <tr><td class="paramname">pData</td><td>contains the data to store in the channel starting at the specified position. There must be the correct amount of data in the correct layout to match the shape of the rectangle and the stride. </td></tr>
+    <tr><td class="paramname">pData</td><td>contains the data to store in the channel starting at the specified position. There must be the correct amount of data in the correct layout to match the pixel size, the shape of the rectangle and the stride. NOTE: RDK standard channels expect float data; the size of each pixel is always sizeof(float). For the special chanRGBA composite channel, the size of a pixel is 4 * sizeof(float). </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,7 +481,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">height</td><td>is the height of the rectangle in pixels. </td></tr>
     <tr><td class="paramname">stride</td><td>is the number of bytes between pixel rows in the source buffer. </td></tr>
     <tr><td class="paramname">co</td><td>is the component order of the source data. </td></tr>
-    <tr><td class="paramname">pData</td><td>contains the data to store in the channel starting at the specified position. There must be the correct amount of data in the correct layout to match the shape of the rectangle and the stride. </td></tr>
+    <tr><td class="paramname">pData</td><td>contains the data to store in the channel starting at the specified position. There must be the correct amount of data in the correct layout to match the pixel size, the shape of the rectangle and the stride. NOTE: RDK standard channels expect float data; the size of each pixel is always sizeof(float). For the special chanRGBA composite channel, the size of a pixel is 4 * sizeof(float). </td></tr>
     <tr><td class="paramname">bUseOffset</td><td>is <em>true</em> if x and y should also be used as offsets into pData, else <em>false</em>. </td></tr>
   </table>
   </dd>
@@ -493,7 +493,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

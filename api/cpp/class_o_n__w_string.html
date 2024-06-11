@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -82,9 +82,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab880761bfdd184782123d2641a0470b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: int { <a class="el" href="class_o_n__w_string.html#ab880761bfdd184782123d2641a0470b5af863a993e7c985bb583ec4bfd51a3d3d">MaximumStringLength</a> = ON_String::MaximumStringLength
+<tr class="memitem:a0ca34613d95f26f9962f6c7a6ba3e862"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <a class="el" href="class_o_n__w_string.html#a0ca34613d95f26f9962f6c7a6ba3e862af863a993e7c985bb583ec4bfd51a3d3d">MaximumStringLength</a> = ON_String::MaximumStringLength
  }</td></tr>
-<tr class="separator:ab880761bfdd184782123d2641a0470b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0ca34613d95f26f9962f6c7a6ba3e862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06852d1feadaa612a919ccdc0ed1f43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__w_string.html#aa06852d1feadaa612a919ccdc0ed1f43">ExampleType</a> : unsigned int { <br />
 &#160;&#160;<a class="el" href="class_o_n__w_string.html#aa06852d1feadaa612a919ccdc0ed1f43ace2c8aed9c2fa0cfbed56cbda4d8bf07">ExampleType::Empty</a> = 0, 
 <a class="el" href="class_o_n__w_string.html#aa06852d1feadaa612a919ccdc0ed1f43ae3bd56294bfe040ddf8671156dd34d43">ExampleType::WideChar</a> = 1, 
@@ -757,19 +757,19 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;...&quot;; strings. This is typically 2 byte wchar_t UTF-16 on Windows and 4 byte wchar_t UTF-32 on MacOS. However, some MacOS SDK functions return 4 byte wchar_t UTF-16 strings. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab880761bfdd184782123d2641a0470b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab880761bfdd184782123d2641a0470b5">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a0ca34613d95f26f9962f6c7a6ba3e862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca34613d95f26f9962f6c7a6ba3e862">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum : int</td>
+          <td class="memname">anonymous enum : size_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab880761bfdd184782123d2641a0470b5af863a993e7c985bb583ec4bfd51a3d3d"></a>MaximumStringLength&#160;</td><td class="fielddoc"><p>This <a class="el" href="class_o_n___string.html#ab7f34431db3d6823a5ee3d35e41f59c8a960f8e16c89ed83aa35c7983aa79ba22" title="This ON_String::MaximumStringLength value of 100,000,000 is used for string length sanity checking in...">ON_String::MaximumStringLength</a> value of 100,000,000 is used for string length sanity checking in both <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. The design of the <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> classes could support string lengths up to 0xFFFFFFFEU = 4,294,967,294 but a cap of 100 million seems generous enough for current usage and is small enough to detect many corrupt memory situations. This value is used for both <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0ca34613d95f26f9962f6c7a6ba3e862af863a993e7c985bb583ec4bfd51a3d3d"></a>MaximumStringLength&#160;</td><td class="fielddoc"><p>The design of the <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a> classes supports string lengths up to 0xFFFFFFFEU = 4,294,967,294 This value is used for both <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> and <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. </p>
 </td></tr>
 </table>
 
@@ -1676,8 +1676,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Compare this string and other_name as a name attribute of an object like <a class="el" href="class_o_n__3dm_object_attributes.html#a0c2eb894357b6a7b5b3f7b354ebe05de">ON_3dmObjectAttributes.m_name</a>, ON_Layer.m_name, and so on. These comparisons ignore case and use appropriate string normalization. <br  />
- Parameters: name1 - [in] null terminated string name2 - [in] null terminated string </p>
+<p>Description: Compare this string and other_name as a name attribute of an object like <a class="el" href="class_o_n__3dm_object_attributes.html#a0c2eb894357b6a7b5b3f7b354ebe05de">ON_3dmObjectAttributes.m_name</a>, ON_Layer.m_name, and so on. These comparisons ignore case and use appropriate string normalization. Parameters: name1 - [in] null terminated string name2 - [in] null terminated string </p>
 
 </div>
 </div>
@@ -1696,8 +1695,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Compare this string and other_name as a name attribute of an object like <a class="el" href="class_o_n__3dm_object_attributes.html#a0c2eb894357b6a7b5b3f7b354ebe05de">ON_3dmObjectAttributes.m_name</a>, ON_Layer.m_name, and so on. These comparisons ignore case and use appropriate string normalization. <br  />
- Parameters: other_name - [in] null terminated string </p>
+<p>Description: Compare this string and other_name as a name attribute of an object like <a class="el" href="class_o_n__3dm_object_attributes.html#a0c2eb894357b6a7b5b3f7b354ebe05de">ON_3dmObjectAttributes.m_name</a>, ON_Layer.m_name, and so on. These comparisons ignore case and use appropriate string normalization. Parameters: other_name - [in] null terminated string </p>
 
 </div>
 </div>
@@ -3567,8 +3565,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>numerator - [in] A string (digits, signs, parenthesis). denominator - [in] A string (digits, signs, parenthesis). bUseVulgarFractionCodePoints - [in] If true and if Unicode code point exists for the fraction (halves, thirds, fourths, fifths, sixths, eights, ...), that code point will be used; <br  />
- Returns: A Unicode encoding of the fraction numerator/denominator. </p>
+<p>numerator - [in] A string (digits, signs, parenthesis). denominator - [in] A string (digits, signs, parenthesis). bUseVulgarFractionCodePoints - [in] If true and if Unicode code point exists for the fraction (halves, thirds, fourths, fifths, sixths, eights, ...), that code point will be used; Returns: A Unicode encoding of the fraction numerator/denominator. </p>
 
 </div>
 </div>
@@ -5057,8 +5054,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: bLengthTest - [in] true (common case) If this-&gt;<a class="el" href="class_o_n__w_string.html#a54018e3adb0ec2a536259d5faa98492b" title="Attributes &amp; Operations.">Length()</a> != ON_wString::Length(static_cast&lt;const wchar_t*)(this)), then this string is not valid. false (less common case) There may be null elements in the first this-&gt;<a class="el" href="class_o_n__w_string.html#a54018e3adb0ec2a536259d5faa98492b" title="Attributes &amp; Operations.">Length()</a>-1 chars. Returns: True - this is valid. False There is a serious memory corruption bug in your code. This was not valid and converted to <a class="el" href="class_o_n__w_string.html#ab9c20b8013ccb7ca12828a2fd935f5ad" title="ON_String::EmptyString has length 0. const char* s = ON_String::EmptyString sets s to L&quot;&quot;.">ON_wString::EmptyString</a> to prevent future crashes. <br  />
- </p>
+<p>Parameters: bLengthTest - [in] true (common case) If this-&gt;<a class="el" href="class_o_n__w_string.html#a54018e3adb0ec2a536259d5faa98492b" title="Attributes &amp; Operations.">Length()</a> != ON_wString::Length(static_cast&lt;const wchar_t*)(this)), then this string is not valid. false (less common case) There may be null elements in the first this-&gt;<a class="el" href="class_o_n__w_string.html#a54018e3adb0ec2a536259d5faa98492b" title="Attributes &amp; Operations.">Length()</a>-1 chars. Returns: True - this is valid. False There is a serious memory corruption bug in your code. This was not valid and converted to <a class="el" href="class_o_n__w_string.html#ab9c20b8013ccb7ca12828a2fd935f5ad" title="ON_String::EmptyString has length 0. const char* s = ON_String::EmptyString sets s to L&quot;&quot;.">ON_wString::EmptyString</a> to prevent future crashes. </p>
 
 </div>
 </div>
@@ -5588,8 +5584,7 @@ Protected Attributes</h2></td></tr>
 <p>If element_count &lt; 1, then string[] must be null terminated and ON_wString::Length(string)+1 elements are mapped. The +1 insures the output is null terminated.</p>
 <p>mapped_string - [out] The result of the mapping is returned in mapped_string[].</p>
 <p>mapped_string_capacity - [in] Number of wchar_t elements available in mapped_string[] or 0 to calculate the minimum number of elements needed for the mapping.</p>
-<p>Returns: If mapped_string_capacity &gt; 0, then the number elements set in mapped_string[] is returned. <br  />
-</p>
+<p>Returns: If mapped_string_capacity &gt; 0, then the number elements set in mapped_string[] is returned.</p>
 <p>If mapped_string_capacity == 0, then the number elements required to perform the mapping is returned.</p>
 <p>When there is room, mapped_string[] is null terminated.</p>
 <p>0: Failure. </p>
@@ -6828,7 +6823,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function to reserve and gain access to string memory. Parameters: capacity - [in] If capacity &gt; <a class="el" href="class_o_n___string.html#ab7f34431db3d6823a5ee3d35e41f59c8a960f8e16c89ed83aa35c7983aa79ba22" title="This ON_String::MaximumStringLength value of 100,000,000 is used for string length sanity checking in...">ON_String::MaximumStringLength</a>, then nullptr is returned. If capacity &lt;= 0, then nullptr is returned. Returns: A pointer to the string buffer or nullptr on failure. </p>
+<p>Description: Expert user function to reserve and gain access to string memory. Parameters: capacity - [in] If capacity &gt; <a class="el" href="class_o_n___string.html#ad228cfc964d2c883aa0ab291d4a5a0baa960f8e16c89ed83aa35c7983aa79ba22" title="The design of the ON_String and ON_wString classes supports string lengths up to 0xFFFFFFFEU = 4,...">ON_String::MaximumStringLength</a>, then nullptr is returned. If capacity &lt;= 0, then nullptr is returned. Returns: A pointer to the string buffer or nullptr on failure. </p>
 
 </div>
 </div>
@@ -7372,7 +7367,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set the length of the string in characters. Parameters: length - [in] If length &gt; <a class="el" href="class_o_n___string.html#ab7f34431db3d6823a5ee3d35e41f59c8a960f8e16c89ed83aa35c7983aa79ba22" title="This ON_String::MaximumStringLength value of 100,000,000 is used for string length sanity checking in...">ON_String::MaximumStringLength</a>, then nullptr is returned. If length &lt;= 0, then nullptr is returned. Returns: A pointer to the string buffer or nullptr on failure. </p>
+<p>Description: Set the length of the string in characters. Parameters: length - [in] If length &gt; <a class="el" href="class_o_n___string.html#ad228cfc964d2c883aa0ab291d4a5a0baa960f8e16c89ed83aa35c7983aa79ba22" title="The design of the ON_String and ON_wString classes supports string lengths up to 0xFFFFFFFEU = 4,...">ON_String::MaximumStringLength</a>, then nullptr is returned. If length &lt;= 0, then nullptr is returned. Returns: A pointer to the string buffer or nullptr on failure. </p>
 
 </div>
 </div>
@@ -9011,7 +9006,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

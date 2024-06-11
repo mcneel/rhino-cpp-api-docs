@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -74,8 +74,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aac0c8e08ac75dc71a67631fd6ae6647e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___signed_distance_function.html#aac0c8e08ac75dc71a67631fd6ae6647e">Evaluate</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;closestPoint) const =0</td></tr>
-<tr class="separator:aac0c8e08ac75dc71a67631fd6ae6647e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de836675c78a79f2277e64aa539f2aa"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___signed_distance_function.html#a8de836675c78a79f2277e64aa539f2aa">Evaluate</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal) const =0</td></tr>
+<tr class="separator:a8de836675c78a79f2277e64aa539f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
@@ -83,8 +83,8 @@ Public Member Functions</h2></td></tr>
 <p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. An abstract base class for a signed distance function (SDF).</p>
 <p>The SDF must be a non-manifold function that divides R3 into closed (possibly at infinity) regions of negative distance and positive distance, thereby defining a set of implicit boundaries where the SDF is equal to zero. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aac0c8e08ac75dc71a67631fd6ae6647e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0c8e08ac75dc71a67631fd6ae6647e">&#9670;&nbsp;</a></span>Evaluate()</h2>
+<a id="a8de836675c78a79f2277e64aa539f2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de836675c78a79f2277e64aa539f2aa">&#9670;&nbsp;</a></span>Evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,8 +101,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>closestPoint</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -116,14 +116,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Evaluate the signed distance function Parameters: p [in] - the point to evaluate the SDF at closestPoint [out] - the closest point on the SDF Returns: the distance between the closest point and the input point. </p>
+<p>Evaluate the signed distance function Parameters: p [in] - the point to evaluate the SDF at normal [out] - normal at the closest point on the SDF such that closestPt = pt - dist*normal/normal.Length() Returns: the distance between the closest point and the input point. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:25 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

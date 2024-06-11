@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -738,6 +738,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3cdd45848e6454a405c678c4a3f2a28b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a3cdd45848e6454a405c678c4a3f2a28b">CreateFrom2dPointsAndEdges</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &gt; &amp;points, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;automatic_edges, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;oriented_boundary_edges, bool bOuterBoundaryIsConvexHull, bool bPermitVertexAdditions, bool bPermitEdgeSplitting, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destination_mesh)</td></tr>
+<tr class="memdesc:a3cdd45848e6454a405c678c4a3f2a28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. The resulting mesh can have no outer boundary specified; in this case the outer boundary will be the convex hull of the points. Or edges specifying one or more outer boundaries can be passed in. The resulting mesh may have zero or more inner boundaries (holes in the mesh). Additionally interior edges (having triangles on both sides) can be specified.  <a href="class_o_n___mesh.html#a3cdd45848e6454a405c678c4a3f2a28b">More...</a><br /></td></tr>
+<tr class="separator:a3cdd45848e6454a405c678c4a3f2a28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38bc38c29f47636123a743d392967cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aa38bc38c29f47636123a743d392967cc">CreateFrom2dPointsAndEdges</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &gt; &amp;points, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;edges, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char &gt; &amp;edge_orientations, bool bOuterBoundaryIsConvexHull, bool bPermitVertexAdditions, bool bPermitEdgeSplitting, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destination_mesh)</td></tr>
+<tr class="memdesc:aa38bc38c29f47636123a743d392967cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries of the holes and pass the appropriate information to indicate which side of these edges you want the mesh to be on.  <a href="class_o_n___mesh.html#aa38bc38c29f47636123a743d392967cc">More...</a><br /></td></tr>
+<tr class="separator:aa38bc38c29f47636123a743d392967cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbf023f5a0a9eedf6790c40a9f28f3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c">CreateFrom2dPointsAndEdges</a> (size_t point_count, size_t point_stride, const double *points, size_t edge_count, size_t edge_stride, const unsigned int *edges, size_t edge_orientation_stride, const unsigned char *edge_orientations, bool bOuterBoundaryIsConvexHull, bool bPermitVertexAdditions, bool bPermitEdgeSplitting, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destination_mesh)</td></tr>
+<tr class="memdesc:aacbf023f5a0a9eedf6790c40a9f28f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a triangle mesh with vertices at the input points and which includes the specified edges. Some subset of the edges must form a closed outer boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries and pass the appropriate information to indicate which side of these edges you want the mesh to be on.  <a href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c">More...</a><br /></td></tr>
+<tr class="separator:aacbf023f5a0a9eedf6790c40a9f28f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad55fc7bbc2c7082c2a5b13da37516579"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ad55fc7bbc2c7082c2a5b13da37516579">From3dPolygon</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;polygon_points, double planar_tolerance, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destintation_mesh)</td></tr>
 <tr class="separator:ad55fc7bbc2c7082c2a5b13da37516579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f0120c2518091a21db432e686f39cd5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a0f0120c2518091a21db432e686f39cd5">From3dPolygon</a> (size_t polygon_points_count, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *polygon_points, double planar_tolerance, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *destintation_mesh)</td></tr>
@@ -1904,6 +1913,292 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cdd45848e6454a405c678c4a3f2a28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cdd45848e6454a405c678c4a3f2a28b">&#9670;&nbsp;</a></span>CreateFrom2dPointsAndEdges() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_Mesh::CreateFrom2dPointsAndEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>automatic_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>oriented_boundary_edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOuterBoundaryIsConvexHull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitVertexAdditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitEdgeSplitting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>destination_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. The resulting mesh can have no outer boundary specified; in this case the outer boundary will be the convex hull of the points. Or edges specifying one or more outer boundaries can be passed in. The resulting mesh may have zero or more inner boundaries (holes in the mesh). Additionally interior edges (having triangles on both sides) can be specified. </p>
+<p>Edges specifying outer boundaries do not need to be properly oriented if they are passed in the automatic_edges[] list. There is no need to sort outer boundary edges into loops.</p>
+<p>Edges specifying innter boundaries must be oriented so they form clockwise loops and must be passed in the oriented_edges[] list. There is no need to sort inner boundary edges into loops.</p>
+<p>You may also specify interior edges that should have a triangle on both sides of the interior edge. Interior edges can have any orientation and must be passed in the automatic_edges[] list. There is no need to sort interior edges into connected sets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>2d point locations. <br  />
+ Duplicate points are not permitted. It is ok to include points that are inside the outer boundary but are not at the end of any input edge. For 0 lt;= i &amp;lt point_count, the returned mesh will have mesh-&gt;Vertex(i) = points[i]. </td></tr>
+    <tr><td class="paramname">automatic_edges</td><td>Duplicate edges are not permitted. The edges in automatic_edges[] can be in any order and have any orientation. In particular they do not have to be sorted into connected sets. This is a good choice for almost all edges that are not inner boundary edges. </td></tr>
+    <tr><td class="paramname">oriented_boundary_edges</td><td>Duplicate edges are not permitted. The edges in oriented_boundary_edges[] can be in any order. In particular they do not have to be sorted into connected sets. The edges in oriented_edges[] should be part of some boundary loop (inner or outer). This is the only place to specify inner boundaries (holes in the mesh). If there are outer boundaries and the edges forming the outer boundaries are oriented so the mesh is on the left sde of the edge, then they may be included in either oriented_edges[] or automatic_edges[], but not both. </td></tr>
+    <tr><td class="paramname">bOuterBoundaryIsConvexHull</td><td>If edges[] contains one or more outer boundaries, then pass false. Otherwise pass true; the outer boundary of the returned mesh will be the convex hull of points[] and any edges that are not part of the convex hull will be inside the mesh. </td></tr>
+    <tr><td class="paramname">bPermitVertexAdditions</td><td>When in doubt, pass true. If true, then additional interior points may be added to improve the quality of the mesh. These additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">bPermitEdgeSplitting</td><td>When in doubt, pass true. If true, then input edges may be split to improve mesh quality. If any edges are split, the additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">destination_mesh</td><td>If destination_mesh is not nullptr, then the mesh will be created in destination_mesh and destination_mesh will be returned. Otherwise the returned mesh created by calling new <a class="el" href="class_o_n___mesh.html#aae117c9788c5c8f66ba927af0bc37d13">ON_Mesh()</a> will be returned and the caller is responsible for managing the mesh and calling delete when it is no longer needed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by pionts[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. When the returned mesh has mesh-&gt;<a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a> &gt; point_count, it is because inter edge intersections were added or the a true value of bPermitVertexAdditions or bPermitEdgeSplitting resulted in vertices being added to improve triangle quality. </dd></dl>
+
+</div>
+</div>
+<a id="aa38bc38c29f47636123a743d392967cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38bc38c29f47636123a743d392967cc">&#9670;&nbsp;</a></span>CreateFrom2dPointsAndEdges() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_Mesh::CreateFrom2dPointsAndEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2udex.html">ON_2udex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edge_orientations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOuterBoundaryIsConvexHull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitVertexAdditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitEdgeSplitting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>destination_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries of the holes and pass the appropriate information to indicate which side of these edges you want the mesh to be on. </p>
+<p>This overload of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> is desinged for case where your edges are in a single simple array and you don't need to specify edge orientations, or a single orientation applies to all edges, or you have detailed customized per edge orientations. If you find managing customized per edge orientations challenging or the source of your edges is alread partitioned into distinct simple arrays, there is an overload of of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> that lets you pas in multiple arrays of edges that have similar orientations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>2d point locations. <br  />
+ Duplicate points are not permitted. It is ok to include points that are inside the outer boundary but are not at the end of any input edge. For 0 lt;= i &amp;lt point_count, the returned mesh will have mesh-&gt;Vertex(i) = points[i]. </td></tr>
+    <tr><td class="paramname">edges</td><td>If edges[] is empty, then the convex hull of points[] will be the mesh boundary. The edges[] array contains pairs of points[] array indices the specify line segments that should be sides of triangles. The edges do not have to be sorted into connected components. It is not required to specify an outer boundary. If some subset of edges forms a closed polyline that contains all other edges, then that polyline will automatically become the outer boundary, even if there are points outside of this polyline. If any edges intersect, then the intersection points are added to the mesh. Any added mesh vertices will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">edge_orientations</td><td>If edge_orientations[] is empty, the all interior edges have a trinagle on both sides. If edge_orientations[] has one element, then that orientation is used for all edges and the edges will have one tirngle on the specified side. Otherwise, edge_orientaions[] must have edges.Count() elements, and edge_orientations[i] specifies wich side(s) or edges[i] should have a triangle. 0 = Automatically determined edge orientation. This is the best choice for all edges that are not inner boundary edges. 1 = left side only - boundary edge with a triangle on the left side. This is a good choice for clockwise inner boundary edges. 2 = right side only - boundary edge with a triangle on the right side. This is a good choice for counter-clockwise inner boundary edges. </td></tr>
+    <tr><td class="paramname">bOuterBoundaryIsConvexHull</td><td>If edges[] contains one or more outer boundaries, then pass false. Otherwise pass true; the outer boundary of the returned mesh will be the convex hull of points[] and any edges that are not part of the convex hull will be inside the mesh. </td></tr>
+    <tr><td class="paramname">bPermitVertexAdditions</td><td>If true, then additional interior points may be added to improve the quality of the mesh. These additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">bPermitEdgeSplitting</td><td>If true, then input edges may be split to improve mesh quality. If any edges are split, the additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">destination_mesh</td><td>If destination_mesh is not nullptr, then the mesh will be created in destination_mesh and destination_mesh will be returned. Otherwise the returned mesh created by calling new <a class="el" href="class_o_n___mesh.html#aae117c9788c5c8f66ba927af0bc37d13">ON_Mesh()</a> will be returned and the caller is responsible for managing the mesh and calling delete when it is no longer needed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by pionts[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. </dd></dl>
+
+</div>
+</div>
+<a id="aacbf023f5a0a9eedf6790c40a9f28f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbf023f5a0a9eedf6790c40a9f28f3c">&#9670;&nbsp;</a></span>CreateFrom2dPointsAndEdges() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_Mesh::CreateFrom2dPointsAndEdges </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>edge_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>edge_stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int *&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>edge_orientation_stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>edge_orientations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOuterBoundaryIsConvexHull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitVertexAdditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitEdgeSplitting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>destination_mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a triangle mesh with vertices at the input points and which includes the specified edges. Some subset of the edges must form a closed outer boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries and pass the appropriate information to indicate which side of these edges you want the mesh to be on. </p>
+<p>This is the most advanced version of CreateFrom2dPointsAndEdges(...). If your point and edtge intput is in simple arrays, there are easier to call overloads with the same name and simple array parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point_count</td><td>Number of 2d points. There must be at least 3 points. </td></tr>
+    <tr><td class="paramname">point_stride</td><td>Double offset for 2d points. i-th 2d point = (points[j],points[j+1]), where j = i*point_stride. </td></tr>
+    <tr><td class="paramname">points</td><td>2d point locations. <br  />
+ Duplicate points are not permitted. It is ok to include points that are inside the outer boundary but are not at the end of any input edge. For 0 lt;= i &amp;lt point_count, the returned mesh will have mesh-&gt;Vertex(i) = points[i]. </td></tr>
+    <tr><td class="paramname">edge_count</td><td>Number of edges in the edges[] array. If edge_count = 0, then the convex hull of points[] will be the boundary. If edge_count = point_count, edge_stride = 0, edges = nullptr, and edge_side_stride = 0 then the input list of points must from a closed polyline and will be the outer boundary of the region to be meshed. Note this polyline does not have to be convex. </td></tr>
+    <tr><td class="paramname">edge_stride</td><td>i-th edge connects points (edge[j],edge[j+1]) where j = i*edge_stride. </td></tr>
+    <tr><td class="paramname">edges</td><td>The edges[] array contains pairs of points[] array indices the specify line segments that should be sides of triangles. The edges do not have to be sorted into connected components. It is not required to specify an outer boundary. If some subset of edges forms a closed polyline that contains all other edges, then that polyline will automatically become the outer boundary, even if there are points outside of this polyline. If any edges intersect, then the intersection points are added to the mesh. Any added mesh vertices will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">edge_orientation_stride</td><td>If edge_orientations is not nullptr, then the edge orientation for the i-th edge is edge_orientations[i*edge_orientation_stride]. If all edges have a constant orientation value, then you may set edge_orientation_stride = 0 and pass the address of an unsigned char whose value is the constant orientation. </td></tr>
+    <tr><td class="paramname">edge_orientations</td><td>If not nullptr, then edge_orientations[i*edge_orientation_stride] determines which side(s) of the i-th edge should be part of a triangle. 0 = Automatically determined edge orientation. This is the best choice for all edges that are not inner boundary edges. 1 = left side only - boundary edge with a triangle on the left side. This is a good choice for clockwise inner boundary edges. 2 = right side only - boundary edge with a triangle on the right side. This is a good choice for counter-clockwise inner boundary edges. If edge_orientations is nullptr, then 0 is used for all edges. If all edges have the same orientation, then setting edge_orientation_stride=0 and passing the address of an unsigned char with the constant orientation value saves having to create and manage an array where every element has the same value. </td></tr>
+    <tr><td class="paramname">bOuterBoundaryIsConvexHull</td><td>If edges[] contains one or more outer boundaries, then pass false. Otherwise pass true; the outer boundary of the returned mesh will be the convex hull of points[] and any edges that are not part of the convex hull will be inside the mesh. </td></tr>
+    <tr><td class="paramname">bPermitVertexAdditions</td><td>If true, then additional interior points may be added to improve the quality of the mesh. These additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">bPermitEdgeSplitting</td><td>If true, then edges may be split to improve mesh quality. If any edges are split, the additional points will have mesh vertex indices &gt;= point_count. </td></tr>
+    <tr><td class="paramname">destination_mesh</td><td>If destination_mesh is not nullptr, then the mesh will be created in this mesh. If destination_mesh is nullptr, then a new mesh created by calling new <a class="el" href="class_o_n___mesh.html#aae117c9788c5c8f66ba927af0bc37d13">ON_Mesh()</a> will be returned and the caller is responsible for managing the mesh and calling delete when it is no longer needed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A triangle mesh of the 2d region specified by the input points and edges. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. </dd></dl>
 
 </div>
 </div>
@@ -8559,7 +8854,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:31 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

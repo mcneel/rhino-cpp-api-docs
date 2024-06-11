@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.7</span>
+   &#160;<span id="projectnumber">8.8</span>
    </div>
   </td>
  </tr>
@@ -89,12 +89,12 @@ Inheritance diagram for ON_SubD:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad824cd376fa718f3e0f7ae1d3d4499ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d.html#ad824cd376fa718f3e0f7ae1d3d4499aeaaaafc6d2b5efd3c1d3214afbaa46c9bc">maximum_subd_level</a> = 128
- }</td></tr>
-<tr class="separator:ad824cd376fa718f3e0f7ae1d3d4499ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5463b2c00a5e1f2b0803c53da10d091"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d.html#aa5463b2c00a5e1f2b0803c53da10d091ab72d6681c2028801f5b78c651928692d">TextureImageSuggestedMinimumSize</a> = 1024
+<tr class="memitem:aa5463b2c00a5e1f2b0803c53da10d091"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d.html#aa5463b2c00a5e1f2b0803c53da10d091aaaafc6d2b5efd3c1d3214afbaa46c9bc">maximum_subd_level</a> = 128
  }</td></tr>
 <tr class="separator:aa5463b2c00a5e1f2b0803c53da10d091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da6b16e2a96f6accec890f1b8edbdae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d.html#a5da6b16e2a96f6accec890f1b8edbdaeab72d6681c2028801f5b78c651928692d">TextureImageSuggestedMinimumSize</a> = 1024
+ }</td></tr>
+<tr class="separator:a5da6b16e2a96f6accec890f1b8edbdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef51f2ea460e4edd104e4216bc197f5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aef51f2ea460e4edd104e4216bc197f5b">AutomaticMeshToSubDContext</a> : unsigned char { <a class="el" href="class_o_n___sub_d.html#aef51f2ea460e4edd104e4216bc197f5bac9f88e098f6fe4e4e112eeb05ccb9671">AutomaticMeshToSubDContext::Unset</a> = 0, 
 <a class="el" href="class_o_n___sub_d.html#aef51f2ea460e4edd104e4216bc197f5ba81705f4f7e91e6b42f211b35ff10269f">AutomaticMeshToSubDContext::Rhino5BoxModeTSpline</a> = 1, 
 <a class="el" href="class_o_n___sub_d.html#aef51f2ea460e4edd104e4216bc197f5ba4fa22b0ffaacc4a064817da0d307c614">AutomaticMeshToSubDContext::FBXMeshWithDivisionLevels</a> = 2
@@ -1279,6 +1279,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af96e32c6c7de19b165f10f85a29f5af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff155b01dd949790d7cdf45f85bf329"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aaff155b01dd949790d7cdf45f85bf329">GetQuadSectorPointRing</a> (bool bPermitNoSubdivisions, bool bObsoleteAndIgnoredParameter, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *obsolete_and_ignored_parameter, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, size_t component_ring_count, double *point_ring, size_t point_ring_stride)</td></tr>
 <tr class="separator:aaff155b01dd949790d7cdf45f85bf329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d064a3684cfd8c67a07f14b71ad1bc5"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4d064a3684cfd8c67a07f14b71ad1bc5">GetQuadSectorPointRing</a> (bool bPermitNoSubdivisions, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, size_t component_ring_count, unsigned int &amp;subdivision_count, double *point_ring, size_t point_ring_stride)</td></tr>
+<tr class="memdesc:a4d064a3684cfd8c67a07f14b71ad1bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a ring of points that can be mulitplied by subdivsion and limit point matrices to calculate the subdivision point and limit point for the central vertex in component_ring[0]. No input validation is performed. This function will crash if the input is not valid. Call GetSubdivisionPointRing() if you want a crash proof call.  <a href="class_o_n___sub_d.html#a4d064a3684cfd8c67a07f14b71ad1bc5">More...</a><br /></td></tr>
+<tr class="separator:a4d064a3684cfd8c67a07f14b71ad1bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1879f6e2db9595b151662f3d3abdb50"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aa1879f6e2db9595b151662f3d3abdb50">GetSectorComponentRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;sit, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;component_ring)</td></tr>
 <tr class="separator:aa1879f6e2db9595b151662f3d3abdb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6fa647489a336e4a646cc81bba8f9b"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aea6fa647489a336e4a646cc81bba8f9b">GetSectorComponentRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;sit, <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, size_t component_ring_capacity)</td></tr>
@@ -1291,6 +1294,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a348cc3cde6a65b8dfac76796f02bb510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd32809ce5ea79039aa5ccf5251e0530"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#afd32809ce5ea79039aa5ccf5251e0530">GetSectorPointRing</a> (bool bSubdivideIfNeeded, size_t component_ring_count, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;point_ring)</td></tr>
 <tr class="separator:afd32809ce5ea79039aa5ccf5251e0530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fdcc1e01920d1cbfec42d47bb42db3"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a96fdcc1e01920d1cbfec42d47bb42db3">GetSectorPointRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;sit, unsigned &amp;subdivision_count, double *point_ring, size_t point_ring_capacity, size_t point_ring_stride)</td></tr>
+<tr class="separator:a96fdcc1e01920d1cbfec42d47bb42db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace410ae96bd92c5692350ab3b6036b07"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ace410ae96bd92c5692350ab3b6036b07">GetSectorPointRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;sit, unsigned &amp;subdivision_count, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;point_ring)</td></tr>
+<tr class="memdesc:ace410ae96bd92c5692350ab3b6036b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a ring of points that can be used to calculate the subdivision and limit points of sit.CenterVertex().  <a href="class_o_n___sub_d.html#ace410ae96bd92c5692350ab3b6036b07">More...</a><br /></td></tr>
+<tr class="separator:ace410ae96bd92c5692350ab3b6036b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb682e5c3f906ddfb393418feea72a2c"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aeb682e5c3f906ddfb393418feea72a2c">GetSectorSubdivisionPointRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, size_t component_ring_count, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;subd_point_ring)</td></tr>
 <tr class="separator:aeb682e5c3f906ddfb393418feea72a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f99166629e3a016610cde5e26e9ab5"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a41f99166629e3a016610cde5e26e9ab5">GetSectorSubdivsionPointRing</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *component_ring, size_t component_ring_count, double *point_ring, size_t point_ring_capacity, size_t point_ring_stride)</td></tr>
@@ -1386,24 +1394,6 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d.html">ON_SubD</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ad824cd376fa718f3e0f7ae1d3d4499ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad824cd376fa718f3e0f7ae1d3d4499ae">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum : unsigned int</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad824cd376fa718f3e0f7ae1d3d4499aeaaaafc6d2b5efd3c1d3214afbaa46c9bc"></a>maximum_subd_level&#160;</td><td class="fielddoc"><p>uses as a sanity check on input parameters </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="aa5463b2c00a5e1f2b0803c53da10d091"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5463b2c00a5e1f2b0803c53da10d091">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
@@ -1416,7 +1406,25 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5463b2c00a5e1f2b0803c53da10d091ab72d6681c2028801f5b78c651928692d"></a>TextureImageSuggestedMinimumSize&#160;</td><td class="fielddoc"><p>ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel between adjacent packing rectangles when a texture image size is TextureImageSuggestedMinimumSize x TextureImageSuggestedMinimumSize pixels or larger. Core subd code assumes TextureImageSuggestedMinimumSize is a power of 2 and &gt;= 512. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5463b2c00a5e1f2b0803c53da10d091aaaafc6d2b5efd3c1d3214afbaa46c9bc"></a>maximum_subd_level&#160;</td><td class="fielddoc"><p>uses as a sanity check on input parameters </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5da6b16e2a96f6accec890f1b8edbdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da6b16e2a96f6accec890f1b8edbdae">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5da6b16e2a96f6accec890f1b8edbdaeab72d6681c2028801f5b78c651928692d"></a>TextureImageSuggestedMinimumSize&#160;</td><td class="fielddoc"><p>ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel between adjacent packing rectangles when a texture image size is TextureImageSuggestedMinimumSize x TextureImageSuggestedMinimumSize pixels or larger. Core subd code assumes TextureImageSuggestedMinimumSize is a power of 2 and &gt;= 512. </p>
 </td></tr>
 </table>
 
@@ -8806,7 +8814,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible boundary edge chains. boundary_edge_chains - [out] The boundary_edge_chains[] array is sorted into edge chains. Returns: Number of chains embedded in boundary_edge_chains[] </p>
+<p>Parameters: minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible boundary edge chains. boundary_edge_chains - [out] The boundary_edge_chains[] array is sorted into edge chains. Returns: Number of chains embedded in boundary_edge_chains[] </p>
 
 </div>
 </div>
@@ -9145,7 +9153,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aaff155b01dd949790d7cdf45f85bf329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaff155b01dd949790d7cdf45f85bf329">&#9670;&nbsp;</a></span>GetQuadSectorPointRing()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff155b01dd949790d7cdf45f85bf329">&#9670;&nbsp;</a></span>GetQuadSectorPointRing() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9207,7 +9215,81 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: subd_type - [in] A quad based subdivision algorithm. bPermitNoSubdivisions - [in] When in doubt, pass false. If bPermitNoSubdivisions is true and no extraordinary components are in the ring, then locations of the input component control net are returned. Otherwise at one or more subdivisions are applied to obtain the output ring points. bObsoleteAndIgnoredParameter - [in] Obsolete and ignored parameter. Pass false. obsolete_and_ignored_parameter - [in] Obsolete and ignored parameter. Pass nullptr. component_ring_count - [in] component_ring_count specifies the number of components in the component_ring[] array. component_ring[] - [in] If vertex0 is null, then component_ring[0] is the central vertex, component_ring[1] and subsequent components with odd indices are sector edges, component_ring[2] and subsequent components with even indices are sector faces, all sorted radially. point_ring_stride - [in] point_ring - [out] point locations are returned here. Returns: Number of points in the subdivision ring or 0 if the call fails. The number of points is 1 + ON_SubD::ComponentRingEdgeCount(component_ring_count) + ON_SubD::ComponentRingFaceCount(component_ring_count). Remarks: No validation checking is performed. This function will crash if the input is not valid. Call GetSubdivisionPointRing() if you want a crash proof call. </p>
+<p>Parameters: bPermitNoSubdivisions - [in] When in doubt, pass false. If bPermitNoSubdivisions is true and no extraordinary components are in the ring, then locations of the input component control net are returned. Otherwise at one or more subdivisions are applied to obtain the output ring points. bObsoleteAndIgnoredParameter - [in] Obsolete and ignored parameter. Pass false. obsolete_and_ignored_parameter - [in] Obsolete and ignored parameter. Pass nullptr. component_ring_count - [in] component_ring_count specifies the number of components in the component_ring[] array. component_ring[] - [in] component_ring[0] is the central vertex, component_ring[1] and subsequent components with odd indices are sector edges. sorted radially. component_ring[2] and subsequent components with even indices are sector faces. The edges and faces are sorted radially (component_ring[1] and component_ring[3] are edges of component_ring[2], etc). point_ring_stride - [in] point_ring - [out] point locations are returned here. Returns: Number of points in the subdivision ring or 0 if the call fails. The number of points is 1 + ON_SubD::ComponentRingEdgeCount(component_ring_count) + ON_SubD::ComponentRingFaceCount(component_ring_count). Remarks: No validation checking is performed. This function will crash if the input is not valid. Call GetSubdivisionPointRing() if you want a crash proof call. </p>
+
+</div>
+</div>
+<a id="a4d064a3684cfd8c67a07f14b71ad1bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d064a3684cfd8c67a07f14b71ad1bc5">&#9670;&nbsp;</a></span>GetQuadSectorPointRing() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubD::GetQuadSectorPointRing </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPermitNoSubdivisions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> *&#160;</td>
+          <td class="paramname"><em>component_ring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>component_ring_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>subdivision_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>point_ring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_ring_stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a ring of points that can be mulitplied by subdivsion and limit point matrices to calculate the subdivision point and limit point for the central vertex in component_ring[0]. No input validation is performed. This function will crash if the input is not valid. Call GetSubdivisionPointRing() if you want a crash proof call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bPermitNoSubdivisions</td><td>When in doubt, pass false. If bPermitNoSubdivisions is true and no extraordinary components or sharp edges are in the ring, then locations of the input component_ring[] control net points are returned. Otherwise one or more subdivisions are applied to obtain the output ring points. </td></tr>
+    <tr><td class="paramname">component_ring</td><td>component_ring[0] is the central vertex. component_ring[1] and subsequent components with odd indices are sector edges. component_ring[2] and subsequent components with even indices are sector faces. The edges and faces are sorted radially(component_ring[1] and component_ring[3] are edges of component_ring[2], etc). </td></tr>
+    <tr><td class="paramname">component_ring_count</td><td>Number of components in the component_ring[] array. </td></tr>
+    <tr><td class="paramname">subdivision_count</td><td>The number of subdivisions used to calculate point_ring[] is returned in subdivision_count. </td></tr>
+    <tr><td class="paramname">point_ring</td><td>The point ring points are returned in point_ring[] </td></tr>
+    <tr><td class="paramname">point_ring_stride</td><td>Number of doubles between subsequent points in point_ring[]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, component_ring_count is returned which is the number of points set in point_ring[]. Otherwise 0 is returned. </dd></dl>
 
 </div>
 </div>
@@ -9301,7 +9383,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ad3f81ea18d9ad1c91ae79fd49bd921d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f81ea18d9ad1c91ae79fd49bd921d3">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f81ea18d9ad1c91ae79fd49bd921d3">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9355,7 +9437,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a4bbb84714f1d77312b9dedd3f65764bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bbb84714f1d77312b9dedd3f65764bf">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbb84714f1d77312b9dedd3f65764bf">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9397,7 +9479,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a348cc3cde6a65b8dfac76796f02bb510"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a348cc3cde6a65b8dfac76796f02bb510">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a348cc3cde6a65b8dfac76796f02bb510">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9457,7 +9539,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="afd32809ce5ea79039aa5ccf5251e0530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd32809ce5ea79039aa5ccf5251e0530">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd32809ce5ea79039aa5ccf5251e0530">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9501,6 +9583,113 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96fdcc1e01920d1cbfec42d47bb42db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fdcc1e01920d1cbfec42d47bb42db3">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubD::GetSectorPointRing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>sit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>subdivision_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>point_ring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_ring_capacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_ring_stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace410ae96bd92c5692350ab3b6036b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace410ae96bd92c5692350ab3b6036b07">&#9670;&nbsp;</a></span>GetSectorPointRing() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubD::GetSectorPointRing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_sector_iterator.html">ON_SubDSectorIterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>sit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>subdivision_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point_ring</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a ring of points that can be used to calculate the subdivision and limit points of sit.CenterVertex(). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sit</td><td>Initialized sector iterator. </td></tr>
+    <tr><td class="paramname">subdivision_count</td><td>TNumber of subdivisions performed to get point_ring[] is returned in subdivision_count. </td></tr>
+    <tr><td class="paramname">point_ring</td><td>The points are returned in point_ring[] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of points in point_ring[] </dd></dl>
 
 </div>
 </div>
@@ -9945,7 +10134,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. curve_callback_context - [in] curve_callback_function - [in] Each curve is returned by calling curve_callback_function(curve_callback_context,edge_chain,edge_chain_count,nurbs_curve). The function curve_callback_function() must copy any information it wants to reference later. It returns true to continue, false to terminate <a class="el" href="class_o_n___sub_d.html#a87a1af4bdd509207d564895b180fbee2">GetSurfaceWireframe()</a>. edge_chain[] reports which edges are represented byt nurbs_curve Returns: Number of curves generated. <br  />
+<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. curve_callback_context - [in] curve_callback_function - [in] Each curve is returned by calling curve_callback_function(curve_callback_context,edge_chain,edge_chain_count,nurbs_curve). The function curve_callback_function() must copy any information it wants to reference later. It returns true to continue, false to terminate <a class="el" href="class_o_n___sub_d.html#a87a1af4bdd509207d564895b180fbee2">GetSurfaceWireframe()</a>. edge_chain[] reports which edges are represented byt nurbs_curve Returns: Number of curves generated. <br  />
  </p>
 
 </div>
@@ -9993,7 +10182,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. curves - [out] The wireframe curves are appended to curves[]. The caller is responsible for deleting them. Returns: Number of curves appended to nurbs_curves. <br  />
+<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. curves - [out] The wireframe curves are appended to curves[]. The caller is responsible for deleting them. Returns: Number of curves appended to nurbs_curves. <br  />
  </p>
 
 </div>
@@ -10234,7 +10423,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#a8e061ebc523bb222633e0aa6d937e5baab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. edge_chain_callback_context - [in] edge_chain_callback_function - [in] Each edge chain is returned by calling edge_chain_callback_function(edge_chain_callback_context,edge_chain,edge_chain_count). The function edge_chain_callback_function() must copy any information it wants to reference later. It returns true to continue, false to terminate <a class="el" href="class_o_n___sub_d.html#a6839c860d6e56a40f786362eff24648b">GetWireframeEdgeChains()</a>. edge_chain[] reports which edges are represented byt nurbs_curve Returns: Number of curves generated. <br  />
+<p>Description: Get a collection of NURBS curves that lie on the SubD limit surface edges. Parameters: edge_tag - [in] If edge_tag is not <a class="el" href="group__open_n_u_r_b_s.html#gga09d9a731b3db1b876e97b6b43246c325ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDEdgeTag::Unset</a>, then only edges with a matching tag will be converted to curves. minimum_face_count - [in] maximum_face_count - [in] Only edges with edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &gt;= minimum_face_count and edge-&gt;<a class="el" href="class_o_n___sub_d.html#afd0b2ca2e120a29e35d1a7cb2ae3a349">FaceCount()</a> &lt;= maximum_face_count will be converted into curves. Pass 0, <a class="el" href="class_o_n___sub_d_edge.html#af02f7b933ffa0133d4a1c16722868b39ab14a1da83370eeb51e6fec74230b4a74">ON_SubDEdge::MaximumFaceCount</a> if you want all possible face counts. chain_type - [in] Controls which edges joined into a single curves. <a class="el" href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubD::ChainType::Unset</a> will create one curve per edge. edge_chain_callback_context - [in] edge_chain_callback_function - [in] Each edge chain is returned by calling edge_chain_callback_function(edge_chain_callback_context,edge_chain,edge_chain_count). The function edge_chain_callback_function() must copy any information it wants to reference later. It returns true to continue, false to terminate <a class="el" href="class_o_n___sub_d.html#a6839c860d6e56a40f786362eff24648b">GetWireframeEdgeChains()</a>. edge_chain[] reports which edges are represented byt nurbs_curve Returns: Number of curves generated. <br  />
  </p>
 
 </div>
@@ -17703,7 +17892,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 14 2024 16:15:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2024 15:59:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
