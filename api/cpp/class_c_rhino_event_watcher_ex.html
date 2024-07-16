@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.8</span>
+   &#160;<span id="projectnumber">8.9</span>
    </div>
   </td>
  </tr>
@@ -90,12 +90,13 @@ Inheritance diagram for CRhinoEventWatcherEx:</div>
 <area href="class_c_rhino_on_change_object_select_state.html" alt="CRhinoOnChangeObjectSelectState" shape="rect" coords="267,448,524,472"/>
 <area href="class_c_rhino_on_doc_user_string_changed.html" alt="CRhinoOnDocUserStringChanged" shape="rect" coords="267,504,524,528"/>
 <area href="class_c_rhino_on_main_loop_event.html" alt="CRhinoOnMainLoopEvent" shape="rect" coords="267,560,524,584"/>
-<area href="class_c_rhino_on_set_active_detail_object.html" alt="CRhinoOnSetActiveDetailObject" shape="rect" coords="267,616,524,640"/>
-<area href="class_c_rhino_on_transform_object.html" alt="CRhinoOnTransformObject" shape="rect" coords="267,672,524,696"/>
-<area href="class_c_rhino_on_view_modified_event.html" alt="CRhinoOnViewModifiedEvent" shape="rect" coords="267,728,524,752"/>
-<area href="class_c_rhino_plug_in_settings_changed.html" alt="CRhinoPlugInSettingsChanged" shape="rect" coords="267,784,524,808"/>
-<area href="class_c_rhino_target_doc_changed.html" alt="CRhinoTargetDocChanged" shape="rect" coords="267,840,524,864"/>
-<area href="class_c_rhino_ui_file_event.html" alt="CRhinoUiFileEvent" shape="rect" coords="267,896,524,920"/>
+<area href="class_c_rhino_on_page_view_properties_changed.html" alt="CRhinoOnPageViewPropertiesChanged" shape="rect" coords="267,616,524,640"/>
+<area href="class_c_rhino_on_set_active_detail_object.html" alt="CRhinoOnSetActiveDetailObject" shape="rect" coords="267,672,524,696"/>
+<area href="class_c_rhino_on_transform_object.html" alt="CRhinoOnTransformObject" shape="rect" coords="267,728,524,752"/>
+<area href="class_c_rhino_on_view_modified_event.html" alt="CRhinoOnViewModifiedEvent" shape="rect" coords="267,784,524,808"/>
+<area href="class_c_rhino_plug_in_settings_changed.html" alt="CRhinoPlugInSettingsChanged" shape="rect" coords="267,840,524,864"/>
+<area href="class_c_rhino_target_doc_changed.html" alt="CRhinoTargetDocChanged" shape="rect" coords="267,896,524,920"/>
+<area href="class_c_rhino_ui_file_event.html" alt="CRhinoUiFileEvent" shape="rect" coords="267,952,524,976"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,8 +125,10 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187afdeddffab4ee924ae45a054bb44bc85b">event_type_display_mode_settings_changed</a> = 16, 
 <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187acd35843faedc94e60c41031241459ab2">event_type_object_manager_changed</a> = 17, 
+<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0d9e4873301aea3dcb50d270e137c5bb">event_type_pageview_properties_changed</a> = 18, 
 <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a86f575a0c9e5824fe497a44513e6979a">event_type_max</a>, 
-<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0b4fbbc698ffc27b5a02dc8a365cb56c">event_type_force_4byte_size</a> = 0xFFFFFFFF
+<br />
+&#160;&#160;<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0b4fbbc698ffc27b5a02dc8a365cb56c">event_type_force_4byte_size</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
 <tr class="separator:aeb9fc5cc57aa4c5951827373365bd187"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +232,8 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187afdeddffab4ee924ae45a054bb44bc85b"></a>event_type_display_mode_settings_changed&#160;</td><td class="fielddoc"><p>Called after a display mode's setting(s) have been saved/changed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187acd35843faedc94e60c41031241459ab2"></a>event_type_object_manager_changed&#160;</td><td class="fielddoc"><p>Called when an object manager event is raised. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187a0d9e4873301aea3dcb50d270e137c5bb"></a>event_type_pageview_properties_changed&#160;</td><td class="fielddoc"><p>Called when the properties of page layout view changed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187a86f575a0c9e5824fe497a44513e6979a"></a>event_type_max&#160;</td><td class="fielddoc"><p>Bound on event type value. </p>
 </td></tr>
@@ -662,7 +667,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2024 15:59:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 16 2024 16:00:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

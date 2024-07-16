@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.8</span>
+   &#160;<span id="projectnumber">8.9</span>
    </div>
   </td>
  </tr>
@@ -1404,7 +1404,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Search the R-tree for all elements whose bounding boxes overlap a_rect. Parameters: a_rect - [in/out] The version of search that has ON_RTreeBBox* a_rect as the first argument, allows you to shrink the a_rect as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_rect, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified rect must be contained in the previous rect. a_sphere - [in/out] The version of search that has ON_RTreeSphere* a_sphere as the first argument, allows you to shrink the a_sphere as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_sphere, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified sphere must be contained in the previous sphere. a_capsule - [in/out] The version of search that has ON_RTreeSphere* a_capsule as the first argument, allows you to shrink the a_capsule as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_capsule, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified capsule must be contained in the previous capsule. a_min - [in] a_max - [in] (a_min,a_max) is the bounding box of the search region. a_results - [out] The ids of elements that overlaps the search region. resultCallback - [in] A function to call when leaf nodes overlap. a_context - [in] pointer passed to the resultCallback() function. Returns: True if entire tree was searched. It is possible no results were found. Remarks: If you are using a <a class="el" href="class_o_n___r_tree.html#a3c8689767a0edbccf8ff7181f7b0af9b">Search()</a> that uses a resultCallback() function, then return true to keep searching and false to terminate the search. </p>
+<p>Description: Search the R-tree for all elements whose bounding boxes overlap a_rect. Parameters: a_rect - [in/out] The version of search that has ON_RTreeBBox* a_rect as the first argument, allows you to shrink the a_rect as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_rect, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified rect must be contained in the previous rect. a_sphere - [in/out] The version of search that has ON_RTreeSphere* a_sphere as the first argument, allows you to shrink the a_sphere as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_sphere, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified sphere must be contained in the previous sphere. a_capsule - [in/out] The version of search that has ON_RTreeSphere* a_capsule as the first argument, allows you to shrink the a_capsule as the search progresses. This is useful for doing things like searching for closest points. If you want to shrink a_capsule, you must use a_context to pass it to the resultCallback function and shrink it in the resultCallback function. In the callback, the modified capsule must be contained in the previous capsule. a_min - [in] a_max - [in] (a_min,a_max) is the bounding box of the search region. a_results - [out] The ids of elements that overlaps the search region. resultCallback - [in] A function to call when leaf nodes overlap. a_context - [in] pointer passed to the resultCallback() function. Returns: True if entire tree was searched. It is possible no results were found. Remarks: If you are using a <a class="el" href="class_o_n___r_tree.html#a3c8689767a0edbccf8ff7181f7b0af9b">Search()</a> that uses a resultCallback() function, then return true to keep searching and false to terminate the search. Do not modify the tree while a <a class="el" href="class_o_n___r_tree.html#a3c8689767a0edbccf8ff7181f7b0af9b">Search()</a> is in progress. Doing so can have unintended consequences, including corruption and crashes. If you need to modify the tree, collect the results during the search and modify the tree once the search is completed. </p>
 
 </div>
 </div>
@@ -1628,7 +1628,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2024 15:59:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 16 2024 16:01:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
