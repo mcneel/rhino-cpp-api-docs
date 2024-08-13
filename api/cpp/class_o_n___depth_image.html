@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -891,7 +891,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Draw brep into the current image. Parameters: brep - [in] brep to draw triangle_mesh - [in] null or the triangle_mesh that will be used to draw brep. This parameter is useful when many objects are being drawn to minimize calls to heap functions. id - [in] id passed to shader. shader - [in] null or a custom shader. Returns: false The image is not ready for drawing or the shader intentionall terminated rendering by returning false. true Otherwise. </p>
+<p>Description: Draw brep into the current image. Parameters: brep - [in] brep to draw triangle_mesh - [in] null or the triangle_mesh that will be used to draw brep. This parameter is useful when many objects are being drawn to minimize calls to heap functions. id - [in] id passed to shader. shader - [in] null or a custom shader. Returns: false The image is not ready for drawing or the shader intentional terminated rendering by returning false. true Otherwise. </p>
 
 </div>
 </div>
@@ -1467,7 +1467,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Gets a world point at the center of each pixel whose id equals id depth is greater than zero and less than ON_DBL_MAX and not equal to <a class="el" href="class_o_n___depth_image.html#a46eabb3b7251a74a73ef9fd3893660aa">ErasedDepthValue()</a>. Parameters: id_filter - [in] All pixels whose id value is not equal to id_filter are skipped. depth_filter - [in] All pixels whos depth value does not satisfy depth &gt;= depth_filter.m_min and depth &lt;= depth_filter.m_max are skipped. points - [out] Output world coordinate points are appended to this array. Returns: number of points appened to points[]. </p>
+<p>Description: Gets a world point at the center of each pixel whose id equals id depth is greater than zero and less than ON_DBL_MAX and not equal to <a class="el" href="class_o_n___depth_image.html#a46eabb3b7251a74a73ef9fd3893660aa">ErasedDepthValue()</a>. Parameters: id_filter - [in] All pixels whose id value is not equal to id_filter are skipped. depth_filter - [in] All pixels whos depth value does not satisfy depth &gt;= depth_filter.m_min and depth &lt;= depth_filter.m_max are skipped. points - [out] Output world coordinate points are appended to this array. Returns: number of points append to points[]. </p>
 
 </div>
 </div>
@@ -1486,7 +1486,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Gets a world point at the center of each pixel whose depth is greater than zero and less than ON_DBL_MAX and not equal to <a class="el" href="class_o_n___depth_image.html#a46eabb3b7251a74a73ef9fd3893660aa">ErasedDepthValue()</a>. Parameters: points - [out] Output world coordinate points are appended to this array. Returns: number of points appened to points[]. </p>
+<p>Description: Gets a world point at the center of each pixel whose depth is greater than zero and less than ON_DBL_MAX and not equal to <a class="el" href="class_o_n___depth_image.html#a46eabb3b7251a74a73ef9fd3893660aa">ErasedDepthValue()</a>. Parameters: points - [out] Output world coordinate points are appended to this array. Returns: number of points append to points[]. </p>
 
 </div>
 </div>
@@ -1610,7 +1610,7 @@ Friends</h2></td></tr>
 <p>depth_test - [in] To test for ordinary visibility, set depth_test to the same value used to create the image, typically <a class="el" href="class_o_n___depth_image.html#aec270d61e4ec8c63a8a07730ce7ec7aeac12b05563b3eeb74d3bc3e93263df180" title="pass = (incoming depth &lt; current depth)">ON_DepthImage::DEPTH_TEST::less_passes</a> or ON_DepthImage::less_or_equal_passes. You can use other values to test if some portion of triangle_mesh is in the frustum and "behind" a set pixel by using ON_DepthImage::greater_passes.</p>
 <p>depth_bias - [in] Before testing, move the bounding box a distance of depth_bias parallel to the view direction. <br  />
  A positive depth_bias moves the deeper (away from the camera). A a negative depth_bias moves the box nearer (towards the camera).</p>
-<p>pixel - [out] If not null, image pixel information for the first pixel discoverered where the triangle_mesh is visible.</p>
+<p>pixel - [out] If not null, image pixel information for the first pixel discovered where the triangle_mesh is visible.</p>
 <p>visible_triangle - [out] If not null, the triangle where the visible point was discovered.</p>
 <p>triangle_depth - [out] If not null, the depth of the point on the visible triangle. </p>
 
@@ -2120,7 +2120,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Determine visibility of the convex hull of a point set based on the clip status bits of a collection of points in the set. The clip status bits for a point are set by bitwise | of <a class="el" href="class_o_n___depth_image.html#a6eb4d8207f1912079b26e1707f76dde7">ON_DepthImage::CLIP_STATUS</a> enum values. For a mesh, the set of vertices works. For a bezier or NURBS curve or surface with positive weights, the set of control points works. Parameters: ccr - [in] nullptr or a pointer to the custom clipping region used to set the clip status bits. bitwise_and_point_set_clip_status - [in] a bitwise &amp; of the individual point statuses. bitwise_or_point_set_clip_status - [in] a bitwise | of the individual point statuses. Returns: <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1ae2181b5014a67159cc230c8fe0d6c5b6">ON_DepthImage::VISIBILITY::unset</a> Invalid input <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1a0d9c1763f156e51975e0c4e1f599c134">ON_DepthImage::VISIBILITY::all_visible</a> The entire convex hull is in a visible region <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1ab2b629c11016f364da01cf5705b577cb">ON_DepthImage::VISIBILITY::not_visible</a> The entire convex hull is outside all visible regions. <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1aac9c8b5c2102b3eb14a219ba3c461a0c" title="known to be partially visible">ON_DepthImage::VISIBILITY::partially_visible</a> The convext hull has portions that are visible and not visible. Note the object (mesh, curve, surface) could be completely visible or completely hidden in this case. <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1aad921d60486366258809553a3db49a4a" title="more testing is required">ON_DepthImage::VISIBILITY::unknown</a> Unable to determine visibility based on simple plane tests. At least one point is degenerate or is not visible, but the chord from this point to another in the set has the potential for being visible. </p>
+<p>Description: Determine visibility of the convex hull of a point set based on the clip status bits of a collection of points in the set. The clip status bits for a point are set by bitwise | of <a class="el" href="class_o_n___depth_image.html#a6eb4d8207f1912079b26e1707f76dde7">ON_DepthImage::CLIP_STATUS</a> enum values. For a mesh, the set of vertices works. For a bezier or NURBS curve or surface with positive weights, the set of control points works. Parameters: ccr - [in] nullptr or a pointer to the custom clipping region used to set the clip status bits. bitwise_and_point_set_clip_status - [in] a bitwise &amp; of the individual point statuses. bitwise_or_point_set_clip_status - [in] a bitwise | of the individual point statuses. Returns: <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1ae2181b5014a67159cc230c8fe0d6c5b6">ON_DepthImage::VISIBILITY::unset</a> Invalid input <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1a0d9c1763f156e51975e0c4e1f599c134">ON_DepthImage::VISIBILITY::all_visible</a> The entire convex hull is in a visible region <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1ab2b629c11016f364da01cf5705b577cb">ON_DepthImage::VISIBILITY::not_visible</a> The entire convex hull is outside all visible regions. <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1aac9c8b5c2102b3eb14a219ba3c461a0c" title="known to be partially visible">ON_DepthImage::VISIBILITY::partially_visible</a> The convex hull has portions that are visible and not visible. Note the object (mesh, curve, surface) could be completely visible or completely hidden in this case. <a class="el" href="class_o_n___depth_image.html#ac39bf0746c32366b4949c11b74c87fd1aad921d60486366258809553a3db49a4a" title="more testing is required">ON_DepthImage::VISIBILITY::unknown</a> Unable to determine visibility based on simple plane tests. At least one point is degenerate or is not visible, but the chord from this point to another in the set has the potential for being visible. </p>
 
 </div>
 </div>
@@ -2184,7 +2184,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

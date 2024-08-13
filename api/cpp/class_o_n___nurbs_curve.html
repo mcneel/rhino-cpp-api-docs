@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1099,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_NurbsCurve::GetCV( ON_3dPoint&amp; ) or ON_NurbsCurve::GetCV( ON_4dPoint&amp; ). Parameters: cv_index - [in] Returns: Pointer to control vertex. Remarks: If the NURBS curve is rational, the format of the returned array is a homogeneos rational point with length m_dim+1. If the NURBS curve is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___nurbs_curve.html#adf58cfe325e12e51c2ec9fbe90712847">ON_NurbsCurve::CVStyle</a> <a class="el" href="class_o_n___nurbs_curve.html#af57730bec3e1626d7b46b7c6e6cdc482">ON_NurbsCurve::GetCV</a> <a class="el" href="class_o_n___nurbs_curve.html#aaa7b2afff48b28e183429fae8f6a9d1e">ON_NurbsCurve::Weight</a> </p>
+<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_NurbsCurve::GetCV( ON_3dPoint&amp; ) or ON_NurbsCurve::GetCV( ON_4dPoint&amp; ). Parameters: cv_index - [in] Returns: Pointer to control vertex. Remarks: If the NURBS curve is rational, the format of the returned array is a homogeneous rational point with length m_dim+1. If the NURBS curve is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___nurbs_curve.html#adf58cfe325e12e51c2ec9fbe90712847">ON_NurbsCurve::CVStyle</a> <a class="el" href="class_o_n___nurbs_curve.html#af57730bec3e1626d7b46b7c6e6cdc482">ON_NurbsCurve::GetCV</a> <a class="el" href="class_o_n___nurbs_curve.html#aaa7b2afff48b28e183429fae8f6a9d1e">ON_NurbsCurve::Weight</a> </p>
 
 </div>
 </div>
@@ -1832,7 +1832,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Search for a derivatitive, tangent, or curvature discontinuity. Parameters: c - [in] type of continity to test for. If <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ad8fbf1727e18ddb4a65ab10be79c3e26" title="continuous first derivative">ON::continuity::C1_continuous</a> t0 - [in] search begins at t0 t1 - [in] (t0 &lt; t1) search ends at t1 t - [out] if a discontinuity is found, the *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
+<p>Description: Search for a derivative, tangent, or curvature discontinuity. Parameters: c - [in] type of continuity to test for. If <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ad8fbf1727e18ddb4a65ab10be79c3e26" title="continuous first derivative">ON::continuity::C1_continuous</a> t0 - [in] search begins at t0 t1 - [in] (t0 &lt; t1) search ends at t1 t - [out] if a discontinuity is found, the *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
  dtype - [out] if not nullptr, *dtype reports the kind of discontinuity found at *t. A value of 1 means the first derivative or unit tangent was discontinuous. A value of 2 means the second derivative or curvature was discontinuous. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>. <br  />
  <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and the angle between K0 and K1 is at least twice angle tolerance or ||K0| - |K1|| &gt; (max(|K0|,|K1|) &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: true if a discontinuity was found on the interior of the interval (t0,t1). Remarks: Overrides <a class="el" href="class_o_n___curve.html#a2deaf514586ac4b16daa45a97d4bd8e1">ON_Curve::GetNextDiscontinuity</a>. </p>
 
@@ -1882,7 +1882,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: virtual <a class="el" href="class_o_n___curve.html#a67dd944c24cda3d319fa5ac73bb95c2e">ON_Curve::GetNurbForm</a> override. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nurbsform</td><td>returns 0: unable to create NURBS representation with desired accuracy. 1: success - returned NURBS parameterization matches the curve's to wthe desired accuracy 2: success - returned NURBS point locus matches the curve's to the desired accuracy but, on the interior of the curve's domain, the curve's parameterization and the NURBS parameterization may not match to the desired accuracy. </td></tr>
+    <tr><td class="paramname">nurbsform</td><td>returns 0: unable to create NURBS representation with desired accuracy. 1: success - returned NURBS parameterization matches the curve's to the desired accuracy 2: success - returned NURBS point locus matches the curve's to the desired accuracy but, on the interior of the curve's domain, the curve's parameterization and the NURBS parameterization may not match to the desired accuracy. </td></tr>
     <tr><td class="paramname">subdomain</td><td>OPTIONAL subdomain of curve </td></tr>
   </table>
   </dd>
@@ -3541,7 +3541,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: span_index - [in] The index of a non-empty span to remove. span_index &gt;= 0 span_index &lt;= m_cv_count-m_order m_knot[span_index+m_order-2] &lt; m_knot[span_index+m_order-1] Returns: True if the span was successfully removed. Remarks: The NURBS curve must have 2 or more spans (m_cv_count &gt; m_order). Set m0 = mulitiplicity of the knot at m_knot[span_index+m_order-2] and m1 = mulitiplicity of the knot at m_knot[span_index+m_order-1]. If (m0 + m1) &lt; degree, then the degree-(m0+m1) cvs will be added to the NURBS curve. If (m0+m1) &gt; degree, then (m0+m1)-degree cvs will be removed from the curve. See Also: <a class="el" href="class_o_n___nurbs_curve.html#ae026a89e71bfb274db385092452cfe8c">ON_NurbsCurve::RepairBadKnots()</a> <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve::RemoveShortSegments()</a> </p>
+<p>Parameters: span_index - [in] The index of a non-empty span to remove. span_index &gt;= 0 span_index &lt;= m_cv_count-m_order m_knot[span_index+m_order-2] &lt; m_knot[span_index+m_order-1] Returns: True if the span was successfully removed. Remarks: The NURBS curve must have 2 or more spans (m_cv_count &gt; m_order). Set m0 = multiplicity of the knot at m_knot[span_index+m_order-2] and m1 = multiplicity of the knot at m_knot[span_index+m_order-1]. If (m0 + m1) &lt; degree, then the degree-(m0+m1) cvs will be added to the NURBS curve. If (m0+m1) &gt; degree, then (m0+m1)-degree cvs will be removed from the curve. See Also: <a class="el" href="class_o_n___nurbs_curve.html#ae026a89e71bfb274db385092452cfe8c">ON_NurbsCurve::RepairBadKnots()</a> <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve::RemoveShortSegments()</a> </p>
 
 </div>
 </div>
@@ -3570,7 +3570,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Looks for problems caused by knots that are close together or have mulitplicity &gt;= order. If bRepair is true, the problems are fixed. Does not change the domain. Parameters: knot_tolerance - [in] &gt;= 0 When in doubt, use zero. bRepair - [in] If true, then problems are repaired. Otherwise this function looks for problemsn that can be repaired, but does not modify the curve. Returns: True if bad knots were found and can be repaired. See Also: <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve::RemoveShortSegments</a> </p>
+<p>Description: Looks for problems caused by knots that are close together or have multiplicity &gt;= order. If bRepair is true, the problems are fixed. Does not change the domain. Parameters: knot_tolerance - [in] &gt;= 0 When in doubt, use zero. bRepair - [in] If true, then problems are repaired. Otherwise this function looks for problems that can be repaired, but does not modify the curve. Returns: True if bad knots were found and can be repaired. See Also: <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve::RemoveShortSegments</a> </p>
 
 </div>
 </div>
@@ -3654,7 +3654,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: virtual <a class="el" href="class_o_n___curve.html#a506b1c3a2ad743b87d5a4085fe3d0b1a">ON_Curve::Reverse</a> override. Reverse parameterizatrion by negating all knots and reversing the order of the control vertices. Remarks: Domain changes from [a,b] to [-b,-a] </p>
+<p>Description: virtual <a class="el" href="class_o_n___curve.html#a506b1c3a2ad743b87d5a4085fe3d0b1a">ON_Curve::Reverse</a> override. Reverse parameterization by negating all knots and reversing the order of the control vertices. Remarks: Domain changes from [a,b] to [-b,-a] </p>
 
 <p>Implements <a class="el" href="class_o_n___curve.html#a506b1c3a2ad743b87d5a4085fe3d0b1a">ON_Curve</a>.</p>
 
@@ -3998,7 +3998,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: virtual <a class="el" href="class_o_n___curve.html#ad162b90ba333e4f3dd5b13823e1b5f27">ON_Curve::SpanCount</a> override. Get number of nonempty smooth (c-infinity) spans in curve Returns: Number of nonempty smooth (c-infinity) spans. Remarks: A nonempty span is bracked by knots m_knot[i] &lt; m_knot[i+1] with m_order-2 &lt;= i &lt; m_cv_count-1. </p>
+<p>Description: virtual <a class="el" href="class_o_n___curve.html#ad162b90ba333e4f3dd5b13823e1b5f27">ON_Curve::SpanCount</a> override. Get number of nonempty smooth (c-infinity) spans in curve Returns: Number of nonempty smooth (c-infinity) spans. Remarks: A nonempty span is bracketed by knots m_knot[i] &lt; m_knot[i+1] with m_order-2 &lt;= i &lt; m_cv_count-1. </p>
 
 <p>Implements <a class="el" href="class_o_n___curve.html#ad162b90ba333e4f3dd5b13823e1b5f27">ON_Curve</a>.</p>
 
@@ -4035,7 +4035,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: span_index - [in] (0 &lt;= span_index &lt;= m_cv_count-m_order) min_length -[in] minimum length of a linear span tolerance -[in] distance tolerance to use when checking control points between the span ends Returns true if the span is a non-degenrate line. This means:</p><ul>
+<p>Parameters: span_index - [in] (0 &lt;= span_index &lt;= m_cv_count-m_order) min_length -[in] minimum length of a linear span tolerance -[in] distance tolerance to use when checking control points between the span ends Returns true if the span is a non-degenerate line. This means:</p><ul>
 <li>dimension = 2 or 3</li>
 <li>There are full multiplicity knots at each end of the span.</li>
 <li>The length of the the line segment from the span's initial control point to the span's final control point is &gt;= min_length.</li>
@@ -4347,7 +4347,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Unclamp end knots. <br  />
- Does not modify the curve location or parameterization, but typically modifies knots and control vertices near the ends. Parameters: end - [in] 0 = unclamp start, 1 = unclamp end, 2 = unclamp start and end Returns: true if successful Remarks: Degree 1 NURBS curves cannot be unclampled. See Also: SetUnclampedTagForExperts </p>
+ Does not modify the curve location or parameterization, but typically modifies knots and control vertices near the ends. Parameters: end - [in] 0 = unclamp start, 1 = unclamp end, 2 = unclamp start and end Returns: true if successful Remarks: Degree 1 NURBS curves cannot be unclamped. See Also: SetUnclampedTagForExperts </p>
 
 </div>
 </div>
@@ -4580,7 +4580,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

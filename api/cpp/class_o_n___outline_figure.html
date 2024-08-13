@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -504,7 +504,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Opennurbs searches the description saved in field 10 of the name table for the strings "Engraving - single stroke" / "Engraving - double stroke" / "Engraving" to identify fonts that are desgned for engraving (and which tend to render poorly when used to display text devices like screens, monitors, and printers). The SLF (single line fonts) are examples of fonts that have Engraving in field 10. Parameters: field_10_description - [in] Field 10 string from the font name table. Returns: If the description contains "single stroke", returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbaf117e40ecaad5c4193680d3a5f90f354">ON_OutlineFigure::Type::SingleStroke</a>. If the description contains "double stroke", returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbaf8da9479d79bd934017c8147b5a65c68">ON_OutlineFigure::Type::DoubleStroke</a>. Otherwise returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbac9f88e098f6fe4e4e112eeb05ccb9671">ON_OutlineFigure::Type::Unset</a>; </p>
+<p>Description: Opennurbs searches the description saved in field 10 of the name table for the strings "Engraving - single stroke" / "Engraving - double stroke" / "Engraving" to identify fonts that are designed for engraving (and which tend to render poorly when used to display text devices like screens, monitors, and printers). The SLF (single line fonts) are examples of fonts that have Engraving in field 10. Parameters: field_10_description - [in] Field 10 string from the font name table. Returns: If the description contains "single stroke", returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbaf117e40ecaad5c4193680d3a5f90f354">ON_OutlineFigure::Type::SingleStroke</a>. If the description contains "double stroke", returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbaf8da9479d79bd934017c8147b5a65c68">ON_OutlineFigure::Type::DoubleStroke</a>. Otherwise returns <a class="el" href="class_o_n___outline_figure.html#a1bccce4aa0a712c69ff86c7f9791dacbac9f88e098f6fe4e4e112eeb05ccb9671">ON_OutlineFigure::Type::Unset</a>; </p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Determines if this <a class="el" href="class_o_n___outline_figure.html">ON_OutlineFigure</a> is inside of outer_figure. Parameters: outer_figure - [in] When bPerformExtraChecking is false, outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> should be set to what you plan on using when rendering the glyph. The orientation of outer_figur can be either clockwise or counterclockwise and, in the context of the entire glyph, outer_figure can be an inner or outer boundary. For example, the registered trademark glyph (UNICODE U+00AE) is an example where four nested figures with alternating orientations are common. bPerformExtraChecking - [in] In general, when sorting glyph outlines as they come froma font file, set outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> to what will be used to render the glyph and pass false for bPerformExtraChecking. Details: In the case when bounding boxes and estimated areas and spot checks of winding numbers all indicate that this is inside of other_f, an additional time consuming intersection check is performed when this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> == other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a>. When this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> and other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> are opposited, the additional intersection check is skipped unless bPerformExtraChecking is true. Returns: True if it is very likely that this is not empty and is inside of other_f. False otherwise Remarks: </p>
+<p>Description: Determines if this <a class="el" href="class_o_n___outline_figure.html">ON_OutlineFigure</a> is inside of outer_figure. Parameters: outer_figure - [in] When bPerformExtraChecking is false, outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> should be set to what you plan on using when rendering the glyph. The orientation of outer_figure can be either clockwise or counterclockwise and, in the context of the entire glyph, outer_figure can be an inner or outer boundary. For example, the registered trademark glyph (UNICODE U+00AE) is an example where four nested figures with alternating orientations are common. bPerformExtraChecking - [in] In general, when sorting glyph outlines as they come froma font file, set outer_figure-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> to what will be used to render the glyph and pass false for bPerformExtraChecking. Details: In the case when bounding boxes and estimated areas and spot checks of winding numbers all indicate that this is inside of other_f, an additional time consuming intersection check is performed when this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> == other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a>. When this-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> and other_f-&gt;<a class="el" href="class_o_n___outline_figure.html#a8843b2b005c8d3f3166dfab238fec5fd">FigureOrientation()</a> are opposited, the additional intersection check is skipped unless bPerformExtraChecking is true. Returns: True if it is very likely that this is not empty and is inside of other_f. False otherwise Remarks: </p>
 
 </div>
 </div>
@@ -1020,7 +1020,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

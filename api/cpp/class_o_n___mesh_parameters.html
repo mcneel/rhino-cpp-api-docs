@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17eb84178bf5a65b1a9d3f32b687fe79"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a17eb84178bf5a65b1a9d3f32b687fe79">GridAspectRatio</a> () const</td></tr>
 <tr class="separator:a17eb84178bf5a65b1a9d3f32b687fe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6467481b174345801cdecddf6af62787"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a6467481b174345801cdecddf6af62787">GridMaxCount</a> () const</td></tr>
-<tr class="memdesc:a6467481b174345801cdecddf6af62787"><td class="mdescLeft">&#160;</td><td class="mdescRight">desired masimum number of quads in initial grid  <a href="class_o_n___mesh_parameters.html#a6467481b174345801cdecddf6af62787">More...</a><br /></td></tr>
+<tr class="memdesc:a6467481b174345801cdecddf6af62787"><td class="mdescLeft">&#160;</td><td class="mdescRight">desired maximum number of quads in initial grid  <a href="class_o_n___mesh_parameters.html#a6467481b174345801cdecddf6af62787">More...</a><br /></td></tr>
 <tr class="separator:a6467481b174345801cdecddf6af62787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a746e5a9510268becf624bce2e7b785ec"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a746e5a9510268becf624bce2e7b785ec">GridMinCount</a> () const</td></tr>
 <tr class="memdesc:a746e5a9510268becf624bce2e7b785ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum number of quads in initial grid  <a href="class_o_n___mesh_parameters.html#a746e5a9510268becf624bce2e7b785ec">More...</a><br /></td></tr>
@@ -339,7 +339,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae95d9be8f85767f2e49d67567b99633f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#ae95d9be8f85767f2e49d67567b99633f">QualityRenderMesh</a></td></tr>
 <tr class="separator:ae95d9be8f85767f2e49d67567b99633f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc79686ef49bf8f74fb5fdc589126e8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_parameters.html#a3bc79686ef49bf8f74fb5fdc589126e8">RhinoLegacyMesherId</a></td></tr>
-<tr class="memdesc:a3bc79686ef49bf8f74fb5fdc589126e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface meshing perameters  <a href="class_o_n___mesh_parameters.html#a3bc79686ef49bf8f74fb5fdc589126e8">More...</a><br /></td></tr>
+<tr class="memdesc:a3bc79686ef49bf8f74fb5fdc589126e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface meshing parameters  <a href="class_o_n___mesh_parameters.html#a3bc79686ef49bf8f74fb5fdc589126e8">More...</a><br /></td></tr>
 <tr class="separator:a3bc79686ef49bf8f74fb5fdc589126e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -636,7 +636,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If the object being meshed is closed, m_bClosedObjectPostProcess is true, m_bJaggedSeams = false, and the resultig mesh is not closed, then a post meshing process is applied to find and close gaps in the mesh. Typically the resulting mesh is not closed because the input object has a geometric flaw like loops in trimming curves. </p>
+<p>If the object being meshed is closed, m_bClosedObjectPostProcess is true, m_bJaggedSeams = false, and the resulting mesh is not closed, then a post meshing process is applied to find and close gaps in the mesh. Typically the resulting mesh is not closed because the input object has a geometric flaw like loops in trimming curves. </p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: This function creates <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> from a user interface "slider" like Rhino's simple mesh controls. Parameters: normalized_mesh_density - [in] A double between 0.0 and 1.0. 0.0 creates meshes with fewer faces than 1.0.</p>
-<p>Invalid input is treated as 0.5. Returns: A valid <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> with the specified subd display denstity. </p>
+<p>Invalid input is treated as 0.5. Returns: A valid <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> with the specified subd display density. </p>
 
 </div>
 </div>
@@ -856,7 +856,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a> value applies to mesh creation parameters that are on <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> and have <a class="el" href="class_o_n___mesh_parameters.html#ad891a35a5061fd1a03a683ece3f92006">CustomSettings()</a> = true. In this situation:</p>
 <p>If <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a> is true, then the use of these mesh creation parameters is enabled.</p>
-<p>If <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a> is false, then these mesh creation parameters should be gnored. </p>
+<p>If <a class="el" href="class_o_n___mesh_parameters.html#a3928e3ba3396a85fad9b7c4d488a6e2d">CustomSettingsEnabled()</a> is false, then these mesh creation parameters should be ignored. </p>
 
 </div>
 </div>
@@ -1160,7 +1160,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>desired masimum number of quads in initial grid </p>
+<p>desired maximum number of quads in initial grid </p>
 
 </div>
 </div>
@@ -2092,7 +2092,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>1: unpacked, unscaled, normalized each face has a normalized texture range [0,1]x[0,1]. The normalized coordinate is calculated using the entire surface domain. For meshes of trimmed surfaces when the active area is a small subset of the entire surface, there will be large regions of unused texture space in [0,1]x[0,1]. When the 3d region being meshed is far from being sqaure-ish, there will be a substantual amount of distortion mapping [0,1]x[0,1] texture space to the 3d mesh.</p>
+<p>1: unpacked, unscaled, normalized each face has a normalized texture range [0,1]x[0,1]. The normalized coordinate is calculated using the entire surface domain. For meshes of trimmed surfaces when the active area is a small subset of the entire surface, there will be large regions of unused texture space in [0,1]x[0,1]. When the 3d region being meshed is far from being square-ish, there will be a substantial amount of distortion mapping [0,1]x[0,1] texture space to the 3d mesh.</p>
 <p>2: packed, scaled, normalized (default) each face is assigned a texture range that is a subrectangle of [0,1]x[0,1]. The subrectangles are mutually disjoint and packed into into [0,1]x[0,1] in a way that minimizes distortion and maximizes the coverage of [0,1]x[0,1]. When the surface or surfaces being meshed are trimmed, this option takes into account only the region of the base surface the mesh covers and uses as much of [0,1]x[0,1] as possible. unsigned int <a class="el" href="class_o_n___mesh_parameters.html#a4dcd7efb5162093e8ddc654b8b463e71">TextureRange() const</a>; </p>
 
 </div>
@@ -2209,7 +2209,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the default analysis mesh. </p>
+<p>Description: Mesh creation parameters to create the default analysis mesh. </p>
 
 </div>
 </div>
@@ -2232,7 +2232,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the default render mesh. </p>
+<p>Description: Mesh creation parameters to create the default render mesh. </p>
 
 </div>
 </div>
@@ -2255,7 +2255,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the a render mesh when meshing speed is preferred over mesh quality. </p>
+<p>Description: Mesh creation parameters to create the a render mesh when meshing speed is preferred over mesh quality. </p>
 
 </div>
 </div>
@@ -2302,7 +2302,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Mesh creationg parameters to create the a render mesh when mesh quality is preferred over meshing speed. </p>
+<p>Description: Mesh creation parameters to create the a render mesh when mesh quality is preferred over meshing speed. </p>
 
 </div>
 </div>
@@ -2326,7 +2326,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>surface meshing perameters </p>
+<p>surface meshing parameters </p>
 <p>The Rhino legacy mesher is the mesher used in Rhino 1, 2, 3, 4, 5, 6. {F15F67AA-4AF9-4B25-A3B8-517CEDDAB134} </p>
 
 </div>
@@ -2334,7 +2334,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -83,347 +83,39 @@ Inheritance diagram for ON_SubDComponentPtrPairHashTable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec63e260c86c8e4046e158b7630fc323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#aec63e260c86c8e4046e158b7630fc323">ON_SubDComponentPtrPairHashTable</a> ()</td></tr>
-<tr class="separator:aec63e260c86c8e4046e158b7630fc323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addef780550b7ce4940b8ab89646b485b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#addef780550b7ce4940b8ab89646b485b">ON_SubDComponentPtrPairHashTable</a> (const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd)</td></tr>
-<tr class="memdesc:addef780550b7ce4940b8ab89646b485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a good choice of constructor when the hash table is used to find pairs of vertices and edges.  <a href="class_o_n___sub_d_component_ptr_pair_hash_table.html#addef780550b7ce4940b8ab89646b485b">More...</a><br /></td></tr>
-<tr class="separator:addef780550b7ce4940b8ab89646b485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6409e4665a94dd472ea0088ede89f87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#ae6409e4665a94dd472ea0088ede89f87">ON_SubDComponentPtrPairHashTable</a> (size_t pair_count_estimate)</td></tr>
-<tr class="memdesc:ae6409e4665a94dd472ea0088ede89f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a good choice of constructor when you have a good estimate of the number of pairs that will be in the hash table.  <a href="class_o_n___sub_d_component_ptr_pair_hash_table.html#ae6409e4665a94dd472ea0088ede89f87">More...</a><br /></td></tr>
-<tr class="separator:ae6409e4665a94dd472ea0088ede89f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710e4c03784289cd3019a9071f5cd5c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a710e4c03784289cd3019a9071f5cd5c8">~ON_SubDComponentPtrPairHashTable</a> ()=default</td></tr>
-<tr class="separator:a710e4c03784289cd3019a9071f5cd5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ba31d68ed7ffd094c660531272b458"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#ad5ba31d68ed7ffd094c660531272b458">AddComponentPair</a> (<a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> first_component, <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> second_component)</td></tr>
-<tr class="separator:ad5ba31d68ed7ffd094c660531272b458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed88cdabfe94ee17673338f365020c50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#aed88cdabfe94ee17673338f365020c50">AddEdgePair</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *first_e, const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *second_e)</td></tr>
-<tr class="separator:aed88cdabfe94ee17673338f365020c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25182f495c06decc68c0d2e6fc2aab32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a25182f495c06decc68c0d2e6fc2aab32">AddEdgePair</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *first_e, const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> second_eptr)</td></tr>
-<tr class="separator:a25182f495c06decc68c0d2e6fc2aab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74eae4778d590a158f571c8a760e5b89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a74eae4778d590a158f571c8a760e5b89">AddFacePair</a> (const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *first_f, const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *second_f)</td></tr>
-<tr class="separator:a74eae4778d590a158f571c8a760e5b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a245328264b304439994b57b2f7018868"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a245328264b304439994b57b2f7018868">AddVertexPair</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *first_v, const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *second_v)</td></tr>
-<tr class="separator:a245328264b304439994b57b2f7018868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe6cd94f50fb416c0c4f98effad04354"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#abe6cd94f50fb416c0c4f98effad04354">PairFromSecondComponentPtr</a> (<a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> second_component)</td></tr>
-<tr class="separator:abe6cd94f50fb416c0c4f98effad04354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb05bf2aff339ebcc0b2ca7e924824a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a5fb05bf2aff339ebcc0b2ca7e924824a">PairFromSecondEdge</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *second_e)</td></tr>
-<tr class="separator:a5fb05bf2aff339ebcc0b2ca7e924824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf9c28f640a466a9ce84706e9eacf8ea"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#acf9c28f640a466a9ce84706e9eacf8ea">PairFromSecondFace</a> (const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *second_f)</td></tr>
-<tr class="separator:acf9c28f640a466a9ce84706e9eacf8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f67350517b0405ec6f8d1656c83eee4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr_pair_hash_table.html#a6f67350517b0405ec6f8d1656c83eee4">PairFromSecondVertex</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *second_v)</td></tr>
-<tr class="separator:a6f67350517b0405ec6f8d1656c83eee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec63e260c86c8e4046e158b7630fc323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaec63e260c86c8e4046e158b7630fc323">ON_SubDComponentPtrPairHashTable</a> ()</td></tr>
+<tr class="separator:gaec63e260c86c8e4046e158b7630fc323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddef780550b7ce4940b8ab89646b485b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaddef780550b7ce4940b8ab89646b485b">ON_SubDComponentPtrPairHashTable</a> (const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd)</td></tr>
+<tr class="memdesc:gaddef780550b7ce4940b8ab89646b485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a good choice of constructor when the hash table is used to find pairs of vertices and edges.  <a href="group__open_n_u_r_b_s.html#gaddef780550b7ce4940b8ab89646b485b">More...</a><br /></td></tr>
+<tr class="separator:gaddef780550b7ce4940b8ab89646b485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6409e4665a94dd472ea0088ede89f87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gae6409e4665a94dd472ea0088ede89f87">ON_SubDComponentPtrPairHashTable</a> (size_t pair_count_estimate)</td></tr>
+<tr class="memdesc:gae6409e4665a94dd472ea0088ede89f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a good choice of constructor when you have a good estimate of the number of pairs that will be in the hash table.  <a href="group__open_n_u_r_b_s.html#gae6409e4665a94dd472ea0088ede89f87">More...</a><br /></td></tr>
+<tr class="separator:gae6409e4665a94dd472ea0088ede89f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga710e4c03784289cd3019a9071f5cd5c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga710e4c03784289cd3019a9071f5cd5c8">~ON_SubDComponentPtrPairHashTable</a> ()=default</td></tr>
+<tr class="separator:ga710e4c03784289cd3019a9071f5cd5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5ba31d68ed7ffd094c660531272b458"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gad5ba31d68ed7ffd094c660531272b458">AddComponentPair</a> (<a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> first_component, <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> second_component)</td></tr>
+<tr class="separator:gad5ba31d68ed7ffd094c660531272b458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed88cdabfe94ee17673338f365020c50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaed88cdabfe94ee17673338f365020c50">AddEdgePair</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *first_e, const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *second_e)</td></tr>
+<tr class="separator:gaed88cdabfe94ee17673338f365020c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25182f495c06decc68c0d2e6fc2aab32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga25182f495c06decc68c0d2e6fc2aab32">AddEdgePair</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *first_e, const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> second_eptr)</td></tr>
+<tr class="separator:ga25182f495c06decc68c0d2e6fc2aab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74eae4778d590a158f571c8a760e5b89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga74eae4778d590a158f571c8a760e5b89">AddFacePair</a> (const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *first_f, const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *second_f)</td></tr>
+<tr class="separator:ga74eae4778d590a158f571c8a760e5b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga245328264b304439994b57b2f7018868"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga245328264b304439994b57b2f7018868">AddVertexPair</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *first_v, const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *second_v)</td></tr>
+<tr class="separator:ga245328264b304439994b57b2f7018868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe6cd94f50fb416c0c4f98effad04354"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gabe6cd94f50fb416c0c4f98effad04354">PairFromSecondComponentPtr</a> (<a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> second_component)</td></tr>
+<tr class="separator:gabe6cd94f50fb416c0c4f98effad04354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fb05bf2aff339ebcc0b2ca7e924824a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga5fb05bf2aff339ebcc0b2ca7e924824a">PairFromSecondEdge</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *second_e)</td></tr>
+<tr class="separator:ga5fb05bf2aff339ebcc0b2ca7e924824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf9c28f640a466a9ce84706e9eacf8ea"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gacf9c28f640a466a9ce84706e9eacf8ea">PairFromSecondFace</a> (const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *second_f)</td></tr>
+<tr class="separator:gacf9c28f640a466a9ce84706e9eacf8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f67350517b0405ec6f8d1656c83eee4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga6f67350517b0405ec6f8d1656c83eee4">PairFromSecondVertex</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *second_v)</td></tr>
+<tr class="separator:ga6f67350517b0405ec6f8d1656c83eee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aec63e260c86c8e4046e158b7630fc323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec63e260c86c8e4046e158b7630fc323">&#9670;&nbsp;</a></span>ON_SubDComponentPtrPairHashTable() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_SubDComponentPtrPairHashTable::ON_SubDComponentPtrPairHashTable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6409e4665a94dd472ea0088ede89f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6409e4665a94dd472ea0088ede89f87">&#9670;&nbsp;</a></span>ON_SubDComponentPtrPairHashTable() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_SubDComponentPtrPairHashTable::ON_SubDComponentPtrPairHashTable </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>pair_count_estimate</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This is a good choice of constructor when you have a good estimate of the number of pairs that will be in the hash table. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pair_count_estimate</td><td>A good estimate of the number of pairs that will be in this hash table. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="addef780550b7ce4940b8ab89646b485b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addef780550b7ce4940b8ab89646b485b">&#9670;&nbsp;</a></span>ON_SubDComponentPtrPairHashTable() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_SubDComponentPtrPairHashTable::ON_SubDComponentPtrPairHashTable </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;&#160;</td>
-          <td class="paramname"><em>subd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This is a good choice of constructor when the hash table is used to find pairs of vertices and edges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subd</td><td>subd.VertexCount() + subd.EdgeCount() is used as the pair count estimate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a710e4c03784289cd3019a9071f5cd5c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a710e4c03784289cd3019a9071f5cd5c8">&#9670;&nbsp;</a></span>~ON_SubDComponentPtrPairHashTable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ON_SubDComponentPtrPairHashTable::~ON_SubDComponentPtrPairHashTable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad5ba31d68ed7ffd094c660531272b458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ba31d68ed7ffd094c660531272b458">&#9670;&nbsp;</a></span>AddComponentPair()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDComponentPtrPairHashTable::AddComponentPair </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>&#160;</td>
-          <td class="paramname"><em>first_component</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>&#160;</td>
-          <td class="paramname"><em>second_component</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed88cdabfe94ee17673338f365020c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed88cdabfe94ee17673338f365020c50">&#9670;&nbsp;</a></span>AddEdgePair() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDComponentPtrPairHashTable::AddEdgePair </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
-          <td class="paramname"><em>first_e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
-          <td class="paramname"><em>second_e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a25182f495c06decc68c0d2e6fc2aab32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25182f495c06decc68c0d2e6fc2aab32">&#9670;&nbsp;</a></span>AddEdgePair() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDComponentPtrPairHashTable::AddEdgePair </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
-          <td class="paramname"><em>first_e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td>
-          <td class="paramname"><em>second_eptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a74eae4778d590a158f571c8a760e5b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74eae4778d590a158f571c8a760e5b89">&#9670;&nbsp;</a></span>AddFacePair()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDComponentPtrPairHashTable::AddFacePair </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
-          <td class="paramname"><em>first_f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
-          <td class="paramname"><em>second_f</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a245328264b304439994b57b2f7018868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a245328264b304439994b57b2f7018868">&#9670;&nbsp;</a></span>AddVertexPair()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDComponentPtrPairHashTable::AddVertexPair </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
-          <td class="paramname"><em>first_v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
-          <td class="paramname"><em>second_v</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe6cd94f50fb416c0c4f98effad04354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe6cd94f50fb416c0c4f98effad04354">&#9670;&nbsp;</a></span>PairFromSecondComponentPtr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a> ON_SubDComponentPtrPairHashTable::PairFromSecondComponentPtr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>&#160;</td>
-          <td class="paramname"><em>second_component</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fb05bf2aff339ebcc0b2ca7e924824a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb05bf2aff339ebcc0b2ca7e924824a">&#9670;&nbsp;</a></span>PairFromSecondEdge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a> ON_SubDComponentPtrPairHashTable::PairFromSecondEdge </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *&#160;</td>
-          <td class="paramname"><em>second_e</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acf9c28f640a466a9ce84706e9eacf8ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf9c28f640a466a9ce84706e9eacf8ea">&#9670;&nbsp;</a></span>PairFromSecondFace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a> ON_SubDComponentPtrPairHashTable::PairFromSecondFace </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
-          <td class="paramname"><em>second_f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f67350517b0405ec6f8d1656c83eee4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f67350517b0405ec6f8d1656c83eee4">&#9670;&nbsp;</a></span>PairFromSecondVertex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_o_n___sub_d_component_ptr_pair.html">ON_SubDComponentPtrPair</a> ON_SubDComponentPtrPairHashTable::PairFromSecondVertex </td>
-          <td>(</td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
-          <td class="paramname"><em>second_v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

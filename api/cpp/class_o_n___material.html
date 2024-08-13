@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1922,7 +1922,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set this material's RDK material id. Parameters: rdk_material_id - [in] RDK material id value. Remarks: The RDK material id identifies a material definition managed by the RDK (rendering development kit). Multiple materials in a Rhino or opennurbs model can reference the same RDK material. </p>
+<p>Description: Set this material's RDK material id. Parameters: rdk_material_id - [in] RDK material id value. Remarks: The RDK material id identifies a material definition managed by the RDK (rendering development kit). Multiple materials in a Rhino or opennurbs model can reference the same RDK material. When setting this value, it is necessary to also set this material's plug-in id to ON_UniversalRenderEngineId. See <a class="el" href="class_o_n___material.html#a439fd60ba3e817d41b79fb7b0b1407fb">SetMaterialPlugInId()</a>. </p>
 
 </div>
 </div>
@@ -2303,7 +2303,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>m_index_of_refraction: Default is 1.0. Physically, the index of refraction is &gt;= 1.0 and is the value (speed of light in vacum)/(speed of light in material). Some rendering algorithms set m_index_of_refraction to zero or values &lt; 1.0 to generate desirable effects. </p>
+<p>m_index_of_refraction: Default is 1.0. Physically, the index of refraction is &gt;= 1.0 and is the value (speed of light in vacuum)/(speed of light in material). Some rendering algorithms set m_index_of_refraction to zero or values &lt; 1.0 to generate desirable effects. </p>
 
 </div>
 </div>
@@ -2319,7 +2319,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The m_material_channel[] array is used to provide per face rendering material support for <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> and <a class="el" href="class_o_n___brep.html">ON_Brep</a> objects. <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> objects to not support per face render materials. The application specifies a base <a class="el" href="class_o_n___material.html">ON_Material</a> for rendering the subd or brep and a way to find materials from ON_UUID values. <a class="el" href="class_o_n___model_component.html#a7e4decb826ac79c583526fbc83a96946">ON_Material.Id()</a> returns the id for any given material.</p>
-<p><a class="el" href="class_o_n___brep_face.html#aa3cdb0886a504e11c0defb6ec2566de2">ON_BrepFace::MaterialChannelIndex()</a> and <a class="el" href="class_o_n___sub_d_face.html#ad34ab29e7eca1175d388d745204f78cd">ON_SubDFace::MaterialChannelIndex()</a> specify a material channel index. If this value is 0, then the base material is used to render the face. Otherwise the material with id = base.MaterialChannelIdFromIndex( face.MaterialChannelIndex() ) is used to render the face. </p>
+<p><a class="el" href="class_o_n___brep_face.html#aa3cdb0886a504e11c0defb6ec2566de2">ON_BrepFace::MaterialChannelIndex()</a> and <a class="el" href="group__open_n_u_r_b_s.html#gad34ab29e7eca1175d388d745204f78cd">ON_SubDFace::MaterialChannelIndex()</a> specify a material channel index. If this value is 0, then the base material is used to render the face. Otherwise the material with id = base.MaterialChannelIdFromIndex( face.MaterialChannelIndex() ) is used to render the face. </p>
 
 </div>
 </div>
@@ -2514,7 +2514,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

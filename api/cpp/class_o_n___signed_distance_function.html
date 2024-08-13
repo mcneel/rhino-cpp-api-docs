@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_o_n___signed_distance_function-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ON_SignedDistanceFunction Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__open_n_u_r_b_s.html">OpenNURBS</a></div></div>  </div>
@@ -71,18 +72,62 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;opennurbs_plus_implicitfn.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ON_SignedDistanceFunction:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_o_n___signed_distance_function.png" usemap="#ON_5FSignedDistanceFunction_map" alt=""/>
+  <map id="ON_5FSignedDistanceFunction_map" name="ON_5FSignedDistanceFunction_map">
+<area href="class_o_n___offset_curve_s_d_f.html" alt="ON_OffsetCurveSDF" shape="rect" coords="0,56,175,80"/>
+<area href="class_o_n___plane_s_d_f.html" alt="ON_PlaneSDF" shape="rect" coords="185,56,360,80"/>
+<area href="class_o_n___sphere_s_d_f.html" alt="ON_SphereSDF" shape="rect" coords="370,56,545,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab55c5249a9af1d9fb20fbcae0954d1f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___signed_distance_function.html#ab55c5249a9af1d9fb20fbcae0954d1f0">ON_SignedDistanceFunction</a> ()</td></tr>
+<tr class="separator:ab55c5249a9af1d9fb20fbcae0954d1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de836675c78a79f2277e64aa539f2aa"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___signed_distance_function.html#a8de836675c78a79f2277e64aa539f2aa">Evaluate</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal) const =0</td></tr>
 <tr class="separator:a8de836675c78a79f2277e64aa539f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3f5594f8ffdd57de2f094babf0517364"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___signed_distance_function.html#a3f5594f8ffdd57de2f094babf0517364">nEval</a></td></tr>
+<tr class="separator:a3f5594f8ffdd57de2f094babf0517364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) 1993-2022 Robert McNeel &amp; Associates. All rights reserved. OpenNURBS, Rhinoceros, and Rhino3D are registered trademarks of Robert McNeel &amp; Associates.</p>
 <p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
 <p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. An abstract base class for a signed distance function (SDF).</p>
 <p>The SDF must be a non-manifold function that divides R3 into closed (possibly at infinity) regions of negative distance and positive distance, thereby defining a set of implicit boundaries where the SDF is equal to zero. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab55c5249a9af1d9fb20fbcae0954d1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55c5249a9af1d9fb20fbcae0954d1f0">&#9670;&nbsp;</a></span>ON_SignedDistanceFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ON_SignedDistanceFunction::ON_SignedDistanceFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8de836675c78a79f2277e64aa539f2aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8de836675c78a79f2277e64aa539f2aa">&#9670;&nbsp;</a></span>Evaluate()</h2>
 
@@ -116,14 +161,35 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Evaluate the signed distance function Parameters: p [in] - the point to evaluate the SDF at normal [out] - normal at the closest point on the SDF such that closestPt = pt - dist*normal/normal.Length() Returns: the distance between the closest point and the input point. </p>
+<p>Evaluate the signed distance function Parameters: p [in] - the point to evaluate the SDF at normal [out] - normal at the closest point on the SDF such that closestPt = pt - dist*normal/normal.Length() Returns: the distance between the closest point and the input point. Remarks:</p><ol type="1">
+<li>The returned distance can be ON_UNSET_VALUE when the SDF is unable to evaluate the distance</li>
+<li>The returned normal is not unitized and can have (almost) zero length.</li>
+</ol>
+<p>You should account for both cases when using the SDF. </p>
+
+<p>Implemented in <a class="el" href="class_o_n___offset_curve_s_d_f.html#a64e94da0521dae5cb7a9e7ac1a06595c">ON_OffsetCurveSDF</a>, <a class="el" href="class_o_n___sphere_s_d_f.html#a21f2b708ba89400a88089d96884c732f">ON_SphereSDF</a>, and <a class="el" href="class_o_n___plane_s_d_f.html#a704f03fae1f5ca8b466745b9c23e0d69">ON_PlaneSDF</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f5594f8ffdd57de2f094babf0517364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5594f8ffdd57de2f094babf0517364">&#9670;&nbsp;</a></span>nEval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_SignedDistanceFunction::nEval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

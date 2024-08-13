@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1789,10 +1789,10 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa094e2509a105cf138ce69f51788e6c80"></a>DimTextAngleStyle&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaad2011067981636007282ddc5f05e4820"></a>DimRadialTextAngleStyle&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa1493055f85f233afa0ecb83ad4e77af6"></a>TextUnderlined&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa5b2bfded6c127a92e2830b66b50f03c5"></a>DimensionLengthDisplay&#160;</td><td class="fielddoc"><p>Dimension length display. See <a class="el" href="class_o_n___dim_style.html#ad180a7ff14931b99e74f289316d699aa" title="Dimension length units and format /summary&gt;">ON_DimStyle::DimensionLengthDisplay()</a> for a descpription of this parameter. </p>
+<tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa5b2bfded6c127a92e2830b66b50f03c5"></a>DimensionLengthDisplay&#160;</td><td class="fielddoc"><p>Dimension length display. See <a class="el" href="class_o_n___dim_style.html#ad180a7ff14931b99e74f289316d699aa" title="Dimension length units and format /summary&gt;">ON_DimStyle::DimensionLengthDisplay()</a> for a description of this parameter. </p>
 <p>OBSOLETE_DimensionUnitSystem_ = 107, OBSOLETE_AlternateDimensionUnitSystem_ = 108,</p>
 </td></tr>
-<tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa50f72fcbc0b4c459a87f51d10753053a"></a>AlternateDimensionLengthDisplay&#160;</td><td class="fielddoc"><p>Alternate dimension length display. See <a class="el" href="class_o_n___dim_style.html#a779eb23cc2d65d77bfbeb9025e90f05b" title="Set dimension length units and format /summary&gt;">ON_DimStyle::AlternateDimensionLengthDisplay()</a> for a descpription of this parameter. </p>
+<tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa50f72fcbc0b4c459a87f51d10753053a"></a>AlternateDimensionLengthDisplay&#160;</td><td class="fielddoc"><p>Alternate dimension length display. See <a class="el" href="class_o_n___dim_style.html#a779eb23cc2d65d77bfbeb9025e90f05b" title="Set dimension length units and format /summary&gt;">ON_DimStyle::AlternateDimensionLengthDisplay()</a> for a description of this parameter. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a21c2db7d069250b9932240ca61d65feaa200d58e0f9b8b50575762023f102b644"></a>ForceDimLine&#160;</td><td class="fielddoc"><p>Force dimension line to draw when text is moved outside </p>
 </td></tr>
@@ -7459,7 +7459,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: unicode_code_point - [in] Returns: The advande for a single code point glyph in the same units as <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a> using the current settings for <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a> and <a class="el" href="class_o_n___dim_style.html#a4e4b5345e0749a96bdfb4a1f57386c25">Font()</a>. Remarks: When sequences of code points are rendered, using the per glyph advance does not create the best looking text. Text rendering tools like DirectWrite that look at the entire string adjust advance based on the locale, neighboring glyphs, and other contextual information. </p>
+<p>Parameters: unicode_code_point - [in] Returns: The advance for a single code point glyph in the same units as <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a> using the current settings for <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a> and <a class="el" href="class_o_n___dim_style.html#a4e4b5345e0749a96bdfb4a1f57386c25">Font()</a>. Remarks: When sequences of code points are rendered, using the per glyph advance does not create the best looking text. Text rendering tools like DirectWrite that look at the entire string adjust advance based on the locale, neighboring glyphs, and other contextual information. </p>
 
 </div>
 </div>
@@ -8030,7 +8030,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>NOTE WELL: A dimstyle unit system was added in V6, but has never been fully used. The idea was this would make it easier to figure out what text height/ arrow size, ... actually meant. Especially in situations where model space and page space have different unit systems, and in more complex cases like text in instance definitions and inserting annotation from models with mismatched unit systems. It is used internally to get some scales properly set and use in limited merging contexts. </p>
 <p>From a user's perspective, in Rhino 6 and Rhino 7 <a class="el" href="class_o_n___dim_style.html">ON_DimStyle</a> lengths like <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a>, <a class="el" href="class_o_n___dim_style.html#a5377368654098b48b7e2b7314b1d3e33" title="Arrow size.">ArrowSize()</a>, ... are with respect to the context the annotation resides in. For example, if <a class="el" href="class_o_n___dim_style.html#a6ad10c10357cd6a6165e9bad31a2e449" title="Height of dimension text.">TextHeight()</a> = 3.5, model units = meters, page units = millimters, and <a class="el" href="class_o_n___dim_style.html#a3b6f45584afbdabb2b40a0ba06e8c201">DimScale()</a> = 1, then text created in model space will be 3.5 meters high and text created in page space will be 3.5 millimeters high.</p>
-<p>Ideally, <a class="el" href="class_o_n___dim_style.html#ac655e611ecab628c54757a0656f8ff15" title="NOTE WELL: A dimstyle unit system was added in V6, but has never been fully used. The idea was this w...">ON_DimStyle::UnitSystem()</a> would specify the text height units and <a class="el" href="class_o_n___dim_style.html#a3b6f45584afbdabb2b40a0ba06e8c201">ON_DimStyle::DimScale()</a> cound be adjusted as model space extents require. Text in instance definitions would have a well defined height and references to those instance definitions would display predictably in both model space and page space. /summary&gt; </p>
+<p>Ideally, <a class="el" href="class_o_n___dim_style.html#ac655e611ecab628c54757a0656f8ff15" title="NOTE WELL: A dimstyle unit system was added in V6, but has never been fully used. The idea was this w...">ON_DimStyle::UnitSystem()</a> would specify the text height units and <a class="el" href="class_o_n___dim_style.html#a3b6f45584afbdabb2b40a0ba06e8c201">ON_DimStyle::DimScale()</a> could be adjusted as model space extents require. Text in instance definitions would have a well defined height and references to those instance definitions would display predictably in both model space and page space. /summary&gt; </p>
 
 </div>
 </div>
@@ -8765,7 +8765,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

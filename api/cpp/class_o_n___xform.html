@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa540bf6395175224a7ecb7b93b6e1a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a7206c7076b1ed6d73810274e0d00b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#ab7a7206c7076b1ed6d73810274e0d00b">GetSurfaceNormalXform</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;N_xform) const</td></tr>
 <tr class="separator:ab7a7206c7076b1ed6d73810274e0d00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c330d210f3115297051a198e9882643"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a8c330d210f3115297051a198e9882643">GetSurfaceNormalXformKeepLengthAndOrientation</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;N_xform) const</td></tr>
+<tr class="separator:a8c330d210f3115297051a198e9882643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5f7acf17c5f65806dada1d58e746acd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#af5f7acf17c5f65806dada1d58e746acd">GetYawPitchRoll</a> (double &amp;yaw, double &amp;pitch, double &amp;roll) const</td></tr>
 <tr class="separator:af5f7acf17c5f65806dada1d58e746acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332903a71f0eb98aacaf2798e0d309aa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___xform.html#a332903a71f0eb98aacaf2798e0d309aa">Hash</a> () const</td></tr>
@@ -753,7 +755,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Replace last row with 0 0 0 1 discarding any perspecive part of this transform </p>
+<p>Description: Replace last row with 0 0 0 1 discarding any perspective part of this transform </p>
 
 </div>
 </div>
@@ -1183,7 +1185,7 @@ Static Public Attributes</h2></td></tr>
 <p>Parameters: count - [in] number of 4d points stride - [in] (&gt;=4) points - [in] 4d clipping coordinate points (array of stride*count doubles) bTestZ - [in] (default=true) if false, do not test "z" coordinate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bTestZ</td><td>bTeztZ </td></tr>
+    <tr><td class="paramname">bTestZ</td><td>bTestZ </td></tr>
   </table>
   </dd>
 </dl>
@@ -1545,7 +1547,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: A Symmetric linear transformation can be decomposed A = Q * Diag * Q^T where Diag is a diagonal transformation. Diag[i][i] is an eigenvalue of A and the i-th coulmn of Q is a corresponding unit length eigenvector. Parameters: This transformation must be <a class="el" href="group__open_n_u_r_b_s.html#gga6940cf29f871aaf7049d55eaa88c5062a32a843da6ea40ab3b17a3421ccdf671b" title="summary&gt;Radial (or spherical) gradient using a center point and a radius">Linear()</a> and Symmetric, that is *this==<a class="el" href="class_o_n___xform.html#aa7ef93e4f93619a4bf693f940f03767e" title="matrix operations">Transpose()</a>. Q -[out] is set to an orthonormal matrix of eigenvectors when true is returned. diagonal -[out] is set to a vector of eigenvalues when true is returned. Details: If success then *this== Q*DiagonalTransformation(diagonal) * QT, where QT == Q.Transpose(). If L.IsLinear() and LT==L.Transpose() then LT*L is symmetric and is a common source of symmetric transformations. Return: true if success. </p>
+<p>Description: A Symmetric linear transformation can be decomposed A = Q * Diag * Q^T where Diag is a diagonal transformation. Diag[i][i] is an eigenvalue of A and the i-th column of Q is a corresponding unit length eigenvector. Parameters: This transformation must be <a class="el" href="group__open_n_u_r_b_s.html#gga6940cf29f871aaf7049d55eaa88c5062a32a843da6ea40ab3b17a3421ccdf671b" title="summary&gt;Radial (or spherical) gradient using a center point and a radius">Linear()</a> and Symmetric, that is *this==<a class="el" href="class_o_n___xform.html#aa7ef93e4f93619a4bf693f940f03767e" title="matrix operations">Transpose()</a>. Q -[out] is set to an orthonormal matrix of eigenvectors when true is returned. diagonal -[out] is set to a vector of eigenvalues when true is returned. Details: If success then *this== Q*DiagonalTransformation(diagonal) * QT, where QT == Q.Transpose(). If L.IsLinear() and LT==L.Transpose() then LT*L is symmetric and is a common source of symmetric transformations. Return: true if success. </p>
 
 </div>
 </div>
@@ -1627,7 +1629,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000113">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(d); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(d); </dd></dl>
 
 </div>
 </div>
@@ -1858,7 +1860,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If a texture mapping is applied to an object, the object is subsequently transformed by T, and the texture mapping needs to be recalculated, then two transforms are required to recalcalculate the texture mapping. Parameters: P_xform - [out] Transform to apply to points before applying the texture mapping transformation. N_xform - [out] Transform to apply to surface normals before applying the texture mapping transformation. Returns: The determinant of the "this" transformation. If non-zero, "this" is invertable and P_xform and N_xform were calculated. False if "this" is not invertable, in which case the returned P_xform and N_xform are the identity. </p>
+<p>Description: If a texture mapping is applied to an object, the object is subsequently transformed by T, and the texture mapping needs to be recalculated, then two transforms are required to recalculate the texture mapping. Parameters: P_xform - [out] Transform to apply to points before applying the texture mapping transformation. N_xform - [out] Transform to apply to surface normals before applying the texture mapping transformation. Returns: The determinant of the "this" transformation. If non-zero, "this" is invertible and P_xform and N_xform were calculated. False if "this" is not invertible, in which case the returned P_xform and N_xform are the identity. </p>
 
 </div>
 </div>
@@ -1897,7 +1899,27 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: When transforming 3d point and surface or mesh normals two different transforms must be used. If P_xform transforms the point, then the inverse transpose of P_xform must be used to transform normal vectors. Parameters: N_xform - [out] Returns: The determinant of the transformation. If non-zero, "this" is invertable and N_xform can be calculated. False if "this" is not invertable, in which case the returned N_xform = this with the right hand column and bottom row zeroed out. </p>
+<p>Description: When transforming 3d point and surface or mesh normals two different transforms must be used. If P_xform transforms the point, then the inverse transpose of P_xform must be used to transform normal vectors. Parameters: N_xform - [out] Returns: The determinant of the transformation. If non-zero, "this" is invertible and N_xform can be calculated. False if "this" is not invertible, in which case the returned N_xform = this with the right hand column and bottom row zeroed out. </p>
+
+</div>
+</div>
+<a id="a8c330d210f3115297051a198e9882643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c330d210f3115297051a198e9882643">&#9670;&nbsp;</a></span>GetSurfaceNormalXformKeepLengthAndOrientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Xform::GetSurfaceNormalXformKeepLengthAndOrientation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>N_xform</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: When transforming 3d point and surface or mesh normals two different transforms must be used. If P_xform transforms the point, then N_xform, the transformation that transforms unit-length and oriented normals of the face to unit-length and oriented normals of the transformed face is:</p>
+<p>N_xform = (IsOrientationPreserving() &gt;= 0 ? 1 : -1) * pow(<a class="el" href="class_o_n___xform.html#a77da181ae8a58eb9d8df01fb529973f0" title="If you need a slow and accurate determinant, this is the function to call. If you need a fast sign ch...">Determinant()</a>, -1/3) * Transpose(Inverse(P_xform)) Parameters: N_xform - [out] Returns: The determinant of the transformation. If non-zero, "this" is invertible and N_xform can be calculated. False if "this" is not invertible, in which case the returned N_xform = this with the right hand column and bottom row zeroed out. </p>
 
 </div>
 </div>
@@ -1970,7 +1992,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>standard transformations </p>
-<p>diagonal is (1,1,1,1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated:</a></b></dt><dd>Use xform = <a class="el" href="class_o_n___xform.html#a4b990ccd63d5ffb4606d93a76361aba0" title="ON_Xform IdentityTransformation diagonal = (1,1,1,1)">ON_Xform::IdentityTransformation</a>; </dd></dl>
+<p>diagonal is (1,1,1,1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000109">Deprecated:</a></b></dt><dd>Use xform = <a class="el" href="class_o_n___xform.html#a4b990ccd63d5ffb4606d93a76361aba0" title="ON_Xform IdentityTransformation diagonal = (1,1,1,1)">ON_Xform::IdentityTransformation</a>; </dd></dl>
 
 </div>
 </div>
@@ -2155,7 +2177,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: NOTE: A better name for this fuction would be IsIsometry().</p>
+<p>Description: NOTE: A better name for this function would be IsIsometry().</p>
 <p>An "isometry" transformation is an affine transformation that preserves distances. Isometries include transformation like reflections that reverse orientation.</p>
 <p>A "rigid" transformation is an isometry that preserves orientation and can be broken into a proper rotation and a translation. <br  />
  Returns: +1: This transformation is an orientation preserving isometry transformation ("rigid and determinant = 1). -1: This transformation is an orientation reversing isometry (determinant = -1). 0 : This transformation is not an orthogonal transformation. </p>
@@ -2195,7 +2217,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: A similarity transformation can be broken into a sequence of a dialation, translation, rotation, and a reflection. Parameters: this - must be <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a>. Translation - [out] Translation vector dilation - [out] dialation, (dilation &lt;0 iff this is an orientation reversing similarity ) Rotation - [out] a proper rotation transformation ie. R*Transpose(R)=I and det(R)=1 Details: If X.DecomposeSimilarity(T, d, R, tol) !=0 then X ~ TranslationTransformation(T)*DiagonalTransformation(d)*R note when d&gt;0 the transformation is orientation preserving. Note: If dilation&lt;0 then DiagonalTransformation( dilation) is actually a reflection combined with a "true" dialation, i.e. DiagonalTransformation( dilation) = DiagonalTransformation(-1) * DiagonalTransformation( |diagonal| ) Returns: +1: This transformation is an orientation preserving similarity. -1: This transformation is an orientation reversing similarity. 0: This transformation is not a similarity. </p>
+<p>Description: A similarity transformation can be broken into a sequence of a dilation, translation, rotation, and a reflection. Parameters: this - must be <a class="el" href="class_o_n___xform.html#af20ed46002a65036de0e8c7ea108e317">IsAffine()</a>. Translation - [out] Translation vector dilation - [out] dilation, (dilation &lt;0 iff this is an orientation reversing similarity ) Rotation - [out] a proper rotation transformation ie. R*Transpose(R)=I and det(R)=1 Details: If X.DecomposeSimilarity(T, d, R, tol) !=0 then X ~ TranslationTransformation(T)*DiagonalTransformation(d)*R note when d&gt;0 the transformation is orientation preserving. Note: If dilation&lt;0 then DiagonalTransformation(dilation) is actually a reflection combined with a "true" dilation, i.e. DiagonalTransformation(dilation) = DiagonalTransformation(-1) * DiagonalTransformation( |diagonal| ) Returns: +1: This transformation is an orientation preserving similarity. -1: This transformation is an orientation reversing similarity. 0: This transformation is not a similarity. </p>
 
 </div>
 </div>
@@ -2720,8 +2742,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Force the linear part of this transformation to be a rotation (or a rotation with reflection). This is probably best to perform minute tweeks. <br  />
- Use DecomposeRigid(T,R) to find the nearest rotation </p>
+<p>Description: Force the linear part of this transformation to be a rotation (or a rotation with reflection). This is probably best to perform minute tweaks. Use DecomposeRigid(T,R) to find the nearest rotation </p>
 
 </div>
 </div>
@@ -3197,7 +3218,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with the origin as the fixed point. Parameters: fixed_point - [in] scale_vector - [in] Remarks: The diagonal is (scale_vector.x, scale_vector.y, scale_vector.z, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000115">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(scale_vector); </dd></dl>
+<p>Description: Create non-uniform scale transformation with the origin as the fixed point. Parameters: fixed_point - [in] scale_vector - [in] Remarks: The diagonal is (scale_vector.x, scale_vector.y, scale_vector.z, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(scale_vector); </dd></dl>
 
 </div>
 </div>
@@ -3238,7 +3259,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with a specified fixed point. Parameters: plane - [in] plane.origin is the fixed point x_scale_factor - [in] plane.xaxis scale factor y_scale_factor - [in] plane.yaxis scale factor z_scale_factor - [in] plane.zaxis scale factor </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000117">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor) </dd></dl>
+<p>Description: Create non-uniform scale transformation with a specified fixed point. Parameters: plane - [in] plane.origin is the fixed point x_scale_factor - [in] plane.xaxis scale factor y_scale_factor - [in] plane.yaxis scale factor z_scale_factor - [in] plane.zaxis scale factor </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000114">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(plane,x_scale_factor,y_scale_factor,z_scale_factor) </dd></dl>
 
 </div>
 </div>
@@ -3273,7 +3294,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create non-uniform scale transformation with the origin as a fixed point. Parameters: fixed_point - [in] x_scale_factor - [in] y_scale_factor - [in] z_scale_factor - [in] Remarks: The diagonal is (x_scale_factor, y_scale_factor, z_scale_factor, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000114">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(x_scale_factor,z_scale_factor,z_scale_factor); </dd></dl>
+<p>Description: Create non-uniform scale transformation with the origin as a fixed point. Parameters: fixed_point - [in] x_scale_factor - [in] y_scale_factor - [in] z_scale_factor - [in] Remarks: The diagonal is (x_scale_factor, y_scale_factor, z_scale_factor, 1) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::DiagonalTransformation(x_scale_factor,z_scale_factor,z_scale_factor); </dd></dl>
 
 </div>
 </div>
@@ -3302,7 +3323,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create uniform scale transformation with a specified fixed point. Parameters: fixed_point - [in] scale_factor - [in] </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(fixed_point,scale_factor) </dd></dl>
+<p>Description: Create uniform scale transformation with a specified fixed point. Parameters: fixed_point - [in] scale_factor - [in] </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000113">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ScaleTransformation(fixed_point,scale_factor) </dd></dl>
 
 </div>
 </div>
@@ -3530,7 +3551,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000118">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ShearTransformation(plane,x1,y1,z1); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000115">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::ShearTransformation(plane,x1,y1,z1); </dd></dl>
 
 </div>
 </div>
@@ -3667,7 +3688,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000119">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(delta); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(delta); </dd></dl>
 
 </div>
 </div>
@@ -3702,7 +3723,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000120">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(dx,dy,dz); </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000117">Deprecated:</a></b></dt><dd>Use xform = ON_Xform::TranslationTransformation(dx,dy,dz); </dd></dl>
 
 </div>
 </div>
@@ -4010,7 +4031,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

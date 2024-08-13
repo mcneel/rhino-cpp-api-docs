@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1100,7 +1100,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Search for a derivatitive, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
+<p>Description: Search for a derivative, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continuity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
  dtype - [out] if not nullptr, *dtype reports the kind of discontinuity found at *t. A value of 1 means the first derivative or unit tangent was discontinuous. A value of 2 means the second derivative or curvature was discontinuous. A value of 0 means the curve is not closed, a locus discontinuity test was applied, and t1 is at the start of end of the curve. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: Parametric continuity tests c = (C0_continuous, ..., G2_continuous):</p>
 <p>true if a parametric discontinuity was found strictly between t0 and t1. Note well that all curves are parametrically continuous at the ends of their domains.</p>
 <p>Locus continuity tests c = (C0_locus_continuous, ...,G2_locus_continuous):</p>
@@ -1143,7 +1143,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get a NURBS surface representation of this surface. Parameters: nurbs_surface - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. s_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. t_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the surface's to wthe desired accuracy 2 success - returned NURBS point locus matches the surface's to the desired accuracy and the domain of the NURBS surface is correct. On However, This surface's parameterization and the NURBS surface parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of surfaces that have a transendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> may be easier to use. See Also: <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
+<p>Description: Get a NURBS surface representation of this surface. Parameters: nurbs_surface - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. s_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. t_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the surface's to the desired accuracy 2 success - returned NURBS point locus matches the surface's to the desired accuracy and the domain of the NURBS surface is correct. On However, This surface's parameterization and the NURBS surface parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of surfaces that have a transcendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> may be easier to use. See Also: <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface</a>.</p>
 
@@ -1399,7 +1399,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Is there a NURBS surface representation of this surface. Parameters: Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - NURBS parameterization matches the surface's 2 success - NURBS point locus matches the surface's and the domain of the NURBS surface is correct. <br  />
- However, This surface's parameterization and the NURBS surface parameterization may not match. This situation happens when getting NURBS representations of surfaces that have a transendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. See Also: <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
+ However, This surface's parameterization and the NURBS surface parameterization may not match. This situation happens when getting NURBS representations of surfaces that have a transcendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. See Also: <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___surface.html#a032695e1c765ace3b5b9888d746b49f7">ON_Surface</a>.</p>
 
@@ -1742,7 +1742,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#adf87e5ba0d9939dfabbb9f421b9d2b3b">ON_Geometry</a>.</p>
 
@@ -2191,7 +2191,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -332,7 +332,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Iteratation iteration tools Description: Find the first matching item in the directory. Example: / Iterate through the files in a directory named "\rootdir\subdir" <a class="el" href="class_o_n___file_iterator.html">ON_FileIterator</a> fit; fit.Initialize("\\rootdir\\subdir"); for ( bool bHaveItem = fit.FirstItem(); bHaveItem; bHaveItem = fit.NextItem() ) { if ( fit.CurrentFileIsDirectory() ) continue; <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> fullpath = fit.CurrentItemFullPathName(); FILE* fp = <a class="el" href="class_o_n___file_stream.html#a09e4b43c9176ae7854ba10e5d21b2923">ON_FileStream::Open</a>(fullpath,"rb"); if ( 0 == fp ) { continue; } ... ON_FileStream::Close(fp); fp = 0; } }</p>
+<p>Iteration tools Description: Find the first matching item in the directory. Example: / Iterate through the files in a directory named "\rootdir\subdir" <a class="el" href="class_o_n___file_iterator.html">ON_FileIterator</a> fit; fit.Initialize("\\rootdir\\subdir"); for ( bool bHaveItem = fit.FirstItem(); bHaveItem; bHaveItem = fit.NextItem() ) { if ( fit.CurrentFileIsDirectory() ) continue; <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String</a> fullpath = fit.CurrentItemFullPathName(); FILE* fp = <a class="el" href="class_o_n___file_stream.html#a09e4b43c9176ae7854ba10e5d21b2923">ON_FileStream::Open</a>(fullpath,"rb"); if ( 0 == fp ) { continue; } ... ON_FileStream::Close(fp); fp = 0; } }</p>
 <p>Returns: true: The iterator is set to the first item. false: There are no matching items. </p>
 
 </div>
@@ -398,7 +398,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>/// Iteratation initialization tools Description: Initialize where the search should occur. Parameters: directory_name - [in] The directory to look in. item_name_filter - [in] If this parameter is null, then the iteration includes all names in the directory. The item name to search for. This parameter can include wildcard characters, such as an asterisk (*) or a question mark (?). For example, "\rootdir\subdir\*.*" will iterate all files in the \rootdir\subdir\ directory.</p>
+<p>Iteration initialization tools Description: Initialize where the search should occur. Parameters: directory_name - [in] The directory to look in. item_name_filter - [in] If this parameter is null, then the iteration includes all names in the directory. The item name to search for. This parameter can include wildcard characters, such as an asterisk (*) or a question mark (?). For example, "\rootdir\subdir\*.*" will iterate all files in the \rootdir\subdir\ directory.</p>
 <p>Returns: true: The iterator is set to the first item. false: There are no matching items.</p>
 <p>Remarks: Calling <a class="el" href="class_o_n___file_iterator.html#a567cb1ab3261da62b69574d4da31910f">FirstItem()</a> is equivalent to calling <a class="el" href="class_o_n___file_iterator.html#a645792dfdd91e9e6740699c3965c871c">Initialize()</a> and then calling <a class="el" href="class_o_n___file_iterator.html#a5c555e74a6fb6206017ee15193329126">NextItem()</a>. </p>
 
@@ -471,7 +471,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

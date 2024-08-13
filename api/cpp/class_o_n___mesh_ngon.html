@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -298,8 +298,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: A SHA-1 has of the vertex and face indices. <br  />
- </p>
+<p>Returns: A SHA-1 has of the vertex and face indices. </p>
 
 </div>
 </div>
@@ -402,7 +401,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get a list of vertices that form any boundary of a set of faces. This includes inner boundaries. Parameters: mesh_vertex_list - [in] mesh_face_list - [in] vertex_face_map - [in] null or a vertex map made from the information in mesh_vertex_list and mesh_face_list. ngon_fi_count - [in] length of ngon_fi[] array ngon_fi - [in] An array of length ngon_fi_count that contains the indices of the faces that form the ngon. ngon_vi - [out] An array of vertex indices that make the ngon boundary. ngon_boundary_markers - [out] indexes into ngon_boundary_points to differiate (inner) boundaries, if empty there is only an outer boundary. Returns: Number of vertices in the ngon outer boundary or 0 if the input is not valid. </p>
+<p>Description: Get a list of vertices that form any boundary of a set of faces. This includes inner boundaries. Parameters: mesh_vertex_list - [in] mesh_face_list - [in] vertex_face_map - [in] null or a vertex map made from the information in mesh_vertex_list and mesh_face_list. ngon_fi_count - [in] length of ngon_fi[] array ngon_fi - [in] An array of length ngon_fi_count that contains the indices of the faces that form the ngon. ngon_vi - [out] An array of vertex indices that make the ngon boundary. ngon_boundary_markers - [out] indexes into ngon_boundary_points to differentiate (inner) boundaries, if empty there is only an outer boundary. Returns: Number of vertices in the ngon outer boundary or 0 if the input is not valid. </p>
 
 </div>
 </div>
@@ -1049,7 +1048,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Create an array of a single ngon pointer that contains a triangle (3-gon) or quad (4-gon) from a mesh face. <br  />
- This is handy when your code needs to handle both ngons and faces because it lets you convert a face to its ngon format and the rest of the code can work exclusively with ngons. Parameters: ngon_buffer - [in] memory used to create ngon classan array with a capacity for at least 10 ON__UINT_PTR elements. mesh_face_index - [in] fvi - [in] mesh face vertex indices. If "f" is an <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a>, then pass (const unsigned int*)f.vi. Returns: If the input is valid, the returned pointer is an array of a single ngon that is the face's triangle or quad. All returned information is in the buffer[]. null - invalid input. </p>
+ This is handy when your code needs to handle both ngons and faces because it lets you convert a face to its ngon format and the rest of the code can work exclusively with ngons. Parameters: ngon_buffer - [in] memory used to create ngon class array with a capacity for at least 10 ON__UINT_PTR elements. mesh_face_index - [in] fvi - [in] mesh face vertex indices. If "f" is an <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a>, then pass (const unsigned int*)f.vi. Returns: If the input is valid, the returned pointer is an array of a single ngon that is the face's triangle or quad. All returned information is in the buffer[]. null - invalid input. </p>
 
 </div>
 </div>
@@ -1128,7 +1127,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pamameters: mesh_face_list - [in] <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> face list. bPermitHoles - [in] true if the ngon is permitted to have interior holes false otherwise. Description: Determine if the ngon's boundary orientation matches that of the set of faces it is made from. Returns: 1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation matches the faces' orientation. -1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation is opposite the faces' orientation. 0: Otherwise. The ngon may be invalid, have holes, the ngon's faces may not be compatibly oriented, the ngons edges may not have a consistent orientation with respect to the faces, or some other issue. </p>
+<p>Parameters: mesh_face_list - [in] <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> face list. bPermitHoles - [in] true if the ngon is permitted to have interior holes false otherwise. Description: Determine if the ngon's boundary orientation matches that of the set of faces it is made from. Returns: 1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation matches the faces' orientation. -1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation is opposite the faces' orientation. 0: Otherwise. The ngon may be invalid, have holes, the ngon's faces may not be compatibly oriented, the ngons edges may not have a consistent orientation with respect to the faces, or some other issue. </p>
 
 </div>
 </div>
@@ -1157,7 +1156,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pamameters: mesh_face_list - [in] <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> face list. bPermitHoles - [in] true if the ngon is permitted to have interior holes false otherwise. Description: Determine if the ngon's boundary orientation matches that of the set of faces it is made from. Returns: 1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation matches the faces' orientation. -1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation is opposite the faces' orientation. 0: Otherwise. The ngon may be invalid, have holes, the ngon's faces may not be compatibly oriented, the ngons edges may not have a consistent orientation with respect to the faces, or some other issue. </p>
+<p>Parameters: mesh_face_list - [in] <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> face list. bPermitHoles - [in] true if the ngon is permitted to have interior holes false otherwise. Description: Determine if the ngon's boundary orientation matches that of the set of faces it is made from. Returns: 1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation matches the faces' orientation. -1: The ngon does not have holes, the ngon's faces are compatibly oriented, and the ngon's outer boundary orientation is opposite the faces' orientation. 0: Otherwise. The ngon may be invalid, have holes, the ngon's faces may not be compatibly oriented, the ngons edges may not have a consistent orientation with respect to the faces, or some other issue. </p>
 
 </div>
 </div>
@@ -1427,7 +1426,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -743,8 +743,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Modify the one or both locations at the end of segment[gap_index-1] and the start of segment[gap_index] so they are coindicent. <br  />
- Parameters: gap_index - [in] 1 &lt;= gap_index &lt; <a class="el" href="class_o_n___poly_curve.html#a04db27dcd6d3fc68fecfa8d08239fc7c" title="Interface.">Count()</a> If the locations at the end of segment[gap_index-1] and the start of segment[gap_index] are not identical, then an attempt is made to modify the segments so these locations are closer. ends_to_modify - [in] 0: (suggested) The code will decide what segments to modify. 1: modify the end location of segment[gap_index-1] 2: modify the start location of segment[gap_index] Returns: True if a modification was performed and HasGap(gap_index-1) returns 0 after the modification. False if no modification was performed because there was no gap or because one could not be performed. Remarks: Note that passing the return value from <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap()</a> will close the gap found by <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap()</a>. </p>
+<p>Description: Modify the one or both locations at the end of segment[gap_index-1] and the start of segment[gap_index] so they are coincident. Parameters: gap_index - [in] 1 &lt;= gap_index &lt; <a class="el" href="class_o_n___poly_curve.html#a04db27dcd6d3fc68fecfa8d08239fc7c" title="Interface.">Count()</a> If the locations at the end of segment[gap_index-1] and the start of segment[gap_index] are not identical, then an attempt is made to modify the segments so these locations are closer. ends_to_modify - [in] 0: (suggested) The code will decide what segments to modify. 1: modify the end location of segment[gap_index-1] 2: modify the start location of segment[gap_index] Returns: True if a modification was performed and HasGap(gap_index-1) returns 0 after the modification. False if no modification was performed because there was no gap or because one could not be performed. Remarks: Note that passing the return value from <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap()</a> will close the gap found by <a class="el" href="class_o_n___poly_curve.html#a55b07891f635832a90b049ce73937da4">FindNextGap()</a>. </p>
 
 </div>
 </div>
@@ -1528,7 +1527,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Search for a derivatitive, tangent, or curvature discontinuity. Parameters: c - [in] type of continity to test for. If <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ad8fbf1727e18ddb4a65ab10be79c3e26" title="continuous first derivative">ON::continuity::C1_continuous</a> t0 - [in] search begins at t0 t1 - [in] (t0 &lt; t1) search ends at t1 t - [out] if a discontinuity is found, the *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
+<p>Description: Search for a derivative, tangent, or curvature discontinuity. Parameters: c - [in] type of continuity to test for. If <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ad8fbf1727e18ddb4a65ab10be79c3e26" title="continuous first derivative">ON::continuity::C1_continuous</a> t0 - [in] search begins at t0 t1 - [in] (t0 &lt; t1) search ends at t1 t - [out] if a discontinuity is found, the *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
  dtype - [out] if not nullptr, *dtype reports the kind of discontinuity found at *t. A value of 1 means the first derivative or unit tangent was discontinuous. A value of 2 means the second derivative or curvature was discontinuous. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>. <br  />
  <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and the angle between K0 and K1 is at least twice angle tolerance or ||K0| - |K1|| &gt; (max(|K0|,|K1|) &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: true if a discontinuity was found on the interior of the interval (t0,t1). Remarks: Overrides <a class="el" href="class_o_n___curve.html#a2deaf514586ac4b16daa45a97d4bd8e1">ON_Curve::GetNextDiscontinuity</a>. </p>
 
@@ -1689,7 +1688,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get a NURBS curve representation of this curve. Parameters: nurbs_curve - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. subdomain - [in] if not nullptr, then the NURBS representation for this portion of the curve is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the curve's to wthe desired accuracy 2 success - returned NURBS point locus matches the curve's to the desired accuracy and the domain of the NURBS curve is correct. On However, This curve's parameterization and the NURBS curve parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of curves that have a transendental parameterization like circles Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> may be easier to use. See Also: <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> </p>
+<p>Description: Get a NURBS curve representation of this curve. Parameters: nurbs_curve - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. subdomain - [in] if not nullptr, then the NURBS representation for this portion of the curve is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the curve's to wthe desired accuracy 2 success - returned NURBS point locus matches the curve's to the desired accuracy and the domain of the NURBS curve is correct. On However, This curve's parameterization and the NURBS curve parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of curves that have a transcendental parameterization like circles Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> may be easier to use. See Also: <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___curve.html#a67dd944c24cda3d319fa5ac73bb95c2e">ON_Curve</a>.</p>
 
@@ -1890,7 +1889,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Does a NURBS curve representation of this curve. Parameters: Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - NURBS parameterization matches the curve's to wthe desired accuracy 2 success - NURBS point locus matches the curve's and the domain of the NURBS curve is correct. <br  />
- However, This curve's parameterization and the NURBS curve parameterization may not match. This situation happens when getting NURBS representations of curves that have a transendental parameterization like circles Remarks: This is a low-level virtual function. <br  />
+ However, This curve's parameterization and the NURBS curve parameterization may not match. This situation happens when getting NURBS representations of curves that have a transcendental parameterization like circles Remarks: This is a low-level virtual function. <br  />
  See Also: <a class="el" href="class_o_n___curve.html#a67dd944c24cda3d319fa5ac73bb95c2e">ON_Curve::GetNurbForm</a> <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___curve.html#a25f556492601b4e679e8416cee60c529">ON_Curve</a>.</p>
@@ -2417,7 +2416,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: bAllowGaps - [in] If true, gaps are allowed between polycurve segments. If false, gaps are not allowed between polycurve segments. text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. Remarks: Overrides virtual <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object::IsValid</a> </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: bAllowGaps - [in] If true, gaps are allowed between polycurve segments. If false, gaps are not allowed between polycurve segments. text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. Remarks: Overrides virtual <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object::IsValid</a> </p>
 
 </div>
 </div>
@@ -2444,7 +2443,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#adf87e5ba0d9939dfabbb9f421b9d2b3b">ON_Geometry</a>.</p>
 
@@ -2672,7 +2671,7 @@ t&lt;m_t[0] or m_t is empty                -1
 </div><div class="memdoc">
 
 <p>Prepend and match end of curve to start of polycurve. </p>
-<p><a class="el" href="class_o_n___poly_curve.html#ad3b9f330f58de9f6abf5c148421fc953" title="Prepend and match end of curve to start of polycurve.">PrependAndMatch()</a> and <a class="el" href="class_o_n___poly_curve.html#af56d626715ab09a9675cd469a8b6309d" title="Append and match start of curve to end of polycurve.">AppendAndMatch()</a> return false if this-&gt;IsCLosed() or this-&gt;<a class="el" href="class_o_n___poly_curve.html#a04db27dcd6d3fc68fecfa8d08239fc7c" title="Interface.">Count()</a> &gt; 0 and curve is closed </p>
+<p><a class="el" href="class_o_n___poly_curve.html#ad3b9f330f58de9f6abf5c148421fc953" title="Prepend and match end of curve to start of polycurve.">PrependAndMatch()</a> and <a class="el" href="class_o_n___poly_curve.html#af56d626715ab09a9675cd469a8b6309d" title="Append and match start of curve to end of polycurve.">AppendAndMatch()</a> return false if this-&gt;<a class="el" href="class_o_n___poly_curve.html#a87c4768bb74bc28a11e300895278a3c4">IsClosed()</a> or this-&gt;<a class="el" href="class_o_n___poly_curve.html#a04db27dcd6d3fc68fecfa8d08239fc7c" title="Interface.">Count()</a> &gt; 0 and curve is closed </p>
 
 </div>
 </div>
@@ -3458,7 +3457,7 @@ t&lt;m_t[0] or m_t is empty                -1
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

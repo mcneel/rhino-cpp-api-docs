@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1513,7 +1513,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> is true, then the name is deleted in a waty that can be undone by calling <a class="el" href="class_o_n___model_component.html#aa24b302e5c1d657b65aff299bdccfab1">UndeleteName()</a> and the <a class="el" href="class_o_n___model_component.html#aa65c1c03f0f08c0dcf04fbb8aeb0c1a8">DeletedNameIsSet()</a> property is changed to true.</p>
+<p>Description: If <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> is true, then the name is deleted in a way that can be undone by calling <a class="el" href="class_o_n___model_component.html#aa24b302e5c1d657b65aff299bdccfab1">UndeleteName()</a> and the <a class="el" href="class_o_n___model_component.html#aa65c1c03f0f08c0dcf04fbb8aeb0c1a8">DeletedNameIsSet()</a> property is changed to true.</p>
 <p>If <a class="el" href="class_o_n___model_component.html#adb14e78ec38e645c07791e569095f3be">NameIsSet()</a> is false or <a class="el" href="class_o_n___model_component.html#ad820dcc8ef09016886e28a482e175ae1">NameIsLocked()</a> is true, then nothing is changed.</p>
 <p>Note that a name can be set to the empty string and there is a difference between a name being set to the empty string and a name being unset. If you want to make the name attribute unset, call <a class="el" href="class_o_n___model_component.html#a6696e69584c85069f135d2a2f77097fd">ClearName()</a>. </p>
 
@@ -1736,7 +1736,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Index interface</p>
-<p>When a component is managed by a model, the component index is identifies the component within the context of that model. Returns: Value of the runtime model component index attribute. Remarks: If the component is in a model, then the index is unique for all components of identical type in the model and is locked. If the index has not been set, ON_UNSET_INT_INDEX is returned. The <a class="el" href="class_o_n___model_component.html#a1d0998a906ab18cf3c9205218542c7c9">Index()</a> value can change when saved in an archive (.3dm file). Use the <a class="el" href="class_o_n___model_component.html#a7e4decb826ac79c583526fbc83a96946">Id()</a> when you need to reference model compoenents in an archive. </p>
+<p>When a component is managed by a model, the component index is identifies the component within the context of that model. Returns: Value of the runtime model component index attribute. Remarks: If the component is in a model, then the index is unique for all components of identical type in the model and is locked. If the index has not been set, ON_UNSET_INT_INDEX is returned. The <a class="el" href="class_o_n___model_component.html#a1d0998a906ab18cf3c9205218542c7c9">Index()</a> value can change when saved in an archive (.3dm file). Use the <a class="el" href="class_o_n___model_component.html#a7e4decb826ac79c583526fbc83a96946">Id()</a> when you need to reference model components in an archive. </p>
 
 </div>
 </div>
@@ -2035,7 +2035,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: True if this model component is a system constant. <br  />
- Remarks: An incomplete list of system constant model compoenents is below:</p>
+ Remarks: An incomplete list of system constant model components is below:</p>
 <p><a class="el" href="class_o_n___model_component.html#a6caf26908c92f603cdb07baec0c27990">ON_ModelComponent::Unset</a></p>
 <p>ON_InstanceDefinition::Empty</p>
 <p><a class="el" href="class_o_n___linetype.html#a399b2f4b095f0cf6ab98688d3fec87a6" title="no attributes are set.">ON_Linetype::Unset</a> <a class="el" href="class_o_n___linetype.html#aa22d87ebcafec4505797a0d911defb17" title="index = -1, id, name and pattern are set.">ON_Linetype::Continuous</a> <a class="el" href="class_o_n___linetype.html#a485dbab81bfacad2a24c517d4e363343" title="index = -2, id, name and pattern are set.">ON_Linetype::ByLayer</a> <a class="el" href="class_o_n___linetype.html#adad30a2cf94e3898475b55607a5dc3ae" title="index = -3, id, name and pattern are set.">ON_Linetype::ByParent</a></p>
@@ -2068,7 +2068,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object</a>.</p>
 
@@ -2249,7 +2249,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: length - [in] number of wchar_t elements in candidate_component_name[] or -1 if it is a null terminated string. candidate_component_name - [in] The first code point is decoded from this string and passed to <a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">ON_ModelComponent::IsValidComponentNameFirstCodePoint()</a>. Returns: True if a componenent name can begin with the first code point. Remarks: Component names cannot begin with a (, ), [, ], {, }, or space. These brackets can be the second or later code points. A space can be an interior code point. </p>
+<p>Parameters: length - [in] number of wchar_t elements in candidate_component_name[] or -1 if it is a null terminated string. candidate_component_name - [in] The first code point is decoded from this string and passed to <a class="el" href="class_o_n___model_component.html#a0016925d7bd2e5ebf48a5e7fb002d874">ON_ModelComponent::IsValidComponentNameFirstCodePoint()</a>. Returns: True if a component name can begin with the first code point. Remarks: Component names cannot begin with a (, ), [, ], {, }, or space. These brackets can be the second or later code points. A space can be an interior code point. </p>
 
 </div>
 </div>
@@ -2276,7 +2276,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns: True if a componenent name can begin with the first code point. Remarks: Component names cannot begin with a (, ), [, ], {, }, or space. These brackets can be the second or later code points. A space can be an interior code point. </p>
+<p>Returns: True if a component name can begin with the first code point. Remarks: Component names cannot begin with a (, ), [, ], {, }, or space. These brackets can be the second or later code points. A space can be an interior code point. </p>
 
 </div>
 </div>
@@ -2311,7 +2311,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Calling LockType() will prhibit future changes to the Type attribute. </p>
+<p>Description: Calling LockType() will prohibit future changes to the Type attribute. </p>
 
 </div>
 </div>
@@ -2329,7 +2329,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Calling LockModelComponentId() will prhibit future changes to the ModelComponentId attribute. </p>
+<p>Description: Calling LockModelComponentId() will prohibit future changes to the ModelComponentId attribute. </p>
 
 </div>
 </div>
@@ -2347,7 +2347,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Calling LockModelComponentIndex() will prhibit future changes to the ModelComponentIndex attribute. </p>
+<p>Description: Calling LockModelComponentIndex() will prohibit future changes to the ModelComponentIndex attribute. </p>
 
 </div>
 </div>
@@ -2495,7 +2495,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: All objects in an opennurbs model have an id ( ON_Layer.m_layer_id, ON_Font.m_font_id, ON_Material.m_material_id, <a class="el" href="class_o_n__3dm_object_attributes.html#a806a85052b002c45021650e3b97e2018">ON_3dmObjectAttributes.m_uuid</a> ). Returns: The id used to identify the object in the openurbs model. </p>
+<p>Description: All objects in an opennurbs model have an id ( ON_Layer.m_layer_id, ON_Font.m_font_id, ON_Material.m_material_id, <a class="el" href="class_o_n__3dm_object_attributes.html#a806a85052b002c45021650e3b97e2018">ON_3dmObjectAttributes.m_uuid</a> ). Returns: The id used to identify the object in the opennurbs model. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a21c508d3b53458e252adbcd29e62ed09">ON_Object</a>.</p>
 
@@ -2587,7 +2587,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function that gets a pointer to the name. Returns: A pointer to the string that contains the name. This pointer must be used immediately and then discarded before any code can possibly call <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> or the <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> destructor could be called. Remarks: About the only good use for this function is when a model compoenent is persistent and the name is needed for a formatted string. For any other use, call the <a class="el" href="class_o_n___model_component.html#ac157c257e5a54aa12e3b3688ac87618a">Name()</a> function and store the result in an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. This function is dangerous because the returned pointer will be invalid if <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> is called. </p>
+<p>Description: Expert user function that gets a pointer to the name. Returns: A pointer to the string that contains the name. This pointer must be used immediately and then discarded before any code can possibly call <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> or the <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> destructor could be called. Remarks: About the only good use for this function is when a model component is persistent and the name is needed for a formatted string. For any other use, call the <a class="el" href="class_o_n___model_component.html#ac157c257e5a54aa12e3b3688ac87618a">Name()</a> function and store the result in an <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString</a>. This function is dangerous because the returned pointer will be invalid if <a class="el" href="class_o_n___model_component.html#a438dcead4834272400aa56b57ace93d0">SetName()</a> is called. </p>
 
 </div>
 </div>
@@ -3662,7 +3662,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: component_type - [in] Returns: True if component's of the specified type require uniquen names. Remarks: In general, component names ignore case and parent when testing for equality. However, there are exceptions. Use <a class="el" href="class_o_n___model_component.html#a53ada3d0b591c68a41efdeed971dea1b">ON_ModelComponent::UniqueNameIncludesParent()</a> and <a class="el" href="class_o_n___model_component.html#ada20ca0c820b76b1b6a8157c91568f14">ON_ModelComponent::UniqueNameIgnoresCase()</a> to test for exceptions. </p>
+<p>Parameters: component_type - [in] Returns: True if component's of the specified type require unique names. Remarks: In general, component names ignore case and parent when testing for equality. However, there are exceptions. Use <a class="el" href="class_o_n___model_component.html#a53ada3d0b591c68a41efdeed971dea1b">ON_ModelComponent::UniqueNameIncludesParent()</a> and <a class="el" href="class_o_n___model_component.html#ada20ca0c820b76b1b6a8157c91568f14">ON_ModelComponent::UniqueNameIgnoresCase()</a> to test for exceptions. </p>
 
 </div>
 </div>
@@ -3764,7 +3764,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Returns the string " : ". This is the string Rhino uses to separate the reference file names from and model component names read from those files.</p>
 <p>Example: File A.3dm contains a layer "alpha", dimstyle "a1", an embedded block "A_blk", and a linked block "X" referencing B.3dm with reference component names. File B.3dm contains a layer "beta", dimstyle "b1", an embedded block "B_blk", and linked block "Y" referencing C.3dm. File C.3dm contains a layer gamma, dimstyle "c1", an embedded block "C_blk", and linked block "Z" referencing D.3dm. File D.3dm contains a layer "delta", dimstyle "d1", and an embedded block "D_blk".</p>
-<p>Reading file A.3dm will craete the following components: Layers: alpha X&gt;B.3dm beta (full layer path "X&gt;B.3dm::beta") Y&gt;C.3dm gamma (full layer path "Y&gt;C.3dm::gamma") Z&gt;D.3dm delta (full layer path "Z&gt;D.3dm::delta") Blocks: X A_blk Y B.3dm : B_blk Z C.3dm : C_blk D.3dm : D_blk Annotation styles a1 B.3dm : b1 C.3dm : c1 D.3dm : d1</p>
+<p>Reading file A.3dm will create the following components: Layers: alpha X&gt;B.3dm beta (full layer path "X&gt;B.3dm::beta") Y&gt;C.3dm gamma (full layer path "Y&gt;C.3dm::gamma") Z&gt;D.3dm delta (full layer path "Z&gt;D.3dm::delta") Blocks: X A_blk Y B.3dm : B_blk Z C.3dm : C_blk D.3dm : D_blk Annotation styles a1 B.3dm : b1 C.3dm : c1 D.3dm : d1</p>
 <p>See Also: <a class="el" href="class_o_n___model_component.html#a21d3152dddf88cb6d387b9f74d51033a">ON_ModelComponent::ReferencePrefixDelimiter</a> = " : " <a class="el" href="class_o_n___model_component.html#aff7493e7c306e8faef135e6cf348db6a">ON_ModelComponent::ReferencePrefixSeparator</a> = "&gt;" <a class="el" href="class_o_n___model_component.html#ae65df2e8323ee23f769316b506a5bdaf">ON_ModelComponent::NamePathSeparator</a> = "::" </p>
 
 </div>
@@ -3790,7 +3790,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Returns the string "&gt;". This is the string Rhino uses to separate the block definition name and linked file name in grandparent layers.</p>
 <p>Example: File A.3dm contains a layer "alpha", dimstyle "a1", an embedded block "A_blk", and a linked block "X" referencing B.3dm with reference component names. File B.3dm contains a layer "beta", dimstyle "b1", an embedded block "B_blk", and linked block "Y" referencing C.3dm. File C.3dm contains a layer gamma, dimstyle "c1", an embedded block "C_blk", and linked block "Z" referencing D.3dm. File D.3dm contains a layer "delta", dimstyle "d1", and an embedded block "D_blk".</p>
-<p>Reading file A.3dm will craete the following components: Layers: alpha X&gt;B.3dm beta (full layer path "X&gt;B.3dm::beta") Y&gt;C.3dm gamma (full layer path "Y&gt;C.3dm::gamma") Z&gt;D.3dm delta (full layer path "Z&gt;D.3dm::delta") Blocks: X A_blk Y B.3dm : B_blk Z C.3dm : C_blk D.3dm : D_blk Annotation styles a1 B.3dm : b1 C.3dm : c1 D.3dm : d1</p>
+<p>Reading file A.3dm will create the following components: Layers: alpha X&gt;B.3dm beta (full layer path "X&gt;B.3dm::beta") Y&gt;C.3dm gamma (full layer path "Y&gt;C.3dm::gamma") Z&gt;D.3dm delta (full layer path "Z&gt;D.3dm::delta") Blocks: X A_blk Y B.3dm : B_blk Z C.3dm : C_blk D.3dm : D_blk Annotation styles a1 B.3dm : b1 C.3dm : c1 D.3dm : d1</p>
 <p>See Also: <a class="el" href="class_o_n___model_component.html#a21d3152dddf88cb6d387b9f74d51033a">ON_ModelComponent::ReferencePrefixDelimiter</a> = " : " <a class="el" href="class_o_n___model_component.html#aff7493e7c306e8faef135e6cf348db6a">ON_ModelComponent::ReferencePrefixSeparator</a> = "&gt;" <a class="el" href="class_o_n___model_component.html#ae65df2e8323ee23f769316b506a5bdaf">ON_ModelComponent::NamePathSeparator</a> = "::" </p>
 
 </div>
@@ -3842,7 +3842,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

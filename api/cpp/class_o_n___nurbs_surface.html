@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1123,7 +1123,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Create an <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> satisfying Hermite interpolation conditions at a grid of points. Parameters: u_Parameters v_Parameters - [in] Specifies the "u"( or "v") parameters defining the grid of parameter values u_Parameters.Count()&gt;1 u_Parameters are strictly increasing, i.e. u_Parameters[i] &lt; u_Parameters[i+1] same conditions on v_Parameters Let n = u_Parameters.Count() and m = v_Parameters.Count().</p>
 <p>Each of GridPoints, u_Tangents, v_Tangents and TwistVectors are data on a grid of parameters. The size of each of these arrays must be n x m, s GridPoints.Count() == n and GridPoints[i].Count() == m.</p>
-<p>GridPoints - [in] Grid of points to interpolate. u_Tangents - [in] Grid of Tangent directions ( actually first derivatives) to interpolate. v_Tangents - [in] Grid of Tangent directions ( actually first derivatives) to interpolate. TwistVectors - [in] Grid of twist vectors (mixed second partial derovative) to interpolate.</p>
+<p>GridPoints - [in] Grid of points to interpolate. u_Tangents - [in] Grid of Tangent directions ( actually first derivatives) to interpolate. v_Tangents - [in] Grid of Tangent directions ( actually first derivatives) to interpolate. TwistVectors - [in] Grid of twist vectors (mixed second partial derivative) to interpolate.</p>
 <p>hermite_surface -[in] optional existing <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> returned here. Returns: A hermite-surface satisfying interpolation conditions. Null if error. Notes: The Hermite surface, H, is bicubic on each patch [u_i, u_(i+1)] x [v_j, v_(j+1)] and satisfies H( u_i, v_j) = GridData[i][j] H_u(u_i, v_j) = u_Tangents[i][j] H_v(u_i, v_j) = v_Tangents[i][j] H_uv(u_i, v_j) = Twist[i][j] </p>
 
 </div>
@@ -1242,7 +1242,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_NurbsSurface::GetCV( ON_3dPoint&amp; ) or ON_NurbsSurface::GetCV( ON_4dPoint&amp; ). Parameters: i - [in] (0 &lt;= i &lt; m_cv_count[0]) j - [in] (0 &lt;= j &lt; m_cv_count[1]) Returns: Pointer to control vertex. Remarks: If the NURBS surface is rational, the format of the returned array is a homogeneos rational point with length m_dim+1. If the NURBS surface is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___nurbs_surface.html#aeb3ec30dc98a6f67d52806faaf4288ac">ON_NurbsSurface::CVStyle</a> <a class="el" href="class_o_n___nurbs_surface.html#a9be6614683284205a9012363a55d911a">ON_NurbsSurface::GetCV</a> <a class="el" href="class_o_n___nurbs_surface.html#a813b7e85c052fc11a2b8aaa9a519bdc9">ON_NurbsSurface::Weight</a> </p>
+<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_NurbsSurface::GetCV( ON_3dPoint&amp; ) or ON_NurbsSurface::GetCV( ON_4dPoint&amp; ). Parameters: i - [in] (0 &lt;= i &lt; m_cv_count[0]) j - [in] (0 &lt;= j &lt; m_cv_count[1]) Returns: Pointer to control vertex. Remarks: If the NURBS surface is rational, the format of the returned array is a homogeneous rational point with length m_dim+1. If the NURBS surface is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___nurbs_surface.html#aeb3ec30dc98a6f67d52806faaf4288ac">ON_NurbsSurface::CVStyle</a> <a class="el" href="class_o_n___nurbs_surface.html#a9be6614683284205a9012363a55d911a">ON_NurbsSurface::GetCV</a> <a class="el" href="class_o_n___nurbs_surface.html#a813b7e85c052fc11a2b8aaa9a519bdc9">ON_NurbsSurface::Weight</a> </p>
 
 </div>
 </div>
@@ -2004,7 +2004,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Search for a derivatitive, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
+<p>Description: Search for a derivative, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continuity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
  dtype - [out] if not nullptr, *dtype reports the kind of discontinuity found at *t. A value of 1 means the first derivative or unit tangent was discontinuous. A value of 2 means the second derivative or curvature was discontinuous. A value of 0 means the curve is not closed, a locus discontinuity test was applied, and t1 is at the start of end of the curve. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: Parametric continuity tests c = (C0_continuous, ..., G2_continuous):</p>
 <p>true if a parametric discontinuity was found strictly between t0 and t1. Note well that all curves are parametrically continuous at the ends of their domains.</p>
 <p>Locus continuity tests c = (C0_locus_continuous, ...,G2_locus_continuous):</p>
@@ -4567,7 +4567,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

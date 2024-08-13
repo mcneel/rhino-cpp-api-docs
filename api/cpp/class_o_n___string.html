@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -2722,7 +2722,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: format - [in] Format control. Positional parameters of the form N$x where N &gt;= 1 and x is the standard format specification are supported. Avoid using S (capital S). See the Remarks for details. ... - [in] arguments for replacable items in the format string. Returns: True if successful. False if the string is too long or the format string is not valid. Remarks: When using Microsoft's compiler and other compilers that provide similar locale support, the locale is the invariant culture locale returned by ON_Locale::InvariantCulture::LocalePtr().</p>
+<p>Parameters: format - [in] Format control. Positional parameters of the form N$x where N &gt;= 1 and x is the standard format specification are supported. Avoid using S (capital S). See the Remarks for details. ... - [in] arguments for replaceable items in the format string. Returns: True if successful. False if the string is too long or the format string is not valid. Remarks: When using Microsoft's compiler and other compilers that provide similar locale support, the locale is the invariant culture locale returned by ON_Locale::InvariantCulture::LocalePtr().</p>
 <p>The way Windows handles the S (capital S) format parameter depends on locale and code page settings. It is strongly recommended that you never use S to include any string that may possibly contain elements with values &gt; 127. The following examples illustrate a way to predictably use UTF-8 and wchar_t parameters in buffers of the other element type.</p>
 <p>const char* utf8_string = ...; / UNRELIABLE ///&lt; <a class="el" href="class_o_n__w_string.html#a31d91a70bc08ca4de9a83b2419690967">ON_wString::Format</a>(buffer,buffer_capacity,"%S",utf8_string); / The code below will treat utf8_string as a UTF-8 encoded string. wchar_t wchar_buffer[...]; const size_t wchar_buffer_capacity= sizeof(buffer)/sizeof(buffer[0]); <a class="el" href="class_o_n__w_string.html#a31d91a70bc08ca4de9a83b2419690967">ON_wString::Format</a>(wchar_buffer, wchar_buffer_capacity, "%s", <a class="el" href="class_o_n__w_string.html" title="A wide character string. The default encoding is the encoding the compiler uses for wchar_t* s = L&quot;....">ON_wString(utf8_string)</a>);</p>
 <p>const wchar_t* wide_string = ...; / UNRELIABLE ///&lt; <a class="el" href="class_o_n__w_string.html#a31d91a70bc08ca4de9a83b2419690967">ON_wString::Format</a>(buffer,buffer_capacity,"%S",char_string); / The code below will include wide_string as a UTF-8 encoded string. char char_buffer[...]; const size_t char_buffer_capacity = sizeof(buffer)/sizeof(buffer[0]); <a class="el" href="class_o_n___string.html#ad091f25b0e421c9cc1bf0ebd24b91d3b">ON_String::Format</a>(char_buffer, char_buffer_capacity, "%s", <a class="el" href="class_o_n___string.html" title="A char string. Any multibyte encoding can be used. If the encoding is unknown, assume it is UTF-8.">ON_String(wide_string)</a>); </p>
@@ -4136,7 +4136,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Decode this char string using the encoding specified by windows_code_page to a UTF encoded wide character string. Parameters: windows_code_page - [in] WIndows code page. For example, big5 = 950. Returns: A UTF encoded wide character string. See Also: <a class="el" href="class_o_n__w_string.html#ab8db93fb92974c132ec5a8ef1c13f484">ON_wString::MultiByteEncode()</a> </p>
+<p>Description: Decode this char string using the encoding specified by windows_code_page to a UTF encoded wide character string. Parameters: windows_code_page - [in] Windows code page. For example, big5 = 950. Returns: A UTF encoded wide character string. See Also: <a class="el" href="class_o_n__w_string.html#ab8db93fb92974c132ec5a8ef1c13f484">ON_wString::MultiByteEncode()</a> </p>
 
 </div>
 </div>
@@ -6705,7 +6705,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

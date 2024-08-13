@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -256,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Adds a Hook's law spring force bewtween particles that is proportional to (distance - rest_length). Parameters: particle1 - [in] particle2 - [in] rest_length - [in] rest length of the spring. spring_constant - [in] Spring force magnitude = spring_constant*(distance - rest_length). When spring_constant &gt; 0 and distance &gt; rest_length, the force attracts. damping_constant - [in] Damping force magnitude = damping_constant*|(delta velocity) o D|, where D is a unit vector points from one particle to the other. When damping_constant &gt; 0 and the particles are moving towards each other, the damping force repels. When damping_constant &gt; 0 and the particles are moving away from each other, the damping force attracts. </p>
+<p>Description: Adds a Hook's law spring force between particles that is proportional to (distance - rest_length). Parameters: particle1 - [in] particle2 - [in] rest_length - [in] rest length of the spring. spring_constant - [in] Spring force magnitude = spring_constant*(distance - rest_length). When spring_constant &gt; 0 and distance &gt; rest_length, the force attracts. damping_constant - [in] Damping force magnitude = damping_constant*|(delta velocity) o D|, where D is a unit vector points from one particle to the other. When damping_constant &gt; 0 and the particles are moving towards each other, the damping force repels. When damping_constant &gt; 0 and the particles are moving away from each other, the damping force attracts. </p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Adds binary force bewtween particles that is proportional to 1/(distance squared). Parameters: particle1 - [in] particle2 - [in] c - [in] force = c/d^2 c &gt; 0 for attractive forces c &lt; 0 for repulsive forces minimum_distance - [in] If the distance between the particles is &lt; minimum_distance, then the force evaluator fails. Example: Gravity: double g = 6.672e-11; ///&lt; N m^2/kg^2 double c = g*mass1*mass2; double min_distance = (radius1+radius2); AddInverseDistanceSquaredForce(p1,p2,c,min_distance); Coulumb's Force double k = 8.9875e9; ///&lt; N m^2/C^2 double c = -k*charge1*charge2; double min_distance = (radius1+radius2); AddInverseDistanceSquaredForce(p1,p2,c,min_distance); <br  />
+<p>Description: Adds binary force between particles that is proportional to 1/(distance squared). Parameters: particle1 - [in] particle2 - [in] c - [in] force = c/d^2 c &gt; 0 for attractive forces c &lt; 0 for repulsive forces minimum_distance - [in] If the distance between the particles is &lt; minimum_distance, then the force evaluator fails. Example: Gravity: double g = 6.672e-11; ///&lt; N m^2/kg^2 double c = g*mass1*mass2; double min_distance = (radius1+radius2); AddInverseDistanceSquaredForce(p1,p2,c,min_distance); Coulumb's Force double k = 8.9875e9; ///&lt; N m^2/C^2 double c = -k*charge1*charge2; double min_distance = (radius1+radius2); AddInverseDistanceSquaredForce(p1,p2,c,min_distance); <br  />
  </p>
 
 </div>
@@ -416,7 +416,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a particle to the system. Parameters: mass - [in] initial_position - [in] initial_velocity - [in] You may pass zero if you are using an integrator that does not need this value. initial_acceleration - [in] You may pass zero if you are using an integrator that does not need this value. Remarks: The constructors that omit initial_velocity or initiali_acceleration assume those values are zero </p>
+<p>Description: Add a particle to the system. Parameters: mass - [in] initial_position - [in] initial_velocity - [in] You may pass zero if you are using an integrator that does not need this value. initial_acceleration - [in] You may pass zero if you are using an integrator that does not need this value. Remarks: The constructors that omit initial_velocity or initial_acceleration assume those values are zero </p>
 
 </div>
 </div>
@@ -692,7 +692,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Increment the current state of the particle system using the semi-implicity Euler integration algorithm. Parameters: delta_time - [in] Remarks: Calls IncrementTime with <a class="el" href="class_o_n___particle_system.html#afd5d088e86954b8aca9213f9131cfd17">ON_ParticleSystem::IntegrateSemiImplicitEuler</a> as the integration function. </p>
+<p>Description: Increment the current state of the particle system using the semi-implicitly Euler integration algorithm. Parameters: delta_time - [in] Remarks: Calls IncrementTime with <a class="el" href="class_o_n___particle_system.html#afd5d088e86954b8aca9213f9131cfd17">ON_ParticleSystem::IntegrateSemiImplicitEuler</a> as the integration function. </p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

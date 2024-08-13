@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1982,7 +1982,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. The resulting mesh can have no outer boundary specified; in this case the outer boundary will be the convex hull of the points. Or edges specifying one or more outer boundaries can be passed in. The resulting mesh may have zero or more inner boundaries (holes in the mesh). Additionally interior edges (having triangles on both sides) can be specified. </p>
 <p>Edges specifying outer boundaries do not need to be properly oriented if they are passed in the automatic_edges[] list. There is no need to sort outer boundary edges into loops.</p>
-<p>Edges specifying innter boundaries must be oriented so they form clockwise loops and must be passed in the oriented_edges[] list. There is no need to sort inner boundary edges into loops.</p>
+<p>Edges specifying inner boundaries must be oriented so they form clockwise loops and must be passed in the oriented_edges[] list. There is no need to sort inner boundary edges into loops.</p>
 <p>You may also specify interior edges that should have a triangle on both sides of the interior edge. Interior edges can have any orientation and must be passed in the automatic_edges[] list. There is no need to sort interior edges into connected sets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1997,7 +1997,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by pionts[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. When the returned mesh has mesh-&gt;<a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a> &gt; point_count, it is because inter edge intersections were added or the a true value of bPermitVertexAdditions or bPermitEdgeSplitting resulted in vertices being added to improve triangle quality. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by points[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. When the returned mesh has mesh-&gt;<a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a> &gt; point_count, it is because inter edge intersections were added or the a true value of bPermitVertexAdditions or bPermitEdgeSplitting resulted in vertices being added to improve triangle quality. </dd></dl>
 
 </div>
 </div>
@@ -2066,13 +2066,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a triangle mesh with vertices at the input points and which includes the specified edges. If no edges are specified, then the convex hull of points[] will be the mesh boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries of the holes and pass the appropriate information to indicate which side of these edges you want the mesh to be on. </p>
-<p>This overload of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> is desinged for case where your edges are in a single simple array and you don't need to specify edge orientations, or a single orientation applies to all edges, or you have detailed customized per edge orientations. If you find managing customized per edge orientations challenging or the source of your edges is alread partitioned into distinct simple arrays, there is an overload of of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> that lets you pas in multiple arrays of edges that have similar orientations.</p>
+<p>This overload of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> is designed for case where your edges are in a single simple array and you don't need to specify edge orientations, or a single orientation applies to all edges, or you have detailed customized per edge orientations. If you find managing customized per edge orientations challenging or the source of your edges is already partitioned into distinct simple arrays, there is an overload of of <a class="el" href="class_o_n___mesh.html#aacbf023f5a0a9eedf6790c40a9f28f3c" title="Create a triangle mesh with vertices at the input points and which includes the specified edges....">ON_Mesh::CreateFrom2dPointsAndEdges()</a> that lets you pas in multiple arrays of edges that have similar orientations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">points</td><td>2d point locations. <br  />
  Duplicate points are not permitted. It is ok to include points that are inside the outer boundary but are not at the end of any input edge. For 0 lt;= i &amp;lt point_count, the returned mesh will have mesh-&gt;Vertex(i) = points[i]. </td></tr>
     <tr><td class="paramname">edges</td><td>If edges[] is empty, then the convex hull of points[] will be the mesh boundary. The edges[] array contains pairs of points[] array indices the specify line segments that should be sides of triangles. The edges do not have to be sorted into connected components. It is not required to specify an outer boundary. If some subset of edges forms a closed polyline that contains all other edges, then that polyline will automatically become the outer boundary, even if there are points outside of this polyline. If any edges intersect, then the intersection points are added to the mesh. Any added mesh vertices will have mesh vertex indices &gt;= point_count. </td></tr>
-    <tr><td class="paramname">edge_orientations</td><td>If edge_orientations[] is empty, the all interior edges have a trinagle on both sides. If edge_orientations[] has one element, then that orientation is used for all edges and the edges will have one tirngle on the specified side. Otherwise, edge_orientaions[] must have edges.Count() elements, and edge_orientations[i] specifies wich side(s) or edges[i] should have a triangle. 0 = Automatically determined edge orientation. This is the best choice for all edges that are not inner boundary edges. 1 = left side only - boundary edge with a triangle on the left side. This is a good choice for clockwise inner boundary edges. 2 = right side only - boundary edge with a triangle on the right side. This is a good choice for counter-clockwise inner boundary edges. </td></tr>
+    <tr><td class="paramname">edge_orientations</td><td>If edge_orientations[] is empty, the all interior edges have a triangle on both sides. If edge_orientations[] has one element, then that orientation is used for all edges and the edges will have one triangle on the specified side. Otherwise, edge_orientations[] must have edges.Count() elements, and edge_orientations[i] specifies which side(s) or edges[i] should have a triangle. 0 = Automatically determined edge orientation. This is the best choice for all edges that are not inner boundary edges. 1 = left side only - boundary edge with a triangle on the left side. This is a good choice for clockwise inner boundary edges. 2 = right side only - boundary edge with a triangle on the right side. This is a good choice for counter-clockwise inner boundary edges. </td></tr>
     <tr><td class="paramname">bOuterBoundaryIsConvexHull</td><td>If edges[] contains one or more outer boundaries, then pass false. Otherwise pass true; the outer boundary of the returned mesh will be the convex hull of points[] and any edges that are not part of the convex hull will be inside the mesh. </td></tr>
     <tr><td class="paramname">bPermitVertexAdditions</td><td>If true, then additional interior points may be added to improve the quality of the mesh. These additional points will have mesh vertex indices &gt;= point_count. </td></tr>
     <tr><td class="paramname">bPermitEdgeSplitting</td><td>If true, then input edges may be split to improve mesh quality. If any edges are split, the additional points will have mesh vertex indices &gt;= point_count. </td></tr>
@@ -2080,7 +2080,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by pionts[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, a pointer to a triangle mesh of the 2d region specified by points[] and edges[]. For 0 &lt;= i lt; point_count, mesh-&gt;Vertex(i) is the i-th input point. </dd></dl>
 
 </div>
 </div>
@@ -2179,7 +2179,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a triangle mesh with vertices at the input points and which includes the specified edges. Some subset of the edges must form a closed outer boundary. If you want holes inside the mesh, orient the edges that form the inner boundaries and pass the appropriate information to indicate which side of these edges you want the mesh to be on. </p>
-<p>This is the most advanced version of CreateFrom2dPointsAndEdges(...). If your point and edtge intput is in simple arrays, there are easier to call overloads with the same name and simple array parameters.</p>
+<p>This is the most advanced version of CreateFrom2dPointsAndEdges(...). If your point and edtge input is in simple arrays, there are easier to call overloads with the same name and simple array parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">point_count</td><td>Number of 2d points. There must be at least 3 points. </td></tr>
@@ -2826,7 +2826,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Merge faces like <a class="el" href="class_o_n___sub_d.html#a0412e0107132bcad5a3def31ed368f01">ON_SubD::MergeFaces()</a> does. Parameters: ci_list - [in] vertices, edges, and faces that trigger merging. Returns: If ngons were added, then the index of the first added ngon is returned. Otherwise ON_UNSET_UINT_INDEX is returned. </p>
+<p>Description: Merge faces like <a class="el" href="group__open_n_u_r_b_s.html#ga0412e0107132bcad5a3def31ed368f01">ON_SubD::MergeFaces()</a> does. Parameters: ci_list - [in] vertices, edges, and faces that trigger merging. Returns: If ngons were added, then the index of the first added ngon is returned. Otherwise ON_UNSET_UINT_INDEX is returned. </p>
 
 </div>
 </div>
@@ -2846,8 +2846,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implementation - mesh geometry. </p>
-<p>Vertex locations In a case where adjacent facets share a vertex location but have distinct normals or texture coordinates at that location, the vertex must be duplicated. Description: Get double precision vertices. If they do not exist, they will be created and match the existing single precision vertices. Returns: Array of double precision vertices. If you modify the values in this array, you must make the same modifications to the single precision vertices, or call UpdateSinglePrecisonVertices(). Example:</p>
-<p>/ add a bunch of double precision information <a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a>&amp; dv = mesh.DoublePrecisionVertices(); for ( i = 0; i &lt; lots; i++ ) { dv[i] = ... } / This call updates the single precision values / in m_V[] and sets all the counts and CRCs that / are used in validity checking. mesh.UpdateSinglePrecisonVertices();</p>
+<p>Vertex locations In a case where adjacent facets share a vertex location but have distinct normals or texture coordinates at that location, the vertex must be duplicated. Description: Get double precision vertices. If they do not exist, they will be created and match the existing single precision vertices. Returns: Array of double precision vertices. If you modify the values in this array, you must make the same modifications to the single precision vertices, or call <a class="el" href="class_o_n___mesh.html#ac78c5b48affca5a6218278c7037a2776">UpdateSinglePrecisionVertices()</a>. Example:</p>
+<p>/ add a bunch of double precision information <a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a>&amp; dv = mesh.DoublePrecisionVertices(); for ( i = 0; i &lt; lots; i++ ) { dv[i] = ... } / This call updates the single precision values / in m_V[] and sets all the counts and CRCs that / are used in validity checking. mesh.UpdateSinglePrecisionVertices();</p>
 <p>Remarks: Avoid multiple calls to <a class="el" href="class_o_n___mesh.html#a1b101813d31f261ef0a6ca950cfcf14a" title="Implementation - mesh geometry.">DoublePrecisionVertices()</a>. It is most efficient to make one call, save a local reference, and use the local reference as needed. </p>
 
 </div>
@@ -4006,7 +4006,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a list of the geometrically uniqued edges in a mesh. Parameters: edge_list - [out] The edge list for this mesh is appended to edge_list[]. <br  />
+<p>Description: Get a list of the geometrically unique edges in a mesh. Parameters: edge_list - [out] The edge list for this mesh is appended to edge_list[]. <br  />
  The <a class="el" href="class_o_n__2dex.html">ON_2dex</a> i and j values are mesh-&gt;m_V[] array indices. There is exactly one element in edge_list[] for each unoriented 3d line segment in the mesh. The edges are oriented the same way the corresponding <a class="el" href="class_o_n___mesh_topology.html">ON_MeshTopology</a> edge is oriented. bLookForNgonInteriorEdges - [in] true if ngon interior edges should be separated from manifold edges. bOmitHiddenEdges - [in] true if edges that have at least one hidden vertex should be omitted from the returned lists. ci_meshtop_edge_map - [out] If you call the version of <a class="el" href="class_o_n___mesh.html#aded8849a0a64d357855af23a2bd6155d">GetMeshEdgeList()</a> with the ci_meshtop_edge_map[], parameter, then the edge in edge_list[i] corresponds to the edge in <a class="el" href="class_o_n___mesh_topology.html#a541e6ab0313e7b1003a2f757ef093fed">ON_MeshTopology.m_tope</a>[ci_meshtop_edge_map[i]]. The value ci_meshtop_edge_map[i] is useful if you need to convert an edge_list[] index into an <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> with type meshtop_edge. ci_meshtop_vertex_map - [out] If you call the version of <a class="el" href="class_o_n___mesh.html#aded8849a0a64d357855af23a2bd6155d">GetMeshEdgeList()</a> with the ci_meshtop_vertex_map[], parameter, then the vertex m_V[i] corresponds to the vertex in <a class="el" href="class_o_n___mesh_topology.html#ad39c817f6f8dfdf54bbeaa32982bdb74">ON_MeshTopology.m_topv</a>[ci_meshtop_vertex_map[i]]. The value ci_meshtop_vertex_map[i] is useful if you need to convert an m_V[] index into an <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> with type meshtop_vertex. edge_list_partition - [out] (can be null) The edge_list[] is always ordered so that edge_types are partitioned into contiguous regions. The edge_list_partition[5] values report the edge type regions. If edge_type_partition[0] &lt;= ei &lt; edge_type_partition[1], then edge_list[ei] is an edge of exactly two faces and the vertices used by the faces are identical. These are also called "manifold edges". If edge_type_partition[1] &lt;= ei &lt; edge_type_partition[2], then edge_list[ei] is an edge of exactly two faces, but at least one of the vertices is duplicated. These are also called "crease edges". If edge_type_partition[2] &lt;= ei &lt; edge_type_partition[3], then edge_list[ei] is an edge of 3 or more faces. These are also called "nonmanifold edges". If edge_type_partition[3] &lt;= ei &lt; edge_type_partition[4], then edge_list[ei] is a boundary edge of exactly one mesh face. These are also called "naked edges". If edge_type_partition[4] &lt;= ei &lt; edge_type_partition[5], then edge_list[ei] is an edge of exactly two faces that belong to the same ngon. These are also called "ngon interior edges". faceSidesList - [out] (can be null) fills the array with sides, ordered by vertex index. This can be thought as a reverse face-vertex map. This is required by any internal calculations. Returns: Number of edges added to edge_list[]. Remarks: This calculation also sets m_closed. If you modify the mesh's m_V or m_F information after calling this function, be sure to clear m_is_closed. </p>
 
 </div>
@@ -4526,7 +4526,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Assign a unique id to each vertex location. Coincident vertices get the same id. Parameters: first_vid - [in] Initial vertex id. Typically 1 or 0. Vid - [out] If not null, then Vid[] sould be an array of length <a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a>. and the vertex ids will be stored in this array. If null, the array will be allocated by calling <a class="el" href="group__open_n_u_r_b_s.html#gacadf2b280c0895b23634d3ad33a6a04b">onmalloc()</a>. The returned array Vid[i] is the id of the vertex m_V[i]. If m_V[i] and m_V[j] are the same 3d point, then Vid[i] and Vid[j] will have the same value. Vindex - [out] (can be null) If Vindex is not null, then it must have length at least m_V.Count() and the returned array will be a permutation of (0,1,...,m_V.Count()-1) such (Vid[Vindex[0]], Vid[Vindex[1]], ..., Vid[Vindex[m_V.Count()-1]]) is an increasing list of value. Returns: null if the mesh has no vertices. An array of length <a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a>. If vertices m_V[i] and m_V[j] are coincident, then Vid[i] = Vid[j]. The id values begin at first_vid. The maximum vertex id is Vid[Vindex[m_V.Count()-1]]. The number of unique vertex locations is (Vid[Vindex[m_V.Count()-1]] - first_vid + 1). </p>
+<p>Description: Assign a unique id to each vertex location. Coincident vertices get the same id. Parameters: first_vid - [in] Initial vertex id. Typically 1 or 0. Vid - [out] If not null, then Vid[] should be an array of length <a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a>. and the vertex ids will be stored in this array. If null, the array will be allocated by calling <a class="el" href="group__open_n_u_r_b_s.html#gacadf2b280c0895b23634d3ad33a6a04b">onmalloc()</a>. The returned array Vid[i] is the id of the vertex m_V[i]. If m_V[i] and m_V[j] are the same 3d point, then Vid[i] and Vid[j] will have the same value. Vindex - [out] (can be null) If Vindex is not null, then it must have length at least m_V.Count() and the returned array will be a permutation of (0,1,...,m_V.Count()-1) such (Vid[Vindex[0]], Vid[Vindex[1]], ..., Vid[Vindex[m_V.Count()-1]]) is an increasing list of value. Returns: null if the mesh has no vertices. An array of length <a class="el" href="class_o_n___mesh.html#a96f6f2497feca5e9ba8a038f260c07e5" title="query">VertexCount()</a>. If vertices m_V[i] and m_V[j] are coincident, then Vid[i] = Vid[j]. The id values begin at first_vid. The maximum vertex id is Vid[Vindex[m_V.Count()-1]]. The number of unique vertex locations is (Vid[Vindex[m_V.Count()-1]] - first_vid + 1). </p>
 
 </div>
 </div>
@@ -5044,7 +5044,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Slowly intersect this mesh with meshB. This method uses the old code. Parameters: meshB - [in] x - [out] Each element of x is a polyline of ON_MMX_POINTs. intersection_tolerance - [in] overlap_tolerance - [in] Returns: number of olylines appended to x[] array. Remarks: The InstersectMesh function will will create a meshtree, a mesh topology and face normals of this mesh and meshB. Note: if you create these in multiple memory pools you run the risk of crashing or leaking memory if you are not careful. </p>
+<p>Description: Slowly intersect this mesh with meshB. This method uses the old code. Parameters: meshB - [in] x - [out] Each element of x is a polyline of ON_MMX_POINTs. intersection_tolerance - [in] overlap_tolerance - [in] Returns: number of polylines appended to x[] array. Remarks: The IntersectMesh function will will create a meshtree, a mesh topology and face normals of this mesh and meshB. Note: if you create these in multiple memory pools you run the risk of crashing or leaking memory if you are not careful. </p>
 
 </div>
 </div>
@@ -5606,7 +5606,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#adf87e5ba0d9939dfabbb9f421b9d2b3b">ON_Geometry</a>.</p>
 
@@ -5788,7 +5788,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Merge faces like <a class="el" href="class_o_n___sub_d.html#a0412e0107132bcad5a3def31ed368f01">ON_SubD::MergeFaces()</a> does. Parameters: ci_list - [in] vertices, edges, and faces that trigger merging. Returns: If ngons were added, then the index of the first added ngon is returned. Otherwise ON_UNSET_UINT_INDEX is returned. </p>
+<p>Description: Merge faces like <a class="el" href="group__open_n_u_r_b_s.html#ga0412e0107132bcad5a3def31ed368f01">ON_SubD::MergeFaces()</a> does. Parameters: ci_list - [in] vertices, edges, and faces that trigger merging. Returns: If ngons were added, then the index of the first added ngon is returned. Otherwise ON_UNSET_UINT_INDEX is returned. </p>
 
 </div>
 </div>
@@ -6358,7 +6358,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Mesh offset Description: Offsets a mesh by the input distance</p>
-<p>distance - [in] Distance to offset direction - [in] If this parameter is <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a>, offset each vertex in the normal direction orherwise, offset every vertex in the input direction Returns: New mesh that is an offset of a duplicate of this mesh Or nullptr if the input was invalid or the mesh could not be duplicated or offset Caller manages memory of new mesh </p>
+<p>distance - [in] Distance to offset direction - [in] If this parameter is <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a>, offset each vertex in the normal direction otherwise, offset every vertex in the input direction Returns: New mesh that is an offset of a duplicate of this mesh Or nullptr if the input was invalid or the mesh could not be duplicated or offset Caller manages memory of new mesh </p>
 
 </div>
 </div>
@@ -6585,11 +6585,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: For each ngon with index in the specified range that has interior vertices, remove the interior vertices and triangluate the ngon. Parameters: vertex_face_map - [in]</p><ul>
+<p>Description: For each ngon with index in the specified range that has interior vertices, remove the interior vertices and triangulate the ngon. Parameters: vertex_face_map - [in]</p><ul>
 <li>Pass null if you don't have one.</li>
 <li>See <a class="el" href="class_o_n___mesh_vertex_face_map.html">ON_MeshVertexFaceMap</a> for details about making one. The only reason to pass one in is because you need it for other reasons or you already have one.</li>
 <li>If true is returned, then the information in this vertex_face_map will be invalid because vertices will be removed. ngon_index0 - [in] ngon_index1 - [in] ngons with indices ni satisfying ngon_index0 &lt;= ni &lt; ngon_index1 will be separated. To separate every ngon in a mesh, pass ngon_index0 = 0 and ngon_index1 = mesh-&gt;<a class="el" href="class_o_n___mesh.html#a4351c0a15e835215552431473ab84fb4">NgonCount()</a>. <br  />
- Returns: true one or more vertices were removed and one or more ngons were triangluated. This changes the mesh's vertex and face information and invalidates any input vertex_face_map. false The mesh was not modified. Remarks: If true is returned and you are finished modify the mesh, then call <a class="el" href="class_o_n___mesh.html#aef1590fcf5ed72349c51fc2da3c5a5e6">ON_Mesh::Compact()</a> or <a class="el" href="class_o_n___mesh.html#a2a28c1db5796622470a0d8cd4c8d4f7c" title="returns number of culled vertices">ON_Mesh::CullUnusedVertices()</a> to remove the unreferenced interior vertices. </li>
+ Returns: true one or more vertices were removed and one or more ngons were triangulated. This changes the mesh's vertex and face information and invalidates any input vertex_face_map. false The mesh was not modified. Remarks: If true is returned and you are finished modify the mesh, then call <a class="el" href="class_o_n___mesh.html#aef1590fcf5ed72349c51fc2da3c5a5e6">ON_Mesh::Compact()</a> or <a class="el" href="class_o_n___mesh.html#a2a28c1db5796622470a0d8cd4c8d4f7c" title="returns number of culled vertices">ON_Mesh::CullUnusedVertices()</a> to remove the unreferenced interior vertices. </li>
 </ul>
 
 </div>
@@ -6696,7 +6696,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Increases the capactiy of arrays used to hold vertex information. Parameters: new_vertex_capacity - [in] desired capacity Returns: true if successful. Remarks: This function is useful if you are getting ready to add a known number of vertices and want to increase the dynamic array capacities before you begin adding vertices. </p>
+<p>Description: Increases the capacity of arrays used to hold vertex information. Parameters: new_vertex_capacity - [in] desired capacity Returns: true if successful. Remarks: This function is useful if you are getting ready to add a known number of vertices and want to increase the dynamic array capacities before you begin adding vertices. </p>
 
 </div>
 </div>
@@ -6941,7 +6941,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Expert user function to set m_is_closed member. <br  />
- Setting this value correctly after a mesh is constructed can save time when <a class="el" href="class_o_n___mesh.html#a028ab06bfe084fb116e101f91f82fa7e">IsClosed()</a> is called. This function sets the private member variable m_is_closed. Parameters: closed - [in] 0: The mesh is not closed. There is at least one face with an edge that is geometrically distinct (as an unoriented line segment) from all other edges. 1: The mesh is closed. Every geometrically distict edge is used by two or more faces. </p>
+ Setting this value correctly after a mesh is constructed can save time when <a class="el" href="class_o_n___mesh.html#a028ab06bfe084fb116e101f91f82fa7e">IsClosed()</a> is called. This function sets the private member variable m_is_closed. Parameters: closed - [in] 0: The mesh is not closed. There is at least one face with an edge that is geometrically distinct (as an unoriented line segment) from all other edges. 1: The mesh is closed. Every geometrically distinct edge is used by two or more faces. </p>
 
 </div>
 </div>
@@ -7980,7 +7980,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If you modify the values of double precision vertices, then you must call UpdateSinglePrecisonVertices(). Remarks: If double precision vertices are not present, this function does nothing. </p>
+<p>Description: If you modify the values of double precision vertices, then you must call <a class="el" href="class_o_n___mesh.html#ac78c5b48affca5a6218278c7037a2776">UpdateSinglePrecisionVertices()</a>. Remarks: If double precision vertices are not present, this function does nothing. </p>
 
 </div>
 </div>
@@ -8139,7 +8139,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Compute volume of the mesh. Parameters: base_point - [in] optional base point When computing the volume of solid defined by several meshes, pass the same base_point to each call to volume. When computing the volume of a solid defined by a single mesh, the center of the bounding box is a good choice for base_point. error_estimate - [out] if not nullptr, an upper bound on the error in the volume calculation is returned. Returns: volume of the mesh. Example:</p>
-<p>/ Assume a solid is enclosed by 3 meshes, mesh1, mesh2, and mesh3. / The volume of the solid can be computed as follows. <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> mesh1=..., mesh2=..., mesh3=...; / use the center of the solid's bounding box as a common base point. <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> bbox = mesh1.BoundingBox(); mesh2.GetBoundingBox(bbox,true); mesh3.GetBoundingBox(bbox,true); <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> base_point = bbox.Center() double vol1_err, vol2_err, vol3_err; double vol1 = mesh1.Volume(base_point,&amp;vol1_err); double vol2 = mesh2.Volume(base_point,&amp;vol2_err); double vol3 = mesh3.Volume(base_point,&amp;vol3_err); double volume = vol1 + vol2 + vol3; double error_estimate = vol1_err + vol2_err + vol3_err; printf("mesh volumd = %g (+/- %g)\n",volume,error_estimate); </p>
+<p>/ Assume a solid is enclosed by 3 meshes, mesh1, mesh2, and mesh3. / The volume of the solid can be computed as follows. <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> mesh1=..., mesh2=..., mesh3=...; / use the center of the solid's bounding box as a common base point. <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> bbox = mesh1.BoundingBox(); mesh2.GetBoundingBox(bbox,true); mesh3.GetBoundingBox(bbox,true); <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> base_point = bbox.Center() double vol1_err, vol2_err, vol3_err; double vol1 = mesh1.Volume(base_point,&amp;vol1_err); double vol2 = mesh2.Volume(base_point,&amp;vol2_err); double vol3 = mesh3.Volume(base_point,&amp;vol3_err); double volume = vol1 + vol2 + vol3; double error_estimate = vol1_err + vol2_err + vol3_err; printf("mesh volume = %g (+/- %g)\n",volume,error_estimate); </p>
 
 </div>
 </div>
@@ -8680,7 +8680,7 @@ Additional Inherited Members</h2></td></tr>
 <p>When opennurbs or Rhino meshes an <a class="el" href="class_o_n___surface.html">ON_Surface</a> or <a class="el" href="class_o_n___brep.html">ON_Brep</a>, the texture coordinates have a "canonical" linear relationship with the surface parameters that is described in the next section. However, various mappings, spherical, planar, cylindrical, etc., can be applied that change the values of the texture coordinates.</p>
 <p>If a texture mapping function was used to set the m_T[] values, then the id and serial number of the mapping function is saved in m_mapping_id and m_mapping_sn. The intended use of these fields is to make it easy to avoid unnecessary recalculation. <br  />
  If a mesh is modified, then m_mapping_id should be set to nil and m_mapping_crc should be set to 0. Texture coordinates / surface parameters</p>
-<p>If m_S.Count() == m_V.Count(), then the mesh has texture coordinates, or it is a tessellation of a parameteric surface and m_S[j] is the texture coordinate / surface parameter at m_V[j]. If the values in m_S are changed, then you need to call <a class="el" href="class_o_n___mesh.html#ab0e73bf3dcd70164231fe8a6bc976b64">InvalidateCachedTextureCoordinates()</a>. Storing values in m_S[] is OPTIONAL. </p>
+<p>If m_S.Count() == m_V.Count(), then the mesh has texture coordinates, or it is a tessellation of a parametric surface and m_S[j] is the texture coordinate / surface parameter at m_V[j]. If the values in m_S are changed, then you need to call <a class="el" href="class_o_n___mesh.html#ab0e73bf3dcd70164231fe8a6bc976b64">InvalidateCachedTextureCoordinates()</a>. Storing values in m_S[] is OPTIONAL. </p>
 
 </div>
 </div>
@@ -8854,7 +8854,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

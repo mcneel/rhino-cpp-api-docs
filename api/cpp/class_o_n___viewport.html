@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -914,7 +914,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Use this function to change projections of valid viewports from persective to parallel. It will make common additional adjustments to the frustum so the resulting views are similar. The camera location and direction will not be changed. Parameters: bSymmetricFrustum - [in] True if you want the resulting frustum to be symmetric. Remarks: If the current projection is parallel and bSymmetricFrustum, <a class="el" href="class_o_n___viewport.html#ac151995be1b9ec91a06edcbd00dbdd4f">FrustumIsLeftRightSymmetric()</a> and <a class="el" href="class_o_n___viewport.html#ae16c74950bbe1a6eaa2e305813255396">FrustumIsTopBottomSymmetric()</a> are all equal, then no changes are made and true is returned. </p>
+<p>Description: Use this function to change projections of valid viewports from perspective to parallel. It will make common additional adjustments to the frustum so the resulting views are similar. The camera location and direction will not be changed. Parameters: bSymmetricFrustum - [in] True if you want the resulting frustum to be symmetric. Remarks: If the current projection is parallel and bSymmetricFrustum, <a class="el" href="class_o_n___viewport.html#ac151995be1b9ec91a06edcbd00dbdd4f">FrustumIsLeftRightSymmetric()</a> and <a class="el" href="class_o_n___viewport.html#ae16c74950bbe1a6eaa2e305813255396">FrustumIsTopBottomSymmetric()</a> are all equal, then no changes are made and true is returned. </p>
 
 </div>
 </div>
@@ -1074,7 +1074,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Calculate the value to add to homogeneous "z" clipping coordinate that corresponds to moving the corresponding euclidean camera coordinate by relative_depth_bias*(far - near). Parameters: relative_depth_bias - [in] signed relative bias. = 0: no bias, &gt; 0: bias towards frustum's near clipping plane &lt; 0: bias towards frustum's far clipping plane When you have curves and points that are "on" shaded objects, values around 1/256 work well to move the wire objects in front of or behind shaded objects. clip_z [-in] clip_w [-in] clip_z and clip_w are the homogeneous "w" and "w" coordinates of a homogeneous clipping coordinate point. Returns: The clipping coordinate depth bias to add to the z-clipping coordinate that corresponds to adding cam_depth_bias to the z camera coordinate. Remarks: For perspective views, this bias is largest in the vicinity of the frustum's near clipping plane and smallest in the vicinity of the frustum's far clipping plane. For orthographic projectsions, this bias is constant. </p>
+<p>Description: Calculate the value to add to homogeneous "z" clipping coordinate that corresponds to moving the corresponding euclidean camera coordinate by relative_depth_bias*(far - near). Parameters: relative_depth_bias - [in] signed relative bias. = 0: no bias, &gt; 0: bias towards frustum's near clipping plane &lt; 0: bias towards frustum's far clipping plane When you have curves and points that are "on" shaded objects, values around 1/256 work well to move the wire objects in front of or behind shaded objects. clip_z [-in] clip_w [-in] clip_z and clip_w are the homogeneous "w" and "w" coordinates of a homogeneous clipping coordinate point. Returns: The clipping coordinate depth bias to add to the z-clipping coordinate that corresponds to adding cam_depth_bias to the z camera coordinate. Remarks: For perspective views, this bias is largest in the vicinity of the frustum's near clipping plane and smallest in the vicinity of the frustum's far clipping plane. For orthographic projections, this bias is constant. </p>
 
 </div>
 </div>
@@ -1311,7 +1311,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use <a class="el" href="class_o_n___viewport.html#ae48ac9cd35059f9f4d3c8bf6fd86620b">Extents()</a> as a quick way to set a viewport to so that bounding volume is inside of a viewports frusmtrum. The view angle is used to determine the position of the camera. </p>
+<p>Use <a class="el" href="class_o_n___viewport.html#ae48ac9cd35059f9f4d3c8bf6fd86620b">Extents()</a> as a quick way to set a viewport to so that bounding volume is inside of a viewports frustum. The view angle is used to determine the position of the camera. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">half_view_angle</td><td>1/2 smallest subtended view angle </td></tr>
@@ -1354,7 +1354,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Return a point on the central axis of the view frustum. This point is a good choice for a general purpose target point. Parameters: target_distance - [in] If target_distance &gt; 0.0, then the distance from the returned point to the camera plane will be target_distance. Note that if the frustum is not symmetric, the distance from the returned point to the camera location will be larger than target_distanct. If target_distance == ON_UNSET_VALUE and the frustum is valid with near &gt; 0.0, then 0.5*(near + far) will be used as the target_distance. Returns: A point on the frustum's central axis. If the viewport or input is not valid, then <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> is returned. </p>
+<p>Description: Return a point on the central axis of the view frustum. This point is a good choice for a general purpose target point. Parameters: target_distance - [in] If target_distance &gt; 0.0, then the distance from the returned point to the camera plane will be target_distance. Note that if the frustum is not symmetric, the distance from the returned point to the camera location will be larger than target_distance. If target_distance == ON_UNSET_VALUE and the frustum is valid with near &gt; 0.0, then 0.5*(near + far) will be used as the target_distance. Returns: A point on the frustum's central axis. If the viewport or input is not valid, then <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> is returned. </p>
 
 </div>
 </div>
@@ -1644,7 +1644,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get near and far clipping distances of a bounding box. Parameters: bbox - [in] bounding box bbox_xform - [in] If not nullptr, this transformation to applied to the corners of bbox. It should have positive determinant for the results to be meaningful. Typically bbox_xform is used to pass an instance reference transformation. near_dist - [out] near distance of the box This value can be zero or negative when the camera location is inside bbox. far_dist - [out] far distance of the box This value can be equal to near_dist, zero or negative when the camera location is in front of the bounding box. bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: 0: The bounding box does not intersectthe view frustum. 1: A proper subset of the bounding box is inside the view frustum and near_dist/far_dist were set. 2: The entire bounding box is inside the view frustum and near_dist/far_dist were set. Remarks: This function ignores the current value of the viewport's near and far settings. If the viewport is a perspective projection, the it intersects the semi infinite frustum volume with the bounding box and returns the near and far distances of the intersection. If the viewport is a parallel projection, it instersects the infinite view region with the bounding box and returns the near and far distances of the projection. </p>
+<p>Description: Get near and far clipping distances of a bounding box. Parameters: bbox - [in] bounding box bbox_xform - [in] If not nullptr, this transformation to applied to the corners of bbox. It should have positive determinant for the results to be meaningful. Typically bbox_xform is used to pass an instance reference transformation. near_dist - [out] near distance of the box This value can be zero or negative when the camera location is inside bbox. far_dist - [out] far distance of the box This value can be equal to near_dist, zero or negative when the camera location is in front of the bounding box. bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: 0: The bounding box does not intersect the view frustum. 1: A proper subset of the bounding box is inside the view frustum and near_dist/far_dist were set. 2: The entire bounding box is inside the view frustum and near_dist/far_dist were set. Remarks: This function ignores the current value of the viewport's near and far settings. If the viewport is a perspective projection, the it intersects the semi infinite frustum volume with the bounding box and returns the near and far distances of the intersection. If the viewport is a parallel projection, it intersects the infinite view region with the bounding box and returns the near and far distances of the projection. </p>
 
 </div>
 </div>
@@ -1685,7 +1685,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get near and far clipping distances of a bounding box. Parameters: bbox - [in] bounding box near_dist - [out] near distance of the box This value can be zero or negative when the camera location is inside bbox. far_dist - [out] far distance of the box This value can be equal to near_dist, zero or negative when the camera location is in front of the bounding box. bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the bounding box intersects the view frustum and near_dist/far_dist were set. False if the bounding box does not intesect the view frustum. Remarks: This function ignores the current value of the viewport's near and far settings. If the viewport is a perspective projection, the it intersects the semi infinite frustum volume with the bounding box and returns the near and far distances of the intersection. If the viewport is a parallel projection, it instersects the infinite view region with the bounding box and returns the near and far distances of the projection. </p>
+<p>Description: Get near and far clipping distances of a bounding box. Parameters: bbox - [in] bounding box near_dist - [out] near distance of the box This value can be zero or negative when the camera location is inside bbox. far_dist - [out] far distance of the box This value can be equal to near_dist, zero or negative when the camera location is in front of the bounding box. bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the bounding box intersects the view frustum and near_dist/far_dist were set. False if the bounding box does not intersect the view frustum. Remarks: This function ignores the current value of the viewport's near and far settings. If the viewport is a perspective projection, the it intersects the semi infinite frustum volume with the bounding box and returns the near and far distances of the intersection. If the viewport is a parallel projection, it intersects the infinite view region with the bounding box and returns the near and far distances of the projection. </p>
 
 </div>
 </div>
@@ -1760,7 +1760,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>These functions assume the camera is horizontal and crop the film rather than the image when the aspect of the frustum is not 36/24. (35mm film is 36mm wide and 24mm high.)</p>
-<p>The <a class="el" href="class_o_n___viewport.html#ada21c6a1dedea97ed9701ea9df3cae4c">SetCamera35mmLensLength()</a> preserves camera location, changes the frustum, but maintains the frsutrum's aspect. </p>
+<p>The <a class="el" href="class_o_n___viewport.html#ada21c6a1dedea97ed9701ea9df3cae4c">SetCamera35mmLensLength()</a> preserves camera location, changes the frustum, but maintains the frustum's aspect. </p>
 
 </div>
 </div>
@@ -2059,7 +2059,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Calculate a transformation to apply to clipping coordinates to bias their depth.</p>
 <p>Parameters: relative_depth_bias - [in] signed relative bias. = 0: no bias, &gt; 0: bias towards frustum's near clipping plane &lt; 0: bias towards frustum's far clipping plane When you have curves and points that are "on" shaded objects, values around 1/512 work well to move the wire objects in front of or behind shaded objects.</p>
 <p>clip_bias - [out] clip_bias = cam2clip * delta * clip2cam, where delta = 1 0 0 0 0 1 0 0 0 0 1 D 0 0 0 1 and D = relative_depth_bias*(far-near).</p>
-<p>Returns: True if the function worked. False if the frustum settings are not valild, in which cate the identity matrix is returned.</p>
+<p>Returns: True if the function worked. False if the frustum settings are not valid, in which cate the identity matrix is returned.</p>
 <p>Remarks: The inverse of the transformations returned by GetClipCoordDepthBiasXform(+r,...) is the transformation returned by GetClipCoordDepthBiasXform(-r,...). </p>
 
 </div>
@@ -2349,7 +2349,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get bottom world frustum clipping plane. Parameters: bottom_plane - [out] frustum bottom side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin isthe point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
+<p>Description: Get bottom world frustum clipping plane. Parameters: bottom_plane - [out] frustum bottom side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin is the point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
 
 </div>
 </div>
@@ -2406,7 +2406,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get left world frustum clipping plane. Parameters: left_plane - [out] frustum left side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin isthe point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
+<p>Description: Get left world frustum clipping plane. Parameters: left_plane - [out] frustum left side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin is the point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
 
 </div>
 </div>
@@ -2478,7 +2478,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get right world frustum clipping plane. Parameters: right_plane - [out] frustum right side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin isthe point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
+<p>Description: Get right world frustum clipping plane. Parameters: right_plane - [out] frustum right side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin is the point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
 
 </div>
 </div>
@@ -2515,7 +2515,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get top world frustum clipping plane. Parameters: top_plane - [out] frustum top side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin isthe point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
+<p>Description: Get top world frustum clipping plane. Parameters: top_plane - [out] frustum top side clipping plane. The normal points into the visible region of the frustum. If the projection is perspective, the origin is at the camera location, otherwise the origin is the point on the plane that is closest to the camera location. Returns: True if camera and frustum are valid and plane was set. </p>
 
 </div>
 </div>
@@ -2709,7 +2709,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get near and far clipping distances of a point Parameters: point - [in] near_dist - [out] near distance of the point (can be &lt; 0) far_dist - [out] far distance of the point (can be equal to near_dist) bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the point is ing the view frustum and near_dist/far_dist were set. False if the bounding box does not intesect the view frustum. </p>
+<p>Description: Get near and far clipping distances of a point Parameters: point - [in] near_dist - [out] near distance of the point (can be &lt; 0) far_dist - [out] far distance of the point (can be equal to near_dist) bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the point is ing the view frustum and near_dist/far_dist were set. False if the bounding box does not intersect the view frustum. </p>
 
 </div>
 </div>
@@ -2738,7 +2738,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the view plane depth of a point Parameters: point - [in] view_plane_depth - [out] positive values are in front of the camera and negative values are behind the camera. If 0 &lt;= point_depth &lt; <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a>, the point's view plane is between the camera and the frustum's near plane. If point_depth &gt; <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a>, the point's view plane is farther from the camera and the frustum's far plane. Returns: True if the point is ing the view frustum and near_dist/far_dist were set. False if the bounding box does not intesect the view frustum. </p>
+<p>Description: Get the view plane depth of a point Parameters: point - [in] view_plane_depth - [out] positive values are in front of the camera and negative values are behind the camera. If 0 &lt;= point_depth &lt; <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a>, the point's view plane is between the camera and the frustum's near plane. If point_depth &gt; <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a>, the point's view plane is farther from the camera and the frustum's far plane. Returns: True if the point is ing the view frustum and near_dist/far_dist were set. False if the bounding box does not intersect the view frustum. </p>
 
 </div>
 </div>
@@ -2858,7 +2858,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get near and far clipping distances of a bounding sphere. Parameters: sphere - [in] bounding sphere near_dist - [out] near distance of the sphere (can be &lt; 0) far_dist - [out] far distance of the sphere (can be equal to near_dist) bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the sphere intersects the view frustum and near_dist/far_dist were set. False if the sphere does not intesect the view frustum. </p>
+<p>Description: Get near and far clipping distances of a bounding sphere. Parameters: sphere - [in] bounding sphere near_dist - [out] near distance of the sphere (can be &lt; 0) far_dist - [out] far distance of the sphere (can be equal to near_dist) bGrowNearFar - [in] If true and input values of near_dist and far_dist are not ON_UNSET_VALUE, the near_dist and far_dist are enlarged to include bbox. Returns: True if the sphere intersects the view frustum and near_dist/far_dist were set. False if the sphere does not intersect the view frustum. </p>
 
 </div>
 </div>
@@ -2887,7 +2887,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the plane that is a specified distance from the camera. This plane is parallel to the frustum's near and far planes. Parameters: view_plane_depth - [in] The distance from the camera location to the view plane. Positive distances are in front of the camera and negative distances are behind the camera. A value of <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a> will return the frustum's near plane and a valud of <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a> will return the frustum's far plane. view_plane - [out] View plane view_plane_equation - [out] Equation of the view plane. Returns: True if the camera and frustum are valid and view_plane was calculated. False otherwise. </p>
+<p>Description: Get the plane that is a specified distance from the camera. This plane is parallel to the frustum's near and far planes. Parameters: view_plane_depth - [in] The distance from the camera location to the view plane. Positive distances are in front of the camera and negative distances are behind the camera. A value of <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a> will return the frustum's near plane and a valid of <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a> will return the frustum's far plane. view_plane - [out] View plane view_plane_equation - [out] Equation of the view plane. Returns: True if the camera and frustum are valid and view_plane was calculated. False otherwise. </p>
 
 </div>
 </div>
@@ -2962,7 +2962,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the world coordinate corners of the rectangle of a view plane that is a specified distance from the camera. This rectangle is parallel to the frustum's near and far planes. Parameters: view_plane_depth - [in] The distance from the camera location to the view plane. Positive distances are in front of the camera and negative distances are behind the camera. A value of <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a> will return the frustum's near rectangle and a valud of <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a> will return the frustum's far rectangle. left_bottom - [out] right_bottom - [out] left_top - [out] right_top - [out] Returns: True if the camera and frustum are valid and view_plane was calculated. False otherwise. </p>
+<p>Description: Get the world coordinate corners of the rectangle of a view plane that is a specified distance from the camera. This rectangle is parallel to the frustum's near and far planes. Parameters: view_plane_depth - [in] The distance from the camera location to the view plane. Positive distances are in front of the camera and negative distances are behind the camera. A value of <a class="el" href="class_o_n___viewport.html#a42c5aa6390e2f68735012be035f1064c">FrustumNear()</a> will return the frustum's near rectangle and a value of <a class="el" href="class_o_n___viewport.html#a0c6facd87b28b61d7efce8463d6c20f9">FrustumFar()</a> will return the frustum's far rectangle. left_bottom - [out] right_bottom - [out] left_top - [out] right_top - [out] Returns: True if the camera and frustum are valid and view_plane was calculated. False otherwise. </p>
 
 </div>
 </div>
@@ -3142,7 +3142,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Interface ///////////////////////////////////////////////////////////////// </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>Use = <a class="el" href="class_o_n___viewport.html#a192ecc7cdc18bfa9a2f09a28de406c78">ON_Viewport::DefaultTopViewYUp</a> </dd></dl>
+<p>Interface ///////////////////////////////////////////////////////////////// </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000108">Deprecated:</a></b></dt><dd>Use = <a class="el" href="class_o_n___viewport.html#a192ecc7cdc18bfa9a2f09a28de406c78">ON_Viewport::DefaultTopViewYUp</a> </dd></dl>
 
 </div>
 </div>
@@ -4313,7 +4313,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Unconditionally set the projection. Parameters: projection - [in] See Also: ON_Viewport::SetParallelProjection ON_Viewport::SetPerpectiveProjection ON_Viewport::SetTwoPointPerspectiveProjection <br  />
+<p>Description: Unconditionally set the projection. Parameters: projection - [in] See Also: ON_Viewport::SetParallelProjection ON_Viewport::SetPerspectiveProjection ON_Viewport::SetTwoPointPerspectiveProjection <br  />
  </p>
 
 </div>
@@ -5553,14 +5553,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The location of this point has no impact on the view projection. It is simply a suggestion for a fixed point when views are rotated or the isometric depth when perpsective views are dollied. The default is <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a>. </p>
+<p>The location of this point has no impact on the view projection. It is simply a suggestion for a fixed point when views are rotated or the isometric depth when perspective views are dollied. The default is <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a>. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

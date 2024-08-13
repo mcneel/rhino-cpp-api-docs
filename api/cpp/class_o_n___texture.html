@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -546,7 +546,7 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558adf9b255a46a5ac80324c3df588fa8c1d"></a>bump_texture&#160;</td><td class="fielddoc"><p>bump map - see m_bump_scale comment </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558aa8a41fbbb8dc22587105d0525f5053c4"></a>transparency_texture&#160;</td><td class="fielddoc"><p>value = alpha (see m_tranparancy_id) Deprecated. Use Opacity. No change needed to functionality - transparency in Rhino has always meant opacity. </p>
+<tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558aa8a41fbbb8dc22587105d0525f5053c4"></a>transparency_texture&#160;</td><td class="fielddoc"><p>value = alpha (see m_transparency_id) Deprecated. Use Opacity. No change needed to functionality - transparency in Rhino has always meant opacity. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558a7265b8168da8f67dfaca0967a60414bf"></a>opacity_texture&#160;</td><td class="fielddoc"><p>value = alpha. </p>
 </td></tr>
@@ -1941,8 +1941,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This field is used for textures with type bitmap_texture that reference bitmap files that do not have an alpha channel and is used to set runtime alpha values. It needs to be parsed when the texture is loaded and can be ignored at runtime.</p>
-<p>If m_transparency_id is not nil, it is the id of another texture in the <a class="el" href="class_o_n___material.html#a86ef5cc514afb7185007041934e19b55">ON_Material.m_textures</a>[] array that has type m_transparency_texture. The runtime bitmap_texture's alpha is set to (255-max(R,G,B)) (the "value" in the hue, saturation,value sense) of the correspondeing transparency_texture pixel.</p>
-<p>For example, if you had a bitmap texuture that was green with purple dots saved in a RGB .bmp file and you wanted the purple dots to be semi-transparent, you could create another bitmap that was black, where the original was green, and gray, where the original was purple, have an transparency_texture reference the white/gray bitmap, and have the bitmap_texture's m_transparency_id reference the transparency map. </p>
+<p>If m_transparency_id is not nil, it is the id of another texture in the <a class="el" href="class_o_n___material.html#a86ef5cc514afb7185007041934e19b55">ON_Material.m_textures</a>[] array that has type m_transparency_texture. The runtime bitmap_texture's alpha is set to (255-max(R,G,B)) (the "value" in the hue, saturation,value sense) of the corresponding transparency_texture pixel.</p>
+<p>For example, if you had a bitmap texture that was green with purple dots saved in a RGB .bmp file and you wanted the purple dots to be semi-transparent, you could create another bitmap that was black, where the original was green, and gray, where the original was purple, have an transparency_texture reference the white/gray bitmap, and have the bitmap_texture's m_transparency_id reference the transparency map. </p>
 
 </div>
 </div>
@@ -2066,7 +2066,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

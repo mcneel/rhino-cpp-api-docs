@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -705,7 +705,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_BezierCurve::GetCV( ON_3dPoint&amp; ) or ON_BezierCurve::GetCV( ON_4dPoint&amp; ). Parameters: cv_index - [in] (0 &lt;= cv_index &lt; m_order) Returns: Pointer to control vertex. Remarks: If the Bezier curve is rational, the format of the returned array is a homogeneos rational point with length m_dim+1. If the Bezier curve is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___bezier_curve.html#a59cc73d69a29cd166b04be42c7f15f17">ON_BezierCurve::CVStyle</a> <a class="el" href="class_o_n___bezier_curve.html#a38d647951d5711ca8e832dcbc90c7792">ON_BezierCurve::GetCV</a> <a class="el" href="class_o_n___bezier_curve.html#a677e2628da411e8bb88b2e9215d4c608">ON_BezierCurve::Weight</a> </p>
+<p>Description: Expert user function to get a pointer to control vertex memory. If you are not an expert user, please use ON_BezierCurve::GetCV( ON_3dPoint&amp; ) or ON_BezierCurve::GetCV( ON_4dPoint&amp; ). Parameters: cv_index - [in] (0 &lt;= cv_index &lt; m_order) Returns: Pointer to control vertex. Remarks: If the Bezier curve is rational, the format of the returned array is a homogeneous rational point with length m_dim+1. If the Bezier curve is not rational, the format of the returned array is a nonrational euclidean point with length m_dim. See Also <a class="el" href="class_o_n___bezier_curve.html#a59cc73d69a29cd166b04be42c7f15f17">ON_BezierCurve::CVStyle</a> <a class="el" href="class_o_n___bezier_curve.html#a38d647951d5711ca8e832dcbc90c7792">ON_BezierCurve::GetCV</a> <a class="el" href="class_o_n___bezier_curve.html#a677e2628da411e8bb88b2e9215d4c608">ON_BezierCurve::Weight</a> </p>
 
 </div>
 </div>
@@ -1973,7 +1973,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Loft a bezier curve through a list of points. Parameters: points - [in] an array of 2 or more points to interpolate Returns: true if successful Remarks: The result has order = points.Count() and the loft uses the uniform parameterizaton curve( i/(points.Count()-1) ) = points[i]. </p>
+<p>Description: Loft a bezier curve through a list of points. Parameters: points - [in] an array of 2 or more points to interpolate Returns: true if successful Remarks: The result has order = points.Count() and the loft uses the uniform parameterization curve( i/(points.Count()-1) ) = points[i]. </p>
 
 </div>
 </div>
@@ -2026,7 +2026,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Loft a bezier curve through a list of points. Parameters: pt_dim - [in] dimension of points to interpolate pt_count - [in] number of points (&gt;=2) pt_stride - [in] (&gt;=pt_dim) pt[] array stride pt - [in] array of points t_stride - [in] (&gt;=1) t[] array stride t - [in] strictly increasing array of interpolation parameters Returns: true if successful Remarks: The result has order = points.Count() and the loft uses the parameterizaton curve( t[i] ) = points[i]. </p>
+<p>Description: Loft a bezier curve through a list of points. Parameters: pt_dim - [in] dimension of points to interpolate pt_count - [in] number of points (&gt;=2) pt_stride - [in] (&gt;=pt_dim) pt[] array stride pt - [in] array of points t_stride - [in] (&gt;=1) t[] array stride t - [in] strictly increasing array of interpolation parameters Returns: true if successful Remarks: The result has order = points.Count() and the loft uses the parameterization curve( t[i] ) = points[i]. </p>
 
 </div>
 </div>
@@ -2234,7 +2234,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: this - v Remarks: Ignores coordinates after the first three. </p>
+<p>Returns: this - v Remarks: Ignores coordinates after the first three. <br  />
+ </p>
 
 </div>
 </div>
@@ -2634,7 +2635,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set value of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) point - [in] control vertex value. If the bezier is not rational, the euclidean location of homogenoeous point will be used. Returns: true if successful. See Also: <a class="el" href="class_o_n___bezier_curve.html#adf3ed73e3b7e47c132724ed26d96882f">ON_BezierCurve::CV</a>, <a class="el" href="class_o_n___bezier_curve.html#a37e7f759538be4bb476e4b24a76a216d">ON_BezierCurve::SetCV</a>, <a class="el" href="class_o_n___bezier_curve.html#a63b12855581ab2fa7fccaddb605207fe">ON_BezierCurve::SetWeight</a>, <a class="el" href="class_o_n___bezier_curve.html#a677e2628da411e8bb88b2e9215d4c608">ON_BezierCurve::Weight</a> </p>
+<p>Description: Set value of a control vertex. Parameters: cv_index - [in] control vertex index (0 &lt;= cv_index &lt; m_order) point - [in] control vertex value. If the bezier is not rational, the euclidean location of homogeneous point will be used. Returns: true if successful. See Also: <a class="el" href="class_o_n___bezier_curve.html#adf3ed73e3b7e47c132724ed26d96882f">ON_BezierCurve::CV</a>, <a class="el" href="class_o_n___bezier_curve.html#a37e7f759538be4bb476e4b24a76a216d">ON_BezierCurve::SetCV</a>, <a class="el" href="class_o_n___bezier_curve.html#a63b12855581ab2fa7fccaddb605207fe">ON_BezierCurve::SetWeight</a>, <a class="el" href="class_o_n___bezier_curve.html#a677e2628da411e8bb88b2e9215d4c608">ON_BezierCurve::Weight</a> </p>
 
 </div>
 </div>
@@ -2951,7 +2952,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

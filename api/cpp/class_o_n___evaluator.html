@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -287,7 +287,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: OPTIONAL ability to evaluate the hessian in the case when m_value_count is one. If your function has more that one value or it is not feasible to evaluate the hessian, then do not override this function. The default implementation returns -1. Parameters: parameters - [in] array of m_parameter_count evaluation parameters value - [out] value of the function (one double) gradient - [out] The gradient of the function. This is a vector of length m_parameter_count; gradient[i] is the first partial of the function with respect to the i-th parameter. hessian - [out] The hessian of the function. This is an m_parameter_count x m_parameter_count symmetric matrix: hessian[i][j] is the second partial of the function with respect to the i-th and j-th parameters. The evaluator is responsible for filling in both the upper and lower triangles. Since the matrix is symmetrix, you should do something like evaluate the upper triangle and copy the values to the lower tiangle. Returns: -1 = Hessian evaluation not available. 0 = unable to evaluate 1 = successful evaluation 2 = found answer, terminate search </p>
+<p>Description: OPTIONAL ability to evaluate the hessian in the case when m_value_count is one. If your function has more that one value or it is not feasible to evaluate the hessian, then do not override this function. The default implementation returns -1. Parameters: parameters - [in] array of m_parameter_count evaluation parameters value - [out] value of the function (one double) gradient - [out] The gradient of the function. This is a vector of length m_parameter_count; gradient[i] is the first partial of the function with respect to the i-th parameter. hessian - [out] The hessian of the function. This is an m_parameter_count x m_parameter_count symmetric matrix: hessian[i][j] is the second partial of the function with respect to the i-th and j-th parameters. The evaluator is responsible for filling in both the upper and lower triangles. Since the matrix is symmetrix, you should do something like evaluate the upper triangle and copy the values to the lower triangle. Returns: -1 = Hessian evaluation not available. 0 = unable to evaluate 1 = successful evaluation 2 = found answer, terminate search </p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

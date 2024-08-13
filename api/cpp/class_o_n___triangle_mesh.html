@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -1237,7 +1237,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>triangle flags m_T_flags can be nullptr. If it is not nullptr, then information about triangle m_T[ti] is encoded in m_T_flags[ti] as follows:</p>
-<p>(m_T_flags[ti] &amp; 0x3F): The low six bits (m_T_flags[ti] &amp; 0x3F) specifie how to convert triangle barycentric coordinates (a,b,c) to <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a> barycentric coordinates. q[ 0x03 &amp; T_flags ] = a q[(0x0C &amp; T_flags)&gt;&gt;2] = b q[(0x30 &amp; T_flags)&gt;&gt;4] = c q[other element] = 0.0 The static function <a class="el" href="class_o_n___triangle_mesh.html#a7c9a813a7e32c0b974b4392d02664257">BarycentricTriToQuad()</a> will perform the conversion.</p>
+<p>(m_T_flags[ti] &amp; 0x3F): The low six bits (m_T_flags[ti] &amp; 0x3F) specifies how to convert triangle barycentric coordinates (a,b,c) to <a class="el" href="class_o_n___mesh_face.html">ON_MeshFace</a> barycentric coordinates. q[ 0x03 &amp; T_flags ] = a q[(0x0C &amp; T_flags)&gt;&gt;2] = b q[(0x30 &amp; T_flags)&gt;&gt;4] = c q[other element] = 0.0 The static function <a class="el" href="class_o_n___triangle_mesh.html#a7c9a813a7e32c0b974b4392d02664257">BarycentricTriToQuad()</a> will perform the conversion.</p>
 <p>(m_T_flags[ti] &amp; 0x01C0): The next 3 bits are used to indicate when an edge of a triangle is not an edge of the original mesh object. For example, when a quad is split into two triangles, the triangles edges corresponding to the splitting diagonal have their bits set. 0 != (m_T_flags[ti] &amp; 0x0040) means the triangle edge opposite vertex m_T[ti][0] is not an edge in the original mesh. 0 != (m_T_flags[ti] &amp; 0x0080) means the triangle edge opposite vertex m_T[ti][1] is not an edge in the original mesh. 0 != (m_T_flags[ti] &amp; 0x0100) means the triangle edge opposite vertex m_T[ti][2] is not an edge in the original mesh. triangle flags </p>
 
 </div>
@@ -1294,7 +1294,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

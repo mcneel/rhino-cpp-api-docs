@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -396,7 +396,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: adaptive_subd_display_density - [in] A value &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. When in doubt, pass <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. Invalid input values are treated as <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. subd - [in] In the cases when the subd in question is not available, like user interface code that applies in general and to unknown SubDs, pass <a class="el" href="class_o_n___sub_d.html#aadc6b3bd637b36f409114a91ef9c2a51">ON_SubD::Empty</a>. Returns: The absolute SubD display density for subd. The absolute SubD display density is &lt;= adaptive_subd_display_density and &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. </p>
+<p>Parameters: adaptive_subd_display_density - [in] A value &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. When in doubt, pass <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. Invalid input values are treated as <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. subd - [in] In the cases when the subd in question is not available, like user interface code that applies in general and to unknown SubDs, pass <a class="el" href="group__open_n_u_r_b_s.html#gaadc6b3bd637b36f409114a91ef9c2a51">ON_SubD::Empty</a>. Returns: The absolute SubD display density for subd. The absolute SubD display density is &lt;= adaptive_subd_display_density and &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. </p>
 
 </div>
 </div>
@@ -551,10 +551,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: This function creates <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> from a user interface "slider" like Rhino's simple mesh controls. Parameters: normalized_mesh_density - [in] A double between 0.0 and 1.0</p>
-<p>The table below shows the correpondence between normalized_density and subd display density.</p>
+<p>The table below shows the correspondence between normalized_density and subd display density.</p>
 <p>Mesh density percentage / normalized_mesh_density / subd display density 0% -&gt; [0.0, ON_ZERO_TOLERANCE] -&gt; 1 = adaptive MinimumUserInterfaceDensity 0% to 19% -&gt; (ON_ZERO_TOLERANCE, 0.20) -&gt; 2 = adaptive CoarseDensity 20% to 34% -&gt; [0.20, 0.35) -&gt; 3 = adaptive MediumDensity 35% to 75% -&gt; [0.35, 0.75] -&gt; 4 = adaptive FineDensity 76% to 99% -&gt; (0.75, 1 - ON_ZERO_TOLERANCE) -&gt; 5 = adaptive ExtraFineDensity 100% -&gt; [1 - ON_ZERO_TOLERANCE, 1.0] -&gt; 5 = adaptive MaximumUserInterfaceDensity</p>
 <p>Invalid input -&gt; adaptive DefaultDensity;</p>
-<p>Returns: A valid <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> with the specified subd display denstity. </p>
+<p>Returns: A valid <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> with the specified subd display density. </p>
 
 </div>
 </div>
@@ -826,7 +826,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: In almast all cases, you are better off using <a class="el" href="class_o_n___sub_d_display_parameters.html#acb839d8a7bce8d1b55e4c968d5ac42d3">SetAdaptiveDisplayDensity()</a>. Parameters: absolute_display_density - [in] absolute_display_density &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a> Remarks: The use of this setting </p>
+<p>Description: In almost all cases, you are better off using <a class="el" href="class_o_n___sub_d_display_parameters.html#acb839d8a7bce8d1b55e4c968d5ac42d3">SetAdaptiveDisplayDensity()</a>. Parameters: absolute_display_density - [in] absolute_display_density &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a> Remarks: The use of this setting </p>
 
 </div>
 </div>
@@ -1171,7 +1171,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

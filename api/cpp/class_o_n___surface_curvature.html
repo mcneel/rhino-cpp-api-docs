@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40ec8559f756e26b6ebe25af480a3b2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a40ec8559f756e26b6ebe25af480a3b2d">MaximumPrincipalCurvature</a> () const</td></tr>
 <tr class="separator:a40ec8559f756e26b6ebe25af480a3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1690a06278e2139fbd725e3c107f8179"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a1690a06278e2139fbd725e3c107f8179">MaximumRadius</a> () const</td></tr>
-<tr class="memdesc:a1690a06278e2139fbd725e3c107f8179"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a> is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)).  <a href="class_o_n___surface_curvature.html#a1690a06278e2139fbd725e3c107f8179">More...</a><br /></td></tr>
+<tr class="memdesc:a1690a06278e2139fbd725e3c107f8179"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and ON_SurfaceCurvature::InfiniteRadius is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)).  <a href="class_o_n___surface_curvature.html#a1690a06278e2139fbd725e3c107f8179">More...</a><br /></td></tr>
 <tr class="separator:a1690a06278e2139fbd725e3c107f8179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aea28c50aba4a797cdc17b02ee58ffe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a9aea28c50aba4a797cdc17b02ee58ffe">MeanCurvature</a> () const</td></tr>
 <tr class="memdesc:a9aea28c50aba4a797cdc17b02ee58ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mean curvature is (k1+k2)/2.  <a href="class_o_n___surface_curvature.html#a9aea28c50aba4a797cdc17b02ee58ffe">More...</a><br /></td></tr>
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d7f7e0a9b0d670cb0d123248afb1879"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a5d7f7e0a9b0d670cb0d123248afb1879">MinimumPrincipalCurvature</a> () const</td></tr>
 <tr class="separator:a5d7f7e0a9b0d670cb0d123248afb1879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ab1696dbb64e4f0a56f78a23e230d4f1e">MinimumRadius</a> () const</td></tr>
-<tr class="memdesc:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinte radius values are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>.  <a href="class_o_n___surface_curvature.html#ab1696dbb64e4f0a56f78a23e230d4f1e">More...</a><br /></td></tr>
+<tr class="memdesc:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinite radius values are returned as ON_SurfaceCurvature::InfiniteRadius.  <a href="class_o_n___surface_curvature.html#ab1696dbb64e4f0a56f78a23e230d4f1e">More...</a><br /></td></tr>
 <tr class="separator:ab1696dbb64e4f0a56f78a23e230d4f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -143,7 +143,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4fd56144ac459298443abf427720663e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare lhs.MinimumRadius() and rhs.MinimumRadius(). Values with nans sort last.  <a href="class_o_n___surface_curvature.html#a4fd56144ac459298443abf427720663e">More...</a><br /></td></tr>
 <tr class="separator:a4fd56144ac459298443abf427720663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0866948f550de6f45379a1f3468b003d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#a0866948f550de6f45379a1f3468b003d">CreateFromGaussianAndMeanCurvatures</a> (double gaussian_curvature, double mean_curvature)</td></tr>
-<tr class="memdesc:a0866948f550de6f45379a1f3468b003d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> from a gaussian and mean curvature values using the relationsip between the principal curvatures, gaussian and mean. k1 = mean + sqrt(mean*mean - gaussian) k2 = mean - sqrt(mean*mean - gaussian) If the radicand is negative, we assume we're dealing with a bit of numerical noise or estimates and set the principal curvatures k1 = k2 = sign(mean)*sqrt(gaussian)  <a href="class_o_n___surface_curvature.html#a0866948f550de6f45379a1f3468b003d">More...</a><br /></td></tr>
+<tr class="memdesc:a0866948f550de6f45379a1f3468b003d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> from a gaussian and mean curvature values using the relationship between the principal curvatures, gaussian and mean. k1 = mean + sqrt(mean*mean - gaussian) k2 = mean - sqrt(mean*mean - gaussian) If the radicand is negative, we assume we're dealing with a bit of numerical noise or estimates and set the principal curvatures k1 = k2 = sign(mean)*sqrt(gaussian)  <a href="class_o_n___surface_curvature.html#a0866948f550de6f45379a1f3468b003d">More...</a><br /></td></tr>
 <tr class="separator:a0866948f550de6f45379a1f3468b003d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade75312d5dbab6a94426ef3c38392202"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface_curvature.html#ade75312d5dbab6a94426ef3c38392202">CreateFromPrincipalCurvatures</a> (double <a class="el" href="class_o_n___surface_curvature.html#ae00e75c5e09337872e2618e61f342c38">k1</a>, double <a class="el" href="class_o_n___surface_curvature.html#a4ec9fdf881e9e0f60e80bfb96a28de1f">k2</a>)</td></tr>
 <tr class="memdesc:ade75312d5dbab6a94426ef3c38392202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> from the principal curvature values. The principal curvature values are the most fundamental curvature properties of a surface. Other curvatures are calculated from them. For example gaussian curvature = k1 * k2 and mean curvature = (k1 + k2)/2.  <a href="class_o_n___surface_curvature.html#ade75312d5dbab6a94426ef3c38392202">More...</a><br /></td></tr>
@@ -574,7 +574,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> from a gaussian and mean curvature values using the relationsip between the principal curvatures, gaussian and mean. k1 = mean + sqrt(mean*mean - gaussian) k2 = mean - sqrt(mean*mean - gaussian) If the radicand is negative, we assume we're dealing with a bit of numerical noise or estimates and set the principal curvatures k1 = k2 = sign(mean)*sqrt(gaussian) </p>
+<p>Create an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> from a gaussian and mean curvature values using the relationship between the principal curvatures, gaussian and mean. k1 = mean + sqrt(mean*mean - gaussian) k2 = mean - sqrt(mean*mean - gaussian) If the radicand is negative, we assume we're dealing with a bit of numerical noise or estimates and set the principal curvatures k1 = k2 = sign(mean)*sqrt(gaussian) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gaussian_curvature</td><td></td></tr>
@@ -780,7 +780,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If kappa_style and the principal curvatures are valid, the specified type of curvature value is returned. Infinte radii are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If kappa_style and the principal curvatures are valid, the specified type of curvature value is returned. Infinite radii are returned as ON_SurfaceCurvature::InfiniteRadius. Otherwise ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a> is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)). </p>
+<p>If a principal curvature value is zero or the principal curvatures have opposite signs, then the maximum radius of curvature is infinite and ON_SurfaceCurvature::InfiniteRadius is returned. Otherwise the maximum radius of curvature is 1/min(fabs(k1),fabs(k2)). </p>
 <dl class="section return"><dt>Returns</dt><dd>IF k1 and k2 are valid, the maximum radius of curvature is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
@@ -875,7 +875,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinte radius values are returned as <a class="el" href="class_o_n___surface_curvature.html#ad1b53721dde0070347d21d76afff5262" title="Value used to indicate a radius of curvature is infinite (1e300).">ON_SurfaceCurvature::InfinteRadius</a>. </p>
+<p>The minimum radius of curvature is 1/max(fabs(k1),fabs(k2)). Infinite radius values are returned as ON_SurfaceCurvature::InfiniteRadius. </p>
 <dl class="section return"><dt>Returns</dt><dd>Minimum radius of curvature up to a maximum of 1e300. If both k1 and k2 are zero, then 1e300 is returned. </dd></dl>
 
 </div>
@@ -986,7 +986,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

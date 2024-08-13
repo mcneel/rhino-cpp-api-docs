@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -651,7 +651,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add an inner profile. Parameters: inner_profile - [in] closed curve in the xy plane or a 2d curve. Returns: True if the profile was set. In this case the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> class manages the curve and ~ON_Extrusion will delete it. The extrusion must already have an outer profile. If the extrusion already has a profile, the set will fail. Remarks: If needed, innter_profile will be converted to a 2d curve. If inner_profile is not correctly oriented, it will be reversed so it has a clockwise orientation. </p>
+<p>Description: Add an inner profile. Parameters: inner_profile - [in] closed curve in the xy plane or a 2d curve. Returns: True if the profile was set. In this case the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> class manages the curve and ~ON_Extrusion will delete it. The extrusion must already have an outer profile. If the extrusion already has a profile, the set will fail. Remarks: If needed, inner_profile will be converted to a 2d curve. If inner_profile is not correctly oriented, it will be reversed so it has a clockwise orientation. </p>
 
 </div>
 </div>
@@ -727,7 +727,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0: no caps 1: exrusion has either a top cap or a bottom cap 2: both ends are capped. See Also: <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ON_Extrusion::ProfileCount()</a> <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ON_Extrusion::ProfileSmoothSegmentCount()</a> </p>
+<p>Returns: 0: no caps 1: extrusion has either a top cap or a bottom cap 2: both ends are capped. See Also: <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ON_Extrusion::ProfileCount()</a> <a class="el" href="class_o_n___extrusion.html#a248576c1e34443140aa41439f7f651d5">ON_Extrusion::ProfileSmoothSegmentCount()</a> </p>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Create an ON_Exrusion from a 3d curve, a plane and a height. Parameters: curve - [in] A continuous 3d curve. plane - [in] If plane is null, then the plane returned by curve.IsPlanar() is used. The 3d curve is projected to this plane and the result is passed to <a class="el" href="class_o_n___extrusion.html#a9832f74889d2ea35e90744d6b1b87577">ON_Extrusion::SetOuterProfile()</a>. height - [in] If the height &gt; 0, the bottom of the extrusion will be in plane and the top will be height units above the plane. If the height &lt; 0, the top of the extrusion will be in plane and the bottom will be height units below the plane. bCap - [in] If the curve is closed and bCap is true, then the resulting extrusion is capped. extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an ON_Exrusion form of the pipe. If the input is not valid, then null, even when the input extrusion object is not null. </p>
+<p>Description: Create an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> from a 3d curve, a plane and a height. Parameters: curve - [in] A continuous 3d curve. plane - [in] If plane is null, then the plane returned by curve.IsPlanar() is used. The 3d curve is projected to this plane and the result is passed to <a class="el" href="class_o_n___extrusion.html#a9832f74889d2ea35e90744d6b1b87577">ON_Extrusion::SetOuterProfile()</a>. height - [in] If the height &gt; 0, the bottom of the extrusion will be in plane and the top will be height units above the plane. If the height &lt; 0, the top of the extrusion will be in plane and the bottom will be height units below the plane. bCap - [in] If the curve is closed and bCap is true, then the resulting extrusion is capped. extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> form of the pipe. If the input is not valid, then null, even when the input extrusion object is not null. </p>
 
 </div>
 </div>
@@ -897,7 +897,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get an ON_Exrusion form of a cylinder. Parameters: cylinder - [in] cylinder.IsFinite() must be true bCapBottom - [in] if true, the end at cylinder.m_height[0] will be capped bCapTop - [in] if true, the end at cylinder.m_height[1] will be capped extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an ON_Exrusion form of the cylinder. If the input is not valid, then null, even when the input extrusion object is not null. Example: </p><pre class="fragment">    ON_Cylinder cylinder = ...;
+<p>Description: Get an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> form of a cylinder. Parameters: cylinder - [in] cylinder.IsFinite() must be true bCapBottom - [in] if true, the end at cylinder.m_height[0] will be capped bCapTop - [in] if true, the end at cylinder.m_height[1] will be capped extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> form of the cylinder. If the input is not valid, then null, even when the input extrusion object is not null. Example: </p><pre class="fragment">    ON_Cylinder cylinder = ...;
     bool bCapBottom = true;
     bool bCapTop = true;
     ON_Extrusion extrusion;
@@ -1703,7 +1703,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Search for a derivatitive, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
+<p>Description: Search for a derivative, tangent, or curvature discontinuity. Parameters: dir - [in] If 0, then "u" parameter is checked. If 1, then the "v" parameter is checked. c - [in] type of continuity to test for. t0 - [in] Search begins at t0. If there is a discontinuity at t0, it will be ignored. This makes it possible to repeatedly call GetNextDiscontinuity and step through the discontinuities. t1 - [in] (t0 != t1) If there is a discontinuity at t1 is will be ignored unless c is a locus discontinuity type and t1 is at the start or end of the curve. t - [out] if a discontinuity is found, then *t reports the parameter at the discontinuity. hint - [in/out] if GetNextDiscontinuity will be called repeatedly, passing a "hint" with initial value *hint=0 will increase the speed of the search. <br  />
  dtype - [out] if not nullptr, *dtype reports the kind of discontinuity found at *t. A value of 1 means the first derivative or unit tangent was discontinuous. A value of 2 means the second derivative or curvature was discontinuous. A value of 0 means the curve is not closed, a locus discontinuity test was applied, and t1 is at the start of end of the curve. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: Parametric continuity tests c = (C0_continuous, ..., G2_continuous):</p>
 <p>true if a parametric discontinuity was found strictly between t0 and t1. Note well that all curves are parametrically continuous at the ends of their domains.</p>
 <p>Locus continuity tests c = (C0_locus_continuous, ...,G2_locus_continuous):</p>
@@ -2281,7 +2281,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Is there a NURBS surface representation of this surface. Parameters: Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - NURBS parameterization matches the surface's 2 success - NURBS point locus matches the surface's and the domain of the NURBS surface is correct. <br  />
- However, This surface's parameterization and the NURBS surface parameterization may not match. This situation happens when getting NURBS representations of surfaces that have a transendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. See Also: <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
+ However, This surface's parameterization and the NURBS surface parameterization may not match. This situation happens when getting NURBS representations of surfaces that have a transcendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. See Also: <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___surface.html#a032695e1c765ace3b5b9888d746b49f7">ON_Surface</a>.</p>
 
@@ -2648,7 +2648,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief englis description of the reason the object is not valid is appened to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
+<p>Description: Tests an object to see if its data members are correctly initialized. Parameters: text_log - [in] if the object is not valid and text_log is not nullptr, then a brief english description of the reason the object is not valid is appended to the log. The information appended to text_log is suitable for low-level debugging purposes by programmers and is not intended to be useful as a high level user interface tool. Returns: @untitled table true object is valid false object is invalid, uninitialized, etc. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object</a>.</p>
 
@@ -2706,8 +2706,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to get. <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> and <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a> remove the meshes of those types. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then the first non null mesh is returned. Returns: A pointer to a mesh on the ON_Extusion object. <br  />
- This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. </p>
+<p>Description: Get a mesh attached to the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>. Parameters: mt - [in] type of mesh to get. <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a>, <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a> and <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea11bf1780460a549d5d0f9c772c8c5b3c">ON::preview_mesh</a> remove the meshes of those types. If mt is <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5eaf59e59b754b28e8b3db77b01b5e7dfdb">ON::default_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea08ed0d0a547348407e453d2c570aa9b1">ON::any_mesh</a>, then the first non null mesh is returned. Returns: A pointer to a mesh on the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> object. This mesh will be deleted by <a class="el" href="class_o_n___extrusion.html#aef6a3f6107ba92451bc2d3a5e1385a7d">~ON_Extrusion()</a>. If a mesh of the requested type is not available, then null is returned. </p>
 
 </div>
 </div>
@@ -2898,7 +2897,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Get an ON_Exrusion form of a pipe. Parameters: cylinder - [in] cylinder.IsFinite() must be true The cylinder can be either the inner or outer wall of the pipe. other_radius - <a href="!= cylinder.Radius()">in</a> If cylinder.Radius() &lt; other_radius, then the cylinder will be the inside of the pipe. If cylinder.Radius() &gt; other_radius, then the cylinder will be the outside of the pipe. bCapBottom - [in] if true, the end at cylinder.m_height[0] will be capped bCapTop - [in] if true, the end at cylinder.m_height[1] will be capped extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an ON_Exrusion form of the pipe. If the input is not valid, then null, even when the input extrusion object is not null. Example: </p><pre class="fragment">    ON_Cylinder cylinder = ...;
+<p>Description: Get an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> form of a pipe. Parameters: cylinder - [in] cylinder.IsFinite() must be true The cylinder can be either the inner or outer wall of the pipe. other_radius - <a href="!= cylinder.Radius()">in</a> If cylinder.Radius() &lt; other_radius, then the cylinder will be the inside of the pipe. If cylinder.Radius() &gt; other_radius, then the cylinder will be the outside of the pipe. bCapBottom - [in] if true, the end at cylinder.m_height[0] will be capped bCapTop - [in] if true, the end at cylinder.m_height[1] will be capped extrusion - [in] If the input extrusion pointer is null, one will be allocated on the heap and it is the caller's responsibility to delete it at an appropriate time. If the input pointer is not null, this extrusion will be used and the same pointer will be returned, provided the input is valid. Returns: If the input is valid, a pointer to an <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> form of the pipe. If the input is not valid, then null, even when the input extrusion object is not null. Example: </p><pre class="fragment">    ON_Cylinder cylinder = ...;
     double other_radius = cylinder.Radius()+1.0;
     bool bCapBottom = true;
     bool bCapTop = true;
@@ -2971,7 +2970,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: profile_index - [in] 0 &lt;= profile_index &lt; <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a>. The outer profile has index 0. s - <a href="0.0 &lt;= s &lt;= 1.0">in</a> A relative parameter controlling which priofile is returned. s = 0.0 returns the bottom profile and s = 1.0 returns the top profile. Returns: nullptr if the input parameters or the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> class is not valid. Otherwise a pointer to a 3d curve for the requested profile. This curve is on the heap and the caller is responsible for deleting this curve. </p>
+<p>Parameters: profile_index - [in] 0 &lt;= profile_index &lt; <a class="el" href="class_o_n___extrusion.html#a8ee41231a81417e85bf78b8fca50403a">ProfileCount()</a>. The outer profile has index 0. s - <a href="0.0 &lt;= s &lt;= 1.0">in</a> A relative parameter controlling which profile is returned. s = 0.0 returns the bottom profile and s = 1.0 returns the top profile. Returns: nullptr if the input parameters or the <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> class is not valid. Otherwise a pointer to a 3d curve for the requested profile. This curve is on the heap and the caller is responsible for deleting this curve. </p>
 
 </div>
 </div>
@@ -3992,7 +3991,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

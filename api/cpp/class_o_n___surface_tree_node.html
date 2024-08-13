@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -298,7 +298,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Evaluate the portion of the surfac covered by this node. Parameters: s - [in] t - [in] (s,t) - evaluation parameters with respect to this node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride surface(s,t) is returned in (v[0],...,v[m_dim-1]), Ds is returned in (v[v_stride],...,v[v_stride+m_dim-1]), Dt is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), Dss is returned in (v[3*v_stride],...), Dst is returned in (v[4*v_stride],...), Dtt is returned in (v[5*v_stride],...), etc. quadrant - [in] optional - 1,2,3 or 4 Determines which quadrant to evaluate from when (s,t) is on the side of a leaf node. Values &lt; 1 or &gt; 4 are treated as 1 Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If (s,t) is out outside this node's domain, the bezier on the appropriate side is evaluated. </p>
+<p>Description: Evaluate the portion of the surface covered by this node. Parameters: s - [in] t - [in] (s,t) - evaluation parameters with respect to this node's domain. der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride surface(s,t) is returned in (v[0],...,v[m_dim-1]), Ds is returned in (v[v_stride],...,v[v_stride+m_dim-1]), Dt is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), Dss is returned in (v[3*v_stride],...), Dst is returned in (v[4*v_stride],...), Dtt is returned in (v[5*v_stride],...), etc. quadrant - [in] optional - 1,2,3 or 4 Determines which quadrant to evaluate from when (s,t) is on the side of a leaf node. Values &lt; 1 or &gt; 4 are treated as 1 Returns: If successful, returns a pointer to the leaf node that was used in the evaluation. If null is returned, the evaluation could not be performed. Remarks: If (s,t) is out outside this node's domain, the bezier on the appropriate side is evaluated. </p>
 
 </div>
 </div>
@@ -1174,7 +1174,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:01:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

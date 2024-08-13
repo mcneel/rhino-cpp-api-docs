@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.9</span>
+   &#160;<span id="projectnumber">8.10</span>
    </div>
   </td>
  </tr>
@@ -714,7 +714,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Quickly determine if the shortest distance from the point P to the portion of the curve coverered by this node is greater than d. Parameters: d - [in] distance (&gt; 0.0) P - [in] other - [in] Returns: True if if the shortest distance from the point P to the portion of the curve covered by this node is greater than d. Remarks: This is conceptually the same but faster than calling MinimumDistanceUpperBound(other) &gt; d. </p>
+<p>Description: Quickly determine if the shortest distance from the point P to the portion of the curve covered by this node is greater than d. Parameters: d - [in] distance (&gt; 0.0) P - [in] other - [in] Returns: True if if the shortest distance from the point P to the portion of the curve covered by this node is greater than d. Remarks: This is conceptually the same but faster than calling MinimumDistanceUpperBound(other) &gt; d. </p>
 
 </div>
 </div>
@@ -1113,7 +1113,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to split a curve tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to gaurd against memory leaks and double deletes. Parameters: s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The corresponding surface domain parameter is m_domain.ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
+<p>Description: Expert user tool to split a curve tree node. Does not modify this node's m_down[] pointers or left and right's m_up pointers. Care must be take to guard against memory leaks and double deletes. Parameters: s - [in] normalized (bezier parameter) 0 &lt; s &lt; 1 The corresponding surface domain parameter is m_domain.ParameterAt(s). left_node - [in] node to hold the left half. right_node - [in] node to hold the right half. Returns: True if input is valid and split was performed. </p>
 
 </div>
 </div>
@@ -1237,7 +1237,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>m_down[] moves towards the leaf nodes. Either both m_down[0] and m_down[1] are nullptr, or both are not nullptr. m_down[0] covers the portion of the curve from m_domin.Min() to m_domain.Mid(). m_down[1] covers the portion of the curve from m_domain.Mid() to m_domain.Max(). </p>
+<p>m_down[] moves towards the leaf nodes. Either both m_down[0] and m_down[1] are nullptr, or both are not nullptr. m_down[0] covers the portion of the curve from m_domain.Min() to m_domain.Mid(). m_down[1] covers the portion of the curve from m_domain.Mid() to m_domain.Max(). </p>
 
 </div>
 </div>
@@ -1339,7 +1339,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2024 16:00:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2024 16:49:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
