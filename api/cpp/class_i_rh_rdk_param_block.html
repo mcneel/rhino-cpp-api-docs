@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.10</span>
+   &#160;<span id="projectnumber">8.11</span>
    </div>
   </td>
  </tr>
@@ -137,7 +137,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afad6d32f7e89236bae31312545e1d8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>RDK provides automatic user interface services that allow the user to manipulate arbitrary sets of named parameters which can be stored inside your RDK plug-in. RDK accesses the parameters by means of the <a class="el" href="class_i_rh_rdk_param_block.html">IRhRdkParamBlock</a> interface. This interface is only implemented inside RDK. </p>
+<div class="textblock"><p>The RDK provides automatic user interface services that allow the user to manipulate arbitrary sets of named parameters which can be stored inside your RDK plug-in. The RDK accesses the parameters by means of the <a class="el" href="class_i_rh_rdk_param_block.html">IRhRdkParamBlock</a> interface. This interface is only implemented inside the RDK.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_param_transport_ex.html">IRhRdkParamTransportEx</a></dd></dl>
+<p>When using the 'raw' automatic UI, it's recommended that you use <a class="el" href="class_c_rh_rdk_param_transport.html">CRhRdkParamTransport</a> as a base class for your implementation of <a class="el" href="class_i_rh_rdk_param_transport_ex.html">IRhRdkParamTransportEx</a> so you will not have to worry about managing the param block object. The parameter transport will be implemented to transfer data items to and from the param block. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae3005332c24fd4874f6e8e86e7c5ab11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3005332c24fd4874f6e8e86e7c5ab11">&#9670;&nbsp;</a></span>eSortBy</h2>
@@ -537,7 +539,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a new instance of a data source param block. </dd></dl>
+<p>Only kept for backward compatibility. SDK clients should ignore this method and use the one above. </p>
 
 </div>
 </div>
@@ -652,7 +654,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2024 16:49:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2024 17:27:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

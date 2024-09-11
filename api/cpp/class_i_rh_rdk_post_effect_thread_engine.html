@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.10</span>
+   &#160;<span id="projectnumber">8.11</span>
    </div>
   </td>
  </tr>
@@ -217,7 +217,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Called from a post effect's Execute() method to run the post effect asynchronously. Post effects are queued as 'jobs' and run in sequence on a worker thread. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">job</td><td>is the job that will be executed asynchronously (on a thread). </td></tr>
+    <tr><td class="paramname">job</td><td>is the job that will be executed asynchronously (on a thread). The job is copied so that ownership of 'job' remains with the caller. Note that <a class="el" href="class_i_rh_rdk_post_effect_thread_engine_1_1_i_job.html">IJob</a>&amp; job should be const and this will be corrected the next time we can break the SDK. </td></tr>
     <tr><td class="paramname">pepl</td><td>is the post effect pipeline that was passed to the post effect's Execute() method. </td></tr>
     <tr><td class="paramname">pe</td><td>is the post effect being executed. </td></tr>
     <tr><td class="paramname">rect</td><td>is the rectangle that was passed to the post effect's Execute() method. </td></tr>
@@ -233,7 +233,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2024 16:49:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2024 17:27:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

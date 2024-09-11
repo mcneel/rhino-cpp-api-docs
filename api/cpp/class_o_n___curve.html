@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.10</span>
+   &#160;<span id="projectnumber">8.11</span>
    </div>
   </td>
  </tr>
@@ -79,22 +79,16 @@ Inheritance diagram for ON_Curve:</div>
  <div class="center">
   <img src="class_o_n___curve.png" usemap="#ON_5FCurve_map" alt=""/>
   <map id="ON_5FCurve_map" name="ON_5FCurve_map">
-<area href="class_o_n___geometry.html" alt="ON_Geometry" shape="rect" coords="495,56,650,80"/>
-<area href="class_o_n___object.html" alt="ON_Object" shape="rect" coords="495,0,650,24"/>
-<area href="class_o_n___arc_curve.html" alt="ON_ArcCurve" shape="rect" coords="0,168,155,192"/>
-<area href="class_o_n___curve_on_surface.html" alt="ON_CurveOnSurface" shape="rect" coords="165,168,320,192"/>
-<area href="class_o_n___curve_proxy.html" alt="ON_CurveProxy" shape="rect" coords="330,168,485,192"/>
-<area href="class_o_n___line_curve.html" alt="ON_LineCurve" shape="rect" coords="495,168,650,192"/>
-<area href="class_o_n___nurbs_curve.html" alt="ON_NurbsCurve" shape="rect" coords="660,168,815,192"/>
-<area href="class_o_n___poly_curve.html" alt="ON_PolyCurve" shape="rect" coords="907,168,1062,192"/>
-<area href="class_o_n___polyline_curve.html" alt="ON_PolylineCurve" shape="rect" coords="1072,168,1227,192"/>
-<area href="class_c_rhino_poly_edge_segment.html" alt="CRhinoPolyEdgeSegment" shape="rect" coords="0,224,155,248"/>
-<area href="class_o_n___brep_edge.html" alt="ON_BrepEdge" shape="rect" coords="165,224,320,248"/>
-<area href="class_o_n___brep_trim.html" alt="ON_BrepTrim" shape="rect" coords="330,224,485,248"/>
-<area href="class_o_n___h_l_d_curve.html" alt="ON_HLDCurve" shape="rect" coords="495,224,650,248"/>
-<area href="class_o_n___poly_edge_segment.html" alt="ON_PolyEdgeSegment" shape="rect" coords="660,224,815,248"/>
-<area href="class_c_rhino_poly_edge.html" alt="CRhinoPolyEdge" shape="rect" coords="825,224,980,248"/>
-<area href="class_o_n___poly_edge_curve.html" alt="ON_PolyEdgeCurve" shape="rect" coords="990,224,1145,248"/>
+<area href="class_o_n___geometry.html" alt="ON_Geometry" shape="rect" coords="0,56,166,80"/>
+<area href="class_o_n___object.html" alt="ON_Object" shape="rect" coords="0,0,166,24"/>
+<area href="class_o_n___arc_curve.html" alt="ON_ArcCurve" shape="rect" coords="176,168,342,192"/>
+<area href="class_o_n___curve_on_surface.html" alt="ON_CurveOnSurface" shape="rect" coords="176,224,342,248"/>
+<area href="class_o_n___curve_proxy.html" alt="ON_CurveProxy" shape="rect" coords="176,280,342,304"/>
+<area href="class_o_n___line_curve.html" alt="ON_LineCurve" shape="rect" coords="176,336,342,360"/>
+<area href="class_o_n___nurbs_curve.html" alt="ON_NurbsCurve" shape="rect" coords="176,392,342,416"/>
+<area href="class_o_n___poly_curve.html" alt="ON_PolyCurve" shape="rect" coords="176,448,342,472"/>
+<area href="class_o_n___polyline_curve.html" alt="ON_PolylineCurve" shape="rect" coords="176,504,342,528"/>
+<area href="class_o_n___sub_d_edge_chain_curve.html" alt="ON_SubDEdgeChainCurve" shape="rect" coords="176,560,342,584"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -262,6 +256,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af13b163bb51b3972593f6ccf89d18950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad162b90ba333e4f3dd5b13823e1b5f27"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#ad162b90ba333e4f3dd5b13823e1b5f27">SpanCount</a> () const =0</td></tr>
 <tr class="separator:ad162b90ba333e4f3dd5b13823e1b5f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad771c8da2bd249d904563b7bf64b3646"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#ad771c8da2bd249d904563b7bf64b3646">SpanVector</a> () const</td></tr>
+<tr class="memdesc:ad771c8da2bd249d904563b7bf64b3646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The curve's span vector is a stricltly monotone increasing list of doubles that are the intervals on which the curve is C-infinity.  <a href="class_o_n___curve.html#ad771c8da2bd249d904563b7bf64b3646">More...</a><br /></td></tr>
+<tr class="separator:ad771c8da2bd249d904563b7bf64b3646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6c16e8ddfe8f2cde8c4431db67a337"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a2d6c16e8ddfe8f2cde8c4431db67a337">Split</a> (double t, <a class="el" href="class_o_n___curve.html">ON_Curve</a> *&amp;left_side, <a class="el" href="class_o_n___curve.html">ON_Curve</a> *&amp;right_side) const</td></tr>
 <tr class="separator:a2d6c16e8ddfe8f2cde8c4431db67a337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de2247b5bb20d1b67d40c274c17697a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a8de2247b5bb20d1b67d40c274c17697a">TangentAt</a> (double t) const</td></tr>
@@ -597,7 +594,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: If this curve is closed, then modify it so that the start/end point is at curve parameter t. Parameters: t - [in] curve parameter of new start/end point. The returned curves domain will start at t. Returns: true if successful. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#afcfdb8d5cf92d8d474bece06701a564a">ON_NurbsCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af73d8c6cef0fe6a5dce49a885c193a91">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___poly_edge_curve.html#ad2df59e36b3b7f956de926231d5233b3">ON_PolyEdgeCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a762e058d9df8c2210266004441bf5c1c">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a55bf2d139541a82a350b79e515bdcc46">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#aa02028fa81816e31159ea728b35a547a">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a3eb50a2b730a8f4c7cd0f28923063150">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#afcfdb8d5cf92d8d474bece06701a564a">ON_NurbsCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af73d8c6cef0fe6a5dce49a885c193a91">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___poly_edge_curve.html#ad2df59e36b3b7f956de926231d5233b3">ON_PolyEdgeCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a762e058d9df8c2210266004441bf5c1c">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a55bf2d139541a82a350b79e515bdcc46">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#aa02028fa81816e31159ea728b35a547a">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -655,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Change the dimension of a curve. Parameters: desired_dimension - [in] Returns: true if the curve's dimension was already desired_dimension or if the curve's dimension was successfully changed to desired_dimension. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#aa10c0da98f13593e8ee7e1618f68cf5f">ON_NurbsCurve</a>, <a class="el" href="class_o_n___poly_curve.html#aeff9cc0fdedc09963c7420c2b02f1f30">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af3cb563342ab67eac16771ac326cee6d">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ac1a569dbb03a81579f9ae8ac94759c16">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a8a96ebd28e5898a07d4297eafaca985f">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a91ba56d503fc199d99f50e687a573b40">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aa10c0da98f13593e8ee7e1618f68cf5f">ON_NurbsCurve</a>, <a class="el" href="class_o_n___poly_curve.html#aeff9cc0fdedc09963c7420c2b02f1f30">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af3cb563342ab67eac16771ac326cee6d">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ac1a569dbb03a81579f9ae8ac94759c16">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a8a96ebd28e5898a07d4297eafaca985f">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -835,7 +832,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Returns maximum algebraic degree of any span or a good estimate if curve spans are not algebraic. Returns: degree </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#ac126809468c0d2a3a46a9484c0acb1d0">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a9410b67dcd7c79a3482a72d58a59183d">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#acad78a1ec3fcae6a3df6ebe5b82f83e3">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#afd44a4d9b411deca4a14aaa6d37069c5">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a6920a75ac5ea211236145b0cf4ec5104">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a67fef8ac20f6fd01bb210f9ad4f86e81">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a006e05c085618b65357a9711f3ef6b67">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a0731f412c14b66ccf50e52f3b81b5bc1">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#ac126809468c0d2a3a46a9484c0acb1d0">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a9410b67dcd7c79a3482a72d58a59183d">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#acad78a1ec3fcae6a3df6ebe5b82f83e3">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#afd44a4d9b411deca4a14aaa6d37069c5">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a6920a75ac5ea211236145b0cf4ec5104">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a67fef8ac20f6fd01bb210f9ad4f86e81">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a006e05c085618b65357a9711f3ef6b67">ON_CurveOnSurface</a>.</p>
 
 </div>
 </div>
@@ -904,7 +901,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#af8435c33ab53af41c22dac75e8917569">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_poly_edge_segment.html#a4ddfa169e2e6d415f4e3938d09bafef9">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___poly_edge_segment.html#ac9c1c86bc1c548434c3a437448c3296f">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___curve_proxy.html#aa34313f708a47da03a20897c4d6beb9a">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a7e3d68e828a1ae33e7f9784bd48fc469">ON_PolyCurve</a>, <a class="el" href="class_o_n___poly_edge_curve.html#a76a58c1e7eae1c9e752746a9d584f4da">ON_PolyEdgeCurve</a>, and <a class="el" href="class_c_rhino_poly_edge.html#a6430ab5b80684ccc04ea3effbb2669d6">CRhinoPolyEdge</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#adb00d354f5e00e6f06e9768d38af29a5">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#a4ddfa169e2e6d415f4e3938d09bafef9">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___poly_edge_segment.html#ac9c1c86bc1c548434c3a437448c3296f">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___curve_proxy.html#aa34313f708a47da03a20897c4d6beb9a">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a7e3d68e828a1ae33e7f9784bd48fc469">ON_PolyCurve</a>, <a class="el" href="class_o_n___poly_edge_curve.html#a76a58c1e7eae1c9e752746a9d584f4da">ON_PolyEdgeCurve</a>, and <a class="el" href="class_c_rhino_poly_edge.html#a6430ab5b80684ccc04ea3effbb2669d6">CRhinoPolyEdge</a>.</p>
 
 </div>
 </div>
@@ -932,7 +929,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns: domain of the curve. </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#a60ddb0a327eeaf23fded63a7a3f62406">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a5aaef3a48d3084251462a115a1d64330">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ab23358105a708269c397b99b25b6fdb9">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ad3ae9d60f8d45dc4b6ef411f7c083866">ON_ArcCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2f790bc20bbaab9c7e173f9cc294b679">ON_PolylineCurve</a>, <a class="el" href="class_o_n___line_curve.html#adb24ff5e0770fa30c5997f76a9ad97bf">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#af3e4c0527f781df4bc3ed49571dbef40">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a37d958c3506edab6f5cf446b59d887f8">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a60ddb0a327eeaf23fded63a7a3f62406">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a5aaef3a48d3084251462a115a1d64330">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ab23358105a708269c397b99b25b6fdb9">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ad3ae9d60f8d45dc4b6ef411f7c083866">ON_ArcCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2f790bc20bbaab9c7e173f9cc294b679">ON_PolylineCurve</a>, <a class="el" href="class_o_n___line_curve.html#adb24ff5e0770fa30c5997f76a9ad97bf">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#af3e4c0527f781df4bc3ed49571dbef40">ON_CurveOnSurface</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1121,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: This evaluator actually does all the work. The other <a class="el" href="class_o_n___curve.html">ON_Curve</a> evaluation tools call this virtual function. Parameters: t - [in] evaluation parameter ( usually in <a class="el" href="class_o_n___curve.html#ae3a1e3ea7c924246a43754aa03790432">Domain()</a> ). der_count - [in] (&gt;=0) number of derivatives to evaluate v_stride - [in] (&gt;=<a class="el" href="class_o_n___geometry.html#a0d66ab16e2fddfd1b3e6cf3d6ebbd364">Dimension()</a>) stride to use for the v[] array v - [out] array of length (der_count+1)*v_stride curve(t) is returned in (v[0],...,v[m_dim-1]), curve'(t) is returned in (v[v_stride],...,v[v_stride+m_dim-1]), curve"(t) is returned in (v[2*v_stride],...,v[2*v_stride+m_dim-1]), etc. side - [in] optional - determines which side to evaluate from =0 default &lt;0 to evaluate from below, &gt;0 to evaluate from above hint - [in/out] optional evaluation hint used to speed repeated evaluations Returns: false if unable to evaluate. See Also: <a class="el" href="class_o_n___curve.html#a82170503403c1f8c84286619f6179ead">ON_Curve::EvPoint</a> <a class="el" href="class_o_n___curve.html#a37944a7a4d1c3d7e28afcbc9184ef799">ON_Curve::Ev1Der</a> <a class="el" href="class_o_n___curve.html#a1388f1ac523a1e8abca222eab2d4ce7a">ON_Curve::Ev2Der</a> </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#a11fb002fd7df1169eac0a760cc77cb2a">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a36cea77b88d9f45c663a4027f53c7ace">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a8ea720d4b63d9ed5074482589323c53d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a8a301fc3cf9024218794421f4b916c0f">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a8f6cd5138c7fbf49883c2045501c5944">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a3507acd1622368d7936906ecb9a0202b">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a9ac83ba2ce51fc24c069d0fcea15ae9e">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#a11fb002fd7df1169eac0a760cc77cb2a">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a36cea77b88d9f45c663a4027f53c7ace">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a8ea720d4b63d9ed5074482589323c53d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a8a301fc3cf9024218794421f4b916c0f">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a8f6cd5138c7fbf49883c2045501c5944">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a3507acd1622368d7936906ecb9a0202b">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a9ac83ba2ce51fc24c069d0fcea15ae9e">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a6d227d5e132ecf3c88a367eb56e96b83">ON_SubDEdgeChainCurve</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1393,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Pure virtual function. Default returns false. Where possible, analytically extends curve to include domain. Parameters: domain - [in] if domain is not included in curve domain, curve will be extended so that its domain includes domain. <br  />
  Will not work if curve is closed. Original curve is identical to the restriction of the resulting curve to the original curve domain, Returns: true if successful. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a7c342a51d7f2af1c34aeb20cd924bdb0">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a7c30edd0aa16113b9f5ea330dc46ea60">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a667134c8afbabcd288b27860bd1feb15">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#a9b41589d25272d59b891af903297b14e">ON_LineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#ac21a23d57a135c5352c836874958dd2d">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a430f622a629ec6ee81fbac9b3c50b75e">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a7c342a51d7f2af1c34aeb20cd924bdb0">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a7c30edd0aa16113b9f5ea330dc46ea60">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a667134c8afbabcd288b27860bd1feb15">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#a9b41589d25272d59b891af903297b14e">ON_LineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#ac21a23d57a135c5352c836874958dd2d">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1549,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#aeb0eaf9d6287340f3bb0812e827eb4ec">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af416858826ea7c5700a0a46369348951">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a1c05919b068034bece7d836643a16d5e">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a0d4727cfd995bffce303315e52def6a1">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a02d0c1aaca5ae8f896cc88f72b46e05a">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a4c32d51d1f2118450f8be1f3a5566dcb">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a90e132680168ee27fd8947c0f03f9fff">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aeb0eaf9d6287340f3bb0812e827eb4ec">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af416858826ea7c5700a0a46369348951">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a1c05919b068034bece7d836643a16d5e">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a0d4727cfd995bffce303315e52def6a1">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a02d0c1aaca5ae8f896cc88f72b46e05a">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a4c32d51d1f2118450f8be1f3a5566dcb">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1591,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Remarks: If GetNurbForm returns 2, this function converts the curve parameter to the NURBS curve parameter.</p>
 <p>See Also: <a class="el" href="class_o_n___curve.html#a67dd944c24cda3d319fa5ac73bb95c2e">ON_Curve::GetNurbForm</a>, <a class="el" href="class_o_n___curve.html#ae3ed534f071a515ea5270acf2a04e6e7">ON_Curve::GetNurbFormParameterFromCurveParameter</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#ad40369c388c1f43f95e51e42635f21dd">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a7f7ace839771d232a4b1224288ddcfab">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a5fc522dafb8bd72351da9b168de4607e">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#a771a02c1939aac24b4e972415a362080">ON_ArcCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a9d063ad50429941d88c1aac8d49d6fe2">ON_NurbsCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a315e11d05b4dd6c3bc138fb5b870934e">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#ad40369c388c1f43f95e51e42635f21dd">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a7f7ace839771d232a4b1224288ddcfab">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a5fc522dafb8bd72351da9b168de4607e">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#a771a02c1939aac24b4e972415a362080">ON_ArcCurve</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#ae5ea96bbe1d94c554ed16982e6665549">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a9d063ad50429941d88c1aac8d49d6fe2">ON_NurbsCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a315e11d05b4dd6c3bc138fb5b870934e">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1667,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get the length of the curve. Parameters: length - [out] length returned here. fractional_tolerance - [in] desired fractional precision. fabs(("exact" length from start to t) - arc_length)/arc_length &lt;= fractional_tolerance sub_domain - [in] If not nullptr, the calculation is performed on the specified sub-domain of the curve (must be non-decreasing) Returns: true if returned if the length calculation is successful. false is returned if the length is not calculated. Remarks: The arc length will be computed so that (returned length - real length)/(real length) &lt;= fractional_tolerance More simply, if you want N significant figures in the answer, set the fractional_tolerance to 1.0e-N. For "nice" curves, 1.0e-8 works fine. For very high degree NURBS and NURBS with bad parameterizations, use larger values of fractional_tolerance. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___line_curve.html#a7da881b85a0f14fb065f53a0d9887d26">ON_LineCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a91a7674284603d0db542f433cb0530bc">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a502088b9e9563981e217e78cd818185d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a086c6f12fd2aa7be80a708113248584a">ON_PolyCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a1dcd72630bd3c2f2143d0232453508e0">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a579d8cff9d55ed6f40510e40989dd002">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___line_curve.html#a7da881b85a0f14fb065f53a0d9887d26">ON_LineCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a91a7674284603d0db542f433cb0530bc">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a502088b9e9563981e217e78cd818185d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a086c6f12fd2aa7be80a708113248584a">ON_PolyCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a1dcd72630bd3c2f2143d0232453508e0">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -1722,7 +1719,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Find parameter of the point on a curve that is locally closest to the test_point. The search for a local close point starts at seed_parameter. If the sub_domain parameter is not nullptr, then the search is restricted to the specified portion of the curve.</p>
 <p>true if returned if the search is successful. false is returned if the search fails. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#a64fb06fad5dcbd94a543a1ae119411d5">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a47d8462c97402b954261d0756fa24736">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a30a39c270170b16aa61d20907f1391e4">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a37b62a32775499f3d0a5de55d15274ff">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#af6efeb046a0f663eac53aa0f366ee6ff">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a1167f21402950a06b12350367e0a6336">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a64fb06fad5dcbd94a543a1ae119411d5">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a47d8462c97402b954261d0756fa24736">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a30a39c270170b16aa61d20907f1391e4">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a37b62a32775499f3d0a5de55d15274ff">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#af6efeb046a0f663eac53aa0f366ee6ff">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -1801,7 +1798,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Locus continuity tests c = (C0_locus_continuous, ...,G2_locus_continuous):</p>
 <p>true if a locus discontinuity was found strictly between t0 and t1 or at t1 is the at the end of a curve. Note well that all open curves (<a class="el" href="class_o_n___curve.html#a8108d949eee27fb0ab7b2b4339df5b7f">IsClosed()</a>=false) are locus discontinuous at the ends of their domains. All closed curves (<a class="el" href="class_o_n___curve.html#a8108d949eee27fb0ab7b2b4339df5b7f">IsClosed()</a>=true) are at least C0_locus_continuous at the ends of their domains. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a85491dd8ecbed5fc89b3e3d7e6b19064">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a19ecbe43f33904b55cf59af5ec156203">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#ac54f371ac53ed8bbdf2a39501a05583d">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___poly_curve.html#a64aad28eb98b9cfd4799bc3cd13e7d73">ON_PolyCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a9108d165534c4924172784e25d16eb37">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a85491dd8ecbed5fc89b3e3d7e6b19064">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a19ecbe43f33904b55cf59af5ec156203">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#ac54f371ac53ed8bbdf2a39501a05583d">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___poly_curve.html#a64aad28eb98b9cfd4799bc3cd13e7d73">ON_PolyCurve</a>.</p>
 
 </div>
 </div>
@@ -1852,7 +1849,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get the parameter of the point on the curve that is a prescribed arc length from the start of the curve. Parameters: s - [in] normalized arc length parameter. E.g., 0 = start of curve, 1/2 = midpoint of curve, 1 = end of curve. t - [out] parameter such that the length of the curve from its start to t is arc_length. fractional_tolerance - [in] desired fractional precision. fabs(("exact" length from start to t) - arc_length)/arc_length &lt;= fractional_tolerance sub_domain - [in] If not nullptr, the calculation is performed on the specified sub-domain of the curve. Returns: true if successful </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#ac945b1af2bbf767afa29d3e64c6d9321">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a329a8b8f5ffc336b97cb436f5c53f3d8">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a9a7247705f3de526c11d296335f9d62d">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#aec57e6d0f27ce0bb46477e2854492f14">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a3c624a0e4a96fd7b63ed35dcc7dab840">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a1ba121f92b3c85a11678695e1905a98f">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ac945b1af2bbf767afa29d3e64c6d9321">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a329a8b8f5ffc336b97cb436f5c53f3d8">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a9a7247705f3de526c11d296335f9d62d">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#aec57e6d0f27ce0bb46477e2854492f14">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a3c624a0e4a96fd7b63ed35dcc7dab840">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -1915,7 +1912,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get the parameter of the point on the curve that is a prescribed arc length from the start of the curve. Parameters: count - [in] number of parameters in s. s - [in] array of normalized arc length parameters. E.g., 0 = start of curve, 1/2 = midpoint of curve, 1 = end of curve. t - [out] array of curve parameters such that the length of the curve from its start to t[i] is s[i]*curve_length. absolute_tolerance - [in] if absolute_tolerance &gt; 0, then the difference between (s[i+1]-s[i])*curve_length and the length of the curve segment from t[i] to t[i+1] will be &lt;= absolute_tolerance. fractional_tolerance - [in] desired fractional precision for each segment. fabs("true" length - actual length)/(actual length) &lt;= fractional_tolerance sub_domain - [in] If not nullptr, the calculation is performed on the specified sub-domain of the curve. A 0.0 s value corresponds to sub_domain-&gt;Min() and a 1.0 s value corresponds to sub_domain-&gt;Max(). Returns: true if successful </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#af9edb6740b795e74641af8f849838510">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a2474ba1307babdf9efc4887e5cc880d7">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a7911aedcea9b1bae9d562e2174475e87">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#a62cdadcdf667bd258a87659b0141d7f2">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#af757dd500570b8efb45a223d65d989e4">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a7cdf2d47700e4cac19537e674613d547">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af9edb6740b795e74641af8f849838510">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a2474ba1307babdf9efc4887e5cc880d7">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a7911aedcea9b1bae9d562e2174475e87">ON_CurveProxy</a>, <a class="el" href="class_o_n___arc_curve.html#a62cdadcdf667bd258a87659b0141d7f2">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#af757dd500570b8efb45a223d65d989e4">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -1960,7 +1957,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get a NURBS curve representation of this curve. Parameters: nurbs_curve - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. subdomain - [in] if not nullptr, then the NURBS representation for this portion of the curve is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the curve's to wthe desired accuracy 2 success - returned NURBS point locus matches the curve's to the desired accuracy and the domain of the NURBS curve is correct. On However, This curve's parameterization and the NURBS curve parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of curves that have a transcendental parameterization like circles Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> may be easier to use. See Also: <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a6d06bebc8e4e0d16bb025792228c6a98">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a10b57254d68c45309923f87d370c5ba4">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a80dc0a9f4905fba6b97a028632575837">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a34e3e17ec977eb8e7fdc0b65d681ca23">ON_CurveProxy</a>, <a class="el" href="class_o_n___line_curve.html#a08eb431863274631c060b085aa31267c">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a922055f2e9c1033a125e2f1043bbced2">ON_ArcCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#aacf0e62c19e615d31e771c7ea4c198c9">ON_CurveOnSurface</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a6d06bebc8e4e0d16bb025792228c6a98">ON_NurbsCurve</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a6441b5b56348035bab27436b7e69dea4">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a10b57254d68c45309923f87d370c5ba4">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a80dc0a9f4905fba6b97a028632575837">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a34e3e17ec977eb8e7fdc0b65d681ca23">ON_CurveProxy</a>, <a class="el" href="class_o_n___line_curve.html#a08eb431863274631c060b085aa31267c">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a922055f2e9c1033a125e2f1043bbced2">ON_ArcCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#aacf0e62c19e615d31e771c7ea4c198c9">ON_CurveOnSurface</a>.</p>
 
 </div>
 </div>
@@ -2055,7 +2052,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#ada21da6852e886735e6bf78027ba6312">ON_CurveProxy</a>, <a class="el" href="class_o_n___curve_on_surface.html#a0b874ea4adf39f6dd396e4011394300b">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___nurbs_curve.html#af0ce6f18d5218dd90647fd29f4a7ee38">ON_NurbsCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#ada21da6852e886735e6bf78027ba6312">ON_CurveProxy</a>, <a class="el" href="class_o_n___curve_on_surface.html#a0b874ea4adf39f6dd396e4011394300b">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a1678c0c33f95980bb2372e106f0bf276">ON_SubDEdgeChainCurve</a>, and <a class="el" href="class_o_n___nurbs_curve.html#af0ce6f18d5218dd90647fd29f4a7ee38">ON_NurbsCurve</a>.</p>
 
 </div>
 </div>
@@ -2084,7 +2081,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get number of parameters of "knots". Parameters: span_parameters - [out] an array of length <a class="el" href="class_o_n___curve.html#ad162b90ba333e4f3dd5b13823e1b5f27">SpanCount()</a>+1 is filled in with the parameters where the curve is not smooth (C-infinity). Returns: true if successful </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#af310f29d64d40cc449e7a727b3352750">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2451286130d423f462a69cb5e51de1ba">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a66b9a26238437790a2907528c176dd8f">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ab9492f00e2be26bee9985c0b841d038a">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a034e2f8bbdf6997005a87f6c3636336e">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#aa13d878f8f59df63759b20740dcd8656">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a927e6e0888b3e410bc366df33823083f">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#ae93079000ee306a6d53bba126eb81bea">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#af310f29d64d40cc449e7a727b3352750">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2451286130d423f462a69cb5e51de1ba">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a66b9a26238437790a2907528c176dd8f">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ab9492f00e2be26bee9985c0b841d038a">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a034e2f8bbdf6997005a87f6c3636336e">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#aa13d878f8f59df63759b20740dcd8656">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a927e6e0888b3e410bc366df33823083f">ON_CurveOnSurface</a>.</p>
 
 </div>
 </div>
@@ -2144,6 +2141,8 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a71afb75ea2bd506ad8ab10c64bad12d2">ON_SubDEdgeChainCurve</a>.</p>
+
 </div>
 </div>
 <a id="a07da6630700d2c2ce04f0bc3178b02b0"></a>
@@ -2191,7 +2190,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#ab59968e400d15d016517b7b4f2e32ea4">ON_Geometry</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___poly_curve.html#aea704b360c8e9e72a27429136ec0dc8e">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a88e2938385e3356a42b4a0146a64f340">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ac705f9c434c136adda86103d1164577a">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a1c9c59f8b8d39dcbbdb953d4be2f537b">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___poly_curve.html#aea704b360c8e9e72a27429136ec0dc8e">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a88e2938385e3356a42b4a0146a64f340">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ac705f9c434c136adda86103d1164577a">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2220,7 @@ Additional Inherited Members</h2></td></tr>
  However, This curve's parameterization and the NURBS curve parameterization may not match. This situation happens when getting NURBS representations of curves that have a transcendental parameterization like circles Remarks: This is a low-level virtual function. <br  />
  See Also: <a class="el" href="class_o_n___curve.html#a67dd944c24cda3d319fa5ac73bb95c2e">ON_Curve::GetNurbForm</a> <a class="el" href="class_o_n___curve.html#a667f621c7004f9f44f0d68f2267b9a0b">ON_Curve::NurbsCurve</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#ad87d313a81d6847c3bc93548d2c49096">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2422001144d07ad9aa06cea2e7d67863">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a4f5cdfa2e5abdb01ea0c22e2beeff865">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aac29bac15751fab5fef807ecfcb518e0">ON_CurveProxy</a>, <a class="el" href="class_o_n___line_curve.html#ac222f7c253bcdab28441090e0a856331">ON_LineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#ad9e88e771f0e831a59672e80890347c4">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a88f73d5c28b72770c5b301d7f619f81b">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#ad87d313a81d6847c3bc93548d2c49096">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a2422001144d07ad9aa06cea2e7d67863">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a4f5cdfa2e5abdb01ea0c22e2beeff865">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aac29bac15751fab5fef807ecfcb518e0">ON_CurveProxy</a>, <a class="el" href="class_o_n___line_curve.html#ac222f7c253bcdab28441090e0a856331">ON_LineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#ad9e88e771f0e831a59672e80890347c4">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -2373,7 +2372,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Find curve's self intersection points. Parameters: x - [out] Intersection events are appended to this array. Only intersection points are reported. Overlaps are not reported. intersection_tolerance - [in] curve_domain - [in] optional restriction Returns: Number of intersection events appended to x. Remarks: Overlaps were are not reported. Overlaps are now reported as of Rhino 8.0 </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___arc_curve.html#a8b9212c5e4fd55f9107e9789f535bb08">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ab5308745031d79353670823f37f18508">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a27e1ace9114b25f2a5512ed9efafc776">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a8b9212c5e4fd55f9107e9789f535bb08">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ab5308745031d79353670823f37f18508">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -2485,7 +2484,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if the locus if its points is an arc or circle. Parameters: plane - [in] if not nullptr, test is performed in this plane arc - [out] if not nullptr and true is returned, then arc parameters are filled in tolerance - [in] tolerance to use when checking Returns: ON_Arc.m_angle &gt; 0 if curve locus is an arc between specified points. If ON_Arc.m_angle is 2.0*ON_PI, then the curve is a circle. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a9b9a8886fe40bdf03846f4f1a4f94e23">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af1a9bf6ff5716156093fa9e8c5fdb047">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a4b17f3e8202cc9affc5a5805dd31139d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3772b0e7c43198673457b00cb7159911">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#a99292a6c3ba6c395b2e069bcfd9f07bc">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a02f87b390eae841fb0c92dc956cc360a">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#a1b77677bc00ad99bc84c2464571a4a6d">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#aea76e19f55620551229c075ac0035fea">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a9b9a8886fe40bdf03846f4f1a4f94e23">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#af1a9bf6ff5716156093fa9e8c5fdb047">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a4b17f3e8202cc9affc5a5805dd31139d">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3772b0e7c43198673457b00cb7159911">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#a99292a6c3ba6c395b2e069bcfd9f07bc">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a02f87b390eae841fb0c92dc956cc360a">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#a1b77677bc00ad99bc84c2464571a4a6d">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -2601,7 +2600,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if it is closed. Returns: true if the curve is closed. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#aa8b99b3d2672ae0ac00beb2dafe98245">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a87c4768bb74bc28a11e300895278a3c4">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ad0874ef2049a1d5a57b514991204323e">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a46f46b509edf8aa3aac2f260135cb66c">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#aa461a0676d6596007c6a3f4638b69572">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___nurbs_curve.html#ab4fe8e5f17cb1b93507b333c515f632e">ON_NurbsCurve</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#a0f5a88ebf6c6044bb2ac42a07d485eab">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___polyline_curve.html#afdf206505ab2db09cb050acc156a4e18">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#a4a9bc5069207ba7df5ba1faa612eed35">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___brep_edge.html#a20f153f6637ff7f125ca0892fa2559ff">ON_BrepEdge</a>, <a class="el" href="class_o_n___poly_edge_curve.html#a594727ba20edd4c9c996863a5669921a">ON_PolyEdgeCurve</a>, and <a class="el" href="class_c_rhino_poly_edge.html#ad2875d029aea1b4bd6dc828ba739f586">CRhinoPolyEdge</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#aa8b99b3d2672ae0ac00beb2dafe98245">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a87c4768bb74bc28a11e300895278a3c4">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ad0874ef2049a1d5a57b514991204323e">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a46f46b509edf8aa3aac2f260135cb66c">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#aa461a0676d6596007c6a3f4638b69572">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a53db835793560d73ad00c8bbcf6a5f39">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#ab4fe8e5f17cb1b93507b333c515f632e">ON_NurbsCurve</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#a0f5a88ebf6c6044bb2ac42a07d485eab">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___polyline_curve.html#afdf206505ab2db09cb050acc156a4e18">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#a4a9bc5069207ba7df5ba1faa612eed35">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___brep_edge.html#a20f153f6637ff7f125ca0892fa2559ff">ON_BrepEdge</a>, <a class="el" href="class_o_n___poly_edge_curve.html#a594727ba20edd4c9c996863a5669921a">ON_PolyEdgeCurve</a>, and <a class="el" href="class_c_rhino_poly_edge.html#ad2875d029aea1b4bd6dc828ba739f586">CRhinoPolyEdge</a>.</p>
 
 </div>
 </div>
@@ -2677,7 +2676,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Test continuity at a curve parameter value. Parameters: c - [in] type of continuity to test for. Read <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668">ON::continuity</a> comments for details. t - [in] parameter to test hint - [in] evaluation hint point_tolerance - [in] if the distance between two points is greater than point_tolerance, then the curve is not C0. d1_tolerance - [in] if the difference between two first derivatives is greater than d1_tolerance, then the curve is not C1. d2_tolerance - [in] if the difference between two second derivatives is greater than d2_tolerance, then the curve is not C2. cos_angle_tolerance - [in] default = cos(1 degree) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac746257a73e0d58a5c07cb739342f856" title="continuous unit tangent">ON::continuity::G1_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. If the cosine of the angle between two tangent vectors is &lt;= cos_angle_tolerance, then a G1 discontinuity is reported. curvature_tolerance - [in] (default = ON_SQRT_EPSILON) Used only when c is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a> or <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>. <br  />
  <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and the angle between K0 and K1 is at least twice angle tolerance or ||K0| - |K1|| &gt; (max(|K0|,|K1|) &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: true if the curve has at least the c type continuity at the parameter t. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a0e4af21d4300a5c91ac3728561303687">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#ab1087059ce618ad03498c7f5a26ad087">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a1458d1f004ca07e726216153b1933100">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#aadb4505ecc06a2b4185e6e42f8979da6">ON_PolyCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a17ad23ae7feb6b12f0169509c81ac2f2">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a4149f2604bd8d52a08d81aecb5959356">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a0e4af21d4300a5c91ac3728561303687">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#ab1087059ce618ad03498c7f5a26ad087">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a1458d1f004ca07e726216153b1933100">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#aadb4505ecc06a2b4185e6e42f8979da6">ON_PolyCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a17ad23ae7feb6b12f0169509c81ac2f2">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -2721,6 +2720,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#af014ba8447decd92b9be47e7d43442f3">ON_SubDEdgeChainCurve</a>.</p>
+
 </div>
 </div>
 <a id="a7c480c610e37703041d9eacb502d5ae8"></a>
@@ -2758,7 +2759,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if it lies in a specific plane. Parameters: test_plane - [in] tolerance - [in] tolerance to use when checking Returns: true if the maximum distance from the curve to the test_plane is &lt;= tolerance. </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#acefc81c1d53957b7496914449d079231">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a9eeb76f0f0d1a434b0bc06c35f2085cf">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aa91e815b087125e831a55ecdac871723">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3f18ad614b30dee3c01b60f560d15b01">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#af336283e72bd79d076c09e0f87df0356">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a10241e2e99afa837572fd7cee656532d">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#ab5d9dc810b82ba1df3e049a93bd8838e">ON_ArcCurve</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a9e93925e2e6cd6b51fe2c3c4d34c0211">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#acefc81c1d53957b7496914449d079231">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a9eeb76f0f0d1a434b0bc06c35f2085cf">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aa91e815b087125e831a55ecdac871723">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3f18ad614b30dee3c01b60f560d15b01">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#af336283e72bd79d076c09e0f87df0356">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a10241e2e99afa837572fd7cee656532d">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#ab5d9dc810b82ba1df3e049a93bd8838e">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -2787,7 +2788,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if the locus if its points is a line segment. Parameters: tolerance - [in] ///&lt; tolerance to use when checking linearity Returns: true if the ends of the curve are farther than tolerance apart and the maximum distance from any point on the curve to the line segment connecting the curve's ends is &lt;= tolerance. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#afa4f43e323cbdedc8d88a9e5a4e3ecce">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3592b84ed65f1ee94fb248a27c8ac1a9">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a34f98ef96e03be78649fe3186a77bb21">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a5c9b951e666eee31930a790492ba6e98">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#aea2ebbafaebda367a66194a77fb1e358">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___nurbs_curve.html#a90cf938b14c3effd8d86b52e416dca5d">ON_NurbsCurve</a>, and <a class="el" href="class_o_n___polyline_curve.html#a2bd48fa74d7c9d90bb1f9caa2e1f8dd3">ON_PolylineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#afa4f43e323cbdedc8d88a9e5a4e3ecce">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a3592b84ed65f1ee94fb248a27c8ac1a9">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a34f98ef96e03be78649fe3186a77bb21">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a5c9b951e666eee31930a790492ba6e98">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#aea2ebbafaebda367a66194a77fb1e358">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a9c2d56bf7fc10509c07aed36012f8c53">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a90cf938b14c3effd8d86b52e416dca5d">ON_NurbsCurve</a>, and <a class="el" href="class_o_n___polyline_curve.html#a2bd48fa74d7c9d90bb1f9caa2e1f8dd3">ON_PolylineCurve</a>.</p>
 
 </div>
 </div>
@@ -2815,7 +2816,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if it is periodic. Returns: true if the curve is closed and at least C2 at the start/end. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#a26bf56801741887618e3f4e4e51e3c32">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a1833b16ce89f3d8ef5bae3d0c5c50f7c">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#acf2434382de42f43eb4077267538d65d">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a099bf2774d9d7f1035c2306295cf4d7b">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#afa4df948aae508b0c06a4caf79c381ba">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#af12e9cebab464f58af35d8eae26c594b">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___nurbs_curve.html#aa8737f336e0ff7016aeb51dc01fbe0a3">ON_NurbsCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___curve_proxy.html#a26bf56801741887618e3f4e4e51e3c32">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a1833b16ce89f3d8ef5bae3d0c5c50f7c">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#acf2434382de42f43eb4077267538d65d">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a099bf2774d9d7f1035c2306295cf4d7b">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#afa4df948aae508b0c06a4caf79c381ba">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#af12e9cebab464f58af35d8eae26c594b">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a831b223ebb98750c88d239c73095bc47">ON_SubDEdgeChainCurve</a>, and <a class="el" href="class_o_n___nurbs_curve.html#aa8737f336e0ff7016aeb51dc01fbe0a3">ON_NurbsCurve</a>.</p>
 
 </div>
 </div>
@@ -2854,7 +2855,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Test a curve to see if it is planar. Parameters: plane - [out] if not nullptr and true is returned, the plane parameters are filled in. tolerance - [in] tolerance to use when checkin Note: If the curve is a simple planar closed curve the plane orientation agrees with the curve orientation. Returns: true if there is a plane such that the maximum distance from the curve to the plane is &lt;= tolerance. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a89189d381ed587c088349810aa42340e">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a297224027c9f3a471cf18826404a06c6">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aa1ba8f85a8971b6a4068e9a641bb1983">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ad691dbdc567696fb75038a32f4b1de11">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#ad0847f01462351cf5e08a27c6772e2d0">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#ac600892dd5e7a6493120df5a6bb5dcd1">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#a2a657bf150bde3b54bd5e90f156c7da3">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#ad5fef7982136c94c13d696fe5e4bef55">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a89189d381ed587c088349810aa42340e">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a297224027c9f3a471cf18826404a06c6">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#aa1ba8f85a8971b6a4068e9a641bb1983">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ad691dbdc567696fb75038a32f4b1de11">ON_PolyCurve</a>, <a class="el" href="class_o_n___line_curve.html#ad0847f01462351cf5e08a27c6772e2d0">ON_LineCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#ac600892dd5e7a6493120df5a6bb5dcd1">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___arc_curve.html#a2a657bf150bde3b54bd5e90f156c7da3">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
@@ -2893,7 +2894,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Several types of <a class="el" href="class_o_n___curve.html">ON_Curve</a> can have the form of a polyline including a degree 1 <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a>, an <a class="el" href="class_o_n___polyline_curve.html">ON_PolylineCurve</a>, and an <a class="el" href="class_o_n___poly_curve.html">ON_PolyCurve</a> all of whose segments are some form of polyline. IsPolyline tests a curve to see if it can be represented as a polyline. Parameters: pline_points - [out] if not nullptr and true is returned, then the points of the polyline form are returned here. t - [out] if not nullptr and true is returned, then the parameters of the polyline points are returned here. Returns: @untitled table 0 curve is not some form of a polyline &gt;=2 number of points in polyline form </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#aee58763e8a650a162fd871a69e4be785">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a18342e0d1ec68aa2156b243cc7139226">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#ae56853f1154b45740123292281c28777">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#ad525eefcd332b79d0ec02383527dc4f6">ON_PolyCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ac36cd7ee76f7b122cc6522b865b78586">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a3a302fe1e2bf00a2a9fcc2247c5a1bf6">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aee58763e8a650a162fd871a69e4be785">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a18342e0d1ec68aa2156b243cc7139226">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#ae56853f1154b45740123292281c28777">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#ad525eefcd332b79d0ec02383527dc4f6">ON_PolyCurve</a>, and <a class="el" href="class_o_n___line_curve.html#ac36cd7ee76f7b122cc6522b865b78586">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -2938,7 +2939,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Used to quickly find short curves. Parameters: tolerance - [in] (&gt;=0) sub_domain - [in] If not nullptr, the test is performed on the interval that is the intersection of sub_domain with <a class="el" href="class_o_n___curve.html#ae3a1e3ea7c924246a43754aa03790432">Domain()</a>. Returns: True if the length of the curve is &lt;= tolerance. Remarks: Faster than calling Length() and testing the result. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a68f6fa0b5ecfaf40f250af2164c34baa">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ac0b6084d337581f44cabbbe1993ba326">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a394b4d20656cdaa254a79c7e7240b3d9">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a9371538703659305706a3aaf54974b9e">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a6a13fef29ae9433e6e9a9ab3c9e45350">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a8e72ad8eb92cdec171852ce4385922d1">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a881a2e0301c0fa23fb26558a2b69cc7f">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a68f6fa0b5ecfaf40f250af2164c34baa">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ac0b6084d337581f44cabbbe1993ba326">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a394b4d20656cdaa254a79c7e7240b3d9">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a9371538703659305706a3aaf54974b9e">ON_PolyCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a6a13fef29ae9433e6e9a9ab3c9e45350">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a8e72ad8eb92cdec171852ce4385922d1">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -3340,7 +3341,7 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Looks for segments that are shorter than tolerance that can be removed. If bRemoveShortSegments is true, then the short segments are removed. Does not change the domain, but it will change the relative parameterization. Parameters: tolerance - [in] bRemoveShortSegments - [in] If true, then short segments are removed. Returns: True if removable short segments can were found. False if no removable short segments can were found. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a58dd29690160e6377902d8a242ddbf6b">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___poly_curve.html#a166f8e66fb17f456a1d4dc3b0c648b07">ON_PolyCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a3995818c0958e348120d565ba2e44fac">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a334140b3285a58980079783fd319f650">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a58dd29690160e6377902d8a242ddbf6b">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___poly_curve.html#a166f8e66fb17f456a1d4dc3b0c648b07">ON_PolyCurve</a>.</p>
 
 </div>
 </div>
@@ -3368,7 +3369,7 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Reverse the direction of the curve. Returns: true if curve was reversed. Remarks: If reversed, the domain changes from [a,b] to [-b,-a] </p>
 
-<p>Implemented in <a class="el" href="class_o_n___brep_trim.html#a999e6d4eed18cdaf5ea47d2df1b31703">ON_BrepTrim</a>, <a class="el" href="class_o_n___nurbs_curve.html#a72d0663e72765f4e024ed763046cf2c5">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a7b7ddcccd16139904903a18151a07eab">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a21f9237aff73da2af4d40546841d5a07">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a87298c404d6415c406fb75fcf99f60a5">ON_PolyCurve</a>, <a class="el" href="class_o_n___brep_edge.html#a2104640ecd04cff273220b6b67917b44">ON_BrepEdge</a>, <a class="el" href="class_o_n___line_curve.html#af3072a8fbbd3a7e34ae565f305c9d42d">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ac60899f802a2a8e5fbe7855d093278e1">ON_ArcCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#ad346b0728efa25fe5ad41e6bbb40b536">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a2fc4374d8b034f91bb67b3fe5be4185b">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___brep_trim.html#a999e6d4eed18cdaf5ea47d2df1b31703">ON_BrepTrim</a>, <a class="el" href="class_o_n___nurbs_curve.html#a72d0663e72765f4e024ed763046cf2c5">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a7b7ddcccd16139904903a18151a07eab">ON_CurveProxy</a>, <a class="el" href="class_o_n___polyline_curve.html#a21f9237aff73da2af4d40546841d5a07">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a87298c404d6415c406fb75fcf99f60a5">ON_PolyCurve</a>, <a class="el" href="class_o_n___brep_edge.html#a2104640ecd04cff273220b6b67917b44">ON_BrepEdge</a>, <a class="el" href="class_o_n___line_curve.html#af3072a8fbbd3a7e34ae565f305c9d42d">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ac60899f802a2a8e5fbe7855d093278e1">ON_ArcCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#ad346b0728efa25fe5ad41e6bbb40b536">ON_CurveOnSurface</a>.</p>
 
 </div>
 </div>
@@ -3407,7 +3408,7 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Set the domain of the curve Parameters: t0 - [in] t1 - [in] new domain will be [t0,t1] Returns: true if successful. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#aeea590cb875216a888582c5615f9bac4">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a298ee48bc1a500e6302d9d3eb666af3c">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#af6b17638561f66bafeac70e39f1d5144">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#aab50a239b515d317ae305e59b30b338b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a9e13f390873b568044615cedd67982cb">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a96c00debd03e34940f0d91e2ab8a770b">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a4aac7e1854550fe5e56d03879b1cfbb5">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aeea590cb875216a888582c5615f9bac4">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a298ee48bc1a500e6302d9d3eb666af3c">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#af6b17638561f66bafeac70e39f1d5144">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#aab50a239b515d317ae305e59b30b338b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#a9e13f390873b568044615cedd67982cb">ON_ArcCurve</a>, and <a class="el" href="class_o_n___line_curve.html#a96c00debd03e34940f0d91e2ab8a770b">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -3455,7 +3456,7 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Force the curve to end at a specified point. Parameters: end_point - [in] Returns: true if successful. Remarks: Some end points cannot be moved. Be sure to check return code. <a class="el" href="class_o_n___curve.html#a96e8ee83e56e84c16a14637fe48a42ee">ON_Curve::SetEndPoint()</a> returns true if end_point is the same as the end of the curve, false otherwise. See Also: <a class="el" href="class_o_n___curve.html#ab6db85b7bd367cab86201db1a6b5a1b5">ON_Curve::SetStartPoint</a> <a class="el" href="class_o_n___curve.html#abd83649cbf4e749ac2613a058a6fe078">ON_Curve::PointAtStart</a> <a class="el" href="class_o_n___curve.html#a24c02f50c0c7e0036c744a0e3c8b8f88">ON_Curve::PointAtEnd</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#ad12e2394611a4533e0eb1f4984df5ad9">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#aea0cc61b8723a76056a34ea6bffc404f">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a3c4d080328acb8457bc4a0e0edd9c618">ON_PolyCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af33a45e7d24a812361a344c531211449">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___arc_curve.html#a1cbc88e53a55095621b0ad116c3e9da7">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#ad9ae4db21d684102054d2383d98ceeb4">ON_LineCurve</a>, and <a class="el" href="class_o_n___poly_edge_curve.html#a6368036da9444ff415aaa0997c489ce0">ON_PolyEdgeCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a26ebec7b8c83965338e4f9a29d016213">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#ad12e2394611a4533e0eb1f4984df5ad9">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#aea0cc61b8723a76056a34ea6bffc404f">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a3c4d080328acb8457bc4a0e0edd9c618">ON_PolyCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af33a45e7d24a812361a344c531211449">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___arc_curve.html#a1cbc88e53a55095621b0ad116c3e9da7">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#ad9ae4db21d684102054d2383d98ceeb4">ON_LineCurve</a>, and <a class="el" href="class_o_n___poly_edge_curve.html#a6368036da9444ff415aaa0997c489ce0">ON_PolyEdgeCurve</a>.</p>
 
 </div>
 </div>
@@ -3484,7 +3485,7 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Force the curve to start at a specified point. Parameters: start_point - [in] Returns: true if successful. Remarks: Some end points cannot be moved. Be sure to check return code. <a class="el" href="class_o_n___curve.html#ab6db85b7bd367cab86201db1a6b5a1b5">ON_Curve::SetStartPoint()</a> returns true if start_point is the same as the start of the curve, false otherwise. See Also: <a class="el" href="class_o_n___curve.html#a96e8ee83e56e84c16a14637fe48a42ee">ON_Curve::SetEndPoint</a> <a class="el" href="class_o_n___curve.html#abd83649cbf4e749ac2613a058a6fe078">ON_Curve::PointAtStart</a> <a class="el" href="class_o_n___curve.html#a24c02f50c0c7e0036c744a0e3c8b8f88">ON_Curve::PointAtEnd</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#aa57fdf2af5b0ff3f531d008fba7b7c82">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a6c03092b607012d1d9b6829a2ce0468b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a3e3a808731699edd3df177bf1a296b92">ON_PolyCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af0c243b4c3805f8d2e1cc7038f888fed">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___arc_curve.html#a99eb9ec8e402101b7c0e745f622583f6">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a3577c2b05faec78e85c53929a76c6f01">ON_LineCurve</a>, and <a class="el" href="class_o_n___poly_edge_curve.html#a82312d2fd06bc5435f9670d336fc34ed">ON_PolyEdgeCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a12eee4226a467fd81c935943cd30a1e4">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aa57fdf2af5b0ff3f531d008fba7b7c82">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a6c03092b607012d1d9b6829a2ce0468b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a3e3a808731699edd3df177bf1a296b92">ON_PolyCurve</a>, <a class="el" href="class_c_rhino_poly_edge.html#af0c243b4c3805f8d2e1cc7038f888fed">CRhinoPolyEdge</a>, <a class="el" href="class_o_n___arc_curve.html#a99eb9ec8e402101b7c0e745f622583f6">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a3577c2b05faec78e85c53929a76c6f01">ON_LineCurve</a>, and <a class="el" href="class_o_n___poly_edge_curve.html#a82312d2fd06bc5435f9670d336fc34ed">ON_PolyEdgeCurve</a>.</p>
 
 </div>
 </div>
@@ -3544,7 +3545,7 @@ within  tolerance of m_t[index].
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a519796fb199145d307fd14579ebc0db3">ON_NurbsCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a1afa5ee6dd28cd871df014c487e787fc">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#afa7eaa521aa400bc4447ad136686c5d0">ON_CurveProxy</a>, <a class="el" href="class_o_n___curve_on_surface.html#abf79215907936dbe20a8e5812385a68c">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___line_curve.html#a8cd438d91bdfd442c1366722634bfe0b">ON_LineCurve</a>, and <a class="el" href="class_o_n___polyline_curve.html#a6ce7960090187e209917c86b06198eb3">ON_PolylineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a85dedee343e42902ca55831ae09efe70">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a519796fb199145d307fd14579ebc0db3">ON_NurbsCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a1afa5ee6dd28cd871df014c487e787fc">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#afa7eaa521aa400bc4447ad136686c5d0">ON_CurveProxy</a>, <a class="el" href="class_o_n___curve_on_surface.html#abf79215907936dbe20a8e5812385a68c">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___line_curve.html#a8cd438d91bdfd442c1366722634bfe0b">ON_LineCurve</a>, and <a class="el" href="class_o_n___polyline_curve.html#a6ce7960090187e209917c86b06198eb3">ON_PolylineCurve</a>.</p>
 
 </div>
 </div>
@@ -3572,7 +3573,27 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Get number of nonempty smooth (c-infinity) spans in curve Returns: Number of nonempty smooth (c-infinity) spans. </p>
 
-<p>Implemented in <a class="el" href="class_o_n___nurbs_curve.html#aa6ac461f346b5b39e40285648b2f7c9b">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a60e953c1caf4f99fe3c96a499e085025">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a976ec8e2a29b3e1336f199830d108ff5">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ae0ca84ecc6a7068fdf12ba8c4d76c81b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#abfbb21095d4b15e686ba1d820d2e9caf">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a34960d115a0d8a9f951a406d8a25ea0a">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a82bf6f36ef002f3460cb28220d59ae85">ON_CurveOnSurface</a>.</p>
+<p>Implemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a7778fe10fffd36a58e35fdfc4c4579a7">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#aa6ac461f346b5b39e40285648b2f7c9b">ON_NurbsCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a60e953c1caf4f99fe3c96a499e085025">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#a976ec8e2a29b3e1336f199830d108ff5">ON_PolyCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ae0ca84ecc6a7068fdf12ba8c4d76c81b">ON_PolylineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#abfbb21095d4b15e686ba1d820d2e9caf">ON_ArcCurve</a>, <a class="el" href="class_o_n___line_curve.html#a34960d115a0d8a9f951a406d8a25ea0a">ON_LineCurve</a>, and <a class="el" href="class_o_n___curve_on_surface.html#a82bf6f36ef002f3460cb28220d59ae85">ON_CurveOnSurface</a>.</p>
+
+</div>
+</div>
+<a id="ad771c8da2bd249d904563b7bf64b3646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad771c8da2bd249d904563b7bf64b3646">&#9670;&nbsp;</a></span>SpanVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;double&gt; ON_Curve::SpanVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The curve's span vector is a stricltly monotone increasing list of doubles that are the intervals on which the curve is C-infinity. </p>
+<dl class="section return"><dt>Returns</dt><dd>The curve's span vector. </dd></dl>
 
 </div>
 </div>
@@ -3622,7 +3643,7 @@ within  tolerance of m_t[index].
   crv.Split( crv.Domain().Mid() &amp;crv, &amp;right_side );
 </pre><p>would split crv at the parametric midpoint, put the left side in crv, and return the right side in right_side. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#ad9a7a85fd744962124d0a95cad577fa4">ON_PolylineCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a1ddf4e9b0126ff9d2c8e96f11f7d3fbe">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a30c3e7144814a2f9750df6725833788f">ON_CurveProxy</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#aa4bae99c971de48e419636434b057d7b">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___line_curve.html#ae0f25152c053d6d369d528e9513d7a8c">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ab6502c18d86790d3b8f689eb25dfb7ca">ON_ArcCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#a5f6cd09dae6f42e35ce0d207c4ebd574">ON_PolyEdgeSegment</a>, and <a class="el" href="class_o_n___nurbs_curve.html#ae7c3377f4c0b675df37cdb0f1af189d5">ON_NurbsCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___polyline_curve.html#ad9a7a85fd744962124d0a95cad577fa4">ON_PolylineCurve</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a7aca0b7ddc10ccf9824ee8fb27112563">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___poly_curve.html#a1ddf4e9b0126ff9d2c8e96f11f7d3fbe">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a30c3e7144814a2f9750df6725833788f">ON_CurveProxy</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#aa4bae99c971de48e419636434b057d7b">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___line_curve.html#ae0f25152c053d6d369d528e9513d7a8c">ON_LineCurve</a>, <a class="el" href="class_o_n___arc_curve.html#ab6502c18d86790d3b8f689eb25dfb7ca">ON_ArcCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#a5f6cd09dae6f42e35ce0d207c4ebd574">ON_PolyEdgeSegment</a>, and <a class="el" href="class_o_n___nurbs_curve.html#ae7c3377f4c0b675df37cdb0f1af189d5">ON_NurbsCurve</a>.</p>
 
 </div>
 </div>
@@ -3672,7 +3693,7 @@ within  tolerance of m_t[index].
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#add710872e89bc29e1ed1321b3e70b1b1">ON_Geometry</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_curve.html#a91156f587df4aa7396565f76ccd80e9c">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ad54d8c21e1d940e3b185265c39b68640">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a69902b2ea0bb50302e6db10bf567c024">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ace50c5842aad8743bff5a2f479e10084">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a61d3b5978e95548898f2c434295fcb8b">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___line_curve.html#adde3ee82a21929311ce980f783d565c0">ON_LineCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#a8b60bcd1c06f4e2e234c2e07a1cc09d4">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___nurbs_curve.html#a91156f587df4aa7396565f76ccd80e9c">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ad54d8c21e1d940e3b185265c39b68640">ON_PolylineCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a69902b2ea0bb50302e6db10bf567c024">ON_CurveProxy</a>, <a class="el" href="class_o_n___poly_curve.html#ace50c5842aad8743bff5a2f479e10084">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_on_surface.html#a61d3b5978e95548898f2c434295fcb8b">ON_CurveOnSurface</a>, and <a class="el" href="class_o_n___line_curve.html#adde3ee82a21929311ce980f783d565c0">ON_LineCurve</a>.</p>
 
 </div>
 </div>
@@ -3701,14 +3722,14 @@ within  tolerance of m_t[index].
 </div><div class="memdoc">
 <p>Description: Removes portions of the curve outside the specified interval. Parameters: domain - [in] interval of the curve to keep. Portions of the curve before curve(domain[0]) and after curve(domain[1]) are removed. Returns: true if successful. </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___poly_curve.html#af71306a123188d97480215c799b7ca8d">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a706a5f0d8bc948f9bea6a4eafd5f2c36">ON_CurveProxy</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#a5d471a6900012e832692d6c8ee7732c2">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___line_curve.html#a920589c2dadec618f9cd99cb71c7320c">ON_LineCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#acc5de8cdd81e6ff3b0e980b64c1239e2">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___nurbs_curve.html#ac5a5f0259b22d7bd7d88ecaf8e4bf56f">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a3ed6944252962bfa50a535bed3ae00a2">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a8127d39ce7052ee633916242fec0b2c9">ON_ArcCurve</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#aa15bd8443a42d3c15da75b984d98503b">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___poly_curve.html#af71306a123188d97480215c799b7ca8d">ON_PolyCurve</a>, <a class="el" href="class_o_n___curve_proxy.html#a706a5f0d8bc948f9bea6a4eafd5f2c36">ON_CurveProxy</a>, <a class="el" href="class_c_rhino_poly_edge_segment.html#a5d471a6900012e832692d6c8ee7732c2">CRhinoPolyEdgeSegment</a>, <a class="el" href="class_o_n___line_curve.html#a920589c2dadec618f9cd99cb71c7320c">ON_LineCurve</a>, <a class="el" href="class_o_n___poly_edge_segment.html#acc5de8cdd81e6ff3b0e980b64c1239e2">ON_PolyEdgeSegment</a>, <a class="el" href="class_o_n___nurbs_curve.html#ac5a5f0259b22d7bd7d88ecaf8e4bf56f">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#a3ed6944252962bfa50a535bed3ae00a2">ON_PolylineCurve</a>, and <a class="el" href="class_o_n___arc_curve.html#a8127d39ce7052ee633916242fec0b2c9">ON_ArcCurve</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2024 16:49:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2024 17:27:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
