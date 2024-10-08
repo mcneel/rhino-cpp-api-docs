@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -719,7 +719,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This constructor is for experts who have storage for a matrix and need to use it in <a class="el" href="class_o_n___matrix.html">ON_Matrix</a> form. Parameters: row_count - [in] col_count - [in] M - [in] bDestructorFreeM - [in] If true, ~ON_Matrix will call onfree(M). If false, caller is managing M's memory. Remarks: <a class="el" href="class_o_n___matrix.html">ON_Matrix</a> functions that increase the value of row_count or col_count will fail on a matrix created with this constructor. </p>
+<p>Description: This constructor is for experts who have storage for a matrix and need to use it in <a class="el" href="class_o_n___matrix.html">ON_Matrix</a> form. Parameters: row_count - [in] col_count - [in] M - [in] M should point to the start of an array of double*, each pointing to the start of the storage for a row. bDestructorFreeM - [in] If true, ~ON_Matrix will call onfree(M). If false, caller is managing M's memory. Remarks: <a class="el" href="class_o_n___matrix.html">ON_Matrix</a> functions that increase the value of row_count or col_count will fail on a matrix created with this constructor. </p>
 
 </div>
 </div>
@@ -1633,14 +1633,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>m[i][j] = value at row i and column j </p>
+<p>2024-09-05, Pierre: Note that this does not mean the memory allocated is contiguous. m points to the start of m_rowmem[0] in most cases. When the matrix is bigger than max_dblblk_size (see <a class="el" href="class_o_n___matrix.html#af2445017dc3a76e4c77ed8d27d5c4ab8">ON_Matrix::Create</a>), m_rowmem does not point to contiguous pieces of memory, and indexing as **(m + i*m_col_count + j) would read into the wrong place. m[i][j] = value at row i and column j </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

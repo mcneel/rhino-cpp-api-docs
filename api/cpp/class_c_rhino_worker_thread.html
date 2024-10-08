@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -430,7 +430,7 @@ Static Public Member Functions</h2></td></tr>
 <p>/ Be sure to get this right, or we get hard to trace / crashes that happen in other places after a cancel. } ...</p>
 <p>{ ... CMyWorker worker; ... BOOL32 bCompletedTask = worker.Run( RhLocalizeString( L"Calculating widget hyperextension coefficient", 43572) ); if ( !bCompletedTask ) { / User canceled task - carefully destroy worker } else { / harvest results from worker membr variables } }</p>
 <p>Remarks: Do NOT create dialogs and do NOT call Rhino SDK functions in a <a class="el" href="class_c_rhino_worker_thread.html#a902159dba65582065d2ce605be4cc887">Worker()</a> function except for those listed below.</p>
-<p>You may call the following Rhino SDK functions in a Worker function: <a class="el" href="class_c_rhino_app.html#a32a124baf6209ba2639a14b197c856c0" title="Print formatted text in the command window.">CRhinoApp.Print</a> <a class="el" href="class_c_rhino_doc.html#afe28ae3ec23fa0e753d5d9baf7b57682">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#a7898b22890e0436c2fc7a297dc2bb459">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#af0d7704626bc1bd6ec13cc22319c4448">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a8b4ce5764e1200ea4ef5162d5ddb36d0">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#a2edac229a96c617a9377224da656eefd">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#afc65698d06b7e8bc13bcc8fb7c7b8ead">CRhinoDoc::AddBrepObject</a></p>
+<p>You may call the following Rhino SDK functions in a Worker function: <a class="el" href="class_c_rhino_app.html#a32a124baf6209ba2639a14b197c856c0" title="Print formatted text in the command window.">CRhinoApp.Print</a> <a class="el" href="class_c_rhino_doc.html#acbe9fe01e18d8696f25e8d71d43fd1cf">CRhinoDoc::AddPointObject</a> <a class="el" href="class_c_rhino_doc.html#ac8f6ceaca7f89fea5dbfab2779602ae1">CRhinoDoc::AddPointCloudObject</a> <a class="el" href="class_c_rhino_doc.html#a82b4f5032ca9d7141c373f4ed2a6ffb5">CRhinoDoc::AddCurveObject</a> <a class="el" href="class_c_rhino_doc.html#a194c82120b6f41eb59cc4470bef681b3">CRhinoDoc::AddSurfaceObject</a> <a class="el" href="class_c_rhino_doc.html#acf88db7a4f85b1022f820e1bb5bd9435">CRhinoDoc::AddMeshObject</a> <a class="el" href="class_c_rhino_doc.html#a279bc449435798126edd9e3626396963">CRhinoDoc::AddBrepObject</a></p>
 <p>Other than adding objects, don't mess with the document, application, or views in a <a class="el" href="class_c_rhino_worker_thread.html#a902159dba65582065d2ce605be4cc887">Worker()</a> function. </p>
 
 </div>
@@ -490,7 +490,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

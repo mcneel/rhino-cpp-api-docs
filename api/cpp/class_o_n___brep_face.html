@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -677,7 +677,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Expert user tool that replaces the 3d surface geometry use by the face. Parameters; si - [in] brep surface index of new surface bTransformTrimCurves - [in] If unsure, then pass true. If the surface's domain has not changed and you are certain its parameterization still jibes with the trim curve locations, then pass false. Returns: True if successful. Example: </p><pre class="fragment">      ON_Surface* pSurface = ...;
       int si = brep.AddSurface(pSurface);
       face.ChangeSurface(si);
-</pre><p>Remarks: If the face had a surface and new surface has a different shape, then you probably want to call something like <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges()</a> to move the 3d edge curves so they will lie on the new surface. This doesn't delete the old surface; call <a class="el" href="class_o_n___brep.html#a2e7b0856db1ca34d0160bd8632b92f5d" title="culls surfaces not referenced by a face">ON_Brep::CullUnusedSurfaces()</a> or <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">ON_Brep::Compact</a> to remove unused surfaces. See Also: <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges</a> <a class="el" href="class_o_n___brep.html#a2e7b0856db1ca34d0160bd8632b92f5d" title="culls surfaces not referenced by a face">ON_Brep::CullUnusedSurfaces</a> </p>
+</pre><p>Remarks: If the face had a surface and new surface has a different shape, then you probably want to call something like <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges()</a> to move the 3d edge curves so they will lie on the new surface. This doesn't delete the old surface; call <a class="el" href="class_o_n___brep.html#a2e7b0856db1ca34d0160bd8632b92f5d" title="culls surfaces not referenced by a face">ON_Brep::CullUnusedSurfaces()</a> or <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">ON_Brep::Compact</a> to remove unused surfaces. If the old surface has transcendental parameterization and the new surface does not, call RebuildTrimsForV2 with the new surface prior to calling ChangeSurface to get the trims in the correct parameterization.</p>
+<p>See Also: <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges</a> <a class="el" href="class_o_n___brep.html#a2e7b0856db1ca34d0160bd8632b92f5d" title="culls surfaces not referenced by a face">ON_Brep::CullUnusedSurfaces</a> <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> - use return value == 2 to get transcendental parameterization mismatch. <a class="el" href="class_o_n___brep.html#aa6fe99bb3dc44959344627b0801ea0a2">ON_Brep::RebuildTrimsForV2</a> </p>
 
 </div>
 </div>
@@ -2028,7 +2029,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

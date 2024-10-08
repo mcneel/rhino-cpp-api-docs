@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -3066,6 +3066,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga36bb75797758a66434bbd12b96047b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71eb207dff517dbb8c905af8f0fffebe"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga71eb207dff517dbb8c905af8f0fffebe">ON_PLUS_FUNCTION_MeshClashSearch</a>) (int, const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *, int, const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *, const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, const class <a class="el" href="class_o_n___r_tree.html">ON_RTree</a> *, const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, const class <a class="el" href="class_o_n___r_tree.html">ON_RTree</a> *, double, bool, int, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class <a class="el" href="class_o_n___clash_event.html">ON_ClashEvent</a> &gt; &amp;)</td></tr>
 <tr class="separator:ga71eb207dff517dbb8c905af8f0fffebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0efdb70dc2b9b3fab17a89296a90e6e"><td class="memItemLeft" align="right" valign="top">typedef double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaf0efdb70dc2b9b3fab17a89296a90e6e">ON_PLUS_FUNCTION_Minimize</a>) (unsigned n, double(*f) (ON__UINT_PTR context, const double *t, double *grad), ON__UINT_PTR context, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> search_domain[], const double t0[], double terminate_value, double relative_tolerance, double zero_tolerance, unsigned maximum_iterations, double t[], bool *bConverged)</td></tr>
+<tr class="separator:gaf0efdb70dc2b9b3fab17a89296a90e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ccd51faa86a62be71c3b99d04df29c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga0ccd51faa86a62be71c3b99d04df29c5">ON_PLUS_FUNCTION_NurbsSurface_Mesh</a>) (const <a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a> &amp;, const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *)</td></tr>
 <tr class="separator:ga0ccd51faa86a62be71c3b99d04df29c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fecd2a5e352665f114f99224ba0afa6"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga9fecd2a5e352665f114f99224ba0afa6">ON_PLUS_FUNCTION_OldMeshBooleansPickTwoSides</a>) (class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, int, class <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *, class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *, bool)</td></tr>
@@ -3485,12 +3487,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a5fbac97387400e41662bbaee4b6b3267">ON_RecyclingSymbol</a> = 0x2672, 
 <a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a823e127e32a964e8a51588f32893f823">ON_BlackRecyclingSymbol</a> = 0x267B, 
 <a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09ab7f661f9fdc13eb8807fd4a0fe93b5d3">ON_WarningSign</a> = 0x26A0, 
-<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a04609d5c72329b16068c103c7c545179">ON_ReplacementCharacter</a> = 0xFFFD, 
+<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09ae24261bc42df798476b39f82cf094294">ON_CheckMark</a> = 0x2713, 
 <br />
-&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09abf1b595f3118f237d4649b7199670890">ON_ByteOrderMark</a> = 0xFEFF, 
+&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a04609d5c72329b16068c103c7c545179">ON_ReplacementCharacter</a> = 0xFFFD, 
+<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09abf1b595f3118f237d4649b7199670890">ON_ByteOrderMark</a> = 0xFEFF, 
 <a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09ae1aae1ae8731f3411c71023c521d47d8">ON_Wastebasket</a> = 0x1F5D1, 
 <a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a17f28c3a7a5fad7dfb79ba7172a340c6">ON_MaximumCodePoint</a> = 0x10FFFF, 
-<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a4addc25cce62061165dd42a06cb36036">ON_InvalidCodePoint</a> = 0x110000
+<br />
+&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gga430f062290196f7f81bf0bf9dda7ba09a4addc25cce62061165dd42a06cb36036">ON_InvalidCodePoint</a> = 0x110000
 <br />
  }</td></tr>
 <tr class="memdesc:ga430f062290196f7f81bf0bf9dda7ba09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unicode code point values for that are hard to include in code or are useful for testing encoding and glyph rendering. Code points &gt;= U+0080 require UTF-8 multiple byte encodings. Code points &gt;= U+10000 require UTF-16 surrogate pair encodings.  <a href="group__open_n_u_r_b_s.html#ga430f062290196f7f81bf0bf9dda7ba09">More...</a><br /></td></tr>
@@ -4735,6 +4739,9 @@ Functions</h2></td></tr>
 <tr class="separator:gaab6f18e90fbc544edcd0035ddeaba489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga732c0fd3c96292f75964753e3e4a9723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga732c0fd3c96292f75964753e3e4a9723">ON_Min</a> (int a, int b)</td></tr>
 <tr class="separator:ga732c0fd3c96292f75964753e3e4a9723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18e790c730e8d889a9d56d2627eb8553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga18e790c730e8d889a9d56d2627eb8553">ON_Minimize</a> (unsigned n, double(*f)(ON__UINT_PTR context, const double *t, double *grad), ON__UINT_PTR f_context, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> search_domain[], const double t0[], double terminate_value, double relative_tolerance, double zero_tolerance, unsigned maximum_iterations, double t[], bool *bConverged)</td></tr>
+<tr class="memdesc:ga18e790c730e8d889a9d56d2627eb8553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a local minimum of the object function f(t[]) of n independent variables. The function must be C2 on the search domain. The search begins at t0[].  <a href="group__open_n_u_r_b_s.html#ga18e790c730e8d889a9d56d2627eb8553">More...</a><br /></td></tr>
+<tr class="separator:ga18e790c730e8d889a9d56d2627eb8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e94eb1f1d057d25e9669143df684564"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga1e94eb1f1d057d25e9669143df684564">ON_MSSBCP_0x80_0xFF_Unicode</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> code_page)</td></tr>
 <tr class="separator:ga1e94eb1f1d057d25e9669143df684564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga113025191aef86a7d2c5502c45a8c1bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga113025191aef86a7d2c5502c45a8c1bc">on_MultiByteToWideChar</a> (const char *, int, wchar_t *, int)</td></tr>
@@ -18369,6 +18376,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf0efdb70dc2b9b3fab17a89296a90e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0efdb70dc2b9b3fab17a89296a90e6e">&#9670;&nbsp;</a></span>ON_PLUS_FUNCTION_Minimize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef double(* ON_PLUS_FUNCTION_Minimize) (unsigned n, double(*f)(ON__UINT_PTR context, const double *t, double *grad), ON__UINT_PTR context, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> search_domain[], const double t0[], double terminate_value, double relative_tolerance, double zero_tolerance, unsigned maximum_iterations, double t[], bool *bConverged)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used by <a class="el" href="group__open_n_u_r_b_s.html#ga18e790c730e8d889a9d56d2627eb8553" title="Find a local minimum of the object function f(t[]) of n independent variables. The function must be C...">ON_Minimize()</a> </p>
+
+</div>
+</div>
 <a id="ga0ccd51faa86a62be71c3b99d04df29c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0ccd51faa86a62be71c3b99d04df29c5">&#9670;&nbsp;</a></span>ON_PLUS_FUNCTION_NurbsSurface_Mesh</h2>
 
@@ -19858,6 +19880,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="gga430f062290196f7f81bf0bf9dda7ba09a823e127e32a964e8a51588f32893f823"></a>ON_BlackRecyclingSymbol&#160;</td><td class="fielddoc"><p>BLACK UNIVERSAL RECYCLING SYMBOL U+267B (&amp;#x267b;) This is a good cold point for testing glyph substitution. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga430f062290196f7f81bf0bf9dda7ba09ab7f661f9fdc13eb8807fd4a0fe93b5d3"></a>ON_WarningSign&#160;</td><td class="fielddoc"><p>WARNING SIGN U+26A0 (&amp;#x26a0;) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga430f062290196f7f81bf0bf9dda7ba09ae24261bc42df798476b39f82cf094294"></a>ON_CheckMark&#160;</td><td class="fielddoc"><p>CHECK MARK U+2713 (&amp;#x2713;) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga430f062290196f7f81bf0bf9dda7ba09a04609d5c72329b16068c103c7c545179"></a>ON_ReplacementCharacter&#160;</td><td class="fielddoc"><p>REPLACEMENT CHARACTER U+FFFD (&amp;#xfffd;) By convention, U+FFFD is used to mark string elements where an invalid UTF code point encoding was encountered. </p>
 </td></tr>
@@ -41812,6 +41836,107 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ga18e790c730e8d889a9d56d2627eb8553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18e790c730e8d889a9d56d2627eb8553">&#9670;&nbsp;</a></span>ON_Minimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double ON_Minimize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double(*)(ON__UINT_PTR context, const double *t, double *grad)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ON__UINT_PTR&#160;</td>
+          <td class="paramname"><em>f_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>search_domain</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>t0</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>terminate_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relative_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zero_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>maximum_iterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>bConverged</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a local minimum of the object function f(t[]) of n independent variables. The function must be C2 on the search domain. The search begins at t0[]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>n &gt;= 1 and is the number of variables the functiont f(). </td></tr>
+    <tr><td class="paramname">f</td><td>The objective function f(f_context, t, grad) is a function of n independent variables that returns the value of f() at (t[0], t[1], ..., t[n-1]). Calling f() should return grad = gradient of f at t. If the evaluation cannot be performed, return ON_DBL_QNAN and the seach will terminate. </td></tr>
+    <tr><td class="paramname">f_context</td><td>The first argument passed to the f() function. </td></tr>
+    <tr><td class="paramname">search_domain</td><td>If the interval search_domain[i] is valid, then t[i] is constrained to be in that interval. Otwerwise t[i] can have any value. </td></tr>
+    <tr><td class="paramname">t0</td><td>t0[] is an input array of n evaluation parameters that specify where the search begins. You are permitted to pass the same array for the input array t0[] and the output array t[], provided it is properly initialized to the paramters where the search should begin. </td></tr>
+    <tr><td class="paramname">terminate_value</td><td>The search for a minimum will terminate and return t[] if f(t) &lt;= terminate_value. If you don't have a terminate_value, then pass ON_DBL_QNAN. </td></tr>
+    <tr><td class="paramname">relative_tolerance</td><td>relative_tolerance &gt; 0. The search for a minimum will terminate when 2*|f(t + delta) - f(t)| &lt;= relative_tolerance*(|f(t + delta)| + |f(t)|) + zero_tolerance. For example, set relative_tolerance = 1e-6 if you want to find a t[] where the first 6 significant digits of f(t) have stabilized during the search. When in doubt, try 1e-6 and generally avoid values &gt;= 1e-4. Always avoid values &lt; 1e-16. </td></tr>
+    <tr><td class="paramname">zero_tolerance</td><td>zero_tolerance &gt; 0. See the description of the relative_tolerance parameter for the use of the zero_tolerance parameter. When in doubt, pass something around 1e-16. </td></tr>
+    <tr><td class="paramname">maximum_iterations</td><td>The local minimum is found by iterating from the starting parameters t0[] to a local minimum. Tha maximum_iterations parameter specifies the masimum number of iterations to try before giving up. When in doubt, pass something around 200 for efficient evaluators and smaller vaules for slow evaluators. In some situations, there may be significantly more evaluations than maximum_iterations (from the line search step in each iteration). </td></tr>
+    <tr><td class="paramname">t</td><td>t[] is an output array of n evaluation parameters that specify where the search ended. You are permitted to pass the same array for the input array t0[] and the output array t[], provided it is properly initialized to the paramters where the search should begin. </td></tr>
+    <tr><td class="paramname">bConverged</td><td>If bConverged is not nullptr, then *bConvertged will be true if the search terminated because of the conditions controlled by terminate_value, relative_tolerance and relative_tolerance. Otherwise *bConverged will be false. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If successful, the local minimum value of f is returned. Otherwise, ON_DBL_QNAN is returned. </dd></dl>
+
+</div>
+</div>
 <a id="ga1e94eb1f1d057d25e9669143df684564"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1e94eb1f1d057d25e9669143df684564">&#9670;&nbsp;</a></span>ON_MSSBCP_0x80_0xFF_Unicode()</h2>
 
@@ -60914,7 +61039,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

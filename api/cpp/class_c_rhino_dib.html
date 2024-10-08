@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -589,6 +589,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae7338d14f6d15618535e9abd9c866e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd220d22e79248bdae0d4d25c873fde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#abdd220d22e79248bdae0d4d25c873fde">ReadFromMemory</a> (const void *buffer, size_t sizeof_buffer)</td></tr>
 <tr class="separator:abdd220d22e79248bdae0d4d25c873fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815cb7f4cac69e2106bd4c7698ec8506"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a815cb7f4cac69e2106bd4c7698ec8506">ReadFromSvgData</a> (const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;svg, int width, int height, bool convert_to_darkmode=false)</td></tr>
+<tr class="separator:a815cb7f4cac69e2106bd4c7698ec8506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6390c55ffa865061c7cef804c4dfa8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#ad6390c55ffa865061c7cef804c4dfa8c">Resize</a> (const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;newSize)</td></tr>
 <tr class="memdesc:ad6390c55ffa865061c7cef804c4dfa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy resize method; uses Bilinear resampling.  <a href="class_c_rhino_dib.html#ad6390c55ffa865061c7cef804c4dfa8c">More...</a><br /></td></tr>
 <tr class="separator:ad6390c55ffa865061c7cef804c4dfa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6192,6 +6194,49 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a815cb7f4cac69e2106bd4c7698ec8506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815cb7f4cac69e2106bd4c7698ec8506">&#9670;&nbsp;</a></span>ReadFromSvgData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDib::ReadFromSvgData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>svg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>convert_to_darkmode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Converts an SVG definition to a bitmap.</p>
+<p>Parameters: svg - [in] The textual definition of the SVG image. width - [in] The required width of the bitmap. height - [in] The required height of the bitmap. convert_to_darkmode - [in] If true, the image will be processed to make it suitable for display in dark mode.</p>
+<p>Returns: True if successful, else false. </p>
+
+</div>
+</div>
 <a id="ad6390c55ffa865061c7cef804c4dfa8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6390c55ffa865061c7cef804c4dfa8c">&#9670;&nbsp;</a></span>Resize() <span class="overload">[1/3]</span></h2>
 
@@ -8361,7 +8406,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:30 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.11</span>
+   &#160;<span id="projectnumber">8.12</span>
    </div>
   </td>
  </tr>
@@ -88,8 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a720053fd00a2ade8ba91840762d882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implement this interface to provide decoration for the dial of an angle control.</p>
-<dl class="section see"><dt>See also</dt><dd>CRhRdkAngleCtrl </dd></dl>
+<div class="textblock"><p>STARTING WITH RHINO 8, THIS INTERFACE IS DEPRECATED AND DOES NOT WORK. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a00bb8f09986bce4a3ef57baa6f1aa5a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00bb8f09986bce4a3ef57baa6f1aa5a3">&#9670;&nbsp;</a></span>~IRhRdkAngleDialDecorator()</h2>
@@ -140,8 +139,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>You must implement this method as</p><div class="fragment"><div class="line"><span class="keyword">delete</span> <span class="keyword">this</span>; </div>
-</div><!-- fragment --> 
+
 </div>
 </div>
 <a id="a52e5ef6775d3a05cbff9734721106b99"></a>
@@ -177,7 +175,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Implement this method to override the default dial colors when the style is kUnmarked, kCompass or kAzimuth. If you don't want to override the dial colors, implement a no-op stub. </p><dl class="section see"><dt>See also</dt><dd>CRhRdkAngleCtrl::SetDialColors(). </dd></dl>
 
 </div>
 </div>
@@ -238,17 +235,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Implement this method to draw the decoration. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dc</td><td>is the device context to draw into. </td></tr>
-    <tr><td class="paramname">dialRect</td><td>is the rectangle of the dial. </td></tr>
-    <tr><td class="paramname">dRadius</td><td>is the radius of the dial. </td></tr>
-    <tr><td class="paramname">dAngle</td><td>is the angle being displayed by the control. </td></tr>
-    <tr><td class="paramname">bEnabled</td><td>is <em>true</em> if the control is enabled, else <em>false</em>. </td></tr>
-    <tr><td class="paramname">bHot</td><td>is <em>true</em> if the decoration should be drawn in hot-tracked style. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -285,7 +271,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Emergency virtual function for future expansion. </p>
 
 </div>
 </div>
@@ -312,14 +297,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Implement this method to return a pointer to an optional next decorator. This allows decorators to be chained together. Return null if not needed. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2024 17:27:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2024 15:46:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
