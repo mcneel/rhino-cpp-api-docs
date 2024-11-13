@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a60b962bbb3bf28cef8719c1340e73384"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a60b962bbb3bf28cef8719c1340e73384">AlwaysCopyDocumentContent</a> = 16</td></tr>
+<tr class="memdesc:a60b962bbb3bf28cef8719c1340e73384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to ensure that materials, environments and textures that refer to document objects are always copied. This makes the RenderMeshes object safe to be stored outside of the lifetime of those objects - in caches, or for use in threaded situtations.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a60b962bbb3bf28cef8719c1340e73384">More...</a><br /></td></tr>
+<tr class="separator:a60b962bbb3bf28cef8719c1340e73384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22e22907837b0537e185847cd66b68e6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a22e22907837b0537e185847cd66b68e6">Canceled</a> = 1</td></tr>
 <tr class="memdesc:a22e22907837b0537e185847cd66b68e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this flag is set when returned, then CustomMeshes was canceled.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a22e22907837b0537e185847cd66b68e6">More...</a><br /></td></tr>
 <tr class="separator:a22e22907837b0537e185847cd66b68e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,11 +100,38 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3c5602f4d50dc1b27f1d93fa3f3dfa75"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a3c5602f4d50dc1b27f1d93fa3f3dfa75">Recursive</a> = 4</td></tr>
 <tr class="memdesc:a3c5602f4d50dc1b27f1d93fa3f3dfa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to get the render meshes for entire blocks. Only has an effect if the ObjectId is a block reference, and if it will not produce CRMs of its own.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a3c5602f4d50dc1b27f1d93fa3f3dfa75">More...</a><br /></td></tr>
 <tr class="separator:a3c5602f4d50dc1b27f1d93fa3f3dfa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095f6167fe118ae8d493ef1936e22d9a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a095f6167fe118ae8d493ef1936e22d9a">ReturnNullForStandardMaterial</a> = 32</td></tr>
+<tr class="memdesc:a095f6167fe118ae8d493ef1936e22d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to request that nullptr is returned when the material on a mesh should be the standard material used - in otherwords, not customized by this RenderMeshes object. Note that this will require document access to resolve - do not use in threaded situations.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a095f6167fe118ae8d493ef1936e22d9a">More...</a><br /></td></tr>
+<tr class="separator:a095f6167fe118ae8d493ef1936e22d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html" title="Flags to be passed into and returned from RenderMeshes and HasCustomRenderMeshes.">Flags</a> to be passed into and returned from RenderMeshes and HasCustomRenderMeshes. <br  />
  </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a60b962bbb3bf28cef8719c1340e73384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b962bbb3bf28cef8719c1340e73384">&#9670;&nbsp;</a></span>AlwaysCopyDocumentContent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> RhRdk::CustomRenderMeshes::IManager::Flags::AlwaysCopyDocumentContent = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pass in this flag to ensure that materials, environments and textures that refer to document objects are always copied. This makes the RenderMeshes object safe to be stored outside of the lifetime of those objects - in caches, or for use in threaded situtations. </p>
+
+</div>
+</div>
 <a id="a22e22907837b0537e185847cd66b68e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22e22907837b0537e185847cd66b68e6">&#9670;&nbsp;</a></span>Canceled</h2>
 
@@ -222,10 +252,34 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a095f6167fe118ae8d493ef1936e22d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095f6167fe118ae8d493ef1936e22d9a">&#9670;&nbsp;</a></span>ReturnNullForStandardMaterial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> RhRdk::CustomRenderMeshes::IManager::Flags::ReturnNullForStandardMaterial = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pass in this flag to request that nullptr is returned when the material on a mesh should be the standard material used - in otherwords, not customized by this RenderMeshes object. Note that this will require document access to resolve - do not use in threaded situations. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:47:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

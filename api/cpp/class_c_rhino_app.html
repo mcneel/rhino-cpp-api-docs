@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -991,6 +991,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2cb02bbc0bba1f52a2402ee0ed15ca6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee75c0a61ee1e2f306eb6e0b82ac260a"><td class="memItemLeft" align="right" valign="top">class CRhWorkSession *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#aee75c0a61ee1e2f306eb6e0b82ac260a">m_lazyptr_work_session</a> = nullptr</td></tr>
 <tr class="separator:aee75c0a61ee1e2f306eb6e0b82ac260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9929ba36bb60e181bcd44c916a928d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#ae9929ba36bb60e181bcd44c916a928d0">m_pc_scheme_current_user</a> = nullptr</td></tr>
+<tr class="separator:ae9929ba36bb60e181bcd44c916a928d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a61920b281a92ef4ec59a26725f1819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a8a61920b281a92ef4ec59a26725f1819">m_pc_window_positions</a> = nullptr</td></tr>
+<tr class="memdesc:a8a61920b281a92ef4ec59a26725f1819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches to the CRhAppSettings::WindowPostions() settings.  <a href="class_c_rhino_app.html#a8a61920b281a92ef4ec59a26725f1819">More...</a><br /></td></tr>
+<tr class="separator:a8a61920b281a92ef4ec59a26725f1819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48bd466d48388d51006bcfc7ad9f23d1"><td class="memItemLeft" align="right" valign="top">class CToolTipCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a48bd466d48388d51006bcfc7ad9f23d1">m_pCursorToolTip</a> = nullptr</td></tr>
 <tr class="separator:a48bd466d48388d51006bcfc7ad9f23d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a180979103da6fa24727dfea069671a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a180979103da6fa24727dfea069671a7e">m_PlugInFileExportDisplayList</a></td></tr>
@@ -9148,6 +9153,53 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9929ba36bb60e181bcd44c916a928d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9929ba36bb60e181bcd44c916a928d0">&#9670;&nbsp;</a></span>m_pc_scheme_current_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a>* CRhinoApp::m_pc_scheme_current_user = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Moving profile context to protected section, these should be accessed using the <a class="el" href="class_c_rhino_app.html#a322aaf2ea67baa064898e12d1fc65f68">CRhinoApp::GetRhinoProfileContext(CRhinoProfileContext::context_location)</a> method </p>
+
+</div>
+</div>
+<a id="a8a61920b281a92ef4ec59a26725f1819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a61920b281a92ef4ec59a26725f1819">&#9670;&nbsp;</a></span>m_pc_window_positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a>* CRhinoApp::m_pc_window_positions = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attaches to the CRhAppSettings::WindowPostions() settings. </p>
+
+</div>
+</div>
 <a id="a48bd466d48388d51006bcfc7ad9f23d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48bd466d48388d51006bcfc7ad9f23d1">&#9670;&nbsp;</a></span>m_pCursorToolTip</h2>
 
@@ -9726,7 +9778,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:46:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:25 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

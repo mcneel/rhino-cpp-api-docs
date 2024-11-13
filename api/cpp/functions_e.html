@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -2296,6 +2296,9 @@ $(function() {
 <li>event_type_force_4byte_size
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0b4fbbc698ffc27b5a02dc8a365cb56c">CRhinoEventWatcherEx</a>
 </li>
+<li>event_type_getpoint_event
+: <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187afc761d6dd1e757929a80aec2d7149c09">CRhinoEventWatcherEx</a>
+</li>
 <li>event_type_main_loop
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a5fcc2e282ea4ae79004f1e16bce91188">CRhinoEventWatcherEx</a>
 </li>
@@ -2498,6 +2501,7 @@ $(function() {
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_channel.html#ad3e2bab1bfb69736b164bd915fd8128f">IRhRdkRenderWindow::IChannel</a>
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_event_watcher.html#a28bd8355ed70b99d49607bc065de5a7a">IRhRdkRenderWindow::IEventWatcher</a>
 , <a class="el" href="class_i_rh_rdk_render_window_1_1_i_g_p_u_channel.html#a32b9c1d1e994ad6ea3c8e87c1127812f">IRhRdkRenderWindow::IGPUChannel</a>
+, <a class="el" href="class_i_rh_rdk_render_window_1_1_i_post_effect_execution_control.html#a466478580fbce1fa24e75438dbcb95b1">IRhRdkRenderWindow::IPostEffectExecutionControl</a>
 , <a class="el" href="class_i_rh_rdk_safe_frame.html#ae928ee4561123dbcf98be781689bba6e">IRhRdkSafeFrame</a>
 , <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html#ac38ac7e163e02a2a844a9061dfa30caf">IRhRdkSdkRenderMeshIterator</a>
 , <a class="el" href="class_i_rh_rdk_sel_change.html#a2f725f8d44932276f25bd8824c48617f">IRhRdkSelChange</a>
@@ -2562,8 +2566,8 @@ $(function() {
 , <a class="el" href="class_rh_rdk_1_1_realtime_1_1_change_queue_1_1_skylight.html#a1b90f4ea47065cd5f6bddfb8b8fefc94">Skylight</a>
 </li>
 <li>EvNormal()
-: <a class="el" href="class_o_n___surface.html#a164690f0923e8d1916e094f5f6632356">ON_Surface</a>
-, <a class="el" href="class_o_n___triangle_mesh.html#a521cda3a059de5cdd48edf69ec420a3a">ON_TriangleMesh</a>
+: <a class="el" href="class_o_n___surface.html#aa85e2a07c4992d2ab09080c373a04554">ON_Surface</a>
+, <a class="el" href="class_o_n___triangle_mesh.html#a08bb4d34de02fc4a5e9659f7f0a678ee">ON_TriangleMesh</a>
 </li>
 <li>EvPoint()
 : <a class="el" href="class_o_n___bezier_curve.html#a7f9c7141aba78552ad63ba19189dc7e8">ON_BezierCurve</a>
@@ -2572,7 +2576,7 @@ $(function() {
 , <a class="el" href="class_o_n___triangle_mesh.html#af2c071823171832c3fe27c26ae0ed01c">ON_TriangleMesh</a>
 </li>
 <li>EvPointAndNormal()
-: <a class="el" href="class_o_n___triangle_mesh.html#a64610183e49623d715514ef2be9290fc">ON_TriangleMesh</a>
+: <a class="el" href="class_o_n___triangle_mesh.html#a0c9ba20ad4231a1f917a5f6767abb85f">ON_TriangleMesh</a>
 </li>
 <li>EvSignedCurvature()
 : <a class="el" href="class_o_n___curve.html#a86a33028dc130173b3f0c05cdf84d4d3">ON_Curve</a>
@@ -2710,13 +2714,13 @@ $(function() {
 <li>ExpandItem()
 : <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a75027bae14d9bb3470edfd5323ef2a8d">CRhinoUiExpandableTabCtrl</a>
 , <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl___new.html#acfb65ab456bffe71ac9d994fe21cd39b">CRhinoUiExpandableTabCtrl_New</a>
-, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a26989438902e7226277ac75da1c9b9a0">CRhinoUiOptionsListCtrl</a>
+, <a class="el" href="class_c_rhino_ui_options_list_ctrl.html#a84e83578d4508e18170449c1b5d28da2">CRhinoUiOptionsListCtrl</a>
 </li>
 <li>ExpandSection()
 : <a class="el" href="class_i_rhino_ui_holder.html#a5efde65cf4a150db6ab0546e954e228f">IRhinoUiHolder</a>
 </li>
 <li>ExpandUser()
-: <a class="el" href="class_o_n___file_system_path.html#aa499c9899554f62de8d10a4a410f0d0b">ON_FileSystemPath</a>
+: <a class="el" href="class_o_n___file_system_path.html#a032ce0c5fd26c8c6cb0637d9ab7e4ac1">ON_FileSystemPath</a>
 </li>
 <li>ExpertAddNewToList()
 : <a class="el" href="class_o_n___unique_tester.html#a97d507e44d3d9fd6ceb731970f633f26">ON_UniqueTester</a>
@@ -2859,10 +2863,10 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d.html#a9d86e948b85ff135ca1645a2b3703493">ON_SubD</a>
 </li>
 <li>ExtrudeComponents()
-: <a class="el" href="class_o_n___sub_d.html#a0da5c9e01508044cc5db2772e2eceeee">ON_SubD</a>
+: <a class="el" href="class_o_n___sub_d.html#a67cf910bffc3fd80e873f360081caa7d">ON_SubD</a>
 </li>
 <li>ExtrudedMesh()
-: <a class="el" href="class_i_rhino_mesh_extruder.html#af913b7c0791fcdcd4f24bed5d3ca63db">IRhinoMeshExtruder</a>
+: <a class="el" href="class_i_rhino_mesh_extruder.html#a6bbb4958190c8ce010f992d434829870">IRhinoMeshExtruder</a>
 </li>
 <li>Extrusion()
 : <a class="el" href="class_c_rhino_extrusion_object.html#a736d561c136cbf0a58500bc9bc20eb5a">CRhinoExtrusionObject</a>
@@ -2901,7 +2905,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:47:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55b5fceffc4dad612d7e412e30d89ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a315d2260d7064c6407ffc4a5309b8d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__4d_point.html">ON_4dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_surface.html#a2a315d2260d7064c6407ffc4a5309b8d">ControlPoint</a> (int i, int j) const</td></tr>
 <tr class="separator:a2a315d2260d7064c6407ffc4a5309b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e62a1caf0d9d0a5666e5a600837b56f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2dex.html">ON_2dex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_surface.html#a7e62a1caf0d9d0a5666e5a600837b56f">ControlPointSpans</a> (int dir, int control_point_index) const</td></tr>
+<tr class="memdesc:a7e62a1caf0d9d0a5666e5a600837b56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of the spans where the specified control point is active.  <a href="class_o_n___nurbs_surface.html#a7e62a1caf0d9d0a5666e5a600837b56f">More...</a><br /></td></tr>
+<tr class="separator:a7e62a1caf0d9d0a5666e5a600837b56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd20336d0d0a1dafa3003cd7d0cef57"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_surface.html#abfd20336d0d0a1dafa3003cd7d0cef57">ControlPointSupport</a> (int dir, int control_point_index) const</td></tr>
+<tr class="memdesc:abfd20336d0d0a1dafa3003cd7d0cef57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the interval in the surface's domain where the specified control point is active (helps determine the value of the surface). Put another way, if ControlPointSupport(0,i).Contains(u) or ControlPointSupport(1,j).Contains(v) is false, then surface-&gt;PointAt(u,v) does not depend on the location of CV(i,j).  <a href="class_o_n___nurbs_surface.html#abfd20336d0d0a1dafa3003cd7d0cef57">More...</a><br /></td></tr>
+<tr class="separator:abfd20336d0d0a1dafa3003cd7d0cef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa149a365981f62a70784b7e8c89fa065"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_surface.html#aa149a365981f62a70784b7e8c89fa065">ControlPolygonLength</a> (int dir) const</td></tr>
 <tr class="memdesc:aa149a365981f62a70784b7e8c89fa065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface.  <a href="class_o_n___nurbs_surface.html#aa149a365981f62a70784b7e8c89fa065">More...</a><br /></td></tr>
 <tr class="separator:aa149a365981f62a70784b7e8c89fa065"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -911,6 +917,82 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Parameters: i - [in] zero based control point index j - [in] zero based control point index Returns: Control point as an <a class="el" href="class_o_n__4d_point.html">ON_4dPoint</a>. Remarks: If i, j, or the nurbs surface is not valid, then <a class="el" href="class_o_n__4d_point.html#a83f0c10fc5a0eb0d8929a66c5131e150" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_4dPoint::Nan</a> is returned. If dim &lt; 3, unused coordinates are zero. If dim &gt;= 4, the first three coordinates are returned. If is_rat is false, the weight is 1. </p>
+
+</div>
+</div>
+<a id="a7e62a1caf0d9d0a5666e5a600837b56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e62a1caf0d9d0a5666e5a600837b56f">&#9670;&nbsp;</a></span>ControlPointSpans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__2dex.html">ON_2dex</a> ON_NurbsSurface::ControlPointSpans </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the indices of the spans where the specified control point is active. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>0: first surface paramter 1: second surface parameter </td></tr>
+    <tr><td class="paramname">control_point_index</td><td>0 &lt;= control_point_index &lt; control_point_count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, then the spans in the specified parameter direction whose index satisfies <a class="el" href="class_o_n__2dex.html#aa26ffd7c5512e10b5d05d0ae7ab9ef2f" title="do not initialize i, j for performance reasons">ON_2dex.i</a> &lt;= span_index &lt; <a class="el" href="class_o_n__2dex.html#ad8d057cecc165d8c8c1647544a15569e">ON_2dex.j</a> use the specified control points. If the iput is not valid, then <a class="el" href="class_o_n__2dex.html">ON_2dex(0,0)</a> is returned. </dd></dl>
+
+</div>
+</div>
+<a id="abfd20336d0d0a1dafa3003cd7d0cef57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd20336d0d0a1dafa3003cd7d0cef57">&#9670;&nbsp;</a></span>ControlPointSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> ON_NurbsSurface::ControlPointSupport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the interval in the surface's domain where the specified control point is active (helps determine the value of the surface). Put another way, if ControlPointSupport(0,i).Contains(u) or ControlPointSupport(1,j).Contains(v) is false, then surface-&gt;PointAt(u,v) does not depend on the location of CV(i,j). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>0: first surface paramter 1: second surface parameter </td></tr>
+    <tr><td class="paramname">control_point_index</td><td>If dir = 0, then this is the first index of the surface control point. If dir = 1, then this is the second index of the surface control point. 0 &lt;= control_point_index &lt; CVCount(dir). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parameter interval where the specified control point is active. </dd></dl>
 
 </div>
 </div>
@@ -4570,7 +4652,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:46:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -87,6 +87,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window_1_1_i_g_p_u_channel.html">IGPUChannel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window_1_1_i_open_g_l_channel.html">IOpenGLChannel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window_1_1_i_post_effect_execution_control.html">IPostEffectExecutionControl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -171,6 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b4fbcff3ee8515b1f884b572ddbda95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20c603e3fc1e5eae092a97bc94b3817"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window.html#ac20c603e3fc1e5eae092a97bc94b3817">RegisterEventWatcher</a> (<a class="el" href="class_i_rh_rdk_render_window_1_1_i_event_watcher.html">IEventWatcher</a> &amp;ew)</td></tr>
 <tr class="separator:ac20c603e3fc1e5eae092a97bc94b3817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358a0ba79d7b63befc2e433f4dfb49c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window.html#a358a0ba79d7b63befc2e433f4dfb49c1">RegisterPostEffectExecutionControl</a> (<a class="el" href="class_i_rh_rdk_render_window_1_1_i_post_effect_execution_control.html">IPostEffectExecutionControl</a> *ec)</td></tr>
+<tr class="separator:a358a0ba79d7b63befc2e433f4dfb49c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94e5db1ee4289294318f5d54ae5babd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_rh_rdk_render_session.html">IRhRdkRenderSession</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window.html#ab94e5db1ee4289294318f5d54ae5babd">RenderSession</a> (void) const =0</td></tr>
 <tr class="separator:ab94e5db1ee4289294318f5d54ae5babd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f797d0e79019f57c48aca972c10a40"><td class="memItemLeft" align="right" valign="top">virtual UUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_render_window.html#a91f797d0e79019f57c48aca972c10a40">RenderSessionId</a> (void) const</td></tr>
@@ -1353,6 +1357,25 @@ IRhRdkRenderUI </dd>
       </table>
 </div><div class="memdoc">
 <p>Call this to register an event watcher. This enables the watcher to find out when data in the render window has changed. </p>
+
+</div>
+</div>
+<a id="a358a0ba79d7b63befc2e433f4dfb49c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358a0ba79d7b63befc2e433f4dfb49c1">&#9670;&nbsp;</a></span>RegisterPostEffectExecutionControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> void IRhRdkRenderWindow::RegisterPostEffectExecutionControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_rh_rdk_render_window_1_1_i_post_effect_execution_control.html">IPostEffectExecutionControl</a> *&#160;</td>
+          <td class="paramname"><em>ec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register an instance of <a class="el" href="class_i_rh_rdk_render_window_1_1_i_post_effect_execution_control.html">IPostEffectExecutionControl</a> to be used for controlling post effect execution. The RDK takes ownership of the 'ec' object. </p>
 
 </div>
 </div>
@@ -2592,7 +2615,7 @@ IRhRdkRenderUI </dd>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:46:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:40 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

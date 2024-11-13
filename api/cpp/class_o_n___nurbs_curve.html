@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9c80a9413e4eb8bb573a635dd6c742c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24a93f77c444e3bf6d13cd51aab55fc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__4d_point.html">ON_4dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#aa24a93f77c444e3bf6d13cd51aab55fc">ControlPoint</a> (int cv_index) const</td></tr>
 <tr class="separator:aa24a93f77c444e3bf6d13cd51aab55fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1427000c39d24a837ee14de083f990"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2dex.html">ON_2dex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#a3c1427000c39d24a837ee14de083f990">ControlPointSpans</a> (int control_point_index) const</td></tr>
+<tr class="memdesc:a3c1427000c39d24a837ee14de083f990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of the spans where the specified control point is active. Note that a NURBS curve with n control points has (n-degree) many spans. If 0 &amp;lt= span_index &lt; (n-degree), then CV(span_index), ..., CV(span_index+degree) and {knot[span_index], ..., knot[span_index+2*degree-1]} are the control points and knots that are active in that span. The domain of the span is [knot[span_index+degree-1], knot[span_index+degree]].  <a href="class_o_n___nurbs_curve.html#a3c1427000c39d24a837ee14de083f990">More...</a><br /></td></tr>
+<tr class="separator:a3c1427000c39d24a837ee14de083f990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204f9c36f929b97a3a2edca21af85a0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#a7204f9c36f929b97a3a2edca21af85a0">ControlPointSupport</a> (int control_point_index) const</td></tr>
+<tr class="memdesc:a7204f9c36f929b97a3a2edca21af85a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the interval in the curve's domain where the specified control point is active (helps determine the value of the curve). The returned inteval will be contained in the curve's domain. Put another way, if ControlPointSupport(i).Contains(t) is false, then curve-&gt;PointAt(t) does not depend on the location of CV(i).  <a href="class_o_n___nurbs_curve.html#a7204f9c36f929b97a3a2edca21af85a0">More...</a><br /></td></tr>
+<tr class="separator:a7204f9c36f929b97a3a2edca21af85a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c15482d5d98a59523aeca893cd9784"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#a15c15482d5d98a59523aeca893cd9784">ControlPolygonLength</a> () const</td></tr>
 <tr class="memdesc:a15c15482d5d98a59523aeca893cd9784"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the length of the control polygon  <a href="class_o_n___nurbs_curve.html#a15c15482d5d98a59523aeca893cd9784">More...</a><br /></td></tr>
 <tr class="separator:a15c15482d5d98a59523aeca893cd9784"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -901,6 +907,60 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Parameters: cv_index - [in] zero based control point index Returns: Control point as an <a class="el" href="class_o_n__4d_point.html">ON_4dPoint</a>. Remarks: If cv_index or the nurbs curve is not valid, then <a class="el" href="class_o_n__4d_point.html#a83f0c10fc5a0eb0d8929a66c5131e150" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_4dPoint::Nan</a> is returned. If dim &lt; 3, unused coordinates are zero. If dim &gt;= 4, the first three coordinates are returned. If is_rat is false, the weight is 1. </p>
+
+</div>
+</div>
+<a id="a3c1427000c39d24a837ee14de083f990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1427000c39d24a837ee14de083f990">&#9670;&nbsp;</a></span>ControlPointSpans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n__2dex.html">ON_2dex</a> ON_NurbsCurve::ControlPointSpans </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the indices of the spans where the specified control point is active. Note that a NURBS curve with n control points has (n-degree) many spans. If 0 &amp;lt= span_index &lt; (n-degree), then CV(span_index), ..., CV(span_index+degree) and {knot[span_index], ..., knot[span_index+2*degree-1]} are the control points and knots that are active in that span. The domain of the span is [knot[span_index+degree-1], knot[span_index+degree]]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control_point_index</td><td>0 &lt;= control_point_index &lt; control_point_count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, then the spans whose index satisfies <a class="el" href="class_o_n__2dex.html#aa26ffd7c5512e10b5d05d0ae7ab9ef2f" title="do not initialize i, j for performance reasons">ON_2dex.i</a> &lt;= span_index &lt; <a class="el" href="class_o_n__2dex.html#ad8d057cecc165d8c8c1647544a15569e">ON_2dex.j</a> use the specified control point. If the iput is not valid, then <a class="el" href="class_o_n__2dex.html">ON_2dex(0,0)</a> is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a7204f9c36f929b97a3a2edca21af85a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7204f9c36f929b97a3a2edca21af85a0">&#9670;&nbsp;</a></span>ControlPointSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> ON_NurbsCurve::ControlPointSupport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the interval in the curve's domain where the specified control point is active (helps determine the value of the curve). The returned inteval will be contained in the curve's domain. Put another way, if ControlPointSupport(i).Contains(t) is false, then curve-&gt;PointAt(t) does not depend on the location of CV(i). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control_point_index</td><td>Index of the control point. 0 &lt; = control_point_index &lt; <a class="el" href="class_o_n___nurbs_curve.html#acaf683ad88b48abfaa6e6b9a32691dc1">CVCount()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parameter interval where the specified control point is active. </dd></dl>
 
 </div>
 </div>
@@ -4583,7 +4643,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:46:59 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

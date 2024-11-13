@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.12</span>
+   &#160;<span id="projectnumber">8.13</span>
    </div>
   </td>
  </tr>
@@ -3896,6 +3896,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga7c10b7bdf5fd406e26c3d5efdb7c665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc6a9c5b39854cf3122ec90aecd7e3cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gacc6a9c5b39854cf3122ec90aecd7e3cb">ON_BrepWedge</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *corners, <a class="el" href="class_o_n___brep.html">ON_Brep</a> *pBrep=nullptr)</td></tr>
 <tr class="separator:gacc6a9c5b39854cf3122ec90aecd7e3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d135a533a4e08227b7087c52e88f067"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n__2dex.html">ON_2dex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga7d135a533a4e08227b7087c52e88f067">ON_BsplineControlPointSpans</a> (int order, int control_point_count, int control_point_index)</td></tr>
+<tr class="memdesc:ga7d135a533a4e08227b7087c52e88f067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of the B-spline spans where the specified control point is active. Note that a B-spline with n control points has (n-degree) many spans. If 0 &amp;lt= span_index &lt; (n-degree), then CV(span_index), ..., CV(span_index+degree) and {knot[span_index], ..., knot[span_index+2*degree-1]} are the control points and knots that are active in that span. The domain of the span is [knot[span_index+degree-1], knot[span_index+degree]].  <a href="group__open_n_u_r_b_s.html#ga7d135a533a4e08227b7087c52e88f067">More...</a><br /></td></tr>
+<tr class="separator:ga7d135a533a4e08227b7087c52e88f067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56254c9c810d696e3069edd51ed3ffc4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga56254c9c810d696e3069edd51ed3ffc4">ON_BsplineControlPointSupport</a> (int order, int control_point_count, const double *knots, int control_point_index)</td></tr>
+<tr class="memdesc:ga56254c9c810d696e3069edd51ed3ffc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the interval in the B-spline domain where the control point is active. The domain = [knots[order-2], knots[control_point_count-1]]. The returned interval will be in domain and are the parameters where the control point influnces the value of the B-spline.  <a href="group__open_n_u_r_b_s.html#ga56254c9c810d696e3069edd51ed3ffc4">More...</a><br /></td></tr>
+<tr class="separator:ga56254c9c810d696e3069edd51ed3ffc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16f18a926a0f6d6c139b8c6f6494b009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga16f18a926a0f6d6c139b8c6f6494b009">ON_ChangeRationalBezierCurveWeights</a> (int dim, int order, int cvstride, double *cv, int i0, double w0, int i1, double w1)</td></tr>
 <tr class="separator:ga16f18a926a0f6d6c139b8c6f6494b009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga556703879a55bd32bb141302c9ecc87f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga556703879a55bd32bb141302c9ecc87f">ON_ChangeRationalNurbsCurveEndWeights</a> (int dim, int order, int cv_count, int cvstride, double *cv, double *knot, double w0, double w1)</td></tr>
@@ -4397,23 +4403,23 @@ Functions</h2></td></tr>
 <tr class="separator:ga1eed810e5dcee4432fcbc0acf577ea5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf4da0949a3841dc1fb954fe1947120c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gacf4da0949a3841dc1fb954fe1947120c">ON_InsertKnot</a> (double, int, int, int, int, int, double *, double *, int *)</td></tr>
 <tr class="separator:gacf4da0949a3841dc1fb954fe1947120c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6aec645f9ecf8f1b8e05ebd456110185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga6aec645f9ecf8f1b8e05ebd456110185">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double s, double t), ON__UINT_PTR f_context, const class <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;surface, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:ga6aec645f9ecf8f1b8e05ebd456110185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function of two variable using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#ga6aec645f9ecf8f1b8e05ebd456110185">More...</a><br /></td></tr>
-<tr class="separator:ga6aec645f9ecf8f1b8e05ebd456110185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e0f7086b83916a9b712fe32f52e9c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga8e0f7086b83916a9b712fe32f52e9c4f">ON_Integrate</a> (const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, double(*f)(ON__UINT_PTR context, int limit_direction, double t), ON__UINT_PTR f_context, <a class="el" href="class_o_n___interval.html">ON_Interval</a> integration_limit, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
+<tr class="memdesc:ga8e0f7086b83916a9b712fe32f52e9c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)*|curve'(t)|*dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#ga8e0f7086b83916a9b712fe32f52e9c4f">More...</a><br /></td></tr>
+<tr class="separator:ga8e0f7086b83916a9b712fe32f52e9c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2358f111aade09e043d8299d73831fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga2358f111aade09e043d8299d73831fd7">ON_Integrate</a> (const class <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;surface, double(*f)(ON__UINT_PTR context, int limit_direction, double s, double t), ON__UINT_PTR f_context, <a class="el" href="class_o_n___interval.html">ON_Interval</a> integration_limit1, <a class="el" href="class_o_n___interval.html">ON_Interval</a> integration_limit2, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
+<tr class="memdesc:ga2358f111aade09e043d8299d73831fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function of two variables using a Rhomberg integration technique and returns returns Integral(f(s,t)*|dS/ds(s,t) x dS/dt(s,t)|*ds*dt), where dS/ds and dS/dt are the surface's first partial derivatives. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#ga2358f111aade09e043d8299d73831fd7">More...</a><br /></td></tr>
+<tr class="separator:ga2358f111aade09e043d8299d73831fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga464e757d670a1c218841affa6cfea5ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga464e757d670a1c218841affa6cfea5ff">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double s, double t), ON__UINT_PTR f_context, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;limits1, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;limits2, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:ga464e757d670a1c218841affa6cfea5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function of two variable using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#ga464e757d670a1c218841affa6cfea5ff">More...</a><br /></td></tr>
+<tr class="memdesc:ga464e757d670a1c218841affa6cfea5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function of two variables using a Rhomberg integration technique. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#ga464e757d670a1c218841affa6cfea5ff">More...</a><br /></td></tr>
 <tr class="separator:ga464e757d670a1c218841affa6cfea5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0f43fe631f91d55926088d5258c6999"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gaf0f43fe631f91d55926088d5258c6999">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double s, double t), ON__UINT_PTR f_context, <a class="el" href="class_o_n___interval.html">ON_Interval</a> limits1, <a class="el" href="class_o_n___interval.html">ON_Interval</a> limits2, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:gaf0f43fe631f91d55926088d5258c6999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#gaf0f43fe631f91d55926088d5258c6999">More...</a><br /></td></tr>
+<tr class="memdesc:gaf0f43fe631f91d55926088d5258c6999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function of two variables using a Rhomberg integration technique. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#gaf0f43fe631f91d55926088d5258c6999">More...</a><br /></td></tr>
 <tr class="separator:gaf0f43fe631f91d55926088d5258c6999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5c6260cf232abff1883ba72e10f7004"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gab5c6260cf232abff1883ba72e10f7004">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double t), ON__UINT_PTR f_context, const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:gab5c6260cf232abff1883ba72e10f7004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#gab5c6260cf232abff1883ba72e10f7004">More...</a><br /></td></tr>
-<tr class="separator:gab5c6260cf232abff1883ba72e10f7004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47a98cbe05ef49974f9b3c11ce907991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga47a98cbe05ef49974f9b3c11ce907991">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double t), ON__UINT_PTR f_context, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;limits, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:ga47a98cbe05ef49974f9b3c11ce907991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#ga47a98cbe05ef49974f9b3c11ce907991">More...</a><br /></td></tr>
+<tr class="memdesc:ga47a98cbe05ef49974f9b3c11ce907991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a piecewise smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#ga47a98cbe05ef49974f9b3c11ce907991">More...</a><br /></td></tr>
 <tr class="separator:ga47a98cbe05ef49974f9b3c11ce907991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420163e19cbbda814931ed3aa52caf9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e">ON_Integrate</a> (double(*f)(ON__UINT_PTR context, int limit_direction, double t), ON__UINT_PTR f_context, <a class="el" href="class_o_n___interval.html">ON_Interval</a> limits, double relative_tolerance, double absolute_tolerance, double *error_bound)</td></tr>
-<tr class="memdesc:ga420163e19cbbda814931ed3aa52caf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration technique.  <a href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e">More...</a><br /></td></tr>
+<tr class="memdesc:ga420163e19cbbda814931ed3aa52caf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense.  <a href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e">More...</a><br /></td></tr>
 <tr class="separator:ga420163e19cbbda814931ed3aa52caf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafab18e3b219739f9d138a77f41dfc2e9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gafab18e3b219739f9d138a77f41dfc2e9">ON_Internal_CompareExchangePointer</a> (void *volatile *dest, void *exchange, void *comparand)</td></tr>
 <tr class="separator:gafab18e3b219739f9d138a77f41dfc2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -18207,7 +18213,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Used by <a class="el" href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e" title="Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration techn...">ON_Integrate()</a> for one variable functions </p>
+<p>Used by <a class="el" href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e" title="Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg i...">ON_Integrate()</a> for one variable functions </p>
 
 </div>
 </div>
@@ -18222,7 +18228,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Used by <a class="el" href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e" title="Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration techn...">ON_Integrate()</a> for two variable functions </p>
+<p>Used by <a class="el" href="group__open_n_u_r_b_s.html#ga420163e19cbbda814931ed3aa52caf9e" title="Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg i...">ON_Integrate()</a> for two variable functions </p>
 
 </div>
 </div>
@@ -24902,6 +24908,103 @@ template&lt;class T &gt; </div>
 </pre><p>pBrep - [in] if not nullptr, this brep will be used and returned. Returns: An <a class="el" href="class_o_n___brep.html">ON_Brep</a> representation of the wedge with topology</p>
 <p>edge vertices m_E[ 0] m_V[0], m_V[1] m_E[ 1] m_V[1], m_V[2] m_E[ 2] m_V[2], m_V[0] m_E[ 3] m_V[3], m_V[4] m_E[ 4] m_V[4], m_V[5] m_E[ 5] m_V[5], m_V[0] m_E[ 6] m_V[0], m_V[3] m_E[ 7] m_V[1], m_V[4] m_E[ 8] m_V[2], m_V[5]</p>
 <p>face boundary edges m_F[0] +m_E[0] +m_E[7] -m_E[3] -m_E[6] m_F[1] +m_E[1] +m_E[8] -m_E[4] -m_E[7] m_F[2] +m_E[2] +m_E[6] -m_E[5] -m_E[8] m_F[3] +m_E[3] +m_E[8] -m_E[7] -m_E[11] m_F[4] -m_E[2] -m_E[1] -m_E[0] m_F[5] +m_E[3] +m_E[4] +m_E[5] </p>
+
+</div>
+</div>
+<a id="ga7d135a533a4e08227b7087c52e88f067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d135a533a4e08227b7087c52e88f067">&#9670;&nbsp;</a></span>ON_BsplineControlPointSpans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n__2dex.html">ON_2dex</a> ON_BsplineControlPointSpans </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the indices of the B-spline spans where the specified control point is active. Note that a B-spline with n control points has (n-degree) many spans. If 0 &amp;lt= span_index &lt; (n-degree), then CV(span_index), ..., CV(span_index+degree) and {knot[span_index], ..., knot[span_index+2*degree-1]} are the control points and knots that are active in that span. The domain of the span is [knot[span_index+degree-1], knot[span_index+degree]]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">order</td><td>B-spline order. order &gt;= 2 (order = degree + 1) </td></tr>
+    <tr><td class="paramname">control_point_count</td><td>Number of B-spline control points. control_point_count &gt;= order </td></tr>
+    <tr><td class="paramname">control_point_index</td><td>0 &lt;= control_point_index &lt; control_point_count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the input is valid, then the spans whose index satisfies <a class="el" href="class_o_n__2dex.html#aa26ffd7c5512e10b5d05d0ae7ab9ef2f" title="do not initialize i, j for performance reasons">ON_2dex.i</a> &lt;= span_index &lt; <a class="el" href="class_o_n__2dex.html#ad8d057cecc165d8c8c1647544a15569e">ON_2dex.j</a> use the specified control point. If the iput is not valid, then <a class="el" href="class_o_n__2dex.html">ON_2dex(0,0)</a> is returned. </dd></dl>
+
+</div>
+</div>
+<a id="ga56254c9c810d696e3069edd51ed3ffc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56254c9c810d696e3069edd51ed3ffc4">&#9670;&nbsp;</a></span>ON_BsplineControlPointSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> <a class="el" href="class_o_n___interval.html">ON_Interval</a> ON_BsplineControlPointSupport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control_point_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the interval in the B-spline domain where the control point is active. The domain = [knots[order-2], knots[control_point_count-1]]. The returned interval will be in domain and are the parameters where the control point influnces the value of the B-spline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">order</td><td>Order of the B-spline knot vector. order &gt;= 2 (order = degree + 1) </td></tr>
+    <tr><td class="paramname">control_point_count</td><td>Number of B-spline control points. control_point_count &gt;= order </td></tr>
+    <tr><td class="paramname">knots</td><td>knots[] is the B-spline knot vector and is an array of (order + control_point_count - 2) doubles. </td></tr>
+    <tr><td class="paramname">control_point_index</td><td>0 &lt;= control_point_index &lt; control_point_count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The interval in the domain where the control point is active. </dd></dl>
 
 </div>
 </div>
@@ -35663,8 +35766,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ga6aec645f9ecf8f1b8e05ebd456110185"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6aec645f9ecf8f1b8e05ebd456110185">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[1/6]</span></h2>
+<a id="ga8e0f7086b83916a9b712fe32f52e9c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e0f7086b83916a9b712fe32f52e9c4f">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -35672,7 +35775,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double ON_Integrate </td>
           <td>(</td>
-          <td class="paramtype">double(*)(ON__UINT_PTR context, int limit_direction, double s, double t)&#160;</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double(*)(ON__UINT_PTR context, int limit_direction, double t)&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -35684,8 +35793,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;&#160;</td>
-          <td class="paramname"><em>surface</em>, </td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>integration_limit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -35713,12 +35822,93 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the definite integral of a piecewise smooth (C-infinity) function of two variable using a Rhomberg integration technique. </p>
+<p>Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)*|curve'(t)|*dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double s, double t) and returns the value of the integrand at (s, t). The limit_direction parameter is a bit field that specifies which limit directions should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and above for t. If limit_direction = 2, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and above for t. If limit_direction = 3, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and below for t. If limit_direction = 4, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and below for t. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
+    <tr><td class="paramname">curve</td><td>The integration is performed over the C-infinity spans of the curve and |curve'(t)| is automatically included in the integrand. The integrand must be C-infinity on the intesection each curve span with the interval (limits[0],limits[1]). The curve may have any dimension. </td></tr>
+    <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double t) and returns the value of the integrand at t. The limit_direction parameter will be -1, 0, or +1 and specifies which limit direction should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at t and should be evaluated using the limit from above. If limit_direction = -1, then the integrand may not be C-infinity at t and should be evaluated using the limit from below. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
     <tr><td class="paramname">f_context</td><td>First parameter passed into the integrand function. </td></tr>
-    <tr><td class="paramname">surface</td><td>The limits of integration are surface.SpanVector(0) and surface.SpanVector(1). The integrand must be C-infinity on each bispan of the surface. </td></tr>
+    <tr><td class="paramname">integration_limit</td><td>If integration_limit if is not valid (<a class="el" href="class_o_n___interval.html#a09585099abbe8b7847dcbccfd999c662" title="(ON_DBL_QNAN,ON_DBL_QNAN)">ON_Interval::Nan</a> or <a class="el" href="class_o_n___interval.html#a1477445eae2a66b83f55164d5388b8c6" title="(ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_Interval::EmptyInterval</a>), then the integration is performed over the entire domain of the curve. Otherwise the integration is peformed over the intersection of integration_limit with each curve span. </td></tr>
+    <tr><td class="paramname">relative_tolerance</td><td>Desired relative tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= relative_tolerance*|I|. For example, if you want to know the answer with 5 digits of accuracy, then pass 1e-5. </td></tr>
+    <tr><td class="paramname">absolute_tolerance</td><td>Desired absolute tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= absolute_tolerance. </td></tr>
+    <tr><td class="paramname">error_bound</td><td>If error_bound is not nullptr, then the returned value is upper bound on the error in the calculation. If I = mathematical value and N = returned value, then |I - N| &lt;= *error_bound; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the calulation succeeds, then the numerical integral is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+
+</div>
+</div>
+<a id="ga2358f111aade09e043d8299d73831fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2358f111aade09e043d8299d73831fd7">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double ON_Integrate </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double(*)(ON__UINT_PTR context, int limit_direction, double s, double t)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ON__UINT_PTR&#160;</td>
+          <td class="paramname"><em>f_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>integration_limit1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>integration_limit2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relative_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>absolute_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>error_bound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the definite integral of a smooth (C-infinity) function of two variables using a Rhomberg integration technique and returns returns Integral(f(s,t)*|dS/ds(s,t) x dS/dt(s,t)|*ds*dt), where dS/ds and dS/dt are the surface's first partial derivatives. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">surface</td><td>The integration is performed over the C-infinity bispans of the surface and |dS/ds(s,t) x dS/dt(s,t)| is automatically included in the integrand. The integrand must be C-infinity on the intesection each surface bispan with the interval (limits[0]xlimits[1]). The surface must be 2 or 3 dimensional (surface.Dimension() = 2 or 3). </td></tr>
+    <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double t) and returns the value of the integrand at t. The limit_direction parameter will be -1, 0, or +1 and specifies which limit direction should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at t and should be evaluated using the limit from above. If limit_direction = -1, then the integrand may not be C-infinity at t and should be evaluated using the limit from below. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
+    <tr><td class="paramname">f_context</td><td>First parameter passed into the integrand function. </td></tr>
+    <tr><td class="paramname">integration_limit1</td><td>If integration_limit1 if is not valid (<a class="el" href="class_o_n___interval.html#a09585099abbe8b7847dcbccfd999c662" title="(ON_DBL_QNAN,ON_DBL_QNAN)">ON_Interval::Nan</a> or <a class="el" href="class_o_n___interval.html#a1477445eae2a66b83f55164d5388b8c6" title="(ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_Interval::EmptyInterval</a>), then the integration is performed over the entire domain of the first surface parameter. Otherwise the integration is peformed over the intersection of integration_limit1 with each surface bispan. </td></tr>
+    <tr><td class="paramname">integration_limit2</td><td>If integration_limit2 if is not valid (<a class="el" href="class_o_n___interval.html#a09585099abbe8b7847dcbccfd999c662" title="(ON_DBL_QNAN,ON_DBL_QNAN)">ON_Interval::Nan</a> or <a class="el" href="class_o_n___interval.html#a1477445eae2a66b83f55164d5388b8c6" title="(ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_Interval::EmptyInterval</a>), then the integration is performed over the entire domain of the second surface parameter. Otherwise the integration is peformed over the intersection of integration_limit2 with each surface bispan. </td></tr>
     <tr><td class="paramname">relative_tolerance</td><td>Desired relative tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= relative_tolerance*|I|. For example, if you want to know the answer with 5 digits of accuracy, then pass 1e-5. </td></tr>
     <tr><td class="paramname">absolute_tolerance</td><td>Desired absolute tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= absolute_tolerance. </td></tr>
     <tr><td class="paramname">error_bound</td><td>If error_bound is not nullptr, then the returned value is upper bound on the error in the calculation. If I = mathematical value and N = returned value, then |I - N| &lt;= *error_bound; </td></tr>
@@ -35730,7 +35920,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="ga464e757d670a1c218841affa6cfea5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga464e757d670a1c218841affa6cfea5ff">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga464e757d670a1c218841affa6cfea5ff">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -35785,7 +35975,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the definite integral of a piecewise smooth (C-infinity) function of two variable using a Rhomberg integration technique. </p>
+<p>Calculates the definite integral of a piecewise smooth (C-infinity) function of two variables using a Rhomberg integration technique. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double s, double t) and returns the value of the integrand at (s, t). The limit_direction parameter is a bit field that specifies which limit directions should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and above for t. If limit_direction = 2, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and above for t. If limit_direction = 3, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and below for t. If limit_direction = 4, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and below for t. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
@@ -35805,7 +35995,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="gaf0f43fe631f91d55926088d5258c6999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf0f43fe631f91d55926088d5258c6999">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0f43fe631f91d55926088d5258c6999">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -35860,79 +36050,13 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration technique. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Calculates the definite integral of a smooth (C-infinity) function of two variables using a Rhomberg integration technique. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
+<p>/// </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double s, double t) and returns the value of the integrand at (s, t). The limit_direction parameter is a bit field that specifies which limit directions should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and above for t. If limit_direction = 2, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and above for t. If limit_direction = 3, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and below for t. If limit_direction = 4, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and below for t. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
     <tr><td class="paramname">f_context</td><td>First parameter passed into the integrand function. </td></tr>
     <tr><td class="paramname">limits1</td><td>limits of integration for the first integration parameter. The integrand must be C-infinity on domain rectangle limits1 x limits2. </td></tr>
     <tr><td class="paramname">limits2</td><td>limits of integration for the second integration parameter. The integrand must be C-infinity on domain rectangle limits1 x limits2. </td></tr>
-    <tr><td class="paramname">relative_tolerance</td><td>Desired relative tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= relative_tolerance*|I|. For example, if you want to know the answer with 5 digits of accuracy, then pass 1e-5. </td></tr>
-    <tr><td class="paramname">absolute_tolerance</td><td>Desired absolute tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= absolute_tolerance. </td></tr>
-    <tr><td class="paramname">error_bound</td><td>If error_bound is not nullptr, then the returned value is upper bound on the error in the calculation. If I = mathematical value and N = returned value, then |I - N| &lt;= *error_bound; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the calulation succeeds, then the numerical integral is returned. Otherwise ON_DBL_QNAN is returned. </dd></dl>
-
-</div>
-</div>
-<a id="gab5c6260cf232abff1883ba72e10f7004"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5c6260cf232abff1883ba72e10f7004">&#9670;&nbsp;</a></span>ON_Integrate() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> double ON_Integrate </td>
-          <td>(</td>
-          <td class="paramtype">double(*)(ON__UINT_PTR context, int limit_direction, double t)&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ON__UINT_PTR&#160;</td>
-          <td class="paramname"><em>f_context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const class <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
-          <td class="paramname"><em>curve</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>relative_tolerance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>absolute_tolerance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>error_bound</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the definite integral of a piecewise smooth (C-infinity) function using a Rhomberg integration technique. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double t) and returns the value of the integrand at t. The limit_direction parameter will be -1, 0, or +1 and specifies which limit direction should be used in the evaluation./// If limit_direction = 1, then the integrand may not be C-infinity at t and should be evaluated using the limit from above. If limit_direction = -1, then the integrand may not be C-infinity at t and should be evaluated using the limit from below. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
-    <tr><td class="paramname">f_context</td><td>First parameter passed into the integrand function. </td></tr>
-    <tr><td class="paramname">curve</td><td>The limits of integration are curve.SpanVector(). The integrand must be C-infinity on each span of the curve. </td></tr>
     <tr><td class="paramname">relative_tolerance</td><td>Desired relative tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= relative_tolerance*|I|. For example, if you want to know the answer with 5 digits of accuracy, then pass 1e-5. </td></tr>
     <tr><td class="paramname">absolute_tolerance</td><td>Desired absolute tolerance. If I = mathematical value and N = numerical integration value, then the algorithm will terminate when |I - N| &lt;= absolute_tolerance. </td></tr>
     <tr><td class="paramname">error_bound</td><td>If error_bound is not nullptr, then the returned value is upper bound on the error in the calculation. If I = mathematical value and N = returned value, then |I - N| &lt;= *error_bound; </td></tr>
@@ -35993,7 +36117,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the definite integral of a piecewise smooth (C-infinity) function using a Rhomberg integration technique. </p>
+<p>Calculates the definite integral of a piecewise smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double t) and returns the value of the integrand at t. The limit_direction parameter will be -1, 0, or +1 and specifies which limit direction should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at t and should be evaluated using the limit from above. If limit_direction = -1, then the integrand may not be C-infinity at t and should be evaluated using the limit from below. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
@@ -36059,7 +36183,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the definite integral of a smooth (C-infinity) function using a Rhomberg integration technique. </p>
+<p>Calculates the definite integral of a smooth (C-infinity) function of one variable using a Rhomberg integration technique and returns returns Integral(f(t)dt). The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double t) and returns the value of the integrand at t. The limit_direction parameter will be -1, 0, or +1 and specifies which limit direction should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at t and should be evaluated using the limit from above. If limit_direction = -1, then the integrand may not be C-infinity at t and should be evaluated using the limit from below. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
@@ -61039,7 +61163,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2024 15:46:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2024 16:40:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
