@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.13</span>
+   &#160;<span id="projectnumber">8.14</span>
    </div>
   </td>
  </tr>
@@ -279,6 +279,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafe6bc7535e99d0467638e061190f12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a59534be24d43ef96e9ef907162395d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a5a59534be24d43ef96e9ef907162395d">SnapshotsClientCount</a> (void) const</td></tr>
 <tr class="separator:a5a59534be24d43ef96e9ef907162395d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7be8db2a8fcf3eb8ab178d506b0af5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#ab7be8db2a8fcf3eb8ab178d506b0af5b">SnapshotsClientData</a> (const wchar_t *wszName, const UUID &amp;idClient, <a class="el" href="class_o_n___buffer.html">ON_Buffer</a> &amp;data) const</td></tr>
+<tr class="separator:ab7be8db2a8fcf3eb8ab178d506b0af5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3f366cf76241d3c68d9e22145f0bca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a8e3f366cf76241d3c68d9e22145f0bca">SnapshotsClientName</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;id, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;sName) const</td></tr>
 <tr class="separator:a8e3f366cf76241d3c68d9e22145f0bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcf2a5ff0f653eb31ed76db4b36bd66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a1fcf2a5ff0f653eb31ed76db4b36bd66">SnapshotsClients</a> (const wchar_t *wszName, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; UUID &gt; &amp;aClients) const</td></tr>
@@ -301,6 +303,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b11ec5122a3560848c0f4f679e866de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2e3c2d775ad87109457e8b4945059a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#acc2e3c2d775ad87109457e8b4945059a">SnapshotsIsClientEnabledForPartialRestore</a> (const wchar_t *wszName, const UUID &amp;idClient, bool &amp;bEnabled) const</td></tr>
 <tr class="separator:acc2e3c2d775ad87109457e8b4945059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f1557b84949f39d5a393aa6f4dd4c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a97f1557b84949f39d5a393aa6f4dd4c0">SnapshotsSetClientData</a> (const wchar_t *wszName, const UUID &amp;idClient, const <a class="el" href="class_o_n___buffer.html">ON_Buffer</a> &amp;data)</td></tr>
+<tr class="separator:a97f1557b84949f39d5a393aa6f4dd4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0e37135e35bc63097501cb7ddb06a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#a9c0e37135e35bc63097501cb7ddb06a6">SnapshotsSetUserString</a> (const wchar_t *wszName, const wchar_t *wszKey, const wchar_t *wszValue)</td></tr>
 <tr class="separator:a9c0e37135e35bc63097501cb7ddb06a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c5115a32bdd74530bbddc42ca7c331"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc_properties.html#ad7c5115a32bdd74530bbddc42ca7c331">SnapshotsSetUserStrings</a> (const wchar_t *wszName, int iCount, const <a class="el" href="class_o_n___user_string.html">ON_UserString</a> *pStrings, bool bReplace)</td></tr>
@@ -2338,6 +2342,41 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7be8db2a8fcf3eb8ab178d506b0af5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7be8db2a8fcf3eb8ab178d506b0af5b">&#9670;&nbsp;</a></span>SnapshotsClientData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDocProperties::SnapshotsClientData </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>wszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UUID &amp;&#160;</td>
+          <td class="paramname"><em>idClient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___buffer.html">ON_Buffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Gets the data of a client of a named snapshot. Parameters: wszName - [In] Name of the snapshot. idClient - [In] ID of the client. data - [Out] Client data. Returns: True or false depending if function call is successful. </p>
+
+</div>
+</div>
 <a id="a8e3f366cf76241d3c68d9e22145f0bca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e3f366cf76241d3c68d9e22145f0bca">&#9670;&nbsp;</a></span>SnapshotsClientName()</h2>
 
@@ -2677,6 +2716,41 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a97f1557b84949f39d5a393aa6f4dd4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f1557b84949f39d5a393aa6f4dd4c0">&#9670;&nbsp;</a></span>SnapshotsSetClientData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDocProperties::SnapshotsSetClientData </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>wszName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UUID &amp;&#160;</td>
+          <td class="paramname"><em>idClient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___buffer.html">ON_Buffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the data of a client of a named snapshot. Parameters: wszName - [In] Name of the snapshot. idClient - [In] ID of the client. data - [In] Client data. Returns: True or false depending if function call is successful. </p>
+
+</div>
+</div>
 <a id="a9c0e37135e35bc63097501cb7ddb06a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c0e37135e35bc63097501cb7ddb06a6">&#9670;&nbsp;</a></span>SnapshotsSetUserString()</h2>
 
@@ -2934,7 +3008,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 12 2024 16:40:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2024 16:58:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

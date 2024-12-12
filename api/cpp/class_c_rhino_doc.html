@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.13</span>
+   &#160;<span id="projectnumber">8.14</span>
    </div>
   </td>
  </tr>
@@ -6294,7 +6294,8 @@ Friends</h2></td></tr>
 <p>const auto&amp; rs = doc-&gt;<a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings(); const auto latitude = rs.Sun().Latitude(); ///&lt; Call <a class="el" href="class_c_rhino_doc.html#a0f9cbadcc167bd447bc5a0c897700d05">Sun()</a> access method and then const method Latitude().</p>
 <p>When you want to modify a value, you must first copy the render settings, modify the copy, and then set the copy back into the document. For example:</p>
 <p><a class="el" href="class_o_n__3dm_render_settings.html">ON_3dmRenderSettings</a> rs_write = rs; rs_write.Sun().SetLatitude(51.0); ///&lt; Non-const method SetLatitude() must be called on the non-const copy. rs_write.Sun().SetLongitude(0.0); ///&lt; Non-const method SetLongitude() must be called on the non-const copy. ... ///&lt; You can change any number of other properties here. doc-&gt;<a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.SetRenderSettings(rs_write); ///&lt; Commit the changes to the document.</p>
-<p>For extensive examples of how to use these methods, see the samples repository. URLLLLLLLLLLLLLLLLLLLLLLLLL </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. See comments above. </dd></dl>
+<p>For extensive examples of how to use these methods, see the samples repository at:</p>
+<p><a href="https://github.com/mcneel/rhino-developer-samples/blob/8/cpp/SampleCommands/cmdSampleRenderSettings.cpp">https://github.com/mcneel/rhino-developer-samples/blob/8/cpp/SampleCommands/cmdSampleRenderSettings.cpp</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_c_rhino_doc.html#af0dfa43d3c385933bab631ea1ba54a54">Properties()</a>.RenderSettings() functions (Sun, Skylight etc. See comments above. </dd></dl>
 
 </div>
 </div>
@@ -9663,7 +9664,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 12 2024 16:40:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2024 16:58:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

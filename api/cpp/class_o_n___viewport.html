@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.13</span>
+   &#160;<span id="projectnumber">8.14</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa06f02ce37dcd5aa03d053d71f1da1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ef592bda8a30073932e3e1d55a4628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___viewport.html#aa0ef592bda8a30073932e3e1d55a4628">ChangeToParallelProjection</a> (bool bSymmetricFrustum)</td></tr>
 <tr class="separator:aa0ef592bda8a30073932e3e1d55a4628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3693f472cddbac39d40247c9e4c0e051"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___viewport.html#a3693f472cddbac39d40247c9e4c0e051">ChangeToParallelReflectedProjection</a> ()</td></tr>
+<tr class="separator:a3693f472cddbac39d40247c9e4c0e051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4e51da5e3155045ed2e7bfe7c6085f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___viewport.html#a3b4e51da5e3155045ed2e7bfe7c6085f">ChangeToPerspectiveProjection</a> (double target_distance, bool bSymmetricFrustum, double lens_length)</td></tr>
 <tr class="separator:a3b4e51da5e3155045ed2e7bfe7c6085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779c5a6560adf3dd2361c6509f899431"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___viewport.html#a779c5a6560adf3dd2361c6509f899431">ChangeToSymmetricFrustum</a> (bool bLeftRightSymmetric, bool bTopBottomSymmetric, double target_distance)</td></tr>
@@ -915,6 +917,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Use this function to change projections of valid viewports from perspective to parallel. It will make common additional adjustments to the frustum so the resulting views are similar. The camera location and direction will not be changed. Parameters: bSymmetricFrustum - [in] True if you want the resulting frustum to be symmetric. Remarks: If the current projection is parallel and bSymmetricFrustum, <a class="el" href="class_o_n___viewport.html#ac151995be1b9ec91a06edcbd00dbdd4f">FrustumIsLeftRightSymmetric()</a> and <a class="el" href="class_o_n___viewport.html#ae16c74950bbe1a6eaa2e305813255396">FrustumIsTopBottomSymmetric()</a> are all equal, then no changes are made and true is returned. </p>
+
+</div>
+</div>
+<a id="a3693f472cddbac39d40247c9e4c0e051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3693f472cddbac39d40247c9e4c0e051">&#9670;&nbsp;</a></span>ChangeToParallelReflectedProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Viewport::ChangeToParallelReflectedProjection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: When a viewport is set to a standard Parallel projection, the geometry that is on the ceiling plane is occluded by the geometry above. When a viewport is set to Parallel Reflected projection, the geometry on the ceiling is shown as if it is mirrored to the floor below. Remarks: Calls ChangeToParallelProjection and sets the viewscale to (1, 1, -1) </p>
 
 </div>
 </div>
@@ -5560,7 +5580,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 12 2024 16:40:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2024 16:59:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
