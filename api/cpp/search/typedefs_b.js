@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['texmap_5fbrep_5fface_5fclosest_5fpoint_54302',['TEXMAP_BREP_FACE_CLOSEST_POINT',['../group__open_n_u_r_b_s.html#ga99a2eafd292d6bf7d827f1797c00e81d',1,'opennurbs_texture_mapping.h']]],
-  ['texmap_5fintersect_5fline_5fsurface_54303',['TEXMAP_INTERSECT_LINE_SURFACE',['../group__open_n_u_r_b_s.html#gaee8c3ec0db1d2e2a13e907beb21c46fb',1,'opennurbs_texture_mapping.h']]],
-  ['transformcallback_54304',['TransformCallback',['../class_o_n___rdk_user_data.html#a6859d9f21b190efd4ad67a5ba5bf77eb',1,'ON_RdkUserData']]]
+  ['nccalcsize_5fparams_54766',['NCCALCSIZE_PARAMS',['../group___rhino.html#ga2f32e9c477ad0459cd64e1f5dce7bc77',1,'rhinoSdkMacTypes.h']]],
+  ['nppoint_54767',['NPPOINT',['../group___rhino.html#gaaafde147a1329e50c30a6b4ba0514f7c',1,'rhinoSdkMacTypes.h']]],
+  ['nppointfloat_54768',['NPPOINTFLOAT',['../group___rhino.html#gab414e260547d3e2b657cc2b7a99bb8cc',1,'rhinoSdkMacTypes.h']]],
+  ['nprect_54769',['NPRECT',['../group___rhino.html#gac97c4db543ab5b5c1ab282e24603b7f5',1,'rhinoSdkMacTypes.h']]]
 ];

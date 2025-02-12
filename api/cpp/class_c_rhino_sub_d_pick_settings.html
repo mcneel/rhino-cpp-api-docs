@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.14</span>
+   &#160;<span id="projectnumber">8.16</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a154b8046631e33f86730baf527617458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bc15b113937fee0e69965947d4c310"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a06bc15b113937fee0e69965947d4c310">FacesAreEligible</a> () const</td></tr>
 <tr class="separator:a06bc15b113937fee0e69965947d4c310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c68e97fc71d696da5c65abf5581a4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a39c68e97fc71d696da5c65abf5581a4b">Ghosted</a> () const</td></tr>
+<tr class="separator:a39c68e97fc71d696da5c65abf5581a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ef3f8f5d7c2d617aa6f3273e90107d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a25ef3f8f5d7c2d617aa6f3273e90107d">NothingIsEligible</a> () const</td></tr>
 <tr class="separator:a25ef3f8f5d7c2d617aa6f3273e90107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f023df9355777f95b483cc058bc429b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_sub_d_pick_settings.html">CRhinoSubDPickSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a2f023df9355777f95b483cc058bc429b">operator=</a> (const <a class="el" href="class_c_rhino_sub_d_pick_settings.html">CRhinoSubDPickSettings</a> &amp;)=default</td></tr>
@@ -109,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a68883f8222f5ec2c439f7e0677d90982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7290eb8ca06a0659edbf87039a80b1d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a7290eb8ca06a0659edbf87039a80b1d1">ProxyBrepResults</a> () const</td></tr>
 <tr class="separator:a7290eb8ca06a0659edbf87039a80b1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301dac230f6780f43b92dff5066869a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#a301dac230f6780f43b92dff5066869a5">SetGhosted</a> (bool bSet=true)</td></tr>
+<tr class="separator:a301dac230f6780f43b92dff5066869a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c9e13bdfcdce7a277c3a46c62d7015"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#af3c9e13bdfcdce7a277c3a46c62d7015">SubDComponentsAreEligible</a> () const</td></tr>
 <tr class="separator:af3c9e13bdfcdce7a277c3a46c62d7015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace68efe74be848b04bd1e0bb6c8245c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_sub_d_pick_settings.html#aace68efe74be848b04bd1e0bb6c8245c">SubDIsEligible</a> () const</td></tr>
@@ -520,6 +524,24 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a39c68e97fc71d696da5c65abf5581a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c68e97fc71d696da5c65abf5581a4b">&#9670;&nbsp;</a></span>Ghosted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoSubDPickSettings::Ghosted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if the object is "see through" shaded, like xray or ghosted, and should behave like a wireframe object for edge and vertex picks. </p>
+
+</div>
+</div>
 <a id="a25ef3f8f5d7c2d617aa6f3273e90107d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25ef3f8f5d7c2d617aa6f3273e90107d">&#9670;&nbsp;</a></span>NothingIsEligible()</h2>
 
@@ -615,6 +637,24 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: True if the pick must eventually return references to the proxy brep or its components. Remarks: At most one of <a class="el" href="class_c_rhino_sub_d_pick_settings.html#aaba670868d8777484c4d52f69cbdf1a7">SubDResults()</a> and <a class="el" href="class_c_rhino_sub_d_pick_settings.html#a7290eb8ca06a0659edbf87039a80b1d1">ProxyBrepResults()</a> will be true; </p>
+
+</div>
+</div>
+<a id="a301dac230f6780f43b92dff5066869a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301dac230f6780f43b92dff5066869a5">&#9670;&nbsp;</a></span>SetGhosted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoSubDPickSettings::SetGhosted </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSet</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -816,7 +856,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 11 2024 16:58:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2025 15:35:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.14</span>
+   &#160;<span id="projectnumber">8.16</span>
    </div>
   </td>
  </tr>
@@ -93,10 +93,11 @@ Inheritance diagram for CRhinoEventWatcherEx:</div>
 <area href="class_c_rhino_on_page_view_properties_changed.html" alt="CRhinoOnPageViewPropertiesChanged" shape="rect" coords="267,616,524,640"/>
 <area href="class_c_rhino_on_set_active_detail_object.html" alt="CRhinoOnSetActiveDetailObject" shape="rect" coords="267,672,524,696"/>
 <area href="class_c_rhino_on_transform_object.html" alt="CRhinoOnTransformObject" shape="rect" coords="267,728,524,752"/>
-<area href="class_c_rhino_on_view_modified_event.html" alt="CRhinoOnViewModifiedEvent" shape="rect" coords="267,784,524,808"/>
-<area href="class_c_rhino_plug_in_settings_changed.html" alt="CRhinoPlugInSettingsChanged" shape="rect" coords="267,840,524,864"/>
-<area href="class_c_rhino_target_doc_changed.html" alt="CRhinoTargetDocChanged" shape="rect" coords="267,896,524,920"/>
-<area href="class_c_rhino_ui_file_event.html" alt="CRhinoUiFileEvent" shape="rect" coords="267,952,524,976"/>
+<area href="class_c_rhino_on_view_enable_drawing_changed.html" alt="CRhinoOnViewEnableDrawingChanged" shape="rect" coords="267,784,524,808"/>
+<area href="class_c_rhino_on_view_modified_event.html" alt="CRhinoOnViewModifiedEvent" shape="rect" coords="267,840,524,864"/>
+<area href="class_c_rhino_plug_in_settings_changed.html" alt="CRhinoPlugInSettingsChanged" shape="rect" coords="267,896,524,920"/>
+<area href="class_c_rhino_target_doc_changed.html" alt="CRhinoTargetDocChanged" shape="rect" coords="267,952,524,976"/>
+<area href="class_c_rhino_ui_file_event.html" alt="CRhinoUiFileEvent" shape="rect" coords="267,1008,524,1032"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,7 +129,8 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0d9e4873301aea3dcb50d270e137c5bb">event_type_pageview_properties_changed</a> = 18, 
 <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187afc761d6dd1e757929a80aec2d7149c09">event_type_getpoint_event</a> = 19, 
 <br />
-&#160;&#160;<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a86f575a0c9e5824fe497a44513e6979a">event_type_max</a>, 
+&#160;&#160;<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187aebcd0829e0800189cc3ae4cb69c1ada8">event_type_enable_drawing_changed</a> = 20, 
+<a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a86f575a0c9e5824fe497a44513e6979a">event_type_max</a>, 
 <a class="el" href="class_c_rhino_event_watcher_ex.html#aeb9fc5cc57aa4c5951827373365bd187a0b4fbbc698ffc27b5a02dc8a365cb56c">event_type_force_4byte_size</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
@@ -237,6 +239,8 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187a0d9e4873301aea3dcb50d270e137c5bb"></a>event_type_pageview_properties_changed&#160;</td><td class="fielddoc"><p>Called when the properties of page layout view changed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187afc761d6dd1e757929a80aec2d7149c09"></a>event_type_getpoint_event&#160;</td><td class="fielddoc"><p>Call when there is a <a class="el" href="class_c_rhino_get_point.html#af6d0ff173626d96bfe7cf6dbaa3a3ca0">CRhinoGetPoint::GetPoint</a> event. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187aebcd0829e0800189cc3ae4cb69c1ada8"></a>event_type_enable_drawing_changed&#160;</td><td class="fielddoc"><p>Called when there is a <a class="el" href="class_c_rhino_view.html#aaf09e18544e2fb3a75898b7462900131">CRhinoView::EnableDrawing</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeb9fc5cc57aa4c5951827373365bd187a86f575a0c9e5824fe497a44513e6979a"></a>event_type_max&#160;</td><td class="fielddoc"><p>Bound on event type value. </p>
 </td></tr>
@@ -670,7 +674,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 11 2024 16:58:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2025 15:35:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

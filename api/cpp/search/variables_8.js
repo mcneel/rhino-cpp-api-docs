@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['h_50063',['h',['../union_o_n___u.html#a4eef4a88ea28240c4fdf7d6cfd0618e1',1,'ON_U']]],
-  ['hatch1_50064',['Hatch1',['../class_o_n___hatch_pattern.html#a3baf21c3630bc27292ea098425f9c416',1,'ON_HatchPattern::Hatch1()'],['../class_c_rhino_hatch_pattern_table.html#a8dc9d0170dad25063470e71d19b9b822',1,'CRhinoHatchPatternTable::Hatch1()']]],
-  ['hatch2_50065',['Hatch2',['../class_o_n___hatch_pattern.html#a7b91b757454260eba48dfcba7ea47e1f',1,'ON_HatchPattern::Hatch2()'],['../class_c_rhino_hatch_pattern_table.html#ad423dcdf3fb238c5f8c78c9cf54cf7a5',1,'CRhinoHatchPatternTable::Hatch2()']]],
-  ['hatch3_50066',['Hatch3',['../class_o_n___hatch_pattern.html#a0f1cad64677a1eef79cad99be107db99',1,'ON_HatchPattern::Hatch3()'],['../class_c_rhino_hatch_pattern_table.html#a5f4afb34aa59dd52ce8191d45c487b2b',1,'CRhinoHatchPatternTable::Hatch3()']]],
-  ['hatchdash_50067',['HatchDash',['../class_o_n___hatch_pattern.html#aef2723030c3000b169274e287c465a9e',1,'ON_HatchPattern::HatchDash()'],['../class_c_rhino_hatch_pattern_table.html#a759798490fa37e44453f1b00a4acb6bd',1,'CRhinoHatchPatternTable::HatchDash()']]],
-  ['hectometers_50068',['Hectometers',['../class_o_n___unit_system.html#a531deab6c1dafc70b583f3b96d73cc9e',1,'ON_UnitSystem']]],
-  ['height_50069',['height',['../class_o_n___cone.html#ab12d6d30cd21a14dacbc54b4e12004f1',1,'ON_Cone::height()'],['../class_o_n___cylinder.html#a944bf6b90eabe3095e346b6a6e9172fb',1,'ON_Cylinder::height()']]],
-  ['heightofcapitalcodepoint_50070',['HeightOfCapitalCodePoint',['../class_o_n___font_metrics.html#a09a14df60aa3a72ffa0580f2dc86fac1',1,'ON_FontMetrics']]],
-  ['hidden_50071',['Hidden',['../class_o_n___component_status.html#a7f7db902d174154175d572f729247694',1,'ON_ComponentStatus::Hidden()'],['../class_o_n___linetype.html#aa38afe5d494c06db0f48415905a108e9',1,'ON_Linetype::Hidden()']]],
-  ['highlighted_50072',['Highlighted',['../class_o_n___component_status.html#aac2ce8562ffb52a2205d4e116285c61c',1,'ON_ComponentStatus']]],
-  ['hyphenminus_50073',['HyphenMinus',['../class_o_n___string.html#a6c0782c382d44f6c7b7d3a0727dc914a',1,'ON_String::HyphenMinus()'],['../class_o_n__w_string.html#a62679c8e5bf956d1dc1c19506902a109',1,'ON_wString::HyphenMinus()']]]
+  ['h_50492',['h',['../union_o_n___u.html#a4eef4a88ea28240c4fdf7d6cfd0618e1',1,'ON_U']]],
+  ['hatch1_50493',['Hatch1',['../class_o_n___hatch_pattern.html#a3baf21c3630bc27292ea098425f9c416',1,'ON_HatchPattern::Hatch1()'],['../class_c_rhino_hatch_pattern_table.html#a8dc9d0170dad25063470e71d19b9b822',1,'CRhinoHatchPatternTable::Hatch1()']]],
+  ['hatch2_50494',['Hatch2',['../class_o_n___hatch_pattern.html#a7b91b757454260eba48dfcba7ea47e1f',1,'ON_HatchPattern::Hatch2()'],['../class_c_rhino_hatch_pattern_table.html#ad423dcdf3fb238c5f8c78c9cf54cf7a5',1,'CRhinoHatchPatternTable::Hatch2()']]],
+  ['hatch3_50495',['Hatch3',['../class_o_n___hatch_pattern.html#a0f1cad64677a1eef79cad99be107db99',1,'ON_HatchPattern::Hatch3()'],['../class_c_rhino_hatch_pattern_table.html#a5f4afb34aa59dd52ce8191d45c487b2b',1,'CRhinoHatchPatternTable::Hatch3()']]],
+  ['hatchdash_50496',['HatchDash',['../class_o_n___hatch_pattern.html#aef2723030c3000b169274e287c465a9e',1,'ON_HatchPattern::HatchDash()'],['../class_c_rhino_hatch_pattern_table.html#a759798490fa37e44453f1b00a4acb6bd',1,'CRhinoHatchPatternTable::HatchDash()']]],
+  ['hdc_50497',['hdc',['../structtag_p_a_i_n_t_s_t_r_u_c_t.html#a39c0881e7f4245488a7f52e9f9e60367',1,'tagPAINTSTRUCT']]],
+  ['hectometers_50498',['Hectometers',['../class_o_n___unit_system.html#a531deab6c1dafc70b583f3b96d73cc9e',1,'ON_UnitSystem']]],
+  ['height_50499',['height',['../class_o_n___cone.html#ab12d6d30cd21a14dacbc54b4e12004f1',1,'ON_Cone::height()'],['../class_o_n___cylinder.html#a944bf6b90eabe3095e346b6a6e9172fb',1,'ON_Cylinder::height()']]],
+  ['heightofcapitalcodepoint_50500',['HeightOfCapitalCodePoint',['../class_o_n___font_metrics.html#a09a14df60aa3a72ffa0580f2dc86fac1',1,'ON_FontMetrics']]],
+  ['hidden_50501',['Hidden',['../class_o_n___component_status.html#a7f7db902d174154175d572f729247694',1,'ON_ComponentStatus::Hidden()'],['../class_o_n___linetype.html#aa38afe5d494c06db0f48415905a108e9',1,'ON_Linetype::Hidden()']]],
+  ['highlighted_50502',['Highlighted',['../class_o_n___component_status.html#aac2ce8562ffb52a2205d4e116285c61c',1,'ON_ComponentStatus']]],
+  ['hinst_50503',['hinst',['../structtag_t_o_o_l_i_n_f_o_w.html#a1824f5eb55a055ac648de22223130f51',1,'tagTOOLINFOW']]],
+  ['hinstance_50504',['hInstance',['../structtag_c_r_e_a_t_e_s_t_r_u_c_t.html#af3c5377e8c8e2b66ae70e31253c72819',1,'tagCREATESTRUCT']]],
+  ['hmenu_50505',['hMenu',['../structtag_c_r_e_a_t_e_s_t_r_u_c_t.html#a65ed2a5fa473a6055f34abe802e02e08',1,'tagCREATESTRUCT']]],
+  ['hwnd_50506',['hwnd',['../structtag_w_i_n_d_o_w_p_o_s.html#a082fd1780866dc6efa79eec50b73d556',1,'tagWINDOWPOS::hwnd()'],['../structtag_t_o_o_l_i_n_f_o_w.html#a34b2268f1c0d38267051ff21d57fa06d',1,'tagTOOLINFOW::hwnd()']]],
+  ['hwndinsertafter_50507',['hwndInsertAfter',['../structtag_w_i_n_d_o_w_p_o_s.html#a08ce2b6d07d9f05524344b99e4e5f864',1,'tagWINDOWPOS']]],
+  ['hwndparent_50508',['hwndParent',['../structtag_c_r_e_a_t_e_s_t_r_u_c_t.html#a2546646f679c4a43b25062e9b615f1b5',1,'tagCREATESTRUCT']]],
+  ['hyphenminus_50509',['HyphenMinus',['../class_o_n___string.html#a6c0782c382d44f6c7b7d3a0727dc914a',1,'ON_String::HyphenMinus()'],['../class_o_n__w_string.html#a62679c8e5bf956d1dc1c19506902a109',1,'ON_wString::HyphenMinus()']]]
 ];

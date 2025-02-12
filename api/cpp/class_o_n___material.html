@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.14</span>
+   &#160;<span id="projectnumber">8.16</span>
    </div>
   </td>
  </tr>
@@ -227,6 +227,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98d5c9f4430870bd77a6f9da8be75caf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___material.html#a98d5c9f4430870bd77a6f9da8be75caf">Reflectivity</a> () const</td></tr>
 <tr class="memdesc:a98d5c9f4430870bd77a6f9da8be75caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transparency values are in range 0.0 = opaque to 1.0 = transparent.  <a href="class_o_n___material.html#a98d5c9f4430870bd77a6f9da8be75caf">More...</a><br /></td></tr>
 <tr class="separator:a98d5c9f4430870bd77a6f9da8be75caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9169c4dc4448fd3514ab2ae03a3f3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___material.html#ab9169c4dc4448fd3514ab2ae03a3f3f3">RemoveColorAlphaValues</a> (void)</td></tr>
+<tr class="separator:ab9169c4dc4448fd3514ab2ae03a3f3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341befc51397ed13b24bdb88728b69d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___material.html#a341befc51397ed13b24bdb88728b69d4">SetAmbient</a> (<a class="el" href="class_o_n___color.html">ON_Color</a>)</td></tr>
 <tr class="separator:a341befc51397ed13b24bdb88728b69d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d98ab0b8acaa98cfcb73005db8c75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___material.html#a13d98ab0b8acaa98cfcb73005db8c75d">SetDiffuse</a> (<a class="el" href="class_o_n___color.html">ON_Color</a>)</td></tr>
@@ -1799,6 +1801,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ab9169c4dc4448fd3514ab2ae03a3f3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9169c4dc4448fd3514ab2ae03a3f3f3">&#9670;&nbsp;</a></span>RemoveColorAlphaValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Material::RemoveColorAlphaValues </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The values all of the colors above do not support alpha values, and Rhino will not work correctly if there is a value other than 0 in that fourth byte. This function cleans this up. <a href="https://mcneel.myjetbrains.com/youtrack/issue/RH-85216/ONMaterial-diffuse-color-is-ONColorUnsetColor">https://mcneel.myjetbrains.com/youtrack/issue/RH-85216/ONMaterial-diffuse-color-is-ONColorUnsetColor</a> </p>
+
+</div>
+</div>
 <a id="a341befc51397ed13b24bdb88728b69d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a341befc51397ed13b24bdb88728b69d4">&#9670;&nbsp;</a></span>SetAmbient()</h2>
 
@@ -2514,7 +2535,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 11 2024 16:59:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2025 15:36:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
