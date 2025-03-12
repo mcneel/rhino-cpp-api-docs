@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.16</span>
+   &#160;<span id="projectnumber">8.17</span>
    </div>
   </td>
  </tr>
@@ -176,6 +176,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c8b8becff91f12b74835e967ce525c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02de14bc3331ea44beb2751eb13d3c48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a02de14bc3331ea44beb2751eb13d3c48">Swap</a> ()</td></tr>
 <tr class="separator:a02de14bc3331ea44beb2751eb13d3c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af617968e3cb4644fdd275b01758c7e62"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#af617968e3cb4644fdd275b01758c7e62">TransformParameterTo</a> (const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;target, double t) const</td></tr>
+<tr class="memdesc:af617968e3cb4644fdd275b01758c7e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a parameter from the current interval to the target interval. It is effectively target.ParameterAt(this.NormalizedParameterAt(t)) with additional checks when t is very close to the end of this interval. It is useful when the calculation of t may have introduced rounding errors.  <a href="class_o_n___interval.html#af617968e3cb4644fdd275b01758c7e62">More...</a><br /></td></tr>
+<tr class="separator:af617968e3cb4644fdd275b01758c7e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b9c8e7f69d0e0d248cb6342276f6e6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#a5b9c8e7f69d0e0d248cb6342276f6e6d">Union</a> (const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;)</td></tr>
 <tr class="separator:a5b9c8e7f69d0e0d248cb6342276f6e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9bcafcb9c6764d0d5b0a6d49021f67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___interval.html#aca9bcafcb9c6764d0d5b0a6d49021f67">Union</a> (const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;)</td></tr>
@@ -1163,6 +1166,45 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af617968e3cb4644fdd275b01758c7e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af617968e3cb4644fdd275b01758c7e62">&#9670;&nbsp;</a></span>TransformParameterTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Interval::TransformParameterTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms a parameter from the current interval to the target interval. It is effectively target.ParameterAt(this.NormalizedParameterAt(t)) with additional checks when t is very close to the end of this interval. It is useful when the calculation of t may have introduced rounding errors. </p>
+<p>Specifically, there are cases where t is extremely close to and end of this interval, target.ParameterAt(this.NormalizedParameterAt(t)) will return values that are very near but not exactly at the end of the target interval, and <a class="el" href="class_o_n___interval.html#af617968e3cb4644fdd275b01758c7e62" title="Transforms a parameter from the current interval to the target interval. It is effectively target....">TransformParameterTo()</a> will return a parameter at the exact end of the target interval. This behavior is desired in some cases like converting <a class="el" href="class_o_n___poly_curve.html">ON_PolyCurve</a> parameters to NurbsForm parameters when the polycurve parameter is at a segment.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Target interval</td></tr>
+    <tr><td class="paramname">t</td><td>Input parameter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The input parameter in the target interval. Returns input paramter unchanged if both intervals are identical. Returns ON_DBL_QNAN if either interval is not valid. </dd></dl>
+
+</div>
+</div>
 <a id="a5b9c8e7f69d0e0d248cb6342276f6e6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b9c8e7f69d0e0d248cb6342276f6e6d">&#9670;&nbsp;</a></span>Union() <span class="overload">[1/4]</span></h2>
 
@@ -1385,7 +1427,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 12 2025 15:36:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 12 2025 13:56:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

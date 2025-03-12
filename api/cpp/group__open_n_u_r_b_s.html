@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.16</span>
+   &#160;<span id="projectnumber">8.17</span>
    </div>
   </td>
  </tr>
@@ -636,6 +636,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_intersection_cache.html">ON_MeshIntersectionCache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a mechanism for lazily evaluating mesh data. The implementation is private and subject to change.  <a href="class_o_n___mesh_intersection_cache.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_intersection_options.html">ON_MeshIntersectionOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a mechanism for lazily evaluating mesh data.  <a href="class_o_n___mesh_intersection_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_marker.html">ON_MeshMarker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -36073,7 +36076,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Calculates the definite integral of a smooth (C-infinity) function of two variables using a Rhomberg integration technique. The C-infinity requirement is used by the Rhomberg algorithm when estimating error bounds and convergence. If you choose to pass a C2 function, you are likely to converge while getting less accurate results and incorrect error bound estimates. Using a C0 or C1 fucntion will ofter return nonsense. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>/// </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The integrand function is double f(ON__UINT_PTR context, int limit_direction, double s, double t) and returns the value of the integrand at (s, t). The limit_direction parameter is a bit field that specifies which limit directions should be used in the evaluation. If limit_direction = 1, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and above for t. If limit_direction = 2, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and above for t. If limit_direction = 3, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from below for s and below for t. If limit_direction = 4, then the integrand may not be C-infinity at (s,t) and should be evaluated using the limit from above for s and below for t. If limit_direction = 0, then the integrand is C-infinity at t and may and evaluation from above and below will return the same answer. </td></tr>
     <tr><td class="paramname">f_context</td><td>First parameter passed into the integrand function. </td></tr>
@@ -61185,7 +61188,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 12 2025 15:35:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 12 2025 13:55:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
