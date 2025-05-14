@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.18</span>
+   &#160;<span id="projectnumber">8.19</span>
    </div>
   </td>
  </tr>
@@ -143,6 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1dbb0eff3b2287152b40991b3afca9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c7b04a80f1806c3a45f72d7c491a44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a21c7b04a80f1806c3a45f72d7c491a44">Dump</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;) const</td></tr>
 <tr class="separator:a21c7b04a80f1806c3a45f72d7c491a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed2fd3c07586bcc12a0c87142f9cffa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a0ed2fd3c07586bcc12a0c87142f9cffa">DumpUserData</a> (const wchar_t *description, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;text_log) const</td></tr>
+<tr class="memdesc:a0ed2fd3c07586bcc12a0c87142f9cffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through the linked list of <a class="el" href="class_o_n___user_data.html">ON_UserData</a> attached to this and call the virtual Dump(text_log) function on each instance.  <a href="class_o_n___object.html#a0ed2fd3c07586bcc12a0c87142f9cffa">More...</a><br /></td></tr>
+<tr class="separator:a0ed2fd3c07586bcc12a0c87142f9cffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad265ca0da2d751edaa9d2b5ab2540c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#ad265ca0da2d751edaa9d2b5ab2540c6a">EmergencyDestroy</a> ()</td></tr>
 <tr class="separator:ad265ca0da2d751edaa9d2b5ab2540c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb43bb324c44740c4bc2932e2f95c835"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___user_data.html">ON_UserData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#adb43bb324c44740c4bc2932e2f95c835">FirstUserData</a> () const</td></tr>
@@ -643,6 +646,43 @@ Public Member Functions</h2></td></tr>
 <p>The default implementations of this virtual function prints the class's name. </p>
 
 <p>Reimplemented in <a class="el" href="class_o_n___nurbs_cage.html#a0f4193a42744b9300bdb653da84986d7">ON_NurbsCage</a>, <a class="el" href="class_o_n__3dm_render_settings.html#a9feb17ea4d3d5b83b40e584bcd1c2e44">ON_3dmRenderSettings</a>, <a class="el" href="class_o_n___user_string_list.html#a415ed9e24d897b5c099b45c5a3154272">ON_UserStringList</a>, <a class="el" href="class_o_n___instance_definition.html#a92a22f749002d479c23bed35f6a92d19">ON_InstanceDefinition</a>, <a class="el" href="class_o_n___material.html#abd10615f531b165b0d2f86b44c6f3e72">ON_Material</a>, <a class="el" href="class_o_n___model_geometry_component.html#a0aa8ad836340ddda12814ffe1d055d82">ON_ModelGeometryComponent</a>, <a class="el" href="class_c_rhino_instance_definition.html#a5a970e734ec1202291b8257b80fdb28a">CRhinoInstanceDefinition</a>, <a class="el" href="class_o_n___user_data.html#a63fe722a03f7e436318e1ac90ef6629c">ON_UserData</a>, <a class="el" href="class_o_n___text_dot.html#acb93d6eed65d494a1f76f9c981624360">ON_TextDot</a>, <a class="el" href="class_o_n___leader.html#a0f6d379fa89c76862bc72a18a3079f8c">ON_Leader</a>, <a class="el" href="class_o_n___nurbs_curve.html#ab5cb1f453190f117cec0991ca910b54b">ON_NurbsCurve</a>, <a class="el" href="class_o_n___polyline_curve.html#ad52e77ba83cdaa9f19d1a6c1089e09cc">ON_PolylineCurve</a>, <a class="el" href="class_o_n___sub_d_edge_chain_curve.html#acdc8ac6445649addc6b8b90acfd5afe0">ON_SubDEdgeChainCurve</a>, <a class="el" href="class_o_n___sub_d_component_ref.html#a4a94ce16b24ece9b90d42e90d98af3d0">ON_SubDComponentRef</a>, <a class="el" href="class_o_n___mesh_component_ref.html#ad8dbda1fa8c9944a732043557c94d5c4">ON_MeshComponentRef</a>, <a class="el" href="class_o_n___sub_d.html#a72c206f8957113a813a9a97b13eb4a08">ON_SubD</a>, <a class="el" href="class_o_n___mesh.html#a9621f32fa9123a6feae820085d14a02d">ON_Mesh</a>, <a class="el" href="class_o_n___brep.html#a8e042bf758b7df9978c5b3b04f8b07ca">ON_Brep</a>, <a class="el" href="class_o_n___morph_control.html#ae042142c95e710c65cd512d298f7cae5">ON_MorphControl</a>, <a class="el" href="class_o_n___brep_face.html#ae07f09ba6e788c9c6ef4f7af16cb7bbe">ON_BrepFace</a>, <a class="el" href="class_o_n___brep_loop.html#acd8c929f6362f52bf0640443aa11621f">ON_BrepLoop</a>, <a class="el" href="class_o_n___clipping_plane_surface.html#acc749687d476cbab517d5a36b47960d6">ON_ClippingPlaneSurface</a>, <a class="el" href="class_o_n___hatch.html#ad895ec79e3072cbacf8267512fd62371">ON_Hatch</a>, <a class="el" href="class_o_n___document_user_string_list.html#ae0d48c97bb702f81322e1fbba50454c0">ON_DocumentUserStringList</a>, <a class="el" href="class_o_n___brep_trim.html#a5a22733d4ae91dd5e703151fb3651dfc">ON_BrepTrim</a>, <a class="el" href="class_o_n___dim_style.html#a91b5c6fb1bf3e653c929c6df530159f7">ON_DimStyle</a>, <a class="el" href="class_o_n___hatch_pattern.html#a1302c7f801b6dc9882d04f56dc32b13d">ON_HatchPattern</a>, <a class="el" href="class_o_n___unknown_user_data.html#abcc720715407a7b964334097b4a904a0">ON_UnknownUserData</a>, <a class="el" href="class_o_n___brep_edge.html#a9376e109efd2397edfa51c2be63a2fd0">ON_BrepEdge</a>, <a class="el" href="class_o_n___text_content.html#ac2e4791756682de64b3958fcc1b2ae9d">ON_TextContent</a>, <a class="el" href="class_o_n___nurbs_surface.html#a74d364c467258afb3550ab265a3d8c50">ON_NurbsSurface</a>, <a class="el" href="class_o_n___curve_proxy.html#ae8dbb8ed512eb1fae254374ff62a4518">ON_CurveProxy</a>, <a class="el" href="class_o_n___texture_mapping.html#af92b1a3e6bb57bd1cc93657ac9f2a468">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aee10904cd774f0bcb4f44ccf04c46fe8">ON_TextStyle</a>, <a class="el" href="class_o_n___texture.html#afca39ceb6c089d71564dc0bad3764fc8">ON_Texture</a>, <a class="el" href="class_o_n___sum_surface.html#a7ac3474d994b4dbb67effe7e37e97954">ON_SumSurface</a>, <a class="el" href="class_o_n___viewport.html#ad5f9a7a9c410e3a551a0ea1f72e023a9">ON_Viewport</a>, <a class="el" href="class_o_n___arc_curve.html#adebc103f483a74d201ea3c23f3b4f94e">ON_ArcCurve</a>, <a class="el" href="class_o_n___linetype.html#a9fc5f20fe9d3f92381b98ebd5c55904a">ON_Linetype</a>, <a class="el" href="class_o_n___poly_curve.html#a27fdbfc0da365eca81baf766a9a83397">ON_PolyCurve</a>, <a class="el" href="class_o_n___rev_surface.html#ab522bc8deb00cf3feaabec29dcadc79e">ON_RevSurface</a>, <a class="el" href="class_o_n___history_record.html#a93d692afeed5dd4c069ac775e83f87ae">ON_HistoryRecord</a>, <a class="el" href="class_o_n___brep_vertex.html#ada99f4bfe3dc8c4a4dcd5d2ae996fe88">ON_BrepVertex</a>, <a class="el" href="class_o_n___curve_on_surface.html#aadab7e3e387a3ea31d2e5f137463f657">ON_CurveOnSurface</a>, <a class="el" href="class_o_n___surface_proxy.html#a84bbeda812595dcb6ff99a9558afe985">ON_SurfaceProxy</a>, <a class="el" href="class_o_n___point_cloud.html#a920f376439fabaee2c71e898e0ff56f0">ON_PointCloud</a>, <a class="el" href="class_o_n___extrusion.html#a881e2af9ee696333b300f22b688f1d97">ON_Extrusion</a>, <a class="el" href="class_o_n___line_curve.html#a128844312bc6952dce00d5907efb29c3">ON_LineCurve</a>, <a class="el" href="class_o_n___layer.html#a132b06d265bc5546ac08fc9b6bbd4bfe">ON_Layer</a>, <a class="el" href="class_o_n___plane_surface.html#a660335bf3c88d9e654a184e93b6f94d4">ON_PlaneSurface</a>, <a class="el" href="class_o_n___text.html#afeaa8f7bf46ae12c3e438f64fe8ee4fb">ON_Text</a>, <a class="el" href="class_o_n___bitmap.html#a5e880a9e6120ea036bc191686421893f">ON_Bitmap</a>, <a class="el" href="class_o_n___point_grid.html#a1583eb7d1c72ae9f3b5431cc016dc707">ON_PointGrid</a>, <a class="el" href="class_o_n___point.html#af048c2272e27eb00bfa9b63df152bfd7">ON_Point</a>, <a class="el" href="class_o_n___section_style.html#a329b5c1fe84870e803f3dc88b1f1b328">ON_SectionStyle</a>, <a class="el" href="class_o_n__3dm_object_attributes.html#a2b6e9371aa202f019b6f9b94d776c72e">ON_3dmObjectAttributes</a>, <a class="el" href="class_o_n___detail_view.html#a2413a2118eb8d8338a48a69b549af24a">ON_DetailView</a>, <a class="el" href="class_o_n___light.html#a1261015707bc1a2882750853f18ef8b0">ON_Light</a>, <a class="el" href="class_c_rhino_group_geometry.html#aa94614b3b5b921929539d774b6b0dc14">CRhinoGroupGeometry</a>, <a class="el" href="class_o_n___model_component.html#aebee8c1655e072f442bd71d873240770">ON_ModelComponent</a>, <a class="el" href="class_o_n___h_l_d_curve.html#a38a8f81dec5d93edc89e91473d139613">ON_HLDCurve</a>, and <a class="el" href="class_c_rhino_object_attributes.html#af41ea0eeaf691cff73544d27f98718aa">CRhinoObjectAttributes</a>.</p>
+
+</div>
+</div>
+<a id="a0ed2fd3c07586bcc12a0c87142f9cffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed2fd3c07586bcc12a0c87142f9cffa">&#9670;&nbsp;</a></span>DumpUserData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Object::DumpUserData </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>text_log</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Go through the linked list of <a class="el" href="class_o_n___user_data.html">ON_UserData</a> attached to this and call the virtual Dump(text_log) function on each instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">description</td><td>General context description to print before each instance. </td></tr>
+    <tr><td class="paramname">text_log</td><td>Destination text log. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1455,7 +1495,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 8 2025 16:24:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 14 2025 10:18:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

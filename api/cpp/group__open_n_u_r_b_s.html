@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.18</span>
+   &#160;<span id="projectnumber">8.19</span>
    </div>
   </td>
  </tr>
@@ -5263,6 +5263,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga836d5873fd2d4b9f50174300e3b8b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5002a25eda38125e5a50bae0a9f3e100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga5002a25eda38125e5a50bae0a9f3e100">ON_ValidateSurfaceSeam</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;srf, int dir, double dist_tol, double angle_tol, bool &amp;bIsCloseG1)</td></tr>
 <tr class="separator:ga5002a25eda38125e5a50bae0a9f3e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6537fa65aa3406a85600d646674736b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga6537fa65aa3406a85600d646674736b0">ON_VersionNumberCompare</a> (unsigned int lhs_version_number, unsigned int rhs_version_number, int invalid_input_result)</td></tr>
+<tr class="memdesc:ga6537fa65aa3406a85600d646674736b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two opennurbs version numbers  <a href="group__open_n_u_r_b_s.html#ga6537fa65aa3406a85600d646674736b0">More...</a><br /></td></tr>
+<tr class="separator:ga6537fa65aa3406a85600d646674736b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e9e4be76fbe9aafe482cb02ebf12e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#ga5e9e4be76fbe9aafe482cb02ebf12e8c">ON_VersionNumberConstruct</a> (unsigned int major_version, unsigned int minor_version, unsigned int year, unsigned int month, unsigned int day_of_month, unsigned int platform_branch)</td></tr>
 <tr class="separator:ga5e9e4be76fbe9aafe482cb02ebf12e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad53adacbc8e6eaaebd5a0f893efa853f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__open_n_u_r_b_s.html#gad53adacbc8e6eaaebd5a0f893efa853f">ON_VersionNumberFromYearMonthDateFormat</a> (unsigned int major_version, unsigned int yyyy_mm_dd_n_version_number)</td></tr>
@@ -51875,6 +51878,51 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="ga6537fa65aa3406a85600d646674736b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6537fa65aa3406a85600d646674736b0">&#9670;&nbsp;</a></span>ON_VersionNumberCompare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga59fb488a26cef0e7bf900a815eb92b88">ON_DECL</a> int ON_VersionNumberCompare </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>lhs_version_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>rhs_version_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>invalid_input_result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare two opennurbs version numbers </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs_version_number</td><td></td></tr>
+    <tr><td class="paramname">rhs_version_number</td><td></td></tr>
+    <tr><td class="paramname">invalid_input_result</td><td>Value to return if one or both of lhs_version_number and rhs_version_number is not a valid version number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>invalid_input_result: One or both of the version numbers is not valid. -1: lhs_version_number is older than rhs_version_number. +1: lhs_version_number is newer than rhs_version_number. 0: lhs_version_number and rhs_version_number identify the same version of opennurbs </dd></dl>
+
+</div>
+</div>
 <a id="ga5e9e4be76fbe9aafe482cb02ebf12e8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5e9e4be76fbe9aafe482cb02ebf12e8c">&#9670;&nbsp;</a></span>ON_VersionNumberConstruct()</h2>
 
@@ -61242,7 +61290,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 8 2025 16:23:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 14 2025 10:18:31 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

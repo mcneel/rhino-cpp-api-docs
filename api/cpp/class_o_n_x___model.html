@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.18</span>
+   &#160;<span id="projectnumber">8.19</span>
    </div>
   </td>
  </tr>
@@ -134,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0d3fefe2a2ad8f700fe13518b601b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209a4b123b3a0ecdd2271188508fe28b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a209a4b123b3a0ecdd2271188508fe28b">ContentHash</a> () const</td></tr>
 <tr class="separator:a209a4b123b3a0ecdd2271188508fe28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abec710dbc54f4942b953cb542923a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a5abec710dbc54f4942b953cb542923a7">ContentHash</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;hashed_text) const</td></tr>
+<tr class="memdesc:a5abec710dbc54f4942b953cb542923a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a SHA-1 has of the model's content and the text that was hashed.  <a href="class_o_n_x___model.html#a5abec710dbc54f4942b953cb542923a7">More...</a><br /></td></tr>
+<tr class="separator:a5abec710dbc54f4942b953cb542923a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf131d763c5b6c3a5fb0a73943a08d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#adf131d763c5b6c3a5fb0a73943a08d30">CurrentDimensionStyle</a> () const</td></tr>
 <tr class="separator:adf131d763c5b6c3a5fb0a73943a08d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f13d68bf15581775d5cf6417b38f518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n_x___model.html#a4f13d68bf15581775d5cf6417b38f518">CurrentDimensionStyleId</a> () const</td></tr>
@@ -1073,7 +1076,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a209a4b123b3a0ecdd2271188508fe28b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a209a4b123b3a0ecdd2271188508fe28b">&#9670;&nbsp;</a></span>ContentHash()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a209a4b123b3a0ecdd2271188508fe28b">&#9670;&nbsp;</a></span>ContentHash() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,6 +1090,33 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: A SHA-1 hash of the model's content. If two models have identical content, then the have equal <a class="el" href="class_o_n_x___model.html#a209a4b123b3a0ecdd2271188508fe28b">ContentHash()</a> values. </p>
+
+</div>
+</div>
+<a id="a5abec710dbc54f4942b953cb542923a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abec710dbc54f4942b953cb542923a7">&#9670;&nbsp;</a></span>ContentHash() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___s_h_a1___hash.html">ON_SHA1_Hash</a> ONX_Model::ContentHash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>hashed_text</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a SHA-1 has of the model's content and the text that was hashed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashed_text</td><td>The text that was hashed is returned here. Typically this is used when a human wants to look at text diffences to determine why two models that were supposed to be the same had different values of <a class="el" href="class_o_n_x___model.html#a209a4b123b3a0ecdd2271188508fe28b">ContentHash()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A SHA-1 hash of the model's content. If two models have identical content, then the have equal <a class="el" href="class_o_n_x___model.html#a209a4b123b3a0ecdd2271188508fe28b">ContentHash()</a> values. </dd></dl>
 
 </div>
 </div>
@@ -3257,7 +3287,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 8 2025 16:24:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 14 2025 10:19:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

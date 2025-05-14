@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.18</span>
+   &#160;<span id="projectnumber">8.19</span>
    </div>
   </td>
  </tr>
@@ -122,8 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a224ceece39e5150e699511582bbd01ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787e5bdd548c892d5fc9ff7ab8b89898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a787e5bdd548c892d5fc9ff7ab8b89898">ClearTextureCoordinates</a> () const</td></tr>
 <tr class="separator:a787e5bdd548c892d5fc9ff7ab8b89898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc828f256a3a759340bdd9c46f97287d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___color.html">ON_Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#acc828f256a3a759340bdd9c46f97287d">ColorArray</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
-<tr class="separator:acc828f256a3a759340bdd9c46f97287d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db31362dbdb165cd7027e50069e4245"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a3db31362dbdb165cd7027e50069e4245">ColorArrayCount</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
 <tr class="separator:a3db31362dbdb165cd7027e50069e4245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c25cc91a82f6fa6198c0f3ccfdf109e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_mesh_fragment.html#a0c25cc91a82f6fa6198c0f3ccfdf109e">ColorArrayStride</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
@@ -717,33 +715,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="acc828f256a3a759340bdd9c46f97287d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc828f256a3a759340bdd9c46f97287d">&#9670;&nbsp;</a></span>ColorArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_o_n___color.html">ON_Color</a>* ON_SubDMeshFragment::ColorArray </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a>&#160;</td>
-          <td class="paramname"><em>subd_appearance</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subd_appearance</td><td>Specifies which array (surface points or control net corners) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If colors are set, the number of curvatures in the specified array. Otherwise, 0 is returned. </dd></dl>
-<p><br  />
- </p>
-
-</div>
-</div>
 <a id="a3db31362dbdb165cd7027e50069e4245"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3db31362dbdb165cd7027e50069e4245">&#9670;&nbsp;</a></span>ColorArrayCount()</h2>
 
@@ -786,6 +757,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subd_appearance</td><td>Specifies which array (surface points or control net corners) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If colors are set, the number of curvatures in the specified array. Otherwise, 0 is returned. </dd></dl>
+<p>const ON_Color* ColorArray(ON_SubDComponentLocation subd_appearance)const; </p>
 
 </div>
 </div>
@@ -4462,7 +4441,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 8 2025 16:24:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 14 2025 10:19:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.18</span>
+   &#160;<span id="projectnumber">8.19</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9970baf2f4bcd57abfcee933b7df7ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc319296bcaddf501c99249635f400b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_history_manager.html#adc319296bcaddf501c99249635f400b8">LoadProfile</a> (<a class="el" href="group___rhino.html#ga534a3cb10625cfdbabafa0fba60bb7b6">LPCTSTR</a> lpszSection, <a class="el" href="class_c_rhino_profile_context.html">CRhinoProfileContext</a> &amp;pc)</td></tr>
 <tr class="separator:adc319296bcaddf501c99249635f400b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868fe4afca15b9480da0e110e969b966"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_history_manager.html#a868fe4afca15b9480da0e110e969b966">ModifyObjectAttributesHelper</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *object)</td></tr>
-<tr class="separator:a868fe4afca15b9480da0e110e969b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bdcc7a91591063a90295e7dbcc7d80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_history_manager.html#ae5bdcc7a91591063a90295e7dbcc7d80">ModifyObjectAttributesHelper</a> (const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *object, bool bCheckSelf=false)</td></tr>
+<tr class="separator:ae5bdcc7a91591063a90295e7dbcc7d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7e693bc6144f38ace1505720c47e70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_history_manager.html#aac7e693bc6144f38ace1505720c47e70">PopRecordSetting</a> ()</td></tr>
 <tr class="separator:aac7e693bc6144f38ace1505720c47e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366af5e0726c5877c8e32280705c1f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_history_manager.html#a366af5e0726c5877c8e32280705c1f14">PushRecordSetting</a> ()</td></tr>
@@ -436,8 +436,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a868fe4afca15b9480da0e110e969b966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a868fe4afca15b9480da0e110e969b966">&#9670;&nbsp;</a></span>ModifyObjectAttributesHelper()</h2>
+<a id="ae5bdcc7a91591063a90295e7dbcc7d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bdcc7a91591063a90295e7dbcc7d80">&#9670;&nbsp;</a></span>ModifyObjectAttributesHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,12 +446,22 @@ Friends</h2></td></tr>
           <td class="memname">bool CRhinoHistoryManager::ModifyObjectAttributesHelper </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bCheckSelf</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Called by <a class="el" href="class_c_rhino_object.html#adf25600ed5ca57ca58eecf7acb947e27">CRhinoObject::ModifyAttributes</a> to trigger history replay when specific parent attributes change. </p>
+<p>Description: Called by <a class="el" href="class_c_rhino_object.html#adf25600ed5ca57ca58eecf7acb947e27">CRhinoObject::ModifyAttributes</a> to trigger history replay when specific parent attributes change. If bCheckSelf is true the object itself can get added to dependant list instead of only children. </p>
 
 </div>
 </div>
@@ -682,7 +692,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 8 2025 16:23:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 14 2025 10:18:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
