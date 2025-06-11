@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.19</span>
+   &#160;<span id="projectnumber">8.20</span>
    </div>
   </td>
  </tr>
@@ -255,6 +255,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a191a62076032b6c2e14bcaf9792c875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1de7c5f11e7309a9b11885beee32163"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#ae1de7c5f11e7309a9b11885beee32163">RestoreBackupFile</a> (const wchar_t *filename, const wchar_t *tempname)</td></tr>
 <tr class="separator:ae1de7c5f11e7309a9b11885beee32163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faf11ff95852556d5745ee4e1b160f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_utilities.html#a3faf11ff95852556d5745ee4e1b160f8">StripPath</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;lpsFileName)</td></tr>
+<tr class="separator:a3faf11ff95852556d5745ee4e1b160f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File IO helpers. </p>
@@ -3192,10 +3194,37 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3faf11ff95852556d5745ee4e1b160f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faf11ff95852556d5745ee4e1b160f8">&#9670;&nbsp;</a></span>StripPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CRhinoFileUtilities::StripPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>lpsFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Remove all directory components and leave only the file name. Parameters: lpsFileName [in/out] - File name </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 14 2025 10:18:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 10 2025 20:29:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

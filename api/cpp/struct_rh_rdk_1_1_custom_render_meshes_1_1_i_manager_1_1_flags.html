@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.19</span>
+   &#160;<span id="projectnumber">8.20</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a8f030d689a7f70f7076e8317cac1c1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag is returned when an asynchronous operation (like Displacement) has not yet completed.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a8f030d689a7f70f7076e8317cac1c1d4">More...</a><br /></td></tr>
 <tr class="separator:a8f030d689a7f70f7076e8317cac1c1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba48933d9de3a2b2f570d9faf7f53e94"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#aba48933d9de3a2b2f570d9faf7f53e94">IsDocumentObject</a> = 8</td></tr>
-<tr class="memdesc:aba48933d9de3a2b2f570d9faf7f53e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to indicate that the object id is a document resident object  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#aba48933d9de3a2b2f570d9faf7f53e94">More...</a><br /></td></tr>
+<tr class="memdesc:aba48933d9de3a2b2f570d9faf7f53e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to indicate that the object id is a document resident object. If the flag is not set and IsNonDocumentObject is not set, we will use an expensive method to discover. In other words, one of these flags should be set for optimum speed.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#aba48933d9de3a2b2f570d9faf7f53e94">More...</a><br /></td></tr>
 <tr class="separator:aba48933d9de3a2b2f570d9faf7f53e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732499f4bba1d20088f3092d16bbb12d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a732499f4bba1d20088f3092d16bbb12d">IsNonDocumentObject</a> = 128</td></tr>
+<tr class="memdesc:a732499f4bba1d20088f3092d16bbb12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass in this flag to indicate that the object id is NOT a document resident object.. If the flag is not set and IsDocumentObject is not set, we will use an expensive method to discover. In other words, one of these flags should be set for optimum speed.  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#a732499f4bba1d20088f3092d16bbb12d">More...</a><br /></td></tr>
+<tr class="separator:a732499f4bba1d20088f3092d16bbb12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa435cd62b7de701d4cfea39207d00706"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#aa435cd62b7de701d4cfea39207d00706">None</a> = 0</td></tr>
 <tr class="memdesc:aa435cd62b7de701d4cfea39207d00706"><td class="mdescLeft">&#160;</td><td class="mdescRight">No flags  <a href="struct_rh_rdk_1_1_custom_render_meshes_1_1_i_manager_1_1_flags.html#aa435cd62b7de701d4cfea39207d00706">More...</a><br /></td></tr>
 <tr class="separator:aa435cd62b7de701d4cfea39207d00706"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +230,31 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass in this flag to indicate that the object id is a document resident object </p>
+<p>Pass in this flag to indicate that the object id is a document resident object. If the flag is not set and IsNonDocumentObject is not set, we will use an expensive method to discover. In other words, one of these flags should be set for optimum speed. </p>
+
+</div>
+</div>
+<a id="a732499f4bba1d20088f3092d16bbb12d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732499f4bba1d20088f3092d16bbb12d">&#9670;&nbsp;</a></span>IsNonDocumentObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> RhRdk::CustomRenderMeshes::IManager::Flags::IsNonDocumentObject = 128</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pass in this flag to indicate that the object id is NOT a document resident object.. If the flag is not set and IsDocumentObject is not set, we will use an expensive method to discover. In other words, one of these flags should be set for optimum speed. </p>
 
 </div>
 </div>
@@ -306,7 +333,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 14 2025 10:19:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 10 2025 20:29:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
