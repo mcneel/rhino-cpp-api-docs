@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.20</span>
+   &#160;<span id="projectnumber">8.21</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb960eea1dc03f90281fc47cb427674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae37ee5ede20b90d4252e8905d8d654a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#aae37ee5ede20b90d4252e8905d8d654a">CreateStealthWorksession</a> () const</td></tr>
 <tr class="separator:aae37ee5ede20b90d4252e8905d8d654a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8f831475d950aaad51c4011d81ad5a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a5f8f831475d950aaad51c4011d81ad5a">FileReadingOptions</a> () const</td></tr>
+<tr class="separator:a5f8f831475d950aaad51c4011d81ad5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425c138499eb4f441bb8d58ba3ee52e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a425c138499eb4f441bb8d58ba3ee52e1">FileReadingPlugInFileTypeIndex</a> () const</td></tr>
 <tr class="separator:a425c138499eb4f441bb8d58ba3ee52e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3fcdf669af30eb7e1f2726b3dcefd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a5e3fcdf669af30eb7e1f2726b3dcefd2">FileReadingPlugInId</a> () const</td></tr>
@@ -97,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af15a771342f2490abe526557321828ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efbcab3d8fdc34ad02b1eff4216dd13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a3efbcab3d8fdc34ad02b1eff4216dd13">SetCreateStealthWorksession</a> (bool bCreateStealthWorksession)</td></tr>
 <tr class="separator:a3efbcab3d8fdc34ad02b1eff4216dd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a886867c83923f39fd4e618f9113122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a4a886867c83923f39fd4e618f9113122">SetFileReadingOptions</a> (const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> *options)</td></tr>
+<tr class="separator:a4a886867c83923f39fd4e618f9113122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1bba1f81b32d286cb2f6f4cbb2d0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#a8f1bba1f81b32d286cb2f6f4cbb2d0b1">SetFileReadingPlugInId</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> file_read_plug_in_id, int file_type_index)</td></tr>
 <tr class="separator:a8f1bba1f81b32d286cb2f6f4cbb2d0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f2b633bf0e866fdcecf38ac1f010d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_open_document_options.html#ab4f2b633bf0e866fdcecf38ac1f010d3">SetMakeVisible</a> (bool bMakeVisible)</td></tr>
@@ -188,6 +192,24 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: true if a "stealth" worksession should be created. Remarks: Default value is true. Ideally, this function will vanish in the near future! </p>
+
+</div>
+</div>
+<a id="a5f8f831475d950aaad51c4011d81ad5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f8f831475d950aaad51c4011d81ad5a">&#9670;&nbsp;</a></span>FileReadingOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a>* CRhinoOpenDocumentOptions::FileReadingOptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The options by the file reading plug-in to read the file. Remarks: Default value is null_ptr. </p>
 
 </div>
 </div>
@@ -309,6 +331,24 @@ Static Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bCreateStealthWorksession</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a886867c83923f39fd4e618f9113122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a886867c83923f39fd4e618f9113122">&#9670;&nbsp;</a></span>SetFileReadingOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoOpenDocumentOptions::SetFileReadingOptions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___archivable_dictionary.html">ON_ArchivableDictionary</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -479,7 +519,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 10 2025 20:29:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 8 2025 16:08:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

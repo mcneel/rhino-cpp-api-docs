@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.20</span>
+   &#160;<span id="projectnumber">8.21</span>
    </div>
   </td>
  </tr>
@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_rhino_file_read_options-members.html">List of all members</a>  </div>
@@ -189,6 +190,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae12a9703e43bd9bfc3953c813ee89c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6052be0fbca62580c7e1bfb9f5befbf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#ab6052be0fbca62580c7e1bfb9f5befbf">WorkSessionReferenceModelSerialNumber</a> () const</td></tr>
 <tr class="separator:ab6052be0fbca62580c7e1bfb9f5befbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afd745a632eceea642107ecb61ebc89f0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#afd745a632eceea642107ecb61ebc89f0">GetFileTypeIdAndIndexFromFileExtension</a> (const wchar_t *sFileExtension, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;file_type_id, unsigned int &amp;file_type_index)</td></tr>
+<tr class="separator:afd745a632eceea642107ecb61ebc89f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365db846767bcdd6a76e97bf40c19f7e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_file_read_options.html#a365db846767bcdd6a76e97bf40c19f7e">GetFileTypeIdAndIndexFromFileName</a> (const wchar_t *sFileName, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;file_type_id, unsigned int &amp;file_type_index)</td></tr>
+<tr class="separator:a365db846767bcdd6a76e97bf40c19f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -450,6 +458,90 @@ else
       </table>
 </div><div class="memdoc">
 <p>Parameters: file_name - [out] The file name, including the extension. Does not include drive or directory information. Returns: True if the value was returned. </p>
+
+</div>
+</div>
+<a id="afd745a632eceea642107ecb61ebc89f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd745a632eceea642107ecb61ebc89f0">&#9670;&nbsp;</a></span>GetFileTypeIdAndIndexFromFileExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileReadOptions::GetFileTypeIdAndIndexFromFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sFileExtension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>file_type_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>file_type_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a365db846767bcdd6a76e97bf40c19f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a365db846767bcdd6a76e97bf40c19f7e">&#9670;&nbsp;</a></span>GetFileTypeIdAndIndexFromFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoFileReadOptions::GetFileTypeIdAndIndexFromFileName </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>file_type_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>file_type_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1251,7 +1343,7 @@ else
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 10 2025 20:29:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 8 2025 16:08:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

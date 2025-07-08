@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.20</span>
+   &#160;<span id="projectnumber">8.21</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a133feea128807370c29a4b467a293e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b77179e9c33b9680b46947ce25fabfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#a9b77179e9c33b9680b46947ce25fabfa">ClosestPointTo</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;test_point) const</td></tr>
 <tr class="separator:a9b77179e9c33b9680b46947ce25fabfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3be764e3856980a2c56e8fe813a0035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#ad3be764e3856980a2c56e8fe813a0035">ClosestPointTo</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;test_point, bool finite_chord) const</td></tr>
+<tr class="separator:ad3be764e3856980a2c56e8fe813a0035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2cea825235da9735f589c31601e0824"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#ac2cea825235da9735f589c31601e0824">ClosestPointTo</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;test_point, double *t) const</td></tr>
 <tr class="separator:ac2cea825235da9735f589c31601e0824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa622ab1e24cec78af8b56c938842d733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#aa622ab1e24cec78af8b56c938842d733">Create</a> (const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> start, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> end)</td></tr>
@@ -99,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7325af8b8ac389b185de1fc36c74e7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af321e52cab2a3bd7dabea63eac2c28de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#af321e52cab2a3bd7dabea63eac2c28de">DistanceTo</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> test_point) const</td></tr>
 <tr class="separator:af321e52cab2a3bd7dabea63eac2c28de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b52f389cee01687b5ededffd769dc5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#a36b52f389cee01687b5ededffd769dc5">DistanceTo</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> test_point, bool finite_chord) const</td></tr>
+<tr class="separator:a36b52f389cee01687b5ededffd769dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2e6d5981de44bf8d23f4f14ffcff4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#a2f2e6d5981de44bf8d23f4f14ffcff4b">GetBoundingBox</a> (<a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bbox, int bGrowBox=false) const</td></tr>
 <tr class="separator:a2f2e6d5981de44bf8d23f4f14ffcff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a09d4f88d6bd6e42b41b5816bc23a4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___line.html#a6a09d4f88d6bd6e42b41b5816bc23a4f">GetTightBoundingBox</a> (<a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;tight_bbox, bool bGrowBox=false, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform=nullptr) const</td></tr>
@@ -302,7 +306,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a9b77179e9c33b9680b46947ce25fabfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b77179e9c33b9680b46947ce25fabfa">&#9670;&nbsp;</a></span>ClosestPointTo() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b77179e9c33b9680b46947ce25fabfa">&#9670;&nbsp;</a></span>ClosestPointTo() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,8 +324,37 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad3be764e3856980a2c56e8fe813a0035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3be764e3856980a2c56e8fe813a0035">&#9670;&nbsp;</a></span>ClosestPointTo() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_Line::ClosestPointTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>finite_chord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Find the point on the infinite or finite line that is closest to the test_point. Parameters: test_point - [in] finite_chord - [in] if true, the distance is reported to the line as a finite chord Returns: The point on the line that is closest to test_point. </p>
+
+</div>
+</div>
 <a id="ac2cea825235da9735f589c31601e0824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2cea825235da9735f589c31601e0824">&#9670;&nbsp;</a></span>ClosestPointTo() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2cea825235da9735f589c31601e0824">&#9670;&nbsp;</a></span>ClosestPointTo() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +458,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="af321e52cab2a3bd7dabea63eac2c28de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af321e52cab2a3bd7dabea63eac2c28de">&#9670;&nbsp;</a></span>DistanceTo()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af321e52cab2a3bd7dabea63eac2c28de">&#9670;&nbsp;</a></span>DistanceTo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -440,6 +473,35 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Find the point on the (infinite) line that is closest to the test_point. Parameters: test_point - [in] Returns: distance from the point on the line that is closest to test_point. See Also: <a class="el" href="class_o_n__3d_point.html#a645aae8223672bebfdda756671763e01">ON_3dPoint::DistanceTo</a> <a class="el" href="class_o_n___line.html#ac2cea825235da9735f589c31601e0824">ON_Line::ClosestPointTo</a> </p>
+
+</div>
+</div>
+<a id="a36b52f389cee01687b5ededffd769dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b52f389cee01687b5ededffd769dc5">&#9670;&nbsp;</a></span>DistanceTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_Line::DistanceTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>test_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>finite_chord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Find the point on the infinite or finite line that is closest to the test_point. Parameters: test_point - [in] finite_chord - [in] if true, the distance is reported to the line as a finite chord Returns: distance from the point on the line that is closest to test_point. See Also: <a class="el" href="class_o_n__3d_point.html#a645aae8223672bebfdda756671763e01">ON_3dPoint::DistanceTo</a> <a class="el" href="class_o_n___line.html#ac2cea825235da9735f589c31601e0824">ON_Line::ClosestPointTo</a> </p>
 
 </div>
 </div>
@@ -1098,7 +1160,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 10 2025 20:29:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 8 2025 16:08:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

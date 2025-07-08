@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.20</span>
+   &#160;<span id="projectnumber">8.21</span>
    </div>
   </td>
  </tr>
@@ -72,10 +72,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a133feea128807370c29a4b467a293e54">BoundingBox</a>() const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___line.html#ac2cea825235da9735f589c31601e0824">ClosestPointTo</a>(const ON_3dPoint &amp;test_point, double *t) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a9b77179e9c33b9680b46947ce25fabfa">ClosestPointTo</a>(const ON_3dPoint &amp;test_point) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_o_n___line.html#a9b2b1cbc0954c129e3abcf58c9905a28">Create</a>(const ON_3dPoint start, const ON_3dPoint end)</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#aa622ab1e24cec78af8b56c938842d733">Create</a>(const ON_2dPoint start, const ON_2dPoint end)</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_o_n___line.html#a7325af8b8ac389b185de1fc36c74e7fd">Direction</a>() const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#af321e52cab2a3bd7dabea63eac2c28de">DistanceTo</a>(ON_3dPoint test_point) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___line.html#ad3be764e3856980a2c56e8fe813a0035">ClosestPointTo</a>(const ON_3dPoint &amp;test_point, bool finite_chord) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a9b2b1cbc0954c129e3abcf58c9905a28">Create</a>(const ON_3dPoint start, const ON_3dPoint end)</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___line.html#aa622ab1e24cec78af8b56c938842d733">Create</a>(const ON_2dPoint start, const ON_2dPoint end)</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a7325af8b8ac389b185de1fc36c74e7fd">Direction</a>() const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___line.html#af321e52cab2a3bd7dabea63eac2c28de">DistanceTo</a>(ON_3dPoint test_point) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a36b52f389cee01687b5ededffd769dc5">DistanceTo</a>(ON_3dPoint test_point, bool finite_chord) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___line.html#a21f4e17d22dc955917cd54c1e9b2b689">from</a></td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___line.html#a2f2e6d5981de44bf8d23f4f14ffcff4b">GetBoundingBox</a>(ON_BoundingBox &amp;bbox, int bGrowBox=false) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___line.html#a6a09d4f88d6bd6e42b41b5816bc23a4f">GetTightBoundingBox</a>(ON_BoundingBox &amp;tight_bbox, bool bGrowBox=false, const ON_Xform *xform=nullptr) const</td><td class="entry"><a class="el" href="class_o_n___line.html">ON_Line</a></td><td class="entry"></td></tr>
@@ -110,7 +112,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 10 2025 20:29:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 8 2025 16:08:35 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
