@@ -1116,7 +1116,7 @@ var searchData=
   ['getunderlyinginstances_8503',['GetUnderlyingInstances',['../class_c_rh_rdk_content.html#a0dd3a2841877d9873b61f4c4dcc29dc4',1,'CRhRdkContent']]],
   ['getunderscoreposition_8504',['GetUnderscorePosition',['../class_o_n___font.html#a62bf510fe05c84231e7860baa4b6fe34',1,'ON_Font']]],
   ['getunderscoresize_8505',['GetUnderscoreSize',['../class_o_n___font.html#a67f3c3918e03cc77306297c975368de9',1,'ON_Font']]],
-  ['getundorecords_8506',['GetUndoRecords',['../class_c_rhino_doc.html#a7026cca71785e18e245d9ea8260b741e',1,'CRhinoDoc']]],
+  ['getundorecords_8506',['GetUndoRecords',['../class_c_rhino_doc.html#ad3f29ba5293cadacb9391cc087cf1501',1,'CRhinoDoc::GetUndoRecords(ON_SimpleArray&lt; class CRhUndoRecord * &gt; &amp;records) const'],['../class_c_rhino_doc.html#a8d9e1660814ab0d919cbccbc905020b7',1,'CRhinoDoc::GetUndoRecords(ON_SimpleArray&lt; class CRhUndoRecord * &gt; &amp;records, bool includeActiveRecord) const']]],
   ['getundostring_8507',['GetUndoString',['../class_c_rh_rdk_task.html#a1e97824acf9676de4f0f167af6a592ed',1,'CRhRdkTask']]],
   ['getuniquemenuitemid_8508',['GetUniqueMenuItemID',['../class_c_rhino_app.html#a439bf7aea2a3be77a8ffad979603dfec',1,'CRhinoApp']]],
   ['getunitsystem_8509',['GetUnitSystem',['../class_o_n___aerial_photo_camera_position.html#a9a04a5e7a794689cf4a1611dc8deef16',1,'ON_AerialPhotoCameraPosition']]],

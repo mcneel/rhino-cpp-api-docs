@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.21</span>
+   &#160;<span id="projectnumber">8.22</span>
    </div>
   </td>
  </tr>
@@ -8078,7 +8078,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If you modify the values of the single precision vertices in m_V[], then you must call <a class="el" href="class_o_n___mesh.html#aab94df03536804d2573b383699db4c57">UpdateDoublePrecisionVertices()</a>. Remarks: If double precision vertices are not present, this function creates them. </p>
+<p>Description: Copies the values of the single precision vertices array to the double precision array. If you modify the values of the single precision vertices in m_V[], and double precision vertices are present, then you must call <a class="el" href="class_o_n___mesh.html#aab94df03536804d2573b383699db4c57">UpdateDoublePrecisionVertices()</a>. Remarks: If double precision vertices are not present, this function creates them. </p>
 
 </div>
 </div>
@@ -8096,7 +8096,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If you modify the values of double precision vertices, then you must call <a class="el" href="class_o_n___mesh.html#ac78c5b48affca5a6218278c7037a2776">UpdateSinglePrecisionVertices()</a>. Remarks: If double precision vertices are not present, this function does nothing. </p>
+<p>Description: Copies the values of the double precision vertices array to the single precision array. If you modify the values of double precision vertices only, then you must call <a class="el" href="class_o_n___mesh.html#ac78c5b48affca5a6218278c7037a2776">UpdateSinglePrecisionVertices()</a>. Remarks: If double precision vertices are not present, this function empties the single precision vertices array. </p>
 
 </div>
 </div>
@@ -8970,7 +8970,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 8 2025 16:08:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2025 21:20:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

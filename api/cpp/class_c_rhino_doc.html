@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.21</span>
+   &#160;<span id="projectnumber">8.22</span>
    </div>
   </td>
  </tr>
@@ -336,8 +336,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6929d63bf517b9050a110d6422959fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e4406c9af52b8be5c71f38cd48478c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a59e4406c9af52b8be5c71f38cd48478c">GetTitle</a> (void) const</td></tr>
 <tr class="separator:a59e4406c9af52b8be5c71f38cd48478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7026cca71785e18e245d9ea8260b741e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a7026cca71785e18e245d9ea8260b741e">GetUndoRecords</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class CRhUndoRecord * &gt; &amp;) const</td></tr>
-<tr class="separator:a7026cca71785e18e245d9ea8260b741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f29ba5293cadacb9391cc087cf1501"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ad3f29ba5293cadacb9391cc087cf1501">GetUndoRecords</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class CRhUndoRecord * &gt; &amp;records) const</td></tr>
+<tr class="separator:ad3f29ba5293cadacb9391cc087cf1501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9e1660814ab0d919cbccbc905020b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a8d9e1660814ab0d919cbccbc905020b7">GetUndoRecords</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class CRhUndoRecord * &gt; &amp;records, bool includeActiveRecord) const</td></tr>
+<tr class="separator:a8d9e1660814ab0d919cbccbc905020b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31cab07b0ac361af00e3450a65754bac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a31cab07b0ac361af00e3450a65754bac">GetUserString</a> (const wchar_t *key, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;string_value) const</td></tr>
 <tr class="separator:a31cab07b0ac361af00e3450a65754bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf3c7849373da549867502d3fe466b28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#adf3c7849373da549867502d3fe466b28">GetUserStringKeys</a> (<a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;user_string_keys) const</td></tr>
@@ -4351,8 +4353,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a7026cca71785e18e245d9ea8260b741e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7026cca71785e18e245d9ea8260b741e">&#9670;&nbsp;</a></span>GetUndoRecords()</h2>
+<a id="ad3f29ba5293cadacb9391cc087cf1501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f29ba5293cadacb9391cc087cf1501">&#9670;&nbsp;</a></span>GetUndoRecords() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4361,12 +4363,40 @@ Friends</h2></td></tr>
           <td class="memname">int CRhinoDoc::GetUndoRecords </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class CRhUndoRecord * &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>records</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Number of undo records. </p>
+
+</div>
+</div>
+<a id="a8d9e1660814ab0d919cbccbc905020b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9e1660814ab0d919cbccbc905020b7">&#9670;&nbsp;</a></span>GetUndoRecords() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoDoc::GetUndoRecords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class CRhUndoRecord * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>records</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeActiveRecord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -9684,7 +9714,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 8 2025 16:08:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2025 21:19:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
