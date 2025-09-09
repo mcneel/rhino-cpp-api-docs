@@ -70,7 +70,7 @@ var searchData=
   ['hash32fromsha1hash_8807',['Hash32FromSHA1Hash',['../class_o_n___hash32_table_item.html#ab2009a605c072a28367a2dbeeca7a82d',1,'ON_Hash32TableItem']]],
   ['hashcalculationtime_8808',['HashCalculationTime',['../class_o_n___content_hash.html#ab9432a268551b74ccfcf6809590ef756',1,'ON_ContentHash']]],
   ['hashrgb_8809',['HashRGB',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a9836f73d2c2139911711b498dd0ed192',1,'ON_Color']]],
-  ['hashrgba_8810',['HashRGBA',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a149d553986e80d6873443866ea55a46b',1,'ON_Color::HashRGBA()'],['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a5eb0a031cc5e9e05a2e67019cdf76099',1,'ON_Color::HashRGBa()']]],
+  ['hashrgba_8810',['HashRGBa',['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a5eb0a031cc5e9e05a2e67019cdf76099',1,'ON_Color::HashRGBa()'],['../class_o_n___color.html#a513c92c70be3bafb5e0d7d49fe07a1a0a149d553986e80d6873443866ea55a46b',1,'ON_Color::HashRGBA()']]],
   ['hashtableitemhash_8811',['HashTableItemHash',['../class_o_n___hash32_table_item.html#a172a42a6ad297f17c51383f55869eb43',1,'ON_Hash32TableItem']]],
   ['hashtableserialnumber_8812',['HashTableSerialNumber',['../class_o_n___hash32_table_item.html#a983025533e0eead3faaa661096cc9a8d',1,'ON_Hash32TableItem::HashTableSerialNumber()'],['../class_o_n___hash32_table.html#ab607a4f719dfcca78fb1c1942a47407c',1,'ON_Hash32Table::HashTableSerialNumber()']]],
   ['hashtype_8813',['HashType',['../class_o_n___sub_d_hash.html#ae3ef0e6a6af962e40e0d4f32cb8c5313',1,'ON_SubDHash']]],
