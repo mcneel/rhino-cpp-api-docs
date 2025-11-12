@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.24</span>
+   &#160;<span id="projectnumber">8.25</span>
    </div>
   </td>
  </tr>
@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a153ebcd8dbf79e456ff6350068b49adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a256c788ada72568d6427a498f8c2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object_iterator.html#a00a256c788ada72568d6427a498f8c2b">SetLayerFilter</a> (int layer_index)</td></tr>
 <tr class="separator:a00a256c788ada72568d6427a498f8c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb441d4d3561cb17a0ad26a68e6d5194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object_iterator.html#adb441d4d3561cb17a0ad26a68e6d5194">SetMaterialFilter</a> (int material_index)</td></tr>
+<tr class="separator:adb441d4d3561cb17a0ad26a68e6d5194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c81ea6768c14efd8f1828a020971f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object_iterator.html#aa0c81ea6768c14efd8f1828a020971f7">SetObjectFilter</a> (unsigned int object_filter)</td></tr>
 <tr class="separator:aa0c81ea6768c14efd8f1828a020971f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66ec9cf9931d4e364575875e671b826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object_iterator.html#ab66ec9cf9931d4e364575875e671b826">SetSpaceFilter</a> (bool bEnable, <a class="el" href="class_o_n.html#aa07685e174845a37dd4e9e29516e38b8">ON::active_space</a> space, bool bFilter)</td></tr>
@@ -639,6 +641,37 @@ See Also:
 </pre> 
 </div>
 </div>
+<a id="adb441d4d3561cb17a0ad26a68e6d5194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb441d4d3561cb17a0ad26a68e6d5194">&#9670;&nbsp;</a></span>SetMaterialFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoObjectIterator::SetMaterialFilter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>material_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: The material filter can be used to limit the iteration to objects on a specific material. Parameters: material_index - [in] index of material or ON_UNSET_INT_INDEX do disable material filtering. Example: If you want to iterate through the list of objects that are on mesh and brep objects, then you would do something like: </p><pre class="fragment">const CRhinoMaterial&amp; material = ...
+int material_index = material.Index();
+</pre><p>/ or </p><pre class="fragment">    CRhinoObject&amp; object = ...;
+    int material_index = object.Attributes().m_material_index;
+
+    CRhinoObjectIterator it();
+    it.SetMaterialFilter( material_index );
+    CRhino3Object* pObject;
+    for ( pObject = it.First(); pObject; pObject = it.Next() )
+    {
+      ...
+    }
+</pre><p> Remarks: By default, no material filter is enabled. See Also: <a class="el" href="class_c_rhino_object_iterator.html#aa0c81ea6768c14efd8f1828a020971f7">CRhinoObjectIterator::SetObjectFilter</a> <a class="el" href="class_c_rhino_object_iterator.html#a00a256c788ada72568d6427a498f8c2b">CRhinoObjectIterator::SetLayerFilter</a> <a class="el" href="class_c_rhino_object_iterator.html#af21a1fae82873a49ae7e694f7c50cf71">CRhinoObjectIterator::EnableSelectedFilter</a> <a class="el" href="class_c_rhino_object_iterator.html#af4c0fac300721a465f9cafc662573c6a">CRhinoObjectIterator::EnableVisibleFilter</a> </p>
+
+</div>
+</div>
 <a id="aa0c81ea6768c14efd8f1828a020971f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0c81ea6768c14efd8f1828a020971f7">&#9670;&nbsp;</a></span>SetObjectFilter()</h2>
 
@@ -825,7 +858,7 @@ for ( pObject = it.First(); pObject; pObject = it.Next() )
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2025 16:56:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 11 2025 17:02:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
