@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.27</span>
+   &#160;<span id="projectnumber">8.28</span>
    </div>
   </td>
  </tr>
@@ -2448,6 +2448,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga93062fafc421414a574846e6f20a2c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1e3ac3237aacc4116ab4f9a85ed54b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab1e3ac3237aacc4116ab4f9a85ed54b8">RhinoCurveSplit</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;splitter, double tolerance, double angtolrads, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;pieces)</td></tr>
 <tr class="separator:gab1e3ac3237aacc4116ab4f9a85ed54b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecaf5a7f15989eccf11a4467ab789782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaecaf5a7f15989eccf11a4467ab789782">RhinoCurveSplit</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, double tolerance, double angtolrads, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;pieces)</td></tr>
+<tr class="separator:gaecaf5a7f15989eccf11a4467ab789782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac22a85384cf9e430a7b522f02fef1c24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gac22a85384cf9e430a7b522f02fef1c24">RhinoCurveSurfaceIntersect</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;surface, double distance_tolerance, double angle_tolerance_radians, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_c_rhino_c_s_x_event.html">CRhinoCSXEvent</a> &gt; &amp;x, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *curve_domain=NULL, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_u_domain=NULL, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_v_domain=NULL)</td></tr>
 <tr class="separator:gac22a85384cf9e430a7b522f02fef1c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64e57cf29ba55cd905da40e4721baf11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga64e57cf29ba55cd905da40e4721baf11">RhinoCutUpSurface</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;srf, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bFlip, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;EdgeCurves, double ftol, double ctol, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;Breps, double *max_tol_used=nullptr)</td></tr>
@@ -17472,7 +17474,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gab1e3ac3237aacc4116ab4f9a85ed54b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1e3ac3237aacc4116ab4f9a85ed54b8">&#9670;&nbsp;</a></span>RhinoCurveSplit()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1e3ac3237aacc4116ab4f9a85ed54b8">&#9670;&nbsp;</a></span>RhinoCurveSplit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -17515,6 +17517,53 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Splits a curve into pieces using a surface or a polysurface Parameters: curve - [in] Curve to split. splitter - [in] Splitter is a single, non-manifold Brep. tolerance - [in] intersection tolerance angtolrads - [in] angle tolerance in radians pieces - [out] Curves of all the split components. Returns: true if successful, false otherwise. Remarks: The caller is responsible for deleting the pieces when finished. </p>
+
+</div>
+</div>
+<a id="gaecaf5a7f15989eccf11a4467ab789782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecaf5a7f15989eccf11a4467ab789782">&#9670;&nbsp;</a></span>RhinoCurveSplit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoCurveSplit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angtolrads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pieces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Splits a curve into pieces using an intersecting plane. Parameters: curve - [in] Curve to split. plane - [in] Intersecting plane. tolerance - [in] intersection tolerance angtolrads - [in] angle tolerance in radians pieces - [out] Curves of all the split components. Returns: true if successful, false otherwise. Remarks: The caller is responsible for deleting the pieces when finished. </p>
 
 </div>
 </div>
@@ -19819,7 +19868,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Local minimization for point on a curve with tangent perpendicular to N. Parameters: curve - [in] A valid curve to evaluate. N - [in] N and the curve tangent define a plane, must not be zero. In this plane, there is a vector V perpendicular to the tangent. subdomain - [in] Subdomain to evaluate, must not be empty. seed - [in] A seed parameter, must be contained in the non-empty interval subdomain. curve_param - [out] The parameter on the curve. angle_error - [out] The measure in radians of the angle between N and V. The angle will be zero when the result is an inflection.Returns: Return is true if the minimization succeeds, regardless of angle_error. Remarks: The algorithm minimizes the square of the dot product of N with the curve tangent. It is possible that the result will not be close to zero. </p>
+<p>Description: Local minimization for point on a curve with tangent perpendicular to N. Parameters: curve - [in] A valid curve to evaluate. N - [in] N and the curve tangent define a plane, must not be zero. In this plane, there is a vector V perpendicular to the tangent. subdomain - [in] Subdomain to evaluate, must not be empty. seed - [in] A seed parameter, must be contained in the non-empty interval subdomain. curve_param - [out] The parameter on the curve. angle_error - [out] The measure in radians of the angle between N and V. The angle will be zero when the result is an inflection. Returns: Return is true if the minimization succeeds, regardless of angle_error. Remarks: The algorithm minimizes the square of the dot product of N with the curve tangent. It is possible that the result will not be close to zero. </p>
 
 </div>
 </div>
@@ -38428,7 +38477,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 13 2026 16:22:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 10 2026 15:05:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
