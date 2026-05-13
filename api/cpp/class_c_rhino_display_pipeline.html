@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.30</span>
+   &#160;<span id="projectnumber">8.31</span>
    </div>
   </td>
  </tr>
@@ -393,6 +393,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7b3d11d7cc6fe86578fcd17d6a13f58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536545599aac963232832f1f93299e6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a536545599aac963232832f1f93299e6d">DrawShadedBreps</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___brep.html">ON_Brep</a> * &gt; &amp;breps, const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *=nullptr)</td></tr>
 <tr class="separator:a536545599aac963232832f1f93299e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213f117f5a542ac8f3161465172d9631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a213f117f5a542ac8f3161465172d9631">DrawShadedInstance</a> (const <a class="el" href="class_c_rhino_instance_definition.html">CRhinoInstanceDefinition</a> *, const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *material, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *pConstXform, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
+<tr class="separator:a213f117f5a542ac8f3161465172d9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8932b51419631f3ef04a94b5f8828d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a0b8932b51419631f3ef04a94b5f8828d">DrawShadedMesh</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh, const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *=nullptr)</td></tr>
 <tr class="separator:a0b8932b51419631f3ef04a94b5f8828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c82985ee714144e0e98bf777060395b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a5c82985ee714144e0e98bf777060395b">DrawShadedMeshes</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *meshes, int count, const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *material, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *const *caches)</td></tr>
@@ -7396,6 +7398,46 @@ Friends</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a213f117f5a542ac8f3161465172d9631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213f117f5a542ac8f3161465172d9631">&#9670;&nbsp;</a></span>DrawShadedInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayPipeline::DrawShadedInstance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_instance_definition.html">CRhinoInstanceDefinition</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_display_pipeline_material.html">CDisplayPipelineMaterial</a> *&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>pConstXform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -16077,7 +16119,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 14 2026 17:18:29 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 12 2026 18:06:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
