@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.31</span>
+   &#160;<span id="projectnumber">8.32</span>
    </div>
   </td>
  </tr>
@@ -652,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a plane that contains the intersection of a bounding box. This method uses box edges intersections rather than box vertices projections on the plane, which is what CreatePseudoInfinitePlane uses. Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
+<p>Description: Create a plane that contains the <em>intersection</em> with a bounding box. This method uses box edges intersections rather than box vertices projections on the plane, which is what CreatePseudoInfinitePlane uses. (While the resulting bounding box is tighter, it also means that the plane must intersect with the plane, or no result will be computed.) Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a plane that contains the intersection of a bounding box. This method uses box edges intersections rather than box vertices projections on the plane, which is what CreatePseudoInfinitePlane uses. Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
+<p>Description: Create a plane that contains the <em>intersection</em> with a bounding box. This method uses box edges intersections rather than box vertices projections on the plane, which is what CreatePseudoInfinitePlane uses. (While the resulting bounding box is tighter, it also means that the plane must intersect with the plane, or no result will be computed.) Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Create a plane that contains the projection of a bounding box. Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
+<p>Description: Create a plane that contains the projection of a bounding box. (You can use CreatePlaneThroughBox is you know that the box intersects with the plane, to make it way tighter) Parameters: plane - [in] bbox - [in] padding - [in] amount of extra padding to add around the edges of the plane. Default is 0.0625 Returns: true if successful </p>
 
 </div>
 </div>
@@ -2310,6 +2310,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___geometry.html#add710872e89bc29e1ed1321b3e70b1b1">ON_Geometry</a>.</p>
 
+<p>Reimplemented in <a class="el" href="class_o_n___clipping_plane_surface.html#ac0f890c1339bc630fc61c7cd1f81e9e0">ON_ClippingPlaneSurface</a>.</p>
+
 </div>
 </div>
 <a id="a17fad048ac0c906204835660e1e5365b"></a>
@@ -2482,7 +2484,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2026 18:06:43 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 9 2026 16:08:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

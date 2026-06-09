@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.31</span>
+   &#160;<span id="projectnumber">8.32</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a47e3e1dd3e01edf38bb4e331bc3b3b77"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___clipping_plane_surface.html#a47e3e1dd3e01edf38bb4e331bc3b3b77">SizeOf</a> () const override</td></tr>
 <tr class="memdesc:a47e3e1dd3e01edf38bb4e331bc3b3b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___object.html#a0299df21bfed90d7b5bfb24cdcf5e6c1">ON_Object::SizeOf</a> override  <a href="class_o_n___clipping_plane_surface.html#a47e3e1dd3e01edf38bb4e331bc3b3b77">More...</a><br /></td></tr>
 <tr class="separator:a47e3e1dd3e01edf38bb4e331bc3b3b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f890c1339bc630fc61c7cd1f81e9e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___clipping_plane_surface.html#ac0f890c1339bc630fc61c7cd1f81e9e0">Transform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;) override</td></tr>
+<tr class="separator:ac0f890c1339bc630fc61c7cd1f81e9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a93074a42a7e29a210bae50d2b59c5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___clipping_plane_surface.html#a1a93074a42a7e29a210bae50d2b59c5e">Write</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;) const override</td></tr>
 <tr class="memdesc:a1a93074a42a7e29a210bae50d2b59c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___object.html#a16eb9ab6bf0d0a614655cf9cd055871a">ON_Object::Write</a> override  <a href="class_o_n___clipping_plane_surface.html#a1a93074a42a7e29a210bae50d2b59c5e">More...</a><br /></td></tr>
 <tr class="separator:a1a93074a42a7e29a210bae50d2b59c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,8 +214,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaeff9350a3ec037a47a5b897c7fdf013 inherit pub_methods_class_o_n___plane_surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d0b75441e6358e6b6a764759c18ae1 inherit pub_methods_class_o_n___plane_surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_surface.html#a46d0b75441e6358e6b6a764759c18ae1">Split</a> (int dir, double c, <a class="el" href="class_o_n___surface.html">ON_Surface</a> *&amp;west_or_south_side, <a class="el" href="class_o_n___surface.html">ON_Surface</a> *&amp;east_or_north_side) const override</td></tr>
 <tr class="separator:a46d0b75441e6358e6b6a764759c18ae1 inherit pub_methods_class_o_n___plane_surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19cc16d1443b329f04e015b2e3fa659 inherit pub_methods_class_o_n___plane_surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_surface.html#ad19cc16d1443b329f04e015b2e3fa659">Transform</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;) override</td></tr>
-<tr class="separator:ad19cc16d1443b329f04e015b2e3fa659 inherit pub_methods_class_o_n___plane_surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17fad048ac0c906204835660e1e5365b inherit pub_methods_class_o_n___plane_surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___plane_surface.html#a17fad048ac0c906204835660e1e5365b">Transpose</a> () override</td></tr>
 <tr class="memdesc:a17fad048ac0c906204835660e1e5365b inherit pub_methods_class_o_n___plane_surface"><td class="mdescLeft">&#160;</td><td class="mdescRight">transpose surface parameterization (swap "s" and "t")  <a href="class_o_n___plane_surface.html#a17fad048ac0c906204835660e1e5365b">More...</a><br /></td></tr>
 <tr class="separator:a17fad048ac0c906204835660e1e5365b inherit pub_methods_class_o_n___plane_surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -775,6 +775,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac0f890c1339bc630fc61c7cd1f81e9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f890c1339bc630fc61c7cd1f81e9e0">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_ClippingPlaneSurface::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Transforms the object.</p>
+<p>Parameters: xform - [in] transformation to apply to object. If xform.IsSimilarity() is zero, then you may want to call MakeSquishy() before calling Transform.</p>
+<p>Remarks: When overriding this function, be sure to include a call to <a class="el" href="class_o_n___object.html#a881bd2f0d8515adba1c42c578bcb7052">ON_Object::TransformUserData()</a> which takes care of transforming any <a class="el" href="class_o_n___user_data.html">ON_UserData</a> that may be attached to the object.</p>
+<p>See Also: <a class="el" href="class_o_n___geometry.html#af156cd098b9e68fab5f32e76b1e274e2">ON_Geometry::IsDeformable()</a>;</p>
+<p>Remarks: Classes derived from <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> should call <a class="el" href="class_o_n___geometry.html#add710872e89bc29e1ed1321b3e70b1b1">ON_Geometry::Transform()</a> to handle user data transformations and then transform their definition. </p>
+
+<p>Reimplemented from <a class="el" href="class_o_n___plane_surface.html#ad19cc16d1443b329f04e015b2e3fa659">ON_PlaneSurface</a>.</p>
+
+</div>
+</div>
 <a id="a1a93074a42a7e29a210bae50d2b59c5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a93074a42a7e29a210bae50d2b59c5e">&#9670;&nbsp;</a></span>Write()</h2>
 
@@ -823,7 +856,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2026 18:06:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 9 2026 16:08:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
