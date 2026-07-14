@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.32</span>
+   &#160;<span id="projectnumber">8.33</span>
    </div>
   </td>
  </tr>
@@ -406,7 +406,7 @@ Friends</h2></td></tr>
 <tr class="separator:a6a79b2ffc27a354b218a55ecacd47a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) 1993-2017 Robert McNeel &amp; Associates. All rights reserved. Rhinoceros is a registered trademark of Robert McNeel &amp; Associates.</p>
+<div class="textblock"><p>Copyright (c) 1993-2026 Robert McNeel &amp; Associates. All rights reserved. Rhinoceros is a registered trademark of Robert McNeel &amp; Associates.</p>
 <p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
 <p>For complete Rhino SDK copyright information see <a href="http://www.rhino3d.com/developer">http://www.rhino3d.com/developer</a>. class <a class="el" href="class_c_rhino_plug_in.html">CRhinoPlugIn</a></p>
 <p>Description: This is the base class for every Rhino plug-in type. Never derive directly from this class use one of the following: <a class="el" href="class_c_rhino_utility_plug_in.html">CRhinoUtilityPlugIn</a> <a class="el" href="class_c_rhino_file_import_plug_in.html">CRhinoFileImportPlugIn</a> <a class="el" href="class_c_rhino_file_export_plug_in.html">CRhinoFileExportPlugIn</a> <a class="el" href="class_c_rhino_digitizer_plug_in.html">CRhinoDigitizerPlugIn</a> <a class="el" href="class_c_rhino_render_plug_in.html">CRhinoRenderPlugIn</a> CRhinoDisplayPlugIn</p>
@@ -624,7 +624,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: DEPRECATED method, use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000207">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead. </dd></dl>
+<p>Description: DEPRECATED method, use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000206">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_i_rhino_add_properties_pages.html">IRhinoAddPropertiesPages</a> to add object properties panels instead. </dd></dl>
 
 </div>
 </div>
@@ -806,7 +806,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <hr  />
-<p> Description: Verifies that there is a valid product license for your plug-in, using the Rhino licensing system. If the plug-in is installed as a standalone node, the locally installed license will be validated. If the plug-in is installed as a network node, a loaner license will be requested by the system's assigned Zoo server. If the Zoo server finds and returns a license, then this license will be validated. If no license is found, then the user will be prompted to provide a license key, which will be validated. Validation is provided by your plug-in's one and only CRhinoLicenseValidator-derived class object. Parameters: capabilities [in] - an unsigned int made by or-ing ( | ) values from the <a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2">CRhinoPlugIn::license_capabilities</a> enum. In the event that a license was not found, or if the user wants to change the way your plug-in is licenses, then provide what capabilities your license has by using this enumeration flag. text_mask [in] - In the event that the user needs to be asked for a license, then you can provide a text mask, which helps the user to distinguish between proper and improper user input of your license code. Note, if you do not want to use a text mask, then pass in a null value for this parameter. For more information on text masks, search MSDN for the System.Windows.Forms.MaskedTextBox class. Returns: True if a valid license was found. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000208">Deprecated:</a></b></dt><dd>Call SetLicenseCapabilities, then <a class="el" href="class_c_rhino_plug_in.html#a59427a6718017d40179c29a10af0ba8a">GetLicense(void)</a> instead. </dd></dl>
+<p> Description: Verifies that there is a valid product license for your plug-in, using the Rhino licensing system. If the plug-in is installed as a standalone node, the locally installed license will be validated. If the plug-in is installed as a network node, a loaner license will be requested by the system's assigned Zoo server. If the Zoo server finds and returns a license, then this license will be validated. If no license is found, then the user will be prompted to provide a license key, which will be validated. Validation is provided by your plug-in's one and only CRhinoLicenseValidator-derived class object. Parameters: capabilities [in] - an unsigned int made by or-ing ( | ) values from the <a class="el" href="class_c_rhino_plug_in.html#af96faa0019d39747ba99ef3e72c09fb2">CRhinoPlugIn::license_capabilities</a> enum. In the event that a license was not found, or if the user wants to change the way your plug-in is licenses, then provide what capabilities your license has by using this enumeration flag. text_mask [in] - In the event that the user needs to be asked for a license, then you can provide a text mask, which helps the user to distinguish between proper and improper user input of your license code. Note, if you do not want to use a text mask, then pass in a null value for this parameter. For more information on text masks, search MSDN for the System.Windows.Forms.MaskedTextBox class. Returns: True if a valid license was found. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000207">Deprecated:</a></b></dt><dd>Call SetLicenseCapabilities, then <a class="el" href="class_c_rhino_plug_in.html#a59427a6718017d40179c29a10af0ba8a">GetLicense(void)</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -2567,7 +2567,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2026 16:07:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2026 15:55:51 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
