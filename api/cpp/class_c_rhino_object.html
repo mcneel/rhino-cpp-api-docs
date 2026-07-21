@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -149,6 +149,19 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9af34722c6084ee1110cb5320486aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5139d2c1b8cc67c6b2b120f38df0c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8">List</a> : unsigned int { <br />
+&#160;&#160;<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a6adf97f83acf6453d4a6a4b1070f3754">List::None</a> = 0, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a4c44c32a3f58c6e1a5cf1af462ea4b94">List::ActiveModel</a>, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a521790b773c69c86860ea6530459d53a">List::ActiveModelIdef</a>, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8ab93addc4238195aa84951cea0851f024">List::ReferenceModel</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a8c97b19a90030abba0a4135dccce643f">List::ReferenceModelIdef</a>, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a5fe6005bf6e415c950c011fb65f12b8f">List::Deleted</a>, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8ae6afa392888958511dd5c9e9b1d5a9db">List::Grip</a>, 
+<a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8a9914a0ce04a7b7b6a8e39bec55064b82">List::Light</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1c5139d2c1b8cc67c6b2b120f38df0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c85bec3e3f8241830ba0a2f136ab75"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a77c85bec3e3f8241830ba0a2f136ab75">objectframe_flags</a> : unsigned int { <a class="el" href="class_c_rhino_object.html#a77c85bec3e3f8241830ba0a2f136ab75ad3d66fe0f83d607e8e03d7d336e60aa0">objectframe_standard</a> = 0, 
 <a class="el" href="class_c_rhino_object.html#a77c85bec3e3f8241830ba0a2f136ab75a03439217a3ec9f4328693e54f9389b42">objectframe_include_scale_transforms</a> = 1, 
 <a class="el" href="class_c_rhino_object.html#a77c85bec3e3f8241830ba0a2f136ab75a8d6e59508fa8ae6bef8f5bdff684095f">objectframe_return_unset</a> = 2
@@ -289,6 +302,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a50d3d85abdae257aef663abfdee17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c0a1c3df73f63f35e26d6db26f2a85c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a1c0a1c3df73f63f35e26d6db26f2a85c">GripsSelected</a> () const</td></tr>
 <tr class="separator:a1c0a1c3df73f63f35e26d6db26f2a85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2c3e03030649f33d98fc1fb7b1547b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a7f2c3e03030649f33d98fc1fb7b1547b">HandleSelection</a> (void) const</td></tr>
+<tr class="separator:a7f2c3e03030649f33d98fc1fb7b1547b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a504fbaa00aa8bd8371f6fc41c34e5ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a504fbaa00aa8bd8371f6fc41c34e5ac3">HasCustomRenderMeshes</a> (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5e">ON::mesh_type</a> mt, const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> *vp=nullptr, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> *flags=nullptr, const class <a class="el" href="class_c_rhino_plug_in.html">CRhinoPlugIn</a> *requestingPlugIn=nullptr, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *pAttributes=nullptr) const</td></tr>
 <tr class="memdesc:a504fbaa00aa8bd8371f6fc41c34e5ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if custom render meshes will be supplied for a particular object.  <a href="class_c_rhino_object.html#a504fbaa00aa8bd8371f6fc41c34e5ac3">More...</a><br /></td></tr>
 <tr class="separator:a504fbaa00aa8bd8371f6fc41c34e5ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -554,6 +569,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54a891ae2cb2a25008a7a39cb19dfcea inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a78b4ecb2eb36641e1ee6b4fc6129606e">MoveUserData</a> (<a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution, bool bDeleteAllSourceItems)</td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -643,6 +661,8 @@ Protected Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:a760a9fd606515561d7819dedb053ff5b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a760a9fd606515561d7819dedb053ff5b">CRhCameraIcon</a></td></tr>
 <tr class="separator:a760a9fd606515561d7819dedb053ff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b34cd2177ef50600b341ff66e07117"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#af9b34cd2177ef50600b341ff66e07117">CRhDocSdkExtension</a></td></tr>
+<tr class="separator:af9b34cd2177ef50600b341ff66e07117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#a90258f01ce1e144ed14cd1157be4dc7a">CRhinoDoc</a></td></tr>
 <tr class="separator:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58ec13d7811385919357892b84055ec"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_object.html#ac58ec13d7811385919357892b84055ec">CRhinoGripObject</a></td></tr>
@@ -734,6 +754,38 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a9af34722c6084ee1110cb5320486aa8eabb2528818925e6431338f1322e6437e6"></a>phantom_object&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9af34722c6084ee1110cb5320486aa8eabf6c6bdb6d827f9e22b6275ef9098e0b"></a>extrusion_object&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9af34722c6084ee1110cb5320486aa8ea5b9e00d487f22ec1e34f3f9215373673"></a>any_object&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1c5139d2c1b8cc67c6b2b120f38df0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5139d2c1b8cc67c6b2b120f38df0c8">&#9670;&nbsp;</a></span>List</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_rhino_object.html#a1c5139d2c1b8cc67c6b2b120f38df0c8">CRhinoObject::List</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a4c44c32a3f58c6e1a5cf1af462ea4b94"></a>ActiveModel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a521790b773c69c86860ea6530459d53a"></a>ActiveModelIdef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8ab93addc4238195aa84951cea0851f024"></a>ReferenceModel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a8c97b19a90030abba0a4135dccce643f"></a>ReferenceModelIdef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a5fe6005bf6e415c950c011fb65f12b8f"></a>Deleted&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8ae6afa392888958511dd5c9e9b1d5a9db"></a>Grip&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1c5139d2c1b8cc67c6b2b120f38df0c8a9914a0ce04a7b7b6a8e39bec55064b82"></a>Light&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1106,7 +1158,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If you are writing a command or plug-in and and need a brep form of an object type that supports BrepForm, call <a class="el" href="class_c_rhino_object.html#af7e15e2041155ba7fcfd7ff74b31ed50" title="returns a pointer to the object&#39;s geometry">Geometry()</a>-&gt;BrepForm().</p>
+<p>Description: If you are writing a command or plug-in and need a brep form of an object type that supports BrepForm, call <a class="el" href="class_c_rhino_object.html#af7e15e2041155ba7fcfd7ff74b31ed50" title="returns a pointer to the object&#39;s geometry">Geometry()</a>-&gt;BrepForm().</p>
 <p>The definition of CRhReferenceCountedBrep is not available in the SDK and this function is for use in the core Rhino code. The returned class must be deleted by the caller. </p>
 
 </div>
@@ -1442,7 +1494,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Gets document that owns the object.</p>
 <p>Returns: Document that manages object.</p>
-<p>Remarks: When an object is created, it does not belong to a document. <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject()</a> or <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">CRhinoDoc::ReplaceObject()</a> are used to add new objects to a document. After the object is added to a document, it it managed by that document. If the <a class="el" href="class_c_rhino_object.html#a54f28922a7efc21674e0093e9765d0c5">CRhinoObject::Document()</a> returns NULL, then the object is not part of a document. </p>
+<p>Remarks: When an object is created, it does not belong to a document. <a class="el" href="class_c_rhino_doc.html#a067c177faad98136f33f448b1373e45a">CRhinoDoc::AddObject()</a> or <a class="el" href="class_c_rhino_doc.html#abedbf6b75027197dd95c47a40a1eb13e">CRhinoDoc::ReplaceObject()</a> are used to add new objects to a document. After the object is added to a document, it is managed by that document. If the <a class="el" href="class_c_rhino_object.html#a54f28922a7efc21674e0093e9765d0c5">CRhinoObject::Document()</a> returns NULL, then the object is not part of a document. </p>
 
 </div>
 </div>
@@ -1491,7 +1543,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000202">Deprecated:</a></b></dt><dd>use Draw function that takes a display pipeline </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000209">Deprecated:</a></b></dt><dd>use Draw function that takes a display pipeline </dd></dl>
 
 </div>
 </div>
@@ -1547,7 +1599,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Draws wireframe representation of highlighted sub objects. objects that support subobject highlighting must override this function </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a0b49b1f95dbf150fbb09be28c33f7133">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a4e6044b0f0734675922fcd8514a1cef1">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#ae7c4fbd6fe6beec05f096f7b445409b7">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#aaf473e01cd77a61541d6b638d53010ee">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a3bd3d488b6e4843956808f6440fe9664">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#aaf013a9d203a943072db62479e1fd02c">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#accf1ef4cef8be243989958b43d9620f9">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_extrusion_object.html#a5c948b40c4381e67c65851a07f9fc80f">CRhinoExtrusionObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a0b49b1f95dbf150fbb09be28c33f7133">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a35597a0229322d3bb3f1069ed9d82887">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a4e6044b0f0734675922fcd8514a1cef1">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#ae7c4fbd6fe6beec05f096f7b445409b7">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#aaf473e01cd77a61541d6b638d53010ee">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a3bd3d488b6e4843956808f6440fe9664">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#aaf013a9d203a943072db62479e1fd02c">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#accf1ef4cef8be243989958b43d9620f9">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_extrusion_object.html#a5c948b40c4381e67c65851a07f9fc80f">CRhinoExtrusionObject</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1639,7 @@ Friends</h2></td></tr>
 
 <p>Draws wireframe representation of a sub object. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_point_cloud_object.html#ad02fc5434b2fb9e22ad9f4dcdd6e8e03">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a68d2daf5dda08af9e704ab500f8347bf">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a61517f109f17cda676dc95ff93ef2296">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_instance_object.html#adc3828141293226bd1432807888e16e8">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a5a6b7d0f69ae3b8e3e16ef693f13d7f8">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#afffaa51acd5ba0ea7aef7fddb440d02e">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#ae103dc08e938d5be47d25fa3968f3312">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_extrusion_object.html#a6548798a18b8041af1af5713638a2c1f">CRhinoExtrusionObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_hatch.html#aaa1af0ff2f639451f8f14b373f9fc19c">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#ad02fc5434b2fb9e22ad9f4dcdd6e8e03">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a68d2daf5dda08af9e704ab500f8347bf">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a61517f109f17cda676dc95ff93ef2296">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_instance_object.html#adc3828141293226bd1432807888e16e8">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a5a6b7d0f69ae3b8e3e16ef693f13d7f8">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#afffaa51acd5ba0ea7aef7fddb440d02e">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#ae103dc08e938d5be47d25fa3968f3312">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_extrusion_object.html#a6548798a18b8041af1af5713638a2c1f">CRhinoExtrusionObject</a>.</p>
 
 </div>
 </div>
@@ -2027,7 +2079,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get a list of all highlighted sub-objects Parameters: component_indices - [out] component indices of highlighted sub-objects. Returns: number of highlighted subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#afc1c1ca1bacf870a7fae95ddb0006480">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#abef3b94f318088f4de4aa1cbbe12e63f">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a378690c3e95bd269785dba1694104c1f">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a039edb30ef2ec605c87d6e5ea6dcd1d7">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a32f157f7184e79e0590801735476e82e">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a5f7e49dd2d64be43f2937347282d200a">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a6da50db15cf4978017855edd033e2bb5">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a835de5bd952c99fc86a6a5c027088e83">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#afc1c1ca1bacf870a7fae95ddb0006480">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#af7a85ab332915ce1315bfa4a72e25c27">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#abef3b94f318088f4de4aa1cbbe12e63f">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a378690c3e95bd269785dba1694104c1f">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a039edb30ef2ec605c87d6e5ea6dcd1d7">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a32f157f7184e79e0590801735476e82e">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a5f7e49dd2d64be43f2937347282d200a">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a6da50db15cf4978017855edd033e2bb5">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a835de5bd952c99fc86a6a5c027088e83">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -2132,7 +2184,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get a list of all selected sub-objects Parameters: component_indices - [out] component indices of selected sub-objects. Returns: number of selected subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a657a47ce49fca346d6cd649c2332b95e">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a84a92067eed71296fc9aa5e038ddbbbc">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a3a4e3ae1e4bb24389887ced0eabed1f8">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a977dc546d6d0a4c24f78c4cb5df4684c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#acba0d50df6c40940280001b3ed90966c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#af0d6b98a93e137dfcbb856ffecb0fa8f">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#afd207e8221a33c9203994b93d2b4a6c6">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#af71f7a9adec44b870f454b7dea0752ae">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a657a47ce49fca346d6cd649c2332b95e">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a42cb369c7be95b4bc50366aa9e954073">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a84a92067eed71296fc9aa5e038ddbbbc">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a3a4e3ae1e4bb24389887ced0eabed1f8">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a977dc546d6d0a4c24f78c4cb5df4684c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#acba0d50df6c40940280001b3ed90966c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#af0d6b98a93e137dfcbb856ffecb0fa8f">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#afd207e8221a33c9203994b93d2b4a6c6">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#af71f7a9adec44b870f454b7dea0752ae">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -2332,6 +2384,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f2c3e03030649f33d98fc1fb7b1547b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2c3e03030649f33d98fc1fb7b1547b">&#9670;&nbsp;</a></span>HandleSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoObject::HandleSelection </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a504fbaa00aa8bd8371f6fc41c34e5ac3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a504fbaa00aa8bd8371f6fc41c34e5ac3">&#9670;&nbsp;</a></span>HasCustomRenderMeshes()</h2>
 
@@ -2479,7 +2549,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>true if pixels used by highlighted object differ from pixels used by highlighted object. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a00f09321dfdb8f6c5144554965d5c0be">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#ad442553b71baddf3729152bcc28b39b8">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_curve_object.html#afb959dddb5a80f2c9e4639aab45bf7cc">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a2e9b618d0c5c66e02a5b094f83486627">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ae53013aca7c5ec17cf80f7e4dca1b643">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#aea456fbcd6eaec405e36b5f790fa9ccd">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a52ede92e04de961e5fd13807b78e99db">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a00f09321dfdb8f6c5144554965d5c0be">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#ad442553b71baddf3729152bcc28b39b8">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#acc30a8e3e62987aceec3e1b2abe7c11b">CRhinoHatch</a>, <a class="el" href="class_c_rhino_curve_object.html#afb959dddb5a80f2c9e4639aab45bf7cc">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a2e9b618d0c5c66e02a5b094f83486627">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ae53013aca7c5ec17cf80f7e4dca1b643">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#aea456fbcd6eaec405e36b5f790fa9ccd">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a52ede92e04de961e5fd13807b78e99db">CRhinoBrepObject</a>.</p>
 
 </div>
 </div>
@@ -2517,7 +2587,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a06635257cbedbe36d6694a5e00ceeb92">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a0a18a8fc2bd08e262de87694f7275293">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#aaf30bb04c943dd4b63ca24d7844041c0">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#ada22f5c045200ae799747e05676dfdf3">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a3b0136d99faa03e4e4a0cf910b6543f4">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a675094b314d25f4e5481a311f3c0f516">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a534f65f7d29466778e91e7cd5ba24b3d">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a89ce163fec4bde7932f982b90bc849ba">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a06635257cbedbe36d6694a5e00ceeb92">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#aa42dd18d5dcac7d9a7ee0c5322d81cd2">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a0a18a8fc2bd08e262de87694f7275293">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#aaf30bb04c943dd4b63ca24d7844041c0">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#ada22f5c045200ae799747e05676dfdf3">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a3b0136d99faa03e4e4a0cf910b6543f4">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a675094b314d25f4e5481a311f3c0f516">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a534f65f7d29466778e91e7cd5ba24b3d">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a89ce163fec4bde7932f982b90bc849ba">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -2860,7 +2930,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Returns true if the object is used as part of an instance definition. <br  />
- Returns: true if object is is used as part of an instance definition. </p>
+ Returns: true if object is used as part of an instance definition. </p>
 
 </div>
 </div>
@@ -3224,7 +3294,7 @@ Friends</h2></td></tr>
 
 <p>true if specified component is highlighted </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a825dd81d24a11a0c59bd6b88c9629881">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a2f5df41c7fac1a7ba1ded3831732cda0">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a161c083fc36c0e9e562d12b169595a63">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#afb74e0e0c52a2c6b852d01d3386dd65c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a7c62aea15149cfba4b1b8cec259df4b9">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#ae41bbe55c359fc566c70b86bf211c232">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a6255338b636e31e2893028783fdd872c">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a67bdbdb80d0976a1bb3cb46fb2030bbc">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#a825dd81d24a11a0c59bd6b88c9629881">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a4e8b3cccf082a6039441eadb9ea5c5d8">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a2f5df41c7fac1a7ba1ded3831732cda0">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a161c083fc36c0e9e562d12b169595a63">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#afb74e0e0c52a2c6b852d01d3386dd65c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a7c62aea15149cfba4b1b8cec259df4b9">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#ae41bbe55c359fc566c70b86bf211c232">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a6255338b636e31e2893028783fdd872c">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#a67bdbdb80d0976a1bb3cb46fb2030bbc">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -3282,7 +3352,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Check sub-object selection state. Parameters: component_index - [in] index of subobject to check Remarks: subobject cannot be persistently selected Returns: @untitled table false sub-object is not selected true sub-object is selected </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#abb5f9d1e643117db63d3f0187cb9f0cf">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#afd8ebf8b142f17e40f01e39e2bb18c18">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a1b5a1974ae9141280f2803f4a83cb84f">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a2ed942c6113dc609dd7c0c370c36f191">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#ac2f37c01aaaa03852ce67fea28c37ca1">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#aaba688e25877ba64f66cc9d3d89a5062">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a653aa16b54327d86dbda7461cdcc400a">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#aa987521eaee2279ae6f860ecbe5eebcb">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_sub_d_object.html#abb5f9d1e643117db63d3f0187cb9f0cf">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#acd17fc6fdf3e9bd86060802469245e7a">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#afd8ebf8b142f17e40f01e39e2bb18c18">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#a1b5a1974ae9141280f2803f4a83cb84f">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#a2ed942c6113dc609dd7c0c370c36f191">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_curve_object.html#ac2f37c01aaaa03852ce67fea28c37ca1">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#aaba688e25877ba64f66cc9d3d89a5062">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a653aa16b54327d86dbda7461cdcc400a">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#aa987521eaee2279ae6f860ecbe5eebcb">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -4050,7 +4120,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when a user double clicks on this object. If the function returns a non-empty string, the string is interpreted as a command macro to execute. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_brep_object.html#a0a3455ea8101a9f8d9f102ee43cf3b01">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_text.html#a19a6e76ef1a895383d884432bcaa7488">CRhinoText</a>, <a class="el" href="class_c_rhino_text_dot.html#a9743c61d865c9c091fe506a150edc429">CRhinoTextDot</a>, <a class="el" href="class_c_rhino_dim_ordinate.html#a30ca15e54a5fc6d4d529ea57d45c56de">CRhinoDimOrdinate</a>, <a class="el" href="class_c_rhino_dim_linear.html#ac354e60258f59fabb9d16a748ee7ce3f">CRhinoDimLinear</a>, <a class="el" href="class_c_rhino_dim_angular.html#a83b4e41bff3392f800d1120127cf1680">CRhinoDimAngular</a>, <a class="el" href="class_c_rhino_dim_radial.html#a5c956b6eab7ca71562b699dbb9c1aa48">CRhinoDimRadial</a>, <a class="el" href="class_c_rhino_leader.html#a2cffc5e90587d8c09488a9039bd65912">CRhinoLeader</a>, and <a class="el" href="class_c_rhino_instance_object.html#ab7bde7220444f5aaa6f3679fad037d5d">CRhinoInstanceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_brep_object.html#a0a3455ea8101a9f8d9f102ee43cf3b01">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_text.html#a19a6e76ef1a895383d884432bcaa7488">CRhinoText</a>, <a class="el" href="class_c_rhino_text_dot.html#a9743c61d865c9c091fe506a150edc429">CRhinoTextDot</a>, <a class="el" href="class_c_rhino_dim_ordinate.html#a30ca15e54a5fc6d4d529ea57d45c56de">CRhinoDimOrdinate</a>, <a class="el" href="class_c_rhino_clipping_plane_object.html#acbd8906183c0c171920f41b6ce58cada">CRhinoClippingPlaneObject</a>, <a class="el" href="class_c_rhino_dim_linear.html#ac354e60258f59fabb9d16a748ee7ce3f">CRhinoDimLinear</a>, <a class="el" href="class_c_rhino_dim_angular.html#a83b4e41bff3392f800d1120127cf1680">CRhinoDimAngular</a>, <a class="el" href="class_c_rhino_dim_radial.html#a5c956b6eab7ca71562b699dbb9c1aa48">CRhinoDimRadial</a>, <a class="el" href="class_c_rhino_leader.html#a2cffc5e90587d8c09488a9039bd65912">CRhinoLeader</a>, and <a class="el" href="class_c_rhino_instance_object.html#ab7bde7220444f5aaa6f3679fad037d5d">CRhinoInstanceObject</a>.</p>
 
 </div>
 </div>
@@ -4479,7 +4549,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Reports if an object can be selected. Parameters: bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is is not selected. bPersistentSelect - [in] (default=true) Objects that are persistently selected stay selected when a command terminates. bIgnoreGripsState - [in] If true, then objects with grips on can be selected. If false, then the value returned by the object's virtual <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> function decides if the object can be selected when it has grips turned on. bIgnoreLayerLocking - [in] (default=false) If true, then objects on locked layers can be selected. If false, the objects on locked layers cannot be selected. bIgnoreLayerVisibility - [in] (default=false) If true, then objects on hidden layers can be selectable. If false, the objects on hidden layers cannot be selected. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> </p>
+<p>Description: Reports if an object can be selected. Parameters: bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is not selected. bPersistentSelect - [in] (default=true) Objects that are persistently selected stay selected when a command terminates. bIgnoreGripsState - [in] If true, then objects with grips on can be selected. If false, then the value returned by the object's virtual <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> function decides if the object can be selected when it has grips turned on. bIgnoreLayerLocking - [in] (default=false) If true, then objects on locked layers can be selected. If false, the objects on locked layers cannot be selected. bIgnoreLayerVisibility - [in] (default=false) If true, then objects on hidden layers can be selectable. If false, the objects on hidden layers cannot be selected. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> </p>
 
 </div>
 </div>
@@ -4520,7 +4590,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Reports if an object can be selected. Parameters: bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is is not selected. bPersistentSelect - [in] (default=true) Objects that are persistently selected stay selected when a command terminates. bIgnoreGripsState - [in] If true, then objects with grips on can be selected. If false, then the value returned by the object's virtual <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> function decides if the object can be selected when it has grips turned on. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> </p>
+<p>Description: Reports if an object can be selected. Parameters: bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is not selected. bPersistentSelect - [in] (default=true) Objects that are persistently selected stay selected when a command terminates. bIgnoreGripsState - [in] If true, then objects with grips on can be selected. If false, then the value returned by the object's virtual <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> function decides if the object can be selected when it has grips turned on. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> </p>
 
 </div>
 </div>
@@ -4569,9 +4639,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Reports if an object can be selected. Parameters: component_index - [in] index of subobject to check bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is is not selected. bPersistentSelect - [in] (default=false) Subobjects that are persistently selected stay selected when a command terminates. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> CRhinoView::UnselectAllSubObjects </p>
+<p>Description: Reports if an object can be selected. Parameters: component_index - [in] index of subobject to check bSelect - [in] (default=true) bSynchHighlight - [in] (default=true) If true, then the object is highlighted if it is selected and not highlighted if is not selected. bPersistentSelect - [in] (default=false) Subobjects that are persistently selected stay selected when a command terminates. Returns: 0: object is not selected 1: object is selected 2: object is selected persistently Remarks: Objects that are locked, hidden, or on locked or hidden layers cannot be selected. If <a class="el" href="class_c_rhino_object.html#a44159228766275081eb384b8409220cc" title="true if can be selected while grips are on">IsSelectableWithGripsOn()</a> returns false, then an that object is not selectable if it has grips turned on. See Also: <a class="el" href="class_c_rhino_doc.html#ac1157aa2fb84ff8bb82873bc5313c62a">CRhinoDoc::UnselectAll</a> CRhinoView::UnselectAllSubObjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_point_cloud_object.html#aac9c9504beb1c1a76587f967d8b7886b">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#aa799b3199e9ecfd81cc93ac26e9208b4">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#ae4101de84c5aac63cc603dadacc50f6b">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a96624299ec3a45bcee1b8205b61da403">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a0cd8985a44f67506d8d6e32710a74e5c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a48e15995be1b598ee87a03a2f955b125">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a1f381b7292122f75ff0ecc9d05234ada">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#adfb5a00ede7ee581002ec467a79cf680">CRhinoMeshObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_point_cloud_object.html#aac9c9504beb1c1a76587f967d8b7886b">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_brep_object.html#aa799b3199e9ecfd81cc93ac26e9208b4">CRhinoBrepObject</a>, <a class="el" href="class_c_rhino_instance_object.html#ae4101de84c5aac63cc603dadacc50f6b">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a96624299ec3a45bcee1b8205b61da403">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a827c489639a37d917cc414f0dda5bcb0">CRhinoHatch</a>, <a class="el" href="class_c_rhino_curve_object.html#a0cd8985a44f67506d8d6e32710a74e5c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a48e15995be1b598ee87a03a2f955b125">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a1f381b7292122f75ff0ecc9d05234ada">CRhinoExtrusionObject</a>, and <a class="el" href="class_c_rhino_mesh_object.html#adfb5a00ede7ee581002ec467a79cf680">CRhinoMeshObject</a>.</p>
 
 </div>
 </div>
@@ -4607,7 +4677,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: If the object is a mesh or has existing render meshes, then this call uses mapping to set the cached texture coordinates. Parameters: mapping - [in] Texture mapping function used to calculate the mesh's cached texture coordinates. object_xform - [in] (optional) Pass if the object has been transformed after the mapping was set. <br  />
- For example, if a mapping M was used to calculate the object's texture coordinates, the object was subsequently transformed by T, and for some reason you needed to use M to recalculate the original texture coordinates, then you would pass the T as object_xform. bLazy - [in] If true, then the calculation is performed only if the current mesh texture coordinates were calculated with a different mapping. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail.</p>
+ For example, if a mapping M was used to calculate the object's texture coordinates, the object was subsequently transformed by T, and for some reason you needed to use M to recalculate the original texture coordinates, then you would pass the T as object_xform. bLazy - [in] If true, then the calculation is performed only if the current mesh texture coordinates were calculated with a different mapping. Returns: True if the object's cached texture coordinates are set. False if the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail.</p>
 <p>The CRinoObject::Attributes()::m_rendering_attributes and <a class="el" href="class_c_rhino_doc.html#a749c3076a75394e894e4d455c3500d5e">CRhinoDoc::m_texture_mapping_table</a> has tools to get texture mappings. <br  />
  See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
@@ -4628,7 +4698,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set cached texture coordinates for all mappings that require per vertex texture texture coordinates. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
+<p>Description: Set cached texture coordinates for all mappings that require per vertex texture texture coordinates. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. Returns: True if the object's cached texture coordinates are set. False if the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
 </div>
 </div>
@@ -4657,7 +4727,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set cached texture coordinates for mappings listed in the array 'mappings_to_cache'. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. mappings_to_cache - [in] An array indicating which types of mappings that should be cached. If the array is empty, all found mappings will be cached. Returns: True if the object's cached texture coordinates are set. False if the the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
+<p>Description: Set cached texture coordinates for mappings listed in the array 'mappings_to_cache'. Includes mappings referenced by object material and sub-object materials. Parameters: plugin_id - [in] The id of the render plug-in to use to get the mapping ref. mappings_to_cache - [in] An array indicating which types of mappings that should be cached. If the array is empty, all found mappings will be cached. Returns: True if the object's cached texture coordinates are set. False if the cached coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail. See Also: ON_TextureMapping::GetCachedTextureCoordinates <a class="el" href="class_o_n___mesh.html#aecf36e17605dc94bf12c7eb0de2e82c4" title="Use SetCachedTextureCoordinatesEx instead.">ON_Mesh::SetCachedTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
 </div>
 </div>
@@ -4841,7 +4911,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: If the object is a mesh or has existing render meshes, then this call uses mapping to set the texture coordinates. Parameters: mapping - [in] Texture mapping function used to calculate the mesh's texture coordinates. object_xform - [in] (optional) Pass if the object has been transformed after the mapping was set. <br  />
- For example, if a mapping M was used to calculate the object's texture coordinates, the object was subsequently transformed by T, and for some reason you needed to use M to recalculate the original texture coordinates, then you would pass the T as object_xform. bLazy - [in] If true, then the calculation is performed only if the current mesh texture coordinates were calculated with a different mapping. Returns: True if the object's texture coordinates are set. False if the the coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail.</p>
+ For example, if a mapping M was used to calculate the object's texture coordinates, the object was subsequently transformed by T, and for some reason you needed to use M to recalculate the original texture coordinates, then you would pass the T as object_xform. bLazy - [in] If true, then the calculation is performed only if the current mesh texture coordinates were calculated with a different mapping. Returns: True if the object's texture coordinates are set. False if the coordinates cannot be set (the object may not have texture coordinates, like a point, or it may not have render mesh, like a new <a class="el" href="class_c_rhino_brep_object.html">CRhinoBrepObject</a>, or the mapping calculation may fail.</p>
 <p>The CRinoObject::Attributes()::m_rendering_attributes and <a class="el" href="class_c_rhino_doc.html#a749c3076a75394e894e4d455c3500d5e">CRhinoDoc::m_texture_mapping_table</a> has tools to get texture mappings. <br  />
  See Also: <a class="el" href="class_o_n___texture_mapping.html#a8465fda24c41092aec22bbf01172e4a0">ON_TextureMapping::GetTextureCoordinates</a> <a class="el" href="class_o_n___mesh.html#ac63b1a95fe549071b2500ba9ea2c8319">ON_Mesh::SetTextureCoordinates</a> CRhinoObject::GetTextureMapping </p>
 
@@ -5029,7 +5099,7 @@ Friends</h2></td></tr>
 
 <p>returns number of highlighted subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a49cdee1b16dba1b23b8ddf821768efd7">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#abd88584add5862be856f6751b068cc44">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#aa252056489a208d7c489d92a3e0ab8c8">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_group_object.html#af9cb6a907b949028fdb8eba690e190b1">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_curve_object.html#ad38bdde4145a2a0f2f7c08c267921f9c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ad71c7a0184fe698db088f2d235b1fc7a">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a36513debb7fb83de43d6be1365a29dc1">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a2672bcbf8dfca6d54ff9545607e284eb">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a49cdee1b16dba1b23b8ddf821768efd7">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#abd88584add5862be856f6751b068cc44">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a712baf0bd6a25379770fb81289e57718">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#aa252056489a208d7c489d92a3e0ab8c8">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_group_object.html#af9cb6a907b949028fdb8eba690e190b1">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_curve_object.html#ad38bdde4145a2a0f2f7c08c267921f9c">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ad71c7a0184fe698db088f2d235b1fc7a">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a36513debb7fb83de43d6be1365a29dc1">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a2672bcbf8dfca6d54ff9545607e284eb">CRhinoBrepObject</a>.</p>
 
 </div>
 </div>
@@ -5058,7 +5128,7 @@ Friends</h2></td></tr>
 
 <p>returns number of selected subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#afbbf94aa3f2513834817fa271d8ac552">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a0fdd79b16ee35592fc6c6b9e1b9b6b55">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a956776ebff32d5a4740c6894af72daa6">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_group_object.html#a15a89fd1a72643dcc6239bfb10f512d3">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a6603391edf9fdbb1a420ff22020f2d61">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a244933f1daa2e28d3d7bef6f73227ae2">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a449051ce5e050b7c7c67fb9af5dfa1a4">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a3965eb67777233819f750abcc59be1f8">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#afbbf94aa3f2513834817fa271d8ac552">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a0fdd79b16ee35592fc6c6b9e1b9b6b55">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#aead44cf171179a2f110e185696a233d1">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a956776ebff32d5a4740c6894af72daa6">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_group_object.html#a15a89fd1a72643dcc6239bfb10f512d3">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a6603391edf9fdbb1a420ff22020f2d61">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#a244933f1daa2e28d3d7bef6f73227ae2">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a449051ce5e050b7c7c67fb9af5dfa1a4">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a3965eb67777233819f750abcc59be1f8">CRhinoBrepObject</a>.</p>
 
 </div>
 </div>
@@ -5186,7 +5256,7 @@ Friends</h2></td></tr>
 
 <p>returns number of changed subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a659f6518b88c6131ef6d8da3440f674c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a36eedc2edccafbed4b90b9672ef6a78a">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a5af4688537d841faeed6d5ebb496ceb8">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a84c92bdaf4a7f2fad7a37a7e2877c72a">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a80cd2c6be4e9818edf6dd82148bd680c">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ad45549de162d0ff5b3d4cdad2d9e0369">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#afd1d1781d307e9d49255da203e39ed9d">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a7899d0982f687917f44d2d84fe0d5779">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a659f6518b88c6131ef6d8da3440f674c">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#a36eedc2edccafbed4b90b9672ef6a78a">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#acd90eb80504b7cec3afa96d2e321d12d">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a5af4688537d841faeed6d5ebb496ceb8">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_curve_object.html#a84c92bdaf4a7f2fad7a37a7e2877c72a">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a80cd2c6be4e9818edf6dd82148bd680c">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#ad45549de162d0ff5b3d4cdad2d9e0369">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#afd1d1781d307e9d49255da203e39ed9d">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a7899d0982f687917f44d2d84fe0d5779">CRhinoBrepObject</a>.</p>
 
 </div>
 </div>
@@ -5215,7 +5285,7 @@ Friends</h2></td></tr>
 
 <p>returns number of unselected subobjects </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a5b3aed0fb4249ef2c308141ef9389b42">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#adfc6d248c4ba20480a1df7bddd872de7">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a1b141fc3225cf4bc7f40a43a86cd8c1f">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_curve_object.html#adb25e7689657aa971429b4dc8758ff03">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a912bdc97f9e0e910d4927035375ebc93">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#aa7e6007d91193be8a078d64bc85f93cc">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a3a2ce59f3c8ba6a338784e53e04c1e08">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a45e3f5d8548f48c7eb6c5e85e8bf2a70">CRhinoBrepObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_instance_object.html#a5b3aed0fb4249ef2c308141ef9389b42">CRhinoInstanceObject</a>, <a class="el" href="class_c_rhino_sub_d_object.html#adfc6d248c4ba20480a1df7bddd872de7">CRhinoSubDObject</a>, <a class="el" href="class_c_rhino_hatch.html#a4857b3b7ddf4b042fb0afa897a597907">CRhinoHatch</a>, <a class="el" href="class_c_rhino_point_cloud_object.html#a1b141fc3225cf4bc7f40a43a86cd8c1f">CRhinoPointCloudObject</a>, <a class="el" href="class_c_rhino_curve_object.html#adb25e7689657aa971429b4dc8758ff03">CRhinoCurveObject</a>, <a class="el" href="class_c_rhino_group_object.html#a912bdc97f9e0e910d4927035375ebc93">CRhinoGroupObject</a>, <a class="el" href="class_c_rhino_extrusion_object.html#aa7e6007d91193be8a078d64bc85f93cc">CRhinoExtrusionObject</a>, <a class="el" href="class_c_rhino_mesh_object.html#a3a2ce59f3c8ba6a338784e53e04c1e08">CRhinoMeshObject</a>, and <a class="el" href="class_c_rhino_brep_object.html#a45e3f5d8548f48c7eb6c5e85e8bf2a70">CRhinoBrepObject</a>.</p>
 
 </div>
 </div>
@@ -5319,6 +5389,28 @@ Friends</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">friend class CRhCameraIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9b34cd2177ef50600b341ff66e07117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b34cd2177ef50600b341ff66e07117">&#9670;&nbsp;</a></span>CRhDocSdkExtension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class CRhDocSdkExtension</td>
         </tr>
       </table>
   </td>
@@ -5909,7 +6001,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

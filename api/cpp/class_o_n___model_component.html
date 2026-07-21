@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -92,12 +92,14 @@ Inheritance diagram for ON_ModelComponent:</div>
 <area href="class_o_n___instance_definition.html" alt="ON_InstanceDefinition" shape="rect" coords="200,448,390,472"/>
 <area href="class_o_n___layer.html" alt="ON_Layer" shape="rect" coords="200,504,390,528"/>
 <area href="class_o_n___linetype.html" title="class ON_Linetype" alt="ON_Linetype" shape="rect" coords="200,560,390,584"/>
-<area href="class_o_n___material.html" alt="ON_Material" shape="rect" coords="200,616,390,640"/>
-<area href="class_o_n___model_geometry_component.html" alt="ON_ModelGeometryComponent" shape="rect" coords="200,672,390,696"/>
-<area href="class_o_n___render_content.html" alt="ON_RenderContent" shape="rect" coords="200,728,390,752"/>
-<area href="class_o_n___section_style.html" title="class ON_SectionStyle" alt="ON_SectionStyle" shape="rect" coords="200,784,390,808"/>
-<area href="class_o_n___text_style.html" alt="ON_TextStyle" shape="rect" coords="200,840,390,864"/>
-<area href="class_o_n___texture_mapping.html" alt="ON_TextureMapping" shape="rect" coords="200,896,390,920"/>
+<area href="class_o_n___markup.html" title="class ON_Markup" alt="ON_Markup" shape="rect" coords="200,616,390,640"/>
+<area href="class_o_n___material.html" alt="ON_Material" shape="rect" coords="200,672,390,696"/>
+<area href="class_o_n___model_geometry_component.html" alt="ON_ModelGeometryComponent" shape="rect" coords="200,728,390,752"/>
+<area href="class_o_n___page_view_group.html" alt="ON_PageViewGroup" shape="rect" coords="200,784,390,808"/>
+<area href="class_o_n___render_content.html" alt="ON_RenderContent" shape="rect" coords="200,840,390,864"/>
+<area href="class_o_n___section_style.html" title="class ON_SectionStyle" alt="ON_SectionStyle" shape="rect" coords="200,896,390,920"/>
+<area href="class_o_n___text_style.html" alt="ON_TextStyle" shape="rect" coords="200,952,390,976"/>
+<area href="class_o_n___texture_mapping.html" alt="ON_TextureMapping" shape="rect" coords="200,1008,390,1032"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -147,9 +149,11 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba">Type::EmbeddedFile</a> = 15, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567">Type::ObsoleteValue</a> = 16, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7">Type::SectionStyle</a> = 17, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae51e08a727173e8719e480316459991e">Type::Markup</a> = 18, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacacf1e66d857077c9d245428bfda9f5184">Type::PageViewGroup</a> = 19, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
 <br />
  }</td></tr>
 <tr class="memdesc:a2977d69091b4952cc19b0189a28a0eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> enum has a value for each explicit component type and two special values, Unset and Mixed. Use an <a class="el" href="class_o_n___model_component_type_iterator.html">ON_ModelComponentTypeIterator</a> instance to iterate over the <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> values. /summary&gt;  <a href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">More...</a><br /></td></tr>
@@ -429,6 +433,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#afa19aee4a411a8fda53aff00bd02d86e">ObjectType</a> () const</td></tr>
 <tr class="separator:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -643,7 +650,11 @@ Friends</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567"></a>ObsoleteValue&#160;</td><td class="fielddoc"><p>summary&gt;Section style attributes </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7"></a>SectionStyle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7"></a>SectionStyle&#160;</td><td class="fielddoc"><p>summary&gt;Markup entity </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacae51e08a727173e8719e480316459991e"></a>Markup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacacf1e66d857077c9d245428bfda9f5184"></a>PageViewGroup&#160;</td><td class="fielddoc"><p>Page view group. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4"></a>NumOf&#160;</td><td class="fielddoc"><p>If you add any more, add them here, above NumOf. </p>
 <p>summary&gt;Number of items above. </p>
 <p>summary&gt;Multiple component types. Used when a component type filter must include all explicit component types. </p>
@@ -1444,7 +1455,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Returns a CRC calculated from the information that defines the object. This CRC can be used as a quick way to see if two objects are not identical. Parameters: current_remainder - [in]; Returns: CRC of the information the defines the object. </p>
+<p>Description: Returns a CRC calculated from the information that defines the object. This CRC can be used as a quick way to see if two objects are not identical. Parameters: current_remainder - [in]; use zero for starting a DataCRC computation, and use the result of another DataCRC to compose computations. Returns: CRC of the information the defines the object. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">ON_Object</a>.</p>
 
@@ -1550,7 +1561,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a21c7b04a80f1806c3a45f72d7c491a44">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___model_geometry_component.html#a0aa8ad836340ddda12814ffe1d055d82">ON_ModelGeometryComponent</a>, <a class="el" href="class_c_rhino_instance_definition.html#a5a970e734ec1202291b8257b80fdb28a">CRhinoInstanceDefinition</a>, <a class="el" href="class_o_n___texture_mapping.html#af92b1a3e6bb57bd1cc93657ac9f2a468">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aee10904cd774f0bcb4f44ccf04c46fe8">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a93d692afeed5dd4c069ac775e83f87ae">ON_HistoryRecord</a>, and <a class="el" href="class_o_n___section_style.html#a329b5c1fe84870e803f3dc88b1f1b328">ON_SectionStyle</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___model_geometry_component.html#a0aa8ad836340ddda12814ffe1d055d82">ON_ModelGeometryComponent</a>, <a class="el" href="class_o_n___page_view_group.html#a4c5936a396754c504cd1cf958436a20d">ON_PageViewGroup</a>, <a class="el" href="class_c_rhino_instance_definition.html#a5a970e734ec1202291b8257b80fdb28a">CRhinoInstanceDefinition</a>, <a class="el" href="class_o_n___texture_mapping.html#af92b1a3e6bb57bd1cc93657ac9f2a468">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aee10904cd774f0bcb4f44ccf04c46fe8">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a93d692afeed5dd4c069ac775e83f87ae">ON_HistoryRecord</a>, and <a class="el" href="class_o_n___section_style.html#a329b5c1fe84870e803f3dc88b1f1b328">ON_SectionStyle</a>.</p>
 
 </div>
 </div>
@@ -1838,7 +1849,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: When a component is in a model as part of the information required for a linked instance definition, this value identifies the the linked instance definition reference model. Remarks: Reference components are not saved in .3dm archives. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives.</p>
+<p>Returns: When a component is in a model as part of the information required for a linked instance definition, this value identifies the linked instance definition reference model. Remarks: Reference components are not saved in .3dm archives. Typically this value is set and locked by the code that adds a component to a model. This value is copied by the copy constructor and operator=. This value is not saved in .3dm archives.</p>
 <p>In Rhino, this value is a linked instance definition runtime serial number and these values are used.. 0: Active model component. 1-1000: reserved for future use &gt;1000: linked instance definition serial number </p>
 
 </div>
@@ -2075,7 +2086,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#a7212696724553dc4d365479a10150c0d">ON_Object</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___texture_mapping.html#afc515aa18840926351300b333a13417a">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aefedb29b225a6aa9132d46584db39ac9">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a4c2646e0cb34761ac568448f7fa898d0">ON_HistoryRecord</a>, and <a class="el" href="class_o_n___section_style.html#aaf81c03fb0ec314cf57f33b3c3c671fb">ON_SectionStyle</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___texture_mapping.html#afc515aa18840926351300b333a13417a">ON_TextureMapping</a>, <a class="el" href="class_o_n___text_style.html#aefedb29b225a6aa9132d46584db39ac9">ON_TextStyle</a>, <a class="el" href="class_o_n___history_record.html#a4c2646e0cb34761ac568448f7fa898d0">ON_HistoryRecord</a>, <a class="el" href="class_o_n___section_style.html#aaf81c03fb0ec314cf57f33b3c3c671fb">ON_SectionStyle</a>, and <a class="el" href="class_o_n___page_view_group.html#a3f17fbaec2176a7ba9b5e421b34cb712">ON_PageViewGroup</a>.</p>
 
 </div>
 </div>
@@ -3845,7 +3856,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad70af2df93a9aac7e8194a50c0603cea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___font.html#ad70af2df93a9aac7e8194a50c0603cea" title="ON_Font::NameLocale selects what locale is used for font name (PostScript, family,...">ON_Font::NameLocale</a> selects what locale is used for font name (PostScript, family, face, LOGFONT) queries.  <a href="class_o_n___font.html#ad70af2df93a9aac7e8194a50c0603cea">More...</a><br /></td></tr>
 <tr class="separator:ad70af2df93a9aac7e8194a50c0603cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01510b84585f59bfb16bd1c3370e2258"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a01510b84585f59bfb16bd1c3370e2258">ON_GetFontKerningPairsFuncType</a>) (size_t code_point_count, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> *code_points, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;kerningpairs)</td></tr>
+<tr class="separator:a01510b84585f59bfb16bd1c3370e2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2cb089d8a45799de5825031f1c1c58b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#ac2cb089d8a45799de5825031f1c1c58b">ON_GetFontMetricsFuncType</a>) (const class <a class="el" href="class_o_n___font.html">ON_Font</a> *font, class <a class="el" href="class_o_n___font_metrics.html">ON_FontMetrics</a> &amp;font_metrics_in_font_design_units)</td></tr>
 <tr class="separator:ac2cb089d8a45799de5825031f1c1c58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08a01e684b16eefe7bee2179fd70c3c"><td class="memItemLeft" align="right" valign="top">typedef unsigned int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#ac08a01e684b16eefe7bee2179fd70c3c">ON_GetGlyphMetricsFuncType</a>) (const class <a class="el" href="class_o_n___font_glyph.html">ON_FontGlyph</a> *font_glyph, class <a class="el" href="class_o_n___text_box.html">ON_TextBox</a> &amp;glyph_metrics_in_font_design_units)</td></tr>
@@ -266,6 +268,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a928604fd1e34e2649800a24e46c6242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d63b81d2f09faa0552e32bdfa6de47d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a7d63b81d2f09faa0552e32bdfa6de47d">IsEngravingFont</a> () const</td></tr>
 <tr class="separator:a7d63b81d2f09faa0552e32bdfa6de47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d6f4d005836d0df69ad9fbc6f77a32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a32d6f4d005836d0df69ad9fbc6f77a32">IsGeometricToleranceFont</a> () const</td></tr>
+<tr class="separator:a32d6f4d005836d0df69ad9fbc6f77a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e7f8c0349d55f1ed6c2359bb457854"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a90e7f8c0349d55f1ed6c2359bb457854">IsInstalledFont</a> () const</td></tr>
 <tr class="separator:a90e7f8c0349d55f1ed6c2359bb457854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af096da5951e1919f56a0f7d34e2d50ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#af096da5951e1919f56a0f7d34e2d50ca">IsItalic</a> () const</td></tr>
@@ -469,6 +473,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a37399695e427d4aca20bd3dee7c12aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01129dd01c5f6d4881ec76d5e8caf5f"><td class="memItemLeft" align="right" valign="top">static const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#ac01129dd01c5f6d4881ec76d5e8caf5f">DefaultFamilyName</a> ()</td></tr>
 <tr class="separator:ac01129dd01c5f6d4881ec76d5e8caf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6568ca0219a1d5d1d65b8c05572a694"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___font.html">ON_Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#aa6568ca0219a1d5d1d65b8c05572a694">DefaultGeometricToleranceFont</a> ()</td></tr>
+<tr class="separator:aa6568ca0219a1d5d1d65b8c05572a694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c55a16f5c72ceb266f37ae1eae840c4"><td class="memItemLeft" align="right" valign="top">static const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a5c55a16f5c72ceb266f37ae1eae840c4">DefaultPostScriptName</a> ()</td></tr>
 <tr class="separator:a5c55a16f5c72ceb266f37ae1eae840c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579669a193023080adec58f79413dedf"><td class="memItemLeft" align="right" valign="top">static const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a579669a193023080adec58f79413dedf">DefaultWindowsLogfontName</a> ()</td></tr>
@@ -573,6 +579,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a5cfed73ab056208234457ae4a6eaac18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b099fd1460b92a9d7d1dd3e1cb81be"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a75b099fd1460b92a9d7d1dd3e1cb81be">RichTextPropertyDeviation</a> (bool bPreferedRtfBold, bool bPreferedItalic, bool bPreferedUnderline, bool bPreferedStrikethrough, const <a class="el" href="class_o_n___font.html">ON_Font</a> *available_font)</td></tr>
 <tr class="separator:a75b099fd1460b92a9d7d1dd3e1cb81be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f01154223774bacd0b3e704135cb10"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#ac6f01154223774bacd0b3e704135cb10">SetCustomKerningFunction</a> (<a class="el" href="class_o_n___font.html#a01510b84585f59bfb16bd1c3370e2258">ON_GetFontKerningPairsFuncType</a> kerningFunction)</td></tr>
+<tr class="separator:ac6f01154223774bacd0b3e704135cb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43d0a10bcfb3261e8ed5875ea08498c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#ac43d0a10bcfb3261e8ed5875ea08498c">SetCustomMeasurementFunctions</a> (<a class="el" href="class_o_n___font.html#ac08a01e684b16eefe7bee2179fd70c3c">ON_GetGlyphMetricsFuncType</a> measureGlyphFunc, <a class="el" href="class_o_n___font.html#ac2cb089d8a45799de5825031f1c1c58b">ON_GetFontMetricsFuncType</a> metricsFunction)</td></tr>
 <tr class="separator:ac43d0a10bcfb3261e8ed5875ea08498c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d71f14d8f23bb43f5436ddb167f496"><td class="memItemLeft" align="right" valign="top">static const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___font.html#a21d71f14d8f23bb43f5436ddb167f496">StretchToWideString</a> (<a class="el" href="class_o_n___font.html#a260244d29871bd942706652123d0e2f1">ON_Font::Stretch</a> font_stretch)</td></tr>
@@ -628,6 +636,20 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_o_n___font.html" title="An ON_Font is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System....">ON_Font</a> is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System.Drawing.Font or a FreeType FT_Face. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a01510b84585f59bfb16bd1c3370e2258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01510b84585f59bfb16bd1c3370e2258">&#9670;&nbsp;</a></span>ON_GetFontKerningPairsFuncType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ON_Font::ON_GetFontKerningPairsFuncType) (size_t code_point_count, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> *code_points, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt; &amp;kerningpairs)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac2cb089d8a45799de5825031f1c1c58b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2cb089d8a45799de5825031f1c1c58b">&#9670;&nbsp;</a></span>ON_GetFontMetricsFuncType</h2>
 
@@ -1023,7 +1045,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Use ON_Font::PostScriptName(ON_Font::NameLocale) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use ON_Font::PostScriptName(ON_Font::NameLocale) </dd></dl>
 
 </div>
 </div>
@@ -1041,7 +1063,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated:</a></b></dt><dd>Use ON_Font::PostScriptName(ON_Font::NameLocale) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use ON_Font::PostScriptName(ON_Font::NameLocale) </dd></dl>
 
 </div>
 </div>
@@ -1724,6 +1746,31 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa6568ca0219a1d5d1d65b8c05572a694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6568ca0219a1d5d1d65b8c05572a694">&#9670;&nbsp;</a></span>DefaultGeometricToleranceFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_o_n___font.html">ON_Font</a>* ON_Font::DefaultGeometricToleranceFont </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5c55a16f5c72ceb266f37ae1eae840c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c55a16f5c72ceb266f37ae1eae840c4">&#9670;&nbsp;</a></span>DefaultPostScriptName()</h2>
 
@@ -2375,7 +2422,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#a9332f8f2c933451ed0756a4730d1afc9">ON_Font::Description()</a> or <a class="el" href="class_o_n___font.html#a254121aa7e3805b0468e861829f7972b">ON_Font::PostScriptName()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#a9332f8f2c933451ed0756a4730d1afc9">ON_Font::Description()</a> or <a class="el" href="class_o_n___font.html#a254121aa7e3805b0468e861829f7972b">ON_Font::PostScriptName()</a> </dd></dl>
 
 </div>
 </div>
@@ -2393,7 +2440,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#a254121aa7e3805b0468e861829f7972b">ON_Font::PostScriptName()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#a254121aa7e3805b0468e861829f7972b">ON_Font::PostScriptName()</a> </dd></dl>
 
 </div>
 </div>
@@ -2411,7 +2458,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Use ON_Font::WindowsLogfontName(ON_Font::NameLocale) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Use ON_Font::WindowsLogfontName(ON_Font::NameLocale) </dd></dl>
 
 </div>
 </div>
@@ -2493,7 +2540,7 @@ Friends</h2></td></tr>
 <p>Remarks: Font metric "normalized" units are comparable between different fonts. Normalized font metrics exist so that code that positions glyphs from multiple fonts does not have to take the unit system and resolution used in the design of each font. In opennurbs, much of this code that positions glyphs is located in <a class="el" href="class_o_n___annotation.html">ON_Annotation</a>, <a class="el" href="class_o_n___text_content.html">ON_TextContent</a>, and <a class="el" href="class_o_n___text_run.html" title="A range of text with all the same attributes.">ON_TextRun</a> member functions and is used when rendering annotation objects.</p>
 <p>Fonts can be designed and defined at different resolutions and relative scaling is necessary when text contains glyphs from fonts designed at different grid resolutions. For example, TrueType font grid with and height is often 1024x1024 or 2048x2014, OpenType grids are often 1000x1000, and PostScript grids are often 1000x1000. Opennurbs "font units" are the units the font was designed in.</p>
 <p>Long ago, opennurbs and Rhino used only Windows TrueType fonts and ran only in Microsoft Windows. During this era, the "normalized units" were for a Windows LOGFONT created with lfHeight = ON_Font::Constants::AnnotationFontCellHeight.</p>
-<p>Currently opennurbs and Rhino work on Microsoft Windows and Apple platforms and use FreeType to access font information. When a font is not "tricky", the "font design" units are the the units FreeType uses when a font is loaded with FT_LOAD_NO_SCALE.</p>
+<p>Currently opennurbs and Rhino work on Microsoft Windows and Apple platforms and use FreeType to access font information. When a font is not "tricky", the "font design" units are the units FreeType uses when a font is loaded with FT_LOAD_NO_SCALE.</p>
 <p>When working with fonts and glyhphs in opennurbs and Rhino, SDK users almost always want to use normalized font and glyph metrics. </p>
 
 </div>
@@ -3364,7 +3411,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a> </dd></dl>
 
 </div>
 </div>
@@ -3391,7 +3438,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ab81ec3aa76510d84531b962aad294f9c">ON_Font::GetManagedFontFromPostScriptName()</a> </dd></dl>
 
 </div>
 </div>
@@ -3615,7 +3662,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.StrikeoutPosition() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.StrikeoutPosition() </dd></dl>
 
 </div>
 </div>
@@ -3633,7 +3680,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.StrikeoutThickness() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.StrikeoutThickness() </dd></dl>
 
 </div>
 </div>
@@ -3651,7 +3698,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.UnderscorePosition() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.UnderscorePosition() </dd></dl>
 
 </div>
 </div>
@@ -3669,7 +3716,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.UnderscoreThickness() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.UnderscoreThickness() </dd></dl>
 
 </div>
 </div>
@@ -3716,7 +3763,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.AscentOfCapital() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.AscentOfCapital() </dd></dl>
 
 </div>
 </div>
@@ -3734,7 +3781,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.LineSpace() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.LineSpace() </dd></dl>
 
 </div>
 </div>
@@ -3753,7 +3800,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.GlyphScale() </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font.html#ae783b7e59accf9d488c35a30e47dad3d">FontMetrics()</a>.GlyphScale() </dd></dl>
 
 </div>
 </div>
@@ -3999,6 +4046,23 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The outlines for an engraving font have single-stroke, double-stroke, or perimeters designed for path engraving. These fonts behave poorly when used for filled font rendering or creating solid extrusions. The OrachTech 2 line fonts are examples of engraving fonts that are not single or double stroke. Returns: True if the font is a known engraving font. </p>
+
+</div>
+</div>
+<a id="a32d6f4d005836d0df69ad9fbc6f77a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d6f4d005836d0df69ad9fbc6f77a32">&#9670;&nbsp;</a></span>IsGeometricToleranceFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Font::IsGeometricToleranceFont </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4428,7 +4492,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font_metrics.html#abe44d95515dabcce5ed56759c7ab770f" title="1.6">ON_FontMetrics::DefaultLineFeedRatio</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___font_metrics.html#abe44d95515dabcce5ed56759c7ab770f" title="1.6">ON_FontMetrics::DefaultLineFeedRatio</a> </dd></dl>
 
 </div>
 </div>
@@ -4629,7 +4693,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: It is better to call <a class="el" href="class_o_n___font.html#a5262230dd6bf6e217598a14ec48e6dc4">ON_Font::FontFromRichTextProperties()</a>. Parameters: rtf_font_name - [in] Rich text format name. This name is not well defined and depends on the device and application that created the rich text. On Windows this is often a LOGFONT.lfFaceName. On MacOS it is often a PostScript name.</p>
 <p>bRtfBold - [in] RTF bold flag</p>
-<p>bRtfItalic - [in] RTF italic flag Returns: A managed font to use for these rich text properties. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Call <a class="el" href="class_o_n___font.html#a5262230dd6bf6e217598a14ec48e6dc4">ON_Font::FontFromRichTextProperties()</a> </dd></dl>
+<p>bRtfItalic - [in] RTF italic flag Returns: A managed font to use for these rich text properties. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>Call <a class="el" href="class_o_n___font.html#a5262230dd6bf6e217598a14ec48e6dc4">ON_Font::FontFromRichTextProperties()</a> </dd></dl>
 
 </div>
 </div>
@@ -5318,6 +5382,32 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ac6f01154223774bacd0b3e704135cb10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f01154223774bacd0b3e704135cb10">&#9670;&nbsp;</a></span>SetCustomKerningFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ON_Font::SetCustomKerningFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___font.html#a01510b84585f59bfb16bd1c3370e2258">ON_GetFontKerningPairsFuncType</a>&#160;</td>
+          <td class="paramname"><em>kerningFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac43d0a10bcfb3261e8ed5875ea08498c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac43d0a10bcfb3261e8ed5875ea08498c">&#9670;&nbsp;</a></span>SetCustomMeasurementFunctions()</h2>
 
@@ -5842,7 +5932,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd>V6 <a class="el" href="class_o_n___font.html" title="An ON_Font is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System....">ON_Font</a> does not have a description property. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>V6 <a class="el" href="class_o_n___font.html" title="An ON_Font is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System....">ON_Font</a> does not have a description property. </dd></dl>
 
 </div>
 </div>
@@ -5861,7 +5951,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This is a legacy function that traces it's heritage to Windows specific GDI LOGFONT code from 1995. Best to avoid it whenever possible. Ideally, use an Windows IDWriteFont or Apple CTFont to create an <a class="el" href="class_o_n___font.html" title="An ON_Font is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System....">ON_Font</a> that references an installed font. Less ideally, use a complete LOGFONT structure. Parameters: windows_logfont_name - [in] GDI LOGFONT.lfFaceName value. Note well: This is not the font "face name", not the font "family name", and not the font PostScript name. It is often a combination of the family name, an additional "GDI sub-family" name. Occasionally it includes some face weight and style attributes. Returns: True if the value was set. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>Use ON_Font::SetFromDWriteFont(), ON_Font::SetFromAppleFont(), or ON_Font::SetFromWindowsLogFont() </dd></dl>
+<p>Description: This is a legacy function that traces it's heritage to Windows specific GDI LOGFONT code from 1995. Best to avoid it whenever possible. Ideally, use an Windows IDWriteFont or Apple CTFont to create an <a class="el" href="class_o_n___font.html" title="An ON_Font is a face in a font family. It corresponds to a Windows LOGFONT, a .NET System....">ON_Font</a> that references an installed font. Less ideally, use a complete LOGFONT structure. Parameters: windows_logfont_name - [in] GDI LOGFONT.lfFaceName value. Note well: This is not the font "face name", not the font "family name", and not the font PostScript name. It is often a combination of the family name, an additional "GDI sub-family" name. Occasionally it includes some face weight and style attributes. Returns: True if the value was set. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Use ON_Font::SetFromDWriteFont(), ON_Font::SetFromAppleFont(), or ON_Font::SetFromWindowsLogFont() </dd></dl>
 
 </div>
 </div>
@@ -7146,7 +7236,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

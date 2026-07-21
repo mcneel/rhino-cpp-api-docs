@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -323,7 +323,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Custom event notification messages sent to parent use the following format: message = <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a73cebf2902a272172aa745cb695b61af">CRhinoUiExpandableTabCtrl::m_custom_win_msg_id</a> (static UINT holding ID of registered Windows message) WPARAM = LOWORD is notification ID, HIWORD is message dependent LPARAM = Message dependent</p>
-<p>To use these notification codes do add the message map macro to the parent of this control: ON_REGISTERED_MESSAGE( CRhinoUiExpandableTabCtrl::m_custom_win_msg_id, OnRegisteredMessage) Add this to the decloration of the the parent window class: afx_msg LRESULT OnRegisteredMessage( WPARAM wParam, LPARAM lParam); Add this method to the class implementation LRESULT CMyDialog::OnRegisteredMessage( WPARAM wParam, LPARAM lParam) { int tab_notification_id = LOWORD( wParam); int hi_word = HIWORD( wParam); CDialog* pPage = NULL; switch( tab_notification_id) { case <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a7d1809358fc8501bead974c7c709458ca20619c6bf6136145e0d977bed9eb1ba1">CRhinoUiExpandableTabCtrl::etcn_expand</a>: pPage = (CDialog*)lParam; ///&lt; expanded == hi_word return true; case <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a7d1809358fc8501bead974c7c709458ca1939da50f42ba26fd92449390aa434de">CRhinoUiExpandableTabCtrl::etcn_hide</a>: pPage = (CDialog*)lParam; ///&lt; hidden = hi_word return true; } return 0L; } </p>
+<p>To use these notification codes do add the message map macro to the parent of this control: ON_REGISTERED_MESSAGE( CRhinoUiExpandableTabCtrl::m_custom_win_msg_id, OnRegisteredMessage) Add this to the decloration of the parent window class: afx_msg LRESULT OnRegisteredMessage( WPARAM wParam, LPARAM lParam); Add this method to the class implementation LRESULT CMyDialog::OnRegisteredMessage( WPARAM wParam, LPARAM lParam) { int tab_notification_id = LOWORD( wParam); int hi_word = HIWORD( wParam); CDialog* pPage = NULL; switch( tab_notification_id) { case <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a7d1809358fc8501bead974c7c709458ca20619c6bf6136145e0d977bed9eb1ba1">CRhinoUiExpandableTabCtrl::etcn_expand</a>: pPage = (CDialog*)lParam; ///&lt; expanded == hi_word return true; case <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a7d1809358fc8501bead974c7c709458ca1939da50f42ba26fd92449390aa434de">CRhinoUiExpandableTabCtrl::etcn_hide</a>: pPage = (CDialog*)lParam; ///&lt; hidden = hi_word return true; } return 0L; } </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d1809358fc8501bead974c7c709458ca20619c6bf6136145e0d977bed9eb1ba1"></a>etcn_expand&#160;</td><td class="fielddoc"><p>message = <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl.html#a73cebf2902a272172aa745cb695b61af">CRhinoUiExpandableTabCtrl::m_custom_win_msg_id</a> WPARAM LOWORD = etcn_expand HIWROD = Bool, if true then tab has just been expanded otherwise it has just been contracted. LPARAM = Pointer to <a class="el" href="class_c_rhino_ui_expandable_tab_ctrl_item.html">CRhinoUiExpandableTabCtrlItem</a> item being expanded or contracted. </p>
 </td></tr>
@@ -1855,7 +1855,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -158,6 +158,7 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558a89bc457d8bb0e4903b2b1ced24a379c0">TYPE::pbr_opacity_texture</a> = 3U, 
 <a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558a3334e0ff1fc0efdf1c931a259892d244">TYPE::pbr_bump_texture</a> = 2U, 
+<a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558acb7684925341f07584e50f49941307eb">TYPE::blend_amount_texture</a> = 31U, 
 <a class="el" href="class_o_n___texture.html#a1e73ed16dda764adcb0618dbf8097558aa2c78836b230eda463be3f14b207345a">TYPE::emap_texture</a> = 86U
 <br />
  }</td></tr>
@@ -294,6 +295,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#afa19aee4a411a8fda53aff00bd02d86e">ObjectType</a> () const</td></tr>
 <tr class="separator:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -581,6 +585,8 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558a4ec0110f921c2bc04d9f0fa4d57b627f"></a>pbr_alpha_texture&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558a89bc457d8bb0e4903b2b1ced24a379c0"></a>pbr_opacity_texture&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558a3334e0ff1fc0efdf1c931a259892d244"></a>pbr_bump_texture&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558acb7684925341f07584e50f49941307eb"></a>blend_amount_texture&#160;</td><td class="fielddoc"><p>value = mix/blend amount for blend_texture </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1e73ed16dda764adcb0618dbf8097558aa2c78836b230eda463be3f14b207345a"></a>emap_texture&#160;</td><td class="fielddoc"><p>emap_texture is OBSOLETE - set m_mapping_channel_id = ON_MappingChannel::emap_mapping </p>
 <p>spherical environment mapping. </p>
 </td></tr>
@@ -1067,7 +1073,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Examines the m_uvw matrix and harvests tiling constants. Parameters: dir - [in] 0 = reverse "u", 1 = reverse "v", 2 = reverse "w". count - [out] number of tiles offset - [out] offset of the tile Returns: True if if the m_uvw matrix had entries that were compatible with tiling. </p>
+<p>Description: Examines the m_uvw matrix and harvests tiling constants. Parameters: dir - [in] 0 = reverse "u", 1 = reverse "v", 2 = reverse "w". count - [out] number of tiles offset - [out] offset of the tile Returns: True if the m_uvw matrix had entries that were compatible with tiling. </p>
 
 </div>
 </div>
@@ -1723,7 +1729,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If an <a class="el" href="class_o_n___material.html">ON_Material</a> m_textures[] array has more than one texture, the textures are blended, and the textures have different m_blend_order values, the the texture with the smaller m_blend_order is first. <br  />
+<p>If an <a class="el" href="class_o_n___material.html">ON_Material</a> m_textures[] array has more than one texture, the textures are blended, and the textures have different m_blend_order values, the texture with the smaller m_blend_order is first. <br  />
  </p>
 
 </div>
@@ -2069,7 +2075,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

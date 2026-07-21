@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -88,9 +88,9 @@ Inheritance diagram for ON_SubDFace:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2f9104b6453889df5a3eb7ab7ae4ef07"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_face.html#a2f9104b6453889df5a3eb7ab7ae4ef07ad5039979a63cecc5861399707529a370">MaximumEdgeCount</a> = 0xFFF0U
+<tr class="memitem:a795931f86486644b435882b8c903a5c1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_face.html#a795931f86486644b435882b8c903a5c1ad5039979a63cecc5861399707529a370">MaximumEdgeCount</a> = 0xFFF0U
  }</td></tr>
-<tr class="separator:a2f9104b6453889df5a3eb7ab7ae4ef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a795931f86486644b435882b8c903a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -457,14 +457,21 @@ Friends</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
-<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5ab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5aace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03
+<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a2113dad0041f8e1a05b836a928c100fd">DeprecatedModifiedFlags</a>
  }</td></tr>
 <tr class="separator:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<tr class="memitem:a7583e499d46547a2758d03cd2bb254dd inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">SavedOrModifiedPointsFlags</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<br />
+ }</td></tr>
+<tr class="separator:a7583e499d46547a2758d03cd2bb254dd inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affead29aabbfac019261f587b6c3ff16e044">DeprecatedSavedPointsFlags</a>
  }</td></tr>
 <tr class="separator:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
@@ -497,8 +504,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
 <tr class="memitem:ae609568efd09af50564debc87010606d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae609568efd09af50564debc87010606d">m_level</a> = 0U</td></tr>
 <tr class="separator:ae609568efd09af50564debc87010606d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5665f98f601c3a89ec1e789b0ef577f3 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5665f98f601c3a89ec1e789b0ef577f3">m_saved_points_flags</a> = 0U</td></tr>
-<tr class="separator:a5665f98f601c3a89ec1e789b0ef577f3 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0566c8fa8d521bedc83d7bc2cb538976 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0566c8fa8d521bedc83d7bc2cb538976">m_saved_modified_points_flags</a> = 0U</td></tr>
+<tr class="separator:a0566c8fa8d521bedc83d7bc2cb538976 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">m_saved_subd_point1</a> [3]</td></tr>
 <tr class="memdesc:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetSubdivisionPoint( bUseSavedSubdivisionPoint=true ) can change the value of m_cache_subd_P.  <a href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">More...</a><br /></td></tr>
 <tr class="separator:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,8 +513,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a2f9104b6453889df5a3eb7ab7ae4ef07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f9104b6453889df5a3eb7ab7ae4ef07">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a795931f86486644b435882b8c903a5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795931f86486644b435882b8c903a5c1">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,7 +529,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">ON_SubDEdgePtr.EdgeDirection()</a> is 0 if the edge's natural orientation from m_vertex[0] to m_vertex[1] agrees with the face's boundary orientation.</p>
 <p>The value of <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">ON_SubDEdgePtr.EdgeDirection()</a> is 1 if the edge's natural orientation from m_vertex[0] to m_vertex[1] is opposited the face's boundary orientation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2f9104b6453889df5a3eb7ab7ae4ef07ad5039979a63cecc5861399707529a370"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a795931f86486644b435882b8c903a5c1ad5039979a63cecc5861399707529a370"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2052,7 +2059,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: pack_rect_distance_in_pixels - [in] A (normalized pack rect distance) * <a class="el" href="class_o_n___sub_d.html#a921c764598e5e8acf1d65a4a86035ba4ab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a> Returns: Suggested gap between adjacent pack rects for a texture images with width and height &gt;= <a class="el" href="class_o_n___sub_d.html#a921c764598e5e8acf1d65a4a86035ba4ab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a>. This value will be 0.0 when pack_rect_distance_in_pixels is too small to permit a gap of 1 or more pixels without visibly adverse effects in a texture map clarity. </p>
+<p>Parameters: pack_rect_distance_in_pixels - [in] A (normalized pack rect distance) * <a class="el" href="class_o_n___sub_d.html#a9c8fe6a5fb5a62863d6e83baa765d6afab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a> Returns: Suggested gap between adjacent pack rects for a texture images with width and height &gt;= <a class="el" href="class_o_n___sub_d.html#a9c8fe6a5fb5a62863d6e83baa765d6afab72d6681c2028801f5b78c651928692d" title="ON_SUbDFace packing rectangle information is calculated so that there is at least one unused pixel be...">ON_SubD::TextureImageSuggestedMinimumSize</a>. This value will be 0.0 when pack_rect_distance_in_pixels is too small to permit a gap of 1 or more pixels without visibly adverse effects in a texture map clarity. </p>
 
 </div>
 </div>
@@ -3391,7 +3398,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

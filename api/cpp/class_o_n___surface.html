@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -140,8 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a552a54185a974fca151c990708fe31b1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a552a54185a974fca151c990708fe31b1">CreateMesh</a> (const <a class="el" href="class_o_n___mesh_parameters.html">ON_MeshParameters</a> &amp;mp, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh=nullptr) const</td></tr>
 <tr class="memdesc:a552a54185a974fca151c990708fe31b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface interface  <a href="class_o_n___surface.html#a552a54185a974fca151c990708fe31b1">More...</a><br /></td></tr>
 <tr class="separator:a552a54185a974fca151c990708fe31b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5310c5acc0086e2307a8fc747911e84"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ac5310c5acc0086e2307a8fc747911e84">CreateSurfaceTree</a> () const</td></tr>
+<tr class="memitem:ac5310c5acc0086e2307a8fc747911e84"><td class="memItemLeft" align="right" valign="top">virtual ON_SurfaceTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ac5310c5acc0086e2307a8fc747911e84">CreateSurfaceTree</a> () const</td></tr>
 <tr class="separator:ac5310c5acc0086e2307a8fc747911e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c03b9d215b813c07c4d6bff305d6563"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a6c03b9d215b813c07c4d6bff305d6563">CurveIso</a> (<a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087">ON_Surface::ISO</a> iso, double p=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>) const</td></tr>
+<tr class="separator:a6c03b9d215b813c07c4d6bff305d6563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9535e38883dc5a1e2982066b0f0387"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a3c9535e38883dc5a1e2982066b0f0387">Degree</a> (int dir) const =0</td></tr>
 <tr class="separator:a3c9535e38883dc5a1e2982066b0f0387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfce039c891be4737a8710462b3336dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#acfce039c891be4737a8710462b3336dc">DestroyRuntimeCache</a> (bool bDelete=true) override</td></tr>
@@ -199,6 +201,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6a9af3ac5390e3f7fdd037caab0bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146fd5801184a3f0d24a67c102feda37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a146fd5801184a3f0d24a67c102feda37">GetSurfaceParameterFromNurbFormParameter</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;ns_curve2dX, double fit_tolerance) const</td></tr>
 <tr class="separator:a146fd5801184a3f0d24a67c102feda37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a24032276fb52b177ec4e5db6c714d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a45a24032276fb52b177ec4e5db6c714d">GetSurfaceParameterFromNurbFormParameter</a> (const ON_SurfaceTree *tree, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;ns_curve2dX, double fit_tolerance) const</td></tr>
+<tr class="separator:a45a24032276fb52b177ec4e5db6c714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafce544c2cced9832d8210dd78fc4878"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#aafce544c2cced9832d8210dd78fc4878">GetSurfaceParameterFromNurbFormParameter</a> (double nurbs_s, double nurbs_t, double *surface_s, double *surface_t) const</td></tr>
 <tr class="separator:aafce544c2cced9832d8210dd78fc4878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b4795bd65f16952895c05319c75128"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a92b4795bd65f16952895c05319c75128">GetSurfaceSize</a> (double *width, double *height) const</td></tr>
@@ -207,6 +211,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac4fd9454c44389114b7e5f8b5348a449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032695e1c765ace3b5b9888d746b49f7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a032695e1c765ace3b5b9888d746b49f7">HasNurbForm</a> () const</td></tr>
 <tr class="separator:a032695e1c765ace3b5b9888d746b49f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68d09e01325c78c09da23fcacd889b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ab68d09e01325c78c09da23fcacd889b2">HasSingularEdge</a> () const</td></tr>
+<tr class="separator:ab68d09e01325c78c09da23fcacd889b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858bdaad80b66bf1529eb1de9f268c9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a858bdaad80b66bf1529eb1de9f268c9d">IntersectPlane</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> plane_equation, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___s_s_x___e_v_e_n_t.html">ON_SSX_EVENT</a> &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0, double fitting_tolerance=0.0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_vdomain=0) const</td></tr>
 <tr class="separator:a858bdaad80b66bf1529eb1de9f268c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275eb9d7e25a424c09076e37a3927872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a275eb9d7e25a424c09076e37a3927872">IntersectSurface</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> *surfaceB, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___s_s_x___e_v_e_n_t.html">ON_SSX_EVENT</a> &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0, double fitting_tolerance=0.0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceA_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceA_vdomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_vdomain=0) const</td></tr>
@@ -223,6 +229,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d3ac3b32555c7213b1c2b25705f3d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2b7070ae8c79bf6a0e85b4f8839286"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#afa2b7070ae8c79bf6a0e85b4f8839286">IsCylinder</a> (<a class="el" href="class_o_n___cylinder.html">ON_Cylinder</a> *cylinder=nullptr, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
 <tr class="separator:afa2b7070ae8c79bf6a0e85b4f8839286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4f685d5956c04618c81f024833cb25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a1f4f685d5956c04618c81f024833cb25">IsExtrusion</a> (<a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> *extrusion=nullptr, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
+<tr class="separator:a1f4f685d5956c04618c81f024833cb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d67a07468c45f62b31c6bc654e4faf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087">ISO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a87d67a07468c45f62b31c6bc654e4faf">IsIsoparametric</a> (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bbox) const</td></tr>
 <tr class="separator:a87d67a07468c45f62b31c6bc654e4faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130a84dc24cd70540a3ec24a72310847"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087">ISO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a130a84dc24cd70540a3ec24a72310847">IsIsoparametric</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *curve_domain=nullptr) const</td></tr>
@@ -276,7 +284,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03d6dbe66c5ade85012c6402134bc523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa8df2f579c5547324a42f284bcbc6c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a7aa8df2f579c5547324a42f284bcbc6c">Split</a> (int dir, double c, <a class="el" href="class_o_n___surface.html">ON_Surface</a> *&amp;west_or_south_side, <a class="el" href="class_o_n___surface.html">ON_Surface</a> *&amp;east_or_north_side) const</td></tr>
 <tr class="separator:a7aa8df2f579c5547324a42f284bcbc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4647ab1cb5aaba90fa9cca690ad4ae06"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a4647ab1cb5aaba90fa9cca690ad4ae06">SurfaceTree</a> () const</td></tr>
+<tr class="memitem:a4647ab1cb5aaba90fa9cca690ad4ae06"><td class="memItemLeft" align="right" valign="top">const ON_SurfaceTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a4647ab1cb5aaba90fa9cca690ad4ae06">SurfaceTree</a> () const</td></tr>
 <tr class="separator:a4647ab1cb5aaba90fa9cca690ad4ae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c02248d5c3280246e2732a14d84ca58"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a6c02248d5c3280246e2732a14d84ca58">Transpose</a> ()=0</td></tr>
 <tr class="memdesc:a6c02248d5c3280246e2732a14d84ca58"><td class="mdescLeft">&#160;</td><td class="mdescRight">transpose surface parameterization (swap "s" and "t")  <a href="class_o_n___surface.html#a6c02248d5c3280246e2732a14d84ca58">More...</a><br /></td></tr>
@@ -394,6 +402,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54a891ae2cb2a25008a7a39cb19dfcea inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a78b4ecb2eb36641e1ee6b4fc6129606e">MoveUserData</a> (<a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution, bool bDeleteAllSourceItems)</td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -833,7 +844,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a>* ON_Surface::CreateSurfaceTree </td>
+          <td class="memname">virtual ON_SurfaceTree* ON_Surface::CreateSurfaceTree </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -845,6 +856,36 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c03b9d215b813c07c4d6bff305d6563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c03b9d215b813c07c4d6bff305d6563">&#9670;&nbsp;</a></span>CurveIso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___curve.html">ON_Curve</a>* ON_Surface::CurveIso </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087">ON_Surface::ISO</a>&#160;</td>
+          <td class="paramname"><em>iso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code><a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Get isoparametric curve. This is a quick way to invoke <a class="el" href="class_o_n___surface.html#a91faf7314053e7ebb3ebf12663647f5a">ON_Surface::IsoCurve</a> Parameters: iso - [in] ON_Surface::ISO::north returns the curve where U varies and V is V_max ON_Surface::ISO::east returns the curve where V varies and U is U_max ON_Surface::ISO::south returns the curve where U varies and V is V_min ON_Surface::ISO::west returns the curve where V varies and U is U_min ON_Surface::ISO::x_iso returns the curve where V varies and U is p and p is inside the U-domain ON_Surface::ISO::y_iso returns the curve where U varies and V is p and p is inside the V-domain Any other <a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087" title="pure virtual class for surface objects">ON_Surface::ISO</a> value will return NULL</p>
+<p>p - [in] The parameter to use when iso is x_iso or y_iso Parameter values outside the U- or V-domain will return NULL if iso is x_iso or y_iso, respectively Returns: Isoparametric curve or NULL if input is invalid </p>
 
 </div>
 </div>
@@ -1943,7 +1984,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Get a NURBS surface representation of this surface. Parameters: nurbs_surface - [out] NURBS representation returned here tolerance - [in] tolerance to use when creating NURBS representation. s_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. t_subdomain - [in] if not nullptr, then the NURBS representation for this portion of the surface is returned. Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - returned NURBS parameterization matches the surface's to the desired accuracy 2 success - returned NURBS point locus matches the surface's to the desired accuracy and the domain of the NURBS surface is correct. On However, This surface's parameterization and the NURBS surface parameterization may not match to the desired accuracy. This situation happens when getting NURBS representations of surfaces that have a transcendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. If you do not need the parameterization information provided by the return code, then <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> may be easier to use. See Also: <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___extrusion.html#a9c44182e349ff63dd56b56b748d925c7">ON_Extrusion</a>, <a class="el" href="class_o_n___nurbs_surface.html#a185695ea61e4584e918acfa8e6d79069">ON_NurbsSurface</a>, <a class="el" href="class_o_n___plane_surface.html#a196eeb174a69b78665c0100b20c3bf6f">ON_PlaneSurface</a>, <a class="el" href="class_o_n___rev_surface.html#a86c67379539b7d6a18acde69db1a6938">ON_RevSurface</a>, <a class="el" href="class_o_n___surface_proxy.html#a14a3ebb3e084b1f86b506e481d033221">ON_SurfaceProxy</a>, and <a class="el" href="class_o_n___sum_surface.html#ade2f772bdbed3b003a0f09a50818a11d">ON_SumSurface</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___extrusion.html#a9c44182e349ff63dd56b56b748d925c7">ON_Extrusion</a>, <a class="el" href="class_o_n___nurbs_surface.html#a185695ea61e4584e918acfa8e6d79069">ON_NurbsSurface</a>, <a class="el" href="class_o_n___rev_surface.html#a86c67379539b7d6a18acde69db1a6938">ON_RevSurface</a>, <a class="el" href="class_o_n___plane_surface.html#a196eeb174a69b78665c0100b20c3bf6f">ON_PlaneSurface</a>, <a class="el" href="class_o_n___surface_proxy.html#a14a3ebb3e084b1f86b506e481d033221">ON_SurfaceProxy</a>, and <a class="el" href="class_o_n___sum_surface.html#ade2f772bdbed3b003a0f09a50818a11d">ON_SumSurface</a>.</p>
 
 </div>
 </div>
@@ -2233,7 +2274,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a146fd5801184a3f0d24a67c102feda37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a146fd5801184a3f0d24a67c102feda37">&#9670;&nbsp;</a></span>GetSurfaceParameterFromNurbFormParameter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a146fd5801184a3f0d24a67c102feda37">&#9670;&nbsp;</a></span>GetSurfaceParameterFromNurbFormParameter() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2265,7 +2306,58 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Transform a parameter space curve from the surface tree (Nurbs) parameter space to the surface's innate parameter space. Requires a curve on the surface, and a parameter space curve defined in terms of the surface tree's parameter space, we transform this into the surfaces innate parameter space. Parameters: Srf - [in] Surface curve3d - [in] 3d intersection curve ns_curve2dX -[in] Curve in surface tree parameter space</p>
 <p>fit_tolerance - [in] tolerance</p>
-<p>Returns: A curve in the the surface's parameter space or nullptr if unsuccessful. </p>
+<p>Returns: A curve in the surface's parameter space or nullptr if unsuccessful. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve3d</td><td>3d intersection curve </td></tr>
+    <tr><td class="paramname">ns_curve2dX</td><td>2d curve in surface tree (i.e. nurbs_surface) </td></tr>
+    <tr><td class="paramname">fit_tolerance</td><td>parameter space distance_tolerance for fitting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45a24032276fb52b177ec4e5db6c714d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a24032276fb52b177ec4e5db6c714d">&#9670;&nbsp;</a></span>GetSurfaceParameterFromNurbFormParameter() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___curve.html">ON_Curve</a>* ON_Surface::GetSurfaceParameterFromNurbFormParameter </td>
+          <td>(</td>
+          <td class="paramtype">const ON_SurfaceTree *&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve3d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
+          <td class="paramname"><em>ns_curve2dX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fit_tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Transform a parameter space curve from the surface tree (Nurbs) parameter space to the surface's innate parameter space. Requires a curve on the surface, and a parameter space curve defined in terms of the surface tree's parameter space, we transform this into the surfaces innate parameter space. Parameters: Srf - [in] Surface tree- [in] Surface tree for this surface curve3d - [in] 3d intersection curve ns_curve2dX -[in] Curve in surface tree parameter space</p>
+<p>fit_tolerance - [in] tolerance</p>
+<p>Returns: A curve in the the surface's parameter space or nullptr if unsecessfull. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">curve3d</td><td>3d intersection curve </td></tr>
@@ -2278,7 +2370,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aafce544c2cced9832d8210dd78fc4878"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafce544c2cced9832d8210dd78fc4878">&#9670;&nbsp;</a></span>GetSurfaceParameterFromNurbFormParameter() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafce544c2cced9832d8210dd78fc4878">&#9670;&nbsp;</a></span>GetSurfaceParameterFromNurbFormParameter() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2421,7 +2513,24 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Is there a NURBS surface representation of this surface. Parameters: Returns: 0 unable to create NURBS representation with desired accuracy. 1 success - NURBS parameterization matches the surface's 2 success - NURBS point locus matches the surface's and the domain of the NURBS surface is correct. <br  />
  However, This surface's parameterization and the NURBS surface parameterization may not match. This situation happens when getting NURBS representations of surfaces that have a transcendental parameterization like spheres, cylinders, and cones. Remarks: This is a low-level virtual function. See Also: <a class="el" href="class_o_n___surface.html#a4c4be57a220937dbf697548f3505a693">ON_Surface::GetNurbForm</a> <a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">ON_Surface::NurbsSurface</a> </p>
 
-<p>Reimplemented in <a class="el" href="class_o_n___nurbs_surface.html#a739ab763ce240a6b244221289a812193">ON_NurbsSurface</a>, <a class="el" href="class_o_n___plane_surface.html#a68e5821fd1e286dd7e479fbf2d1ff397">ON_PlaneSurface</a>, <a class="el" href="class_o_n___rev_surface.html#ac84a2f47e8f606e8aef598126b5079fe">ON_RevSurface</a>, <a class="el" href="class_o_n___surface_proxy.html#a0bd136559322cc8c7b2b0d2cf9c2eba0">ON_SurfaceProxy</a>, <a class="el" href="class_o_n___sum_surface.html#a419d2295a6dc105b14a60e12d2406e34">ON_SumSurface</a>, and <a class="el" href="class_o_n___extrusion.html#af0b241139f0d66f26a0675a29b6983b5">ON_Extrusion</a>.</p>
+<p>Reimplemented in <a class="el" href="class_o_n___nurbs_surface.html#a739ab763ce240a6b244221289a812193">ON_NurbsSurface</a>, <a class="el" href="class_o_n___rev_surface.html#ac84a2f47e8f606e8aef598126b5079fe">ON_RevSurface</a>, <a class="el" href="class_o_n___plane_surface.html#a68e5821fd1e286dd7e479fbf2d1ff397">ON_PlaneSurface</a>, <a class="el" href="class_o_n___surface_proxy.html#a0bd136559322cc8c7b2b0d2cf9c2eba0">ON_SurfaceProxy</a>, <a class="el" href="class_o_n___sum_surface.html#a419d2295a6dc105b14a60e12d2406e34">ON_SumSurface</a>, and <a class="el" href="class_o_n___extrusion.html#af0b241139f0d66f26a0675a29b6983b5">ON_Extrusion</a>.</p>
+
+</div>
+</div>
+<a id="ab68d09e01325c78c09da23fcacd889b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68d09e01325c78c09da23fcacd889b2">&#9670;&nbsp;</a></span>HasSingularEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Surface::HasSingularEdge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2799,6 +2908,35 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Determine if the surface is a portion of a cylinder. Parameters: cylinder - [out] if not nullptr and true is returned, then the cylinder definition is returned. tolerance - [in] tolerance to use when checking Returns: True if the surface is a portion of a cylinder. <br  />
  </p>
+
+</div>
+</div>
+<a id="a1f4f685d5956c04618c81f024833cb25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4f685d5956c04618c81f024833cb25">&#9670;&nbsp;</a></span>IsExtrusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Surface::IsExtrusion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> *&#160;</td>
+          <td class="paramname"><em>extrusion</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Determine if the surface is an extrusion. Parameters: extrusion - [out] if not nullptr and true is returned, then the extrusion definition is returned. tolerance - [in] tolerance to use when checking Returns: True if the surface is an extrusion. </p>
 
 </div>
 </div>
@@ -3879,7 +4017,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a>* ON_Surface::SurfaceTree </td>
+          <td class="memname">const ON_SurfaceTree* ON_Surface::SurfaceTree </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -4152,7 +4290,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

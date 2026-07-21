@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,8 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_rh_rdk_event_watcher.html#a4faad5bbd99403bbb4b5221ebef7c6eba1cdc076b28f70afac5fcedadf99fa119">AttachReason::Undo</a>, 
 <a class="el" href="class_c_rh_rdk_event_watcher.html#a4faad5bbd99403bbb4b5221ebef7c6ebac3bf447eabe632720a3aa1a7ce401274">AttachReason::Open</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_event_watcher.html#a4faad5bbd99403bbb4b5221ebef7c6eba7dce122004969d56ae2e0245cb754d35">AttachReason::Edit</a>
+&#160;&#160;<a class="el" href="class_c_rh_rdk_event_watcher.html#a4faad5bbd99403bbb4b5221ebef7c6eba7dce122004969d56ae2e0245cb754d35">AttachReason::Edit</a>, 
+<a class="el" href="class_c_rh_rdk_event_watcher.html#a4faad5bbd99403bbb4b5221ebef7c6eba818da069336b82952a615624a59022d9">AttachReason::DCM</a>
 <br />
  }</td></tr>
 <tr class="separator:a4faad5bbd99403bbb4b5221ebef7c6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,6 +375,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a4faad5bbd99403bbb4b5221ebef7c6eba1cdc076b28f70afac5fcedadf99fa119"></a>Undo&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4faad5bbd99403bbb4b5221ebef7c6ebac3bf447eabe632720a3aa1a7ce401274"></a>Open&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4faad5bbd99403bbb4b5221ebef7c6eba7dce122004969d56ae2e0245cb754d35"></a>Edit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4faad5bbd99403bbb4b5221ebef7c6eba818da069336b82952a615624a59022d9"></a>DCM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2681,7 +2683,7 @@ CRhRdkContent::Delete() </dd></dl>
 </table>
 </div><div class="memdoc">
 <p>OnDocumentSettingsChanged has been replaced by individual events:</p>
-<p>OnRenderingSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa5bd25df2a15ad332eb1796a45f746406">CRhRdkEventSinkBase::rendering</a> OnSunSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa09bbbb161bbb8378fbcaa570b7feda88">CRhRdkEventSinkBase::document_sun</a> OnSafeFrameSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aae68f67a9932edbb480cc2c6c77c499ec">CRhRdkEventSinkBase::safe_frame</a> OnGroundPlaneSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa03cedb738fb06be6e8bb6fd1226a6785">CRhRdkEventSinkBase::ground_plane</a> OnPostEffectSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa81a3e6391a17833ae377f8364b053d63">CRhRdkEventSinkBase::post_effects</a> OnContentFilterChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aaf053edec68ce46bd7ffe71822f928d8f">CRhRdkEventSinkBase::content_filter</a> OnCustomRenderMeshesChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa044dfb69f0334ccc9c581acb974a5d67">CRhRdkEventSinkBase::custom_render_mesh</a> OnUndoRedo replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#ab824d341adc45cc7fbde1d5af761b35aa29fdc72a867ffe3821f0464f46c4eec1">CRhRdkEventSinkBase::all</a> </p>
+<p>OnRenderingSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a5bd25df2a15ad332eb1796a45f746406">CRhRdkEventSinkBase::rendering</a> OnSunSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a09bbbb161bbb8378fbcaa570b7feda88">CRhRdkEventSinkBase::document_sun</a> OnSafeFrameSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7ae68f67a9932edbb480cc2c6c77c499ec">CRhRdkEventSinkBase::safe_frame</a> OnGroundPlaneSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a03cedb738fb06be6e8bb6fd1226a6785">CRhRdkEventSinkBase::ground_plane</a> OnPostEffectSettingsChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a81a3e6391a17833ae377f8364b053d63">CRhRdkEventSinkBase::post_effects</a> OnContentFilterChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7af053edec68ce46bd7ffe71822f928d8f">CRhRdkEventSinkBase::content_filter</a> OnCustomRenderMeshesChanged replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a044dfb69f0334ccc9c581acb974a5d67">CRhRdkEventSinkBase::custom_render_mesh</a> OnUndoRedo replaces <a class="el" href="class_c_rh_rdk_event_sink_base.html#a2c709765f907f4676c2f10098eefb6e7a29fdc72a867ffe3821f0464f46c4eec1">CRhRdkEventSinkBase::all</a> </p>
 
 </div>
 </div>
@@ -4145,7 +4147,7 @@ CRhRdkContent::Delete() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

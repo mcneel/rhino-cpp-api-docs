@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -199,6 +199,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:addc03605f2514525b8a4ef7ac8fb94b5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#addc03605f2514525b8a4ef7ac8fb94b5">CompareEdgeId</a> (const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *a, const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *b)</td></tr>
+<tr class="separator:addc03605f2514525b8a4ef7ac8fb94b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b05afb955d6c263d65a8d1f8418272"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a60b05afb955d6c263d65a8d1f8418272">Create</a> (const class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &amp;edge_component)</td></tr>
 <tr class="separator:a60b05afb955d6c263d65a8d1f8418272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8fbd9bc06ff0f8af8b41dadaeefca3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#afb8fbd9bc06ff0f8af8b41dadaeefca3">Create</a> (const class <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> *edge)</td></tr>
@@ -291,6 +293,43 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Clears saved subdivision and limit surface information for this component. Parameters: bClearNeighborhood - [in] If true, all components attached to this component are also cleared. </p>
+
+</div>
+</div>
+<a id="addc03605f2514525b8a4ef7ac8fb94b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc03605f2514525b8a4ef7ac8fb94b5">&#9670;&nbsp;</a></span>CompareEdgeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_SubDEdgePtr::CompareEdgeId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Compares <a class="el" href="class_o_n___sub_d_edge_ptr.html#a1c9c06f7bb058e46838c6b4f8ee7663e">EdgeId()</a>, with similar null rules as <a class="el" href="class_o_n___sub_d_component_ptr.html#a3f4488e385257d13f9fc2515b0ff628d">ON_SubDComponentPtr::CompareComponentId</a>. </p>
 
 </div>
 </div>
@@ -1211,7 +1250,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: The sector coefficient is a property of a smooth edge end that is attached to a dart, crease, or corner vertex. In all other cases the sector coefficient is ignored. The value of the sector coefficient is constant throughout subdivision. <br  />
- Every smooth edge in a sector has the same sector coefficient at the central vertex. Parameters: relative_vertex_index - [in] Returns: If <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a> not nullptr, then If (relative_vertex_index = 0), returns <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;m_sector_coefficient(EdgeDirection()) If (relative_vertex_index = 0), returns <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;m_sector_coefficient(1-<a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a>) Otherwise <a class="el" href="class_o_n___sub_d_sector_type.html#adfa94981374e1edeb7dc7a58e9bd18e6" title="This value indicates an edge sector coefficient calculation failed.">ON_SubDSectorType::ErrorSectorCoefficient</a> is returned. Remarks: The name "sector coefficient" is used because is is a property of the vertex's sector (every edge in vertex sector has the same value at the tagged vertex). The sector coefficient does not change when a subdivision is applied. </p>
+ Every smooth edge in a sector has the same sector coefficient at the central vertex. Parameters: relative_vertex_index - [in] Returns: If <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a> not nullptr, then If (relative_vertex_index = 0), returns <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;m_sector_coefficient(EdgeDirection()) If (relative_vertex_index = 0), returns <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;m_sector_coefficient(1-<a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a>) Otherwise <a class="el" href="class_o_n___sub_d_sector_type.html#adfa94981374e1edeb7dc7a58e9bd18e6" title="This value indicates an edge sector coefficient calculation failed.">ON_SubDSectorType::ErrorSectorCoefficient</a> is returned. Remarks: The name "sector coefficient" is used because is a property of the vertex's sector (every edge in vertex sector has the same value at the tagged vertex). The sector coefficient does not change when a subdivision is applied. </p>
 
 </div>
 </div>
@@ -1361,7 +1400,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters: relative_vertex_index - [in] 0: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex(EdgeDirection())-&gt;Point(point_location) 1: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex(1-<a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a>)-&gt;Point(point_location) point_location - [in] Used to select control net or limit surface point. Returns: The requested vertex point with with <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a> taken into account. <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if relative_vertex_index, <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a> is nullptr, or <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex() is nullptr. </p>
+<p>Parameters: relative_vertex_index - [in] 0: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex(EdgeDirection())-&gt;Point(point_location) 1: return <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex(1-<a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a>)-&gt;Point(point_location) point_location - [in] Used to select control net or limit surface point. Returns: The requested vertex point with <a class="el" href="class_o_n___sub_d_edge_ptr.html#a0d29364e2f086ec1252dca6cf20932cd">EdgeDirection()</a> taken into account. <a class="el" href="class_o_n__3d_point.html#a431f63a983b61e62251c3ebb37d851ff" title="(ON_DBL_QNAN,ON_DBL_QNAN,ON_DBL_QNAN)">ON_3dPoint::NanPoint</a> if relative_vertex_index, <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a> is nullptr, or <a class="el" href="class_o_n___sub_d_edge_ptr.html#af7fdb171de936061fea9dd562f65d048">Edge()</a>-&gt;Vertex() is nullptr. </p>
 
 </div>
 </div>
@@ -1628,7 +1667,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

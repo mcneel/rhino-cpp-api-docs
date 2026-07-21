@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:addb6f0ea17e7c11fec2da839c9309d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cee1c81f2d5d61b9a3d0f8052e867ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d">AdaptiveDisplayMeshQuadMaximum</a> = 512000
+<tr class="memitem:a2cee1c81f2d5d61b9a3d0f8052e867ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d">AdaptiveDisplayMeshQuadMaximum</a> = 2048000
  }</td></tr>
 <tr class="separator:a2cee1c81f2d5d61b9a3d0f8052e867ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae967fb008b370319466273f6b535c78d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#ae967fb008b370319466273f6b535c78d">Context</a> : unsigned char { <a class="el" href="class_o_n___sub_d_display_parameters.html#ae967fb008b370319466273f6b535c78da88183b946cc5f0e8c96b2e66e1c74a7e">Context::Unknown</a> = 0, 
@@ -167,7 +167,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b5b1f6eb9c23f5fa05431ff172e0cee"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#a9b5b1f6eb9c23f5fa05431ff172e0cee">AbsoluteDisplayDensityFromSubD</a> (unsigned adaptive_subd_display_density, const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd)</td></tr>
 <tr class="separator:a9b5b1f6eb9c23f5fa05431ff172e0cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91aa92440fda13de90ab137d6cda874"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#aa91aa92440fda13de90ab137d6cda874">AbsoluteDisplayDensityFromSubDFaceCount</a> (unsigned adaptive_subd_display_density, unsigned subd_face_count)</td></tr>
+<tr class="memdesc:aa91aa92440fda13de90ab137d6cda874"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED - DO NOT USE BEST: Call <a class="el" href="class_o_n___sub_d_display_parameters.html#a9b5b1f6eb9c23f5fa05431ff172e0cee">ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubD()</a>. BETTER: Call <a class="el" href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef" title="Convert an &quot;adaptive&quot; display_density to an absolute density. For ordinary sized SubDs with no sharp ...">ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubDProperties()</a>.  <a href="class_o_n___sub_d_display_parameters.html#aa91aa92440fda13de90ab137d6cda874">More...</a><br /></td></tr>
 <tr class="separator:aa91aa92440fda13de90ab137d6cda874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf3b3262f96efd44312bdfb9eeaddef"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef">AbsoluteDisplayDensityFromSubDProperties</a> (unsigned adaptive_subd_display_density, unsigned subd_face_count, bool bHasSharpEdges)</td></tr>
+<tr class="memdesc:a5cf3b3262f96efd44312bdfb9eeaddef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an "adaptive" display_density to an absolute density. For ordinary sized SubDs with no sharp edges, the returned absolute display density is equal to the adaptive display density. For ordinary sized SubDs with sharp edges, the returned absolute display density is equal to the 1 + adaptive display density. For SubDs with sharp edges, this increase means the sharp edges are rendered more accurately. For large SubDs the absolute density is reduced a bit to keep the overall number of fragment quads small enough that common current rendering technology can handle them. The generation of the fragments is typically much faster than rendering the resulting mesh; rendering and/or wasteful conversions to <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> are the typical bottlenecks.  <a href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef">More...</a><br /></td></tr>
+<tr class="separator:a5cf3b3262f96efd44312bdfb9eeaddef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56322123a820290dfa97c09ee14918c7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#a56322123a820290dfa97c09ee14918c7">CompareDisplayDensity</a> (const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;subd, const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> &amp;a, const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> &amp;b, bool bCompareComputeCurvature)</td></tr>
+<tr class="separator:a56322123a820290dfa97c09ee14918c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aabd00b2aee73d13e62e844c85cdf69"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#a5aabd00b2aee73d13e62e844c85cdf69">CreateFromAbsoluteDisplayDensity</a> (unsigned int absolute_subd_display_density)</td></tr>
 <tr class="separator:a5aabd00b2aee73d13e62e844c85cdf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507f7064a8bf81965005826c20cec8bc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_display_parameters.html#a507f7064a8bf81965005826c20cec8bc">CreateFromDisplayDensity</a> (unsigned int adaptive_subd_display_density)</td></tr>
@@ -250,7 +256,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d"></a>AdaptiveDisplayMeshQuadMaximum&#160;</td><td class="fielddoc"><p>When the SubD display density is adaptive (default), AdaptiveMeshQuadMaximum specifies the approximate number of display mesh quads to permit before reducing the SubD display mesh density. Approximate display mesh quad count = subd.FaceCount()*(4^subd_display_density). This enum value may change from release to release as rendering technology improves. Make sure your code works for values between 1024 and 134217728. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d"></a>AdaptiveDisplayMeshQuadMaximum&#160;</td><td class="fielddoc"><p>When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum number of display mesh quads that will be used to render a SubD. </p>
+<p>This enum value will change from release to release as rendering technology improves. The code must work for values between 1024 and 134217728.</p>
+<p>2025 May 21 RH-86272 - increased from 512000 to 2048000 so large SubDs have smoother looking display meshes. For ordinary sized SubS, the approximate display mesh quad count is subd.FaceCount()*(4^D), where D = (adaptive_display_density + (bHasSharpEdges ? 1 : 0). For large SubDs, D is reduced as much until subd.FaceCount()*(4^D) &amp;lt= AdaptiveMeshQuadMaximum.</p>
 </td></tr>
 </table>
 
@@ -433,7 +441,116 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parameters: adaptive_subd_display_density - [in] A value &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. When in doubt, pass <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. Invalid input values are treated as <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. subd_face_count - [in] Number of SubD faces. When subd_face_count = 0, adaptive_subd_display_density is returned. Returns: The absolute SubD display density for SubD with subd_face_count faces. The absolute SubD display density is &lt;= adaptive_subd_display_density and &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. </p>
+
+<p>DEPRECATED - DO NOT USE BEST: Call <a class="el" href="class_o_n___sub_d_display_parameters.html#a9b5b1f6eb9c23f5fa05431ff172e0cee">ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubD()</a>. BETTER: Call <a class="el" href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef" title="Convert an &quot;adaptive&quot; display_density to an absolute density. For ordinary sized SubDs with no sharp ...">ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubDProperties()</a>. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000074">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef" title="Convert an &quot;adaptive&quot; display_density to an absolute density. For ordinary sized SubDs with no sharp ...">ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubDProperties()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5cf3b3262f96efd44312bdfb9eeaddef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf3b3262f96efd44312bdfb9eeaddef">&#9670;&nbsp;</a></span>AbsoluteDisplayDensityFromSubDProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ON_SubDDisplayParameters::AbsoluteDisplayDensityFromSubDProperties </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>adaptive_subd_display_density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>subd_face_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bHasSharpEdges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert an "adaptive" display_density to an absolute density. For ordinary sized SubDs with no sharp edges, the returned absolute display density is equal to the adaptive display density. For ordinary sized SubDs with sharp edges, the returned absolute display density is equal to the 1 + adaptive display density. For SubDs with sharp edges, this increase means the sharp edges are rendered more accurately. For large SubDs the absolute density is reduced a bit to keep the overall number of fragment quads small enough that common current rendering technology can handle them. The generation of the fragments is typically much faster than rendering the resulting mesh; rendering and/or wasteful conversions to <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> are the typical bottlenecks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adaptive_subd_display_density</td><td>0 &lt;= adaptive_subd_display_density &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>. Invalid input values are treated as <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. When in doubt, pass <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca27c3609ad4514f1e7290dde3625f553b">ON_SubDDisplayParameters::DefaultDensity</a>. Do not adjust the adaptive_subd_display_density parameter based on the presense of sharp edges. When bHasSharpEdges is true, the caluculation in <a class="el" href="class_o_n___sub_d_display_parameters.html#a5cf3b3262f96efd44312bdfb9eeaddef" title="Convert an &quot;adaptive&quot; display_density to an absolute density. For ordinary sized SubDs with no sharp ...">AbsoluteDisplayDensityFromSubDProperties()</a> will increases the returned absolute display density by one. </td></tr>
+    <tr><td class="paramname">subd_face_count</td><td>Number of SubD faces. When subd_face_count is very large, the returned absolute display density is smaller than the input adaptive_subd_display_density to attempt to keep the total number of mesh quads that need to be renderered &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum ...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Details: Set D = adaptive_subd_display_density + (bHasSharpEdges?1:0). Set M = <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum ...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>/(4^D)). The same absoluted display density D is returned for all face counts in the range 0 &lt;= subd_face_count &lt;= M. When subd_face_count &gt; M, the returned absolute display density is reduced to a level where the resulting number of mesh quads will be &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum ...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bHasSharpEdges</td><td>Pass true if the SubD has sharp edges. For ordinary sized SubDs, when bHasSharpEdges is true, adaptive_subd_display_density + 1 is returned and when bHasSharpEdges is false, adaptive_subd_display_density is returned. For large SubDs, see the Details section of the subd_face_count documentation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The absolute display density to use to render the SubD. </dd></dl>
+
+</div>
+</div>
+<a id="a56322123a820290dfa97c09ee14918c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56322123a820290dfa97c09ee14918c7">&#9670;&nbsp;</a></span>CompareDisplayDensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_SubDDisplayParameters::CompareDisplayDensity </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bCompareComputeCurvature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -598,7 +715,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000072">Deprecated:</a></b></dt><dd>Use DisplayDensity(subd) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>Use DisplayDensity(subd) </dd></dl>
 
 </div>
 </div>
@@ -657,7 +774,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: True if the SubD display density setting is adaptive and approximate display mesh quad count is capped at <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive (default), AdaptiveMeshQuadMaximum specifies the approximat...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>. Remarks: this-&gt;DensityIsAdaptive() and this-&gt;DensityIsAbsolute() always return opposite bool values. Use the one that makes your code easiest to read and understand. </p>
+<p>Returns: True if the SubD display density setting is adaptive and approximate display mesh quad count is capped at <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum ...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>. Remarks: this-&gt;DensityIsAdaptive() and this-&gt;DensityIsAbsolute() always return opposite bool values. Use the one that makes your code easiest to read and understand. </p>
 
 </div>
 </div>
@@ -845,7 +962,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set an adaptive SubD display density that caps display mesh quad count at <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive (default), AdaptiveMeshQuadMaximum specifies the approximat...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>. Parameters: adaptive_display_density - [in] adaptive_display_density &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a> Values &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1caf7454da06076e73a1a95586797fb6a85">ON_SubDDisplayParameters::MinimumAdaptiveDensity</a> will never be adaptively reduced during display mesh creation. Remarks: The use of this setting </p>
+<p>Description: Set an adaptive SubD display density that caps display mesh quad count at <a class="el" href="class_o_n___sub_d_display_parameters.html#a2cee1c81f2d5d61b9a3d0f8052e867caabcd8000a2e66933188f86725b0771d1d" title="When the SubD display density is adaptive, AdaptiveMeshQuadMaximum specifies the approximate maximum ...">ON_SubDDisplayParameters::AdaptiveDisplayMeshQuadMaximum</a>. Parameters: adaptive_display_density - [in] adaptive_display_density &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1ca52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a> Values &lt;= <a class="el" href="class_o_n___sub_d_display_parameters.html#addb6f0ea17e7c11fec2da839c9309d1caf7454da06076e73a1a95586797fb6a85">ON_SubDDisplayParameters::MinimumAdaptiveDensity</a> will never be adaptively reduced during display mesh creation. Remarks: The use of this setting </p>
 
 </div>
 </div>
@@ -901,7 +1018,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000073">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d_display_parameters.html#acb839d8a7bce8d1b55e4c968d5ac42d3">SetAdaptiveDisplayDensity()</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_o_n___sub_d_display_parameters.html#acb839d8a7bce8d1b55e4c968d5ac42d3">SetAdaptiveDisplayDensity()</a> </dd></dl>
 
 </div>
 </div>
@@ -1171,7 +1288,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

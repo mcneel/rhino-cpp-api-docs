@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -448,12 +448,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The value m_contraint_type determines what type of constraint to apply.</p>
 <p>0: Ignore this constraint.</p>
-<p>1: m_brep_trim_index identifies a brep trim. The surface along the trim will will be constrained to m_curve_constraint. m_curve_constraint must be oriented to take the trim's m_bRev3d flag into account.</p>
-<p>2: m_brep_trim_index identifies a brep trim. The surface along the trim will will be constrained to location of m_surface_constraint along the trim.</p>
+<p>1: m_brep_trim_index identifies a brep trim. The surface along the trim will be constrained to m_curve_constraint. m_curve_constraint must be oriented to take the trim's m_bRev3d flag into account.</p>
+<p>2: m_brep_trim_index identifies a brep trim. The surface along the trim will be constrained to location of m_surface_constraint along the trim.</p>
 <p>3 - 6: Surface Singularity These constraints specify the surface returned by ON_BendBrepFace will have a singularity on the side identified by the constraint value at the location specified by the value in m_point. The values of m_brep_trim_index, m_curve_constraint and m_surface_constraint are ignored. 3: west side singularity. 4: south side singularity. 5: east side singularity. 6: north side singularity.</p>
-<p>7 - 8: Closed surface These constraints specify the surface returned by ON_BendBrepFace will be closed in the parameter direction identified by the constraint value. The knot vector on the surface passed to ON_BendBrepFace determines if the the closure is clamped or periodic. The values of m_brep_trim_index, m_curve_constraint and m_surface_constraint are ignored. 7: Closed surface the first parameter direction. (west = east) 8: Closed surface in the second parameter direction. (south = north)</p>
+<p>7 - 8: Closed surface These constraints specify the surface returned by ON_BendBrepFace will be closed in the parameter direction identified by the constraint value. The knot vector on the surface passed to ON_BendBrepFace determines if the closure is clamped or periodic. The values of m_brep_trim_index, m_curve_constraint and m_surface_constraint are ignored. 7: Closed surface the first parameter direction. (west = east) 8: Closed surface in the second parameter direction. (south = north)</p>
 <p>13 - 16: Constrain a surface side to a curve. The specified side of the surface is constrained to the curve specified by m_curve_constraint. The domain and parameterization of m_curve_constaint must be set to agree with the portion of the side of the surface that is being constrained. The values of m_brep_trim_index and m_surface_constraint are ignored. 13: west side lies on m_curve_constraint. 14: south side lies on m_curve_constraint. 15: east side lies on m_curve_constraint. 16: north side lies on m_curve_constraint.</p>
-<p>23 - 26: Constrain a surface side to match another surface side. The specified side of the surface is constrained to match the same side of m_surface_constraint. The domain and parameterization of m_surface_constraint must be set to agree with the the side of the surface that is being constrained. The values of m_brep_trim_index and m_curve_constraint are ignored. 23: west side matches west side of m_surface_constraint. 24: south side matches west side of m_surface_constraint. 25: east side matches west side of m_surface_constraint. 26: north side matches west side of m_surface_constraint.</p>
+<p>23 - 26: Constrain a surface side to match another surface side. The specified side of the surface is constrained to match the same side of m_surface_constraint. The domain and parameterization of m_surface_constraint must be set to agree with the side of the surface that is being constrained. The values of m_brep_trim_index and m_curve_constraint are ignored. 23: west side matches west side of m_surface_constraint. 24: south side matches west side of m_surface_constraint. 25: east side matches west side of m_surface_constraint. 26: north side matches west side of m_surface_constraint.</p>
 <p>27: Point constraint m_surface_parameters[2] = surface evaluation parameters m_point = 3d point.</p>
 <p>28: Set east-west seam from fixed north and south sides. <br  />
  29: Set south-north seam from fixed west and east sides. <br  />
@@ -553,7 +553,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

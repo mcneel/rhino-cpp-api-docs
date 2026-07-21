@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -157,6 +157,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad9b1d99c7574a9dc9426c29c69d47575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0377b3893cd981527307404db265351"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#ab0377b3893cd981527307404db265351">SidebarIsVisible</a> (bool mruSidebar)</td></tr>
 <tr class="separator:ab0377b3893cd981527307404db265351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6abe0db147fdf697742da23aa874e08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#ab6abe0db147fdf697742da23aa874e08">Svg</a> (<a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idFile, <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idImage, bool darkMode)</td></tr>
+<tr class="separator:ab6abe0db147fdf697742da23aa874e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26eb950f6eb9773645342dd0b63c07bc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#a26eb950f6eb9773645342dd0b63c07bc">TabBitmapSize</a> ()</td></tr>
 <tr class="separator:a26eb950f6eb9773645342dd0b63c07bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225ac464c67ee8fd633ab60d46cbdf4f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#a225ac464c67ee8fd633ab60d46cbdf4f">ToolBarBitmapSize</a> ()</td></tr>
@@ -1592,6 +1594,49 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab6abe0db147fdf697742da23aa874e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6abe0db147fdf697742da23aa874e08">&#9670;&nbsp;</a></span>Svg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n__w_string.html">ON_wString</a> CRhinoUiFile::Svg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a>&#160;</td>
+          <td class="paramname"><em>idFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a>&#160;</td>
+          <td class="paramname"><em>idImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>darkMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Call this method to get the SVG string for the image with the specified id. Parameters: idFile[in] Id of the file containing the image. idImage[in] Id of the image (the same id returned by MacroBitmapID). darkMode[in] Set to true to get the dark-mode SVG. When the image only has a light SVG, its custom dark-mode attributes are applied to produce the result. Returns: Returns the SVG string for the image, or an empty string if the image was not found or has no SVG representation. </p>
+
+</div>
+</div>
 <a id="a26eb950f6eb9773645342dd0b63c07bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26eb950f6eb9773645342dd0b63c07bc">&#9670;&nbsp;</a></span>TabBitmapSize()</h2>
 
@@ -1787,7 +1832,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -399,6 +399,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b65830aaf58297fdd284e248fccb657"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a1b65830aaf58297fdd284e248fccb657">FloodFill</a> (long x, long y, <a class="el" href="group___rhino.html#gaccdb52a7f12ddcd041cc45b1406189b6">COLORREF</a> cr, int traget_alpha=-1)</td></tr>
 <tr class="memdesc:a1b65830aaf58297fdd284e248fccb657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goofy edit functions.  <a href="class_c_rhino_dib.html#a1b65830aaf58297fdd284e248fccb657">More...</a><br /></td></tr>
 <tr class="separator:a1b65830aaf58297fdd284e248fccb657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0e7052910d826d0aea913b853d53a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a9f0e7052910d826d0aea913b853d53a7">FromOnWindowsBitmap</a> (const <a class="el" href="class_o_n___windows_bitmap.html">ON_WindowsBitmap</a> &amp;bitmap)</td></tr>
+<tr class="separator:a9f0e7052910d826d0aea913b853d53a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f74d576bfb5856d8b61350b8dd4f6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a3f74d576bfb5856d8b61350b8dd4f6cd">GaussianBlurWithRadius</a> (double radius)</td></tr>
 <tr class="separator:a3f74d576bfb5856d8b61350b8dd4f6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076623a5cb75325ccbcc7a96d0986d89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_dib.html#a076623a5cb75325ccbcc7a96d0986d89">GetDepth</a> () const</td></tr>
@@ -3284,6 +3286,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a9f0e7052910d826d0aea913b853d53a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0e7052910d826d0aea913b853d53a7">&#9670;&nbsp;</a></span>FromOnWindowsBitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDib::FromOnWindowsBitmap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___windows_bitmap.html">ON_WindowsBitmap</a> &amp;&#160;</td>
+          <td class="paramname"><em>bitmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3f74d576bfb5856d8b61350b8dd4f6cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f74d576bfb5856d8b61350b8dd4f6cd">&#9670;&nbsp;</a></span>GaussianBlurWithRadius()</h2>
 
@@ -4716,7 +4736,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Call this method to see if the DIB appears to be a normal map. Returns: Returns true if the bitmap appears to be a normal map. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000220">Deprecated:</a></b></dt><dd>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent </dd></dl>
+<p>Description: Call this method to see if the DIB appears to be a normal map. Returns: Returns true if the bitmap appears to be a normal map. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000228">Deprecated:</a></b></dt><dd>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent </dd></dl>
 
 </div>
 </div>
@@ -4735,7 +4755,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Call this method to see if the DIB appears to be a normal map. Returns: Returns true if the bitmap appears to be a normal map. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000146">Deprecated:</a></b></dt><dd>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent </dd></dl>
+<p>Description: Call this method to see if the DIB appears to be a normal map. Returns: Returns true if the bitmap appears to be a normal map. False otherwise. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000152">Deprecated:</a></b></dt><dd>Use the version that takes parameters bLossyCompressionSource and bPositiveZComponent </dd></dl>
 
 </div>
 </div>
@@ -5726,7 +5746,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Display Rhino bitmap open dialog prompting for name then read bitmap from disk. Parameters: hWnd - [in] Parent window for file dialog. If NULL will use Rhino frame window. bUseDialogs - [in] If true then display file dialog otherwise prompt for name on command line. Returns: CRhinoCommand::result::cancel - The file dialog or script was canceled. CRhinoCommand::result::failure - Error reading the file. CRhinoCommand::result::success - The file was read successfully </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000144">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
+<p>Description: Display Rhino bitmap open dialog prompting for name then read bitmap from disk. Parameters: hWnd - [in] Parent window for file dialog. If NULL will use Rhino frame window. bUseDialogs - [in] If true then display file dialog otherwise prompt for name on command line. Returns: CRhinoCommand::result::cancel - The file dialog or script was canceled. CRhinoCommand::result::failure - Error reading the file. CRhinoCommand::result::success - The file was read successfully </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000150">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
 
 </div>
 </div>
@@ -5780,7 +5800,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Read bitmap from disk. Parameters: lpsFileName - [in] Name of file to read. Uses CRhinoFileUtilities::FindFile(...) to validate file name. Returns: true - File was read from disk. false - Error reading file or invalid file type. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000219">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
+<p>Description: Read bitmap from disk. Parameters: lpsFileName - [in] Name of file to read. Uses CRhinoFileUtilities::FindFile(...) to validate file name. Returns: true - File was read from disk. false - Error reading file or invalid file type. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000227">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
 
 </div>
 </div>
@@ -5799,7 +5819,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Read bitmap from disk. Parameters: lpsFileName - [in] Name of file to read. Uses CRhinoFileUtilities::FindFile(...) to validate file name. Returns: true - File was read from disk. false - Error reading file or invalid file type. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000145">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
+<p>Description: Read bitmap from disk. Parameters: lpsFileName - [in] Name of file to read. Uses CRhinoFileUtilities::FindFile(...) to validate file name. Returns: true - File was read from disk. false - Error reading file or invalid file type. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000151">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
 
 </div>
 </div>
@@ -5857,7 +5877,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Display Rhino bitmap open dialog prompting for name then read bitmap from disk. Parameters: hWnd - [in] Parent window for file dialog. If NULL will use Rhino frame window. bUseDialogs - [in] If true then display file dialog otherwise prompt for name on command line. Returns: true - File name specified and written to disk. false - File dialog canceled or error reading file. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000143">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
+<p>Description: Display Rhino bitmap open dialog prompting for name then read bitmap from disk. Parameters: hWnd - [in] Parent window for file dialog. If NULL will use Rhino frame window. bUseDialogs - [in] If true then display file dialog otherwise prompt for name on command line. Returns: true - File name specified and written to disk. false - File dialog canceled or error reading file. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000149">Deprecated:</a></b></dt><dd>Use the version that takes doc_serial_number </dd></dl>
 
 </div>
 </div>
@@ -6229,9 +6249,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Converts an SVG definition to a bitmap.</p>
-<p>Parameters: svg - [in] The textual definition of the SVG image. width - [in] The required width of the bitmap. height - [in] The required height of the bitmap. convert_to_darkmode - [in] If true, the image will be processed to make it suitable for display in dark mode.</p>
-<p>Returns: True if successful, else false. </p>
+<p>Description: Converts an SVG definition to a bitmap. Parameters: svg - [in] The textual definition of the SVG image. width - [in] The required width of the bitmap. height - [in] The required height of the bitmap. convert_to_darkmode - [in] If true, the image will be processed to make it suitable for display in dark mode. Returns: True if successful, else false. </p>
 
 </div>
 </div>
@@ -8386,7 +8404,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

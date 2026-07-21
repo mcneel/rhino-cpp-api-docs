@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -139,9 +139,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a751f32852d7c2b2355d8507c704cbdaf"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#a751f32852d7c2b2355d8507c704cbdaf">New</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt; mesh, const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;)</td></tr>
 <tr class="memdesc:a751f32852d7c2b2355d8507c704cbdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extremely simple version for "use all object attributes". Typically used when there are no previous meshes.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#a751f32852d7c2b2355d8507c704cbdaf">More...</a><br /></td></tr>
 <tr class="separator:a751f32852d7c2b2355d8507c704cbdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee87860f4d5eb3a15f35801a1decf77f"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#aee87860f4d5eb3a15f35801a1decf77f">New</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt; mesh, const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;, bool use_material)</td></tr>
+<tr class="separator:aee87860f4d5eb3a15f35801a1decf77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6453fcfb60bdb68a10b0505f1d76072b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___rhino.html#ga8e6f5833c898be05daa508d60b72b22f">ON_DEPRECATED_MSG</a>(&quot;Use the one above&quot;) static std std::shared_ptr&lt; <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#a6453fcfb60bdb68a10b0505f1d76072b">New</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt; mesh, const <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &amp;previous)</td></tr>
 <tr class="memdesc:a6453fcfb60bdb68a10b0505f1d76072b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to create a ready made instance object - reusing the materials, mapping and so on from a previous instance object. This is typically used inside a MeshProvider to replace the incoming instance with new geometry.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#a6453fcfb60bdb68a10b0505f1d76072b">More...</a><br /></td></tr>
 <tr class="separator:a6453fcfb60bdb68a10b0505f1d76072b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b881f7cb335d57178198cd393cb876c"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html#a8b881f7cb335d57178198cd393cb876c">New</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt; mesh, const <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &amp;previous, bool copy_material)</td></tr>
+<tr class="separator:a8b881f7cb335d57178198cd393cb876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The core of the custom render mesh delivery system - and instance defines a single mesh or other primitive (sphere, plane, box or cone). Each instance has a shared mesh/primitive and a transform, along with a material, mapping channels (at the mesh and instance level). </p>
@@ -479,7 +483,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="afbcbfc8f44570228cf66a728f27eac49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbcbfc8f44570228cf66a728f27eac49">&#9670;&nbsp;</a></span>New() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcbfc8f44570228cf66a728f27eac49">&#9670;&nbsp;</a></span>New() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +592,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a751f32852d7c2b2355d8507c704cbdaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751f32852d7c2b2355d8507c704cbdaf">&#9670;&nbsp;</a></span>New() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a751f32852d7c2b2355d8507c704cbdaf">&#9670;&nbsp;</a></span>New() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,8 +636,50 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aee87860f4d5eb3a15f35801a1decf77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee87860f4d5eb3a15f35801a1decf77f">&#9670;&nbsp;</a></span>New() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a>&gt; RhRdk::CustomRenderMeshes::IRenderMeshes::IInstance::New </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_material</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6453fcfb60bdb68a10b0505f1d76072b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6453fcfb60bdb68a10b0505f1d76072b">&#9670;&nbsp;</a></span>New() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6453fcfb60bdb68a10b0505f1d76072b">&#9670;&nbsp;</a></span>New() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,6 +721,48 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new instance object</dd></dl>
+
+</div>
+</div>
+<a id="a8b881f7cb335d57178198cd393cb876c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b881f7cb335d57178198cd393cb876c">&#9670;&nbsp;</a></span>New() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a>&gt; RhRdk::CustomRenderMeshes::IRenderMeshes::IInstance::New </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_i_instance.html">IInstance</a> &amp;&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>copy_material</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -767,7 +855,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

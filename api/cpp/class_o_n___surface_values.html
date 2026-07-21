@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -80,9 +80,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa99f3d9f21804f10b4ba5da026b3a2ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned { <a class="el" href="class_o_n___surface_values.html#aa99f3d9f21804f10b4ba5da026b3a2aba6906fdc9b10c66fda474f1c4137527a6">MaximumDerivativeOrder</a> = 15
+<tr class="memitem:ac0349e7ebb6d7e5e6f24dc5c1f958652"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned { <a class="el" href="class_o_n___surface_values.html#ac0349e7ebb6d7e5e6f24dc5c1f958652a6906fdc9b10c66fda474f1c4137527a6">MaximumDerivativeOrder</a> = 15
  }</td></tr>
-<tr class="separator:aa99f3d9f21804f10b4ba5da026b3a2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac0349e7ebb6d7e5e6f24dc5c1f958652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -166,8 +166,8 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> stores surface evaluation values (point, normal, curvatures, derivatives) in a single class </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aa99f3d9f21804f10b4ba5da026b3a2ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa99f3d9f21804f10b4ba5da026b3a2ab">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ac0349e7ebb6d7e5e6f24dc5c1f958652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0349e7ebb6d7e5e6f24dc5c1f958652">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +178,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa99f3d9f21804f10b4ba5da026b3a2aba6906fdc9b10c66fda474f1c4137527a6"></a>MaximumDerivativeOrder&#160;</td><td class="fielddoc"><p>The maximum order of a partial derivative that an <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class can possibly store is 15. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac0349e7ebb6d7e5e6f24dc5c1f958652a6906fdc9b10c66fda474f1c4137527a6"></a>MaximumDerivativeOrder&#160;</td><td class="fielddoc"><p>The maximum order of a partial derivative that an <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class can possibly store is 15. </p>
 </td></tr>
 </table>
 
@@ -410,7 +410,7 @@ Static Public Attributes</h2></td></tr>
 <p>NOTE WELL: CreateFromLocalArray is for experts dealing with unusual situations. Create a <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> where the storage for derivative values is managed externally. This is typically used by experts to easily get surface evaluation results stored in value_array[] when the evaluation function returns the results in a <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class. The caller is responsible for ensuring that the value_array[] memory is not freed or deleted while the returned <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class is in scope. Any copy of the returned values will not reference value_array[]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">derivative_order</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#aa99f3d9f21804f10b4ba5da026b3a2aba6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
+    <tr><td class="paramname">derivative_order</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#ac0349e7ebb6d7e5e6f24dc5c1f958652a6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
     <tr><td class="paramname">value_array_stride</td><td>value_array_stride &gt;= 3. </td></tr>
     <tr><td class="paramname">value_array</td><td>An array with a capacity of at least value_array_stride * ((order_capacity + 1) * (order_capacity + 2) / 2) doubles. </td></tr>
     <tr><td class="paramname">values</td><td>After the call, values will use value_array to store point and derivative evaluations. </td></tr>
@@ -464,7 +464,7 @@ Static Public Attributes</h2></td></tr>
 <p>NOTE WELL: CreateFromVectorArray is for experts dealing with unusual situations. Create a <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> where the storage for the values is derivative values is managed externally. This is typically used by experts to easily get surface evaluation results stored in value_array[] when the evaluation function returns the results in a <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class. The caller is responsible for ensuring that the value_array[] memory is not freed or deleted while the returned <a class="el" href="class_o_n___surface_values.html" title="ON_SurfaceValues stores surface evaluation values (point, normal, curvatures, derivatives) in a singl...">ON_SurfaceValues</a> class is in scope. Any copy of the returned values will not reference value_array[]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">order_capacity</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#aa99f3d9f21804f10b4ba5da026b3a2aba6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
+    <tr><td class="paramname">order_capacity</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#ac0349e7ebb6d7e5e6f24dc5c1f958652a6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
     <tr><td class="paramname">value_array</td><td>The capacity and count of value_array[] will be set to ((order_capacity + 1) * (order_capacity + 2) / 2). </td></tr>
     <tr><td class="paramname">values</td><td>After the call, values will use value_array to store point and derivative evaluations. Note that if values is copied, all derivative information will be lost. This class is for experts dealing with unusual situations. </td></tr>
   </table>
@@ -762,7 +762,7 @@ Static Public Attributes</h2></td></tr>
 <p></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">order_capacity</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#aa99f3d9f21804f10b4ba5da026b3a2aba6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
+    <tr><td class="paramname">order_capacity</td><td>0 &lt;= derivative_order &lt;= <a class="el" href="class_o_n___surface_values.html#ac0349e7ebb6d7e5e6f24dc5c1f958652a6906fdc9b10c66fda474f1c4137527a6" title="The maximum order of a partial derivative that an ON_SurfaceValues class can possibly store is 15.">ON_SurfaceValues::MaximumDerivativeOrder</a> derivative_order = maximum order of a partial derivative that can be stored in value_array[]. 1 for point and 1st partial derivatives (value_array[] has at least 3*value_array_stride doubles). 2 for point, 1st and 2nd partial derivatives (value_array[] has at least 6*value_array_stride doubles). And so on. </td></tr>
   </table>
   </dd>
 </dl>
@@ -958,7 +958,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a102dfc2c2e99fde5ff67870e7ae963a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ff43844b1e11a8ba4b829b355ef8de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a60ff43844b1e11a8ba4b829b355ef8de">DeleteLayers</a> (int layer_index_count, const int *layer_index_list, bool bQuiet, int delete_objects_warning)</td></tr>
 <tr class="separator:a60ff43844b1e11a8ba4b829b355ef8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af625efb48cf81a84f40d7683858e3914"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#af625efb48cf81a84f40d7683858e3914">DeleteLayers</a> (int layer_index_count, const int *layer_index_list, bool bQuiet, int delete_objects_warning, bool check_objects)</td></tr>
+<tr class="separator:af625efb48cf81a84f40d7683858e3914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d6a3b4b67b0e42bea5d2767cc0677db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a7d6a3b4b67b0e42bea5d2767cc0677db">Document</a> () const</td></tr>
 <tr class="separator:a7d6a3b4b67b0e42bea5d2767cc0677db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032c0cc37982790ef17f600536ee4a57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a032c0cc37982790ef17f600536ee4a57">FindLayerFromFullPathName</a> (const wchar_t *layer_full_path_name, int not_found_return_value) const</td></tr>
@@ -435,7 +437,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a102dfc2c2e99fde5ff67870e7ae963a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a102dfc2c2e99fde5ff67870e7ae963a7">&#9670;&nbsp;</a></span>DeleteLayers() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a102dfc2c2e99fde5ff67870e7ae963a7">&#9670;&nbsp;</a></span>DeleteLayers() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +472,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a60ff43844b1e11a8ba4b829b355ef8de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ff43844b1e11a8ba4b829b355ef8de">&#9670;&nbsp;</a></span>DeleteLayers() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ff43844b1e11a8ba4b829b355ef8de">&#9670;&nbsp;</a></span>DeleteLayers() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,6 +509,53 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Deletes multiple layers. Parameters: layer_index_count - [in] length of layer_index_list[] array. layer_index_list - [in] array zero based indices of layers to delete. The indices must be in the range 0 &lt;= layer_index &lt; <a class="el" href="class_c_rhino_layer_table.html#aff5673a8def2a696bb4051a3eb8288f1">LayerCount()</a>. bQuiet - [in] If true, no warning message box appears if a layer cannot be deleted because it is the current layer, contains active geometry, and so on. delete_objects_warning - [in] Action to take when multiple delete warnings occur, where: 0 == No to all, 1 == Yes to all, 2 == Ask the user. Returns: Number of layers that were deleted. If this is &lt; layer_index_count, you can dig through the layer table and check which ones were not deleted. </p>
+
+</div>
+</div>
+<a id="af625efb48cf81a84f40d7683858e3914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af625efb48cf81a84f40d7683858e3914">&#9670;&nbsp;</a></span>DeleteLayers() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoLayerTable::DeleteLayers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer_index_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>layer_index_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bQuiet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delete_objects_warning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_objects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Deletes multiple layers. Parameters: layer_index_count - [in] length of layer_index_list[] array. layer_index_list - [in] array zero based indices of layers to delete. The indices must be in the range 0 &lt;= layer_index &lt; <a class="el" href="class_c_rhino_layer_table.html#aff5673a8def2a696bb4051a3eb8288f1">LayerCount()</a>. bQuiet - [in] If true, no warning message box appears if a layer cannot be deleted because it is the current layer, contains active geometry, and so on. delete_objects_warning - [in] Action to take when multiple delete warnings occur, where: 0 == No to all, 1 == Yes to all, 2 == Ask the user. check_objects - [in] If true, each layer is checked for objects before deletion. (pass true if you know there are no objects) Returns: Number of layers that were deleted. If this is &lt; layer_index_count, you can dig through the layer table and check which ones were not deleted. </p>
 
 </div>
 </div>
@@ -786,7 +835,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Find a layer from a name that uniquely identifies a layer. Parameters: layer_name - [in] - name of layer to find bIgnoreDeletedLayers - [in] - parameter is unused Returns: -2: two or more layers with the same name -1: no layer with specified name &gt;=0: index of the layer with the given name Example: If there are layers with indices and names:</p>
 <p>0: "alpha" 1: "beta" 2: "beta::alpha" 3: "beta::gamma" 4: "beta::gamma::pi" 5: "beta::gamma::omega" 5: "beta::gamma::omega::pi"</p>
-<p>Then FindLayerFromUniqueName( "alpha" ) returns 0. FindLayerFromUniqueName( "beta::alpha" ) returns 2. FindLayerFromUniqueName( "gamma" ) returns 3. FindLayerFromUniqueName( "pi" ) returns -2. (multiple possible answers) FindLayerFromUniqueName( "beta::gamma::pi" ) returns 4. FindLayerFromUniqueName( "beta::gamma::omega::pi" ) returns 5. FindLayerFromUniqueName( "sigma" ) returns -1. (no matches) FindLayerFromUniqueName( "" ) returns -1. (no matches) FindLayerFromUniqueName( null ) returns -1. (no matches) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000197">Deprecated:</a></b></dt><dd>use overload that accepts not_found_return_value and multiple_found_return_value parameters </dd></dl>
+<p>Then FindLayerFromUniqueName( "alpha" ) returns 0. FindLayerFromUniqueName( "beta::alpha" ) returns 2. FindLayerFromUniqueName( "gamma" ) returns 3. FindLayerFromUniqueName( "pi" ) returns -2. (multiple possible answers) FindLayerFromUniqueName( "beta::gamma::pi" ) returns 4. FindLayerFromUniqueName( "beta::gamma::omega::pi" ) returns 5. FindLayerFromUniqueName( "sigma" ) returns -1. (no matches) FindLayerFromUniqueName( "" ) returns -1. (no matches) FindLayerFromUniqueName( null ) returns -1. (no matches) </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000204">Deprecated:</a></b></dt><dd>use overload that accepts not_found_return_value and multiple_found_return_value parameters </dd></dl>
 
 </div>
 </div>
@@ -1581,7 +1630,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

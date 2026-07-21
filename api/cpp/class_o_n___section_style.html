@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,7 @@ Inheritance diagram for ON_SectionStyle:</div>
   <map id="ON_5FSectionStyle_map" name="ON_5FSectionStyle_map">
 <area href="class_o_n___model_component.html" alt="ON_ModelComponent" shape="rect" coords="0,56,136,80"/>
 <area href="class_o_n___object.html" alt="ON_Object" shape="rect" coords="0,0,136,24"/>
+<area href="class_c_rhino_section_style.html" alt="CRhinoSectionStyle" shape="rect" coords="0,168,136,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -141,9 +142,11 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba">Type::EmbeddedFile</a> = 15, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567">Type::ObsoleteValue</a> = 16, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7">Type::SectionStyle</a> = 17, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae51e08a727173e8719e480316459991e">Type::Markup</a> = 18, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacacf1e66d857077c9d245428bfda9f5184">Type::PageViewGroup</a> = 19, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
 <br />
  }</td></tr>
 <tr class="memdesc:a2977d69091b4952cc19b0189a28a0eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> enum has a value for each explicit component type and two special values, Unset and Mixed. Use an <a class="el" href="class_o_n___model_component_type_iterator.html">ON_ModelComponentTypeIterator</a> instance to iterate over the <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> values. /summary&gt;  <a href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">More...</a><br /></td></tr>
@@ -179,6 +182,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92e94348affb32cd7b970296dcf6954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af36e3b9e850ff4e878b042d492f5aa93"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___linetype.html">ON_Linetype</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#af36e3b9e850ff4e878b042d492f5aa93">BoundaryLinetype</a> () const</td></tr>
 <tr class="separator:af36e3b9e850ff4e878b042d492f5aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a998a25d0076524e747584a47fdcd3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a8a998a25d0076524e747584a47fdcd3e">BoundaryLinetypeIndex</a> () const</td></tr>
+<tr class="separator:a8a998a25d0076524e747584a47fdcd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0199b9b0fb3c8bcd7983bc55b783dde"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#ac0199b9b0fb3c8bcd7983bc55b783dde">BoundaryPlotWeightMillimeters</a> () const</td></tr>
+<tr class="separator:ac0199b9b0fb3c8bcd7983bc55b783dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4254b6485fe421fed321a782ba4fa791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a4254b6485fe421fed321a782ba4fa791">BoundaryVisible</a> () const</td></tr>
 <tr class="memdesc:a4254b6485fe421fed321a782ba4fa791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the boundary curves for a section be shown (default is true)  <a href="class_o_n___section_style.html#a4254b6485fe421fed321a782ba4fa791">More...</a><br /></td></tr>
 <tr class="separator:a4254b6485fe421fed321a782ba4fa791"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +225,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac48ff545259f2a89322af1f9d30a9c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d08420c5010dd7097c5b232f221b59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a4d08420c5010dd7097c5b232f221b59f">SetBoundaryLinetype</a> (const <a class="el" href="class_o_n___linetype.html">ON_Linetype</a> &amp;linetype)</td></tr>
 <tr class="separator:a4d08420c5010dd7097c5b232f221b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abbb012a71e476712407bdc18726f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a4abbb012a71e476712407bdc18726f23">SetBoundaryLinetypeIndex</a> (int index)</td></tr>
+<tr class="separator:a4abbb012a71e476712407bdc18726f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab350f9a8f0285627825f7543485314e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#ab350f9a8f0285627825f7543485314e1">SetBoundaryPlotWeightMillimeters</a> (double weight)</td></tr>
+<tr class="separator:ab350f9a8f0285627825f7543485314e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5276df234039eecb1f86f913c2f4f552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a5276df234039eecb1f86f913c2f4f552">SetBoundaryVisible</a> (bool on)</td></tr>
 <tr class="separator:a5276df234039eecb1f86f913c2f4f552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cb4a1539c91829ce79b6e5f007b6b8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a3cb4a1539c91829ce79b6e5f007b6b8f">SetBoundaryWidthScale</a> (double scale)</td></tr>
@@ -492,6 +503,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#afa19aee4a411a8fda53aff00bd02d86e">ObjectType</a> () const</td></tr>
 <tr class="separator:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -586,6 +600,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a15b34bbc5d06cbb7d435f3d935ca5802"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___section_style.html">ON_SectionStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a15b34bbc5d06cbb7d435f3d935ca5802">Default</a></td></tr>
+<tr class="memdesc:a15b34bbc5d06cbb7d435f3d935ca5802"><td class="mdescLeft">&#160;</td><td class="mdescRight">index = -1, unique and persistent id.  <a href="class_o_n___section_style.html#a15b34bbc5d06cbb7d435f3d935ca5802">More...</a><br /></td></tr>
+<tr class="separator:a15b34bbc5d06cbb7d435f3d935ca5802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2911e3cceecd0086e6e6e75d3b20c4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___section_style.html">ON_SectionStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___section_style.html#a6d2911e3cceecd0086e6e6e75d3b20c4">Unset</a></td></tr>
 <tr class="memdesc:a6d2911e3cceecd0086e6e6e75d3b20c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">index = ON_UNSET_INT_INDEX, id = nil  <a href="class_o_n___section_style.html#a6d2911e3cceecd0086e6e6e75d3b20c4">More...</a><br /></td></tr>
 <tr class="separator:a6d2911e3cceecd0086e6e6e75d3b20c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -771,6 +788,42 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Section styles can have custom linetypes. If null, then the linetype is retrieved from the parent layer or attributes </p>
+
+</div>
+</div>
+<a id="a8a998a25d0076524e747584a47fdcd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a998a25d0076524e747584a47fdcd3e">&#9670;&nbsp;</a></span>BoundaryLinetypeIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_SectionStyle::BoundaryLinetypeIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0199b9b0fb3c8bcd7983bc55b783dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0199b9b0fb3c8bcd7983bc55b783dde">&#9670;&nbsp;</a></span>BoundaryPlotWeightMillimeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_SectionStyle::BoundaryPlotWeightMillimeters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Plot width of the boundary curves. values less than -1 (-10 is default): plot weight is determined by the object's attributes -1: do not plot 0: use default weight defined by the print dialog positive values are thicknesses in millimeters to print to</p>
+<p>NOTE: if a linetype is assigned to this section style that has a physical width (not pixels), then this value is ignored and the linetype value is used </p>
 
 </div>
 </div>
@@ -1176,6 +1229,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4abbb012a71e476712407bdc18726f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abbb012a71e476712407bdc18726f23">&#9670;&nbsp;</a></span>SetBoundaryLinetypeIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SectionStyle::SetBoundaryLinetypeIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the boundary linetype needs to come from the document, then set the index using an index in the document's linetype table. Default is ON_UNSET_INT_INDEX which means the linetype is not set to a document linetype and is instead derived from the locally held custom linetype or the object's linetype </p>
+
+</div>
+</div>
+<a id="ab350f9a8f0285627825f7543485314e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab350f9a8f0285627825f7543485314e1">&#9670;&nbsp;</a></span>SetBoundaryPlotWeightMillimeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_SectionStyle::SetBoundaryPlotWeightMillimeters </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5276df234039eecb1f86f913c2f4f552"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5276df234039eecb1f86f913c2f4f552">&#9670;&nbsp;</a></span>SetBoundaryVisible()</h2>
 
@@ -1387,6 +1477,30 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a15b34bbc5d06cbb7d435f3d935ca5802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b34bbc5d06cbb7d435f3d935ca5802">&#9670;&nbsp;</a></span>Default</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___section_style.html">ON_SectionStyle</a> ON_SectionStyle::Default</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>index = -1, unique and persistent id. </p>
+
+</div>
+</div>
 <a id="a6d2911e3cceecd0086e6e6e75d3b20c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d2911e3cceecd0086e6e6e75d3b20c4">&#9670;&nbsp;</a></span>Unset</h2>
 
@@ -1414,7 +1528,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_c_rhino_get-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CRhinoGet Class Reference<div class="ingroups"><a class="el" href="group___rhino_get.html">RhinoGet</a></div></div>  </div>
@@ -138,13 +139,15 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886ad99a1195a0b292f16ab00935dd0980d1">number_preview</a>, 
 <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a53b62c210db9a06866be8547c289ef06">point_preview</a>, 
+<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a4d40ca16b863af5c83128495f4a8f82b">string_preview</a>, 
 <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a5dddf802ca1ecb108ed54deea359c4e4">user1</a> = 0xFFFFFFFF, 
-<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a6c915c14bdad0da4da7d4513f692c1b4">user2</a> = 0xFFFFFFFE, 
 <br />
-&#160;&#160;<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a8eef4ef67a8bedece251cf5fc80ee73e">user3</a> = 0xFFFFFFFD, 
+&#160;&#160;<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a6c915c14bdad0da4da7d4513f692c1b4">user2</a> = 0xFFFFFFFE, 
+<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a8eef4ef67a8bedece251cf5fc80ee73e">user3</a> = 0xFFFFFFFD, 
 <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a14dd489a20e94dcd2e45d82d853e0c92">user4</a> = 0xFFFFFFFC, 
 <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a5c714cb1fc01f65fcc255d03e903684a">user5</a> = 0xFFFFFFFB, 
-<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a4ed3ef7192b62a57184b7324c4728c4e">exit_rhino</a> = 0x0FFFFFFF
+<br />
+&#160;&#160;<a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a4ed3ef7192b62a57184b7324c4728c4e">exit_rhino</a> = 0x0FFFFFFF
 <br />
  }</td></tr>
 <tr class="separator:afbb1d0091ccb1306d0fe606405f6b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,21 +173,50 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a833cdeb463d9952b6bf8172193a73ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f263b42aa498e92eb48f2fa0b0e1e4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ad6f263b42aa498e92eb48f2fa0b0e1e4">~CRhinoGet</a> ()</td></tr>
 <tr class="separator:ad6f263b42aa498e92eb48f2fa0b0e1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffdda18896b8078b0978020e0dbefd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#acffdda18896b8078b0978020e0dbefd7">Accept2dPointValue</a> () const</td></tr>
+<tr class="memdesc:acffdda18896b8078b0978020e0dbefd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d screen point (used by CRhinoGet2dPoint)  <a href="class_c_rhino_get.html#acffdda18896b8078b0978020e0dbefd7">More...</a><br /></td></tr>
+<tr class="separator:acffdda18896b8078b0978020e0dbefd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c48316398f20f835683c3cb70b141c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a4c48316398f20f835683c3cb70b141c7">AcceptColor</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> b=true)</td></tr>
 <tr class="separator:a4c48316398f20f835683c3cb70b141c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da505845cf4d3c64f5ce3948e205c7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a4da505845cf4d3c64f5ce3948e205c7f">AcceptColorValue</a> () const</td></tr>
+<tr class="separator:a4da505845cf4d3c64f5ce3948e205c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22e3732292386503fec9ac9a688751fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a22e3732292386503fec9ac9a688751fe">AcceptCustomWindowsMessage</a> (<a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> winmsg_id)</td></tr>
 <tr class="separator:a22e3732292386503fec9ac9a688751fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ecbddacdcfdd329c9d0e6889c96337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a85ecbddacdcfdd329c9d0e6889c96337">AcceptEnterWhenDone</a> (bool b=true)</td></tr>
+<tr class="separator:a85ecbddacdcfdd329c9d0e6889c96337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b03f395597f83672ac0c661c7fc2686"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a8b03f395597f83672ac0c661c7fc2686">AcceptEnterWhenDoneValue</a> () const</td></tr>
+<tr class="separator:a8b03f395597f83672ac0c661c7fc2686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8446020c887030e0fd828548e86e6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a6b8446020c887030e0fd828548e86e6b">AcceptLiteralString</a> (bool b=true)</td></tr>
+<tr class="separator:a6b8446020c887030e0fd828548e86e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd1330366c3981382b1092df837496e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a4fd1330366c3981382b1092df837496e">AcceptLiteralStringValue</a> () const</td></tr>
+<tr class="separator:a4fd1330366c3981382b1092df837496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b4ef7e9ff3bb4a95a40993b0673d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ad3b4ef7e9ff3bb4a95a40993b0673d67">AcceptNothing</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> b=true)</td></tr>
 <tr class="separator:ad3b4ef7e9ff3bb4a95a40993b0673d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c082f89d13d2f7437fa4cf8bb95c8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a38c082f89d13d2f7437fa4cf8bb95c8a">AcceptNothingValue</a> () const</td></tr>
+<tr class="memdesc:a38c082f89d13d2f7437fa4cf8bb95c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">used internally by Command UI  <a href="class_c_rhino_get.html#a38c082f89d13d2f7437fa4cf8bb95c8a">More...</a><br /></td></tr>
+<tr class="separator:a38c082f89d13d2f7437fa4cf8bb95c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa22015c0cbaf99ce7d772b0114dbc4b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#aa22015c0cbaf99ce7d772b0114dbc4b6">AcceptNumber</a> (bool b=true, bool bAcceptZero=true)</td></tr>
 <tr class="separator:aa22015c0cbaf99ce7d772b0114dbc4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94aa64c927969bd1fd0550019907f67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ab94aa64c927969bd1fd0550019907f67">AcceptNumberValue</a> () const</td></tr>
+<tr class="separator:ab94aa64c927969bd1fd0550019907f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe33f0993307f8dfa50edd4d7275b9da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#afe33f0993307f8dfa50edd4d7275b9da">AcceptNumberZeroValue</a> () const</td></tr>
+<tr class="separator:afe33f0993307f8dfa50edd4d7275b9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbd3989df8e2a219e241990eb385b06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#aadbd3989df8e2a219e241990eb385b06">AcceptPoint</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> b=true)</td></tr>
 <tr class="separator:aadbd3989df8e2a219e241990eb385b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93260fa80d716821f513776b100a6b93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a93260fa80d716821f513776b100a6b93">AcceptPointValue</a> () const</td></tr>
+<tr class="memdesc:a93260fa80d716821f513776b100a6b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">3d world point  <a href="class_c_rhino_get.html#a93260fa80d716821f513776b100a6b93">More...</a><br /></td></tr>
+<tr class="separator:a93260fa80d716821f513776b100a6b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bece6fc972d8af4ec00bb30dad7f6bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a7bece6fc972d8af4ec00bb30dad7f6bb">AcceptString</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> b=true)</td></tr>
 <tr class="separator:a7bece6fc972d8af4ec00bb30dad7f6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130ed5d687421c675866697218c94253"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a130ed5d687421c675866697218c94253">AcceptString_0Value</a> () const</td></tr>
+<tr class="separator:a130ed5d687421c675866697218c94253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125aeb05aee30bae26c838163758ed9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a125aeb05aee30bae26c838163758ed9a">AcceptStringValue</a> () const</td></tr>
+<tr class="separator:a125aeb05aee30bae26c838163758ed9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad002df3c7e3acb5928b0f655c8013ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ad002df3c7e3acb5928b0f655c8013ca6">AcceptUndo</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> b=true)</td></tr>
 <tr class="memdesc:ad002df3c7e3acb5928b0f655c8013ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">call to allow user undo previous selection.  <a href="class_c_rhino_get.html#ad002df3c7e3acb5928b0f655c8013ca6">More...</a><br /></td></tr>
 <tr class="separator:ad002df3c7e3acb5928b0f655c8013ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60648863fa7658896550ef84069b81a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a60648863fa7658896550ef84069b81a5">AcceptUndoValue</a> () const</td></tr>
+<tr class="separator:a60648863fa7658896550ef84069b81a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c361a2d296f456856d6f750356329c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a52c361a2d296f456856d6f750356329c">AddCommandOption</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, <a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a> option_value=<a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a>(nullptr, nullptr), <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bHiddenOption=false)</td></tr>
 <tr class="separator:a52c361a2d296f456856d6f750356329c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cb551a7dbc76a22efca8794e6c106e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a37cb551a7dbc76a22efca8794e6c106e">AddCommandOption</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, double number_value)</td></tr>
@@ -203,6 +235,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c7f71d636aa43833a70190e618a40fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b0e967f66edc7ea96edfb88f67fb04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a43b0e967f66edc7ea96edfb88f67fb04">AddCommandOptionNumber</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, double *number_value, const wchar_t *option_prompt=nullptr, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bIntegerValue=false, double lower_limit=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>, double upper_limit=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>, int number_format=0)</td></tr>
 <tr class="separator:a43b0e967f66edc7ea96edfb88f67fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b18d182e80c663da87f496ad823ecb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a87b18d182e80c663da87f496ad823ecb">AddCommandOptionString</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, <a class="el" href="class_o_n__w_string.html">ON_wString</a> *string_value, const wchar_t *get_string_prompt=nullptr, bool bAllowEmptyString=false)</td></tr>
+<tr class="separator:a87b18d182e80c663da87f496ad823ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76adcf316237fea36d450e9e32ac308f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a76adcf316237fea36d450e9e32ac308f">AddCommandOptionToggle</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, <a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a> option_off_value, <a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a> option_on_value, bool bToggleState, bool *bCurrentToggleState=nullptr)</td></tr>
 <tr class="separator:a76adcf316237fea36d450e9e32ac308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e6b00d607a6a441ab771a2a0365e96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ab3e6b00d607a6a441ab771a2a0365e96">AddCommandOptionToggle</a> (<a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a> option_name, <a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a> option_off_value, <a class="el" href="class_c_rhino_command_option_value.html">CRhinoCommandOptionValue</a> option_on_value, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bToggleState, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> *bCurrentToggleState=nullptr)</td></tr>
@@ -228,6 +262,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a931ce5891b71a3a4ca12cbea369cefe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3496b539a0fbd8898dcb2e8793975478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a3496b539a0fbd8898dcb2e8793975478">EnableTransparentCommands</a> (<a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bEnableTransparentCommands)</td></tr>
 <tr class="separator:a3496b539a0fbd8898dcb2e8793975478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f1faf1ec971c50a37c1931747d803a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a03f1faf1ec971c50a37c1931747d803a">GetPrompt</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;prompt, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;prompt_default, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_command_option.html">CRhinoCommandOption</a> &gt; &amp;options)</td></tr>
+<tr class="separator:a03f1faf1ec971c50a37c1931747d803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4b67451a1818222d59ea10c0dcdf064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#af4b67451a1818222d59ea10c0dcdf064">GotDefault</a> () const</td></tr>
 <tr class="separator:af4b67451a1818222d59ea10c0dcdf064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d9ef4122625aa8498c7767dc0df18f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a49d9ef4122625aa8498c7767dc0df18f">In2dGet</a> () const</td></tr>
@@ -295,6 +331,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58b1446fc9f9f24b07c54309c66ee977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce5d86314f46db84255a6fbbf948428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#adce5d86314f46db84255a6fbbf948428">SetDocument</a> (unsigned int rhino_doc_sn)</td></tr>
 <tr class="separator:adce5d86314f46db84255a6fbbf948428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921c34279de05bcc3903e5c62e2dd4a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a921c34279de05bcc3903e5c62e2dd4a6">SetImmediateTimeout</a> ()</td></tr>
+<tr class="separator:a921c34279de05bcc3903e5c62e2dd4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b4420803201d95e654a5288e1d85ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a20b4420803201d95e654a5288e1d85ed">SetOptionVaries</a> (int option_index, bool bVaries)</td></tr>
 <tr class="memdesc:a20b4420803201d95e654a5288e1d85ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set option that uses "option_name=value" format to show the value as "Varies".  <a href="class_c_rhino_get.html#a20b4420803201d95e654a5288e1d85ed">More...</a><br /></td></tr>
 <tr class="separator:a20b4420803201d95e654a5288e1d85ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,6 +348,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addd7fc32f948001d1adcdd190fb449e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac28246ba3aa345143f0480d09957ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_view.html">CRhinoView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a9ac28246ba3aa345143f0480d09957ab">View</a> () const</td></tr>
 <tr class="separator:a9ac28246ba3aa345143f0480d09957ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4998dbb224cfdd7785e01f7b90c5786"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#ac4998dbb224cfdd7785e01f7b90c5786">WaitDuration</a> () const</td></tr>
+<tr class="separator:ac4998dbb224cfdd7785e01f7b90c5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbbbbc405c8588f942580e00e0e2c357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga3580a6216223b6977fcf199d3f9874a8">MSG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#abbbbbc405c8588f942580e00e0e2c357">WindowsMessage</a> () const</td></tr>
 <tr class="separator:abbbbbc405c8588f942580e00e0e2c357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4164197018ef760860f2ce2f9ef666c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a4164197018ef760860f2ce2f9ef666c2">WorldPoint1</a> () const</td></tr>
@@ -443,6 +483,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6ea387eba65843e21d49b44fbda39884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a69c5911fecfbde091d3197d54e2d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#a9a69c5911fecfbde091d3197d54e2d4b">m_winmsg_id_list</a></td></tr>
 <tr class="separator:a9a69c5911fecfbde091d3197d54e2d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:adaf89dcdc2950ef6322c0561c426921a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_get.html#adaf89dcdc2950ef6322c0561c426921a">CRhInGet</a></td></tr>
+<tr class="separator:adaf89dcdc2950ef6322c0561c426921a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for <a class="el" href="class_c_rhino_get_object.html">CRhinoGetObject</a>, <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a>, CRhinoGetSphere, etc.</p>
@@ -510,9 +555,11 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886ab9c4b052052cde8edca97ff1ab38ebaf"></a>frame&#160;</td><td class="fielddoc"><p>call CRhinoGetFrame::Frame() to get the frame that was picked </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886ad99a1195a0b292f16ab00935dd0980d1"></a>number_preview&#160;</td><td class="fielddoc"><p>internal, user is typing a number - call <a class="el" href="class_c_rhino_get.html#a7723f982482696dd9291119cecc830eb">Number()</a> to get value </p>
+<tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886ad99a1195a0b292f16ab00935dd0980d1"></a>number_preview&#160;</td><td class="fielddoc"><p>internal, user is typing a number - call NumberPreview() to get value </p>
 </td></tr>
 <tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886a53b62c210db9a06866be8547c289ef06"></a>point_preview&#160;</td><td class="fielddoc"><p>internal, user is typing a 3d point - call <a class="el" href="class_c_rhino_get.html#a46f3043b41e1abc602840b9ce4031faf" title="Used to get point if Get*() returns CRhinoGet::point.">Point()</a> to get 3d point </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886a4d40ca16b863af5c83128495f4a8f82b"></a>string_preview&#160;</td><td class="fielddoc"><p>internal, user is typing a string - call StringPreview() to get the string </p>
 </td></tr>
 <tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886a5dddf802ca1ecb108ed54deea359c4e4"></a>user1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afbb1d0091ccb1306d0fe606405f6b886a6c915c14bdad0da4da7d4513f692c1b4"></a>user2&#160;</td><td class="fielddoc"></td></tr>
@@ -622,6 +669,25 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acffdda18896b8078b0978020e0dbefd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffdda18896b8078b0978020e0dbefd7">&#9670;&nbsp;</a></span>Accept2dPointValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::Accept2dPointValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2d screen point (used by CRhinoGet2dPoint) </p>
+
+</div>
+</div>
 <a id="a4c48316398f20f835683c3cb70b141c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c48316398f20f835683c3cb70b141c7">&#9670;&nbsp;</a></span>AcceptColor()</h2>
 
@@ -641,6 +707,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4da505845cf4d3c64f5ce3948e205c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da505845cf4d3c64f5ce3948e205c7f">&#9670;&nbsp;</a></span>AcceptColorValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptColorValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a22e3732292386503fec9ac9a688751fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22e3732292386503fec9ac9a688751fe">&#9670;&nbsp;</a></span>AcceptCustomWindowsMessage()</h2>
 
@@ -656,8 +739,80 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool that allows GetPoint, GetObject, GetString, etc., to return if a registered Windows message is posted by the static function <a class="el" href="class_c_rhino_get.html#a1d619b209bf93179bafdf057fd98b468">CRhinoGet::PostCustomWindowsMessage</a> Parameters: winmsg_id - [in] Windows message id in the range 0xC000 throught 0xFFFF. Returns: true if the message id is in the permitted range. Remarks: Study the Windows documentation for RegisterWindowMessage. AcceptWindowsMessage is intended to be used by experts. Support is not available. If Windows posts a message with matching id while GetPoint, etc., is waiting for input, the the getter returns <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a0e647c2d05005d928ee8f1f0ac113e51">CRhinoGet::winmsg</a>. <br  />
+<p>Description: Expert user tool that allows GetPoint, GetObject, GetString, etc., to return if a registered Windows message is posted by the static function <a class="el" href="class_c_rhino_get.html#a1d619b209bf93179bafdf057fd98b468">CRhinoGet::PostCustomWindowsMessage</a> Parameters: winmsg_id - [in] Windows message id in the range 0xC000 throught 0xFFFF. Returns: true if the message id is in the permitted range. Remarks: Study the Windows documentation for RegisterWindowMessage. AcceptWindowsMessage is intended to be used by experts. Support is not available. If Windows posts a message with matching id while GetPoint, etc., is waiting for input, the getter returns <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a0e647c2d05005d928ee8f1f0ac113e51">CRhinoGet::winmsg</a>. <br  />
  Call CRhinoGet::WndMsg() to get the message. </p>
+
+</div>
+</div>
+<a id="a85ecbddacdcfdd329c9d0e6889c96337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ecbddacdcfdd329c9d0e6889c96337">&#9670;&nbsp;</a></span>AcceptEnterWhenDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGet::AcceptEnterWhenDone </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If you want to allow the user to be able to press enter when done during <a class="el" href="class_c_rhino_get_point.html#af6d0ff173626d96bfe7cf6dbaa3a3ca0">CRhinoGetPoint::GetPoint()</a>, CRhinoGetObject::GetObject(), etc., then call <a class="el" href="class_c_rhino_get.html#a85ecbddacdcfdd329c9d0e6889c96337">AcceptEnterWhenDone()</a> before calling GetPoint()/GetObject(). There are instances of <a class="el" href="class_c_rhino_get.html">CRhinoGet</a> that prompt with "Press Enter when Done." yet do not call <a class="el" href="class_c_rhino_get.html#ad3b4ef7e9ff3bb4a95a40993b0673d67">AcceptNothing()</a>. With the graphical command UI, these instances need an additional call to <a class="el" href="class_c_rhino_get.html#a85ecbddacdcfdd329c9d0e6889c96337">AcceptEnterWhenDone()</a> so the dialog can correctly enable the Done button. </p>
+
+</div>
+</div>
+<a id="a8b03f395597f83672ac0c661c7fc2686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b03f395597f83672ac0c661c7fc2686">&#9670;&nbsp;</a></span>AcceptEnterWhenDoneValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptEnterWhenDoneValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b8446020c887030e0fd828548e86e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8446020c887030e0fd828548e86e6b">&#9670;&nbsp;</a></span>AcceptLiteralString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGet::AcceptLiteralString </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If you want to allow the user to be able to type in a literal string during <a class="el" href="class_c_rhino_get_point.html#af6d0ff173626d96bfe7cf6dbaa3a3ca0">CRhinoGetPoint::GetPoint()</a>, CRhinoGetObject::GetObject(), etc., then call <a class="el" href="class_c_rhino_get.html#a7bece6fc972d8af4ec00bb30dad7f6bb">AcceptString()</a> before calling GetPoint()/GetObject(). If the user chooses to type in a string, then the result code <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886aa78a9e2c44fef8b037bfb960d048dde8" title="user typed a string - call String() to get the string">CRhinoGet::string</a> is returned and you can use <a class="el" href="class_c_rhino_get.html#a5019366cb9190749be3a88cc38bd7144">CRhinoGet::String()</a> to get the value of the string. </p>
+
+</div>
+</div>
+<a id="a4fd1330366c3981382b1092df837496e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd1330366c3981382b1092df837496e">&#9670;&nbsp;</a></span>AcceptLiteralStringValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptLiteralStringValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -677,6 +832,25 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>If you want to allow the user to be able to press enter in order to skip selecting a something in <a class="el" href="class_c_rhino_get_point.html#af6d0ff173626d96bfe7cf6dbaa3a3ca0">CRhinoGetPoint::GetPoint()</a>, CRhinoGetObject::GetObject(), etc., then call <a class="el" href="class_c_rhino_get.html#ad3b4ef7e9ff3bb4a95a40993b0673d67">AcceptNothing()</a> before calling GetPoint()/GetObject(). </p>
+
+</div>
+</div>
+<a id="a38c082f89d13d2f7437fa4cf8bb95c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c082f89d13d2f7437fa4cf8bb95c8a">&#9670;&nbsp;</a></span>AcceptNothingValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptNothingValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>used internally by Command UI </p>
 
 </div>
 </div>
@@ -709,6 +883,40 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab94aa64c927969bd1fd0550019907f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94aa64c927969bd1fd0550019907f67">&#9670;&nbsp;</a></span>AcceptNumberValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptNumberValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe33f0993307f8dfa50edd4d7275b9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe33f0993307f8dfa50edd4d7275b9da">&#9670;&nbsp;</a></span>AcceptNumberZeroValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptNumberZeroValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aadbd3989df8e2a219e241990eb385b06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadbd3989df8e2a219e241990eb385b06">&#9670;&nbsp;</a></span>AcceptPoint()</h2>
 
@@ -725,6 +933,25 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>If you want to allow the user to be able to type in a point then call <a class="el" href="class_c_rhino_get.html#aa22015c0cbaf99ce7d772b0114dbc4b6">AcceptNumber()</a> before calling GetPoint()/GetObject(). If the user chooses to type in a number, then the result code <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886adbe1b6eb75097a517693844476e8e1b8" title="user picked 3d point - call Point() to get 3d point">CRhinoGet::point</a> is returned and you can use <a class="el" href="class_c_rhino_get.html#a46f3043b41e1abc602840b9ce4031faf" title="Used to get point if Get*() returns CRhinoGet::point.">CRhinoGet::Point()</a> to get the value of the point. </p>
+
+</div>
+</div>
+<a id="a93260fa80d716821f513776b100a6b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93260fa80d716821f513776b100a6b93">&#9670;&nbsp;</a></span>AcceptPointValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptPointValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3d world point </p>
 
 </div>
 </div>
@@ -747,6 +974,40 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a130ed5d687421c675866697218c94253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130ed5d687421c675866697218c94253">&#9670;&nbsp;</a></span>AcceptString_0Value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptString_0Value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a125aeb05aee30bae26c838163758ed9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125aeb05aee30bae26c838163758ed9a">&#9670;&nbsp;</a></span>AcceptStringValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptStringValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad002df3c7e3acb5928b0f655c8013ca6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad002df3c7e3acb5928b0f655c8013ca6">&#9670;&nbsp;</a></span>AcceptUndo()</h2>
 
@@ -765,6 +1026,23 @@ Protected Attributes</h2></td></tr>
 
 <p>call to allow user undo previous selection. </p>
 <p>If you want to allow the user to have an undo option in <a class="el" href="class_c_rhino_get_point.html#af6d0ff173626d96bfe7cf6dbaa3a3ca0">CRhinoGetPoint::GetPoint()</a>, CRhinoGetObject::GetObject(), etc., then call <a class="el" href="class_c_rhino_get.html#ad002df3c7e3acb5928b0f655c8013ca6" title="call to allow user undo previous selection.">AcceptUndo()</a> before calling GetPoint()/GetObject(). </p>
+
+</div>
+</div>
+<a id="a60648863fa7658896550ef84069b81a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60648863fa7658896550ef84069b81a5">&#9670;&nbsp;</a></span>AcceptUndoValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoGet::AcceptUndoValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1164,8 +1442,56 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a command line option to get numbers and automatically save the value. Parameters: option_name - [in] english option description Automatic localization uses command option string table. number_value - [in/out] pointer to current value of the number. If the user changes the nubmer's value, the value of number_value is changed but the current call to GetPoint/GetString/... does not return. option_prompt - [in] option prompt shown if the user selects this option. If NULL, then option_name.m_local_option_name is used as the get number prompt. bIntegerValue - [in] (default=false) if true, number must be an integer lower_limit - [in] (default=ON_UNSET_VALUE which means no lower limit) if set, the returned number must be &gt;= lower_limit upper_limit - [in] (default=ON_UNSET_VALUE which means no upper limit) if set, the returned number must be &lt;= upper_limit number_format - [in] This controls how strings are parsed to get a number and how the number is displayed in the command prompt.</p>
+<p>Description: Add a command line option to get numbers and automatically save the value. Parameters: option_name - [in] english option description Automatic localization uses command option string table. number_value - [in/out] pointer to current value of the number. If the user changes the number's value, the value of number_value is changed but the current call to GetPoint/GetString/... does not return. option_prompt - [in] option prompt shown if the user selects this option. If NULL, then option_name.m_local_option_name is used as the get number prompt. bIntegerValue - [in] (default=false) if true, number must be an integer lower_limit - [in] (default=ON_UNSET_VALUE which means no lower limit) if set, the returned number must be &gt;= lower_limit upper_limit - [in] (default=ON_UNSET_VALUE which means no upper limit) if set, the returned number must be &lt;= upper_limit number_format - [in] This controls how strings are parsed to get a number and how the number is displayed in the command prompt.</p>
 <p>0 = general - RhinoParseNumber - decimal display 1 = distance - RhinoParseNumber - decimal display with doc units 2 = angle in degrees - RhinoParseAngleDegrees - decimal degrees display 3 = angle in radians - RhinoParseAngle - decimal radians display Returns: option index value (&gt;0) or 0 if option cannot be added. Remarks: If you need to explicitly react to a changed number, then use override of <a class="el" href="class_c_rhino_get.html#a52c361a2d296f456856d6f750356329c">CRhinoGet::AddCommandOption</a> that takes a number as an option value. See the <a class="el" href="class_c_rhino_get.html#a52c361a2d296f456856d6f750356329c">CRhinoGet::AddCommandOption</a> examples. Example: <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> center; static radius r = 1.0; double min_radius = 1.0e-12; for(;;) { <a class="el" href="class_c_rhino_get_point.html">CRhinoGetPoint</a> gp; gp.SetCommandPrompt(RhLocalizeString( L"Center point", 43551)); int radius_option_index = gp.AddCommandOptionNumber( RhLocalizeCommandOptionName( L"Radius", 43552), &amp;r, RhLocalizeString( L"New radius", 43553), false, min_radius ); gp.GetPoint(); if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886adbe1b6eb75097a517693844476e8e1b8" title="user picked 3d point - call Point() to get 3d point">CRhinoGet::point</a> ) { center = gp.Point(); break; } if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a99a014d0a7d7e70d2ad4a6dcec068bf0" title="user specified an option - call Option() to get option index">CRhinoGet::option</a> ) { const CRhinoCommandOption* opt = gp.Option(); if ( opt-&gt;m_option_index == radius_option_index ) { / r has been changed to a number &gt;= min_radius. Do / any additional validation or changes here. } } if ( gp.Result() == <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a235c2995d5ed612698e3b1ad2f35ad39" title="user wants to cancel current command">CRhinoGet::cancel</a> ) break; ///&lt; user pressed ESCAPE to cancel get point ... } </p>
+
+</div>
+</div>
+<a id="a87b18d182e80c663da87f496ad823ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b18d182e80c663da87f496ad823ecb">&#9670;&nbsp;</a></span>AddCommandOptionString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoGet::AddCommandOptionString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_command_option_name.html">CRhinoCommandOptionName</a>&#160;</td>
+          <td class="paramname"><em>option_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> *&#160;</td>
+          <td class="paramname"><em>string_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>get_string_prompt</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAllowEmptyString</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Add a command line option to get a string and automatically save the value. Parameters: option_name - [in] english option description Automatic localization uses command option string table. string_value - [in/out] pointer to current value of the string. If the user changes the string's value, the value of string_value is changed. option_prompt - [in] option prompt shown if the user selects this option. If NULL, then option_name.m_local_option_name is used as the get string prompt. bAllowEmptyString - [in] (default=false) if true, empty string is allowed</p>
+<p>Returns: option index value (&gt;0) or 0 if option cannot be added. Remarks: If you need to explicitly react to a changed number, then use override of <a class="el" href="class_c_rhino_get.html#a52c361a2d296f456856d6f750356329c">CRhinoGet::AddCommandOption</a> that takes a number as an option value. See the <a class="el" href="class_c_rhino_get.html#a52c361a2d296f456856d6f750356329c">CRhinoGet::AddCommandOption</a> examples. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">get_string_prompt</td><td>localized string passed in </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1574,6 +1900,40 @@ Protected Attributes</h2></td></tr>
 <p>Helper used by IsAcceptableInput when parsing points. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_get_point.html#a717b01de0423dce82878f9be4fc78b44">CRhinoGetPoint</a>.</p>
+
+</div>
+</div>
+<a id="a03f1faf1ec971c50a37c1931747d803a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f1faf1ec971c50a37c1931747d803a">&#9670;&nbsp;</a></span>GetPrompt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGet::GetPrompt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>prompt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>prompt_default</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_command_option.html">CRhinoCommandOption</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2423,6 +2783,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a921c34279de05bcc3903e5c62e2dd4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921c34279de05bcc3903e5c62e2dd4a6">&#9670;&nbsp;</a></span>SetImmediateTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoGet::SetImmediateTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: If this instance is actively waiting on input, calling TimeoutNow will immediately exit the waiting loop and return Result::timeout </p>
+
+</div>
+</div>
 <a id="a4b4ededc913789c94905fecad9634f0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b4ededc913789c94905fecad9634f0a">&#9670;&nbsp;</a></span>SetOptionAccelerators()</h2>
 
@@ -2512,7 +2890,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user function to limit the amount of time GetPoint, GetObjects, GetString, etc., will wait for input. Parameters: seconds - [in] number of seconds to wait. By default the getters will wait indefinitely. Remarks: If a getter times out, then <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a8929a1b85c4691e2b76869f0f7e46238">CRhinoGet::timeout</a> is returned by GetPoint, GetObjects, GetString, etc. </p>
+<p>Description: Limit the amount of time GetPoint, GetObjects, GetString, etc., will wait for input. Parameters: seconds - [in] number of seconds to wait. By default the getters will wait indefinitely. Remarks: If a getter times out, then <a class="el" href="class_c_rhino_get.html#afbb1d0091ccb1306d0fe606405f6b886a8929a1b85c4691e2b76869f0f7e46238">CRhinoGet::timeout</a> is returned by GetPoint, GetObjects, GetString, etc. </p>
 
 </div>
 </div>
@@ -2587,6 +2965,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac4998dbb224cfdd7785e01f7b90c5786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4998dbb224cfdd7785e01f7b90c5786">&#9670;&nbsp;</a></span>WaitDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CRhinoGet::WaitDuration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abbbbbc405c8588f942580e00e0e2c357"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbbbbc405c8588f942580e00e0e2c357">&#9670;&nbsp;</a></span>WindowsMessage()</h2>
 
@@ -2638,6 +3033,29 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Value of second 3d world point typed in the command line during a Get2dPoint()....if not set, value will be ON_unset_point </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="adaf89dcdc2950ef6322c0561c426921a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf89dcdc2950ef6322c0561c426921a">&#9670;&nbsp;</a></span>CRhInGet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class CRhInGet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3460,7 +3878,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

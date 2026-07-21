@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acfa4f779de04b5ebd096d719141338bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f0b23e5cb00ea45a2dc3db5b9e16d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref.html#a14f0b23e5cb00ea45a2dc3db5b9e16d6">m_point</a></td></tr>
 <tr class="separator:a14f0b23e5cb00ea45a2dc3db5b9e16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c7309436c87cff1e712b21b0ffcb6b"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref.html#a91c7309436c87cff1e712b21b0ffcb6b">m_rhino_doc_sn</a> = 0</td></tr>
+<tr class="memdesc:a91c7309436c87cff1e712b21b0ffcb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If m_rhino_doc_sn &gt; 0, then is the value of ofthe Rhino doc CRhinoDoc::m_rhino_doc_sn that contains the object with m_runtime_sn or the document that should be searched for the object with id = m_uuid.  <a href="class_o_n___obj_ref.html#a91c7309436c87cff1e712b21b0ffcb6b">More...</a><br /></td></tr>
+<tr class="separator:a91c7309436c87cff1e712b21b0ffcb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab15145f3dbc8ed496ff272f051815b6a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref.html#ab15145f3dbc8ed496ff272f051815b6a">m_runtime_sn</a></td></tr>
+<tr class="memdesc:ab15145f3dbc8ed496ff272f051815b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If m_runtime_sn &gt; 0, then it is the value of a Rhino object's CRhinoObject::m_runtime_object_serial_number field. The serial number is used instead of the pointer to prevent crashes in cases when the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is deleted but an <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> continues to reference the Rhino object. The value of m_runtime_sn is not saved in archives because it generally changes if you save and reload an archive. The Rhino document containing the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is identified by the m_rhino_doc_sn field below.  <a href="class_o_n___obj_ref.html#ab15145f3dbc8ed496ff272f051815b6a">More...</a><br /></td></tr>
 <tr class="separator:ab15145f3dbc8ed496ff272f051815b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a786220658c1cf03ca3356c348596478c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___obj_ref.html#a786220658c1cf03ca3356c348596478c">m_uuid</a></td></tr>
 <tr class="separator:a786220658c1cf03ca3356c348596478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,6 +530,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a91c7309436c87cff1e712b21b0ffcb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c7309436c87cff1e712b21b0ffcb6b">&#9670;&nbsp;</a></span>m_rhino_doc_sn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_ObjRef::m_rhino_doc_sn = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If m_rhino_doc_sn &gt; 0, then is the value of ofthe Rhino doc CRhinoDoc::m_rhino_doc_sn that contains the object with m_runtime_sn or the document that should be searched for the object with id = m_uuid. </p>
+
+</div>
+</div>
 <a id="ab15145f3dbc8ed496ff272f051815b6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab15145f3dbc8ed496ff272f051815b6a">&#9670;&nbsp;</a></span>m_runtime_sn</h2>
 
@@ -537,7 +557,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If m_runtime_sn &gt; 0, then it is the value of a Rhino object's CRhinoObject::m_runtime_object_serial_number field. The serial number is used instead of the pointer to prevent crashes in cases when the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is deleted but an <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> continues to reference the Rhino object. The value of m_runtime_sn is not saved in archives because it generally changes if you save and reload an archive. </p>
+
+<p>If m_runtime_sn &gt; 0, then it is the value of a Rhino object's CRhinoObject::m_runtime_object_serial_number field. The serial number is used instead of the pointer to prevent crashes in cases when the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is deleted but an <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> continues to reference the Rhino object. The value of m_runtime_sn is not saved in archives because it generally changes if you save and reload an archive. The Rhino document containing the <a class="el" href="class_c_rhino_object.html" title="Base class for all runtime Rhino objects.">CRhinoObject</a> is identified by the m_rhino_doc_sn field below. </p>
 
 </div>
 </div>
@@ -559,7 +580,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

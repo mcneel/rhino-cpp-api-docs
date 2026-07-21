@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -295,7 +295,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Fillets, chamfers, or blends the edges of a Brep with support for a different start and end radius for each edge. Parameters: brep [in] - The Brep to fillet, chamfer, or blend edges. edges [in] - An array of one or more edge indices where the fillet, chamfer, or blend will occur. radii0 [in] - An array of starting fillet, chamfer, or blend radii, one for each edge index. radii1 [in] - An array of end fillet, chamfer, or blend radii, one for each edge index. blend_type [in] - The blend type (see above). rail_type [in] - The rail type (see above). tolerance [in] - The tolerance to be used to perform calculations. out_breps [out] - The results of the operation. It is the responsibility of the caller to clean up the memory. Return: True if successful, False otherwise Remarks: CRITICAL: Memory for the resulting Breps is allocated. It is the calling functions responsibility to clean up the memory. </p>
+<p>Description: Fillets, chamfers, or blends the edges of a Brep with support for a different start and end radius for each edge. Parameters: brep [in] - The Brep to fillet, chamfer, or blend edges. edges [in] - An array of one or more edge indices where the fillet, chamfer, or blend will occur. radii0 [in] - An array of starting fillet, chamfer, or blend radii, one for each edge index. radii1 [in] - An array of end fillet, chamfer, or blend radii, one for each edge index. blend_type [in] - The blend type (see above). rail_type [in] - The rail type (see above). tolerance [in] - The tolerance to be used to perform calculations. out_breps [out] - The results of the operation. It is the responsibility of the caller to clean up the memory. Return: True if successful, False otherwise Remarks: CRITICAL: Memory for the resulting Breps is allocated. It is the calling functions responsibility to clean up the memory. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000249">Deprecated:</a></b></dt><dd>Prefer the version that takes a setback_fillets option. </dd></dl>
 
 </div>
 </div>
@@ -374,14 +374,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Fillets, chamfers, or blends the edges of a Brep with support for variable radii along each edge. Parameters: brep [in] - The Brep to fillet, chamfer, or blend edges. edges [in] - An array of one or more edge indices where the fillet, chamfer, or blend will occur. distances [in] - An array of arrays of distance data, one array for each edge. blend_type [in] - The blend type (see above). rail_type [in] - The rail type (see above). bool setback_fillets [in] - Use setback fillets (only used for blend_type CRhinoFilletEdge::BlendType::Blend) tolerance [in] - The tolerance to be used to perform calculations. angle_tolerance [in] - The angle tolerance to be used to perform calculations. out_breps [out] - The results of the operation. It is the responsibility of the caller to clean up the memory. Return: True if successful, False otherwise Remarks: CRITICAL: Memory for the resulting Breps is allocated. It is the calling functions responsibility to clean up the memory. </p>
+<p>Description: Fillets, chamfers, or blends the edges of a Brep with support for variable radii along each edge. Parameters: brep [in] - The Brep to fillet, chamfer, or blend edges. edges [in] - An array of one or more edge indices where the fillet, chamfer, or blend will occur. distances [in] - An array of arrays of distance data, one array for each edge. blend_type [in] - The blend type (see above). rail_type [in] - The rail type (see above). bool setback_fillets [in] - Use setback fillets (not used for blend_type CRhinoFilletEdge::BlendType::Chamfer) tolerance [in] - The tolerance to be used to perform calculations. angle_tolerance [in] - The angle tolerance to be used to perform calculations. out_breps [out] - The results of the operation. It is the responsibility of the caller to clean up the memory. Return: True if successful, False otherwise Remarks: CRITICAL: Memory for the resulting Breps is allocated. It is the calling functions responsibility to clean up the memory. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

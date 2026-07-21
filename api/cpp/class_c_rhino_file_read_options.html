@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -419,7 +419,7 @@ else
 </div><div class="memdoc">
 <p>Description: When some sort if import is happening (import, paste, insert, ...) this setting controls how Rhino looks for maching existing layers. The Returns: 0: Use full path layer name from file. 1: If there is already an active layer with the same short name, then use it. For example, if the current model has a layer tree that looks like X Y Z</p>
 <p>and the file being read has a layer tree that looks like P Q X Y Z</p>
-<p>then the file object on file layer P::X ends up on model layer X, the file objects on file layer Y end up on on model layer X::Y and the file objects on file layer Y::Z end up on model layer X::Z. Remarks: When a worksession reference model is being read, 0 is always returned. When a linked instance definition reference model is being read, the value of ON_InstanceDefinition::m_idef_layer_style determines what value this function returns. Otherwise, the value returned by <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.AppSettings().ImportFileLayerMatchingOption() determines what value this function returns. </p>
+<p>then the file object on file layer P::X ends up on model layer X, the file objects on file layer Y end up on model layer X::Y and the file objects on file layer Y::Z end up on model layer X::Z. Remarks: When a worksession reference model is being read, 0 is always returned. When a linked instance definition reference model is being read, the value of ON_InstanceDefinition::m_idef_layer_style determines what value this function returns. Otherwise, the value returned by <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.AppSettings().ImportFileLayerMatchingOption() determines what value this function returns. </p>
 
 </div>
 </div>
@@ -613,7 +613,7 @@ else
       </table>
 </div><div class="memdoc">
 <p>Description: This function is provided for plug-ins to use when their <a class="el" href="class_c_rhino_plug_in.html#a173b636af84c245a6e799bbb518f1b1d">CRhinoPlugIn::ReadDocument()</a> function is called and they need to convert Rhino document item ids used in a .3dm file that was just read into the Rhino document item ids used in the runtime model.</p>
-<p>When a file is read, sometimes is is necessary to change the id of an item in a file to a new id in the runtime model. This often happens when one file is being imported into an existing document and an id found in the file is already in use in the existing document. An "item" can be anything in a table, like a layer, material, dimension style, geometry object, instance definition, and so on. Parameters: file_item_id - [in] id used for the item in the .3dm file being read. model_item_id - [out] id used to for the item in the runtime model See Also: <a class="el" href="class_c_rhino_file_read_options.html#a185821b689da8a14524c5cd647deef46">CRhinoFileReadOptions::ArchiveToModelIdentificationMap()</a> </p>
+<p>When a file is read, sometimes is necessary to change the id of an item in a file to a new id in the runtime model. This often happens when one file is being imported into an existing document and an id found in the file is already in use in the existing document. An "item" can be anything in a table, like a layer, material, dimension style, geometry object, instance definition, and so on. Parameters: file_item_id - [in] id used for the item in the .3dm file being read. model_item_id - [out] id used to for the item in the runtime model See Also: <a class="el" href="class_c_rhino_file_read_options.html#a185821b689da8a14524c5cd647deef46">CRhinoFileReadOptions::ArchiveToModelIdentificationMap()</a> </p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ else
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: true: You may not ask any questions while the the file is being read. Specifically, no dialogs and no "getter" prompts are permitted. This happens in a number of cases including situations where files are being "batch mode" processed and users will be grumpy if they start a long job, go home, and return the next morning to discover their job didn't finish because you interrupted the reading to ask a question. false: You may ask the user questions. Remarks: This is identical to the Mode(CRhinoFileReadOptions::ModeFlag::BatchMode) setting. </p>
+<p>Returns: true: You may not ask any questions while the file is being read. Specifically, no dialogs and no "getter" prompts are permitted. This happens in a number of cases including situations where files are being "batch mode" processed and users will be grumpy if they start a long job, go home, and return the next morning to discover their job didn't finish because you interrupted the reading to ask a question. false: You may ask the user questions. Remarks: This is identical to the Mode(CRhinoFileReadOptions::ModeFlag::BatchMode) setting. </p>
 
 </div>
 </div>
@@ -1343,7 +1343,7 @@ else
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

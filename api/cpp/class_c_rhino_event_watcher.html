@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,6 @@ Public Types</h2></td></tr>
 <tr class="memitem:a33fdbe3e435dcf6be5e509b206d80aea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aea">event_id</a> { <a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aeaa0280c73f71f48127525aad45cad3d9e3">event_id_none</a> = 0, 
 <a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aeaa101d884f57f2164f561e8fb66891aad3">event_id_force_4byte_size</a> = 0xFFFFFFFF
  }</td></tr>
-<tr class="memdesc:a33fdbe3e435dcf6be5e509b206d80aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSOLETE - NEVER USE THIS.  <a href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aea">More...</a><br /></td></tr>
 <tr class="separator:a33fdbe3e435dcf6be5e509b206d80aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafec6e5fe650332617c0e89f2e0a7767"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_event_watcher.html#aafec6e5fe650332617c0e89f2e0a7767">font_event</a> { <br />
 &#160;&#160;<a class="el" href="class_c_rhino_event_watcher.html#aafec6e5fe650332617c0e89f2e0a7767ad652de78ae271e055b5bcd262e787937">font_added</a>, 
@@ -416,8 +415,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>OBSOLETE - NEVER USE THIS. </p>
+<p>OBSOLETE </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a33fdbe3e435dcf6be5e509b206d80aeaa0280c73f71f48127525aad45cad3d9e3"></a>event_id_none&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a33fdbe3e435dcf6be5e509b206d80aeaa101d884f57f2164f561e8fb66891aad3"></a>event_id_force_4byte_size&#160;</td><td class="fielddoc"><p>This line insures that adding events will not change the size of the event_id. </p>
@@ -437,7 +435,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OBSOLETE </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aafec6e5fe650332617c0e89f2e0a7767ad652de78ae271e055b5bcd262e787937"></a>font_added&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aafec6e5fe650332617c0e89f2e0a7767abdac7c5df41fa47a2a6ad7ff7b48cf75"></a>font_deleted&#160;</td><td class="fielddoc"></td></tr>
@@ -533,8 +530,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>/ Description: virtual void OnPreselectObjects();</p>
-<p>virtual void OnPreselectObjects(); Layer table events </p>
+<p>Layer table events </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a770c6004827bb4e52abc88e7e130a943ab68ecc8ab1d328e8c006d145b7519bf9"></a>layer_added&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a770c6004827bb4e52abc88e7e130a943a9f4f14511a23f674d1ceed8e213ff258"></a>layer_deleted&#160;</td><td class="fielddoc"></td></tr>
@@ -632,7 +628,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Font table events</p>
 <p>OBSOLETE </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aadb9ce3e9ee6305103091910dee80b8eab64452e6f7bc2755ada649b9aeb29557"></a>text_style_added&#160;</td><td class="fielddoc"></td></tr>
@@ -681,6 +676,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Undo events </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a145e9d3d5befc1b58e360fa7ee73e690a54d64b4c90ad01dc991105426f0411f7"></a>no_undo_event&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a145e9d3d5befc1b58e360fa7ee73e690a532d7b5d916e2378e1d36d9121d65e99"></a>begin_recording&#160;</td><td class="fielddoc"><p>Begin recording changes. </p>
@@ -865,7 +861,7 @@ Public Member Functions</h2></td></tr>
 <p>If bQuiet is false and the plug-in cares, the plug-in should do something like the example.</p>
 <p>Example: </p><pre class="fragment">    int CMyEventWatcher::DeleteLayerCheck(
                 CRhinoDoc&amp; doc,
-                ON_SimpleArray&lt;int&gt;&amp; layer_index_list, 
+                ON_SimpleArray&lt;int&gt;&amp; layer_index_list,
                 bool bQuiet)
     {
       const int layer_index_count = layer_index_list.Count();
@@ -880,8 +876,8 @@ Public Member Functions</h2></td></tr>
           ON_wString msg;
           msg.Format(L"My plug-in uses layer %s. Do you really want to delete it?",
                      layer.LayerName());
-          const int yn = ::RhinoYesNoMessageBox( 
-                      msg, 
+          const int yn = ::RhinoYesNoMessageBox(
+                      msg,
                       L"Delete Layer",
                       (1|2|4|8),  ///&lt; Yes, Yes to All, No, No to All,
                       MB_ICONEXCLAMATION | MB_DEFBUTTON3);
@@ -940,7 +936,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> is called whenever the dimstyle table is changed. / / Parameters: / event - [in] type of event / dimstyle_table - [in] dimstyle table / dimstyle_index - [in] index of dimstyle / If the event is dimstyle_sorted, then dimstyle_index is 0. / old_settings - [in] If the event is dimstyle_modified, / then the old dimstyle definition is passed here. / Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> is called whenever the dimstyle table is changed. Parameters: event - [in] type of event dimstyle_table - [in] dimstyle table dimstyle_index - [in] index of dimstyle If the event is dimstyle_sorted, then dimstyle_index is 0. old_settings - [in] If the event is dimstyle_modified, then the old dimstyle definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a229de1f65ff54e4016d018ed85627e18">DimStyleTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -959,10 +955,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: You will only be notified if your event watcher is reistered and enabled. You must explicitly register and then enable your even watcher.</p>
-<p>Parameters: b - [in] TRUE enables the event watcher and FALSE disables the event watcher.</p>
-<p>Returns: TRUE if the event manager is registered and enabled.</p>
-<p>Remarks: <a class="el" href="class_c_rhino_event_watcher.html#a016758020fad48427e1629783f2b9d7d">Enable()</a> is fast and efficient. Use it when you need to repeatedly enable/disable your event watcher. Call <a class="el" href="class_c_rhino_event_watcher.html#adc7b80e83af307452b48f79221f68e90">UnRegister()</a> when you are done watching events. See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
+<p>Description: You will only be notified if your event watcher is reistered and enabled. You must explicitly register and then enable your even watcher. Parameters: b - [in] TRUE enables the event watcher and FALSE disables the event watcher. Returns: TRUE if the event manager is registered and enabled. Remarks: <a class="el" href="class_c_rhino_event_watcher.html#a016758020fad48427e1629783f2b9d7d">Enable()</a> is fast and efficient. Use it when you need to repeatedly enable/disable your event watcher. Call <a class="el" href="class_c_rhino_event_watcher.html#adc7b80e83af307452b48f79221f68e90">UnRegister()</a> when you are done watching events. See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
 
 </div>
 </div>
@@ -1067,7 +1060,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> is called whenever the group table is changed. / / Parameters: / event - [in] type of event / group_table - [in] group table / group_index - [in] index of group / If the event is group_sorted, then group_index is 0. / old_settings - [in] If the event is group_modified, / then the old group definition is passed here. / Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> is called whenever the group table is changed. Parameters: event - [in] type of event group_table - [in] group table group_index - [in] index of group If the event is group_sorted, then group_index is 0. old_settings - [in] If the event is group_modified, then the old group definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a23ea3b598017fce24926d77e1e4444f5">GroupTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1116,7 +1109,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> is called whenever the hatchpattern table is changed. / / Parameters: / event - [in] type of event / hatchpattern_table - [in] hatch pattern table / hatchpattern_index - [in] index of hatchpattern / If the event is hatchpattern_sorted, then hatchpattern_index is 0. / old_settings - [in] If the event is hatchpattern_modified, / then the old hatchpattern definition is passed here. / Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> is called whenever the hatchpattern table is changed. Parameters: event - [in] type of event hatchpattern_table - [in] hatch pattern table hatchpattern_index - [in] index of hatchpattern If the event is hatchpattern_sorted, then hatchpattern_index is 0. old_settings - [in] If the event is hatchpattern_modified, then the old hatchpattern definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#af719db1439c687c22db6eb7e2d482c5d">HatchPatternTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1165,7 +1158,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> is called whenever the idef table is changed. / / Parameters: / event - [in] type of event / idef_table - [in] instance definition table / idef_index - [in] index of idef / If the event is idef_sorted, then idef_index is 0. / old_settings - [in] If the event is idef_modified, / then the old idef definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> is called whenever the idef table is changed. Parameters: event - [in] type of event idef_table - [in] instance definition table idef_index - [in] index of idef. If the event is idef_sorted, then idef_index is 0. old_settings - [in] If the event is idef_modified, then the old idef definition is passed here. Otherwise, this parameter is nullptr. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a013474e73209ba3d89bbfca747e68672">InstanceDefinitionTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1183,9 +1176,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: You will only be notified if your event watcher is reistered and enabled. You must explicitly register and then enable your even watcher.</p>
-<p>Returns: TRUE if the event manager is registered and enabled.</p>
-<p>See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
+<p>Description: You will only be notified if your event watcher is reistered and enabled. You must explicitly register and then enable your even watcher. Returns: TRUE if the event manager is registered and enabled. See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
 
 </div>
 </div>
@@ -1268,7 +1259,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> is called whenever the layer table is changed. / / Parameters: / event - [in] type of event / layer_table - [in] layer table / layer_index - [in] index of layer / If the event is layer_sorted, then layer_index is 0. / old_settings - [in] If the event is layer_modified, / then the old layer definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> is called whenever the layer table is changed. Parameters: event - [in] type of event layer_table - [in] layer table layer_index - [in] index of layer. If the event is layer_sorted, then layer_index is 0. old_settings - [in] If the event is layer_modified, then the old layer definition is passed here. Otherwise, this parameter is nullptr. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a15fddc2edfe16ef854045df17f19bb96">LayerTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1317,7 +1308,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> is called whenever the light table is changed. / / Parameters: / event - [in] type of event / light_table - [in] light table / light_index - [in] light of light / If the event is light_sorted, then light_index is 0. / old_settings - [in] If the event is light_modified, / then the old light definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> is called whenever the light table is changed. Parameters: event - [in] type of event light_table - [in] light table light_index - [in] light of light If the event is light_sorted, then light_index is 0. old_settings - [in] If the event is light_modified, then the old light definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">LightTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">CRhRdkLightManagerSupport</a>.</p>
 
@@ -1368,7 +1359,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> is called whenever the linetype table is changed. / / Parameters: / event - [in] type of event / linetype_table - [in] linetype table / linetype_index - [in] index of linetype / If the event is linetype_sorted, then linetype_index is 0. / old_settings - [in] If the event is linetype_modified, / then the old linetype definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> is called whenever the linetype table is changed.</p>
+<p>Parameters: event - [in] type of event linetype_table - [in] linetype table linetype_index - [in] index of linetype. If the event is linetype_sorted, then linetype_index is 0. old_settings - [in] If the event is linetype_modified, then the old linetype definition is passed here. Otherwise, this parameter is nullptr. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a3d35077976967dcfcf62a1524f2c3d8e">LinetypeTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1417,7 +1409,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> is called whenever the material table is changed. / / Parameters: / event - [in] type of event / material_table - [in] material table / material_index - [in] index of material / If the event is material_sorted, then material_index is 0. / old_settings - [in] If the event is material_modified, / then the old material definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> is called whenever the material table is changed. Parameters: event - [in] type of event material_table - [in] material table material_index - [in] index of material If the event is material_sorted, then material_index is 0. old_settings - [in] If the event is material_modified, then the old material definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a342d246e410c2f6f9289e6041c669c2c">MaterialTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1481,7 +1473,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Object events / Description: / Called if a new object is added to the document. / / Parameters: / doc - [in] object's document / object - [in] new object WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#afb1f9c29adccc51ae35ea211462aa19c">OnAddObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#afb1f9c29adccc51ae35ea211462aa19c">OnAddObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Object events Description: Called if a new object is added to the document. Parameters: doc - [in] object's document object - [in] new object WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#afb1f9c29adccc51ae35ea211462aa19c">OnAddObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#afb1f9c29adccc51ae35ea211462aa19c">OnAddObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rh_rdk_light_manager_support.html#ae5742ec50cd3607aa1af679916afc646">CRhRdkLightManagerSupport</a>.</p>
 
@@ -1547,7 +1539,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called just before command.RunCommand(). WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a6c954031569ed2f634ced489e48e4dca">OnBeginCommand()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a6c954031569ed2f634ced489e48e4dca">OnBeginCommand()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Command events Description: Called just before command.RunCommand(). WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a6c954031569ed2f634ced489e48e4dca">OnBeginCommand()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a6c954031569ed2f634ced489e48e4dca">OnBeginCommand()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1693,7 +1685,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called when Rhino stops. / / Parameters: / app - [in] instance of Rhino begin closed. WARNING: Never modify the Rhino document in an <a class="el" href="class_c_rhino_event_watcher.html#ae8639358020d3c2a91ba5af937ae59a9">OnCloseRhino()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ae8639358020d3c2a91ba5af937ae59a9">OnCloseRhino()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called when Rhino stops. Parameters: app - [in] instance of Rhino begin closed. WARNING: Never modify the Rhino document in an <a class="el" href="class_c_rhino_event_watcher.html#ae8639358020d3c2a91ba5af937ae59a9">OnCloseRhino()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ae8639358020d3c2a91ba5af937ae59a9">OnCloseRhino()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1757,7 +1749,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is deleted. At some later point / the object can be un-deleted. / / Parameters: / doc - [in] object's document / object - [in] object that was deleted. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a3f23dd98ebe93a809910a823edc37382">OnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a3f23dd98ebe93a809910a823edc37382">OnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is deleted. At some later point the object can be undeleted. Parameters: doc - [in] object's document object - [in] object that was deleted. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a3f23dd98ebe93a809910a823edc37382">OnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a3f23dd98ebe93a809910a823edc37382">OnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rh_rdk_light_manager_support.html#a6dfb3cf769ac60aa62ec2c35c51e38ff">CRhRdkLightManagerSupport</a>.</p>
 
@@ -1796,7 +1788,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if a all objects are begin deselected. / / Parameters: / doc - [in] object's document / count - [in] number of object's that were deselected. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a2f03fbd771da5395fa63e894b65d9b90">OnDeselectAllObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a2f03fbd771da5395fa63e894b65d9b90">OnDeselectAllObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if a all objects are begin deselected. Parameters: doc - [in] object's document count - [in] number of object's that were deselected. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a2f03fbd771da5395fa63e894b65d9b90">OnDeselectAllObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a2f03fbd771da5395fa63e894b65d9b90">OnDeselectAllObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1833,7 +1825,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is being deselected. / / Parameters: / doc - [in] object's document / object - [in] object that was deselected. / / Remarks: / If all objects are being deselected, then / a single notification is sent to / OnDeselectAllObjects. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a335834419c0de7ecd8799cc58e2e1058">OnDeselectObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a335834419c0de7ecd8799cc58e2e1058">OnDeselectObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is being deselected. Parameters: doc - [in] object's document object - [in] object that was deselected. Remarks: If all objects are being deselected, then a single notification is sent to OnDeselectAllObjects. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a335834419c0de7ecd8799cc58e2e1058">OnDeselectObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a335834419c0de7ecd8799cc58e2e1058">OnDeselectObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1870,7 +1862,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called when a collection of objects is deselected. / / Parameters: / doc - [in] object's document / objects - [in] object that were deselected WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a947d5de96f5165d0ac8782e84f0b8487">OnDeselectObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a947d5de96f5165d0ac8782e84f0b8487">OnDeselectObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called when a collection of objects is deselected. Parameters: doc - [in] object's document objects - [in] object that were deselected WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a947d5de96f5165d0ac8782e84f0b8487">OnDeselectObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a947d5de96f5165d0ac8782e84f0b8487">OnDeselectObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -1950,9 +1942,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Called when this event watcher is enabled/disabled.</p>
-<p>Parameters: b - [in] TRUE means event watcher is being enabled.</p>
-<p>Remarks: For advanced users. </p>
+<p>Description: Called when this event watcher is enabled/disabled. Parameters: b - [in] TRUE means event watcher is being enabled. Remarks: For advanced users. </p>
 
 </div>
 </div>
@@ -1995,7 +1985,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called immediately after command.RunCommand(). WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a27a939b58ce1fd2f975ba1fb478472e5">OnEndCommand()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a27a939b58ce1fd2f975ba1fb478472e5">OnEndCommand()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called immediately after command.RunCommand(). WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a27a939b58ce1fd2f975ba1fb478472e5">OnEndCommand()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a27a939b58ce1fd2f975ba1fb478472e5">OnEndCommand()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2114,7 +2104,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Application events / Description: / Called when Rhino starts. / / Parameters: / app - [in] instance of Rhino begin started. WARNING: Never modify the Rhino document in an <a class="el" href="class_c_rhino_event_watcher.html#a970e32f7d45fd13d1f3ae18de0e42313">OnInitRhino()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a970e32f7d45fd13d1f3ae18de0e42313">OnInitRhino()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Application events Description: Called when Rhino starts. Parameters: app - [in] instance of Rhino begin started. WARNING: Never modify the Rhino document in an <a class="el" href="class_c_rhino_event_watcher.html#a970e32f7d45fd13d1f3ae18de0e42313">OnInitRhino()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a970e32f7d45fd13d1f3ae18de0e42313">OnInitRhino()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2157,7 +2147,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object's attributes change. / / Parameters: / doc - [in] object's document / object - [in] object whose attributes were changed. The new / attributes are object.Attributes(). / old_attributes - [in] attributes before the change. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#ae9b02c9434c75cc72995c50d7ae45b48">OnModifyObjectAttributes()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ae9b02c9434c75cc72995c50d7ae45b48">OnModifyObjectAttributes()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object's attributes change. Parameters: doc - [in] object's document object - [in] object whose attributes were changed. The new attributes are object.Attributes(). old_attributes - [in] attributes before the change. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#ae9b02c9434c75cc72995c50d7ae45b48">OnModifyObjectAttributes()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ae9b02c9434c75cc72995c50d7ae45b48">OnModifyObjectAttributes()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rh_rdk_light_manager_support.html#a433b2ad966f6cc632ae02a226ac3f8b4">CRhRdkLightManagerSupport</a>.</p>
 
@@ -2279,7 +2269,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is begin purged from a document. / The object will cease to exist forever. / / Parameters: / doc - [in] object's document / object - [in] object to be purged. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a4a8f75fc903f9c693d018b09878a1650">OnPurgeObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a4a8f75fc903f9c693d018b09878a1650">OnPurgeObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is begin purged from a document. The object will cease to exist forever. Parameters: doc - [in] object's document object - [in] object to be purged. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a4a8f75fc903f9c693d018b09878a1650">OnPurgeObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a4a8f75fc903f9c693d018b09878a1650">OnPurgeObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2391,7 +2381,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is being selected. / Note, the seletion of grip objects will not trigger this event. / Grips selection is ignored, as these objects are transient and / are often deleted shortly after selection and deselection. / If you must be notified when grip objects are selected, use the / <a class="el" href="class_c_rhino_on_change_object_select_state.html">CRhinoOnChangeObjectSelectState</a> class. / / Parameters: / doc - [in] object's document / object - [in] object to be purged. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a84e60b3e769d1a27abe4db937e544afc">OnSelectObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a84e60b3e769d1a27abe4db937e544afc">OnSelectObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is being selected. Note, the seletion of grip objects will not trigger this event. Grips selection is ignored, as these objects are transient and are often deleted shortly after selection and deselection. If you must be notified when grip objects are selected, use the <a class="el" href="class_c_rhino_on_change_object_select_state.html">CRhinoOnChangeObjectSelectState</a> class. Parameters: doc - [in] object's document object - [in] object to be purged. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a84e60b3e769d1a27abe4db937e544afc">OnSelectObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a84e60b3e769d1a27abe4db937e544afc">OnSelectObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2428,7 +2418,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called when a collection of objects is selected. / Note, the seletion of grip objects will not trigger this event. / Grips selection is ignored, as these objects are transient and / are often deleted shortly after selection and deselection. / If you must be notified when grip objects are selected, use the / <a class="el" href="class_c_rhino_on_change_object_select_state.html">CRhinoOnChangeObjectSelectState</a> class. / / Parameters: / doc - [in] object's document / objects - [in] objects that were selected WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a22cb8bde1663675e5a7d8d989696bdc7">OnSelectObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a22cb8bde1663675e5a7d8d989696bdc7">OnSelectObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called when a collection of objects is selected. Note, the seletion of grip objects will not trigger this event. Grips selection is ignored, as these objects are transient and are often deleted shortly after selection and deselection. If you must be notified when grip objects are selected, use the <a class="el" href="class_c_rhino_on_change_object_select_state.html">CRhinoOnChangeObjectSelectState</a> class. Parameters: doc - [in] object's document objects - [in] objects that were selected WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a22cb8bde1663675e5a7d8d989696bdc7">OnSelectObjects()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a22cb8bde1663675e5a7d8d989696bdc7">OnSelectObjects()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2491,7 +2481,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is un-deleted. / / Parameters: / doc - [in] object's document / object - [in] object tha was deleted and is now active. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#ab70b109fadd0667b29f4e223ec609a60">OnUnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ab70b109fadd0667b29f4e223ec609a60">OnUnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is undeleted. Parameters: doc - [in] object's document object - [in] object tha was deleted and is now active. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#ab70b109fadd0667b29f4e223ec609a60">OnUnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#ab70b109fadd0667b29f4e223ec609a60">OnUnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rh_rdk_light_manager_support.html#aae20c42788049eef707553d8d11c5801">CRhRdkLightManagerSupport</a>.</p>
 
@@ -2573,8 +2563,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Called if the object's render mesh or analysis mesh is updated. Parameters: doc - [in] object's document object - [in] object whose mesh was updated. The new mesh is attached to the object. mesh_type - [in] type of mesh (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a>)</p>
-<p>WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a6c0808a3501001dd078ce085ab61832d">OnUpdateObjectMesh()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a6c0808a3501001dd078ce085ab61832d">OnUpdateObjectMesh()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if the object's render mesh or analysis mesh is updated. Parameters: doc - [in] object's document object - [in] object whose mesh was updated. The new mesh is attached to the object. mesh_type - [in] type of mesh (<a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea27cff641e2b08f958c1a759f2b5460df">ON::render_mesh</a> or <a class="el" href="class_o_n.html#a7a4479b49f4b13f6a1112c87cf106e5ea23fef70abfef3e4ee2cdee7fd0b1112b">ON::analysis_mesh</a>) WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#a6c0808a3501001dd078ce085ab61832d">OnUpdateObjectMesh()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#a6c0808a3501001dd078ce085ab61832d">OnUpdateObjectMesh()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2592,12 +2581,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Adds event watcher to Rhino. <br  />
-</p>
+<p>Description: Adds event watcher to Rhino.</p>
 <p>Example: class CMyEventWatcher : public <a class="el" href="class_c_rhino_event_watcher.html">CRhinoEventWatcher</a> { ... } ... CMyEventWatcher* pEyes = new CMyEventWatcher(); ... pEyes-&gt;<a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">Register()</a>;</p>
 <p>pEyes-&gt;Enable(TRUE); ... pEyes-&gt;Enable(FALSE); ... pEyes-&gt;Enable(TRUE); ... pEyes-&gt;Enable(FALSE); ...</p>
 <p>pEyes-&gt;<a class="el" href="class_c_rhino_event_watcher.html#adc7b80e83af307452b48f79221f68e90">UnRegister()</a>;</p>
-<p>Returns: TRUE if registration succeeds.</p>
 <p>Remarks: Registration is computationally expensive and should be done sparingly. Enable is fast and can be used to quickly enable/disable an event watcher. </p>
 
 </div>
@@ -2665,7 +2652,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> is called whenever the texture_mapping table is changed. / / Parameters: / event - [in] type of event / texture_mapping_table - [in] texture_mapping table / texture_mapping_index - [in] index of texture_mapping / If the event is texture_mapping_sorted, then texture_mapping_index is 0. / old_settings - [in] If the event is texture_mapping_modified, / then the old texture_mapping definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> is called whenever the texture_mapping table is changed. Parameters: event - [in] type of event texture_mapping_table - [in] texture_mapping table texture_mapping_index - [in] index of texture_mapping If the event is texture_mapping_sorted, then texture_mapping_index is 0. old_settings - [in] If the event is texture_mapping_modified, then the old texture_mapping definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#adc5b2ef5a9abf3f2a3d49a815ef46f92">TextureMappingTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2708,9 +2695,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Used to monitor Rhino's built in undo/redo support.</p>
-<p>Parameters: undo_event - [in] Reports what is happening: undo_record_serialnumber - [in] Runtime serial number of the undo event cmd - [in] (can be NULL) If not NULL, this is the command whose activity is being recorded for possible undo. Remarks: "86" is restaurant slang for "nix" <a href="http://www.restaurantreport.com/qa/86d.html">http://www.restaurantreport.com/qa/86d.html</a></p>
-<p>WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#abc754af9d0df1c40d0eb49aef30f9fea">UndoEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#abc754af9d0df1c40d0eb49aef30f9fea">UndoEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Used to monitor Rhino's built in undo/redo support. Parameters: undo_event - [in] Reports what is happening: undo_record_serialnumber - [in] Runtime serial number of the undo event cmd - [in] (can be NULL) If not NULL, this is the command whose activity is being recorded for possible undo. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rhino_event_watcher.html#abc754af9d0df1c40d0eb49aef30f9fea">UndoEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rhino_event_watcher.html#abc754af9d0df1c40d0eb49aef30f9fea">UndoEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 </div>
 </div>
@@ -2728,16 +2713,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Removes event watcher from Rhino.</p>
-<p>Remarks: Registration is computationally expensive and should be done sparingly. Enable is fast and can be used to quickly enable/disable an event watcher.</p>
-<p>See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
+<p>Description: Removes event watcher from Rhino. Remarks: Registration is computationally expensive and should be done sparingly. Enable is fast and can be used to quickly enable/disable an event watcher. See Also: <a class="el" href="class_c_rhino_event_watcher.html#afb6ab5aac2d63111065b3e224d77bf04">CRhinoEventWatcher::Register()</a>; </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:41 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

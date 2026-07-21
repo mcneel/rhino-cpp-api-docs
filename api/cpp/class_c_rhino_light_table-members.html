@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,10 @@ $(function() {
   <tr><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#gabfb3ee20b3487baee323f8900dc37282">ON_SimpleArray&lt; CRhinoLight * &gt;::operator[]</a>(ON__UINT64) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_rhino_light_table.html#ab82856b1c03fdff58b2fdf779fdc482c">SetRemapIndex</a>(int, int)</td><td class="entry"><a class="el" href="class_c_rhino_light_table.html">CRhinoLightTable</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_rhino_light_table.html#a21fb7f810466f1d52d716082cbe81518">Sort</a>(int(*compare)(const CRhinoLight *, const CRhinoLight *, void *), int(*cull)(const CRhinoLight *, void *), void *p=0)</td><td class="entry"><a class="el" href="class_c_rhino_light_table.html">CRhinoLightTable</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#ga14e3d8c3c9542339ffabe5b404b76062">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, int *, int(*)(const CRhinoLight * *, const CRhinoLight * *)) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#ga984f3c72a00955b8aa497b4d7e716c72">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, int *, int(*)(const CRhinoLight * *, const CRhinoLight * *, void *), void *) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#ga1e16e65e6d289d42c6ba16292f14e6dc">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, int *, int(*compar)(const CRhinoLight * *, const CRhinoLight * *)) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#gab33d13c38f5e151fa255889b08c1b83d">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, unsigned int *, int(*compar)(const CRhinoLight * *, const CRhinoLight * *)) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#gaf78ac1726baf2d9ee7d42bfeb4a9245d">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, int *, int(*compar)(const CRhinoLight * *, const CRhinoLight * *, void *), void *) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="group__open_n_u_r_b_s.html#ga116f466754903070bde35483fbe41063">ON_SimpleArray&lt; CRhinoLight * &gt;::Sort</a>(ON::sort_algorithm sort_algorithm, unsigned int *, int(*compar)(const CRhinoLight * *, const CRhinoLight * *, void *), void *) const</td><td class="entry"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray&lt; CRhinoLight * &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_rhino_light_table.html#a7fddc8884a46e6a2c23dff17e97f77dc">TableReference</a>() const</td><td class="entry"><a class="el" href="class_c_rhino_light_table.html">CRhinoLightTable</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_c_rhino_light_table.html#a19e53efb7b8e047a20317bf4157bff89">UndeleteLight</a>(int light_index)</td><td class="entry"><a class="el" href="class_c_rhino_light_table.html">CRhinoLightTable</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_c_rhino_light_table.html#a68a6bd9256d49b6143ffdb7c6c58abf4">UndoModifyLight</a>(int light_index, unsigned int ur_sn=0)</td><td class="entry"><a class="el" href="class_c_rhino_light_table.html">CRhinoLightTable</a></td><td class="entry"></td></tr>
@@ -105,7 +107,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:49 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

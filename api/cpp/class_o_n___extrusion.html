@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -288,8 +288,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a01e7aab897aeed8e908c5aeb84df2618 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afefc2174838a78fe1cbab26ca8e250c9 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#afefc2174838a78fe1cbab26ca8e250c9">BrepForm</a> (<a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep=nullptr) const override</td></tr>
 <tr class="separator:afefc2174838a78fe1cbab26ca8e250c9 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5310c5acc0086e2307a8fc747911e84 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ac5310c5acc0086e2307a8fc747911e84">CreateSurfaceTree</a> () const</td></tr>
+<tr class="memitem:ac5310c5acc0086e2307a8fc747911e84 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">virtual ON_SurfaceTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ac5310c5acc0086e2307a8fc747911e84">CreateSurfaceTree</a> () const</td></tr>
 <tr class="separator:ac5310c5acc0086e2307a8fc747911e84 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c03b9d215b813c07c4d6bff305d6563 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a6c03b9d215b813c07c4d6bff305d6563">CurveIso</a> (<a class="el" href="class_o_n___surface.html#a7418fb8120619cb5f17bd4283ad37087">ON_Surface::ISO</a> iso, double p=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>) const</td></tr>
+<tr class="separator:a6c03b9d215b813c07c4d6bff305d6563 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfce039c891be4737a8710462b3336dc inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#acfce039c891be4737a8710462b3336dc">DestroyRuntimeCache</a> (bool bDelete=true) override</td></tr>
 <tr class="memdesc:acfce039c891be4737a8710462b3336dc inherit pub_methods_class_o_n___surface"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___object.html#af8435c33ab53af41c22dac75e8917569">ON_Object::DestroyRuntimeCache</a> override  <a href="class_o_n___surface.html#acfce039c891be4737a8710462b3336dc">More...</a><br /></td></tr>
 <tr class="separator:acfce039c891be4737a8710462b3336dc inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,8 +324,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73effe5c2074ef469cb2829d1811ed6a inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146fd5801184a3f0d24a67c102feda37 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a146fd5801184a3f0d24a67c102feda37">GetSurfaceParameterFromNurbFormParameter</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;ns_curve2dX, double fit_tolerance) const</td></tr>
 <tr class="separator:a146fd5801184a3f0d24a67c102feda37 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a24032276fb52b177ec4e5db6c714d inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___curve.html">ON_Curve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a45a24032276fb52b177ec4e5db6c714d">GetSurfaceParameterFromNurbFormParameter</a> (const ON_SurfaceTree *tree, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d, const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;ns_curve2dX, double fit_tolerance) const</td></tr>
+<tr class="separator:a45a24032276fb52b177ec4e5db6c714d inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4fd9454c44389114b7e5f8b5348a449 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ac4fd9454c44389114b7e5f8b5348a449">HasBrepForm</a> () const override</td></tr>
 <tr class="separator:ac4fd9454c44389114b7e5f8b5348a449 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68d09e01325c78c09da23fcacd889b2 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ab68d09e01325c78c09da23fcacd889b2">HasSingularEdge</a> () const</td></tr>
+<tr class="separator:ab68d09e01325c78c09da23fcacd889b2 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858bdaad80b66bf1529eb1de9f268c9d inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a858bdaad80b66bf1529eb1de9f268c9d">IntersectPlane</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> plane_equation, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___s_s_x___e_v_e_n_t.html">ON_SSX_EVENT</a> &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0, double fitting_tolerance=0.0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surface_vdomain=0) const</td></tr>
 <tr class="separator:a858bdaad80b66bf1529eb1de9f268c9d inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275eb9d7e25a424c09076e37a3927872 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a275eb9d7e25a424c09076e37a3927872">IntersectSurface</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> *surfaceB, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___s_s_x___e_v_e_n_t.html">ON_SSX_EVENT</a> &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0, double fitting_tolerance=0.0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceA_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceA_vdomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_udomain=0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *surfaceB_vdomain=0) const</td></tr>
@@ -336,6 +342,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc4fa6cff9ae3617a3d64dbbb34a0e50 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2b7070ae8c79bf6a0e85b4f8839286 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#afa2b7070ae8c79bf6a0e85b4f8839286">IsCylinder</a> (<a class="el" href="class_o_n___cylinder.html">ON_Cylinder</a> *cylinder=nullptr, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
 <tr class="separator:afa2b7070ae8c79bf6a0e85b4f8839286 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4f685d5956c04618c81f024833cb25 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a1f4f685d5956c04618c81f024833cb25">IsExtrusion</a> (<a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> *extrusion=nullptr, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
+<tr class="separator:a1f4f685d5956c04618c81f024833cb25 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72300a940e9460fd427fc6235aed9fb inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ad72300a940e9460fd427fc6235aed9fb">IsSingular</a> (int) const</td></tr>
 <tr class="separator:ad72300a940e9460fd427fc6235aed9fb inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b4654352b6c36de48c1c9d2f597ecf inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#ab2b4654352b6c36de48c1c9d2f597ecf">IsSolid</a> () const</td></tr>
@@ -366,7 +374,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a03d6dbe66c5ade85012c6402134bc523 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a03d6dbe66c5ade85012c6402134bc523">SpanVector</a> (int dir) const</td></tr>
 <tr class="memdesc:a03d6dbe66c5ade85012c6402134bc523 inherit pub_methods_class_o_n___surface"><td class="mdescLeft">&#160;</td><td class="mdescRight">The surface's span vectors are a stricltly monotone increasing lists of doubles that specify the rectangles in the domain where the surface is C-infinity.  <a href="class_o_n___surface.html#a03d6dbe66c5ade85012c6402134bc523">More...</a><br /></td></tr>
 <tr class="separator:a03d6dbe66c5ade85012c6402134bc523 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4647ab1cb5aaba90fa9cca690ad4ae06 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___surface_tree.html">ON_SurfaceTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a4647ab1cb5aaba90fa9cca690ad4ae06">SurfaceTree</a> () const</td></tr>
+<tr class="memitem:a4647ab1cb5aaba90fa9cca690ad4ae06 inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">const ON_SurfaceTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a4647ab1cb5aaba90fa9cca690ad4ae06">SurfaceTree</a> () const</td></tr>
 <tr class="separator:a4647ab1cb5aaba90fa9cca690ad4ae06 inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8080ef0b385224c17df0f035a697814e inherit pub_methods_class_o_n___surface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___surface.html#a8080ef0b385224c17df0f035a697814e">VolumeMassProperties</a> (class <a class="el" href="class_o_n___mass_properties.html">ON_MassProperties</a> &amp;mp, bool bVolume=true, bool bFirstMoments=true, bool bSecondMoments=true, bool bProductMoments=true, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> base_point=<a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d">ON_3dPoint::UnsetPoint</a>, double rel_tol=1.0e-6, double abs_tol=1.0e-6) const</td></tr>
 <tr class="separator:a8080ef0b385224c17df0f035a697814e inherit pub_methods_class_o_n___surface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +475,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54a891ae2cb2a25008a7a39cb19dfcea inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a78b4ecb2eb36641e1ee6b4fc6129606e">MoveUserData</a> (<a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution, bool bDeleteAllSourceItems)</td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -760,7 +771,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: If possible, modify a polycurve so it meets the necessary conditions to be used as a multi-segment profile in a extrusion. Returns: True if the returned polycurve can be used a a multi-segment profile in a extrusion. </p>
+<p>Description: If possible, modify a polycurve so it meets the necessary conditions to be used as a multi-segment profile in a extrusion. Returns: True if the returned polycurve can be used as a multi-segment profile in a extrusion. </p>
 
 </div>
 </div>
@@ -936,7 +947,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Returns a CRC calculated from the information that defines the object. This CRC can be used as a quick way to see if two objects are not identical. Parameters: current_remainder - [in]; Returns: CRC of the information the defines the object. </p>
+<p>Description: Returns a CRC calculated from the information that defines the object. This CRC can be used as a quick way to see if two objects are not identical. Parameters: current_remainder - [in]; use zero for starting a DataCRC computation, and use the result of another DataCRC to compose computations. Returns: CRC of the information the defines the object. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___object.html#af51d5fcec9379ad9b7a56ac4dfc9a8b2">ON_Object</a>.</p>
 
@@ -1883,7 +1894,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the the 3d plane perpendicular to the path at a normalized path parameter. Parameters: s - [in] 0.0 = starting plane 1.0 = ending plane plane - [out] Plane is returned here. If false is returned, then the input value of plane is not changed. Returns: true if plane was set. False if this is invalid and plane could not be set. Remarks: When no mitering is happening, <a class="el" href="class_o_n___extrusion.html#a0573892fed6d083f329dee4d5732bc3d">GetPathPlane()</a> and <a class="el" href="class_o_n___extrusion.html#af0006d207892f19b328e5113f69662c1">GetProfilePlane()</a> return the same plane. </p>
+<p>Description: Get the 3d plane perpendicular to the path at a normalized path parameter. Parameters: s - [in] 0.0 = starting plane 1.0 = ending plane plane - [out] Plane is returned here. If false is returned, then the input value of plane is not changed. Returns: true if plane was set. False if this is invalid and plane could not be set. Remarks: When no mitering is happening, <a class="el" href="class_o_n___extrusion.html#a0573892fed6d083f329dee4d5732bc3d">GetPathPlane()</a> and <a class="el" href="class_o_n___extrusion.html#af0006d207892f19b328e5113f69662c1">GetProfilePlane()</a> return the same plane. </p>
 
 </div>
 </div>
@@ -1988,7 +1999,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the the 3d plane containing the profile curve at a normalized path parameter. Parameters: s - [in] 0.0 = starting plane 1.0 = ending plane plane - [out] Plane containing profile is returned in plane. If false is returned, then the input value of plane is not changed. Returns: true if plane was set. False if this is invalid and plane could not be set. Remarks: When no mitering is happening, <a class="el" href="class_o_n___extrusion.html#a0573892fed6d083f329dee4d5732bc3d">GetPathPlane()</a> and <a class="el" href="class_o_n___extrusion.html#af0006d207892f19b328e5113f69662c1">GetProfilePlane()</a> return the same plane. </p>
+<p>Description: Get the 3d plane containing the profile curve at a normalized path parameter. Parameters: s - [in] 0.0 = starting plane 1.0 = ending plane plane - [out] Plane containing profile is returned in plane. If false is returned, then the input value of plane is not changed. Returns: true if plane was set. False if this is invalid and plane could not be set. Remarks: When no mitering is happening, <a class="el" href="class_o_n___extrusion.html#a0573892fed6d083f329dee4d5732bc3d">GetPathPlane()</a> and <a class="el" href="class_o_n___extrusion.html#af0006d207892f19b328e5113f69662c1">GetProfilePlane()</a> return the same plane. </p>
 
 </div>
 </div>
@@ -2693,7 +2704,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Test a polycurve to determine if it meets the necessary conditions to be used as a multi-segment profile in a extrusion. Returns: True if the returned polycurve can be used a a multi-segment profile in a extrusion. </p>
+<p>Description: Test a polycurve to determine if it meets the necessary conditions to be used as a multi-segment profile in a extrusion. Returns: True if the returned polycurve can be used as a multi-segment profile in a extrusion. </p>
 
 </div>
 </div>
@@ -3997,7 +4008,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

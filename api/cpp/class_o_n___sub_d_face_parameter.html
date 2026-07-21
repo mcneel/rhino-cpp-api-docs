@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab76d1c641d7614be60a11b1b8cc5dbeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#ab76d1c641d7614be60a11b1b8cc5dbeb">ON_SubDFaceParameter</a> (const <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> &amp;)=default</td></tr>
 <tr class="separator:ab76d1c641d7614be60a11b1b8cc5dbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7306804965902c45b6cbad60269cbc7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a7306804965902c45b6cbad60269cbc7c">ON_SubDFaceParameter</a> (<a class="el" href="class_o_n___sub_d_face_corner_dex.html">ON_SubDFaceCornerDex</a> cdex, double corner_s, double corner_t)</td></tr>
-<tr class="memdesc:a7306804965902c45b6cbad60269cbc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a SubD face parameter that identifies a point on the face. The parameters (0,0) correspond the the corner vertex cdex.Vertex(face). The corner_s parameter runs from the corner vertex to the midpoint of cdex.RightEdge(face). The corner_t parameter runs from the corner vertex to the midpoint of cdex.LeftEdge(face). The parameters (1/2, 1/2) correspond the the center of the face.  <a href="class_o_n___sub_d_face_parameter.html#a7306804965902c45b6cbad60269cbc7c">More...</a><br /></td></tr>
+<tr class="memdesc:a7306804965902c45b6cbad60269cbc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a SubD face parameter that identifies a point on the face. The parameters (0,0) correspond the corner vertex cdex.Vertex(face). The corner_s parameter runs from the corner vertex to the midpoint of cdex.RightEdge(face). The corner_t parameter runs from the corner vertex to the midpoint of cdex.LeftEdge(face). The parameters (1/2, 1/2) correspond the center of the face.  <a href="class_o_n___sub_d_face_parameter.html#a7306804965902c45b6cbad60269cbc7c">More...</a><br /></td></tr>
 <tr class="separator:a7306804965902c45b6cbad60269cbc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42517d2feb8fa185e2b2e0136f760b31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a42517d2feb8fa185e2b2e0136f760b31">~ON_SubDFaceParameter</a> ()=default</td></tr>
 <tr class="separator:a42517d2feb8fa185e2b2e0136f760b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +124,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab32a05142dd27995f0a757b2f5cd4694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Well ordered dictionary compare of m_cdex, m_s, and m_t using <a class="el" href="class_o_n___sub_d_face_corner_dex.html#a209fa61711a6a3415149a8a159b77ffd" title="Dictionary compares EdgeCount() then CornerIndex(). Any set value &lt; any unset value.">ON_SubDFaceCornerDex::CompareAll()</a> and <a class="el" href="class_o_n___d_b_l.html#a35d0aebd66eab7c78c59519cbbae6594" title="Well ordered compare that handles nans and sorts them to the end. ON_DBL::CompareValue(nan,...">ON_DBL::CompareValue()</a>. Any set value &lt; any unset value.  <a href="class_o_n___sub_d_face_parameter.html#ab32a05142dd27995f0a757b2f5cd4694">More...</a><br /></td></tr>
 <tr class="separator:ab32a05142dd27995f0a757b2f5cd4694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa077c4efca7e8935f58c9ebb2c1eef2a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#aa077c4efca7e8935f58c9ebb2c1eef2a">CreateFromQuadFaceParameteters</a> (double quad_face_s, double quad_face_t)</td></tr>
-<tr class="memdesc:aa077c4efca7e8935f58c9ebb2c1eef2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create at <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> the corresponds to the the specified quad face parameters. The quad face parameters for face.Vertex(0) are (0,0). The quad face parameters for face.Vertex(1) are (1,0). The quad face parameters for face.Vertex(2) are (1,1). The quad face parameters for face.Vertex(3) are (0,1).  <a href="class_o_n___sub_d_face_parameter.html#aa077c4efca7e8935f58c9ebb2c1eef2a">More...</a><br /></td></tr>
+<tr class="memdesc:aa077c4efca7e8935f58c9ebb2c1eef2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create at <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> the corresponds to the specified quad face parameters. The quad face parameters for face.Vertex(0) are (0,0). The quad face parameters for face.Vertex(1) are (1,0). The quad face parameters for face.Vertex(2) are (1,1). The quad face parameters for face.Vertex(3) are (0,1).  <a href="class_o_n___sub_d_face_parameter.html#aa077c4efca7e8935f58c9ebb2c1eef2a">More...</a><br /></td></tr>
 <tr class="separator:aa077c4efca7e8935f58c9ebb2c1eef2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -242,7 +242,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a SubD face parameter that identifies a point on the face. The parameters (0,0) correspond the the corner vertex cdex.Vertex(face). The corner_s parameter runs from the corner vertex to the midpoint of cdex.RightEdge(face). The corner_t parameter runs from the corner vertex to the midpoint of cdex.LeftEdge(face). The parameters (1/2, 1/2) correspond the the center of the face. </p>
+<p>Create a SubD face parameter that identifies a point on the face. The parameters (0,0) correspond the corner vertex cdex.Vertex(face). The corner_s parameter runs from the corner vertex to the midpoint of cdex.RightEdge(face). The corner_t parameter runs from the corner vertex to the midpoint of cdex.LeftEdge(face). The parameters (1/2, 1/2) correspond the center of the face. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cdex</td><td>Identifies the face's corner subdivison quad. </td></tr>
@@ -401,7 +401,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create at <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> the corresponds to the the specified quad face parameters. The quad face parameters for face.Vertex(0) are (0,0). The quad face parameters for face.Vertex(1) are (1,0). The quad face parameters for face.Vertex(2) are (1,1). The quad face parameters for face.Vertex(3) are (0,1). </p>
+<p>Create at <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> the corresponds to the specified quad face parameters. The quad face parameters for face.Vertex(0) are (0,0). The quad face parameters for face.Vertex(1) are (1,0). The quad face parameters for face.Vertex(2) are (1,1). The quad face parameters for face.Vertex(3) are (0,1). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quad_face_s</td><td>0 &lt;= quad_face_s &amp;lt= 1. </td></tr>
@@ -620,7 +620,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,10 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:afa581cc220bb5e71897cefd9d213d894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bc400e62e0db663a26db713cc78fb7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">Style</a> : unsigned char { <a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7ac9f88e098f6fe4e4e112eeb05ccb9671">Style::Unset</a> = 0, 
+<a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7ae51e08a727173e8719e480316459991e">Style::Markup</a> = 1
+ }</td></tr>
+<tr class="separator:a16bc400e62e0db663a26db713cc78fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_o_n___model_component"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_o_n___model_component')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a></td></tr>
 <tr class="memitem:ab89963a3ae7d6ebae18eb5e00ca469bc inherit pub_types_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#ab89963a3ae7d6ebae18eb5e00ca469bc">Attributes</a> : unsigned int { <br />
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#ab89963a3ae7d6ebae18eb5e00ca469bcad522ea7fcf7777cdfb4b1122852a427a">NoAttributes</a> = 0U, 
@@ -147,9 +151,11 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca902ad4f30d401eedc6ab627e9089f3ba">Type::EmbeddedFile</a> = 15, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4be49c4d3c8e300d44c53922c98e567">Type::ObsoleteValue</a> = 16, 
 <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca2156ecbc3d8e24c8ca504fee611bf1d7">Type::SectionStyle</a> = 17, 
-<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacae51e08a727173e8719e480316459991e">Type::Markup</a> = 18, 
 <br />
-&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
+&#160;&#160;<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacacf1e66d857077c9d245428bfda9f5184">Type::PageViewGroup</a> = 19, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eacaa4f2817d4975c3222c05d938c4c65ef4">Type::NumOf</a>, 
+<a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eaca699b4f79215d191584653efebf156e52">Type::Mixed</a> = 0xFE
 <br />
  }</td></tr>
 <tr class="memdesc:a2977d69091b4952cc19b0189a28a0eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> enum has a value for each explicit component type and two special values, Unset and Mixed. Use an <a class="el" href="class_o_n___model_component_type_iterator.html">ON_ModelComponentTypeIterator</a> instance to iterate over the <a class="el" href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac" title="The ON_ModelComponent::Type enum has a value for each explicit component type and two special values,...">ON_ModelComponent::Type</a> values. /summary&gt;  <a href="class_o_n___model_component.html#a2977d69091b4952cc19b0189a28a0eac">More...</a><br /></td></tr>
@@ -198,6 +204,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ed1d29cad02729559e6b94e22d0e7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675fcf2be7ac06f99a8278b92e1ea9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a675fcf2be7ac06f99a8278b92e1ea9d0">DeletePerViewportVisible</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;viewport_id)</td></tr>
 <tr class="separator:a675fcf2be7ac06f99a8278b92e1ea9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cc65484d518037616e5156f6dc7503"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a57cc65484d518037616e5156f6dc7503">Description</a> () const</td></tr>
+<tr class="separator:a57cc65484d518037616e5156f6dc7503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132b06d265bc5546ac08fc9b6bbd4bfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a132b06d265bc5546ac08fc9b6bbd4bfe">Dump</a> (<a class="el" href="class_o_n___text_log.html">ON_TextLog</a> &amp;) const override</td></tr>
 <tr class="memdesc:a132b06d265bc5546ac08fc9b6bbd4bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">for debugging  <a href="class_o_n___layer.html#a132b06d265bc5546ac08fc9b6bbd4bfe">More...</a><br /></td></tr>
 <tr class="separator:a132b06d265bc5546ac08fc9b6bbd4bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +227,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc410bf239c1361a786d28b6d0b57c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c5e1997d8bdd61f6927e75c170745a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a5c5e1997d8bdd61f6927e75c170745a9">IsVisibleAndNotLocked</a> () const</td></tr>
 <tr class="separator:a5c5e1997d8bdd61f6927e75c170745a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa8b3a40fd4be75b532b4e379c801df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#abaa8b3a40fd4be75b532b4e379c801df">LayerStyle</a> () const</td></tr>
+<tr class="separator:abaa8b3a40fd4be75b532b4e379c801df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9951de7313fe954fc36a1d04332dc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#aea9951de7313fe954fc36a1d04332dc1">LinetypeIndex</a> () const</td></tr>
 <tr class="separator:aea9951de7313fe954fc36a1d04332dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86abd015b000c19b79c482aeb1e50398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a86abd015b000c19b79c482aeb1e50398">ModelIsVisible</a> () const</td></tr>
@@ -259,14 +269,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a94d3b394f606f170d07ed905edb4388f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55df7d52c6675ffe91f44374e8dedfb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a55df7d52c6675ffe91f44374e8dedfb7">RenderMaterialIndex</a> () const</td></tr>
 <tr class="separator:a55df7d52c6675ffe91f44374e8dedfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e567a6bc38364983e1db92ca947746"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a34e567a6bc38364983e1db92ca947746">SectionStyleIndex</a> () const</td></tr>
+<tr class="separator:a34e567a6bc38364983e1db92ca947746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b81db01dd6d7016630c396b19879733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a2b81db01dd6d7016630c396b19879733">SetColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a> layer_color)</td></tr>
 <tr class="memdesc:a2b81db01dd6d7016630c396b19879733"><td class="mdescLeft">&#160;</td><td class="mdescRight">layer display color  <a href="class_o_n___layer.html#a2b81db01dd6d7016630c396b19879733">More...</a><br /></td></tr>
 <tr class="separator:a2b81db01dd6d7016630c396b19879733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c48d46b6a6ad1aadad5fea0f6b8568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a16c48d46b6a6ad1aadad5fea0f6b8568">SetCustomSectionStyle</a> (const <a class="el" href="class_o_n___section_style.html">ON_SectionStyle</a> &amp;sectionStyle)</td></tr>
 <tr class="separator:a16c48d46b6a6ad1aadad5fea0f6b8568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d6baa8b9221d9dc2325ecda278ab41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a96d6baa8b9221d9dc2325ecda278ab41">SetDescription</a> (const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *description)</td></tr>
+<tr class="separator:a96d6baa8b9221d9dc2325ecda278ab41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a440abd85d8078d68d63e6108b5267fd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a440abd85d8078d68d63e6108b5267fd2">SetIgesLevel</a> (int)</td></tr>
 <tr class="memdesc:a440abd85d8078d68d63e6108b5267fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">IGES level for this layer.  <a href="class_o_n___layer.html#a440abd85d8078d68d63e6108b5267fd2">More...</a><br /></td></tr>
 <tr class="separator:a440abd85d8078d68d63e6108b5267fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cc0e407b503219ced484037d0c19d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a86cc0e407b503219ced484037d0c19d4">SetLayerStyle</a> (<a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a> layer_style)</td></tr>
+<tr class="separator:a86cc0e407b503219ced484037d0c19d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4988adafa4a3a079ed298a692bee2ea4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a4988adafa4a3a079ed298a692bee2ea4">SetLinetypeIndex</a> (int linetype_index)</td></tr>
 <tr class="separator:a4988adafa4a3a079ed298a692bee2ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892f3acb16b38f20cbb3d142ce881a4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a892f3acb16b38f20cbb3d142ce881a4a">SetLocked</a> (bool bLocked)</td></tr>
@@ -301,6 +317,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f43293e18b1a20927d044b8a773cdf5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a1f43293e18b1a20927d044b8a773cdf5">SetRenderMaterialIndex</a> (int)</td></tr>
 <tr class="memdesc:a1f43293e18b1a20927d044b8a773cdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">index of layer's rendering material  <a href="class_o_n___layer.html#a1f43293e18b1a20927d044b8a773cdf5">More...</a><br /></td></tr>
 <tr class="separator:a1f43293e18b1a20927d044b8a773cdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe428f06e4c3cfcaeb0c62d54ef76582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#abe428f06e4c3cfcaeb0c62d54ef76582">SetSectionStyleIndex</a> (int index)</td></tr>
+<tr class="separator:abe428f06e4c3cfcaeb0c62d54ef76582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f05d328d9c509e99d9a6bb71b667a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#a9f05d328d9c509e99d9a6bb71b667a34">SetVisible</a> (bool bVisible)</td></tr>
 <tr class="separator:a9f05d328d9c509e99d9a6bb71b667a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae839b49eebf77d7de3ff9a389ab2d806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#ae839b49eebf77d7de3ff9a389ab2d806">UnsetModelPersistentVisibility</a> ()</td></tr>
@@ -575,6 +593,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54a891ae2cb2a25008a7a39cb19dfcea inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a78b4ecb2eb36641e1ee6b4fc6129606e">MoveUserData</a> (<a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution, bool bDeleteAllSourceItems)</td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -598,6 +619,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abdf35870c6f9116579e2a64952987e77"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___layer.html">ON_Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#abdf35870c6f9116579e2a64952987e77">FromModelComponentRef</a> (const class <a class="el" href="class_o_n___model_component_reference.html">ON_ModelComponentReference</a> &amp;model_component_reference, const <a class="el" href="class_o_n___layer.html">ON_Layer</a> *none_return_value)</td></tr>
 <tr class="separator:abdf35870c6f9116579e2a64952987e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad087f462ae4c2dba52af49c6e4adcd8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___layer.html#ad087f462ae4c2dba52af49c6e4adcd8a">LayerStyleFromUnsigned</a> (unsigned int layer_style_as_unsigned)</td></tr>
+<tr class="separator:ad087f462ae4c2dba52af49c6e4adcd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_o_n___model_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_o_n___model_component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a></td></tr>
 <tr class="memitem:a39bd0635a9d54645e9ccaf20cb65966a inherit pub_static_methods_class_o_n___model_component"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___model_component.html#a39bd0635a9d54645e9ccaf20cb65966a">CompareId</a> (const <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> &amp;a, const <a class="el" href="class_o_n___model_component.html">ON_ModelComponent</a> &amp;b)</td></tr>
 <tr class="separator:a39bd0635a9d54645e9ccaf20cb65966a inherit pub_static_methods_class_o_n___model_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -744,6 +767,35 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="afa581cc220bb5e71897cefd9d213d894aeebe9d1400b53f8d9118f5136541c289"></a>per_viewport_visible&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afa581cc220bb5e71897cefd9d213d894adf1a5fa94544fc705257de6967996326"></a>per_viewport_persistent_visibility&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afa581cc220bb5e71897cefd9d213d894a7034cd6743833ebf75d0532e5d038060"></a>per_viewport_all_settings&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a16bc400e62e0db663a26db713cc78fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bc400e62e0db663a26db713cc78fb7">&#9670;&nbsp;</a></span>Style</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Styles of layers. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a16bc400e62e0db663a26db713cc78fb7ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"><p>Unset, or normal, layer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a16bc400e62e0db663a26db713cc78fb7ae51e08a727173e8719e480316459991e"></a>Markup&#160;</td><td class="fielddoc"><p>Markup layer. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1045,6 +1097,24 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a57cc65484d518037616e5156f6dc7503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57cc65484d518037616e5156f6dc7503">&#9670;&nbsp;</a></span>Description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__w_string.html">ON_wString</a> ON_Layer::Description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Gets the short description of the layer. Returns: string - The short desciption or <a class="el" href="class_o_n__w_string.html#ab9c20b8013ccb7ca12828a2fd935f5ad" title="ON_String::EmptyString has length 0. const char* s = ON_String::EmptyString sets s to L&quot;&quot;.">ON_wString::EmptyString</a>. </p>
+
+</div>
+</div>
 <a id="a132b06d265bc5546ac08fc9b6bbd4bfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a132b06d265bc5546ac08fc9b6bbd4bfe">&#9670;&nbsp;</a></span>Dump()</h2>
 
@@ -1295,6 +1365,50 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Value of (<a class="el" href="class_o_n___layer.html#a02591eb96b2b7ac006b0b41208dafbef">IsVisible()</a> &amp;&amp; !IsLocked()). </p>
+
+</div>
+</div>
+<a id="abaa8b3a40fd4be75b532b4e379c801df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa8b3a40fd4be75b532b4e379c801df">&#9670;&nbsp;</a></span>LayerStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a> ON_Layer::LayerStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Gets the layer style. </p>
+
+</div>
+</div>
+<a id="ad087f462ae4c2dba52af49c6e4adcd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad087f462ae4c2dba52af49c6e4adcd8a">&#9670;&nbsp;</a></span>LayerStyleFromUnsigned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a> ON_Layer::LayerStyleFromUnsigned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>layer_style_as_unsigned</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1687,6 +1801,24 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a34e567a6bc38364983e1db92ca947746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e567a6bc38364983e1db92ca947746">&#9670;&nbsp;</a></span>SectionStyleIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_Layer::SectionStyleIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>a tree control then the list of child layers is shown in the control. Sections are the product of intersecting a plane with an object. For surface type geometry (<a class="el" href="class_o_n___brep.html">ON_Brep</a>, <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>) this intersection can result in curves as well as hatches for the closed curves generated </p>
+
+</div>
+</div>
 <a id="a2b81db01dd6d7016630c396b19879733"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b81db01dd6d7016630c396b19879733">&#9670;&nbsp;</a></span>SetColor()</h2>
 
@@ -1723,7 +1855,26 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>a tree control then the list of child layers is shown in the control. Sections are the product of intersecting a plane with an object. For surface type geometry (<a class="el" href="class_o_n___brep.html">ON_Brep</a>, <a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a>, <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>) this intersection can result in curves as well as hatches for the closed curves generated Description: Layers can have optional custom section style associated with them. This function adds a custom section style for this layer. </p>
+<p>Description: Layers can have optional custom section style associated with them. This function adds a custom section style for this layer. </p>
+
+</div>
+</div>
+<a id="a96d6baa8b9221d9dc2325ecda278ab41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d6baa8b9221d9dc2325ecda278ab41">&#9670;&nbsp;</a></span>SetDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Layer::SetDescription </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___model_component.html#a63a60bd152dda8879588b15d7f394b47">wchar_t</a> *&#160;</td>
+          <td class="paramname"><em>description</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the short description of the layer. Parameters: description - [in] the short description, can be nullptr. </p>
 
 </div>
 </div>
@@ -1744,6 +1895,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>IGES level for this layer. </p>
+
+</div>
+</div>
+<a id="a86cc0e407b503219ced484037d0c19d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cc0e407b503219ced484037d0c19d4">&#9670;&nbsp;</a></span>SetLayerStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Layer::SetLayerStyle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___layer.html#a16bc400e62e0db663a26db713cc78fb7">ON_Layer::Style</a>&#160;</td>
+          <td class="paramname"><em>layer_style</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the layer style. Parameters: layer_style - [in] the layer style. </p>
 
 </div>
 </div>
@@ -1819,7 +1989,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Controls layer visibility in in model viewports. Parameters: bVisible - [in] true to make layer visible, false to make layer invisible See Also: <a class="el" href="class_o_n___layer.html#a9f05d328d9c509e99d9a6bb71b667a34">ON_Layer::SetVisible()</a> <a class="el" href="class_o_n___layer.html#a03627920e6e8610584291d4a88894dd1">ON_Layer::SetPerViewportVisible()</a> </p>
+<p>Description: Controls layer visibility in model viewports. Parameters: bVisible - [in] true to make layer visible, false to make layer invisible See Also: <a class="el" href="class_o_n___layer.html#a9f05d328d9c509e99d9a6bb71b667a34">ON_Layer::SetVisible()</a> <a class="el" href="class_o_n___layer.html#a03627920e6e8610584291d4a88894dd1">ON_Layer::SetPerViewportVisible()</a> </p>
 
 </div>
 </div>
@@ -2099,6 +2269,24 @@ Additional Inherited Members</h2></td></tr>
 
 <p>index of layer's rendering material </p>
 <p>Index of render material for objects on this layer that have MaterialSource() == <a class="el" href="class_o_n.html#a2720e91b2f72e5152cfcdd32af4cd09fafe6a51b9a1741c7dc7d67e9f9313ffe1" title="use material assigned to layer">ON::material_from_layer</a>. A material index of -1 indicates no material has been assigned and the material created by the default <a class="el" href="class_o_n___material.html">ON_Material</a> constructor should be used. </p>
+
+</div>
+</div>
+<a id="abe428f06e4c3cfcaeb0c62d54ef76582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe428f06e4c3cfcaeb0c62d54ef76582">&#9670;&nbsp;</a></span>SetSectionStyleIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Layer::SetSectionStyleIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2479,7 +2667,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

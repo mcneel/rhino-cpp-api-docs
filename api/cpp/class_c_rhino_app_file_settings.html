@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_c_rhino_app_file_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -76,9 +77,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5132e23080cbaff212c862009ccb215a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_c_rhino_app_file_settings.html#a5132e23080cbaff212c862009ccb215aa73ccb455db83d90494a0f67d14fd7512">ImportFileLayerMatchingOptionDefault</a> = 0
+<tr class="memitem:a9f38a353bdd74f56b57e655769fe7e99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_c_rhino_app_file_settings.html#a9f38a353bdd74f56b57e655769fe7e99a73ccb455db83d90494a0f67d14fd7512">ImportFileLayerMatchingOptionDefault</a> = 0
  }</td></tr>
-<tr class="separator:a5132e23080cbaff212c862009ccb215a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9f38a353bdd74f56b57e655769fe7e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a486029c55a92887abaa85a56c3cbcc70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a486029c55a92887abaa85a56c3cbcc70">clipboard_on_exit</a> : unsigned int { <a class="el" href="class_c_rhino_app_file_settings.html#a486029c55a92887abaa85a56c3cbcc70a8cabb243dfe713b598f5cde7bceed1c0">keep_clipboard_data</a> = 0, 
 <a class="el" href="class_c_rhino_app_file_settings.html#a486029c55a92887abaa85a56c3cbcc70a4131aa6afd388615e3d59b603a86cea6">delete_clipboard_data</a>, 
 <a class="el" href="class_c_rhino_app_file_settings.html#a486029c55a92887abaa85a56c3cbcc70a127754897f052ec6e9a12787ca700724">prompt_user_when_clipboard_big</a>
@@ -95,6 +96,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a503e917ed5ce8f0a7cc743204d4f2eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35221d07a316aa7008413e6708abb50a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a35221d07a316aa7008413e6708abb50a">AlwaysDisplayAllFiletypes</a> () const</td></tr>
 <tr class="separator:a35221d07a316aa7008413e6708abb50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bd49d2f2f1a128c84a3435cf618056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a89bd49d2f2f1a128c84a3435cf618056">BackupFileFolder</a> () const</td></tr>
+<tr class="separator:a89bd49d2f2f1a128c84a3435cf618056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f37660f1da724e19eee050b8f8be70a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a9f37660f1da724e19eee050b8f8be70a">CreateOtherBakFiles</a> () const</td></tr>
+<tr class="separator:a9f37660f1da724e19eee050b8f8be70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecf138cb61289d25250b0a6b499cd9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#abecf138cb61289d25250b0a6b499cd9f">Defaults</a> ()</td></tr>
 <tr class="separator:abecf138cb61289d25250b0a6b499cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c7c6db6a6c5cba7d212c09f704f72b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#ae8c7c6db6a6c5cba7d212c09f704f72b">ExcludedFiles</a> () const</td></tr>
@@ -119,6 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1138d063feffa7e38d440069efbe32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3ab0e2446bec78845a3adbd709dc36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a3c3ab0e2446bec78845a3adbd709dc36">SetAlwaysDisplayAllFiletypes</a> (bool on)</td></tr>
 <tr class="separator:a3c3ab0e2446bec78845a3adbd709dc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b8cbd9b9d4819c9a7565dfeabe35b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#ae9b8cbd9b9d4819c9a7565dfeabe35b0">SetBackupFileFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a>)</td></tr>
+<tr class="separator:ae9b8cbd9b9d4819c9a7565dfeabe35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26719d78a8eb6237ef235253ff057131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a26719d78a8eb6237ef235253ff057131">SetCreateOtherBakFiles</a> (bool on)</td></tr>
+<tr class="separator:a26719d78a8eb6237ef235253ff057131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c58b25b61b004e00e8129452183470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#ab0c58b25b61b004e00e8129452183470">SetExcludedFiles</a> (const <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n__w_string.html">ON_wString</a> &gt; &amp;)</td></tr>
 <tr class="separator:ab0c58b25b61b004e00e8129452183470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f82bbbe01f1097f3765c4ac07e08c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#aa7f82bbbe01f1097f3765c4ac07e08c3">SetFileSearchRecursiveDepth</a> (unsigned int)</td></tr>
@@ -129,6 +138,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0c3eeec3a045e4fd784d86bc9d2b35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23e8b458230344c72920667f3b73607"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#ad23e8b458230344c72920667f3b73607">WriteLocalTempFileWhenSaving</a> () const</td></tr>
 <tr class="separator:ad23e8b458230344c72920667f3b73607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae35952c9cd731166d8ead935abca4548"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#ae35952c9cd731166d8ead935abca4548">HatchPatternsFolder</a> (<a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;hatch_pattern_folder)</td></tr>
+<tr class="separator:ae35952c9cd731166d8ead935abca4548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -153,7 +167,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a26872c5454006ce179100b62268e58f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_app_file_settings.html#a486029c55a92887abaa85a56c3cbcc70">clipboard_on_exit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a26872c5454006ce179100b62268e58f3">m_clipboard_on_exit</a> = CRhinoAppFileSettings::clipboard_on_exit::prompt_user_when_clipboard_big</td></tr>
 <tr class="separator:a26872c5454006ce179100b62268e58f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741e5acc210efb4089825fcd23e20c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a741e5acc210efb4089825fcd23e20c88">m_copy_to_previous_rhino_version</a> = true</td></tr>
-<tr class="memdesc:a741e5acc210efb4089825fcd23e20c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clipboard options.  <a href="class_c_rhino_app_file_settings.html#a741e5acc210efb4089825fcd23e20c88">More...</a><br /></td></tr>
 <tr class="separator:a741e5acc210efb4089825fcd23e20c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1571049e46fb820e0fc920219cb8e7d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app_file_settings.html#a1571049e46fb820e0fc920219cb8e7d3">m_default_template_file</a></td></tr>
 <tr class="memdesc:a1571049e46fb820e0fc920219cb8e7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">template file loaded when Rhino starts and the default file name for OpenTemplateFile dialog  <a href="class_c_rhino_app_file_settings.html#a1571049e46fb820e0fc920219cb8e7d3">More...</a><br /></td></tr>
@@ -180,8 +193,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><hr  />
  </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a5132e23080cbaff212c862009ccb215a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5132e23080cbaff212c862009ccb215a">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a9f38a353bdd74f56b57e655769fe7e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f38a353bdd74f56b57e655769fe7e99">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +205,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5132e23080cbaff212c862009ccb215aa73ccb455db83d90494a0f67d14fd7512"></a>ImportFileLayerMatchingOptionDefault&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9f38a353bdd74f56b57e655769fe7e99a73ccb455db83d90494a0f67d14fd7512"></a>ImportFileLayerMatchingOptionDefault&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -290,6 +303,40 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a89bd49d2f2f1a128c84a3435cf618056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89bd49d2f2f1a128c84a3435cf618056">&#9670;&nbsp;</a></span>BackupFileFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__w_string.html">ON_wString</a> CRhinoAppFileSettings::BackupFileFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f37660f1da724e19eee050b8f8be70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f37660f1da724e19eee050b8f8be70a">&#9670;&nbsp;</a></span>CreateOtherBakFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoAppFileSettings::CreateOtherBakFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abecf138cb61289d25250b0a6b499cd9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abecf138cb61289d25250b0a6b499cd9f">&#9670;&nbsp;</a></span>Defaults()</h2>
 
@@ -337,6 +384,32 @@ Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae35952c9cd731166d8ead935abca4548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35952c9cd731166d8ead935abca4548">&#9670;&nbsp;</a></span>HatchPatternsFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoAppFileSettings::HatchPatternsFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;&#160;</td>
+          <td class="paramname"><em>hatch_pattern_folder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -493,6 +566,42 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void CRhinoAppFileSettings::SetAlwaysDisplayAllFiletypes </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9b8cbd9b9d4819c9a7565dfeabe35b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b8cbd9b9d4819c9a7565dfeabe35b0">&#9670;&nbsp;</a></span>SetBackupFileFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppFileSettings::SetBackupFileFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26719d78a8eb6237ef235253ff057131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26719d78a8eb6237ef235253ff057131">&#9670;&nbsp;</a></span>SetCreateOtherBakFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoAppFileSettings::SetCreateOtherBakFiles </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>on</em></td><td>)</td>
@@ -687,7 +796,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>default = true </p>
-<p>means you will double the size of what is saved in the clipboard but will be able to copy from the current to the previous version using the clipboard. By default, any preexisting .3dm files are renamed .3dm.back when Rhino saves. If this m_bCreate3dmBakFiles is false, then Rhino does not create .3dmbak files. </p>
+<p>By default, any preexisting .3dm files are renamed .3dm.back when Rhino saves. If this m_bCreate3dmBakFiles is false, then Rhino does not create .3dmbak files. </p>
 
 </div>
 </div>
@@ -716,9 +825,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Clipboard options. </p>
-<p>Copy both objects to the clipboard in both the current and previous Rhino clipboard formats. This </p>
+<p>OBSOLETE: No longer used Copy objects to the clipboard in both the current and previous Rhino clipboard formats. This means you will double the size of what is saved in the clipboard but will be able to copy from the current to the previous version using the clipboard. </p>
 
 </div>
 </div>
@@ -783,7 +890,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Keep multiple copies of autosave files in recycle bin ///. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000130">Deprecated:</a></b></dt><dd>No longer supported </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000136">Deprecated:</a></b></dt><dd>No longer supported </dd></dl>
 
 </div>
 </div>
@@ -838,7 +945,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

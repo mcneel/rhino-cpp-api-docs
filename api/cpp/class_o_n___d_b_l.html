@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -81,6 +81,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a35d0aebd66eab7c78c59519cbbae6594"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#a35d0aebd66eab7c78c59519cbbae6594">CompareValue</a> (double lhs, double rhs)</td></tr>
 <tr class="memdesc:a35d0aebd66eab7c78c59519cbbae6594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Well ordered compare that handles nans and sorts them to the end. ON_DBL::CompareValue(nan, nan) = 0; ON_DBL::CompareValue(non_nan, nan) = -1; ON_DBL::CompareValue(nan, non_nan) = +1;  <a href="class_o_n___d_b_l.html#a35d0aebd66eab7c78c59519cbbae6594">More...</a><br /></td></tr>
 <tr class="separator:a35d0aebd66eab7c78c59519cbbae6594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4a7ab9ec4befb76346aa82bacaacd8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#a8d4a7ab9ec4befb76346aa82bacaacd8">IsFiniteNegative</a> (double x)</td></tr>
+<tr class="memdesc:a8d4a7ab9ec4befb76346aa82bacaacd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a value to see if it is a valid negative value. Values &lt;= <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>, including -infinity, are considered invalid because using them in typical calculations almost always returns useless results.  <a href="class_o_n___d_b_l.html#a8d4a7ab9ec4befb76346aa82bacaacd8">More...</a><br /></td></tr>
+<tr class="separator:a8d4a7ab9ec4befb76346aa82bacaacd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e95c90e0e4a95a8b562c5340765c0a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#ab5e95c90e0e4a95a8b562c5340765c0a">IsFiniteNegativeOrZero</a> (double x)</td></tr>
+<tr class="memdesc:ab5e95c90e0e4a95a8b562c5340765c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a value to see if it is a valid nonpositive value. Values &lt;= <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>, including -infinity, are considered invalid because using them in typical calculations almost always returns useless results.  <a href="class_o_n___d_b_l.html#ab5e95c90e0e4a95a8b562c5340765c0a">More...</a><br /></td></tr>
+<tr class="separator:ab5e95c90e0e4a95a8b562c5340765c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596d0be63dc7ea118c85e340ab735363"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#a596d0be63dc7ea118c85e340ab735363">IsFinitePositive</a> (double x)</td></tr>
+<tr class="memdesc:a596d0be63dc7ea118c85e340ab735363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a value to see if it is a valid postive value. Values &gt;= <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>, including +infinity, are considered invalid because using them in typical calculations almost always returns useless results.  <a href="class_o_n___d_b_l.html#a596d0be63dc7ea118c85e340ab735363">More...</a><br /></td></tr>
+<tr class="separator:a596d0be63dc7ea118c85e340ab735363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b5adf1334337adda0fcf5572f07d2e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#a29b5adf1334337adda0fcf5572f07d2e">IsFinitePositiveOrZero</a> (double x)</td></tr>
+<tr class="memdesc:a29b5adf1334337adda0fcf5572f07d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a value to see if it is a valid nonnegative value. Values &gt;= <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>, including +infinity, are considered invalid because using them in typical calculations almost always returns useless results.  <a href="class_o_n___d_b_l.html#a29b5adf1334337adda0fcf5572f07d2e">More...</a><br /></td></tr>
+<tr class="separator:a29b5adf1334337adda0fcf5572f07d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f1f5b3103381f5284db18205baa8e5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#a17f1f5b3103381f5284db18205baa8e5">IsInfinity</a> (double x)</td></tr>
 <tr class="separator:a17f1f5b3103381f5284db18205baa8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8329f87fdbf959cff8170ddcfd2dc3c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___d_b_l.html#ac8329f87fdbf959cff8170ddcfd2dc3c">IsNan</a> (double x)</td></tr>
@@ -219,6 +231,146 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-1 if lhs &lt; rhs or IsNotNan(lhs) and IsNan(rhs). 0 if lhs == rhs or IsNan(lhs) &amp;&amp; IsNan(rhs). +1 if lhs &gt; rhs or IsNotNan(lhs) &amp;&amp; IsNan(rhs). </dd></dl>
+
+</div>
+</div>
+<a id="a8d4a7ab9ec4befb76346aa82bacaacd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4a7ab9ec4befb76346aa82bacaacd8">&#9670;&nbsp;</a></span>IsFiniteNegative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_DBL::IsFiniteNegative </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test a value to see if it is a valid negative value. Values &lt;= <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>, including -infinity, are considered invalid because using them in typical calculations almost always returns useless results. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>value to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(0.0 &gt; x &amp;&amp; x &gt; <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>) </dd></dl>
+
+</div>
+</div>
+<a id="ab5e95c90e0e4a95a8b562c5340765c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e95c90e0e4a95a8b562c5340765c0a">&#9670;&nbsp;</a></span>IsFiniteNegativeOrZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_DBL::IsFiniteNegativeOrZero </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test a value to see if it is a valid nonpositive value. Values &lt;= <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>, including -infinity, are considered invalid because using them in typical calculations almost always returns useless results. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>value to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(0.0 &gt;= x &amp;&amp; x &gt; <a class="el" href="class_o_n___d_b_l.html#a9dcaf69d11b0fd883cfb59bb7a54878e" title="ON_DBL::Unset = -1.23432101234321e+308">ON_DBL::Unset</a>) </dd></dl>
+
+</div>
+</div>
+<a id="a596d0be63dc7ea118c85e340ab735363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596d0be63dc7ea118c85e340ab735363">&#9670;&nbsp;</a></span>IsFinitePositive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_DBL::IsFinitePositive </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test a value to see if it is a valid postive value. Values &gt;= <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>, including +infinity, are considered invalid because using them in typical calculations almost always returns useless results. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>value to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(0.0 &lt; x &amp;&amp; x &lt; <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>) </dd></dl>
+
+</div>
+</div>
+<a id="a29b5adf1334337adda0fcf5572f07d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b5adf1334337adda0fcf5572f07d2e">&#9670;&nbsp;</a></span>IsFinitePositiveOrZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_DBL::IsFinitePositiveOrZero </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test a value to see if it is a valid nonnegative value. Values &gt;= <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>, including +infinity, are considered invalid because using them in typical calculations almost always returns useless results. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>value to test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(0.0 &lt;= x &amp;&amp; x &lt; <a class="el" href="class_o_n___d_b_l.html#a664c0ba3f4141b4400121cb7b98c4cf8" title="ON_DBL::PositiveUnset = +1.23432101234321e+308">ON_DBL::PositiveUnset</a>) </dd></dl>
 
 </div>
 </div>
@@ -687,7 +839,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

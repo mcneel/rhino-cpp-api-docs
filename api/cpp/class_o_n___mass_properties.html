@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3868370ce13712a251deb05ad0e36551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8c90220eb82979b75c5275ea2b5d5d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a1b8c90220eb82979b75c5275ea2b5d5d">Volume</a> () const</td></tr>
 <tr class="separator:a1b8c90220eb82979b75c5275ea2b5d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a77575af0bba68b995d22d6dd69b1c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a3a77575af0bba68b995d22d6dd69b1c9">WeightedSum</a> (int count, const <a class="el" href="class_o_n___mass_properties.html">ON_MassProperties</a> *summands, const double *weights)</td></tr>
+<tr class="separator:a3a77575af0bba68b995d22d6dd69b1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8728a62f972441bb569e1e7172483bee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a8728a62f972441bb569e1e7172483bee">WorldCoordFirstMoments</a> () const</td></tr>
 <tr class="separator:a8728a62f972441bb569e1e7172483bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a409a7cac2dfcd3a147c592821f333b4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="class_o_n___matrix.html">ON_Matrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mass_properties.html#a409a7cac2dfcd3a147c592821f333b4c">WorldCoordIntertiaMatrix</a> (<a class="el" href="class_o_n___matrix.html">ON_Matrix</a> *matrix=nullptr) const</td></tr>
@@ -672,6 +674,41 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Returns volume of the solid if the mass properties calculation was a volume calculation. Returns: Volume of the solid if m_mass_type = 3 and zero otherwise. </p>
+
+</div>
+</div>
+<a id="a3a77575af0bba68b995d22d6dd69b1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a77575af0bba68b995d22d6dd69b1c9">&#9670;&nbsp;</a></span>WeightedSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_MassProperties::WeightedSum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mass_properties.html">ON_MassProperties</a> *&#160;</td>
+          <td class="paramname"><em>summands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>weights</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sum a list of mass properties together to get an aggregate mass, weighting each by a density factor. Ignores existing mass properties in this object. Parameters: count - [in] number of elements in the summands and weights array. summands - [in] array of mass properties to add weights - [in] array of non-negative densities, of the same length as summands Returns: True if successful. </p>
 
 </div>
 </div>
@@ -1722,7 +1759,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

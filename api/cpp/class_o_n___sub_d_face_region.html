@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -63,7 +63,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_o_n___sub_d_face_region-members.html">List of all members</a>  </div>
@@ -74,6 +76,23 @@ $(function() {
 
 <p><code>#include &lt;opennurbs_subd.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8ee063229d287282bb3824ebb02716a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6">ExtraordinarySource</a> : unsigned char { <a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6ac9f88e098f6fe4e4e112eeb05ccb9671">ExtraordinarySource::Unset</a> = 0, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6a6adf97f83acf6453d4a6a4b1070f3754">ExtraordinarySource::None</a> = 1, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6a2002eaca7acb21d25c09d29226e654fb">ExtraordinarySource::Level0ExtraordinaryVertex</a> = 2, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6ac27e4cfddb2a6c6fb971eaa0129e6d86">ExtraordinarySource::Level1NgonCenterVertex</a> = 3
+ }</td></tr>
+<tr class="memdesc:a8ee063229d287282bb3824ebb02716a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a <a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f" title="ON_SubDFaceRegion::Type has meaning only for regions of a SubD face that result from two or more subd...">ON_SubDFaceRegion::Type</a> is Extraordinary or ExtraordinaryAdjacent, the ExtraordinarySource enum indicates if the source of the extraordinary vertex was a level 0 extraordinary vertex or a level 1 extraordinary vertex at the center of a level 0 N-gon face.  <a href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6">More...</a><br /></td></tr>
+<tr class="separator:a8ee063229d287282bb3824ebb02716a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323e352da002d633a33013ca464eb74f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f">Type</a> : unsigned char { <a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74fac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = 0, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74fa5681660b68aa20365a8e3279790ea419">Type::Ordinary</a> = 1, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74fa4e0046caf4aee56889c4c635b31d50d4">Type::Extraordinary</a> = 2, 
+<a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74fa698d9b0d7fb23dca2040d892ebf9547e">Type::ExtraordinaryAdjacent</a> = 3
+ }</td></tr>
+<tr class="memdesc:a323e352da002d633a33013ca464eb74f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f" title="ON_SubDFaceRegion::Type has meaning only for regions of a SubD face that result from two or more subd...">ON_SubDFaceRegion::Type</a> has meaning only for regions of a SubD face that result from two or more subdivisions. The Type is used in creating NURBS approximations of SubD near level 0 extraordinary vertices level 1 extraordinary vertices that result from subdividing level 0 faces that have 3 or 5 or more edges (also called N-gon faces).  <a href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f">More...</a><br /></td></tr>
+<tr class="separator:a323e352da002d633a33013ca464eb74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a69809f91e251df43bfd31fb2f56f91b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a69809f91e251df43bfd31fb2f56f91b4">ON_SubDFaceRegion</a> ()=default</td></tr>
@@ -87,15 +106,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c242485c062f09f0837d96e7a515c41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a9c242485c062f09f0837d96e7a515c41">IsValid</a> (bool bSilentError) const</td></tr>
 <tr class="separator:a9c242485c062f09f0837d96e7a515c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675885a9ad6acaa4a0f47d68849b167e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a675885a9ad6acaa4a0f47d68849b167e">Level0Face</a> () const</td></tr>
+<tr class="memdesc:a675885a9ad6acaa4a0f47d68849b167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an expert user function that can return either <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a> or a transient face. Using this pointer depends on the constext. If you are not managing the entire creation process of the <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a>, you should be using <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a>.  <a href="class_o_n___sub_d_face_region.html#a675885a9ad6acaa4a0f47d68849b167e">More...</a><br /></td></tr>
 <tr class="separator:a675885a9ad6acaa4a0f47d68849b167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25893fe255aa8ab9f2f9f5ba590ac0f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f">Level0PersistentFace</a> () const</td></tr>
+<tr class="memdesc:ae25893fe255aa8ab9f2f9f5ba590ac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face in an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is called a persistent face. This function returns faces that have been set as persistent level 0 faces.  <a href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f">More...</a><br /></td></tr>
+<tr class="separator:ae25893fe255aa8ab9f2f9f5ba590ac0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6694b92c971f9ee34e4483b6f43dc444"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a6694b92c971f9ee34e4483b6f43dc444">Level0PersistentFaceId</a> () const</td></tr>
+<tr class="memdesc:a6694b92c971f9ee34e4483b6f43dc444"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face in an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is called a persistent face. This function returns faces that have been set as persistent level 0 faces.  <a href="class_o_n___sub_d_face_region.html#a6694b92c971f9ee34e4483b6f43dc444">More...</a><br /></td></tr>
+<tr class="separator:a6694b92c971f9ee34e4483b6f43dc444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cbe2c664b412e829ddb920f722510e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e">Level0PersistentVertex</a> () const</td></tr>
+<tr class="memdesc:a97cbe2c664b412e829ddb920f722510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face on from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is a persistent face and the level 1 quad has one corner at a face vertex. This vertex is returned by <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. NOTE WELL: The caller must insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before calling <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>.  <a href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e">More...</a><br /></td></tr>
+<tr class="separator:a97cbe2c664b412e829ddb920f722510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deab0bb18d1378c9e1e80ab67093868"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a6deab0bb18d1378c9e1e80ab67093868">Level0PersistentVertexId</a> () const</td></tr>
+<tr class="memdesc:a6deab0bb18d1378c9e1e80ab67093868"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face on from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is a persistent face and the level 1 quad has one corner at a face vertex. This vertex is returned by <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. NOTE WELL: The caller must insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before calling <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>.  <a href="class_o_n___sub_d_face_region.html#a6deab0bb18d1378c9e1e80ab67093868">More...</a><br /></td></tr>
+<tr class="separator:a6deab0bb18d1378c9e1e80ab67093868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc08cecd7edb57ac9aa2e726872a42c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#acdc08cecd7edb57ac9aa2e726872a42c">operator=</a> (const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> &amp;)=default</td></tr>
 <tr class="separator:acdc08cecd7edb57ac9aa2e726872a42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6103b96ccfe083a4595247020c19dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a7f6103b96ccfe083a4595247020c19dc">Push</a> (unsigned int quadrant_index)</td></tr>
 <tr class="separator:a7f6103b96ccfe083a4595247020c19dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcca78b8fb7bde7dd3b79162145d1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6">ON_SubDFaceRegion::ExtraordinarySource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6">RegionExtraordinarySource</a> () const</td></tr>
+<tr class="memdesc:afbcca78b8fb7bde7dd3b79162145d1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> applies only when <a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a> is Extraordinary or ExtraordinaryAdjacent and the region is a result of 2 or more subdivisions.  <a href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6">More...</a><br /></td></tr>
+<tr class="separator:afbcca78b8fb7bde7dd3b79162145d1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17ed8444921aee59c7d38e979d720ba"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#ae17ed8444921aee59c7d38e979d720ba">RegionExtraordinaryValence</a> () const</td></tr>
+<tr class="memdesc:ae17ed8444921aee59c7d38e979d720ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the region is near a leve 0 or leve 1 extraordinary vertex, this function returns the valence of the extraodinary vertex. When <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> = Level0ExtraordinaryVertex, this is the number of faces and edges around the level 0 vertex. When <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> = Level1NgonCenterVertex, this is the number edges around the level 0 ngon which is also the number of edges and faces around the level 1 extraordinary vertex at the center of the ngon. ///  <a href="class_o_n___sub_d_face_region.html#ae17ed8444921aee59c7d38e979d720ba">More...</a><br /></td></tr>
+<tr class="separator:ae17ed8444921aee59c7d38e979d720ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116ba49b1cd870cf1406f9fffcfd61df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f">ON_SubDFaceRegion::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df">RegionType</a> () const</td></tr>
+<tr class="memdesc:a116ba49b1cd870cf1406f9fffcfd61df"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a> applys only when the regions is a result of 2 or more subdivisions.  <a href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df">More...</a><br /></td></tr>
+<tr class="separator:a116ba49b1cd870cf1406f9fffcfd61df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aedf5b69d639a5b25db8f78047f6e95"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a0aedf5b69d639a5b25db8f78047f6e95">ToString</a> () const</td></tr>
 <tr class="separator:a0aedf5b69d639a5b25db8f78047f6e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdd853ea1bb4b36357cf934778767a87"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#afdd853ea1bb4b36357cf934778767a87">ToString</a> (wchar_t *s, size_t s_capacity) const</td></tr>
 <tr class="separator:afdd853ea1bb4b36357cf934778767a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a48e15d5bddbad9f2fa6daca70295531c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a48e15d5bddbad9f2fa6daca70295531c">CompareSourceLevel0IdAndType</a> (const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> *lhs, const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> *rhs)</td></tr>
+<tr class="memdesc:a48e15d5bddbad9f2fa6daca70295531c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CompareSourceLevel0IdAndType is used to sort regions from the same subdivision level around level 0 extraordinary vertices and level 1 extraordinary vertices at the center of ngons. This is typically done in the context of calculating NURBS approsimations for subdivision regions that an extraordinary vertex. The compare is done as follows. 1st compare is <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a>. Unset &lt; None &lt; Level0ExtraordinaryVertex &lt; Level1NgonCenterVertex. If lhs and rhs have the same value of <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a>, the 2nd compare is the component id. If the common source is Level0ExtraordinaryVertex, the vertex ids of <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a> are compared. Otherwise the face ids of <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a> are compared. If lhs and rhs have the same component id, the 3rd compare is <a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a>. Unset &lt; Ordinary &lt; Extraordinary &lt; ExtraordinaryAdjacent. Typically, this sort is happing in the context where the Extraordinary regions are being replaced with NURBS approximations that are G2 with ExtraordinaryAdjacent regions.  <a href="class_o_n___sub_d_face_region.html#a48e15d5bddbad9f2fa6daca70295531c">More...</a><br /></td></tr>
+<tr class="separator:a48e15d5bddbad9f2fa6daca70295531c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -104,8 +151,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2e394952f458b5acd5e5f6d565f3abf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_component_region.html">ON_SubDComponentRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a2e394952f458b5acd5e5f6d565f3abf2">m_face_region</a></td></tr>
 <tr class="memdesc:a2e394952f458b5acd5e5f6d565f3abf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies a region of an <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>.  <a href="class_o_n___sub_d_face_region.html#a2e394952f458b5acd5e5f6d565f3abf2">More...</a><br /></td></tr>
 <tr class="separator:a2e394952f458b5acd5e5f6d565f3abf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb035e28e879b74195d7affa5db6e43a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#acb035e28e879b74195d7affa5db6e43a">m_level0_edge_count</a> = 0</td></tr>
-<tr class="separator:acb035e28e879b74195d7affa5db6e43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71ec5d37c1e45e5950f44cc97aac17a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_sector_id.html">ON_SubDSectorId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a71ec5d37c1e45e5950f44cc97aac17a2">m_sector_id</a> [4]</td></tr>
 <tr class="separator:a71ec5d37c1e45e5950f44cc97aac17a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492e85003e949f59c73528eed84aa672"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#a492e85003e949f59c73528eed84aa672">m_vertex_id</a> [4] = {}</td></tr>
@@ -116,6 +161,72 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:af1619a1a9f74c1db9de78aeb0b1ea5af"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_region.html#af1619a1a9f74c1db9de78aeb0b1ea5af">Empty</a></td></tr>
 <tr class="separator:af1619a1a9f74c1db9de78aeb0b1ea5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a8ee063229d287282bb3824ebb02716a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee063229d287282bb3824ebb02716a6">&#9670;&nbsp;</a></span>ExtraordinarySource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6">ON_SubDFaceRegion::ExtraordinarySource</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When a <a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f" title="ON_SubDFaceRegion::Type has meaning only for regions of a SubD face that result from two or more subd...">ON_SubDFaceRegion::Type</a> is Extraordinary or ExtraordinaryAdjacent, the ExtraordinarySource enum indicates if the source of the extraordinary vertex was a level 0 extraordinary vertex or a level 1 extraordinary vertex at the center of a level 0 N-gon face. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8ee063229d287282bb3824ebb02716a6ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8ee063229d287282bb3824ebb02716a6a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8ee063229d287282bb3824ebb02716a6a2002eaca7acb21d25c09d29226e654fb"></a>Level0ExtraordinaryVertex&#160;</td><td class="fielddoc"><p>The regions are around a level 0 extraordinary vertex. These are smooth vertices that have 3 or 5 or more smooth edges. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8ee063229d287282bb3824ebb02716a6ac27e4cfddb2a6c6fb971eaa0129e6d86"></a>Level1NgonCenterVertex&#160;</td><td class="fielddoc"><p>The regions are around a level 1 extraordinary vertex created at the center of a level 0 N-gon face. These level 1 vertices are smooth and have N smooth edges. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a323e352da002d633a33013ca464eb74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323e352da002d633a33013ca464eb74f">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f">ON_SubDFaceRegion::Type</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f" title="ON_SubDFaceRegion::Type has meaning only for regions of a SubD face that result from two or more subd...">ON_SubDFaceRegion::Type</a> has meaning only for regions of a SubD face that result from two or more subdivisions. The Type is used in creating NURBS approximations of SubD near level 0 extraordinary vertices level 1 extraordinary vertices that result from subdividing level 0 faces that have 3 or 5 or more edges (also called N-gon faces). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a323e352da002d633a33013ca464eb74fac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a323e352da002d633a33013ca464eb74fa5681660b68aa20365a8e3279790ea419"></a>Ordinary&#160;</td><td class="fielddoc"><p>Ordinary subdivision regions are bounded by 4 smooth subdivision edges. Ordinary subdivision regions can be represents with a bibezier whose control points conincide whte the subdivided SubD's control points. Orindary regions do not chare a smooth edge with Extraordinary regions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a323e352da002d633a33013ca464eb74fa4e0046caf4aee56889c4c635b31d50d4"></a>Extraordinary&#160;</td><td class="fielddoc"><p>Extraordinary subdivision regions are bounded by 4 smooth subdivision edges. Extraordinary subdivision regions have a corner at either a level 0 extraordinary vertex or a level 1 extraordinary vertex created at the center of a level 0 ngon face (3 or 5 or more edges). In general, the SubD limit surface of these regions cannot be exactly represented by an rational polynomial surface. No amount of subdivsion changes this in the general case. Thus, any bibezier or NURBS patch representing these regions is an approximation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a323e352da002d633a33013ca464eb74fa698d9b0d7fb23dca2040d892ebf9547e"></a>ExtraordinaryAdjacent&#160;</td><td class="fielddoc"><p>ExtraordinaryAdjacent subdivision regions are bounded by 4 smooth subdivision edges. ExtraordinaryAdjacent regions share an edge with Extraordinary regions. Mathematically, Ordindary and ExtraordinaryAdjacent regions have the same subdivion properties. ExtraordinaryAdjacent get a special identifying mark because they are used to specify boundary conditions for calculating NURBS patches that approximate Extraordinary regions. There are 2 ExtraordinaryAdjacent regions for each Extraordinary region. A subdivision levels&gt;= 2, these regions can be exactly represented by a bicubicbezier patch with 16 control points equal to the SubD level 2 control points around the region. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a69809f91e251df43bfd31fb2f56f91b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69809f91e251df43bfd31fb2f56f91b4">&#9670;&nbsp;</a></span>ON_SubDFaceRegion() <span class="overload">[1/2]</span></h2>
@@ -194,6 +305,52 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a48e15d5bddbad9f2fa6daca70295531c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e15d5bddbad9f2fa6daca70295531c">&#9670;&nbsp;</a></span>CompareSourceLevel0IdAndType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_SubDFaceRegion::CompareSourceLevel0IdAndType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> *&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CompareSourceLevel0IdAndType is used to sort regions from the same subdivision level around level 0 extraordinary vertices and level 1 extraordinary vertices at the center of ngons. This is typically done in the context of calculating NURBS approsimations for subdivision regions that an extraordinary vertex. The compare is done as follows. 1st compare is <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a>. Unset &lt; None &lt; Level0ExtraordinaryVertex &lt; Level1NgonCenterVertex. If lhs and rhs have the same value of <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a>, the 2nd compare is the component id. If the common source is Level0ExtraordinaryVertex, the vertex ids of <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a> are compared. Otherwise the face ids of <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a> are compared. If lhs and rhs have the same component id, the 3rd compare is <a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a>. Unset &lt; Ordinary &lt; Extraordinary &lt; ExtraordinaryAdjacent. Typically, this sort is happing in the context where the Extraordinary regions are being replaced with NURBS approximations that are G2 with ExtraordinaryAdjacent regions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td></td></tr>
+    <tr><td class="paramname">rhs</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ab332cc7674990c2bc8a4b8f0b4b77aa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab332cc7674990c2bc8a4b8f0b4b77aa2">&#9670;&nbsp;</a></span>CornerIndexFromVertexId()</h2>
 
@@ -246,6 +403,89 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This is an expert user function that can return either <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a> or a transient face. Using this pointer depends on the constext. If you are not managing the entire creation process of the <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a>, you should be using <a class="el" href="class_o_n___sub_d_face_region.html#ae25893fe255aa8ab9f2f9f5ba590ac0f" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face in an ON_SubD,...">Level0PersistentFace()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A persistent or transient face that depends on the context of this <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> class. </dd></dl>
+
+</div>
+</div>
+<a id="ae25893fe255aa8ab9f2f9f5ba590ac0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25893fe255aa8ab9f2f9f5ba590ac0f">&#9670;&nbsp;</a></span>Level0PersistentFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>* ON_SubDFaceRegion::Level0PersistentFace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face in an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is called a persistent face. This function returns faces that have been set as persistent level 0 faces. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the level 0 persistent face. It is the caller's responsibility to check for a nullptr and to insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before dereferencing this pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a6694b92c971f9ee34e4483b6f43dc444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6694b92c971f9ee34e4483b6f43dc444">&#9670;&nbsp;</a></span>Level0PersistentFaceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_SubDFaceRegion::Level0PersistentFaceId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face in an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is called a persistent face. This function returns faces that have been set as persistent level 0 faces. </p>
+<dl class="section return"><dt>Returns</dt><dd>The id of the level 0 persistent face or 0 if it is not available. </dd></dl>
+
+</div>
+</div>
+<a id="a97cbe2c664b412e829ddb920f722510e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97cbe2c664b412e829ddb920f722510e">&#9670;&nbsp;</a></span>Level0PersistentVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a>* ON_SubDFaceRegion::Level0PersistentVertex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face on from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is a persistent face and the level 1 quad has one corner at a face vertex. This vertex is returned by <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. NOTE WELL: The caller must insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before calling <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the level 0 persistent vertex. It is the caller's responsibility to check for a nullptr and to insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before dereferencing this pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a6deab0bb18d1378c9e1e80ab67093868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6deab0bb18d1378c9e1e80ab67093868">&#9670;&nbsp;</a></span>Level0PersistentVertexId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_SubDFaceRegion::Level0PersistentVertexId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="class_o_n___sub_d_face_region.html">ON_SubDFaceRegion</a> is a subdivision quad of a face. When that face is a level 0 face on from an <a class="el" href="class_o_n___sub_d.html">ON_SubD</a>, it is a persistent face and the level 1 quad has one corner at a face vertex. This vertex is returned by <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. NOTE WELL: The caller must insure the parent <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> exists before calling <a class="el" href="class_o_n___sub_d_face_region.html#a97cbe2c664b412e829ddb920f722510e" title="An ON_SubDFaceRegion is a subdivision quad of a face. When that face is a level 0 face on from an ON_...">Level0PersistentVertex()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The id of the level 0 persistent vertex or 0 if it is not available. </dd></dl>
+
 </div>
 </div>
 <a id="acdc08cecd7edb57ac9aa2e726872a42c"></a>
@@ -289,6 +529,66 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbcca78b8fb7bde7dd3b79162145d1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcca78b8fb7bde7dd3b79162145d1d6">&#9670;&nbsp;</a></span>RegionExtraordinarySource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d_face_region.html#a8ee063229d287282bb3824ebb02716a6">ON_SubDFaceRegion::ExtraordinarySource</a> ON_SubDFaceRegion::RegionExtraordinarySource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> applies only when <a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a> is Extraordinary or ExtraordinaryAdjacent and the region is a result of 2 or more subdivisions. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae17ed8444921aee59c7d38e979d720ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17ed8444921aee59c7d38e979d720ba">&#9670;&nbsp;</a></span>RegionExtraordinaryValence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ON_SubDFaceRegion::RegionExtraordinaryValence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the region is near a leve 0 or leve 1 extraordinary vertex, this function returns the valence of the extraodinary vertex. When <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> = Level0ExtraordinaryVertex, this is the number of faces and edges around the level 0 vertex. When <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> = Level1NgonCenterVertex, this is the number edges around the level 0 ngon which is also the number of edges and faces around the level 1 extraordinary vertex at the center of the ngon. /// </p>
+<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="class_o_n___sub_d_face_region.html#afbcca78b8fb7bde7dd3b79162145d1d6" title="RegionExtraordinarySource() applies only when RegionType() is Extraordinary or ExtraordinaryAdjacent ...">RegionExtraordinarySource()</a> is Level0ExtraordinaryVertex or Level1NgonCenterVertex, the valance of the extraordinary vertex is returned. Otherwise 0 is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a116ba49b1cd870cf1406f9fffcfd61df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116ba49b1cd870cf1406f9fffcfd61df">&#9670;&nbsp;</a></span>RegionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d_face_region.html#a323e352da002d633a33013ca464eb74f">ON_SubDFaceRegion::Type</a> ON_SubDFaceRegion::RegionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_o_n___sub_d_face_region.html#a116ba49b1cd870cf1406f9fffcfd61df" title="RegionType() applys only when the regions is a result of 2 or more subdivisions.">RegionType()</a> applys only when the regions is a result of 2 or more subdivisions. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -391,20 +691,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acb035e28e879b74195d7affa5db6e43a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb035e28e879b74195d7affa5db6e43a">&#9670;&nbsp;</a></span>m_level0_edge_count</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int ON_SubDFaceRegion::m_level0_edge_count = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a71ec5d37c1e45e5950f44cc97aac17a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71ec5d37c1e45e5950f44cc97aac17a2">&#9670;&nbsp;</a></span>m_sector_id</h2>
 
@@ -454,7 +740,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

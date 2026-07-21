@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -841,7 +841,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: TL_Derivative( const ON_BezierCurve&amp; Crv, ON_BezierCurve&amp; Cdot) Computes the bezier representing the derivative of Crv . Returns true if the result is the derivative. Details: For non-rational Crv the order of the result is 2*Crv.<a class="el" href="class_o_n___bezier_curve.html#a27f43e091fcf46b0dc62c4ea4d220a34" title="order = degree + 1">Order()</a>-1</p>
+<p>Description: <a class="el" href="class_o_n___bezier_curve.html#a6ca27c2fbc80ef2a6a56dc4906a9806c">Derivative( const ON_BezierCurve&amp; Crv, ON_BezierCurve&amp; Cdot)</a> Computes the bezier representing the derivative of Crv . Returns true if the result is the derivative. Details: For non-rational Crv the order of the result is 2*Crv.<a class="el" href="class_o_n___bezier_curve.html#a27f43e091fcf46b0dc62c4ea4d220a34" title="order = degree + 1">Order()</a>-1</p>
 <p>Remarks For optimal performance use this version with derivativeA allocated to the proper size, instead of using <a class="el" href="class_o_n___bezier_curve.html#ac1dde88b76a61f058300ae228eac1101">ON_BezierCurve::Derivative</a>. <br  />
  This will avoid allocating and copying of temporary objects. Parameters: A - [in] A.Order() must be &gt;= 2.</p>
 <p>derivativeA - [out] For a non-rational A with degree &gt; 1, the result is non-rational of degree A.Degree()-1. For non-rational A with degree 1, the result is degree 1. For rational A, the degee of derivativeA is 2*A.<a class="el" href="class_o_n___bezier_curve.html#a4fe8d5eaf3cb076a52a2fed82dd88478">Degree()</a> (quotient rule). Returns: <br  />
@@ -1434,7 +1434,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the parameter of the point on the bezier curve that is closest to the point P. Parameters: P - [in] t - [out] Closest point parameter. maximum_distance - [in] If maximum_distance &gt; 0.0, then an answer is returned only if the distance from the bezier curve to P is &lt;= maximum_distance. If maximum_distance &lt;= 0.0, then maximum_distance is ignored. sub_domain - [in] If not nullptr, the search is confined to the intersection of the sub_domain interval and (0,1). Returns: True if a point is found. See Also: <a class="el" href="class_o_n___curve_tree_node.html#a966eefdfdd5d849caf48915c8effb4ce">ON_CurveTreeNode::GetClosestPoint</a> Remarks: This function is not efficient if you will be finding multiple closest points to the same bezier. To efficiently find multiple closest points, make a curve tree and use it. See the <a class="el" href="class_o_n___bezier_curve.html#a0e9cce40566d77c208e181a20aaf1589">ON_BezierCurve::GetClosestPoint</a> code for an example. </p>
+<p>Description: Get the parameter of the point on the bezier curve that is closest to the point P. Parameters: P - [in] t - [out] Closest point parameter. maximum_distance - [in] If maximum_distance &gt; 0.0, then an answer is returned only if the distance from the bezier curve to P is &lt;= maximum_distance. If maximum_distance &lt;= 0.0, then maximum_distance is ignored. sub_domain - [in] If not nullptr, the search is confined to the intersection of the sub_domain interval and (0,1). Returns: True if a point is found. See Also: ON_CurveTreeNode::GetClosestPoint Remarks: This function is not efficient if you will be finding multiple closest points to the same bezier. To efficiently find multiple closest points, make a curve tree and use it. See the <a class="el" href="class_o_n___bezier_curve.html#a0e9cce40566d77c208e181a20aaf1589">ON_BezierCurve::GetClosestPoint</a> code for an example. </p>
 
 </div>
 </div>
@@ -2952,7 +2952,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

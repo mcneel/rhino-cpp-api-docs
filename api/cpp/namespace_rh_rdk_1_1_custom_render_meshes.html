@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -82,11 +82,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_manager.html">IManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface to the RDK's custom render mesh manager. Do not derive from this class - you can access this functionality using RhRdkCustomRenderMeshManager2 Call the functions on this class to access the custom render meshes to be supplied for any given ObjectId (see ObjectId above). You should call HasCustomMeshes before CustomMeshes to ensure the most efficient access - if HasCustomMeshes returns false, you can assume there are no custom render meshes. This class provides low level access to the custom render meshes - to just get the complete render meshes for an object, prefer <a class="el" href="class_i_rh_rdk_sdk_render_mesh_iterator.html">IRhRdkSdkRenderMeshIterator</a> / <a class="el" href="class_c_rh_rdk_sdk_render.html#a15cd487fea0cd48127fa7404ec9f7648">CRhRdkSdkRender::NewRenderMeshIterator</a>, or <a class="el" href="class_rh_rdk_1_1_realtime2_1_1_change_queue.html">RhRdk::Realtime2::ChangeQueue</a>. Use these functions if you are a renderer developer who wants to access the custom render meshes provided by IMeshProvider. Note that this will include the built - in displacement edge softening, thickening, shut-lining and curve piping tools, as well as Grasshopper's CustomPreview component (which uses the NonObjectIds method of providing meshes associated with entities that are not actual objects in the document)  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_manager2.html">IManager2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html">IRenderMeshes</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html" title="IRenderMeshes is a collection of geometry instances for a given ObjectId typically returned by the Cu...">IRenderMeshes</a> is a collection of geometry instances for a given ObjectId typically returned by the Custom Render Mesh system. It provides STL compatible iterators. As each set of primitives is returned by the PrimitiveProviders in turn, the running hash is updated with new information about the mesh modifications that have been made along the way.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_mesh_provider.html">IRenderMeshProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IMeshProvider delivers custom render meshes (in the form of <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes.html" title="IRenderMeshes is a collection of geometry instances for a given ObjectId typically returned by the Cu...">IRenderMeshes</a>). Typically the class will also derive from <a class="el" href="class_c_rh_rdk_extension.html">CRhRdkExtension</a> and be registered with the RDK using RhRdkAddExtension, forming a collection of providers which the <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_manager.html" title="The interface to the RDK&#39;s custom render mesh manager. Do not derive from this class - you can access...">IManager</a> will cycle through to produce the final render mesh. Each IMeshProvider::HasCustomMeshes will be called and if it returns true, a call to CustomMeshes will be made. It is up to the provider to cache its own primitives - the <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking.html" title="A handy helper class for implementing caching in MeshProviders. The ProviderTracking class is a colle...">IRenderMeshes::ProviderTracking</a> class is provided for that. A provider may optionally return a collection of non-object Ids that it will provide custom render meshes for. An example of this is Grasshopper, which which will typically return a collection of the Ids of each CustomPreview component. Override this class if you are a plug-in developer intending to supply a custom set of meshes for a given object, or objectId. Examples of IMeshProviders are CurvePiping, EdgeSoftening, Displacement, Shutlining, Grasshopper's CustomPreview component.  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_mesh_provider.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_mesh_provider2.html">IRenderMeshProvider2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -136,7 +140,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

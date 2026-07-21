@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -100,8 +100,11 @@ Inheritance diagram for ON_UserData:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af84978b48b525d91a7dacd7c79a946a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#af84978b48b525d91a7dacd7c79a946a0">ON_UserData</a> ()</td></tr>
 <tr class="separator:af84978b48b525d91a7dacd7c79a946a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7bde9b2a277291e400cd404b5aa719f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#ae7bde9b2a277291e400cd404b5aa719f">ON_UserData</a> (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;)</td></tr>
-<tr class="separator:ae7bde9b2a277291e400cd404b5aa719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18ea96a1ca6f160055278231b1723c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#ab18ea96a1ca6f160055278231b1723c8">ON_UserData</a> (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;src)</td></tr>
+<tr class="memdesc:ab18ea96a1ca6f160055278231b1723c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The copy constructor copies every <a class="el" href="class_o_n___user_data.html">ON_UserData</a> member variable except the pointers ON_Object* m_userdata_owner and ON_UserData* m_userdata_next and m_userdata_copycount. the pointers ON_Object* m_userdata_owner and ON_UserData* m_userdata_next are set to nullptr; in particular, the new instance of <a class="el" href="class_o_n___user_data.html">ON_UserData</a> is not attached to any object immediately after copy constrtuction. If src.m_userdata_copycount is zero, then this-&gt;m_userdata_copycount = 0. Otherwise this-&gt;m_userdata_copycount = src-&gt;m_userdata_copycount + 1.  <a href="class_o_n___user_data.html#ab18ea96a1ca6f160055278231b1723c8">More...</a><br /></td></tr>
+<tr class="separator:ab18ea96a1ca6f160055278231b1723c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2a8c97c5248dd922c2d1a7bed4b6ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#a4d2a8c97c5248dd922c2d1a7bed4b6ca">ON_UserData</a> (<a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> userdata_uuid, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> application_uuid, unsigned int userdata_copycount)</td></tr>
+<tr class="separator:a4d2a8c97c5248dd922c2d1a7bed4b6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea16cf84e3e8d130429fbad6a89d8afb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#aea16cf84e3e8d130429fbad6a89d8afb">~ON_UserData</a> ()</td></tr>
 <tr class="separator:aea16cf84e3e8d130429fbad6a89d8afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696c161022b62755144071fa2e524471"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#a696c161022b62755144071fa2e524471">Archive</a> () const</td></tr>
@@ -120,8 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1fc0cc7d050eb71a1e290acaceadf036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5a0d01e000319e0b37b340752613d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___user_data.html">ON_UserData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#a5e5a0d01e000319e0b37b340752613d8">Next</a> () const</td></tr>
 <tr class="separator:a5e5a0d01e000319e0b37b340752613d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade73a474aee256f4f0bd16a36453e7e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#ade73a474aee256f4f0bd16a36453e7e3">operator=</a> (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;)</td></tr>
-<tr class="separator:ade73a474aee256f4f0bd16a36453e7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c563c003ed8743302c02ce3874b948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#a00c563c003ed8743302c02ce3874b948">operator=</a> (const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;src)</td></tr>
+<tr class="memdesc:a00c563c003ed8743302c02ce3874b948"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operator= copies m_userdata_xform. If src.m_userdata_copycount is zero, then this-&gt;m_userdata_copycount = 0. Otherwise this-&gt;m_userdata_copycount = src-&gt;m_userdata_copycount + 1. All other <a class="el" href="class_o_n___user_data.html">ON_UserData</a> member variables (m_userdata_uuid, m_application_uuid, m_userdata_owner, and m_userdata_next) are not changed. In particular, operator= does not change the parent object nor does it change the ids that specify what the user data is (m_userdata_uuid) and what appication is using it (m_application_uuid).  <a href="class_o_n___user_data.html#a00c563c003ed8743302c02ce3874b948">More...</a><br /></td></tr>
+<tr class="separator:a00c563c003ed8743302c02ce3874b948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8be601c28a29d212cf9e6807795a9e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___user_data.html#ab8be601c28a29d212cf9e6807795a9e3">Owner</a> () const</td></tr>
 <tr class="memdesc:ab8be601c28a29d212cf9e6807795a9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns object that owns the user data.  <a href="class_o_n___user_data.html#ab8be601c28a29d212cf9e6807795a9e3">More...</a><br /></td></tr>
 <tr class="separator:ab8be601c28a29d212cf9e6807795a9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +199,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n.html#a328d22b5ad7bf9d4e9ba1123355d3cf9">ON::object_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#afa19aee4a411a8fda53aff00bd02d86e">ObjectType</a> () const</td></tr>
 <tr class="separator:afa19aee4a411a8fda53aff00bd02d86e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -267,7 +274,7 @@ Additional Inherited Members</h2></td></tr>
 <p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af84978b48b525d91a7dacd7c79a946a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af84978b48b525d91a7dacd7c79a946a0">&#9670;&nbsp;</a></span>ON_UserData() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af84978b48b525d91a7dacd7c79a946a0">&#9670;&nbsp;</a></span>ON_UserData() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,8 +290,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7bde9b2a277291e400cd404b5aa719f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7bde9b2a277291e400cd404b5aa719f">&#9670;&nbsp;</a></span>ON_UserData() <span class="overload">[2/2]</span></h2>
+<a id="a4d2a8c97c5248dd922c2d1a7bed4b6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2a8c97c5248dd922c2d1a7bed4b6ca">&#9670;&nbsp;</a></span>ON_UserData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ON_UserData::ON_UserData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>userdata_uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>application_uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>userdata_copycount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18ea96a1ca6f160055278231b1723c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18ea96a1ca6f160055278231b1723c8">&#9670;&nbsp;</a></span>ON_UserData() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,11 +334,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">ON_UserData::ON_UserData </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The copy constructor copies every <a class="el" href="class_o_n___user_data.html">ON_UserData</a> member variable except the pointers ON_Object* m_userdata_owner and ON_UserData* m_userdata_next and m_userdata_copycount. the pointers ON_Object* m_userdata_owner and ON_UserData* m_userdata_next are set to nullptr; in particular, the new instance of <a class="el" href="class_o_n___user_data.html">ON_UserData</a> is not attached to any object immediately after copy constrtuction. If src.m_userdata_copycount is zero, then this-&gt;m_userdata_copycount = 0. Otherwise this-&gt;m_userdata_copycount = src-&gt;m_userdata_copycount + 1. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -560,8 +609,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ade73a474aee256f4f0bd16a36453e7e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade73a474aee256f4f0bd16a36453e7e3">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a00c563c003ed8743302c02ce3874b948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c563c003ed8743302c02ce3874b948">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,11 +619,20 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="class_o_n___user_data.html">ON_UserData</a>&amp; ON_UserData::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_o_n___user_data.html">ON_UserData</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The operator= copies m_userdata_xform. If src.m_userdata_copycount is zero, then this-&gt;m_userdata_copycount = 0. Otherwise this-&gt;m_userdata_copycount = src-&gt;m_userdata_copycount + 1. All other <a class="el" href="class_o_n___user_data.html">ON_UserData</a> member variables (m_userdata_uuid, m_application_uuid, m_userdata_owner, and m_userdata_next) are not changed. In particular, operator= does not change the parent object nor does it change the ids that specify what the user data is (m_userdata_uuid) and what appication is using it (m_application_uuid). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A referene to "this" </dd></dl>
 
 </div>
 </div>
@@ -871,8 +929,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If m_userdata_copycount is 0, user data is not copied when object is copied. If &gt; 0, user data is copied and m_copycount is incremented when parent object is copied. The user data's <a class="el" href="class_o_n___user_data.html#ade73a474aee256f4f0bd16a36453e7e3">operator=()</a> is used to copy. <br  />
- The default <a class="el" href="class_o_n___user_data.html#af84978b48b525d91a7dacd7c79a946a0">ON_UserData::ON_UserData()</a> constructor sets m_userdata_copycount to zero. </p>
+<p>The default <a class="el" href="class_o_n___user_data.html#af84978b48b525d91a7dacd7c79a946a0">ON_UserData::ON_UserData()</a> constructor sets m_userdata_copycount = 0.</p>
+<p>If m_userdata_copycount is 0, the user data instance is not copied when the parent object is copied.</p>
+<p>If m_userdata_copycount &gt; 0, then the user data is copied (using oprator= or copy construction) and the value of m_userdata_copycount is incremented on the instance being copied to.</p>
+<p>It turns out that m_userdata_copycount is used for two different things. 1) Its original job which is to indicate if the instance of user data should be copied when the parent <a class="el" href="class_o_n___object.html">ON_Object</a> is copied (via operator= or copy constrution).</p>
+<p>2) It is also used to determine if the information content in one user data instance was created by copying another instance. This use is problematic and is endemic in Rhino code. For example, if user data A and user data B have identical ids, identical m_userdata_xform values, and B.m_userdata_copycount = A.m_userdata_copycount+1, then the "endemic Rhino code" will conclude that B is a copy of A and the information contained in B is identical to the information contained in A. While this conclusion is not necessarily true, it was the best hack available because <a class="el" href="class_o_n___user_data.html">ON_UserData</a> provides no base class tool to use to determine if the information content has changed. (If the <a class="el" href="class_o_n___user_data.html">ON_UserData</a> SDK is ever changed, adding a virtual function that returns a SHA1 hash of the information content is a reasonable thing to consider.) In any case, if you modify the information in your derived class while that class is attached to a parent object and m_userdata_copycount &gt; 1, then incrementing m_userdata_copycount inside the function that modifies the information in your derived class will make the flawed logic in the "endemic Rhino code" work more reliably.</p>
+<p>When <a class="el" href="class_o_n___user_data.html">ON_UserData</a> was first designed, it was assumed that the information content would not be modified after the user data was attached to a parent object. This assumption was false and it was a silly assumption. But the "endemic Rhino code" mentioned above makes this assumption. </p>
 
 </div>
 </div>
@@ -909,7 +971,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

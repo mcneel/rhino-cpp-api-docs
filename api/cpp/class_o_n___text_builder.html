@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -93,10 +93,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad105780ae30248fbd9710e97459f4193"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: ON__UINT16 { <a class="el" href="class_o_n___text_builder.html#ad105780ae30248fbd9710e97459f4193a97507671c43a0520efd13a0864e1828a">m_UFT16_waiting_mark</a> = 0xEEEE, 
-<a class="el" href="class_o_n___text_builder.html#ad105780ae30248fbd9710e97459f4193aa47fef572c63b58e6b4764c1fadbd7b2">m_UFT16_unused_mark</a> = 0xFFFF
+<tr class="memitem:aa0823f79fca8ff754aa775bbea7153c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: ON__UINT16 { <a class="el" href="class_o_n___text_builder.html#aa0823f79fca8ff754aa775bbea7153c3a97507671c43a0520efd13a0864e1828a">m_UFT16_waiting_mark</a> = 0xEEEE, 
+<a class="el" href="class_o_n___text_builder.html#aa0823f79fca8ff754aa775bbea7153c3aa47fef572c63b58e6b4764c1fadbd7b2">m_UFT16_unused_mark</a> = 0xFFFF
  }</td></tr>
-<tr class="separator:ad105780ae30248fbd9710e97459f4193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa0823f79fca8ff754aa775bbea7153c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -241,14 +241,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3d55fdf8d970b5443828566b72a76347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e06312e862933a52ac59361e31cd5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga4e0068b81141ef77e45ac12b566afb19">ON__INT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_builder.html#a67e06312e862933a52ac59361e31cd5f">m_level</a> = 0</td></tr>
 <tr class="separator:a67e06312e862933a52ac59361e31cd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe7a40bef6ddd93da1589beba90a8eab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___text_builder_1_1_text_props.html">TextProps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_builder.html#afe7a40bef6ddd93da1589beba90a8eab">m_pending_props</a></td></tr>
-<tr class="separator:afe7a40bef6ddd93da1589beba90a8eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab753b6eea5c92e0e4f4e479d24316888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___text_builder_1_1_text_props.html">TextProps</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_builder.html#ab753b6eea5c92e0e4f4e479d24316888">m_prop_stack</a></td></tr>
 <tr class="separator:ab753b6eea5c92e0e4f4e479d24316888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ad105780ae30248fbd9710e97459f4193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad105780ae30248fbd9710e97459f4193">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aa0823f79fca8ff754aa775bbea7153c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0823f79fca8ff754aa775bbea7153c3">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,9 +258,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Rtf uses UTF-16 encoding and surrogate pairs need to be properly handled. For example, the single UNICODE code point ON_UnicodeCodePoint::Wastebasket U+1F5D1 (decimal 128465) is in the RTF string as ...{\ltrch \u-10179?\u-8751?}... The UNICODE code point U+1F5D1 is encoded as a UTF-16 surrogate pair is (0xD83D, 0xDDD1). \u-10179? -&gt; unsigned short 0xD83D \u-8751? -&gt; unsigned short 0xDDD1 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad105780ae30248fbd9710e97459f4193a97507671c43a0520efd13a0864e1828a"></a>m_UFT16_waiting_mark&#160;</td><td class="fielddoc"><p>value must be &gt; 0xE000 and uncommon unicode code point </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa0823f79fca8ff754aa775bbea7153c3a97507671c43a0520efd13a0864e1828a"></a>m_UFT16_waiting_mark&#160;</td><td class="fielddoc"><p>value must be &gt; 0xE000 and uncommon unicode code point </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad105780ae30248fbd9710e97459f4193aa47fef572c63b58e6b4764c1fadbd7b2"></a>m_UFT16_unused_mark&#160;</td><td class="fielddoc"><p>value must be &gt; m_UFT16_waiting, &lt;= 0xFFFF, and uncommon unicode code point </p>
+<tr><td class="fieldname"><a id="aa0823f79fca8ff754aa775bbea7153c3aa47fef572c63b58e6b4764c1fadbd7b2"></a>m_UFT16_unused_mark&#160;</td><td class="fielddoc"><p>value must be &gt; m_UFT16_waiting, &lt;= 0xFFFF, and uncommon unicode code point </p>
 </td></tr>
 </table>
 
@@ -1964,20 +1962,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afe7a40bef6ddd93da1589beba90a8eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe7a40bef6ddd93da1589beba90a8eab">&#9670;&nbsp;</a></span>m_pending_props</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_n___text_builder_1_1_text_props.html">TextProps</a> ON_TextBuilder::m_pending_props</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab753b6eea5c92e0e4f4e479d24316888"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab753b6eea5c92e0e4f4e479d24316888">&#9670;&nbsp;</a></span>m_prop_stack</h2>
 
@@ -1995,7 +1979,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

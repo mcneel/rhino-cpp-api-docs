@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,14 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a28d08b930dea4c07302957d424befb6c">RunType::kFontdef</a> = 8, 
 <a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a9cef6e67dbb09df835c263f0610058b2">RunType::kHeader</a> = 9, 
 <a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a268e02447fbf85aab7043ac233a94622">RunType::kFonttbl</a> = 10, 
-<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794ae8aa602c51bf5cd3369c2deda50a8dbd">RunType::kColortbl</a> = 11
+<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794ae8aa602c51bf5cd3369c2deda50a8dbd">RunType::kColortbl</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a0fa3a54d8627d575611d75e3c4288834">RunType::kTab</a> = 12, 
+<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794ab9af7f5c8623ebc200b2419e540c19fd">RunType::kListBegin</a> = 13, 
+<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a647c9aefc37de9bbc43061caad1d9c16">RunType::kListEnd</a> = 14, 
+<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794ab8ce1fd29a8da56fcde945bf08c34744">RunType::kListItemBegin</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794a7688697698075aadac01834f445a30e8">RunType::kListItemEnd</a> = 16
 <br />
  }</td></tr>
 <tr class="separator:a8e1db5def6cc251df6aaeeefed94e794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36735259f5213046ddd282aeeae85e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99579870294c11ecaeafbaf316074a2c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a99579870294c11ecaeafbaf316074a2c">Advance</a> () const</td></tr>
 <tr class="separator:a99579870294c11ecaeafbaf316074a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73275f1359381d8bc26ff6bafb8b9d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ac73275f1359381d8bc26ff6bafb8b9d1">ApplyKerning</a> () const</td></tr>
+<tr class="separator:ac73275f1359381d8bc26ff6bafb8b9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c01b2464fa283a87692a938dcd452b6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a6c01b2464fa283a87692a938dcd452b6">BoundingBox</a> () const</td></tr>
 <tr class="memdesc:a6c01b2464fa283a87692a938dcd452b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">bbox is stored as <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>, but is always 2d. z=0  <a href="class_o_n___text_run.html#a6c01b2464fa283a87692a938dcd452b6">More...</a><br /></td></tr>
 <tr class="separator:a6c01b2464fa283a87692a938dcd452b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,30 +146,52 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e90de7075f2db799d183d80fe056fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81527e789f7ab38aab86141a3c8182e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ae81527e789f7ab38aab86141a3c8182e">GetGlyphContours</a> (const <a class="el" href="class_o_n___font.html">ON_Font</a> *text_font, bool bSingleStrokeFont, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;text_xform, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &gt; &gt; &amp;run_contours) const</td></tr>
 <tr class="separator:ae81527e789f7ab38aab86141a3c8182e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f93f960349fc00248a0a1c143a75d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a17f93f960349fc00248a0a1c143a75d4">GetListItemPrefixString</a> (wchar_t *buf, size_t buf_count) const</td></tr>
+<tr class="separator:a17f93f960349fc00248a0a1c143a75d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb689e2a5b6b129296fc08899c7f9bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a1bb689e2a5b6b129296fc08899c7f9bf">HeightScale</a> (const <a class="el" href="class_o_n___font.html">ON_Font</a> *font) const</td></tr>
 <tr class="separator:a1bb689e2a5b6b129296fc08899c7f9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e8580390a1356bdf586ff1ba881f04"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a40e8580390a1356bdf586ff1ba881f04">HeightScaleFactor</a> () const</td></tr>
+<tr class="separator:a40e8580390a1356bdf586ff1ba881f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9285ebcab1bb565a24fa5e757a326ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a9285ebcab1bb565a24fa5e757a326ab6">Init</a> (const class <a class="el" href="class_o_n___font.html">ON_Font</a> *managed_font, double height, double stackscale, <a class="el" href="class_o_n___color.html">ON_Color</a> color, bool bold, bool italic, bool underlined, bool strikethrough, bool deletedisplay=true)</td></tr>
 <tr class="separator:a9285ebcab1bb565a24fa5e757a326ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae722dbfb1b13cb2c2820576b9eb03b2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ae722dbfb1b13cb2c2820576b9eb03b2e">IsActiveManagedTextRun</a> () const</td></tr>
 <tr class="separator:ae722dbfb1b13cb2c2820576b9eb03b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9def08251854facdfcb635e3967579ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a9def08251854facdfcb635e3967579ac">IsColumn</a> () const</td></tr>
 <tr class="separator:a9def08251854facdfcb635e3967579ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b4a2ee40b12f4561df246911355255"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a88b4a2ee40b12f4561df246911355255">IsListDepthRelevant</a> () const</td></tr>
+<tr class="separator:a88b4a2ee40b12f4561df246911355255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7127aa6ad98654f8f4fe0bf801d3e5c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a7127aa6ad98654f8f4fe0bf801d3e5c9">IsListOrdered</a> () const</td></tr>
+<tr class="separator:a7127aa6ad98654f8f4fe0bf801d3e5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183c04719c34db1fd6ddc5b8c936445d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a183c04719c34db1fd6ddc5b8c936445d">IsManagedTextRun</a> () const</td></tr>
 <tr class="separator:a183c04719c34db1fd6ddc5b8c936445d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c4588ccc6e9f2e49a1f7110ddb39790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a5c4588ccc6e9f2e49a1f7110ddb39790">IsNewline</a> () const</td></tr>
 <tr class="separator:a5c4588ccc6e9f2e49a1f7110ddb39790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75a88bad582605c454c5dc06139ca59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___text_run.html#a392044cb867ef50e5566176525928114">Stacked</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ae75a88bad582605c454c5dc06139ca59">IsStacked</a> () const</td></tr>
 <tr class="separator:ae75a88bad582605c454c5dc06139ca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4382cd717d707f12aca7713149371148"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a4382cd717d707f12aca7713149371148">IsSubscript</a> () const</td></tr>
+<tr class="separator:a4382cd717d707f12aca7713149371148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3264289c01687861919024fcaba2750"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ab3264289c01687861919024fcaba2750">IsSuperscript</a> () const</td></tr>
+<tr class="separator:ab3264289c01687861919024fcaba2750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1b539bd74ca899cb1913755ee4f6d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a5d1b539bd74ca899cb1913755ee4f6d3">IsText</a> () const</td></tr>
 <tr class="separator:a5d1b539bd74ca899cb1913755ee4f6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7577e9f3b8c8728700760bf1bc9343b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a7577e9f3b8c8728700760bf1bc9343b8">IsValid</a> () const</td></tr>
 <tr class="separator:a7577e9f3b8c8728700760bf1bc9343b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5bc5f58bf388f8028b5e0de154c5e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a9f5bc5f58bf388f8028b5e0de154c5e2">LineSpaceScale</a> () const</td></tr>
+<tr class="separator:a9f5bc5f58bf388f8028b5e0de154c5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6a8bb106457a20e6621310a7e76a91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a6b6a8bb106457a20e6621310a7e76a91">ListDepth</a> () const</td></tr>
+<tr class="separator:a6b6a8bb106457a20e6621310a7e76a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752beeb303a83c7f0ac37e1bff78b848"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a752beeb303a83c7f0ac37e1bff78b848">ListItemNumber</a> () const</td></tr>
+<tr class="separator:a752beeb303a83c7f0ac37e1bff78b848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909e79baff4ca033263e0c26f0e454be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a909e79baff4ca033263e0c26f0e454be">MeasureListItemPrefixWidth</a> () const</td></tr>
+<tr class="separator:a909e79baff4ca033263e0c26f0e454be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75848e8d5f50684359a1ba96859696d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a75848e8d5f50684359a1ba96859696d2">Offset</a> () const</td></tr>
 <tr class="separator:a75848e8d5f50684359a1ba96859696d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96dab07e3624a618a7cb5b8570a5cc70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___text_run.html">ON_TextRun</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a96dab07e3624a618a7cb5b8570a5cc70">operator=</a> (const <a class="el" href="class_o_n___text_run.html">ON_TextRun</a> &amp;src)</td></tr>
 <tr class="separator:a96dab07e3624a618a7cb5b8570a5cc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34b1d9f5bb1fe0240a4c4c254439ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ac34b1d9f5bb1fe0240a4c4c254439ddb">SetAdvance</a> (<a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> advance)</td></tr>
 <tr class="separator:ac34b1d9f5bb1fe0240a4c4c254439ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a5dae08bdfced65935562333c90b582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a3a5dae08bdfced65935562333c90b582">SetApplyKerning</a> (bool applyKerning)</td></tr>
+<tr class="separator:a3a5dae08bdfced65935562333c90b582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bb7659f26f1f4ed38c22bd85564921c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a8bb7659f26f1f4ed38c22bd85564921c">SetBoundingBox</a> (<a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> pmin, <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> pmax)</td></tr>
 <tr class="separator:a8bb7659f26f1f4ed38c22bd85564921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282a1247fffcaa6e2a9c201913717482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a282a1247fffcaa6e2a9c201913717482">SetColor</a> (<a class="el" href="class_o_n___color.html">ON_Color</a> color)</td></tr>
@@ -170,6 +201,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb1c2ea6950058ffec9101001b362f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a939ca438c9f13c5adccccd1751151bbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a939ca438c9f13c5adccccd1751151bbd">SetFont</a> (const <a class="el" href="class_o_n___font.html">ON_Font</a> *font)</td></tr>
 <tr class="separator:a939ca438c9f13c5adccccd1751151bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e180548412a4197a1e6c88b03d9f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a52e180548412a4197a1e6c88b03d9f48">SetHeightScaleFactor</a> (double factor)</td></tr>
+<tr class="separator:a52e180548412a4197a1e6c88b03d9f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad620954cdd6676e86e51c17422058721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ad620954cdd6676e86e51c17422058721">SetIsListOrdered</a> (bool ordered)</td></tr>
+<tr class="separator:ad620954cdd6676e86e51c17422058721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb46370f322fe9707b22be657cfac4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a5eb46370f322fe9707b22be657cfac4a">SetLineSpaceScale</a> (double scale)</td></tr>
+<tr class="separator:a5eb46370f322fe9707b22be657cfac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825edd5f5b60f48e544fdf5c8e6e9610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a825edd5f5b60f48e544fdf5c8e6e9610">SetListDepth</a> (int list_depth)</td></tr>
+<tr class="separator:a825edd5f5b60f48e544fdf5c8e6e9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381373fc05bfd7fb03e002bf7fd3d130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a381373fc05bfd7fb03e002bf7fd3d130">SetListItemNumber</a> (int itemNumber)</td></tr>
+<tr class="separator:a381373fc05bfd7fb03e002bf7fd3d130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a47b19c7239900ce082ca6b8e353e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a1a47b19c7239900ce082ca6b8e353e21">SetOffset</a> (<a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a> offset)</td></tr>
 <tr class="separator:a1a47b19c7239900ce082ca6b8e353e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af48537c71046c535af4360d031b965d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#af48537c71046c535af4360d031b965d8">SetStacked</a> (<a class="el" href="class_o_n___text_run.html#a392044cb867ef50e5566176525928114">Stacked</a> stacked)</td></tr>
@@ -178,6 +219,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a68b0ff4a3a83bc56d39686d5bad76b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3aff7e35dc7fc4fa54176856e3a0d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ac3aff7e35dc7fc4fa54176856e3a0d09">SetStackFractionHeight</a> (double stackscale)</td></tr>
 <tr class="separator:ac3aff7e35dc7fc4fa54176856e3a0d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af626d2f89c61442a1822bf81b476cada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#af626d2f89c61442a1822bf81b476cada">SetSubscript</a> ()</td></tr>
+<tr class="separator:af626d2f89c61442a1822bf81b476cada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab685952139e75dd823eb857d57f2a79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ab685952139e75dd823eb857d57f2a79e">SetSuperscript</a> ()</td></tr>
+<tr class="separator:ab685952139e75dd823eb857d57f2a79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f7b69d7c3c2b6c134ab878d74523bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ac7f7b69d7c3c2b6c134ab878d74523bb">SetTextHeight</a> (double h)</td></tr>
 <tr class="separator:ac7f7b69d7c3c2b6c134ab878d74523bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d65e0c24911caa8dab5abae1cf09a81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a5d65e0c24911caa8dab5abae1cf09a81">SetType</a> (<a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794">ON_TextRun::RunType</a>)</td></tr>
@@ -194,6 +239,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1635be015190c641b619f65e71f156b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b73d710313dcfcd00782600db63ac60"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a8b73d710313dcfcd00782600db63ac60">TextString</a> () const</td></tr>
 <tr class="separator:a8b73d710313dcfcd00782600db63ac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c64c6cb23028c5bf5087ef7b68c857"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a83c64c6cb23028c5bf5087ef7b68c857">TextStringContains</a> (const wchar_t *sub_str) const</td></tr>
+<tr class="separator:a83c64c6cb23028c5bf5087ef7b68c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe3b31c5c1f549bff6182ff0cd615437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___text_run.html#a8e1db5def6cc251df6aaeeefed94e794">RunType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#afe3b31c5c1f549bff6182ff0cd615437">Type</a> () const</td></tr>
 <tr class="separator:afe3b31c5c1f549bff6182ff0cd615437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394ece47ca0e3cb41cce46debf452a35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a394ece47ca0e3cb41cce46debf452a35">UnicodeString</a> () const</td></tr>
@@ -226,6 +273,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab7c5b016ccc721d08ed768ed52574bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ab7c5b016ccc721d08ed768ed52574bd4">m_advance</a> = <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b">ON_2dVector::ZeroVector</a></td></tr>
 <tr class="memdesc:ab7c5b016ccc721d08ed768ed52574bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">(ECS) distance and direction from m_offset to start of next run  <a href="class_o_n___text_run.html#ab7c5b016ccc721d08ed768ed52574bd4">More...</a><br /></td></tr>
 <tr class="separator:ab7c5b016ccc721d08ed768ed52574bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89322556504502ee68e6aecb06b0c1a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a89322556504502ee68e6aecb06b0c1a8">m_apply_kerning</a> = false</td></tr>
+<tr class="separator:a89322556504502ee68e6aecb06b0c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab620d333549054476e4483eb6341bd3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ab620d333549054476e4483eb6341bd3b">m_color</a> = <a class="el" href="class_o_n___color.html#a54c9448a0e7a53032cdb7f111163aca9">ON_Color::UnsetColor</a></td></tr>
 <tr class="separator:ab620d333549054476e4483eb6341bd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2962cf141fadbdebcd17c11c1bdea850"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a2962cf141fadbdebcd17c11c1bdea850">m_height_scale</a> = -1.0</td></tr>
@@ -245,6 +294,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0f3babee978191329edaa41a7b516db1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a0f3babee978191329edaa41a7b516db1">m_offset</a> = <a class="el" href="class_o_n__2d_vector.html#a2f9dd18fe13c0bd3e85cde1db1eee97b">ON_2dVector::ZeroVector</a></td></tr>
 <tr class="memdesc:a0f3babee978191329edaa41a7b516db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">(ECS) offset to lower left of bounding box from <a class="el" href="class_o_n___text_content.html">ON_TextContent</a> plane origin  <a href="class_o_n___text_run.html#a0f3babee978191329edaa41a7b516db1">More...</a><br /></td></tr>
 <tr class="separator:a0f3babee978191329edaa41a7b516db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4355ec90afdd25885f9f24d599dfc7"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#a0c4355ec90afdd25885f9f24d599dfc7">m_reserved_char3</a> = 0</td></tr>
+<tr class="separator:a0c4355ec90afdd25885f9f24d599dfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c1f090a88216392db1a2609dd4a65b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_run.html#ad3c1f090a88216392db1a2609dd4a65b">m_right_margin</a> = 0.0</td></tr>
 <tr class="memdesc:ad3c1f090a88216392db1a2609dd4a65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">right margin in formatting rect for this paragraph  <a href="class_o_n___text_run.html#ad3c1f090a88216392db1a2609dd4a65b">More...</a><br /></td></tr>
 <tr class="separator:ad3c1f090a88216392db1a2609dd4a65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,6 +379,11 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794a9cef6e67dbb09df835c263f0610058b2"></a>kHeader&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794a268e02447fbf85aab7043ac233a94622"></a>kFonttbl&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794ae8aa602c51bf5cd3369c2deda50a8dbd"></a>kColortbl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794a0fa3a54d8627d575611d75e3c4288834"></a>kTab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794ab9af7f5c8623ebc200b2419e540c19fd"></a>kListBegin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794a647c9aefc37de9bbc43061caad1d9c16"></a>kListEnd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794ab8ce1fd29a8da56fcde945bf08c34744"></a>kListItemBegin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8e1db5def6cc251df6aaeeefed94e794a7688697698075aadac01834f445a30e8"></a>kListItemEnd&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -430,6 +486,23 @@ Friends</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="class_o_n__2d_vector.html">ON_2dVector</a>&amp; ON_TextRun::Advance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac73275f1359381d8bc26ff6bafb8b9d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73275f1359381d8bc26ff6bafb8b9d1">&#9670;&nbsp;</a></span>ApplyKerning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::ApplyKerning </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -638,6 +711,35 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a17f93f960349fc00248a0a1c143a75d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f93f960349fc00248a0a1c143a75d4">&#9670;&nbsp;</a></span>GetListItemPrefixString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::GetListItemPrefixString </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For kListItemBegin runs, builds the bullet/number prefix string that is rendered ahead of the item text (e.g. L"1.", L"10.", L"a.", L"ii.", L"•"). buf must be non-null with buf_count &gt;= 32. Writes an empty string and returns false if this run is not a kListItemBegin. </p>
+
+</div>
+</div>
 <a id="a55de058dec220d6fb363d3d24ffe338a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55de058dec220d6fb363d3d24ffe338a">&#9670;&nbsp;</a></span>GetManagedTextRun() <span class="overload">[1/2]</span></h2>
 
@@ -707,6 +809,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This returns the scale of m_height / HeightOfI. It doesn't take into account anything about annotation scaling This is the scale for converting <a class="el" href="class_o_n___text_run.html" title="A range of text with all the same attributes.">ON_TextRun</a> bounding boxes and offsets to basic model units </p>
+
+</div>
+</div>
+<a id="a40e8580390a1356bdf586ff1ba881f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e8580390a1356bdf586ff1ba881f04">&#9670;&nbsp;</a></span>HeightScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_TextRun::HeightScaleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Per-run multiplier that survives ON_TextContent::Internal_SetRunTextHeight. Used so symmetric tolerance text can render at the dim style's ToleranceHeightScale (the "Text height scale:" tolerance setting) while sharing the same baseline as the rest of the dim text. Default 1.0. </p>
 
 </div>
 </div>
@@ -815,6 +935,40 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a88b4a2ee40b12f4561df246911355255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b4a2ee40b12f4561df246911355255">&#9670;&nbsp;</a></span>IsListDepthRelevant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::IsListDepthRelevant </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7127aa6ad98654f8f4fe0bf801d3e5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7127aa6ad98654f8f4fe0bf801d3e5c9">&#9670;&nbsp;</a></span>IsListOrdered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::IsListOrdered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a183c04719c34db1fd6ddc5b8c936445d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a183c04719c34db1fd6ddc5b8c936445d">&#9670;&nbsp;</a></span>IsManagedTextRun()</h2>
 
@@ -867,6 +1021,40 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a4382cd717d707f12aca7713149371148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4382cd717d707f12aca7713149371148">&#9670;&nbsp;</a></span>IsSubscript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::IsSubscript </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3264289c01687861919024fcaba2750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3264289c01687861919024fcaba2750">&#9670;&nbsp;</a></span>IsSuperscript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::IsSuperscript </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5d1b539bd74ca899cb1913755ee4f6d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d1b539bd74ca899cb1913755ee4f6d3">&#9670;&nbsp;</a></span>IsText()</h2>
 
@@ -898,6 +1086,75 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f5bc5f58bf388f8028b5e0de154c5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5bc5f58bf388f8028b5e0de154c5e2">&#9670;&nbsp;</a></span>LineSpaceScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_TextRun::LineSpaceScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b6a8bb106457a20e6621310a7e76a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6a8bb106457a20e6621310a7e76a91">&#9670;&nbsp;</a></span>ListDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_TextRun::ListDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a752beeb303a83c7f0ac37e1bff78b848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752beeb303a83c7f0ac37e1bff78b848">&#9670;&nbsp;</a></span>ListItemNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_TextRun::ListItemNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a909e79baff4ca033263e0c26f0e454be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909e79baff4ca033263e0c26f0e454be">&#9670;&nbsp;</a></span>MeasureListItemPrefixWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ON_TextRun::MeasureListItemPrefixWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For kListItemBegin runs, returns the rendered width of the prefix in model units, computed from the run's font and TextHeight. Returns 0.0 if the run is not a kListItemBegin, has no font, or has no usable font metrics. MeasureTextRunArray uses this so the prefix does not overlap the item text when wider than the default 1.6*TextHeight clearance (monospaced fonts, multi-digit ordered list items, etc.). </p>
 
 </div>
 </div>
@@ -1033,6 +1290,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a3a5dae08bdfced65935562333c90b582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5dae08bdfced65935562333c90b582">&#9670;&nbsp;</a></span>SetApplyKerning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetApplyKerning </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>applyKerning</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8bb7659f26f1f4ed38c22bd85564921c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bb7659f26f1f4ed38c22bd85564921c">&#9670;&nbsp;</a></span>SetBoundingBox()</h2>
 
@@ -1117,6 +1392,96 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a52e180548412a4197a1e6c88b03d9f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e180548412a4197a1e6c88b03d9f48">&#9670;&nbsp;</a></span>SetHeightScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetHeightScaleFactor </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad620954cdd6676e86e51c17422058721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad620954cdd6676e86e51c17422058721">&#9670;&nbsp;</a></span>SetIsListOrdered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetIsListOrdered </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ordered</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5eb46370f322fe9707b22be657cfac4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb46370f322fe9707b22be657cfac4a">&#9670;&nbsp;</a></span>SetLineSpaceScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetLineSpaceScale </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a825edd5f5b60f48e544fdf5c8e6e9610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825edd5f5b60f48e544fdf5c8e6e9610">&#9670;&nbsp;</a></span>SetListDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetListDepth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>list_depth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a381373fc05bfd7fb03e002bf7fd3d130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381373fc05bfd7fb03e002bf7fd3d130">&#9670;&nbsp;</a></span>SetListItemNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetListItemNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>itemNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1a47b19c7239900ce082ca6b8e353e21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a47b19c7239900ce082ca6b8e353e21">&#9670;&nbsp;</a></span>SetOffset()</h2>
 
@@ -1181,6 +1546,40 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>stackscale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af626d2f89c61442a1822bf81b476cada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af626d2f89c61442a1822bf81b476cada">&#9670;&nbsp;</a></span>SetSubscript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetSubscript </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab685952139e75dd823eb857d57f2a79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab685952139e75dd823eb857d57f2a79e">&#9670;&nbsp;</a></span>SetSuperscript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_TextRun::SetSuperscript </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1366,6 +1765,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a83c64c6cb23028c5bf5087ef7b68c857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c64c6cb23028c5bf5087ef7b68c857">&#9670;&nbsp;</a></span>TextStringContains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::TextStringContains </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sub_str</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afe3b31c5c1f549bff6182ff0cd615437"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe3b31c5c1f549bff6182ff0cd615437">&#9670;&nbsp;</a></span>Type()</h2>
 
@@ -1538,6 +1955,20 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a89322556504502ee68e6aecb06b0c1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89322556504502ee68e6aecb06b0c1a8">&#9670;&nbsp;</a></span>m_apply_kerning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_TextRun::m_apply_kerning = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab620d333549054476e4483eb6341bd3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab620d333549054476e4483eb6341bd3b">&#9670;&nbsp;</a></span>m_color</h2>
 
@@ -1648,6 +2079,20 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a0c4355ec90afdd25885f9f24d599dfc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4355ec90afdd25885f9f24d599dfc7">&#9670;&nbsp;</a></span>m_reserved_char3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ON_TextRun::m_reserved_char3 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad3c1f090a88216392db1a2609dd4a65b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3c1f090a88216392db1a2609dd4a65b">&#9670;&nbsp;</a></span>m_right_margin</h2>
 
@@ -1699,7 +2144,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

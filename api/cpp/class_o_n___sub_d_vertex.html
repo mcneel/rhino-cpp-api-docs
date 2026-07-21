@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -88,10 +88,10 @@ Inheritance diagram for ON_SubDVertex:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab505246bce9a81c3144c784d0cc22206"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_vertex.html#ab505246bce9a81c3144c784d0cc22206af305a98348b1e218dec38527b48be1f4">MaximumEdgeCount</a> = 0xFFF0U, 
-<a class="el" href="class_o_n___sub_d_vertex.html#ab505246bce9a81c3144c784d0cc22206afa3ddcbf4448b3aab71eb1c6baaf5a06">MaximumFaceCount</a> = 0xFFF0U
+<tr class="memitem:aa1129ace84223fc7accc0761de0ce5ef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___sub_d_vertex.html#aa1129ace84223fc7accc0761de0ce5efaf305a98348b1e218dec38527b48be1f4">MaximumEdgeCount</a> = 0xFFF0U, 
+<a class="el" href="class_o_n___sub_d_vertex.html#aa1129ace84223fc7accc0761de0ce5efafa3ddcbf4448b3aab71eb1c6baaf5a06">MaximumFaceCount</a> = 0xFFF0U
  }</td></tr>
-<tr class="separator:ab505246bce9a81c3144c784d0cc22206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa1129ace84223fc7accc0761de0ce5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1cdaafacf500363bab2e742030020771"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are 2 configurations a valid crease vertex can have.  <a href="class_o_n___sub_d_vertex.html#a1cdaafacf500363bab2e742030020771">More...</a><br /></td></tr>
 <tr class="separator:a1cdaafacf500363bab2e742030020771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c7141a140266dcda6c3a53b29db0ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#a14c7141a140266dcda6c3a53b29db0ab">IsSharp</a> (bool bEndCheck) const</td></tr>
-<tr class="memdesc:a14c7141a140266dcda6c3a53b29db0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge. Note that when an edge has variable sharpness it can have zero sharpness at one end and nonzero shaprness at the other end. The bEndCheck parameter controls what type of sharpness query is performed. Note that the vertex subdivision point is affected by attached sharp edges when IsSharp(true) is is true (ON_Vertex::VertexSharpness() &gt; 0). The vertex limit surface point is affected by edge sharpenss when IsSharp(false) is true. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_vertex.html#a14c7141a140266dcda6c3a53b29db0ab">More...</a><br /></td></tr>
+<tr class="memdesc:a14c7141a140266dcda6c3a53b29db0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge. Note that when an edge has variable sharpness it can have zero sharpness at one end and nonzero shaprness at the other end. The bEndCheck parameter controls what type of sharpness query is performed. Note that the vertex subdivision point is affected by attached sharp edges when IsSharp(true) is true (ON_Vertex::VertexSharpness() &gt; 0). The vertex limit surface point is affected by edge sharpenss when IsSharp(false) is true. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges.  <a href="class_o_n___sub_d_vertex.html#a14c7141a140266dcda6c3a53b29db0ab">More...</a><br /></td></tr>
 <tr class="separator:a14c7141a140266dcda6c3a53b29db0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa734e088dec0d4a7f438bcf26b4086d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex.html#aaa734e088dec0d4a7f438bcf26b4086d">IsSingleSectorVertex</a> () const</td></tr>
 <tr class="separator:aaa734e088dec0d4a7f438bcf26b4086d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,14 +432,21 @@ Friends</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
-<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5ab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5aace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03
+<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a2113dad0041f8e1a05b836a928c100fd">DeprecatedModifiedFlags</a>
  }</td></tr>
 <tr class="separator:a0089e447c1f74381d8c83c1029e06eb5 inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<tr class="memitem:a7583e499d46547a2758d03cd2bb254dd inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">SavedOrModifiedPointsFlags</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<br />
+ }</td></tr>
+<tr class="separator:a7583e499d46547a2758d03cd2bb254dd inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affead29aabbfac019261f587b6c3ff16e044">DeprecatedSavedPointsFlags</a>
  }</td></tr>
 <tr class="separator:a114cee001ebc3ac1d6dc8d79f701affe inherit pro_types_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
@@ -472,8 +479,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_o_n___sub_d_component_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_o_n___sub_d_component_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a></td></tr>
 <tr class="memitem:ae609568efd09af50564debc87010606d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae609568efd09af50564debc87010606d">m_level</a> = 0U</td></tr>
 <tr class="separator:ae609568efd09af50564debc87010606d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5665f98f601c3a89ec1e789b0ef577f3 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5665f98f601c3a89ec1e789b0ef577f3">m_saved_points_flags</a> = 0U</td></tr>
-<tr class="separator:a5665f98f601c3a89ec1e789b0ef577f3 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0566c8fa8d521bedc83d7bc2cb538976 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0566c8fa8d521bedc83d7bc2cb538976">m_saved_modified_points_flags</a> = 0U</td></tr>
+<tr class="separator:a0566c8fa8d521bedc83d7bc2cb538976 inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">m_saved_subd_point1</a> [3]</td></tr>
 <tr class="memdesc:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetSubdivisionPoint( bUseSavedSubdivisionPoint=true ) can change the value of m_cache_subd_P.  <a href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">More...</a><br /></td></tr>
 <tr class="separator:a0388f57c2f3b00bd7e19fa22297c942d inherit pro_attribs_class_o_n___sub_d_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,8 +488,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab505246bce9a81c3144c784d0cc22206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab505246bce9a81c3144c784d0cc22206">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aa1129ace84223fc7accc0761de0ce5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1129ace84223fc7accc0761de0ce5ef">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,8 +500,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab505246bce9a81c3144c784d0cc22206af305a98348b1e218dec38527b48be1f4"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab505246bce9a81c3144c784d0cc22206afa3ddcbf4448b3aab71eb1c6baaf5a06"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa1129ace84223fc7accc0761de0ce5efaf305a98348b1e218dec38527b48be1f4"></a>MaximumEdgeCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa1129ace84223fc7accc0761de0ce5efafa3ddcbf4448b3aab71eb1c6baaf5a06"></a>MaximumFaceCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1369,7 +1376,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If the vertex is smooth and and two or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. If the vertex is a dart or crease and and one or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. Otherwise 0.0 is returned. / returns&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If the vertex is smooth and two or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. If the vertex is a dart or crease and one or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. Otherwise 0.0 is returned. / returns&gt; </dd></dl>
 
 </div>
 </div>
@@ -1737,7 +1744,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge. Note that when an edge has variable sharpness it can have zero sharpness at one end and nonzero shaprness at the other end. The bEndCheck parameter controls what type of sharpness query is performed. Note that the vertex subdivision point is affected by attached sharp edges when IsSharp(true) is is true (ON_Vertex::VertexSharpness() &gt; 0). The vertex limit surface point is affected by edge sharpenss when IsSharp(false) is true. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
+<p>Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge. Note that when an edge has variable sharpness it can have zero sharpness at one end and nonzero shaprness at the other end. The bEndCheck parameter controls what type of sharpness query is performed. Note that the vertex subdivision point is affected by attached sharp edges when IsSharp(true) is true (ON_Vertex::VertexSharpness() &gt; 0). The vertex limit surface point is affected by edge sharpenss when IsSharp(false) is true. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bEndCheck</td><td>When bEndCheck is false, the check looks for edges with any nonzero sharpness. When bEndCheck is true, the check looks for edges with nonzero sharpness at this vertex. </td></tr>
@@ -2786,7 +2793,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sharp vertices are smooth, crease or dart vertices attached to at least one sharp edge with nonzero end sharpness at the vertex. See <a class="el" href="class_o_n___sub_d_edge.html#a8e07c79ca0374a1f0d7dea35f79f7e93" title="Sharp edges are a blend between smooth edges and crease edges. The limit surface has a continuous nor...">ON_SubDEdge::IsSharp()</a> for more information about sharp edges. </p>
-<dl class="section return"><dt>Returns</dt><dd>If the vertex is smooth and and two or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. If the vertex is a dart or crease and and one or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. Otherwise 0.0 is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If the vertex is smooth and two or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. If the vertex is a dart or crease and one or more attached edges have positive end sharpness at this vertex, then the maximum edge end sharpness at this vertex is returned. Otherwise 0.0 is returned. </dd></dl>
 
 </div>
 </div>
@@ -3051,7 +3058,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

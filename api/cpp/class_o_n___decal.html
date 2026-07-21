@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -72,6 +72,15 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;opennurbs_decals.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ON_Decal:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_o_n___decal.png" usemap="#ON_5FDecal_map" alt=""/>
+  <map id="ON_5FDecal_map" name="ON_5FDecal_map">
+<area href="class_c_rh_rdk_document_aware_decal.html" alt="CRhRdkDocumentAwareDecal" shape="rect" coords="0,56,183,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -106,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae86fecc1ac23a5acc2117e71cb769f6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ae86fecc1ac23a5acc2117e71cb769f6f">ON_Decal</a> (const <a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;node)</td></tr>
 <tr class="memdesc:ae86fecc1ac23a5acc2117e71cb769f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a decal passing the const XML node to be used for its storage. This decal is read only.  <a href="class_o_n___decal.html#ae86fecc1ac23a5acc2117e71cb769f6f">More...</a><br /></td></tr>
 <tr class="separator:ae86fecc1ac23a5acc2117e71cb769f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7d444c84a4f2d63ec4cdd582a3788b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a5f7d444c84a4f2d63ec4cdd582a3788b">ON_Decal</a> (ON_DecalCollection &amp;coll, const <a class="el" href="class_o_n___decal.html">ON_Decal</a> &amp;other)</td></tr>
+<tr class="memdesc:a5f7d444c84a4f2d63ec4cdd582a3788b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only.  <a href="class_o_n___decal.html#a5f7d444c84a4f2d63ec4cdd582a3788b">More...</a><br /></td></tr>
+<tr class="separator:a5f7d444c84a4f2d63ec4cdd582a3788b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1093ea11f49dd3c7524dfa1c4ba3819d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a1093ea11f49dd3c7524dfa1c4ba3819d">ON_Decal</a> (<a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;node)</td></tr>
 <tr class="memdesc:a1093ea11f49dd3c7524dfa1c4ba3819d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a decal passing the XML node to be used for its storage.  <a href="class_o_n___decal.html#a1093ea11f49dd3c7524dfa1c4ba3819d">More...</a><br /></td></tr>
 <tr class="separator:a1093ea11f49dd3c7524dfa1c4ba3819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,16 +126,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca9f5c6f5f1265b83d1e018b49ffaa22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#aca9f5c6f5f1265b83d1e018b49ffaa22">AppendCustomXML</a> (const <a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;)</td></tr>
 <tr class="memdesc:aca9f5c6f5f1265b83d1e018b49ffaa22"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; For internal use only.  <a href="class_o_n___decal.html#aca9f5c6f5f1265b83d1e018b49ffaa22">More...</a><br /></td></tr>
 <tr class="separator:aca9f5c6f5f1265b83d1e018b49ffaa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24455c2bf58086293cf6645fbe7a7b2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a24455c2bf58086293cf6645fbe7a7b2c">ApplyTransformation</a> (const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
+<tr class="memdesc:a24455c2bf58086293cf6645fbe7a7b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a transformation to the decal. This can be used to move it around, scale it, or rotate it.  <a href="class_o_n___decal.html#a24455c2bf58086293cf6645fbe7a7b2c">More...</a><br /></td></tr>
+<tr class="separator:a24455c2bf58086293cf6645fbe7a7b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7fc49f5a5e31c926b36191d37e5f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#afb7fc49f5a5e31c926b36191d37e5f6d">AssetInstanceId</a> (void) const</td></tr>
+<tr class="memdesc:afb7fc49f5a5e31c926b36191d37e5f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the decal's asset instance id. This is the instance id of a material or texture.  <a href="class_o_n___decal.html#afb7fc49f5a5e31c926b36191d37e5f6d">More...</a><br /></td></tr>
+<tr class="separator:afb7fc49f5a5e31c926b36191d37e5f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5addf3386a41f7824664d0e732af35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a4f5addf3386a41f7824664d0e732af35">DataCRC</a> (<a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> current_remainder) const</td></tr>
 <tr class="separator:a4f5addf3386a41f7824664d0e732af35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93e2e7a36ee205d792cb6a3919b3048a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gab680f9c2620ca5d1871383c4dda5b799">ON_DECAL_CRC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a93e2e7a36ee205d792cb6a3919b3048a">DecalCRC</a> (void) const</td></tr>
-<tr class="memdesc:a93e2e7a36ee205d792cb6a3919b3048a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Decal CRC of the decal.  <a href="class_o_n___decal.html#a93e2e7a36ee205d792cb6a3919b3048a">More...</a><br /></td></tr>
 <tr class="separator:a93e2e7a36ee205d792cb6a3919b3048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92be824e14c7924728dc54b04cc74ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ae92be824e14c7924728dc54b04cc74ba">GetCustomXML</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;renderEngineId, <a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;custom_param_node) const</td></tr>
 <tr class="memdesc:ae92be824e14c7924728dc54b04cc74ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom XML for the specified render engine. The format of the XML is described below.  <a href="class_o_n___decal.html#ae92be824e14c7924728dc54b04cc74ba">More...</a><br /></td></tr>
 <tr class="separator:ae92be824e14c7924728dc54b04cc74ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261e3a7d50ed79a912baa72aaded46bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a261e3a7d50ed79a912baa72aaded46bc">GetEntireCustomXML</a> (<a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;custom_xml) const</td></tr>
+<tr class="separator:a261e3a7d50ed79a912baa72aaded46bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa457d75dc7ec0f4841ca61b64f7721c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#aa457d75dc7ec0f4841ca61b64f7721c3">GetHorzSweep</a> (double &amp;sta, double &amp;end) const</td></tr>
 <tr class="separator:aa457d75dc7ec0f4841ca61b64f7721c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bd3debb6dd10afa466bcff7dd97cf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a45bd3debb6dd10afa466bcff7dd97cf8">GetOriginOffset</a> (void) const</td></tr>
+<tr class="separator:a45bd3debb6dd10afa466bcff7dd97cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fa342d99f60ec8ec9ffe4ca8070006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ab2fa342d99f60ec8ec9ffe4ca8070006">GetSavedVectorLengths</a> (double &amp;, double &amp;) const</td></tr>
+<tr class="separator:ab2fa342d99f60ec8ec9ffe4ca8070006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8744c6c16b90f1c208cc256177ee271c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a8744c6c16b90f1c208cc256177ee271c">GetTextureMapping</a> (<a class="el" href="class_o_n___texture_mapping.html">ON_TextureMapping</a> &amp;tm) const</td></tr>
 <tr class="separator:a8744c6c16b90f1c208cc256177ee271c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e9efc4eaa516cfa416423e519b75cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a8e9efc4eaa516cfa416423e519b75cdf">GetUVBounds</a> (double &amp;min_u, double &amp;min_v, double &amp;max_u, double &amp;max_v) const</td></tr>
@@ -134,8 +157,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7cb983cda808cf71b41ae0f3c5e047e5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a7cb983cda808cf71b41ae0f3c5e047e5">Height</a> (void) const</td></tr>
 <tr class="memdesc:a7cb983cda808cf71b41ae0f3c5e047e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height of the decal. Only used when mapping is cylindrical.  <a href="class_o_n___decal.html#a7cb983cda808cf71b41ae0f3c5e047e5">More...</a><br /></td></tr>
 <tr class="separator:a7cb983cda808cf71b41ae0f3c5e047e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43c6ccdf550dc6af0b98e8e1bab85a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ae43c6ccdf550dc6af0b98e8e1bab85a3">HitTest</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;point, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal, <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;uvOut) const</td></tr>
+<tr class="separator:ae43c6ccdf550dc6af0b98e8e1bab85a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf6ef66c5dc1b6f111ba2108bbe5ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a9cf6ef66c5dc1b6f111ba2108bbe5ed5">Id</a> (void) const</td></tr>
 <tr class="separator:a9cf6ef66c5dc1b6f111ba2108bbe5ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e3f37c0603fa331a539e9d47ec07e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ab6e3f37c0603fa331a539e9d47ec07e6">IsTemporary</a> (void) const</td></tr>
+<tr class="separator:ab6e3f37c0603fa331a539e9d47ec07e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09deeb2be90ad9f84b8cf468fe60bc97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a09deeb2be90ad9f84b8cf468fe60bc97">IsVisible</a> (void) const</td></tr>
 <tr class="memdesc:a09deeb2be90ad9f84b8cf468fe60bc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the decal is visible in the rendering.  <a href="class_o_n___decal.html#a09deeb2be90ad9f84b8cf468fe60bc97">More...</a><br /></td></tr>
 <tr class="separator:a09deeb2be90ad9f84b8cf468fe60bc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +186,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa360cb5d59c5985986afee9752beb5f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#aa360cb5d59c5985986afee9752beb5f4">Radius</a> (void) const</td></tr>
 <tr class="memdesc:aa360cb5d59c5985986afee9752beb5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the radius of the decal. Only used when mapping is cylindrical or spherical.  <a href="class_o_n___decal.html#aa360cb5d59c5985986afee9752beb5f4">More...</a><br /></td></tr>
 <tr class="separator:aa360cb5d59c5985986afee9752beb5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d5ef855077a407a07a626d4a111053"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a14d5ef855077a407a07a626d4a111053">SetAssetInstanceId</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;id)</td></tr>
+<tr class="memdesc:a14d5ef855077a407a07a626d4a111053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the decal's asset instance id. This is the instance id of a material or texture.  <a href="class_o_n___decal.html#a14d5ef855077a407a07a626d4a111053">More...</a><br /></td></tr>
+<tr class="separator:a14d5ef855077a407a07a626d4a111053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0234debc9597ee18e9c5f1cdcd82c301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a0234debc9597ee18e9c5f1cdcd82c301">SetCacheOnly</a> (void)</td></tr>
+<tr class="separator:a0234debc9597ee18e9c5f1cdcd82c301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad24f6a83364569a38a02db320b1ffa7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ad24f6a83364569a38a02db320b1ffa7a">SetCustomXML</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;renderEngineId, const <a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;custom_param_node)</td></tr>
 <tr class="separator:ad24f6a83364569a38a02db320b1ffa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3277c69212a88abe43365e851e153a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a3277c69212a88abe43365e851e153a48">SetHeight</a> (double d)</td></tr>
@@ -166,9 +198,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3277c69212a88abe43365e851e153a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190409ed92d656e696224daed850094a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a190409ed92d656e696224daed850094a">SetHorzSweep</a> (double sta, double end)</td></tr>
 <tr class="separator:a190409ed92d656e696224daed850094a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7abc811a308ff7206727aaf26a24fe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ae7abc811a308ff7206727aaf26a24fe9">SetIsVisible</a> (bool visible)</td></tr>
-<tr class="memdesc:ae7abc811a308ff7206727aaf26a24fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not the decal is visible in the rendering.  <a href="class_o_n___decal.html#ae7abc811a308ff7206727aaf26a24fe9">More...</a><br /></td></tr>
-<tr class="separator:ae7abc811a308ff7206727aaf26a24fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3665c38f4c88279de3096abee35d934e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a3665c38f4c88279de3096abee35d934e">SetIsTemporary</a> (bool b)</td></tr>
+<tr class="memdesc:a3665c38f4c88279de3096abee35d934e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not the decal is temporary.  <a href="class_o_n___decal.html#a3665c38f4c88279de3096abee35d934e">More...</a><br /></td></tr>
+<tr class="separator:a3665c38f4c88279de3096abee35d934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d193ec67468440432e99c623226fe72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a7d193ec67468440432e99c623226fe72">SetIsVisible</a> (bool b)</td></tr>
+<tr class="memdesc:a7d193ec67468440432e99c623226fe72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not the decal is visible in the rendering.  <a href="class_o_n___decal.html#a7d193ec67468440432e99c623226fe72">More...</a><br /></td></tr>
+<tr class="separator:a7d193ec67468440432e99c623226fe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5974828f702c6777e13ab08e65fa5a3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a5974828f702c6777e13ab08e65fa5a3c">SetMapping</a> (<a class="el" href="class_o_n___decal.html#a56e3baffe71011ac0ac617916ad339c6">Mappings</a> m)</td></tr>
 <tr class="memdesc:a5974828f702c6777e13ab08e65fa5a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the decal's mapping.  <a href="class_o_n___decal.html#a5974828f702c6777e13ab08e65fa5a3c">More...</a><br /></td></tr>
 <tr class="separator:a5974828f702c6777e13ab08e65fa5a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +218,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a3abed58fcaf15c2c3b4f888f9615d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a6a3abed58fcaf15c2c3b4f888f9615d9">SetRadius</a> (double d)</td></tr>
 <tr class="memdesc:a6a3abed58fcaf15c2c3b4f888f9615d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the radius of the decal. Only used when mapping is cylindrical or spherical.  <a href="class_o_n___decal.html#a6a3abed58fcaf15c2c3b4f888f9615d9">More...</a><br /></td></tr>
 <tr class="separator:a6a3abed58fcaf15c2c3b4f888f9615d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43fe05b5f003d093c3883774bbdd3a3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a43fe05b5f003d093c3883774bbdd3a3a">SetTextureInstanceId</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;id)</td></tr>
-<tr class="memdesc:a43fe05b5f003d093c3883774bbdd3a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the decal texture's instance id.  <a href="class_o_n___decal.html#a43fe05b5f003d093c3883774bbdd3a3a">More...</a><br /></td></tr>
-<tr class="separator:a43fe05b5f003d093c3883774bbdd3a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec00856c6567d0d165dc9c797df5dae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#aec00856c6567d0d165dc9c797df5dae7">SetSavedVectorLengths</a> (double, double)</td></tr>
+<tr class="separator:aec00856c6567d0d165dc9c797df5dae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da960f35cac91b9485316b10100adf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a7da960f35cac91b9485316b10100adf1">SetTextureInstanceId</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;id)</td></tr>
+<tr class="memdesc:a7da960f35cac91b9485316b10100adf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is deprecated in favor of <a class="el" href="class_o_n___decal.html#a14d5ef855077a407a07a626d4a111053" title="Sets the decal&#39;s asset instance id. This is the instance id of a material or texture.">SetAssetInstanceId()</a>.  <a href="class_o_n___decal.html#a7da960f35cac91b9485316b10100adf1">More...</a><br /></td></tr>
+<tr class="separator:a7da960f35cac91b9485316b10100adf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b6ef98535729aeeb105d4501e2f62c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a2b6ef98535729aeeb105d4501e2f62c6">SetTransparency</a> (double d)</td></tr>
 <tr class="memdesc:a2b6ef98535729aeeb105d4501e2f62c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the decal's transparency (clamped to the range 0..1).  <a href="class_o_n___decal.html#a2b6ef98535729aeeb105d4501e2f62c6">More...</a><br /></td></tr>
 <tr class="separator:a2b6ef98535729aeeb105d4501e2f62c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +237,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1201c834fabcd9de5b21b320aac5ea7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc64dde8a7519f879dc87649c854cec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a4fc64dde8a7519f879dc87649c854cec">SetVertSweep</a> (double sta, double end)</td></tr>
 <tr class="separator:a4fc64dde8a7519f879dc87649c854cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c99dfcb5c4f0af11d97604a355d955e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a1c99dfcb5c4f0af11d97604a355d955e">TextureInstanceId</a> (void) const</td></tr>
-<tr class="memdesc:a1c99dfcb5c4f0af11d97604a355d955e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the decal texture's instance id.  <a href="class_o_n___decal.html#a1c99dfcb5c4f0af11d97604a355d955e">More...</a><br /></td></tr>
-<tr class="separator:a1c99dfcb5c4f0af11d97604a355d955e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301f0240edb9c141760b1e5feb0bf57e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#a301f0240edb9c141760b1e5feb0bf57e">TextureInstanceId</a> (void) const</td></tr>
+<tr class="memdesc:a301f0240edb9c141760b1e5feb0bf57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is deprecated in favor of <a class="el" href="class_o_n___decal.html#afb7fc49f5a5e31c926b36191d37e5f6d" title="Returns the decal&#39;s asset instance id. This is the instance id of a material or texture.">AssetInstanceId()</a>.  <a href="class_o_n___decal.html#a301f0240edb9c141760b1e5feb0bf57e">More...</a><br /></td></tr>
+<tr class="separator:a301f0240edb9c141760b1e5feb0bf57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14c55e549aaf6fc678146f5dab2c1e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___decal.html#ae14c55e549aaf6fc678146f5dab2c1e3">Transparency</a> (void) const</td></tr>
 <tr class="memdesc:ae14c55e549aaf6fc678146f5dab2c1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the decal's transparency in the range 0..1.  <a href="class_o_n___decal.html#ae14c55e549aaf6fc678146f5dab2c1e3">More...</a><br /></td></tr>
 <tr class="separator:ae14c55e549aaf6fc678146f5dab2c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +276,7 @@ Public Member Functions</h2></td></tr>
 <li>Horizontal sweep: Cylindrical and spherical mappings only.</li>
 <li>Vertical sweep: Spherical mapping only.</li>
 </ul>
-<p>The class stores its data as XML but it is optimized with a built-in cache. As each property is requested, it is read from the XML and cached. Thereafter, the cached value is returned and the XML for that property is never read again. On writing to a property, the cache is updated and by default the XML is also updated. However, it is possible to inhibit the XML update for increased performance. See SetCacheOnly() below. </p>
+<p>The class stores its data as XML but it is optimized with a built-in cache. As each property is requested, it is read from the XML and cached. Thereafter, the cached value is returned and the XML for that property is never read again. On writing to a property, the cache is updated and by default the XML is also updated. However, it is possible to inhibit the XML update for increased performance. See <a class="el" href="class_o_n___decal.html#a0234debc9597ee18e9c5f1cdcd82c301">SetCacheOnly()</a> below. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a56e3baffe71011ac0ac617916ad339c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56e3baffe71011ac0ac617916ad339c6">&#9670;&nbsp;</a></span>Mappings</h2>
@@ -307,7 +344,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1fc7a2edce7ebf9238ca2135676c0c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc7a2edce7ebf9238ca2135676c0c0c">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc7a2edce7ebf9238ca2135676c0c0c">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +363,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1093ea11f49dd3c7524dfa1c4ba3819d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1093ea11f49dd3c7524dfa1c4ba3819d">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1093ea11f49dd3c7524dfa1c4ba3819d">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +383,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae86fecc1ac23a5acc2117e71cb769f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae86fecc1ac23a5acc2117e71cb769f6f">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86fecc1ac23a5acc2117e71cb769f6f">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +403,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a13e1baafb9b531fd03ab5ce4d4ce562b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e1baafb9b531fd03ab5ce4d4ce562b">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e1baafb9b531fd03ab5ce4d4ce562b">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +433,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aea38d0b82ed807fcb19498b832af0a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea38d0b82ed807fcb19498b832af0a96">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aea38d0b82ed807fcb19498b832af0a96">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,6 +449,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct this decal as a copy of another decal. </p>
+
+</div>
+</div>
+<a id="a5f7d444c84a4f2d63ec4cdd582a3788b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7d444c84a4f2d63ec4cdd582a3788b">&#9670;&nbsp;</a></span>ON_Decal() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ON_Decal::ON_Decal </td>
+          <td>(</td>
+          <td class="paramtype">ON_DecalCollection &amp;&#160;</td>
+          <td class="paramname"><em>coll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___decal.html">ON_Decal</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For internal use only. </p>
 
 </div>
 </div>
@@ -461,6 +528,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a24455c2bf58086293cf6645fbe7a7b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24455c2bf58086293cf6645fbe7a7b2c">&#9670;&nbsp;</a></span>ApplyTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::ApplyTransformation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a transformation to the decal. This can be used to move it around, scale it, or rotate it. </p>
+
+</div>
+</div>
+<a id="afb7fc49f5a5e31c926b36191d37e5f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7fc49f5a5e31c926b36191d37e5f6d">&#9670;&nbsp;</a></span>AssetInstanceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_Decal::AssetInstanceId </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the decal's asset instance id. This is the instance id of a material or texture. </p>
+
+</div>
+</div>
 <a id="a4f5addf3386a41f7824664d0e732af35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f5addf3386a41f7824664d0e732af35">&#9670;&nbsp;</a></span>DataCRC()</h2>
 
@@ -476,7 +583,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the Data CRC of the decal. This is not necessarily the same as the decal CRC because it allows a starting current remainder. </p>
+<p>Returns the Data CRC of the decal. This is not necessarily the same as the decal CRC because it allows a starting current remainder. An invalid decal (i.e., a decal whose underlying XML is invalid) will return the incoming 'current_remainder' value. </p>
 
 </div>
 </div>
@@ -495,8 +602,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns the Decal CRC of the decal. </p>
+<p>Returns the CRC of the decal, if it's valid. An invalid decal (i.e., a decal whose underlying XML is invalid) will return ON_NIL_DECAL_CRC. </p>
 
 </div>
 </div>
@@ -530,6 +636,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a261e3a7d50ed79a912baa72aaded46bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261e3a7d50ed79a912baa72aaded46bc">&#9670;&nbsp;</a></span>GetEntireCustomXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::GetEntireCustomXML </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___x_m_l_node.html">ON_XMLNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>custom_xml</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa457d75dc7ec0f4841ca61b64f7721c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa457d75dc7ec0f4841ca61b64f7721c3">&#9670;&nbsp;</a></span>GetHorzSweep()</h2>
 
@@ -556,6 +680,52 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the start and end angles of the decal's 'horizontal sweep' (these are angles of longitude in radians). Only used when mapping is cylindrical or spherical. </p>
+
+</div>
+</div>
+<a id="a45bd3debb6dd10afa466bcff7dd97cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bd3debb6dd10afa466bcff7dd97cf8">&#9670;&nbsp;</a></span>GetOriginOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> ON_Decal::GetOriginOffset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2fa342d99f60ec8ec9ffe4ca8070006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fa342d99f60ec8ec9ffe4ca8070006">&#9670;&nbsp;</a></span>GetSavedVectorLengths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::GetSavedVectorLengths </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -669,6 +839,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae43c6ccdf550dc6af0b98e8e1bab85a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43c6ccdf550dc6af0b98e8e1bab85a3">&#9670;&nbsp;</a></span>HitTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Decal::HitTest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>uvOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if the decal has color on a given point with a given face normal. If it has, then uvOut is set to the (u,v) of the point that was hit, and the function returns true. IMPORTANT: If the mapping type is UV, 'point' must be the texture coordinates of the desired point on the object carrying the decal. </p>
+
+</div>
+</div>
 <a id="a9cf6ef66c5dc1b6f111ba2108bbe5ed5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cf6ef66c5dc1b6f111ba2108bbe5ed5">&#9670;&nbsp;</a></span>Id()</h2>
 
@@ -685,6 +890,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the unique id of the decal. This is a run-time id that is not persistent and is only used for looking decals up in the model. </p>
+
+</div>
+</div>
+<a id="ab6e3f37c0603fa331a539e9d47ec07e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e3f37c0603fa331a539e9d47ec07e6">&#9670;&nbsp;</a></span>IsTemporary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Decal::IsTemporary </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if the decal is temporary. This is used to let the client know that the decal's data is expected to change often. This can let the client know that it is unnecessary to cache the data for example. </p>
 
 </div>
 </div>
@@ -771,6 +995,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_document_aware_decal.html#a37c86b7cc049e8692eb7e39bc386d9dd">CRhRdkDocumentAwareDecal</a>.</p>
+
 </div>
 </div>
 <a id="a25d017067a8f895fc366c72d6b80337d"></a>
@@ -797,6 +1023,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_document_aware_decal.html#ac9b5e9126236741699f9360bf812698f">CRhRdkDocumentAwareDecal</a>.</p>
+
 </div>
 </div>
 <a id="aa39e15d9fb55bc6285f7137c90d763b9"></a>
@@ -822,6 +1050,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_c_rh_rdk_document_aware_decal.html#a79a1950ae5a6f3aaabea5b08fae42ffb">CRhRdkDocumentAwareDecal</a>.</p>
 
 </div>
 </div>
@@ -885,6 +1115,45 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a14d5ef855077a407a07a626d4a111053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d5ef855077a407a07a626d4a111053">&#9670;&nbsp;</a></span>SetAssetInstanceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::SetAssetInstanceId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the decal's asset instance id. This is the instance id of a material or texture. </p>
+
+</div>
+</div>
+<a id="a0234debc9597ee18e9c5f1cdcd82c301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0234debc9597ee18e9c5f1cdcd82c301">&#9670;&nbsp;</a></span>SetCacheOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::SetCacheOnly </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call this method to set the decal to be a 'cache-only' decal. This inhibits writing to the XML node in the setters and only updates the cache. It is intended as an optimization for applications that don't need XML at all, such as decals used by the display. XML will only be used once by each getter to initialize the cache. </p>
+
+</div>
+</div>
 <a id="ad24f6a83364569a38a02db320b1ffa7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad24f6a83364569a38a02db320b1ffa7a">&#9670;&nbsp;</a></span>SetCustomXML()</h2>
 
@@ -911,8 +1180,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the custom XML for the specified render engine. This XML should have the following format:</p>
-<p>&lt;parameters&gt; &lt;param-name type="type"&gt;&lt;/param-name&gt; ... &lt;/parameters&gt;</p>
-<p>Therefore 'custom_param_node' must have a tag name of "&lt;parameters&gt;". The easiest way to produce such XML is by using <a class="el" href="class_o_n___x_m_l_parameters.html">ON_XMLParameters</a>. </p>
+<p>&lt;parameters&gt; &lt;param-name type="type"&gt;VALUE_HERE&lt;/param-name&gt; ... &lt;/parameters&gt;</p>
+<p>Therefore 'custom_param_node' must have a tag name of "&lt;parameters&gt;". The easiest way to produce such XML is by using <a class="el" href="class_o_n___x_m_l_parameters.html">ON_XMLParameters</a>. NOTE: Do NOT use <a class="el" href="class_o_n___x_m_l_parameters_v8.html" title="&lt; Only used for Render Content.">ON_XMLParametersV8</a> for this XML. </p>
 
 </div>
 </div>
@@ -965,8 +1234,28 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7abc811a308ff7206727aaf26a24fe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7abc811a308ff7206727aaf26a24fe9">&#9670;&nbsp;</a></span>SetIsVisible()</h2>
+<a id="a3665c38f4c88279de3096abee35d934e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3665c38f4c88279de3096abee35d934e">&#9670;&nbsp;</a></span>SetIsTemporary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Decal::SetIsTemporary </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether or not the decal is temporary. </p>
+
+</div>
+</div>
+<a id="a7d193ec67468440432e99c623226fe72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d193ec67468440432e99c623226fe72">&#9670;&nbsp;</a></span>SetIsVisible()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -975,7 +1264,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void ON_Decal::SetIsVisible </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1084,14 +1373,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a43fe05b5f003d093c3883774bbdd3a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43fe05b5f003d093c3883774bbdd3a3a">&#9670;&nbsp;</a></span>SetTextureInstanceId()</h2>
+<a id="aec00856c6567d0d165dc9c797df5dae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec00856c6567d0d165dc9c797df5dae7">&#9670;&nbsp;</a></span>SetSavedVectorLengths()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ON_Decal::SetTextureInstanceId </td>
+          <td class="memname">void ON_Decal::SetSavedVectorLengths </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7da960f35cac91b9485316b10100adf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da960f35cac91b9485316b10100adf1">&#9670;&nbsp;</a></span>SetTextureInstanceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> void ON_Decal::SetTextureInstanceId </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1100,7 +1417,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the decal texture's instance id. </p>
+<p>This method is deprecated in favor of <a class="el" href="class_o_n___decal.html#a14d5ef855077a407a07a626d4a111053" title="Sets the decal&#39;s asset instance id. This is the instance id of a material or texture.">SetAssetInstanceId()</a>. </p>
 
 </div>
 </div>
@@ -1235,14 +1552,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c99dfcb5c4f0af11d97604a355d955e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c99dfcb5c4f0af11d97604a355d955e">&#9670;&nbsp;</a></span>TextureInstanceId()</h2>
+<a id="a301f0240edb9c141760b1e5feb0bf57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301f0240edb9c141760b1e5feb0bf57e">&#9670;&nbsp;</a></span>TextureInstanceId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_Decal::TextureInstanceId </td>
+          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#gaa63845128782a6f08b19807e4395f41f">ON_DEPRECATED</a> <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> ON_Decal::TextureInstanceId </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1251,7 +1568,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the decal texture's instance id. </p>
+<p>This method is deprecated in favor of <a class="el" href="class_o_n___decal.html#afb7fc49f5a5e31c926b36191d37e5f6d" title="Returns the decal&#39;s asset instance id. This is the instance id of a material or texture.">AssetInstanceId()</a>. </p>
 
 </div>
 </div>
@@ -1316,7 +1633,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

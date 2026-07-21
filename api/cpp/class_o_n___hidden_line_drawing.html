@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abf0a234df21d15bdb2a332ffda8f77ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930bb28c467d8b5bbe9e9229e3fdbb7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___hidden_line_drawing.html#a930bb28c467d8b5bbe9e9229e3fdbb7c">AddObject</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> &gt; shr_geom_ptr, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> uuid, ON__UINT_PTR m_id)</td></tr>
 <tr class="separator:a930bb28c467d8b5bbe9e9229e3fdbb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab245ec390af350c43dd597570154fdf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___hidden_line_drawing.html#aab245ec390af350c43dd597570154fdf">AddObjectAndPlanes</a> (const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *geom, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> uuid, ON__UINT_PTR id, bool occluding_sections, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; ON__UINT_PTR &gt; &amp;active_clip_ids)</td></tr>
+<tr class="separator:aab245ec390af350c43dd597570154fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e98c7c6d9493ed8f3da85ec5318d76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___hidden_line_drawing.html#a16e98c7c6d9493ed8f3da85ec5318d76">AddObjectAndPlanes</a> (std::shared_ptr&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> &gt; shr_geom_ptr, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> uuid, ON__UINT_PTR id, bool occluding_sections, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; ON__UINT_PTR &gt; &amp;active_clip_ids)</td></tr>
+<tr class="separator:a16e98c7c6d9493ed8f3da85ec5318d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0809e75e6dda56e83469e8b7988756e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___hidden_line_drawing.html#a0809e75e6dda56e83469e8b7988756e7">CameraDirection</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> wp) const</td></tr>
 <tr class="memdesc:a0809e75e6dda56e83469e8b7988756e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">world camera direction ( increasing toward scene) at a world point  <a href="class_o_n___hidden_line_drawing.html#a0809e75e6dda56e83469e8b7988756e7">More...</a><br /></td></tr>
 <tr class="separator:a0809e75e6dda56e83469e8b7988756e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,7 +400,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Step 3. Optionally, Specify clipping planes or other options. </p>
 <p>Description: Specify clipping planes that are active for this view. Parameters: clip -[in] clipping plane or planes clip_id -[in] This is an optional parameter the user can use to identify the clipping plane. Returns: true if clipping planes have been set. Remarks: A point x in model space is visible if p(x)&lt;=0 for each clipping plane p.</p>
-<p>Only allowed before calling Draw. The clipping planes are append to the ON_HiddenLineDrawing::m_clipping_plane array. For perspective views <a class="el" href="class_o_n___hidden_line_drawing.html#a80c24a88a860de614e24f19c250be37e" title="Step II. Specify viewport.">SetViewport()</a> will add PerspectiveViewClipCount many clipping planes from the viewport, and the the first clipping plane is the near plane of the view frustum. </p>
+<p>Only allowed before calling Draw. The clipping planes are append to the ON_HiddenLineDrawing::m_clipping_plane array. For perspective views <a class="el" href="class_o_n___hidden_line_drawing.html#a80c24a88a860de614e24f19c250be37e" title="Step II. Specify viewport.">SetViewport()</a> will add PerspectiveViewClipCount many clipping planes from the viewport, and the first clipping plane is the near plane of the view frustum. </p>
 
 </div>
 </div>
@@ -474,6 +478,111 @@ Static Public Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">ON__UINT_PTR&#160;</td>
           <td class="paramname"><em>m_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab245ec390af350c43dd597570154fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab245ec390af350c43dd597570154fdf">&#9670;&nbsp;</a></span>AddObjectAndPlanes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_HiddenLineDrawing::AddObjectAndPlanes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *&#160;</td>
+          <td class="paramname"><em>geom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ON__UINT_PTR&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>occluding_sections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; ON__UINT_PTR &gt; &amp;&#160;</td>
+          <td class="paramname"><em>active_clip_ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Add geometry with per-object occlusion and selective clipping settings. Equivalent to HiddenLineDrawingParameters::AddGeometryAndPlanes in RhinoCommon. Parameters: geom / shr_geom_ptr - [in] geometry to be drawn. Returns -1 if the type is not supported. xform - [in] If not null, places geom in world coordinates. The transform is copied. uuid / id - [in] Copied into the <a class="el" href="class_o_n___h_l_d___object.html">ON_HLD_Object</a> for caller cross-referencing. occluding_sections - [in] If true, section cuts of this object occlude other geometry. active_clip_ids - [in] Clip IDs (previously registered via AddClippingPlane) that are active for this object. When non-empty, selective clipping is enabled so only these planes clip this object. Returns: Index into m_object of the new <a class="el" href="class_o_n___h_l_d___object.html">ON_HLD_Object</a>, or -1 if the geometry type is not supported. </p>
+
+</div>
+</div>
+<a id="a16e98c7c6d9493ed8f3da85ec5318d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e98c7c6d9493ed8f3da85ec5318d76">&#9670;&nbsp;</a></span>AddObjectAndPlanes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_HiddenLineDrawing::AddObjectAndPlanes </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> &gt;&#160;</td>
+          <td class="paramname"><em>shr_geom_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> *&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ON__UINT_PTR&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>occluding_sections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; ON__UINT_PTR &gt; &amp;&#160;</td>
+          <td class="paramname"><em>active_clip_ids</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -575,7 +684,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Step V. Draw objects hidden line drawings. </p>
-<p>Description: Makes a hidden line drawing for the the objects in m_obj Parameters: bAllowUseMP -[in] If true multiprocessors may be used to speed up the calculation. progress - [in] If not null this class can be used to see how much progress has been made while the computing. terminator - [in] Optional object to allow caller to terminate computation. Returns: true when drawing completes without error Remarks: If this <a class="el" href="class_o_n___hidden_line_drawing.html">ON_HiddenLineDrawing</a> already contains a drawing of objects the result includes a composite drawing of old and new objects. However for best performance add all the objects then call Draw only once. </p>
+<p>Description: Makes a hidden line drawing for the objects in m_obj Parameters: bAllowUseMP -[in] If true multiprocessors may be used to speed up the calculation. progress - [in] If not null this class can be used to see how much progress has been made while the computing. terminator - [in] Optional object to allow caller to terminate computation. Returns: true when drawing completes without error Remarks: If this <a class="el" href="class_o_n___hidden_line_drawing.html">ON_HiddenLineDrawing</a> already contains a drawing of objects the result includes a composite drawing of old and new objects. However for best performance add all the objects then call Draw only once. </p>
 
 </div>
 </div>
@@ -659,7 +768,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Enable/Disable the Selective Clipping option for an object Parameters: obj - an object that been added to the drawing active_clip_ids - list ( possibly empty) of active clip_ids for this object. Returns true if the the list is a subset of those added with AddClippingPlane methods </p>
+<p>Description: Enable/Disable the Selective Clipping option for an object Parameters: obj - an object that been added to the drawing active_clip_ids - list ( possibly empty) of active clip_ids for this object. Returns true if the list is a subset of those added with AddClippingPlane methods </p>
 
 </div>
 </div>
@@ -912,7 +1021,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If OtherHLD and *this are hidden line drawings of different objects with the same context they can be be merged into a single hidden line drawing. Parameters: OtherHLD - [in] terminator -[in] Optional object to allow caller to terminate computation. Returns: true if *this is the merger of the two input hidden line drawings. Remarks: Hidden line drawings may be merged only if they have the same tolerances, viewports, clipping planes and options. When true is returned Other is left as an empty hidden line drawing. </p>
+<p>Description: If OtherHLD and *this are hidden line drawings of different objects with the same context they can be merged into a single hidden line drawing. Parameters: OtherHLD - [in] terminator -[in] Optional object to allow caller to terminate computation. Returns: true if *this is the merger of the two input hidden line drawings. Remarks: Hidden line drawings may be merged only if they have the same tolerances, viewports, clipping planes and options. When true is returned Other is left as an empty hidden line drawing. </p>
 
 </div>
 </div>
@@ -1213,7 +1322,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

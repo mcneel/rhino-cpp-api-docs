@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87a3893a4ae6599478646f1d9863b2ef"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#a87a3893a4ae6599478646f1d9863b2ef">EVF</a> (const wchar_t *wszFunc, void *pv)=0</td></tr>
 <tr class="memdesc:a87a3893a4ae6599478646f1d9863b2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emergency virtual function for future expansion  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#a87a3893a4ae6599478646f1d9863b2ef">More...</a><br /></td></tr>
 <tr class="separator:a87a3893a4ae6599478646f1d9863b2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cdc80e278087e49b7a96343b2d0187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#af6cdc80e278087e49b7a96343b2d0187">lock</a> (void) const</td></tr>
+<tr class="separator:af6cdc80e278087e49b7a96343b2d0187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5991b266e04b5f9cee795842c8659c9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker_1_1_i_record.html">IRecord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#ae5991b266e04b5f9cee795842c8659c9">Record</a> (const <a class="el" href="namespace_rh_rdk_1_1_custom_render_meshes.html#a8a90c9c5120a1bf765cd01ac1e42bb8a">ObjectId</a> &amp;id) const =0</td></tr>
 <tr class="memdesc:ae5991b266e04b5f9cee795842c8659c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the record for a specific ObjectId  <a href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#ae5991b266e04b5f9cee795842c8659c9">More...</a><br /></td></tr>
 <tr class="separator:ae5991b266e04b5f9cee795842c8659c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a9c0099316a0e634e4b251a26acfcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6920fc10fcf17d979d60965ef0a68b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#a6920fc10fcf17d979d60965ef0a68b04">SetEmpty</a> (const <a class="el" href="namespace_rh_rdk_1_1_custom_render_meshes.html#a8a90c9c5120a1bf765cd01ac1e42bb8a">ObjectId</a> &amp;id, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> hash, <a class="el" href="group__open_n_u_r_b_s.html#ga7bc5f55fc24151607737806fdb29668d">ON__UINT32</a> flags)</td></tr>
 <tr class="separator:a6920fc10fcf17d979d60965ef0a68b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39f6fb5f974a426d1a1926eee057625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html#af39f6fb5f974a426d1a1926eee057625">unlock</a> (void) const</td></tr>
+<tr class="separator:af39f6fb5f974a426d1a1926eee057625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The per-document primitive cache for MeshProviders. <a class="el" href="class_rh_rdk_1_1_custom_render_meshes_1_1_i_render_meshes_1_1_provider_tracking_1_1_i_tracker.html" title="The per-document primitive cache for MeshProviders. ITracker is basically a hash map of shared_ptr&lt;co...">ITracker</a> is basically a hash map of shared_ptr&lt;const IRenderMeshes&gt; with the key being the ObjectId. </p>
@@ -178,6 +182,24 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Private data in the form of a void*</dd></dl>
+
+</div>
+</div>
+<a id="af6cdc80e278087e49b7a96343b2d0187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cdc80e278087e49b7a96343b2d0187">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RhRdk::CustomRenderMeshes::IRenderMeshes::ProviderTracking::ITracker::lock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -302,10 +324,28 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af39f6fb5f974a426d1a1926eee057625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39f6fb5f974a426d1a1926eee057625">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RhRdk::CustomRenderMeshes::IRenderMeshes::ProviderTracking::ITracker::unlock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

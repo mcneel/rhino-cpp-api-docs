@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a71f7a351f9f44f7bbbff479fe8a49d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9acb060ba0067db18caff5706253d0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#aa9acb060ba0067db18caff5706253d0a">BrepForm</a> (<a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep=nullptr) const override</td></tr>
 <tr class="separator:aa9acb060ba0067db18caff5706253d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb35cfc6bacbc83d1b4a33846b7e186c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#afb35cfc6bacbc83d1b4a33846b7e186c">CanShrinkSurface</a> (const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> &amp;face, <a class="el" href="class_o_n___interval.html">ON_Interval</a> outer[2], <a class="el" href="class_o_n___interval.html">ON_Interval</a> srf[2], int DisableSide=0) const</td></tr>
+<tr class="separator:afb35cfc6bacbc83d1b4a33846b7e186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1330b05d11517c9e5e35d1f4b8d65650"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a1330b05d11517c9e5e35d1f4b8d65650">ChangeVertex</a> (int old_vi, int new_vi, bool bClearTolerances)</td></tr>
 <tr class="separator:a1330b05d11517c9e5e35d1f4b8d65650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86a934cef03382109c48e88c3394bc8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a86a934cef03382109c48e88c3394bc8b">Clear_edge_user_i</a> () const</td></tr>
@@ -337,6 +339,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b4b414f6ca947aad28317b5f2086c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b3331e092f40f3ad3b88701577d6f1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a2b3331e092f40f3ad3b88701577d6f1f">IsDuplicate</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;other, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
 <tr class="separator:a2b3331e092f40f3ad3b88701577d6f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b7d3943dabf398e1b8380a18903f37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#af9b7d3943dabf398e1b8380a18903f37">IsExtrusion</a> (<a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> *extrusion=nullptr, double tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a>) const</td></tr>
+<tr class="separator:af9b7d3943dabf398e1b8380a18903f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4831d318a5467d7a4dc1c616ccb22e2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a4831d318a5467d7a4dc1c616ccb22e2e">IsManifold</a> (bool *pbIsOriented=nullptr, bool *pbHasBoundary=nullptr) const</td></tr>
 <tr class="separator:a4831d318a5467d7a4dc1c616ccb22e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fd00368c04f6286106f22048a57f73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#ab0fd00368c04f6286106f22048a57f73">IsMorphable</a> () const override</td></tr>
@@ -419,10 +423,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a404c108a2d209572cf9a369fbb7fdc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae013b93d9d59ee0d61e4152e86cc90c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_trim.html">ON_BrepTrim</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#ae013b93d9d59ee0d61e4152e86cc90c0">NewCurveOnFace</a> (<a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> &amp;face, <a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> &amp;edge, bool bRev3d=false, int c2i=-1)</td></tr>
 <tr class="separator:ae013b93d9d59ee0d61e4152e86cc90c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc1ca09f247e2d4bf24c59683f9d0121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#afc1ca09f247e2d4bf24c59683f9d0121">NewEdge</a> (int=-1)</td></tr>
-<tr class="separator:afc1ca09f247e2d4bf24c59683f9d0121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a10e760f51bf567959a8e7013d72027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a8a10e760f51bf567959a8e7013d72027">NewEdge</a> (<a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;, <a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;, int=-1, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *=nullptr, double edge_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>)</td></tr>
-<tr class="separator:a8a10e760f51bf567959a8e7013d72027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdb8cdd15a7e627a35851e6688ee3b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a3bdb8cdd15a7e627a35851e6688ee3b9">NewEdge</a> (int c3i=-1)</td></tr>
+<tr class="separator:a3bdb8cdd15a7e627a35851e6688ee3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b28c7f1242a414fab74618bb10fc7ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a8b28c7f1242a414fab74618bb10fc7ab">NewEdge</a> (<a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;v0, <a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;v1, int c3i=-1, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *edomain=nullptr, double edge_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga586b2913cf0137fe229a3097c2a119ff">ON_UNSET_VALUE</a>)</td></tr>
+<tr class="separator:a8b28c7f1242a414fab74618bb10fc7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cee299eea267f1d3bef88b204dcd11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a44cee299eea267f1d3bef88b204dcd11">NewFace</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> &amp;surface)</td></tr>
 <tr class="separator:a44cee299eea267f1d3bef88b204dcd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051248257216c172a0b04b1c811996ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___brep.html#a051248257216c172a0b04b1c811996ce">NewFace</a> (int si=-1)</td></tr>
@@ -720,6 +724,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54a891ae2cb2a25008a7a39cb19dfcea inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a78b4ecb2eb36641e1ee6b4fc6129606e">MoveUserData</a> (<a class="el" href="class_o_n___object.html">ON_Object</a> &amp;source_object, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> source_userdata_item_id, <a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">ON_Object::UserDataConflictResolution</a> userdata_conflict_resolution, bool bDeleteAllSourceItems)</td></tr>
 <tr class="separator:a78b4ecb2eb36641e1ee6b4fc6129606e inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a> () const</td></tr>
+<tr class="memdesc:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">More...</a><br /></td></tr>
+<tr class="separator:a779b8be2c62b422c740fc1ba4bfeb54d inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___object.html">ON_Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#aba6166c9aecef42639e684a2a3fda223">operator=</a> (const <a class="el" href="class_o_n___object.html">ON_Object</a> &amp;)</td></tr>
 <tr class="separator:aba6166c9aecef42639e684a2a3fda223 inherit pub_methods_class_o_n___object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b61cafc0024ecb7a4bd22da2718680 inherit pub_methods_class_o_n___object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a88b61cafc0024ecb7a4bd22da2718680">PurgeUserData</a> ()</td></tr>
@@ -1200,6 +1207,47 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afb35cfc6bacbc83d1b4a33846b7e186c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb35cfc6bacbc83d1b4a33846b7e186c">&#9670;&nbsp;</a></span>CanShrinkSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Brep::CanShrinkSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> &amp;&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>outer</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a>&#160;</td>
+          <td class="paramname"><em>srf</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>DisableSide</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sometimes the <a class="el" href="class_o_n___surface.html">ON_Surface</a> used by a face extends far beyond the face's outer boundary. CanShrinkSurface determines if portions of the surface that extend beyond the face's outer boundary loop can be removed Parameters: face - [in] face to test and whose surface should be shrunk. outer - [out] outer loop intervals srf - [out] surface intervals DisableSide - [in] This is a bit field. A set bit indicates not to shrink the surface on a given side. The default of 0 enables shrinking on all four sides. @table value meaning 0x0001 Don't shrink on the west side of domain. 0x0002 Don't shrink on the south side of domain. 0x0004 Don't shrink on the east side of domain. 0x0008 Don't shrink on the north side of domain. Returns: @untitled table true successful false failure See Also: <a class="el" href="class_o_n___brep.html#afa839da194fbe9be044f3702febeac7c">ON_Brep::ShrinkSurfaces</a> </p>
+
+</div>
+</div>
 <a id="a1330b05d11517c9e5e35d1f4b8d65650"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1330b05d11517c9e5e35d1f4b8d65650">&#9670;&nbsp;</a></span>ChangeVertex()</h2>
 
@@ -1615,7 +1663,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Expert user tool to collapse a "short" edge to a vertex. The edge is removed and the topology is repaired so that everything that used to connect to the edge connects the specified vertex. Parameters: edge_index - [in] index of edge to remove bCloseTrimGap - [in] if true and the removal of the edge creates a gap in the parameter space trimming loop, then the 2d trim curves will be adjusted to close the gap. vertex_index - [in] if &gt;= 0, this the edge is collapsed to this vertex. Otherwise a vertex is automatically selected or created. Returns: True if edge was successfully collapsed. Remarks: After you finish cleaning up the brep, you need to call <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">ON_Brep::Compact()</a> to remove unused edge, trim, and vertex information from the brep's m_E[], m_V[], m_T[], m_C2[], and m_C3[] arrays. </p>
+<p>Description: Expert user tool to collapse a "short" edge to a vertex. The edge is removed and the topology is repaired so that everything that used to connect to the edge connects the specified vertex. Parameters: edge_index - [in] index of edge to remove bCloseTrimGap - [in] if true and the removal of the edge creates a gap in the parameter space trimming loop, then the 2d trim curves will be adjusted to close the gap. vertex_index - [in] if &gt;= 0, this the edge is collapsed to this vertex. Otherwise a vertex is automatically selected or created. Returns: True if edge was successfully collapsed. Remarks: After you finish cleaning up the brep, you need to call <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">ON_Brep::Compact()</a> to remove unused edge, trim, and vertex information from the brep's m_E[], m_V[], m_T[], m_C2[], and m_C3[] arrays. Also, you need to call ON_Brep::SetTolerancesBoxesAndFlags(true,true) to redo the vertex tolerances. These get set to ON_UNSET_VALUE after CollapseEdge. </p>
 
 </div>
 </div>
@@ -2470,7 +2518,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Duplicate a single brep face. Parameters: face_index - [in] index of face to duplicate bDuplicateMeshes - [in] if true, any attached meshes are duplicated Returns: Single face brep. Remarks: The m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values of the returned brep are are set to the indices of the objects they duplicate. See Also: <a class="el" href="class_o_n___brep.html#acc2433358c597861e9d29cc3501b59fd" title="pass true to delete edges and vertices used only by face">ON_Brep::DeleteFace</a>, <a class="el" href="class_o_n___brep.html#a93d598d882f5943153d6ba1897a4cfde">ON_Brep::ExtractFace</a> </p>
+<p>Description: Duplicate a single brep face. Parameters: face_index - [in] index of face to duplicate bDuplicateMeshes - [in] if true, any attached meshes are duplicated Returns: Single face brep. Remarks: The m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values of the returned brep are set to the indices of the objects they duplicate. See Also: <a class="el" href="class_o_n___brep.html#acc2433358c597861e9d29cc3501b59fd" title="pass true to delete edges and vertices used only by face">ON_Brep::DeleteFace</a>, <a class="el" href="class_o_n___brep.html#a93d598d882f5943153d6ba1897a4cfde">ON_Brep::ExtractFace</a> </p>
 
 </div>
 </div>
@@ -2505,7 +2553,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Duplicate a a subset of a brep Parameters: face_count - [in] length of face_index[] array face_index - [in] array of face indices bDuplicateMeshes - [in] if true, any attached meshes are duplicated Returns: A brep made by duplicating the faces listed in the face_index[] array. Remarks: The m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values of the returned brep are are set to the indices of the objects they duplicate. See Also: <a class="el" href="class_o_n___brep.html#a4a3ceeae3a8b1351193c9c2506a9f449">ON_Brep::DuplicateFace</a> </p>
+<p>Description: Duplicate a subset of a brep Parameters: face_count - [in] length of face_index[] array face_index - [in] array of face indices bDuplicateMeshes - [in] if true, any attached meshes are duplicated Returns: A brep made by duplicating the faces listed in the face_index[] array. Remarks: The m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values of the returned brep are set to the indices of the objects they duplicate. See Also: <a class="el" href="class_o_n___brep.html#a4a3ceeae3a8b1351193c9c2506a9f449">ON_Brep::DuplicateFace</a> </p>
 
 </div>
 </div>
@@ -3633,6 +3681,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af9b7d3943dabf398e1b8380a18903f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b7d3943dabf398e1b8380a18903f37">&#9670;&nbsp;</a></span>IsExtrusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Brep::IsExtrusion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___extrusion.html">ON_Extrusion</a> *&#160;</td>
+          <td class="paramname"><em>extrusion</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code><a class="el" href="group__open_n_u_r_b_s.html#ga384d9713cff6f46d203437be118aab80">ON_ZERO_TOLERANCE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Determine if the surface is an extrusion. Parameters: extrusion - [out] if not nullptr and true is returned, then the extrusion definition is returned. tolerance - [in] tolerance to use when checking Returns: True if the surface is an extrusion. </p>
+
+</div>
+</div>
 <a id="a4831d318a5467d7a4dc1c616ccb22e2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4831d318a5467d7a4dc1c616ccb22e2e">&#9670;&nbsp;</a></span>IsManifold()</h2>
 
@@ -4718,7 +4795,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values values to distinguish connected components. Parameters: Returns: number of connected components Remarks: For each face in the i-th component, sets m_face_user.i to i&gt;0. Chases through trim lists of face edges to find adjacent faces. Numbering starts at 1. Does NOT check for vertex-vertex connections. See Also: <a class="el" href="class_o_n___brep.html#a19fe78d07a5487e17f06169b23143245">ON_Brep::GetConnectedComponents</a> </p>
+<p>Description: Set m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values to distinguish connected components. Parameters: Returns: number of connected components Remarks: For each face in the i-th component, sets m_face_user.i to i&gt;0. Chases through trim lists of face edges to find adjacent faces. Numbering starts at 1. Does NOT check for vertex-vertex connections. See Also: <a class="el" href="class_o_n___brep.html#a19fe78d07a5487e17f06169b23143245">ON_Brep::GetConnectedComponents</a> </p>
 
 </div>
 </div>
@@ -4772,7 +4849,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values values to distinguish connected components. Parameters: angle_tol - [in] to determine if an edge is tangent. In radians. Returns: number of connected components Remarks: For each face in the i-th component, sets m_face_user.i to i&gt;0. Chases through trim lists of face edges to find adjacent faces. Numbering starts at 1. Does NOT check for vertex-vertex connections. See Also: <a class="el" href="class_o_n___brep.html#a19fe78d07a5487e17f06169b23143245">ON_Brep::GetConnectedComponents</a> </p>
+<p>Description: Set m_vertex_user.i, m_edge_user.i, m_face_user.i, m_loop_user.i, and m_trim_user.i values to distinguish connected components. Parameters: angle_tol - [in] to determine if an edge is tangent. In radians. Returns: number of connected components Remarks: For each face in the i-th component, sets m_face_user.i to i&gt;0. Chases through trim lists of face edges to find adjacent faces. Numbering starts at 1. Does NOT check for vertex-vertex connections. See Also: <a class="el" href="class_o_n___brep.html#a19fe78d07a5487e17f06169b23143245">ON_Brep::GetConnectedComponents</a> </p>
 
 </div>
 </div>
@@ -4912,7 +4989,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="class_o_n___brep.html#af9053adc75275f2784a559120891093e">LoopDirection()</a> examines the 2d trimming curve geometry that defines the loop and returns</p>
-<p>@untitled table +1 the loop is a counter-clockwise loop. -1 the loop is a clockwise loop. 0 the loop is not a continuous closed loop. /// Since <a class="el" href="class_o_n___brep.html#af9053adc75275f2784a559120891093e">LoopDirection()</a> calculates its result based on the 2d trimming curve geometry, it can be use to set <a class="el" href="class_o_n___brep_loop.html#afc692f198b3948808611cb0011353cfe">ON_BrepLoop::m_type</a> to outer/inner when translating from data definition where this distinction is murky. </p>
+<p>@untitled table +1 the loop is a counter-clockwise loop. -1 the loop is a clockwise loop. 0 the loop is not a continuous closed loop.</p>
+<p>Since <a class="el" href="class_o_n___brep.html#af9053adc75275f2784a559120891093e">LoopDirection()</a> calculates its result based on the 2d trimming curve geometry, it can be use to set <a class="el" href="class_o_n___brep_loop.html#afc692f198b3948808611cb0011353cfe">ON_BrepLoop::m_type</a> to outer/inner when translating from data definition where this distinction is murky. </p>
 
 </div>
 </div>
@@ -5351,8 +5429,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="afc1ca09f247e2d4bf24c59683f9d0121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc1ca09f247e2d4bf24c59683f9d0121">&#9670;&nbsp;</a></span>NewEdge() <span class="overload">[1/2]</span></h2>
+<a id="a3bdb8cdd15a7e627a35851e6688ee3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdb8cdd15a7e627a35851e6688ee3b9">&#9670;&nbsp;</a></span>NewEdge() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5361,16 +5439,22 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a>&amp; ON_Brep::NewEdge </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"> = <code>-1</code></td><td>)</td>
+          <td class="paramname"><em>c3i</em> = <code>-1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c3i</td><td>3d curve index </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a8a10e760f51bf567959a8e7013d72027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a10e760f51bf567959a8e7013d72027">&#9670;&nbsp;</a></span>NewEdge() <span class="overload">[2/2]</span></h2>
+<a id="a8b28c7f1242a414fab74618bb10fc7ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b28c7f1242a414fab74618bb10fc7ab">&#9670;&nbsp;</a></span>NewEdge() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5379,25 +5463,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="class_o_n___brep_edge.html">ON_BrepEdge</a>&amp; ON_Brep::NewEdge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>v0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_o_n___brep_vertex.html">ON_BrepVertex</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"> = <code>-1</code>, </td>
+          <td class="paramname"><em>c3i</em> = <code>-1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *&#160;</td>
-          <td class="paramname"> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>edomain</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -5412,6 +5496,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v0</td><td>start vertex </td></tr>
+    <tr><td class="paramname">v1</td><td>end vertex </td></tr>
+    <tr><td class="paramname">c3i</td><td>3d curve index </td></tr>
+    <tr><td class="paramname">edomain</td><td>sub_domain </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -5639,7 +5732,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Add a planar trimming loop to a planar face. Parameters: face_index - [in] index of planar face. The underlying surface must be an <a class="el" href="class_o_n___plane_surface.html">ON_PlaneSurface</a>. loop_type - [in] type of loop to add. If loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a9e4d15b324e3dbe4a659fc0bd22feae2">ON_BrepLoop::unknown</a>, then the loop direction is tested and the the new loops type will be set to <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a3327fa96da8f4d8da8d2e63a3d9735f3" title="2d loop curves form a simple closed curve with a counterclockwise orientation">ON_BrepLoop::outer</a> or <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a6b6e6c91f5d79d533e23b8c9e9fa0bd7" title="2d loop curves form a simple closed curve with a clockwise orientation">ON_BrepLoop::inner</a>. If the loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a3327fa96da8f4d8da8d2e63a3d9735f3" title="2d loop curves form a simple closed curve with a counterclockwise orientation">ON_BrepLoop::outer</a>, then the direction of the new loop is tested and flipped if it is clockwise. If the loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a6b6e6c91f5d79d533e23b8c9e9fa0bd7" title="2d loop curves form a simple closed curve with a clockwise orientation">ON_BrepLoop::inner</a>, then the direction of the new loop is tested and flipped if it is counter-clockwise. boundary - [in] a list of 3d curves that form a simple (no self intersections) closed curve. These curves define the 3d edge geometry and should be near the planar surface. bDuplicateCurves - [in] If true, then duplicates of the curves in the boundary array are added to the brep. If false, the curves in the boundary array are added to the brep and will be deleted by <a class="el" href="class_o_n___brep.html#a9876bf5e07c176643ddcf6e300ed3410">ON_Brep::~ON_Brep</a>. Returns: true if successful. The new loop will be brep.m_L.Last(). </p>
+<p>Description: Add a planar trimming loop to a planar face. Parameters: face_index - [in] index of planar face. The underlying surface must be an <a class="el" href="class_o_n___plane_surface.html">ON_PlaneSurface</a>. loop_type - [in] type of loop to add. If loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a9e4d15b324e3dbe4a659fc0bd22feae2">ON_BrepLoop::unknown</a>, then the loop direction is tested and the new loops type will be set to <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a3327fa96da8f4d8da8d2e63a3d9735f3" title="2d loop curves form a simple closed curve with a counterclockwise orientation">ON_BrepLoop::outer</a> or <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a6b6e6c91f5d79d533e23b8c9e9fa0bd7" title="2d loop curves form a simple closed curve with a clockwise orientation">ON_BrepLoop::inner</a>. If the loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a3327fa96da8f4d8da8d2e63a3d9735f3" title="2d loop curves form a simple closed curve with a counterclockwise orientation">ON_BrepLoop::outer</a>, then the direction of the new loop is tested and flipped if it is clockwise. If the loop_type is <a class="el" href="class_o_n___brep_loop.html#a6d110ea16437f324a14cc27db4ed0605a6b6e6c91f5d79d533e23b8c9e9fa0bd7" title="2d loop curves form a simple closed curve with a clockwise orientation">ON_BrepLoop::inner</a>, then the direction of the new loop is tested and flipped if it is counter-clockwise. boundary - [in] a list of 3d curves that form a simple (no self intersections) closed curve. These curves define the 3d edge geometry and should be near the planar surface. bDuplicateCurves - [in] If true, then duplicates of the curves in the boundary array are added to the brep. If false, the curves in the boundary array are added to the brep and will be deleted by <a class="el" href="class_o_n___brep.html#a9876bf5e07c176643ddcf6e300ed3410">ON_Brep::~ON_Brep</a>. Returns: true if successful. The new loop will be brep.m_L.Last(). </p>
 
 </div>
 </div>
@@ -6592,7 +6685,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Rebuild the edges used by a face so they lie on the surface. Parameters: face - [in] face whose surface should be changed tolerance - [in] tolerance for fitting 3d edge curves bRebuildSharedEdges - [in] if false and and edge is used by this face and a neighbor, then the edge will be skipped. bRebuildVertices - [in] if true, vertex locations are updated to lie on the surface. See Also: <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges</a> </p>
+<p>Description: Rebuild the edges used by a face so they lie on the surface. Parameters: face - [in] face whose surface should be changed tolerance - [in] tolerance for fitting 3d edge curves bRebuildSharedEdges - [in] if false and edge is used by this face and a neighbor, then the edge will be skipped. bRebuildVertices - [in] if true, vertex locations are updated to lie on the surface. See Also: <a class="el" href="class_o_n___brep.html#a72847d02c4ac72d70444029102496237">ON_Brep::RebuildEdges</a> </p>
 
 </div>
 </div>
@@ -7352,7 +7445,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Set the loop and trim parameter space bounding boxes for every loop and trim in the brep. Parameters: bLazy - [in] if true and trim trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if all the loop and trim parameter space bounding boxes are valid. </p>
+<p>Description: Set the loop and trim parameter space bounding boxes for every loop and trim in the brep. Parameters: bLazy - [in] if true and trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if all the loop and trim parameter space bounding boxes are valid. </p>
 
 </div>
 </div>
@@ -7389,7 +7482,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Set the loop and trim parameter space bounding boxes for every loop and trim in the face Parameters: face - [in] bLazy - [in] if true and trim trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if all the face's loop and trim parameter space bounding boxes are valid. </p>
+<p>Description: Set the loop and trim parameter space bounding boxes for every loop and trim in the face Parameters: face - [in] bLazy - [in] if true and trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if all the face's loop and trim parameter space bounding boxes are valid. </p>
 
 </div>
 </div>
@@ -7426,7 +7519,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Set the loop parameter space bounding box (loop.m_pbox). Parameters: loop - [in] bLazy - [in] if true and loop trim trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if loop ends up with a valid bounding box. </p>
+<p>Description: Set the loop parameter space bounding box (loop.m_pbox). Parameters: loop - [in] bLazy - [in] if true and trim.m_pbox is valid, then that trim.m_pbox is not recalculated. Returns: true if loop ends up with a valid bounding box. </p>
 
 </div>
 </div>
@@ -9084,7 +9177,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Not ideal - used in debugging and testing bool GetLock(); bool GetLockOrReturnFalse(); bool ReturnLock(); In calculations where multiple threads are using a brep and calling functions that may modify content, the calling code can use use <a class="el" href="class_o_n___sleep_lock_guard.html">ON_SleepLockGuard</a> guard(Mutex) or similar techniques to make the calculations thread safe. Because Mutex is a public resource, it must be used with great care to prevent lock contention. </p>
+<p>Not ideal - used in debugging and testing bool GetLock(); bool GetLockOrReturnFalse(); bool ReturnLock(); In calculations where multiple threads are using a brep and calling functions that may modify content, the calling code can use <a class="el" href="class_o_n___sleep_lock_guard.html">ON_SleepLockGuard</a> guard(Mutex) or similar techniques to make the calculations thread safe. Because Mutex is a public resource, it must be used with great care to prevent lock contention. </p>
 
 </div>
 </div>
@@ -9371,14 +9464,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>vertices </p>
-<p>topology (all topology is deleted by <a class="el" href="class_o_n___brep.html#a9876bf5e07c176643ddcf6e300ed3410">~ON_Brep()</a>. Objects can be unreferenced. Use <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">Compact()</a> to to remove unreferenced geometry. </p>
+<p>topology (all topology is deleted by <a class="el" href="class_o_n___brep.html#a9876bf5e07c176643ddcf6e300ed3410">~ON_Brep()</a>. Objects can be unreferenced. Use <a class="el" href="class_o_n___brep.html#ab13e291e708f95d2d52a201d568ae5e2">Compact()</a> to remove unreferenced geometry. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

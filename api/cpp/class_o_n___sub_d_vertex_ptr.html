@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -109,11 +109,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51a92cea03dca680715024f66f461957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7cb523e98711db46ecc318119dad409"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex_ptr.html#ab7cb523e98711db46ecc318119dad409">VertexId</a> () const</td></tr>
 <tr class="separator:ab7cb523e98711db46ecc318119dad409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8b327080358693940097f93e2b77f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga97b7326e722ee6c1b1ec64023ab1a375">ON_SubDVertexTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex_ptr.html#a4f8b327080358693940097f93e2b77f1">VertexTag</a> () const</td></tr>
-<tr class="separator:a4f8b327080358693940097f93e2b77f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af93a40790910fe177b64b1c6a003f7eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex_ptr.html#af93a40790910fe177b64b1c6a003f7eb">CompareVertexId</a> (const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a> *a, const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a> *b)</td></tr>
+<tr class="separator:af93a40790910fe177b64b1c6a003f7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371ae4b2484b7eda9d888e50ba149b45"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex_ptr.html#a371ae4b2484b7eda9d888e50ba149b45">Create</a> (const class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &amp;vertex_component)</td></tr>
 <tr class="separator:a371ae4b2484b7eda9d888e50ba149b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f719556c5826671daa09d12a32199bf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_vertex_ptr.html#a4f719556c5826671daa09d12a32199bf">Create</a> (const class <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *vertex)</td></tr>
@@ -200,6 +200,43 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Clears saved subdivision and limit surface information for this component. Parameters: bClearNeighborhood - [in] If true, all components attached to this component are also cleared. </p>
+
+</div>
+</div>
+<a id="af93a40790910fe177b64b1c6a003f7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93a40790910fe177b64b1c6a003f7eb">&#9670;&nbsp;</a></span>CompareVertexId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_SubDVertexPtr::CompareVertexId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___sub_d_vertex_ptr.html">ON_SubDVertexPtr</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Compares <a class="el" href="class_o_n___sub_d_vertex_ptr.html#ab7cb523e98711db46ecc318119dad409">VertexId()</a>, with similar null rules as <a class="el" href="class_o_n___sub_d_component_ptr.html#a3f4488e385257d13f9fc2515b0ff628d">ON_SubDComponentPtr::CompareComponentId</a>. </p>
 
 </div>
 </div>
@@ -503,24 +540,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f8b327080358693940097f93e2b77f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f8b327080358693940097f93e2b77f1">&#9670;&nbsp;</a></span>VertexTag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__open_n_u_r_b_s.html#ga97b7326e722ee6c1b1ec64023ab1a375">ON_SubDVertexTag</a> ON_SubDVertexPtr::VertexTag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="class_o_n___sub_d_vertex_ptr.html#a46c97c19a35c185152dd126f30b6b266">Vertex()</a> is not nullptr, <a class="el" href="class_o_n___sub_d_vertex_ptr.html#a46c97c19a35c185152dd126f30b6b266">Vertex()</a>-&gt;m_vertex_tag is returned. Otherwise, <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375ac9f88e098f6fe4e4e112eeb05ccb9671">ON_SubDVertexTag::Unset</a> is returned. </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a291a21ae6396a8f4140201bf95e3ddc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a291a21ae6396a8f4140201bf95e3ddc3">&#9670;&nbsp;</a></span>m_ptr</h2>
@@ -562,7 +581,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

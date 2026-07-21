@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -174,14 +174,21 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5ab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5aace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03
+<tr class="memitem:a0089e447c1f74381d8c83c1029e06eb5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5">ModifiedFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a0089e447c1f74381d8c83c1029e06eb5a2113dad0041f8e1a05b836a928c100fd">DeprecatedModifiedFlags</a>
  }</td></tr>
 <tr class="separator:a0089e447c1f74381d8c83c1029e06eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
-<a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<tr class="memitem:a7583e499d46547a2758d03cd2bb254dd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">SavedOrModifiedPointsFlags</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda22a449581e0c51927f0ef2f1f71ee4b6">Modified1Bit</a> = 0x01, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab246ba27cc521960508090a94c740a88">Modified2Bit</a> = 0x02, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaace03d384f0e602ba10baf8ae5bd96b2">ModifiedFlagsMask</a> = 0x03, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dda0f51bde3500ef699c8df11ded628a20a">SubdivisionPointBit</a> = 0x40, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddab9b4553edf282e46f98854756c0fcc33">SurfacePointBit</a> = 0x80, 
+<a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254ddaf8017903412d21cea96ebe81d5220560">CachedPointMask</a> = 0xC0
+<br />
+ }</td></tr>
+<tr class="separator:a7583e499d46547a2758d03cd2bb254dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affe">SavedPointsFlags</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_base.html#a114cee001ebc3ac1d6dc8d79f701affead29aabbfac019261f587b6c3ff16e044">DeprecatedSavedPointsFlags</a>
  }</td></tr>
 <tr class="separator:a114cee001ebc3ac1d6dc8d79f701affe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -218,8 +225,8 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae609568efd09af50564debc87010606d"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#ae609568efd09af50564debc87010606d">m_level</a> = 0U</td></tr>
 <tr class="separator:ae609568efd09af50564debc87010606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5665f98f601c3a89ec1e789b0ef577f3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a5665f98f601c3a89ec1e789b0ef577f3">m_saved_points_flags</a> = 0U</td></tr>
-<tr class="separator:a5665f98f601c3a89ec1e789b0ef577f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0566c8fa8d521bedc83d7bc2cb538976"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0566c8fa8d521bedc83d7bc2cb538976">m_saved_modified_points_flags</a> = 0U</td></tr>
+<tr class="separator:a0566c8fa8d521bedc83d7bc2cb538976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0388f57c2f3b00bd7e19fa22297c942d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">m_saved_subd_point1</a> [3]</td></tr>
 <tr class="memdesc:a0388f57c2f3b00bd7e19fa22297c942d"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetSubdivisionPoint( bUseSavedSubdivisionPoint=true ) can change the value of m_cache_subd_P.  <a href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">More...</a><br /></td></tr>
 <tr class="separator:a0388f57c2f3b00bd7e19fa22297c942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,11 +263,43 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0089e447c1f74381d8c83c1029e06eb5a22a449581e0c51927f0ef2f1f71ee4b6"></a>Modified1Bit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; Modified1Bit), then the component has been modified and cached subdivision information needs to be recalculated. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0089e447c1f74381d8c83c1029e06eb5a2113dad0041f8e1a05b836a928c100fd"></a>DeprecatedModifiedFlags&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated:</a></b></dt><dd>Replace ON_SubDComponentBase::ON_ModifiedFlags with <a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">ON_SubDComponentBase::SavedOrModifiedPointsFlags</a> = 0xFF </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a0089e447c1f74381d8c83c1029e06eb5ab246ba27cc521960508090a94c740a88"></a>Modified2Bit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; Modified2Bit), then the component is adjacent to a modified component and cached subdivision information needs to be recalculated. </p>
+</table>
+
+</div>
+</div>
+<a id="a7583e499d46547a2758d03cd2bb254dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7583e499d46547a2758d03cd2bb254dd">&#9670;&nbsp;</a></span>SavedOrModifiedPointsFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">ON_SubDComponentBase::SavedOrModifiedPointsFlags</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254dda22a449581e0c51927f0ef2f1f71ee4b6"></a>Modified1Bit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_modified_points_flags &amp; Modified1Bit), then the component has been modified and cached subdivision information needs to be recalculated. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0089e447c1f74381d8c83c1029e06eb5aace03d384f0e602ba10baf8ae5bd96b2"></a>ModifiedFlagsMask&#160;</td><td class="fielddoc"><p>ModifiedFlagsMask = Modified1Bit | Modified2Bit if ( 0 != (m_saved_points_flags &amp; ModifiedFlagsMask), then any cached subdivision information on that component needs to be recalculated. </p>
+<tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254ddab246ba27cc521960508090a94c740a88"></a>Modified2Bit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_modified_points_flags &amp; Modified2Bit), then the component is adjacent to a modified component and cached subdivision information needs to be recalculated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254ddaace03d384f0e602ba10baf8ae5bd96b2"></a>ModifiedFlagsMask&#160;</td><td class="fielddoc"><p>ModifiedFlagsMask = Modified1Bit | Modified2Bit if ( 0 != (m_saved_modified_points_flags &amp; ModifiedFlagsMask), then any cached subdivision information on that component needs to be recalculated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254dda0f51bde3500ef699c8df11ded628a20a"></a>SubdivisionPointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_modified_points_flags &amp; SubdivisionPointBit), then m_cache_subd_P is set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254ddab9b4553edf282e46f98854756c0fcc33"></a>SurfacePointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_modified_points_flags &amp; SurfacePointBit), then ON_SubDVertex.m_limit* values are set. <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a>: Set means one or more sector limit surface points are saved in ON_SubDVertex.m_limit_point. <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a>: Set means the limit surface NURBS curve control points are cached. <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>: Set means limit surface mesh fragments are saved in ON_SubDFace.m_surface_mesh_fragments. Unset means any information in the fields identified above is invalid and must be recalculated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7583e499d46547a2758d03cd2bb254ddaf8017903412d21cea96ebe81d5220560"></a>CachedPointMask&#160;</td><td class="fielddoc"><p>SubdivisionPointBit | SurfacePointBit. </p>
 </td></tr>
 </table>
 
@@ -286,11 +325,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affea0f51bde3500ef699c8df11ded628a20a"></a>SubdivisionPointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SubdivisionPointBit), then m_cache_subd_P is set. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affeab9b4553edf282e46f98854756c0fcc33"></a>SurfacePointBit&#160;</td><td class="fielddoc"><p>if ( 0 != (m_saved_points_flags &amp; SurfacePointBit), then ON_SubDVertex.m_limit* values are set. <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a>: Set means one or more sector limit surface points are saved in ON_SubDVertex.m_limit_point. <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a>: Set means the limit surface NURBS curve control points are cached. <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a>: Set means limit surface mesh fragments are saved in ON_SubDFace.m_surface_mesh_fragments. Unset means any information in the fields identified above is invalid and must be recalculated. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affeaf8017903412d21cea96ebe81d5220560"></a>CachedPointMask&#160;</td><td class="fielddoc"><p>SubdivisionPointBit | SurfacePointBit. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a114cee001ebc3ac1d6dc8d79f701affead29aabbfac019261f587b6c3ff16e044"></a>DeprecatedSavedPointsFlags&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>Replace ON_SubDComponentBase::ON_SavedPointsFlags with <a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">ON_SubDComponentBase::SavedOrModifiedPointsFlags</a> = 0xFF </dd></dl>
 </td></tr>
 </table>
 
@@ -470,7 +505,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000107">Deprecated:</a></b></dt><dd>Does nothing. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated:</a></b></dt><dd>Does nothing. </dd></dl>
 
 </div>
 </div>
@@ -579,7 +614,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000107">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -829,7 +864,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>m_saved_points_flags is a bit field based on ON_SubDComponentBase::SavePointsFlags values. GetSurfacePoint( bUseSavedSurfacePoint=true ) can change the value of m_saved_points_flags </p>
+<p>m_saved_modified_points_flags is a bit field based on <a class="el" href="class_o_n___sub_d_component_base.html#a7583e499d46547a2758d03cd2bb254dd">ON_SubDComponentBase::SavedOrModifiedPointsFlags</a> values. GetSurfacePoint( bUseSavedSurfacePoint=true ) can change the value of m_saved_modified_points_flags </p>
 
 </div>
 </div>
@@ -1174,7 +1209,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000106">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -1228,7 +1263,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000105">Deprecated:</a></b></dt><dd>Does nothing. Returns nans. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000108">Deprecated:</a></b></dt><dd>Does nothing. Returns nans. </dd></dl>
 
 </div>
 </div>
@@ -1246,7 +1281,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000106">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000109">Deprecated:</a></b></dt><dd>Does nothing. Returns false. </dd></dl>
 
 </div>
 </div>
@@ -1398,8 +1433,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a5665f98f601c3a89ec1e789b0ef577f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5665f98f601c3a89ec1e789b0ef577f3">&#9670;&nbsp;</a></span>m_saved_points_flags</h2>
+<a id="a0566c8fa8d521bedc83d7bc2cb538976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0566c8fa8d521bedc83d7bc2cb538976">&#9670;&nbsp;</a></span>m_saved_modified_points_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1408,7 +1443,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char ON_SubDComponentBase::m_saved_points_flags = 0U</td>
+          <td class="memname">unsigned char ON_SubDComponentBase::m_saved_modified_points_flags = 0U</td>
         </tr>
       </table>
   </td>
@@ -1507,7 +1542,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

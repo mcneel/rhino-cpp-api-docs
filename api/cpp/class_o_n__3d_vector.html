@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -304,7 +304,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8be2dfeb36e0ea30f356ed8ad73a294"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_vector.html#aa8be2dfeb36e0ea30f356ed8ad73a294">Angle</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;<a class="el" href="class_i_rh_rdk_sel_change_1_1_a.html">A</a>, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;B)</td></tr>
+<tr class="memdesc:aa8be2dfeb36e0ea30f356ed8ad73a294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get then angle in radians between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel.  <a href="class_o_n__3d_vector.html#aa8be2dfeb36e0ea30f356ed8ad73a294">More...</a><br /></td></tr>
 <tr class="separator:aa8be2dfeb36e0ea30f356ed8ad73a294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b419bf2695a4755c424136fd4809c91"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_vector.html#a6b419bf2695a4755c424136fd4809c91">AngleDegrees</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;<a class="el" href="class_i_rh_rdk_sel_change_1_1_a.html">A</a>, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;B)</td></tr>
+<tr class="memdesc:a6b419bf2695a4755c424136fd4809c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get then angle in degrees between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel.  <a href="class_o_n__3d_vector.html#a6b419bf2695a4755c424136fd4809c91">More...</a><br /></td></tr>
+<tr class="separator:a6b419bf2695a4755c424136fd4809c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96395acf0c1e75f7762aa23e89365d78"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_vector.html#a96395acf0c1e75f7762aa23e89365d78">AngleRadians</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;<a class="el" href="class_i_rh_rdk_sel_change_1_1_a.html">A</a>, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;B)</td></tr>
+<tr class="memdesc:a96395acf0c1e75f7762aa23e89365d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get then angle in radians between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel.  <a href="class_o_n__3d_vector.html#a96395acf0c1e75f7762aa23e89365d78">More...</a><br /></td></tr>
+<tr class="separator:a96395acf0c1e75f7762aa23e89365d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcda5b3b2d6f2d1c2bc118bc5ceb6c6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_vector.html#aadcda5b3b2d6f2d1c2bc118bc5ceb6c6">Compare</a> (const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;lhs, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;rhs)</td></tr>
 <tr class="separator:aadcda5b3b2d6f2d1c2bc118bc5ceb6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e66a1d8158705bcdb65b45b545fb8b8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3d_vector.html#a5e66a1d8158705bcdb65b45b545fb8b8">CrossProduct</a> (<a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> <a class="el" href="class_i_rh_rdk_sel_change_1_1_a.html">A</a>, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> B)</td></tr>
@@ -729,7 +736,108 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Angle (in radians) between two vectors. A and B must be non-zero vectors Returns 0&lt;= angle &lt;= ON_PI Note: The function is symmetric, i.e Angle(A,B) = Angle(B,A) This function is always accurate, in particular for nearly parallel, anti-parallel or perpendicular vectors </p>
+
+<p>Get then angle in radians between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Nonzero vector </td></tr>
+    <tr><td class="paramname">B</td><td>Nonzero vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If A and B are nonzero vectors, then the angle between A and B in radians returned; the returned value is in the range [0, ON_PI]. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a6b419bf2695a4755c424136fd4809c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b419bf2695a4755c424136fd4809c91">&#9670;&nbsp;</a></span>AngleDegrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double ON_3dVector::AngleDegrees </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get then angle in degrees between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Nonzero vector </td></tr>
+    <tr><td class="paramname">B</td><td>Nonzero vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If A and B are nonzero vectors, then the angle between A and B in degrees returned; the returned value is in the range [0, 180]. Otherwise ON_DBL_QNAN is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a96395acf0c1e75f7762aa23e89365d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96395acf0c1e75f7762aa23e89365d78">&#9670;&nbsp;</a></span>AngleRadians()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double ON_3dVector::AngleRadians </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get then angle in radians between two nonzero vectors. The order of the vector parameters does not matter. The calculation uses atan() in formula that performs well for vectors that are nearly parallel or anti-parallel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Nonzero vector </td></tr>
+    <tr><td class="paramname">B</td><td>Nonzero vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If A and B are nonzero vectors, then the angle between A and B in radians returned; the returned value is in the range [0, ON_PI]. Otherwise ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
 </div>
@@ -2757,7 +2865,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -1797,7 +1797,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vertex_tag</td><td>The vertex tag (smooth, crease, dart, corner). For smooth, crease, and dart, this is used to determine the number of attached crease edges. COrner vertices always have sharpness = 0. </td></tr>
-    <tr><td class="paramname">interior_crease_vertex_sharpness</td><td>If the original source of the vertex is an interior crease vertex (vertex_tag = <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>, 2 sectors, EdgeCount() = FaceCount() &gt;= 2), then interior_crease_vertex_sharpness is the maximum edge sharpness at the vertex's end of all smooth edges from both sectors. This paramter is important in special situations that occur in low level SubD evaluation code where information from only one sector is present. In all other cases, this value doesn't matter as long as interior_crease_vertex_sharpness &lt;= maximum_edge_sharpness_at_vertex. When in doubt pass 0.0 or ON_DBL_QNAN. </td></tr>
+    <tr><td class="paramname">interior_crease_vertex_sharpness</td><td>If the original source of the vertex is an interior crease vertex (vertex_tag = <a class="el" href="group__open_n_u_r_b_s.html#gga97b7326e722ee6c1b1ec64023ab1a375acf4718bda2cadba2e9d1f6b535a51e3a">ON_SubDVertexTag::Crease</a>, 2 sectors, EdgeCount() = FaceCount() &gt;= 2), then interior_crease_vertex_sharpness is the maximum edge sharpness at the vertex's end of all smooth edges from both sectors. This parameter is important in special situations that occur in low level SubD evaluation code where information from only one sector is present. In all other cases, this value doesn't matter as long as interior_crease_vertex_sharpness &lt;= maximum_edge_sharpness_at_vertex. When in doubt pass 0.0 or ON_DBL_QNAN. </td></tr>
     <tr><td class="paramname">sharp_edge_end_count</td><td>Number of sharp edges attached to the vertex that have nonzero end sharpness at the vertex. </td></tr>
     <tr><td class="paramname">maximum_edge_sharpness_at_vertex</td><td>The largest sharp edge end sharpness at the vertex. </td></tr>
   </table>
@@ -1846,7 +1846,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd>Use the version with an interior_crease_vertex_sharpness parameter. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Use the version with an interior_crease_vertex_sharpness parameter. </dd></dl>
 
 </div>
 </div>
@@ -2046,7 +2046,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:18 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:15 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

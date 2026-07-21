@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_o_n___mesh_curvature_stats-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -89,10 +90,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a512b13847164c7271b1bb046b457d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ba99fe91dc7a2c8cca30cae323f462"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_curvature_stats.html#ad0ba99fe91dc7a2c8cca30cae323f462">Read</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;)</td></tr>
 <tr class="separator:ad0ba99fe91dc7a2c8cca30cae323f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ecc03eb85b641ee83df86b0f8c94642"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_curvature_stats.html#a2ecc03eb85b641ee83df86b0f8c94642">Set</a> (<a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a>, int, const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> *, const <a class="el" href="class_o_n__3f_vector.html">ON_3fVector</a> *, double=0.0)</td></tr>
-<tr class="separator:a2ecc03eb85b641ee83df86b0f8c94642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473bb46a4349936acf97104e4aca6587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_curvature_stats.html#a473bb46a4349936acf97104e4aca6587">Set</a> (<a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a> kappa_style, int Kcount, const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> *K, const <a class="el" href="class_o_n__3f_vector.html">ON_3fVector</a> *N, double infinity=0.0)</td></tr>
+<tr class="separator:a473bb46a4349936acf97104e4aca6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55946a446912ae9c89c7851cd0d24d1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_curvature_stats.html#a55946a446912ae9c89c7851cd0d24d1c">Write</a> (<a class="el" href="class_o_n___binary_archive.html">ON_BinaryArchive</a> &amp;) const</td></tr>
 <tr class="separator:a55946a446912ae9c89c7851cd0d24d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a67b815ff8ba5b96941171d8560cafed2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_curvature_stats.html#a67b815ff8ba5b96941171d8560cafed2">CreateFromMeshes</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshes, <a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a> kappa_style, <a class="el" href="class_o_n___mesh_curvature_stats.html">ON_MeshCurvatureStats</a> &amp;cs)</td></tr>
+<tr class="separator:a67b815ff8ba5b96941171d8560cafed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -172,6 +178,49 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a67b815ff8ba5b96941171d8560cafed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b815ff8ba5b96941171d8560cafed2">&#9670;&nbsp;</a></span>CreateFromMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_MeshCurvatureStats::CreateFromMeshes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a>&#160;</td>
+          <td class="paramname"><em>kappa_style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh_curvature_stats.html">ON_MeshCurvatureStats</a> &amp;&#160;</td>
+          <td class="paramname"><em>cs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets curvature statistics from analysis meshes, and calculate total stats. </p>
+
+</div>
+</div>
 <a id="a78d34c2d4610b952631c3e76b48e97af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78d34c2d4610b952631c3e76b48e97af">&#9670;&nbsp;</a></span>Destroy()</h2>
 
@@ -242,8 +291,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ecc03eb85b641ee83df86b0f8c94642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ecc03eb85b641ee83df86b0f8c94642">&#9670;&nbsp;</a></span>Set()</h2>
+<a id="a473bb46a4349936acf97104e4aca6587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473bb46a4349936acf97104e4aca6587">&#9670;&nbsp;</a></span>Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,31 +301,31 @@ Public Attributes</h2></td></tr>
           <td class="memname">bool ON_MeshCurvatureStats::Set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_o_n.html#a86bff53cc45eaeb4b4dcd0268b9e1e8f">ON::curvature_style</a>&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>kappa_style</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>Kcount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_o_n__3f_vector.html">ON_3fVector</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"> = <code>0.0</code>&#160;</td>
+          <td class="paramname"><em>infinity</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,6 +334,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">K</td><td>K[] </td></tr>
+    <tr><td class="paramname">N</td><td>N[] surface normals needed for normal sectional curvatures </td></tr>
+    <tr><td class="paramname">infinity</td><td>if &gt; 0, value is used for "infinity" </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -433,7 +490,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

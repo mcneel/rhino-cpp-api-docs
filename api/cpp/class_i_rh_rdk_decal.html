@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -165,9 +165,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a043e52557f17ab8536bdd31c240c1a92"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rh_rdk_decal.html#a043e52557f17ab8536bdd31c240c1a92">GetTextureMapping</a> (const <a class="el" href="class_i_rh_rdk_decal.html">IRhRdkDecal</a> &amp;decal, <a class="el" href="class_o_n___texture_mapping.html">ON_TextureMapping</a> &amp;mappingOut)</td></tr>
 <tr class="separator:a043e52557f17ab8536bdd31c240c1a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This interface allows RDK clients to access decals that are attached to Rhino objects. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_object_data_access.html">CRhRdkObjectDataAccess</a> </dd></dl>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac8a41e28e986e023450b25306f1c8afc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8a41e28e986e023450b25306f1c8afc">&#9670;&nbsp;</a></span>eMapping</h2>
 
@@ -283,16 +281,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Blend color with the decal color at a given point. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ptPoint</td><td>is the point in space or, if the decal is uv-mapped, the uv-coordinate of that point. </td></tr>
-    <tr><td class="paramname">vecNormal</td><td>is the face normal of the given point. </td></tr>
-    <tr><td class="paramname">colInOut</td><td>is the color to blend the decal color to. </td></tr>
-    <tr><td class="paramname">uvOut</td><td>is the UV on the texture that the color point was read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the given point hits the decal, else <em>false</em>. </dd></dl>
 
 </div>
 </div>
@@ -319,7 +307,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The decal CRC identifies a decal by its state. Multiple decals which would be exactly the same would have the same CRC and are culled from the system. If you store this value with the intention of using it to find the decal again later, you must update your stored value whenever the decal state changes. You can detect when a decal changes by watching for the OnUserDataTransformed event. \See <a class="el" href="class_c_rh_rdk_event_watcher.html">CRhRdkEventWatcher</a> </p>
 
 </div>
 </div>
@@ -346,7 +333,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get custom data associated with this decal. </p><dl class="section return"><dt>Returns</dt><dd>A pointer to an interface from which you can retrieve custom data, or NULL if no custom data exists on the decal for the current Rhino renderer. </dd></dl>
 
 </div>
 </div>
@@ -383,7 +369,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Emergency virtual function for future expansion. </p>
 
 </div>
 </div>
@@ -420,7 +405,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the start and end angles of the decal's 'horizontal sweep' (these are angles of longitude in radians). </p><dl class="section note"><dt>Note</dt><dd>These correspond to the old methods <a class="el" href="class_i_rh_rdk_decal.html#a09fa3717597d2beaa73552258dc1d5c6">LatStart()</a> and <a class="el" href="class_i_rh_rdk_decal.html#a876473fe16ffbdd548509e9387bf8ba1">LatEnd()</a> which were badly named. Only used when mapping is cylindrical or spherical. </dd></dl>
 
 </div>
 </div>
@@ -493,7 +477,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the start and end angles of the decal's 'vertical sweep' (these are angles of latitude in radians). </p><dl class="section note"><dt>Note</dt><dd>These correspond to the old methods <a class="el" href="class_i_rh_rdk_decal.html#a5dfb93b91311728eacfcbd0c001e8f9a">LonStart()</a> and <a class="el" href="class_i_rh_rdk_decal.html#a7bd86a1941fe10f6221aa0aba0a5447b">LonEnd()</a> which were badly named. Only used when mapping is spherical. </dd></dl>
 
 </div>
 </div>
@@ -520,7 +503,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The height of the decal. Only used when mapping is cylindrical. </dd></dl>
 
 </div>
 </div>
@@ -547,7 +529,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated because the name is misleading. The decal 'id' is not an identifier at all, it's a CRC which changes when the decal changes. Please change your code to call <a class="el" href="class_i_rh_rdk_decal.html#a76f2b5daf712738402fc8ae5046b5ad0">CRC()</a> instead. </p>
 
 </div>
 </div>
@@ -574,7 +555,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated in favor of <a class="el" href="class_i_rh_rdk_decal.html#a2bb1d48a4a77d48dbf1b852979bd42a9">GetHorzSweep()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_decal.html#a2bb1d48a4a77d48dbf1b852979bd42a9">GetHorzSweep()</a>. </dd></dl>
 
 </div>
 </div>
@@ -601,7 +581,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated in favor of <a class="el" href="class_i_rh_rdk_decal.html#a2bb1d48a4a77d48dbf1b852979bd42a9">GetHorzSweep()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_decal.html#a2bb1d48a4a77d48dbf1b852979bd42a9">GetHorzSweep()</a>. </dd></dl>
 
 </div>
 </div>
@@ -628,7 +607,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated in favor of <a class="el" href="class_i_rh_rdk_decal.html#a98dba6e17b5660ca496d4e323cde9b93">GetVertSweep()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_decal.html#a98dba6e17b5660ca496d4e323cde9b93">GetVertSweep()</a>. </dd></dl>
 
 </div>
 </div>
@@ -655,7 +633,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated in favor of <a class="el" href="class_i_rh_rdk_decal.html#a98dba6e17b5660ca496d4e323cde9b93">GetVertSweep()</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_rh_rdk_decal.html#a98dba6e17b5660ca496d4e323cde9b93">GetVertSweep()</a>. </dd></dl>
 
 </div>
 </div>
@@ -682,7 +659,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The decal's mapping. </dd></dl>
 
 </div>
 </div>
@@ -709,7 +685,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><em>true</em> if texture is mapped to inside of sphere or cylinder, else <em>false</em>. Used only when mapping is cylindrical or spherical. </dd></dl>
 
 </div>
 </div>
@@ -736,7 +711,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The origin of the decal in world space. Not used when the mapping is UV. </dd></dl>
 
 </div>
 </div>
@@ -763,7 +737,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The decal's projection. Used only when mapping is planar. </dd></dl>
 
 </div>
 </div>
@@ -790,7 +763,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The radius of the decal. Only used when mapping is cylindrical or spherical. </dd></dl>
 
 </div>
 </div>
@@ -817,7 +789,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the decal's texture. The decal copies the texture and this copy will subsequently be returned by <a class="el" href="class_i_rh_rdk_decal.html#a67c46882ac466052e2435c92455b9411">Texture()</a>. </p>
 
 </div>
 </div>
@@ -844,8 +815,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The decal's texture or null on failure. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The returned texture is temporary and only exists as long as the decal object, so you should not store this pointer. You should also not store the instance id. If you need the texture again, you should construct a new decal object and call <a class="el" href="class_i_rh_rdk_decal.html#a67c46882ac466052e2435c92455b9411">Texture()</a> each time. </dd></dl>
 
 </div>
 </div>
@@ -872,7 +841,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The decal texture's instance id. </dd></dl>
 
 </div>
 </div>
@@ -899,7 +867,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The decal's transparency in the range 0 to 1. </dd></dl>
 
 </div>
 </div>
@@ -948,7 +915,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The UV bounds of the decal. Only used when mapping is UV. </p>
 
 </div>
 </div>
@@ -975,7 +941,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The 'across' vector of the decal. For planar mapping the length of the vector is relevant. Not used when the mapping is UV. For cylindrical and spherical mapping, the vector is unitized. </dd></dl>
 
 </div>
 </div>
@@ -1002,14 +967,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The 'up' vector of the decal. For planar mapping the length of the vector is relevant. Not used when the mapping is UV. For cylindrical and spherical mapping, the vector is unitized. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -93,49 +93,57 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af45400c74e13d56660bfc956bdb963b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8a43a69f798899c82ad51cea9fc7351780">ccbu_hide_new_tab</a> = 0x0001, 
-<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8a0bd5564aef3b9424cf68b973c1968167">ccbu_hide_existing_tab</a> = 0x0002, 
-<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8add4c48256b2a4f710e9ed5965d8a7068">ccbu_multiple_selection</a> = 0x0004, 
-<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8a3c44d31b46b2399ee2ce81889716b19e">ccbu_allow_none</a> = 0x0008, 
+<tr class="memitem:a910ff0869d76289ebf507aa08095ef70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a910ff0869d76289ebf507aa08095ef70a2ca87a2f265fb0200cc4d83aae730c80">it_Normal</a> = 0x0000, 
+<a class="el" href="class_c_rh_rdk_document.html#a910ff0869d76289ebf507aa08095ef70a7c7b315ab5bbf875b3459c20d1b8b7e3">it_IncludeDefault</a> = 0x0001, 
+<a class="el" href="class_c_rh_rdk_document.html#a910ff0869d76289ebf507aa08095ef70a082529fd71befb84f5dcd92f73522139">it_IncludeProxies</a> = 0x0002, 
+<a class="el" href="class_c_rh_rdk_document.html#a910ff0869d76289ebf507aa08095ef70ab453e314c1c4e537b56c45f55b534590">it_IncludeAutoDeleted</a> = 0x0004, 
 <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8a4916dcaafcd5a3e04d260cdeb26fa911">ccbu_disable_import_button</a> = 0x0010, 
-<a class="el" href="class_c_rh_rdk_document.html#af45400c74e13d56660bfc956bdb963b8aace321b6c52337371535df68f9e8c4ff">ccbu_force32bit</a> = 0xFFFFFFFF
-<br />
- }</td></tr>
-<tr class="separator:af45400c74e13d56660bfc956bdb963b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac622b17e64a92e7fe702786264da0579"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a> = 0x0001, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a> = 0x0002, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a81858feb66ccecc4a9e99e3a3811041d">ccc_Preserve</a> = 0x0004, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579af6454616d3e29e225c4b0bb8a0e841e1">ccc_AutoEditBM</a> = 0x0008, 
-<br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579ae0555bf7779ec5367ed6ad2d70dc3afc">ccc_NoGroupChange</a> = 0x0010, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a73ec7c2cce900cf7cc5844cf2486b4b6">ccc_HideNewTab</a> = 0x0020, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579ad863f51b9f5af8bc6f5417e8a3f94488">ccc_HideExistingTab</a> = 0x0040, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a0b8caa945bdb298eca002073b2c141b6">ccc_HarvestMask</a> = 0xF000, 
-<br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a6682fc3c38dc299259d87671e941bc0e">ccc_HarvestUseOpt</a> = 0x0000, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579aaccb1b45ba0d775f35ef4d6c59bca627">ccc_HarvestAlways</a> = 0x1000, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a2d94067d9f5092b9757d50fccc2dad27">ccc_HarvestNever</a> = 0x2000, 
-<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a70e10b64c796bde058ccab9486810c8e">ccc_force32bit</a> = 0xFFFFFFFF
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a910ff0869d76289ebf507aa08095ef70aaa96c6988812f7135a68f5635b60430c">it_ForDisplay</a> = 0x0008
 <br />
  }</td></tr>
-<tr class="separator:ac622b17e64a92e7fe702786264da0579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446211cb8f33340746c882f3f83344da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a446211cb8f33340746c882f3f83344daa2ca87a2f265fb0200cc4d83aae730c80">it_Normal</a> = 0x0000, 
-<a class="el" href="class_c_rh_rdk_document.html#a446211cb8f33340746c882f3f83344daa7c7b315ab5bbf875b3459c20d1b8b7e3">it_IncludeDefault</a> = 0x0001, 
-<a class="el" href="class_c_rh_rdk_document.html#a446211cb8f33340746c882f3f83344daa082529fd71befb84f5dcd92f73522139">it_IncludeProxies</a> = 0x0002, 
-<a class="el" href="class_c_rh_rdk_document.html#a446211cb8f33340746c882f3f83344daab453e314c1c4e537b56c45f55b534590">it_IncludeAutoDeleted</a> = 0x0004, 
+<tr class="separator:a910ff0869d76289ebf507aa08095ef70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e551ab3c0f87c24b793f1f148261bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bca43a69f798899c82ad51cea9fc7351780">ccbu_hide_new_tab</a> = 0x0001, 
+<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bca0bd5564aef3b9424cf68b973c1968167">ccbu_hide_existing_tab</a> = 0x0002, 
+<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bcadd4c48256b2a4f710e9ed5965d8a7068">ccbu_multiple_selection</a> = 0x0004, 
+<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bca3c44d31b46b2399ee2ce81889716b19e">ccbu_allow_none</a> = 0x0008, 
 <br />
-&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a446211cb8f33340746c882f3f83344daaaa96c6988812f7135a68f5635b60430c">it_ForDisplay</a> = 0x0008
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bca4916dcaafcd5a3e04d260cdeb26fa911">ccbu_disable_import_button</a> = 0x0010, 
+<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bcaa71ebb313fd4c7343ce54f36069c9fdc">ccbu_hide_copy_or_share</a> = 0x0020, 
+<a class="el" href="class_c_rh_rdk_document.html#ac0e551ab3c0f87c24b793f1f148261bcaace321b6c52337371535df68f9e8c4ff">ccbu_force32bit</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
-<tr class="separator:a446211cb8f33340746c882f3f83344da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c2163676406a92d6c32dd13569c2f18"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> : unsigned int { <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18a35c3ace1970663a16e5c65baa5941b13">SctbResult::kNone</a>, 
+<tr class="separator:ac0e551ab3c0f87c24b793f1f148261bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf650c87c29d8e861edac627657ab091"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a> = 0x0001, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a> = 0x0002, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a81858feb66ccecc4a9e99e3a3811041d">ccc_Preserve</a> = 0x0004, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091af6454616d3e29e225c4b0bb8a0e841e1">ccc_AutoEditBM</a> = 0x0008, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091ae0555bf7779ec5367ed6ad2d70dc3afc">ccc_NoGroupChange</a> = 0x0010, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a73ec7c2cce900cf7cc5844cf2486b4b6">ccc_HideNewTab</a> = 0x0020, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091ad863f51b9f5af8bc6f5417e8a3f94488">ccc_HideExistingTab</a> = 0x0040, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a0b8caa945bdb298eca002073b2c141b6">ccc_HarvestMask</a> = 0xF000, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a6682fc3c38dc299259d87671e941bc0e">ccc_HarvestUseOpt</a> = 0x0000, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091aaccb1b45ba0d775f35ef4d6c59bca627">ccc_HarvestAlways</a> = 0x1000, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a2d94067d9f5092b9757d50fccc2dad27">ccc_HarvestNever</a> = 0x2000, 
+<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a70e10b64c796bde058ccab9486810c8e">ccc_force32bit</a> = 0xFFFFFFFF
+<br />
+ }</td></tr>
+<tr class="separator:aaf650c87c29d8e861edac627657ab091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf58e418a22a08886cfbe4a2e96e2be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#accf58e418a22a08886cfbe4a2e96e2be">ContentNewExistingBrowserParams</a> = <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a></td></tr>
+<tr class="separator:accf58e418a22a08886cfbe4a2e96e2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2163676406a92d6c32dd13569c2f18"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> : unsigned int { <br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18a35c3ace1970663a16e5c65baa5941b13">SctbResult::kNone</a>, 
 <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18aaf1adf7ec3673b4f5765cfbc5d43b7dc">SctbResult::kNew</a>, 
 <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18a70055f8d83bee0a0075607b549829299">SctbResult::kCopy</a>, 
-<a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18a63f56d9e95d7b447075aef94444c4c96">SctbResult::kInstance</a>
+<a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18a63f56d9e95d7b447075aef94444c4c96">SctbResult::kInstance</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18aa363b8d38ef47ae6bfc2f84653dc1a3b">SctbResult::kImport</a>, 
+<a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18aa7faa95cda6d60fe01cff286ba4aaa17">SctbResult::kReference</a>
+<br />
  }</td></tr>
 <tr class="separator:a6c2163676406a92d6c32dd13569c2f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -147,12 +155,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3427c8e47b5745c3c0d9711eb50b1151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c4f8134016e47caf599a5f1b88e7d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_c_rh_rdk_document.html">CRhRdkDocument</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ae9c4f8134016e47caf599a5f1b88e7d5">BeginChange</a> (<a class="el" href="group___r_d_k.html#ga6fe9da5a5e15a35de78ba87d08456d8c">RhRdkChangeContext</a> cc) const</td></tr>
 <tr class="separator:ae9c4f8134016e47caf599a5f1b88e7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6329c4849b8080bb4fd54cc1c882ed3"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ae6329c4849b8080bb4fd54cc1c882ed3">ChangeChildContent</a> (<a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;parent, const wchar_t *wszChildSlotName, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;allowedKinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> ccc_Flags=<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a>|<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a>)</td></tr>
+<tr class="memitem:ae6329c4849b8080bb4fd54cc1c882ed3"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ae6329c4849b8080bb4fd54cc1c882ed3">ChangeChildContent</a> (<a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;parent, const wchar_t *wszChildSlotName, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;allowedKinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> ccc_Flags=<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a>|<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a>)</td></tr>
 <tr class="separator:ae6329c4849b8080bb4fd54cc1c882ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a164b4bb1634a56e0a49379ed33e69e20"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a164b4bb1634a56e0a49379ed33e69e20">ChangeContent</a> (const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;oldContent, <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> &amp;newContent, bool bPreserve=true)</td></tr>
 <tr class="separator:a164b4bb1634a56e0a49379ed33e69e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ca2682d4dc42d5267e1493f08a6978"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#aa6ca2682d4dc42d5267e1493f08a6978">ChooseContent</a> (<a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidInstanceInOut, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;kinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> rdkcce_Flags) const</td></tr>
-<tr class="separator:aa6ca2682d4dc42d5267e1493f08a6978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d358b8149ecc81cf90437f947373fbe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a5d358b8149ecc81cf90437f947373fbe">ChooseContent</a> (<a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidInstanceInOut, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;kinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> rdkcce_Flags) const</td></tr>
+<tr class="separator:a5d358b8149ecc81cf90437f947373fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac33aee9b1a2ba5678a306e0f9f201ef1"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_i_rh_rdk_content_list.html">IRhRdkContentList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ac33aee9b1a2ba5678a306e0f9f201ef1">ContentList</a> (<a class="el" href="class_c_rh_rdk_content.html#a01c2dab2d90a2dc024f7a13e8d90ea85">CRhRdkContent::Kinds</a> kind) const</td></tr>
 <tr class="separator:ac33aee9b1a2ba5678a306e0f9f201ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e88e025ce273fc6ae205fbe6693c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_rh_rdk_contents.html">IRhRdkContents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ad2e88e025ce273fc6ae205fbe6693c5e">Contents</a> (void)</td></tr>
@@ -161,8 +169,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fed57db868bcc0c62e1ddaac4c2f9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0428683b19aea372c471471b82d85855"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a0428683b19aea372c471471b82d85855">CreateContentByType</a> (const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidNewType, const <a class="el" href="class_c_rh_rdk_content.html">CRhRdkContent</a> *pParent=nullptr, const wchar_t *wszChildSlotName=L&quot;&quot;, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> uFlags=0)</td></tr>
 <tr class="separator:a0428683b19aea372c471471b82d85855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f4409217064fe2e9f6ded15f90577f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ad4f4409217064fe2e9f6ded15f90577f">CreateContentByUser</a> (<a class="el" href="class_c_rh_rdk_content_array.html">CRhRdkContentArray</a> &amp;aContentOut, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultType, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultInstance, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;allowedKinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> uFlags=0)</td></tr>
-<tr class="separator:ad4f4409217064fe2e9f6ded15f90577f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628697369d5401b242c4b17e98eaf376"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a628697369d5401b242c4b17e98eaf376">CreateContentByUser</a> (<a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="class_c_rh_rdk_content_array.html">CRhRdkContentArray</a> &amp;contents, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultType, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultInstance, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;allowedKinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> ccbu_flags=0)</td></tr>
+<tr class="separator:a628697369d5401b242c4b17e98eaf376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744a7093df54c90ac5c06f6b110f6e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a744a7093df54c90ac5c06f6b110f6e69">CurrentEnvironment</a> (void)</td></tr>
 <tr class="separator:a744a7093df54c90ac5c06f6b110f6e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93206002c72c964dd73ab016bba8d70"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_i_rh_rdk_current_environment.html">IRhRdkCurrentEnvironment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ab93206002c72c964dd73ab016bba8d70">CurrentEnvironment</a> (void) const</td></tr>
@@ -261,10 +269,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4925e25b49697dded522ef8c26dd2b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da22b85d389810fbd5fbf637f5b3aae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a1da22b85d389810fbd5fbf637f5b3aae">SetToneMappingMethod</a> (<a class="el" href="class_i_rh_rdk_tone_mapping.html#a1bdc163813a27ec26c25ad041ba0f468">IRhRdkToneMapping::Methods</a> tmm)</td></tr>
 <tr class="separator:a1da22b85d389810fbd5fbf637f5b3aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2ea0869acc542984d0eb2a0731b8d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#aeb2ea0869acc542984d0eb2a0731b8d2">ShowContentTypeBrowser</a> (const <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a> &amp;params, <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;aInstanceOut) const</td></tr>
-<tr class="separator:aeb2ea0869acc542984d0eb2a0731b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd802687d9431db7f484d2d56fcbf91"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#abcd802687d9431db7f484d2d56fcbf91">ShowContentTypeBrowser</a> (const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultType, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;uuidDefaultInstance, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;allowedKinds, <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;aInstanceOut, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> ccbuFlags=0) const</td></tr>
-<tr class="separator:abcd802687d9431db7f484d2d56fcbf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726bcaf28fe22ea9c34aa010269093a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a726bcaf28fe22ea9c34aa010269093a3">ShowContentInstanceBrowser</a> (<a class="el" href="group___r_d_k.html#gac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;instance_id, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;kinds, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> rdkcce_flags) const</td></tr>
+<tr class="separator:a726bcaf28fe22ea9c34aa010269093a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fab12d982f344cab5041e8788188a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a43fab12d982f344cab5041e8788188a8">ShowContentNewExistingBrowser</a> (const <a class="el" href="class_c_rh_rdk_document.html#accf58e418a22a08886cfbe4a2e96e2be">ContentNewExistingBrowserParams</a> &amp;params, <a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="group___r_d_k.html#gae5f02a9a41e4a3d0fc16796cd23a90c2">CRhRdkContentIdArray</a> &amp;ids) const</td></tr>
+<tr class="separator:a43fab12d982f344cab5041e8788188a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49a2989ca705129822dcf272877d148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#ae49a2989ca705129822dcf272877d148">ShowContentTypeBrowser</a> (const <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a> &amp;, <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;) const</td></tr>
+<tr class="separator:ae49a2989ca705129822dcf272877d148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac1970c490aec9f32656c6db63fdf34"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#aeac1970c490aec9f32656c6db63fdf34">ShowContentTypeBrowser</a> (const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;, const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;, const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;, <a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;, <a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>=0) const</td></tr>
+<tr class="separator:aeac1970c490aec9f32656c6db63fdf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10496b519c0bd8dae9e3bcbfcdfe5b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_i_rh_rdk_skylight.html">IRhRdkSkylight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a10496b519c0bd8dae9e3bcbfcdfe5b7c">Skylight</a> (void)</td></tr>
 <tr class="separator:a10496b519c0bd8dae9e3bcbfcdfe5b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac992c3ea8bf4f2d4a369d4fd97bff0a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_i_rh_rdk_skylight.html">IRhRdkSkylight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#aac992c3ea8bf4f2d4a369d4fd97bff0a">Skylight</a> (void) const</td></tr>
@@ -333,9 +345,45 @@ Friends</h2></td></tr>
 <tr class="memitem:a32a715ac78a91137358a927ab06c2645"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_document.html#a32a715ac78a91137358a927ab06c2645">IRhRdkContents</a></td></tr>
 <tr class="separator:a32a715ac78a91137358a927ab06c2645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="accf58e418a22a08886cfbe4a2e96e2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf58e418a22a08886cfbe4a2e96e2be">&#9670;&nbsp;</a></span>ContentNewExistingBrowserParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_c_rh_rdk_document.html#accf58e418a22a08886cfbe4a2e96e2be">CRhRdkDocument::ContentNewExistingBrowserParams</a> =  <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="af45400c74e13d56660bfc956bdb963b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af45400c74e13d56660bfc956bdb963b8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a910ff0869d76289ebf507aa08095ef70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910ff0869d76289ebf507aa08095ef70">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a910ff0869d76289ebf507aa08095ef70a2ca87a2f265fb0200cc4d83aae730c80"></a>it_Normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a910ff0869d76289ebf507aa08095ef70a7c7b315ab5bbf875b3459c20d1b8b7e3"></a>it_IncludeDefault&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a910ff0869d76289ebf507aa08095ef70a082529fd71befb84f5dcd92f73522139"></a>it_IncludeProxies&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a910ff0869d76289ebf507aa08095ef70ab453e314c1c4e537b56c45f55b534590"></a>it_IncludeAutoDeleted&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a910ff0869d76289ebf507aa08095ef70aaa96c6988812f7135a68f5635b60430c"></a>it_ForDisplay&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac0e551ab3c0f87c24b793f1f148261bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e551ab3c0f87c24b793f1f148261bc">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,20 +393,21 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bit-flags for <a class="el" href="class_c_rh_rdk_document.html#ad4f4409217064fe2e9f6ded15f90577f">CreateContentByUser()</a> and <a class="el" href="class_c_rh_rdk_document.html#abcd802687d9431db7f484d2d56fcbf91">ShowContentTypeBrowser()</a> uFlags. </p>
+<p>Bit-flags for <a class="el" href="class_c_rh_rdk_document.html#a628697369d5401b242c4b17e98eaf376">CreateContentByUser()</a> and <a class="el" href="class_c_rh_rdk_document.html#a43fab12d982f344cab5041e8788188a8">ShowContentNewExistingBrowser()</a> uFlags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8a43a69f798899c82ad51cea9fc7351780"></a>ccbu_hide_new_tab&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8a0bd5564aef3b9424cf68b973c1968167"></a>ccbu_hide_existing_tab&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8add4c48256b2a4f710e9ed5965d8a7068"></a>ccbu_multiple_selection&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8a3c44d31b46b2399ee2ce81889716b19e"></a>ccbu_allow_none&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8a4916dcaafcd5a3e04d260cdeb26fa911"></a>ccbu_disable_import_button&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af45400c74e13d56660bfc956bdb963b8aace321b6c52337371535df68f9e8c4ff"></a>ccbu_force32bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bca43a69f798899c82ad51cea9fc7351780"></a>ccbu_hide_new_tab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bca0bd5564aef3b9424cf68b973c1968167"></a>ccbu_hide_existing_tab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bcadd4c48256b2a4f710e9ed5965d8a7068"></a>ccbu_multiple_selection&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bca3c44d31b46b2399ee2ce81889716b19e"></a>ccbu_allow_none&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bca4916dcaafcd5a3e04d260cdeb26fa911"></a>ccbu_disable_import_button&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bcaa71ebb313fd4c7343ce54f36069c9fdc"></a>ccbu_hide_copy_or_share&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0e551ab3c0f87c24b793f1f148261bcaace321b6c52337371535df68f9e8c4ff"></a>ccbu_force32bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="ac622b17e64a92e7fe702786264da0579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac622b17e64a92e7fe702786264da0579">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aaf650c87c29d8e861edac627657ab091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf650c87c29d8e861edac627657ab091">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,39 +419,18 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Bit-flags for <a class="el" href="class_c_rh_rdk_document.html#ae6329c4849b8080bb4fd54cc1c882ed3">ChangeChildContent()</a> uFlags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a04c8bac0432608359ccd4a0b6a592254"></a>ccc_AllowNone&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a2752e3739197a70156d7e52f25225b4a"></a>ccc_AutoEdit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a81858feb66ccecc4a9e99e3a3811041d"></a>ccc_Preserve&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579af6454616d3e29e225c4b0bb8a0e841e1"></a>ccc_AutoEditBM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579ae0555bf7779ec5367ed6ad2d70dc3afc"></a>ccc_NoGroupChange&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a73ec7c2cce900cf7cc5844cf2486b4b6"></a>ccc_HideNewTab&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579ad863f51b9f5af8bc6f5417e8a3f94488"></a>ccc_HideExistingTab&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a0b8caa945bdb298eca002073b2c141b6"></a>ccc_HarvestMask&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a6682fc3c38dc299259d87671e941bc0e"></a>ccc_HarvestUseOpt&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579aaccb1b45ba0d775f35ef4d6c59bca627"></a>ccc_HarvestAlways&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a2d94067d9f5092b9757d50fccc2dad27"></a>ccc_HarvestNever&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac622b17e64a92e7fe702786264da0579a70e10b64c796bde058ccab9486810c8e"></a>ccc_force32bit&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a446211cb8f33340746c882f3f83344da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a446211cb8f33340746c882f3f83344da">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum : unsigned int</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a446211cb8f33340746c882f3f83344daa2ca87a2f265fb0200cc4d83aae730c80"></a>it_Normal&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a446211cb8f33340746c882f3f83344daa7c7b315ab5bbf875b3459c20d1b8b7e3"></a>it_IncludeDefault&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a446211cb8f33340746c882f3f83344daa082529fd71befb84f5dcd92f73522139"></a>it_IncludeProxies&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a446211cb8f33340746c882f3f83344daab453e314c1c4e537b56c45f55b534590"></a>it_IncludeAutoDeleted&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a446211cb8f33340746c882f3f83344daaaa96c6988812f7135a68f5635b60430c"></a>it_ForDisplay&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a04c8bac0432608359ccd4a0b6a592254"></a>ccc_AllowNone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a2752e3739197a70156d7e52f25225b4a"></a>ccc_AutoEdit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a81858feb66ccecc4a9e99e3a3811041d"></a>ccc_Preserve&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091af6454616d3e29e225c4b0bb8a0e841e1"></a>ccc_AutoEditBM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091ae0555bf7779ec5367ed6ad2d70dc3afc"></a>ccc_NoGroupChange&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a73ec7c2cce900cf7cc5844cf2486b4b6"></a>ccc_HideNewTab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091ad863f51b9f5af8bc6f5417e8a3f94488"></a>ccc_HideExistingTab&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a0b8caa945bdb298eca002073b2c141b6"></a>ccc_HarvestMask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a6682fc3c38dc299259d87671e941bc0e"></a>ccc_HarvestUseOpt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091aaccb1b45ba0d775f35ef4d6c59bca627"></a>ccc_HarvestAlways&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a2d94067d9f5092b9757d50fccc2dad27"></a>ccc_HarvestNever&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf650c87c29d8e861edac627657ab091a70e10b64c796bde058ccab9486810c8e"></a>ccc_force32bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -426,12 +454,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Result of <a class="el" href="class_c_rh_rdk_document.html#abcd802687d9431db7f484d2d56fcbf91">ShowContentTypeBrowser()</a> </p>
+<p>Result of <a class="el" href="class_c_rh_rdk_document.html#a43fab12d982f344cab5041e8788188a8">ShowContentNewExistingBrowser()</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18a35c3ace1970663a16e5c65baa5941b13"></a>kNone&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18aaf1adf7ec3673b4f5765cfbc5d43b7dc"></a>kNew&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18a70055f8d83bee0a0075607b549829299"></a>kCopy&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18a63f56d9e95d7b447075aef94444c4c96"></a>kInstance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18aa363b8d38ef47ae6bfc2f84653dc1a3b"></a>kImport&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c2163676406a92d6c32dd13569c2f18aa7faa95cda6d60fe01cff286ba4aaa17"></a>kReference&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -578,15 +608,13 @@ Friends</h2></td></tr>
 <p>Attach a content to the document by transferring ownership of it to the document. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>is the content to attach. </td></tr>
+    <tr><td class="paramname">reason</td><td>is the reason for the operation. If the reason is 'Attach' and content undo was not recorded by the caller, then content undo will be recorded automatically. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If successful, ownership of the content will be transferred to the document. If not, ownership will remain with the caller. Failure to attach usually indicates that there is already a content with the same instance id in the document. This situation is not allowed and the new content will be rejected. </dd>
 <dd>
-If the content is a child or already attached to this or another document, the method will fail. </dd>
-<dd>
-This method does not record undo. If you want undo, please use <a class="el" href="class_c_rh_rdk_content_undo.html">CRhRdkContentUndo</a>. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_c_rh_rdk_content_undo.html">CRhRdkContentUndo</a> </dd></dl>
+If the content is a child or already attached to this or another document, the method will fail. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><em>true</em> if successful, else <em>false</em>. </dd></dl>
 
 </div>
@@ -657,7 +685,7 @@ This method does not record undo. If you want undo, please use <a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>ccc_Flags</em> = <code><a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a>|<a class="el" href="class_c_rh_rdk_document.html#ac622b17e64a92e7fe702786264da0579a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a></code>&#160;</td>
+          <td class="paramname"><em>ccc_Flags</em> = <code><a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a04c8bac0432608359ccd4a0b6a592254">ccc_AllowNone</a>|<a class="el" href="class_c_rh_rdk_document.html#aaf650c87c29d8e861edac627657ab091a2752e3739197a70156d7e52f25225b4a">ccc_AutoEdit</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -729,8 +757,8 @@ This method does not record undo. If you want undo, please use <a class="el" hre
 
 </div>
 </div>
-<a id="aa6ca2682d4dc42d5267e1493f08a6978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6ca2682d4dc42d5267e1493f08a6978">&#9670;&nbsp;</a></span>ChooseContent()</h2>
+<a id="a5d358b8149ecc81cf90437f947373fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d358b8149ecc81cf90437f947373fbe">&#9670;&nbsp;</a></span>ChooseContent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,7 +767,7 @@ This method does not record undo. If you want undo, please use <a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool CRhRdkDocument::ChooseContent </td>
+          <td class="memname">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> bool CRhRdkDocument::ChooseContent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;&#160;</td>
           <td class="paramname"><em>uuidInstanceInOut</em>, </td>
@@ -768,15 +796,6 @@ This method does not record undo. If you want undo, please use <a class="el" hre
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allows the user to choose a content by displaying the Content Instance Browser dialog. The dialog will have OK, Cancel and Help buttons, and optional New and Edit buttons. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uuidInstanceInOut</td><td>sets the initially selected content and receives the instance id of the chosen content. </td></tr>
-    <tr><td class="paramname">kinds</td><td>specifies the kind(s) of content that should be displayed in the browser. </td></tr>
-    <tr><td class="paramname">rdkcce_Flags</td><td>specifies flags controlling the browser. See enum in RhRdkDefinitions.h </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the user chooses a content, <em>false</em> if the dialog is cancelled. </dd></dl>
 
 </div>
 </div>
@@ -918,8 +937,8 @@ This function cannot be used to create temporary contents that you delete after 
 
 </div>
 </div>
-<a id="ad4f4409217064fe2e9f6ded15f90577f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f4409217064fe2e9f6ded15f90577f">&#9670;&nbsp;</a></span>CreateContentByUser()</h2>
+<a id="a628697369d5401b242c4b17e98eaf376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628697369d5401b242c4b17e98eaf376">&#9670;&nbsp;</a></span>CreateContentByUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,8 +949,8 @@ This function cannot be used to create temporary contents that you delete after 
         <tr>
           <td class="memname">virtual bool CRhRdkDocument::CreateContentByUser </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_rh_rdk_content_array.html">CRhRdkContentArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>aContentOut</em>, </td>
+          <td class="paramtype"><a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="class_c_rh_rdk_content_array.html">CRhRdkContentArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>contents</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -955,7 +974,7 @@ This function cannot be used to create temporary contents that you delete after 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>uFlags</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>ccbu_flags</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -972,7 +991,7 @@ This function cannot be used to create temporary contents that you delete after 
 <p>Create one or more new content(s) chosen by the user and attach them to the document. </p><dl class="section note"><dt>Note</dt><dd>This function cannot be used to create temporary content that you delete after use. Contents created by this function are owned by RDK and appear in the content editor. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aContentOut</td><td>accepts the new content(s). If you want to modify the contents you will need to call <a class="el" href="class_c_rh_rdk_document.html#ae9c4f8134016e47caf599a5f1b88e7d5">BeginChange()</a> to get a non-const reference. </td></tr>
+    <tr><td class="paramname">contents</td><td>accepts the new content(s). If you want to modify the contents you will need to call <a class="el" href="class_c_rh_rdk_document.html#ae9c4f8134016e47caf599a5f1b88e7d5">BeginChange()</a> to get a non-const reference. </td></tr>
   </table>
   </dd>
 </dl>
@@ -982,7 +1001,7 @@ This function cannot be used to create temporary contents that you delete after 
     <tr><td class="paramname">uuidDefaultType</td><td>is the default content type. </td></tr>
     <tr><td class="paramname">uuidDefaultInstance</td><td>is the default selected content instance. </td></tr>
     <tr><td class="paramname">allowedKinds</td><td>determines which content kinds are allowed to be chosen from the dialog. </td></tr>
-    <tr><td class="paramname">uFlags</td><td>is from the enum above with prefix ccbu_ </td></tr>
+    <tr><td class="paramname">ccbu_flags</td><td>is from the enum above with prefix ccbu_ &ndash; NOTE: ccbu_hide_copy_or_share is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1122,16 +1141,16 @@ This function cannot be used to create temporary contents that you delete after 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Detach a content from the document by transferring ownership of it to the caller. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Detach a content from the document. Ownership of the content will be transferred to either the caller or the undo system, depending on the 'reason' parameter. </p><dl class="section note"><dt>Note</dt><dd>From Rhino 9 onwards, this method records undo if the reason is 'Delete'. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>is the content to detach. If successful, ownership of the content will be transferred to the caller. </td></tr>
+    <tr><td class="paramname">c</td><td>is the content to detach. If successful, ownership of the content will be transferred to the caller if the reason is anything other than 'Delete', or to the undo system if the reason is 'Delete'. </td></tr>
+    <tr><td class="paramname">reason</td><td>is the reason for the operation. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>If the content is a child or not attached to this document, the method will fail. </dd>
-<dd>
-This method does not record undo because undo works on deleting the content, not detaching it. Calling Delete() on a content while it is still attached to a document records undo. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><em>A</em> pointer to the non-const content if successful, else <em>false</em>. It is safe to delete the returned content. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the non-const content if the reason is not 'Delete' and the operation succeeds. If the reason is 'Delete', the method returns null because the content has been transferred to the undo system and is no longer available for clients to use. If the method does return a content, then it is safe to delete that content. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the content is a child or not attached to this document, the method will fail. </dd></dl>
 
 </div>
 </div>
@@ -2465,23 +2484,29 @@ If the new content is a child already attached to this or another document, the 
 
 </div>
 </div>
-<a id="aeb2ea0869acc542984d0eb2a0731b8d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2ea0869acc542984d0eb2a0731b8d2">&#9670;&nbsp;</a></span>ShowContentTypeBrowser() <span class="overload">[1/2]</span></h2>
+<a id="a726bcaf28fe22ea9c34aa010269093a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726bcaf28fe22ea9c34aa010269093a3">&#9670;&nbsp;</a></span>ShowContentInstanceBrowser()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> CRhRdkDocument::ShowContentTypeBrowser </td>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> bool CRhRdkDocument::ShowContentInstanceBrowser </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a> &amp;&#160;</td>
-          <td class="paramname"><em>params</em>, </td>
+          <td class="paramtype"><a class="el" href="group___r_d_k.html#gac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>aInstanceOut</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;&#160;</td>
+          <td class="paramname"><em>kinds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
+          <td class="paramname"><em>rdkcce_flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2490,10 +2515,47 @@ If the new content is a child already attached to this or another document, the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Shows the content type browser to allow the user to select one or more new or existing contents. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Allows the user to choose a content by displaying the Content Instance Browser dialog. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance_id</td><td>sets the initially selected content and receives the instance id of the chosen content. </td></tr>
+    <tr><td class="paramname">kinds</td><td>specifies the kind(s) of content that should be displayed in the browser. </td></tr>
+    <tr><td class="paramname">rdkcce_flags</td><td>specifies flags controlling the browser. See enum in RhRdkDefinitions.h </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the user chooses a content, <em>false</em> if the dialog is cancelled. </dd></dl>
+
+</div>
+</div>
+<a id="a43fab12d982f344cab5041e8788188a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fab12d982f344cab5041e8788188a8">&#9670;&nbsp;</a></span>ShowContentNewExistingBrowser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> CRhRdkDocument::ShowContentNewExistingBrowser </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_document.html#accf58e418a22a08886cfbe4a2e96e2be">ContentNewExistingBrowserParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___r_d_k.html#gaec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="group___r_d_k.html#gae5f02a9a41e4a3d0fc16796cd23a90c2">CRhRdkContentIdArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shows the Content New / Existing Browser to allow the user to choose one or more new or existing contents. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>specifies various parameters that control the browser. </td></tr>
-    <tr><td class="paramname">aInstanceOut</td><td>accepts the UUID(s) of the chosen item(s). Depending on SctbResult, this can be type ids of content types or instance ids of existing contents. </td></tr>
+    <tr><td class="paramname">contents</td><td>accepts the UUID(s) of the chosen item(s). Depending on SctbResult, this can be type ids of content types or instance ids of existing contents. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2501,8 +2563,37 @@ If the new content is a child already attached to this or another document, the 
 
 </div>
 </div>
-<a id="abcd802687d9431db7f484d2d56fcbf91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd802687d9431db7f484d2d56fcbf91">&#9670;&nbsp;</a></span>ShowContentTypeBrowser() <span class="overload">[2/2]</span></h2>
+<a id="ae49a2989ca705129822dcf272877d148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49a2989ca705129822dcf272877d148">&#9670;&nbsp;</a></span>ShowContentTypeBrowser() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="group___r_d_k.html#ga781a0e28391761ee1d6c865572bfb038">virtual_su</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> CRhRdkDocument::ShowContentTypeBrowser </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rh_rdk_document_1_1_c_type_browser_params.html">CTypeBrowserParams</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is deprecated in favor of <a class="el" href="class_c_rh_rdk_document.html#a43fab12d982f344cab5041e8788188a8">ShowContentNewExistingBrowser()</a>. </p>
+
+</div>
+</div>
+<a id="aeac1970c490aec9f32656c6db63fdf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac1970c490aec9f32656c6db63fdf34">&#9670;&nbsp;</a></span>ShowContentTypeBrowser() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2514,31 +2605,31 @@ If the new content is a child already attached to this or another document, the 
           <td class="memname">virtual <a class="el" href="group___r_d_k.html#gaf141e0bb1bad5b4f381f9de023f904ad">RDK_DEPRECATED</a> <a class="el" href="class_c_rh_rdk_document.html#a6c2163676406a92d6c32dd13569c2f18">SctbResult</a> CRhRdkDocument::ShowContentTypeBrowser </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;&#160;</td>
-          <td class="paramname"><em>uuidDefaultType</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> &amp;&#160;</td>
-          <td class="paramname"><em>uuidDefaultInstance</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_c_rh_rdk_content_kind_list.html">CRhRdkContentKindList</a> &amp;&#160;</td>
-          <td class="paramname"><em>allowedKinds</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_c_rh_rdk_instance_id_array.html">CRhRdkInstanceIdArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>aInstanceOut</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group___rhino.html#ga36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>&#160;</td>
-          <td class="paramname"><em>ccbuFlags</em> = <code>0</code>&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2552,7 +2643,7 @@ If the new content is a child already attached to this or another document, the 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is deprecated in favor of the one below. </p>
+<p>This method is deprecated in favor of <a class="el" href="class_c_rh_rdk_document.html#a43fab12d982f344cab5041e8788188a8">ShowContentNewExistingBrowser()</a>. </p>
 
 </div>
 </div>
@@ -2818,7 +2909,7 @@ If the new content is a child already attached to this or another document, the 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:53 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

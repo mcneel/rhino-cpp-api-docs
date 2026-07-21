@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -77,10 +77,11 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af5a49ef15f2418565472b4fd232d52bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#af5a49ef15f2418565472b4fd232d52bc">ON_BoundingBox</a> () <a class="el" href="group__open_n_u_r_b_s.html#ga1b9bbb0fba1d3a5fae3accc23a26e990">ON_NOEXCEPT</a></td></tr>
-<tr class="memdesc:af5a49ef15f2418565472b4fd232d52bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates EmptyBoundingBox  <a href="class_o_n___bounding_box.html#af5a49ef15f2418565472b4fd232d52bc">More...</a><br /></td></tr>
+<tr class="memdesc:af5a49ef15f2418565472b4fd232d52bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> constructor creates a instance of <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid....">ON_BoundingBox::EmptyBoundingBox</a>. ((1.0,0.0,0.0), (-1.0,0.0,0.0)). Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid.  <a href="class_o_n___bounding_box.html#af5a49ef15f2418565472b4fd232d52bc">More...</a><br /></td></tr>
 <tr class="separator:af5a49ef15f2418565472b4fd232d52bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ba96c4ade11c187ecba2f570a2355f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a02ba96c4ade11c187ecba2f570a2355f">ON_BoundingBox</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;)</td></tr>
-<tr class="separator:a02ba96c4ade11c187ecba2f570a2355f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e20fc36bafd9393ec47a3b287a83d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a19e20fc36bafd9393ec47a3b287a83d2">ON_BoundingBox</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;min_corner, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;max_corner)</td></tr>
+<tr class="memdesc:a19e20fc36bafd9393ec47a3b287a83d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bounding box from min_corner to max_corner. For a valid <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>, min_corner.x &lt;= max_corner.x, min_corner.y &lt;= max_corner.y and min_corner.z &lt;= max_corner.z. Experts may pass min_corner and max_corner points that do not define a valid bounding box. Generally, it is best to use the copy constructor or operator= with one of <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid....">ON_BoundingBox::EmptyBoundingBox</a>, <a class="el" href="class_o_n___bounding_box.html#a0a5db2f185ab14187662f2a2341fb533" title="All six min/max corner coordinates are ON_UNSET_VALUE. This is a good choice to indicate a bounding b...">ON_BoundingBox::UnsetBoundingBox</a> or <a class="el" href="class_o_n___bounding_box.html#a638a489b986da528eccc0d252662ee7e" title="All six min/max corner coordinates are ON_DBL_QNAN. This is a good choice as a return value for a fun...">ON_BoundingBox::NanBoundingBox</a> to initialize invalid bounding boxes.  <a href="class_o_n___bounding_box.html#a19e20fc36bafd9393ec47a3b287a83d2">More...</a><br /></td></tr>
+<tr class="separator:a19e20fc36bafd9393ec47a3b287a83d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c28641f010915fb1ee7c771390be6e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a9c28641f010915fb1ee7c771390be6e8">ON_BoundingBox</a> (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;)=default</td></tr>
 <tr class="separator:a9c28641f010915fb1ee7c771390be6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2d1ae6c0fac36a3a8fad7cc3b5c09f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#af2d1ae6c0fac36a3a8fad7cc3b5c09f8">~ON_BoundingBox</a> ()=default</td></tr>
@@ -103,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a083bdd210339a218b0c67392d8cc9f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab004090dffca66bb6d06c28b11ca801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___line.html">ON_Line</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#aab004090dffca66bb6d06c28b11ca801">Edge</a> (unsigned int index) const</td></tr>
 <tr class="separator:aab004090dffca66bb6d06c28b11ca801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedc389938f4d0feec1a4be3f8e97147"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#aeedc389938f4d0feec1a4be3f8e97147">Expand</a> (double margin)</td></tr>
+<tr class="separator:aeedc389938f4d0feec1a4be3f8e97147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fdbc7a40831e709d5ad8e87757cfb39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a6fdbc7a40831e709d5ad8e87757cfb39">Expand</a> (<a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> delta)</td></tr>
 <tr class="separator:a6fdbc7a40831e709d5ad8e87757cfb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537d8c43bae404e57a09628e732c1117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a537d8c43bae404e57a09628e732c1117">FarPoint</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;) const</td></tr>
@@ -133,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa65161624df9aca711da5f57ae1f5a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3404a3d18af06761e796246c3c4d94c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a3404a3d18af06761e796246c3c4d94c8">IsDisjoint</a> (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;other_bbox) const</td></tr>
 <tr class="separator:a3404a3d18af06761e796246c3c4d94c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5850d8fc59ce440582f6cc9c65d7cd0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a5850d8fc59ce440582f6cc9c65d7cd0f">IsDisjoint</a> (const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;other_bbox, double tolerance) const</td></tr>
+<tr class="separator:a5850d8fc59ce440582f6cc9c65d7cd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e14265e797b1a18854f0f74d649fdce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a9e14265e797b1a18854f0f74d649fdce">IsDisjoint</a> (const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;line) const</td></tr>
 <tr class="separator:a9e14265e797b1a18854f0f74d649fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1331e6c8dcaf79bd631abfa6b94c683"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#aa1331e6c8dcaf79bd631abfa6b94c683">IsDisjoint</a> (const <a class="el" href="class_o_n___line.html">ON_Line</a> &amp;line, bool infinite) const</td></tr>
@@ -255,13 +260,13 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad4f488fc6dfa2692722d7dc7969fc9cc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc">EmptyBoundingBox</a></td></tr>
-<tr class="memdesc:ad4f488fc6dfa2692722d7dc7969fc9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">((1.0,0.0,0.0),(-1.0,0.0,0.0))  <a href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc">More...</a><br /></td></tr>
+<tr class="memdesc:ad4f488fc6dfa2692722d7dc7969fc9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid. This is a good choice as a return value for a function where an empty bounding box could be a reasonable result.  <a href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc">More...</a><br /></td></tr>
 <tr class="separator:ad4f488fc6dfa2692722d7dc7969fc9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638a489b986da528eccc0d252662ee7e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a638a489b986da528eccc0d252662ee7e">NanBoundingBox</a></td></tr>
-<tr class="memdesc:a638a489b986da528eccc0d252662ee7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">all coordinates are ON_DBL_QNAN  <a href="class_o_n___bounding_box.html#a638a489b986da528eccc0d252662ee7e">More...</a><br /></td></tr>
+<tr class="memdesc:a638a489b986da528eccc0d252662ee7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">All six min/max corner coordinates are ON_DBL_QNAN. This is a good choice as a return value for a function that is asked to calculate a bounding box with invalid input.  <a href="class_o_n___bounding_box.html#a638a489b986da528eccc0d252662ee7e">More...</a><br /></td></tr>
 <tr class="separator:a638a489b986da528eccc0d252662ee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a5db2f185ab14187662f2a2341fb533"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bounding_box.html#a0a5db2f185ab14187662f2a2341fb533">UnsetBoundingBox</a></td></tr>
-<tr class="memdesc:a0a5db2f185ab14187662f2a2341fb533"><td class="mdescLeft">&#160;</td><td class="mdescRight">all coordinates are ON_UNSET_VALUE  <a href="class_o_n___bounding_box.html#a0a5db2f185ab14187662f2a2341fb533">More...</a><br /></td></tr>
+<tr class="memdesc:a0a5db2f185ab14187662f2a2341fb533"><td class="mdescLeft">&#160;</td><td class="mdescRight">All six min/max corner coordinates are ON_UNSET_VALUE. This is a good choice to indicate a bounding box is not initialized but is expected to become a valid bounding box as a calculation progresses.  <a href="class_o_n___bounding_box.html#a0a5db2f185ab14187662f2a2341fb533">More...</a><br /></td></tr>
 <tr class="separator:a0a5db2f185ab14187662f2a2341fb533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -284,7 +289,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>creates EmptyBoundingBox </p>
+<p>The default <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> constructor creates a instance of <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid....">ON_BoundingBox::EmptyBoundingBox</a>. ((1.0,0.0,0.0), (-1.0,0.0,0.0)). Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid. </p>
 
 </div>
 </div>
@@ -339,8 +344,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a02ba96c4ade11c187ecba2f570a2355f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02ba96c4ade11c187ecba2f570a2355f">&#9670;&nbsp;</a></span>ON_BoundingBox() <span class="overload">[3/3]</span></h2>
+<a id="a19e20fc36bafd9393ec47a3b287a83d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e20fc36bafd9393ec47a3b287a83d2">&#9670;&nbsp;</a></span>ON_BoundingBox() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,13 +357,13 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">ON_BoundingBox::ON_BoundingBox </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>min_corner</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>max_corner</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -372,6 +377,15 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Create a bounding box from min_corner to max_corner. For a valid <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a>, min_corner.x &lt;= max_corner.x, min_corner.y &lt;= max_corner.y and min_corner.z &lt;= max_corner.z. Experts may pass min_corner and max_corner points that do not define a valid bounding box. Generally, it is best to use the copy constructor or operator= with one of <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid....">ON_BoundingBox::EmptyBoundingBox</a>, <a class="el" href="class_o_n___bounding_box.html#a0a5db2f185ab14187662f2a2341fb533" title="All six min/max corner coordinates are ON_UNSET_VALUE. This is a good choice to indicate a bounding b...">ON_BoundingBox::UnsetBoundingBox</a> or <a class="el" href="class_o_n___bounding_box.html#a638a489b986da528eccc0d252662ee7e" title="All six min/max corner coordinates are ON_DBL_QNAN. This is a good choice as a return value for a fun...">ON_BoundingBox::NanBoundingBox</a> to initialize invalid bounding boxes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min_corner</td><td></td></tr>
+    <tr><td class="paramname">max_corner</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -479,7 +493,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>OBSOLETE. </p>
-<p>set this = <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0))">ON_BoundingBox::EmptyBoundingBox</a> </p>
+<p>set this = <a class="el" href="class_o_n___bounding_box.html#ad4f488fc6dfa2692722d7dc7969fc9cc" title="((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid....">ON_BoundingBox::EmptyBoundingBox</a> </p>
 
 </div>
 </div>
@@ -545,8 +559,27 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aeedc389938f4d0feec1a4be3f8e97147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeedc389938f4d0feec1a4be3f8e97147">&#9670;&nbsp;</a></span>Expand() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_BoundingBox::Expand </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>margin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Expand the bounding box by adding margin to each component of m_max and subtracting it from m_min. Returns: true if the result is Valid. </p>
+
+</div>
+</div>
 <a id="a6fdbc7a40831e709d5ad8e87757cfb39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fdbc7a40831e709d5ad8e87757cfb39">&#9670;&nbsp;</a></span>Expand()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fdbc7a40831e709d5ad8e87757cfb39">&#9670;&nbsp;</a></span>Expand() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -907,7 +940,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a3404a3d18af06761e796246c3c4d94c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3404a3d18af06761e796246c3c4d94c8">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3404a3d18af06761e796246c3c4d94c8">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,8 +958,37 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5850d8fc59ce440582f6cc9c65d7cd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5850d8fc59ce440582f6cc9c65d7cd0f">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_BoundingBox::IsDisjoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;&#160;</td>
+          <td class="paramname"><em>other_bbox</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Test to see if "this" and other_bbox are disjoint (do not intersect), allowing a tolerance for the comparison. Parameters: other_bbox - [in] tolerance - [in] Distance tolerance for the comparison. When tolerance &gt; 0.0, the boxes are considered to intersect (not disjoint) if the gap between them is &lt;= tolerance. This is useful as a coarse pre-check when the boxes may be separated by numerical noise but the underlying geometry actually intersects within a working tolerance. When tolerance = 0.0, the result matches IsDisjoint(other_bbox). When tolerance &lt; 0.0, the boxes must overlap by more than |tolerance| to be considered not disjoint. Returns: True if "this" and other_bbox are disjoint. Remarks: If "this" or other_bbox is invalid, then true is returned. </p>
+
+</div>
+</div>
 <a id="a9e14265e797b1a18854f0f74d649fdce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e14265e797b1a18854f0f74d649fdce">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e14265e797b1a18854f0f74d649fdce">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -945,7 +1007,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aa1331e6c8dcaf79bd631abfa6b94c683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1331e6c8dcaf79bd631abfa6b94c683">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1331e6c8dcaf79bd631abfa6b94c683">&#9670;&nbsp;</a></span>IsDisjoint() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1016,7 +1078,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Quickly determine if the shortest distance from the point P to the bounding box is greater than d. Parameters: d - [in] distance (&gt; 0.0) P - [in] Returns: True if if the shortest distance from the point P to the bounding box is greater than d. </p>
+<p>Description: Quickly determine if the shortest distance from the point P to the bounding box is greater than d. Parameters: d - [in] distance (&gt; 0.0) P - [in] Returns: True if the shortest distance from the point P to the bounding box is greater than d. </p>
 
 </div>
 </div>
@@ -1045,7 +1107,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Quickly determine if the shortest distance this bounding box to another bounding box is greater than d. Parameters: d - [in] distance (&gt; 0.0) other - [in] other bounding box Returns: True if if the shortest distance from this bounding box to the other bounding box is greater than d. </p>
+<p>Description: Quickly determine if the shortest distance this bounding box to another bounding box is greater than d. Parameters: d - [in] distance (&gt; 0.0) other - [in] other bounding box Returns: True if the shortest distance from this bounding box to the other bounding box is greater than d. </p>
 
 </div>
 </div>
@@ -2164,7 +2226,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>((1.0,0.0,0.0),(-1.0,0.0,0.0)) </p>
+<p>((1.0,0.0,0.0),(-1.0,0.0,0.0)) Note that min.x = 1 &gt; max.x = -1 and this makes the box invalid. This is a good choice as a return value for a function where an empty bounding box could be a reasonable result. </p>
 
 </div>
 </div>
@@ -2216,7 +2278,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>all coordinates are ON_DBL_QNAN </p>
+<p>All six min/max corner coordinates are ON_DBL_QNAN. This is a good choice as a return value for a function that is asked to calculate a bounding box with invalid input. </p>
 
 </div>
 </div>
@@ -2240,14 +2302,14 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>all coordinates are ON_UNSET_VALUE </p>
+<p>All six min/max corner coordinates are ON_UNSET_VALUE. This is a good choice to indicate a bounding box is not initialized but is expected to become a valid bounding box as a calculation progresses. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

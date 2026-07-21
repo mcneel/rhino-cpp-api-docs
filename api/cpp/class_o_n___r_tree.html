@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf66798ce1ab81e70c4d2ad971db1117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaaa332119e0045797d276cf5d593dc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#aeaaa332119e0045797d276cf5d593dc2">CreateMeshFaceTree</a> (const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh)</td></tr>
 <tr class="separator:aeaaa332119e0045797d276cf5d593dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bf26b42f2660a88250767a4b81981b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#ae6bf26b42f2660a88250767a4b81981b">CreateMeshFaceTreePacked</a> (const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh)</td></tr>
+<tr class="separator:ae6bf26b42f2660a88250767a4b81981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea6e41e8da4902aea3d8c01731c2cd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a3ea6e41e8da4902aea3d8c01731c2cd3">CreateMeshVertexTreePacked</a> (const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh)</td></tr>
+<tr class="separator:a3ea6e41e8da4902aea3d8c01731c2cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553c28a6189ab8b336aad9d0cc5d1ae1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a553c28a6189ab8b336aad9d0cc5d1ae1">ElementCount</a> ()</td></tr>
 <tr class="separator:a553c28a6189ab8b336aad9d0cc5d1ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de2fc8ec53bfbda3eb7ebbbc88d4134"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#a8de2fc8ec53bfbda3eb7ebbbc88d4134">Insert</a> (const double a_min[3], const double a_max[3], int a_element_id)</td></tr>
@@ -161,6 +165,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb56427bc7bb2c7a27a0f58124d6480c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafee383d7c1af961a7608376d7ce7154"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#aafee383d7c1af961a7608376d7ce7154">SizeOf</a> () const</td></tr>
 <tr class="separator:aafee383d7c1af961a7608376d7ce7154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed8caeec79df4288c87426f52b22b7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___r_tree.html#afed8caeec79df4288c87426f52b22b7a">Transform</a> (const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xform)</td></tr>
+<tr class="separator:afed8caeec79df4288c87426f52b22b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -249,6 +255,44 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Create an R-tree with an element for each face in the mesh. The element id is set to the index of the face. Parameters: mesh - [in] Returns: True if successful. </p>
+
+</div>
+</div>
+<a id="ae6bf26b42f2660a88250767a4b81981b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bf26b42f2660a88250767a4b81981b">&#9670;&nbsp;</a></span>CreateMeshFaceTreePacked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_RTree::CreateMeshFaceTreePacked </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Create an R-tree with an element for each face in the mesh, building the tree bottom-up from spatially sorted faces (packed/bulk load) instead of inserting faces one at a time. This is dramatically faster than <a class="el" href="class_o_n___r_tree.html#aeaaa332119e0045797d276cf5d593dc2">CreateMeshFaceTree()</a> for large meshes (e.g. millions of faces) and produces a tree that returns identical query results. Parameters: mesh - [in] Returns: True if successful. On failure the tree is left empty. </p>
+
+</div>
+</div>
+<a id="a3ea6e41e8da4902aea3d8c01731c2cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea6e41e8da4902aea3d8c01731c2cd3">&#9670;&nbsp;</a></span>CreateMeshVertexTreePacked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_RTree::CreateMeshVertexTreePacked </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Create an R-tree with a degenerate (point) element for each vertex in the mesh, using the same packed/bulk bottom-up build as <a class="el" href="class_o_n___r_tree.html#ae6bf26b42f2660a88250767a4b81981b">CreateMeshFaceTreePacked()</a>. The element id is set to the index of the vertex. Double precision vertices are used when the mesh has them, single precision vertices otherwise. The tree accepts further <a class="el" href="class_o_n___r_tree.html#a9de21d768597267474047dda81932e2c">Insert()</a> calls afterwards. Parameters: mesh - [in] Returns: True if successful (the mesh has at least one vertex). On failure the tree is left empty. </p>
 
 </div>
 </div>
@@ -1602,6 +1646,27 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afed8caeec79df4288c87426f52b22b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed8caeec79df4288c87426f52b22b7a">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_RTree::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Apply an affine transformation to every node rectangle in the tree, in place, so the tree indexes the transformed geometry without being rebuilt.</p>
+<p>This is for the case where the geometry an R-tree was built from is moved by a rigid/affine transform (e.g. a mesh that is translated or rotated): rather than rebuilding the tree from scratch - O(n log n), and the dominant cost of clipping-section generation on a moved mesh (RH-88674) - the existing tree is reused and only its bounding rectangles are updated, which is O(number of nodes) and allocation-free.</p>
+<p>Each axis-aligned rectangle is replaced by the axis-aligned bounding box of its transformed box (computed with the "absolute value of the linear part" trick: new_center = L*center + t, new_halfwidth = |L|*halfwidth). For a pure translation or axis-aligned scale this is exact; for a rotation it is a tight but conservative enclosure. Because the same transform is applied to every rectangle at every level, and the AABB-of-transformed-box operation is monotone with respect to containment, the R-tree invariant (each node's rectangle contains its children's rectangles) is preserved, so queries remain correct. The only effect of the conservative enclosure under rotation is that a query may return a few extra candidates, which callers already reject with their exact test. Parameters: xform - [in] An affine transform (the bottom row must be [0 0 0 1]). Returns: True if the transform was applied. False (tree left unchanged) if the tree is empty or xform is not affine (e.g. a perspective transform), in which case the caller should rebuild the tree instead. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a195f4a9b64b621cf180e09efd53fbe82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a195f4a9b64b621cf180e09efd53fbe82">&#9670;&nbsp;</a></span>Empty</h2>
@@ -1628,7 +1693,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

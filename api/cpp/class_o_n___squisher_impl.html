@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2692a94215a8a9e1b10a860ea1ecce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f9c02ca878c511329aaec663cae900c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher_impl.html#a4f9c02ca878c511329aaec663cae900c">GetPlane</a> () const =0</td></tr>
 <tr class="separator:a4f9c02ca878c511329aaec663cae900c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e23a5a644ead87930718c7b854ea3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher_impl.html#a06e23a5a644ead87930718c7b854ea3e">ReleaseMesh2d</a> ()=0</td></tr>
+<tr class="separator:a06e23a5a644ead87930718c7b854ea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be2042598a2c6b8a60d56760d8361bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher_impl.html#a3be2042598a2c6b8a60d56760d8361bb">ReleaseMesh3d</a> ()=0</td></tr>
+<tr class="separator:a3be2042598a2c6b8a60d56760d8361bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068a1f486c7ebde34caee1a8a4d02d0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher_impl.html#a068a1f486c7ebde34caee1a8a4d02d0c">SaveOriginalObjectIdAndComponentIndex</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> obj_id, const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> obj_ci, <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *squished_geometry)=0</td></tr>
 <tr class="separator:a068a1f486c7ebde34caee1a8a4d02d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba66d53ecdbd31cf748f4f4a4ccc0fd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_o_n___polyline_curve.html">ON_PolylineCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher_impl.html#a5ba66d53ecdbd31cf748f4f4a4ccc0fd">SquishCurve</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve3d) const =0</td></tr>
@@ -440,6 +444,56 @@ Static Public Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06e23a5a644ead87930718c7b854ea3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e23a5a644ead87930718c7b854ea3e">&#9670;&nbsp;</a></span>ReleaseMesh2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_SquisherImpl::ReleaseMesh2d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3be2042598a2c6b8a60d56760d8361bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be2042598a2c6b8a60d56760d8361bb">&#9670;&nbsp;</a></span>ReleaseMesh3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_SquisherImpl::ReleaseMesh3d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -815,7 +869,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

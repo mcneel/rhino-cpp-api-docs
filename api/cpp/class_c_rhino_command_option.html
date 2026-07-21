@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,7 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_c_rhino_command_option.html#a850223b5327ca82b90acfb89fbb7cc96a16e429317e886ee773772a1fe382ab08">list_option</a> = 4, 
 <a class="el" href="class_c_rhino_command_option.html#a850223b5327ca82b90acfb89fbb7cc96a7683203222833ac707bfbd335e506967">hidden_option</a> = 5, 
+<a class="el" href="class_c_rhino_command_option.html#a850223b5327ca82b90acfb89fbb7cc96acc1c720b4460e947af9f709b561624d9">string_option</a> = 6, 
 <a class="el" href="class_c_rhino_command_option.html#a850223b5327ca82b90acfb89fbb7cc96a39f5b425377ed4bbb46a824432a447a8">force_32bit_enum</a> = 0xFFFFFFFF
 <br />
  }</td></tr>
@@ -97,10 +98,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a273e0a06893e9be153da5ef3af5a7895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838fb9376576c9bb6e8bc3d9cb652d7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a838fb9376576c9bb6e8bc3d9cb652d7e">~CRhinoCommandOption</a> ()</td></tr>
 <tr class="separator:a838fb9376576c9bb6e8bc3d9cb652d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a03d20fe764cc98f911bf893fe4119"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#ac6a03d20fe764cc98f911bf893fe4119">AllowEmptyString</a> () const</td></tr>
+<tr class="separator:ac6a03d20fe764cc98f911bf893fe4119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecaa13366d7cdff4221a5fa69598d33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a1ecaa13366d7cdff4221a5fa69598d33">Clear</a> ()</td></tr>
 <tr class="separator:a1ecaa13366d7cdff4221a5fa69598d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a9ccdbf6649070596d913963684ed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rhino_command_option.html">CRhinoCommandOption</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a18a9ccdbf6649070596d913963684ed2">operator=</a> (const <a class="el" href="class_c_rhino_command_option.html">CRhinoCommandOption</a> &amp;)</td></tr>
 <tr class="separator:a18a9ccdbf6649070596d913963684ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3dd6736d3bda00174c1de5a7de4b820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#aa3dd6736d3bda00174c1de5a7de4b820">SetAllowEmptyString</a> (bool bAccept)</td></tr>
+<tr class="memdesc:aa3dd6736d3bda00174c1de5a7de4b820"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true an empty string is allowed when type is string_option.  <a href="class_c_rhino_command_option.html#aa3dd6736d3bda00174c1de5a7de4b820">More...</a><br /></td></tr>
+<tr class="separator:aa3dd6736d3bda00174c1de5a7de4b820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863a8130a443bf2cace96f50f7b89dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a863a8130a443bf2cace96f50f7b89dc6">SetDisplayString</a> (int nUniqueChars) const</td></tr>
 <tr class="memdesc:a863a8130a443bf2cace96f50f7b89dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets m_display_string  <a href="class_c_rhino_command_option.html#a863a8130a443bf2cace96f50f7b89dc6">More...</a><br /></td></tr>
 <tr class="separator:a863a8130a443bf2cace96f50f7b89dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +128,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af3171eaf59dd9ba8b6dbb9ac369af6c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#af3171eaf59dd9ba8b6dbb9ac369af6c6">m_color_option_value</a></td></tr>
 <tr class="separator:af3171eaf59dd9ba8b6dbb9ac369af6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___color.html">ON_Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a1447a32da67f605f6ccaf1f2ad702b8f">m_color_option_value_ptr</a></td></tr>
+<tr class="memdesc:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" color options  <a href="class_c_rhino_command_option.html#a1447a32da67f605f6ccaf1f2ad702b8f">More...</a><br /></td></tr>
 <tr class="separator:a1447a32da67f605f6ccaf1f2ad702b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c84a8f7a34063d2cfb7651cdad718d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#ga5be1ce153f42e5e6c3f762ef750c0b97">RECT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a21c84a8f7a34063d2cfb7651cdad718d">m_display_rect</a></td></tr>
 <tr class="memdesc:a21c84a8f7a34063d2cfb7651cdad718d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(volatile) for hit testing mouse picks  <a href="class_c_rhino_command_option.html#a21c84a8f7a34063d2cfb7651cdad718d">More...</a><br /></td></tr>
@@ -141,10 +148,9 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:acad2c911fe4dbf0f8fc6054c5aa31af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is for _english script processing  <a href="class_c_rhino_command_option.html#acad2c911fe4dbf0f8fc6054c5aa31af0">More...</a><br /></td></tr>
 <tr class="separator:acad2c911fe4dbf0f8fc6054c5aa31af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e408c50451702760cf444e6fbf07757"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a2e408c50451702760cf444e6fbf07757">m_flags</a></td></tr>
-<tr class="memdesc:a2e408c50451702760cf444e6fbf07757"><td class="mdescLeft">&#160;</td><td class="mdescRight">0x01 = option value is displayed as "Varies"  <a href="class_c_rhino_command_option.html#a2e408c50451702760cf444e6fbf07757">More...</a><br /></td></tr>
 <tr class="separator:a2e408c50451702760cf444e6fbf07757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e7b5610bd5d319a73cea7550d51a3f"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a61e7b5610bd5d319a73cea7550d51a3f">m_integer_option_value_ptr</a></td></tr>
-<tr class="memdesc:a61e7b5610bd5d319a73cea7550d51a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" integer options  <a href="class_c_rhino_command_option.html#a61e7b5610bd5d319a73cea7550d51a3f">More...</a><br /></td></tr>
+<tr class="memdesc:a61e7b5610bd5d319a73cea7550d51a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for "automatic" integer and string options  <a href="class_c_rhino_command_option.html#a61e7b5610bd5d319a73cea7550d51a3f">More...</a><br /></td></tr>
 <tr class="separator:a61e7b5610bd5d319a73cea7550d51a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33273a2eb66065475174940f316703da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_command_option.html#a33273a2eb66065475174940f316703da">m_list_option_current</a></td></tr>
 <tr class="memdesc:a33273a2eb66065475174940f316703da"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 based index into m_list_option_values[] array  <a href="class_c_rhino_command_option.html#a33273a2eb66065475174940f316703da">More...</a><br /></td></tr>
@@ -227,6 +233,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a850223b5327ca82b90acfb89fbb7cc96a16e429317e886ee773772a1fe382ab08"></a>list_option&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a850223b5327ca82b90acfb89fbb7cc96a7683203222833ac707bfbd335e506967"></a>hidden_option&#160;</td><td class="fielddoc"><p>full name required to activate - does not appear on command line </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a850223b5327ca82b90acfb89fbb7cc96acc1c720b4460e947af9f709b561624d9"></a>string_option&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a850223b5327ca82b90acfb89fbb7cc96a39f5b425377ed4bbb46a824432a447a8"></a>force_32bit_enum&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -286,6 +293,23 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac6a03d20fe764cc98f911bf893fe4119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a03d20fe764cc98f911bf893fe4119">&#9670;&nbsp;</a></span>AllowEmptyString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoCommandOption::AllowEmptyString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ecaa13366d7cdff4221a5fa69598d33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ecaa13366d7cdff4221a5fa69598d33">&#9670;&nbsp;</a></span>Clear()</h2>
 
@@ -318,6 +342,26 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3dd6736d3bda00174c1de5a7de4b820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dd6736d3bda00174c1de5a7de4b820">&#9670;&nbsp;</a></span>SetAllowEmptyString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoCommandOption::SetAllowEmptyString </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAccept</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true an empty string is allowed when type is string_option. </p>
 
 </div>
 </div>
@@ -458,6 +502,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>used for "automatic" color options </p>
 
 </div>
@@ -567,8 +612,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>0x01 = option value is displayed as "Varies" </p>
+<p>0x01 = option value is displayed as "Varies" 0x02 - empty string allowed in string mode </p>
 
 </div>
 </div>
@@ -584,7 +628,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>used for "automatic" integer options </p>
+<p>used for "automatic" integer and string options </p>
 
 </div>
 </div>
@@ -923,7 +967,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

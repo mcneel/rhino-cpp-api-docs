@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -160,6 +160,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a339a4e5d1d9546ff26ec524d938993c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ef02dabc39779d1cdc3bcdd71d9ed12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#a7ef02dabc39779d1cdc3bcdd71d9ed12">Morph</a> (const <a class="el" href="class_o_n___space_morph.html">ON_SpaceMorph</a> &amp;morph)</td></tr>
 <tr class="separator:a7ef02dabc39779d1cdc3bcdd71d9ed12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f19b7629196aaa16f469f4d0f39141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#ad3f19b7629196aaa16f469f4d0f39141">NormalAt</a> (double u, double v, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;p, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal) const</td></tr>
+<tr class="separator:ad3f19b7629196aaa16f469f4d0f39141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af94816468c5434b3492e1e8c12de24bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bezier_surface.html">ON_BezierSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#af94816468c5434b3492e1e8c12de24bf">operator=</a> (const <a class="el" href="class_o_n___bezier_surface.html">ON_BezierSurface</a> &amp;)</td></tr>
 <tr class="separator:af94816468c5434b3492e1e8c12de24bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eccf36865ac30b4f1628ac4d3f9dc08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___bezier_surface.html">ON_BezierSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#a5eccf36865ac30b4f1628ac4d3f9dc08">operator=</a> (const <a class="el" href="class_o_n___polynomial_surface.html">ON_PolynomialSurface</a> &amp;)</td></tr>
@@ -173,6 +175,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a417f26f41c9f041f227738d72a575a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools for managing CV and knot memory.  <a href="class_o_n___bezier_surface.html#a417f26f41c9f041f227738d72a575a5d">More...</a><br /></td></tr>
 <tr class="separator:a417f26f41c9f041f227738d72a575a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af75e201071034dd142834eb57e1b4acb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#af75e201071034dd142834eb57e1b4acb">Reverse</a> (int)</td></tr>
+<tr class="memdesc:af75e201071034dd142834eb57e1b4acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reverse parameterizatrion  <a href="class_o_n___bezier_surface.html#af75e201071034dd142834eb57e1b4acb">More...</a><br /></td></tr>
 <tr class="separator:af75e201071034dd142834eb57e1b4acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a8cdd8bb54a524d2d417cbf7dbfed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___bezier_surface.html#a37a8cdd8bb54a524d2d417cbf7dbfed1">Rotate</a> (double rotation_angle, const <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;rotation_axis, const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;rotation_center)</td></tr>
 <tr class="separator:a37a8cdd8bb54a524d2d417cbf7dbfed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -742,7 +745,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the parameters of the point on the bezier surface that is closest to the point P. Parameters: P - [in] s - [out] t - [out] Closest point parameters. maximum_distance - [in] If maximum_distance &gt; 0.0, then an answer is returned only if the distance from the bezier surface to P is &lt;= maximum_distance. If maximum_distance &lt;= 0.0, then maximum_distance is ignored. sub_domain0 - [in] If not nullptr, the search is confined to "s" parameters in the intersection of the sub_domain0 interval and (0,1). sub_domain1 - [in] If not nullptr, the search is confined to "t" parameters in the intersection of the sub_domain1 interval and (0,1). Returns: True if a point is found. See Also: <a class="el" href="class_o_n___surface_tree_node.html#a307b7a616feefbcfbee1dc661eedde41">ON_SurfaceTreeNode::GetClosestPoint</a> Remarks: This function is not efficient if you will be finding multiple closest points to the same bezier. To efficiently find multiple closest points, make a surface tree and use it. See the <a class="el" href="class_o_n___bezier_surface.html#a96382e39546fb7a26009910daa771026">ON_BezierSurface::GetClosestPoint</a> code for an example. </p>
+<p>Description: Get the parameters of the point on the bezier surface that is closest to the point P. Parameters: P - [in] s - [out] t - [out] Closest point parameters. maximum_distance - [in] If maximum_distance &gt; 0.0, then an answer is returned only if the distance from the bezier surface to P is &lt;= maximum_distance. If maximum_distance &lt;= 0.0, then maximum_distance is ignored. sub_domain0 - [in] If not nullptr, the search is confined to "s" parameters in the intersection of the sub_domain0 interval and (0,1). sub_domain1 - [in] If not nullptr, the search is confined to "t" parameters in the intersection of the sub_domain1 interval and (0,1). Returns: True if a point is found. See Also: ON_SurfaceTreeNode::GetClosestPoint Remarks: This function is not efficient if you will be finding multiple closest points to the same bezier. To efficiently find multiple closest points, make a surface tree and use it. See the <a class="el" href="class_o_n___bezier_surface.html#a96382e39546fb7a26009910daa771026">ON_BezierSurface::GetClosestPoint</a> code for an example. </p>
 
 </div>
 </div>
@@ -1105,11 +1108,6 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">point_grid</td><td>Grid points</td></tr>
     <tr><td class="paramname">point_count0</td><td>Number of grid points "i" direction.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>/// </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramname">point_count1</td><td>Number of grid points in the "j" direction.</td></tr>
     <tr><td class="paramname">point_stride0</td><td>"i" direction stride in ON_3dPoints.</td></tr>
     <tr><td class="paramname">point_stride1</td><td>"j" direction stride in ON_3dPoints.</td></tr>
@@ -1369,6 +1367,47 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad3f19b7629196aaa16f469f4d0f39141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f19b7629196aaa16f469f4d0f39141">&#9670;&nbsp;</a></span>NormalAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_BezierSurface::NormalAt </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Calculate the normal direction at the specified parameters. Parameters: u, v - [in] the parameters to evaluate the surface on [0..1] p - [out] the point on the surface at (u,v) normal - [out] the normal direction (unitized) Returns: true if surface evalaluation is successful. Remarks: Uses ON_EvNormal when |ON_CrossProduct(du, dv)| is close to zero. </p>
+
+</div>
+</div>
 <a id="af94816468c5434b3492e1e8c12de24bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af94816468c5434b3492e1e8c12de24bf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -1488,7 +1527,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>reverse parameterizatrion Domain changes from [a,b] to [-b,-a] </p>
+
+<p>reverse parameterizatrion </p>
 
 </div>
 </div>
@@ -1997,7 +2037,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abcf66801a226337626c4ab8d63e02001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#abcf66801a226337626c4ab8d63e02001">RequestFirstNewlyAddedFacesList</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned &gt; *list)</td></tr>
 <tr class="memdesc:abcf66801a226337626c4ab8d63e02001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retuns a list with the first index, the first index of the first newly added mesh face, and as secondo index, the count of new faces after that index.  <a href="class_c_rhino_mesh_boolean_options.html#abcf66801a226337626c4ab8d63e02001">More...</a><br /></td></tr>
 <tr class="separator:abcf66801a226337626c4ab8d63e02001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af774c969a3a00782b763855e291ac536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#af774c969a3a00782b763855e291ac536">RequestSourceMeshIndexMap</a> (<a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt;&gt; *map)</td></tr>
+<tr class="memdesc:af774c969a3a00782b763855e291ac536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests an input-to-output index map for the next boolean run (RH-94152). When set, the boolean fills 'map' with one entry per output mesh (parallel to the OutMeshes result), each listing the indices of the input meshes that contributed faces to that output. For the two-set operations (Difference/Intersection/Split) the indices are flat-concatenated: the first set occupies 0..n0-1 and the second set occupies n0..n0+n1-1. The pointer is borrowed; the caller owns the storage.  <a href="class_c_rhino_mesh_boolean_options.html#af774c969a3a00782b763855e291ac536">More...</a><br /></td></tr>
+<tr class="separator:af774c969a3a00782b763855e291ac536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a7f788eadf0fbaebeec6cb44bbb921e8c">SourceMeshIndexMap</a> () const</td></tr>
+<tr class="memdesc:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index map requested via RequestSourceMeshIndexMap, or null.  <a href="class_c_rhino_mesh_boolean_options.html#a7f788eadf0fbaebeec6cb44bbb921e8c">More...</a><br /></td></tr>
+<tr class="separator:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -161,6 +167,51 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af774c969a3a00782b763855e291ac536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af774c969a3a00782b763855e291ac536">&#9670;&nbsp;</a></span>RequestSourceMeshIndexMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoMeshBooleanOptions::RequestSourceMeshIndexMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests an input-to-output index map for the next boolean run (RH-94152). When set, the boolean fills 'map' with one entry per output mesh (parallel to the OutMeshes result), each listing the indices of the input meshes that contributed faces to that output. For the two-set operations (Difference/Intersection/Split) the indices are flat-concatenated: the first set occupies 0..n0-1 and the second set occupies n0..n0+n1-1. The pointer is borrowed; the caller owns the storage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>Receives the per-output index sets, or null to disable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f788eadf0fbaebeec6cb44bbb921e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f788eadf0fbaebeec6cb44bbb921e8c">&#9670;&nbsp;</a></span>SourceMeshIndexMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt;<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;int&gt; &gt;* CRhinoMeshBooleanOptions::SourceMeshIndexMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the index map requested via RequestSourceMeshIndexMap, or null. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a29c9ae65dc55a434fdb0d49ead2f1616"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29c9ae65dc55a434fdb0d49ead2f1616">&#9670;&nbsp;</a></span>m_cancel</h2>
@@ -221,7 +272,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:50 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

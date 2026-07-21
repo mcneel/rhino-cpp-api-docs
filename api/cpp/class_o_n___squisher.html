@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aefcd807bdb96f25142bbecbb98d2e51d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#aefcd807bdb96f25142bbecbb98d2e51d">GetPlane</a> () const</td></tr>
 <tr class="memdesc:aefcd807bdb96f25142bbecbb98d2e51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the plane that was used to flatten the surface, or <a class="el" href="class_o_n___plane.html#ac1b342198d842dadc0ce66a142bbae79" title="All values are ON_UNSET_VALUE.">ON_Plane::UnsetPlane</a> if local estimates were used.  <a href="class_o_n___squisher.html#aefcd807bdb96f25142bbecbb98d2e51d">More...</a><br /></td></tr>
 <tr class="separator:aefcd807bdb96f25142bbecbb98d2e51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d09e7ba253fbf6abbaec50099e03241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a3d09e7ba253fbf6abbaec50099e03241">ReleaseMesh2d</a> ()</td></tr>
+<tr class="separator:a3d09e7ba253fbf6abbaec50099e03241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b52913c50435c2aa592aedc1e11c124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a2b52913c50435c2aa592aedc1e11c124">ReleaseMesh3d</a> ()</td></tr>
+<tr class="separator:a2b52913c50435c2aa592aedc1e11c124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___squisher.html#a97e8310a87be728bd5c3d2928d8e8a9f">SaveOriginalObjectIdAndComponentIndex</a> (const <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> obj_id, const <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> obj_ci, <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *squished_geometry)</td></tr>
 <tr class="memdesc:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the original object id and component index in TL_SquishMapBackInfo user data.  <a href="class_o_n___squisher.html#a97e8310a87be728bd5c3d2928d8e8a9f">More...</a><br /></td></tr>
 <tr class="separator:a97e8310a87be728bd5c3d2928d8e8a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,7 +339,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>gets a const pointer to the 2d squished mesh, or NULL if it doesn't exist </p>
+<p>Gets a const pointer to the 2d squished mesh, or NULL if it doesn't exist </p>
 
 </div>
 </div>
@@ -354,7 +358,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained2dLines </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained2dLines </dd></dl>
 
 </div>
 </div>
@@ -372,7 +376,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>gets a const pointer to the 3d mesh used for squishing, or NULL if it isn't stored </p>
+<p>Gets a const pointer to the 3d mesh used for squishing, or NULL if it isn't stored </p>
 
 </div>
 </div>
@@ -391,7 +395,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained3dLines </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000078">Deprecated:</a></b></dt><dd>This method has been renamed GetLengthContrained3dLines </dd></dl>
 
 </div>
 </div>
@@ -437,6 +441,42 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d09e7ba253fbf6abbaec50099e03241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d09e7ba253fbf6abbaec50099e03241">&#9670;&nbsp;</a></span>ReleaseMesh2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_Squisher::ReleaseMesh2d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets a pointer to the 2d squished mesh and release ownership, or NULL if it doesn't exist </p>
+
+</div>
+</div>
+<a id="a2b52913c50435c2aa592aedc1e11c124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b52913c50435c2aa592aedc1e11c124">&#9670;&nbsp;</a></span>ReleaseMesh3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a>* ON_Squisher::ReleaseMesh3d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets a pointer to the 3d mesh used for squishing and release ownership, or NULL if it isn't stored </p>
 
 </div>
 </div>
@@ -750,7 +790,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

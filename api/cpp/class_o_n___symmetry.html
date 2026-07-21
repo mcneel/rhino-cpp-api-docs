@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -77,9 +77,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4b5642b29ddc478b075d195d996b4597"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___symmetry.html#a4b5642b29ddc478b075d195d996b4597aadf8f3b04f1b8b5cae595399df752439">MaximumOrder</a> = 4096
+<tr class="memitem:a967b059f712a2ace437b016d888c77f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned int { <a class="el" href="class_o_n___symmetry.html#a967b059f712a2ace437b016d888c77f3aadf8f3b04f1b8b5cae595399df752439">MaximumOrder</a> = 4096
  }</td></tr>
-<tr class="separator:a4b5642b29ddc478b075d195d996b4597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a967b059f712a2ace437b016d888c77f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572595d0c49922af939aea286f361f5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">Coordinates</a> : unsigned char { <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5bac9f88e098f6fe4e4e112eeb05ccb9671">Coordinates::Unset</a> = 0, 
 <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b">Coordinates::Object</a> = 1, 
 <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5baf5a7924e621e84c9280a9a27e1bcb7f6">Coordinates::World</a> = 2
@@ -239,6 +239,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a3d2c1a0a941a8ebe60a9094265c53706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e967a8e1b35d0a80a1992ab2e5527f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#aa2e967a8e1b35d0a80a1992ab2e5527f">CreateRotateSymmetry</a> (<a class="el" href="class_o_n___line.html">ON_Line</a> rotation_axis, unsigned int rotation_count, <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">ON_Symmetry::Coordinates</a> symmetry_coordinates)</td></tr>
 <tr class="separator:aa2e967a8e1b35d0a80a1992ab2e5527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728a95d090b6161d526d5afe18ce03ab"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a728a95d090b6161d526d5afe18ce03ab">FindNurbsCurveReflectionSymmetries</a> (const <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;nurbs_curve, double distance_tolerance, double angle_tolerance_radians, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> &gt; &amp;reflecton_symmetries)</td></tr>
+<tr class="memdesc:a728a95d090b6161d526d5afe18ce03ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find refection symmetries in NURBS curve control points.  <a href="class_o_n___symmetry.html#a728a95d090b6161d526d5afe18ce03ab">More...</a><br /></td></tr>
+<tr class="separator:a728a95d090b6161d526d5afe18ce03ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5db3bd0bf67147645ad424eb1df54a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#ade5db3bd0bf67147645ad424eb1df54a">IsValidCyclicTranformation</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> transformation, unsigned transformation_order)</td></tr>
 <tr class="separator:ade5db3bd0bf67147645ad424eb1df54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64aad36a751f84fa259e21178d6fcd98"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a64aad36a751f84fa259e21178d6fcd98">IsValidFixedPlane</a> (<a class="el" href="class_o_n___xform.html">ON_Xform</a> transformation, <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> fixed_plane)</td></tr>
@@ -249,6 +252,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a27c456aedc67c9951808d7c4911755a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a060dc3e5aee13ca43aa4fde45a3c450e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a060dc3e5aee13ca43aa4fde45a3c450e">IsValidRotationAxisAndFixedPlane</a> (<a class="el" href="class_o_n___line.html">ON_Line</a> rotation_axis, unsigned int rotation_count, <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> fixed_plane)</td></tr>
 <tr class="separator:a060dc3e5aee13ca43aa4fde45a3c450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ceed98d4440341be2c6b6a29b86b9be"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a6ceed98d4440341be2c6b6a29b86b9be">MakeNurbsCurveReflectionSymmetric</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> reflection_plane_equation, double test_tolerance, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;nurbs_curve)</td></tr>
+<tr class="memdesc:a6ceed98d4440341be2c6b6a29b86b9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a NURBS curve is close to have a reflection symmetry, adjust its control points so it is exactly symmetric.  <a href="class_o_n___symmetry.html#a6ceed98d4440341be2c6b6a29b86b9be">More...</a><br /></td></tr>
+<tr class="separator:a6ceed98d4440341be2c6b6a29b86b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0316740ef5074040c5c439417042b0de"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a0316740ef5074040c5c439417042b0de">MakeNurbsCurveRotationSymmetric</a> (<a class="el" href="class_o_n___plane.html">ON_Plane</a> rotation_axis, double rotation_radius, double test_tolerance, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;nurbs_curve)</td></tr>
+<tr class="memdesc:a0316740ef5074040c5c439417042b0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the NURBS curve's control points are symmetric within test tolerance, then they are made exactly symmetric.  <a href="class_o_n___symmetry.html#a0316740ef5074040c5c439417042b0de">More...</a><br /></td></tr>
+<tr class="separator:a0316740ef5074040c5c439417042b0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500f1cc513788ebe0f26781571e174dd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">ON_Symmetry::Coordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a500f1cc513788ebe0f26781571e174dd">SymmetryCoordinatesFromUnsigned</a> (unsigned int coordinates_as_unsigned)</td></tr>
 <tr class="separator:a500f1cc513788ebe0f26781571e174dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca6a94e8a7e54d14ec0809844037bdb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___symmetry.html#a5ca6a94e8a7e54d14ec0809844037bdb">SymmetryCoordinatesToString</a> (<a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5b">ON_Symmetry::Coordinates</a> symmetry_coordinates)</td></tr>
@@ -280,8 +289,8 @@ Static Public Attributes</h2></td></tr>
 <p>THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT EXPRESS OR IMPLIED WARRANTY. ALL IMPLIED WARRANTIES OF FITNESS FOR ANY PARTICULAR PURPOSE AND OF MERCHANTABILITY ARE HEREBY DISCLAIMED.</p>
 <p>For complete openNURBS copyright information see <a href="http://www.opennurbs.org">http://www.opennurbs.org</a>. <a class="el" href="class_o_n___symmetry.html">ON_Symmetry</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a4b5642b29ddc478b075d195d996b4597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5642b29ddc478b075d195d996b4597">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a967b059f712a2ace437b016d888c77f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967b059f712a2ace437b016d888c77f3">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +301,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4b5642b29ddc478b075d195d996b4597aadf8f3b04f1b8b5cae595399df752439"></a>MaximumOrder&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a967b059f712a2ace437b016d888c77f3aadf8f3b04f1b8b5cae595399df752439"></a>MaximumOrder&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -318,7 +327,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5bac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b"></a>Object&#160;</td><td class="fielddoc"><p>The symmetry is associated with an object is is applied to. If that object is transformed, the symmetry's planes and rotation axes are also transformed. </p>
+<tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b"></a>Object&#160;</td><td class="fielddoc"><p>The symmetry is associated with an object is applied to. If that object is transformed, the symmetry's planes and rotation axes are also transformed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a572595d0c49922af939aea286f361f5baf5a7924e621e84c9280a9a27e1bcb7f6"></a>World&#160;</td><td class="fielddoc"><p>The symmetry is independent of any objects is it applied to. The symmetry's planes and rotation axes are not changed when any of those objects are transformed. </p>
 </td></tr>
@@ -370,7 +379,7 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927a7b23344e653dbe51dccc0d88817b88a3"></a>InsideRotateAndReflect&#160;</td><td class="fielddoc"><p>Above both the reflection plane and the supplemental plane. Applies to ReflectAndRotate symmetries. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927aea9fd3478fade78ac2fc887bffb6e3d7"></a>OutsideRotateAndReflect&#160;</td><td class="fielddoc"><p>Outside the primary motif region and and on one of the fixed point planes Applies to ReflectAndRotate symmetries. </p>
+<tr><td class="fieldname"><a id="a025af3b37bec7b34b8a2545f4e2f3927aea9fd3478fade78ac2fc887bffb6e3d7"></a>OutsideRotateAndReflect&#160;</td><td class="fielddoc"><p>Outside the primary motif region and on one of the fixed point planes Applies to ReflectAndRotate symmetries. </p>
 </td></tr>
 </table>
 
@@ -808,6 +817,66 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a728a95d090b6161d526d5afe18ce03ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728a95d090b6161d526d5afe18ce03ab">&#9670;&nbsp;</a></span>FindNurbsCurveReflectionSymmetries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ON_Symmetry::FindNurbsCurveReflectionSymmetries </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>nurbs_curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle_tolerance_radians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reflecton_symmetries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find refection symmetries in NURBS curve control points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nurbs_curve</td><td></td></tr>
+    <tr><td class="paramname">distance_tolerance</td><td>This tolerance is used to decide when the reflection of one control point is close enought to another to qualify as a symmetric pair of control points. If distance_tolerance &gt; 0, then that value is used. Otherwise 0.0001 * nurbs_curve.BoundingBox().Diagonal().Length() is used. </td></tr>
+    <tr><td class="paramname">angle_tolerance_radians</td><td>This tolerance is used to decide when a reflection plane's normal is close enough to a world axis that the world axis should be used. If 0 &lt; angle_tolerance_radians &lt;= pi/4, then that value is used. Otherwise pi/360 (1/2 degree) is used. </td></tr>
+    <tr><td class="paramname">reflecton_symmetries</td><td>The reflection planes are returned here. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of reflection planes that were found. </dd></dl>
+
+</div>
+</div>
 <a id="a930739404dc658d627c0b52c134ff0e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a930739404dc658d627c0b52c134ff0e5">&#9670;&nbsp;</a></span>FixedPlane()</h2>
 
@@ -1130,7 +1199,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Test a transformation and transformation to make sure the transformation fixes points on the plane. Parameters: transformation - [in] fixed_plane - [in] Returns: True if the the transformation and fixed_plane are valid and the transformation fixes points on the plane. Remarks: The value <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a> is used for all "zero tolerances." </p>
+<p>Description: Test a transformation and transformation to make sure the transformation fixes points on the plane. Parameters: transformation - [in] fixed_plane - [in] Returns: True if the transformation and fixed_plane are valid and the transformation fixes points on the plane. Remarks: The value <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a> is used for all "zero tolerances." </p>
 
 </div>
 </div>
@@ -1211,7 +1280,7 @@ Static Public Attributes</h2></td></tr>
 <p>Parameters: rotation_axis - [in] rotation_count - [in] fixed_plane - [in] Returns: True if these 3 conditions are satisfied.</p><ol type="1">
 <li>rotation_axis is a valid line.</li>
 <li>rotation_count &gt;= 2</li>
-<li>rotation_count &lt;= <a class="el" href="class_o_n___symmetry.html#a4b5642b29ddc478b075d195d996b4597aadf8f3b04f1b8b5cae595399df752439">ON_Symmetry::MaximumOrder</a> Remarks: The value <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a> is used for all "zero tolerances." </li>
+<li>rotation_count &lt;= <a class="el" href="class_o_n___symmetry.html#a967b059f712a2ace437b016d888c77f3aadf8f3b04f1b8b5cae595399df752439">ON_Symmetry::MaximumOrder</a> Remarks: The value <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a> is used for all "zero tolerances." </li>
 </ol>
 
 </div>
@@ -1258,9 +1327,127 @@ Static Public Attributes</h2></td></tr>
 <p>Parameters: rotation_axis - [in] rotation_count - [in] fixed_plane - [in] Returns: True if these 4 conditions are satisfied.</p><ol type="1">
 <li>rotation_axis is a valid line.</li>
 <li>rotation_count &gt;= 2</li>
-<li>rotation_count &lt;= <a class="el" href="class_o_n___symmetry.html#a4b5642b29ddc478b075d195d996b4597aadf8f3b04f1b8b5cae595399df752439">ON_Symmetry::MaximumOrder</a></li>
+<li>rotation_count &lt;= <a class="el" href="class_o_n___symmetry.html#a967b059f712a2ace437b016d888c77f3aadf8f3b04f1b8b5cae595399df752439">ON_Symmetry::MaximumOrder</a></li>
 <li>fixed_plane contains the rotation axis. Remarks: The value <a class="el" href="class_o_n___symmetry.html#a914397d71ca3e769cf9d59478bf5a680">ON_Symmetry::ZeroTolerance</a> is used for all "zero tolerances." </li>
 </ol>
+
+</div>
+</div>
+<a id="a6ceed98d4440341be2c6b6a29b86b9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ceed98d4440341be2c6b6a29b86b9be">&#9670;&nbsp;</a></span>MakeNurbsCurveReflectionSymmetric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::MakeNurbsCurveReflectionSymmetric </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a>&#160;</td>
+          <td class="paramname"><em>reflection_plane_equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>test_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>nurbs_curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If a NURBS curve is close to have a reflection symmetry, adjust its control points so it is exactly symmetric. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reflection_plane_equation</td><td>The equation of the reflection plane. </td></tr>
+    <tr><td class="paramname">test_tolerance</td><td>If the NURBS curve control points can be sorted into contiguous pairs such that the relfections or the pairs are with tolerance of each other, then the control point with the largest index is moved so the nurbs curve is exactly symmetric. If test_tolerance &amp; gt; 0, then that value is used. Otherwise 0.05 * nurbs_curve.BoundingBox().Diagonal().Length() is used. </td></tr>
+    <tr><td class="paramname">nurbs_curve</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the nurbs_curve was within tolerance of being symmetric and was modifed to be exatly symmetric. </dd></dl>
+
+</div>
+</div>
+<a id="a0316740ef5074040c5c439417042b0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0316740ef5074040c5c439417042b0de">&#9670;&nbsp;</a></span>MakeNurbsCurveRotationSymmetric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Symmetry::MakeNurbsCurveRotationSymmetric </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___plane.html">ON_Plane</a>&#160;</td>
+          <td class="paramname"><em>rotation_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rotation_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>test_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>nurbs_curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the NURBS curve's control points are symmetric within test tolerance, then they are made exactly symmetric. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation_axis</td><td>The rotation_axis plane determines the center and axis of rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation_radius</td><td>If there is a circle associated with the rotation, then pass the radius. If the rotation symmetry turns out to be cyclic for all of the control points, then the distance from the rotation center to the start/end will be set to this radius. Pass ON_DBL_QNAN if no radius exists or you want to omit this step. </td></tr>
+    <tr><td class="paramname">test_tolerance</td><td>This tolerance is used to determine if the input control points are symmetric to within tolerance. If test_tolerance &amp; gt; 0, then that value is used. Otherwise 0.05 * nurbs_curve.BoundingBox().Diagonal().Length() is used. </td></tr>
+    <tr><td class="paramname">nurbs_curve</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the nurbs_curve was within tolerance of being symmetric and was modifed to be exatly symmetric. </dd></dl>
 
 </div>
 </div>
@@ -2028,7 +2215,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: If <a class="el" href="class_o_n___symmetry.html#af94977edea3bdd61f468c6e680c17213">SymmetryCoordinates()</a> = <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b" title="The symmetry is associated with an object is is applied to. If that object is transformed,...">ON_Symmetry::Coordinates::Object</a>, then the symmetry definition is transformed. </p>
+<p>Description: If <a class="el" href="class_o_n___symmetry.html#af94977edea3bdd61f468c6e680c17213">SymmetryCoordinates()</a> = <a class="el" href="class_o_n___symmetry.html#a572595d0c49922af939aea286f361f5ba497031794414a552435f90151ac3b54b" title="The symmetry is associated with an object is applied to. If that object is transformed,...">ON_Symmetry::Coordinates::Object</a>, then the symmetry definition is transformed. </p>
 
 </div>
 </div>
@@ -2184,7 +2371,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

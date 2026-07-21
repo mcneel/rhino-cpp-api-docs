@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -66,7 +66,8 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>m
-: <a class="el" href="class_o_n___matrix.html#a83af73f8033024e23fdae01d2b9d340b">ON_Matrix</a>
+: <a class="el" href="class_o_n__2x2_matrix.html#a21b1dfeabe870a6759aff271cf48b651">ON_2x2Matrix</a>
+, <a class="el" href="class_o_n___matrix.html#a83af73f8033024e23fdae01d2b9d340b">ON_Matrix</a>
 </li>
 <li>m_2dClamp
 : <a class="el" href="class_c_rhino_get.html#a97c1de130591fc9234f6eae2f19f0e8d">CRhinoGet</a>
@@ -405,6 +406,12 @@ $(function() {
 <li>m_AmbientColor
 : <a class="el" href="class_c_display_pipeline_attributes.html#ae864766a59c468846e3052239562f273">CDisplayPipelineAttributes</a>
 </li>
+<li>m_analysis_mode_enabled
+: <a class="el" href="class_c_rhino_object_analysis_mode_changed_1_1_c_parameters.html#a23f2bbe5f903daa66f2ad05c82858bc5">CRhinoObjectAnalysisModeChanged::CParameters</a>
+</li>
+<li>m_analysis_mode_id
+: <a class="el" href="class_c_rhino_object_analysis_mode_changed_1_1_c_parameters.html#a5012021bde73b3dbd4be4c5a3c8c1464">CRhinoObjectAnalysisModeChanged::CParameters</a>
+</li>
 <li>m_analysis_mode_list
 : <a class="el" href="class_c_rhino_object.html#a23c814cdcdd0b8b1a2207f0f7882398c">CRhinoObject</a>
 </li>
@@ -439,6 +446,12 @@ $(function() {
 </li>
 <li>m_angleformat
 : <a class="el" href="class_o_n__3dm_annotation_settings.html#a2542a14c009c1f79e3501b30c1b0aa27">ON_3dmAnnotationSettings</a>
+</li>
+<li>m_angleToleranceMet
+: <a class="el" href="class_c_rhino_var_srf_result.html#ade8165556bec541d7c95ca4afa602471">CRhinoVarSrfResult</a>
+</li>
+<li>m_angleToleranceRadians
+: <a class="el" href="class_c_rhino_var_srf_settings.html#ac2a2cac8b1098f6e8caaad82f89d4a76">CRhinoVarSrfSettings</a>
 </li>
 <li>m_angularunits
 : <a class="el" href="class_o_n__3dm_annotation_settings.html#a0a08b436944e44f28045f75a2f01b684">ON_3dmAnnotationSettings</a>
@@ -488,6 +501,9 @@ $(function() {
 </li>
 <li>m_application_uuid
 : <a class="el" href="class_o_n___user_data.html#a35de7701c976903efed96e0839175a79">ON_UserData</a>
+</li>
+<li>m_apply_kerning
+: <a class="el" href="class_o_n___text_run.html#a89322556504502ee68e6aecb06b0c1a8">ON_TextRun</a>
 </li>
 <li>m_arc
 : <a class="el" href="class_c_rhino_bend_space_morph.html#a6b1e98b0329cf7fe4a0a5aa66edbd591">CRhinoBendSpaceMorph</a>
@@ -694,6 +710,9 @@ $(function() {
 <li>m_bAddToMenu
 : <a class="el" href="class_display_attrs_mgr_list_desc.html#a9313221284840f1a5108d4d82f2db2b8">DisplayAttrsMgrListDesc</a>
 </li>
+<li>m_bAffectedBySoftTransform
+: <a class="el" href="class_c_rhino_grip_status.html#a65c71fc855a6c2db14eee2773996b0c2">CRhinoGripStatus</a>
+</li>
 <li>m_bAllowAngleInput
 : <a class="el" href="class_c_args_rhino_get_cone.html#ae9bee004266898668bc70a01752c4c03">CArgsRhinoGetCone</a>
 </li>
@@ -717,6 +736,12 @@ $(function() {
 </li>
 <li>m_bAreaPreprocess
 : <a class="el" href="class_o_n___squish_parameters.html#a28cb9b0d3e7a136e1f7d98e7cb9e150f">ON_SquishParameters</a>
+</li>
+<li>m_barycentric
+: <a class="el" href="class_o_n___curve_mesh_hit.html#aabb9981706780710946f61562ce64915">ON_CurveMeshHit</a>
+</li>
+<li>m_barycentric_tolerance
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a8c5e07db4b990765b0098a625cf43a31">ON_CurveMeshHit</a>
 </li>
 <li>m_base
 : <a class="el" href="class_c_rhino_get_rectangle3_point.html#ac3809f04133ffad65c635049a6d65420">CRhinoGetRectangle3Point</a>
@@ -794,13 +819,10 @@ $(function() {
 , <a class="el" href="class_c_rhino_object.html#a751c2b5aeea948e5661042a2d3c44159">CRhinoObject</a>
 , <a class="el" href="class_o_n___brep.html#a4b330660a2b7629a1c9ccb9a9c4a5725">ON_Brep</a>
 , <a class="el" href="class_o_n___brep_region.html#a9aa3d0bb33000e7f505fb6fc663d269e">ON_BrepRegion</a>
-, <a class="el" href="class_o_n___curve_tree_node.html#a9fcdd9807c51c20c9c7b00dc57b07670">ON_CurveTreeNode</a>
 , <a class="el" href="class_o_n___instance_ref.html#af194ae055121d5c6a474df2f4334b1ef">ON_InstanceRef</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#add44ad1401b7c441ba1eee4cd76bce51">ON_MeshTreeNode</a>
 , <a class="el" href="class_o_n___point_cloud.html#afcba20dae878668c32cc96bec4d7b882">ON_PointCloud</a>
 , <a class="el" href="class_o_n___rev_surface.html#af631cd19a49327e5fd9f2ae4b227ef5a">ON_RevSurface</a>
 , <a class="el" href="class_o_n___sum_surface.html#a148f377ae667447f12591f8f49353b2f">ON_SumSurface</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a1ae1823161a066e00a59442335e79b69">ON_SurfaceTreeNode</a>
 </li>
 <li>m_BBoxMode
 : <a class="el" href="class_c_display_pipeline_attributes.html#ad123d2cdc03422e0f3a8362b69f15a5a">CDisplayPipelineAttributes</a>
@@ -959,8 +981,8 @@ $(function() {
 , <a class="el" href="class_c_args_rhino_revolve.html#a68077a042088f5e248a9e18db3c40bfa">CArgsRhinoRevolve</a>
 </li>
 <li>m_bDegen
-: <a class="el" href="class_o_n___curve_leaf_box.html#a05e6d28c4d5ea4dacee3b0bd70eb87ed">ON_CurveLeafBox</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#aece8aff80cc04eb2e33c11435c734057">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga05e6d28c4d5ea4dacee3b0bd70eb87ed">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gaece8aff80cc04eb2e33c11435c734057">ON_SurfaceLeafBox</a>
 </li>
 <li>m_bDeleteInput
 : <a class="el" href="class_c_args_rhino_revolve.html#a95d1bb67a835ca0cb6ef2f18ec3d0872">CArgsRhinoRevolve</a>
@@ -1202,6 +1224,9 @@ $(function() {
 <li>m_bend_point
 : <a class="el" href="class_c_rhino_bend_space_morph.html#ac67cb214aab434750307d1f2d3ed0e59">CRhinoBendSpaceMorph</a>
 </li>
+<li>m_bending
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a6232066ba273608a816e23254576d4d8">CRhinoVarSrfSettings</a>
+</li>
 <li>m_bEntireActiveInstanceVisible
 : <a class="el" href="class_c_rhino_display_pipeline.html#af51000d1dca739a1163eed219bf2a337">CRhinoDisplayPipeline</a>
 </li>
@@ -1214,18 +1239,13 @@ $(function() {
 <li>m_bExpanded
 : <a class="el" href="class_c_rhino_ui_layer_list_ctrl_item.html#ab4ff4585ca5ec4abcec25fa20dc175cd">CRhinoUiLayerListCtrlItem</a>
 , <a class="el" href="class_o_n___layer.html#a75ddf4e13be0b558b7de23dfbd678878">ON_Layer</a>
+, <a class="el" href="class_o_n___page_view_group.html#a9e41a5511bdf69fae7b991171c8ff574">ON_PageViewGroup</a>
 </li>
 <li>m_bExtraordinaryCornerVertex
 : <a class="el" href="class_o_n___sub_d_quad_neighborhood.html#a3344f897d8753cec292829b50f939dd2">ON_SubDQuadNeighborhood</a>
 </li>
 <li>m_bez
 : <a class="el" href="class_c_rhino_int_snap_candidate.html#a66de9bd6e8e796ddeaa046b019dc526a">CRhinoIntSnapCandidate</a>
-, <a class="el" href="class_o_n___curve_tree_node.html#ac5f58ab7510ad35d562d62371ae2b472">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#ab23245c8f2a57d36ad8822bf8ebf157c">ON_SurfaceTreeNode</a>
-</li>
-<li>m_bezmem
-: <a class="el" href="class_o_n___curve_tree_node.html#a48bf16e2b79474d0adb847e46baa4dc1">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a528c2e52df071476949abf667e351d22">ON_SurfaceTreeNode</a>
 </li>
 <li>m_bFaceted
 : <a class="el" href="class_rh_edge_softening_args.html#a69b0056e9d5c92c34dba10a16598ffe7">RhEdgeSofteningArgs</a>
@@ -1665,8 +1685,8 @@ $(function() {
 : <a class="el" href="class_c_rhino_pick_context.html#a54cf2fa264d9a58a11fb5d5c38ccfbb4">CRhinoPickContext</a>
 </li>
 <li>m_bMono
-: <a class="el" href="class_o_n___curve_leaf_box.html#a066300e2dcacea86b5dc06eabc8bb327">ON_CurveLeafBox</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#a2a048e8f9ec20c7f9312ee6754d9c229">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga066300e2dcacea86b5dc06eabc8bb327">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#ga2a048e8f9ec20c7f9312ee6754d9c229">ON_SurfaceLeafBox</a>
 </li>
 <li>m_bMouseDrag
 : <a class="el" href="class_c_rhino_get_xform.html#a7ab9fecf8df333479d2197cf35774f30">CRhinoGetXform</a>
@@ -1833,7 +1853,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_loft_curve.html#a697df2609a24f05d5fa889b8753615e1">CRhinoLoftCurve</a>
 </li>
 <li>m_bPlane
-: <a class="el" href="class_o_n___surface_leaf_box.html#aaec74fe2b4907ffe5604d391b341014a">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#gaaec74fe2b4907ffe5604d391b341014a">ON_SurfaceLeafBox</a>
 </li>
 <li>m_bPlaneUsesGridColor
 : <a class="el" href="class_c_display_pipeline_attributes.html#ab135707c730aaf560fe01d90e346494e">CDisplayPipelineAttributes</a>
@@ -1939,7 +1959,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_ui_dock_bar.html#ab3d8d58932a9915e24b2c3b4b2c83cbe">CRhinoUiDockBar</a>
 </li>
 <li>m_bRes
-: <a class="el" href="class_o_n___curve_leaf_box.html#a37f1970928e0a9a3b4d3b8c83aa8c24f">ON_CurveLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga37f1970928e0a9a3b4d3b8c83aa8c24f">ON_CurveLeafBox</a>
 </li>
 <li>m_bReserved0
 : <a class="el" href="class_c_rhino_sel_command.html#a5a1b85f73eed285b91a8d88f4f26a37b">CRhinoSelCommand</a>
@@ -2266,6 +2286,9 @@ $(function() {
 <li>m_bSrfvHair
 : <a class="el" href="class_c_rhino_curvature_graph_settings.html#ae7cb0953f81259385be20c5174d9ff3e">CRhinoCurvatureGraphSettings</a>
 </li>
+<li>m_bStairlike
+: <a class="el" href="class_c_rhino_flow_space_morph.html#a53f0aacb0fd9cc2e5dfc95346d697c5c">CRhinoFlowSpaceMorph</a>
+</li>
 <li>m_bStraightEnd
 : <a class="el" href="class_c_rhino_bend_space_morph.html#a8c2867ed3526ffbdb43f8b52a55fd62e">CRhinoBendSpaceMorph</a>
 </li>
@@ -2515,8 +2538,8 @@ $(function() {
 : <a class="el" href="class_c_rhino_direction_analysis_settings.html#ae6879f22d8a8e65690cff011d990a192">CRhinoDirectionAnalysisSettings</a>
 </li>
 <li>m_bValid
-: <a class="el" href="class_o_n___curve_leaf_box.html#a5cedfb5457ed442108a2b6673cfd8a78">ON_CurveLeafBox</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#ab56b62a1d50cac8e2ccd24d6ac475d38">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga5cedfb5457ed442108a2b6673cfd8a78">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gab56b62a1d50cac8e2ccd24d6ac475d38">ON_SurfaceLeafBox</a>
 </li>
 <li>m_bValidCamera
 : <a class="el" href="class_o_n___viewport.html#a923cb3e1b6f8aa24b7a490b3f2a3ddc3">ON_Viewport</a>
@@ -2583,14 +2606,13 @@ $(function() {
 : <a class="el" href="class_c_display_pipeline_attributes.html#ad1d2eef890ae73538b369abcd973fd4f">CDisplayPipelineAttributes</a>
 </li>
 <li>m_C
-: <a class="el" href="class_o_n___c_m_x___e_v_e_n_t.html#a3c58c82472f38e6ebb1cad12db5edf2c">ON_CMX_EVENT</a>
-, <a class="el" href="class_o_n___h_l_d_full_curve.html#a7a24a77761e2f365bef9be390b400ef1">ON_HLDFullCurve</a>
+: <a class="el" href="class_o_n___h_l_d_full_curve.html#a7a24a77761e2f365bef9be390b400ef1">ON_HLDFullCurve</a>
 , <a class="el" href="class_o_n___mesh.html#a3eaa9b3a794729ab14d9c610e485d01e">ON_Mesh</a>
 , <a class="el" href="class_o_n___point_cloud.html#aee540544ff1284aa2aa68772b6fb1cb6">ON_PointCloud</a>
 </li>
 <li>m_c
 : <a class="el" href="class_o_n___sub_d_vertex_surface_point_coefficient.html#a2f82e9f5bcddf78cb3d042d3baaf12e0">ON_SubDVertexSurfacePointCoefficient</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#a59fed27a5711b3e7b8e502740703ca74">ON_SurfaceLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#ga59fed27a5711b3e7b8e502740703ca74">ON_SurfaceLeafBox</a>
 </li>
 <li>m_C2
 : <a class="el" href="class_o_n___brep.html#ad5ea3e0ae302c42760e9c75cd5363e2d">ON_Brep</a>
@@ -2791,7 +2813,6 @@ $(function() {
 </li>
 <li>m_ci
 : <a class="el" href="class_o_n___component_index_and_number.html#acf362898a8c8ecae1e4710b9560689a9">ON_ComponentIndexAndNumber</a>
-, <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#a3c184d04260f2f9a4bf3cb1b3649eb77">ON_CURVE_POINT</a>
 , <a class="el" href="class_o_n___h_l_d_curve.html#ab5d3a2bdaa86dc5c5cb9a497b19d42e0">ON_HLDCurve</a>
 , <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#a9076eb65bef2ca8c63d03c358889dccf">ON_MESH_POINT</a>
 , <a class="el" href="class_o_n___s_i_l___e_v_e_n_t.html#af389ae024f8623ba10fd7282356d8b46">ON_SIL_EVENT</a>
@@ -2904,9 +2925,6 @@ $(function() {
 </li>
 <li>m_cmdprompt_text_color
 : <a class="el" href="class_c_rhino_app_appearance_settings.html#a6d3f56f362d51d700421ef565c82d77c">CRhinoAppAppearanceSettings</a>
-</li>
-<li>m_cnode
-: <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#ac40da338b0ab966b6c4e91e22539362b">ON_CURVE_POINT</a>
 </li>
 <li>m_cnodeA
 : <a class="el" href="class_o_n___x___e_v_e_n_t.html#a4c7213c69966e39558353ab82b84e382">ON_X_EVENT</a>
@@ -3032,6 +3050,8 @@ $(function() {
 </li>
 <li>m_continuity
 : <a class="el" href="class_c_args_rhino_match.html#a1442661a00f8e430af7dd3c81c0d25d9">CArgsRhinoMatch</a>
+, <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a2bcd4c2e2e25a7cc3134dfd5591f1b5d">CRhinoVarSrfConstraintCurve</a>
+, <a class="el" href="class_c_rhino_var_srf_settings.html#a629ff3e06e0cde9d926b57652718d523">CRhinoVarSrfSettings</a>
 </li>
 <li>m_contraint_type
 : <a class="el" href="class_o_n___bend_face_constraint.html#aa0d0a73c83a59a0aa8c9b4aaaf0cb893">ON_BendFaceConstraint</a>
@@ -3267,15 +3287,24 @@ $(function() {
 <li>m_cursor_mode
 : <a class="el" href="class_c_rhino_app_model_aid_settings.html#afc46b94c5afbc2ea95ad3ff8305de8bf">CRhinoAppModelAidSettings</a>
 </li>
+<li>m_curvatureRelativeTolerance
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a2036a1522856d39aee15b86bdc920e95">CRhinoVarSrfSettings</a>
+</li>
 <li>m_curvatures
 : <a class="el" href="class_o_n___planar_section.html#a8e6919a81e6baf056186aad4564b7c6d">ON_PlanarSection</a>
+</li>
+<li>m_curvatureToleranceMet
+: <a class="el" href="class_c_rhino_var_srf_result.html#a6d23c03d3c67219d71dc38de39492468">CRhinoVarSrfResult</a>
+</li>
+<li>m_curvatureZeroTolerance
+: <a class="el" href="class_c_rhino_var_srf_settings.html#aac46567e70f1182ad14a337eab892b59">CRhinoVarSrfSettings</a>
 </li>
 <li>m_Curve
 : <a class="el" href="class_c_args_rhino_get_polygon.html#ac9f50d22b707e36fcf57f846b0761af1">CArgsRhinoGetPolygon</a>
 </li>
 <li>m_curve
 : <a class="el" href="class_c_rhino_loft_curve.html#a98cf7ae85ade14c34744d461e677da30">CRhinoLoftCurve</a>
-, <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#aa9a3c92b609f277e04d1fc7ea3c93c9d">ON_CURVE_POINT</a>
+, <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a6800153132de99696f0afddb1ec1001a">CRhinoVarSrfConstraintCurve</a>
 , <a class="el" href="class_o_n___hidden_line_drawing.html#a66ab6d725b45461ad630550cc405995f">ON_HiddenLineDrawing</a>
 , <a class="el" href="class_o_n___rev_surface.html#a8d35dda9d9f673831a862284921cf2a2">ON_RevSurface</a>
 , <a class="el" href="class_o_n___sum_surface.html#a758710a32dcd85762d079bec86ee3666">ON_SumSurface</a>
@@ -3305,9 +3334,6 @@ $(function() {
 </li>
 <li>m_curve_ref
 : <a class="el" href="class_o_n___curve_proxy_history.html#a21979b17ad299baf21ca5325187f7184">ON_CurveProxyHistory</a>
-</li>
-<li>m_curve_tree
-: <a class="el" href="class_o_n___ray_shooter.html#ac8a1ee17e5c006066650959355dd590c">ON_RayShooter</a>
 </li>
 <li>m_curveA
 : <a class="el" href="class_o_n___s_s_x___e_v_e_n_t.html#ad4b3435fa0513e01ceac713dd78d0dac">ON_SSX_EVENT</a>
@@ -3353,7 +3379,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_display_pipeline.html#aa81033ec63af33527b83dde2306f41a2">CRhinoDisplayPipeline</a>
 </li>
 <li>m_customGroundPlaneSettings
-: <a class="el" href="class_c_display_pipeline_attributes.html#a68e9299746ecf82083921cfa58964ea0">CDisplayPipelineAttributes</a>
+: <a class="el" href="class_c_display_pipeline_attributes.html#abc6ded510f5c52728599aef6b6e9e892">CDisplayPipelineAttributes</a>
 </li>
 <li>m_customLinearWorkflowSettings
 : <a class="el" href="class_c_display_pipeline_attributes.html#a4d81ef44ddfc27b82d426a9eb6b2e4b7">CDisplayPipelineAttributes</a>
@@ -3413,17 +3439,11 @@ $(function() {
 <li>m_da
 : <a class="el" href="class_c_rhino_object_draw_context.html#a7972e233495b0da870d04133144a853d">CRhinoObjectDrawContext</a>
 </li>
-<li>m_dAbsoluteTolerance
-: <a class="el" href="class_rh_displacement_args.html#a532768bef033653e6af9fc1bb737af8b">RhDisplacementArgs</a>
-</li>
 <li>m_dAmount
 : <a class="el" href="class_c_rh_rdk_basic_material_1_1_c_texture_slot.html#afefdd81c96666f4138b0fc6d714c7983">CRhRdkBasicMaterial::CTextureSlot</a>
 </li>
 <li>m_date_to_expire
 : <a class="el" href="class_c_rhino_license_validator.html#a11a0e7dac705381a8c0a51f7066f5392">CRhinoLicenseValidator</a>
-</li>
-<li>m_dBlack
-: <a class="el" href="class_rh_displacement_args.html#a4b90e08961f8f875e64633f96f9c7cbe">RhDisplacementArgs</a>
 </li>
 <li>m_dBottom
 : <a class="el" href="class_c_channel_attributes.html#a46aaa5389930ab7453888ff6cec26249">CChannelAttributes</a>
@@ -3437,6 +3457,9 @@ $(function() {
 </li>
 <li>m_dDesiredFrameRate
 : <a class="el" href="class_c_rhino_display_pipeline.html#a22dd568f44bd18eb7d04c28f100f52ce">CRhinoDisplayPipeline</a>
+</li>
+<li>m_dead_segments
+: <a class="el" href="class_c_rhino_overlap_fate.html#a9a92f2914bcee9d2f2eb0b9ef793a8fc">CRhinoOverlapFate</a>
 </li>
 <li>m_decode_count
 : <a class="el" href="class_o_n___decode_base64.html#ac0fc71e4034240f5190e26a998ad2f0b">ON_DecodeBase64</a>
@@ -3496,6 +3519,9 @@ $(function() {
 , <a class="el" href="class_c_args_rhino_get_circle.html#a86c04f92a4b38fb05d4849649875fdbb">CArgsRhinoGetCircle</a>
 , <a class="el" href="class_c_args_rhino_get_plane.html#a14027d3cc7fcbede640c3d0f6da45b19">CArgsRhinoGetPlane</a>
 </li>
+<li>m_deformable_degree
+: <a class="el" href="class_c_args_rhino_revolve.html#aae5fdf62b8a5220761a5c7af78fd51de">CArgsRhinoRevolve</a>
+</li>
 <li>m_deformable_point_count
 : <a class="el" href="class_c_args_rhino_get_ellipse.html#a59d91e87f14b34b4e0c72fb60e1c1ae9">CArgsRhinoGetEllipse</a>
 , <a class="el" href="class_c_args_rhino_revolve.html#a28d7442910e9ced3fc3b9974f15f2fc5">CArgsRhinoRevolve</a>
@@ -3506,6 +3532,12 @@ $(function() {
 </li>
 <li>m_Degree
 : <a class="el" href="class_c_args_rhino_get_curve.html#af0d3bc2bfa83b4b502659479500cb93a">CArgsRhinoGetCurve</a>
+</li>
+<li>m_degreeU
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a8c68dfd2b978cc91ce6ab46032da8f18">CRhinoVarSrfSettings</a>
+</li>
+<li>m_degreeV
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a48b12dceae9909264cf45576f21c068b">CRhinoVarSrfSettings</a>
 </li>
 <li>m_deleted
 : <a class="el" href="class_c_rhino_ui_linetype_list_ctrl_info.html#ac3e50b19f061cd435cdbebb3c0085797">CRhinoUiLinetypeListCtrlInfo</a>
@@ -3539,8 +3571,10 @@ $(function() {
 : <a class="el" href="class_o_n___history_record.html#a67e8db9bf3407929c9f73c5c105055f2">ON_HistoryRecord</a>
 </li>
 <li>m_description
-: <a class="el" href="class_c_rhino_undo_event_handler.html#aaee00cf2180c5f2338099719e2424881">CRhinoUndoEventHandler</a>
+: <a class="el" href="class_c_rhino_print_page_definition.html#a446f7f31d34a686ab93e26afd668fb8d">CRhinoPrintPageDefinition</a>
+, <a class="el" href="class_c_rhino_undo_event_handler.html#aaee00cf2180c5f2338099719e2424881">CRhinoUndoEventHandler</a>
 , <a class="el" href="class_o_n___earth_anchor_point.html#acbd39e5889311f584f718c0599172db1">ON_EarthAnchorPoint</a>
+, <a class="el" href="class_o_n___page_view_group.html#ade626fc20d3a24b97f13ee256566195f">ON_PageViewGroup</a>
 </li>
 <li>m_destination_time
 : <a class="el" href="class_o_n___particle_system_1_1_o_n___integrate_context.html#ac934252847870a25c0cec75fc56aef64">ON_ParticleSystem::ON_IntegrateContext</a>
@@ -3858,6 +3892,9 @@ $(function() {
 <li>m_do_not_snap_to_me
 : <a class="el" href="class_c_rhino_snap_context.html#a670f6abe960b8e8c88c2b60fefca52c5">CRhinoSnapContext</a>
 </li>
+<li>m_DO_NOT_USE
+: <a class="el" href="class_c_rhino_app.html#ad50d653e29ef683409cffd754ed204d9">CRhinoApp</a>
+</li>
 <li>m_doc
 : <a class="el" href="class_c_rhino_command_context.html#a1032a7551096e220e198c6dee4b6a92c">CRhinoCommandContext</a>
 , <a class="el" href="class_c_rhino_context_menu_context.html#a3657ad8fdb7f34c7ca7357da37ab021d">CRhinoContextMenuContext</a>
@@ -3893,15 +3930,14 @@ $(function() {
 </li>
 <li>m_domain
 : <a class="el" href="class_c_args_rhino_revolve.html#ac639be9ea7b18070d84505ea1223ed80">CArgsRhinoRevolve</a>
+, <a class="el" href="class_c_rhino_var_srf_settings.html#a49abd0a7a733312152cb0f83ff3cfed2">CRhinoVarSrfSettings</a>
 , <a class="el" href="class_o_n___c_i_x_event.html#a71c9a8b70181866c3117c44933e7343c">ON_CIXEvent</a>
-, <a class="el" href="class_o_n___curve_tree_node.html#a511d919e23a2843abb6761699de83173">ON_CurveTreeNode</a>
 , <a class="el" href="class_o_n___evaluator.html#a8e7e3d681c06c498b26529affd1d22f7">ON_Evaluator</a>
 , <a class="el" href="class_o_n___plane_surface.html#a5b8c7039b16e506680093feb8647a1ca">ON_PlaneSurface</a>
 , <a class="el" href="class_o_n___polynomial_curve.html#a3d869fd9783e2668cf9d2af9810ccef0">ON_PolynomialCurve</a>
 , <a class="el" href="class_o_n___polynomial_surface.html#aed322af96188c206717c2ba0a8f15b5e">ON_PolynomialSurface</a>
 , <a class="el" href="struct_o_n___r_tree_capsule.html#a9ebff3c490cfde38dc495b7c9c5f5c6d">ON_RTreeCapsule</a>
 , <a class="el" href="class_o_n___surface_properties.html#a3a3cc85fd878b7def851f4e60599e232">ON_SurfaceProperties</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#ab0c264efc47f2426a3622f5faeae3a4d">ON_SurfaceTreeNode</a>
 </li>
 <li>m_dont_repeat_list
 : <a class="el" href="class_c_rhino_app_dont_repeat_command_settings.html#a68abcdd1cda8477839706c64397c44a5">CRhinoAppDontRepeatCommandSettings</a>
@@ -3911,11 +3947,6 @@ $(function() {
 </li>
 <li>m_DotTextColor
 : <a class="el" href="class_c_display_pipeline_attributes.html#ade83c7d389c7118ed33eb3abdc9bc489">CDisplayPipelineAttributes</a>
-</li>
-<li>m_down
-: <a class="el" href="class_o_n___curve_tree_node.html#a9580fca1caeed31fcfd4f7974e5eac1a">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#abbdab06fbb4429a2a618aea2711912c5">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#ad498a6841319c5dc4a429006cb6fc936">ON_SurfaceTreeNode</a>
 </li>
 <li>m_dp
 : <a class="el" href="class_c_rhino_display_engine.html#a532fdb07e0ff45847e14b299fe0cc68b">CRhinoDisplayEngine</a>
@@ -3930,9 +3961,6 @@ $(function() {
 </li>
 <li>m_dpi_scale_override
 : <a class="el" href="class_c_display_pipeline_attributes.html#a52462466d6d737ea03319f81e8db2035">CDisplayPipelineAttributes</a>
-</li>
-<li>m_dPostWeldAngle
-: <a class="el" href="class_rh_displacement_args.html#a1be4cf55b266de8cf7f085bfab9a467d">RhDisplacementArgs</a>
 </li>
 <li>m_dRadius
 : <a class="el" href="class_rh_mesh_pipe_args.html#a5b5de4939eaf56129f5f701c5e004d2f">RhMeshPipeArgs</a>
@@ -3971,9 +3999,6 @@ $(function() {
 <li>m_drawing_enabled
 : <a class="el" href="class_c_rhino_on_view_enable_drawing_changed_1_1_c_parameters.html#a42eacd88bf4944cc3c8fcc09d3190271">CRhinoOnViewEnableDrawingChanged::CParameters</a>
 </li>
-<li>m_dRefineSensitivity
-: <a class="el" href="class_rh_displacement_args.html#a5c8db61c3101b097ef30accc9dd2098a">RhDisplacementArgs</a>
-</li>
 <li>m_dRight
 : <a class="el" href="class_c_channel_attributes.html#ae733784a079cdcb9513c163a5bc258ce">CChannelAttributes</a>
 </li>
@@ -3982,9 +4007,6 @@ $(function() {
 </li>
 <li>m_dSoftening
 : <a class="el" href="class_rh_edge_softening_args.html#ad9b1bb2e0dee1d71a17f7d1c30aea87a">RhEdgeSofteningArgs</a>
-</li>
-<li>m_dSweepPitch
-: <a class="el" href="class_rh_displacement_args.html#ad2bc1b7b3b3b8b9e1465bb95823317fc">RhDisplacementArgs</a>
 </li>
 <li>m_dTolerance
 : <a class="el" href="class_rh_shut_lining_args.html#aafcdd8cbdf18fe37571093e270a20af5">RhShutLiningArgs</a>
@@ -3997,9 +4019,6 @@ $(function() {
 </li>
 <li>m_dVertScale
 : <a class="el" href="class_c_display_pipeline_attributes.html#a8eceeb47d38abda286b0e303d728d4a3">CDisplayPipelineAttributes</a>
-</li>
-<li>m_dWhite
-: <a class="el" href="class_rh_displacement_args.html#a11f58aa4dde8213ca3330107cfafdaed">RhDisplacementArgs</a>
 </li>
 <li>m_dwItemData
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_item.html#acb153fe3f397c45c8a8936855a336a06">CRhinoUiTabbedSheetCtrlItem</a>
@@ -4026,15 +4045,15 @@ $(function() {
 : <a class="el" href="class_o_n___brep.html#a0cab74697be6282befc920ab0db73c63">ON_Brep</a>
 </li>
 <li>m_e
-: <a class="el" href="class_o_n___curve_leaf_box.html#a98f57094114802efbc7f6d015eff5b4d">ON_CurveLeafBox</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#ac77e0a773424f5e69735d554f91e9aa7">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga98f57094114802efbc7f6d015eff5b4d">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gac77e0a773424f5e69735d554f91e9aa7">ON_SurfaceLeafBox</a>
 , <a class="el" href="class_o_n___user_string_list.html#a3aac3e32daf76b7ec6dc86af11e7cce3">ON_UserStringList</a>
 </li>
 <li>m_e0
-: <a class="el" href="class_o_n___curve_leaf_box.html#ab86bb7419f528f56151e55ef4dde26b7">ON_CurveLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#gab86bb7419f528f56151e55ef4dde26b7">ON_CurveLeafBox</a>
 </li>
 <li>m_e1
-: <a class="el" href="class_o_n___curve_leaf_box.html#a125292c16e3bd93a549f0cc585ae78bc">ON_CurveLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga125292c16e3bd93a549f0cc585ae78bc">ON_CurveLeafBox</a>
 </li>
 <li>m_earth_anchor_point
 : <a class="el" href="class_o_n__3dm_settings.html#ab45c89de8488a3e28a03063023e99671">ON_3dmSettings</a>
@@ -4211,6 +4230,9 @@ $(function() {
 <li>m_endcap_style
 : <a class="el" href="class_c_rhino_print_info.html#a86b1eb4a93c20f18c58df0c7b0168f2a">CRhinoPrintInfo</a>
 </li>
+<li>m_endContinuity
+: <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a489bf7531fe2773f0f9a36fbc65e6b4d">CRhinoVarSrfConstraintCurve</a>
+</li>
 <li>m_EndDir
 : <a class="el" href="class_c_args_rhino_get_spiral.html#a49c043b138eceda18e6ee9ad029a338e">CArgsRhinoGetSpiral</a>
 </li>
@@ -4250,6 +4272,9 @@ $(function() {
 <li>m_english_toggle_option_OffOn
 : <a class="el" href="class_c_rhino_command_option.html#acad2c911fe4dbf0f8fc6054c5aa31af0">CRhinoCommandOption</a>
 </li>
+<li>m_entire
+: <a class="el" href="class_c_rhino_overlap_fate.html#a5a2308c24679ea954af762a6ec71c8f9">CRhinoOverlapFate</a>
+</li>
 <li>m_ePCGripStyle
 : <a class="el" href="class_c_display_pipeline_attributes.html#a90f3e36257606d3f2162f30e5f5b9dbc">CDisplayPipelineAttributes</a>
 </li>
@@ -4258,6 +4283,9 @@ $(function() {
 </li>
 <li>m_ePointStyle
 : <a class="el" href="class_c_display_pipeline_attributes.html#a6ffe907da47727a95459265c60392230">CDisplayPipelineAttributes</a>
+</li>
+<li>m_error
+: <a class="el" href="class_c_rhino_var_srf_result.html#a8cd9011d6dd1f56f4954cbd2b3d9a51f">CRhinoVarSrfResult</a>
 </li>
 <li>m_error_code
 : <a class="el" href="class_c_rhino_sdk_render.html#aaefc4419c7d9fe7bcb689eed502f51df">CRhinoSdkRender</a>
@@ -4296,7 +4324,10 @@ $(function() {
 : <a class="el" href="class_o_n___mesh_x_point.html#a36de9a586916bba1dbccf529aa9df451">ON_MeshXPoint</a>
 </li>
 <li>m_event_type
-: <a class="el" href="class_c_rhino_event_watcher_ex.html#aacb05cbfd2c1f15ab754fa255ba091ec">CRhinoEventWatcherEx</a>
+: <a class="el" href="class_c_rhino_doc_markup_table_changed_1_1_c_parameters.html#a01fb99fe70a58437cb37316b3cbf197a">CRhinoDocMarkupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_page_view_group_table_changed_1_1_c_parameters.html#aba2a36df0021194d83c3c4c003d734ac">CRhinoDocPageViewGroupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_section_style_table_changed_1_1_c_parameters.html#adcba7f35f9ca8fd1e853dea8fe64593f">CRhinoDocSectionStyleTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_event_watcher_ex.html#aacb05cbfd2c1f15ab754fa255ba091ec">CRhinoEventWatcherEx</a>
 </li>
 <li>m_events
 : <a class="el" href="class_o_n___error_log.html#a806e1cdca3aa6a59caaa65d2bf38cccd">ON_ErrorLog</a>
@@ -4389,7 +4420,14 @@ $(function() {
 </li>
 <li>m_face_index
 : <a class="el" href="class_o_n___brep_face.html#a96aceadaa387b28f6178e32990836981">ON_BrepFace</a>
+, <a class="el" href="class_o_n___curve_mesh_hit.html#ad053c1ff78c83d17ac7758e0fc38c007">ON_CurveMeshHit</a>
 , <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#a3e0aebad6d257c5ce2898ae6eafbdb76">ON_MESH_POINT</a>
+</li>
+<li>m_face_indices_count
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a2c539a931148bd969d2c21e8c7a67643">ON_CurveMeshHit</a>
+</li>
+<li>m_face_indices_offset
+: <a class="el" href="class_o_n___curve_mesh_hit.html#aef07db2d90a8fbe30a5bdd5512085557">ON_CurveMeshHit</a>
 </li>
 <li>m_face_mark_value
 : <a class="el" href="class_o_n___mesh_marker.html#a03ea2044dc3e68a0c09129b235bbd24e">ON_MeshMarker</a>
@@ -4401,6 +4439,9 @@ $(function() {
 : <a class="el" href="class_o_n___sub_d_face_region.html#a2e394952f458b5acd5e5f6d565f3abf2">ON_SubDFaceRegion</a>
 , <a class="el" href="class_o_n___sub_d_face_region_and_nurbs.html#a16b05e8c9df6f1b4445b7ae9fd78289b">ON_SubDFaceRegionAndNurbs</a>
 , <a class="el" href="class_o_n___sub_d_surface_nurbs_fragment.html#a2387111b4aa842705460244be0894ff0">ON_SubDSurfaceNurbsFragment</a>
+</li>
+<li>m_face_triangle_index
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a2389d5c7c21e4e564a3f64f374c87dfb">ON_CurveMeshHit</a>
 </li>
 <li>m_face_user
 : <a class="el" href="class_o_n___brep_face.html#abf7410b3bf943aa8a92d64d7a567dbcb">ON_BrepFace</a>
@@ -4442,9 +4483,6 @@ $(function() {
 <li>m_fancy_attributes
 : <a class="el" href="class_c_rhino_draw_attributes.html#a0c1da6257760c1f6ec1616124796fbd1">CRhinoDrawAttributes</a>
 </li>
-<li>m_farray
-: <a class="el" href="class_o_n___mesh_tree_node.html#a3557f1a7547c76917607744884f1177b">ON_MeshTreeNode</a>
-</li>
 <li>m_fast_regen_frames_per_second
 : <a class="el" href="class_c_rhino_app_view_settings.html#a3367bd81b5c138e22c758b9128d3a6dd">CRhinoAppViewSettings</a>
 </li>
@@ -4480,9 +4518,6 @@ $(function() {
 </li>
 <li>m_Fcount
 : <a class="el" href="class_o_n___mesh_ngon.html#a120e153345a764577ceaf05e90a546cb">ON_MeshNgon</a>
-</li>
-<li>m_fcount
-: <a class="el" href="class_o_n___mesh_tree_node.html#a1c2c73e9eebc16aada9102a318b7e3ee">ON_MeshTreeNode</a>
 </li>
 <li>m_feedback_color
 : <a class="el" href="class_c_rhino_app_appearance_settings.html#acd6a9c9124984093f5cfc2c70abd7ff7">CRhinoAppAppearanceSettings</a>
@@ -4564,6 +4599,9 @@ $(function() {
 </li>
 <li>m_Flat
 : <a class="el" href="class_c_args_rhino_get_spiral.html#a6be564ba9a69fbaa6ce38d326d328a53">CArgsRhinoGetSpiral</a>
+</li>
+<li>m_flattened
+: <a class="el" href="class_overlap_proxy_index.html#a06dcbfce1ae904cfc8e743d7cc46f1df">OverlapProxyIndex</a>
 </li>
 <li>m_Flip
 : <a class="el" href="class_c_args_rhino_get_polygon.html#a2688b2f5e604ce72f7e4c9d8aeb5fbe7">CArgsRhinoGetPolygon</a>
@@ -4746,6 +4784,9 @@ $(function() {
 : <a class="el" href="class_o_n___mapping_mesh_info.html#aef9cf41a564f222d5ff35a6a858f2a3a">ON_MappingMeshInfo</a>
 , <a class="el" href="class_o_n___render_mesh_info.html#a676f17e29f8a589b1772799a7ab4b4b9">ON_RenderMeshInfo</a>
 </li>
+<li>m_geos
+: <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a9164ecc3c11ec653bd1a5b9859b47d7e">CRhinoVarSrfConstraintCurve</a>
+</li>
 <li>m_get_rendered_view_settings_from_doc
 : <a class="el" href="class_c_rhino_display_settings.html#aef40c4a67fafc3b0bc551985d7c472e1">CRhinoDisplaySettings</a>
 </li>
@@ -4820,7 +4861,7 @@ $(function() {
 </li>
 <li>m_grip_list
 : <a class="el" href="class_c_rhino_object_grips.html#a6ae3d27c108f38416784a2e05a544fd8">CRhinoObjectGrips</a>
-, <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a6d54fcb7af403b380fd51c4ddd7b376d">CRhinoOnTransformObject::CParameters</a>
+, <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a4ac39d411107c4bdb5a40bb2820127f5">CRhinoOnTransformObject::CParameters</a>
 </li>
 <li>m_grip_owner
 : <a class="el" href="class_c_rhino_grip_object.html#a23e2fa44d5f64747548c2ab664cf5ded">CRhinoGripObject</a>
@@ -4829,10 +4870,13 @@ $(function() {
 : <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#af44b11d212ed5eca4bc9eedcb415e36e">CRhinoOnTransformObject::CParameters</a>
 </li>
 <li>m_grip_owner_list
-: <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a1a0ab87aea24248f5b1894e43e8f2698">CRhinoOnTransformObject::CParameters</a>
+: <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a7cf702cb68a55fd37c9fb4d0900d7965">CRhinoOnTransformObject::CParameters</a>
 </li>
 <li>m_grip_owners
 : <a class="el" href="class_c_rhino_xform_object_list.html#ac01f60eb83201d7803ce11daa27dcd1a">CRhinoXformObjectList</a>
+</li>
+<li>m_grip_private
+: <a class="el" href="class_c_rhino_grip_user_interface_object.html#a50257de96b5936498df9fdf5eaa383a1">CRhinoGripUserInterfaceObject</a>
 </li>
 <li>m_grip_status
 : <a class="el" href="class_c_rhino_copy_grips_helper.html#af5807a1d987db740f6e68666c93a1d0d">CRhinoCopyGripsHelper</a>
@@ -4911,7 +4955,7 @@ $(function() {
 , <a class="el" href="class_o_n___point_cloud.html#a0ca8c0bce38b756d6e1fadac74b8d93d">ON_PointCloud</a>
 </li>
 <li>m_h
-: <a class="el" href="class_o_n___surface_leaf_box.html#a804b133cd79a92a6309cb2908d3023aa">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga804b133cd79a92a6309cb2908d3023aa">ON_SurfaceLeafBox</a>
 </li>
 <li>m_hair_angle_radians
 : <a class="el" href="class_o_n___section_analysis_appearance.html#a3eda7d6f3761758a14a899418d0a8886">ON_SectionAnalysisAppearance</a>
@@ -4992,6 +5036,7 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_get_picture.html#a9e69c9e685caedec58904a2c795da9ab">CArgsRhinoGetPicture</a>
 , <a class="el" href="class_c_args_rhino_text.html#a4f0ae382adb69b8a8e45726576e93024">CArgsRhinoText</a>
 , <a class="el" href="class_c_rhino_dib.html#a3d139aa4c05bf6c7af062abdcc7b7ab5">CRhinoDib</a>
+, <a class="el" href="class_c_rhino_print_page_definition.html#a75ac1f164d0b62b97389ee17d5b426d2">CRhinoPrintPageDefinition</a>
 , <a class="el" href="class_o_n__3dm_view_trace_image.html#a4b63bf8dd464f4003f4258ead089d8a1">ON_3dmViewTraceImage</a>
 , <a class="el" href="class_o_n___aerial_photo_image_frustum.html#aaccc84cfba9192779f27e154c31a9b9b">ON_AerialPhotoImageFrustum</a>
 , <a class="el" href="class_o_n___packed_texture_rectangle.html#ac0e7293d3dc55ef966c0c833fbe5dd66">ON_PackedTextureRectangle</a>
@@ -5088,16 +5133,12 @@ $(function() {
 : <a class="el" href="class_c_rhino_app.html#ac3679342744b85cb90f73c5ae370b0c9">CRhinoApp</a>
 </li>
 <li>m_i
-: <a class="el" href="class_o_n___clash_event.html#a4d7e408d0733657228ef48d77cdb122e">ON_ClashEvent</a>
-, <a class="el" href="class_o_n___depth_image_pixel.html#a09fc4a6ed35d3bfc05d884a45df9e52f">ON_DepthImagePixel</a>
+: <a class="el" href="class_o_n___depth_image_pixel.html#a09fc4a6ed35d3bfc05d884a45df9e52f">ON_DepthImagePixel</a>
 , <a class="el" href="class_o_n___uuid_index.html#afd5367eeefff1179c32f2bf1e3f5d707">ON_UuidIndex</a>
 </li>
 <li>m_iAccuracy
 : <a class="el" href="class_rhino_reduce_mesh_parameters.html#ab1a1cb953f4fc4116069695ba7eb325d">RhinoReduceMeshParameters</a>
 , <a class="el" href="class_rh_mesh_pipe_args.html#a4db68934086187cce331987e8851832c">RhMeshPipeArgs</a>
-</li>
-<li>m_iChannelNumber
-: <a class="el" href="class_rh_displacement_args.html#a8a00336e239247b89a7f84ef0e089b85">RhDisplacementArgs</a>
 </li>
 <li>m_iCurGroupSel
 : <a class="el" href="class_c_rhino_ui_options_list_ctrl_group_combo_box.html#a365313207699e4e69bc9a3b280403928">CRhinoUiOptionsListCtrlGroupComboBox</a>
@@ -5173,12 +5214,6 @@ $(function() {
 <li>m_iExtendAxis
 : <a class="el" href="class_c_rhino_gumball_appearance.html#a9679ad598de8148776d6eb6276664f2b">CRhinoGumballAppearance</a>
 , <a class="el" href="class_c_rhino_gumball_frame.html#aa8262022a2ab2319a7ed3394dc8e4e6f">CRhinoGumballFrame</a>
-</li>
-<li>m_iFaceLimit
-: <a class="el" href="class_rh_displacement_args.html#a5e13eb7fdf5d5adea54691c7d145e6d8">RhDisplacementArgs</a>
-</li>
-<li>m_iFairingAmount
-: <a class="el" href="class_rh_displacement_args.html#a2e227bccb326726065b77728e6b63068">RhDisplacementArgs</a>
 </li>
 <li>m_iFirstVisible
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#acfe93523e978d086cce24b45b641fc87">CRhinoUiTabbedSheetCtrl</a>
@@ -5269,6 +5304,9 @@ $(function() {
 <li>m_inactive_viewport_title
 : <a class="el" href="class_c_rhino_ui_paint_color_settings.html#a2c607859b2c02068a14951be7c80a1cf">CRhinoUiPaintColorSettings</a>
 </li>
+<li>m_incidence
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a4bafbdef5bf50fcd43d213a6db54ec7a">ON_CurveMeshHit</a>
+</li>
 <li>m_include_buddy
 : <a class="el" href="class_c_rhino_ui_edit.html#ab45a3353f403fefdab4c65ceb411d902">CRhinoUiEdit</a>
 </li>
@@ -5280,7 +5318,8 @@ $(function() {
 , <a class="el" href="class_o_n___text_run.html#a89cf01d83b25e6e9b5e0aa5797153d2f">ON_TextRun</a>
 </li>
 <li>m_index
-: <a class="el" href="class_c_u_d__source__index.html#aea9f57e0f0c6923bf774b8c44b3a3308">CUD_source_index</a>
+: <a class="el" href="class_c_rhino_doc_page_view_group_table_changed_1_1_c_parameters.html#a9463dd21470f2519e31e5f3c0358352a">CRhinoDocPageViewGroupTableChanged::CParameters</a>
+, <a class="el" href="class_c_u_d__source__index.html#aea9f57e0f0c6923bf774b8c44b3a3308">CUD_source_index</a>
 , <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html#afc841935aceb3ee0f06a83c30056d7bc">ON_COMPONENT_INDEX</a>
 , <a class="el" href="class_o_n___offset_surface_value.html#a6c58938def908e45f9bba8ff8f4fad83">ON_OffsetSurfaceValue</a>
 , <a class="el" href="class_o_n___sub_d_component_region_index.html#a8a5f6f0f945ce16b7576894f934cb1d3">ON_SubDComponentRegionIndex</a>
@@ -5299,11 +5338,17 @@ $(function() {
 <li>m_initial_subdivision_level
 : <a class="el" href="class_o_n___sub_d_quad_neighborhood.html#a2a3a1e646528f5fdabeed29072b15433">ON_SubDQuadNeighborhood</a>
 </li>
+<li>m_initialSurface
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a45ff3ca968affb54fcb7037abfd45e52">CRhinoVarSrfSettings</a>
+</li>
 <li>m_input_curves
 : <a class="el" href="class_c_args_rhino_revolve.html#a1a51fd9d1dfddf3af9b67ce63bdc6ca4">CArgsRhinoRevolve</a>
 </li>
 <li>m_input_snap_mode
 : <a class="el" href="class_c_rhino_snap_context.html#a9b7d16610c105d77ef0dc847925a84fa">CRhinoSnapContext</a>
+</li>
+<li>m_inputMap
+: <a class="el" href="class_c_rh_mesh_boolean_options_private.html#ad31ab1e8ce5d1a2d843ba1f0e2daedd6">CRhMeshBooleanOptionsPrivate</a>
 </li>
 <li>m_Inscribed
 : <a class="el" href="class_c_args_rhino_get_polygon.html#a35bc1dc2a73cd166ff055a5bf48a7de4">CArgsRhinoGetPolygon</a>
@@ -5367,10 +5412,17 @@ $(function() {
 : <a class="el" href="class_o_n___squish_parameters.html#a131579cf51b3bd13d0e2682d8816b08a">ON_SquishParameters</a>
 </li>
 <li>m_internal
-: <a class="el" href="class_c_args_rhino_get_thick_box.html#ac80e227da31f815d59bf38eeb665ea69">CArgsRhinoGetThickBox</a>
+: <a class="el" href="class_c_args_rhino_get_polygon_extra.html#a66c205a983787e8e91d0669cb7f40978">CArgsRhinoGetPolygonExtra</a>
+, <a class="el" href="class_c_args_rhino_get_thick_box.html#ac80e227da31f815d59bf38eeb665ea69">CArgsRhinoGetThickBox</a>
 </li>
 <li>m_internal_tabbed_sheet_ctrl
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#afd90ab8fb1f3431a8d4fc1acd9b8f9af">CRhinoUiTabbedSheetCtrl</a>
+</li>
+<li>m_internalTolerance
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a05575adb2c74039207c4a3e38841b434">CRhinoVarSrfSettings</a>
+</li>
+<li>m_internalToleranceMet
+: <a class="el" href="class_c_rhino_var_srf_result.html#a074f84a1c770762b875bd0a10362b942">CRhinoVarSrfResult</a>
 </li>
 <li>m_InterruptStack
 : <a class="el" href="class_c_rhino_display_pipeline.html#aeafe1ec3ec548ce39067e66328a9381a">CRhinoDisplayPipeline</a>
@@ -5407,9 +5459,6 @@ $(function() {
 </li>
 <li>m_iref_xform
 : <a class="el" href="class_o_n___obj_ref___i_ref_i_d.html#aa167a65c3a7db506bb80eb90b6bfa106">ON_ObjRef_IRefID</a>
-</li>
-<li>m_iRefineStepCount
-: <a class="el" href="class_rh_displacement_args.html#a49da31c4c57e035ef78f09363b224d52">RhDisplacementArgs</a>
 </li>
 <li>m_is_gray_scale
 : <a class="el" href="class_c_rhino_dib.html#aa08a94c84ce77f34938d30ce2900fc26">CRhinoDib</a>
@@ -5562,7 +5611,7 @@ $(function() {
 </li>
 <li>m_L
 : <a class="el" href="class_o_n___brep.html#ae0e15de3de0de8d4887e3c6fcb866aea">ON_Brep</a>
-, <a class="el" href="class_o_n___curve_leaf_box.html#a3a18a77675cd6258eba98a9ec0e5c4ca">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#ga3a18a77675cd6258eba98a9ec0e5c4ca">ON_CurveLeafBox</a>
 </li>
 <li>m_L1
 : <a class="el" href="class_o_n___sub_d_matrix.html#ade5b500d3f2dd03ff7ccf93272758698">ON_SubDMatrix</a>
@@ -5654,9 +5703,6 @@ $(function() {
 <li>m_lazyptr_texture_manager
 : <a class="el" href="class_c_rhino_app.html#a2cb02bbc0bba1f52a2402ee0ed15ca6b">CRhinoApp</a>
 </li>
-<li>m_lazyptr_work_session
-: <a class="el" href="class_c_rhino_app.html#aee75c0a61ee1e2f306eb6e0b82ac260a">CRhinoApp</a>
-</li>
 <li>m_lbutton_donw_on_x
 : <a class="el" href="class_c_rhino_ui_popu_up_list_box.html#a334b1c8a13056677c4a70d04e326c9dd">CRhinoUiPopuUpListBox</a>
 </li>
@@ -5667,8 +5713,8 @@ $(function() {
 : <a class="el" href="class_o_n___dim_ordinate.html#ab992aeb3b072e997e96dd13718e0608a">ON_DimOrdinate</a>
 </li>
 <li>m_leafbox
-: <a class="el" href="class_o_n___curve_tree_bezier.html#a4ca9c9d81314896cac2efb4c02c01558">ON_CurveTreeBezier</a>
-, <a class="el" href="class_o_n___surface_tree_bezier.html#abfda1decc6348e4438c6487d9e90aa16">ON_SurfaceTreeBezier</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga4ca9c9d81314896cac2efb4c02c01558">ON_CurveTreeBezier</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gabfda1decc6348e4438c6487d9e90aa16">ON_SurfaceTreeBezier</a>
 </li>
 <li>m_lease
 : <a class="el" href="class_c_rhino_license_validator.html#ad61a62a5ce572211a8fa818fb1830496">CRhinoLicenseValidator</a>
@@ -5715,9 +5761,6 @@ $(function() {
 </li>
 <li>m_level0_component_id
 : <a class="el" href="class_o_n___sub_d_component_region.html#a3a99d359860ab580f0dd9408a131c0af">ON_SubDComponentRegion</a>
-</li>
-<li>m_level0_edge_count
-: <a class="el" href="class_o_n___sub_d_face_region.html#acb035e28e879b74195d7affa5db6e43a">ON_SubDFaceRegion</a>
 </li>
 <li>m_level_zero_face_id
 : <a class="el" href="class_o_n___sub_d_face.html#a5eb18d679b391845ed330c6bd43ff339">ON_SubDFace</a>
@@ -5894,8 +5937,7 @@ $(function() {
 </li>
 <li>m_M
 : <a class="el" href="class_c_rhino_splop_space_morph.html#ac185ded30461131ac063800f1824940a">CRhinoSplopSpaceMorph</a>
-, <a class="el" href="class_o_n___c_m_x___e_v_e_n_t.html#a4fd22f4285ea7f439397e42c3c7c9c08">ON_CMX_EVENT</a>
-, <a class="el" href="class_o_n___curve_leaf_box.html#ad726a3ded7b15c94eda4715b919a4c3c">ON_CurveLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gad726a3ded7b15c94eda4715b919a4c3c">ON_CurveLeafBox</a>
 </li>
 <li>m_macro
 : <a class="el" href="class_c_rhino_app_1_1_c_rh_mru_command_record.html#ac7a9adc37b549c7e127ea301efa6f444">CRhinoApp::CRhMruCommandRecord</a>
@@ -5972,6 +6014,13 @@ $(function() {
 </li>
 <li>m_marking_error_count
 : <a class="el" href="class_o_n___mesh_marker.html#a16150b88a18247ee23ff478b13514210">ON_MeshMarker</a>
+</li>
+<li>m_markup_index
+: <a class="el" href="class_c_rhino_doc_markup_table_changed_1_1_c_parameters.html#a434280515e609ae5efa990f8de4170a3">CRhinoDocMarkupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_markup_view_changed_1_1_c_parameters.html#abfc5e065c8023969090af5e672f3772a">CRhinoDocMarkupViewChanged::CParameters</a>
+</li>
+<li>m_markup_mode
+: <a class="el" href="class_c_rhino_doc_markup_view_changed_1_1_c_parameters.html#a71e65846b3e86cfd2d0aabb78fd48ce3">CRhinoDocMarkupViewChanged::CParameters</a>
 </li>
 <li>m_mass
 : <a class="el" href="class_o_n___mass_properties.html#a9e5f76bd4ca12aa58082a98a40b2400d">ON_MassProperties</a>
@@ -6082,6 +6131,9 @@ $(function() {
 <li>m_maxradius_range
 : <a class="el" href="class_c_rhino_curvature_analysis_settings.html#a9db0a648c17e1cd782785897766cfae9">CRhinoCurvatureAnalysisSettings</a>
 </li>
+<li>m_maxRefinements
+: <a class="el" href="class_c_rhino_var_srf_settings.html#af46fc23c0f1918890dec973dab56b2ec">CRhinoVarSrfSettings</a>
+</li>
 <li>m_mean_range
 : <a class="el" href="class_c_rhino_curvature_analysis_settings.html#a36f5089553d7ddd84ebcc752dbca6140">CRhinoCurvatureAnalysisSettings</a>
 </li>
@@ -6105,10 +6157,8 @@ $(function() {
 </li>
 <li>m_mesh
 : <a class="el" href="class_c_rhino_object_mesh.html#a9dedc6dd6a7c8ccafca9ec4970f987d6">CRhinoObjectMesh</a>
-, <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#a4d5d251d8c2074c8ea8f367ff6421c16">ON_CURVE_POINT</a>
 , <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#aad3a2c1fd45d1d0232a16e85bf91b222">ON_MESH_POINT</a>
 , <a class="el" href="class_o_n___mesh_topology.html#adea7da315c30d5d3b24743ce9b87e434">ON_MeshTopology</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#a75f6ffd42e8aa61ff85088b67afd835b">ON_MeshTreeNode</a>
 , <a class="el" href="class_o_n___mesh_x.html#a6be034c03e2085018ea9a86c36ccffc5">ON_MeshX</a>
 </li>
 <li>m_mesh_attributes
@@ -6237,9 +6287,6 @@ $(function() {
 <li>m_MeshingParms
 : <a class="el" href="class_c_channel_attributes.html#a5d53bb130ea6025c0826bc93a4e4fa48">CChannelAttributes</a>
 </li>
-<li>m_meshMemoryLimit
-: <a class="el" href="class_rh_displacement_args.html#a50477fab3a86ad7484c2f3d8aea6a867">RhDisplacementArgs</a>
-</li>
 <li>m_MeshNakedEdgeColor
 : <a class="el" href="class_c_display_pipeline_attributes.html#a11b31954a05df50773ab849fe5074072">CDisplayPipelineAttributes</a>
 </li>
@@ -6306,9 +6353,6 @@ $(function() {
 </li>
 <li>m_min_tracking_size
 : <a class="el" href="class_c_rhino_ui_dock_bar.html#a23d74087e36007c141eefe91a68ac6d1">CRhinoUiDockBar</a>
-</li>
-<li>m_min_travel_distance
-: <a class="el" href="class_o_n___ray_shooter.html#a4f4a0cd89016e434d237729fd2ca1ed2">ON_RayShooter</a>
 </li>
 <li>m_min_undo_steps
 : <a class="el" href="class_c_rhino_app_general_settings.html#a2b71c2a219414259683e05e5242fb89a">CRhinoAppGeneralSettings</a>
@@ -6418,6 +6462,9 @@ $(function() {
 </li>
 <li>m_msg
 : <a class="el" href="class_c_rhino_ui_popup_menu.html#aa928e94ebfcd5faa7a01f06c83e78ae5">CRhinoUiPopupMenu</a>
+</li>
+<li>m_multiThreading
+: <a class="el" href="class_c_rhino_var_srf_settings.html#aef4d851eda72744189365f1212b6f1d1">CRhinoVarSrfSettings</a>
 </li>
 <li>m_mxpoint
 : <a class="el" href="class_o_n___mesh_x_point_pair.html#a69fdec56890f95f8dd5a26a01fae5be4">ON_MeshXPointPair</a>
@@ -6810,29 +6857,11 @@ $(function() {
 <li>m_nObjectIndex
 : <a class="el" href="class_c_channel_attributes.html#a839a56eb890304fea1a550357ffad127">CChannelAttributes</a>
 </li>
-<li>m_node_t
-: <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#a53d06c48268ef2f0abdc3ffd72402259">ON_CURVE_POINT</a>
-</li>
 <li>m_nodeA_t
 : <a class="el" href="class_o_n___x___e_v_e_n_t.html#ad21cd813b3e696bb8d9800be79e9941d">ON_X_EVENT</a>
 </li>
 <li>m_nodeB_t
 : <a class="el" href="class_o_n___x___e_v_e_n_t.html#a559778d0ae0367f3fb1aec54b99dc3c2">ON_X_EVENT</a>
-</li>
-<li>m_nodemem
-: <a class="el" href="class_o_n___curve_tree_node.html#af56627ecad5dd934019b7026aaf2f4b5">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#a5e7c394a9ed15e9e6d95e71030852cae">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a193332b46fec205562240db2f421fa4a">ON_SurfaceTreeNode</a>
-</li>
-<li>m_nodesn
-: <a class="el" href="class_o_n___curve_tree_node.html#aa9de357c47d474e6f0333276a0215b54">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#ab7935779a8b6750563cfc10629653c3d">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#ab793a2bd0e509e9a1d32c3c16b909d55">ON_SurfaceTreeNode</a>
-</li>
-<li>m_nodetype
-: <a class="el" href="class_o_n___curve_tree_node.html#af7726de5212b2688ecda27561b5424e3">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#a035e981eca3b8f94f42dfe14209596c0">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a1d9eee7202af5f2971f27d8931f8a664">ON_SurfaceTreeNode</a>
 </li>
 <li>m_nOneShotGeometryFilter
 : <a class="el" href="class_c_rhino_app_selection_filter_settings.html#ac21b1a6f4e6acfc51e1fd8eb261768bf">CRhinoAppSelectionFilterSettings</a>
@@ -7095,7 +7124,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#a710eee5d49c8977f74ac2146d10040be">CRhinoOnChangeObjectSelectState::CParameters</a>
 </li>
 <li>m_object_deselected_list
-: <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#abe492b9d52ed026c4b99090f9dca3dbc">CRhinoOnChangeObjectSelectState::CParameters</a>
+: <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#a1209ea149d70720ff6bcec65c16e5f67">CRhinoOnChangeObjectSelectState::CParameters</a>
 </li>
 <li>m_object_filter
 : <a class="el" href="class_c_rhino_snap_context.html#a83aac189ca58ecd31e060e27ba0de42a">CRhinoSnapContext</a>
@@ -7103,8 +7132,11 @@ $(function() {
 <li>m_object_id
 : <a class="el" href="class_o_n___poly_edge_segment.html#a6e985e2db971aec230d6782653828e69">ON_PolyEdgeSegment</a>
 </li>
+<li>m_object_index
+: <a class="el" href="class_c_rhino_overlap_fate.html#a449420b60095748588b9ef778fa9dc72">CRhinoOverlapFate</a>
+</li>
 <li>m_object_list
-: <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a07051737bb986f0893e578700b95f159">CRhinoOnTransformObject::CParameters</a>
+: <a class="el" href="class_c_rhino_on_transform_object_1_1_c_parameters.html#a213be9e442732c33c1815beb8ffab86e">CRhinoOnTransformObject::CParameters</a>
 </li>
 <li>m_object_perp_osnap_cursor
 : <a class="el" href="class_c_rhino_app.html#a1bc93be435d284902aa77c33b46bf725">CRhinoApp</a>
@@ -7117,7 +7149,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#a92992e1d6e0c2884d8f6e4b0003bc618">CRhinoOnChangeObjectSelectState::CParameters</a>
 </li>
 <li>m_object_selected_list
-: <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#a2a344fc260535af721123b8ba8dfb6c2">CRhinoOnChangeObjectSelectState::CParameters</a>
+: <a class="el" href="class_c_rhino_on_change_object_select_state_1_1_c_parameters.html#a192047d9db52f0ed9f4a17ee34bb94b5">CRhinoOnChangeObjectSelectState::CParameters</a>
 </li>
 <li>m_object_space
 : <a class="el" href="class_c_rhino_snap_context.html#a93f37032ac54c92a98064d07896b9a66">CRhinoSnapContext</a>
@@ -7159,6 +7191,14 @@ $(function() {
 </li>
 <li>m_old_display_mode_id
 : <a class="el" href="class_c_rhino_display_mode_changed_1_1_c_parameters.html#af15f91b82cdd6291a9c0aace00ce61da">CRhinoDisplayModeChanged::CParameters</a>
+</li>
+<li>m_old_settings
+: <a class="el" href="class_c_rhino_doc_markup_table_changed_1_1_c_parameters.html#ae76e9b9be4091bdf550805a6ee2191c3">CRhinoDocMarkupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_page_view_group_table_changed_1_1_c_parameters.html#a35dc4160ae1af11bf25fc1532f09be50">CRhinoDocPageViewGroupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_section_style_table_changed_1_1_c_parameters.html#ad59e5e55b212da0f0ebe8f45ce3113b8">CRhinoDocSectionStyleTableChanged::CParameters</a>
+</li>
+<li>m_on_boundary
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a9a9a5b794194a3d1289a574d5ed39921">ON_CurveMeshHit</a>
 </li>
 <li>m_on_button_clicked_msg_id
 : <a class="el" href="class_c_rhino_ui_color_button.html#a49bffd93a2c5be5798deaab3bbf2ce91">CRhinoUiColorButton</a>
@@ -7285,7 +7325,6 @@ $(function() {
 <li>m_P
 : <a class="el" href="class_c_rhino_polyline_on_mesh_user_data.html#a12835661f004f2787717d3d318f76a4e">CRhinoPolylineOnMeshUserData</a>
 , <a class="el" href="class_o_n__3d_ray.html#a4b85162c78c06c438a42e10ee5db8c6f">ON_3dRay</a>
-, <a class="el" href="class_o_n___clash_event.html#a64c562fcff2f5394d57802f0a9ca0e16">ON_ClashEvent</a>
 , <a class="el" href="class_o_n___localizer.html#a3ef3b7f0ac46cb6457c53583f5704c95">ON_Localizer</a>
 , <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#a656483e8ccc7343a746e9e8db5bc36c6">ON_MESH_POINT</a>
 </li>
@@ -7548,9 +7587,6 @@ $(function() {
 <li>m_pen_white
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl_g_d_i.html#a8fe68d118a8e26f90a340c98fa1e287c">CRhinoUiTabbedSheetCtrlGDI</a>
 </li>
-<li>m_pending_props
-: <a class="el" href="class_o_n___text_builder.html#afe7a40bef6ddd93da1589beba90a8eab">ON_TextBuilder</a>
-</li>
 <li>m_pEngine
 : <a class="el" href="class_c_rhino_display_pipeline.html#a1786c41eafe0832bc81c1f066ac0740d">CRhinoDisplayPipeline</a>
 </li>
@@ -7592,7 +7628,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_pick_context.html#a7686347d3dca99b20701627fcbf73935">CRhinoPickContext</a>
 </li>
 <li>m_pick_mode
-: <a class="el" href="class_c_rhino_pick_context.html#a338c031eafb221602e165e491c5ae49f">CRhinoPickContext</a>
+: <a class="el" href="class_c_rhino_pick_context.html#a4c92869bb0fb1186baaf25120b9b3e04">CRhinoPickContext</a>
 </li>
 <li>m_pick_point
 : <a class="el" href="class_c_rhino_loft_curve.html#af2286730193de454b9070790a885671e">CRhinoLoftCurve</a>
@@ -7608,7 +7644,7 @@ $(function() {
 : <a class="el" href="class_c_rhino_gumball_display_conduit.html#ab7f841d32747e680b86785bfb887880b">CRhinoGumballDisplayConduit</a>
 </li>
 <li>m_pick_style
-: <a class="el" href="class_c_rhino_pick_context.html#abab3b6ca01a80dee5b851ef223590632">CRhinoPickContext</a>
+: <a class="el" href="class_c_rhino_pick_context.html#ab08480483dc8b9422e8ad0000a3a7e0d">CRhinoPickContext</a>
 </li>
 <li>m_pick_t
 : <a class="el" href="class_c_rhino_loft_curve.html#a6738404682fd1b7dc0e918c7218ef1ff">CRhinoLoftCurve</a>
@@ -7674,7 +7710,7 @@ $(function() {
 , <a class="el" href="class_o_n___clipping_plane.html#a8f3f892481ba7e294fbaa3f2b97cf0c9">ON_ClippingPlane</a>
 , <a class="el" href="class_o_n___plane_surface.html#a12d80e37a5c3dafc20c63f0ff350464d">ON_PlaneSurface</a>
 , <a class="el" href="class_o_n___point_cloud.html#aba31ed459ba176b4efbe5e490b9be511">ON_PointCloud</a>
-, <a class="el" href="class_o_n___surface_leaf_box.html#aa9315dd93fdf41c10f74401ab8ae2b10">ON_SurfaceLeafBox</a>
+, <a class="el" href="group__open_n_u_r_b_s.html#gaa9315dd93fdf41c10f74401ab8ae2b10">ON_SurfaceLeafBox</a>
 </li>
 <li>m_plane_constraint
 : <a class="el" href="class_c_rhino_gumball_pick_result.html#ab3b100d1d1346648e545a604f764d8c8">CRhinoGumballPickResult</a>
@@ -7793,6 +7829,7 @@ $(function() {
 , <a class="el" href="class_o_n___bend_face_constraint.html#af0b4983083619f5d951d40e9ccd57470">ON_BendFaceConstraint</a>
 , <a class="el" href="class_o_n___bump_function.html#ac16d93ab9413895bb26fb17280844a42">ON_BumpFunction</a>
 , <a class="el" href="class_o_n___c_i_x_event.html#a0d371c55821d38f55d3490f577cf2e31">ON_CIXEvent</a>
+, <a class="el" href="class_o_n___curve_mesh_hit.html#a6f08552f2eda0a63dbfb9aa182cdadeb">ON_CurveMeshHit</a>
 , <a class="el" href="class_o_n___mesh_x_point.html#a3c7e7ae9fdfc3878a9c8b66992c100be">ON_MeshXPoint</a>
 , <a class="el" href="class_o_n___obj_ref.html#a14f0b23e5cb00ea45a2dc3db5b9e16d6">ON_ObjRef</a>
 , <a class="el" href="class_o_n___outline_figure_point.html#af61fa5be2c681b9fbca0858f5d441c50">ON_OutlineFigurePoint</a>
@@ -7862,6 +7899,9 @@ $(function() {
 </li>
 <li>m_point_stride0
 : <a class="el" href="class_o_n___point_grid.html#a3f403574a1ba752846b243ff58cf2c56">ON_PointGrid</a>
+</li>
+<li>m_point_tolerance
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a0dc9cff8baa3c93c82a3fa2faecc6c1a">ON_CurveMeshHit</a>
 </li>
 <li>m_point_type
 : <a class="el" href="class_o_n___outline_figure_point.html#afb4f32986ba4a2d49c56f03e926c69b3">ON_OutlineFigurePoint</a>
@@ -7987,6 +8027,9 @@ $(function() {
 , <a class="el" href="class_c_rh_rdk_render_plug_in_iterator_1_1_info.html#a7eb84edd7b09c474b4e94e6ebb884641">CRhRdkRenderPlugInIterator::Info</a>
 , <a class="el" href="class_i_rh_rdk_thumbnails_1_1_c_thumbnail_metrics.html#a135a4b1333d0424cae2879b87149caff">IRhRdkThumbnails::CThumbnailMetrics</a>
 </li>
+<li>m_preserveEdges
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a0ecb0f2e09f72da4ae7a874673023158">CRhinoVarSrfSettings</a>
+</li>
 <li>m_pressed_border
 : <a class="el" href="class_c_rhino_ui_paint_color_settings.html#aa92a8b236977a073349e6b0459a4238a">CRhinoUiPaintColorSettings</a>
 </li>
@@ -8059,6 +8102,7 @@ $(function() {
 <li>m_private
 : <a class="el" href="class_c_rhino_display_engine.html#ab85a3657a38572f52acac5844e9716f8">CRhinoDisplayEngine</a>
 , <a class="el" href="class_c_rhino_display_pipeline.html#a0ed840551628559fb5dbb8bd4511962f">CRhinoDisplayPipeline</a>
+, <a class="el" href="class_c_rhino_user_interface_object.html#ad7e67540b37df2fc06f349dc187f6197">CRhinoUserInterfaceObject</a>
 </li>
 <li>m_product_icon
 : <a class="el" href="class_c_rhino_license_validator.html#a8b0b34c634bf6f35014e567cda76440a">CRhinoLicenseValidator</a>
@@ -8239,7 +8283,7 @@ $(function() {
 : <a class="el" href="class_o_n___texture_mapping.html#a0ae184cadb181bd7a4773d80af6810ac">ON_TextureMapping</a>
 </li>
 <li>m_q
-: <a class="el" href="class_o_n___surface_leaf_box.html#a24ebc7a3fba2a0a94ff7967cdbc7326f">ON_SurfaceLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga24ebc7a3fba2a0a94ff7967cdbc7326f">ON_SurfaceLeafBox</a>
 </li>
 <li>m_quad_count
 : <a class="el" href="class_o_n___mesh.html#a0e88e56788c06e475b27d239f78c7656">ON_Mesh</a>
@@ -8258,7 +8302,7 @@ $(function() {
 : <a class="el" href="class_o_n___brep_region_topology.html#acdd8d6611b98dce889167d0f3aa0f30c">ON_BrepRegionTopology</a>
 </li>
 <li>m_r
-: <a class="el" href="class_o_n___curve_leaf_box.html#a4dd040339523416989b9644c273cae8c">ON_CurveLeafBox</a>
+: <a class="el" href="group__open_n_u_r_b_s.html#ga4dd040339523416989b9644c273cae8c">ON_CurveLeafBox</a>
 </li>
 <li>m_R
 : <a class="el" href="class_o_n___sub_d_matrix.html#a3e2874770358caa5b1b430ee49831c02">ON_SubDMatrix</a>
@@ -8406,7 +8450,10 @@ $(function() {
 , <a class="el" href="class_c_rhino_instance_definition.html#a72f9bbb9c128b6a4c96601ca7c6c8876">CRhinoInstanceDefinition</a>
 , <a class="el" href="class_c_rhino_light.html#af1fb0c85f6af6882e53c03dde4cd6ce1">CRhinoLight</a>
 , <a class="el" href="class_c_rhino_linetype.html#a6766a21c7f5c9466a4d21c12191341eb">CRhinoLinetype</a>
+, <a class="el" href="class_c_rhino_markup.html#aeced0b9a222490e5858193813be66dad">CRhinoMarkup</a>
 , <a class="el" href="class_c_rhino_material.html#ad93a5dd740e6bf51d8ed33cf116a0303">CRhinoMaterial</a>
+, <a class="el" href="class_c_rhino_page_view_group.html#a8143473c911be3fdb2c5552f42ad3dd7">CRhinoPageViewGroup</a>
+, <a class="el" href="class_c_rhino_section_style.html#ac75ff17b25904e481665820faa524f9a">CRhinoSectionStyle</a>
 , <a class="el" href="class_c_rhino_texture_mapping.html#ab438f0f52e5eb2838c801f8176dec339">CRhinoTextureMapping</a>
 </li>
 <li>m_remove_delete_list
@@ -8453,8 +8500,12 @@ $(function() {
 <li>m_Reserved
 : <a class="el" href="class_o_n___h_l_d___object.html#a54033684a1125545c9d7b7de333d5604">ON_HLD_Object</a>
 </li>
+<li>m_reserved0
+: <a class="el" href="class_o_n___hatch_loop.html#a53057997d826a1a5814d24db7675398c">ON_HatchLoop</a>
+</li>
 <li>m_reserved1
 : <a class="el" href="class_c_rhino_sel_command.html#a36c1750cead4f38b497be35a2e45bf93">CRhinoSelCommand</a>
+, <a class="el" href="class_o_n___hatch_loop.html#a547becd4f7dccbbed37e5e365fe502dc">ON_HatchLoop</a>
 , <a class="el" href="class_o_n___material_ref.html#aee96b19aa8bf54bb10c52e02da11e222">ON_MaterialRef</a>
 , <a class="el" href="class_o_n___mesh_curve_parameters.html#a0932d2f06a82f7487c97f719063da889">ON_MeshCurveParameters</a>
 , <a class="el" href="class_o_n___mesh_x.html#aba9cdde336a0cc4c8b44a77494315481">ON_MeshX</a>
@@ -8483,14 +8534,8 @@ $(function() {
 <li>m_reserved99
 : <a class="el" href="class_o_n___dimension.html#ac75c1d9b3c99e45d2317635d6195d474">ON_Dimension</a>
 </li>
-<li>m_reserved_ON_CurveTreeNode
-: <a class="el" href="class_o_n___curve_tree_node.html#add8c47412ace98f7539137fcc450b613">ON_CurveTreeNode</a>
-</li>
-<li>m_reserved_ON_MeshTreeNode
-: <a class="el" href="class_o_n___mesh_tree_node.html#a6496a92624c4c9c2c5c8986fa08eafdf">ON_MeshTreeNode</a>
-</li>
-<li>m_reserved_ON_SurfaceTreeNode
-: <a class="el" href="class_o_n___surface_tree_node.html#a1c35f94d386d1c124d99b310754b9ae2">ON_SurfaceTreeNode</a>
+<li>m_reserved_char3
+: <a class="el" href="class_o_n___text_run.html#a0c4355ec90afdd25885f9f24d599dfc7">ON_TextRun</a>
 </li>
 <li>m_Resize
 : <a class="el" href="class_c_rhino_ui_dialog.html#ab3174d3d5c896c154b729253a1c120ae">CRhinoUiDialog</a>
@@ -8507,6 +8552,9 @@ $(function() {
 </li>
 <li>m_reve
 : <a class="el" href="struct_o_n___mesh_topology_face.html#a5ec879869d159cb3df486335da0b49ab">ON_MeshTopologyFace</a>
+</li>
+<li>m_reversed
+: <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a69d6c6ce3946e4d14dd4889266b70c2e">CRhinoVarSrfConstraintCurve</a>
 </li>
 <li>m_ReverseTwist
 : <a class="el" href="class_c_args_rhino_get_spiral.html#aa0cd8c510139e1dfd6328c63643b23ca">CArgsRhinoGetSpiral</a>
@@ -8538,6 +8586,11 @@ $(function() {
 <li>m_rhino_doc_sn
 : <a class="el" href="class_c_rhino_command_context.html#a5b687557027b3a8be4a01380ab7414cc">CRhinoCommandContext</a>
 , <a class="el" href="class_c_rhino_display_conduit.html#aab358011e523ae91d06742ee275ff498">CRhinoDisplayConduit</a>
+, <a class="el" href="class_c_rhino_doc_markup_table_changed_1_1_c_parameters.html#a17916828f88e7e54dc1bf36747f59576">CRhinoDocMarkupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_markup_view_changed_1_1_c_parameters.html#a860f0b17a3f9903979e2374b9bfd5dec">CRhinoDocMarkupViewChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_page_view_group_table_changed_1_1_c_parameters.html#a51693680f0b3a7ca40a1c5ec4b0aff2a">CRhinoDocPageViewGroupTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_doc_section_style_table_changed_1_1_c_parameters.html#ac1783e32fa9d9851f9dc60bde5933e42">CRhinoDocSectionStyleTableChanged::CParameters</a>
+, <a class="el" href="class_c_rhino_object_analysis_mode_changed_1_1_c_parameters.html#ae76acc9c6b3d391fb859f50ac9825f0b">CRhinoObjectAnalysisModeChanged::CParameters</a>
 , <a class="el" href="class_c_rhino_object_iterator.html#a01a615abf0f66262024deaa7d658e8d2">CRhinoObjectIterator</a>
 , <a class="el" href="class_c_rhino_on_page_view_properties_changed_1_1_c_parameters.html#a0f3fc328098f6860e18b2d7b2d5c9a17">CRhinoOnPageViewPropertiesChanged::CParameters</a>
 , <a class="el" href="class_c_rhino_on_set_active_detail_object_1_1_c_parameters.html#a35c1fe1dfc05a2b05117deee1c92d263">CRhinoOnSetActiveDetailObject::CParameters</a>
@@ -8545,10 +8598,14 @@ $(function() {
 , <a class="el" href="class_c_rhino_sub_d_pick_settings.html#ae98d88df1ac2002e01dec6bffeab37a4">CRhinoSubDPickSettings</a>
 , <a class="el" href="class_c_rhino_ui_layer_list_ctrl.html#ac96c9454730e8af24d1309856dcd1a8d">CRhinoUiLayerListCtrl</a>
 , <a class="el" href="class_c_rhino_xform_object_list.html#a0682e4459c8f80f1bad210910198271e">CRhinoXformObjectList</a>
+, <a class="el" href="class_o_n___obj_ref.html#a91c7309436c87cff1e712b21b0ffcb6b">ON_ObjRef</a>
 </li>
 <li>m_rhino_flags
 : <a class="el" href="class_c_rhino_ui_dialog.html#a24643180745f8f551a68aeb064d907f1">CRhinoUiDialog</a>
 , <a class="el" href="class_c_rhino_ui_dock_bar.html#a02aba18969950072abc505af9c121ec3">CRhinoUiDockBar</a>
+</li>
+<li>m_rhino_object_id
+: <a class="el" href="class_c_rhino_object_analysis_mode_changed_1_1_c_parameters.html#ab50e5cb62605665f696e86696ccba058">CRhinoObjectAnalysisModeChanged::CParameters</a>
 </li>
 <li>m_rhino_object_sn
 : <a class="el" href="class_c_rhino_sub_d_pick_settings.html#a4f510c9af4030b749a95423ed0a47be0">CRhinoSubDPickSettings</a>
@@ -8623,10 +8680,8 @@ $(function() {
 <li>m_rNext
 : <a class="el" href="class_c_rhino_ui_tabbed_sheet_ctrl.html#a9a60fc47c8defc2aa45c23c00a127cbe">CRhinoUiTabbedSheetCtrl</a>
 </li>
-<li>m_root
-: <a class="el" href="class_o_n___curve_tree.html#a23d503f4ae64769cbb3bad7eefcb6815">ON_CurveTree</a>
-, <a class="el" href="class_o_n___mesh_tree.html#ac734d38e49a88ca1f6a724cf1ff1e2b7">ON_MeshTree</a>
-, <a class="el" href="class_o_n___surface_tree.html#a87d9f0459cfbb0fd761b9c42085f4862">ON_SurfaceTree</a>
+<li>m_rocBending
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a1f64e4d23f61e0972ee3c90295f7bb04">CRhinoVarSrfSettings</a>
 </li>
 <li>m_rotate_about_camera
 : <a class="el" href="class_c_rhino_app_space_ball_settings.html#a72d30884feb2439703df6c20931d7f57">CRhinoAppSpaceBallSettings</a>
@@ -8702,6 +8757,11 @@ $(function() {
 <li>m_runs
 : <a class="el" href="class_o_n___text_run_builder.html#abef61490c72ef6b53118a69bb31543b1">ON_TextRunBuilder</a>
 </li>
+<li>m_runtime_serial_number
+: <a class="el" href="class_c_rhino_markup.html#ab37ef0a2d3eeb2bafdca974dfd3de57d">CRhinoMarkup</a>
+, <a class="el" href="class_c_rhino_page_view_group.html#a551d4241addde3a2c4202e79421e5741">CRhinoPageViewGroup</a>
+, <a class="el" href="class_c_rhino_section_style.html#acd32482e6ae0028c625fd3dac1d6cb99">CRhinoSectionStyle</a>
+</li>
 <li>m_runtime_sn
 : <a class="el" href="class_o_n___obj_ref.html#ab15145f3dbc8ed496ff272f051815b6a">ON_ObjRef</a>
 </li>
@@ -8757,11 +8817,11 @@ $(function() {
 <li>m_saved_linetype_scale
 : <a class="el" href="class_c_rhino_print_info.html#a862a97b70067cd3e281553d0d13f1c5f">CRhinoPrintInfo</a>
 </li>
+<li>m_saved_modified_points_flags
+: <a class="el" href="class_o_n___sub_d_component_base.html#a0566c8fa8d521bedc83d7bc2cb538976">ON_SubDComponentBase</a>
+</li>
 <li>m_saved_object
 : <a class="el" href="class_c_rhino_copy_grips_helper.html#abbda3b3784b2d331d3c8a993f84d1cd5">CRhinoCopyGripsHelper</a>
-</li>
-<li>m_saved_points_flags
-: <a class="el" href="class_o_n___sub_d_component_base.html#a5665f98f601c3a89ec1e789b0ef577f3">ON_SubDComponentBase</a>
 </li>
 <li>m_saved_subd_point1
 : <a class="el" href="class_o_n___sub_d_component_base.html#a0388f57c2f3b00bd7e19fa22297c942d">ON_SubDComponentBase</a>
@@ -8881,6 +8941,9 @@ $(function() {
 </li>
 <li>m_section_planes_mark
 : <a class="el" href="class_o_n___planar_sections.html#a901acf59797048e65c825afa7146c37c">ON_PlanarSections</a>
+</li>
+<li>m_section_style_index
+: <a class="el" href="class_c_rhino_doc_section_style_table_changed_1_1_c_parameters.html#ae7dbd721727175bdc18d33c396259847">CRhinoDocSectionStyleTableChanged::CParameters</a>
 </li>
 <li>m_sections
 : <a class="el" href="class_c_rhino_profile_context_iterator.html#ad66b859be8b0222bd1c758148bd4fd03">CRhinoProfileContextIterator</a>
@@ -9126,8 +9189,6 @@ $(function() {
 </li>
 <li>m_sn
 : <a class="el" href="class_o_n___clipping_plane_data_store.html#a6404a46c281c852988f6b96fe4b6115b">ON_ClippingPlaneDataStore</a>
-, <a class="el" href="class_o_n___c_m_x___e_v_e_n_t.html#ade982b76051442a3860fc222e028d100">ON_CMX_EVENT</a>
-, <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#a87ef646da2c314bb1ceaba7e4bf7ec35">ON_CURVE_POINT</a>
 , <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#a6b247c0b3b34cd2d49c10cbfb0a9bdd7">ON_MESH_POINT</a>
 , <a class="el" href="class_o_n___m_m_x___p_o_i_n_t.html#a6259933c43b37e6eeacb387634edca84">ON_MMX_POINT</a>
 , <a class="el" href="struct_o_n___serial_number_map_1_1_s_n___e_l_e_m_e_n_t.html#a0e3c6f00627cf99b06e75f7f386f38fe">ON_SerialNumberMap::SN_ELEMENT</a>
@@ -9186,6 +9247,9 @@ $(function() {
 <li>m_snodeB
 : <a class="el" href="class_o_n___x___e_v_e_n_t.html#a165c15f6b39ce1b35fc736fe0f9c8911">ON_X_EVENT</a>
 </li>
+<li>m_soft_transform_color
+: <a class="el" href="class_c_rhino_draw_grips_settings.html#ac046a5d5b3320835a3856b4d6447f497">CRhinoDrawGripsSettings</a>
+</li>
 <li>m_SolidColor
 : <a class="el" href="class_c_channel_attributes.html#af4710829542781a82c713aee766cd602">CChannelAttributes</a>
 , <a class="el" href="class_c_display_pipeline_attributes.html#a59843ac774c2ca5cb17f1c80af5f3bae">CDisplayPipelineAttributes</a>
@@ -9199,7 +9263,10 @@ $(function() {
 , <a class="el" href="class_c_rhino_layer.html#a0a1fc04ad8fa7cf73f9db82992d0cef3">CRhinoLayer</a>
 , <a class="el" href="class_c_rhino_light.html#a3367a6c2a6f400ed4b044b592f0b6a1e">CRhinoLight</a>
 , <a class="el" href="class_c_rhino_linetype.html#a3103b4f8b9fab9423343586e1ad6dc2c">CRhinoLinetype</a>
+, <a class="el" href="class_c_rhino_markup.html#a724c91c2ba25e9ea834a14f8896067da">CRhinoMarkup</a>
 , <a class="el" href="class_c_rhino_material.html#aaa16393130df98ed2b5838001e9ce447">CRhinoMaterial</a>
+, <a class="el" href="class_c_rhino_page_view_group.html#a4a9135aa1276fc8a37061f9000f74fe7">CRhinoPageViewGroup</a>
+, <a class="el" href="class_c_rhino_section_style.html#ad76e1d891ecdf976a63c6eeb791bd50d">CRhinoSectionStyle</a>
 , <a class="el" href="class_c_rhino_texture_mapping.html#a7b22f9ff7b36477f95ff95132e646d25">CRhinoTextureMapping</a>
 , <a class="el" href="class_c_rhino_ui_dock_bar.html#a810053b822ec860230ac3f517b0c3a14">CRhinoUiDockBar</a>
 </li>
@@ -9213,6 +9280,12 @@ $(function() {
 <li>m_space
 : <a class="el" href="class_o_n__3dm_object_attributes.html#aab56e8a997c6b454080433dd263f1d9d">ON_3dmObjectAttributes</a>
 </li>
+<li>m_spanCountU
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a2670805f346f5cdc184ded1ac04050dc">CRhinoVarSrfSettings</a>
+</li>
+<li>m_spanCountV
+: <a class="el" href="class_c_rhino_var_srf_settings.html#af18a3cc23cfba30ec40737acb79390e3">CRhinoVarSrfSettings</a>
+</li>
 <li>m_sParentMenuLabel
 : <a class="el" href="class_c_rhino_app.html#a737d9e77194cdf8ebb1db1b4ad10992b">CRhinoApp</a>
 </li>
@@ -9225,6 +9298,9 @@ $(function() {
 </li>
 <li>m_spine_length
 : <a class="el" href="class_c_rhino_bend_space_morph.html#ac21050acadcecbda5e9feba81f0a3fa2">CRhinoBendSpaceMorph</a>
+</li>
+<li>m_split
+: <a class="el" href="class_o_n___mesh_split_options.html#a11c058a97da2eb659e6d99b3dae0093f">ON_MeshSplitOptions</a>
 </li>
 <li>m_sPlugInName
 : <a class="el" href="class_c_rh_rdk_render_plug_in_iterator_1_1_info.html#a5f9c2845ebd1f256824557f8efe1306e">CRhRdkRenderPlugInIterator::Info</a>
@@ -9333,6 +9409,9 @@ $(function() {
 <li>m_start_time
 : <a class="el" href="class_c_rhino_sdk_render.html#a4c8ad17c1ac80f427c76f4c296cdaa79">CRhinoSdkRender</a>
 </li>
+<li>m_startContinuity
+: <a class="el" href="class_c_rhino_var_srf_constraint_curve.html#a8ae524276daef6bc6832452854bd934e">CRhinoVarSrfConstraintCurve</a>
+</li>
 <li>m_StartDir
 : <a class="el" href="class_c_args_rhino_get_spiral.html#aa0d2373aa2ff8a3e1cafa879c64106e6">CArgsRhinoGetSpiral</a>
 </li>
@@ -9362,6 +9441,7 @@ $(function() {
 , <a class="el" href="class_o_n___brep_loop.html#aea1e25a0cbf0ac950c2e2019c23ae54d">ON_BrepLoop</a>
 , <a class="el" href="class_o_n___brep_trim.html#a9709647bce0d6d85300e1b56b9ecc447">ON_BrepTrim</a>
 , <a class="el" href="class_o_n___brep_vertex.html#af94daf56f5f1f1fdf219ebdd84ad8c1c">ON_BrepVertex</a>
+, <a class="el" href="class_o_n___hatch_loop.html#a62754fb2e24188589f0690a61272778b">ON_HatchLoop</a>
 , <a class="el" href="class_o_n___sub_d_component_base.html#a3c7582e4013172e7a2c28c0f97a51ec4">ON_SubDComponentBase</a>
 , <a class="el" href="class_o_n___x_mesh_component.html#a8f28976d1e10725336cdccb7b445ed0a">ON_XMeshComponent</a>
 </li>
@@ -9413,6 +9493,9 @@ $(function() {
 <li>m_stretch_function
 : <a class="el" href="class_c_rhino_stretch_space_morph.html#a5cd4447786a03eb75e691c8102df5398">CRhinoStretchSpaceMorph</a>
 </li>
+<li>m_stretching
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a2139929cbd4dbcf897cec13eb8dd9f44">CRhinoVarSrfSettings</a>
+</li>
 <li>m_strikeout
 : <a class="el" href="class_rtf_composer_1_1_run_info.html#a054bba874bf1e5af125ba95079e7050b">RtfComposer::RunInfo</a>
 </li>
@@ -9451,7 +9534,7 @@ $(function() {
 <li>m_style
 : <a class="el" href="class_c_args_rhino_sweep1.html#a38b2497d23beb61be61d1fb169f60468">CArgsRhinoSweep1</a>
 , <a class="el" href="class_c_rhino_command_context.html#a33db0f55c31a17ad866bfe19632230a2">CRhinoCommandContext</a>
-, <a class="el" href="class_c_rhino_curvature_analysis_settings.html#a6469cfb3b96d6eafb9049df87a7634de">CRhinoCurvatureAnalysisSettings</a>
+, <a class="el" href="class_c_rhino_curvature_analysis_settings.html#aec4f0220289c0de7e5675d3a997986c9">CRhinoCurvatureAnalysisSettings</a>
 , <a class="el" href="class_c_rhino_inferred_curve.html#a5c0c3a1d4b763a7b5cb9145e19818249">CRhinoInferredCurve</a>
 , <a class="el" href="class_c_rhino_visual_analysis_mode.html#aa98ec05bf269eeebdf0ee1b5108e7d11">CRhinoVisualAnalysisMode</a>
 , <a class="el" href="class_o_n___light.html#a087c580d6dd773bd3283e6b0d2a687df">ON_Light</a>
@@ -9527,9 +9610,6 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_sweep1.html#a8e251b5421bf7e14f6b5fe89ff7e9e9b">CArgsRhinoSweep1</a>
 , <a class="el" href="class_c_args_rhino_sweep2.html#a7ef3263ad7657c2b7e76e0b2d900851d">CArgsRhinoSweep2</a>
 </li>
-<li>m_sweepResolutionFormula
-: <a class="el" href="class_rh_displacement_args.html#aef1b2c2a8c3c45c2deba954c5ebace08">RhDisplacementArgs</a>
-</li>
 <li>m_sWndClass
 : <a class="el" href="class_c_rhino_ui_pop_down_layer_wnd.html#a66640179604f1a60a8b3865a790479a0">CRhinoUiPopDownLayerWnd</a>
 </li>
@@ -9597,7 +9677,7 @@ $(function() {
 </li>
 <li>m_t
 : <a class="el" href="struct_o_n___brep_face_iso_interval.html#a05ca890fb2e8ad8e20a185eac4577243">ON_BrepFaceIsoInterval</a>
-, <a class="el" href="class_o_n___c_u_r_v_e___p_o_i_n_t.html#a27c37b816803e85d05f7781b671560d0">ON_CURVE_POINT</a>
+, <a class="el" href="class_o_n___curve_mesh_hit.html#acade372aae3f6833cba110a03fc03831">ON_CurveMeshHit</a>
 </li>
 <li>m_T
 : <a class="el" href="class_o_n___depth_image_triangle_mesh.html#a859cb61e56c5ee055d6583ce252bb310">ON_DepthImageTriangleMesh</a>
@@ -9654,7 +9734,8 @@ $(function() {
 , <a class="el" href="class_o_n___sub_d_mesh_fragment.html#ad0b4e6ea32b1c1274b82a3316c2099e1">ON_SubDMeshFragment</a>
 </li>
 <li>m_t_tolerance
-: <a class="el" href="class_o_n___local_zero1.html#a686d344c9784fd5aed87bc493990c296">ON_LocalZero1</a>
+: <a class="el" href="class_o_n___curve_mesh_hit.html#a631d0aa5529b9eeb22400607ef8ba724">ON_CurveMeshHit</a>
+, <a class="el" href="class_o_n___local_zero1.html#a686d344c9784fd5aed87bc493990c296">ON_LocalZero1</a>
 </li>
 <li>m_t_type
 : <a class="el" href="class_o_n___obj_ref_evaluation_parameter.html#af88034a100ec5d8c2041c8cebcd8835c">ON_ObjRefEvaluationParameter</a>
@@ -9841,7 +9922,8 @@ $(function() {
 : <a class="el" href="class_c_rhino_command_option.html#a930b057ee643cb927aa3f4bd75fecb98">CRhinoCommandOption</a>
 </li>
 <li>m_tolerance
-: <a class="el" href="class_o_n___bend_face_constraint.html#a0d7681712b3e97e40b7e4ea3470464af">ON_BendFaceConstraint</a>
+: <a class="el" href="class_c_rhino_var_srf_settings.html#af7b90d0e859b80d5ee3dbe5b6083c398">CRhinoVarSrfSettings</a>
+, <a class="el" href="class_o_n___bend_face_constraint.html#a0d7681712b3e97e40b7e4ea3470464af">ON_BendFaceConstraint</a>
 , <a class="el" href="class_o_n___brep_edge.html#ad1409fbea565e3f2bf390c9df3f7183b">ON_BrepEdge</a>
 , <a class="el" href="class_o_n___brep_trim.html#a60a0508c2a9b3e9aeeae4826d4dcde4f">ON_BrepTrim</a>
 , <a class="el" href="class_o_n___brep_vertex.html#ae3cacd9d91f51f9feb30edb7456f4b25">ON_BrepVertex</a>
@@ -9849,6 +9931,9 @@ $(function() {
 </li>
 <li>m_tolerance_str
 : <a class="el" href="class_c_rhino_mesh_stl_u_i.html#a12c0fcc5ca9cf29baf8a6367fb038f82">CRhinoMeshStlUI</a>
+</li>
+<li>m_toleranceMet
+: <a class="el" href="class_c_rhino_var_srf_result.html#a8c4a9e05ba0fc3ed156a88985e6a7a8f">CRhinoVarSrfResult</a>
 </li>
 <li>m_ToleranceWarning
 : <a class="el" href="class_c_args_rhino_get_spiral.html#a0ff7f9660f33730d3267fcc60f630fe6">CArgsRhinoGetSpiral</a>
@@ -9987,14 +10072,6 @@ $(function() {
 <li>m_transparent_color
 : <a class="el" href="class_o_n___texture.html#a53df959c4ce1759cc4dde4ed0adb4a95">ON_Texture</a>
 </li>
-<li>m_tree_bez
-: <a class="el" href="class_o_n___ray_shooter.html#a967415848cf3d0b02e640182b5bd1b46">ON_RayShooter</a>
-</li>
-<li>m_treesn
-: <a class="el" href="class_o_n___curve_tree_node.html#a36bcaf0f877689c17faf9f06c4b980a7">ON_CurveTreeNode</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#a31b8ce7dd8b440335378a92f51060824">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a8a6a531f063566e7b71f0811d377c5f8">ON_SurfaceTreeNode</a>
-</li>
 <li>m_Triangle
 : <a class="el" href="class_o_n___m_e_s_h___p_o_i_n_t.html#aee37bfd9555d2f574577d3c16bdd30cf">ON_MESH_POINT</a>
 </li>
@@ -10059,8 +10136,8 @@ $(function() {
 , <a class="el" href="class_o_n___brep_trim.html#aa5260a30fa87ae3c45e08facc8272bff">ON_BrepTrim</a>
 , <a class="el" href="class_o_n___bump_function.html#a9ecee87e5558548cf7c5a2410d1ca86b">ON_BumpFunction</a>
 , <a class="el" href="class_o_n___c_i_x_event.html#a0fa1f66b5bdd16658f81d5f13ba23dd4">ON_CIXEvent</a>
-, <a class="el" href="class_o_n___c_m_x___e_v_e_n_t.html#a5e06b5f51f04489634406f75eb36ef6d">ON_CMX_EVENT</a>
 , <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html#ab04fc0d0b7140d0e442474a2d004a72e">ON_COMPONENT_INDEX</a>
+, <a class="el" href="class_o_n___curve_mesh_hit.html#a8c985743dc4ab4c561e6f25837d652bb">ON_CurveMeshHit</a>
 , <a class="el" href="class_o_n___hatch_loop.html#a2baa10d745fa3bdd8ea1a0c9fa5df12e">ON_HatchLoop</a>
 , <a class="el" href="class_o_n___h_l_d_full_curve.html#adef982003da46f98fc1c21c6074b5e4a">ON_HLDFullCurve</a>
 , <a class="el" href="class_o_n___localizer.html#a43656ec9d94af25256495a8fa0f9a936">ON_Localizer</a>
@@ -10102,6 +10179,9 @@ $(function() {
 <li>m_udegree
 : <a class="el" href="class_c_args_rhino_get_plane.html#a038745c5b5aad4365787282e26a025f6">CArgsRhinoGetPlane</a>
 </li>
+<li>m_ui_control_private
+: <a class="el" href="class_c_rhino_user_interface_control.html#a65d95d1a26792aa064c963283c68d1c0">CRhinoUserInterfaceControl</a>
+</li>
 <li>m_unary_force_func
 : <a class="el" href="class_o_n___particle_system_1_1_o_n___force.html#a7279ff944b8b6da546f9f0b76c25db50">ON_ParticleSystem::ON_Force</a>
 </li>
@@ -10112,6 +10192,9 @@ $(function() {
 : <a class="el" href="class_o_n__3dm_units_and_tolerances.html#a4c901130e113c82d499b9f0d25bde6e9">ON_3dmUnitsAndTolerances</a>
 , <a class="el" href="class_o_n___aerial_photo_image_frustum.html#a304d27352391146cd8ced7153326fe7c">ON_AerialPhotoImageFrustum</a>
 , <a class="el" href="class_o_n___dim_style_context.html#a276b152ca7b94e95458594b6822de75f">ON_DimStyleContext</a>
+</li>
+<li>m_units
+: <a class="el" href="class_c_rhino_print_page_definition.html#afef2a9d00da61756b8bd82a3728ed562">CRhinoPrintPageDefinition</a>
 </li>
 <li>m_unknownclass_uuid
 : <a class="el" href="class_o_n___unknown_user_data.html#a711b8386ccce5b78c8eb0738e3ca506c">ON_UnknownUserData</a>
@@ -10124,10 +10207,7 @@ $(function() {
 </li>
 <li>m_up
 : <a class="el" href="class_c_rhino_draft_angle_analysis_settings.html#a718d4ee6533c9c463c41c4afc5322a98">CRhinoDraftAngleAnalysisSettings</a>
-, <a class="el" href="class_o_n___curve_tree_node.html#a3b10ae5ccca7dd7c2b95348c3a3c8c65">ON_CurveTreeNode</a>
 , <a class="el" href="class_o_n___extrusion.html#add54ea257aee45c5a4f452bda4e11993">ON_Extrusion</a>
-, <a class="el" href="class_o_n___mesh_tree_node.html#aa278f4797044e92a49a980744abfd215">ON_MeshTreeNode</a>
-, <a class="el" href="class_o_n___surface_tree_node.html#a10fb4c8b13b7ac7d83bef0ee346329a4">ON_SurfaceTreeNode</a>
 </li>
 <li>m_uplane_mode
 : <a class="el" href="class_c_rhino_app_model_aid_settings.html#a122175167f3737aaa93f2de58707cd86">CRhinoAppModelAidSettings</a>
@@ -10159,6 +10239,9 @@ $(function() {
 </li>
 <li>m_use_horizontal_dialog
 : <a class="el" href="class_c_rhino_app_model_aid_settings.html#ad6af83d6e66a096c84ea7c9c79ab16f6">CRhinoAppModelAidSettings</a>
+</li>
+<li>m_use_legacy
+: <a class="el" href="class_c_rhino_app_space_ball_settings.html#a476046614279bafe68d8336ec9f670e7">CRhinoAppSpaceBallSettings</a>
 </li>
 <li>m_use_preview_mesh
 : <a class="el" href="class_c_rhino_object.html#ad9f9a69e853d0f036770b56effad08d2">CRhinoObject</a>
@@ -10260,6 +10343,9 @@ $(function() {
 </li>
 <li>m_uvn_dragmode_cursor
 : <a class="el" href="class_m_rhino_app.html#aef8314dab7af4a3327033fe863efa3a5">MRhinoApp</a>
+</li>
+<li>m_uvRotation
+: <a class="el" href="class_c_rhino_var_srf_settings.html#a31f7999a81a9df346e9994056ac04aed">CRhinoVarSrfSettings</a>
 </li>
 <li>m_uvw
 : <a class="el" href="class_o_n___texture.html#abc6d86dda5b291544f1514710e0124d3">ON_Texture</a>
@@ -10509,6 +10595,9 @@ $(function() {
 <li>m_wallpaper_image
 : <a class="el" href="class_o_n__3dm_view.html#a23da5698cc9e3ffb90354b6da35dc36e">ON_3dmView</a>
 </li>
+<li>m_warning
+: <a class="el" href="class_c_rhino_var_srf_result.html#a3131c9cef8b3ed89774c6d52c5952d08">CRhinoVarSrfResult</a>
+</li>
 <li>m_watcher_sn
 : <a class="el" href="class_c_rhino_event_watcher_ex.html#aa78d648f7a471ea70f2f1c1895cec525">CRhinoEventWatcherEx</a>
 </li>
@@ -10543,6 +10632,7 @@ $(function() {
 : <a class="el" href="class_c_args_rhino_get_picture.html#a6b3331334ae89d2be350f782613bbcc0">CArgsRhinoGetPicture</a>
 , <a class="el" href="class_c_args_rhino_get_plane.html#abb0588a98c6133877d351f00937f785c">CArgsRhinoGetPlane</a>
 , <a class="el" href="class_c_rhino_dib.html#abd63dfced96ca608da325855ab5e5ec3">CRhinoDib</a>
+, <a class="el" href="class_c_rhino_print_page_definition.html#aba2a5e6bda60525528c9aa195195b75b">CRhinoPrintPageDefinition</a>
 , <a class="el" href="class_o_n__3dm_view_trace_image.html#ada0cb83a0b107ad17a4047e1c001e6b5">ON_3dmViewTraceImage</a>
 , <a class="el" href="class_o_n___light.html#aa034490c778d16ebf93d9876d17d6d3c">ON_Light</a>
 , <a class="el" href="class_o_n___packed_texture_rectangle.html#a60d8ba2906b6f12c986bbe038edba61f">ON_PackedTextureRectangle</a>
@@ -10846,8 +10936,17 @@ $(function() {
 <li>MaximumCornerAngleRadians
 : <a class="el" href="class_o_n___sub_d_sector_type.html#aef604ada0148720bfde1b6bb17a6fd59">ON_SubDSectorType</a>
 </li>
+<li>MaximumCurvatureBiasCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a4795f5012ad9796df166722d72e7f023">ON_NurbsCurveFitParameters</a>
+</li>
 <li>MaximumOffset
 : <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a227577dcc1bb8888d5f099ef37cd4bfe">ON_SubDExpandEdgesParameters</a>
+</li>
+<li>MaximumSmoothingCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a50ab54b09283b10ebfb7f484c8ca6864">ON_NurbsCurveFitParameters</a>
+</li>
+<li>MaximumUniformityCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a02dcbd0cb769ec4678994766d6beb576">ON_NurbsCurveFitParameters</a>
 </li>
 <li>MaximumValue
 : <a class="el" href="class_o_n___sub_d_edge_sharpness.html#a17dfa16a846971eee9f0646fc0005919">ON_SubDEdgeSharpness</a>
@@ -10858,8 +10957,23 @@ $(function() {
 <li>Medium
 : <a class="el" href="class_o_n___sub_d_display_parameters.html#a39092abd9381096434263ee591394f2e">ON_SubDDisplayParameters</a>
 </li>
+<li>MediumCurvatureBiasCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a6d6e83c92b1307b9058bc06408ce1972">ON_NurbsCurveFitParameters</a>
+</li>
+<li>MediumCurvatureKink
+: <a class="el" href="class_o_n___curve_kink_definition.html#a2d33598d2eced50d1c6b31979bc28cfc">ON_CurveKinkDefinition</a>
+</li>
+<li>MediumCurvatureKinkRadiusRatio
+: <a class="el" href="class_o_n___curve_kink_definition.html#a51af1a604f48ae427896753a643ebebf">ON_CurveKinkDefinition</a>
+</li>
 <li>MediumOffset
 : <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html#a575f1313733dfaa8d56019d111c5d9c0">ON_SubDExpandEdgesParameters</a>
+</li>
+<li>MediumSmoothingCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a0523617e12691db5a99cb9ee0f51a174">ON_NurbsCurveFitParameters</a>
+</li>
+<li>MediumUniformityCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a16c2670dc10c8565e4c0137a76a4c8fa">ON_NurbsCurveFitParameters</a>
 </li>
 <li>Megameters
 : <a class="el" href="class_o_n___unit_system.html#a7435b842e76bd1a4dcfbf53e2ac1202e">ON_UnitSystem</a>
@@ -10913,6 +11027,15 @@ $(function() {
 <li>minor_radius
 : <a class="el" href="class_o_n___torus.html#ad82a00b7119803c4e4b97a9fb118ae5f">ON_Torus</a>
 </li>
+<li>ModerateCurvatureBiasCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#a257698d22f8f6767e3d7aeb7aaa8931d">ON_NurbsCurveFitParameters</a>
+</li>
+<li>ModerateSmoothingCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#ab57444a26d996fbfac1b411cd3c2d809">ON_NurbsCurveFitParameters</a>
+</li>
+<li>ModerateUniformityCoefficient
+: <a class="el" href="class_o_n___nurbs_curve_fit_parameters.html#af969791e453baeb0ebcb4f168e3fff39">ON_NurbsCurveFitParameters</a>
+</li>
 <li>Monochrome
 : <a class="el" href="class_o_n___standard_display_mode_id.html#ad1d06b60cd262765fd5d6431dfdad2a6">ON_StandardDisplayModeId</a>
 </li>
@@ -10929,7 +11052,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

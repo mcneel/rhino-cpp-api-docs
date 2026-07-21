@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -77,9 +77,20 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8b4d042458fc38cad267ab0c1dcf0178"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178">MaskFrame</a> : unsigned char { <a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a4d3a38177f524037379ef069aa3c5bdc">MaskFrame::NoFrame</a> = 0, 
+<tr class="memitem:a8b4d042458fc38cad267ab0c1dcf0178"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178">MaskFrame</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a4d3a38177f524037379ef069aa3c5bdc">MaskFrame::NoFrame</a> = 0, 
 <a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178aa9ba3bde80ff5aaae636c3a8cfa3e612">MaskFrame::RectFrame</a> = 1, 
-<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a2aeb8c3c7a018f0aa6cc47cbcf30197b">MaskFrame::CapsuleFrame</a> = 2
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a2aeb8c3c7a018f0aa6cc47cbcf30197b">MaskFrame::CapsuleFrame</a> = 2, 
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a7128329510ba6879ebc2d47ab02970ff">MaskFrame::CircleFrame</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a7e9774100d62cef80436be89291693f7">MaskFrame::SquareFrame</a> = 4, 
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178aeab499df0ec4764f8eb8411bb4a0d74f">MaskFrame::DiamondFrame</a> = 5, 
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a5a4bb26d06bf2977be18ad0f8fe2b6f4">MaskFrame::TriangleFrame</a> = 6, 
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a7bba0cb140829a5d84bf5205946dc794">MaskFrame::HexagonFrame</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a9e283fc4b0f1f7d12caab30a2dd50b92">MaskFrame::HexagonCapsuleFrame</a> = 8, 
+<a class="el" href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178a7898f0cd898193e451aa92e56ddb0536">MaskFrame::RoundRectFrame</a> = 9
+<br />
  }</td></tr>
 <tr class="memdesc:a8b4d042458fc38cad267ab0c1dcf0178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a frame stroke around the text mask area  <a href="class_o_n___text_mask.html#a8b4d042458fc38cad267ab0c1dcf0178">More...</a><br /></td></tr>
 <tr class="separator:a8b4d042458fc38cad267ab0c1dcf0178"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +181,20 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178aa9ba3bde80ff5aaae636c3a8cfa3e612"></a>RectFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline rectangle drawn </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a2aeb8c3c7a018f0aa6cc47cbcf30197b"></a>CapsuleFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline capsule drawn </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a7128329510ba6879ebc2d47ab02970ff"></a>CircleFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline circle drawn </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a7e9774100d62cef80436be89291693f7"></a>SquareFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline square drawn </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178aeab499df0ec4764f8eb8411bb4a0d74f"></a>DiamondFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline square rotated 45 degrees </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a5a4bb26d06bf2977be18ad0f8fe2b6f4"></a>TriangleFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline triangle drawn </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a7bba0cb140829a5d84bf5205946dc794"></a>HexagonFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline as a hexagon </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a9e283fc4b0f1f7d12caab30a2dd50b92"></a>HexagonCapsuleFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline as an elongated hexagon </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b4d042458fc38cad267ab0c1dcf0178a7898f0cd898193e451aa92e56ddb0536"></a>RoundRectFrame&#160;</td><td class="fielddoc"><p>Text mask frame outline as a rounded rectangle </p>
 </td></tr>
 </table>
 
@@ -662,7 +687,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

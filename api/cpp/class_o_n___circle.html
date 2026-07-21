@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -195,10 +195,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:abe9b4cbee22108f4f4f349197673a23e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___circle.html">ON_Circle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___circle.html#abe9b4cbee22108f4f4f349197673a23e">UnitCircle</a></td></tr>
 <tr class="memdesc:abe9b4cbee22108f4f4f349197673a23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit circle in the xy plane  <a href="class_o_n___circle.html#abe9b4cbee22108f4f4f349197673a23e">More...</a><br /></td></tr>
 <tr class="separator:abe9b4cbee22108f4f4f349197673a23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6a6f43a63855fd50bccb1a39de1a09"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_o_n___circle.html">ON_Circle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___circle.html#abf6a6f43a63855fd50bccb1a39de1a09">UnsetCircle</a></td></tr>
+<tr class="memdesc:abf6a6f43a63855fd50bccb1a39de1a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">invalid circle with ON_Plane::Unset and ON_UNSET_VALUE radius;  <a href="class_o_n___circle.html#abf6a6f43a63855fd50bccb1a39de1a09">More...</a><br /></td></tr>
+<tr class="separator:abf6a6f43a63855fd50bccb1a39de1a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Description: <a class="el" href="class_o_n___circle.html">ON_Circle</a> is a circle in 3d. The circle is represented by a radius and an orthonormal frame of the plane containing the circle, with origin at the center.</p>
-<p>An Is_Valid() circle has positive radius and an Is_ Valid() plane defining the frame.</p>
+<p>An <a class="el" href="class_o_n___circle.html#aa8c3054ce83d5c219976aac30d1cb17b" title="A Valid circle has m_radius&gt;0 and m_plane.IsValid().">IsValid()</a> circle has positive radius and an <a class="el" href="class_o_n___circle.html#aa8c3054ce83d5c219976aac30d1cb17b" title="A Valid circle has m_radius&gt;0 and m_plane.IsValid().">IsValid()</a> plane defining the frame.</p>
 <p>The circle is parameterized by radians from 0 to 2 Pi given by t -&gt; center + cos(t)*radius*xaxis + sin(t)*radius*yaxis <br  />
  where center, xaxis and yaxis define the orthonormal frame of the circle's plane. <br  />
  </p>
@@ -756,7 +759,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a circle parallel to the plane with given centr and radius. </p>
+<p>Creates a circle parallel to the plane with given center and radius. </p>
 
 </div>
 </div>
@@ -904,11 +907,11 @@ Static Public Attributes</h2></td></tr>
     circle.GetNurbFormParameterFromRadian( circle_t, &amp;nurbs_t );
 
     ON_NurbsCurve nurbs_curve;
-    circle.GetNurbsForm( nurbs_curve );
+    circle.GetNurbForm( nurbs_curve );
     circle_pt = circle.PointAt(circle_t);
     nurbs_pt = nurbs_curve.PointAt(nurbs_t);
 </pre><p> / circle_pt and nurbs_pt will be the same</p>
-<p>Remarks: The NURBS curve parameter is with respect to the NURBS curve created by <a class="el" href="class_o_n___circle.html#a929c90fe185faf98e5660f85e990ae96">ON_Circle::GetNurbForm</a>. At radian values of 0.0, 0.5*ON_PI, ON_PI, 1.5*ON_PI, and 2.0*ON_PI, the nurbs parameter and radian parameter are the same. At all other values the nurbs and radian parameter values are different. See Also: <a class="el" href="class_o_n___circle.html#a92b460aff5c8c9d01542e55660e2cd2b">ON_Circle::GetNurbFormParameterFromRadian</a> </p>
+<p>Remarks: The NURBS curve parameter is with respect to the NURBS curve created by <a class="el" href="class_o_n___circle.html#a929c90fe185faf98e5660f85e990ae96">ON_Circle::GetNurbForm</a>. At radian values of 0.0, 0.5*ON_PI, ON_PI, 1.5*ON_PI, and 2.0*ON_PI, the nurbs parameter and radian parameter are the same. At all other values the nurbs and radian parameter values are different. See Also: <a class="el" href="class_o_n___circle.html#a6f23b490f574755d8f5fa0cf4b8bb833">ON_Circle::GetRadianFromNurbFormParameter</a> </p>
 
 </div>
 </div>
@@ -943,7 +946,7 @@ Static Public Attributes</h2></td></tr>
     circle.GetRadianFromNurbFormParameter( nurbs_t, &amp;circle_t );
 
     ON_NurbsCurve nurbs_curve;
-    circle.GetNurbsForm( nurbs_curve );
+    circle.GetNurbForm( nurbs_curve );
     circle_pt = circle.PointAt(circle_t);
     nurbs_pt = nurbs_curve.PointAt(nurbs_t);
 </pre><p> / circle_pt and nurbs_pt will be the same</p>
@@ -983,7 +986,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Description: Get tight bounding box. Parameters: tight_bbox - [in/out] tight bounding box bGrowBox -[in] (default=false) <br  />
- If true and the input tight_bbox is valid, then returned tight_bbox is the union of the input tight_bbox and the arc's tight bounding box. xform -[in] (default=nullptr) If not nullptr, the tight bounding box of the transformed arc is calculated. The arc is not modified. Returns: True if a valid tight_bbox is returned. </p>
+ If true and the input tight_bbox is valid, then returned tight_bbox is the union of the input tight_bbox and the circle's tight bounding box. xform -[in] (default=nullptr) If not nullptr, the tight bounding box of the transformed circle is calculated. The circle is not modified. Returns: True if a valid tight_bbox is returned. </p>
 
 </div>
 </div>
@@ -1435,10 +1438,34 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abf6a6f43a63855fd50bccb1a39de1a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6a6f43a63855fd50bccb1a39de1a09">&#9670;&nbsp;</a></span>UnsetCircle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_o_n___circle.html">ON_Circle</a> ON_Circle::UnsetCircle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>invalid circle with ON_Plane::Unset and ON_UNSET_VALUE radius; </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:56:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:25:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

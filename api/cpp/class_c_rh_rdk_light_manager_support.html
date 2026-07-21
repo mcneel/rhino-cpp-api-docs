@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">8.33</span>
+   &#160;<span id="projectnumber">9.0</span>
    </div>
   </td>
  </tr>
@@ -301,7 +301,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a33fdbe3e435dcf6be5e509b206d80aea inherit pub_types_class_c_rhino_event_watcher"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aea">event_id</a> { <a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aeaa0280c73f71f48127525aad45cad3d9e3">event_id_none</a> = 0, 
 <a class="el" href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aeaa101d884f57f2164f561e8fb66891aad3">event_id_force_4byte_size</a> = 0xFFFFFFFF
  }</td></tr>
-<tr class="memdesc:a33fdbe3e435dcf6be5e509b206d80aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBSOLETE - NEVER USE THIS.  <a href="class_c_rhino_event_watcher.html#a33fdbe3e435dcf6be5e509b206d80aea">More...</a><br /></td></tr>
 <tr class="separator:a33fdbe3e435dcf6be5e509b206d80aea inherit pub_types_class_c_rhino_event_watcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafec6e5fe650332617c0e89f2e0a7767 inherit pub_types_class_c_rhino_event_watcher"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_event_watcher.html#aafec6e5fe650332617c0e89f2e0a7767">font_event</a> { <br />
 &#160;&#160;<a class="el" href="class_c_rhino_event_watcher.html#aafec6e5fe650332617c0e89f2e0a7767ad652de78ae271e055b5bcd262e787937">font_added</a>, 
@@ -936,7 +935,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> is called whenever the light table is changed. / / Parameters: / event - [in] type of event / light_table - [in] light table / light_index - [in] light of light / If the event is light_sorted, then light_index is 0. / old_settings - [in] If the event is light_modified, / then the old light definition is / passed here. Otherwise, this parameter is NULL. / WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> is called whenever the light table is changed. Parameters: event - [in] type of event light_table - [in] light table light_index - [in] light of light If the event is light_sorted, then light_index is 0. old_settings - [in] If the event is light_modified, then the old light definition is passed here. Otherwise, this parameter is NULL. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a45e95a6102e18234caddf0be66cd982f">LightTableEvent()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_rhino_event_watcher.html#a08c098675539723a324becd6d4434bf1">CRhinoEventWatcher</a>.</p>
 
@@ -1084,7 +1083,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Object events / Description: / Called if a new object is added to the document. / / Parameters: / doc - [in] object's document / object - [in] new object WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#ae5742ec50cd3607aa1af679916afc646">OnAddObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#ae5742ec50cd3607aa1af679916afc646">OnAddObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Object events Description: Called if a new object is added to the document. Parameters: doc - [in] object's document object - [in] new object WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#ae5742ec50cd3607aa1af679916afc646">OnAddObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#ae5742ec50cd3607aa1af679916afc646">OnAddObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_rhino_event_watcher.html#afb1f9c29adccc51ae35ea211462aa19c">CRhinoEventWatcher</a>.</p>
 
@@ -1165,7 +1164,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is deleted. At some later point / the object can be un-deleted. / / Parameters: / doc - [in] object's document / object - [in] object that was deleted. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a6dfb3cf769ac60aa62ec2c35c51e38ff">OnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a6dfb3cf769ac60aa62ec2c35c51e38ff">OnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is deleted. At some later point the object can be undeleted. Parameters: doc - [in] object's document object - [in] object that was deleted. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a6dfb3cf769ac60aa62ec2c35c51e38ff">OnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a6dfb3cf769ac60aa62ec2c35c51e38ff">OnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_rhino_event_watcher.html#a3f23dd98ebe93a809910a823edc37382">CRhinoEventWatcher</a>.</p>
 
@@ -1246,7 +1245,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object's attributes change. / / Parameters: / doc - [in] object's document / object - [in] object whose attributes were changed. The new / attributes are object.Attributes(). / old_attributes - [in] attributes before the change. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a433b2ad966f6cc632ae02a226ac3f8b4">OnModifyObjectAttributes()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a433b2ad966f6cc632ae02a226ac3f8b4">OnModifyObjectAttributes()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object's attributes change. Parameters: doc - [in] object's document object - [in] object whose attributes were changed. The new attributes are object.Attributes(). old_attributes - [in] attributes before the change. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#a433b2ad966f6cc632ae02a226ac3f8b4">OnModifyObjectAttributes()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#a433b2ad966f6cc632ae02a226ac3f8b4">OnModifyObjectAttributes()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_rhino_event_watcher.html#ae9b02c9434c75cc72995c50d7ae45b48">CRhinoEventWatcher</a>.</p>
 
@@ -1390,7 +1389,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>/ Description: / Called if an object is un-deleted. / / Parameters: / doc - [in] object's document / object - [in] object tha was deleted and is now active. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#aae20c42788049eef707553d8d11c5801">OnUnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#aae20c42788049eef707553d8d11c5801">OnUnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
+<p>Description: Called if an object is undeleted. Parameters: doc - [in] object's document object - [in] object tha was deleted and is now active. WARNING: Never modify the Rhino document in a <a class="el" href="class_c_rh_rdk_light_manager_support.html#aae20c42788049eef707553d8d11c5801">OnUnDeleteObject()</a> override. If you need to change the Rhino document or post update messages to controls, then your <a class="el" href="class_c_rh_rdk_light_manager_support.html#aae20c42788049eef707553d8d11c5801">OnUnDeleteObject()</a> override should record what happened in an efficient way and then make any changes that are required in a <a class="el" href="class_c_rhino_is_idle.html#aec5fe0d62358b49d3c335fbf514b9f2f">CRhinoIsIdle.Notify()</a> override. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_rhino_event_watcher.html#ab70b109fadd0667b29f4e223ec609a60">CRhinoEventWatcher</a>.</p>
 
@@ -1575,7 +1574,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2026 15:55:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2026 15:24:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
