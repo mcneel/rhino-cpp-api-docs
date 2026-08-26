@@ -93,10 +93,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a165ca4d30f8c4eb6237dd471e2115bdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#a165ca4d30f8c4eb6237dd471e2115bdf">~CRhinoSurfaceFillet</a> ()</td></tr>
 <tr class="separator:a165ca4d30f8c4eb6237dd471e2115bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20046ed56f9adcf06315b38d3a139634"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#a20046ed56f9adcf06315b38d3a139634">ChangeRadius</a> (double new_radius)</td></tr>
-<tr class="memdesc:a20046ed56f9adcf06315b38d3a139634"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool WhateverElse();  <a href="class_c_rhino_surface_fillet.html#a20046ed56f9adcf06315b38d3a139634">More...</a><br /></td></tr>
 <tr class="separator:a20046ed56f9adcf06315b38d3a139634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada3e886636dcb7276bae97b499e1780"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#aada3e886636dcb7276bae97b499e1780">ChangeRadius</a> (double new_radius0, double new_radius1)</td></tr>
 <tr class="separator:aada3e886636dcb7276bae97b499e1780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd35cbf599d339f097832b49de1205e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#a3dd35cbf599d339f097832b49de1205e">CollectRadii</a> (double radii[2])</td></tr>
+<tr class="memdesc:a3dd35cbf599d339f097832b49de1205e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the radii. these can be negative if the offset direction was flipped  <a href="class_c_rhino_surface_fillet.html#a3dd35cbf599d339f097832b49de1205e">More...</a><br /></td></tr>
+<tr class="separator:a3dd35cbf599d339f097832b49de1205e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cbeb7f87fd90277811b41394e2edb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#ad7cbeb7f87fd90277811b41394e2edb8">CollectRails</a> (bool bExtend, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; Rails2d[2], <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; Rails3d[2])</td></tr>
+<tr class="separator:ad7cbeb7f87fd90277811b41394e2edb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94183c3d80f99cf56c8c8b6017542e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_surface_fillet.html#ab94183c3d80f99cf56c8c8b6017542e0">DebugArcData</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;Crvs) const</td></tr>
 <tr class="memdesc:ab94183c3d80f99cf56c8c8b6017542e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center,start, apex, end.  <a href="class_c_rhino_surface_fillet.html#ab94183c3d80f99cf56c8c8b6017542e0">More...</a><br /></td></tr>
 <tr class="separator:ab94183c3d80f99cf56c8c8b6017542e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,8 +459,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>bool WhateverElse(); </p>
 <p>This will clear out the existing rails and fillet surfaces, and redo the offset intersections, etc. DO NOT use this for SrfToRail - there is no radius.. <br  />
  The trimmed brep must be redone. </p>
 
@@ -479,6 +481,60 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>new_radius1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dd35cbf599d339f097832b49de1205e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd35cbf599d339f097832b49de1205e">&#9670;&nbsp;</a></span>CollectRadii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoSurfaceFillet::CollectRadii </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radii</em>[2]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the radii. these can be negative if the offset direction was flipped </p>
+
+</div>
+</div>
+<a id="ad7cbeb7f87fd90277811b41394e2edb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7cbeb7f87fd90277811b41394e2edb8">&#9670;&nbsp;</a></span>CollectRails()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoSurfaceFillet::CollectRails </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bExtend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt;&#160;</td>
+          <td class="paramname"><em>Rails2d</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt;&#160;</td>
+          <td class="paramname"><em>Rails3d</em>[2]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -953,7 +1009,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 18 2026 16:18:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 25 2026 19:37:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

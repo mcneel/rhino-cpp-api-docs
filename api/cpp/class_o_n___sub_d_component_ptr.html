@@ -78,10 +78,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a421eef62952e9be0de744341607a2c8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8d">Type</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = 0, 
-<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dab22b929ba52471a02d18bb3a4e4472e6">Type::Vertex</a> = 2, 
-<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dae4a297a0f76119a442c2595ac040673e">Type::Edge</a> = 4, 
-<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8da8af5861002f3c157f9ba842bba10aa3f">Type::Face</a> = 6
+<tr class="memitem:a421eef62952e9be0de744341607a2c8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8d">Type</a> : unsigned char { <a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dac9f88e098f6fe4e4e112eeb05ccb9671">Type::Unset</a> = (unsigned char)ON_SubDComponentPtrTypesAndMasks::UnsetType, 
+<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dab22b929ba52471a02d18bb3a4e4472e6">Type::Vertex</a> = (unsigned char)ON_SubDComponentPtrTypesAndMasks::VertexType, 
+<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8dae4a297a0f76119a442c2595ac040673e">Type::Edge</a> = (unsigned char)ON_SubDComponentPtrTypesAndMasks::EdgeType, 
+<a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8da8af5861002f3c157f9ba842bba10aa3f">Type::Face</a> = (unsigned char)ON_SubDComponentPtrTypesAndMasks::FaceType
  }</td></tr>
 <tr class="memdesc:a421eef62952e9be0de744341607a2c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8d" title="ON_SubDComponentPtr::Type identifies the type of subdivision component referenced by the ON_SubDCompo...">ON_SubDComponentPtr::Type</a> identifies the type of subdivision component referenced by the <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>.  <a href="class_o_n___sub_d_component_ptr.html#a421eef62952e9be0de744341607a2c8d">More...</a><br /></td></tr>
 <tr class="separator:a421eef62952e9be0de744341607a2c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -694,7 +694,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: 0 or 1. A runtime bit property on this <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>. The use of this value varies depending on the context. Frequently, 0 means the referenced component is being used with its natural orientation and 1 means the referenced component is being used with the reverse of its natural oreientation. </p>
+<p>Returns: 0 or 1. A runtime bit property on this <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a>. The use of this value varies depending on the context. Frequently, 0 means the referenced component is being used with its natural orientation and 1 means the referenced component is being used with the reverse of its natural orientation. </p>
 
 </div>
 </div>
@@ -1641,7 +1641,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns: An <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> referencing the same <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> with <a class="el" href="class_o_n___sub_d_component_ptr.html#a96a15b9a48cf439a0643aea83a4da039">ON_SubDComponentPtr.ComponentDirection()</a> = 1. </p>
+<p>Returns: An <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> referencing the same <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> with <a class="el" href="class_o_n___sub_d_component_ptr.html#a96a15b9a48cf439a0643aea83a4da039">ON_SubDComponentPtr.ComponentDirection()</a> = dir. </p>
 
 </div>
 </div>
@@ -2069,7 +2069,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 18 2026 16:18:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 25 2026 19:37:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -684,6 +684,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa407bcefebc434c25b46bfe909cdbe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b546b5fe64a82d745e2ce4147a4e89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a15b546b5fe64a82d745e2ce4147a4e89">RenderPass</a> () const</td></tr>
 <tr class="separator:a15b546b5fe64a82d745e2ce4147a4e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ed83d9ab7c54f0553d300bc849b016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a73ed83d9ab7c54f0553d300bc849b016">RequiresCompleteDraw</a> () const</td></tr>
+<tr class="separator:a73ed83d9ab7c54f0553d300bc849b016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf407eead3a03cb0eeb6d8188fd7ecef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#acf407eead3a03cb0eeb6d8188fd7ecef">ResetLevelOfDetail</a> ()</td></tr>
 <tr class="separator:acf407eead3a03cb0eeb6d8188fd7ecef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704a117c79fcb06e121809955c759da3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a704a117c79fcb06e121809955c759da3">RestoreBackBuffer</a> ()</td></tr>
@@ -13256,6 +13258,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a73ed83d9ab7c54f0553d300bc849b016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ed83d9ab7c54f0553d300bc849b016">&#9670;&nbsp;</a></span>RequiresCompleteDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDisplayPipeline::RequiresCompleteDraw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: True if what this pipeline draws has to be complete when the frame ends, because nothing will repaint it. Printing, print preview, view capture, file and UI previews, masks and selection maps are all consumed once and then thrown away, so anything a draw defers to a later frame is simply missing from them. False for an ordinary viewport draw, which is free to show a partial result now and refine it on a subsequent frame. Use this in preference to <a class="el" href="class_c_rhino_display_pipeline.html#aa1157bf9f1406355d8d97d8412996209">IsPrinting()</a> when deciding whether work may be put off; <a class="el" href="class_c_rhino_display_pipeline.html#aa1157bf9f1406355d8d97d8412996209">IsPrinting()</a> alone is true for far less than the name suggests. </p>
+
+</div>
+</div>
 <a id="ad241e9c70045913f3524e949aeed4f67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad241e9c70045913f3524e949aeed4f67">&#9670;&nbsp;</a></span>ResetClippingSections()</h2>
 
@@ -16866,7 +16886,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 18 2026 16:17:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 25 2026 19:37:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -155,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6d5ef810970883d6330dd383bf7bdadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19e937b9c20226724d6a7b8b9c287fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#af19e937b9c20226724d6a7b8b9c287fd">RelativeFaceMarkBits</a> (int relative_face_index, <a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> missing_face_return_value) const</td></tr>
 <tr class="separator:af19e937b9c20226724d6a7b8b9c287fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98323b540da8afa86128dd017928a02e"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___sub_d_face_ptr.html">ON_SubDFacePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a98323b540da8afa86128dd017928a02e">RelativeFacePtr</a> (int relative_face_index) const</td></tr>
+<tr class="separator:a98323b540da8afa86128dd017928a02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50eb8ec13914114a3327717fad1fd8dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a50eb8ec13914114a3327717fad1fd8dd">RelativePointAt</a> (double normalized_edge_parameter, <a class="el" href="group__open_n_u_r_b_s.html#ga0a25951e3c8f7324e2747162822b819a">ON_SubDComponentLocation</a> subd_appearance) const</td></tr>
 <tr class="separator:a50eb8ec13914114a3327717fad1fd8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262fad485971f04a25f2cc5a803e3c86"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_edge_ptr.html#a262fad485971f04a25f2cc5a803e3c86">RelativeSectorCoefficient</a> (int relative_vertex_index) const</td></tr>
@@ -1143,8 +1145,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Get the face on the left or right side of an oriented manifold or boundary edge. A face is on the "left side" if this <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is oriented so it points in the same direction as the face's oriented boundary. A face is on the "right side" if this <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is oriented so it points in the opposite direction as the face's oriented boundary. If an edge is nonmanifold (3 or more faces), then nullptr is always returned. If an edge has two faces that do not attach to this edge with opposite orientations (nonoriented manifold edge), then nullptr is returned. <br  />
- Parameters: relative_face_index - [in] 0: return face on the left side of the edge with respect to EdgeOrientation(). 1: return face on the right side of the edge with respect to EdgeOrientation(). Returns: The requested face. </p>
+<p>Description: Get the face on the left or right side of an oriented manifold or boundary edge. A face is on the "left side" if this <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is oriented so it points in the same direction as the face's oriented boundary. A face is on the "right side" if this <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> is oriented so it points in the opposite direction as the face's oriented boundary. If an edge is nonmanifold (3 or more faces), then nullptr is always returned. If an edge has two faces that do not attach to this edge with opposite orientations (nonoriented manifold edge), then nullptr is returned. Parameters: relative_face_index - [in] 0: return face on the left side of the edge with respect to EdgeOrientation(). 1: return face on the right side of the edge with respect to EdgeOrientation(). Returns: The requested face. </p>
 
 </div>
 </div>
@@ -1203,6 +1204,25 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: this-&gt;RelativeFace(relative_face_index)-&gt;<a class="el" href="class_o_n___sub_d_edge_ptr.html#a9f6aebce6510fd22598b020d948d06de">MarkBits()</a>; </p>
+
+</div>
+</div>
+<a id="a98323b540da8afa86128dd017928a02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98323b540da8afa86128dd017928a02e">&#9670;&nbsp;</a></span>RelativeFacePtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const class <a class="el" href="class_o_n___sub_d_face_ptr.html">ON_SubDFacePtr</a> ON_SubDEdgePtr::RelativeFacePtr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>relative_face_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Same as <a class="el" href="class_o_n___sub_d_edge_ptr.html#aaae955a225374959042f63c0f37141f2">RelativeFace()</a>, but returns an <a class="el" href="class_o_n___sub_d_face_ptr.html">ON_SubDFacePtr</a> whose direction bit is set so the face's boundary is oriented in the same direction as this <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>. Use this instead of <a class="el" href="class_o_n___sub_d_edge_ptr.html#aaae955a225374959042f63c0f37141f2">RelativeFace()</a> when the caller needs the face orientation relative to the edge, not just the face itself. Parameters: relative_face_index - [in] 0: return face on the left side of the edge with respect to EdgeOrientation(). 1: return face on the right side of the edge with respect to EdgeOrientation(). Returns: The requested face, or <a class="el" href="class_o_n___sub_d_face_ptr.html#abe08e4603fa0ecf78d665b287b443684">ON_SubDFacePtr::Null</a> if there is no such face. </p>
 
 </div>
 </div>
@@ -1667,7 +1687,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 18 2026 16:18:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 25 2026 19:37:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

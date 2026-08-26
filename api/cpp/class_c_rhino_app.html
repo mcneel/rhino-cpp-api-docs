@@ -772,6 +772,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a42a46e42c6bcd425412f1948c3e1f48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4798addddf08b943964c019e8ce738dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a4798addddf08b943964c019e8ce738dd">SetNoCancelOnMainFrameClose</a> (bool b)</td></tr>
 <tr class="separator:a4798addddf08b943964c019e8ce738dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c7d7f6682b34c7faeaf544bffdbad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a20c7d7f6682b34c7faeaf544bffdbad3">SetProtocolHandlerUrl</a> (const wchar_t *protocolHandlerUrl)</td></tr>
+<tr class="separator:a20c7d7f6682b34c7faeaf544bffdbad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64789c9858e02e1e04e1f551753829b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#af64789c9858e02e1e04e1f551753829b">SetRememberCopyOption</a> (bool b)</td></tr>
 <tr class="separator:af64789c9858e02e1e04e1f551753829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4b756ac45f4361212b500b7804859d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a1e4b756ac45f4361212b500b7804859d">SetStatusBarDistancePane</a> (double dist, bool bAutoFormatDistancePane=true)</td></tr>
@@ -7508,6 +7510,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a20c7d7f6682b34c7faeaf544bffdbad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c7d7f6682b34c7faeaf544bffdbad3">&#9670;&nbsp;</a></span>SetProtocolHandlerUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoApp::SetProtocolHandlerUrl </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>protocolHandlerUrl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Records the URL passed to Rhino by the protocol handler registered with the system, so the startup licensing path can consume a rhinoN://license link before the license check runs. On Windows the URL arrives on the command line and is recorded by <a class="el" href="class_c_rhino_app.html#a235870d93a65519fcc55ea7508649b14">CRhinoApp::InitInstance</a>; macOS delivers it through the application:openURLs: app delegate instead, which calls this. Parameters: protocolHandlerUrl - [in] the URL, in the full form protocol://verb/path. Ignored when null or empty. </p>
+
+</div>
+</div>
 <a id="af64789c9858e02e1e04e1f551753829b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af64789c9858e02e1e04e1f551753829b">&#9670;&nbsp;</a></span>SetRememberCopyOption()</h2>
 
@@ -9967,7 +9988,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 18 2026 16:17:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 25 2026 19:37:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
