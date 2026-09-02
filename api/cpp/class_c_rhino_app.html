@@ -457,6 +457,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6fc2007bacfc2f3aa4f1a38b5fa523b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2479465441d48bc54e3fee1880006731"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a2479465441d48bc54e3fee1880006731">IsAutomated</a> () const</td></tr>
 <tr class="separator:a2479465441d48bc54e3fee1880006731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d94e021903c26f7b126a7ca521dc7e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a7d94e021903c26f7b126a7ca521dc7e9">IsBatchMode</a> () const</td></tr>
+<tr class="separator:a7d94e021903c26f7b126a7ca521dc7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c924e88503bf39fb65655386f17e02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#af1c924e88503bf39fb65655386f17e02">IsClosing</a> () const</td></tr>
 <tr class="separator:af1c924e88503bf39fb65655386f17e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58df671b02c77480f10690370e73c7ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a58df671b02c77480f10690370e73c7ee">IsCloudZooNode</a> ()</td></tr>
@@ -503,6 +505,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f9c8449dd4b78319fb4a76d1690be91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e28071ab9fb2f875e01c9d22351b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a01e28071ab9fb2f875e01c9d22351b1e">IsSkinned</a> () const</td></tr>
 <tr class="separator:a01e28071ab9fb2f875e01c9d22351b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6431c5ae58e77f7973b647b7fe224412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a6431c5ae58e77f7973b647b7fe224412">IsUnattended</a> () const</td></tr>
+<tr class="separator:a6431c5ae58e77f7973b647b7fe224412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66bf21943c1e680471f6360e7c8de95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#ad66bf21943c1e680471f6360e7c8de95">LicenseExpires</a> ()</td></tr>
 <tr class="separator:ad66bf21943c1e680471f6360e7c8de95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04887bc8af31994fceb5d8dd2711a4ed"><td class="memItemLeft" align="right" valign="top">class CRhinoLicenseManager &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_app.html#a04887bc8af31994fceb5d8dd2711a4ed">LicenseManager</a> ()</td></tr>
@@ -4156,6 +4160,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a7d94e021903c26f7b126a7ca521dc7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d94e021903c26f7b126a7ca521dc7e9">&#9670;&nbsp;</a></span>IsBatchMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool CRhinoApp::IsBatchMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns true when Rhino was started with the /batchmode command line switch. Batch runs are driven by an external process (a test harness, an automation script, an MCP or AI agent) with a visible main window but no human at the keyboard.</p>
+<p>In a batch run:</p><ul>
+<li>the splash screen and the start-up template chooser are skipped, and a document is opened straight away</li>
+<li>every command runs as though its name were typed with a leading "-", so commands present command-line options instead of dialogs (see <a class="el" href="class_c_rhino_command_context.html#acff4c65cfc5dac41e5f3ac75c30623f4">CRhinoCommandContext::IsInteractive</a>)</li>
+<li>modal message boxes are suppressed and written to the command line instead of blocking</li>
+</ul>
+<p>Use <a class="el" href="class_c_rhino_app.html#a6431c5ae58e77f7973b647b7fe224412">IsUnattended()</a> rather than this in code that only needs to know "is there a human who can answer a dialog". Returns: True if the /batchmode command line switch was used. </p>
+
+</div>
+</div>
 <a id="af1c924e88503bf39fb65655386f17e02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1c924e88503bf39fb65655386f17e02">&#9670;&nbsp;</a></span>IsClosing()</h2>
 
@@ -4576,6 +4604,26 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if Rhino is using a custom, user-interface Skin. For more information on Skins, see: <a href="http://developer.rhino3d.com/guides/cpp/creating-a-skin/">http://developer.rhino3d.com/guides/cpp/creating-a-skin/</a> <a href="http://developer.rhino3d.com/guides/rhinocommon/creating-a-skin/">http://developer.rhino3d.com/guides/rhinocommon/creating-a-skin/</a> </p>
+
+</div>
+</div>
+<a id="a6431c5ae58e77f7973b647b7fe224412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6431c5ae58e77f7973b647b7fe224412">&#9670;&nbsp;</a></span>IsUnattended()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool CRhinoApp::IsUnattended </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Returns true when nobody is present to answer a question. This is the predicate to test before showing any modal user interface that blocks until it is dismissed.</p>
+<p>Equivalent to <a class="el" href="class_c_rhino_app.html#aafe63f6862db1521f658dcdbcb3180f7">IsHeadless()</a> || <a class="el" href="class_c_rhino_app.html#a7d94e021903c26f7b126a7ca521dc7e9">IsBatchMode()</a>.</p>
+<p><a class="el" href="class_c_rhino_app.html#a2479465441d48bc54e3fee1880006731">IsAutomated()</a> is deliberately not part of this. COM automation clients have driven a fully interactive Rhino - hidden main window, dialogs and all - since V4, and are entitled to the behaviour they were written against, so /Automation is unchanged by this predicate. A client that wants unattended behaviour asks for it with /batchmode. Returns: True if Rhino is running without a user. </p>
 
 </div>
 </div>
@@ -9988,7 +10036,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:14 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

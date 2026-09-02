@@ -857,7 +857,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set "this" to the intersection of bbox_A and bbox_B. Parameters: bbox_A - [in] bbox_B - [in] Returns: True if the "this" is a non-empty valid bounding box. False if the intersection is empty, in which case "this" is set to an invalid bounding box. Remarks: If bbox_A or bbox_B is invalid, they are treated as the empty set, and false is returned. </p>
+<p>Description: Set "this" to the intersection of bbox_A and bbox_B. Parameters: bbox_A - [in] bbox_B - [in] Returns: True if the "this" is a non-empty valid bounding box. False if the intersection is empty, in which case "this" is set to an invalid bounding box. The coordinates of an invalid "this" are not meaningful. Remarks: If bbox_A or bbox_B is invalid, they are treated as the empty set, and false is returned. bbox_A and bbox_B are not modified, so "this" may safely be a third box. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bbox_A</td><td>this = intersection of two args </td></tr>
@@ -882,7 +882,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Intersect this with other_bbox and save intersection in this. Parameters: other_bbox - [in] Returns: True if this-intersect-other_bbox is a non-empty valid bounding box and this is set. False if the intersection is empty, in which case "this" is set to an invalid bounding box. Remarks: If "this" or other_bbox is invalid, they are treated as the empty set, and false is returned. </p>
+<p>Description: Intersect this with other_bbox and save intersection in this. Parameters: other_bbox - [in] Returns: True if this-intersect-other_bbox is a non-empty valid bounding box and this is set. False if the intersection is empty, in which case "this" is set to an invalid bounding box. Remarks: If "this" or other_bbox is invalid, they are treated as the empty set, and false is returned. This function always overwrites "this", including when it returns false. The coordinates of an invalid "this" are not meaningful, so check the return value, or <a class="el" href="class_o_n___bounding_box.html#a565ad0a351021856966d7579e6817155" title="OBSOLETE IsValid() = IsNotEmpty()">ON_BoundingBox::IsValid()</a>, before reading them. To test two boxes for overlap without modifying either one, use <a class="el" href="class_o_n___bounding_box.html#a3404a3d18af06761e796246c3c4d94c8">ON_BoundingBox::IsDisjoint()</a>. To save the intersection somewhere else, use the two argument <a class="el" href="class_o_n___bounding_box.html#a104eb40d19aebe7a8c462b1bf69d4bdf">Intersection()</a> below. </p>
 
 </div>
 </div>
@@ -2309,7 +2309,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -63,7 +63,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -91,15 +93,26 @@ Inheritance diagram for CRhinoUserInterfaceObject:</div>
 <area href="class_c_rhino_user_interface_icon.html" alt="CRhinoUserInterfaceIcon" shape="rect" coords="753,280,994,304"/>
 <area href="class_c_rhino_user_interface_label.html" alt="CRhinoUserInterfaceLabel" shape="rect" coords="753,336,994,360"/>
 <area href="class_c_rhino_user_interface_slider.html" alt="CRhinoUserInterfaceSlider" shape="rect" coords="753,392,994,416"/>
+<area href="class_c_rhino_user_interface_text_box.html" alt="CRhinoUserInterfaceTextBox" shape="rect" coords="753,448,994,472"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a37bdc01a99c95e206e98597a52f9e47b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">FocusReason</a> : int { <a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47ba88183b946cc5f0e8c96b2e66e1c74a7e">FocusReason::Unknown</a> = 0, 
+<a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47ba61cf8510205077b6f5491d38cd44c0f7">FocusReason::Pointer</a> = 1, 
+<a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47ba846495f9ceed11accf8879f555936a7d">FocusReason::Navigation</a> = 2
+ }</td></tr>
+<tr class="separator:a37bdc01a99c95e206e98597a52f9e47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a20de9e3967317ced70e376430b90ad31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a20de9e3967317ced70e376430b90ad31">CRhinoUserInterfaceObject</a> ()</td></tr>
 <tr class="separator:a20de9e3967317ced70e376430b90ad31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32cc6f972df5b0b7935262ab3f566934"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a32cc6f972df5b0b7935262ab3f566934">~CRhinoUserInterfaceObject</a> ()</td></tr>
 <tr class="separator:a32cc6f972df5b0b7935262ab3f566934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ca881c551189e51a87fcec705d6ec1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a68ca881c551189e51a87fcec705d6ec1">AcceptsKeyboardFocus</a> () const</td></tr>
+<tr class="separator:a68ca881c551189e51a87fcec705d6ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6267197e59e88921e7a7c525fc887d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a6267197e59e88921e7a7c525fc887d7d">Animate</a> (<a class="el" href="class_c_rhino_animating_double.html">CRhinoAnimatingDouble</a> &amp;value, double target, double duration, <a class="el" href="group___rhino.html#gae0cdb80cb8ea988326ebd2021d2cfed4">AnimationStyle</a> style, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
 <tr class="separator:a6267197e59e88921e7a7c525fc887d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12dbe4343005c96a0178dcd617eac36c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a12dbe4343005c96a0178dcd617eac36c">BindToActiveViewport</a> (bool on)</td></tr>
@@ -126,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa8a82c041d89da955bb1b4fad1ce020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a443ad1499c867acdf11056a96274e47b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a443ad1499c867acdf11056a96274e47b">GetData</a> (const wchar_t *key, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;value) const</td></tr>
 <tr class="separator:a443ad1499c867acdf11056a96274e47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6187f267553686a9f0abf66194323eb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a6187f267553686a9f0abf66194323eb1">HasKeyboardFocus</a> () const</td></tr>
+<tr class="separator:a6187f267553686a9f0abf66194323eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a942270e5fd1a5e8ecf530588fefed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#af9a942270e5fd1a5e8ecf530588fefed">HasMouseCapture</a> () const</td></tr>
 <tr class="separator:af9a942270e5fd1a5e8ecf530588fefed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47c06dd9f212512b13a963e4cfbb88d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a47c06dd9f212512b13a963e4cfbb88d4">IsBoundToActiveViewport</a> () const</td></tr>
@@ -134,6 +149,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a33badf7f2169e0f9e4add38d4a1e9925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b99a6babe739c1d322925ec62b20de"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#ab7b99a6babe739c1d322925ec62b20de">IsMouseOver</a> (const <a class="el" href="class_c_rhino_mouse_event_args.html">CRhinoMouseEventArgs</a> &amp;mouse)</td></tr>
 <tr class="separator:ab7b99a6babe739c1d322925ec62b20de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11d188b1b13e30ab559c9cecbc8e90a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#af11d188b1b13e30ab559c9cecbc8e90a">MoveKeyboardFocusToSibling</a> (bool forward, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
+<tr class="separator:af11d188b1b13e30ab559c9cecbc8e90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a8f13ff5b07ee1a80d1a04774031b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#ab1a8f13ff5b07ee1a80d1a04774031b3">OnCharacter</a> (unsigned int character, unsigned int flags)</td></tr>
+<tr class="separator:ab1a8f13ff5b07ee1a80d1a04774031b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc07ec1c1b7b0317f185c52c91d2f8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#abfc07ec1c1b7b0317f185c52c91d2f8c">OnKeyboardFocusChanged</a> (bool hasFocus)</td></tr>
+<tr class="separator:abfc07ec1c1b7b0317f185c52c91d2f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345df9be0f344cac23cdc1d2572fc052"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a345df9be0f344cac23cdc1d2572fc052">OnKeyDown</a> (unsigned int virtualKey, unsigned int flags)</td></tr>
+<tr class="separator:a345df9be0f344cac23cdc1d2572fc052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a083dc28271680c30f0aa0045d50bc730"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a083dc28271680c30f0aa0045d50bc730">OnMouseClick</a> (const <a class="el" href="class_c_rhino_mouse_event_args.html">CRhinoMouseEventArgs</a> &amp;mouse)</td></tr>
 <tr class="separator:a083dc28271680c30f0aa0045d50bc730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1a36b6777977be699cc62aca3f8382"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a3b1a36b6777977be699cc62aca3f8382">OnMouseDoubleClick</a> (const <a class="el" href="class_c_rhino_mouse_event_args.html">CRhinoMouseEventArgs</a> &amp;mouse)</td></tr>
@@ -195,10 +218,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e4faebc79eb9cb2c0b386b7b678ca0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a3e4faebc79eb9cb2c0b386b7b678ca0c">Visible</a> () const</td></tr>
 <tr class="separator:a3e4faebc79eb9cb2c0b386b7b678ca0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a95ee36d15142538458ca4a994bda992f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a95ee36d15142538458ca4a994bda992f">ClearKeyboardFocus</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
+<tr class="separator:a95ee36d15142538458ca4a994bda992f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44d37c41820191447a95a7dd04a4901"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">FocusReason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#aa44d37c41820191447a95a7dd04a4901">KeyboardFocusReason</a> ()</td></tr>
+<tr class="separator:aa44d37c41820191447a95a7dd04a4901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a12c95005a194d18f546a765cf59c63d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a12c95005a194d18f546a765cf59c63d1">ContinueAnimate</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
 <tr class="separator:a12c95005a194d18f546a765cf59c63d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3f3ed410f77488c85b816af132a4d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a2d3f3ed410f77488c85b816af132a4d7">ReleaseKeyboardFocus</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
+<tr class="separator:a2d3f3ed410f77488c85b816af132a4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1444e443a80a680dc100c9cb60d98a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#ab1444e443a80a680dc100c9cb60d98a4">SetKeyboardFocus</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc, <a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">FocusReason</a> reason=<a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47ba88183b946cc5f0e8c96b2e66e1c74a7e">FocusReason::Unknown</a>)</td></tr>
+<tr class="separator:ab1444e443a80a680dc100c9cb60d98a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179d7aa6f0a3a76d855500e4e9132cb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a179d7aa6f0a3a76d855500e4e9132cb2">SetMouseCapture</a> (<a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *doc)</td></tr>
 <tr class="separator:a179d7aa6f0a3a76d855500e4e9132cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -211,6 +245,8 @@ Protected Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:ace221e63b71b749b710a941b4c4a78fe"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#ace221e63b71b749b710a941b4c4a78fe">CRhinoDisplayPipeline</a></td></tr>
 <tr class="separator:ace221e63b71b749b710a941b4c4a78fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacec06cd9cd67d2bbbd470fe758b85d"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#adacec06cd9cd67d2bbbd470fe758b85d">CRhinoDisplayWindowBase</a></td></tr>
+<tr class="separator:adacec06cd9cd67d2bbbd470fe758b85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#a90258f01ce1e144ed14cd1157be4dc7a">CRhinoDoc</a></td></tr>
 <tr class="separator:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee1636b9f0ea95a1abdef0536658a62"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_user_interface_object.html#aeee1636b9f0ea95a1abdef0536658a62">CRhinoObjRef</a></td></tr>
@@ -224,7 +260,39 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Description: Base class for in-viewport user interface objects. These are objects that are shown and can respond to mouse events for things like heads up displays or clickable and dragable items. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a37bdc01a99c95e206e98597a52f9e47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37bdc01a99c95e206e98597a52f9e47b">&#9670;&nbsp;</a></span>FocusReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">CRhinoUserInterfaceObject::FocusReason</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: How keyboard focus arrived. A control can want to behave differently for each: a text box selects all of its text when Tab lands on it, the way a dialog field does, but leaves the text alone when it was clicked, because the click also says where in the text to put the caret. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a37bdc01a99c95e206e98597a52f9e47ba88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>asked for in code, with nothing more specific said </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a37bdc01a99c95e206e98597a52f9e47ba61cf8510205077b6f5491d38cd44c0f7"></a>Pointer&#160;</td><td class="fielddoc"><p>clicked on </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a37bdc01a99c95e206e98597a52f9e47ba846495f9ceed11accf8879f555936a7d"></a>Navigation&#160;</td><td class="fielddoc"><p>Tab or Shift+Tab moved on to it from a sibling. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a20de9e3967317ced70e376430b90ad31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20de9e3967317ced70e376430b90ad31">&#9670;&nbsp;</a></span>CRhinoUserInterfaceObject()</h2>
 
@@ -268,6 +336,34 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a68ca881c551189e51a87fcec705d6ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ca881c551189e51a87fcec705d6ec1">&#9670;&nbsp;</a></span>AcceptsKeyboardFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CRhinoUserInterfaceObject::AcceptsKeyboardFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Can this object take keyboard focus? This is what Tab looks at when it goes looking for the next control to move to. The base class returns false. </p>
+
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_text_box.html#a1a6017da303ff2f91dc924616d56d6f9">CRhinoUserInterfaceTextBox</a>.</p>
+
+</div>
+</div>
 <a id="a6267197e59e88921e7a7c525fc887d7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6267197e59e88921e7a7c525fc887d7d">&#9670;&nbsp;</a></span>Animate()</h2>
 
@@ -380,6 +476,33 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a95ee36d15142538458ca4a994bda992f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ee36d15142538458ca4a994bda992f">&#9670;&nbsp;</a></span>ClearKeyboardFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CRhinoUserInterfaceObject::ClearKeyboardFocus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Take keyboard focus away from whichever object has it, if any. This is what a click that lands somewhere other than on that object does, and it is how code ends an edit without waiting for the user to press Enter. Parameters: doc - [in] document to redraw, can be nullptr </p>
+
+</div>
+</div>
 <a id="a12c95005a194d18f546a765cf59c63d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12c95005a194d18f546a765cf59c63d1">&#9670;&nbsp;</a></span>ContinueAnimate()</h2>
 
@@ -485,7 +608,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: All user interface objects must implement a Draw function. This is where drawing using the input display pipeline is performed. The base class Draw function does nothing. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a0873f5028d1fde0f6e9e0c1441b864bc">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#af68a77ec9f79d77fc46f4a75dd57b946">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a6c118dd82e0fc30a2473a8c268f530e1">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_icon.html#abdcfd8978b1c777cda44baa0b1bc8a95">CRhinoUserInterfaceIcon</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a8712c876bccd45357a5a6bf1209efc4a">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_user_interface_label.html#a75ee91f5b6cbc9eb4c57d1d2631a5d31">CRhinoUserInterfaceLabel</a>, <a class="el" href="class_c_rhino_rotation_grip_user_interface_object.html#a576f48b5e64dc51479bda54572decfcc">CRhinoRotationGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a7d7b34ed8125f54b45351d7c0b4c3e81">CRhinoDirectionGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a61cbdcf79be00731234409cf2e466008">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a6eafc472c1aa8c38b6e9b47f94123fa3">CRhinoTextDotUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a0873f5028d1fde0f6e9e0c1441b864bc">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#a1332809285b185286eb8edfbdf3f7cf7">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#af68a77ec9f79d77fc46f4a75dd57b946">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a6c118dd82e0fc30a2473a8c268f530e1">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_icon.html#abdcfd8978b1c777cda44baa0b1bc8a95">CRhinoUserInterfaceIcon</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a8712c876bccd45357a5a6bf1209efc4a">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_user_interface_label.html#a75ee91f5b6cbc9eb4c57d1d2631a5d31">CRhinoUserInterfaceLabel</a>, <a class="el" href="class_c_rhino_rotation_grip_user_interface_object.html#a576f48b5e64dc51479bda54572decfcc">CRhinoRotationGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a7d7b34ed8125f54b45351d7c0b4c3e81">CRhinoDirectionGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a61cbdcf79be00731234409cf2e466008">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a6eafc472c1aa8c38b6e9b47f94123fa3">CRhinoTextDotUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -629,6 +752,24 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a6187f267553686a9f0abf66194323eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6187f267553686a9f0abf66194323eb1">&#9670;&nbsp;</a></span>HasKeyboardFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoUserInterfaceObject::HasKeyboardFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Does this object have keyboard focus. Only one user interface object has keyboard focus at a time, and only that object is sent characters and keys. Everything typed in a viewport goes to the command line as usual when no object has focus, or when the object with focus does not use the key. </p>
+
+</div>
+</div>
 <a id="af9a942270e5fd1a5e8ecf530588fefed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9a942270e5fd1a5e8ecf530588fefed">&#9670;&nbsp;</a></span>HasMouseCapture()</h2>
 
@@ -706,7 +847,169 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Return true if the input mouse is considered to be over this object </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a07abda92d9de3623a79645e15190d8ef">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a2bf25d5397b7ff8049b649b64b435bc4">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#ae2b2a6730b3a9136468b9af88617233a">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_icon.html#aab117107b3b1d03e2a9dd98f379b2f5e">CRhinoUserInterfaceIcon</a>, <a class="el" href="class_c_rhino_user_interface_button.html#ac4be77355a9693e87fb6c6baf034d2d2">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_rotation_grip_user_interface_object.html#a5f0b840234ceef4abae2561f318ac450">CRhinoRotationGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a35b901d4c1891481fcfa7fbe55618b2e">CRhinoDirectionGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a7297e10356022a65375dbf304098127a">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#ac726294e21e46f23b3fd6ccbaf1e9e41">CRhinoTextDotUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a07abda92d9de3623a79645e15190d8ef">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#acacd55d3665988dfb14dca1c37e74633">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a2bf25d5397b7ff8049b649b64b435bc4">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#ae2b2a6730b3a9136468b9af88617233a">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_icon.html#aab117107b3b1d03e2a9dd98f379b2f5e">CRhinoUserInterfaceIcon</a>, <a class="el" href="class_c_rhino_user_interface_button.html#ac4be77355a9693e87fb6c6baf034d2d2">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_rotation_grip_user_interface_object.html#a5f0b840234ceef4abae2561f318ac450">CRhinoRotationGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a35b901d4c1891481fcfa7fbe55618b2e">CRhinoDirectionGripUserInterfaceObject</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a7297e10356022a65375dbf304098127a">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#ac726294e21e46f23b3fd6ccbaf1e9e41">CRhinoTextDotUserInterfaceObject</a>.</p>
+
+</div>
+</div>
+<a id="aa44d37c41820191447a95a7dd04a4901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44d37c41820191447a95a7dd04a4901">&#9670;&nbsp;</a></span>KeyboardFocusReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">FocusReason</a> CRhinoUserInterfaceObject::KeyboardFocusReason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Why the object that has keyboard focus was given it. Read this from OnKeyboardFocusChanged; it means nothing once focus has moved on. </p>
+
+</div>
+</div>
+<a id="af11d188b1b13e30ab559c9cecbc8e90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11d188b1b13e30ab559c9cecbc8e90a">&#9670;&nbsp;</a></span>MoveKeyboardFocusToSibling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoUserInterfaceObject::MoveKeyboardFocusToSibling </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forward</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Give keyboard focus to the control that comes after this one, or before it, among the controls in the same container. Tab order is the order the controls were added in and it wraps around at the ends. Controls that are hidden or that do not accept keyboard focus are passed over. Parameters: forward - [in] true moves on to the next control, false back to the previous doc - [in] document to redraw, can be nullptr Returns: True when focus moved to another control. False when this control is not in a container, or when no other control in it will take focus. </p>
+
+</div>
+</div>
+<a id="ab1a8f13ff5b07ee1a80d1a04774031b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a8f13ff5b07ee1a80d1a04774031b3">&#9670;&nbsp;</a></span>OnCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CRhinoUserInterfaceObject::OnCharacter </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Called when a character is typed while this object has keyboard focus. Parameters: character - [in] the character that was typed flags - [in] platform key state flags Returns: True when this object used the character. A character this object does not use carries on to the command line, the way typing in a viewport normally works. The base class returns false. </p>
+
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_text_box.html#a2a7006849b39ccb163af3fdb1926241c">CRhinoUserInterfaceTextBox</a>.</p>
+
+</div>
+</div>
+<a id="abfc07ec1c1b7b0317f185c52c91d2f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc07ec1c1b7b0317f185c52c91d2f8c">&#9670;&nbsp;</a></span>OnKeyboardFocusChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CRhinoUserInterfaceObject::OnKeyboardFocusChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasFocus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Called when this object gains or loses keyboard focus. The base class implementation does nothing. KeyboardFocusReason says how focus arrived. </p>
+
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_text_box.html#a598b49d711c512678bd8d1ee1f232ce6">CRhinoUserInterfaceTextBox</a>.</p>
+
+</div>
+</div>
+<a id="a345df9be0f344cac23cdc1d2572fc052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345df9be0f344cac23cdc1d2572fc052">&#9670;&nbsp;</a></span>OnKeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CRhinoUserInterfaceObject::OnKeyDown </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>virtualKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Called when a key goes down while this object has keyboard focus. This is where the keys that do not produce characters arrive: the arrows, Home, End, Backspace, Delete, Enter and Escape. Parameters: virtualKey - [in] virtual key code, VK_LEFT and friends flags - [in] platform key state flags Returns: True when this object used the key. The base class returns false. </p>
+
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_text_box.html#ae89e3475e7d18ce58730983558e86758">CRhinoUserInterfaceTextBox</a>.</p>
 
 </div>
 </div>
@@ -764,7 +1067,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when a mouse double clicks on this UI element Parameters: mouse - mouse position, button and view </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a4bf56604cd3b677cc4a7b80ffb61f408">CRhinoUserInterfaceGrid</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a4bf56604cd3b677cc4a7b80ffb61f408">CRhinoUserInterfaceGrid</a>, and <a class="el" href="class_c_rhino_user_interface_text_box.html#af70bf4684b6c9327f0476cd342ea61db">CRhinoUserInterfaceTextBox</a>.</p>
 
 </div>
 </div>
@@ -793,7 +1096,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when a mouse button goes down over this UI element Parameters: mouse - mouse position, button and view </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#ac67b1f94af6dee3a057a51592579b518">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a3459e5d725379242dad94dba649d1da5">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a127e70a35143f4e39024f25354c1d3b6">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a4f58c151ed6daf4cbf1bd13c8df703b1">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a8877482715cd4fddaee2112376b35e37">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#ab83ce7d06f411daf15ab64a7de1561ee">CRhinoGripUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#ac67b1f94af6dee3a057a51592579b518">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#a59bd4af99f9c697cec906426c5d71b5a">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a3459e5d725379242dad94dba649d1da5">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a127e70a35143f4e39024f25354c1d3b6">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a4f58c151ed6daf4cbf1bd13c8df703b1">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#a8877482715cd4fddaee2112376b35e37">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#ab83ce7d06f411daf15ab64a7de1561ee">CRhinoGripUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -822,7 +1125,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when first goes over this object (IsMouseOver returns true) </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a808fc6a1cca0e13a8f0f452a56012784">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a6b45e7058aa37e2db6440dafcac8d533">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a6aa38e373ba2d9d106d0b62b8bf3ab21">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a876200facf94f43f30ba5ea2c72ff5a8">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a0df87cd996a48d72da42e66fc3f0b6ff">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a1f84b4bbee448a69382996cec1a814b8">CRhinoTextDotUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a808fc6a1cca0e13a8f0f452a56012784">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#a93d316b5be29942b4c0195f38ec1b542">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a6b45e7058aa37e2db6440dafcac8d533">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a6aa38e373ba2d9d106d0b62b8bf3ab21">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a876200facf94f43f30ba5ea2c72ff5a8">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a0df87cd996a48d72da42e66fc3f0b6ff">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a1f84b4bbee448a69382996cec1a814b8">CRhinoTextDotUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -851,7 +1154,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when mouse leaves this object (IsMouseOver returns false) </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#adb3bdeea86f4500a2597e04431d9b294">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#ae8a1d6e9d4d0a91adfe7abf451496837">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#adf29995323bf08c839c93b3a22765562">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a024ad5dedc498321b4029926b62425d5">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a83e5addd83747a7bb143bdfb952113d2">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a99439fcdb7bb85c09aa193a4e68e6529">CRhinoTextDotUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#adb3bdeea86f4500a2597e04431d9b294">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#a366d40b716430ba6f15a90d9c0437c19">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#ae8a1d6e9d4d0a91adfe7abf451496837">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#adf29995323bf08c839c93b3a22765562">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a024ad5dedc498321b4029926b62425d5">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_grip_user_interface_object.html#a83e5addd83747a7bb143bdfb952113d2">CRhinoGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_text_dot_user_interface_object.html#a99439fcdb7bb85c09aa193a4e68e6529">CRhinoTextDotUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -880,7 +1183,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when a mouse moves over this UI element Parameters: mouse - mouse position, button and view </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a1a07ba5b7cfdc371b5b41649529cc911">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#ab85253519fc7aea2d55204511e812935">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#ac56c15256f5f94b6e3da587ce541b5a0">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#ae8cc05ad376851b9f933d5deb0736a55">CRhinoGripUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a1a07ba5b7cfdc371b5b41649529cc911">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#ac4cf625a5e80100c7f492f4da2c72dd4">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#ab85253519fc7aea2d55204511e812935">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#ac56c15256f5f94b6e3da587ce541b5a0">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#ae8cc05ad376851b9f933d5deb0736a55">CRhinoGripUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -909,7 +1212,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Called when a mouse button goes up over this UI element Parameters: mouse - mouse position, button and view </p>
 
-<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a0d81d1050c48347d448e08cfc1000266">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a40875771879b1c6e962252852aa7bbfe">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a692fe602e688cdd3ee3515b250c1a70e">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a4038646a5541eec1be6d75306c31b813">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#ac0300ccaf4fe18fc6c42316f2fe7ccdb">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#adc7b9300f63e65443a77024811d876cf">CRhinoGripUserInterfaceObject</a>.</p>
+<p>Reimplemented in <a class="el" href="class_c_rhino_user_interface_grid.html#a0d81d1050c48347d448e08cfc1000266">CRhinoUserInterfaceGrid</a>, <a class="el" href="class_c_rhino_user_interface_text_box.html#acee5fbb000d34ec82f6fe51534308bd1">CRhinoUserInterfaceTextBox</a>, <a class="el" href="class_c_rhino_user_interface_slider.html#a40875771879b1c6e962252852aa7bbfe">CRhinoUserInterfaceSlider</a>, <a class="el" href="class_c_rhino_user_interface_check_box.html#a692fe602e688cdd3ee3515b250c1a70e">CRhinoUserInterfaceCheckBox</a>, <a class="el" href="class_c_rhino_user_interface_button.html#a4038646a5541eec1be6d75306c31b813">CRhinoUserInterfaceButton</a>, <a class="el" href="class_c_rhino_direction_grip_user_interface_object.html#ac0300ccaf4fe18fc6c42316f2fe7ccdb">CRhinoDirectionGripUserInterfaceObject</a>, and <a class="el" href="class_c_rhino_grip_user_interface_object.html#adc7b9300f63e65443a77024811d876cf">CRhinoGripUserInterfaceObject</a>.</p>
 
 </div>
 </div>
@@ -1116,6 +1419,33 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d3f3ed410f77488c85b816af132a4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3f3ed410f77488c85b816af132a4d7">&#9670;&nbsp;</a></span>ReleaseKeyboardFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoUserInterfaceObject::ReleaseKeyboardFocus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Give up keyboard focus. Does nothing when this object does not have it. </p>
 
 </div>
 </div>
@@ -1332,6 +1662,43 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ab1444e443a80a680dc100c9cb60d98a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1444e443a80a680dc100c9cb60d98a4">&#9670;&nbsp;</a></span>SetKeyboardFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoUserInterfaceObject::SetKeyboardFocus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47b">FocusReason</a>&#160;</td>
+          <td class="paramname"><em>reason</em> = <code><a class="el" href="class_c_rhino_user_interface_object.html#a37bdc01a99c95e206e98597a52f9e47ba88183b946cc5f0e8c96b2e66e1c74a7e">FocusReason::Unknown</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Take keyboard focus. The object that had it, if any, is told that it lost it. The reason is what KeyboardFocusReason hands back for as long as this object keeps focus. </p>
+
+</div>
+</div>
 <a id="a179d7aa6f0a3a76d855500e4e9132cb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a179d7aa6f0a3a76d855500e4e9132cb2">&#9670;&nbsp;</a></span>SetMouseCapture()</h2>
 
@@ -1488,6 +1855,28 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="adacec06cd9cd67d2bbbd470fe758b85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacec06cd9cd67d2bbbd470fe758b85d">&#9670;&nbsp;</a></span>CRhinoDisplayWindowBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class CRhinoDisplayWindowBase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90258f01ce1e144ed14cd1157be4dc7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90258f01ce1e144ed14cd1157be4dc7a">&#9670;&nbsp;</a></span>CRhinoDoc</h2>
 
@@ -1624,7 +2013,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:25 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

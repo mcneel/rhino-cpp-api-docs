@@ -113,6 +113,11 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3e50466f1c3768aa762510fcd0fe69e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubD::ChainType specifies what edge and vertex tag tests are used when creating edge chains.  <a href="class_o_n___sub_d.html#a3e50466f1c3768aa762510fcd0fe69e8">More...</a><br /></td></tr>
 <tr class="separator:a3e50466f1c3768aa762510fcd0fe69e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a6323b90eb826b6fa09b75349583e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0">ExtraordinaryVertexCurvature</a> : unsigned char { <a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0a6adf97f83acf6453d4a6a4b1070f3754">ExtraordinaryVertexCurvature::None</a> = 0, 
+<a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0aca70cbeed2e9fae02ede99c24bc921e6">ExtraordinaryVertexCurvature::SectorAverage</a> = 1
+ }</td></tr>
+<tr class="memdesc:ae1a6323b90eb826b6fa09b75349583e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the point on this SubD's surface (the limit surface) that is closest to test_point.  <a href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0">More...</a><br /></td></tr>
+<tr class="separator:ae1a6323b90eb826b6fa09b75349583e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846f70b68ad8e33519d6e1293470e42b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a846f70b68ad8e33519d6e1293470e42b">NurbsSurfaceType</a> : unsigned char { <br />
 &#160;&#160;<a class="el" href="class_o_n___sub_d.html#a846f70b68ad8e33519d6e1293470e42bac9f88e098f6fe4e4e112eeb05ccb9671">NurbsSurfaceType::Unset</a> = 0, 
 <a class="el" href="class_o_n___sub_d.html#a846f70b68ad8e33519d6e1293470e42ba3a69b34ce86dacb205936a8094f6c743">NurbsSurfaceType::Large</a> = 1, 
@@ -362,6 +367,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc886c1d71f9e871fafd4013f57a4cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedeaaa535804d339195bf24747ef0df5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#aedeaaa535804d339195bf24747ef0df5">ClearVertexMarks</a> () <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:aedeaaa535804d339195bf24747ef0df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3d59c26a10397642cdaec084ad8135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4b3d59c26a10397642cdaec084ad8135">ClosestPoint</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> test_point) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:a4b3d59c26a10397642cdaec084ad8135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the point on this SubD's surface (the limit surface) that is closest to test_point. See <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> for accuracy details.  <a href="class_o_n___sub_d.html#a4b3d59c26a10397642cdaec084ad8135">More...</a><br /></td></tr>
+<tr class="separator:a4b3d59c26a10397642cdaec084ad8135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4297be9126d3871fe9f9741811598599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___mapping_tag.html">ON_MappingTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4297be9126d3871fe9f9741811598599">ColorsMappingTag</a> () <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:a4297be9126d3871fe9f9741811598599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8358c77769549add432045b791330243"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a8358c77769549add432045b791330243">CombineBoundaryEdgeChains</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;edge_chain0, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;edge_chain1, double combined_edge_location, <a class="el" href="group__open_n_u_r_b_s.html#ga09d9a731b3db1b876e97b6b43246c325">ON_SubDEdgeTag</a> combined_edge_tag)</td></tr>
@@ -459,6 +467,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1058f674502c9091370a2114412c08bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a1058f674502c9091370a2114412c08bc">EvaluatePoint</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___obj_ref.html">ON_ObjRef</a> &amp;objref, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;P) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> override</td></tr>
 <tr class="memdesc:a1058f674502c9091370a2114412c08bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual  <a href="class_o_n___sub_d.html#a1058f674502c9091370a2114412c08bc">More...</a><br /></td></tr>
 <tr class="separator:a1058f674502c9091370a2114412c08bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a466b4f5e7f6ab23e60bab1a0c6ee2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#af0a466b4f5e7f6ab23e60bab1a0c6ee2">EvaluateSurface</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *f, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> p, unsigned maximum_derivative_order, class <a class="el" href="class_o_n___surface_values.html">ON_SurfaceValues</a> &amp;values) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:af0a466b4f5e7f6ab23e60bab1a0c6ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a point on the limit surface.  <a href="class_o_n___sub_d.html#af0a466b4f5e7f6ab23e60bab1a0c6ee2">More...</a><br /></td></tr>
+<tr class="separator:af0a466b4f5e7f6ab23e60bab1a0c6ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5519f9a1fce9def175a704eb1768198"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ac5519f9a1fce9def175a704eb1768198">EvaluateSurface</a> (<a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> p, unsigned maximum_derivative_order, class <a class="el" href="class_o_n___surface_values.html">ON_SurfaceValues</a> &amp;values) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:ac5519f9a1fce9def175a704eb1768198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a point on the limit surface.  <a href="class_o_n___sub_d.html#ac5519f9a1fce9def175a704eb1768198">More...</a><br /></td></tr>
+<tr class="separator:ac5519f9a1fce9def175a704eb1768198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dd003ee8c57c3031d7c9b7640e36fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a36dd003ee8c57c3031d7c9b7640e36fa">EvaluateSurfaceCurvature</a> (<a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> p, <a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0">ON_SubD::ExtraordinaryVertexCurvature</a> extraordinary_vertex_curvature, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;point, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;normal, class <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> &amp;curvature, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;kappa1_direction, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;kappa2_direction) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:a36dd003ee8c57c3031d7c9b7640e36fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the curvature of the SubD surface (the limit surface) at a surface parameter, with everything an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> carries.  <a href="class_o_n___sub_d.html#a36dd003ee8c57c3031d7c9b7640e36fa">More...</a><br /></td></tr>
+<tr class="separator:a36dd003ee8c57c3031d7c9b7640e36fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9167a0d33bccb0196711ed6bb25d326d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a9167a0d33bccb0196711ed6bb25d326d">ExpandEdges</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_edge.html">ON_SubDEdge</a> * &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html">ON_SubDExpandEdgesParameters</a> parameters)</td></tr>
 <tr class="separator:a9167a0d33bccb0196711ed6bb25d326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb7ebb8f066c2b5b2bc30539af851eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a7cb7ebb8f066c2b5b2bc30539af851eb">ExpandEdges</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;unsorted_edges, <a class="el" href="class_o_n___sub_d_expand_edges_parameters.html">ON_SubDExpandEdgesParameters</a> parameters)</td></tr>
@@ -534,6 +551,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ce3c25318be659eff5607e1df04d008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bdbbe6aefba0a006a5e7ac097691882"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a8bdbbe6aefba0a006a5e7ac097691882">GetBoundaryEdgeChains</a> (unsigned int minimum_face_count, unsigned int maximum_face_count, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a> &gt; &amp;boundary_edge_chains) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:a8bdbbe6aefba0a006a5e7ac097691882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5398ceb7147222f03a29932d58dfb7b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> test_point, <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;subd_parameter, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;subd_point, double maximum_distance=0.0) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="separator:a5398ceb7147222f03a29932d58dfb7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4651a8c6573738ee10b39b4aa73884a8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a4651a8c6573738ee10b39b4aa73884a8">GetClosestPoints</a> (double maximum_distance_tolerance, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> no_point_value, size_t point_count, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *test_points, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *output_points, <a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> *output_parameters) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:a4651a8c6573738ee10b39b4aa73884a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the points on this SubD's surface (the limit surface) that are closest to each of test_points[]. This is faster than calling <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> in a loop because the spatial index over the surface mesh is built once. See <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> for accuracy details.  <a href="class_o_n___sub_d.html#a4651a8c6573738ee10b39b4aa73884a8">More...</a><br /></td></tr>
+<tr class="separator:a4651a8c6573738ee10b39b4aa73884a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67b9add6051da22ab993c305b002471"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ad67b9add6051da22ab993c305b002471">GetComponentStatus</a> (bool bGetVertexStatus, bool bGetEdgeStatus, bool bGetFaceStatus, bool bClearStatus, <a class="el" href="class_o_n___component_status.html">ON_ComponentStatus</a> status_mask, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> * &gt; &amp;component_list, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___component_status.html">ON_ComponentStatus</a> &gt; &amp;status_list) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:ad67b9add6051da22ab993c305b002471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719e30ea56a1b5ed36141f0a22c5ef6d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a719e30ea56a1b5ed36141f0a22c5ef6d">GetComponentsWithSetStates</a> (<a class="el" href="class_o_n___component_status.html">ON_ComponentStatus</a> states_filter, bool bAllEqualStates, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;components) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> override</td></tr>
@@ -545,6 +567,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa142a25b13fa107f35eebcf57d81fd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd222f967bbbce9f430011e8f5636e4"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a1cd222f967bbbce9f430011e8f5636e4">GetControlNetMesh</a> (class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh, <a class="el" href="group__open_n_u_r_b_s.html#ga870f5c5708f131b6a2bdf3d138607fd9">ON_SubDGetControlNetMeshPriority</a> priority) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:a1cd222f967bbbce9f430011e8f5636e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1a1b531908b15aaae902d5ed50c3c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a6e1a1b531908b15aaae902d5ed50c3c6">GetEvaluationBicubicBezier</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *face, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> p, <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;sdomain, <a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;tdomain, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> bezCV[][4]) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:a6e1a1b531908b15aaae902d5ed50c3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the control points and domains for a bicubic bezier surface that can be used to evaluate the SubD and the specified parameter.  <a href="class_o_n___sub_d.html#a6e1a1b531908b15aaae902d5ed50c3c6">More...</a><br /></td></tr>
+<tr class="separator:a6e1a1b531908b15aaae902d5ed50c3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac958005753adcfaaaf7677dc3f2c7f5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#ac958005753adcfaaaf7677dc3f2c7f5f">GetEvaluationBicubicSpan</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *face, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> p, double knot0[6], double knot1[6], <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> bispanCV[][4]) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:ac958005753adcfaaaf7677dc3f2c7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get thecontrol points and knots for a uniform bicubic B-spline bispan that can be used to evaluate the SubD and the specified parameter.  <a href="class_o_n___sub_d.html#ac958005753adcfaaaf7677dc3f2c7f5f">More...</a><br /></td></tr>
+<tr class="separator:ac958005753adcfaaaf7677dc3f2c7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274c1b5f9e52b7d827f7e7071fca66b6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a274c1b5f9e52b7d827f7e7071fca66b6">GetMarkedComponents</a> (bool bAddMarkedComponents, <a class="el" href="group__open_n_u_r_b_s.html#ga5f8bfada72de9a3799c044d19407b44f">ON__UINT8</a> mark_bits, bool bIncludeVertices, bool bIncludeEdges, bool bIncludeFaces, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; class <a class="el" href="class_o_n___sub_d_component_ptr.html">ON_SubDComponentPtr</a> &gt; &amp;component_list) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:a274c1b5f9e52b7d827f7e7071fca66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e477b81ca2cff783f48532a2634f2b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a52e477b81ca2cff783f48532a2634f2b">GetMarkedComponents</a> (bool bIncludeVertices, bool bIncludeEdges, bool bIncludeFaces, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_component_base.html">ON_SubDComponentBase</a> * &gt; &amp;marked_component_list) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
@@ -555,6 +583,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f63c1e43298eb4e7745ad18a16acd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33e1dad58324a6d4b9eccae2c92a81a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#af33e1dad58324a6d4b9eccae2c92a81a">GetProxyBrepFaces</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___brep.html">ON_Brep</a> *proxy_brep, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *subd_face, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___brep_face.html">ON_BrepFace</a> * &gt; &amp;proxy_faces_out) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:af33e1dad58324a6d4b9eccae2c92a81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88579e7e34cc7e2b0a5dec41067c2a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a88579e7e34cc7e2b0a5dec41067c2a0d">GetSectorAverageCurvature</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *face, <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *vertex, class <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> &amp;curvature) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
+<tr class="memdesc:a88579e7e34cc7e2b0a5dec41067c2a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average the surface curvature immediately around a vertex.  <a href="class_o_n___sub_d.html#a88579e7e34cc7e2b0a5dec41067c2a0d">More...</a><br /></td></tr>
+<tr class="separator:a88579e7e34cc7e2b0a5dec41067c2a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c6cb08739888547abb010c18a45a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a64c6cb08739888547abb010c18a45a90">GetSurfaceBrep</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_to_brep_parameters.html">ON_SubDToBrepParameters</a> &amp;brep_parameters, <a class="el" href="class_o_n___brep.html">ON_Brep</a> *destination_brep) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
 <tr class="separator:a64c6cb08739888547abb010c18a45a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a291fbf37c80259b898352d90d7b4d70e"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d.html#a291fbf37c80259b898352d90d7b4d70e">GetSurfaceMesh</a> (<a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> class <a class="el" href="class_o_n___sub_d_display_parameters.html">ON_SubDDisplayParameters</a> &amp;display_parameters, class <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh) <a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a></td></tr>
@@ -1538,6 +1569,53 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e50466f1c3768aa762510fcd0fe69e8a026664e24577e394192b2445ff3ada49"></a>EqualEdgeTagAndOrdinary&#160;</td><td class="fielddoc"><p>summary&gt; Every edge in an edge chain has the same smooth/crease edge tag, every edge has the same number of faces, and interior vertices have the corresponding smooth/crease vertex tag. If the edges have 1 face, then interior vertices have valence = 3. If the edges have 2 faces, then interior vertices have valence = 4. /summary&gt; </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e50466f1c3768aa762510fcd0fe69e8a316113003bff84ff40bd586026604e9a"></a>EqualEdgeAndVertexTagAndOrdinary&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae1a6323b90eb826b6fa09b75349583e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a6323b90eb826b6fa09b75349583e0">&#9670;&nbsp;</a></span>ExtraordinaryVertexCurvature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0">ON_SubD::ExtraordinaryVertexCurvature</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the point on this SubD's surface (the limit surface) that is closest to test_point. </p>
+<p>The search is seeded from the surface mesh cache and then refined on the limit surface itself, so the returned point is not restricted to the surface mesh. The returned point always satisfies EvaluateSurface(subd_parameter, 0, values) == subd_point.</p>
+<p>ACCURACY: refinement uses the limit surface partial derivatives, which are available everywhere, including in the corner subdivision quad of an extraordinary vertex. No single bicubic patch covers such a quad, so the evaluator subdivides it until the parameter is covered by one.</p>
+<p>Subdivision stops at <a class="el" href="class_o_n___sub_d_display_parameters.html#abe77bac3dc19a5eb84d81bda98c9b245a52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>, the deepest level at which the surface mesh and the NURBS patches store evaluation points. A parameter close enough to an extraordinary vertex to still be unresolved at that depth is evaluated with the same approximate patch the proxy Brep uses, so the answer there agrees with the proxy Brep rather than being exact.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test_point</td><td></td></tr>
+    <tr><td class="paramname">subd_parameter</td><td>The parameter of the closest point is returned here. It is <a class="el" href="class_o_n___sub_d_component_parameter.html#a134f06d1c0c678fb54b6915cae603191">ON_SubDComponentParameter::Unset</a> if this fails. </td></tr>
+    <tr><td class="paramname">subd_point</td><td>The closest point is returned here. It is <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> if this fails. </td></tr>
+    <tr><td class="paramname">maximum_distance</td><td>If maximum_distance &gt; 0 and the distance from test_point to this SubD is greater than maximum_distance, then false is returned. Otherwise this parameter is ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a closest point was found. </dd></dl>
+<p><a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0" title="Get the point on this SubD&#39;s surface (the limit surface) that is closest to test_point.">ON_SubD::ExtraordinaryVertexCurvature</a> identifies what a curvature evaluation reports exactly on an extraordinary vertex.</p>
+<p>A SubD limit surface is C1 but generally not C2 at an extraordinary vertex. The mixed second partial does not exist there, so there is no second fundamental form and no curvature of the surface itself. Every other point of the surface, including the rest of an extraordinary vertex's corner quad, has a curvature and is unaffected by this setting.</p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae1a6323b90eb826b6fa09b75349583e0a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>summary&gt; Report no curvature. Evaluation fails at an extraordinary vertex. This is the default and says exactly what is true of the surface. /summary&gt; summary&gt; Report the average of the curvature of the surface immediately around the vertex: one sample per surface mesh fragment of the vertex's sector, each taken at the fragment grid point nearest the vertex.</p>
+<p>The sample spacing follows the surface mesh cache, so a denser cache samples closer to the vertex, and a minimum density of 2 is used when the cache is coarser than that or absent - the same minimum the SubD to NURBS conversion works at.</p>
+<p>Gaussian and mean curvature are averaged, not the principal curvatures: they are the invariants, whereas k1 and k2 are ordered eigenvalues that do not average meaningfully. The principal directions are left unset for the same reason.</p>
+<p>This is an estimate of a quantity the surface does not have. Use it where a plausible continuous value matters more than exactness, such as curvature display, and not where the value feeds further geometry. /summary&gt; </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae1a6323b90eb826b6fa09b75349583e0aca70cbeed2e9fae02ede99c24bc921e6"></a>SectorAverage&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -4373,6 +4451,33 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Descripiton: Clears the m_status.RuntimeMark() for every vertex. Returns: Number of marks that were cleared. </p>
+
+</div>
+</div>
+<a id="a4b3d59c26a10397642cdaec084ad8135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3d59c26a10397642cdaec084ad8135">&#9670;&nbsp;</a></span>ClosestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ON_SubD::ClosestPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>test_point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the point on this SubD's surface (the limit surface) that is closest to test_point. See <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> for accuracy details. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test_point</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The closest point, or <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> if none was found. </dd></dl>
 
 </div>
 </div>
@@ -7967,6 +8072,184 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="af0a466b4f5e7f6ab23e60bab1a0c6ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a466b4f5e7f6ab23e60bab1a0c6ee2">&#9670;&nbsp;</a></span>EvaluateSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::EvaluateSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>maximum_derivative_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="class_o_n___surface_values.html">ON_SurfaceValues</a> &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate a point on the limit surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>Face to evaluate </td></tr>
+    <tr><td class="paramname">p</td><td>Evaluation parameter on the face.</td></tr>
+    <tr><td class="paramname">maximum_derivative_order</td><td>Derivatives with order &lt;= maximum_derivative_order will be evaluated. 0: Evaluate surface point. 1: Evaluate surface point and 1st partial derivatives (Du, Dv) 2: Evaluate surface point, 1st partial derivatives (Du, Dv) and 2nd partial derivatives (Duu, Duv, Dvv). ... N: Evaluate point and all derivatives with order &lt;= N. </td></tr>
+    <tr><td class="paramname">values</td><td>Evaluated points and derivatives are returned here. der_array[] has length stride*(ndir+1)*(ndir+2)/2. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the evaluation was successful, true is returned and the evaluated derivatives are returned in der_array[] Otherwise false is returned and der_array[] is set tos ON_DBL_QNANs. </dd></dl>
+<p>EXTRAORDINARY VERTICES: no single bicubic patch covers the corner quad of an extraordinary vertex, so that quad is subdivided until the parameter is covered by one. Subdivision stops at <a class="el" href="class_o_n___sub_d_display_parameters.html#abe77bac3dc19a5eb84d81bda98c9b245a52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>, the deepest level the surface mesh and the NURBS patches store evaluation points at; beyond that the same approximate patch the proxy Brep uses is evaluated, so the answer agrees with the proxy Brep rather than being exact.</p>
+<p>At an extraordinary vertex itself the surface is C1 but generally not C2. The point, the normal, the first partials and the pure higher partials are available, but the mixed partials are not: <a class="el" href="class_o_n___surface_values.html#acf3579da92b6b62cea21729df53313b6" title="If (u,v) are the surface parameters, then Derivative(0,0) = point, Derivative(1,0) = 1st partial with...">ON_SurfaceValues::Derivative()</a> returns an invalid vector for those, and there is no curvature. Check ON_SurfaceValues::Derivative(1,1).<a class="el" href="class_o_n___sub_d.html#a6da31bca23860a93830d3de23d5ffb1a" title="virtual">IsValid()</a> before using a second fundamental form. Everywhere else in the corner quad every partial exists. </p>
+
+</div>
+</div>
+<a id="ac5519f9a1fce9def175a704eb1768198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5519f9a1fce9def175a704eb1768198">&#9670;&nbsp;</a></span>EvaluateSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::EvaluateSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>maximum_derivative_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="class_o_n___surface_values.html">ON_SurfaceValues</a> &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate a point on the limit surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>Face to evaluate </td></tr>
+    <tr><td class="paramname">p</td><td>Evaluation parameter on the face. </td></tr>
+    <tr><td class="paramname">maximum_derivative_order</td><td>Derivatives with order &lt;= maximum_derivative_order will be evaluated. 0: Evaluate surface point. 1: Evaluate surface point and 1st partial derivatives (Du, Dv) 2: Evaluate surface point, 1st partial derivatives (Du, Dv) and 2nd partial derivatives (Duu, Duv, Dvv). ... N: Evaluate point and all derivatives with order &lt;= N. </td></tr>
+    <tr><td class="paramname">values</td><td>Evaluated points and derivatives are returned here. If values has externally managed storage, then in minimum of number_of_derivatives and values.OrderCapacity() will be the highest partial derivative evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the evaluation was successful, true is returned. Otherwise false is returned and values is set to <a class="el" href="class_o_n___surface_values.html#a5e8ec77e8f79f18b7d0120f5485f5bab">ON_SurfaceValues::Nan</a>. </dd></dl>
+<p><br  />
+ </p>
+<p>EXTRAORDINARY VERTICES: no single bicubic patch covers the corner quad of an extraordinary vertex, so that quad is subdivided until the parameter is covered by one. Subdivision stops at <a class="el" href="class_o_n___sub_d_display_parameters.html#abe77bac3dc19a5eb84d81bda98c9b245a52190206ed9f7e6e64a2b48750e0fe35">ON_SubDDisplayParameters::MaximumDensity</a>, the deepest level the surface mesh and the NURBS patches store evaluation points at; beyond that the same approximate patch the proxy Brep uses is evaluated, so the answer agrees with the proxy Brep rather than being exact.</p>
+<p>At an extraordinary vertex itself the surface is C1 but generally not C2. The point, the normal, the first partials and the pure higher partials are available, but the mixed partials are not: <a class="el" href="class_o_n___surface_values.html#acf3579da92b6b62cea21729df53313b6" title="If (u,v) are the surface parameters, then Derivative(0,0) = point, Derivative(1,0) = 1st partial with...">ON_SurfaceValues::Derivative()</a> returns an invalid vector for those, and there is no curvature. Check ON_SurfaceValues::Derivative(1,1).<a class="el" href="class_o_n___sub_d.html#a6da31bca23860a93830d3de23d5ffb1a" title="virtual">IsValid()</a> before using a second fundamental form. Everywhere else in the corner quad every partial exists. </p>
+
+</div>
+</div>
+<a id="a36dd003ee8c57c3031d7c9b7640e36fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dd003ee8c57c3031d7c9b7640e36fa">&#9670;&nbsp;</a></span>EvaluateSurfaceCurvature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::EvaluateSurfaceCurvature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0">ON_SubD::ExtraordinaryVertexCurvature</a>&#160;</td>
+          <td class="paramname"><em>extraordinary_vertex_curvature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> &amp;&#160;</td>
+          <td class="paramname"><em>curvature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>kappa1_direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>kappa2_direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate the curvature of the SubD surface (the limit surface) at a surface parameter, with everything an <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> carries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The surface parameter to evaluate.</td></tr>
+    <tr><td class="paramname">extraordinary_vertex_curvature</td><td>What to report when p is exactly on an extraordinary vertex, where the limit surface has no curvature. </td></tr>
+    <tr><td class="paramname">point</td><td>The surface point is returned here.</td></tr>
+    <tr><td class="paramname">normal</td><td>The unit surface normal is returned here.</td></tr>
+    <tr><td class="paramname">curvature</td><td>The principal curvatures are returned here.</td></tr>
+    <tr><td class="paramname">kappa1_direction</td><td>The direction of the first principal curvature is returned here, or <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a> when there is no single direction to report, which is the case for an averaged extraordinary vertex curvature. </td></tr>
+    <tr><td class="paramname">kappa2_direction</td><td>The direction of the second principal curvature, or <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a>. See kappa1_direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the evaluation succeeded.</dd></dl>
+<p>&lt;since&gt;9.0&lt;/since&gt; </p>
+
+</div>
+</div>
 <a id="a9167a0d33bccb0196711ed6bb25d326d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9167a0d33bccb0196711ed6bb25d326d">&#9670;&nbsp;</a></span>ExpandEdges() <span class="overload">[1/3]</span></h2>
 
@@ -8917,6 +9200,113 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a5398ceb7147222f03a29932d58dfb7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5398ceb7147222f03a29932d58dfb7b5">&#9670;&nbsp;</a></span>GetClosestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::GetClosestPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>test_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd_parameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>subd_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maximum_distance</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4651a8c6573738ee10b39b4aa73884a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4651a8c6573738ee10b39b4aa73884a8">&#9670;&nbsp;</a></span>GetClosestPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ON_SubD::GetClosestPoints </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maximum_distance_tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>no_point_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>point_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *&#160;</td>
+          <td class="paramname"><em>test_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *&#160;</td>
+          <td class="paramname"><em>output_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_component_parameter.html">ON_SubDComponentParameter</a> *&#160;</td>
+          <td class="paramname"><em>output_parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the points on this SubD's surface (the limit surface) that are closest to each of test_points[]. This is faster than calling <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> in a loop because the spatial index over the surface mesh is built once. See <a class="el" href="class_o_n___sub_d.html#a5398ceb7147222f03a29932d58dfb7b5">GetClosestPoint()</a> for accuracy details. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maximum_distance_tolerance</td><td>If maximum_distance_tolerance &gt; 0 and the distance from test_points[i] to this SubD is greater than maximum_distance_tolerance, then output_points[i] = no_point_value. If maximum_distance_tolerance &lt;= 0 or is a nan, then this parameter is ignored. </td></tr>
+    <tr><td class="paramname">no_point_value</td><td>The value to use in output_points[] when no closest point exists. </td></tr>
+    <tr><td class="paramname">point_count</td><td>Number of elements in test_points[], output_points[] and output_parameters[]. </td></tr>
+    <tr><td class="paramname">test_points</td><td>Test points.</td></tr>
+    <tr><td class="paramname">output_points</td><td>output_points[i] = point on this SubD closest to test_points[i], or no_point_value if test_points[i] is not valid or is farther from this SubD than maximum_distance_tolerance. </td></tr>
+    <tr><td class="paramname">output_parameters</td><td>If output_parameters is not nullptr, then output_parameters[i] is the parameter of output_points[i], or <a class="el" href="class_o_n___sub_d_component_parameter.html#a134f06d1c0c678fb54b6915cae603191">ON_SubDComponentParameter::Unset</a> when no closest point was found. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of closest points that were found. </dd></dl>
+<p>OPENNURBS_PLUS </p>
+
+</div>
+</div>
 <a id="ad67b9add6051da22ab993c305b002471"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad67b9add6051da22ab993c305b002471">&#9670;&nbsp;</a></span>GetComponentStatus()</h2>
 
@@ -9116,6 +9506,124 @@ Friends</h2></td></tr>
 <p>Description: Get a mesh representation of the <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> control net. Parameters: mesh - [in] If not null, the returned mesh will be stored on the input class.</p>
 <p>priority - [in] Specifies what type of SubD information is most important to transfer to the mesh. For more details, see the comments for ON_SubDGetControlNetMeshPriority.</p>
 <p>Returns: A mesh representation of the <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> control net. </p>
+
+</div>
+</div>
+<a id="a6e1a1b531908b15aaae902d5ed50c3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1a1b531908b15aaae902d5ed50c3c6">&#9670;&nbsp;</a></span>GetEvaluationBicubicBezier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::GetEvaluationBicubicBezier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;&#160;</td>
+          <td class="paramname"><em>sdomain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___interval.html">ON_Interval</a> &amp;&#160;</td>
+          <td class="paramname"><em>tdomain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>bezCV</em>[][4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the control points and domains for a bicubic bezier surface that can be used to evaluate the SubD and the specified parameter. </p>
+<p>The bezier has: dim = 3, is_rat = 0, order[2] = (4,4) cv_stride[2] = (3, 12) cv = points to bispanCV[0][0].x</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+    <tr><td class="paramname">sdomain</td><td>The first surface evaluation parameter is sdomain.NormalizedParameterAt(p.FaceCornerParameters().x). If you are using this bezier to evaluate derivatives, then you must apply the chain rule to properly scale the derivatives. </td></tr>
+    <tr><td class="paramname">tdomain</td><td>The second bezier surface evaluation parameter is tdomain.NormalizedParameterAt(p.FaceCornerParameters().y). If you are using this bezier to evaluate derivatives, then you must apply the chain rule to properly scale the derivatives. </td></tr>
+    <tr><td class="paramname">bezCV</td><td>16 Bezier surface control points are returned in bezCV[4][4]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ac958005753adcfaaaf7677dc3f2c7f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac958005753adcfaaaf7677dc3f2c7f5f">&#9670;&nbsp;</a></span>GetEvaluationBicubicSpan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::GetEvaluationBicubicSpan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>knot0</em>[6], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>knot1</em>[6], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>bispanCV</em>[][4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get thecontrol points and knots for a uniform bicubic B-spline bispan that can be used to evaluate the SubD and the specified parameter. </p>
+<p>The NURBS bispan has: dim = 3, is_rat = 0, order[2] = (4,4) cv_count[2] = (4,4) cv_stride[2] = (3, 12) knot[2] = (knot0,knot1) cv = points to bispanCV[0][0].x</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+    <tr><td class="paramname">knots0</td><td>s parameter uniform bispan knots are returned here. The s domain is (knot0[2], knot0[3]) and knot0[2] &lt;= p.FaceCornerParameters().x &lt;= knot0[3]. </td></tr>
+    <tr><td class="paramname">tdomain</td><td>t parameter uniform bispan knots are returned here. The t domain is (knot1[2], knot1[3]) and knot1[2] &lt;= p.FaceCornerParameters().y &lt;= knot1[3]. </td></tr>
+    <tr><td class="paramname">bispanCV</td><td>16 bispan control points are returned in bispanCV[4][4]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -9459,6 +9967,53 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If successful, component_ring_count is returned which is the number of points set in point_ring[]. Otherwise 0 is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a88579e7e34cc7e2b0a5dec41067c2a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88579e7e34cc7e2b0a5dec41067c2a0d">&#9670;&nbsp;</a></span>GetSectorAverageCurvature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubD::GetSectorAverageCurvature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d.html#a7779274fc4314207f5c8d71accb180dd">const</a> <a class="el" href="class_o_n___sub_d_vertex.html">ON_SubDVertex</a> *&#160;</td>
+          <td class="paramname"><em>vertex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class <a class="el" href="class_o_n___surface_curvature.html">ON_SurfaceCurvature</a> &amp;&#160;</td>
+          <td class="paramname"><em>curvature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Average the surface curvature immediately around a vertex. </p>
+<p>Used to answer a curvature query exactly on an extraordinary vertex, where the limit surface has no curvature of its own. See <a class="el" href="class_o_n___sub_d.html#ae1a6323b90eb826b6fa09b75349583e0aca70cbeed2e9fae02ede99c24bc921e6">ON_SubD::ExtraordinaryVertexCurvature::SectorAverage</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">face</td><td>A face of the vertex. It selects the sector to average over, which matters when the vertex has creases: each sector is a different surface. </td></tr>
+    <tr><td class="paramname">vertex</td><td>The vertex to average around.</td></tr>
+    <tr><td class="paramname">curvature</td><td>The averaged curvature is returned here.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if at least one sample could be evaluated and averaged. </dd></dl>
+<p>&lt;since&gt;9.0&lt;/since&gt; </p>
 
 </div>
 </div>
@@ -10687,8 +11242,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Assign group ids to sets vertices, edges, and faces in the connected regions. Parameters: bManifoldRegions - [in] If true, groups will stop at nonmanifold vertices and nonmanifold edges. Returns: Number of connected regions. The assigned group ids will run from 1 to the returned value. If bManifoldRegions is true and a nonmanifold component is on the boundary between two or more connected regions, then that component will have m_group_id = 0. <br  />
- </p>
+<p>Description: Assign group ids to sets vertices, edges, and faces in the connected regions. Parameters: bManifoldRegions - [in] If true, groups will stop at nonmanifold vertices and nonmanifold edges. Returns: Number of connected regions. The assigned group ids will run from 1 to the returned value. If bManifoldRegions is true and a nonmanifold component is on the boundary between two or more connected regions, then that component will have m_group_id = 0. </p>
 
 </div>
 </div>
@@ -18538,7 +19092,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:46 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

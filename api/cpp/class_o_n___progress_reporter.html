@@ -314,8 +314,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Set the function that is called when a calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ReportProgress()</a>. Parameters: callback_function - [in] This function is called when the calculation reports progress. The calculation thread calls in this callback function. The callback function should do something that is fast and simple, like post a message to a user interface control and return immediately. <br  />
- Parameters passed to the callback function: context - [in] the value of callback_context. fraction_complete - [in] A value between 0.0 and 1.0 indicating how much of the calculation is compete. Example: </p><pre class="fragment">        struct MyWindowsMessage
+<p>Description: Set the function that is called when a calculation calls <a class="el" href="class_o_n___progress_reporter.html#ab9f89acab0ff9a81c3cabb4d7ce5935e">ReportProgress()</a>. Parameters: callback_function - [in] This function is called when the calculation reports progress. The calculation thread calls in this callback function. A calculation that uses several threads can call this function from more than one thread at the same time. The callback function must be thread safe and must tolerate two reports arriving out of order. The callback function should do something that is fast and simple, like post a message to a user interface control and return immediately. Parameters passed to the callback function: context - [in] the value of callback_context. fraction_complete - [in] A value between 0.0 and 1.0 indicating how much of the calculation is compete. Example: </p><pre class="fragment">        struct MyWindowsMessage
         {
           HWND m_hWnd;
           UINT m_Msg,
@@ -355,7 +354,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

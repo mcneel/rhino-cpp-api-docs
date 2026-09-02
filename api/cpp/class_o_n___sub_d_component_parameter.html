@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42dfb1bbe8e8123bac4229bdf87510be"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a42dfb1bbe8e8123bac4229bdf87510be">EdgeId</a> () const</td></tr>
 <tr class="separator:a42dfb1bbe8e8123bac4229bdf87510be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2581f6d00556a5f24015c37f005118"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a9a2581f6d00556a5f24015c37f005118">EdgeParameter</a> () const</td></tr>
-<tr class="memdesc:a9a2581f6d00556a5f24015c37f005118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a parameter between 0 and 1 that identifies a point on the edge. This is always an intrisic parameter; <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a> is not taken into account. If the reference component is not an edge, then ON_DBL_QNAN is returned.  <a href="class_o_n___sub_d_component_parameter.html#a9a2581f6d00556a5f24015c37f005118">More...</a><br /></td></tr>
+<tr class="memdesc:a9a2581f6d00556a5f24015c37f005118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a parameter between 0 and 1 that identifies a point on the edge. The parameter is measured along the edge as this parameter orients it, that is, from EdgePtr(subd).RelativeVertex(0) to EdgePtr(subd).RelativeVertex(1). When <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a> is 1 that is the reverse of the edge's natural orientation. If the referenced component is not an edge, then ON_DBL_QNAN is returned.  <a href="class_o_n___sub_d_component_parameter.html#a9a2581f6d00556a5f24015c37f005118">More...</a><br /></td></tr>
 <tr class="separator:a9a2581f6d00556a5f24015c37f005118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cdfb673d644a9c1bee03b2798fa2e1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_edge_ptr.html">ON_SubDEdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a87cdfb673d644a9c1bee03b2798fa2e1">EdgePtr</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd) const</td></tr>
 <tr class="memdesc:a87cdfb673d644a9c1bee03b2798fa2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this parameter references an edge and the subd has an edge with this-&gt;<a class="el" href="class_o_n___sub_d_component_parameter.html#a309485332e6907afb17e1e57abf8f3de">ComponentId()</a>, then that edge is returned.  <a href="class_o_n___sub_d_component_parameter.html#a87cdfb673d644a9c1bee03b2798fa2e1">More...</a><br /></td></tr>
@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50035a5da1e88d6b12c5c706177512cc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face_ptr.html">ON_SubDFacePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a50035a5da1e88d6b12c5c706177512cc">FacePtr</a> (const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd) const</td></tr>
 <tr class="memdesc:a50035a5da1e88d6b12c5c706177512cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this parameter references a face and the subd has a face with this-&gt;<a class="el" href="class_o_n___sub_d_component_parameter.html#a309485332e6907afb17e1e57abf8f3de">ComponentId()</a>, then that face is returned.  <a href="class_o_n___sub_d_component_parameter.html#a50035a5da1e88d6b12c5c706177512cc">More...</a><br /></td></tr>
 <tr class="separator:a50035a5da1e88d6b12c5c706177512cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f67cfc3166ca21a518b44f2daaa6bb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a3f67cfc3166ca21a518b44f2daaa6bb6">GetFaceAndFaceParameter</a> (const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *subd, const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&amp;face, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> &amp;face_parameter) const</td></tr>
+<tr class="memdesc:a3f67cfc3166ca21a518b44f2daaa6bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the face and face parameter that identify the same point on the SubD surface as this component parameter. The SubD surface evaluators are parameterized by (face, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>), so this is what makes vertex, edge and face parameters uniformly evaluable.  <a href="class_o_n___sub_d_component_parameter.html#a3f67cfc3166ca21a518b44f2daaa6bb6">More...</a><br /></td></tr>
+<tr class="separator:a3f67cfc3166ca21a518b44f2daaa6bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a213519432028d90e287a973ad95193b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a213519432028d90e287a973ad95193b0">IsEdgeParameter</a> () const</td></tr>
 <tr class="separator:a213519432028d90e287a973ad95193b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b87e0f24bfc7171f1e08f86c55ad62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_component_parameter.html#a89b87e0f24bfc7171f1e08f86c55ad62">IsFaceParameter</a> () const</td></tr>
@@ -1026,8 +1029,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a parameter between 0 and 1 that identifies a point on the edge. This is always an intrisic parameter; <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a> is not taken into account. If the reference component is not an edge, then ON_DBL_QNAN is returned. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns a parameter between 0 and 1 identifying the point on the edge. Note that <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a> is not taken into account. If this does not reference an edge or the parameter is not set, then ON_DBL_QNAN is returned. </dd></dl>
+<p>Returns a parameter between 0 and 1 that identifies a point on the edge. The parameter is measured along the edge as this parameter orients it, that is, from EdgePtr(subd).RelativeVertex(0) to EdgePtr(subd).RelativeVertex(1). When <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a> is 1 that is the reverse of the edge's natural orientation. If the referenced component is not an edge, then ON_DBL_QNAN is returned. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a parameter between 0 and 1 identifying the point on the edge, measured in the direction given by <a class="el" href="class_o_n___sub_d_component_parameter.html#a70b739cd82e1e51956aa0d59214b1f39">ComponentDirection()</a>. If this does not reference an edge or the parameter is not set, then ON_DBL_QNAN is returned. </dd></dl>
 
 </div>
 </div>
@@ -1147,6 +1150,54 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The referenced face in subd along with the direction value. </dd></dl>
+
+</div>
+</div>
+<a id="a3f67cfc3166ca21a518b44f2daaa6bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f67cfc3166ca21a518b44f2daaa6bb6">&#9670;&nbsp;</a></span>GetFaceAndFaceParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_SubDComponentParameter::GetFaceAndFaceParameter </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> *&#160;</td>
+          <td class="paramname"><em>subd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___sub_d_face.html">ON_SubDFace</a> *&amp;&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>face_parameter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the face and face parameter that identify the same point on the SubD surface as this component parameter. The SubD surface evaluators are parameterized by (face, <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a>), so this is what makes vertex, edge and face parameters uniformly evaluable. </p>
+<p>A vertex parameter maps to the (0,0) corner parameter of one of the faces attached to the vertex. A face attached to the vertex may be specified by passing it to the constructor; see <a class="el" href="class_o_n___sub_d_component_parameter.html#acc1e62f561d586e44c648c13c1d7074f" title="In some cases, a face attached to this parameter&#39;s vertex is required. In these cases this face is us...">VertexFace()</a>.</p>
+<p>An edge parameter maps to a parameter on the boundary of one of the faces attached to the edge. A face attached to the edge may be specified by passing it to the constructor; see <a class="el" href="class_o_n___sub_d_component_parameter.html#ad4d6e17af7b3e8c9d29891f140d77597" title="In some cases, a face attached to this parameter&#39;s edge is required. In that case,...">EdgeFace()</a>. If s is the edge parameter measured along the face's orientation of the edge, then the result is (s,0) on the corner at the start of the edge when s &lt;= 1/2 and (0,1-s) on the corner at the end of the edge when s &gt; 1/2. Both describe the same point when s = 1/2.</p>
+<p>A face parameter returns Face(subd) and <a class="el" href="class_o_n___sub_d_component_parameter.html#ade355747d9a781e301574f2430ef6d48">FaceParameter()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subd</td><td>The SubD that contains the component this parameter references. </td></tr>
+    <tr><td class="paramname">face</td><td>The face to evaluate is returned here, or nullptr if this fails. </td></tr>
+    <tr><td class="paramname">face_parameter</td><td>The parameter on face to evaluate is returned here, or <a class="el" href="class_o_n___sub_d_face_parameter.html#a8649823896e91773ebcab45d3e3e0d4d" title="ON_SubDFaceParameter::Nan has face_edge_count=0, corner_index=0, s=ON_DBL_QNAN, t=ON_DBL_QNAN.">ON_SubDFaceParameter::Nan</a> if this fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if face and face_parameter were set to an evaluable pair. </dd></dl>
 
 </div>
 </div>
@@ -1499,7 +1550,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:47 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

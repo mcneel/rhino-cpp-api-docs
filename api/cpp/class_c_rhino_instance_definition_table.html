@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1c09793ca086ec01fc283a8ca9b5cddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf8b1c4ebbfe5f99ca7e536b4a41080"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_instance_definition_table.html#a7cf8b1c4ebbfe5f99ca7e536b4a41080">PurgeInstanceDefinition</a> (int idef_index)</td></tr>
 <tr class="separator:a7cf8b1c4ebbfe5f99ca7e536b4a41080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6641c28398aead60463d8090138d8c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_instance_definition_table.html#ab6641c28398aead60463d8090138d8c8">PurgeUnusedInstanceDefinitionGeometry</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;objects)</td></tr>
+<tr class="separator:ab6641c28398aead60463d8090138d8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae823ab379c8868ae4727eb305fc7bd64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_instance_definition_table.html#ae823ab379c8868ae4727eb305fc7bd64">SetDescription</a> (int index, const wchar_t *description)</td></tr>
 <tr class="separator:ae823ab379c8868ae4727eb305fc7bd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae047993575ec1e5014ac1fb9e90dc920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_instance_definition_table.html#ae047993575ec1e5014ac1fb9e90dc920">SetName</a> (int index, const wchar_t *name)</td></tr>
@@ -1029,6 +1031,26 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ab6641c28398aead60463d8090138d8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6641c28398aead60463d8090138d8c8">&#9670;&nbsp;</a></span>PurgeUnusedInstanceDefinitionGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CRhinoInstanceDefinitionTable::PurgeUnusedInstanceDefinitionGeometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_c_rhino_object.html">CRhinoObject</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Remove instance definition geometry that no instance definition uses.</p>
+<p>Use this after a call that added objects to the document as instance definition geometry and then failed. ModifyInstanceDefinitionGeometry validates its objects after the caller has added them, and <a class="el" href="class_c_rhino_doc.html#a251140f5b6abaf009ae28a6164addba3">CRhinoDoc::PurgeObject</a> refuses instance definition geometry, so without this the objects stay in the document owned by nothing. <a class="el" href="class_c_rhino_instance_definition_table.html#a984f0bd8f78e1fc5e0ade021db8ab684">Compact()</a> also reclaims them, but it sweeps the whole document. Parameters: objects - [in] the objects the caller added. An object that an instance definition still uses is left alone, so a list that mixes the two is safe. Returns: Number of objects removed. </p>
+
+</div>
+</div>
 <a id="ae823ab379c8868ae4727eb305fc7bd64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae823ab379c8868ae4727eb305fc7bd64">&#9670;&nbsp;</a></span>SetDescription()</h2>
 
@@ -1410,7 +1432,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

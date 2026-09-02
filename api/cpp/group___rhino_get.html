@@ -330,6 +330,8 @@ Functions</h2></td></tr>
 <tr class="separator:gada32f599e9695bd675445d73d03bebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0961f27bd99b04cf83af4c5a08022149"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_get.html#ga0961f27bd99b04cf83af4c5a08022149">RhinoGetRevolve</a> (<a class="el" href="class_c_args_rhino_revolve.html">CArgsRhinoRevolve</a> &amp;args, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___rev_surface.html">ON_RevSurface</a> * &gt; &amp;srfs_out)</td></tr>
 <tr class="separator:ga0961f27bd99b04cf83af4c5a08022149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86e3298974da122fb6ef934c628944cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_get.html#ga86e3298974da122fb6ef934c628944cb">RhinoGetSnapPoint</a> (<a class="el" href="class_c_rhino_view.html">CRhinoView</a> &amp;view, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> test_point, <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;world_point, <a class="el" href="class_c_rhino_snap_event.html">CRhinoSnapEvent</a> *snap_event=nullptr)</td></tr>
+<tr class="separator:ga86e3298974da122fb6ef934c628944cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56c427b11d84d9dba3b0c2843db13883"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_get.html#ga56c427b11d84d9dba3b0c2843db13883">RhinoGetSphere</a> (<a class="el" href="class_c_args_rhino_get_sphere.html">CArgsRhinoGetSphere</a> &amp;args, <a class="el" href="class_o_n___sphere.html">ON_Sphere</a> &amp;output_sphere)</td></tr>
 <tr class="separator:ga56c427b11d84d9dba3b0c2843db13883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79e054fb65eb4479fd9b5f28a3296709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_c_rhino_command.html#adbb5e7e7a2c0f6659abdc77d70860e4d">CRhinoCommand::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino_get.html#ga79e054fb65eb4479fd9b5f28a3296709">RhinoGetSpiral</a> (<a class="el" href="class_c_args_rhino_get_spiral.html">CArgsRhinoGetSpiral</a> &amp;args, <a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;curve_out, <a class="el" href="class_c_rhino_history.html">CRhinoHistory</a> *history=NULL)</td></tr>
@@ -2519,6 +2521,47 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga86e3298974da122fb6ef934c628944cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86e3298974da122fb6ef934c628944cb">&#9670;&nbsp;</a></span>RhinoGetSnapPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoGetSnapPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_view.html">CRhinoView</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td>
+          <td class="paramname"><em>test_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>world_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_snap_event.html">CRhinoSnapEvent</a> *&#160;</td>
+          <td class="paramname"><em>snap_event</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Given a test point, calculate the point the current object snap settings would produce in the specified view. Parameters: view - [in] The view in which to snap. The document is obtained from <a class="el" href="class_c_rhino_view.html#a1eda81501617654eaf1beba0b847ffab">CRhinoView::GetDocument()</a>. test_point - [in] The world coordinate point to snap. world_point - [out] The snapped point. If no object snap was active or none applied, then test_point is returned. snap_event - [out] If not nullptr, the snap event is returned here. When no snap occurred, snap_event.m_snap_mode is <a class="el" href="class_c_rhino_app_settings.html#aae52e49d8dde091f3927ef6b18b26d88a0d08d2f9d8e9cc7188bf8049de75b9bb">CRhinoAppSettings::os_none</a>. Returns: True if world_point was calculated, false otherwise. Remarks: This function does not prompt. It resolves a point through the object snaps that are currently enabled. See Also: <a class="el" href="class_c_rhino_app_settings.html#aae52e49d8dde091f3927ef6b18b26d88">CRhinoAppSettings::osnap_mode</a> </p>
+
+</div>
+</div>
 <a id="ga56c427b11d84d9dba3b0c2843db13883"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga56c427b11d84d9dba3b0c2843db13883">&#9670;&nbsp;</a></span>RhinoGetSphere()</h2>
 
@@ -3141,7 +3184,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:13 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:12 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

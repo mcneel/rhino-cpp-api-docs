@@ -86,7 +86,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42517d2feb8fa185e2b2e0136f760b31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a42517d2feb8fa185e2b2e0136f760b31">~ON_SubDFaceParameter</a> ()=default</td></tr>
 <tr class="separator:a42517d2feb8fa185e2b2e0136f760b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b37fdd369032b1da78b9a9d0ec84e6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a80b37fdd369032b1da78b9a9d0ec84e6">AtVertex</a> () const</td></tr>
-<tr class="memdesc:a80b37fdd369032b1da78b9a9d0ec84e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An evaluation point is at a SubD vertex if <a class="el" href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00" title="True if all values are valid.">IsSet()</a> is true and <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> = (0,0, 0,0).  <a href="class_o_n___sub_d_face_parameter.html#a80b37fdd369032b1da78b9a9d0ec84e6">More...</a><br /></td></tr>
+<tr class="memdesc:a80b37fdd369032b1da78b9a9d0ec84e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An evaluation point is at a SubD vertex if <a class="el" href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20" title="True if all values are valid.">IsSet()</a> is true and <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> = (0,0, 0,0).  <a href="class_o_n___sub_d_face_parameter.html#a80b37fdd369032b1da78b9a9d0ec84e6">More...</a><br /></td></tr>
 <tr class="separator:a80b37fdd369032b1da78b9a9d0ec84e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2b09ac4b6495bf4d781b93ff3cb74d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n___sub_d_face_corner_dex.html">ON_SubDFaceCornerDex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a0d2b09ac4b6495bf4d781b93ff3cb74d">FaceCornerDex</a> () const</td></tr>
 <tr class="memdesc:a0d2b09ac4b6495bf4d781b93ff3cb74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">m_cdex identifies face's subdivision quad the s and t parameters apply to. The corner vertex is V = m_cdex.Vertex(face). The edge entering the corner is LE = m_cdex.LeftEdge(face). The edge leaving the corner is RE = m_cdex.RightEdge(face). V = LE.RelativeVertex(1) = RE.RelativeVertex(0).  <a href="class_o_n___sub_d_face_parameter.html#a0d2b09ac4b6495bf4d781b93ff3cb74d">More...</a><br /></td></tr>
@@ -94,20 +94,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f6275ab10773da073e81b687c06b34e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e">FaceCornerParameters</a> () const</td></tr>
 <tr class="memdesc:a0f6275ab10773da073e81b687c06b34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">cdex = <a class="el" href="class_o_n___sub_d_face_parameter.html#a0d2b09ac4b6495bf4d781b93ff3cb74d" title="m_cdex identifies face&#39;s subdivision quad the s and t parameters apply to. The corner vertex is V = m...">FaceCornerDex()</a> identifies face's subdivision quad the s and t parameters apply to. The corner vertex is V = cdex.Vertex(face). The edge entering the corner is LE = cdex.LeftEdge(face). The edge leaving the corner is RE = cdex.RightEdge(face). V = LE.RelativeVertex(1) = RE.RelativeVertex(0).  <a href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e">More...</a><br /></td></tr>
 <tr class="separator:a0f6275ab10773da073e81b687c06b34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8524e6638ec74e538a479b73b63513e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a8524e6638ec74e538a479b73b63513e0">IsNotSet</a> ()</td></tr>
-<tr class="memdesc:a8524e6638ec74e538a479b73b63513e0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if all values are not valid.</dd></dl>
- <a href="class_o_n___sub_d_face_parameter.html#a8524e6638ec74e538a479b73b63513e0">More...</a><br /></td></tr>
-<tr class="separator:a8524e6638ec74e538a479b73b63513e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124f64ea5a5d4ab792bf096cb9e36ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a124f64ea5a5d4ab792bf096cb9e36ffb">IsNotSet</a> () const</td></tr>
+<tr class="memdesc:a124f64ea5a5d4ab792bf096cb9e36ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if any value is not valid.</dd></dl>
+ <a href="class_o_n___sub_d_face_parameter.html#a124f64ea5a5d4ab792bf096cb9e36ffb">More...</a><br /></td></tr>
 <tr class="separator:a124f64ea5a5d4ab792bf096cb9e36ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68163c4da2deea76349b8d4568dee00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00">IsSet</a> ()</td></tr>
-<tr class="memdesc:af68163c4da2deea76349b8d4568dee00"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if all values are valid.</dd></dl>
- <a href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00">More...</a><br /></td></tr>
-<tr class="separator:af68163c4da2deea76349b8d4568dee00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6604389841ac9d7f2862ab566d5e20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20">IsSet</a> () const</td></tr>
+<tr class="memdesc:a6c6604389841ac9d7f2862ab566d5e20"><td class="mdescLeft">&#160;</td><td class="mdescRight"><dl class="section return"><dt>Returns</dt><dd>True if all values are valid.</dd></dl>
+ <a href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20">More...</a><br /></td></tr>
 <tr class="separator:a6c6604389841ac9d7f2862ab566d5e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef862c309c2edcc64bd2bb9d4678791"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a6ef862c309c2edcc64bd2bb9d4678791">OnEdge</a> () const</td></tr>
-<tr class="memdesc:a6ef862c309c2edcc64bd2bb9d4678791"><td class="mdescLeft">&#160;</td><td class="mdescRight">An evaluation point is on a subD edge if <a class="el" href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00" title="True if all values are valid.">IsSet()</a> is true and at least one of the values in <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> is 0.0.  <a href="class_o_n___sub_d_face_parameter.html#a6ef862c309c2edcc64bd2bb9d4678791">More...</a><br /></td></tr>
+<tr class="memdesc:a6ef862c309c2edcc64bd2bb9d4678791"><td class="mdescLeft">&#160;</td><td class="mdescRight">An evaluation point is on a subD edge if <a class="el" href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20" title="True if all values are valid.">IsSet()</a> is true and at least one of the values in <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> is 0.0.  <a href="class_o_n___sub_d_face_parameter.html#a6ef862c309c2edcc64bd2bb9d4678791">More...</a><br /></td></tr>
 <tr class="separator:a6ef862c309c2edcc64bd2bb9d4678791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50052b8f19d4744657d113f8ff5d956e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___sub_d_face_parameter.html#a50052b8f19d4744657d113f8ff5d956e">operator=</a> (const <a class="el" href="class_o_n___sub_d_face_parameter.html">ON_SubDFaceParameter</a> &amp;)=default</td></tr>
 <tr class="separator:a50052b8f19d4744657d113f8ff5d956e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +266,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>An evaluation point is at a SubD vertex if <a class="el" href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00" title="True if all values are valid.">IsSet()</a> is true and <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> = (0,0, 0,0). </p>
+<p>An evaluation point is at a SubD vertex if <a class="el" href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20" title="True if all values are valid.">IsSet()</a> is true and <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> = (0,0, 0,0). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the evaluation point is at a SubD vertex. </dd></dl>
 
 </div>
@@ -452,28 +448,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8524e6638ec74e538a479b73b63513e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8524e6638ec74e538a479b73b63513e0">&#9670;&nbsp;</a></span>IsNotSet() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDFaceParameter::IsNotSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><dl class="section return"><dt>Returns</dt><dd>True if all values are not valid.</dd></dl>
-</p>
-
-</div>
-</div>
 <a id="a124f64ea5a5d4ab792bf096cb9e36ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a124f64ea5a5d4ab792bf096cb9e36ffb">&#9670;&nbsp;</a></span>IsNotSet() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a124f64ea5a5d4ab792bf096cb9e36ffb">&#9670;&nbsp;</a></span>IsNotSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,10 +463,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><dl class="section return"><dt>Returns</dt><dd>True if any value is not valid.</dd></dl>
+</p>
+
 </div>
 </div>
-<a id="af68163c4da2deea76349b8d4568dee00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af68163c4da2deea76349b8d4568dee00">&#9670;&nbsp;</a></span>IsSet() <span class="overload">[1/2]</span></h2>
+<a id="a6c6604389841ac9d7f2862ab566d5e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6604389841ac9d7f2862ab566d5e20">&#9670;&nbsp;</a></span>IsSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,30 +478,13 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">bool ON_SubDFaceParameter::IsSet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><dl class="section return"><dt>Returns</dt><dd>True if all values are valid.</dd></dl>
 </p>
-
-</div>
-</div>
-<a id="a6c6604389841ac9d7f2862ab566d5e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6604389841ac9d7f2862ab566d5e20">&#9670;&nbsp;</a></span>IsSet() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ON_SubDFaceParameter::IsSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -541,7 +503,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>An evaluation point is on a subD edge if <a class="el" href="class_o_n___sub_d_face_parameter.html#af68163c4da2deea76349b8d4568dee00" title="True if all values are valid.">IsSet()</a> is true and at least one of the values in <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> is 0.0. </p>
+<p>An evaluation point is on a subD edge if <a class="el" href="class_o_n___sub_d_face_parameter.html#a6c6604389841ac9d7f2862ab566d5e20" title="True if all values are valid.">IsSet()</a> is true and at least one of the values in <a class="el" href="class_o_n___sub_d_face_parameter.html#a0f6275ab10773da073e81b687c06b34e" title="cdex = FaceCornerDex() identifies face&#39;s subdivision quad the s and t parameters apply to....">FaceCornerParameters()</a> is 0.0. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the evaluation point is on a SubD edge. </dd></dl>
 
 </div>
@@ -620,7 +582,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:48 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -103,8 +103,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a0bcee8453dcc30260d6ff0f2ed049ad5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_overlap_fate.html#a0bcee8453dcc30260d6ff0f2ed049ad5">RhinoGetOverlaps</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; &amp;, const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;, double, bool, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; &amp;, bool, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_overlap_fate.html">CRhinoOverlapFate</a> &gt; &amp;, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *)</td></tr>
-<tr class="separator:a0bcee8453dcc30260d6ff0f2ed049ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90409c7250c13e5b98cff8901b3c7c6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_overlap_fate.html#a90409c7250c13e5b98cff8901b3c7c6d">RhinoGetOverlaps</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; &amp;, const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;, double, <a class="el" href="group___rhino.html#ga96b45bd96c038e2bccd58c5c667c5ecd">RhinoOverlapMode</a>, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> * &gt; &amp;, bool, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_c_rhino_overlap_fate.html">CRhinoOverlapFate</a> &gt; &amp;, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *)</td></tr>
+<tr class="separator:a90409c7250c13e5b98cff8901b3c7c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes what happened to one input object during an overlap computation. One <a class="el" href="class_c_rhino_overlap_fate.html">CRhinoOverlapFate</a> is produced for each input object that was affected (covered) by the overlap; unaffected inputs produce no entry. When m_entire is true the whole object was covered and should be removed. Otherwise m_dead_segments lists the covered segments and <a class="el" href="class_c_rhino_overlap_fate.html#ad4f14779def2cfeb8ff1760468af2542">Replacement()</a>, if non-null, is the trimmed remainder the caller should substitute. </p>
@@ -219,8 +219,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a0bcee8453dcc30260d6ff0f2ed049ad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bcee8453dcc30260d6ff0f2ed049ad5">&#9670;&nbsp;</a></span>RhinoGetOverlaps</h2>
+<a id="a90409c7250c13e5b98cff8901b3c7c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90409c7250c13e5b98cff8901b3c7c6d">&#9670;&nbsp;</a></span>RhinoGetOverlaps</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +249,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#ga96b45bd96c038e2bccd58c5c667c5ecd">RhinoOverlapMode</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -288,7 +288,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Detects overlapping regions among a set of input objects after they are orthogonally projected onto the given plane, and reports what should happen to each affected object so the overlaps can be removed. The objects are compared in the projected plane, so this finds curves that lie on top of one another when viewed along the plane's normal. Parameters: objects - [in] The geometry to test for overlaps. Supported types are <a class="el" href="class_o_n___curve.html">ON_Curve</a> (curves), <a class="el" href="class_o_n___point.html">ON_Point</a> (single points), and <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> (sets of points). Objects of any other type, as well as null or invalid objects, are silently ignored. plane - [in] The plane the geometry is orthogonally projected onto before testing (the projection maps each point P to plane.ClosestPointTo(P)). tolerance - [in] Overlap distance tolerance, in the projected plane. whole_curves - [in] True treats an overlapping curve as a single unit; false allows splitting at segment boundaries so that only the overlapping portions are affected. locked - [in] Geometry that participates in the test but is never itself reported or modified. May be empty. locked_exclusive - [in] True reports overlaps only where an input object overlaps a locked object; overlaps purely among the input objects are ignored. fates - [out] One <a class="el" href="class_c_rhino_overlap_fate.html">CRhinoOverlapFate</a> per affected input object. Cleared on entry. Inputs that are not overlapped produce no entry. cancel - [in] Optional terminator used to cancel a long-running computation. May be nullptr. Returns: True if at least one overlap was found (fates is non-empty); false otherwise. </p>
+<p>Description: Detects overlapping regions among a set of input objects after they are orthogonally projected onto the given plane, and reports what should happen to each affected object so the overlaps can be removed. The objects are compared in the projected plane, so this finds curves that lie on top of one another when viewed along the plane's normal. Parameters: objects - [in] The geometry to test for overlaps. Supported types are <a class="el" href="class_o_n___curve.html">ON_Curve</a> (curves), <a class="el" href="class_o_n___point.html">ON_Point</a> (single points), and <a class="el" href="class_o_n___point_cloud.html">ON_PointCloud</a> (sets of points). Objects of any other type, as well as null or invalid objects, are silently ignored. plane - [in] The plane the geometry is orthogonally projected onto before testing (the projection maps each point P to plane.ClosestPointTo(P)). tolerance - [in] Overlap distance tolerance, in the projected plane. mode - [in] Granularity of the removal; see RhinoOverlapMode. <a class="el" href="group___rhino.html#gga96b45bd96c038e2bccd58c5c667c5ecda44ffd38a6dea695cbe2b34efdcc6cf27">RhinoOverlapMode::Partial</a> removes arbitrary parameter chunks, with the chunk boundaries computed by the exact curve-curve intersector; transverse crossings are never split. locked - [in] Geometry that participates in the test but is never itself reported or modified. May be empty. locked_exclusive - [in] True reports overlaps only where an input object overlaps a locked object; overlaps purely among the input objects are ignored. fates - [out] One <a class="el" href="class_c_rhino_overlap_fate.html">CRhinoOverlapFate</a> per affected input object. Cleared on entry. Inputs that are not overlapped produce no entry. cancel - [in] Optional terminator used to cancel a long-running computation. May be nullptr. Returns: True if at least one overlap was found (fates is non-empty); false otherwise. </p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

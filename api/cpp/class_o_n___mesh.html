@@ -462,6 +462,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4df6c0c5eb97d8f1c13c4d516ade988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4eba9d343e2e84cebf91bf13bda21f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ad4eba9d343e2e84cebf91bf13bda21f8">MeshPart</a> (const <a class="el" href="struct_o_n___mesh_part.html">ON_MeshPart</a> &amp;mesh_part, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *mesh) const</td></tr>
 <tr class="separator:ad4eba9d343e2e84cebf91bf13bda21f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ac84a9f381c95949bfbb09278aac30"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_o_n___mesh_tessellation_cache.html">ON_MeshTessellationCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ab1ac84a9f381c95949bfbb09278aac30">MeshTessellationCache</a> (bool bCreateIfNoneExists) const</td></tr>
+<tr class="separator:ab1ac84a9f381c95949bfbb09278aac30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11d2d4e0926c340dd2a3a0eb304b12c"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___mesh_tree.html">ON_MeshTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aa11d2d4e0926c340dd2a3a0eb304b12c">MeshTree</a> () const</td></tr>
 <tr class="separator:aa11d2d4e0926c340dd2a3a0eb304b12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239c5e5a30b14d756bdcf0bc61bdbcfd"><td class="memItemLeft" align="right" valign="top">const class <a class="el" href="class_o_n___mesh_tree.html">ON_MeshTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a239c5e5a30b14d756bdcf0bc61bdbcfd">MeshTree</a> (bool bCreateIfNoneExists) const</td></tr>
@@ -6253,6 +6255,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ab1ac84a9f381c95949bfbb09278aac30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ac84a9f381c95949bfbb09278aac30">&#9670;&nbsp;</a></span>MeshTessellationCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_o_n___mesh_tessellation_cache.html">ON_MeshTessellationCache</a>* ON_Mesh::MeshTessellationCache </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bCreateIfNoneExists</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters: bCreateIfNoneExists - [in] If a triangulation cache is not present on this mesh and bCreateIfNoneExists is true, then an empty one will be created and cached. If a triangulation cache is not present on this mesh and bCreateIfNoneExists is false, then null is returned. Returns: A cache of this mesh's face triangulation, shared by the intersection routines so it is computed once per mesh rather than once per call. The cache is created empty and filled by its first consumer. It is discarded with the other cached trees whenever <a class="el" href="class_o_n___mesh.html#a58b83087a2c0691ef81d44e75ccbe4da">DestroyTree()</a> runs. The pointer may be null and the caller must check it before dereferencing. </p>
+
+</div>
+</div>
 <a id="aa11d2d4e0926c340dd2a3a0eb304b12c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa11d2d4e0926c340dd2a3a0eb304b12c">&#9670;&nbsp;</a></span>MeshTree() <span class="overload">[1/2]</span></h2>
 
@@ -9391,7 +9412,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

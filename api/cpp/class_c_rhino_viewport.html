@@ -309,6 +309,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab00cb653c4c1f47138bfb79b59b9fc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ec876dfa8238dfd75149f26c069829"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_viewport.html#a11ec876dfa8238dfd75149f26c069829">PushViewProjection</a> ()</td></tr>
 <tr class="separator:a11ec876dfa8238dfd75149f26c069829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c94b2498dc6ca28068e4c9410b112a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_viewport.html#a2c94b2498dc6ca28068e4c9410b112a6">RestoreNamedView</a> (const <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDoc, bool bAspectRatio, bool bAnimate, bool bConstantSpeed, int frames, double units_per_frame, int delay, bool bSetUniversalPlane)</td></tr>
+<tr class="separator:a2c94b2498dc6ca28068e4c9410b112a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8782563c5e5c72739b8d0e428c863f75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_viewport.html#a8782563c5e5c72739b8d0e428c863f75">RestoreNamedView</a> (const <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;view, <a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *pDoc=nullptr, bool bAspectRatio=false, bool bAnimate=false, bool bConstantSpeed=false, int frames=100, double units_per_frame=1.0, int delay=10)</td></tr>
 <tr class="separator:a8782563c5e5c72739b8d0e428c863f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed9ca8f9492a02fab51acc8acbc630c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_viewport.html#afed9ca8f9492a02fab51acc8acbc630c">RuntimeSerialNumber</a> () const</td></tr>
@@ -3437,8 +3439,79 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a2c94b2498dc6ca28068e4c9410b112a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c94b2498dc6ca28068e4c9410b112a6">&#9670;&nbsp;</a></span>RestoreNamedView() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoViewport::RestoreNamedView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__3dm_view.html">ON_3dmView</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_doc.html">CRhinoDoc</a> *&#160;</td>
+          <td class="paramname"><em>pDoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAspectRatio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAnimate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bConstantSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>units_per_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSetUniversalPlane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Same as above, with control over the universal construction plane. Parameters: bSetUniversalPlane - [in] If true, and universal construction plane mode is enabled, then the restored construction plane is set in every model view, the same way the CPlane command sets one. The overload without this parameter passes false. </p>
+
+</div>
+</div>
 <a id="a8782563c5e5c72739b8d0e428c863f75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8782563c5e5c72739b8d0e428c863f75">&#9670;&nbsp;</a></span>RestoreNamedView()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8782563c5e5c72739b8d0e428c863f75">&#9670;&nbsp;</a></span>RestoreNamedView() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4730,7 +4803,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 25 2026 19:37:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2026 18:34:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
