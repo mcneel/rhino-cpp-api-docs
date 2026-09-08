@@ -182,8 +182,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a0c9718eeefbcdddce03f8cb8a6893f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad993fc7635eee7b4456cd950fe6f847f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ad993fc7635eee7b4456cd950fe6f847f">DpiScale</a> () const</td></tr>
 <tr class="separator:ad993fc7635eee7b4456cd950fe6f847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe28e4f16412b9d7b499f73a42ada894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#abe28e4f16412b9d7b499f73a42ada894">Draw2dCurve</a> (const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;curve, const class CRhinoDisplayPen &amp;pen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
+<tr class="separator:abe28e4f16412b9d7b499f73a42ada894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41abf8c70039dbb66ca7b279d9967b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a41abf8c70039dbb66ca7b279d9967b43">Draw2dDisplayPath</a> (const class CRhino2dDisplayPath &amp;path, const class CRhinoDisplayPen &amp;pen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
+<tr class="separator:a41abf8c70039dbb66ca7b279d9967b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2c23507efc15616ef02c01669353db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a3b2c23507efc15616ef02c01669353db">Draw2dLine</a> (float startX, float startY, float endX, float endY, const class CRhinoDisplayPen &amp;pen)</td></tr>
+<tr class="separator:a3b2c23507efc15616ef02c01669353db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439ab150766ddb9473c2e7d486866bfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a439ab150766ddb9473c2e7d486866bfe">Draw2dLines</a> (const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *points, int count, bool asPolyline, <a class="el" href="class_o_n___color.html">ON_Color</a> strokeColor, float strokeWidth, <a class="el" href="group___rhino.html#ga92ddae21b919495f4f225191041764ae">RhinoDashStyle</a> style, bool xormode)=0</td></tr>
 <tr class="separator:a439ab150766ddb9473c2e7d486866bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade512f54110203d2601e7ea35c543a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ade512f54110203d2601e7ea35c543a4b">Draw2dPolyline</a> (const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *points, int pointCount, const class CRhinoDisplayPen &amp;pen, bool closed)</td></tr>
+<tr class="separator:ade512f54110203d2601e7ea35c543a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0402300ac9157fd85c9828cbfb0b95e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a0402300ac9157fd85c9828cbfb0b95e8">DrawBezier</a> (int dim, <a class="el" href="group___rhino.html#ga6c81c71ad5765662cda8020ec2b2647b">BOOL32</a> bIsRational, int order, int cv_stride, const double *cv4d, const <a class="el" href="struct_c_rh_curve_attributes.html">CRhCurveAttributes</a> &amp;attrs)</td></tr>
 <tr class="separator:a0402300ac9157fd85c9828cbfb0b95e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a75661777925cbc8808a034a099a54b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a1a75661777925cbc8808a034a099a54b">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, int left, int top)</td></tr>
@@ -262,6 +270,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa6d6d88a0095df8a16aa1092cc8a1b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe166e1f8c087dc41190149e1817738d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#abe166e1f8c087dc41190149e1817738d">DrawString</a> (const wchar_t *text, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;textColor, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;point, double rotationRadians, bool middle, float fontHeightPixels, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font)</td></tr>
 <tr class="separator:abe166e1f8c087dc41190149e1817738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1172ee441e5ddd6e00e44771ad4a61a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a1172ee441e5ddd6e00e44771ad4a61a3">DrawString</a> (const wchar_t *text, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;textColor, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;point, double rotationRadians, <a class="el" href="class_o_n.html#a0ecbf4c0cfa728f369714752fae40573">ON::TextHorizontalAlignment</a> horizontalAlignment, <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3">ON::TextVerticalAlignment</a> verticalAlignment, float fontHeightPixels, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, bool applyKerning)</td></tr>
+<tr class="separator:a1172ee441e5ddd6e00e44771ad4a61a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44f5d95702817a14d5815b0242438f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa44f5d95702817a14d5815b0242438f3">DrawString</a> (const wchar_t *text, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;textColor, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;point, <a class="el" href="class_o_n.html#a0ecbf4c0cfa728f369714752fae40573">ON::TextHorizontalAlignment</a> horizontalAlignment, <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3">ON::TextVerticalAlignment</a> verticalAlignment, float fontHeightPixels, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, bool applyKerning)</td></tr>
+<tr class="separator:aa44f5d95702817a14d5815b0242438f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780cc1397f22a29cff33cb108c0fbe61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a780cc1397f22a29cff33cb108c0fbe61">DrawString</a> (const wchar_t *text, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xf, const <a class="el" href="class_o_n___font.html">ON_Font</a> *font, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;color, <a class="el" href="class_o_n.html#a0ecbf4c0cfa728f369714752fae40573">ON::TextHorizontalAlignment</a> horizontalAlignment, <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3">ON::TextVerticalAlignment</a> verticalAlignment, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)=0</td></tr>
 <tr class="separator:a780cc1397f22a29cff33cb108c0fbe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5f1391d9824c40a411eda7f7f77a7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aab5f1391d9824c40a411eda7f7f77a7f">DrawSubD</a> (const class <a class="el" href="class_c_rhino_sub_d_display.html">CRhinoSubDDisplay</a> &amp;subd_display, const class <a class="el" href="class_c_rhino_sub_d_display_attributes.html">CRhinoSubDDisplayAttributes</a> &amp;subd_display_attributes)</td></tr>
@@ -305,6 +317,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73fd82672563eec4d785d4cc9c908497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a73fd82672563eec4d785d4cc9c908497">EnableShadows</a> (bool)</td></tr>
 <tr class="memdesc:a73fd82672563eec4d785d4cc9c908497"><td class="mdescLeft">&#160;</td><td class="mdescRight">New for V8 [end].  <a href="class_c_rhino_display_engine.html#a73fd82672563eec4d785d4cc9c908497">More...</a><br /></td></tr>
 <tr class="separator:a73fd82672563eec4d785d4cc9c908497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af8e8f77c1ebd8fbf2430ab8df43bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a6af8e8f77c1ebd8fbf2430ab8df43bb3">Fill2dDisplayPath</a> (const class CRhino2dDisplayPath &amp;path, const CRhinoDisplayBrush &amp;brush, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache)</td></tr>
+<tr class="separator:a6af8e8f77c1ebd8fbf2430ab8df43bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf90379fafc213bbc31da8f12894eaea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#adf90379fafc213bbc31da8f12894eaea">FlushAll</a> ()</td></tr>
 <tr class="separator:adf90379fafc213bbc31da8f12894eaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e755af6d6e661366d3599c1d2c0a08"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#ab9e755af6d6e661366d3599c1d2c0a08">FrameBufferBitDepth</a> ()</td></tr>
@@ -1961,6 +1975,121 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="abe28e4f16412b9d7b499f73a42ada894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe28e4f16412b9d7b499f73a42ada894">&#9670;&nbsp;</a></span>Draw2dCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::Draw2dCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___curve.html">ON_Curve</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayPen &amp;&#160;</td>
+          <td class="paramname"><em>pen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cacheHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>2d Drawing routines - all drawing is done to mimic traditional 2d display graphics APIs. Items are drawn in order with no depth testing in screen coordinates. Top-Left is 0,0 Description: Draw a curve whose coordinates are viewport pixels rather than world units. The origin is the top left of the frame and z is ignored. Parameters: curve: [in] the curve, in screen coordinates pen: [in] pen to stroke it with cacheHandle: [in] optional cache for the curve's display geometry </p>
+
+</div>
+</div>
+<a id="a41abf8c70039dbb66ca7b279d9967b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41abf8c70039dbb66ca7b279d9967b43">&#9670;&nbsp;</a></span>Draw2dDisplayPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::Draw2dDisplayPath </td>
+          <td>(</td>
+          <td class="paramtype">const class CRhino2dDisplayPath &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayPen &amp;&#160;</td>
+          <td class="paramname"><em>pen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b2c23507efc15616ef02c01669353db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2c23507efc15616ef02c01669353db">&#9670;&nbsp;</a></span>Draw2dLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::Draw2dLine </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>startX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>startY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>endX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>endY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayPen &amp;&#160;</td>
+          <td class="paramname"><em>pen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a439ab150766ddb9473c2e7d486866bfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a439ab150766ddb9473c2e7d486866bfe">&#9670;&nbsp;</a></span>Draw2dLines()</h2>
 
@@ -2033,6 +2162,46 @@ Friends</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#a172c79e69e74b9f5cf94b32969ceba69">CRhinoDisplayEngine_OGL</a>, and <a class="el" href="class_c_rhino_display_engine___g_d_i.html#abc3e0bc288a88952548036699819bc96">CRhinoDisplayEngine_GDI</a>.</p>
+
+</div>
+</div>
+<a id="ade512f54110203d2601e7ea35c543a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade512f54110203d2601e7ea35c543a4b">&#9670;&nbsp;</a></span>Draw2dPolyline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::Draw2dPolyline </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2f_point.html">ON_2fPoint</a> *&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const class CRhinoDisplayPen &amp;&#160;</td>
+          <td class="paramname"><em>pen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4048,7 +4217,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="af392fe36fe4e1ab480a8f5207f4a8041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af392fe36fe4e1ab480a8f5207f4a8041">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af392fe36fe4e1ab480a8f5207f4a8041">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4098,7 +4267,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aa6d6d88a0095df8a16aa1092cc8a1b77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d6d88a0095df8a16aa1092cc8a1b77">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d6d88a0095df8a16aa1092cc8a1b77">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4161,7 +4330,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="abe166e1f8c087dc41190149e1817738d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe166e1f8c087dc41190149e1817738d">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe166e1f8c087dc41190149e1817738d">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4218,8 +4387,143 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a1172ee441e5ddd6e00e44771ad4a61a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1172ee441e5ddd6e00e44771ad4a61a3">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawString </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>textColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rotationRadians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a0ecbf4c0cfa728f369714752fae40573">ON::TextHorizontalAlignment</a>&#160;</td>
+          <td class="paramname"><em>horizontalAlignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3">ON::TextVerticalAlignment</a>&#160;</td>
+          <td class="paramname"><em>verticalAlignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontHeightPixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___font.html">ON_Font</a> *&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>applyKerning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa44f5d95702817a14d5815b0242438f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44f5d95702817a14d5815b0242438f3">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::DrawString </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>textColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#a0ecbf4c0cfa728f369714752fae40573">ON::TextHorizontalAlignment</a>&#160;</td>
+          <td class="paramname"><em>horizontalAlignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3">ON::TextVerticalAlignment</a>&#160;</td>
+          <td class="paramname"><em>verticalAlignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fontHeightPixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___font.html">ON_Font</a> *&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>applyKerning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Draws text with specified color, font and height, with control over how the string is aligned on its definition point and over kerning. Parameters: text: [in] string to draw textColor: [in] text color point: [in] definition point that the alignment attaches to horizontalAlignment: [in] where point sits across the text's horizontal advance verticalAlignment: [in] where point sits down the text's lines fontHeightPixels: [in] height in pixels font: [in] font to use for font selection applyKerning: [in] true: use the font's kerning pairs to space the glyphs Remarks: <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3a7831575d0398d69b304861989bf62963">ON::TextVerticalAlignment::BottomOfTop</a> puts the first line's baseline on the definition point. <a class="el" href="class_o_n.html#aba3fe70d4361c458432bd6e5a690e6d3aa4ffdcf0dc1f31b9acaf295d75b51d00">ON::TextVerticalAlignment::Top</a> puts the top of a capital there, which is what the middle=false overloads above draw. Engines that do not implement kerned screen space text draw the string unkerned. </p>
+
+</div>
+</div>
 <a id="a780cc1397f22a29cff33cb108c0fbe61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780cc1397f22a29cff33cb108c0fbe61">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a780cc1397f22a29cff33cb108c0fbe61">&#9670;&nbsp;</a></span>DrawString() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4928,6 +5232,40 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>New for V8 [end]. </p>
+
+</div>
+</div>
+<a id="a6af8e8f77c1ebd8fbf2430ab8df43bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af8e8f77c1ebd8fbf2430ab8df43bb3">&#9670;&nbsp;</a></span>Fill2dDisplayPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayEngine::Fill2dDisplayPath </td>
+          <td>(</td>
+          <td class="paramtype">const class CRhino2dDisplayPath &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CRhinoDisplayBrush &amp;&#160;</td>
+          <td class="paramname"><em>brush</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -8683,7 +9021,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2026 18:34:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 8 2026 15:52:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -87,7 +87,8 @@ Inheritance diagram for ON_3dmObjectAttributes:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af8ec25f4d0d07a7633c05f2fd7f3bbf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5">UserDataType</a> { <a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5afb76c50cc5503dc1c25091fd2610a849">UserDataType::Decals</a>
+<tr class="memitem:af8ec25f4d0d07a7633c05f2fd7f3bbf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5">UserDataType</a> { <a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5afb76c50cc5503dc1c25091fd2610a849">UserDataType::Decals</a>, 
+<a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5ab1c94ca2fbc3e78fc30069c8d0f01680">UserDataType::All</a>
  }</td></tr>
 <tr class="separator:af8ec25f4d0d07a7633c05f2fd7f3bbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_o_n___object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_o_n___object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_o_n___object.html">ON_Object</a></td></tr>
@@ -505,7 +506,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Used by <a class="el" href="class_o_n__3dm_object_attributes.html#af9aa28d9aad2ba76e354787a1777dd17">UserDataChanged()</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8ec25f4d0d07a7633c05f2fd7f3bbf5afb76c50cc5503dc1c25091fd2610a849"></a>Decals&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8ec25f4d0d07a7633c05f2fd7f3bbf5afb76c50cc5503dc1c25091fd2610a849"></a>Decals&#160;</td><td class="fielddoc"><p>Decal user data was changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8ec25f4d0d07a7633c05f2fd7f3bbf5ab1c94ca2fbc3e78fc30069c8d0f01680"></a>All&#160;</td><td class="fielddoc"><p>The user data was replaced wholesale and the caller does not know what changed. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2806,7 +2810,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This method should be called to notify the object that some user data has been changed. At the moment, this is only used by decals. </p>
+<p>Description: This method should be called to notify the object that some user data has been changed. At the moment, this is only used by decals. Callers that replace the user data without knowing what was in it should pass <a class="el" href="class_o_n__3dm_object_attributes.html#af8ec25f4d0d07a7633c05f2fd7f3bbf5ab1c94ca2fbc3e78fc30069c8d0f01680" title="The user data was replaced wholesale and the caller does not know what changed.">UserDataType::All</a>. </p>
 
 </div>
 </div>
@@ -3130,7 +3134,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2026 18:34:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 8 2026 15:52:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

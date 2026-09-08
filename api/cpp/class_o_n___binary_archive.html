@@ -9495,7 +9495,7 @@ Friends</h2></td></tr>
 <p>Parameters: version - [in] 0, 2, 3, 4, 5, 50 or 60 (5 is treated as 50)</p>
 <p>If version is 0, then the value of <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> is used.</p>
 <p>Use either 0 or the value of <a class="el" href="class_o_n___binary_archive.html#a29788efc3c02dfbc2b11c715389e2141">ON_BinaryArchive::CurrentArchiveVersion()</a> for the version parameter when you want your code to write the most up to date file version.</p>
-<p>sStartSectionComment - [in] nullptr or a UTF-8 encoded string with application name, et cetera. This information is primarily used when debugging files that contain problems. McNeel and Associates stores application name, application version, compile date, and the OS in use when file was written. </p>
+<p>sStartSectionComment - [in] nullptr or a UTF-8 encoded string with application name, et cetera. This information is primarily used when debugging files that contain problems. McNeel and Associates stores application name, application version, compile date, and the OS in use when file was written. Remarks: A line naming the openNURBS build doing the writing is appended to sStartSectionComment. Any such line already at the end of sStartSectionComment is removed first, so a caller that reads a file and writes it back out - passing the comment Read3dmStartSection returned - gets one line naming the current build rather than one more line each time. </p>
 
 </div>
 </div>
@@ -11684,7 +11684,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2026 18:34:36 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 8 2026 15:52:39 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

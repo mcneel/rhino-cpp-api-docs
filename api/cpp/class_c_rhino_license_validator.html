@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_rhino_license_validator-members.html">List of all members</a>  </div>
@@ -114,6 +115,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4cdc5e5cdcf8d8e0210c307bbea4c402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24cb329e5302d9e07067fa1e1d39d035"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_license_validator.html#a24cb329e5302d9e07067fa1e1d39d035">VerifyPreviousVersionLicense</a> (const wchar_t *license, const wchar_t *previousVersionLicense)=0</td></tr>
 <tr class="separator:a24cb329e5302d9e07067fa1e1d39d035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2dd0c69b603e82e4d0e1632fc76a7747"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_license_validator.html#a2dd0c69b603e82e4d0e1632fc76a7747">IsLiveValidator</a> (const <a class="el" href="class_c_rhino_license_validator.html">CRhinoLicenseValidator</a> *validator)</td></tr>
+<tr class="separator:a2dd0c69b603e82e4d0e1632fc76a7747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -245,6 +251,33 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2dd0c69b603e82e4d0e1632fc76a7747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd0c69b603e82e4d0e1632fc76a7747">&#9670;&nbsp;</a></span>IsLiveValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoLicenseValidator::IsLiveValidator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_license_validator.html">CRhinoLicenseValidator</a> *&#160;</td>
+          <td class="paramname"><em>validator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Tests a <a class="el" href="class_c_rhino_license_validator.html">CRhinoLicenseValidator</a> pointer to see if it still references a validator that has not been destroyed. Rhino Accounts hangs on to the lease changed callback a plug-in supplied when it asked for a license, and that callback outlives a validator owned by a plug-in that failed to load or that was unloaded. Parameters: validator - [in] The pointer to test. NULL is allowed. Returns: True if validator points at a <a class="el" href="class_c_rhino_license_validator.html">CRhinoLicenseValidator</a> that is still alive. </p>
+
+</div>
+</div>
 <a id="ad26f1f26af274b14cc97dc049220f23b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad26f1f26af274b14cc97dc049220f23b">&#9670;&nbsp;</a></span>OnLeaseChanged()</h2>
 
@@ -642,7 +675,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2026 18:34:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 8 2026 15:52:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -6968,7 +6968,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Return file version extracted by <a class="el" href="class_c_rhino_doc.html#a26129bebc9199d8c94997679760a571f">CRhinoDoc::Read3DM()</a>. Will not return values from referenced or merged files. Returns: Less than zero means no file has bee read otherwise 1 (V1.x), 2( V2.x) or 3 See Also: <a class="el" href="class_c_rhino_doc.html#a26129bebc9199d8c94997679760a571f">CRhinoDoc::Read3DM</a> </p>
+<p>Description: Return the major version of Rhino that wrote the .3dm file this document was read from. Will not return values from referenced or merged files. Returns: The Rhino major version (1, 2, 3, ... 8, 9) or -1 if this document was not read from a .3dm file. Remarks: This is the Rhino version, not the opennurbs 3dm archive version. A file written by Rhino 8 returns 8, not 80. Compare with Rhino.FileIO.File3dm.ReadArchiveVersion(), which returns the archive version (1, 2, 3, 4, 5, 50, 60, 70, 80, ...) for a file on disk. A document created by "New" reports -1 even when a template was read. See Also: <a class="el" href="class_c_rhino_doc.html#a26129bebc9199d8c94997679760a571f">CRhinoDoc::Read3DM</a> <a class="el" href="class_c_rhino_file_utilities.html#a5e0ab61ec687172f551df04e61e2ea4a">CRhinoFileUtilities::FileIsRhino3dm</a> </p>
 
 </div>
 </div>
@@ -10543,7 +10543,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2026 18:34:16 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 8 2026 15:52:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
