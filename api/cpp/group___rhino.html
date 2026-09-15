@@ -1288,7 +1288,8 @@ Macros</h2></td></tr>
 <tr class="separator:gaeb560a9ffe80e813d78358b2088a5464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1ff3fc3cd8de4fa35ec5f61963d6186"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab1ff3fc3cd8de4fa35ec5f61963d6186">RHINO_SDK_LINUX_VERSION</a>&#160;&#160;&#160;<a class="el" href="group___rhino.html#gae45d077b4c262e2fca34e27a1cdfc969">RHINO_SDK_SERVICE_RELEASE</a></td></tr>
 <tr class="separator:gab1ff3fc3cd8de4fa35ec5f61963d6186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa75ddc21aa1a25af37d7c8877605e06d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaa75ddc21aa1a25af37d7c8877605e06d">RHINO_SDK_OSX_VERSION</a>&#160;&#160;&#160;<a class="el" href="group___rhino.html#gae45d077b4c262e2fca34e27a1cdfc969">RHINO_SDK_SERVICE_RELEASE</a></td></tr>
+<tr class="memitem:gaa75ddc21aa1a25af37d7c8877605e06d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaa75ddc21aa1a25af37d7c8877605e06d">RHINO_SDK_OSX_VERSION</a>&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gacc013da2e83d0c6520edd7f6f5c2c623">ON_VERSION_NUMBER_CTOR</a>(9, 0, 2026, 9, 12, 1 )</td></tr>
+<tr class="memdesc:gaa75ddc21aa1a25af37d7c8877605e06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apple OS X SDK version number.  <a href="group___rhino.html#gaa75ddc21aa1a25af37d7c8877605e06d">More...</a><br /></td></tr>
 <tr class="separator:gaa75ddc21aa1a25af37d7c8877605e06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab5de7a6280a6038e7ffaed0241771dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab5de7a6280a6038e7ffaed0241771dec">RHINO_SDK_PLUG_IND_DECLARE_INC_</a></td></tr>
 <tr class="separator:gab5de7a6280a6038e7ffaed0241771dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3045,6 +3046,10 @@ Functions</h2></td></tr>
 <tr class="separator:gadcbeef4204ef34da6062203f12f2076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a3731547e5139d070e6b952e76e1030"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga2a3731547e5139d070e6b952e76e1030">RhinoJoinEdges</a> (<a class="el" href="class_o_n___brep.html">ON_Brep</a> &amp;brep, int edge_index0, int edge_index1, double tolerance, bool bCompact)</td></tr>
 <tr class="separator:ga2a3731547e5139d070e6b952e76e1030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5361602611c08816279033a79e4769ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga5361602611c08816279033a79e4769ea">RhinoJoinMeshes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshes, bool bSplitDisjointPieces, bool bAlignNakedEdges, double alignDistance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;joinedMeshes, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *pieceSourceIndices=nullptr, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt;&gt; *pieceInputIndices=nullptr)</td></tr>
+<tr class="separator:ga5361602611c08816279033a79e4769ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73b304a08de4fd0724cb7f6cf3f5f8c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga73b304a08de4fd0724cb7f6cf3f5f8c6">RhinoJoinMeshesPreservingVertexAttributes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshes, <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;joinedMesh)</td></tr>
+<tr class="separator:ga73b304a08de4fd0724cb7f6cf3f5f8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16385416981f8c685d5dd79ae3fd7650"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga16385416981f8c685d5dd79ae3fd7650">RhinoJoinSubDs</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;input_subds, double join_tolerance, bool bSubDJoinedEdgesAreCreases, bool bPermitNonmanifoldSubD, bool bPreserveSymmetry, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;output_subds)</td></tr>
 <tr class="separator:ga16385416981f8c685d5dd79ae3fd7650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8d54eff463f51667ff2adff3ec1438f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gac8d54eff463f51667ff2adff3ec1438f">RhinoJoinSubDs</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;input_subds, double join_tolerance, bool bSubDJoinedEdgesAreCreases, bool bPermitNonmanifoldSubD, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___sub_d.html">ON_SubD</a> * &gt; &amp;output_subds)</td></tr>
@@ -3140,6 +3145,8 @@ Functions</h2></td></tr>
 <tr class="separator:gab60614c088fb7ebbd3726b981b10fdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ddcb257eceb3afb8bd638824e2173f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> <a class="el" href="class_o_n___brep.html">ON_Brep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga4ddcb257eceb3afb8bd638824e2173f2">RhinoMergeSrf</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *in_brep0, const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *in_brep1, double tolerance, double angtolrads, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> *pick_point0=nullptr, const <a class="el" href="class_o_n__2d_point.html">ON_2dPoint</a> *pick_point1=nullptr, double roundness=1.0, bool smooth=true)</td></tr>
 <tr class="separator:ga4ddcb257eceb3afb8bd638824e2173f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae46d2e4d220c0c27a8b6dbcc010386d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gae46d2e4d220c0c27a8b6dbcc010386d7">RhinoMeshAddMissingVertexAttributes</a> (<a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh, bool bVertexNormals, bool bTextureCoordinates, bool bVertexColors, bool bPrincipalCurvatures, int cachedTextureCoordinateCount)</td></tr>
+<tr class="separator:gae46d2e4d220c0c27a8b6dbcc010386d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c10cf332f11f026fb97d9ff33937f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga1c10cf332f11f026fb97d9ff33937f32">RhinoMeshBooleanDifference</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;InMeshes0, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;InMeshes1, double Intersection_Tolerance, double Overlap_Tolerance, bool *something_happened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;OutMeshes, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> * &gt; *InputAttributeArray, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> * &gt; *OuputAttributeArray, <a class="el" href="class_c_rhino_mesh_boolean_options.html">CRhinoMeshBooleanOptions</a> *options)</td></tr>
 <tr class="separator:ga1c10cf332f11f026fb97d9ff33937f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab51570be5afb60e8b0a72d1a800feb6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gab51570be5afb60e8b0a72d1a800feb6e">RhinoMeshBooleanDifference</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;InMeshes0, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;InMeshes1, double Intersection_Tolerance, double Overlap_Tolerance, bool *something_happened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;OutMeshes, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> * &gt; *InputAttributeArray=0, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a> * &gt; *OuputAttributeArray=0)</td></tr>
@@ -6011,11 +6018,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RHINO_SDK_OSX_VERSION&#160;&#160;&#160;<a class="el" href="group___rhino.html#gae45d077b4c262e2fca34e27a1cdfc969">RHINO_SDK_SERVICE_RELEASE</a></td>
+          <td class="memname">#define RHINO_SDK_OSX_VERSION&#160;&#160;&#160;<a class="el" href="group__open_n_u_r_b_s.html#gacc013da2e83d0c6520edd7f6f5c2c623">ON_VERSION_NUMBER_CTOR</a>(9, 0, 2026, 9, 12, 1 )</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Apple OS X SDK version number When the Rhino SDK is frozen, this number will be hard coded. Until then, it will increase each time the build system increments the build version numbers. </p>
+
+<p>Apple OS X SDK version number. </p>
 
 </div>
 </div>
@@ -6098,8 +6106,7 @@ Variables</h2></td></tr>
 <p>SDK is frozen when the definition of RHINO_SDK_WINDOWS_VERSION is a hardcoded number. </p>
 <p>Windows SDK version number. When the Rhino SDK is frozen, this number will be hard coded. Until then, it will increase each time the build system increments the build version numbers. The Rhino Windows C++ SDK is currently "frozen" at Rhino 6.0 2017 August 15.</p>
 <p>NOTE WELL: It is intentional that the values of RHINO_SDK_WINDOWS_VERSION for Rhino 6, 7, 8 and 9 are identical.</p>
-<p>The Rhino 7, 8 and 9 SDK is an extended version of the Rhino 6 SDK. Rhino 7, 8 and 9 load Rhino 6.* plug-ins. Thus, the Rhino 6, 7, 8 and 9 have identical values for RHINO_SDK_WINDOWS_VERSION. Use RHINO_SDK_SERVICE_RELEASE to determine which extension of the basic SDK is being used.</p>
-<p>There is not a public Apple OSX C++ SDK. Rhino for Mac C++ plug-ins are built and distributed by McNeel and the version numbers for those plug-ins are handled in a different manner. </p>
+<p>The Rhino 7, 8 and 9 SDK is an extended version of the Rhino 6 SDK. Rhino 7, 8 and 9 load Rhino 6.* plug-ins. Thus, the Rhino 6, 7, 8 and 9 have identical values for RHINO_SDK_WINDOWS_VERSION. Use RHINO_SDK_SERVICE_RELEASE to determine which extension of the basic SDK is being used. </p>
 
 </div>
 </div>
@@ -21570,7 +21577,7 @@ template&lt;typename Callback &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Dolly the camera location and so that the view frustum contains the list of objects and the objects are as large as possible. If the projection is perspective, the camera angle is not changed. Parameters: it - [in] list of objects that need to be seen in the view. current_vp - [in] current projection - must be valid. border - [in] If border &gt; 1.0, then the frustum in enlarged by this factor to provide a border around the view. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. zoomed_vp - [out] (can be the same as current_vp) projection with a view frustum that contains the list of objects. extra_points - [in] (default = NULL) optional list of world 3d points that need to be included in the view. camcoord_bbox - [out] (default = NULL) will be set to the camera coordinate bounding used to compute the extents with respect to the viewport Returns: True if successful. Remarks: This version of RhinoDollyExtents calculates a tight camera coordinate bounding box of the list of objects and calls</p>
+<p>Description: Dolly the camera location and so that the view frustum contains the list of objects and the objects are as large as possible. If the projection is perspective, the camera angle is not changed. Parameters: it - [in] list of objects that need to be seen in the view. current_vp - [in] current projection - must be valid. border - [in] If border &gt; 1.0, then the frustum is enlarged by this factor to provide a border around the view. If 0.0 &lt; border &lt; 1.0, then the frustum is shrunk by this factor and the objects will extend past the edges of the view. A border of 0.0 or 1.0 adds no border. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. zoomed_vp - [out] (can be the same as current_vp) projection with a view frustum that contains the list of objects. extra_points - [in] (default = NULL) optional list of world 3d points that need to be included in the view. camcoord_bbox - [out] (default = NULL) will be set to the camera coordinate bounding used to compute the extents with respect to the viewport Returns: True if successful. Remarks: This version of RhinoDollyExtents calculates a tight camera coordinate bounding box of the list of objects and calls</p>
 <p>RhinoDollyExtents( current_vp, camcoord_bbox, zoomed_vp )</p>
 <p>to calculate the new projection. </p>
 
@@ -21630,7 +21637,7 @@ template&lt;typename Callback &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Dolly the camera location and so that the view frustum contains all of the document objects that can be seen in view. If the projection is perspective, the camera angle is not changed. Parameters: viewport - [in/out] border - [in] If border &gt; 1.0, then the frustum in enlarged by this factor to provide a border around the view. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. Returns: True if successful. Remarks: This version of RhinoDollyExtents sets up an appropriate iterator and uses:</p>
+<p>Description: Dolly the camera location and so that the view frustum contains all of the document objects that can be seen in view. If the projection is perspective, the camera angle is not changed. Parameters: viewport - [in/out] border - [in] If border &gt; 1.0, then the frustum is enlarged by this factor to provide a border around the view. If 0.0 &lt; border &lt; 1.0, then the frustum is shrunk by this factor and the objects will extend past the edges of the view. A border of 0.0 or 1.0 adds no border. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. Returns: True if successful. Remarks: This version of RhinoDollyExtents sets up an appropriate iterator and uses:</p>
 <p>RhinoDollyExtents( iterator, viewport.VP(), border, viewport.VP() )</p>
 <p>to calculate the new projection. </p>
 
@@ -21725,7 +21732,7 @@ template&lt;typename Callback &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Dolly the camera location and so that the view frustum contains all of the selected document objects that can be seen in view. If the projection is perspective, the camera angle is not changed. Parameters: viewport - [in/out] border - [in] If border &gt; 1.0, then the frustum in enlarged by this factor to provide a border around the view. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. Returns: True if successful. Remarks: This version of RhinoDollyExtentsSelected sets up an appropriate iterator and uses</p>
+<p>Description: Dolly the camera location and so that the view frustum contains all of the selected document objects that can be seen in view. If the projection is perspective, the camera angle is not changed. Parameters: viewport - [in/out] border - [in] If border &gt; 1.0, then the frustum is enlarged by this factor to provide a border around the view. If 0.0 &lt; border &lt; 1.0, then the frustum is shrunk by this factor and the objects will extend past the edges of the view. A border of 0.0 or 1.0 adds no border. 1.1 works well for parallel projections; 0.0 is suggested for perspective projections. Returns: True if successful. Remarks: This version of RhinoDollyExtentsSelected sets up an appropriate iterator and uses</p>
 <p>RhinoDollyExtents( iterator, viewport.VP(), border, viewport.VP() )</p>
 <p>to calculate the new projection. </p>
 
@@ -27955,6 +27962,96 @@ template&lt;typename Callback &gt; </div>
 
 </div>
 </div>
+<a id="ga5361602611c08816279033a79e4769ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5361602611c08816279033a79e4769ea">&#9670;&nbsp;</a></span>RhinoJoinMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> int RhinoJoinMeshes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSplitDisjointPieces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAlignNakedEdges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alignDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>joinedMeshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>pieceSourceIndices</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>pieceInputIndices</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Joins meshes the way the Join command does, without needing a document: vertex attributes are preserved across the inputs, naked edges are optionally pulled together, and the result is optionally handed back as one mesh per connected piece. Parameters: meshes - [in] Meshes to join. Null entries are skipped. bSplitDisjointPieces- [in] True to return one mesh per connected piece rather than a single mesh. An input that was already disjoint before the join is passed through untouched, so joining does not break it apart (RH-30778). bAlignNakedEdges - [in] True to pull naked edges within alignDistance together after appending, which is what actually welds a shared border. alignDistance - [in] Distance for that alignment. Ignored when bAlignNakedEdges is false. joinedMeshes - [out] Results are appended. The caller owns and must delete them. pieceSourceIndices - [out] Optional, parallel to the appended results: the index in meshes[] of the first input that contributed to each piece. Callers carrying per-object attributes take them from this one. pieceInputIndices - [out] Optional, parallel to the appended results: every index in meshes[] that contributed to each piece, sorted and without duplicates. Returns: Number of meshes appended to joinedMeshes. </p>
+
+</div>
+</div>
+<a id="ga73b304a08de4fd0724cb7f6cf3f5f8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73b304a08de4fd0724cb7f6cf3f5f8c6">&#9670;&nbsp;</a></span>RhinoJoinMeshesPreservingVertexAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoJoinMeshesPreservingVertexAttributes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>joinedMesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Appends meshes into one, keeping every per-vertex attribute that at least one of them carries. A mesh that does not carry an attribute the others do is given placeholder values for it, so a single mesh without vertex colors no longer costs the result the colors of all the others. An attribute none of them carries is left off the result.</p>
+<p>Parameters: meshes - [in] Meshes to append together. Null entries are skipped. joinedMesh - [in/out] The meshes are appended to this one, which is normally empty on the way in.</p>
+<p>Returns: True if at least one mesh was appended. </p>
+
+</div>
+</div>
 <a id="ga16385416981f8c685d5dd79ae3fd7650"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga16385416981f8c685d5dd79ae3fd7650">&#9670;&nbsp;</a></span>RhinoJoinSubDs() <span class="overload">[1/2]</span></h2>
 
@@ -29801,6 +29898,60 @@ template&lt;typename Callback &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Description: Merges two surfaces into one surface at untrimmed edges. Both surfaces must be untrimmed and share an edge. Parameters: in_brep0 - [in] The first single-face Brep to merge. in_brep1 - [in] The second single-face Brep to merge. tolerance - [in] Surface edges must be within this tolerance for the two surfaces to merge. angtolrads - [in] Edge must be within this angle tolerance in order for contiguous edges to be combined into a single edge. pick_point0 - [in] 2-D pick point on the first single-face Brep (optional). pick_point1 - [in] 2-D pick point on the second single-face Brep (optional). roundness - [in] Defines the roundness of the merge. The default is 1.0 (full smoothing). Acceptable values are between 0.0 (sharp) and 1.0 (smooth). smooth - [in] The surface will be smooth. This makes the surface behave better for control point editing, but may alter the shape of both surfaces. Returns: The merged Brep is successful, 0 if not successful. Remarks: THE CALLER IS RESPONSIBLE FOR DESTROYING THE RETURNED BREP. </p>
+
+</div>
+</div>
+<a id="gae46d2e4d220c0c27a8b6dbcc010386d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae46d2e4d220c0c27a8b6dbcc010386d7">&#9670;&nbsp;</a></span>RhinoMeshAddMissingVertexAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> void RhinoMeshAddMissingVertexAttributes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bVertexNormals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bTextureCoordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bVertexColors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPrincipalCurvatures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cachedTextureCoordinateCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Gives a mesh the per-vertex attributes asked for, using placeholder values where the mesh has nothing of its own to supply. Appending meshes together keeps a per-vertex attribute only when every one of them has it, so meshes about to be appended need to agree on which ones they carry. Vertex normals are computed; the other attributes are filled with placeholders.</p>
+<p>Parameters: mesh - [in/out] Mesh to add the missing attributes to. bVertexNormals - [in] Compute vertex normals if the mesh has none. bTextureCoordinates - [in] Add texture coordinates if the mesh has none. bVertexColors - [in] Add vertex colors if the mesh has none. bPrincipalCurvatures - [in] Add principal curvatures if the mesh has none. cachedTextureCoordinateCount - [in] Number of cached texture coordinate sets the mesh should end up with. Pass 0 to leave the cached sets alone. </p>
 
 </div>
 </div>
@@ -39964,7 +40115,7 @@ for(;;)
 <li>Matches shape curve directions and (for closed shapes) seam points before sweeping, which prevents twisting,</li>
 <li>Detects when the inputs qualify for a "simple sweep" and creates a simpler surface in this case,</li>
 <li>Lets the caller pick between the refit-rail and segmented sweep paths,</li>
-<li>Splits the resulting Breps at fully multiple knots, matching what the command does before adding the surface to the document. Parameters: output_surfaces - [out] The results of the sweep. NOTE: THE CALLER IS RESPONSIBLE FOR DESTROYING THESE OBJECTS. pRailCurve - [in] Rail curve. If the rail is a <a class="el" href="class_c_rhino_poly_edge.html">CRhinoPolyEdge</a> that contains surface edges and frame_type == 2, frames will track the underlying surface (AlignWithSurface). shapes - [in] Shape curves. Will be sorted along the rail. All shapes must be either all open or all closed; mixed input is rejected. start_point - [in] Optional start point. Pass <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> to ignore. end_point - [in] Optional end point. Pass <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> to ignore. frame_type - [in] 0 = freeform, 1 = roadlike, 2 = AlignWithSurface. AlignWithSurface requires pRailCurve to be a <a class="el" href="class_c_rhino_poly_edge.html">CRhinoPolyEdge</a> containing surface edges; otherwise it falls back to roadlike. roadlike_normal - [in] Up direction for the roadlike (or AlignWithSurface fallback) frame style. Pass <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a> to ignore. bClosed - [in] Only matters if the rail is closed. blend_type - [in] 0 = local, 1 = global. miter_type - [in] 0 = none, 1 = trimmed, 2 = untrimmed miters. tolerance - [in] Sweep tolerance. angle_tolerance - [in] Angle tolerance, in radians. rebuild_mode - [in] 0 = no rebuild, 1 = rebuild through points, 2 = refit to tolerance. rebuild_points - [in] If rebuild_mode == 1, the number of points; otherwise 0. refit_tolerance - [in] If rebuild_mode == 2, the refit tolerance; otherwise 0.0. bRefitRail - [in] false = segmented sweep (matches the command default), true = refit-rail sweep. Returns: true if successful, false otherwise. </li>
+<li>Splits the resulting Breps at fully multiple knots, matching what the command does before adding the surface to the document. Parameters: output_surfaces - [out] The results of the sweep. NOTE: THE CALLER IS RESPONSIBLE FOR DESTROYING THESE OBJECTS. pRailCurve - [in] Rail curve. If the rail is a <a class="el" href="class_c_rhino_poly_edge.html">CRhinoPolyEdge</a> that contains surface edges and frame_type == 2, frames will track the underlying surface (AlignWithSurface). shapes - [in] Shape curves. Will be sorted along the rail. All shapes must be either all open or all closed; mixed input is rejected. start_point - [in] Optional start point. Pass <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> to ignore. end_point - [in] Optional end point. Pass <a class="el" href="class_o_n__3d_point.html#aa68906e3e7650b01ce88c527f6088d7d" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dPoint::UnsetPoint</a> to ignore. frame_type - [in] 0 = freeform, 1 = roadlike, 2 = AlignWithSurface. AlignWithSurface requires pRailCurve to be a <a class="el" href="class_c_rhino_poly_edge.html">CRhinoPolyEdge</a> containing surface edges; otherwise it falls back to freeform. roadlike_normal - [in] Up direction for the roadlike frame style. Pass <a class="el" href="class_o_n__3d_vector.html#aa62d84d9817922de5f60ef3b057ed0be" title="(ON_UNSET_VALUE,ON_UNSET_VALUE,ON_UNSET_VALUE)">ON_3dVector::UnsetVector</a> to use the world z-axis. bClosed - [in] Only matters if the rail is closed. blend_type - [in] 0 = local, 1 = global. miter_type - [in] 0 = none, 1 = trimmed, 2 = untrimmed miters. tolerance - [in] Sweep tolerance. angle_tolerance - [in] Angle tolerance, in radians. rebuild_mode - [in] 0 = no rebuild, 1 = rebuild through points, 2 = refit to tolerance. rebuild_points - [in] If rebuild_mode == 1, the number of points; otherwise 0. refit_tolerance - [in] If rebuild_mode == 2, the refit tolerance; otherwise 0.0. bRefitRail - [in] false = segmented sweep (matches the command default), true = refit-rail sweep. Returns: true if successful, false otherwise. </li>
 </ul>
 
 </div>
@@ -42908,7 +43059,7 @@ for(;;)
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns true if the input curves support matched parameterization for untrimmed patch.Parameters: edges [in] - constraint edges. tolerance [in] - tolerance to check if edges meet at start/end Returns: true if the input curves support matched parameterization </p>
+<p>Description: Returns true if the input curves support matched parameterization for untrimmed patch. Parameters: edges [in] - constraint edges. tolerance [in] - tolerance to check if edges meet at start/end Returns: true if the input curves support matched parameterization </p>
 
 </div>
 </div>
@@ -43555,7 +43706,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:29:55 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

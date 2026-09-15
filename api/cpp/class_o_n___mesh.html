@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3c0198c652c36b53f12c0d74cd595fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae777b88e5fabcbc1c30be351f6fc66ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ae777b88e5fabcbc1c30be351f6fc66ef">Append</a> (int count, const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *meshes)</td></tr>
 <tr class="separator:ae777b88e5fabcbc1c30be351f6fc66ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf0df20007b4d3558059fdcee530c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#acaf0df20007b4d3558059fdcee530c3a">Append</a> (int count, const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *meshes, bool bBackFillMissingVertexAttributes)</td></tr>
+<tr class="memdesc:acaf0df20007b4d3558059fdcee530c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Back fill uses <a class="el" href="class_o_n__2f_point.html#aca0217425843178e12fdbf1484b38e52" title="(ON_FLT_QNAN,ON_FLT_QNAN)">ON_2fPoint::NanPoint</a>, zero curvature and <a class="el" href="class_o_n___color.html#a54c9448a0e7a53032cdb7f111163aca9" title="0xFFFFFFFFu">ON_Color::UnsetColor</a>; it never applies to m_S, and m_N is computed when missing whatever it is set to.  <a href="class_o_n___mesh.html#acaf0df20007b4d3558059fdcee530c3a">More...</a><br /></td></tr>
+<tr class="separator:acaf0df20007b4d3558059fdcee530c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6251854405ebc7d9ce5a9fab10991c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a6251854405ebc7d9ce5a9fab10991c21">Append</a> (std::vector&lt; std::shared_ptr&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &gt;&gt;)</td></tr>
 <tr class="separator:a6251854405ebc7d9ce5a9fab10991c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16aa24cbbaec4719b4d8c769c3c228a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ad16aa24cbbaec4719b4d8c769c3c228a">AppendDuplicateVertex</a> (unsigned int vertex_index)</td></tr>
@@ -606,6 +609,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a59e152a0038bf5a96071b5c6ff3a2ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac1b6eec5e11ecc564037ddd342af32e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aac1b6eec5e11ecc564037ddd342af32e">Split</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter) const</td></tr>
 <tr class="separator:aac1b6eec5e11ecc564037ddd342af32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8941c12a59182003cba45abe84a3518"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ae8941c12a59182003cba45abe84a3518">Split</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter, bool completeOpenCuts) const</td></tr>
+<tr class="separator:ae8941c12a59182003cba45abe84a3518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeef1def75cbb217774504d1f8155467"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#afeef1def75cbb217774504d1f8155467">SplitNon2Manifolds</a> (bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter) const</td></tr>
 <tr class="separator:afeef1def75cbb217774504d1f8155467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a137c9bd26335e1ba37d285ca88169"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ab7a137c9bd26335e1ba37d285ca88169">SwapCoordinates</a> (int, int) override</td></tr>
@@ -803,6 +808,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2a384ec8eed2f6a7316750618c393c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787131c36a85439f7a15cbff46a81b73"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a787131c36a85439f7a15cbff46a81b73">SplitArray</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesToSplit, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter)</td></tr>
 <tr class="separator:a787131c36a85439f7a15cbff46a81b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20a56ebe42cec69a5910306f05185ee"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ac20a56ebe42cec69a5910306f05185ee">SplitArray</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesToSplit, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter, bool completeOpenCuts)</td></tr>
+<tr class="separator:ac20a56ebe42cec69a5910306f05185ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1324,7 +1331,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a3c0198c652c36b53f12c0d74cd595fb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c0198c652c36b53f12c0d74cd595fb3">&#9670;&nbsp;</a></span>Append() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0198c652c36b53f12c0d74cd595fb3">&#9670;&nbsp;</a></span>Append() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1343,7 +1350,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ae777b88e5fabcbc1c30be351f6fc66ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae777b88e5fabcbc1c30be351f6fc66ef">&#9670;&nbsp;</a></span>Append() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae777b88e5fabcbc1c30be351f6fc66ef">&#9670;&nbsp;</a></span>Append() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1371,8 +1378,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="acaf0df20007b4d3558059fdcee530c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf0df20007b4d3558059fdcee530c3a">&#9670;&nbsp;</a></span>Append() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_Mesh::Append </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> *const *&#160;</td>
+          <td class="paramname"><em>meshes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bBackFillMissingVertexAttributes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Back fill uses <a class="el" href="class_o_n__2f_point.html#aca0217425843178e12fdbf1484b38e52" title="(ON_FLT_QNAN,ON_FLT_QNAN)">ON_2fPoint::NanPoint</a>, zero curvature and <a class="el" href="class_o_n___color.html#a54c9448a0e7a53032cdb7f111163aca9" title="0xFFFFFFFFu">ON_Color::UnsetColor</a>; it never applies to m_S, and m_N is computed when missing whatever it is set to. </p>
+
+</div>
+</div>
 <a id="a6251854405ebc7d9ce5a9fab10991c21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6251854405ebc7d9ce5a9fab10991c21">&#9670;&nbsp;</a></span>Append() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6251854405ebc7d9ce5a9fab10991c21">&#9670;&nbsp;</a></span>Append() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8093,7 +8136,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aac1b6eec5e11ecc564037ddd342af32e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac1b6eec5e11ecc564037ddd342af32e">&#9670;&nbsp;</a></span>Split()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1b6eec5e11ecc564037ddd342af32e">&#9670;&nbsp;</a></span>Split() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8162,13 +8205,90 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Splits the current mesh and returns the split result. If nothing happened, the current mesh is not copied. Instead, somethingHappened is set to false. Parameters: meshesThatSplit - [in] The mesh splitters. nullptr entries are tolerated. tolerance - [in] A 3d-distance tolerance value. If tolerance is:</p><ul>
 <li>negative: the positive value will be used.</li>
 <li>0.0: no tolerance will be used. This is rarely useful, and only in cases where perforations intersections happen inside faces, and/or there is coplanarity parallel to one of the three fundamental axes.</li>
-<li>ON_DBL_QNAN, ON_UNSET_VALUE and ON_UNSET_POSITIVE_VALUE: the function picks a suitable, or default, tolerance value. WARNING! Generally, good tolerance values for objects drawn near the origin are in the magnitude of 10^-7, or ON_SQRT_EPSILON * 10. Often, the document absolute tolerance is not a good tolerance value. You might use a fractional coefficient to scale the document tolerance to a suitable value, while accepting a user-provided value. This function expects that each mesh conforms to the tolerance that is provided, and that means that features in the mesh are always larger than the mentioned tolerance. Coplanar gaps between meshes that are smaller than tolerance are overlaps. somethingHappened - [out] If not nullptr, informs the caller if the mesh was actually hit by anything. results - [out] This array will be filled with the split result. If nothing happened, the current mesh is not copied. log - [out] If not nullptr, intersection warnings and errors are printed here. If the intersection runs smoothly, nothing will be printed. cancel - [out] If not nullptr, a trigger to request termination. When cancellation is requested, the return value will often be false. You are responsible to delete new objects that were returned, even if you requested cancellation. reporter - [out] If not nullptr, an indicative progress is reported. Returns: true if the computation finished successfully, false otherwise. </li>
+<li>ON_DBL_QNAN, ON_UNSET_VALUE and ON_UNSET_POSITIVE_VALUE: the function picks a suitable, or default, tolerance value. WARNING! Generally, good tolerance values for objects drawn near the origin are in the magnitude of 10^-7, or ON_SQRT_EPSILON * 10. Often, the document absolute tolerance is not a good tolerance value. You might use a fractional coefficient to scale the document tolerance to a suitable value, while accepting a user-provided value. This function expects that each mesh conforms to the tolerance that is provided, and that means that features in the mesh are always larger than the mentioned tolerance. Coplanar gaps between meshes that are smaller than tolerance are overlaps. somethingHappened - [out] If not nullptr, informs the caller if the mesh was actually hit by anything. results - [out] This array will be filled with the split result. If nothing happened, the current mesh is not copied. log - [out] If not nullptr, intersection warnings and errors are printed here. If the intersection runs smoothly, nothing will be printed. completeOpenCuts - [in] An intersection curve that stops inside the mesh does not separate one side from the other, so the mesh is returned whole. If true, each such open end is joined to the nearest border of the mesh, or to another cut, following edges the mesh already has. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows existing edges rather than the splitters, so it is not an intersection result. No vertex is moved and no face is added. Cuts that already close, or that already run from border to border, are unaffected. Defaults to false. cancel - [out] If not nullptr, a trigger to request termination. When cancellation is requested, the return value will often be false. You are responsible to delete new objects that were returned, even if you requested cancellation. reporter - [out] If not nullptr, an indicative progress is reported. Returns: true if the computation finished successfully, false otherwise. </li>
 </ul>
 
 </div>
 </div>
+<a id="ae8941c12a59182003cba45abe84a3518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8941c12a59182003cba45abe84a3518">&#9670;&nbsp;</a></span>Split() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Mesh::Split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshesThatSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>splitAtCoplanar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createNgons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>somethingHappened</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *&#160;</td>
+          <td class="paramname"><em>log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *&#160;</td>
+          <td class="paramname"><em>cancel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *&#160;</td>
+          <td class="paramname"><em>reporter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>completeOpenCuts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same as above, plus completeOpenCuts. The overload above is this one with completeOpenCuts = false. </p>
+
+</div>
+</div>
 <a id="a787131c36a85439f7a15cbff46a81b73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a787131c36a85439f7a15cbff46a81b73">&#9670;&nbsp;</a></span>SplitArray()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a787131c36a85439f7a15cbff46a81b73">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8249,6 +8369,97 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Splits a list of meshes. See the parameter description two methods above. Additional parameter: createNgons - If true, ngons are created along the splitting ridge to preserve the boundary look. </p>
+
+</div>
+</div>
+<a id="ac20a56ebe42cec69a5910306f05185ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20a56ebe42cec69a5910306f05185ee">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Mesh::SplitArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshesToSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshesThatSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>splitAtCoplanar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createNgons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>somethingHappened</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>results</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *&#160;</td>
+          <td class="paramname"><em>log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *&#160;</td>
+          <td class="paramname"><em>cancel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *&#160;</td>
+          <td class="paramname"><em>reporter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>completeOpenCuts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as above, plus completeOpenCuts. The overload above is this one with completeOpenCuts = false. </p>
 
 </div>
 </div>
@@ -9503,7 +9714,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:44 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

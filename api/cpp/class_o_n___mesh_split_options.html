@@ -88,9 +88,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6a379ef56c5e2256ef1424ecc9a7122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3327a1cb69b9fd458e1321fd13223b86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a3327a1cb69b9fd458e1321fd13223b86">~ON_MeshSplitOptions</a> ()</td></tr>
 <tr class="separator:a3327a1cb69b9fd458e1321fd13223b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f62dd8baa77129d8fbe42096252b60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#aa4f62dd8baa77129d8fbe42096252b60">CompleteOpenCuts</a> () const</td></tr>
+<tr class="memdesc:aa4f62dd8baa77129d8fbe42096252b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to false.  <a href="class_o_n___mesh_split_options.html#aa4f62dd8baa77129d8fbe42096252b60">More...</a><br /></td></tr>
+<tr class="separator:aa4f62dd8baa77129d8fbe42096252b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a584a2d773db2ad829c49dd5b7091447d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a584a2d773db2ad829c49dd5b7091447d">CreateNgons</a> () const</td></tr>
 <tr class="memdesc:a584a2d773db2ad829c49dd5b7091447d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to true.  <a href="class_o_n___mesh_split_options.html#a584a2d773db2ad829c49dd5b7091447d">More...</a><br /></td></tr>
 <tr class="separator:a584a2d773db2ad829c49dd5b7091447d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e475ce20fee9c457a1462fdd02551e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#ac4e475ce20fee9c457a1462fdd02551e">SetCompleteOpenCuts</a> (bool enable)</td></tr>
+<tr class="separator:ac4e475ce20fee9c457a1462fdd02551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e6560a20d9da016d5c267fb1d2ed1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a84e6560a20d9da016d5c267fb1d2ed1e">SetCreateNgons</a> (bool enable)</td></tr>
 <tr class="separator:a84e6560a20d9da016d5c267fb1d2ed1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83718481aa5ef249b22da4a0a61a4795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a83718481aa5ef249b22da4a0a61a4795">SetSplitAtCoplanars</a> (bool enable)</td></tr>
@@ -190,6 +195,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa4f62dd8baa77129d8fbe42096252b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f62dd8baa77129d8fbe42096252b60">&#9670;&nbsp;</a></span>CompleteOpenCuts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_MeshSplitOptions::CompleteOpenCuts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defaults to false. </p>
+<p>An intersection curve that stops inside the mesh being split does not separate one side from the other, so the mesh is returned whole. When this is enabled, each such open end is joined to the nearest border of the mesh, or to another cut, following edges the mesh already has. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows existing edges rather than the cutter, so it is not an intersection result. No vertex is moved and no face is added. Cuts that already close, or that already run from border to border, are unaffected. </p>
+
+</div>
+</div>
 <a id="a584a2d773db2ad829c49dd5b7091447d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a584a2d773db2ad829c49dd5b7091447d">&#9670;&nbsp;</a></span>CreateNgons()</h2>
 
@@ -206,6 +231,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defaults to true. </p>
+
+</div>
+</div>
+<a id="ac4e475ce20fee9c457a1462fdd02551e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e475ce20fee9c457a1462fdd02551e">&#9670;&nbsp;</a></span>SetCompleteOpenCuts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_MeshSplitOptions::SetCompleteOpenCuts </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -282,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -90,6 +90,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b41170e87dc9f825121123d244665fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae117b53b10d30284f541f6b69a1500"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_rebuild_curve_options.html#a4ae117b53b10d30284f541f6b69a1500">~CRhinoRebuildCurveOptions</a> ()=default</td></tr>
 <tr class="separator:a4ae117b53b10d30284f541f6b69a1500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7780dfc605ce690166f7d187d1e4b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_rebuild_curve_options.html#ab7780dfc605ce690166f7d187d1e4b24">CalculateInitialPreview</a> ()</td></tr>
+<tr class="memdesc:ab7780dfc605ce690166f7d187d1e4b24"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://mcneel.myjetbrains.com/youtrack/issue/RH-93796">https://mcneel.myjetbrains.com/youtrack/issue/RH-93796</a> When <a class="el" href="class_c_rhino_rebuild_curve_options.html#a376812d0044d995fc6a7d5414dcc0e72" title="After calling SetContext, call GetOptions() to interactively get curve rebuilding options.">GetOptions()</a> uses a dialog, the initial rebuild calculation is deferred so that the dialog appears immediately instead of after that calculation finishes. The dialog calls this function one time, after it is on the screen, and the initial calculation and the first dynamic display happen then. The dialog must update itself from these options when this function returns. The calculation sets the current output properties a dialog reports and it can increase the point count settings when kink splitting needs more points than those settings specify. Calling this function when no initial calculation is pending does nothing, so a dialog that has already changed an option is not calculated twice.  <a href="class_c_rhino_rebuild_curve_options.html#ab7780dfc605ce690166f7d187d1e4b24">More...</a><br /></td></tr>
+<tr class="separator:ab7780dfc605ce690166f7d187d1e4b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5433a3e65d752c5e291c71c1b9f20b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_rebuild_curve_options.html#a5433a3e65d752c5e291c71c1b9f20b09">ClearCurrentOutputProperties</a> () const</td></tr>
 <tr class="separator:a5433a3e65d752c5e291c71c1b9f20b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a2b1a088d89eba3e829533ea3193e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_rebuild_curve_options.html#ae4a2b1a088d89eba3e829533ea3193e2">ClearKinkAngle</a> ()</td></tr>
@@ -362,6 +365,25 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7780dfc605ce690166f7d187d1e4b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7780dfc605ce690166f7d187d1e4b24">&#9670;&nbsp;</a></span>CalculateInitialPreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoRebuildCurveOptions::CalculateInitialPreview </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a href="https://mcneel.myjetbrains.com/youtrack/issue/RH-93796">https://mcneel.myjetbrains.com/youtrack/issue/RH-93796</a> When <a class="el" href="class_c_rhino_rebuild_curve_options.html#a376812d0044d995fc6a7d5414dcc0e72" title="After calling SetContext, call GetOptions() to interactively get curve rebuilding options.">GetOptions()</a> uses a dialog, the initial rebuild calculation is deferred so that the dialog appears immediately instead of after that calculation finishes. The dialog calls this function one time, after it is on the screen, and the initial calculation and the first dynamic display happen then. The dialog must update itself from these options when this function returns. The calculation sets the current output properties a dialog reports and it can increase the point count settings when kink splitting needs more points than those settings specify. Calling this function when no initial calculation is pending does nothing, so a dialog that has already changed an option is not calculated twice. </p>
+
+</div>
+</div>
 <a id="a5433a3e65d752c5e291c71c1b9f20b09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5433a3e65d752c5e291c71c1b9f20b09">&#9670;&nbsp;</a></span>ClearCurrentOutputProperties()</h2>
 
@@ -2014,7 +2036,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:26 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:03 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

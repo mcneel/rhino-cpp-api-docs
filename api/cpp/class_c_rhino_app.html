@@ -4174,13 +4174,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns true when Rhino was started with the /batchmode command line switch. Batch runs are driven by an external process (a test harness, an automation script, an MCP or AI agent) with a visible main window but no human at the keyboard.</p>
+<p>Description: Returns true when Rhino is in batch mode: it was started with the /batchmode command line switch, or the BatchMode command has turned the mode on since. Batch runs are driven by an external process (a test harness, an automation script, an MCP or AI agent) with a visible main window but no human at the keyboard.</p>
 <p>In a batch run:</p><ul>
 <li>the splash screen and the start-up template chooser are skipped, and a document is opened straight away</li>
-<li>every command runs as though its name were typed with a leading "-", so commands present command-line options instead of dialogs (see <a class="el" href="class_c_rhino_command_context.html#acff4c65cfc5dac41e5f3ac75c30623f4">CRhinoCommandContext::IsInteractive</a>)</li>
+<li>every command runs with the batch command style, so commands present command-line options instead of dialogs and report serious errors on the command line (see <a class="el" href="class_c_rhino_command_context.html#ae24cc2544e96b3c6614d0bece5751745ad2411268dbdd2921ac62f3a7cca9ced0">CRhinoCommandContext::batch_ui</a> and <a class="el" href="class_c_rhino_command_context.html#acff4c65cfc5dac41e5f3ac75c30623f4">CRhinoCommandContext::IsInteractive</a>)</li>
 <li>modal message boxes are suppressed and written to the command line instead of blocking</li>
 </ul>
-<p>Use <a class="el" href="class_c_rhino_app.html#a6431c5ae58e77f7973b647b7fe224412">IsUnattended()</a> rather than this in code that only needs to know "is there a human who can answer a dialog". Returns: True if the /batchmode command line switch was used. </p>
+<p>This is read wherever it is needed rather than latched, so the answer can change during a session - the BatchMode command sets it. Start-up behaviour is decided before any command can run, so it always reflects the command line switch.</p>
+<p>Use <a class="el" href="class_c_rhino_app.html#a6431c5ae58e77f7973b647b7fe224412">IsUnattended()</a> rather than this in code that only needs to know "is there a human who can answer a dialog". Returns: True if Rhino is in batch mode. </p>
 
 </div>
 </div>
@@ -10036,7 +10037,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:29:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

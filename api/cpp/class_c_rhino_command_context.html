@@ -123,7 +123,8 @@ Public Attributes</h2></td></tr>
 <p>m_style determines what kind of user interface (ui) the command can use and how serious errors should be reported.</p>
 <p>interative_ui: Can use dialogs for input. Must use message boxes to report serious error conditions.</p>
 <p>script_ui: All input must come from command line, GetPoint, GetObject, GetString, etc. Must use message boxes to report serious error conditions. Script mode gets used when a command is run with a hyphen (-) prefix.</p>
-<p>batch_ui: All input must come from command line, GetPoint, GetObject, GetString, etc. Must use <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.Print() to report serious error conditions. NO dialog boxes are permitted. Batch mode is enabled by calling the Rhino BatchModeOn command in a command script. </p>
+<p>batch_ui: All input must come from command line, GetPoint, GetObject, GetString, etc. Must use <a class="el" href="group___rhino.html#ga4c840d50b075e0e1fdb40aa0ca25f73e" title="returns theApp">RhinoApp()</a>.Print() to report serious error conditions. NO dialog boxes are permitted. Batch mode is enabled by the Rhino BatchMode command (BatchMode On, BatchMode Off or BatchMode Toggle), which can be run from a command script, and by starting Rhino with the /batchmode command line switch. See <a class="el" href="class_c_rhino_app.html#a7d94e021903c26f7b126a7ca521dc7e9">CRhinoApp::IsBatchMode</a>.</p>
+<p>There was no way to turn batch mode on before Rhino 9. This block used to name a BatchModeOn command, which was never written - see RH-98061. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae24cc2544e96b3c6614d0bece5751745a48fb2f49a65aabbcf0ea9ebc020714cd"></a>interactive_ui&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae24cc2544e96b3c6614d0bece5751745a8e94de8eabac0a3c19eff5cedaa2593c"></a>script_ui&#160;</td><td class="fielddoc"></td></tr>
@@ -285,7 +286,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:29:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

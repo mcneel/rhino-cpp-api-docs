@@ -93,6 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee46b27acaffd1b45beabcc25a1370c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c838c641c909de9c5684b6b27f63ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_tree_node.html#a38c838c641c909de9c5684b6b27f63ee">IntersectLine</a> (<a class="el" href="class_o_n___line.html">ON_Line</a> line, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_m_x___e_v_e_n_t.html">ON_CMX_EVENT</a> &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0) const</td></tr>
 <tr class="separator:a38c838c641c909de9c5684b6b27f63ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05cfc8cbbac9bcf8e8039312265971e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_tree_node.html#ac05cfc8cbbac9bcf8e8039312265971e">IntersectMesh</a> (const class <a class="el" href="class_o_n___mesh_tree_node.html">ON_MeshTreeNode</a> *mnodeB, const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;xformB, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; &amp;lines) const</td></tr>
+<tr class="separator:ac05cfc8cbbac9bcf8e8039312265971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7038f759c77af9c5891b2759b6c8375"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_tree_node.html#ad7038f759c77af9c5891b2759b6c8375">IntersectMesh</a> (const class <a class="el" href="class_o_n___mesh_tree_node.html">ON_MeshTreeNode</a> *mnodeB, <a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___m_m_x___p_o_i_n_t.html">ON_MMX_POINT</a> &gt; &gt; &amp;x, double intersection_tolerance=0.0, double overlap_tolerance=0.0) const</td></tr>
 <tr class="memdesc:ad7038f759c77af9c5891b2759b6c8375"><td class="mdescLeft">&#160;</td><td class="mdescRight">slow and careful  <a href="class_o_n___mesh_tree_node.html#ad7038f759c77af9c5891b2759b6c8375">More...</a><br /></td></tr>
 <tr class="separator:ad7038f759c77af9c5891b2759b6c8375"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,8 +252,43 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac05cfc8cbbac9bcf8e8039312265971e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05cfc8cbbac9bcf8e8039312265971e">&#9670;&nbsp;</a></span>IntersectMesh() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ON_MeshTreeNode::IntersectMesh </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_o_n___mesh_tree_node.html">ON_MeshTreeNode</a> *&#160;</td>
+          <td class="paramname"><em>mnodeB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform.html">ON_Xform</a> &amp;&#160;</td>
+          <td class="paramname"><em>xformB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lines</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fast and sloppy, with mnodeB's mesh mapped through xformB into this tree's space. Neither mesh nor tree is modified, so one tree per mesh serves any number of placements. Output lines are in this tree's space. </p>
+
+</div>
+</div>
 <a id="ad7038f759c77af9c5891b2759b6c8375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7038f759c77af9c5891b2759b6c8375">&#9670;&nbsp;</a></span>IntersectMesh() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7038f759c77af9c5891b2759b6c8375">&#9670;&nbsp;</a></span>IntersectMesh() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +330,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="af389a1ccc3417d1d8478a1ea8c7b1e83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af389a1ccc3417d1d8478a1ea8c7b1e83">&#9670;&nbsp;</a></span>IntersectMesh() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af389a1ccc3417d1d8478a1ea8c7b1e83">&#9670;&nbsp;</a></span>IntersectMesh() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +636,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

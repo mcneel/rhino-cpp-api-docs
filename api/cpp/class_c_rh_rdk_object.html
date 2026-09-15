@@ -140,6 +140,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a29bbbc69f7287b72a3624ad29aa41f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a1624abdae04450b4bdaddcca82b04d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a4a1624abdae04450b4bdaddcca82b04d">PopulateDebuggingInfo</a> (void)</td></tr>
 <tr class="separator:a4a1624abdae04450b4bdaddcca82b04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1131a87526d7a6d4998ddecc1a0d32e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a1131a87526d7a6d4998ddecc1a0d32e5">ReportLeaksSinceCheckpoint</a> (void)</td></tr>
+<tr class="separator:a1131a87526d7a6d4998ddecc1a0d32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2461c552ac94f7a814da4456bf631e9c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_rdk_object.html#a2461c552ac94f7a814da4456bf631e9c">SetLeakCheckpoint</a> (void)</td></tr>
+<tr class="separator:a2461c552ac94f7a814da4456bf631e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for objects which are created by RDK but deleted by the client (or vice-versa). Overrides of new and delete allow you to delete such objects from your client DLL without any complications. </p>
@@ -350,10 +354,64 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1131a87526d7a6d4998ddecc1a0d32e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1131a87526d7a6d4998ddecc1a0d32e5">&#9670;&nbsp;</a></span>ReportLeaksSinceCheckpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CRhRdkObject::ReportLeaksSinceCheckpoint </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reports RDK objects that were created after the last <a class="el" href="class_c_rh_rdk_object.html#a2461c552ac94f7a814da4456bf631e9c">SetLeakCheckpoint()</a> call and are still alive, grouped by the call stack that created them. Call <a class="el" href="class_c_rh_rdk_object.html#a2461c552ac94f7a814da4456bf631e9c">SetLeakCheckpoint()</a> before an operation and this afterwards to see what that operation leaked. Both are callable from the debugger. </p>
+
+</div>
+</div>
+<a id="a2461c552ac94f7a814da4456bf631e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2461c552ac94f7a814da4456bf631e9c">&#9670;&nbsp;</a></span>SetLeakCheckpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CRhRdkObject::SetLeakCheckpoint </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Debugging aid for hunting leaks of RDK objects. Records which RDK objects exist at the moment of the call. Only does anything in a debug build with CHECK_MEMORY_LEAKS commented in; see RhRdkObject.cpp. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:10 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

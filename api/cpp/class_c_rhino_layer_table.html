@@ -183,6 +183,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a9e7a4011e537c75eff8b08ba09b5afea"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a9e7a4011e537c75eff8b08ba09b5afea">CLayerTreeHelper</a></td></tr>
+<tr class="separator:a9e7a4011e537c75eff8b08ba09b5afea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a90258f01ce1e144ed14cd1157be4dc7a">CRhinoDoc</a></td></tr>
 <tr class="separator:a90258f01ce1e144ed14cd1157be4dc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c55291426e0b1f7514be3d32d0c085f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_layer_table.html#a1c55291426e0b1f7514be3d32d0c085f">CRhinoRead3dmHelper</a></td></tr>
@@ -1500,6 +1502,28 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a9e7a4011e537c75eff8b08ba09b5afea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7a4011e537c75eff8b08ba09b5afea">&#9670;&nbsp;</a></span>CLayerTreeHelper</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class CLayerTreeHelper</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90258f01ce1e144ed14cd1157be4dc7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90258f01ce1e144ed14cd1157be4dc7a">&#9670;&nbsp;</a></span>CRhinoDoc</h2>
 
@@ -1626,14 +1650,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: CRhinoLayer::DefaultLayer is returned when an invalid index is passed to operator[] and in other emergencies when a valid reference to a layer is needed and there is there is not a layer in the table that can be used.</p>
 <p>This is not the layer with the English name "Default". CRhinoLayer::DefaultLayer is never saved in files.</p>
-<p>CRhinoLayer::DefaultLayer.Index() = -1 CRhinoLayer::DefaultLayer.Id() = nil, CRhinoLayer::DefaultLayer.Name() = "" </p>
+<p>CRhinoLayer::DefaultLayer.Index() = -1 CRhinoLayer::DefaultLayer.Id() = nil, CRhinoLayer::DefaultLayer.Name() = "" [SDK_UNFREEZE] This should be a function, not a public reference member. As a data member it takes up layout that cannot be changed, it forces the layer it refers to to be constructed before it, and that ordering dependency is invisible from the constructor - see the note on <a class="el" href="class_c_rhino_layer_table.html">CRhinoLayerTable</a>'s member initializer list in rhino3Layer.cpp. Replace it with "const CRhinoLayer&amp; DefaultLayer() const;" when the SDK is unfrozen. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:01 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

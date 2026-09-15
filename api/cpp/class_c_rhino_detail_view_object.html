@@ -193,6 +193,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e194c1f2ced86adc2ca566fe5da76d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f781c8e7ce423010dfb31f47db7b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_detail_view_object.html#ae2f781c8e7ce423010dfb31f47db7b9b">DollyExtents</a> ()</td></tr>
 <tr class="separator:ae2f781c8e7ce423010dfb31f47db7b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4758a58e27601db874495547c63073d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_detail_view_object.html#af4758a58e27601db874495547c63073d">DollyExtents</a> (double border, bool bSelected)</td></tr>
+<tr class="separator:af4758a58e27601db874495547c63073d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c01e1d4e2491f5c6f653488cb209c8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_detail_view_object.html#a1c01e1d4e2491f5c6f653488cb209c8b">Draw</a> (<a class="el" href="class_c_rhino_display_pipeline.html">CRhinoDisplayPipeline</a> &amp;dp) const override</td></tr>
 <tr class="memdesc:a1c01e1d4e2491f5c6f653488cb209c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws object based on pipeline display attributes...  <a href="class_c_rhino_detail_view_object.html#a1c01e1d4e2491f5c6f653488cb209c8b">More...</a><br /></td></tr>
 <tr class="separator:a1c01e1d4e2491f5c6f653488cb209c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -955,7 +957,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ae2f781c8e7ce423010dfb31f47db7b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2f781c8e7ce423010dfb31f47db7b9b">&#9670;&nbsp;</a></span>DollyExtents()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f781c8e7ce423010dfb31f47db7b9b">&#9670;&nbsp;</a></span>DollyExtents() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -968,6 +970,35 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4758a58e27601db874495547c63073d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4758a58e27601db874495547c63073d">&#9670;&nbsp;</a></span>DollyExtents() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDetailViewObject::DollyExtents </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>border</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSelected</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Dolly this detail's viewport so its frustum contains the visible, or the selected, objects in the detail. Annotation in a detail is sized in page units, so its model space extents are a function of the detail scale - the value being solved for. A single dolly therefore lands short. This repeats the dolly until the detail scale settles, so calling it a second time does not move the view. Parameters: border: [in] 1.0 fits tightly, &gt; 1.0 leaves a border. bSelected: [in] true to fit the selected objects, false to fit all visible objects. Returns: true if the viewport was dollied. </p>
 
 </div>
 </div>
@@ -1892,7 +1923,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:20 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:29:57 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -242,6 +242,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f03b3b64253220d668070f052011722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529463853509da8ede1ed621082ca7c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a529463853509da8ede1ed621082ca7c2">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;, int left, int top, int width, int height)</td></tr>
 <tr class="separator:a529463853509da8ede1ed621082ca7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc584421a3928fe3fad8b89bc326ded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a6fc584421a3928fe3fad8b89bc326ded">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;, int left, int top, int width, int height, const <a class="el" href="class_o_n___xform2d.html">ON_Xform2d</a> *transform)</td></tr>
+<tr class="separator:a6fc584421a3928fe3fad8b89bc326ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1828bf82f88e3b428704b194c47130ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a1828bf82f88e3b428704b194c47130ab">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;, int nX, int nY)</td></tr>
 <tr class="separator:a1828bf82f88e3b428704b194c47130ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95527c42c590826eae075cafe2f9d3e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_pipeline.html#a95527c42c590826eae075cafe2f9d3e6">DrawBox</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> *box_corners, const <a class="el" href="class_o_n___color.html">ON_Color</a> &amp;colot, int thickness)</td></tr>
@@ -3827,7 +3829,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a529463853509da8ede1ed621082ca7c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a529463853509da8ede1ed621082ca7c2">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a529463853509da8ede1ed621082ca7c2">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3872,8 +3874,60 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a6fc584421a3928fe3fad8b89bc326ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc584421a3928fe3fad8b89bc326ded">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoDisplayPipeline::DrawBitmap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___xform2d.html">ON_Xform2d</a> *&#160;</td>
+          <td class="paramname"><em>transform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1828bf82f88e3b428704b194c47130ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1828bf82f88e3b428704b194c47130ab">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1828bf82f88e3b428704b194c47130ab">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -16886,7 +16940,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:21 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:29:58 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -150,6 +150,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abe8d2980ab53fe87e7e66689ff579770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890efb962e96460e3f4428cf90bbd571"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#a890efb962e96460e3f4428cf90bbd571">MacroToolTip</a> (<a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idFile, <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idMacro, unsigned int locale)</td></tr>
 <tr class="separator:a890efb962e96460e3f4428cf90bbd571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f4baaa3dd1e351851027fce40b0d54"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#a83f4baaa3dd1e351851027fce40b0d54">Png</a> (<a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idFile, <a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a> idImage, bool darkMode, int size, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char &gt; &amp;png)</td></tr>
+<tr class="separator:a83f4baaa3dd1e351851027fce40b0d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619182755eb6132d49feca25ed642e6d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#a619182755eb6132d49feca25ed642e6d">SetToolBarBitmapSize</a> (const <a class="el" href="class_o_n__2i_size.html">ON_2iSize</a> &amp;size)</td></tr>
 <tr class="separator:a619182755eb6132d49feca25ed642e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b1d99c7574a9dc9426c29c69d47575"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_ui_file.html#ad9b1d99c7574a9dc9426c29c69d47575">ShowSidebar</a> (bool mruSidebar, bool show)</td></tr>
@@ -1504,6 +1506,61 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a83f4baaa3dd1e351851027fce40b0d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f4baaa3dd1e351851027fce40b0d54">&#9670;&nbsp;</a></span>Png()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CRhinoUiFile::Png </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a>&#160;</td>
+          <td class="paramname"><em>idFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___rhino.html#gadeff64411303ad3a3e05ef327985e306">UUID</a>&#160;</td>
+          <td class="paramname"><em>idImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>darkMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>png</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Call this method to get the image as PNG encoded bytes, rendered at the requested pixel size. This is the cross-platform counterpart to <a class="el" href="class_c_rhino_ui_file.html#a3c5b9f89538832c20446fb605354c6c5">Bitmap()</a>, whose HBITMAP is only available on Windows. Parameters: idFile[in] Id of the file containing the image. idImage[in] Id of the image (the same id returned by MacroBitmapID). darkMode[in] Set to true to render the dark-mode variant of the image. size[in] Requested width and height in pixels. Pass 0 for the default toolbar size. png[out] Receives the PNG encoded bytes. Emptied first. Returns: True if the image was found and rendered, false otherwise. </p>
+
+</div>
+</div>
 <a id="a619182755eb6132d49feca25ed642e6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a619182755eb6132d49feca25ed642e6d">&#9670;&nbsp;</a></span>SetToolBarBitmapSize()</h2>
 
@@ -1832,7 +1889,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:27 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:05 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

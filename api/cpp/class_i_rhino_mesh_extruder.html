@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a494c1f2372a9013a5195fd69d177de15"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_rhino_mesh_extruder.html">IRhinoMeshExtruder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rhino_mesh_extruder.html#a494c1f2372a9013a5195fd69d177de15">NewMeshExtruder</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;inputMesh, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;componentIndices)</td></tr>
 <tr class="separator:a494c1f2372a9013a5195fd69d177de15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f3499e1f204ab18856c5a455cef463"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_rhino_mesh_extruder.html">IRhinoMeshExtruder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_rhino_mesh_extruder.html#ab6f3499e1f204ab18856c5a455cef463">NewMeshExtruder</a> (const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;inputMesh, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;componentIndices, <a class="el" href="class_o_n___color.html">ON_Color</a> unsetVertexColor)</td></tr>
+<tr class="separator:ab6f3499e1f204ab18856c5a455cef463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -470,7 +472,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a494c1f2372a9013a5195fd69d177de15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494c1f2372a9013a5195fd69d177de15">&#9670;&nbsp;</a></span>NewMeshExtruder()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a494c1f2372a9013a5195fd69d177de15">&#9670;&nbsp;</a></span>NewMeshExtruder() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,6 +505,49 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Description: Returns a new instance of interface implementation. Caller must delete returned instance by calling <a class="el" href="class_i_rhino_mesh_extruder.html#af538951dd59ffc58fb93adf3f6a716b7">DeleteThis()</a>. Parameters: inputMesh - [in] Mesh to use as starting point componentIndices - [in] Mesh faces, edges and ngons to extrude </p>
+
+</div>
+</div>
+<a id="ab6f3499e1f204ab18856c5a455cef463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f3499e1f204ab18856c5a455cef463">&#9670;&nbsp;</a></span>NewMeshExtruder() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_rhino_mesh_extruder.html">IRhinoMeshExtruder</a>* IRhinoMeshExtruder::NewMeshExtruder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputMesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___c_o_m_p_o_n_e_n_t___i_n_d_e_x.html">ON_COMPONENT_INDEX</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>componentIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___color.html">ON_Color</a>&#160;</td>
+          <td class="paramname"><em>unsetVertexColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description: Same as above, but sets the colour used for a wall vertex that maps to no input vertex. Vertex colours, texture coordinates, surface parameters and principal curvatures are carried over from the input mesh only when it has them, so an input mesh without vertex colours still produces an output without them and this colour is never used. Parameters: inputMesh - [in] Mesh to use as starting point componentIndices - [in] Mesh faces, edges and ngons to extrude unsetVertexColor - [in] Colour for a wall vertex with no corresponding input vertex. Callers with a document typically pass the current layer colour. </p>
 
 </div>
 </div>
@@ -859,7 +904,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 8 2026 15:52:34 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 15 2026 15:30:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
