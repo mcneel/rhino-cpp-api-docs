@@ -1712,7 +1712,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Description: Computes normal curvature values for this fragment. Evaluation points are uniformly spaced over the fragment to fill the N, Ku, Kv arrays. Parameters: sample_count - [in] How many samples to get in both directions. comb_count_params - [in] How many combs to get in both directions (+1 if get_first_comb is false). get_first_comb - [in] Whether to skip combs at u = 0 and v = 0. The parameters at which to get the combs are the same when:</p><ul>
 <li>get_first_comb is true and comb_count is n</li>
-<li>get_first_comb is false and comb_count is n get_Ku, get_Kv - [in] Should the curvature be computed along u-isos, v-isos, or both. get_marked_edges_only - [in] If true, only combs that touch a marked edge are computed. If false, all combs are computed. P, Kuv - [out] Arrays of size (get_Ku + get_Kv) * sample_count * comb_count_arrays where Points and Curvatures along u-isos or along v-isos are stored. Sample (i, j) in u direction, on u-dir comb j at sample i is stored at index i + (j - get_first_comb ? 0 : 1) * sample_count. Sample (i, j) in v direction, on v-dir comb i at sample j is stored at index (getKu * sample_count * comb_count_arrays) + j + (i - get_first_comb ? 0 : 1) * sample_count. Direction u (indexed with i) refers to the Fragment's grid 1st index (from face-&gt;Vertex(0) to face-&gt;Vertex(1)). Direction v (indexed with j) refers to the Fragment's grid 2nd index (from face-&gt;Vertex(0) to face-&gt;Vertex(3)). comb_count_arrays = comb_count_params - get_first_comb ? 1 : 0 Returns: Number of points sampled </li>
+<li>get_first_comb is false and comb_count is n get_Ku, get_Kv - [in] Should the curvature be computed along u-isos, v-isos, or both. get_marked_edges_only - [in] If true, only combs that touch a marked edge are computed. If false, all combs are computed. If true, get_Ku and get_Kv must both be true: the arrays hold the combs on marked edges in both directions, and are not completely filled otherwise. P, Kuv - [out] Arrays of size (get_Ku + get_Kv) * sample_count * comb_count_arrays where Points and Curvatures along u-isos or along v-isos are stored. Sample (i, j) in u direction, on u-dir comb j at sample i is stored at index i + (j - get_first_comb ? 0 : 1) * sample_count. Sample (i, j) in v direction, on v-dir comb i at sample j is stored at index (getKu * sample_count * comb_count_arrays) + j + (i - get_first_comb ? 0 : 1) * sample_count. Direction u (indexed with i) refers to the Fragment's grid 1st index (from face-&gt;Vertex(0) to face-&gt;Vertex(1)). Direction v (indexed with j) refers to the Fragment's grid 2nd index (from face-&gt;Vertex(0) to face-&gt;Vertex(3)). comb_count_arrays = comb_count_params - get_first_comb ? 1 : 0 Returns: Number of points sampled </li>
 </ul>
 
 </div>
@@ -4510,7 +4510,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2026 11:22:02 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2026 15:53:00 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

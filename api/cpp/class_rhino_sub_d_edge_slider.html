@@ -83,8 +83,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc7807123d32c8ffe02e52b28eb243a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311857867360be3befbe2000f02b4d1c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_sub_d_edge_slider.html#a311857867360be3befbe2000f02b4d1c">~RhinoSubDEdgeSlider</a> ()</td></tr>
 <tr class="separator:a311857867360be3befbe2000f02b4d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0965ec81e13027486dbfb3e5c64b9f4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_sub_d_edge_slider.html#a0965ec81e13027486dbfb3e5c64b9f4e">ClosestPickPoint</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;pt, bool &amp;bPositiveDirectionOut, double &amp;pickEdgeLength, double &amp;pickOffset) const</td></tr>
-<tr class="separator:a0965ec81e13027486dbfb3e5c64b9f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712b669b8390fc1a559cf8fe50a9e357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_sub_d_edge_slider.html#a712b669b8390fc1a559cf8fe50a9e357">ClosestPickPoint</a> (const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;pt, bool bAcross, bool &amp;bPositiveDirectionOut, double &amp;pickEdgeLength, double &amp;pickOffset) const</td></tr>
 <tr class="separator:a712b669b8390fc1a559cf8fe50a9e357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561549376b3eabaf7e33c2115e0184e1"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rhino_sub_d_edge_slider.html#a561549376b3eabaf7e33c2115e0184e1">EVF</a> (const wchar_t *, void *)</td></tr>
@@ -201,49 +199,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0965ec81e13027486dbfb3e5c64b9f4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0965ec81e13027486dbfb3e5c64b9f4e">&#9670;&nbsp;</a></span>ClosestPickPoint() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> RhinoSubDEdgeSlider::ClosestPickPoint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>pt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool &amp;&#160;</td>
-          <td class="paramname"><em>bPositiveDirectionOut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>pickEdgeLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>pickOffset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Description: Returns closest point on edges crossing the edges being slid. Parameters: pt - [in] Point anywhere near the SubD bPositiveDirectionOut - [out] True if point is on an edge in positive slide direction pickEdgeLength - [out] Length of the crossing edge that the closest point is on pickOffset - [out] Offset from the loop </p>
-
-</div>
-</div>
 <a id="a712b669b8390fc1a559cf8fe50a9e357"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a712b669b8390fc1a559cf8fe50a9e357">&#9670;&nbsp;</a></span>ClosestPickPoint() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a712b669b8390fc1a559cf8fe50a9e357">&#9670;&nbsp;</a></span>ClosestPickPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +242,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: Returns closest point on edges in given direction from the edges being slid. Parameters: pt - [in] Point anywhere near the mesh bAcross - [in] True to find closest point on edges crossing the edges being slid False to find closest point on edges along the edges being slid bPositiveDirectionOut - [out] True if point is on an edge in positive slide direction pickEdgeLength - [out] Length of the edge that the closest point is on pickOffset - [out] Offset from the component being slid </p>
+<p>Description: Returns closest point on edges crossing the edges being slid. Parameters: pt - [in] Point anywhere near the SubD bPositiveDirectionOut - [out] True if point is on an edge in positive slide direction pickEdgeLength - [out] Length of the crossing edge that the closest point is on pickOffset - [out] Offset from the loop <a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> ClosestPickPoint(const ON_3dPoint&amp; pt, bool&amp; bPositiveDirectionOut, double&amp; pickEdgeLength, double&amp; pickOffset) const; Description: Returns closest point on edges in given direction from the edges being slid. Parameters: pt - [in] Point anywhere near the mesh bAcross - [in] True to find closest point on edges crossing the edges being slid False to find closest point on edges along the edges being slid bPositiveDirectionOut - [out] True if point is on an edge in positive slide direction pickEdgeLength - [out] Length of the edge that the closest point is on pickOffset - [out] Offset from the component being slid </p>
 
 </div>
 </div>
@@ -446,7 +403,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2026 11:22:06 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2026 15:53:04 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

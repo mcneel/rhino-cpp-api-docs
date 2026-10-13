@@ -94,6 +94,13 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_rhino_display_engine.html#a5e26ecfab8f1729645c2e286e5fc07b3acf2b8bc7993c2f06dc3c39bf0b8fbb6d">EDynamicRange::DR_HIGH</a> = 3
  }</td></tr>
 <tr class="separator:a5e26ecfab8f1729645c2e286e5fc07b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea433e262efe1b8208d3f6df5f62bf3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3f">PixelFormat</a> : unsigned int { <a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3fa703a7a81e586669c930e3dcaf3e8c428">PixelFormat::RGBA32F</a> = 0, 
+<a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3faa29d843695056f9c171a9eb702d6910a">PixelFormat::RGBA16F</a> = 1, 
+<a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3fab4b279046a02077466fa26cabb00c642">PixelFormat::RGBA8</a> = 2, 
+<a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3fa508ecc95f0c676df4a7dfe11beb0d573">PixelFormat::BGRA8</a> = 3
+ }</td></tr>
+<tr class="memdesc:aea433e262efe1b8208d3f6df5f62bf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel formats accepted by DrawBitmap.  <a href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3f">More...</a><br /></td></tr>
+<tr class="separator:aea433e262efe1b8208d3f6df5f62bf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_o_n___object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_o_n___object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_o_n___object.html">ON_Object</a></td></tr>
 <tr class="memitem:a7f520e987ffa14e71b06493340f9956c inherit pub_types_class_o_n___object"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956c">UserDataConflictResolution</a> : unsigned char { <br />
 &#160;&#160;<a class="el" href="class_o_n___object.html#a7f520e987ffa14e71b06493340f9956caba9e24ac13ffcde7d2f6b554a33df7cd">UserDataConflictResolution::destination_object</a> = 0, 
@@ -198,6 +205,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0402300ac9157fd85c9828cbfb0b95e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a75661777925cbc8808a034a099a54b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a1a75661777925cbc8808a034a099a54b">DrawBitmap</a> (const <a class="el" href="class_c_rhino_dib.html">CRhinoDib</a> &amp;dib, int left, int top)</td></tr>
 <tr class="separator:a1a75661777925cbc8808a034a099a54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3dc390342a15f439a52c41086ac643"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#acc3dc390342a15f439a52c41086ac643">DrawBitmap</a> (const void *pixels, int width, int height, <a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3f">PixelFormat</a> format, int destLeft, int destTop, int destWidth, int destHeight, int rowStrideBytes=0, bool bottomUp=false, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cache=nullptr)</td></tr>
+<tr class="separator:acc3dc390342a15f439a52c41086ac643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc37c8b7d8c44f69ca84556c54f8ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#a7fc37c8b7d8c44f69ca84556c54f8ee9">DrawBrepWires</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, const class CRhDisplayPenPrivate *pen, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
 <tr class="separator:a7fc37c8b7d8c44f69ca84556c54f8ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7cf169d5ec7379e8f5f33fbd8cb3646"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_display_engine.html#aa7cf169d5ec7379e8f5f33fbd8cb3646">DrawBrepWires</a> (const <a class="el" href="class_o_n___brep.html">ON_Brep</a> *brep, const class <a class="el" href="class_c_display_pipeline_attributes.html">CDisplayPipelineAttributes</a> *da, int wireDensity, bool edgeAnalysis, <a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *cacheHandle)</td></tr>
@@ -808,6 +817,40 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a5e26ecfab8f1729645c2e286e5fc07b3ad7a735e159d61ed62f330150d1f2690e"></a>DR_MEDIUM&#160;</td><td class="fielddoc"><p>HDR quality using 16 bit floating point precision. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5e26ecfab8f1729645c2e286e5fc07b3acf2b8bc7993c2f06dc3c39bf0b8fbb6d"></a>DR_HIGH&#160;</td><td class="fielddoc"><p>HDR quality using 32 bit floating point precision. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aea433e262efe1b8208d3f6df5f62bf3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea433e262efe1b8208d3f6df5f62bf3f">&#9670;&nbsp;</a></span>PixelFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3f">CRhinoDisplayEngine::PixelFormat</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pixel formats accepted by DrawBitmap. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea433e262efe1b8208d3f6df5f62bf3fa703a7a81e586669c930e3dcaf3e8c428"></a>RGBA32F&#160;</td><td class="fielddoc"><p>4 x 32-bit float, R,G,B,A (16 bytes per pixel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea433e262efe1b8208d3f6df5f62bf3faa29d843695056f9c171a9eb702d6910a"></a>RGBA16F&#160;</td><td class="fielddoc"><p>4 x 16-bit IEEE half float, R,G,B,A (8 bytes per pixel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea433e262efe1b8208d3f6df5f62bf3fab4b279046a02077466fa26cabb00c642"></a>RGBA8&#160;</td><td class="fielddoc"><p>4 x 8-bit unsigned normalized, R,G,B,A (4 bytes per pixel) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aea433e262efe1b8208d3f6df5f62bf3fa508ecc95f0c676df4a7dfe11beb0d573"></a>BGRA8&#160;</td><td class="fielddoc"><p>4 x 8-bit unsigned normalized, B,G,R,A (4 bytes per pixel, Windows DIB order) </p>
 </td></tr>
 </table>
 
@@ -2381,7 +2424,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a1a75661777925cbc8808a034a099a54b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a75661777925cbc8808a034a099a54b">&#9670;&nbsp;</a></span>DrawBitmap()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a75661777925cbc8808a034a099a54b">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2422,6 +2465,89 @@ Friends</h2></td></tr>
 <p>Description: Draw a bitmap Parameters: dib: [in] the bitmap to draw left: [in] screen coordinate left location to draw top-left corner of dib top: [in] screen coordinate top location to draw top-left corner of dib </p>
 
 <p>Reimplemented in <a class="el" href="class_c_rhino_display_engine___o_g_l.html#acef9484dc731f1f2d1761ac485c2293d">CRhinoDisplayEngine_OGL</a>, and <a class="el" href="class_c_rhino_display_engine___g_d_i.html#a9b11c5ac3a54f77fe2e1967a96ef207d">CRhinoDisplayEngine_GDI</a>.</p>
+
+</div>
+</div>
+<a id="acc3dc390342a15f439a52c41086ac643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3dc390342a15f439a52c41086ac643">&#9670;&nbsp;</a></span>DrawBitmap() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDisplayEngine::DrawBitmap </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_display_engine.html#aea433e262efe1b8208d3f6df5f62bf3f">PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destTop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowStrideBytes</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bottomUp</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_rhino_cache_handle.html">CRhinoCacheHandle</a> *&#160;</td>
+          <td class="paramname"><em>cache</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Draw a bitmap from raw pixel data into a rectangle in viewport pixel coordinates. Parameters: pixels: [in] pixel data laid out as described by format and rowStrideBytes width: [in] bitmap width in pixels height: [in] bitmap height in pixels format: [in] format of the data in pixels. destLeft: [in] viewport x coordinate of the left edge of the bitmap destTop: [in] viewport y coordinate of the top edge of the bitmap destWidth: [in] width in viewport pixels to draw the bitmap at destHeight: [in] height in viewport pixels to draw the bitmap at rowStrideBytes: [in] bytes from the start of one row to the start of the next. 0 means tightly packed (width * bytes per pixel). Otherwise it must be at least width * bytes per pixel and a multiple of the pixel size. bottomUp: [in] false if the first row in memory is the top of the bitmap, true if it is the bottom of the bitmap. Pass the same value when redrawing a cached bitmap. cache: [in/out] where the uploaded bitmap is kept between calls Returns: true if the bitmap was drawn (including when it is entirely outside the viewport) </p>
 
 </div>
 </div>
@@ -7823,7 +7949,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description: Sets a bias to apply to drawn geometry. Typical values are -1 for pushing geometry further away 0 for no biasing /// +1 for pulling geometry a little closer Parameters: zbias: [in] new bias level to apply Returns: previous zbias mode value </p>
+<p>Description: Sets a bias to apply to drawn geometry. Typical values are -1 for pushing geometry further away 0 for no biasing +1 for pulling geometry a little closer Parameters: zbias: [in] new bias level to apply Returns: previous zbias mode value </p>
 
 </div>
 </div>
@@ -9131,7 +9257,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2026 11:21:30 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2026 15:52:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

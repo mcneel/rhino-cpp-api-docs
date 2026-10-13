@@ -810,6 +810,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac9154c4736f20d4f2fa0bc214032b7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a384ec8eed2f6a7316750618c393c42"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a2a384ec8eed2f6a7316750618c393c42">RequireIterativeCleanup</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshes, double tolerance)</td></tr>
 <tr class="separator:a2a384ec8eed2f6a7316750618c393c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da27563f7157b04d7c9ce9c632f13fb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a0da27563f7157b04d7c9ce9c632f13fb">SplitArray</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesToSplit, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, const <a class="el" href="class_o_n___mesh_split_options.html">ON_MeshSplitOptions</a> *options, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results)</td></tr>
+<tr class="separator:a0da27563f7157b04d7c9ce9c632f13fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787131c36a85439f7a15cbff46a81b73"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#a787131c36a85439f7a15cbff46a81b73">SplitArray</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesToSplit, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter)</td></tr>
 <tr class="separator:a787131c36a85439f7a15cbff46a81b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20a56ebe42cec69a5910306f05185ee"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#ac20a56ebe42cec69a5910306f05185ee">SplitArray</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesToSplit, const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;meshesThatSplit, double tolerance, bool splitAtCoplanar, bool createNgons, bool *somethingHappened, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;results, <a class="el" href="class_o_n___text_log.html">ON_TextLog</a> *log, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel, <a class="el" href="class_o_n___progress_reporter.html">ON_ProgressReporter</a> *reporter, bool completeOpenCuts)</td></tr>
@@ -8291,7 +8293,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Description: Splits the current mesh and returns the split result. If nothing happened, the current mesh is not copied. Instead, somethingHappened is set to false. Parameters: meshesThatSplit - [in] The mesh splitters. nullptr entries are tolerated. tolerance - [in] A 3d-distance tolerance value. If tolerance is:</p><ul>
 <li>negative: the positive value will be used.</li>
 <li>0.0: no tolerance will be used. This is rarely useful, and only in cases where perforations intersections happen inside faces, and/or there is coplanarity parallel to one of the three fundamental axes.</li>
-<li>ON_DBL_QNAN, ON_UNSET_VALUE and ON_UNSET_POSITIVE_VALUE: the function picks a suitable, or default, tolerance value. WARNING! Generally, good tolerance values for objects drawn near the origin are in the magnitude of 10^-7, or ON_SQRT_EPSILON * 10. Often, the document absolute tolerance is not a good tolerance value. You might use a fractional coefficient to scale the document tolerance to a suitable value, while accepting a user-provided value. This function expects that each mesh conforms to the tolerance that is provided, and that means that features in the mesh are always larger than the mentioned tolerance. Coplanar gaps between meshes that are smaller than tolerance are overlaps. somethingHappened - [out] If not nullptr, informs the caller if the mesh was actually hit by anything. results - [out] This array will be filled with the split result. If nothing happened, the current mesh is not copied. log - [out] If not nullptr, intersection warnings and errors are printed here. If the intersection runs smoothly, nothing will be printed. completeOpenCuts - [in] An intersection curve that stops inside the mesh does not separate one side from the other, so the mesh is returned whole. If true, each such open end is joined to the nearest border of the mesh, or to another cut, following edges the mesh already has. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows existing edges rather than the splitters, so it is not an intersection result. No vertex is moved and no face is added. Cuts that already close, or that already run from border to border, are unaffected. Defaults to false. cancel - [out] If not nullptr, a trigger to request termination. When cancellation is requested, the return value will often be false. You are responsible to delete new objects that were returned, even if you requested cancellation. reporter - [out] If not nullptr, an indicative progress is reported. Returns: true if the computation finished successfully, false otherwise. </li>
+<li>ON_DBL_QNAN, ON_UNSET_VALUE and ON_UNSET_POSITIVE_VALUE: the function picks a suitable, or default, tolerance value. WARNING! Generally, good tolerance values for objects drawn near the origin are in the magnitude of 10^-7, or ON_SQRT_EPSILON * 10. Often, the document absolute tolerance is not a good tolerance value. You might use a fractional coefficient to scale the document tolerance to a suitable value, while accepting a user-provided value. This function expects that each mesh conforms to the tolerance that is provided, and that means that features in the mesh are always larger than the mentioned tolerance. Coplanar gaps between meshes that are smaller than tolerance are overlaps. somethingHappened - [out] If not nullptr, informs the caller if the mesh was actually hit by anything. results - [out] This array will be filled with the split result. If nothing happened, the current mesh is not copied. log - [out] If not nullptr, intersection warnings and errors are printed here. If the intersection runs smoothly, nothing will be printed. completeOpenCuts - [in] An intersection curve that stops inside the mesh does not separate one side from the other, so the mesh is returned whole. If true, each such open end is joined to the nearest border of the mesh, or to another cut, by the shortest path along existing edges or straight across a quad or an n-gon between two of its vertices. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows the mesh rather than the splitters, so it is not an intersection result. No vertex is added or moved; faces crossed straight are re-tiled from their own vertices. Cuts that already close, or that already run from border to border, are unaffected. Defaults to false. cancel - [out] If not nullptr, a trigger to request termination. When cancellation is requested, the return value will often be false. You are responsible to delete new objects that were returned, even if you requested cancellation. reporter - [out] If not nullptr, an indicative progress is reported. Returns: true if the computation finished successfully, false otherwise. </li>
 </ul>
 
 </div>
@@ -8373,8 +8375,63 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a0da27563f7157b04d7c9ce9c632f13fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da27563f7157b04d7c9ce9c632f13fb">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ON_Mesh::SplitArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshesToSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>meshesThatSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh_split_options.html">ON_MeshSplitOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>somethingHappened</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same as above, with every setting read from options (nullptr for the defaults), including <a class="el" href="class_o_n___mesh_split_options.html#ab7fce482a59be3ef0beb58f2a0a2da90">ON_MeshSplitOptions::RequestOpenCutEnds</a>. </p>
+
+</div>
+</div>
 <a id="a787131c36a85439f7a15cbff46a81b73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a787131c36a85439f7a15cbff46a81b73">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a787131c36a85439f7a15cbff46a81b73">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8459,7 +8516,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ac20a56ebe42cec69a5910306f05185ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac20a56ebe42cec69a5910306f05185ee">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20a56ebe42cec69a5910306f05185ee">&#9670;&nbsp;</a></span>SplitArray() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9800,7 +9857,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2026 11:21:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2026 15:52:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

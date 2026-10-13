@@ -94,6 +94,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a584a2d773db2ad829c49dd5b7091447d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a584a2d773db2ad829c49dd5b7091447d">CreateNgons</a> () const</td></tr>
 <tr class="memdesc:a584a2d773db2ad829c49dd5b7091447d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to true.  <a href="class_o_n___mesh_split_options.html#a584a2d773db2ad829c49dd5b7091447d">More...</a><br /></td></tr>
 <tr class="separator:a584a2d773db2ad829c49dd5b7091447d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e2c47ddb0309bdf293adfb998f6ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a58e2c47ddb0309bdf293adfb998f6ee1">OpenCutEnds</a> () const</td></tr>
+<tr class="memdesc:a58e2c47ddb0309bdf293adfb998f6ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to nullptr.  <a href="class_o_n___mesh_split_options.html#a58e2c47ddb0309bdf293adfb998f6ee1">More...</a><br /></td></tr>
+<tr class="separator:a58e2c47ddb0309bdf293adfb998f6ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fce482a59be3ef0beb58f2a0a2da90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#ab7fce482a59be3ef0beb58f2a0a2da90">RequestOpenCutEnds</a> (<a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *ends)</td></tr>
+<tr class="separator:ab7fce482a59be3ef0beb58f2a0a2da90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e475ce20fee9c457a1462fdd02551e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#ac4e475ce20fee9c457a1462fdd02551e">SetCompleteOpenCuts</a> (bool enable)</td></tr>
 <tr class="separator:ac4e475ce20fee9c457a1462fdd02551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e6560a20d9da016d5c267fb1d2ed1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_split_options.html#a84e6560a20d9da016d5c267fb1d2ed1e">SetCreateNgons</a> (bool enable)</td></tr>
@@ -211,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defaults to false. </p>
-<p>An intersection curve that stops inside the mesh being split does not separate one side from the other, so the mesh is returned whole. When this is enabled, each such open end is joined to the nearest border of the mesh, or to another cut, following edges the mesh already has. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows existing edges rather than the cutter, so it is not an intersection result. No vertex is moved and no face is added. Cuts that already close, or that already run from border to border, are unaffected. </p>
+<p>An intersection curve that stops inside the mesh being split does not separate one side from the other, so the mesh is returned whole. When this is enabled, each such open end is joined to the nearest border of the mesh, or to another cut, by the shortest path along existing edges or straight across a quad or an n-gon between two of its vertices. This yields a best-effort cut where the intersection alone leaves the answer undetermined: the added stretch follows the mesh rather than the cutter, so it is not an intersection result. No vertex is added or moved; faces crossed straight are re-tiled from their own vertices. Cuts that already close, or that already run from border to border, are unaffected. </p>
 
 </div>
 </div>
@@ -231,6 +236,44 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defaults to true. </p>
+
+</div>
+</div>
+<a id="a58e2c47ddb0309bdf293adfb998f6ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e2c47ddb0309bdf293adfb998f6ee1">&#9670;&nbsp;</a></span>OpenCutEnds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a>* ON_MeshSplitOptions::OpenCutEnds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defaults to nullptr. </p>
+
+</div>
+</div>
+<a id="ab7fce482a59be3ef0beb58f2a0a2da90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fce482a59be3ef0beb58f2a0a2da90">&#9670;&nbsp;</a></span>RequestOpenCutEnds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ON_MeshSplitOptions::RequestOpenCutEnds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *&#160;</td>
+          <td class="paramname"><em>ends</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When ends is not nullptr, a split appends to it the end of every intersection curve that stops inside a mesh being split. Nothing is computed when it is nullptr. The array must outlive the split; it is not cleared first. </p>
 
 </div>
 </div>
@@ -325,7 +368,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2026 11:21:56 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2026 15:52:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
