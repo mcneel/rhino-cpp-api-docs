@@ -262,6 +262,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34e370c5812aaffdc026e00ffe8a939c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d17c6aa8322b96ff2748e78583541f"><td class="memItemLeft" align="right" valign="top">CRhUndoRecord *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a76d17c6aa8322b96ff2748e78583541f">CurrentUndoRecord</a> () const</td></tr>
 <tr class="separator:a76d17c6aa8322b96ff2748e78583541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbf30e4397559607ace927700b38a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__w_string.html">ON_wString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a5bbf30e4397559607ace927700b38a17">CurrentUndoRecordDescription</a> () const</td></tr>
+<tr class="separator:a5bbf30e4397559607ace927700b38a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58b778e8b5e4afa03f7062d0eff192a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#ae58b778e8b5e4afa03f7062d0eff192a">CurrentUndoRecordSerialNumber</a> () const</td></tr>
 <tr class="separator:ae58b778e8b5e4afa03f7062d0eff192a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d1063cbb5e03aa27bad6f6dd97cc0e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_o_n__3dm_object_attributes.html">ON_3dmObjectAttributes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a47d1063cbb5e03aa27bad6f6dd97cc0e">DefaultObjectAttributes</a> () const</td></tr>
@@ -669,6 +671,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2ae5d4ba446fd944baa5e9a0bf05a773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfc24315ed44bc1ae68f089c2b85c06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#aecfc24315ed44bc1ae68f089c2b85c06">SetCommandToRepeat</a> (const <a class="el" href="class_c_rhino_app_1_1_c_rh_mru_command_record.html">CRhinoApp::CRhMruCommandRecord</a> &amp;rec)</td></tr>
 <tr class="separator:aecfc24315ed44bc1ae68f089c2b85c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8473dd7b276e58b40b2c756ba0df07f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a8473dd7b276e58b40b2c756ba0df07f9">SetCurrentUndoRecordDescription</a> (const wchar_t *sDescription)</td></tr>
+<tr class="separator:a8473dd7b276e58b40b2c756ba0df07f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335411546474ac564ea734f7156e64f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a335411546474ac564ea734f7156e64f6">SetModelName</a> (const char *)</td></tr>
 <tr class="separator:a335411546474ac564ea734f7156e64f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf02f392a0a18f4a4f75af1045ba986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_doc.html#a7bf02f392a0a18f4a4f75af1045ba986">SetModelName</a> (const wchar_t *)</td></tr>
@@ -3503,6 +3507,24 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns: Record being currently recorded. If undo recording is disabled or nothing is currently being recorded, then NULL is returned. </p>
+
+</div>
+</div>
+<a id="a5bbf30e4397559607ace927700b38a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bbf30e4397559607ace927700b38a17">&#9670;&nbsp;</a></span>CurrentUndoRecordDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n__w_string.html">ON_wString</a> CRhinoDoc::CurrentUndoRecordDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns: The description of the undo record currently being recorded, as shown in Undo, Redo, and UndoMultiple. If no description has been set, this is the name of the command that owns the record. Empty if undo recording is not active. </p>
 
 </div>
 </div>
@@ -8441,6 +8463,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a8473dd7b276e58b40b2c756ba0df07f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8473dd7b276e58b40b2c756ba0df07f9">&#9670;&nbsp;</a></span>SetCurrentUndoRecordDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoDoc::SetCurrentUndoRecordDescription </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>sDescription</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Sets the description of the undo record currently being recorded. Lets code running inside a command (e.g. RunPythonScript) give its undo record a meaningful name in Undo, Redo, and UndoMultiple. Parameters: sDescription - [in] new description. Cannot be nullptr, empty, or only white space. Returns: true if an undo record is active and its description was set. </p>
+
+</div>
+</div>
 <a id="a335411546474ac564ea734f7156e64f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a335411546474ac564ea734f7156e64f6">&#9670;&nbsp;</a></span>SetModelName() <span class="overload">[1/2]</span></h2>
 
@@ -10543,7 +10584,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:28 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:44:42 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

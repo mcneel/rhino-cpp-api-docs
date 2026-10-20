@@ -3019,6 +3019,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae088f3fd64907ff6d692a4359636bbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5be716ae3a3beb86be3d33eb77fe0fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga5be716ae3a3beb86be3d33eb77fe0fca">RhinoIntersectPlaneGeometry</a> (const <a class="el" href="class_o_n___plane.html">ON_Plane</a> &amp;plane, const <a class="el" href="class_o_n___geometry.html">ON_Geometry</a> *pGeometry, double tolerance, const <a class="el" href="class_c_rhino_intersect_plane_geometry_options.html">CRhinoIntersectPlaneGeometryOptions</a> &amp;options, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___curve.html">ON_Curve</a> * &gt; &amp;curves, <a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> &amp;points)</td></tr>
 <tr class="separator:ga5be716ae3a3beb86be3d33eb77fe0fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga297c29e1659b673293ade858bcd702f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga297c29e1659b673293ade858bcd702f6">RhinoIntersectPlanesMesh</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane.html">ON_Plane</a> &gt; &amp;planes, const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;mesh, double tolerance, <a class="el" href="class_o_n___mesh_intersection_cache.html">ON_MeshIntersectionCache</a> *cache, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *terminator, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; &amp;polylines)</td></tr>
+<tr class="separator:ga297c29e1659b673293ade858bcd702f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a1f6e5856fd7eef5c4c1abf8126c408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#ga7a1f6e5856fd7eef5c4c1abf8126c408">RhinoIntersectPlaneWithBoundingBox</a> (<a class="el" href="class_o_n__3d_point.html">ON_3dPoint</a> origin, <a class="el" href="class_o_n__3d_vector.html">ON_3dVector</a> normal, const <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;bounding_box, bool bAccurate, <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> &amp;polyline)</td></tr>
 <tr class="separator:ga7a1f6e5856fd7eef5c4c1abf8126c408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa4eda68d3694dbcef7e70c946082a549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___rhino.html#gaa4eda68d3694dbcef7e70c946082a549">RhinoIntersectSurfaceImplicitFunction</a> (const <a class="el" href="class_o_n___surface.html">ON_Surface</a> *surface, const <a class="el" href="class_o_n___signed_distance_function.html">ON_SignedDistanceFunction</a> &amp;implicitFunction, double tolerance, double overlapTolerance, double fittingTolerance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___s_i_x_event.html">ON_SIXEvent</a> &gt; &amp;results, <a class="el" href="class_o_n__w_string.html">ON_wString</a> &amp;error)</td></tr>
@@ -27334,6 +27336,59 @@ template&lt;typename Callback &gt; </div>
 
 </div>
 </div>
+<a id="ga297c29e1659b673293ade858bcd702f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga297c29e1659b673293ade858bcd702f6">&#9670;&nbsp;</a></span>RhinoIntersectPlanesMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___rhino.html#gae0ca1c334125e1735d6bf07ae91bbb66">RHINO_SDK_FUNCTION</a> bool RhinoIntersectPlanesMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane.html">ON_Plane</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>planes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___mesh.html">ON_Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh_intersection_cache.html">ON_MeshIntersectionCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *&#160;</td>
+          <td class="paramname"><em>terminator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>polylines</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Intersects a mesh with each plane on its own, as RhinoIntersectPlaneGeometry does for one plane. Parameters: planes - [in] Planes that are not valid are skipped and make the result false. mesh - [in] The mesh. tolerance - [in] The document tolerance, as for RhinoIntersectPlaneGeometry. cache - [in/out] Optional. Can be reused for more planes through the same mesh. terminator - [in] Optional. polylines - [out] The intersections and the outlines of the parts of the mesh lying in a plane are appended in plane order, not projected onto the planes. The caller deletes them. Returns: true if every plane was intersected, including planes that miss the mesh. false if the mesh is empty, tolerance is negative or not a number, a plane is not valid, or an intersection failed or was cancelled. Polylines found before a failure are still appended. </p>
+
+</div>
+</div>
 <a id="ga7a1f6e5856fd7eef5c4c1abf8126c408"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7a1f6e5856fd7eef5c4c1abf8126c408">&#9670;&nbsp;</a></span>RhinoIntersectPlaneWithBoundingBox()</h2>
 
@@ -43924,7 +43979,7 @@ for(;;)
 <div class="ttc" id="agroup___rhino_html_ga2fa073809d595133ddcfe6d8da265848"><div class="ttname"><a href="group___rhino.html#ga2fa073809d595133ddcfe6d8da265848">RHINO_VERSION_BRANCH</a></div><div class="ttdeci">#define RHINO_VERSION_BRANCH</div><div class="ttdef"><b>Definition:</b> rhinoSdkVersion.h:90</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:24 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:44:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

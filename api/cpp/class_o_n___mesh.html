@@ -400,6 +400,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8983d335efcd548166708403742307fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1870824b2eb5da0889fc382488252af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aa1870824b2eb5da0889fc382488252af">IntersectPlane</a> (<a class="el" href="class_o_n___plane_equation.html">ON_PlaneEquation</a> plane_equation, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___line.html">ON_Line</a> &gt; &amp;lines) const</td></tr>
 <tr class="separator:aa1870824b2eb5da0889fc382488252af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0c1824c480780c2d274f250e5b47cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aec0c1824c480780c2d274f250e5b47cd">IntersectPlanes</a> (const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane.html">ON_Plane</a> &gt; &amp;planes, double tolerance, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; *perforations, <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; *overlaps, <a class="el" href="class_o_n___mesh_intersection_cache.html">ON_MeshIntersectionCache</a> *cache=nullptr, <a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *cancel=nullptr) const</td></tr>
+<tr class="separator:aec0c1824c480780c2d274f250e5b47cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba8065a1d1dd17ac978676c2bc19113d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh.html#aba8065a1d1dd17ac978676c2bc19113d">InvalidateBoundingBoxes</a> ()</td></tr>
 <tr class="memdesc:aba8065a1d1dd17ac978676c2bc19113d"><td class="mdescLeft">&#160;</td><td class="mdescRight">directly manipulating the m_T[] array.  <a href="class_o_n___mesh.html#aba8065a1d1dd17ac978676c2bc19113d">More...</a><br /></td></tr>
 <tr class="separator:aba8065a1d1dd17ac978676c2bc19113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5657,6 +5659,59 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aec0c1824c480780c2d274f250e5b47cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0c1824c480780c2d274f250e5b47cd">&#9670;&nbsp;</a></span>IntersectPlanes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_Mesh::IntersectPlanes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___plane.html">ON_Plane</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>planes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>perforations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n___polyline.html">ON_Polyline</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>overlaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___mesh_intersection_cache.html">ON_MeshIntersectionCache</a> *&#160;</td>
+          <td class="paramname"><em>cache</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_n___terminator.html">ON_Terminator</a> *&#160;</td>
+          <td class="paramname"><em>cancel</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Intersect this mesh with each plane on its own. Parameters: planes - [in] planes that are not valid are skipped and make the result false. tolerance - [in] see remarks at <a class="el" href="class_o_n___mesh.html#a4f2bef19d6d37f651c611b75a80b4a8b">GetIntersections()</a> function. perforations - [out] intersection polylines are appended in plane order if not nullptr. overlaps - [out] outlines of the parts of this mesh lying in a plane are appended in plane order if not nullptr. Can be the same array as perforations. cache - [in-out] optional; can be reused for more planes through this same mesh. cancel - [in] optional. Returns: true if every plane was intersected, including planes that miss this mesh. false if this mesh is empty, tolerance is negative or not a number, a plane is not valid, or an intersection failed or was cancelled. Polylines found before are still appended. The caller deletes the polylines. Remarks: <a class="el" href="class_o_n___mesh_x_plane.html" title="Another mesh-plane intersector: see ON_Mesh::IntersectPlanes.">ON_MeshXPlane</a> and TL_MeshXPlane are the other mesh-plane intersectors. </p>
+
+</div>
+</div>
 <a id="a2ed52d262179d9d9a9c92f485edd962b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ed52d262179d9d9a9c92f485edd962b">&#9670;&nbsp;</a></span>IntersectTwoArrays()</h2>
 
@@ -9857,7 +9912,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:54 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:45:08 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

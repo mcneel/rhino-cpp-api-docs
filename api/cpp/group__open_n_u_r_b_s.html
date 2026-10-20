@@ -721,6 +721,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_x_line.html">ON_MeshXLine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_x_plane.html">ON_MeshXPlane</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another mesh-plane intersector: see <a class="el" href="class_o_n___mesh.html#aec0c1824c480780c2d274f250e5b47cd">ON_Mesh::IntersectPlanes</a>.  <a href="class_o_n___mesh_x_plane.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___mesh_x_point.html">ON_MeshXPoint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -40118,7 +40119,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This function is used to test curvature continuity in IsContinuous and GetNextDiscontinuity functions when the continuity parameter is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. Parameters: Km - [in] Curve's vector curvature evaluated from below Kp - [in] Curve's vector curvature evaluated from below Returns: True if the change from Km to Kp should be considered G2 continuous. </p>
+<p>Description: This function is used to test curvature continuity in IsContinuous and GetNextDiscontinuity functions when the continuity parameter is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>. Parameters: Km - [in] Curve's vector curvature evaluated from below Kp - [in] Curve's vector curvature evaluated from above cos_angle_tolerance - [in] Cosine of the tangent angle tolerance. Values greater than ON_DEFAULT_ANGLE_TOLERANCE_COSINE (tighter than 1 degree) are treated as ON_DEFAULT_ANGLE_TOLERANCE_COSINE. If the resulting angle is less than about 18 degrees, it is doubled for the curvature direction test. With the default, Km and Kp are discontinuous if the angle between them is greater than 2 degrees. curvature_tolerance - [in] If |Km - Kp| &lt;= curvature_tolerance, then true is returned. Otherwise, the direction test above and a relative magnitude test are used. The relative magnitude test fails if ||Km| - |Kp|| &gt; ON_RELATIVE_CURVATURE_TOLERANCE*max(|Km|,|Kp|) (5%). Increasing curvature_tolerance can only loosen the test. Returns: True if the change from Km to Kp should be considered G2 continuous. </p>
 
 </div>
 </div>
@@ -40178,7 +40179,7 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Description: This function is used to test curvature continuity in IsContinuous and GetNextDiscontinuity functions when the continuity parameter is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>. Parameters: Km - [in] Curve's vector curvature evaluated from below Kp - [in] Curve's vector curvature evaluated from below Returns: True if the change from Km to Kp should be considered Gsmooth continuous. </p>
+<p>Description: This function is used to test curvature continuity in IsContinuous and GetNextDiscontinuity functions when the continuity parameter is <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>. Parameters: Km - [in] Curve's vector curvature evaluated from below Kp - [in] Curve's vector curvature evaluated from above cos_angle_tolerance - [in] Ignored. Km and Kp are discontinuous if the angle between them is greater than 90 degrees. curvature_tolerance - [in] If |Km - Kp| &lt;= curvature_tolerance, then true is returned. Otherwise, false is returned if exactly one of Km and Kp is zero or the angle test above fails. Differences in curvature magnitude are not tested. Returns: True if the change from Km to Kp should be considered Gsmooth continuous. </p>
 
 </div>
 </div>
@@ -64930,7 +64931,7 @@ template&lt;class T &gt; </div>
 <div class="ttc" id="agroup__open_n_u_r_b_s_html_ga733d61a507e34b506e3a6a9527eb9295"><div class="ttname"><a href="group__open_n_u_r_b_s.html#ga733d61a507e34b506e3a6a9527eb9295">OPENNURBS_VERSION_MINOR</a></div><div class="ttdeci">#define OPENNURBS_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> opennurbs_version.h:70</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:23 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:44:37 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

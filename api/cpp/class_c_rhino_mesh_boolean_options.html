@@ -82,21 +82,45 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a367422af0bd6b70dab48a67631e2e7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17dedc2855229869987b21c85fb9987f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a17dedc2855229869987b21c85fb9987f">~CRhinoMeshBooleanOptions</a> ()</td></tr>
 <tr class="separator:a17dedc2855229869987b21c85fb9987f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b852967800dcf9381df264b1a9389b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a27b852967800dcf9381df264b1a9389b">FailedInputPairs</a> () const</td></tr>
+<tr class="memdesc:a27b852967800dcf9381df264b1a9389b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array requested via RequestFailedInputPairs, or null.  <a href="class_c_rhino_mesh_boolean_options.html#a27b852967800dcf9381df264b1a9389b">More...</a><br /></td></tr>
+<tr class="separator:a27b852967800dcf9381df264b1a9389b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727e0a84d14e39557eaa3065b1f8eade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a727e0a84d14e39557eaa3065b1f8eade">OpenCutEnds</a> () const</td></tr>
 <tr class="memdesc:a727e0a84d14e39557eaa3065b1f8eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array requested via RequestOpenCutEnds, or null.  <a href="class_c_rhino_mesh_boolean_options.html#a727e0a84d14e39557eaa3065b1f8eade">More...</a><br /></td></tr>
 <tr class="separator:a727e0a84d14e39557eaa3065b1f8eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89579ee3d4ccf8377d898173702c8794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a89579ee3d4ccf8377d898173702c8794">OpenResults</a> () const</td></tr>
+<tr class="memdesc:a89579ee3d4ccf8377d898173702c8794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array requested via RequestOpenResults, or null.  <a href="class_c_rhino_mesh_boolean_options.html#a89579ee3d4ccf8377d898173702c8794">More...</a><br /></td></tr>
+<tr class="separator:a89579ee3d4ccf8377d898173702c8794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231c7826c4637f077a501e5dd2c49e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a231c7826c4637f077a501e5dd2c49e94">RequestFailedInputPairs</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *pairs)</td></tr>
+<tr class="memdesc:a231c7826c4637f077a501e5dd2c49e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the pairs of input meshes whose operation with each other could not be computed. For the two-set operations (Difference/Intersection/Split) the indices are flat-concatenated as in RequestSourceMeshIndexMap; a union pair is listed only when its meshes ended in different results. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared.  <a href="class_c_rhino_mesh_boolean_options.html#a231c7826c4637f077a501e5dd2c49e94">More...</a><br /></td></tr>
+<tr class="separator:a231c7826c4637f077a501e5dd2c49e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf66801a226337626c4ab8d63e02001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#abcf66801a226337626c4ab8d63e02001">RequestFirstNewlyAddedFacesList</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned &gt; *list)</td></tr>
 <tr class="memdesc:abcf66801a226337626c4ab8d63e02001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retuns a list with the first index, the first index of the first newly added mesh face, and as secondo index, the count of new faces after that index.  <a href="class_c_rhino_mesh_boolean_options.html#abcf66801a226337626c4ab8d63e02001">More...</a><br /></td></tr>
 <tr class="separator:abcf66801a226337626c4ab8d63e02001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36776d04699557db7fd34234c9c31cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a36776d04699557db7fd34234c9c31cfe">RequestOpenCutEnds</a> (<a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *ends)</td></tr>
 <tr class="memdesc:a36776d04699557db7fd34234c9c31cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the ends of the intersections that stop inside a mesh the operation splits (RH-97369): such a cut separates nothing. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared.  <a href="class_c_rhino_mesh_boolean_options.html#a36776d04699557db7fd34234c9c31cfe">More...</a><br /></td></tr>
 <tr class="separator:a36776d04699557db7fd34234c9c31cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba73b869c7f7d30e9ad3721c8adb3cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#aba73b869c7f7d30e9ad3721c8adb3cc5">RequestOpenResults</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *results)</td></tr>
+<tr class="memdesc:aba73b869c7f7d30e9ad3721c8adb3cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the indices of the results that have naked edges although no input mesh had any. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared.  <a href="class_c_rhino_mesh_boolean_options.html#aba73b869c7f7d30e9ad3721c8adb3cc5">More...</a><br /></td></tr>
+<tr class="separator:aba73b869c7f7d30e9ad3721c8adb3cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af774c969a3a00782b763855e291ac536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#af774c969a3a00782b763855e291ac536">RequestSourceMeshIndexMap</a> (<a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt;&gt; *map)</td></tr>
 <tr class="memdesc:af774c969a3a00782b763855e291ac536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests an input-to-output index map for the next boolean run (RH-94152). When set, the boolean fills 'map' with one entry per output mesh (parallel to the OutMeshes result), each listing the indices of the input meshes that contributed faces to that output. For the two-set operations (Difference/Intersection/Split) the indices are flat-concatenated: the first set occupies 0..n0-1 and the second set occupies n0..n0+n1-1. The pointer is borrowed; the caller owns the storage.  <a href="class_c_rhino_mesh_boolean_options.html#af774c969a3a00782b763855e291ac536">More...</a><br /></td></tr>
 <tr class="separator:af774c969a3a00782b763855e291ac536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ba78e4959963e7efeb4733664afa72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a55ba78e4959963e7efeb4733664afa72">RequestUnmergedResultPairs</a> (<a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *pairs)</td></tr>
+<tr class="memdesc:a55ba78e4959963e7efeb4733664afa72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the pairs of union results that were left apart because joining them would have left naked edges, as indices into the results of the call. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared.  <a href="class_c_rhino_mesh_boolean_options.html#a55ba78e4959963e7efeb4733664afa72">More...</a><br /></td></tr>
+<tr class="separator:a55ba78e4959963e7efeb4733664afa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb873a8e3484f4068b7e1b5efc3b440d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#abb873a8e3484f4068b7e1b5efc3b440d">ResolveSelfIntersections</a> () const</td></tr>
+<tr class="memdesc:abb873a8e3484f4068b7e1b5efc3b440d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value set via SetResolveSelfIntersections.  <a href="class_c_rhino_mesh_boolean_options.html#abb873a8e3484f4068b7e1b5efc3b440d">More...</a><br /></td></tr>
+<tr class="separator:abb873a8e3484f4068b7e1b5efc3b440d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87174f925366fc63608c3d07390eddf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#ac87174f925366fc63608c3d07390eddf">SetResolveSelfIntersections</a> (bool resolve)</td></tr>
+<tr class="memdesc:ac87174f925366fc63608c3d07390eddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether union, difference and intersection first read an input mesh that intersects itself, or whose closed parts nest in each other or are wound inside out, as the solid it encloses. When disabled, the default, this is done only when the result computed from the inputs as given has naked or non-manifold edges it should not have, or could not be computed, and the result from the resolved inputs has neither.  <a href="class_c_rhino_mesh_boolean_options.html#ac87174f925366fc63608c3d07390eddf">More...</a><br /></td></tr>
+<tr class="separator:ac87174f925366fc63608c3d07390eddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#a7f788eadf0fbaebeec6cb44bbb921e8c">SourceMeshIndexMap</a> () const</td></tr>
 <tr class="memdesc:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index map requested via RequestSourceMeshIndexMap, or null.  <a href="class_c_rhino_mesh_boolean_options.html#a7f788eadf0fbaebeec6cb44bbb921e8c">More...</a><br /></td></tr>
 <tr class="separator:a7f788eadf0fbaebeec6cb44bbb921e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92612b11b6e35409e6a350b41c70a71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rhino_mesh_boolean_options.html#aa92612b11b6e35409e6a350b41c70a71">UnmergedResultPairs</a> () const</td></tr>
+<tr class="memdesc:aa92612b11b6e35409e6a350b41c70a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array requested via RequestUnmergedResultPairs, or null.  <a href="class_c_rhino_mesh_boolean_options.html#aa92612b11b6e35409e6a350b41c70a71">More...</a><br /></td></tr>
+<tr class="separator:aa92612b11b6e35409e6a350b41c70a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,6 +171,25 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a27b852967800dcf9381df264b1a9389b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b852967800dcf9381df264b1a9389b">&#9670;&nbsp;</a></span>FailedInputPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;<a class="el" href="class_o_n__2dex.html">ON_2dex</a>&gt;* CRhinoMeshBooleanOptions::FailedInputPairs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the array requested via RequestFailedInputPairs, or null. </p>
+
+</div>
+</div>
 <a id="a727e0a84d14e39557eaa3065b1f8eade"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a727e0a84d14e39557eaa3065b1f8eade">&#9670;&nbsp;</a></span>OpenCutEnds()</h2>
 
@@ -163,6 +206,51 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the array requested via RequestOpenCutEnds, or null. </p>
+
+</div>
+</div>
+<a id="a89579ee3d4ccf8377d898173702c8794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89579ee3d4ccf8377d898173702c8794">&#9670;&nbsp;</a></span>OpenResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;int&gt;* CRhinoMeshBooleanOptions::OpenResults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the array requested via RequestOpenResults, or null. </p>
+
+</div>
+</div>
+<a id="a231c7826c4637f077a501e5dd2c49e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231c7826c4637f077a501e5dd2c49e94">&#9670;&nbsp;</a></span>RequestFailedInputPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoMeshBooleanOptions::RequestFailedInputPairs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td>
+          <td class="paramname"><em>pairs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests the pairs of input meshes whose operation with each other could not be computed. For the two-set operations (Difference/Intersection/Split) the indices are flat-concatenated as in RequestSourceMeshIndexMap; a union pair is listed only when its meshes ended in different results. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pairs</td><td>Receives the input index pairs, or null to disable.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -218,6 +306,32 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aba73b869c7f7d30e9ad3721c8adb3cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba73b869c7f7d30e9ad3721c8adb3cc5">&#9670;&nbsp;</a></span>RequestOpenResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoMeshBooleanOptions::RequestOpenResults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>results</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests the indices of the results that have naked edges although no input mesh had any. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">results</td><td>Receives the result indices, or null to disable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af774c969a3a00782b763855e291ac536"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af774c969a3a00782b763855e291ac536">&#9670;&nbsp;</a></span>RequestSourceMeshIndexMap()</h2>
 
@@ -244,6 +358,77 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a55ba78e4959963e7efeb4733664afa72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ba78e4959963e7efeb4733664afa72">&#9670;&nbsp;</a></span>RequestUnmergedResultPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoMeshBooleanOptions::RequestUnmergedResultPairs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td>
+          <td class="paramname"><em>pairs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests the pairs of union results that were left apart because joining them would have left naked edges, as indices into the results of the call. Nothing is computed unless requested. The pointer is borrowed; the array is appended to, not cleared. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pairs</td><td>Receives the index pairs, or null to disable.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb873a8e3484f4068b7e1b5efc3b440d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb873a8e3484f4068b7e1b5efc3b440d">&#9670;&nbsp;</a></span>ResolveSelfIntersections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhinoMeshBooleanOptions::ResolveSelfIntersections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value set via SetResolveSelfIntersections. </p>
+
+</div>
+</div>
+<a id="ac87174f925366fc63608c3d07390eddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87174f925366fc63608c3d07390eddf">&#9670;&nbsp;</a></span>SetResolveSelfIntersections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRhinoMeshBooleanOptions::SetResolveSelfIntersections </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>resolve</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether union, difference and intersection first read an input mesh that intersects itself, or whose closed parts nest in each other or are wound inside out, as the solid it encloses. When disabled, the default, this is done only when the result computed from the inputs as given has naked or non-manifold edges it should not have, or could not be computed, and the result from the resolved inputs has neither. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resolve</td><td>True to always resolve such inputs.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7f788eadf0fbaebeec6cb44bbb921e8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f788eadf0fbaebeec6cb44bbb921e8c">&#9670;&nbsp;</a></span>SourceMeshIndexMap()</h2>
 
@@ -260,6 +445,25 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the index map requested via RequestSourceMeshIndexMap, or null. </p>
+
+</div>
+</div>
+<a id="aa92612b11b6e35409e6a350b41c70a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92612b11b6e35409e6a350b41c70a71">&#9670;&nbsp;</a></span>UnmergedResultPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;<a class="el" href="class_o_n__2dex.html">ON_2dex</a>&gt;* CRhinoMeshBooleanOptions::UnmergedResultPairs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the array requested via RequestUnmergedResultPairs, or null. </p>
 
 </div>
 </div>
@@ -323,7 +527,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:32 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:44:45 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

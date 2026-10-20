@@ -74,6 +74,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a4df5588451aac77ef69f700da5247c48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#a4df5588451aac77ef69f700da5247c48">m_failedInputPairs</a> = nullptr</td></tr>
+<tr class="separator:a4df5588451aac77ef69f700da5247c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dadefd9cf2927125db89111dd2d5d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; unsigned &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#a1dadefd9cf2927125db89111dd2d5d03">m_firstNewlyAddedFace</a></td></tr>
 <tr class="separator:a1dadefd9cf2927125db89111dd2d5d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad31ab1e8ce5d1a2d843ba1f0e2daedd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___class_array.html">ON_ClassArray</a>&lt; <a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#ad31ab1e8ce5d1a2d843ba1f0e2daedd6">m_inputMap</a> = nullptr</td></tr>
@@ -81,8 +83,29 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a533a9ef9d5a65b0cc00423145c0d5c82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n__3d_point_array.html">ON_3dPointArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#a533a9ef9d5a65b0cc00423145c0d5c82">m_openCutEnds</a> = nullptr</td></tr>
 <tr class="memdesc:a533a9ef9d5a65b0cc00423145c0d5c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">RH-97369: borrowed; when non-null, receives the ends of the cuts that stop inside a mesh the operation splits.  <a href="class_c_rh_mesh_boolean_options_private.html#a533a9ef9d5a65b0cc00423145c0d5c82">More...</a><br /></td></tr>
 <tr class="separator:a533a9ef9d5a65b0cc00423145c0d5c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba685e685efe074e88ffd6de7ede4b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#adba685e685efe074e88ffd6de7ede4b4">m_openResults</a> = nullptr</td></tr>
+<tr class="separator:adba685e685efe074e88ffd6de7ede4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afcdee4f4fff09fa4620e4f8f3d1674"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#a2afcdee4f4fff09fa4620e4f8f3d1674">m_resolveSelfIntersections</a> = false</td></tr>
+<tr class="separator:a2afcdee4f4fff09fa4620e4f8f3d1674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47742edafe0761c63b98e715ae40fd20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt; <a class="el" href="class_o_n__2dex.html">ON_2dex</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_rh_mesh_boolean_options_private.html#a47742edafe0761c63b98e715ae40fd20">m_unmergedResultPairs</a> = nullptr</td></tr>
+<tr class="memdesc:a47742edafe0761c63b98e715ae40fd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrowed; when non-null, each receives what the operation could not do (see the matching Request functions).  <a href="class_c_rh_mesh_boolean_options_private.html#a47742edafe0761c63b98e715ae40fd20">More...</a><br /></td></tr>
+<tr class="separator:a47742edafe0761c63b98e715ae40fd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4df5588451aac77ef69f700da5247c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df5588451aac77ef69f700da5247c48">&#9670;&nbsp;</a></span>m_failedInputPairs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;<a class="el" href="class_o_n__2dex.html">ON_2dex</a>&gt;* CRhMeshBooleanOptionsPrivate::m_failedInputPairs = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1dadefd9cf2927125db89111dd2d5d03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dadefd9cf2927125db89111dd2d5d03">&#9670;&nbsp;</a></span>m_firstNewlyAddedFace</h2>
 
@@ -128,10 +151,54 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="adba685e685efe074e88ffd6de7ede4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba685e685efe074e88ffd6de7ede4b4">&#9670;&nbsp;</a></span>m_openResults</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;int&gt;* CRhMeshBooleanOptionsPrivate::m_openResults = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2afcdee4f4fff09fa4620e4f8f3d1674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2afcdee4f4fff09fa4620e4f8f3d1674">&#9670;&nbsp;</a></span>m_resolveSelfIntersections</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRhMeshBooleanOptionsPrivate::m_resolveSelfIntersections = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47742edafe0761c63b98e715ae40fd20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47742edafe0761c63b98e715ae40fd20">&#9670;&nbsp;</a></span>m_unmergedResultPairs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_n___simple_array.html">ON_SimpleArray</a>&lt;<a class="el" href="class_o_n__2dex.html">ON_2dex</a>&gt;* CRhMeshBooleanOptionsPrivate::m_unmergedResultPairs = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Borrowed; when non-null, each receives what the operation could not do (see the matching Request functions). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 13 2026 15:52:38 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 20 2026 16:44:52 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
