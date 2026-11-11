@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">9.0</span>
+   &#160;<span id="projectnumber">9.1</span>
    </div>
   </td>
  </tr>
@@ -263,6 +263,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5523224786c88ebb8fdcc842610f093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9aa9d804662d427c2e5f83193fd4e2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___depth_image.html#ad9aa9d804662d427c2e5f83193fd4e2b">SetProjection</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;vp, unsigned int image_width, unsigned int image_height, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> projection_id)</td></tr>
 <tr class="separator:ad9aa9d804662d427c2e5f83193fd4e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b20e32d2d3cedae7c842fb883efa806"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___depth_image.html#a8b20e32d2d3cedae7c842fb883efa806">SetProjection</a> (const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;vp, unsigned int image_width, unsigned int image_height, <a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a> projection_id, unsigned int first_row, unsigned int row_count)</td></tr>
+<tr class="separator:a8b20e32d2d3cedae7c842fb883efa806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c316ffdde26a4081d4328eaeb54418"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___depth_image.html#a83c316ffdde26a4081d4328eaeb54418">Width</a> () const</td></tr>
 <tr class="separator:a83c316ffdde26a4081d4328eaeb54418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a694c72feaab3be6aca23dcd5e0f07d97"><td class="memItemLeft" align="right" valign="top">const class ON_DepthImageCustomClippingRegion *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___depth_image.html#a694c72feaab3be6aca23dcd5e0f07d97">WorldCoordinateCustomClippingRegion</a> () const</td></tr>
@@ -2035,7 +2037,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ad9aa9d804662d427c2e5f83193fd4e2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9aa9d804662d427c2e5f83193fd4e2b">&#9670;&nbsp;</a></span>SetProjection()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9aa9d804662d427c2e5f83193fd4e2b">&#9670;&nbsp;</a></span>SetProjection() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2078,6 +2080,59 @@ Friends</h2></td></tr>
 <p>image_width - [in] number of horizontal elements in the image's id and depth planes. &gt; 0 Commonly set to vp.ScreenPortWidth()</p>
 <p>image_height - [in] number of vertical elements in the image's id and depth planes. &gt; 0 Commonly set to vp.ScreenPortHeight()</p>
 <p>projection_id - [in] When not nil, the projection id is used by drawing functions to eliminate duplicating calculations during mult-pass rendering algorithms. When the projection is changed, either change the projection id or set it to nil. Remarks: The image's lower left corner has coordinates (0,0). The image's upper right corner has coordinates (image_width,image_height). The indices of the image's upper right id and depth elements are [image_width-1][image_height-1]. </p>
+
+</div>
+</div>
+<a id="a8b20e32d2d3cedae7c842fb883efa806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b20e32d2d3cedae7c842fb883efa806">&#9670;&nbsp;</a></span>SetProjection() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_DepthImage::SetProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_o_n___viewport.html">ON_Viewport</a> &amp;&#160;</td>
+          <td class="paramname"><em>vp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>image_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>image_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__open_n_u_r_b_s.html#gadb9844468b1cef57a0f269d1302792bb">ON_UUID</a>&#160;</td>
+          <td class="paramname"><em>projection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>first_row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>row_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Description: Same as SetProjection(vp,image_width,image_height,projection_id), but stores only the rows first_row &lt;= j &lt; first_row+row_count. The stored rows get exactly the same values as in a full image. Nothing is drawn into the other rows, and <a class="el" href="class_o_n___depth_image.html#a61a0b20d7278339ae86a670fa608b84d">GetPixel()</a> returns false for them. Several threads can each draw one band of an image this way. </p>
 
 </div>
 </div>
@@ -2184,7 +2239,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 27 2026 15:46:07 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2026 16:54:17 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

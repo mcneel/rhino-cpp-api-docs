@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">9.0</span>
+   &#160;<span id="projectnumber">9.1</span>
    </div>
   </td>
  </tr>
@@ -192,6 +192,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a04134a82efa917d3f89bfc0c60b4edfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85491dd8ecbed5fc89b3e3d7e6b19064"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#a85491dd8ecbed5fc89b3e3d7e6b19064">GetNextDiscontinuity</a> (<a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668">ON::continuity</a> c, double t0, double t1, double *t, int *hint=nullptr, int *dtype=nullptr, double cos_angle_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#ga48817c15522bb78629b75ea385be6d06">ON_DEFAULT_ANGLE_TOLERANCE_COSINE</a>, double curvature_tolerance=<a class="el" href="group__open_n_u_r_b_s.html#gaf3d09b48940087a94d71e0489cc394ac">ON_SQRT_EPSILON</a>) const override</td></tr>
 <tr class="separator:a85491dd8ecbed5fc89b3e3d7e6b19064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf07ef13005859d27f833332c75a0160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#aaf07ef13005859d27f833332c75a0160">GetNormalizedArcLengthPoint</a> (double s, double *t, double fractional_tolerance=1.0e-8, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *sub_domain=nullptr) const override</td></tr>
+<tr class="memdesc:aaf07ef13005859d27f833332c75a0160"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual <a class="el" href="class_o_n___curve.html">ON_Curve</a> override  <a href="class_o_n___nurbs_curve.html#aaf07ef13005859d27f833332c75a0160">More...</a><br /></td></tr>
+<tr class="separator:aaf07ef13005859d27f833332c75a0160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08fec379c6f622bca7deb931af51733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#ae08fec379c6f622bca7deb931af51733">GetNormalizedArcLengthPoints</a> (int count, const double *s, double *t, double absolute_tolerance=0.0, double fractional_tolerance=1.0e-8, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *sub_domain=nullptr) const override</td></tr>
+<tr class="separator:ae08fec379c6f622bca7deb931af51733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d06bebc8e4e0d16bb025792228c6a98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#a6d06bebc8e4e0d16bb025792228c6a98">GetNurbForm</a> (<a class="el" href="class_o_n___nurbs_curve.html">ON_NurbsCurve</a> &amp;nurbsform, double tolerance=0.0, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *subdomain=nullptr) const override</td></tr>
 <tr class="separator:a6d06bebc8e4e0d16bb025792228c6a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1d5b3b9b27cd73dee452851d8c2a03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___nurbs_curve.html#aaf1d5b3b9b27cd73dee452851d8c2a03">GetNurbFormParameterFromCurveParameter</a> (double curve_t, double *nurbs_t) const override</td></tr>
@@ -432,10 +437,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36d4d80c58ea92dde6a1298ed8141a66 inherit pub_methods_class_o_n___curve"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a36d4d80c58ea92dde6a1298ed8141a66">GetDomain</a> (double *t0, double *t1) const</td></tr>
 <tr class="memdesc:a36d4d80c58ea92dde6a1298ed8141a66 inherit pub_methods_class_o_n___curve"><td class="mdescLeft">&#160;</td><td class="mdescRight">curve interface  <a href="class_o_n___curve.html#a36d4d80c58ea92dde6a1298ed8141a66">More...</a><br /></td></tr>
 <tr class="separator:a36d4d80c58ea92dde6a1298ed8141a66 inherit pub_methods_class_o_n___curve"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c9d5d6eb6fd3aac061ce2f3f8e45388 inherit pub_methods_class_o_n___curve"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a5c9d5d6eb6fd3aac061ce2f3f8e45388">GetNormalizedArcLengthPoint</a> (double s, double *t, double fractional_tolerance=1.0e-8, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *sub_domain=nullptr) const</td></tr>
-<tr class="separator:a5c9d5d6eb6fd3aac061ce2f3f8e45388 inherit pub_methods_class_o_n___curve"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace0f85028a199232f32a3f34d5baba40 inherit pub_methods_class_o_n___curve"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#ace0f85028a199232f32a3f34d5baba40">GetNormalizedArcLengthPoints</a> (int count, const double *s, double *t, double absolute_tolerance=0.0, double fractional_tolerance=1.0e-8, const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *sub_domain=nullptr) const</td></tr>
-<tr class="separator:ace0f85028a199232f32a3f34d5baba40 inherit pub_methods_class_o_n___curve"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbd5def723c9174ed88f9ca4db60c62 inherit pub_methods_class_o_n___curve"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a4cbd5def723c9174ed88f9ca4db60c62">GetSpanVectorIndex</a> (double t, int side, int *span_vector_index, <a class="el" href="class_o_n___interval.html">ON_Interval</a> *span_domain) const</td></tr>
 <tr class="separator:a4cbd5def723c9174ed88f9ca4db60c62 inherit pub_methods_class_o_n___curve"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07da6630700d2c2ce04f0bc3178b02b0 inherit pub_methods_class_o_n___curve"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_n___curve.html#a07da6630700d2c2ce04f0bc3178b02b0">GetTightBoundingBox</a> (class <a class="el" href="class_o_n___bounding_box.html">ON_BoundingBox</a> &amp;tight_bbox, bool bGrowBox=false, const class <a class="el" href="class_o_n___xform.html">ON_Xform</a> *xform=nullptr) const override</td></tr>
@@ -2098,6 +2099,121 @@ Additional Inherited Members</h2></td></tr>
  <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668ac8e81136beb5ea96000024e645f4937d" title="continuous unit tangent and curvature">ON::continuity::G2_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and |K0 - K1| &gt; curvature_tolerance, then a curvature discontinuity is reported. <a class="el" href="class_o_n.html#a7cec8c08d6bc50e082fb9e6507b5f668a296490741b975f4e91553e1c8c3e7007" title="aesthetic discontinuity">ON::continuity::Gsmooth_continuous</a>: If K0 and K1 are curvatures evaluated from above and below and the angle between K0 and K1 is at least twice angle tolerance or ||K0| - |K1|| &gt; (max(|K0|,|K1|) &gt; curvature_tolerance, then a curvature discontinuity is reported. Returns: true if a discontinuity was found on the interior of the interval (t0,t1). Remarks: Overrides <a class="el" href="class_o_n___curve.html#a2deaf514586ac4b16daa45a97d4bd8e1">ON_Curve::GetNextDiscontinuity</a>. </p>
 
 <p>Reimplemented from <a class="el" href="class_o_n___curve.html#a2deaf514586ac4b16daa45a97d4bd8e1">ON_Curve</a>.</p>
+
+</div>
+</div>
+<a id="aaf07ef13005859d27f833332c75a0160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf07ef13005859d27f833332c75a0160">&#9670;&nbsp;</a></span>GetNormalizedArcLengthPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_NurbsCurve::GetNormalizedArcLengthPoint </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fractional_tolerance</em> = <code>1.0e-8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *&#160;</td>
+          <td class="paramname"><em>sub_domain</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>virtual <a class="el" href="class_o_n___curve.html">ON_Curve</a> override </p>
+
+<p>Reimplemented from <a class="el" href="class_o_n___curve.html#a5c9d5d6eb6fd3aac061ce2f3f8e45388">ON_Curve</a>.</p>
+
+</div>
+</div>
+<a id="ae08fec379c6f622bca7deb931af51733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08fec379c6f622bca7deb931af51733">&#9670;&nbsp;</a></span>GetNormalizedArcLengthPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ON_NurbsCurve::GetNormalizedArcLengthPoints </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>absolute_tolerance</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fractional_tolerance</em> = <code>1.0e-8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_o_n___interval.html">ON_Interval</a> *&#160;</td>
+          <td class="paramname"><em>sub_domain</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>virtual <a class="el" href="class_o_n___curve.html">ON_Curve</a> override. Note: the fractional arc length values in 's' must be in [0, 1] and must be monotonically ascending: s[i] &lt; s[i+1] </p>
+
+<p>Reimplemented from <a class="el" href="class_o_n___curve.html#ace0f85028a199232f32a3f34d5baba40">ON_Curve</a>.</p>
 
 </div>
 </div>
@@ -4861,7 +4977,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 27 2026 15:46:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2026 16:54:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

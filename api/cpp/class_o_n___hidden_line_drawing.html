@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">9.0</span>
+   &#160;<span id="projectnumber">9.1</span>
    </div>
   </td>
  </tr>
@@ -399,7 +399,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Step 3. Optionally, Specify clipping planes or other options. </p>
-<p>Description: Specify clipping planes that are active for this view. Parameters: clip -[in] clipping plane or planes clip_id -[in] This is an optional parameter the user can use to identify the clipping plane. Returns: true if clipping planes have been set. Remarks: A point x in model space is visible if p(x)&lt;=0 for each clipping plane p.</p>
+<p>Description: Specify clipping planes that are active for this view. Parameters: clip -[in] clipping plane or planes clip_id -[in] This is an optional parameter the user can use to identify the clipping plane. Returns: true if clipping planes have been set. false if Draw has already been called. Remarks: A point x in model space is visible if p(x)&lt;=0 for each clipping plane p.</p>
+<p>Every plane is appended, so a plane's index matches the order it was added in. A plane that is not set (<a class="el" href="class_o_n___plane_equation.html#a3e7c94e6c5eba1cfbba9a100973d6d0d">ON_PlaneEquation::IsSet()</a>: a coefficient is unset, NaN or infinite, or the normal is zero) is kept in the list but clips nothing.</p>
 <p>Only allowed before calling Draw. The clipping planes are append to the ON_HiddenLineDrawing::m_clipping_plane array. For perspective views <a class="el" href="class_o_n___hidden_line_drawing.html#a80c24a88a860de614e24f19c250be37e" title="Step II. Specify viewport.">SetViewport()</a> will add PerspectiveViewClipCount many clipping planes from the viewport, and the first clipping plane is the near plane of the view frustum. </p>
 
 </div>
@@ -1322,7 +1323,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 27 2026 15:46:09 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2026 16:54:19 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

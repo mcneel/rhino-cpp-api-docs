@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Rhino C++ API
-   &#160;<span id="projectnumber">9.0</span>
+   &#160;<span id="projectnumber">9.1</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___surface.html#adc73a9fa774af09bda8828c4bc94b158">GetDomain</a>(int dir, double *t0, double *t1) const</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#adde9c69d1137664d8d518e09c49e9d26">GetGrevilleAbcissae</a>(int dir, double *g) const</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___surface.html#a9913e213f2786b7e5d502412b00f081f">GetIsoPushupDirection</a>(const ON_Curve &amp;curve_2d, double tolerance, const ON_Interval *curve_2d_subdomain, double *c, ON_Interval *c3_dom) const</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_o_n___surface.html#a99b74249201d94a53d0377251349ca5d">GetLocalClosestPoint</a>(const ON_3dPoint &amp;, double, double, double *, double *, const ON_Interval *=nullptr, const ON_Interval *=nullptr) const</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#a2f306834c6aba7f6349db978d07454ea">GetLocalClosestPoint</a>(const ON_3dPoint &amp;P, double s, double t, double *u, double *v, const ON_Interval *s_subdomain=nullptr, const ON_Interval *t_subdomain=nullptr) const override</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#ac56289f02a839e0169e19914c5090b7b">GetNextDiscontinuity</a>(int dir, ON::continuity c, double t0, double t1, double *t, int *hint=nullptr, int *dtype=nullptr, double cos_angle_tolerance=ON_DEFAULT_ANGLE_TOLERANCE_COSINE, double curvature_tolerance=ON_SQRT_EPSILON) const override</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#a185695ea61e4584e918acfa8e6d79069">GetNurbForm</a>(ON_NurbsSurface &amp;, double=0.0) const override</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___surface.html#abe2d9cf149007d0eb444525254a2eacc">GetNurbFormParameterFromSurfaceParameter</a>(double surface_s, double surface_t, double *nurbs_s, double *nurbs_t) const</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -235,7 +235,7 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_o_n___surface.html#a9c25021d3304fea40d3cfe9b4fb1a58e">NurbsSurface</a>(ON_NurbsSurface *pNurbsSurface=nullptr, double tolerance=0.0, const ON_Interval *s_subdomain=nullptr, const ON_Interval *t_subdomain=nullptr) const</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___surface.html#a2bd958c4af4819c1a4f1193c211d7b61">ObjectType</a>() const override</td><td class="entry"><a class="el" href="class_o_n___surface.html">ON_Surface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___object.html#a779b8be2c62b422c740fc1ba4bfeb54d">ObjectTypeStr</a>() const</td><td class="entry"><a class="el" href="class_o_n___object.html">ON_Object</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#a15f3caadc8f0d009599a6be71e1a106b">Offset</a>(double offset_distance, double tolerance, double *max_deviation=nullptr) const</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#ad4dacabb41c545f20ee4769932b95a11">Offset</a>(double offset_distance, double tolerance, double *max_deviation=nullptr) const override</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___geometry.html#a65226d33b1c8c1e8289e37073566c953">ON_Geometry</a>()=default</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_o_n___geometry.html#a71fbefc2a5f24da5f5fb4061d6849f17">ON_Geometry</a>(const ON_Geometry &amp;)=default</td><td class="entry"><a class="el" href="class_o_n___geometry.html">ON_Geometry</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html#a1302904a1750b73cc19c9d224eb249b6">ON_NurbsSurface</a>()</td><td class="entry"><a class="el" href="class_o_n___nurbs_surface.html">ON_NurbsSurface</a></td><td class="entry"></td></tr>
@@ -319,7 +319,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 27 2026 15:46:11 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 10 2026 16:54:22 for Rhino C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
